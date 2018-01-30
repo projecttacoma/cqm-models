@@ -20,6 +20,9 @@ class Code
 
     # Get the object as it was stored in the database, and instantiate
     # this custom class from it.
+    #
+    # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
+    # [ code, code_system, descriptor, code_system_oid, version ].
     def demongoize(object)
       Code.new(object[0], object[1], object[2], object[3], object[4])
     end

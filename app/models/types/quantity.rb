@@ -17,6 +17,9 @@ class Quantity
 
     # Get the object as it was stored in the database, and instantiate
     # this custom class from it.
+    #
+    # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
+    # [ value, unit ].
     def demongoize(object)
       Quantity.new(object[0], object[1])
     end

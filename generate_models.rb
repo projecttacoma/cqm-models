@@ -19,7 +19,13 @@ MODELINFO_RUBY_LOOKUP = {
   'System.Any': 'Any',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
-  'list<QDM.Component>': 'Array'
+  'list<QDM.Component>': 'Array',
+  'System.String': 'String',
+  'list<QDM.Id>': 'Array',
+  'list<QDM.ResultComponent>': 'Array',
+  'list<QDM.FacilityLocation>': 'Array',
+  'list<System.Code>': 'Array',
+  'QDM.Id': 'String'
 }.stringify_keys!
 
 # Lookups for modelinfo 'element types' to Mongoose types.
@@ -32,7 +38,13 @@ MODELINFO_JS_LOOKUP = {
   'System.Any': 'Schema.Types.Mixed',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
-  'list<QDM.Component>': '[]'
+  'list<QDM.Component>': '[]',
+  'System.String': 'String',
+  'list<QDM.Id>': '[]',
+  'list<QDM.ResultComponent>': '[]',
+  'list<QDM.FacilityLocation>': '[]',
+  'list<System.Code>': '[]',
+  'QDM.Id': 'String'
 }.stringify_keys!
 
 
@@ -62,10 +74,12 @@ modelinfo.xpath("//ns4:typeInfo").each do |type|
   attributes = []
   type.xpath("./ns4:element").each do |attribute|
     # Grab the name of this QDM datatype attribute
-    attribute_name = attribute.attributes['name'].value
+    attribute_name = attribute&.attributes['name']&.value
 
     # Grab the type of this QDM datatype attribute
-    attribute_type = attribute.attributes['type'].value
+    attribute_type = attribute&.attributes['type']&.value
+
+    next if attribute_name.blank? || attribute_type.blank?
 
     # Store name and type
     attributes << { name: attribute_name, type: attribute_type }
@@ -82,6 +96,13 @@ end
 ###############################################################################
 
 puts 'Generating Ruby models...'
+
+# Do a quick sanity check on attribute types
+datatypes.each do |datatype, attributes|
+  attributes.each do |attribute|
+    raise 'Unsupported type from modelinfo file: ' + attribute[:type] if MODELINFO_RUBY_LOOKUP[attribute[:type]].blank?
+  end
+end
 
 # Create Ruby models
 datatypes.each do |datatype, attributes|
