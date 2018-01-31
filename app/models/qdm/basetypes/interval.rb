@@ -1,19 +1,16 @@
-class Code
+class QDM::Interval
 
-  attr_reader :code, :code_system, :descriptor, :code_system_oid, :version
+  attr_reader :lt, :gt
 
   # Code and code system are required (at minimum).
-  def initialize(code, code_system, descriptor=nil, code_system_oid=nil, version=nil)
-    @code = code
-    @code_system = code_system
-    @descriptor = descriptor
-    @code_system_oid = code_system_oid
-    @version = version
+  def initialize(lt, gt)
+    @lt = lt
+    @gt = gt
   end
 
   # Converts an object of this instance into a database friendly value.
   def mongoize
-    [ code, code_system, descriptor, code_system_oid, version ]
+    [ lt, gt ]
   end
 
   class << self
@@ -22,17 +19,17 @@ class Code
     # this custom class from it.
     #
     # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
-    # [ code, code_system, descriptor, code_system_oid, version ].
+    # [ lt, gt ].
     def demongoize(object)
-      Code.new(object[0], object[1], object[2], object[3], object[4])
+      QDM::Interval.new(object[0], object[1])
     end
 
     # Takes any possible object and converts it to how it would be
     # stored in the database.
     def mongoize(object)
       case object
-      when Code then object.mongoize
-      when Hash then Code.new(object[:code], object[:code_system], object[:descriptor], object[:code_system_oid], object[:version]).mongoize
+      when QDM::Interval then object.mongoize
+      when Hash then QDM::Interval.new(object[:lt], object[:gt]).mongoize
       else object
       end
     end
@@ -41,7 +38,7 @@ class Code
     # into a database friendly form.
     def evolve(object)
       case object
-      when Code then object.mongoize
+      when QDM::Interval then object.mongoize
       else object
       end
     end
