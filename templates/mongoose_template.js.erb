@@ -1,12 +1,16 @@
 var Schema = mongoose.Schema;
+var Code = Schema.Types.Code;
+var Interval = Schema.Types.Interval;
+var Quantity = Schema.Types.Quantity;
 
-var <%= datatype %>Schema = new Schema({
-  <% for attribute in attributes %><% if attributes.last[:name] == attribute[:name] %>
-      <%= attribute[:name] %>: <%= MODELINFO_JS_LOOKUP[attribute[:type]] %>
-    <% else %>
-      <%= attribute[:name] %>: <%= MODELINFO_JS_LOOKUP[attribute[:type]] %>,
-    <% end %>
-  <% end %>
+var <%= datatype -%>Schema = new Schema({
+  <%- for attribute in attrs_with_extras -%>
+  <%- if attrs_with_extras.last[:name] == attribute[:name] -%>
+  <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP[attribute[:type]] -%>
+  <%- else -%>
+  <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP[attribute[:type]] -%>,
+  <%- end -%>
+  <%- end %>
 });
 
-var <%= datatype %> = mongoose.model('<%= datatype %>', <%= datatype %>Schema);
+var <%= datatype %> = mongoose.model("<%= datatype %>", <%= datatype %>Schema);

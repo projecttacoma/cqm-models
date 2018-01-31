@@ -1,16 +1,19 @@
-class Quantity
+class QDM::Code
 
-  attr_reader :value, :unit
+  attr_reader :code, :code_system, :descriptor, :code_system_oid, :version
 
   # Code and code system are required (at minimum).
-  def initialize(value, unit)
-    @value = value
-    @unit = unit
+  def initialize(code, code_system, descriptor=nil, code_system_oid=nil, version=nil)
+    @code = code
+    @code_system = code_system
+    @descriptor = descriptor
+    @code_system_oid = code_system_oid
+    @version = version
   end
 
   # Converts an object of this instance into a database friendly value.
   def mongoize
-    [ value, unit ]
+    [ code, code_system, descriptor, code_system_oid, version ]
   end
 
   class << self
@@ -19,17 +22,17 @@ class Quantity
     # this custom class from it.
     #
     # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
-    # [ value, unit ].
+    # [ code, code_system, descriptor, code_system_oid, version ].
     def demongoize(object)
-      Quantity.new(object[0], object[1])
+      QDM::Code.new(object[0], object[1], object[2], object[3], object[4])
     end
 
     # Takes any possible object and converts it to how it would be
     # stored in the database.
     def mongoize(object)
       case object
-      when Quantity then object.mongoize
-      when Hash then Quantity.new(object[:value], object[:unit]).mongoize
+      when QDM::Code then object.mongoize
+      when Hash then QDM::Code.new(object[:code], object[:code_system], object[:descriptor], object[:code_system_oid], object[:version]).mongoize
       else object
       end
     end
@@ -38,7 +41,7 @@ class Quantity
     # into a database friendly form.
     def evolve(object)
       case object
-      when Quantity then object.mongoize
+      when QDM::Code then object.mongoize
       else object
       end
     end

@@ -1,16 +1,16 @@
-class Interval
+class QDM::Quantity
 
-  attr_reader :lt, :gt
+  attr_reader :value, :unit
 
   # Code and code system are required (at minimum).
-  def initialize(lt, gt)
-    @lt = lt
-    @gt = gt
+  def initialize(value, unit)
+    @value = value
+    @unit = unit
   end
 
   # Converts an object of this instance into a database friendly value.
   def mongoize
-    [ lt, gt ]
+    [ value, unit ]
   end
 
   class << self
@@ -19,17 +19,17 @@ class Interval
     # this custom class from it.
     #
     # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
-    # [ lt, gt ].
+    # [ value, unit ].
     def demongoize(object)
-      Interval.new(object[0], object[1])
+      QDM::Quantity.new(object[0], object[1])
     end
 
     # Takes any possible object and converts it to how it would be
     # stored in the database.
     def mongoize(object)
       case object
-      when Interval then object.mongoize
-      when Hash then Interval.new(object[:lt], object[:gt]).mongoize
+      when QDM::Quantity then object.mongoize
+      when Hash then QDM::Quantity.new(object[:value], object[:unit]).mongoize
       else object
       end
     end
@@ -38,7 +38,7 @@ class Interval
     # into a database friendly form.
     def evolve(object)
       case object
-      when Interval then object.mongoize
+      when QDM::Quantity then object.mongoize
       else object
       end
     end
