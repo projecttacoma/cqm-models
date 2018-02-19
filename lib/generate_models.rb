@@ -44,9 +44,9 @@ raise 'Please provide a valid modelinfo file path and name.' if modelinfo_file.b
 modelinfo = File.open(modelinfo_file) { |f| Nokogiri::XML(f) }
 
 # Open specified HQMF oid file
-hqmf_oid_file = ARGV[1]
-raise 'Please provide a valid HQMF oid file path and name.' if hqmf_oid_file.blank? || !File.file?(hqmf_oid_file)
-hqmf_oid = JSON.parse(File.read(hqmf_oid_file))
+oids_file = ARGV[1]
+raise 'Please provide a valid HQMF oid file path and name.' if oids_file.blank? || !File.file?(oids_file)
+oids = JSON.parse(File.read(oids_file))
 
 # If this script was run with a third parameter of 'TEST', then generate the models in a
 # not standard location. This helps with testing.
@@ -107,7 +107,9 @@ end
 # Create Ruby models
 extra_fields_rb = [
   'hqmf_oid:String',
+  'qrda_oid:String',
   'category:String',
+  'status:String',
   'qdm_version:String'
 ]
 base_module = 'QDM::'
@@ -140,7 +142,9 @@ file_path = 'app/assets/javascripts/'
 file_path = 'tmp/' if IS_TEST
 extra_fields_js = [
   { name: 'hqmf_oid', type: 'System.String' },
+  { name: 'qrda_oid', type: 'System.String' },
   { name: 'category', type: 'System.String' },
+  { name: 'status', type: 'System.String' },
   { name: 'qdm_version', type: 'System.String' }
 ]
 datatypes.each do |datatype, attributes|
@@ -170,17 +174,31 @@ files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
 
   # Add HQMF oid (if it exists in the given HQMF oid mapping file)
   dc_name = File.basename(file_name, '.*')
-  unless hqmf_oid[dc_name].blank? || hqmf_oid[dc_name]['oid'].blank?
-    contents.gsub!(/  field :hqmf_oid, type: String\n/, "  field :hqmf_oid, type: String, default: '#{hqmf_oid[dc_name]['oid']}'\n")
+  unless oids[dc_name].blank? || oids[dc_name]['hqmf_oid'].blank?
+    contents.gsub!(/  field :hqmf_oid, type: String\n/, "  field :hqmf_oid, type: String, default: '#{oids[dc_name]['hqmf_oid']}'\n")
   else
     contents.gsub!(/  field :hqmf_oid, type: String\n/, '') # Don't include this field
   end
 
+  # Add QRDA oid (if it exists in the given QRDA oid mapping file)
+  unless oids[dc_name].blank? || oids[dc_name]['qrda_oid'].blank?
+    contents.gsub!(/  field :qrda_oid, type: String\n/, "  field :qrda_oid, type: String, default: '#{oids[dc_name]['qrda_oid']}'\n")
+  else
+    contents.gsub!(/  field :qrda_oid, type: String\n/, '') # Don't include this field
+  end
+
   # Add category
-  unless hqmf_oid[dc_name].blank? || hqmf_oid[dc_name]['category'].blank?
-    contents.gsub!(/  field :category, type: String\n/, "  field :category, type: String, default: '#{hqmf_oid[dc_name]['category']}'\n")
+  unless oids[dc_name].blank? || oids[dc_name]['category'].blank?
+    contents.gsub!(/  field :category, type: String\n/, "  field :category, type: String, default: '#{oids[dc_name]['category']}'\n")
   else
     contents.gsub!(/  field :category, type: String\n/, '') # Don't include this field
+  end
+
+  # Add status
+  unless oids[dc_name].blank? || oids[dc_name]['status'].blank?
+    contents.gsub!(/  field :status, type: String\n/, "  field :status, type: String, default: '#{oids[dc_name]['status']}'\n")
+  else
+    contents.gsub!(/  field :status, type: String\n/, '') # Don't include this field
   end
 
   File.open(file_name, 'w') { |file| file.puts contents }
@@ -200,17 +218,31 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
 
   # Add HQMF oid (if it exists in the given HQMF oid mapping file)
   dc_name = File.basename(file_name.underscore, '.*')
-  unless hqmf_oid[dc_name].blank? || hqmf_oid[dc_name]['oid'].blank?
-    contents.gsub!(/  hqmf_oid: String,\n/, "  hqmf_oid: { type: String, default: \"#{hqmf_oid[dc_name]['oid']}\" },\n")
+  unless oids[dc_name].blank? || oids[dc_name]['hqmf_oid'].blank?
+    contents.gsub!(/  hqmf_oid: String,\n/, "  hqmf_oid: { type: String, default: \"#{oids[dc_name]['hqmf_oid']}\" },\n")
   else
     contents.gsub!(/  hqmf_oid: String,\n/, '') # Don't include this field
   end
 
+  # Add QRDA oid (if it exists in the given QRDA oid mapping file)
+  unless oids[dc_name].blank? || oids[dc_name]['qrda_oid'].blank?
+    contents.gsub!(/  qrda_oid: String,\n/, "  qrda_oid: { type: String, default: \"#{oids[dc_name]['qrda_oid']}\" },\n")
+  else
+    contents.gsub!(/  qrda_oid: String,\n/, '') # Don't include this field
+  end
+
   # Add category
-  unless hqmf_oid[dc_name].blank? || hqmf_oid[dc_name]['category'].blank?
-    contents.gsub!(/  category: String,\n/, "  category: { type: String, default: \"#{hqmf_oid[dc_name]['category']}\" },\n")
+  unless oids[dc_name].blank? || oids[dc_name]['category'].blank?
+    contents.gsub!(/  category: String,\n/, "  category: { type: String, default: \"#{oids[dc_name]['category']}\" },\n")
   else
     contents.gsub!(/  category: String,\n/, '') # Don't include this field
+  end
+
+  # Add status
+  unless oids[dc_name].blank? || oids[dc_name]['status'].blank?
+    contents.gsub!(/  status: String,\n/, "  status: { type: String, default: \"#{oids[dc_name]['status']}\" },\n")
+  else
+    contents.gsub!(/  status: String,\n/, '') # Don't include this field
   end
 
   File.open(file_name, 'w') { |file| file.puts contents }

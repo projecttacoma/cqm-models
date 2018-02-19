@@ -7,6 +7,8 @@ class QDM::ImmunizationAdministered
   field :route, type: QDM::Code
   field :negation_rationale, type: QDM::Code
   field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.112'
+  field :qrda_oid, type: String, default: '2.16.840.1.113883.10.20.24.3.140'
   field :category, type: String, default: 'immunization'
+  field :status, type: String, default: 'administered'
   field :qdm_version, type: String, default: '5.3'
 end

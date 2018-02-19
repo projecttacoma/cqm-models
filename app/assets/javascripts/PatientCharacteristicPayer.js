@@ -7,6 +7,7 @@ var PatientCharacteristicPayerSchema = new Schema({
   relevant_period: Interval,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.58" },
   category: { type: String, default: "patient_characteristic" },
+  status: { type: String, default: "payer" },
   qdm_version: { type: String, default: "5.3" }
 });
 
