@@ -15,6 +15,7 @@ var SubstanceRecommendedSchema = new Schema({
   negation_rationale: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.78" },
   category: { type: String, default: "substance" },
+  status: { type: String, default: "recommended" },
   qdm_version: { type: String, default: "5.3" }
 });
 

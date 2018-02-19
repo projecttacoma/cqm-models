@@ -6,6 +6,7 @@ var Quantity = Schema.Types.Quantity;
 var PatientCharacteristicEthnicitySchema = new Schema({
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.56" },
   category: { type: String, default: "patient_characteristic" },
+  status: { type: String, default: "ethnicity" },
   qdm_version: { type: String, default: "5.3" }
 });
 

@@ -8,10 +8,10 @@ See the top of the script for RubyGem requirements.
 
 To use, run:
 ```
-ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.3.xml data/hqmfr2_oids.json
+ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.3.xml data/oids.json
 ```
 
-The first parameter is the file path to the modelinfo file you wish to generate from. The second parameter is the HQMF oid map file. You must include both.
+The first parameter is the file path to the modelinfo file you wish to generate from. The second parameter is the OID map file. You must include both.
 
 The generator will parse the model info file, generate the corresponding models, and place them in:
 

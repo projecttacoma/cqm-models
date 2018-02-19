@@ -16,6 +16,7 @@ var LaboratoryTestPerformedSchema = new Schema({
   components: Array,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.42" },
   category: { type: String, default: "laboratory_test" },
+  status: { type: String, default: "performed" },
   qdm_version: { type: String, default: "5.3" }
 });
 

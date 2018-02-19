@@ -6,7 +6,7 @@ RSpec.describe QDM do
     # Clear old test models (if they are still there for some reason)
     system 'rm tmp/*.js'
     system 'rm -rf app/models/test'
-    system "ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.3.xml data/hqmfr2_oids.json TEST"
+    system "ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.3.xml data/oids.json TEST"
 
     # Create example patients
     patient_a_race = QDM::Code.new('2106-3', 'Race & Ethnicity - CDC', 'White', '2.16.840.1.113883.6.238', '2017.01.26')

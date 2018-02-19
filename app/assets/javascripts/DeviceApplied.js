@@ -12,6 +12,7 @@ var DeviceAppliedSchema = new Schema({
   anatomical_approach_site: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.13" },
   category: { type: String, default: "device" },
+  status: { type: String, default: "applied" },
   qdm_version: { type: String, default: "5.3" }
 });
 
