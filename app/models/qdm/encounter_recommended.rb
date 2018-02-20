@@ -1,4 +1,4 @@
-class QDM::EncounterRecommended
+class QDM::EncounterRecommended < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code

@@ -1,4 +1,4 @@
-class QDM::PatientCharacteristicExpired
+class QDM::PatientCharacteristicExpired < QDM::Datatype
   include Mongoid::Document
   field :expired_datetime, type: DateTime
   field :cause, type: QDM::Code

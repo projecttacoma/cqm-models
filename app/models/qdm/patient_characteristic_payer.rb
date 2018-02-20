@@ -1,4 +1,4 @@
-class QDM::PatientCharacteristicPayer
+class QDM::PatientCharacteristicPayer < QDM::Datatype
   include Mongoid::Document
   field :relevant_period, type: QDM::Interval
   field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.58'

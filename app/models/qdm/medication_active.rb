@@ -1,4 +1,4 @@
-class QDM::MedicationActive
+class QDM::MedicationActive < QDM::Datatype
   include Mongoid::Document
   field :relevant_period, type: QDM::Interval
   field :dosage, type: QDM::Quantity

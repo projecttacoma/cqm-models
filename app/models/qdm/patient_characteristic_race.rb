@@ -1,4 +1,4 @@
-class QDM::PatientCharacteristicRace
+class QDM::PatientCharacteristicRace < QDM::Datatype
   include Mongoid::Document
   field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.59'
   field :category, type: String, default: 'patient_characteristic'

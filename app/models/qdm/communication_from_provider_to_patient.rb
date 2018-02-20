@@ -1,4 +1,4 @@
-class QDM::CommunicationFromProviderToPatient
+class QDM::CommunicationFromProviderToPatient < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :related_to, type: Array

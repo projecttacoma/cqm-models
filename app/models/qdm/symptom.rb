@@ -1,4 +1,4 @@
-class QDM::Symptom
+class QDM::Symptom < QDM::Datatype
   include Mongoid::Document
   field :prevalence_period, type: QDM::Interval
   field :severity, type: QDM::Code

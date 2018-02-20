@@ -1,4 +1,4 @@
-class QDM::MedicationAdministered
+class QDM::MedicationAdministered < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :relevant_period, type: QDM::Interval

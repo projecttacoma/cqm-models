@@ -2,8 +2,14 @@ var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 var Interval = Schema.Types.Interval;
 var Quantity = Schema.Types.Quantity;
+var Integer = Schema.Types.Integer;
+var Array = Schema.Types.Array;
+var String = Schema.Types.String;
+var Float = Schema.Types.Float;
+var Time = Schema.Types.Time;
+var Datatype = require('./basetypes/Datatype');
 
-var ImmunizationOrderSchema = new Schema({
+var ImmunizationOrderSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
   active_datetime: DateTime,
   author_datetime: DateTime,
   dosage: Quantity,

@@ -1,3 +1,4 @@
+# Represents a Code
 class QDM::Code
 
   attr_reader :code, :code_system, :descriptor, :code_system_oid, :version

@@ -1,4 +1,4 @@
-class QDM::MedicationDischarge
+class QDM::MedicationDischarge < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :refills, type: Integer

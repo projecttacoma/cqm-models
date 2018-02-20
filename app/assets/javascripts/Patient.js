@@ -2,8 +2,14 @@ var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 var Interval = Schema.Types.Interval;
 var Quantity = Schema.Types.Quantity;
+var Integer = Schema.Types.Integer;
+var Array = Schema.Types.Array;
+var String = Schema.Types.String;
+var Float = Schema.Types.Float;
+var Time = Schema.Types.Time;
+var Datatype = require('./basetypes/Datatype');
 
-var PatientSchema = new Schema({
+var PatientSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
   birth_datetime: DateTime,
   qdm_version: { type: String, default: "5.3" },
   ethnicity: Code,
@@ -11,6 +17,7 @@ var PatientSchema = new Schema({
   sex: Code,
   given_names: [String],
   family_name: String,
+  bundle_id: String,
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
   history_elements: []

@@ -18,9 +18,9 @@ RSpec.describe QDM do
     @patient_b = QDM::Patient.new(birth_datetime: 75.years.ago, race: patient_a_race, ethnicity: patient_a_ethnicity, sex: patient_b_sex)
 
     # Create example patient history
-    proceedure = QDM::ProcedurePerformed.new(author_datetime: 1.day.ago)
-    encounter = QDM::EncounterOrder.new(reason: QDM::Code.new('bogus code', 'bogus code system'))
-    medication = QDM::MedicationDispensed.new(relevant_period: QDM::Interval.new(1.year.ago, 1.month.ago), dosage: QDM::Quantity.new('1', 'mg'))
+    @proceedure_a = QDM::ProcedurePerformed.new(author_datetime: 1.day.ago, codes: [QDM::Code.new('bogus code', 'bogus code system'), QDM::Code.new('bogus code', 'bogus code system')])
+    @encounter_a = QDM::EncounterOrder.new(reason: QDM::Code.new('bogus code', 'bogus code system'))
+    @medication_a = QDM::MedicationDispensed.new(relevant_period: QDM::Interval.new(1.year.ago, 1.month.ago), dosage: QDM::Quantity.new('1', 'mg'))
   end
 
   after(:all) do
@@ -42,6 +42,18 @@ RSpec.describe QDM do
     expect(@patient_b.sex.code).to eq 'F'
     expect(@patient_b.sex.descriptor).to eq 'Female'
     expect(@patient_b.sex.code_system_oid).to eq '2.16.840.1.113883.12.1'
+  end
+
+  it 'datatypes returns attributes using get' do
+    expect(@proceedure_a.get('author_datetime')).to be
+    expect(@encounter_a.get('reason')).to be
+    expect(@medication_a.get('relevant_period')).to be
+    expect(@medication_a.get('dosage')).to be
+  end
+
+  it 'datatypes returns codes using getCode' do
+    debugger
+    expect(@proceedure_a.getCode.count).to eq 2
   end
 
 end

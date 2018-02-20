@@ -1,4 +1,4 @@
-class QDM::LaboratoryTestRecommended
+class QDM::LaboratoryTestRecommended < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :method, type: QDM::Code

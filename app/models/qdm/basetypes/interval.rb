@@ -1,3 +1,4 @@
+# Represents an Interval
 class QDM::Interval
 
   attr_reader :lt, :gt
