@@ -1,3 +1,4 @@
+# Represents a Quantity
 class QDM::Quantity
 
   attr_reader :value, :unit

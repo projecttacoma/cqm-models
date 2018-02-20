@@ -1,4 +1,4 @@
-class QDM::CareGoal
+class QDM::CareGoal < QDM::Datatype
   include Mongoid::Document
   field :relevant_period, type: QDM::Interval
   field :related_to, type: Array

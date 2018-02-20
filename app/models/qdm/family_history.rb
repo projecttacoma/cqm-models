@@ -1,4 +1,4 @@
-class QDM::FamilyHistory
+class QDM::FamilyHistory < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :relationship, type: QDM::Code

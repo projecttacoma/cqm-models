@@ -1,4 +1,4 @@
-class QDM::Diagnosis
+class QDM::Diagnosis < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :prevalence_period, type: QDM::Interval

@@ -127,6 +127,7 @@ unless IS_TEST
   require_file.puts "require_relative 'qdm/basetypes/code'"
   require_file.puts "require_relative 'qdm/basetypes/interval'"
   require_file.puts "require_relative 'qdm/basetypes/quantity'"
+  require_file.puts "require_relative 'qdm/basetypes/datatype'"
   datatypes.each do |datatype, attributes|
     require_file.puts "require_relative 'qdm/#{datatype.underscore}'"
   end
@@ -271,6 +272,18 @@ files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents.gsub!('Code', 'QDM::Code')
   contents.gsub!('Interval', 'QDM::Interval')
   contents.gsub!('Quantity', 'QDM::Quantity')
+  File.open(file_name, 'w') { |file| file.puts contents }
+end
+
+# Make sure Ruby datatypes models have the correct inheritance
+ruby_models_path = 'app/models/qdm/'
+ruby_models_path = 'app/models/test/qdm/' if IS_TEST
+files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
+  contents = ''
+  File.open(file_name).each_line.with_index do |line, index|
+    contents += line
+    contents.gsub!("\n", " < QDM::Datatype\n") if index == 0
+  end
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 

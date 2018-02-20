@@ -1,4 +1,4 @@
-class QDM::Component
+class QDM::Component < QDM::Datatype
   include Mongoid::Document
   field :code, type: QDM::Code
   field :result

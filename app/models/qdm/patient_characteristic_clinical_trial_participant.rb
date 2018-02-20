@@ -1,4 +1,4 @@
-class QDM::PatientCharacteristicClinicalTrialParticipant
+class QDM::PatientCharacteristicClinicalTrialParticipant < QDM::Datatype
   include Mongoid::Document
   field :reason, type: QDM::Code
   field :relevant_period, type: QDM::Interval

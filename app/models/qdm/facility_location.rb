@@ -1,4 +1,4 @@
-class QDM::FacilityLocation
+class QDM::FacilityLocation < QDM::Datatype
   include Mongoid::Document
   field :code, type: QDM::Code
   field :location_period, type: QDM::Interval

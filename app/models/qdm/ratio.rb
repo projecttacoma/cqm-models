@@ -1,4 +1,4 @@
-class QDM::Ratio
+class QDM::Ratio < QDM::Datatype
   include Mongoid::Document
   field :numerator, type: QDM::Quantity
   field :denominator, type: QDM::Quantity

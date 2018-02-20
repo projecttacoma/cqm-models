@@ -1,4 +1,4 @@
-class QDM::InterventionRecommended
+class QDM::InterventionRecommended < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code

@@ -1,4 +1,4 @@
-class QDM::Patient
+class QDM::Patient < QDM::Datatype
   include Mongoid::Document
   field :birth_datetime, type: DateTime
   field :qdm_version, type: String, default: '5.3'
@@ -7,6 +7,7 @@ class QDM::Patient
   field :sex, type: QDM::Code
   field :given_names, type: Array
   field :family_name, type: QDM::Code
+  field :bundle_id, type: String
 
   # These are the "data criteria", or QDM datatype elements that exist on a
   # patient.

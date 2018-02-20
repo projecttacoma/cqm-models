@@ -1,4 +1,4 @@
-class QDM::DeviceApplied
+class QDM::DeviceApplied < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :relevant_period, type: QDM::Interval

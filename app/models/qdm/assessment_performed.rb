@@ -1,4 +1,4 @@
-class QDM::AssessmentPerformed
+class QDM::AssessmentPerformed < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :negation_rationale, type: QDM::Code

@@ -1,4 +1,4 @@
-class QDM::ImmunizationOrder
+class QDM::ImmunizationOrder < QDM::Datatype
   include Mongoid::Document
   field :active_datetime, type: DateTime
   field :author_datetime, type: DateTime

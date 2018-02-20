@@ -1,4 +1,4 @@
-class QDM::EncounterPerformed
+class QDM::EncounterPerformed < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :admission_source, type: QDM::Code

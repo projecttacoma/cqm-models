@@ -1,4 +1,4 @@
-class QDM::DiagnosticStudyRecommended
+class QDM::DiagnosticStudyRecommended < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :method, type: QDM::Code

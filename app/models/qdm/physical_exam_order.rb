@@ -1,4 +1,4 @@
-class QDM::PhysicalExamOrder
+class QDM::PhysicalExamOrder < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code

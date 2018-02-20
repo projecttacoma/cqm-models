@@ -84,4 +84,5 @@ RSpec.describe QDM do
   it 'generates each QDM 4.2 datatype model with all attributes' do
     check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.2.xml', 'data/oids.json')
   end
+
 end

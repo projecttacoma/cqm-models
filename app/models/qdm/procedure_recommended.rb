@@ -1,4 +1,4 @@
-class QDM::ProcedureRecommended
+class QDM::ProcedureRecommended < QDM::Datatype
   include Mongoid::Document
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code
