@@ -11,8 +11,7 @@ function extendSchema(TSchema, definition, options) {
 }
 
 var DatatypeSchema = new Schema({
-  codes: {type: [Code]},
-  hqmf_id: {type: String}
+  codes: {type: [Code]}
 });
 
 // Returns the attribute requested on the datatype.

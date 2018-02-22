@@ -6,153 +6,153 @@ class QDM::Patient < QDM::Datatype
   field :race, type: QDM::Code
   field :sex, type: QDM::Code
   field :given_names, type: Array
-  field :family_name, type: QDM::Code
+  field :family_name, type: String
   field :bundle_id, type: String
 
   # These are the "data criteria", or QDM datatype elements that exist on a
   # patient.
-  embeds_many :history_elements
+  embeds_many :data_elements
 
   # Returns an array of history elements that exist on this patient, that
   # match the given HQMF data criteria OID.
   def get_by_hqmf_oid(hqmf_oid)
-    history_elements.where(hqmf_oid: hqmf_oid) || []
+    data_elements.where(hqmf_oid: hqmf_oid) || []
   end
 
   # Returns an array of history elements that exist on this patient, that
   # match the given QRDA data criteria OID.
   def get_by_qrda_oid(qrda_oid)
-    history_elements.where(qrda_oid: qrda_oid) || []
+    data_elements.where(qrda_oid: qrda_oid) || []
   end
 
   # Returns an array of history elements that exist on this patient. Optionally
   # takes a category and/or, which returns all history elements of that QDM
-  # category. Example: patient.get_history_elements(category = 'encounters')
+  # category. Example: patient.get_data_elements(category = 'encounters')
   # will return all Encounter QDM data types active on the patient.
-  def get_history_elements(category = nil, status = nil)
+  def get_data_elements(category = nil, status = nil)
     if category && status
-      history_elements.where(category: category, status: status) || []
+      data_elements.where(category: category, status: status) || []
     elsif category
-      history_elements.where(category: category) || []
+      data_elements.where(category: category) || []
     else
-      history_elements || []
+      data_elements || []
     end
   end
 
   def adverse_events
-    get_history_elements('adverse_event')
+    get_data_elements('adverse_event')
   end
 
   def allergies
-    get_history_elements('allergy')
+    get_data_elements('allergy')
   end
 
   def assessments
-    get_history_elements('assessment')
+    get_data_elements('assessment')
   end
 
   def care_experiences
-    get_history_elements('care_experience')
+    get_data_elements('care_experience')
   end
 
   def care_goals
-    get_history_elements('care_goal')
+    get_data_elements('care_goal')
   end
 
   def communications
-    get_history_elements('communication')
+    get_data_elements('communication')
   end
 
   def conditions
-    get_history_elements('condition')
+    get_data_elements('condition')
   end
 
   def devices
-    get_history_elements('device')
+    get_data_elements('device')
   end
 
   def diagnostic_studies
-    get_history_elements('diagnostic_study')
+    get_data_elements('diagnostic_study')
   end
 
   def encounters
-    get_history_elements('encounter')
+    get_data_elements('encounter')
   end
 
   def family_history
-    get_history_elements('family_history')
+    get_data_elements('family_history')
   end
 
   def functional_statuses
-    get_history_elements('functional_status')
+    get_data_elements('functional_status')
   end
 
   def immunizations
-    get_history_elements('immunization')
+    get_data_elements('immunization')
   end
 
   def interventions
-    get_history_elements('intervention')
+    get_data_elements('intervention')
   end
 
   def laboratory_tests
-    get_history_elements('laboratory_test')
+    get_data_elements('laboratory_test')
   end
 
   def medical_equipment
-    get_history_elements('medical_equipment')
+    get_data_elements('medical_equipment')
   end
 
   def medications
-    get_history_elements('medication')
+    get_data_elements('medication')
   end
 
   def physical_exams
-    get_history_elements('physical_exam')
+    get_data_elements('physical_exam')
   end
 
   def preferences
-    get_history_elements('preference')
+    get_data_elements('preference')
   end
 
   def provider_characteristics
-    get_history_elements('provider_characteristic')
+    get_data_elements('provider_characteristic')
   end
 
   def procedures
-    get_history_elements('procedure')
+    get_data_elements('procedure')
   end
 
   def results
-    get_history_elements('result')
+    get_data_elements('result')
   end
 
   def risk_category_assessments
-    get_history_elements('risk_category_assessment')
+    get_data_elements('risk_category_assessment')
   end
 
   def social_history
-    get_history_elements('social_history')
+    get_data_elements('social_history')
   end
 
   def substances
-    get_history_elements('substance')
+    get_data_elements('substance')
   end
 
   def symptoms
-    get_history_elements('symptom')
+    get_data_elements('symptom')
   end
 
   def system_characteristics
-    get_history_elements('system_characteristic')
+    get_data_elements('system_characteristic')
   end
 
   def transfers
-    get_history_elements('transfer')
+    get_data_elements('transfer')
   end
 
   def vital_signs
-    get_history_elements('vital_sign')
+    get_data_elements('vital_sign')
   end
 end
 
