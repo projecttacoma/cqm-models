@@ -38,6 +38,10 @@ TYPE_LOOKUP = {
 
 puts 'Parsing modelinfo file...'
 
+Dir.chdir ENV['TRAVIS_BUILD_DIR'] if ENV['CI']
+puts Dir.pwd
+puts Dir.entries(".")
+
 # Open specified modelinfo file
 modelinfo_file = ARGV[0]
 raise 'Please provide a valid modelinfo file path and name.' if modelinfo_file.blank? || !File.file?(modelinfo_file)
