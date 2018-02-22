@@ -4,8 +4,6 @@ class QDM::Datatype
 
   # Codes that describe this datatype.
   field :codes, type: Array
-  # The HQMF id that identifies which measure this datatype was created for.
-  field :hqmf_id, type: String
 
   # Returns the attribute requested on the datatype.
   def get(attribute)
