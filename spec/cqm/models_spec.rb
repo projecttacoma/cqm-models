@@ -52,7 +52,6 @@ RSpec.describe QDM do
   end
 
   it 'datatypes returns codes using getCode' do
-    debugger
     expect(@proceedure_a.getCode.count).to eq 2
   end
 
