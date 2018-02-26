@@ -20,20 +20,20 @@ var PatientSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   data_elements: []
 });
 
-// Returns an array of history elements that exist on this patient, that
+// Returns an array of elements that exist on this patient, that
 // match the given HQMF data criteria OID.
 PatientSchema.methods.get_by_hqmf_oid = function get_by_hqmf_oid(hqmf_oid, callback) {
   return this.data_elements.filter(element => element.hqmf_oid === hqmf_oid);
 }
 
-// Returns an array of history elements that exist on this patient, that
+// Returns an array of elements that exist on this patient, that
 // match the given QRDA data criteria OID.
 PatientSchema.methods.get_by_qrda_oid = function get_by_qrda_oid(qrda_oid, callback) {
   return this.data_elements.filter(element => element.qrda_oid === qrda_oid);
 }
 
-// Returns an array of history elements that exist on this patient. Optionally
-// takes a category, which returns all history elements of that QDM category.
+// Returns an array of elements that exist on this patient. Optionally
+// takes a category, which returns all elements of that QDM category.
 // Example: patient.get_data_elements(category = 'encounters') will return
 // all Encounter QDM data types active on the patient.
 PatientSchema.methods.get_data_elements = function get_data_elements(params, callback) {
