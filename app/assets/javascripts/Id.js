@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var IdSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var IdSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   naming_system: String,
   value: String,
   qdm_version: { type: String, default: "5.3" }

@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var PatientCharacteristicExpiredSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var PatientCharacteristicExpiredSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   expired_datetime: DateTime,
   cause: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.57" },

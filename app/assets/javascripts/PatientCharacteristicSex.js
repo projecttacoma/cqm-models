@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var PatientCharacteristicSexSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var PatientCharacteristicSexSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   qdm_version: { type: String, default: "5.3" }
 });
 

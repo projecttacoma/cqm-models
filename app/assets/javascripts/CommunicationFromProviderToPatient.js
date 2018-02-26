@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var CommunicationFromProviderToPatientSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var CommunicationFromProviderToPatientSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   author_datetime: DateTime,
   related_to: Array,
   negation_rationale: Code,

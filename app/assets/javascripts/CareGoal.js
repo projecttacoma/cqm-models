@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var CareGoalSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var CareGoalSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   relevant_period: Interval,
   related_to: Array,
   target_outcome: {},

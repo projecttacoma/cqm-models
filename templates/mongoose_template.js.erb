@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var <%= datatype -%>Schema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var <%= datatype -%>Schema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   <%- for attribute in attrs_with_extras -%>
   <%- if attrs_with_extras.last[:name] == attribute[:name] -%>
   <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP[attribute[:type]] -%>

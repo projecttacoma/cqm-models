@@ -2,9 +2,6 @@ class QDM::Patient < QDM::Datatype
   include Mongoid::Document
   field :birth_datetime, type: DateTime
   field :qdm_version, type: String, default: '5.3'
-  field :ethnicity, type: QDM::Code
-  field :race, type: QDM::Code
-  field :sex, type: QDM::Code
   field :given_names, type: Array
   field :family_name, type: String
   field :bundle_id, type: String

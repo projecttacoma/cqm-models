@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var FacilityLocationSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var FacilityLocationSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   code: Code,
   location_period: Interval,
   qdm_version: { type: String, default: "5.3" }

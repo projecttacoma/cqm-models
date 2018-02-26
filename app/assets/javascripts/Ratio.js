@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var RatioSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var RatioSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   numerator: Quantity,
   denominator: Quantity,
   qdm_version: { type: String, default: "5.3" }

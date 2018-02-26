@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var PatientCharacteristicPayerSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var PatientCharacteristicPayerSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   relevant_period: Interval,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.58" },
   category: { type: String, default: "patient_characteristic" },
