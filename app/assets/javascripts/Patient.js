@@ -7,9 +7,9 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var Datatype = require('./basetypes/Datatype');
+var DataElement = require('./basetypes/DataElement');
 
-var PatientSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
+var PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   birth_datetime: DateTime,
   qdm_version: { type: String, default: "5.3" },
   given_names: [String],
@@ -44,6 +44,11 @@ PatientSchema.methods.get_data_elements = function get_data_elements(params, cal
   } else {
     return this.data_elements;
   }
+}
+
+# Return the Mongo id for this patient.
+PatientSchema.methods.id = function id(params, callback) {
+  return this._id;
 }
 
 PatientSchema.methods.adverse_events = function adverse_events(params, callback) {

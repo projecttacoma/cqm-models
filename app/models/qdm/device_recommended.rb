@@ -1,5 +1,6 @@
-class QDM::DeviceRecommended < QDM::Datatype
+class QDM::DeviceRecommended < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :negation_rationale, type: QDM::Code
   field :reason, type: QDM::Code

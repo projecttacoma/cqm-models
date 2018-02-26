@@ -1,5 +1,6 @@
-class QDM::EncounterPerformed < QDM::Datatype
+class QDM::EncounterPerformed < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :admission_source, type: QDM::Code
   field :relevant_period, type: QDM::Interval

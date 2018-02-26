@@ -1,5 +1,6 @@
-class QDM::FamilyHistory < QDM::Datatype
+class QDM::FamilyHistory < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :relationship, type: QDM::Code
   field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.111'

@@ -1,5 +1,6 @@
-class QDM::AllergyIntolerance < QDM::Datatype
+class QDM::AllergyIntolerance < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :prevalence_period, type: QDM::Interval
   field :type, type: QDM::Code

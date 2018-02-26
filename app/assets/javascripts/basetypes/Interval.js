@@ -7,13 +7,16 @@ class Interval {
   }
 
   toBSON() {
-    return [this.lt, this.gt];
+    var interval = {}
+    interval['lt'] = this.lt;
+    interval['gt'] = this.gt;
+    return interval;
   }
 }
 
 class IntervalSchema extends mongoose.SchemaType {
   cast(interval) {
-    return new Interval(interval[0], interval[1]);
+    return new Interval(interval['lt'], interval['gt']);
   }
 }
 

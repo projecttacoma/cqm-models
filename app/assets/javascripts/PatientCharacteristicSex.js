@@ -7,9 +7,9 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var Datatype = require('./basetypes/Datatype');
+var DataElement = require('./basetypes/DataElement');
 
-var PatientCharacteristicSexSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
+var PatientCharacteristicSexSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   qdm_version: { type: String, default: "5.3" }
 });
 

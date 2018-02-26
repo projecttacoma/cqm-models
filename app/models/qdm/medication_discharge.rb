@@ -1,5 +1,6 @@
-class QDM::MedicationDischarge < QDM::Datatype
+class QDM::MedicationDischarge < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :refills, type: Integer
   field :dosage, type: QDM::Quantity

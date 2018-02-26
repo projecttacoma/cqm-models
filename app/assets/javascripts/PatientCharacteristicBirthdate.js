@@ -7,9 +7,9 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var Datatype = require('./basetypes/Datatype');
+var DataElement = require('./basetypes/DataElement');
 
-var PatientCharacteristicBirthdateSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
+var PatientCharacteristicBirthdateSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   birth_datetime: DateTime,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.54" },
   category: { type: String, default: "patient_characteristic" },

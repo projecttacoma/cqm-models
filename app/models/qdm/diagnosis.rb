@@ -1,5 +1,6 @@
-class QDM::Diagnosis < QDM::Datatype
+class QDM::Diagnosis < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :prevalence_period, type: QDM::Interval
   field :anatomical_location_site, type: QDM::Code

@@ -1,4 +1,4 @@
-class QDM::Patient < QDM::Datatype
+class QDM::Patient
   include Mongoid::Document
   field :birth_datetime, type: DateTime
   field :qdm_version, type: String, default: '5.3'
@@ -34,6 +34,11 @@ class QDM::Patient < QDM::Datatype
     else
       data_elements || []
     end
+  end
+
+  # Return the Mongo id for this patient.
+  def id
+    self._id
   end
 
   def adverse_events

@@ -11,7 +11,7 @@ class QDM::Interval
 
   # Converts an object of this instance into a database friendly value.
   def mongoize
-    [ lt, gt ]
+    { lt: @lt, gt: @gt }
   end
 
   class << self
@@ -22,7 +22,10 @@ class QDM::Interval
     # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
     # [ lt, gt ].
     def demongoize(object)
-      QDM::Interval.new(object[0], object[1])
+      # Sanity check (don't even attempt to demongoize if we're dealing with a nil)
+      if object && object.kind_of?(Hash) && object.keys.count == 2
+        QDM::Interval.new(object[:lt], object[:gt])
+      end
     end
 
     # Takes any possible object and converts it to how it would be

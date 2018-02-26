@@ -1,5 +1,6 @@
-class QDM::CareGoal < QDM::Datatype
+class QDM::CareGoal < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :relevant_period, type: QDM::Interval
   field :related_to, type: Array
   field :target_outcome

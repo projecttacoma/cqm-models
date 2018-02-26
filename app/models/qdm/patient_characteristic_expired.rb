@@ -1,5 +1,6 @@
-class QDM::PatientCharacteristicExpired < QDM::Datatype
+class QDM::PatientCharacteristicExpired < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :expired_datetime, type: DateTime
   field :cause, type: QDM::Code
   field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.57'

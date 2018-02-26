@@ -14,7 +14,7 @@ class QDM::Code
 
   # Converts an object of this instance into a database friendly value.
   def mongoize
-    [ code, code_system, descriptor, code_system_oid, version ]
+    { code: @code, code_system: @code_system, descriptor: @descriptor, code_system_oid: @code_system_oid, version: @version }
   end
 
   class << self
@@ -25,7 +25,10 @@ class QDM::Code
     # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
     # [ code, code_system, descriptor, code_system_oid, version ].
     def demongoize(object)
-      QDM::Code.new(object[0], object[1], object[2], object[3], object[4])
+      # Sanity check (don't even attempt to demongoize if we're dealing with a nil)
+      if object && object.kind_of?(Hash) && object.keys.count == 5
+        QDM::Code.new(object[:code], object[:code_system], object[:descriptor], object[:code_system_oid], object[:version])
+      end
     end
 
     # Takes any possible object and converts it to how it would be

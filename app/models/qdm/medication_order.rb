@@ -1,5 +1,6 @@
-class QDM::MedicationOrder < QDM::Datatype
+class QDM::MedicationOrder < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :active_datetime, type: DateTime
   field :relevant_period, type: QDM::Interval
   field :author_datetime, type: DateTime

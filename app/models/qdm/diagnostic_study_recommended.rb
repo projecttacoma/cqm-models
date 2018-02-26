@@ -1,5 +1,6 @@
-class QDM::DiagnosticStudyRecommended < QDM::Datatype
+class QDM::DiagnosticStudyRecommended < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :method, type: QDM::Code
   field :negation_rationale, type: QDM::Code

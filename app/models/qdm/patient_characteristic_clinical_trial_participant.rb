@@ -1,5 +1,6 @@
-class QDM::PatientCharacteristicClinicalTrialParticipant < QDM::Datatype
+class QDM::PatientCharacteristicClinicalTrialParticipant < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :reason, type: QDM::Code
   field :relevant_period, type: QDM::Interval
   field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.6'

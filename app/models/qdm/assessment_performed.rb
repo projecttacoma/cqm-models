@@ -1,5 +1,6 @@
-class QDM::AssessmentPerformed < QDM::Datatype
+class QDM::AssessmentPerformed < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :negation_rationale, type: QDM::Code
   field :reason, type: QDM::Code

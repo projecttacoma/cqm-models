@@ -1,5 +1,6 @@
-class QDM::DiagnosticStudyOrder < QDM::Datatype
+class QDM::DiagnosticStudyOrder < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code
   field :method, type: QDM::Code

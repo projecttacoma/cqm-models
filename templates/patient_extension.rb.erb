@@ -32,6 +32,11 @@
     end
   end
 
+  # Return the Mongo id for this patient.
+  def id
+    self._id
+  end
+
   def adverse_events
     get_data_elements('adverse_event')
   end
