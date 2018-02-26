@@ -1,5 +1,6 @@
-class QDM::LaboratoryTestRecommended < QDM::Datatype
+class QDM::LaboratoryTestRecommended < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :method, type: QDM::Code
   field :reason, type: QDM::Code

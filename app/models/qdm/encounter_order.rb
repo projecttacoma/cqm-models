@@ -1,5 +1,6 @@
-class QDM::EncounterOrder < QDM::Datatype
+class QDM::EncounterOrder < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code
   field :facility_location, type: QDM::Code

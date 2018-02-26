@@ -1,5 +1,6 @@
-class QDM::SubstanceRecommended < QDM::Datatype
+class QDM::SubstanceRecommended < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code
   field :dosage, type: QDM::Quantity

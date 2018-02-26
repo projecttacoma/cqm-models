@@ -7,9 +7,9 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var Datatype = require('./basetypes/Datatype');
+var DataElement = require('./basetypes/DataElement');
 
-var SymptomSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
+var SymptomSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   prevalence_period: Interval,
   severity: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.116" },

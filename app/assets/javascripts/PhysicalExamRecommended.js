@@ -7,9 +7,9 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var Datatype = require('./basetypes/Datatype');
+var DataElement = require('./basetypes/DataElement');
 
-var PhysicalExamRecommendedSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
+var PhysicalExamRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   author_datetime: DateTime,
   reason: Code,
   method: Code,

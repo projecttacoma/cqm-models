@@ -1,5 +1,6 @@
-class QDM::CommunicationFromProviderToProvider < QDM::Datatype
+class QDM::CommunicationFromProviderToProvider < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :related_to, type: Array
   field :negation_rationale, type: QDM::Code

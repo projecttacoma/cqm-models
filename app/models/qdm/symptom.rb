@@ -1,5 +1,6 @@
-class QDM::Symptom < QDM::Datatype
+class QDM::Symptom < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :prevalence_period, type: QDM::Interval
   field :severity, type: QDM::Code
   field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.116'

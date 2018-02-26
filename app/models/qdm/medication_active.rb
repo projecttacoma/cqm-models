@@ -1,5 +1,6 @@
-class QDM::MedicationActive < QDM::Datatype
+class QDM::MedicationActive < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :relevant_period, type: QDM::Interval
   field :dosage, type: QDM::Quantity
   field :supply, type: QDM::Quantity

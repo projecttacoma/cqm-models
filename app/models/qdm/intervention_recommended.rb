@@ -1,5 +1,6 @@
-class QDM::InterventionRecommended < QDM::Datatype
+class QDM::InterventionRecommended < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code
   field :negation_rationale, type: QDM::Code

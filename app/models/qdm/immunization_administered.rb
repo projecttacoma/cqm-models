@@ -1,5 +1,6 @@
-class QDM::ImmunizationAdministered < QDM::Datatype
+class QDM::ImmunizationAdministered < QDM::DataElement
   include Mongoid::Document
+  embedded_in :patient
   field :author_datetime, type: DateTime
   field :reason, type: QDM::Code
   field :dosage, type: QDM::Quantity

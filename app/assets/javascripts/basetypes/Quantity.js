@@ -7,13 +7,16 @@ class Quantity {
   }
 
   toBSON() {
-    return [this.value, this.unit];
+    var quantity = {}
+    quantity['value'] = this.value;
+    quantity['unit'] = this.unit;
+    return quantity;
   }
 }
 
 class QuantitySchema extends mongoose.SchemaType {
   cast(quantity) {
-    return new Quantity(quantity[0], quantity[1]);
+    return new Quantity(quantity['value'], quantity['unit']);
   }
 }
 

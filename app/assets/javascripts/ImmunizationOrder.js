@@ -7,9 +7,9 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var Datatype = require('./basetypes/Datatype');
+var DataElement = require('./basetypes/DataElement');
 
-var ImmunizationOrderSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
+var ImmunizationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   active_datetime: DateTime,
   author_datetime: DateTime,
   dosage: Quantity,

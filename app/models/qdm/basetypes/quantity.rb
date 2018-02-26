@@ -11,7 +11,7 @@ class QDM::Quantity
 
   # Converts an object of this instance into a database friendly value.
   def mongoize
-    [ value, unit ]
+    { value: @value, unit: @unit }
   end
 
   class << self
@@ -22,7 +22,10 @@ class QDM::Quantity
     # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
     # [ value, unit ].
     def demongoize(object)
-      QDM::Quantity.new(object[0], object[1])
+      # Sanity check (don't even attempt to demongoize if we're dealing with a nil)
+      if object && object.kind_of?(Hash) && object.keys.count == 2
+        QDM::Quantity.new(object[:value], object[:unit])
+      end
     end
 
     # Takes any possible object and converts it to how it would be
