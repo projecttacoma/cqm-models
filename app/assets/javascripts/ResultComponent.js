@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var ResultComponentSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var ResultComponentSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   reference_range: Interval,
   qdm_version: { type: String, default: "5.3" }
 });

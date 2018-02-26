@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var FamilyHistorySchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var FamilyHistorySchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   author_datetime: DateTime,
   relationship: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.111" },

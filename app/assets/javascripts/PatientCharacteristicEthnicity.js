@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var PatientCharacteristicEthnicitySchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var PatientCharacteristicEthnicitySchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.56" },
   category: { type: String, default: "patient_characteristic" },
   status: { type: String, default: "ethnicity" },

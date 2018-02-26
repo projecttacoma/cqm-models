@@ -9,7 +9,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var MedicationOrderSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var MedicationOrderSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   active_datetime: DateTime,
   relevant_period: Interval,
   author_datetime: DateTime,

@@ -9,12 +9,9 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 var Datatype = require('./basetypes/Datatype');
 
-var PatientSchema = Datatype.extendSchema(Datatype.DatatypeSchema,
+var PatientSchema = Datatype.extendSchema(Datatype.DatatypeSchema, {
   birth_datetime: DateTime,
   qdm_version: { type: String, default: "5.3" },
-  ethnicity: Code,
-  race: Code,
-  sex: Code,
   given_names: [String],
   family_name: String,
   bundle_id: String,
