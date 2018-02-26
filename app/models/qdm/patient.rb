@@ -10,20 +10,20 @@ class QDM::Patient < QDM::Datatype
   # patient.
   embeds_many :data_elements
 
-  # Returns an array of history elements that exist on this patient, that
+  # Returns an array of elements that exist on this patient, that
   # match the given HQMF data criteria OID.
   def get_by_hqmf_oid(hqmf_oid)
     data_elements.where(hqmf_oid: hqmf_oid) || []
   end
 
-  # Returns an array of history elements that exist on this patient, that
+  # Returns an array of elements that exist on this patient, that
   # match the given QRDA data criteria OID.
   def get_by_qrda_oid(qrda_oid)
     data_elements.where(qrda_oid: qrda_oid) || []
   end
 
-  # Returns an array of history elements that exist on this patient. Optionally
-  # takes a category and/or, which returns all history elements of that QDM
+  # Returns an array of elements that exist on this patient. Optionally
+  # takes a category and/or, which returns all elements of that QDM
   # category. Example: patient.get_data_elements(category = 'encounters')
   # will return all Encounter QDM data types active on the patient.
   def get_data_elements(category = nil, status = nil)
