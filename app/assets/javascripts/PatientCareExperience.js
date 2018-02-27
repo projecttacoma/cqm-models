@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+
+var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 var Interval = Schema.Types.Interval;
@@ -7,7 +10,6 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var DataElement = require('./basetypes/DataElement');
 
 var PatientCareExperienceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   author_datetime: DateTime,
@@ -16,4 +18,4 @@ var PatientCareExperienceSchema = DataElement.extendSchema(DataElement.DataEleme
   qdm_version: { type: String, default: "5.3" }
 });
 
-var PatientCareExperience = mongoose.model("PatientCareExperience", PatientCareExperienceSchema);
+module.exports = mongoose.model("PatientCareExperience", PatientCareExperienceSchema);

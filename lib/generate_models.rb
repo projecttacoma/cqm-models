@@ -158,6 +158,15 @@ datatypes.each do |datatype, attributes|
   File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
 end
 
+# Create require file (if not in test mode)
+unless IS_TEST
+  index_file = File.open('app/assets/javascripts/index.js', 'w')
+  index_file.puts "module.exports.Result = require('./Result.js');"
+  datatypes.each do |datatype, attributes|
+    index_file.puts "module.exports.#{datatype} = require('./#{datatype}.js');"
+  end
+  index_file.close
+end
 
 ###############################################################################
 # Model post processing

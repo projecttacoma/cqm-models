@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+
+var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 var Interval = Schema.Types.Interval;
@@ -7,7 +10,6 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var DataElement = require('./basetypes/DataElement');
 
 var PatientCharacteristicPayerSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   relevant_period: Interval,
@@ -17,4 +19,4 @@ var PatientCharacteristicPayerSchema = DataElement.extendSchema(DataElement.Data
   qdm_version: { type: String, default: "5.3" }
 });
 
-var PatientCharacteristicPayer = mongoose.model("PatientCharacteristicPayer", PatientCharacteristicPayerSchema);
+module.exports = mongoose.model("PatientCharacteristicPayer", PatientCharacteristicPayerSchema);
