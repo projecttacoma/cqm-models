@@ -6,6 +6,7 @@
 /doc/
 /pkg/
 /spec/reports/
+node_modules/
 
 # rspec failure tracking
 .rspec_status

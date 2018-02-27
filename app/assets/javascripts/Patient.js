@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+
+var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 var Interval = Schema.Types.Interval;
@@ -7,7 +10,6 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var DataElement = require('./basetypes/DataElement');
 
 var PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   birth_datetime: DateTime,
@@ -46,7 +48,7 @@ PatientSchema.methods.get_data_elements = function get_data_elements(params, cal
   }
 }
 
-# Return the Mongo id for this patient.
+// Return the Mongo id for this patient.
 PatientSchema.methods.id = function id(params, callback) {
   return this._id;
 }
@@ -168,4 +170,4 @@ PatientSchema.methods.vital_signs = function vital_signs(params, callback) {
 }
 
 
-var Patient = mongoose.model("Patient", PatientSchema);
+module.exports = mongoose.model("Patient", PatientSchema);

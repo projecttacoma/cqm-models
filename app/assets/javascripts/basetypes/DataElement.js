@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+require('./Code.js');
+require('./Interval.js');
+require('./Quantity.js');
+
 var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 

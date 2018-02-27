@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+
+var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 var Interval = Schema.Types.Interval;
@@ -7,7 +10,6 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var DataElement = require('./basetypes/DataElement');
 
 var ComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   code: Code,
@@ -15,4 +17,4 @@ var ComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   qdm_version: { type: String, default: "5.3" }
 });
 
-var Component = mongoose.model("Component", ComponentSchema);
+module.exports = mongoose.model("Component", ComponentSchema);

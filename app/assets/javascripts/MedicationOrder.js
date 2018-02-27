@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+
+var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
 var Code = Schema.Types.Code;
 var Interval = Schema.Types.Interval;
@@ -7,7 +10,6 @@ var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
-var DataElement = require('./basetypes/DataElement');
 
 var MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   active_datetime: DateTime,
@@ -27,4 +29,4 @@ var MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSche
   qdm_version: { type: String, default: "5.3" }
 });
 
-var MedicationOrder = mongoose.model("MedicationOrder", MedicationOrderSchema);
+module.exports = mongoose.model("MedicationOrder", MedicationOrderSchema);
