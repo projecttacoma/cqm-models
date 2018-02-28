@@ -14,9 +14,9 @@ var Time = Schema.Types.Time;
 var <%= datatype -%>Schema = DataElement.extendSchema(DataElement.DataElementSchema, {
   <%- for attribute in attrs_with_extras -%>
   <%- if attrs_with_extras.last[:name] == attribute[:name] -%>
-  <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP[attribute[:type]] -%>
+  <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>
   <%- else -%>
-  <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP[attribute[:type]] -%>,
+  <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
   <%- end -%>
   <%- end %>
 });

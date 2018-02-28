@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  birth_datetime: DateTime,
+  birth_datetime: Date,
   qdm_version: { type: String, default: "5.3" },
   given_names: [String],
   family_name: String,

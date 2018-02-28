@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var CommunicationFromProviderToPatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   related_to: Array,
   negation_rationale: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.9" },

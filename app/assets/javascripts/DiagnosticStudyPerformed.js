@@ -12,11 +12,11 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var DiagnosticStudyPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   relevant_period: Interval,
   reason: Code,
   result: {},
-  result_datetime: DateTime,
+  result_datetime: Date,
   status: Code,
   method: Code,
   facility_location: Code,

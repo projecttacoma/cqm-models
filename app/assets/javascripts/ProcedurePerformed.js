@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   relevant_period: Interval,
   reason: Code,
   method: Code,
@@ -21,7 +21,7 @@ var ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElementS
   anatomical_approach_site: Code,
   anatomical_location_site: Code,
   ordinality: Code,
-  incision_datetime: DateTime,
+  incision_datetime: Date,
   negation_rationale: Code,
   components: Array,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.67" },

@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var PatientCareExperienceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.52" },
   category: { type: String, default: "care_experience" },
   qdm_version: { type: String, default: "5.3" }
