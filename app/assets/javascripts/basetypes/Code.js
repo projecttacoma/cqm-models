@@ -27,3 +27,5 @@ class CodeSchema extends mongoose.SchemaType {
 }
 
 mongoose.Schema.Types.Code = CodeSchema;
+
+module.exports = Code;

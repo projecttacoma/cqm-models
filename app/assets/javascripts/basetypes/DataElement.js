@@ -1,11 +1,7 @@
 const mongoose = require('mongoose');
 
-require('./Code.js');
-require('./Interval.js');
-require('./Quantity.js');
-
 var Schema = mongoose.Schema;
-var Code = Schema.Types.Code;
+var Code = require('./Code.js');
 
 function extendSchema(TSchema, definition, options) {
   return new Schema(
@@ -36,11 +32,6 @@ DataElementSchema.methods.getCode = function getCode(params, callback) {
 // Returns all of the codes on this data element.
 DataElementSchema.methods.codes = function getCode(params, callback) {
   return this.data_element_codes;
-}
-
-// Return the Mongo id for this data element.
-DataElementSchema.methods.id = function id(params, callback) {
-  return this._id;
 }
 
 module.exports.DataElementSchema = DataElementSchema;

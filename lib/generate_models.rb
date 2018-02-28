@@ -34,21 +34,21 @@ TYPE_LOOKUP_RB = {
 # Lookups for modelinfo 'element types' to JavaScript+Mongoose types.
 TYPE_LOOKUP_JS = {
   'System.DateTime': 'Date',
-  'System.Integer': 'Integer',
+  'System.Integer': 'Number',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
   'System.Any': 'Any',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
-  'list<QDM.Component>': 'Array',
+  'list<QDM.Component>': '[]',
   'System.String': 'String',
-  'list<QDM.Id>': 'Array',
-  'list<QDM.ResultComponent>': 'Array',
-  'list<QDM.FacilityLocation>': 'Array',
-  'list<System.Code>': 'Array',
+  'list<QDM.Id>': '[String]',
+  'list<QDM.ResultComponent>': '[]',
+  'list<QDM.FacilityLocation>': '[]',
+  'list<System.Code>': '[Code]',
   'QDM.Id': 'String',
-  'System.Decimal': 'Float',
-  'System.Time': 'Time',
+  'System.Decimal': 'Number',
+  'System.Time': 'Date',
   'System.Concept': 'Any'
 }.stringify_keys!
 
@@ -182,9 +182,11 @@ end
 # Create require file (if not in test mode)
 unless IS_TEST
   index_file = File.open('app/assets/javascripts/index.js', 'w')
-  index_file.puts "module.exports.Result = require('./Result.js');"
+  index_file.puts "module.exports.Result = require('./Result.js').Result;"
+  index_file.puts "module.exports.ResultSchema = require('./Result.js').ResultSchema;"
   datatypes.each do |datatype, attributes|
-    index_file.puts "module.exports.#{datatype} = require('./#{datatype}.js');"
+    index_file.puts "module.exports.#{datatype} = require('./#{datatype}.js').#{datatype};"
+    index_file.puts "module.exports.#{datatype}Schema = require('./#{datatype}.js').#{datatype}Schema;"
   end
   index_file.close
 end

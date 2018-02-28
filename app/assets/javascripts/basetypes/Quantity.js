@@ -21,3 +21,5 @@ class QuantitySchema extends mongoose.SchemaType {
 }
 
 mongoose.Schema.Types.Quantity = QuantitySchema;
+
+module.exports = Quantity;

@@ -21,3 +21,5 @@ class IntervalSchema extends mongoose.SchemaType {
 }
 
 mongoose.Schema.Types.Interval = IntervalSchema;
+
+module.exports = Interval;

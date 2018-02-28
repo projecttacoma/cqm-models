@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
-var Code = Schema.Types.Code;
-var Interval = Schema.Types.Interval;
-var Quantity = Schema.Types.Quantity;
+var Code = require('./basetypes/Code');
+var Interval = require('./basetypes/Interval');
+var Quantity = require('./basetypes/Quantity');
 var Integer = Schema.Types.Integer;
 var Array = Schema.Types.Array;
 var String = Schema.Types.String;
@@ -15,7 +15,7 @@ var MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSche
   active_datetime: Date,
   relevant_period: Interval,
   author_datetime: Date,
-  refills: Integer,
+  refills: Number,
   dosage: Quantity,
   supply: Quantity,
   frequency: Code,
@@ -29,4 +29,5 @@ var MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSche
   qdm_version: { type: String, default: "5.3" }
 });
 
-module.exports = mongoose.model("MedicationOrder", MedicationOrderSchema);
+module.exports.MedicationOrderSchema = MedicationOrderSchema;
+module.exports.MedicationOrder = mongoose.model("MedicationOrder", MedicationOrderSchema);

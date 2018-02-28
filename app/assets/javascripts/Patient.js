@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
-var Code = Schema.Types.Code;
-var Interval = Schema.Types.Interval;
-var Quantity = Schema.Types.Quantity;
+var Code = require('./basetypes/Code');
+var Interval = require('./basetypes/Interval');
+var Quantity = require('./basetypes/Quantity');
 var Integer = Schema.Types.Integer;
 var Array = Schema.Types.Array;
 var String = Schema.Types.String;
@@ -46,11 +46,6 @@ PatientSchema.methods.get_data_elements = function get_data_elements(params, cal
   } else {
     return this.data_elements;
   }
-}
-
-// Return the Mongo id for this patient.
-PatientSchema.methods.id = function id(params, callback) {
-  return this._id;
 }
 
 PatientSchema.methods.adverse_events = function adverse_events(params, callback) {
@@ -170,4 +165,5 @@ PatientSchema.methods.vital_signs = function vital_signs(params, callback) {
 }
 
 
-module.exports = mongoose.model("Patient", PatientSchema);
+module.exports.PatientSchema = PatientSchema;
+module.exports.Patient = mongoose.model("Patient", PatientSchema);
