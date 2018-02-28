@@ -12,9 +12,9 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  active_datetime: DateTime,
+  active_datetime: Date,
   relevant_period: Interval,
-  author_datetime: DateTime,
+  author_datetime: Date,
   refills: Integer,
   dosage: Quantity,
   supply: Quantity,

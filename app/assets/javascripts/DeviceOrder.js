@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var DeviceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   negation_rationale: Code,
   reason: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.15" },

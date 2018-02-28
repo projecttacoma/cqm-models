@@ -10,8 +10,8 @@ require 'json'
 # Helpers
 ###############################################################################
 
-# Lookups for modelinfo 'element types' to Ruby/Mongo/Custom types.
-TYPE_LOOKUP = {
+# Lookups for modelinfo 'element types' to Ruby+Mongoid types.
+TYPE_LOOKUP_RB = {
   'System.DateTime': 'DateTime',
   'System.Integer': 'Integer',
   'System.Quantity': 'Quantity',
@@ -31,6 +31,26 @@ TYPE_LOOKUP = {
   'System.Concept': 'Any'
 }.stringify_keys!
 
+# Lookups for modelinfo 'element types' to JavaScript+Mongoose types.
+TYPE_LOOKUP_JS = {
+  'System.DateTime': 'Date',
+  'System.Integer': 'Integer',
+  'System.Quantity': 'Quantity',
+  'System.Code': 'Code',
+  'System.Any': 'Any',
+  'interval<System.DateTime>': 'Interval',
+  'interval<System.Quantity>': 'Interval',
+  'list<QDM.Component>': 'Array',
+  'System.String': 'String',
+  'list<QDM.Id>': 'Array',
+  'list<QDM.ResultComponent>': 'Array',
+  'list<QDM.FacilityLocation>': 'Array',
+  'list<System.Code>': 'Array',
+  'QDM.Id': 'String',
+  'System.Decimal': 'Float',
+  'System.Time': 'Time',
+  'System.Concept': 'Any'
+}.stringify_keys!
 
 ###############################################################################
 # Start of modelinfo file parsing
@@ -104,7 +124,8 @@ puts 'Generating Ruby models...'
 # Do a quick sanity check on attribute types
 datatypes.each do |datatype, attributes|
   attributes.each do |attribute|
-    raise 'Unsupported type from modelinfo file: ' + attribute[:type] if TYPE_LOOKUP[attribute[:type]].blank?
+    raise 'Unsupported type from modelinfo file for Ruby types: ' + attribute[:type] if TYPE_LOOKUP_RB[attribute[:type]].blank?
+    raise 'Unsupported type from modelinfo file for JavaScript types: ' + attribute[:type] if TYPE_LOOKUP_JS[attribute[:type]].blank?
   end
 end
 
@@ -119,7 +140,7 @@ extra_fields_rb = [
 base_module = 'QDM::'
 base_module = 'Test::QDM::' if IS_TEST
 datatypes.each do |datatype, attributes|
-  Rails::Generators.invoke('mongoid:model', [base_module + datatype] + attributes.collect { |attribute| attribute[:name].underscore + ':' + TYPE_LOOKUP[attribute[:type]] } + extra_fields_rb)
+  Rails::Generators.invoke('mongoid:model', [base_module + datatype] + attributes.collect { |attribute| attribute[:name].underscore + ':' + TYPE_LOOKUP_RB[attribute[:type]] } + extra_fields_rb)
 end
 
 # Create require file (if not in test mode)

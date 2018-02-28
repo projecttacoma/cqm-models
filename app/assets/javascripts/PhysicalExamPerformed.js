@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var PhysicalExamPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   relevant_period: Interval,
   reason: Code,
   method: Code,

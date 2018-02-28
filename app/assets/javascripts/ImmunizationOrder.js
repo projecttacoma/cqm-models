@@ -12,8 +12,8 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var ImmunizationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  active_datetime: DateTime,
-  author_datetime: DateTime,
+  active_datetime: Date,
+  author_datetime: Date,
   dosage: Quantity,
   supply: Quantity,
   reason: Code,

@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var AllergyIntoleranceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   prevalence_period: Interval,
   type: Code,
   severity: Code,

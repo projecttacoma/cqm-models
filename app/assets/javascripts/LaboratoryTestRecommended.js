@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var LaboratoryTestRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: DateTime,
+  author_datetime: Date,
   method: Code,
   reason: Code,
   negation_rationale: Code,

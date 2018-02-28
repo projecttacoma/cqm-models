@@ -12,7 +12,7 @@ var Float = Schema.Types.Float;
 var Time = Schema.Types.Time;
 
 var PatientCharacteristicExpiredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  expired_datetime: DateTime,
+  expired_datetime: Date,
   cause: Code,
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.57" },
   category: { type: String, default: "condition" },
