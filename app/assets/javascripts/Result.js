@@ -12,15 +12,18 @@ var PlaceholderResultSchema = mongoose.Schema({
   status : Object,
 
   population_ids : Object,
+  STRAT : Number,
   IPP : Number,
   DENOM : Number,
   NUMER : Number,
-  antinumerator : Number,
+  NUMEX : Number,
   DENEX : Number,
   DENEXCEP : Number,
   MSRPOPL : Number,
   OBSERV : Number,
+  MSRPOPLEX : Number,
   supplemental_data : Object
 });
 
-module.exports = mongoose.model("Result", PlaceholderResultSchema);
+module.exports.ResultSchema = PlaceholderResultSchema;
+module.exports.Result = mongoose.model("Result", PlaceholderResultSchema);

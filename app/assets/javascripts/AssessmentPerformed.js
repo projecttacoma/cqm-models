@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
-var Code = Schema.Types.Code;
-var Interval = Schema.Types.Interval;
-var Quantity = Schema.Types.Quantity;
+var Code = require('./basetypes/Code');
+var Interval = require('./basetypes/Interval');
+var Quantity = require('./basetypes/Quantity');
 var Integer = Schema.Types.Integer;
 var Array = Schema.Types.Array;
 var String = Schema.Types.String;
@@ -17,12 +17,13 @@ var AssessmentPerformedSchema = DataElement.extendSchema(DataElement.DataElement
   reason: Code,
   method: Code,
   result: {},
-  components: Array,
-  related_to: Array,
+  components: [],
+  related_to: [String],
   hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.117" },
   category: { type: String, default: "assessment" },
   status: { type: String, default: "performed" },
   qdm_version: { type: String, default: "5.3" }
 });
 
-module.exports = mongoose.model("AssessmentPerformed", AssessmentPerformedSchema);
+module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
+module.exports.AssessmentPerformed = mongoose.model("AssessmentPerformed", AssessmentPerformedSchema);

@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 var DataElement = require('./basetypes/DataElement');
 var Schema = mongoose.Schema;
-var Code = Schema.Types.Code;
-var Interval = Schema.Types.Interval;
-var Quantity = Schema.Types.Quantity;
+var Code = require('./basetypes/Code');
+var Interval = require('./basetypes/Interval');
+var Quantity = require('./basetypes/Quantity');
 var Integer = Schema.Types.Integer;
 var Array = Schema.Types.Array;
 var String = Schema.Types.String;
@@ -16,8 +16,8 @@ var EncounterPerformedSchema = DataElement.extendSchema(DataElement.DataElementS
   admission_source: Code,
   relevant_period: Interval,
   discharge_disposition: Code,
-  facility_locations: Array,
-  diagnoses: Array,
+  facility_locations: [],
+  diagnoses: [Code],
   principal_diagnosis: Code,
   negation_rationale: Code,
   length_of_stay: Quantity,
@@ -27,4 +27,5 @@ var EncounterPerformedSchema = DataElement.extendSchema(DataElement.DataElementS
   qdm_version: { type: String, default: "5.3" }
 });
 
-module.exports = mongoose.model("EncounterPerformed", EncounterPerformedSchema);
+module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
+module.exports.EncounterPerformed = mongoose.model("EncounterPerformed", EncounterPerformedSchema);
