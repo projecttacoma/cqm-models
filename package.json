@@ -2,7 +2,7 @@
   "name": "cqm-models",
   "version": "0.0.1",
   "description": "",
-  "main": "app/assets/javascripts/index.js",
+  "main": "/dist/index.js",
   "repository": "https://github.com/projecttacoma/cqm-models.git",
   "homepage": "https://github.com/projectcypress/cqm-models#readme",
   "contributors": [
@@ -13,5 +13,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "mongoose": "^5.0.7"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.0"
   }
 }

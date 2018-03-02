@@ -8,6 +8,9 @@
 /spec/reports/
 node_modules/
 
+# yarn error tracking
+yarn-error.log
+
 # rspec failure tracking
 .rspec_status
 .DS_Store
