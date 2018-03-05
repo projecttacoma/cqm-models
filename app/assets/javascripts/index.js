@@ -1,5 +1,9 @@
 module.exports.Result = require('./Result.js').Result;
 module.exports.ResultSchema = require('./Result.js').ResultSchema;
+module.exports.Measure = require('./Measure.js').Measure;
+module.exports.MeasureSchema = require('./Measure.js').MeasureSchema;
+module.exports.MeasurePackage = require('./MeasurePackage.js').MeasurePackage;
+module.exports.MeasurePackageSchema = require('./MeasurePackage.js').MeasurePackageSchema;
 module.exports.Patient = require('./Patient.js').Patient;
 module.exports.PatientSchema = require('./Patient.js').PatientSchema;
 module.exports.Id = require('./Id.js').Id;
