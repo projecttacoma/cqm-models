@@ -1,44 +1,68 @@
 var Schema = mongoose.Schema;
-var Code = Schema.Types.Code;
-var Interval = Schema.Types.Interval;
-var Quantity = Schema.Types.Quantity;
+var Code = require('./basetypes/Code');
+var Interval = require('./basetypes/Interval');
+var Quantity = require('./basetypes/Quantity');
 var Integer = Schema.Types.Integer;
 var Array = Schema.Types.Array;
 var String = Schema.Types.String;
 var Float = Schema.Types.Float;
 var Boolean = Schema.Types.Boolean;
 var Mixed = Schema.Types.Mixed;
+var ObjectId = Schema.Types.ObjectId;
+var Date = Schema.Types.Date;
 
 var MeasureSchema = mongoose.Schema({
-	category: { type: String, default: 'Uncategorized' },
-	cms_id: String,
-	complexity: Mixed,
-	continuous_variable: Boolean,
-	cql: [String],
-	cql_statement_dependencies: Mixed,
-	data_criteria: Mixed,
-	description: String,
-	elm: [Mixed],
-	elm_annotations: Mixed,
-	episode_of_care: Boolean,
+	id: String,
+	measure_id: String,
 	hqmf_id: String,
 	hqmf_set_id: String,
 	hqmf_version_number: Integer,
-	main_cql_library: String,
-	measure_attributes: [],
-	measure_id: String,
-	measure_period: Interval,
-	needs_finalize: Boolean,
-	observations: [Mixed],
-	population_criteria: Mixed,
-	populations: [Mixed],
-	source_data_criteria: Mixed,
+	cms_id: String,
 	title: String,
+	description: String,
 	type: String,
-	value_set_oids: [Mixed],
-	value_set_oid_version_objects: [Mixed],
+	category: { type: String, default: 'Uncategorized' },
+
+	episode_of_care: Boolean,
+	continuous_variable: Boolean,
+	episode_ids: [], // not sure if this is necessary
+
+	needs_finalize: Boolean, // Bonnie-specific?
+
+	published: Boolean,
+	publish_date: Date,
 	version: Integer,
 
+	elm_annotations: Mixed,
+
+	cql: [String],
+	elm: [Mixed],
+	main_cql_library: String,
+	cql_statement_dependencies: Mixed,
+
+	population_criteria: Mixed,
+	data_criteria: Mixed,
+	source_data_criteria: Mixed,
+	measure_period: Interval,
+	measure_attributes: [],
+	populations: [Mixed],
+	populations_cql_map, Mixed,
+	observations: [Mixed],
+
+	value_set_oids: [Mixed],
+	value_set_oid_version_objects: [Mixed],
+
+	complexity: Mixed, // Bonnie-specific?
+
+	user: { type: ObjectId, ref: 'User', index: true },
+	bundle: { type: ObjectId, ref: 'Bundle' },
+	package: { type: ObjectId, ref: 'CqlMeasurePackage' }
+
+},
+// Options
+{
+	timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }
 });
 
-var Measure = mongoose.model("Measure", MeasureSchema);
+module.exports.MeasureSchema = MeasureSchema;
+module.exports.Measure = mongoose.model("cql_measure", MeasureSchema);
