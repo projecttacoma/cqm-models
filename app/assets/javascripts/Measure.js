@@ -56,7 +56,7 @@ var MeasureSchema = mongoose.Schema({
 
 	user: { type: ObjectId, ref: 'User', index: true },
 	bundle: { type: ObjectId, ref: 'Bundle' },
-	package: { type: ObjectId, ref: 'CqlMeasurePackage' }
+	package: { type: ObjectId, ref: 'MeasurePackage' }
 
 },
 // Options
@@ -65,4 +65,4 @@ var MeasureSchema = mongoose.Schema({
 });
 
 module.exports.MeasureSchema = MeasureSchema;
-module.exports.Measure = mongoose.model("cql_measure", MeasureSchema);
+module.exports.Measure = mongoose.model("measure", MeasureSchema);
