@@ -11,4 +11,4 @@ var MeasureSchema = mongoose.Schema({
 });
 
 module.exports.MeasurePackageSchema = MeasureSchema;
-module.exports.MeasurePackage = mongoose.model("cql_measure_package", MeasurePackageSchema);
+module.exports.MeasurePackage = mongoose.model("measure_package", MeasurePackageSchema);
