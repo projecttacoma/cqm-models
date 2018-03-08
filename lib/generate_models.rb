@@ -60,7 +60,7 @@ puts 'Parsing modelinfo file...'
 
 Dir.chdir ENV['TRAVIS_BUILD_DIR'] if ENV['CI']
 puts Dir.pwd
-puts Dir.entries(".")
+puts Dir.entries('.')
 
 # Open specified modelinfo file
 modelinfo_file = ARGV[0]
@@ -77,28 +77,28 @@ oids = JSON.parse(File.read(oids_file))
 IS_TEST = (ARGV[2] == 'TEST')
 
 # Grab QDM version as defined in the modelinfo file
-qdm_version = modelinfo.xpath("//ns4:modelInfo").first.attributes['version'].value
+qdm_version = modelinfo.xpath('//ns4:modelInfo').first.attributes['version'].value
 
 # Datatypes (keys are the datatype name, values are the datatype attributes)
 datatypes = {}
 
 # Loop through each typeInfo node (each of these is a QDM datatype)
-modelinfo.xpath("//ns4:typeInfo").each do |type|
+modelinfo.xpath('//ns4:typeInfo').each do |type|
   # Grab the name of this QDM datatype
   datatype_name = type.attributes['name'].value.split('.').last
 
   # Grab the QDM attributes for this datatype
   attributes = []
-  type.xpath("./ns4:element").each do |attribute|
+  type.xpath('./ns4:element').each do |attribute|
     # Grab the name of this QDM datatype attribute
-    attribute_name = attribute&.attributes['name']&.value
+    attribute_name = attribute.attributes['name'].value
 
     # Grab the type of this QDM datatype attribute
-    if attribute&.attributes['type']
-      attribute_type = attribute&.attributes['type']&.value
-    else
-      attribute_type = 'System.Any'
-    end
+    attribute_type = if attribute.attributes['type']
+                       attribute.attributes['type'].value
+                     else
+                       'System.Any'
+                     end
 
     next if attribute_name.blank? || attribute_type.blank?
 
@@ -107,13 +107,9 @@ modelinfo.xpath("//ns4:typeInfo").each do |type|
   end
 
   # Store datatype and its attributes (reject irrelevant datatypes)
-  unless datatype_name.include?('Negative') ||
-         datatype_name.include?('Positive') ||
-         datatype_name.include?('QDMBaseType')
-    datatypes[datatype_name] = attributes
-  end
+  next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType')
+  datatypes[datatype_name] = attributes
 end
-
 
 ###############################################################################
 # Start of model generation
@@ -124,8 +120,8 @@ puts 'Generating Ruby models...'
 # Do a quick sanity check on attribute types
 datatypes.each do |datatype, attributes|
   attributes.each do |attribute|
-    raise 'Unsupported type from modelinfo file for Ruby types: ' + attribute[:type] if TYPE_LOOKUP_RB[attribute[:type]].blank?
-    raise 'Unsupported type from modelinfo file for JavaScript types: ' + attribute[:type] if TYPE_LOOKUP_JS[attribute[:type]].blank?
+    raise 'Unsupported type from modelinfo file for Ruby types: ' + attribute[:type] + 'from: ' + datatype if TYPE_LOOKUP_RB[attribute[:type]].blank?
+    raise 'Unsupported type from modelinfo file for JavaScript types: ' + attribute[:type] + 'from: ' + datatype if TYPE_LOOKUP_JS[attribute[:type]].blank?
   end
 end
 
@@ -146,6 +142,7 @@ end
 # Create require file (if not in test mode)
 unless IS_TEST
   require_file = File.new('app/models/models.rb', 'w')
+  require_file.puts '# Base QDM module (generated from lib/generate_models.rb) for QDM ' + qdm_version
   require_file.puts 'module QDM'
   require_file.puts 'end'
   require_file.puts "require 'mongoid'"
@@ -153,7 +150,7 @@ unless IS_TEST
   require_file.puts "require_relative 'qdm/basetypes/interval'"
   require_file.puts "require_relative 'qdm/basetypes/quantity'"
   require_file.puts "require_relative 'qdm/basetypes/data_element'"
-  datatypes.each do |datatype, attributes|
+  datatypes.each_key do |datatype|
     require_file.puts "require_relative 'qdm/#{datatype.underscore}'"
   end
   require_file.close
@@ -184,7 +181,7 @@ unless IS_TEST
   index_file = File.open('app/assets/javascripts/index.js', 'w')
   index_file.puts "module.exports.Result = require('./Result.js').Result;"
   index_file.puts "module.exports.ResultSchema = require('./Result.js').ResultSchema;"
-  datatypes.each do |datatype, attributes|
+  datatypes.each do |datatype|
     index_file.puts "module.exports.#{datatype} = require('./#{datatype}.js').#{datatype};"
     index_file.puts "module.exports.#{datatype}Schema = require('./#{datatype}.js').#{datatype}Schema;"
   end
@@ -200,7 +197,7 @@ puts 'Post processing...'
 # Ruby post processing
 ruby_models_path = 'app/models/qdm/'
 ruby_models_path = 'app/models/test/qdm/' if IS_TEST
-files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
+Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
 
   # Cut out the 'Any' type placeholder (these attributes could point to anything).
@@ -211,28 +208,28 @@ files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
 
   # Add HQMF oid (if it exists in the given HQMF oid mapping file)
   dc_name = File.basename(file_name, '.*')
-  unless oids[dc_name].blank? || oids[dc_name]['hqmf_oid'].blank?
+  if oids[dc_name].present? && oids[dc_name]['hqmf_oid'].present?
     contents.gsub!(/  field :hqmf_oid, type: String\n/, "  field :hqmf_oid, type: String, default: '#{oids[dc_name]['hqmf_oid']}'\n")
   else
     contents.gsub!(/  field :hqmf_oid, type: String\n/, '') # Don't include this field
   end
 
   # Add QRDA oid (if it exists in the given QRDA oid mapping file)
-  unless oids[dc_name].blank? || oids[dc_name]['qrda_oid'].blank?
+  if oids[dc_name].present? && oids[dc_name]['qrda_oid'].present?
     contents.gsub!(/  field :qrda_oid, type: String\n/, "  field :qrda_oid, type: String, default: '#{oids[dc_name]['qrda_oid']}'\n")
   else
     contents.gsub!(/  field :qrda_oid, type: String\n/, '') # Don't include this field
   end
 
   # Add category
-  unless oids[dc_name].blank? || oids[dc_name]['category'].blank?
+  if oids[dc_name].present? && oids[dc_name]['category'].present?
     contents.gsub!(/  field :category, type: String\n/, "  field :category, type: String, default: '#{oids[dc_name]['category']}'\n")
   else
     contents.gsub!(/  field :category, type: String\n/, '') # Don't include this field
   end
 
   # Add status
-  unless oids[dc_name].blank? || oids[dc_name]['status'].blank?
+  if oids[dc_name].present? && oids[dc_name]['status'].present?
     contents.gsub!(/  field :status, type: String\n/, "  field :status, type: String, default: '#{oids[dc_name]['status']}'\n")
   else
     contents.gsub!(/  field :status, type: String\n/, '') # Don't include this field
@@ -255,28 +252,28 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
 
   # Add HQMF oid (if it exists in the given HQMF oid mapping file)
   dc_name = File.basename(file_name.underscore, '.*')
-  unless oids[dc_name].blank? || oids[dc_name]['hqmf_oid'].blank?
+  if oids[dc_name].present? && oids[dc_name]['hqmf_oid'].present?
     contents.gsub!(/  hqmf_oid: String,\n/, "  hqmf_oid: { type: String, default: \"#{oids[dc_name]['hqmf_oid']}\" },\n")
   else
     contents.gsub!(/  hqmf_oid: String,\n/, '') # Don't include this field
   end
 
   # Add QRDA oid (if it exists in the given QRDA oid mapping file)
-  unless oids[dc_name].blank? || oids[dc_name]['qrda_oid'].blank?
+  if oids[dc_name].present? && oids[dc_name]['qrda_oid'].present?
     contents.gsub!(/  qrda_oid: String,\n/, "  qrda_oid: { type: String, default: \"#{oids[dc_name]['qrda_oid']}\" },\n")
   else
     contents.gsub!(/  qrda_oid: String,\n/, '') # Don't include this field
   end
 
   # Add category
-  unless oids[dc_name].blank? || oids[dc_name]['category'].blank?
+  if oids[dc_name].present? && oids[dc_name]['category'].present?
     contents.gsub!(/  category: String,\n/, "  category: { type: String, default: \"#{oids[dc_name]['category']}\" },\n")
   else
     contents.gsub!(/  category: String,\n/, '') # Don't include this field
   end
 
   # Add status
-  unless oids[dc_name].blank? || oids[dc_name]['status'].blank?
+  if oids[dc_name].present? && oids[dc_name]['status'].present?
     contents.gsub!(/  status: String,\n/, "  status: { type: String, default: \"#{oids[dc_name]['status']}\" },\n")
   else
     contents.gsub!(/  status: String,\n/, '') # Don't include this field
@@ -289,7 +286,7 @@ end
 template = File.read('templates/patient_extension.rb.erb')
 renderer = ERB.new(template, nil, '-')
 rb_patient = File.read(ruby_models_path + 'patient.rb')
-rb_patient.gsub!(/end/, renderer.result(binding) + "end\n")
+rb_patient.gsub!(/end/, renderer.result(binding))
 File.open(ruby_models_path + 'patient.rb', 'w') { |file| file.write(rb_patient) }
 
 # Inject JavaScript Patient model extensions
@@ -302,7 +299,7 @@ File.open(js_models_path + 'Patient.js', 'w') { |file| file.write(rb_patient) }
 # Make sure Ruby models are in the correct module
 ruby_models_path = 'app/models/qdm/'
 ruby_models_path = 'app/models/test/qdm/' if IS_TEST
-files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
+Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   contents.gsub!('Qdm', 'QDM')
   contents.gsub!('Code', 'QDM::Code')
@@ -312,7 +309,7 @@ files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
 end
 
 # Set embedded in for datatypes
-files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
+Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   next if File.basename(file_name) == 'patient.rb'
   contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
@@ -320,13 +317,15 @@ files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
 end
 
 # Make sure Ruby datatypes models have the correct inheritance
-files = Dir.glob(ruby_models_path + '*.rb').each do |file_name|
-  next if File.basename(file_name) == 'patient.rb'
+Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = ''
   File.open(file_name).each_line.with_index do |line, index|
-    contents += line
-    contents.gsub!("\n", " < QDM::DataElement\n") if index == 0
+    line.gsub!("\n", " < DataElement\n") if index.zero?
+    contents += "module QDM\n  # #{file_name}\n  #{line.gsub('QDM::', '')}" if index.zero?
+    contents += '  ' unless index.zero? || line.blank?
+    contents += line unless index.zero?
   end
+  contents += 'end'
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 

@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 RSpec.describe QDM do
-
   # Given a modelinfo path, this helper method will return a hash,
   # where each key is one of the datatypes defined in the modelinfo
   # file, and its value is an array of attribute names. This is useful
@@ -11,23 +10,34 @@ RSpec.describe QDM do
     modelinfo = File.open(modelinfo_file) { |f| Nokogiri::XML(f) }
     datatypes = {}
     # Loop through each typeInfo node (each of these is a QDM datatype)
-    modelinfo.xpath("//ns4:typeInfo").each do |type|
+    modelinfo.xpath('//ns4:typeInfo').each do |type|
       # Grab the name of this QDM datatype
       datatype_name = type.attributes['name'].value.split('.').last
       # Grab the QDM attributes for this datatype
       attributes = []
-      type.xpath("./ns4:element").each do |attribute|
+      type.xpath('./ns4:element').each do |attribute|
         # Grab the name of this QDM datatype attribute
-        attributes << attribute&.attributes['name']&.value
+        attributes << attribute.attributes['name'].value
       end
       # Store datatype and its attributes (reject irrelevant datatypes)
-      unless datatype_name.include?('Negative') ||
-            datatype_name.include?('Positive') ||
-            datatype_name.include?('QDMBaseType')
-        datatypes[datatype_name] = attributes
-      end
+      next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType')
+      datatypes[datatype_name] = attributes
     end
-    return datatypes
+    datatypes
+  end
+
+  # Given the contents of a Ruby model file, make sure it has the given attributes
+  def ruby_model_has_attributes(ruby_contents, attributes)
+    attributes.each do |attribute|
+      expect(ruby_contents.include?(attribute.underscore)).to be true
+    end
+  end
+
+  # Given the contents of a JS model file, make sure it has the given attributes
+  def js_model_has_attributes(js_contents, attributes)
+    attributes.each do |attribute|
+      expect(js_contents.include?(attribute.underscore)).to be true
+    end
   end
 
   # Given a modelinfo file and an HQMF OID mapping file, check that the
@@ -36,16 +46,12 @@ RSpec.describe QDM do
   # abstracting this check, we can reuse this method for multiple versions
   # of QDM modelinfo files.
   def check_generator_datatypes_attributes(modelinfo_file, hqmf_oid_file)
-    expect(system "ruby lib/generate_models.rb #{modelinfo_file} #{hqmf_oid_file} TEST").to be true
+    expect(system("ruby lib/generate_models.rb #{modelinfo_file} #{hqmf_oid_file} TEST")).to be true
     datatypes = get_datatypes_attributes(modelinfo_file)
     datatypes.each do |datatype, attributes|
       expect(File.file?('app/models/test/qdm/' + datatype.underscore + '.rb')).to be true
-      ruby_contents = File.read('app/models/test/qdm/' + datatype.underscore + '.rb')
-      js_contents = File.read('tmp/' + datatype + '.js')
-      attributes.each do |attribute|
-        expect(ruby_contents.include?(attribute.underscore)).to be true
-        expect(js_contents.include?(attribute.underscore)).to be true
-      end
+      ruby_model_has_attributes(File.read('app/models/test/qdm/' + datatype.underscore + '.rb'), attributes)
+      js_model_has_attributes(File.read('tmp/' + datatype + '.js'), attributes)
     end
   end
 
@@ -84,5 +90,4 @@ RSpec.describe QDM do
   it 'generates each QDM 4.2 datatype model with all attributes' do
     check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.2.xml', 'data/oids.json')
   end
-
 end
