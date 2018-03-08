@@ -1,17 +1,16 @@
 require 'spec_helper'
 
 RSpec.describe QDM do
-
   before(:all) do
     # Clear old test models (if they are still there for some reason)
-    system 'rm tmp/*.js'
-    system 'rm -rf app/models/test'
-    system "ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.3.xml data/oids.json TEST"
+    system('rm tmp/*.js')
+    system('rm -rf app/models/test')
+    system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.3.xml data/oids.json TEST')
 
     # Create example patients
-    @patient_a = QDM::Patient.new(birth_datetime: 75.years.ago, given_names: ['Example', 'Patient'], family_name: 'A-eh', bundle_id: 'A')
-    @patient_b = QDM::Patient.new(birth_datetime: 35.years.ago, given_names: ['Example', 'Patient'], family_name: 'B-bee', bundle_id: 'B')
-    @patient_c = QDM::Patient.new(birth_datetime: 15.years.ago, given_names: ['Example', 'Patient'], family_name: 'C-cee', bundle_id: 'C')
+    @patient_a = QDM::Patient.new(birth_datetime: 75.years.ago, given_names: %w['Example Patient'], family_name: 'A-eh', bundle_id: 'A')
+    @patient_b = QDM::Patient.new(birth_datetime: 35.years.ago, given_names: %w['Example Patient'], family_name: 'B-bee', bundle_id: 'B')
+    @patient_c = QDM::Patient.new(birth_datetime: 15.years.ago, given_names: %w['Example Patient'], family_name: 'C-cee', bundle_id: 'C')
 
     # Create example data elements
     @patient_a.data_elements << QDM::ProcedurePerformed.new(patient: @patient_a, author_datetime: 1.day.ago, data_element_codes: [QDM::Code.new('bogus code', 'bogus code system'), QDM::Code.new('bogus code', 'bogus code system')])
@@ -28,7 +27,7 @@ RSpec.describe QDM do
 
     # Create more detailed (and relatistic) patient; more useful for testing calculation with
     bd = 75.years.ago
-    @patient_big = QDM::Patient.new(birth_datetime: bd, given_names: ['First', 'Middle'], family_name: 'Family', bundle_id: '1')
+    @patient_big = QDM::Patient.new(birth_datetime: bd, given_names: %w['First Middle'], family_name: 'Family', bundle_id: '1')
     @patient_big.data_elements << QDM::PatientCharacteristicBirthdate.new(birth_datetime: bd)
     @patient_big.data_elements << QDM::PatientCharacteristicExpired.new(expired_datetime: 2.years.ago)
     @patient_big.data_elements << QDM::PatientCharacteristicRace.new(data_element_codes: [QDM::Code.new('2106-3', 'Race & Ethnicity - CDC', 'White', '2.16.840.1.113883.6.238')])
@@ -41,8 +40,8 @@ RSpec.describe QDM do
 
   after(:all) do
     # Clear just generated test models
-    system 'rm tmp/*.js'
-    system 'rm -rf app/models/test'
+    system('rm tmp/*.js')
+    system('rm -rf app/models/test')
   end
 
   it 'patients have patient characteristics' do
@@ -64,8 +63,7 @@ RSpec.describe QDM do
     expect(@patient_c.procedures.count).to eq 1
   end
 
-  it 'patients return datatypes return codes using getCode' do
-    expect(@patient_a.get_data_elements('procedure').first.getCode.count).to eq 2
+  it 'patients return datatypes return codes using code_system_pairs' do
+    expect(@patient_a.get_data_elements('procedure').first.code_system_pairs.count).to eq 2
   end
-
 end

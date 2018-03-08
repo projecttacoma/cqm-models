@@ -1,3 +1,4 @@
+# Base QDM module (generated from lib/generate_models.rb) for QDM 5.3
 module QDM
 end
 require 'mongoid'

@@ -1,11 +1,14 @@
-class QDM::CommunicationFromProviderToPatient < QDM::DataElement
-  include Mongoid::Document
-  embedded_in :patient
-  field :author_datetime, type: DateTime
-  field :related_to, type: Array
-  field :negation_rationale, type: QDM::Code
-  field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.9'
-  field :category, type: String, default: 'communication'
-  field :status, type: String, default: 'from_provider_to_patient'
-  field :qdm_version, type: String, default: '5.3'
+module QDM
+  # app/models/qdm/communication_from_provider_to_patient.rb
+  class CommunicationFromProviderToPatient < DataElement
+    include Mongoid::Document
+    embedded_in :patient
+    field :author_datetime, type: DateTime
+    field :related_to, type: Array
+    field :negation_rationale, type: QDM::Code
+    field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.9'
+    field :category, type: String, default: 'communication'
+    field :status, type: String, default: 'from_provider_to_patient'
+    field :qdm_version, type: String, default: '5.3'
+  end
 end
