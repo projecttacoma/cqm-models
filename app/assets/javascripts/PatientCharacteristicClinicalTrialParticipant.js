@@ -1,25 +1,27 @@
 const mongoose = require('mongoose');
+const DataElement = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
 
-var DataElement = require('./basetypes/DataElement');
-var Schema = mongoose.Schema;
-var Code = require('./basetypes/Code');
-var Interval = require('./basetypes/Interval');
-var Quantity = require('./basetypes/Quantity');
-var Integer = Schema.Types.Integer;
-var Array = Schema.Types.Array;
-var String = Schema.Types.String;
-var Float = Schema.Types.Float;
-var Time = Schema.Types.Time;
+const [Integer, Array, String, Float, Time] = [
+  mongoose.Schema.Types.Integer,
+  mongoose.Schema.Types.Array,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Float,
+  mongoose.Schema.Types.Time,
+];
 
-var PatientCharacteristicClinicalTrialParticipantSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
+const PatientCharacteristicClinicalTrialParticipantSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   reason: Code,
   relevant_period: Interval,
-  hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.6" },
-  qrda_oid: { type: String, default: "2.16.840.1.113883.10.20.24.3.51" },
-  category: { type: String, default: "condition" },
-  status: { type: String, default: "clinical_trial_participant" },
-  qdm_version: { type: String, default: "5.3" }
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.6' },
+  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.51' },
+  category: { type: String, default: 'condition' },
+  qdm_status: { type: String, default: 'clinical_trial_participant' },
+  qdm_version: { type: String, default: '5.3' },
+
 });
 
 module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientCharacteristicClinicalTrialParticipantSchema;
-module.exports.PatientCharacteristicClinicalTrialParticipant = mongoose.model("PatientCharacteristicClinicalTrialParticipant", PatientCharacteristicClinicalTrialParticipantSchema);
+module.exports.PatientCharacteristicClinicalTrialParticipant = mongoose.model('PatientCharacteristicClinicalTrialParticipant', PatientCharacteristicClinicalTrialParticipantSchema);

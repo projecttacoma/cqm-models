@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 class Quantity {
   constructor(value, unit) {
@@ -7,19 +7,18 @@ class Quantity {
   }
 
   toBSON() {
-    var quantity = {}
-    quantity['value'] = this.value;
-    quantity['unit'] = this.unit;
+    const quantity = {};
+    quantity.value = this.value;
+    quantity.unit = this.unit;
     return quantity;
   }
 }
 
 class QuantitySchema extends mongoose.SchemaType {
   cast(quantity) {
-    return new Quantity(quantity['value'], quantity['unit']);
+    return new Quantity(quantity.value, quantity.unit);
   }
 }
 
 mongoose.Schema.Types.Quantity = QuantitySchema;
-
 module.exports = Quantity;

@@ -7,3 +7,4 @@ services:
   - mongodb
 script:
   - bundle exec rake
+  - npm run lint

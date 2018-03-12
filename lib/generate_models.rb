@@ -130,7 +130,7 @@ extra_fields_rb = [
   'hqmf_oid:String',
   'qrda_oid:String',
   'category:String',
-  'status:String',
+  'qdm_status:String',
   'qdm_version:String'
 ]
 base_module = 'QDM::'
@@ -167,7 +167,7 @@ extra_fields_js = [
   { name: 'hqmf_oid', type: 'System.String' },
   { name: 'qrda_oid', type: 'System.String' },
   { name: 'category', type: 'System.String' },
-  { name: 'status', type: 'System.String' },
+  { name: 'qdm_status', type: 'System.String' },
   { name: 'qdm_version', type: 'System.String' }
 ]
 datatypes.each do |datatype, attributes|
@@ -230,9 +230,9 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
 
   # Add status
   if oids[dc_name].present? && oids[dc_name]['status'].present?
-    contents.gsub!(/  field :status, type: String\n/, "  field :status, type: String, default: '#{oids[dc_name]['status']}'\n")
+    contents.gsub!(/  field :qdm_status, type: String\n/, "  field :qdm_status, type: String, default: '#{oids[dc_name]['status']}'\n")
   else
-    contents.gsub!(/  field :status, type: String\n/, '') # Don't include this field
+    contents.gsub!(/  field :qdm_status, type: String\n/, '') # Don't include this field
   end
 
   File.open(file_name, 'w') { |file| file.puts contents }
@@ -248,35 +248,35 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   contents.gsub!(/: Any/, ': {}')
 
   # Add QDM version
-  contents.gsub!(/qdm_version: String/, "qdm_version: { type: String, default: \"#{qdm_version}\" }")
+  contents.gsub!(/qdm_version: String/, "qdm_version: { type: String, default: '#{qdm_version}' }")
 
   # Add HQMF oid (if it exists in the given HQMF oid mapping file)
   dc_name = File.basename(file_name.underscore, '.*')
   if oids[dc_name].present? && oids[dc_name]['hqmf_oid'].present?
-    contents.gsub!(/  hqmf_oid: String,\n/, "  hqmf_oid: { type: String, default: \"#{oids[dc_name]['hqmf_oid']}\" },\n")
+    contents.gsub!(/  hqmf_oid: String,\n/, "  hqmf_oid: { type: String, default: '#{oids[dc_name]['hqmf_oid']}' },\n")
   else
     contents.gsub!(/  hqmf_oid: String,\n/, '') # Don't include this field
   end
 
   # Add QRDA oid (if it exists in the given QRDA oid mapping file)
   if oids[dc_name].present? && oids[dc_name]['qrda_oid'].present?
-    contents.gsub!(/  qrda_oid: String,\n/, "  qrda_oid: { type: String, default: \"#{oids[dc_name]['qrda_oid']}\" },\n")
+    contents.gsub!(/  qrda_oid: String,\n/, "  qrda_oid: { type: String, default: '#{oids[dc_name]['qrda_oid']}' },\n")
   else
     contents.gsub!(/  qrda_oid: String,\n/, '') # Don't include this field
   end
 
   # Add category
   if oids[dc_name].present? && oids[dc_name]['category'].present?
-    contents.gsub!(/  category: String,\n/, "  category: { type: String, default: \"#{oids[dc_name]['category']}\" },\n")
+    contents.gsub!(/  category: String,\n/, "  category: { type: String, default: '#{oids[dc_name]['category']}' },\n")
   else
     contents.gsub!(/  category: String,\n/, '') # Don't include this field
   end
 
   # Add status
   if oids[dc_name].present? && oids[dc_name]['status'].present?
-    contents.gsub!(/  status: String,\n/, "  status: { type: String, default: \"#{oids[dc_name]['status']}\" },\n")
+    contents.gsub!(/  qdm_status: String,\n/, "  qdm_status: { type: String, default: '#{oids[dc_name]['status']}' },\n")
   else
-    contents.gsub!(/  status: String,\n/, '') # Don't include this field
+    contents.gsub!(/  qdm_status: String,\n/, '') # Don't include this field
   end
 
   File.open(file_name, 'w') { |file| file.puts contents }
@@ -293,7 +293,7 @@ File.open(ruby_models_path + 'patient.rb', 'w') { |file| file.write(rb_patient) 
 template = File.read('templates/patient_extension.js.erb')
 renderer = ERB.new(template, nil, '-')
 rb_patient = File.read(js_models_path + 'Patient.js')
-rb_patient.gsub!(/\n\}\)\;/, ",\n" + renderer.result(binding))
+rb_patient.gsub!(/\n\}\)\;/, '' + renderer.result(binding))
 File.open(js_models_path + 'Patient.js', 'w') { |file| file.write(rb_patient) }
 
 # Make sure Ruby models are in the correct module
