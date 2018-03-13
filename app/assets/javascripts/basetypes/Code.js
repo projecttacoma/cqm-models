@@ -21,7 +21,7 @@ class Code {
 }
 
 class CodeSchema extends mongoose.SchemaType {
-  cast(code) {
+  static cast(code) {
     return new Code(code.code, code.code_system, code.descriptor, code.code_system_oid, code.version);
   }
 }
