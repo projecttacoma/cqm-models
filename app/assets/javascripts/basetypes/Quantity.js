@@ -15,7 +15,7 @@ class Quantity {
 }
 
 class QuantitySchema extends mongoose.SchemaType {
-  cast(quantity) {
+  static cast(quantity) {
     return new Quantity(quantity.value, quantity.unit);
   }
 }
