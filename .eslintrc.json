@@ -3,8 +3,7 @@
   "rules": {
     "max-len": ["error", {"code": 200, "ignoreComments": true}],
     "no-unused-vars": "off",
-    "camelcase": "off",
-    "class-methods-use-this": "off"
+    "camelcase": "off"
   },
   "env": {
     "jasmine": true
