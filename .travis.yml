@@ -1,9 +1,18 @@
-sudo: required
-dist: trusty
-language: ruby
-rvm:
-  - 2.4.1
-services:
-  - mongodb
-script:
-  - bundle exec rake
+matrix:
+  include:
+    - language: ruby
+      rvm:
+        - 2.4.1
+      services:
+        - mongodb
+      script:
+        - bundle exec rake
+    - language: node_js
+      node_js:
+        - "node"
+        - "lts/*"
+      cache:
+        directories:
+          - "node_modules"
+      script:
+        - npm run lint

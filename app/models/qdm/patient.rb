@@ -30,7 +30,7 @@ module QDM
     # will return all Encounter QDM data types active on the patient.
     def get_data_elements(category = nil, status = nil)
       if category && status
-        data_elements.where(category: category, status: status) || []
+        data_elements.where(category: category, qdm_status: status) || []
       elsif category
         data_elements.where(category: category) || []
       else

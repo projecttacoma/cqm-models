@@ -1,17 +1,18 @@
 const mongoose = require('mongoose');
+const DataElement = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
 
-var DataElement = require('./basetypes/DataElement');
-var Schema = mongoose.Schema;
-var Code = require('./basetypes/Code');
-var Interval = require('./basetypes/Interval');
-var Quantity = require('./basetypes/Quantity');
-var Integer = Schema.Types.Integer;
-var Array = Schema.Types.Array;
-var String = Schema.Types.String;
-var Float = Schema.Types.Float;
-var Time = Schema.Types.Time;
+const [Integer, Array, String, Float, Time] = [
+  mongoose.Schema.Types.Integer,
+  mongoose.Schema.Types.Array,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Float,
+  mongoose.Schema.Types.Time,
+];
 
-var ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
+const ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   author_datetime: Date,
   relevant_period: Interval,
   reason: Code,
@@ -24,11 +25,12 @@ var ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElementS
   incision_datetime: Date,
   negation_rationale: Code,
   components: [],
-  hqmf_oid: { type: String, default: "2.16.840.1.113883.10.20.28.3.67" },
-  category: { type: String, default: "procedure" },
-  status: { type: String, default: "performed" },
-  qdm_version: { type: String, default: "5.3" }
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
+  category: { type: String, default: 'procedure' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+
 });
 
 module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
-module.exports.ProcedurePerformed = mongoose.model("ProcedurePerformed", ProcedurePerformedSchema);
+module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);

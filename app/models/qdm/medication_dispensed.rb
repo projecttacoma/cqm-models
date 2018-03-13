@@ -13,7 +13,7 @@ module QDM
     field :negation_rationale, type: QDM::Code
     field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.49'
     field :category, type: String, default: 'medication'
-    field :status, type: String, default: 'dispensed'
+    field :qdm_status, type: String, default: 'dispensed'
     field :qdm_version, type: String, default: '5.3'
   end
 end
