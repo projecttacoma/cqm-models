@@ -15,7 +15,7 @@ class Interval {
 }
 
 class IntervalSchema extends mongoose.SchemaType {
-  cast(interval) {
+  static cast(interval) {
     return new Interval(interval.lt, interval.gt);
   }
 }
