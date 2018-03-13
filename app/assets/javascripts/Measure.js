@@ -54,14 +54,14 @@ var MeasureSchema = mongoose.Schema({
 
 	complexity: Mixed, // Bonnie-specific?
 
-	user: { type: ObjectId, ref: 'User', index: true },
-	bundle: { type: ObjectId, ref: 'Bundle' },
-	package: { type: ObjectId, ref: 'MeasurePackage' }
+	user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
+	bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, but used in Bonnie-bundler as well
+	package: { type: ObjectId, ref: 'MeasurePackage' } // Bonnie specific
 
 },
 // Options
 {
-	timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }
+	timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } // These are the Mongoid conventions for timestamps
 });
 
 module.exports.MeasureSchema = MeasureSchema;
