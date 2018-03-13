@@ -15,12 +15,12 @@ const DataElementSchema = new Schema({
 });
 
 // Returns the attribute requested on the data element.
-DataElementSchema.methods.get = function get(attribute, callback) {
+DataElementSchema.methods.get = function get(attribute) {
   return this[attribute]();
 };
 
 // Returns all of the codes on this data element.
-DataElementSchema.methods.getCode = function getCode(params, callback) {
+DataElementSchema.methods.getCode = function getCode() {
   return this.data_element_codes.map((code) => {
     const result = {};
     result.code = code.code;
@@ -30,7 +30,7 @@ DataElementSchema.methods.getCode = function getCode(params, callback) {
 };
 
 // Returns all of the codes on this data element.
-DataElementSchema.methods.codes = function getCode(params, callback) {
+DataElementSchema.methods.codes = function getCode() {
   return this.data_element_codes;
 };
 
