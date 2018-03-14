@@ -1,68 +1,70 @@
-var Schema = mongoose.Schema;
-var Code = require('./basetypes/Code');
-var Interval = require('./basetypes/Interval');
-var Quantity = require('./basetypes/Quantity');
-var Integer = Schema.Types.Integer;
-var Array = Schema.Types.Array;
-var String = Schema.Types.String;
-var Float = Schema.Types.Float;
-var Boolean = Schema.Types.Boolean;
-var Mixed = Schema.Types.Mixed;
-var ObjectId = Schema.Types.ObjectId;
-var Date = Schema.Types.Date;
+const mongoose = require('mongoose');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
 
-var MeasureSchema = mongoose.Schema({
-	id: String,
-	measure_id: String,
-	hqmf_id: String,
-	hqmf_set_id: String,
-	hqmf_version_number: Integer,
-	cms_id: String,
-	title: String,
-	description: String,
-	type: String,
-	category: { type: String, default: 'Uncategorized' },
+const [Integer, Array, String, Boolean, Mixed, ObjectId, Date] = [
+  mongoose.Schema.Types.Integer,
+  mongoose.Schema.Types.Array,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Boolean,
+  mongoose.Schema.Types.Mixed,
+  mongoose.Schema.Types.ObjectId,
+  mongoose.Schema.Types.Date,
+];
 
-	episode_of_care: Boolean,
-	continuous_variable: Boolean,
-	episode_ids: [], // not sure if this is necessary
+const MeasureSchema = mongoose.Schema(
+  {
+    id: String,
+    measure_id: String,
+    hqmf_id: String,
+    hqmf_set_id: String,
+    hqmf_version_number: Integer,
+    cms_id: String,
+    title: String,
+    description: String,
+    type: String,
+    category: { type: String, default: 'Uncategorized' },
 
-	needs_finalize: Boolean, // Bonnie-specific?
+    episode_of_care: Boolean,
+    continuous_constiable: Boolean,
+    episode_ids: [], // not sure if this is necessary
 
-	published: Boolean,
-	publish_date: Date,
-	version: Integer,
+    needs_finalize: Boolean, // Bonnie-specific?
 
-	elm_annotations: Mixed,
+    published: Boolean,
+    publish_date: Date,
+    version: Integer,
 
-	cql: [String],
-	elm: [Mixed],
-	main_cql_library: String,
-	cql_statement_dependencies: Mixed,
+    elm_annotations: Mixed,
 
-	population_criteria: Mixed,
-	data_criteria: Mixed,
-	source_data_criteria: Mixed,
-	measure_period: Interval,
-	measure_attributes: [],
-	populations: [Mixed],
-	populations_cql_map, Mixed,
-	observations: [Mixed],
+    cql: [String],
+    elm: [Mixed],
+    main_cql_library: String,
+    cql_statement_dependencies: Mixed,
 
-	value_set_oids: [Mixed],
-	value_set_oid_version_objects: [Mixed],
+    population_criteria: Mixed,
+    data_criteria: Mixed,
+    source_data_criteria: Mixed,
+    measure_period: Interval,
+    measure_attributes: [],
+    populations: [Mixed],
+    populations_cql_map: Mixed,
+    observations: [Mixed],
 
-	complexity: Mixed, // Bonnie-specific?
+    value_sets: [{ type: ObjectId, ref: 'ValueSet' }],
 
-	user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
-	bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, but used in Bonnie-bundler as well
-	package: { type: ObjectId, ref: 'MeasurePackage' } // Bonnie specific
+    complexity: Mixed, // Bonnie-specific?
 
-},
-// Options
-{
-	timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } // These are the Mongoid conventions for timestamps
-});
+    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
+    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, but used in Bonnie-bundler as well
+    package: { type: ObjectId, ref: 'MeasurePackage' }, // Bonnie specific
+  },
+  // Options
+  {
+    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }, // These are the Mongoid conventions for timestamps
+  },
+);
 
 module.exports.MeasureSchema = MeasureSchema;
-module.exports.Measure = mongoose.model("measure", MeasureSchema);
+module.exports.Measure = mongoose.model('measure', MeasureSchema);
