@@ -1,9 +1,9 @@
 {
   "name": "cqm-models",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "",
-  "main": "./app/assets/javascripts/index.js",
-  "browser": "./dist/index.js",
+  "main": "/app/assets/javascripts/index.js",
+  "browser": "/dist/index.js",
   "repository": "https://github.com/projecttacoma/cqm-models.git",
   "homepage": "https://github.com/projectcypress/cqm-models#readme",
   "contributors": [
@@ -24,6 +24,7 @@
   },
   "scripts": {
     "test": "jasmine",
-    "lint": "eslint 'app/assets/javascripts/**/*.js'"
+    "lint": "eslint 'app/assets/javascripts/**/*.js'",
+    "dist": "browserify app/assets/javascripts/index.js > dist/index.js"
   }
 }
