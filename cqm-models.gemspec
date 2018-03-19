@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'cqm-models'
-  spec.version       = '0.1.0'
+  spec.version       = '0.2.0'
   spec.authors       = ['aholmes@mitre.org', 'mokeefe@mitre.org', 'lades@mitre.org']
 
   spec.summary       = 'cqm-models'

@@ -4,10 +4,7 @@ const Code = require('./Code.js');
 const [Schema] = [mongoose.Schema];
 
 function extendSchema(TSchema, definition, options) {
-  return new Schema(
-    Object.assign({}, TSchema.obj, definition),
-    options,
-  );
+  return new Schema(Object.assign({}, TSchema.obj, definition), options);
 }
 
 const DataElementSchema = new Schema({

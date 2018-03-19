@@ -7,6 +7,8 @@ Pull requests into cqm-models require the following. Submitter and reviewer shou
 - [ ] Code diff has been done and been reviewed
 - [ ] Tests are included and test edge cases
 - [ ] Tests have been run locally and pass
+- [ ] If there were any JavaScript changes, this PR has updated the `dist` directory using `npm run dist`
+- [ ] If applicable, the library version number in `package.json` and `cqm-models.gemspec` has been updated
 
 **Reviewer 1:**
 
