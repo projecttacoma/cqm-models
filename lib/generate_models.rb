@@ -37,7 +37,7 @@ TYPE_LOOKUP_JS = {
   'System.Integer': 'Number',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
-  'System.Any': 'Any',
+  'System.Any': '{}',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
   'list<QDM.Component>': '[]',
@@ -49,7 +49,7 @@ TYPE_LOOKUP_JS = {
   'QDM.Id': 'String',
   'System.Decimal': 'Number',
   'System.Time': 'Date',
-  'System.Concept': 'Any'
+  'System.Concept': '{}'
 }.stringify_keys!
 
 ###############################################################################
