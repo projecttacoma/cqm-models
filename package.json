@@ -1,6 +1,6 @@
 {
   "name": "cqm-models",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "main": "app/assets/javascripts/index.js",
   "browser": {
