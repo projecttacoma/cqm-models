@@ -4,12 +4,10 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const LaboratoryTestPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
