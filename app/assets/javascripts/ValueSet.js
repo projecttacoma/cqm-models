@@ -1,4 +1,7 @@
 const mongoose = require('mongoose');
+const Concept = require('./Concept.js');
+
+const { ConceptSchema } = Concept.ConceptSchema;
 
 const [Array, String, Mixed, ObjectId] = [
   mongoose.Schema.Types.Array,
@@ -14,7 +17,7 @@ const ValueSetSchema = mongoose.Schema(
     version: String,
     categories: Mixed,
 
-    concepts: [Mixed],
+    concepts: [ConceptSchema],
 
     user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
     bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific
