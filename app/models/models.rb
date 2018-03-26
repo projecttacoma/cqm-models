@@ -2,10 +2,20 @@
 module QDM
 end
 require 'mongoid'
+
+# base types
 require_relative 'qdm/basetypes/code'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/data_element'
+
+# Tacoma-specific models
+require_relative 'qdm/tacoma/measure'
+require_relative 'qdm/tacoma/measure_package'
+require_relative 'qdm/tacoma/valueset'
+require_relative 'qdm/tacoma/concept'
+
+# Generated models
 require_relative 'qdm/patient'
 require_relative 'qdm/id'
 require_relative 'qdm/ratio'
