@@ -1,0 +1,14 @@
+module.exports.Result = require('./Result.js').Result;
+module.exports.ResultSchema = require('./Result.js').ResultSchema;
+module.exports.Measure = require('./Measure.js').Measure;
+module.exports.MeasureSchema = require('./Measure.js').MeasureSchema;
+module.exports.MeasurePackage = require('./MeasurePackage.js').MeasurePackage;
+module.exports.MeasurePackageSchema = require('./MeasurePackage.js').MeasurePackageSchema;
+module.exports.ValueSet = require('./ValueSet.js').ValueSet;
+module.exports.ValueSetSchema = require('./ValueSet.js').ValueSetSchema;
+module.exports.Concept = require('./Concept.js').Concept;
+module.exports.ConceptSchema = require('./Concept.js').ConceptSchema;
+<%- datatypes.each do |datatype, _| -%>
+module.exports.<%= datatype %> = require('./<%= datatype %>.js').<%= datatype %>;
+module.exports.<%= datatype %>Schema = require('./<%= datatype %>.js').<%= datatype %>Schema;
+<%- end -%>
