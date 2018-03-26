@@ -181,7 +181,7 @@ unless IS_TEST
   index_file = File.open('app/assets/javascripts/index.js', 'w')
   index_file.puts "module.exports.Result = require('./Result.js').Result;"
   index_file.puts "module.exports.ResultSchema = require('./Result.js').ResultSchema;"
-  datatypes.each do |datatype, _|
+  datatypes.each_key do |datatype|
     index_file.puts "module.exports.#{datatype} = require('./#{datatype}.js').#{datatype};"
     index_file.puts "module.exports.#{datatype}Schema = require('./#{datatype}.js').#{datatype}Schema;"
   end

@@ -30,4 +30,5 @@ Style/FrozenStringLiteralComment:
 Lint/ScriptPermission:
   Enabled: false
 
-
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
