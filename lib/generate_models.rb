@@ -178,14 +178,11 @@ end
 
 # Create require file (if not in test mode)
 unless IS_TEST
-  index_file = File.open('app/assets/javascripts/index.js', 'w')
-  index_file.puts "module.exports.Result = require('./Result.js').Result;"
-  index_file.puts "module.exports.ResultSchema = require('./Result.js').ResultSchema;"
-  datatypes.each_key do |datatype|
-    index_file.puts "module.exports.#{datatype} = require('./#{datatype}.js').#{datatype};"
-    index_file.puts "module.exports.#{datatype}Schema = require('./#{datatype}.js').#{datatype}Schema;"
-  end
-  index_file.close
+  indtemplate = File.read('templates/index_template.js.erb')
+  renderer = ERB.new(indtemplate, nil, '-')
+  file_path = 'app/assets/javascripts/index.js'
+  file_path = 'tmp/' if IS_TEST
+  File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 end
 
 ###############################################################################
