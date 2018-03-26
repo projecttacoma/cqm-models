@@ -141,19 +141,10 @@ end
 
 # Create require file (if not in test mode)
 unless IS_TEST
-  require_file = File.new('app/models/models.rb', 'w')
-  require_file.puts '# Base QDM module (generated from lib/generate_models.rb) for QDM ' + qdm_version
-  require_file.puts 'module QDM'
-  require_file.puts 'end'
-  require_file.puts "require 'mongoid'"
-  require_file.puts "require_relative 'qdm/basetypes/code'"
-  require_file.puts "require_relative 'qdm/basetypes/interval'"
-  require_file.puts "require_relative 'qdm/basetypes/quantity'"
-  require_file.puts "require_relative 'qdm/basetypes/data_element'"
-  datatypes.each_key do |datatype|
-    require_file.puts "require_relative 'qdm/#{datatype.underscore}'"
-  end
-  require_file.close
+  model_template = File.read('templates/models_template.rb.erb')
+  renderer = ERB.new(model_template, nil, '-')
+  file_path = 'app/models/models.rb'
+  File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 end
 
 puts 'Generating JavaScript models...'
@@ -181,7 +172,6 @@ unless IS_TEST
   indtemplate = File.read('templates/index_template.js.erb')
   renderer = ERB.new(indtemplate, nil, '-')
   file_path = 'app/assets/javascripts/index.js'
-  file_path = 'tmp/' if IS_TEST
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 end
 
