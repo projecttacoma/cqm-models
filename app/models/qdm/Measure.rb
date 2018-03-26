@@ -7,6 +7,7 @@ class Measure
   MP_START_DATE = Time.gm(2012,1,1,0,0).to_i
   TYPES = ["ep", "eh"]
 
+  # ID/other measure information
   field :id, type: String
   field :measure_id, type: String
   field :hqmf_id, type: String
@@ -18,23 +19,24 @@ class Measure
   field :type, type: String
   field :category, type: String, default: 'uncategorized'
 
+  # Measure type variables
   field :episode_of_care, type: Boolean
   field :continuous_variable, type: Boolean
   field :episode_ids, type: Array
 
-  field :needs_finalize, type: Boolean, default: false
-
+  # Publishing data (used by Bonnie)
   field :published, type: Boolean
   field :publish_date, type: Date
   field :version, type: Integer
 
+  # ELM/CQL Measure-logic related data
   field :elm_annotations, type: Hash
-
   field :cql, type: Array
   field :elm, type: Array
   field :main_cql_library, type: String
   field :cql_statement_dependencies, type: Hash
 
+  # HQMF/Tacoma-specific Measure-logic related data
   field :population_criteria, type: Hash
   field :data_criteria, type: Hash
   field :source_data_criteria, type: Hash
@@ -49,6 +51,7 @@ class Measure
 
   field :complexity, type: Hash
 
+  # Relations to other model classes
   belongs_to :user
   belongs_to :bundle, class_name: "HealthDataStandards::CQM::Bundle"
   has_and_belongs_to_many :records, :inverse_of => nil
