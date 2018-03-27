@@ -5,12 +5,10 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const AdverseEventSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -28,19 +26,17 @@ const AdverseEventSchema = DataElement.extendSchema(DataElement.DataElementSchem
 module.exports.AdverseEventSchema = AdverseEventSchema;
 module.exports.AdverseEvent = mongoose.model('AdverseEvent', AdverseEventSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],2:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],2:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const AllergyIntoleranceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -58,19 +54,17 @@ const AllergyIntoleranceSchema = DataElement.extendSchema(DataElement.DataElemen
 module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
 module.exports.AllergyIntolerance = mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],3:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],3:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const AssessmentPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -91,19 +85,17 @@ const AssessmentPerformedSchema = DataElement.extendSchema(DataElement.DataEleme
 module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
 module.exports.AssessmentPerformed = mongoose.model('AssessmentPerformed', AssessmentPerformedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],4:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],4:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const AssessmentRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -121,19 +113,17 @@ const AssessmentRecommendedSchema = DataElement.extendSchema(DataElement.DataEle
 module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
 module.exports.AssessmentRecommended = mongoose.model('AssessmentRecommended', AssessmentRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],5:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],5:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const CareGoalSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -149,19 +139,17 @@ const CareGoalSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
 module.exports.CareGoalSchema = CareGoalSchema;
 module.exports.CareGoal = mongoose.model('CareGoal', CareGoalSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],6:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],6:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const CommunicationFromPatientToProviderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -178,19 +166,17 @@ const CommunicationFromPatientToProviderSchema = DataElement.extendSchema(DataEl
 module.exports.CommunicationFromPatientToProviderSchema = CommunicationFromPatientToProviderSchema;
 module.exports.CommunicationFromPatientToProvider = mongoose.model('CommunicationFromPatientToProvider', CommunicationFromPatientToProviderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],7:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],7:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const CommunicationFromProviderToPatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -207,19 +193,17 @@ const CommunicationFromProviderToPatientSchema = DataElement.extendSchema(DataEl
 module.exports.CommunicationFromProviderToPatientSchema = CommunicationFromProviderToPatientSchema;
 module.exports.CommunicationFromProviderToPatient = mongoose.model('CommunicationFromProviderToPatient', CommunicationFromProviderToPatientSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],8:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],8:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const CommunicationFromProviderToProviderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -236,19 +220,17 @@ const CommunicationFromProviderToProviderSchema = DataElement.extendSchema(DataE
 module.exports.CommunicationFromProviderToProviderSchema = CommunicationFromProviderToProviderSchema;
 module.exports.CommunicationFromProviderToProvider = mongoose.model('CommunicationFromProviderToProvider', CommunicationFromProviderToProviderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],9:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],9:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -261,19 +243,33 @@ const ComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, 
 module.exports.ComponentSchema = ComponentSchema;
 module.exports.Component = mongoose.model('Component', ComponentSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],10:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],10:[function(require,module,exports){
+const mongoose = require('mongoose');
+
+const mString = mongoose.Schema.Types.String;
+
+const ConceptSchema = mongoose.Schema({
+  code: mString,
+  code_system: mString,
+  code_system_name: mString,
+  code_system_version: mString,
+  display_name: mString,
+});
+
+module.exports.ConceptSchema = ConceptSchema;
+module.exports.Concept = mongoose.model('concept', ConceptSchema);
+
+},{"mongoose":263}],11:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const DeviceAppliedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -293,19 +289,17 @@ const DeviceAppliedSchema = DataElement.extendSchema(DataElement.DataElementSche
 module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
 module.exports.DeviceApplied = mongoose.model('DeviceApplied', DeviceAppliedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],11:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],12:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const DeviceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -322,19 +316,17 @@ const DeviceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema
 module.exports.DeviceOrderSchema = DeviceOrderSchema;
 module.exports.DeviceOrder = mongoose.model('DeviceOrder', DeviceOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],12:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],13:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const DeviceRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -351,19 +343,17 @@ const DeviceRecommendedSchema = DataElement.extendSchema(DataElement.DataElement
 module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
 module.exports.DeviceRecommended = mongoose.model('DeviceRecommended', DeviceRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],13:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],14:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const DiagnosisSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -381,19 +371,17 @@ const DiagnosisSchema = DataElement.extendSchema(DataElement.DataElementSchema, 
 module.exports.DiagnosisSchema = DiagnosisSchema;
 module.exports.Diagnosis = mongoose.model('Diagnosis', DiagnosisSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],14:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],15:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const DiagnosticStudyOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -411,19 +399,17 @@ const DiagnosticStudyOrderSchema = DataElement.extendSchema(DataElement.DataElem
 module.exports.DiagnosticStudyOrderSchema = DiagnosticStudyOrderSchema;
 module.exports.DiagnosticStudyOrder = mongoose.model('DiagnosticStudyOrder', DiagnosticStudyOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],15:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],16:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const DiagnosticStudyPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -447,19 +433,17 @@ const DiagnosticStudyPerformedSchema = DataElement.extendSchema(DataElement.Data
 module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
 module.exports.DiagnosticStudyPerformed = mongoose.model('DiagnosticStudyPerformed', DiagnosticStudyPerformedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],16:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],17:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const DiagnosticStudyRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -477,19 +461,17 @@ const DiagnosticStudyRecommendedSchema = DataElement.extendSchema(DataElement.Da
 module.exports.DiagnosticStudyRecommendedSchema = DiagnosticStudyRecommendedSchema;
 module.exports.DiagnosticStudyRecommended = mongoose.model('DiagnosticStudyRecommended', DiagnosticStudyRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],17:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],18:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const EncounterOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -507,19 +489,17 @@ const EncounterOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
 module.exports.EncounterOrderSchema = EncounterOrderSchema;
 module.exports.EncounterOrder = mongoose.model('EncounterOrder', EncounterOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],18:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],19:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const EncounterPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -542,19 +522,17 @@ const EncounterPerformedSchema = DataElement.extendSchema(DataElement.DataElemen
 module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
 module.exports.EncounterPerformed = mongoose.model('EncounterPerformed', EncounterPerformedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],19:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],20:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const EncounterRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -572,19 +550,17 @@ const EncounterRecommendedSchema = DataElement.extendSchema(DataElement.DataElem
 module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
 module.exports.EncounterRecommended = mongoose.model('EncounterRecommended', EncounterRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],20:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],21:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const FacilityLocationSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -597,19 +573,17 @@ const FacilityLocationSchema = DataElement.extendSchema(DataElement.DataElementS
 module.exports.FacilityLocationSchema = FacilityLocationSchema;
 module.exports.FacilityLocation = mongoose.model('FacilityLocation', FacilityLocationSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],21:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],22:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const FamilyHistorySchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -625,19 +599,17 @@ const FamilyHistorySchema = DataElement.extendSchema(DataElement.DataElementSche
 module.exports.FamilyHistorySchema = FamilyHistorySchema;
 module.exports.FamilyHistory = mongoose.model('FamilyHistory', FamilyHistorySchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],22:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],23:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const IdSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -650,19 +622,17 @@ const IdSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
 module.exports.IdSchema = IdSchema;
 module.exports.Id = mongoose.model('Id', IdSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],23:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],24:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ImmunizationAdministeredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -683,19 +653,17 @@ const ImmunizationAdministeredSchema = DataElement.extendSchema(DataElement.Data
 module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
 module.exports.ImmunizationAdministered = mongoose.model('ImmunizationAdministered', ImmunizationAdministeredSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],24:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],25:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ImmunizationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -716,19 +684,17 @@ const ImmunizationOrderSchema = DataElement.extendSchema(DataElement.DataElement
 module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
 module.exports.ImmunizationOrder = mongoose.model('ImmunizationOrder', ImmunizationOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],25:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],26:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const InterventionOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -745,19 +711,17 @@ const InterventionOrderSchema = DataElement.extendSchema(DataElement.DataElement
 module.exports.InterventionOrderSchema = InterventionOrderSchema;
 module.exports.InterventionOrder = mongoose.model('InterventionOrder', InterventionOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],26:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],27:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const InterventionPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -777,19 +741,17 @@ const InterventionPerformedSchema = DataElement.extendSchema(DataElement.DataEle
 module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
 module.exports.InterventionPerformed = mongoose.model('InterventionPerformed', InterventionPerformedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],27:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],28:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const InterventionRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -806,19 +768,17 @@ const InterventionRecommendedSchema = DataElement.extendSchema(DataElement.DataE
 module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
 module.exports.InterventionRecommended = mongoose.model('InterventionRecommended', InterventionRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],28:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],29:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const LaboratoryTestOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -836,19 +796,17 @@ const LaboratoryTestOrderSchema = DataElement.extendSchema(DataElement.DataEleme
 module.exports.LaboratoryTestOrderSchema = LaboratoryTestOrderSchema;
 module.exports.LaboratoryTestOrder = mongoose.model('LaboratoryTestOrder', LaboratoryTestOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],29:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],30:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const LaboratoryTestPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -872,19 +830,17 @@ const LaboratoryTestPerformedSchema = DataElement.extendSchema(DataElement.DataE
 module.exports.LaboratoryTestPerformedSchema = LaboratoryTestPerformedSchema;
 module.exports.LaboratoryTestPerformed = mongoose.model('LaboratoryTestPerformed', LaboratoryTestPerformedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],30:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],31:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const LaboratoryTestRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -902,15 +858,14 @@ const LaboratoryTestRecommendedSchema = DataElement.extendSchema(DataElement.Dat
 module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema;
 module.exports.LaboratoryTestRecommended = mongoose.model('LaboratoryTestRecommended', LaboratoryTestRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],31:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],32:[function(require,module,exports){
 const mongoose = require('mongoose');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Boolean, Mixed, ObjectId, Date] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [mNumber, mString, mBoolean, Mixed, ObjectId, mDate] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Boolean,
   mongoose.Schema.Types.Mixed,
@@ -920,34 +875,36 @@ const [Integer, Array, String, Boolean, Mixed, ObjectId, Date] = [
 
 const MeasureSchema = mongoose.Schema(
   {
-    id: String,
-    measure_id: String,
-    hqmf_id: String,
-    hqmf_set_id: String,
-    hqmf_version_number: Integer,
-    cms_id: String,
-    title: String,
-    description: String,
-    type: String,
-    category: { type: String, default: 'Uncategorized' },
+    // ID/other measure information
+    id: mString,
+    measure_id: mString,
+    hqmf_id: mString,
+    hqmf_set_id: mString,
+    hqmf_version_number: mNumber,
+    cms_id: mString,
+    title: mString,
+    description: mString,
+    type: mString,
+    category: { type: mString, default: 'Uncategorized' },
 
-    episode_of_care: Boolean,
-    continuous_constiable: Boolean,
-    episode_ids: [], // not sure if this is necessary
+    // Measure type variables
+    episode_of_care: mBoolean,
+    continuous_constiable: mBoolean,
+    episode_ids: [],
 
-    needs_finalize: Boolean, // Bonnie-specific?
+    // Publishing data (used by Bonnie)
+    published: mBoolean,
+    publish_date: mDate,
+    version: mNumber,
 
-    published: Boolean,
-    publish_date: Date,
-    version: Integer,
-
+    // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,
-
-    cql: [String],
+    cql: [mString],
     elm: [Mixed],
-    main_cql_library: String,
+    main_cql_library: mString,
     cql_statement_dependencies: Mixed,
 
+    // HQMF/Tacoma-specific Measure-logic related data
     population_criteria: Mixed,
     data_criteria: Mixed,
     source_data_criteria: Mixed,
@@ -961,6 +918,7 @@ const MeasureSchema = mongoose.Schema(
 
     complexity: Mixed, // Bonnie-specific?
 
+    // Relations to other model classes
     user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
     bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, but used in Bonnie-bundler as well
     package: { type: ObjectId, ref: 'MeasurePackage' }, // Bonnie specific
@@ -968,47 +926,61 @@ const MeasureSchema = mongoose.Schema(
   // Options
   {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }, // These are the Mongoid conventions for timestamps
-  },
+  }
 );
+
+MeasureSchema.virtual('IPP').get(() => 'IPP');
+MeasureSchema.virtual('DENOM').get(() => 'DENOM');
+MeasureSchema.virtual('NUMER').get(() => 'NUMER');
+MeasureSchema.virtual('NUMEX').get(() => 'NUMEX');
+MeasureSchema.virtual('DENEXCEP').get(() => 'DENEXCEP');
+MeasureSchema.virtual('DENEX').get(() => 'DENEX');
+MeasureSchema.virtual('MSRPOPL').get(() => 'MSRPOPL');
+MeasureSchema.virtual('OBSERV').get(() => 'OBSERV');
+MeasureSchema.virtual('MSRPOPLEX').get(() => 'MSRPOPLEX');
+
+MeasureSchema.virtual('STRAT').get(() => 'STRAT');
+
+MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => [this.STRAT, this.IPP, this.DENOM, this.DENEX, this.NUMER, this.NUMEX, this.DENEXCEP, this.MSRPOPL, this.OBSERV, this.MSRPOPLEX]);
+
+MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex']);
 
 module.exports.MeasureSchema = MeasureSchema;
 module.exports.Measure = mongoose.model('measure', MeasureSchema);
 
-},{"./basetypes/Code":64,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],32:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],33:[function(require,module,exports){
 const mongoose = require('mongoose');
 
-const [MongoBuffer, ObjectId] = [
+const [mBuffer, ObjectId] = [
   mongoose.Schema.Types.Buffer,
   mongoose.Schema.Types.ObjectId,
 ];
 
 const MeasurePackageSchema = mongoose.Schema(
   {
-    file: MongoBuffer,
+    file: mBuffer,
     measure: { type: ObjectId, ref: 'Measure' },
   },
   // Options
   {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-  },
+  }
 );
 
 module.exports.MeasurePackageSchema = MeasurePackageSchema;
 module.exports.MeasurePackage = mongoose.model('measure_package', MeasurePackageSchema);
 
-},{"mongoose":261}],33:[function(require,module,exports){
+},{"mongoose":263}],34:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const MedicationActiveSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1027,19 +999,17 @@ const MedicationActiveSchema = DataElement.extendSchema(DataElement.DataElementS
 module.exports.MedicationActiveSchema = MedicationActiveSchema;
 module.exports.MedicationActive = mongoose.model('MedicationActive', MedicationActiveSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],34:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],35:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const MedicationAdministeredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1061,19 +1031,17 @@ const MedicationAdministeredSchema = DataElement.extendSchema(DataElement.DataEl
 module.exports.MedicationAdministeredSchema = MedicationAdministeredSchema;
 module.exports.MedicationAdministered = mongoose.model('MedicationAdministered', MedicationAdministeredSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],35:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],36:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const MedicationDischargeSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1094,19 +1062,17 @@ const MedicationDischargeSchema = DataElement.extendSchema(DataElement.DataEleme
 module.exports.MedicationDischargeSchema = MedicationDischargeSchema;
 module.exports.MedicationDischarge = mongoose.model('MedicationDischarge', MedicationDischargeSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],36:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],37:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const MedicationDispensedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1128,19 +1094,17 @@ const MedicationDispensedSchema = DataElement.extendSchema(DataElement.DataEleme
 module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
 module.exports.MedicationDispensed = mongoose.model('MedicationDispensed', MedicationDispensedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],37:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],38:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1165,19 +1129,17 @@ const MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSc
 module.exports.MedicationOrderSchema = MedicationOrderSchema;
 module.exports.MedicationOrder = mongoose.model('MedicationOrder', MedicationOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],38:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],39:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ParticipationSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1189,19 +1151,17 @@ const ParticipationSchema = DataElement.extendSchema(DataElement.DataElementSche
 module.exports.ParticipationSchema = ParticipationSchema;
 module.exports.Participation = mongoose.model('Participation', ParticipationSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],39:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],40:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1359,19 +1319,17 @@ PatientSchema.methods.vital_signs = function vital_signs() {
 module.exports.PatientSchema = PatientSchema;
 module.exports.Patient = mongoose.model('Patient', PatientSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],40:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],41:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCareExperienceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1385,19 +1343,17 @@ const PatientCareExperienceSchema = DataElement.extendSchema(DataElement.DataEle
 module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
 module.exports.PatientCareExperience = mongoose.model('PatientCareExperience', PatientCareExperienceSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],41:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],42:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1411,19 +1367,17 @@ const PatientCharacteristicSchema = DataElement.extendSchema(DataElement.DataEle
 module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
 module.exports.PatientCharacteristic = mongoose.model('PatientCharacteristic', PatientCharacteristicSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],42:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],43:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicBirthdateSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1438,19 +1392,17 @@ const PatientCharacteristicBirthdateSchema = DataElement.extendSchema(DataElemen
 module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirthdateSchema;
 module.exports.PatientCharacteristicBirthdate = mongoose.model('PatientCharacteristicBirthdate', PatientCharacteristicBirthdateSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],43:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],44:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicClinicalTrialParticipantSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1467,19 +1419,17 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElement.extendSc
 module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientCharacteristicClinicalTrialParticipantSchema;
 module.exports.PatientCharacteristicClinicalTrialParticipant = mongoose.model('PatientCharacteristicClinicalTrialParticipant', PatientCharacteristicClinicalTrialParticipantSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],44:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],45:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicEthnicitySchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1493,19 +1443,17 @@ const PatientCharacteristicEthnicitySchema = DataElement.extendSchema(DataElemen
 module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthnicitySchema;
 module.exports.PatientCharacteristicEthnicity = mongoose.model('PatientCharacteristicEthnicity', PatientCharacteristicEthnicitySchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],45:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],46:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicExpiredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1520,19 +1468,17 @@ const PatientCharacteristicExpiredSchema = DataElement.extendSchema(DataElement.
 module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpiredSchema;
 module.exports.PatientCharacteristicExpired = mongoose.model('PatientCharacteristicExpired', PatientCharacteristicExpiredSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],46:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],47:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicPayerSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1547,19 +1493,17 @@ const PatientCharacteristicPayerSchema = DataElement.extendSchema(DataElement.Da
 module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSchema;
 module.exports.PatientCharacteristicPayer = mongoose.model('PatientCharacteristicPayer', PatientCharacteristicPayerSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],47:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],48:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicRaceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1573,19 +1517,17 @@ const PatientCharacteristicRaceSchema = DataElement.extendSchema(DataElement.Dat
 module.exports.PatientCharacteristicRaceSchema = PatientCharacteristicRaceSchema;
 module.exports.PatientCharacteristicRace = mongoose.model('PatientCharacteristicRace', PatientCharacteristicRaceSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],48:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],49:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PatientCharacteristicSexSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1596,19 +1538,17 @@ const PatientCharacteristicSexSchema = DataElement.extendSchema(DataElement.Data
 module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
 module.exports.PatientCharacteristicSex = mongoose.model('PatientCharacteristicSex', PatientCharacteristicSexSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],49:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],50:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PhysicalExamOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1627,19 +1567,17 @@ const PhysicalExamOrderSchema = DataElement.extendSchema(DataElement.DataElement
 module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
 module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],50:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],51:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PhysicalExamPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1661,19 +1599,17 @@ const PhysicalExamPerformedSchema = DataElement.extendSchema(DataElement.DataEle
 module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
 module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],51:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],52:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const PhysicalExamRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1692,19 +1628,17 @@ const PhysicalExamRecommendedSchema = DataElement.extendSchema(DataElement.DataE
 module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
 module.exports.PhysicalExamRecommended = mongoose.model('PhysicalExamRecommended', PhysicalExamRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],52:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],53:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ProcedureOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1725,19 +1659,17 @@ const ProcedureOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
 module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 module.exports.ProcedureOrder = mongoose.model('ProcedureOrder', ProcedureOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],53:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],54:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1763,19 +1695,17 @@ const ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElemen
 module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
 module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],54:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],55:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ProcedureRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1796,19 +1726,17 @@ const ProcedureRecommendedSchema = DataElement.extendSchema(DataElement.DataElem
 module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
 module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],55:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],56:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ProviderCareExperienceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1822,19 +1750,17 @@ const ProviderCareExperienceSchema = DataElement.extendSchema(DataElement.DataEl
 module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
 module.exports.ProviderCareExperience = mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],56:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],57:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ProviderCharacteristicSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1848,19 +1774,17 @@ const ProviderCharacteristicSchema = DataElement.extendSchema(DataElement.DataEl
 module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
 module.exports.ProviderCharacteristic = mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],57:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],58:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const RatioSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1873,7 +1797,7 @@ const RatioSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
 module.exports.RatioSchema = RatioSchema;
 module.exports.Ratio = mongoose.model('Ratio', RatioSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],58:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],59:[function(require,module,exports){
 const mongoose = require('mongoose');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -1903,19 +1827,17 @@ const PlaceholderResultSchema = mongoose.Schema({
 module.exports.ResultSchema = PlaceholderResultSchema;
 module.exports.Result = mongoose.model('Result', PlaceholderResultSchema);
 
-},{"mongoose":261}],59:[function(require,module,exports){
+},{"mongoose":263}],60:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const ResultComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1927,19 +1849,17 @@ const ResultComponentSchema = DataElement.extendSchema(DataElement.DataElementSc
 module.exports.ResultComponentSchema = ResultComponentSchema;
 module.exports.ResultComponent = mongoose.model('ResultComponent', ResultComponentSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],60:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],61:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const SubstanceAdministeredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1960,19 +1880,17 @@ const SubstanceAdministeredSchema = DataElement.extendSchema(DataElement.DataEle
 module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
 module.exports.SubstanceAdministered = mongoose.model('SubstanceAdministered', SubstanceAdministeredSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],61:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],62:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const SubstanceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -1995,19 +1913,17 @@ const SubstanceOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
 module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
 module.exports.SubstanceOrder = mongoose.model('SubstanceOrder', SubstanceOrderSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],62:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],63:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const SubstanceRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -2030,19 +1946,17 @@ const SubstanceRecommendedSchema = DataElement.extendSchema(DataElement.DataElem
 module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
 module.exports.SubstanceRecommended = mongoose.model('SubstanceRecommended', SubstanceRecommendedSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],63:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],64:[function(require,module,exports){
 const mongoose = require('mongoose');
 const DataElement = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Integer, Array, String, Float, Time] = [
-  mongoose.Schema.Types.Integer,
-  mongoose.Schema.Types.Array,
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Float,
-  mongoose.Schema.Types.Time,
+  mongoose.Schema.Types.Date,
 ];
 
 const SymptomSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
@@ -2058,7 +1972,39 @@ const SymptomSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
 module.exports.SymptomSchema = SymptomSchema;
 module.exports.Symptom = mongoose.model('Symptom', SymptomSchema);
 
-},{"./basetypes/Code":64,"./basetypes/DataElement":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":261}],64:[function(require,module,exports){
+},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],65:[function(require,module,exports){
+const mongoose = require('mongoose');
+const Concept = require('./Concept.js');
+
+const [mString, Mixed, ObjectId] = [
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Mixed,
+  mongoose.Schema.Types.ObjectId,
+];
+
+const ValueSetSchema = mongoose.Schema(
+  {
+    oid: mString,
+    display_name: mString,
+    version: mString,
+    categories: Mixed,
+
+    concepts: [Concept.ConceptSchema],
+
+    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
+    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific
+    measures: [{ type: ObjectId, ref: 'Measure' }],
+  },
+  // Options
+  {
+    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
+  }
+);
+
+module.exports.ValueSetSchema = ValueSetSchema;
+module.exports.ValueSet = mongoose.model('value_set', ValueSetSchema);
+
+},{"./Concept.js":10,"mongoose":263}],66:[function(require,module,exports){
 const mongoose = require('mongoose');
 
 class Code {
@@ -2090,7 +2036,7 @@ class CodeSchema extends mongoose.SchemaType {
 mongoose.Schema.Types.Code = CodeSchema;
 module.exports = Code;
 
-},{"mongoose":261}],65:[function(require,module,exports){
+},{"mongoose":263}],67:[function(require,module,exports){
 const mongoose = require('mongoose');
 const Code = require('./Code.js');
 
@@ -2127,7 +2073,7 @@ DataElementSchema.methods.codes = function getCode() {
 module.exports.DataElementSchema = DataElementSchema;
 module.exports.extendSchema = extendSchema;
 
-},{"./Code.js":64,"mongoose":261}],66:[function(require,module,exports){
+},{"./Code.js":66,"mongoose":263}],68:[function(require,module,exports){
 const mongoose = require('mongoose');
 
 class Interval {
@@ -2153,7 +2099,7 @@ class IntervalSchema extends mongoose.SchemaType {
 mongoose.Schema.Types.Interval = IntervalSchema;
 module.exports = Interval;
 
-},{"mongoose":261}],67:[function(require,module,exports){
+},{"mongoose":263}],69:[function(require,module,exports){
 const mongoose = require('mongoose');
 
 class Quantity {
@@ -2179,13 +2125,17 @@ class QuantitySchema extends mongoose.SchemaType {
 mongoose.Schema.Types.Quantity = QuantitySchema;
 module.exports = Quantity;
 
-},{"mongoose":261}],68:[function(require,module,exports){
+},{"mongoose":263}],70:[function(require,module,exports){
 module.exports.Result = require('./Result.js').Result;
 module.exports.ResultSchema = require('./Result.js').ResultSchema;
 module.exports.Measure = require('./Measure.js').Measure;
 module.exports.MeasureSchema = require('./Measure.js').MeasureSchema;
 module.exports.MeasurePackage = require('./MeasurePackage.js').MeasurePackage;
 module.exports.MeasurePackageSchema = require('./MeasurePackage.js').MeasurePackageSchema;
+module.exports.ValueSet = require('./ValueSet.js').ValueSet;
+module.exports.ValueSetSchema = require('./ValueSet.js').ValueSetSchema;
+module.exports.Concept = require('./Concept.js').Concept;
+module.exports.ConceptSchema = require('./Concept.js').ConceptSchema;
 module.exports.Patient = require('./Patient.js').Patient;
 module.exports.PatientSchema = require('./Patient.js').PatientSchema;
 module.exports.Id = require('./Id.js').Id;
@@ -2307,7 +2257,7 @@ module.exports.InterventionRecommendedSchema = require('./InterventionRecommende
 module.exports.PhysicalExamPerformed = require('./PhysicalExamPerformed.js').PhysicalExamPerformed;
 module.exports.PhysicalExamPerformedSchema = require('./PhysicalExamPerformed.js').PhysicalExamPerformedSchema;
 
-},{"./AdverseEvent.js":1,"./AllergyIntolerance.js":2,"./AssessmentPerformed.js":3,"./AssessmentRecommended.js":4,"./CareGoal.js":5,"./CommunicationFromPatientToProvider.js":6,"./CommunicationFromProviderToPatient.js":7,"./CommunicationFromProviderToProvider.js":8,"./Component.js":9,"./DeviceApplied.js":10,"./DeviceOrder.js":11,"./DeviceRecommended.js":12,"./Diagnosis.js":13,"./DiagnosticStudyOrder.js":14,"./DiagnosticStudyPerformed.js":15,"./DiagnosticStudyRecommended.js":16,"./EncounterOrder.js":17,"./EncounterPerformed.js":18,"./EncounterRecommended.js":19,"./FacilityLocation.js":20,"./FamilyHistory.js":21,"./Id.js":22,"./ImmunizationAdministered.js":23,"./ImmunizationOrder.js":24,"./InterventionOrder.js":25,"./InterventionPerformed.js":26,"./InterventionRecommended.js":27,"./LaboratoryTestOrder.js":28,"./LaboratoryTestPerformed.js":29,"./LaboratoryTestRecommended.js":30,"./Measure.js":31,"./MeasurePackage.js":32,"./MedicationActive.js":33,"./MedicationAdministered.js":34,"./MedicationDischarge.js":35,"./MedicationDispensed.js":36,"./MedicationOrder.js":37,"./Participation.js":38,"./Patient.js":39,"./PatientCareExperience.js":40,"./PatientCharacteristic.js":41,"./PatientCharacteristicBirthdate.js":42,"./PatientCharacteristicClinicalTrialParticipant.js":43,"./PatientCharacteristicEthnicity.js":44,"./PatientCharacteristicExpired.js":45,"./PatientCharacteristicPayer.js":46,"./PatientCharacteristicRace.js":47,"./PatientCharacteristicSex.js":48,"./PhysicalExamOrder.js":49,"./PhysicalExamPerformed.js":50,"./PhysicalExamRecommended.js":51,"./ProcedureOrder.js":52,"./ProcedurePerformed.js":53,"./ProcedureRecommended.js":54,"./ProviderCareExperience.js":55,"./ProviderCharacteristic.js":56,"./Ratio.js":57,"./Result.js":58,"./ResultComponent.js":59,"./SubstanceAdministered.js":60,"./SubstanceOrder.js":61,"./SubstanceRecommended.js":62,"./Symptom.js":63}],69:[function(require,module,exports){
+},{"./AdverseEvent.js":1,"./AllergyIntolerance.js":2,"./AssessmentPerformed.js":3,"./AssessmentRecommended.js":4,"./CareGoal.js":5,"./CommunicationFromPatientToProvider.js":6,"./CommunicationFromProviderToPatient.js":7,"./CommunicationFromProviderToProvider.js":8,"./Component.js":9,"./Concept.js":10,"./DeviceApplied.js":11,"./DeviceOrder.js":12,"./DeviceRecommended.js":13,"./Diagnosis.js":14,"./DiagnosticStudyOrder.js":15,"./DiagnosticStudyPerformed.js":16,"./DiagnosticStudyRecommended.js":17,"./EncounterOrder.js":18,"./EncounterPerformed.js":19,"./EncounterRecommended.js":20,"./FacilityLocation.js":21,"./FamilyHistory.js":22,"./Id.js":23,"./ImmunizationAdministered.js":24,"./ImmunizationOrder.js":25,"./InterventionOrder.js":26,"./InterventionPerformed.js":27,"./InterventionRecommended.js":28,"./LaboratoryTestOrder.js":29,"./LaboratoryTestPerformed.js":30,"./LaboratoryTestRecommended.js":31,"./Measure.js":32,"./MeasurePackage.js":33,"./MedicationActive.js":34,"./MedicationAdministered.js":35,"./MedicationDischarge.js":36,"./MedicationDispensed.js":37,"./MedicationOrder.js":38,"./Participation.js":39,"./Patient.js":40,"./PatientCareExperience.js":41,"./PatientCharacteristic.js":42,"./PatientCharacteristicBirthdate.js":43,"./PatientCharacteristicClinicalTrialParticipant.js":44,"./PatientCharacteristicEthnicity.js":45,"./PatientCharacteristicExpired.js":46,"./PatientCharacteristicPayer.js":47,"./PatientCharacteristicRace.js":48,"./PatientCharacteristicSex.js":49,"./PhysicalExamOrder.js":50,"./PhysicalExamPerformed.js":51,"./PhysicalExamRecommended.js":52,"./ProcedureOrder.js":53,"./ProcedurePerformed.js":54,"./ProcedureRecommended.js":55,"./ProviderCareExperience.js":56,"./ProviderCharacteristic.js":57,"./Ratio.js":58,"./Result.js":59,"./ResultComponent.js":60,"./SubstanceAdministered.js":61,"./SubstanceOrder.js":62,"./SubstanceRecommended.js":63,"./Symptom.js":64,"./ValueSet.js":65}],71:[function(require,module,exports){
 var asn1 = exports;
 
 asn1.bignum = require('bn.js');
@@ -2318,7 +2268,7 @@ asn1.constants = require('./asn1/constants');
 asn1.decoders = require('./asn1/decoders');
 asn1.encoders = require('./asn1/encoders');
 
-},{"./asn1/api":70,"./asn1/base":72,"./asn1/constants":76,"./asn1/decoders":78,"./asn1/encoders":81,"bn.js":86}],70:[function(require,module,exports){
+},{"./asn1/api":72,"./asn1/base":74,"./asn1/constants":78,"./asn1/decoders":80,"./asn1/encoders":83,"bn.js":88}],72:[function(require,module,exports){
 var asn1 = require('../asn1');
 var inherits = require('inherits');
 
@@ -2381,7 +2331,7 @@ Entity.prototype.encode = function encode(data, enc, /* internal */ reporter) {
   return this._getEncoder(enc).encode(data, reporter);
 };
 
-},{"../asn1":69,"inherits":195,"vm":416}],71:[function(require,module,exports){
+},{"../asn1":71,"inherits":197,"vm":418}],73:[function(require,module,exports){
 var inherits = require('inherits');
 var Reporter = require('../base').Reporter;
 var Buffer = require('buffer').Buffer;
@@ -2499,7 +2449,7 @@ EncoderBuffer.prototype.join = function join(out, offset) {
   return out;
 };
 
-},{"../base":72,"buffer":139,"inherits":195}],72:[function(require,module,exports){
+},{"../base":74,"buffer":141,"inherits":197}],74:[function(require,module,exports){
 var base = exports;
 
 base.Reporter = require('./reporter').Reporter;
@@ -2507,7 +2457,7 @@ base.DecoderBuffer = require('./buffer').DecoderBuffer;
 base.EncoderBuffer = require('./buffer').EncoderBuffer;
 base.Node = require('./node');
 
-},{"./buffer":71,"./node":73,"./reporter":74}],73:[function(require,module,exports){
+},{"./buffer":73,"./node":75,"./reporter":76}],75:[function(require,module,exports){
 var Reporter = require('../base').Reporter;
 var EncoderBuffer = require('../base').EncoderBuffer;
 var DecoderBuffer = require('../base').DecoderBuffer;
@@ -3143,7 +3093,7 @@ Node.prototype._isPrintstr = function isPrintstr(str) {
   return /^[A-Za-z0-9 '\(\)\+,\-\.\/:=\?]*$/.test(str);
 };
 
-},{"../base":72,"minimalistic-assert":203}],74:[function(require,module,exports){
+},{"../base":74,"minimalistic-assert":205}],76:[function(require,module,exports){
 var inherits = require('inherits');
 
 function Reporter(options) {
@@ -3266,7 +3216,7 @@ ReporterError.prototype.rethrow = function rethrow(msg) {
   return this;
 };
 
-},{"inherits":195}],75:[function(require,module,exports){
+},{"inherits":197}],77:[function(require,module,exports){
 var constants = require('../constants');
 
 exports.tagClass = {
@@ -3310,7 +3260,7 @@ exports.tag = {
 };
 exports.tagByName = constants._reverse(exports.tag);
 
-},{"../constants":76}],76:[function(require,module,exports){
+},{"../constants":78}],78:[function(require,module,exports){
 var constants = exports;
 
 // Helper
@@ -3331,7 +3281,7 @@ constants._reverse = function reverse(map) {
 
 constants.der = require('./der');
 
-},{"./der":75}],77:[function(require,module,exports){
+},{"./der":77}],79:[function(require,module,exports){
 var inherits = require('inherits');
 
 var asn1 = require('../../asn1');
@@ -3657,13 +3607,13 @@ function derDecodeLen(buf, primitive, fail) {
   return len;
 }
 
-},{"../../asn1":69,"inherits":195}],78:[function(require,module,exports){
+},{"../../asn1":71,"inherits":197}],80:[function(require,module,exports){
 var decoders = exports;
 
 decoders.der = require('./der');
 decoders.pem = require('./pem');
 
-},{"./der":77,"./pem":79}],79:[function(require,module,exports){
+},{"./der":79,"./pem":81}],81:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -3714,7 +3664,7 @@ PEMDecoder.prototype.decode = function decode(data, options) {
   return DERDecoder.prototype.decode.call(this, input, options);
 };
 
-},{"./der":77,"buffer":139,"inherits":195}],80:[function(require,module,exports){
+},{"./der":79,"buffer":141,"inherits":197}],82:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -4011,13 +3961,13 @@ function encodeTag(tag, primitive, cls, reporter) {
   return res;
 }
 
-},{"../../asn1":69,"buffer":139,"inherits":195}],81:[function(require,module,exports){
+},{"../../asn1":71,"buffer":141,"inherits":197}],83:[function(require,module,exports){
 var encoders = exports;
 
 encoders.der = require('./der');
 encoders.pem = require('./pem');
 
-},{"./der":80,"./pem":82}],82:[function(require,module,exports){
+},{"./der":82,"./pem":84}],84:[function(require,module,exports){
 var inherits = require('inherits');
 
 var DEREncoder = require('./der');
@@ -4040,7 +3990,7 @@ PEMEncoder.prototype.encode = function encode(data, options) {
   return out.join('\n');
 };
 
-},{"./der":80,"inherits":195}],83:[function(require,module,exports){
+},{"./der":82,"inherits":197}],85:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -4534,7 +4484,7 @@ var objectKeys = Object.keys || function (obj) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":415}],84:[function(require,module,exports){
+},{"util/":417}],86:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -4652,7 +4602,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],85:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 (function (process,global){
 /* @preserve
  * The MIT License (MIT)
@@ -10274,7 +10224,7 @@ module.exports = ret;
 },{"./es5":13}]},{},[4])(4)
 });                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":367}],86:[function(require,module,exports){
+},{"_process":369}],88:[function(require,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -13703,7 +13653,7 @@ module.exports = ret;
   };
 })(typeof module === 'undefined' || module, this);
 
-},{"buffer":88}],87:[function(require,module,exports){
+},{"buffer":90}],89:[function(require,module,exports){
 var r;
 
 module.exports = function rand(len) {
@@ -13770,9 +13720,9 @@ if (typeof self === 'object') {
   }
 }
 
-},{"crypto":88}],88:[function(require,module,exports){
+},{"crypto":90}],90:[function(require,module,exports){
 
-},{}],89:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 // based on the aes implimentation in triple sec
 // https://github.com/keybase/triplesec
 // which is in turn based on the one from crypto-js
@@ -14002,7 +13952,7 @@ AES.prototype.scrub = function () {
 
 module.exports.AES = AES
 
-},{"safe-buffer":397}],90:[function(require,module,exports){
+},{"safe-buffer":399}],92:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -14121,7 +14071,7 @@ StreamCipher.prototype.setAAD = function setAAD (buf) {
 
 module.exports = StreamCipher
 
-},{"./aes":89,"./ghash":94,"./incr32":95,"buffer-xor":138,"cipher-base":140,"inherits":195,"safe-buffer":397}],91:[function(require,module,exports){
+},{"./aes":91,"./ghash":96,"./incr32":97,"buffer-xor":140,"cipher-base":142,"inherits":197,"safe-buffer":399}],93:[function(require,module,exports){
 var ciphers = require('./encrypter')
 var deciphers = require('./decrypter')
 var modes = require('./modes/list.json')
@@ -14136,7 +14086,7 @@ exports.createDecipher = exports.Decipher = deciphers.createDecipher
 exports.createDecipheriv = exports.Decipheriv = deciphers.createDecipheriv
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"./decrypter":92,"./encrypter":93,"./modes/list.json":103}],92:[function(require,module,exports){
+},{"./decrypter":94,"./encrypter":95,"./modes/list.json":105}],94:[function(require,module,exports){
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
 var MODES = require('./modes')
@@ -14259,7 +14209,7 @@ function createDecipher (suite, password) {
 exports.createDecipher = createDecipher
 exports.createDecipheriv = createDecipheriv
 
-},{"./aes":89,"./authCipher":90,"./modes":102,"./streamCipher":105,"cipher-base":140,"evp_bytestokey":178,"inherits":195,"safe-buffer":397}],93:[function(require,module,exports){
+},{"./aes":91,"./authCipher":92,"./modes":104,"./streamCipher":107,"cipher-base":142,"evp_bytestokey":180,"inherits":197,"safe-buffer":399}],95:[function(require,module,exports){
 var MODES = require('./modes')
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
@@ -14375,7 +14325,7 @@ function createCipher (suite, password) {
 exports.createCipheriv = createCipheriv
 exports.createCipher = createCipher
 
-},{"./aes":89,"./authCipher":90,"./modes":102,"./streamCipher":105,"cipher-base":140,"evp_bytestokey":178,"inherits":195,"safe-buffer":397}],94:[function(require,module,exports){
+},{"./aes":91,"./authCipher":92,"./modes":104,"./streamCipher":107,"cipher-base":142,"evp_bytestokey":180,"inherits":197,"safe-buffer":399}],96:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var ZEROES = Buffer.alloc(16, 0)
 
@@ -14466,7 +14416,7 @@ GHASH.prototype.final = function (abl, bl) {
 
 module.exports = GHASH
 
-},{"safe-buffer":397}],95:[function(require,module,exports){
+},{"safe-buffer":399}],97:[function(require,module,exports){
 function incr32 (iv) {
   var len = iv.length
   var item
@@ -14483,7 +14433,7 @@ function incr32 (iv) {
 }
 module.exports = incr32
 
-},{}],96:[function(require,module,exports){
+},{}],98:[function(require,module,exports){
 var xor = require('buffer-xor')
 
 exports.encrypt = function (self, block) {
@@ -14502,7 +14452,7 @@ exports.decrypt = function (self, block) {
   return xor(out, pad)
 }
 
-},{"buffer-xor":138}],97:[function(require,module,exports){
+},{"buffer-xor":140}],99:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var xor = require('buffer-xor')
 
@@ -14537,7 +14487,7 @@ exports.encrypt = function (self, data, decrypt) {
   return out
 }
 
-},{"buffer-xor":138,"safe-buffer":397}],98:[function(require,module,exports){
+},{"buffer-xor":140,"safe-buffer":399}],100:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -14581,7 +14531,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":397}],99:[function(require,module,exports){
+},{"safe-buffer":399}],101:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -14608,7 +14558,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":397}],100:[function(require,module,exports){
+},{"safe-buffer":399}],102:[function(require,module,exports){
 var xor = require('buffer-xor')
 var Buffer = require('safe-buffer').Buffer
 var incr32 = require('../incr32')
@@ -14640,7 +14590,7 @@ exports.encrypt = function (self, chunk) {
   return xor(chunk, pad)
 }
 
-},{"../incr32":95,"buffer-xor":138,"safe-buffer":397}],101:[function(require,module,exports){
+},{"../incr32":97,"buffer-xor":140,"safe-buffer":399}],103:[function(require,module,exports){
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 }
@@ -14649,7 +14599,7 @@ exports.decrypt = function (self, block) {
   return self._cipher.decryptBlock(block)
 }
 
-},{}],102:[function(require,module,exports){
+},{}],104:[function(require,module,exports){
 var modeModules = {
   ECB: require('./ecb'),
   CBC: require('./cbc'),
@@ -14669,7 +14619,7 @@ for (var key in modes) {
 
 module.exports = modes
 
-},{"./cbc":96,"./cfb":97,"./cfb1":98,"./cfb8":99,"./ctr":100,"./ecb":101,"./list.json":103,"./ofb":104}],103:[function(require,module,exports){
+},{"./cbc":98,"./cfb":99,"./cfb1":100,"./cfb8":101,"./ctr":102,"./ecb":103,"./list.json":105,"./ofb":106}],105:[function(require,module,exports){
 module.exports={
   "aes-128-ecb": {
     "cipher": "AES",
@@ -14862,7 +14812,7 @@ module.exports={
   }
 }
 
-},{}],104:[function(require,module,exports){
+},{}],106:[function(require,module,exports){
 (function (Buffer){
 var xor = require('buffer-xor')
 
@@ -14882,7 +14832,7 @@ exports.encrypt = function (self, chunk) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"buffer-xor":138}],105:[function(require,module,exports){
+},{"buffer":141,"buffer-xor":140}],107:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -14911,7 +14861,7 @@ StreamCipher.prototype._final = function () {
 
 module.exports = StreamCipher
 
-},{"./aes":89,"cipher-base":140,"inherits":195,"safe-buffer":397}],106:[function(require,module,exports){
+},{"./aes":91,"cipher-base":142,"inherits":197,"safe-buffer":399}],108:[function(require,module,exports){
 var ebtk = require('evp_bytestokey')
 var aes = require('browserify-aes/browser')
 var DES = require('browserify-des')
@@ -14986,7 +14936,7 @@ function getCiphers () {
 }
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"browserify-aes/browser":91,"browserify-aes/modes":102,"browserify-des":107,"browserify-des/modes":108,"evp_bytestokey":178}],107:[function(require,module,exports){
+},{"browserify-aes/browser":93,"browserify-aes/modes":104,"browserify-des":109,"browserify-des/modes":110,"evp_bytestokey":180}],109:[function(require,module,exports){
 (function (Buffer){
 var CipherBase = require('cipher-base')
 var des = require('des.js')
@@ -15033,7 +14983,7 @@ DES.prototype._final = function () {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"cipher-base":140,"des.js":151,"inherits":195}],108:[function(require,module,exports){
+},{"buffer":141,"cipher-base":142,"des.js":153,"inherits":197}],110:[function(require,module,exports){
 exports['des-ecb'] = {
   key: 8,
   iv: 0
@@ -15059,7 +15009,7 @@ exports['des-ede'] = {
   iv: 0
 }
 
-},{}],109:[function(require,module,exports){
+},{}],111:[function(require,module,exports){
 (function (Buffer){
 var bn = require('bn.js');
 var randomBytes = require('randombytes');
@@ -15103,10 +15053,10 @@ function getr(priv) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"bn.js":86,"buffer":139,"randombytes":378}],110:[function(require,module,exports){
+},{"bn.js":88,"buffer":141,"randombytes":380}],112:[function(require,module,exports){
 module.exports = require('./browser/algorithms.json')
 
-},{"./browser/algorithms.json":111}],111:[function(require,module,exports){
+},{"./browser/algorithms.json":113}],113:[function(require,module,exports){
 module.exports={
   "sha224WithRSAEncryption": {
     "sign": "rsa",
@@ -15260,7 +15210,7 @@ module.exports={
   }
 }
 
-},{}],112:[function(require,module,exports){
+},{}],114:[function(require,module,exports){
 module.exports={
   "1.3.132.0.10": "secp256k1",
   "1.3.132.0.33": "p224",
@@ -15270,7 +15220,7 @@ module.exports={
   "1.3.132.0.35": "p521"
 }
 
-},{}],113:[function(require,module,exports){
+},{}],115:[function(require,module,exports){
 (function (Buffer){
 var createHash = require('create-hash')
 var stream = require('stream')
@@ -15365,7 +15315,7 @@ module.exports = {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./algorithms.json":111,"./sign":114,"./verify":115,"buffer":139,"create-hash":143,"inherits":195,"stream":408}],114:[function(require,module,exports){
+},{"./algorithms.json":113,"./sign":116,"./verify":117,"buffer":141,"create-hash":145,"inherits":197,"stream":410}],116:[function(require,module,exports){
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var createHmac = require('create-hmac')
@@ -15514,7 +15464,7 @@ module.exports.getKey = getKey
 module.exports.makeKey = makeKey
 
 }).call(this,require("buffer").Buffer)
-},{"./curves.json":112,"bn.js":86,"browserify-rsa":109,"buffer":139,"create-hmac":146,"elliptic":161,"parse-asn1":359}],115:[function(require,module,exports){
+},{"./curves.json":114,"bn.js":88,"browserify-rsa":111,"buffer":141,"create-hmac":148,"elliptic":163,"parse-asn1":361}],117:[function(require,module,exports){
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var BN = require('bn.js')
@@ -15601,7 +15551,7 @@ function checkValue (b, q) {
 module.exports = verify
 
 }).call(this,require("buffer").Buffer)
-},{"./curves.json":112,"bn.js":86,"buffer":139,"elliptic":161,"parse-asn1":359}],116:[function(require,module,exports){
+},{"./curves.json":114,"bn.js":88,"buffer":141,"elliptic":163,"parse-asn1":361}],118:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 /* eslint camelcase: "off" */
@@ -16013,7 +15963,7 @@ Zlib.prototype._reset = function () {
 
 exports.Zlib = Zlib;
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":367,"assert":83,"buffer":139,"pako/lib/zlib/constants":346,"pako/lib/zlib/deflate.js":348,"pako/lib/zlib/inflate.js":350,"pako/lib/zlib/zstream":354}],117:[function(require,module,exports){
+},{"_process":369,"assert":85,"buffer":141,"pako/lib/zlib/constants":348,"pako/lib/zlib/deflate.js":350,"pako/lib/zlib/inflate.js":352,"pako/lib/zlib/zstream":356}],119:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -16625,9 +16575,9 @@ util.inherits(DeflateRaw, Zlib);
 util.inherits(InflateRaw, Zlib);
 util.inherits(Unzip, Zlib);
 }).call(this,require('_process'))
-},{"./binding":116,"_process":367,"assert":83,"buffer":139,"stream":408,"util":415}],118:[function(require,module,exports){
-arguments[4][88][0].apply(exports,arguments)
-},{"dup":88}],119:[function(require,module,exports){
+},{"./binding":118,"_process":369,"assert":85,"buffer":141,"stream":410,"util":417}],120:[function(require,module,exports){
+arguments[4][90][0].apply(exports,arguments)
+},{"dup":90}],121:[function(require,module,exports){
 (function (global){
 /**
  * Module dependencies.
@@ -17003,7 +16953,7 @@ module.exports = Binary;
 module.exports.Binary = Binary;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"buffer":139}],120:[function(require,module,exports){
+},{"buffer":141}],122:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -17384,7 +17334,7 @@ module.exports.BSONRegExp = BSONRegExp;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./binary":119,"./code":121,"./db_ref":122,"./decimal128":123,"./double":124,"./int_32":126,"./long":127,"./map":128,"./max_key":129,"./min_key":130,"./objectid":131,"./parser/calculate_size":132,"./parser/deserializer":133,"./parser/serializer":134,"./regexp":135,"./symbol":136,"./timestamp":137,"buffer":139}],121:[function(require,module,exports){
+},{"./binary":121,"./code":123,"./db_ref":124,"./decimal128":125,"./double":126,"./int_32":128,"./long":129,"./map":130,"./max_key":131,"./min_key":132,"./objectid":133,"./parser/calculate_size":134,"./parser/deserializer":135,"./parser/serializer":136,"./regexp":137,"./symbol":138,"./timestamp":139,"buffer":141}],123:[function(require,module,exports){
 /**
  * A class representation of the BSON Code type.
  *
@@ -17410,7 +17360,7 @@ Code.prototype.toJSON = function() {
 module.exports = Code;
 module.exports.Code = Code;
 
-},{}],122:[function(require,module,exports){
+},{}],124:[function(require,module,exports){
 /**
  * A class representation of the BSON DBRef type.
  *
@@ -17444,7 +17394,7 @@ DBRef.prototype.toJSON = function() {
 module.exports = DBRef;
 module.exports.DBRef = DBRef;
 
-},{}],123:[function(require,module,exports){
+},{}],125:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -18266,7 +18216,7 @@ module.exports = Decimal128;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./long":127,"buffer":139}],124:[function(require,module,exports){
+},{"./long":129,"buffer":141}],126:[function(require,module,exports){
 /**
  * A class representation of the BSON Double type.
  *
@@ -18301,7 +18251,7 @@ Double.prototype.toJSON = function() {
 module.exports = Double;
 module.exports.Double = Double;
 
-},{}],125:[function(require,module,exports){
+},{}],127:[function(require,module,exports){
 // Copyright (c) 2008, Fair Oaks Labs, Inc.
 // All rights reserved.
 //
@@ -18427,7 +18377,7 @@ var writeIEEE754 = function(buffer, value, offset, endian, mLen, nBytes) {
 exports.readIEEE754 = readIEEE754;
 exports.writeIEEE754 = writeIEEE754;
 
-},{}],126:[function(require,module,exports){
+},{}],128:[function(require,module,exports){
 /**
  * A class representation of a BSON Int32 type.
  *
@@ -18462,7 +18412,7 @@ Int32.prototype.toJSON = function() {
 module.exports = Int32;
 module.exports.Int32 = Int32;
 
-},{}],127:[function(require,module,exports){
+},{}],129:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -19315,7 +19265,7 @@ Long.TWO_PWR_24_ = Long.fromInt(1 << 24);
 module.exports = Long;
 module.exports.Long = Long;
 
-},{}],128:[function(require,module,exports){
+},{}],130:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -19447,7 +19397,7 @@ if (typeof global.Map !== 'undefined') {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],129:[function(require,module,exports){
+},{}],131:[function(require,module,exports){
 /**
  * A class representation of the BSON MaxKey type.
  *
@@ -19463,7 +19413,7 @@ function MaxKey() {
 module.exports = MaxKey;
 module.exports.MaxKey = MaxKey;
 
-},{}],130:[function(require,module,exports){
+},{}],132:[function(require,module,exports){
 /**
  * A class representation of the BSON MinKey type.
  *
@@ -19479,7 +19429,7 @@ function MinKey() {
 module.exports = MinKey;
 module.exports.MinKey = MinKey;
 
-},{}],131:[function(require,module,exports){
+},{}],133:[function(require,module,exports){
 (function (process,Buffer){
 /**
  * Machine id.
@@ -19864,7 +19814,7 @@ module.exports.ObjectID = ObjectID;
 module.exports.ObjectId = ObjectID;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":367,"buffer":139}],132:[function(require,module,exports){
+},{"_process":369,"buffer":141}],134:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -20121,7 +20071,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = calculateObjectSize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":119,"../code":121,"../db_ref":122,"../decimal128":123,"../double":124,"../long":127,"../max_key":129,"../min_key":130,"../objectid":131,"../regexp":135,"../symbol":136,"../timestamp":137,"buffer":139}],133:[function(require,module,exports){
+},{"../binary":121,"../code":123,"../db_ref":124,"../decimal128":125,"../double":126,"../long":129,"../max_key":131,"../min_key":132,"../objectid":133,"../regexp":137,"../symbol":138,"../timestamp":139,"buffer":141}],135:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -20905,7 +20855,7 @@ var JS_INT_MIN_LONG = Long.fromNumber(-0x20000000000000); // Any integer down to
 module.exports = deserialize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":119,"../code":121,"../db_ref":122,"../decimal128":123,"../double":124,"../int_32":126,"../long":127,"../max_key":129,"../min_key":130,"../objectid":131,"../regexp":135,"../symbol":136,"../timestamp":137,"buffer":139}],134:[function(require,module,exports){
+},{"../binary":121,"../code":123,"../db_ref":124,"../decimal128":125,"../double":126,"../int_32":128,"../long":129,"../max_key":131,"../min_key":132,"../objectid":133,"../regexp":137,"../symbol":138,"../timestamp":139,"buffer":141}],136:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -22088,7 +22038,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = serializeInto;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":196,"../binary":119,"../float_parser":125,"../long":127,"../map":128,"../min_key":130}],135:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":198,"../binary":121,"../float_parser":127,"../long":129,"../map":130,"../min_key":132}],137:[function(require,module,exports){
 /**
  * A class representation of the BSON RegExp type.
  *
@@ -22123,7 +22073,7 @@ function BSONRegExp(pattern, options) {
 module.exports = BSONRegExp;
 module.exports.BSONRegExp = BSONRegExp;
 
-},{}],136:[function(require,module,exports){
+},{}],138:[function(require,module,exports){
 /**
  * A class representation of the BSON Symbol type.
  *
@@ -22172,7 +22122,7 @@ Symbol.prototype.toJSON = function() {
 module.exports = Symbol;
 module.exports.Symbol = Symbol;
 
-},{}],137:[function(require,module,exports){
+},{}],139:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -23028,7 +22978,7 @@ Timestamp.TWO_PWR_24_ = Timestamp.fromInt(1 << 24);
 module.exports = Timestamp;
 module.exports.Timestamp = Timestamp;
 
-},{}],138:[function(require,module,exports){
+},{}],140:[function(require,module,exports){
 (function (Buffer){
 module.exports = function xor (a, b) {
   var length = Math.min(a.length, b.length)
@@ -23042,7 +22992,7 @@ module.exports = function xor (a, b) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139}],139:[function(require,module,exports){
+},{"buffer":141}],141:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -24780,7 +24730,7 @@ function numberIsNaN (obj) {
   return obj !== obj // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":84,"ieee754":193}],140:[function(require,module,exports){
+},{"base64-js":86,"ieee754":195}],142:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
 var StringDecoder = require('string_decoder').StringDecoder
@@ -24881,7 +24831,7 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 
 module.exports = CipherBase
 
-},{"inherits":195,"safe-buffer":397,"stream":408,"string_decoder":409}],141:[function(require,module,exports){
+},{"inherits":197,"safe-buffer":399,"stream":410,"string_decoder":411}],143:[function(require,module,exports){
 (function (Buffer){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -24992,7 +24942,7 @@ function objectToString(o) {
 }
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":196}],142:[function(require,module,exports){
+},{"../../is-buffer/index.js":198}],144:[function(require,module,exports){
 (function (Buffer){
 var elliptic = require('elliptic');
 var BN = require('bn.js');
@@ -25118,7 +25068,7 @@ function formatReturnValue(bn, enc, len) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"bn.js":86,"buffer":139,"elliptic":161}],143:[function(require,module,exports){
+},{"bn.js":88,"buffer":141,"elliptic":163}],145:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -25174,7 +25124,7 @@ module.exports = function createHash (alg) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./md5":145,"buffer":139,"cipher-base":140,"inherits":195,"ripemd160":396,"sha.js":400}],144:[function(require,module,exports){
+},{"./md5":147,"buffer":141,"cipher-base":142,"inherits":197,"ripemd160":398,"sha.js":402}],146:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var intSize = 4
@@ -25208,7 +25158,7 @@ module.exports = function hash (buf, fn) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139}],145:[function(require,module,exports){
+},{"buffer":141}],147:[function(require,module,exports){
 'use strict'
 /*
  * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
@@ -25361,7 +25311,7 @@ module.exports = function md5 (buf) {
   return makeHash(buf, core_md5)
 }
 
-},{"./make-hash":144}],146:[function(require,module,exports){
+},{"./make-hash":146}],148:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Legacy = require('./legacy')
@@ -25425,7 +25375,7 @@ module.exports = function createHmac (alg, key) {
   return new Hmac(alg, key)
 }
 
-},{"./legacy":147,"cipher-base":140,"create-hash/md5":145,"inherits":195,"ripemd160":396,"safe-buffer":397,"sha.js":400}],147:[function(require,module,exports){
+},{"./legacy":149,"cipher-base":142,"create-hash/md5":147,"inherits":197,"ripemd160":398,"safe-buffer":399,"sha.js":402}],149:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Buffer = require('safe-buffer').Buffer
@@ -25473,7 +25423,7 @@ Hmac.prototype._final = function () {
 }
 module.exports = Hmac
 
-},{"cipher-base":140,"inherits":195,"safe-buffer":397}],148:[function(require,module,exports){
+},{"cipher-base":142,"inherits":197,"safe-buffer":399}],150:[function(require,module,exports){
 'use strict'
 
 exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = require('randombytes')
@@ -25572,7 +25522,7 @@ exports.constants = {
   'POINT_CONVERSION_HYBRID': 6
 }
 
-},{"browserify-cipher":106,"browserify-sign":113,"browserify-sign/algos":110,"create-ecdh":142,"create-hash":143,"create-hmac":146,"diffie-hellman":157,"pbkdf2":361,"public-encrypt":368,"randombytes":378,"randomfill":379}],149:[function(require,module,exports){
+},{"browserify-cipher":108,"browserify-sign":115,"browserify-sign/algos":112,"create-ecdh":144,"create-hash":145,"create-hmac":148,"diffie-hellman":159,"pbkdf2":363,"public-encrypt":370,"randombytes":380,"randomfill":381}],151:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -25761,7 +25711,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":150,"_process":367}],150:[function(require,module,exports){
+},{"./debug":152,"_process":369}],152:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -25965,7 +25915,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":342}],151:[function(require,module,exports){
+},{"ms":344}],153:[function(require,module,exports){
 'use strict';
 
 exports.utils = require('./des/utils');
@@ -25974,7 +25924,7 @@ exports.DES = require('./des/des');
 exports.CBC = require('./des/cbc');
 exports.EDE = require('./des/ede');
 
-},{"./des/cbc":152,"./des/cipher":153,"./des/des":154,"./des/ede":155,"./des/utils":156}],152:[function(require,module,exports){
+},{"./des/cbc":154,"./des/cipher":155,"./des/des":156,"./des/ede":157,"./des/utils":158}],154:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26041,7 +25991,7 @@ proto._update = function _update(inp, inOff, out, outOff) {
   }
 };
 
-},{"inherits":195,"minimalistic-assert":203}],153:[function(require,module,exports){
+},{"inherits":197,"minimalistic-assert":205}],155:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26184,7 +26134,7 @@ Cipher.prototype._finalDecrypt = function _finalDecrypt() {
   return this._unpad(out);
 };
 
-},{"minimalistic-assert":203}],154:[function(require,module,exports){
+},{"minimalistic-assert":205}],156:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26329,7 +26279,7 @@ DES.prototype._decrypt = function _decrypt(state, lStart, rStart, out, off) {
   utils.rip(l, r, out, off);
 };
 
-},{"../des":151,"inherits":195,"minimalistic-assert":203}],155:[function(require,module,exports){
+},{"../des":153,"inherits":197,"minimalistic-assert":205}],157:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26386,7 +26336,7 @@ EDE.prototype._update = function _update(inp, inOff, out, outOff) {
 EDE.prototype._pad = DES.prototype._pad;
 EDE.prototype._unpad = DES.prototype._unpad;
 
-},{"../des":151,"inherits":195,"minimalistic-assert":203}],156:[function(require,module,exports){
+},{"../des":153,"inherits":197,"minimalistic-assert":205}],158:[function(require,module,exports){
 'use strict';
 
 exports.readUInt32BE = function readUInt32BE(bytes, off) {
@@ -26644,7 +26594,7 @@ exports.padSplit = function padSplit(num, size, group) {
   return out.join(' ');
 };
 
-},{}],157:[function(require,module,exports){
+},{}],159:[function(require,module,exports){
 (function (Buffer){
 var generatePrime = require('./lib/generatePrime')
 var primes = require('./lib/primes.json')
@@ -26690,7 +26640,7 @@ exports.DiffieHellmanGroup = exports.createDiffieHellmanGroup = exports.getDiffi
 exports.createDiffieHellman = exports.DiffieHellman = createDiffieHellman
 
 }).call(this,require("buffer").Buffer)
-},{"./lib/dh":158,"./lib/generatePrime":159,"./lib/primes.json":160,"buffer":139}],158:[function(require,module,exports){
+},{"./lib/dh":160,"./lib/generatePrime":161,"./lib/primes.json":162,"buffer":141}],160:[function(require,module,exports){
 (function (Buffer){
 var BN = require('bn.js');
 var MillerRabin = require('miller-rabin');
@@ -26858,7 +26808,7 @@ function formatReturnValue(bn, enc) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./generatePrime":159,"bn.js":86,"buffer":139,"miller-rabin":202,"randombytes":378}],159:[function(require,module,exports){
+},{"./generatePrime":161,"bn.js":88,"buffer":141,"miller-rabin":204,"randombytes":380}],161:[function(require,module,exports){
 var randomBytes = require('randombytes');
 module.exports = findPrime;
 findPrime.simpleSieve = simpleSieve;
@@ -26965,7 +26915,7 @@ function findPrime(bits, gen) {
 
 }
 
-},{"bn.js":86,"miller-rabin":202,"randombytes":378}],160:[function(require,module,exports){
+},{"bn.js":88,"miller-rabin":204,"randombytes":380}],162:[function(require,module,exports){
 module.exports={
     "modp1": {
         "gen": "02",
@@ -27000,7 +26950,7 @@ module.exports={
         "prime": "ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dbe115974a3926f12fee5e438777cb6a932df8cd8bec4d073b931ba3bc832b68d9dd300741fa7bf8afc47ed2576f6936ba424663aab639c5ae4f5683423b4742bf1c978238f16cbe39d652de3fdb8befc848ad922222e04a4037c0713eb57a81a23f0c73473fc646cea306b4bcbc8862f8385ddfa9d4b7fa2c087e879683303ed5bdd3a062b3cf5b3a278a66d2a13f83f44f82ddf310ee074ab6a364597e899a0255dc164f31cc50846851df9ab48195ded7ea1b1d510bd7ee74d73faf36bc31ecfa268359046f4eb879f924009438b481c6cd7889a002ed5ee382bc9190da6fc026e479558e4475677e9aa9e3050e2765694dfc81f56e880b96e7160c980dd98edd3dfffffffffffffffff"
     }
 }
-},{}],161:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 'use strict';
 
 var elliptic = exports;
@@ -27015,7 +26965,7 @@ elliptic.curves = require('./elliptic/curves');
 elliptic.ec = require('./elliptic/ec');
 elliptic.eddsa = require('./elliptic/eddsa');
 
-},{"../package.json":176,"./elliptic/curve":164,"./elliptic/curves":167,"./elliptic/ec":168,"./elliptic/eddsa":171,"./elliptic/utils":175,"brorand":87}],162:[function(require,module,exports){
+},{"../package.json":178,"./elliptic/curve":166,"./elliptic/curves":169,"./elliptic/ec":170,"./elliptic/eddsa":173,"./elliptic/utils":177,"brorand":89}],164:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -27392,7 +27342,7 @@ BasePoint.prototype.dblp = function dblp(k) {
   return r;
 };
 
-},{"../../elliptic":161,"bn.js":86}],163:[function(require,module,exports){
+},{"../../elliptic":163,"bn.js":88}],165:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -27827,7 +27777,7 @@ Point.prototype.eqXToP = function eqXToP(x) {
 Point.prototype.toP = Point.prototype.normalize;
 Point.prototype.mixedAdd = Point.prototype.add;
 
-},{"../../elliptic":161,"../curve":164,"bn.js":86,"inherits":195}],164:[function(require,module,exports){
+},{"../../elliptic":163,"../curve":166,"bn.js":88,"inherits":197}],166:[function(require,module,exports){
 'use strict';
 
 var curve = exports;
@@ -27837,7 +27787,7 @@ curve.short = require('./short');
 curve.mont = require('./mont');
 curve.edwards = require('./edwards');
 
-},{"./base":162,"./edwards":163,"./mont":165,"./short":166}],165:[function(require,module,exports){
+},{"./base":164,"./edwards":165,"./mont":167,"./short":168}],167:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -28019,7 +27969,7 @@ Point.prototype.getX = function getX() {
   return this.x.fromRed();
 };
 
-},{"../../elliptic":161,"../curve":164,"bn.js":86,"inherits":195}],166:[function(require,module,exports){
+},{"../../elliptic":163,"../curve":166,"bn.js":88,"inherits":197}],168:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -28959,7 +28909,7 @@ JPoint.prototype.isInfinity = function isInfinity() {
   return this.z.cmpn(0) === 0;
 };
 
-},{"../../elliptic":161,"../curve":164,"bn.js":86,"inherits":195}],167:[function(require,module,exports){
+},{"../../elliptic":163,"../curve":166,"bn.js":88,"inherits":197}],169:[function(require,module,exports){
 'use strict';
 
 var curves = exports;
@@ -29166,7 +29116,7 @@ defineCurve('secp256k1', {
   ]
 });
 
-},{"../elliptic":161,"./precomputed/secp256k1":174,"hash.js":180}],168:[function(require,module,exports){
+},{"../elliptic":163,"./precomputed/secp256k1":176,"hash.js":182}],170:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29408,7 +29358,7 @@ EC.prototype.getKeyRecoveryParam = function(e, signature, Q, enc) {
   throw new Error('Unable to find valid recovery factor');
 };
 
-},{"../../elliptic":161,"./key":169,"./signature":170,"bn.js":86,"hmac-drbg":192}],169:[function(require,module,exports){
+},{"../../elliptic":163,"./key":171,"./signature":172,"bn.js":88,"hmac-drbg":194}],171:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29529,7 +29479,7 @@ KeyPair.prototype.inspect = function inspect() {
          ' pub: ' + (this.pub && this.pub.inspect()) + ' >';
 };
 
-},{"../../elliptic":161,"bn.js":86}],170:[function(require,module,exports){
+},{"../../elliptic":163,"bn.js":88}],172:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29666,7 +29616,7 @@ Signature.prototype.toDER = function toDER(enc) {
   return utils.encode(res, enc);
 };
 
-},{"../../elliptic":161,"bn.js":86}],171:[function(require,module,exports){
+},{"../../elliptic":163,"bn.js":88}],173:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -29786,7 +29736,7 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
-},{"../../elliptic":161,"./key":172,"./signature":173,"hash.js":180}],172:[function(require,module,exports){
+},{"../../elliptic":163,"./key":174,"./signature":175,"hash.js":182}],174:[function(require,module,exports){
 'use strict';
 
 var elliptic = require('../../elliptic');
@@ -29884,7 +29834,7 @@ KeyPair.prototype.getPublic = function getPublic(enc) {
 
 module.exports = KeyPair;
 
-},{"../../elliptic":161}],173:[function(require,module,exports){
+},{"../../elliptic":163}],175:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29952,7 +29902,7 @@ Signature.prototype.toHex = function toHex() {
 
 module.exports = Signature;
 
-},{"../../elliptic":161,"bn.js":86}],174:[function(require,module,exports){
+},{"../../elliptic":163,"bn.js":88}],176:[function(require,module,exports){
 module.exports = {
   doubles: {
     step: 4,
@@ -30734,7 +30684,7 @@ module.exports = {
   }
 };
 
-},{}],175:[function(require,module,exports){
+},{}],177:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -30856,7 +30806,7 @@ function intFromLE(bytes) {
 utils.intFromLE = intFromLE;
 
 
-},{"bn.js":86,"minimalistic-assert":203,"minimalistic-crypto-utils":204}],176:[function(require,module,exports){
+},{"bn.js":88,"minimalistic-assert":205,"minimalistic-crypto-utils":206}],178:[function(require,module,exports){
 module.exports={
   "name": "elliptic",
   "version": "6.4.0",
@@ -30916,7 +30866,7 @@ module.exports={
   }
 }
 
-},{}],177:[function(require,module,exports){
+},{}],179:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -31437,7 +31387,7 @@ function functionBindPolyfill(context) {
   };
 }
 
-},{}],178:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var MD5 = require('md5.js')
 
@@ -31484,7 +31434,7 @@ function EVP_BytesToKey (password, salt, keyBits, ivLen) {
 
 module.exports = EVP_BytesToKey
 
-},{"md5.js":200,"safe-buffer":397}],179:[function(require,module,exports){
+},{"md5.js":202,"safe-buffer":399}],181:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var Transform = require('stream').Transform
@@ -31571,7 +31521,7 @@ HashBase.prototype._digest = function () {
 module.exports = HashBase
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"inherits":195,"stream":408}],180:[function(require,module,exports){
+},{"buffer":141,"inherits":197,"stream":410}],182:[function(require,module,exports){
 var hash = exports;
 
 hash.utils = require('./hash/utils');
@@ -31588,7 +31538,7 @@ hash.sha384 = hash.sha.sha384;
 hash.sha512 = hash.sha.sha512;
 hash.ripemd160 = hash.ripemd.ripemd160;
 
-},{"./hash/common":181,"./hash/hmac":182,"./hash/ripemd":183,"./hash/sha":184,"./hash/utils":191}],181:[function(require,module,exports){
+},{"./hash/common":183,"./hash/hmac":184,"./hash/ripemd":185,"./hash/sha":186,"./hash/utils":193}],183:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -31682,7 +31632,7 @@ BlockHash.prototype._pad = function pad() {
   return res;
 };
 
-},{"./utils":191,"minimalistic-assert":203}],182:[function(require,module,exports){
+},{"./utils":193,"minimalistic-assert":205}],184:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -31731,7 +31681,7 @@ Hmac.prototype.digest = function digest(enc) {
   return this.outer.digest(enc);
 };
 
-},{"./utils":191,"minimalistic-assert":203}],183:[function(require,module,exports){
+},{"./utils":193,"minimalistic-assert":205}],185:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -31879,7 +31829,7 @@ var sh = [
   8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11
 ];
 
-},{"./common":181,"./utils":191}],184:[function(require,module,exports){
+},{"./common":183,"./utils":193}],186:[function(require,module,exports){
 'use strict';
 
 exports.sha1 = require('./sha/1');
@@ -31888,7 +31838,7 @@ exports.sha256 = require('./sha/256');
 exports.sha384 = require('./sha/384');
 exports.sha512 = require('./sha/512');
 
-},{"./sha/1":185,"./sha/224":186,"./sha/256":187,"./sha/384":188,"./sha/512":189}],185:[function(require,module,exports){
+},{"./sha/1":187,"./sha/224":188,"./sha/256":189,"./sha/384":190,"./sha/512":191}],187:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -31964,7 +31914,7 @@ SHA1.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":181,"../utils":191,"./common":190}],186:[function(require,module,exports){
+},{"../common":183,"../utils":193,"./common":192}],188:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -31996,7 +31946,7 @@ SHA224.prototype._digest = function digest(enc) {
 };
 
 
-},{"../utils":191,"./256":187}],187:[function(require,module,exports){
+},{"../utils":193,"./256":189}],189:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32103,7 +32053,7 @@ SHA256.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":181,"../utils":191,"./common":190,"minimalistic-assert":203}],188:[function(require,module,exports){
+},{"../common":183,"../utils":193,"./common":192,"minimalistic-assert":205}],190:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32140,7 +32090,7 @@ SHA384.prototype._digest = function digest(enc) {
     return utils.split32(this.h.slice(0, 12), 'big');
 };
 
-},{"../utils":191,"./512":189}],189:[function(require,module,exports){
+},{"../utils":193,"./512":191}],191:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32472,7 +32422,7 @@ function g1_512_lo(xh, xl) {
   return r;
 }
 
-},{"../common":181,"../utils":191,"minimalistic-assert":203}],190:[function(require,module,exports){
+},{"../common":183,"../utils":193,"minimalistic-assert":205}],192:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32523,7 +32473,7 @@ function g1_256(x) {
 }
 exports.g1_256 = g1_256;
 
-},{"../utils":191}],191:[function(require,module,exports){
+},{"../utils":193}],193:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -32778,7 +32728,7 @@ function shr64_lo(ah, al, num) {
 }
 exports.shr64_lo = shr64_lo;
 
-},{"inherits":195,"minimalistic-assert":203}],192:[function(require,module,exports){
+},{"inherits":197,"minimalistic-assert":205}],194:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -32893,10 +32843,10 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
   return utils.encode(res, enc);
 };
 
-},{"hash.js":180,"minimalistic-assert":203,"minimalistic-crypto-utils":204}],193:[function(require,module,exports){
+},{"hash.js":182,"minimalistic-assert":205,"minimalistic-crypto-utils":206}],195:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
-  var eLen = nBytes * 8 - mLen - 1
+  var eLen = (nBytes * 8) - mLen - 1
   var eMax = (1 << eLen) - 1
   var eBias = eMax >> 1
   var nBits = -7
@@ -32909,12 +32859,12 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   e = s & ((1 << (-nBits)) - 1)
   s >>= (-nBits)
   nBits += eLen
-  for (; nBits > 0; e = e * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
 
   m = e & ((1 << (-nBits)) - 1)
   e >>= (-nBits)
   nBits += mLen
-  for (; nBits > 0; m = m * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
 
   if (e === 0) {
     e = 1 - eBias
@@ -32929,7 +32879,7 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
 
 exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   var e, m, c
-  var eLen = nBytes * 8 - mLen - 1
+  var eLen = (nBytes * 8) - mLen - 1
   var eMax = (1 << eLen) - 1
   var eBias = eMax >> 1
   var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
@@ -32962,7 +32912,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
       m = 0
       e = eMax
     } else if (e + eBias >= 1) {
-      m = (value * c - 1) * Math.pow(2, mLen)
+      m = ((value * c) - 1) * Math.pow(2, mLen)
       e = e + eBias
     } else {
       m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
@@ -32979,7 +32929,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],194:[function(require,module,exports){
+},{}],196:[function(require,module,exports){
 
 var indexOf = [].indexOf;
 
@@ -32990,7 +32940,7 @@ module.exports = function(arr, obj){
   }
   return -1;
 };
-},{}],195:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -33015,7 +32965,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],196:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -33038,14 +32988,14 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],197:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],198:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -33477,7 +33427,7 @@ function decorateNextFn(fn) {
 module.exports = Kareem;
 
 }).call(this,require('_process'))
-},{"_process":367}],199:[function(require,module,exports){
+},{"_process":369}],201:[function(require,module,exports){
 (function (global){
 /**
  * lodash (Custom Build) <https://lodash.com/>
@@ -34412,7 +34362,7 @@ function get(object, path, defaultValue) {
 module.exports = get;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],200:[function(require,module,exports){
+},{}],202:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -34561,7 +34511,7 @@ function fnI (a, b, c, d, m, k, s) {
 module.exports = MD5
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"hash-base":201,"inherits":195}],201:[function(require,module,exports){
+},{"buffer":141,"hash-base":203,"inherits":197}],203:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
@@ -34658,7 +34608,7 @@ HashBase.prototype._digest = function () {
 
 module.exports = HashBase
 
-},{"inherits":195,"safe-buffer":397,"stream":408}],202:[function(require,module,exports){
+},{"inherits":197,"safe-buffer":399,"stream":410}],204:[function(require,module,exports){
 var bn = require('bn.js');
 var brorand = require('brorand');
 
@@ -34775,7 +34725,7 @@ MillerRabin.prototype.getDivisor = function getDivisor(n, k) {
   return false;
 };
 
-},{"bn.js":86,"brorand":87}],203:[function(require,module,exports){
+},{"bn.js":88,"brorand":89}],205:[function(require,module,exports){
 module.exports = assert;
 
 function assert(val, msg) {
@@ -34788,7 +34738,7 @@ assert.equal = function assertEqual(l, r, msg) {
     throw new Error(msg || ('Assertion failed: ' + l + ' != ' + r));
 };
 
-},{}],204:[function(require,module,exports){
+},{}],206:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -34848,7 +34798,7 @@ utils.encode = function encode(arr, enc) {
     return arr;
 };
 
-},{}],205:[function(require,module,exports){
+},{}],207:[function(require,module,exports){
 'use strict';
 
 var BSON = require('bson');
@@ -34888,7 +34838,7 @@ module.exports = {
   parseConnectionString: require('./lib/uri_parser')
 };
 
-},{"./lib/auth/gssapi":206,"./lib/auth/mongocr":207,"./lib/auth/plain":208,"./lib/auth/scram":209,"./lib/auth/x509":211,"./lib/connection/commands":213,"./lib/connection/connection":214,"./lib/connection/logger":215,"./lib/cursor":218,"./lib/error":219,"./lib/sessions":220,"./lib/topologies/mongos":221,"./lib/topologies/read_preference":222,"./lib/topologies/replset":223,"./lib/topologies/server":225,"./lib/uri_parser":227,"bson":120,"require_optional":394}],206:[function(require,module,exports){
+},{"./lib/auth/gssapi":208,"./lib/auth/mongocr":209,"./lib/auth/plain":210,"./lib/auth/scram":211,"./lib/auth/x509":213,"./lib/connection/commands":215,"./lib/connection/connection":216,"./lib/connection/logger":217,"./lib/cursor":220,"./lib/error":221,"./lib/sessions":222,"./lib/topologies/mongos":223,"./lib/topologies/read_preference":224,"./lib/topologies/replset":225,"./lib/topologies/server":227,"./lib/uri_parser":229,"bson":122,"require_optional":396}],208:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -35276,7 +35226,7 @@ GSSAPI.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = GSSAPI;
 
 }).call(this,require('_process'))
-},{"../connection/commands":213,"../error":219,"_process":367,"require_optional":394,"util":415}],207:[function(require,module,exports){
+},{"../connection/commands":215,"../error":221,"_process":369,"require_optional":396,"util":417}],209:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -35494,7 +35444,7 @@ MongoCR.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = MongoCR;
 
 }).call(this,require('_process'))
-},{"../connection/commands":213,"../error":219,"_process":367,"crypto":148,"util":415}],208:[function(require,module,exports){
+},{"../connection/commands":215,"../error":221,"_process":369,"crypto":150,"util":417}],210:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -35681,7 +35631,7 @@ Plain.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = Plain;
 
 }).call(this,require('_process'))
-},{"../connection/commands":213,"../connection/utils":217,"../error":219,"_process":367,"util":415}],209:[function(require,module,exports){
+},{"../connection/commands":215,"../connection/utils":219,"../error":221,"_process":369,"util":417}],211:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -36052,7 +36002,7 @@ ScramSHA1.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = ScramSHA1;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"../connection/commands":213,"../connection/utils":217,"../error":219,"_process":367,"buffer":139,"crypto":148,"util":415}],210:[function(require,module,exports){
+},{"../connection/commands":215,"../connection/utils":219,"../error":221,"_process":369,"buffer":141,"crypto":150,"util":417}],212:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -36360,7 +36310,7 @@ SSPI.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = SSPI;
 
 }).call(this,require('_process'))
-},{"../connection/commands":213,"../error":219,"_process":367,"require_optional":394,"util":415}],211:[function(require,module,exports){
+},{"../connection/commands":215,"../error":221,"_process":369,"require_optional":396,"util":417}],213:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -36543,7 +36493,7 @@ X509.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = X509;
 
 }).call(this,require('_process'))
-},{"../connection/commands":213,"../error":219,"_process":367,"util":415}],212:[function(require,module,exports){
+},{"../connection/commands":215,"../error":221,"_process":369,"util":417}],214:[function(require,module,exports){
 'use strict';
 
 /**
@@ -36579,7 +36529,7 @@ CommandResult.prototype.toString = function() {
 
 module.exports = CommandResult;
 
-},{}],213:[function(require,module,exports){
+},{}],215:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -37114,7 +37064,7 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"../wireprotocol/shared":232,"./utils":217,"buffer":139}],214:[function(require,module,exports){
+},{"../wireprotocol/shared":234,"./utils":219,"buffer":141}],216:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -37918,7 +37868,7 @@ Connection.prototype.isConnected = function() {
 module.exports = Connection;
 
 }).call(this,require("buffer").Buffer)
-},{"../error":219,"../wireprotocol/compression":231,"../wireprotocol/shared":232,"./commands":213,"./logger":215,"./utils":217,"buffer":139,"crypto":148,"events":177,"net":118,"tls":118,"util":415}],215:[function(require,module,exports){
+},{"../error":221,"../wireprotocol/compression":233,"../wireprotocol/shared":234,"./commands":215,"./logger":217,"./utils":219,"buffer":141,"crypto":150,"events":179,"net":120,"tls":120,"util":417}],217:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -38168,7 +38118,7 @@ Logger.setLevel = function(_level) {
 module.exports = Logger;
 
 }).call(this,require('_process'))
-},{"../error":219,"_process":367,"util":415}],216:[function(require,module,exports){
+},{"../error":221,"_process":369,"util":417}],218:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -39793,7 +39743,7 @@ Pool._execute = _execute;
 module.exports = Pool;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"../auth/gssapi":206,"../auth/mongocr":207,"../auth/plain":208,"../auth/scram":209,"../auth/sspi":210,"../auth/x509":211,"../error":219,"../topologies/shared":226,"../wireprotocol/compression":231,"../wireprotocol/shared":232,"./command_result":212,"./commands":213,"./connection":214,"./logger":215,"_process":367,"buffer":139,"events":177,"util":415}],217:[function(require,module,exports){
+},{"../auth/gssapi":208,"../auth/mongocr":209,"../auth/plain":210,"../auth/scram":211,"../auth/sspi":212,"../auth/x509":213,"../error":221,"../topologies/shared":228,"../wireprotocol/compression":233,"../wireprotocol/shared":234,"./command_result":214,"./commands":215,"./connection":216,"./logger":217,"_process":369,"buffer":141,"events":179,"util":417}],219:[function(require,module,exports){
 'use strict';
 
 var f = require('util').format,
@@ -39908,7 +39858,7 @@ exports.debugOptions = debugOptions;
 exports.retrieveBSON = retrieveBSON;
 exports.retrieveSnappy = retrieveSnappy;
 
-},{"bson":120,"require_optional":394,"util":415}],218:[function(require,module,exports){
+},{"bson":122,"require_optional":396,"util":417}],220:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -40706,7 +40656,7 @@ Cursor.prototype.next = function(callback) {
 module.exports = Cursor;
 
 }).call(this,require('_process'))
-},{"./connection/logger":215,"./connection/utils":217,"./error":219,"_process":367,"util":415}],219:[function(require,module,exports){
+},{"./connection/logger":217,"./connection/utils":219,"./error":221,"_process":369,"util":417}],221:[function(require,module,exports){
 'use strict';
 
 var util = require('util');
@@ -40790,7 +40740,7 @@ module.exports = {
   MongoParseError: MongoParseError
 };
 
-},{"util":415}],220:[function(require,module,exports){
+},{"util":417}],222:[function(require,module,exports){
 'use strict';
 
 const retrieveBSON = require('./connection/utils').retrieveBSON,
@@ -40976,7 +40926,7 @@ module.exports = {
   ServerSessionPool: ServerSessionPool
 };
 
-},{"./connection/utils":217,"./utils":228,"events":177}],221:[function(require,module,exports){
+},{"./connection/utils":219,"./utils":230,"events":179}],223:[function(require,module,exports){
 'use strict';
 
 const inherits = require('util').inherits,
@@ -42430,7 +42380,7 @@ function emitTopologyDescriptionChanged(self) {
 
 module.exports = Mongos;
 
-},{"../auth/gssapi":206,"../auth/mongocr":207,"../auth/plain":208,"../auth/scram":209,"../auth/sspi":210,"../auth/x509":211,"../connection/logger":215,"../connection/utils":217,"../cursor":218,"../error":219,"./server":225,"./shared":226,"events":177,"util":415}],222:[function(require,module,exports){
+},{"../auth/gssapi":208,"../auth/mongocr":209,"../auth/plain":210,"../auth/scram":211,"../auth/sspi":212,"../auth/x509":213,"../connection/logger":217,"../connection/utils":219,"../cursor":220,"../error":221,"./server":227,"./shared":228,"events":179,"util":417}],224:[function(require,module,exports){
 'use strict';
 
 /**
@@ -42603,7 +42553,7 @@ ReadPreference.nearest = new ReadPreference('nearest');
 
 module.exports = ReadPreference;
 
-},{}],223:[function(require,module,exports){
+},{}],225:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -44292,7 +44242,7 @@ ReplSet.prototype.cursor = function(ns, cmd, options) {
 module.exports = ReplSet;
 
 }).call(this,require('_process'))
-},{"../auth/gssapi":206,"../auth/mongocr":207,"../auth/plain":208,"../auth/scram":209,"../auth/sspi":210,"../auth/x509":211,"../connection/logger":215,"../connection/utils":217,"../cursor":218,"../error":219,"./read_preference":222,"./replset_state":224,"./server":225,"./shared":226,"_process":367,"events":177,"util":415}],224:[function(require,module,exports){
+},{"../auth/gssapi":208,"../auth/mongocr":209,"../auth/plain":210,"../auth/scram":211,"../auth/sspi":212,"../auth/x509":213,"../connection/logger":217,"../connection/utils":219,"../cursor":220,"../error":221,"./read_preference":224,"./replset_state":226,"./server":227,"./shared":228,"_process":369,"events":179,"util":417}],226:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -45400,7 +45350,7 @@ function emitTopologyDescriptionChanged(self) {
 module.exports = ReplSetState;
 
 }).call(this,require("buffer").Buffer)
-},{"../connection/logger":215,"../error":219,"./read_preference":222,"./shared":226,"buffer":139,"events":177,"util":415}],225:[function(require,module,exports){
+},{"../connection/logger":217,"../error":221,"./read_preference":224,"./shared":228,"buffer":141,"events":179,"util":417}],227:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -46504,7 +46454,7 @@ Server.prototype.destroy = function(options) {
 
 module.exports = Server;
 
-},{"../connection/commands":213,"../connection/logger":215,"../connection/pool":216,"../connection/utils":217,"../cursor":218,"../error":219,"../wireprotocol/2_6_support":229,"../wireprotocol/3_2_support":230,"./read_preference":222,"./shared":226,"events":177,"util":415}],226:[function(require,module,exports){
+},{"../connection/commands":215,"../connection/logger":217,"../connection/pool":218,"../connection/utils":219,"../cursor":220,"../error":221,"../wireprotocol/2_6_support":231,"../wireprotocol/3_2_support":232,"./read_preference":224,"./shared":228,"events":179,"util":417}],228:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -46960,7 +46910,7 @@ module.exports.isRetryableWritesSupported = isRetryableWritesSupported;
 module.exports.getNextTransactionNumber = getNextTransactionNumber;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"../../package.json":233,"../connection/utils":217,"./read_preference":222,"_process":367,"buffer":139,"os":343,"util":415}],227:[function(require,module,exports){
+},{"../../package.json":235,"../connection/utils":219,"./read_preference":224,"_process":369,"buffer":141,"os":345,"util":417}],229:[function(require,module,exports){
 'use strict';
 const URL = require('url');
 const qs = require('querystring');
@@ -47259,7 +47209,7 @@ function parseConnectionString(uri, options, callback) {
 
 module.exports = parseConnectionString;
 
-},{"./error":219,"dns":118,"querystring":377,"url":410}],228:[function(require,module,exports){
+},{"./error":221,"dns":120,"querystring":379,"url":412}],230:[function(require,module,exports){
 'use strict';
 
 const crypto = require('crypto');
@@ -47275,7 +47225,7 @@ module.exports = {
   uuidV4: uuidV4
 };
 
-},{"crypto":148}],229:[function(require,module,exports){
+},{"crypto":150}],231:[function(require,module,exports){
 'use strict';
 
 var copy = require('../connection/utils').copy,
@@ -47651,7 +47601,7 @@ var setupCommand = function(bson, ns, cmd, cursorState, topology, options) {
 
 module.exports = WireProtocol;
 
-},{"../connection/commands":213,"../connection/utils":217,"../error":219,"./shared":232,"util":415}],230:[function(require,module,exports){
+},{"../connection/commands":215,"../connection/utils":219,"../error":221,"./shared":234,"util":417}],232:[function(require,module,exports){
 'use strict';
 
 var Query = require('../connection/commands').Query,
@@ -48243,7 +48193,7 @@ var setupCommand = function(bson, ns, cmd, cursorState, topology, options) {
 
 module.exports = WireProtocol;
 
-},{"../connection/commands":213,"../connection/utils":217,"../error":219,"./shared":232,"util":415}],231:[function(require,module,exports){
+},{"../connection/commands":215,"../connection/utils":219,"../error":221,"./shared":234,"util":417}],233:[function(require,module,exports){
 'use strict';
 
 var Snappy = require('../connection/utils').retrieveSnappy(),
@@ -48318,7 +48268,7 @@ module.exports = {
   decompress: decompress
 };
 
-},{"../connection/utils":217,"zlib":117}],232:[function(require,module,exports){
+},{"../connection/utils":219,"zlib":119}],234:[function(require,module,exports){
 'use strict';
 
 var ReadPreference = require('../topologies/read_preference'),
@@ -48375,7 +48325,7 @@ module.exports = {
   parseHeader: parseHeader
 };
 
-},{"../error":219,"../topologies/read_preference":222}],233:[function(require,module,exports){
+},{"../error":221,"../topologies/read_preference":224}],235:[function(require,module,exports){
 module.exports={
   "name": "mongodb-core",
   "version": "3.0.2",
@@ -48425,7 +48375,7 @@ module.exports={
   "homepage": "https://github.com/mongodb-js/mongodb-core"
 }
 
-},{}],234:[function(require,module,exports){
+},{}],236:[function(require,module,exports){
 'use strict';
 
 // Core module
@@ -48489,7 +48439,7 @@ connect.instrument = function(options, callback) {
 // Set our exports to be the connect function
 module.exports = connect;
 
-},{"./lib/admin":235,"./lib/apm":237,"./lib/collection":243,"./lib/cursor":245,"./lib/db":246,"./lib/gridfs-stream":248,"./lib/gridfs/chunk":250,"./lib/gridfs/grid_store":251,"./lib/mongo_client":253,"./lib/topologies/mongos":254,"./lib/topologies/replset":255,"./lib/topologies/server":256,"mongodb-core":205}],235:[function(require,module,exports){
+},{"./lib/admin":237,"./lib/apm":239,"./lib/collection":245,"./lib/cursor":247,"./lib/db":248,"./lib/gridfs-stream":250,"./lib/gridfs/chunk":252,"./lib/gridfs/grid_store":253,"./lib/mongo_client":255,"./lib/topologies/mongos":256,"./lib/topologies/replset":257,"./lib/topologies/server":258,"mongodb-core":207}],237:[function(require,module,exports){
 'use strict';
 
 var toError = require('./utils').toError,
@@ -48862,7 +48812,7 @@ define.classMethod('replSetGetStatus', { callback: true, promise: true });
 
 module.exports = Admin;
 
-},{"./metadata":252,"./utils":259}],236:[function(require,module,exports){
+},{"./metadata":254,"./utils":261}],238:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -49300,7 +49250,7 @@ AggregationCursor.CLOSED = 2;
 
 module.exports = AggregationCursor;
 
-},{"./cursor":245,"./metadata":252,"mongodb-core":205,"stream":408,"util":415}],237:[function(require,module,exports){
+},{"./cursor":247,"./metadata":254,"mongodb-core":207,"stream":410,"util":417}],239:[function(require,module,exports){
 'use strict';
 
 var EventEmitter = require('events').EventEmitter,
@@ -49941,7 +49891,7 @@ Instrumentation.prototype.uninstrument = function() {
 
 module.exports = Instrumentation;
 
-},{"./aggregation_cursor":236,"./bulk/ordered":240,"./bulk/unordered":241,"./collection":243,"./command_cursor":244,"./cursor":245,"./db":246,"./gridfs/grid_store":251,"events":177,"util":415}],238:[function(require,module,exports){
+},{"./aggregation_cursor":238,"./bulk/ordered":242,"./bulk/unordered":243,"./collection":245,"./command_cursor":246,"./cursor":247,"./db":248,"./gridfs/grid_store":253,"events":179,"util":417}],240:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -50075,7 +50025,7 @@ module.exports = function(self, username, password, options, callback) {
 };
 
 }).call(this,require('_process'))
-},{"./utils":259,"_process":367,"mongodb-core":205,"util":415}],239:[function(require,module,exports){
+},{"./utils":261,"_process":369,"mongodb-core":207,"util":417}],241:[function(require,module,exports){
 'use strict';
 
 var Long = require('mongodb-core').BSON.Long,
@@ -50542,7 +50492,7 @@ exports.INSERT = INSERT;
 exports.UPDATE = UPDATE;
 exports.REMOVE = REMOVE;
 
-},{"mongodb-core":205,"util":415}],240:[function(require,module,exports){
+},{"mongodb-core":207,"util":417}],242:[function(require,module,exports){
 'use strict';
 
 var common = require('./common'),
@@ -51161,7 +51111,7 @@ initializeOrderedBulkOp.OrderedBulkOperation = OrderedBulkOperation;
 module.exports = initializeOrderedBulkOp;
 module.exports.Bulk = OrderedBulkOperation;
 
-},{"../metadata":252,"../utils":259,"./common":239,"mongodb-core":205}],241:[function(require,module,exports){
+},{"../metadata":254,"../utils":261,"./common":241,"mongodb-core":207}],243:[function(require,module,exports){
 'use strict';
 
 var common = require('./common'),
@@ -51794,7 +51744,7 @@ initializeUnorderedBulkOp.UnorderedBulkOperation = UnorderedBulkOperation;
 module.exports = initializeUnorderedBulkOp;
 module.exports.Bulk = UnorderedBulkOperation;
 
-},{"../metadata":252,"../utils":259,"./common":239,"mongodb-core":205}],242:[function(require,module,exports){
+},{"../metadata":254,"../utils":261,"./common":241,"mongodb-core":207}],244:[function(require,module,exports){
 'use strict';
 
 var EventEmitter = require('events'),
@@ -52155,7 +52105,7 @@ var processNewChange = function(self, err, change, callback) {
 
 module.exports = ChangeStream;
 
-},{"./collection":243,"events":177,"mongodb-core":205,"util":415}],243:[function(require,module,exports){
+},{"./collection":245,"events":179,"mongodb-core":207,"util":417}],245:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -55296,7 +55246,7 @@ var getReadPreference = function(self, options, db) {
 module.exports = Collection;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":196,"./aggregation_cursor":236,"./bulk/ordered":240,"./bulk/unordered":241,"./change_stream":242,"./command_cursor":244,"./cursor":245,"./db":246,"./metadata":252,"./utils":259,"mongodb-core":205,"util":415}],244:[function(require,module,exports){
+},{"../../is-buffer/index.js":198,"./aggregation_cursor":238,"./bulk/ordered":242,"./bulk/unordered":243,"./change_stream":244,"./command_cursor":246,"./cursor":247,"./db":248,"./metadata":254,"./utils":261,"mongodb-core":207,"util":417}],246:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -55645,7 +55595,7 @@ CommandCursor.CLOSED = 2;
 
 module.exports = CommandCursor;
 
-},{"./cursor":245,"./metadata":252,"mongodb-core":205,"stream":408,"util":415}],245:[function(require,module,exports){
+},{"./cursor":247,"./metadata":254,"mongodb-core":207,"stream":410,"util":417}],247:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -56951,7 +56901,7 @@ Cursor.GET_MORE = 3;
 
 module.exports = Cursor;
 
-},{"./metadata":252,"./utils":259,"mongodb-core":205,"stream":408,"util":415}],246:[function(require,module,exports){
+},{"./metadata":254,"./utils":261,"mongodb-core":207,"stream":410,"util":417}],248:[function(require,module,exports){
 'use strict';
 
 var EventEmitter = require('events').EventEmitter,
@@ -58762,7 +58712,7 @@ Db.SYSTEM_JS_COLLECTION = 'system.js';
 
 module.exports = Db;
 
-},{"./admin":235,"./collection":243,"./command_cursor":244,"./metadata":252,"./utils":259,"crypto":148,"events":177,"mongodb-core":205,"util":415}],247:[function(require,module,exports){
+},{"./admin":237,"./collection":245,"./command_cursor":246,"./metadata":254,"./utils":261,"crypto":150,"events":179,"mongodb-core":207,"util":417}],249:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -59181,7 +59131,7 @@ function __handleError(_this, error) {
 }
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"stream":408,"util":415}],248:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"stream":410,"util":417}],250:[function(require,module,exports){
 'use strict';
 
 var Emitter = require('events').EventEmitter;
@@ -59529,7 +59479,7 @@ function _drop(_this, callback) {
  * @param {MongoError} error An error instance representing any errors that occurred
  */
 
-},{"../utils":259,"./download":247,"./upload":249,"events":177,"util":415}],249:[function(require,module,exports){
+},{"../utils":261,"./download":249,"./upload":251,"events":179,"util":417}],251:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -60062,7 +60012,7 @@ function checkAborted(_this, callback) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"crypto":148,"mongodb-core":205,"stream":408,"util":415}],250:[function(require,module,exports){
+},{"buffer":141,"crypto":150,"mongodb-core":207,"stream":410,"util":417}],252:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -60300,7 +60250,7 @@ Chunk.DEFAULT_CHUNK_SIZE = 1024 * 255;
 module.exports = Chunk;
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"mongodb-core":205}],251:[function(require,module,exports){
+},{"buffer":141,"mongodb-core":207}],253:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -62255,7 +62205,7 @@ GridStoreStream.prototype.end = function(chunk, encoding, callback) {
 module.exports = GridStore;
 
 }).call(this,require('_process'))
-},{"../collection":243,"../metadata":252,"../utils":259,"./chunk":250,"_process":367,"buffer":139,"fs":118,"mongodb-core":205,"stream":408,"util":415}],252:[function(require,module,exports){
+},{"../collection":245,"../metadata":254,"../utils":261,"./chunk":252,"_process":369,"buffer":141,"fs":120,"mongodb-core":207,"stream":410,"util":417}],254:[function(require,module,exports){
 'use strict';
 
 var f = require('util').format;
@@ -62327,7 +62277,7 @@ Define.prototype.generate = function() {
 
 module.exports = Define;
 
-},{"util":415}],253:[function(require,module,exports){
+},{"util":417}],255:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
 
@@ -63285,7 +63235,7 @@ var connect = function(self, url, options, callback) {
 module.exports = MongoClient;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":196,"./authenticate":238,"./db":246,"./metadata":252,"./topologies/mongos":254,"./topologies/replset":255,"./topologies/server":256,"./url_parser":258,"./utils":259,"_process":367,"events":177,"mongodb-core":205,"util":415}],254:[function(require,module,exports){
+},{"../../is-buffer/index.js":198,"./authenticate":240,"./db":248,"./metadata":254,"./topologies/mongos":256,"./topologies/replset":257,"./topologies/server":258,"./url_parser":260,"./utils":261,"_process":369,"events":179,"mongodb-core":207,"util":417}],256:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -63733,7 +63683,7 @@ define.classMethod('connections', { callback: false, promise: false, returns: [A
 module.exports = Mongos;
 
 }).call(this,require('_process'))
-},{"../aggregation_cursor":236,"../command_cursor":244,"../cursor":245,"../metadata":252,"../utils":259,"./server":256,"./topology_base":257,"_process":367,"mongodb-core":205}],255:[function(require,module,exports){
+},{"../aggregation_cursor":238,"../command_cursor":246,"../cursor":247,"../metadata":254,"../utils":261,"./server":258,"./topology_base":259,"_process":369,"mongodb-core":207}],257:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -64238,7 +64188,7 @@ define.classMethod('connections', { callback: false, promise: false, returns: [A
 module.exports = ReplSet;
 
 }).call(this,require('_process'))
-},{"../aggregation_cursor":236,"../command_cursor":244,"../cursor":245,"../metadata":252,"../utils":259,"./server":256,"./topology_base":257,"_process":367,"mongodb-core":205}],256:[function(require,module,exports){
+},{"../aggregation_cursor":238,"../command_cursor":246,"../cursor":247,"../metadata":254,"../utils":261,"./server":258,"./topology_base":259,"_process":369,"mongodb-core":207}],258:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -64690,7 +64640,7 @@ define.classMethod('connections', { callback: false, promise: false, returns: [A
 module.exports = Server;
 
 }).call(this,require('_process'))
-},{"../aggregation_cursor":236,"../command_cursor":244,"../cursor":245,"../metadata":252,"../utils":259,"./topology_base":257,"_process":367,"mongodb-core":205}],257:[function(require,module,exports){
+},{"../aggregation_cursor":238,"../command_cursor":246,"../cursor":247,"../metadata":254,"../utils":261,"./topology_base":259,"_process":369,"mongodb-core":207}],259:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -65135,7 +65085,7 @@ exports.ServerCapabilities = ServerCapabilities;
 exports.TopologyBase = TopologyBase;
 
 }).call(this,require('_process'))
-},{"../../package.json":260,"../utils":259,"_process":367,"events":177,"mongodb-core":205,"os":343,"util":415}],258:[function(require,module,exports){
+},{"../../package.json":262,"../utils":261,"_process":369,"events":179,"mongodb-core":207,"os":345,"util":417}],260:[function(require,module,exports){
 'use strict';
 
 const ReadPreference = require('mongodb-core').ReadPreference,
@@ -65741,7 +65691,7 @@ function parseConnectionString(url, options) {
   return object;
 }
 
-},{"dns":118,"mongodb-core":205,"url":410,"util":415}],259:[function(require,module,exports){
+},{"dns":120,"mongodb-core":207,"url":412,"util":417}],261:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -66198,7 +66148,7 @@ exports.translateReadPreference = translateReadPreference;
 exports.executeOperation = executeOperation;
 
 }).call(this,require('_process'))
-},{"_process":367,"mongodb-core":205}],260:[function(require,module,exports){
+},{"_process":369,"mongodb-core":207}],262:[function(require,module,exports){
 module.exports={
   "name": "mongodb",
   "version": "3.0.2",
@@ -66253,7 +66203,7 @@ module.exports={
   "homepage": "https://github.com/mongodb/node-mongodb-native"
 }
 
-},{}],261:[function(require,module,exports){
+},{}],263:[function(require,module,exports){
 (function (Buffer){
 /* eslint-env browser */
 
@@ -66386,7 +66336,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./document_provider.js":265,"./error":279,"./promise_provider":293,"./schema":294,"./schematype.js":312,"./types":326,"./utils.js":329,"./virtualtype":330,"buffer":139}],262:[function(require,module,exports){
+},{"./document_provider.js":267,"./error":281,"./promise_provider":295,"./schema":296,"./schematype.js":314,"./types":328,"./utils.js":331,"./virtualtype":332,"buffer":141}],264:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -66506,7 +66456,7 @@ utils.each(
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":264,"./error":279,"./internal":290,"./schema":294,"./services/model/applyHooks":316,"./types/objectid":327,"./utils":329,"events":177}],263:[function(require,module,exports){
+},{"./document":266,"./error":281,"./internal":292,"./schema":296,"./services/model/applyHooks":318,"./types/objectid":329,"./utils":331,"events":179}],265:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -66814,7 +66764,7 @@ function _cast(val, numbertype, context) {
   }
 }
 
-},{"./error/strict":286,"./schema/index":302,"./utils":329,"util":415}],264:[function(require,module,exports){
+},{"./error/strict":288,"./schema/index":304,"./utils":331,"util":417}],266:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
 
@@ -69543,7 +69493,7 @@ Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":196,"./error":279,"./error/objectExpected":283,"./error/objectParameter":284,"./error/strict":286,"./internal":290,"./options":291,"./plugins/idGetter":292,"./schema":294,"./schema/mixed":303,"./schematype":312,"./services/common":313,"./services/document/cleanModifiedSubpaths":314,"./services/document/compile":315,"./services/projection/isDefiningProjection":318,"./services/projection/isExclusive":319,"./types/array":321,"./types/documentarray":324,"./types/embedded":325,"./utils":329,"./virtualtype":330,"_process":367,"events":177,"mpath":331,"util":415}],265:[function(require,module,exports){
+},{"../../is-buffer/index.js":198,"./error":281,"./error/objectExpected":285,"./error/objectParameter":286,"./error/strict":288,"./internal":292,"./options":293,"./plugins/idGetter":294,"./schema":296,"./schema/mixed":305,"./schematype":314,"./services/common":315,"./services/document/cleanModifiedSubpaths":316,"./services/document/compile":317,"./services/projection/isDefiningProjection":320,"./services/projection/isExclusive":321,"./types/array":323,"./types/documentarray":326,"./types/embedded":327,"./utils":331,"./virtualtype":332,"_process":369,"events":179,"mpath":333,"util":417}],267:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -69575,14 +69525,14 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":262,"./document.js":264}],266:[function(require,module,exports){
+},{"./browserDocument.js":264,"./document.js":266}],268:[function(require,module,exports){
 /*!
  * ignore
  */
 
 module.exports = function() {};
 
-},{}],267:[function(require,module,exports){
+},{}],269:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -69596,14 +69546,14 @@ var Binary = require('bson').Binary;
 
 module.exports = exports = Binary;
 
-},{"bson":120}],268:[function(require,module,exports){
+},{"bson":122}],270:[function(require,module,exports){
 /*!
  * ignore
  */
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":120}],269:[function(require,module,exports){
+},{"bson":122}],271:[function(require,module,exports){
 /*!
  * Module exports.
  */
@@ -69613,7 +69563,7 @@ exports.Decimal128 = require('./decimal128');
 exports.ObjectId = require('./objectid');
 exports.ReadPreference = require('./ReadPreference');
 
-},{"./ReadPreference":266,"./binary":267,"./decimal128":268,"./objectid":270}],270:[function(require,module,exports){
+},{"./ReadPreference":268,"./binary":269,"./decimal128":270,"./objectid":272}],272:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -69629,7 +69579,7 @@ var ObjectId = require('bson').ObjectID;
 
 module.exports = exports = ObjectId;
 
-},{"bson":120}],271:[function(require,module,exports){
+},{"bson":122}],273:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -69653,7 +69603,7 @@ if (typeof window === 'undefined') {
 module.exports = driver;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./browser":269,"./node-mongodb-native":275}],272:[function(require,module,exports){
+},{"./browser":271,"./node-mongodb-native":277}],274:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -69700,7 +69650,7 @@ module.exports = function readPref(pref, tags) {
   return new ReadPref(pref, tags);
 };
 
-},{"mongodb":234}],273:[function(require,module,exports){
+},{"mongodb":236}],275:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -69710,16 +69660,16 @@ var Binary = require('mongodb').Binary;
 
 module.exports = exports = Binary;
 
-},{"mongodb":234}],274:[function(require,module,exports){
+},{"mongodb":236}],276:[function(require,module,exports){
 /*!
  * ignore
  */
 
 module.exports = require('mongodb').Decimal128;
 
-},{"mongodb":234}],275:[function(require,module,exports){
-arguments[4][269][0].apply(exports,arguments)
-},{"./ReadPreference":272,"./binary":273,"./decimal128":274,"./objectid":276,"dup":269}],276:[function(require,module,exports){
+},{"mongodb":236}],277:[function(require,module,exports){
+arguments[4][271][0].apply(exports,arguments)
+},{"./ReadPreference":274,"./binary":275,"./decimal128":276,"./objectid":278,"dup":271}],278:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -69735,7 +69685,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 module.exports = exports = ObjectId;
 
-},{"mongodb":234}],277:[function(require,module,exports){
+},{"mongodb":236}],279:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -69797,7 +69747,7 @@ CastError.prototype.setModel = function(model) {
 
 module.exports = CastError;
 
-},{"./":279,"util":415}],278:[function(require,module,exports){
+},{"./":281,"util":417}],280:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -69845,7 +69795,7 @@ DivergentArrayError.prototype.constructor = MongooseError;
 
 module.exports = DivergentArrayError;
 
-},{"./":279}],279:[function(require,module,exports){
+},{"./":281}],281:[function(require,module,exports){
 
 /**
  * MongooseError constructor
@@ -69963,7 +69913,7 @@ MongooseError.MissingSchemaError = require('./missingSchema');
 
 MongooseError.DivergentArrayError = require('./divergentArray');
 
-},{"./cast":277,"./divergentArray":278,"./messages":280,"./missingSchema":281,"./notFound":282,"./overwriteModel":285,"./validation":287,"./validator":288,"./version":289}],280:[function(require,module,exports){
+},{"./cast":279,"./divergentArray":280,"./messages":282,"./missingSchema":283,"./notFound":284,"./overwriteModel":287,"./validation":289,"./validator":290,"./version":291}],282:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -70009,7 +69959,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],281:[function(require,module,exports){
+},{}],283:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -70048,7 +69998,7 @@ MissingSchemaError.prototype.constructor = MongooseError;
 
 module.exports = MissingSchemaError;
 
-},{"./":279}],282:[function(require,module,exports){
+},{"./":281}],284:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70100,7 +70050,7 @@ DocumentNotFoundError.prototype.constructor = MongooseError;
 
 module.exports = DocumentNotFoundError;
 
-},{"./":279,"util":415}],283:[function(require,module,exports){
+},{"./":281,"util":417}],285:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70137,7 +70087,7 @@ ObjectExpectedError.prototype.constructor = MongooseError;
 
 module.exports = ObjectExpectedError;
 
-},{"./":279}],284:[function(require,module,exports){
+},{"./":281}],286:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70175,7 +70125,7 @@ ObjectParameterError.prototype.constructor = MongooseError;
 
 module.exports = ObjectParameterError;
 
-},{"./":279}],285:[function(require,module,exports){
+},{"./":281}],287:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -70212,7 +70162,7 @@ OverwriteModelError.prototype.constructor = MongooseError;
 
 module.exports = OverwriteModelError;
 
-},{"./":279}],286:[function(require,module,exports){
+},{"./":281}],288:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70250,7 +70200,7 @@ StrictModeError.prototype.constructor = MongooseError;
 
 module.exports = StrictModeError;
 
-},{"./":279}],287:[function(require,module,exports){
+},{"./":281}],289:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -70353,7 +70303,7 @@ function _generateMessage(err) {
 
 module.exports = exports = ValidationError;
 
-},{"./":279}],288:[function(require,module,exports){
+},{"./":281}],290:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70437,7 +70387,7 @@ ValidatorError.prototype.toString = function() {
 
 module.exports = ValidatorError;
 
-},{"./":279}],289:[function(require,module,exports){
+},{"./":281}],291:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70472,7 +70422,7 @@ VersionError.prototype.constructor = MongooseError;
 
 module.exports = VersionError;
 
-},{"./":279}],290:[function(require,module,exports){
+},{"./":281}],292:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -70506,7 +70456,7 @@ function InternalCache() {
   this.fullPath = undefined;
 }
 
-},{"./statemachine":320}],291:[function(require,module,exports){
+},{"./statemachine":322}],293:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70522,7 +70472,7 @@ exports.internalToObjectOptions = {
   flattenDecimals: false
 };
 
-},{}],292:[function(require,module,exports){
+},{}],294:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70550,7 +70500,7 @@ function idGetter() {
   return null;
 }
 
-},{}],293:[function(require,module,exports){
+},{}],295:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -70601,7 +70551,7 @@ store.set(global.Promise);
 module.exports = store;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"assert":83,"mquery":337}],294:[function(require,module,exports){
+},{"assert":85,"mquery":339}],296:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -72440,7 +72390,7 @@ Schema.Types = MongooseTypes = require('./schema/index');
 exports.ObjectId = MongooseTypes.ObjectId;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":196,"./drivers":271,"./schema/index":302,"./schematype":312,"./utils":329,"./virtualtype":330,"events":177,"kareem":198,"mpath":331}],295:[function(require,module,exports){
+},{"../../is-buffer/index.js":198,"./drivers":273,"./schema/index":304,"./schematype":314,"./utils":331,"./virtualtype":332,"events":179,"kareem":200,"mpath":333}],297:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -72809,7 +72759,7 @@ handle.$regex = SchemaArray.prototype.castForQuery;
 
 module.exports = SchemaArray;
 
-},{"../cast":263,"../schematype":312,"../types":326,"../utils":329,"./boolean":296,"./buffer":297,"./date":298,"./mixed":303,"./number":304,"./objectid":305,"./operators/exists":307,"./operators/geospatial":308,"./operators/helpers":309,"./operators/type":310,"./string":311,"lodash.get":199,"util":415}],296:[function(require,module,exports){
+},{"../cast":265,"../schematype":314,"../types":328,"../utils":331,"./boolean":298,"./buffer":299,"./date":300,"./mixed":305,"./number":306,"./objectid":307,"./operators/exists":309,"./operators/geospatial":310,"./operators/helpers":311,"./operators/type":312,"./string":313,"lodash.get":201,"util":417}],298:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -72918,7 +72868,7 @@ SchemaBoolean.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBoolean;
 
-},{"../schematype":312,"../utils":329}],297:[function(require,module,exports){
+},{"../schematype":314,"../utils":331}],299:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -73138,7 +73088,7 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaBuffer;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"../schematype":312,"../types/buffer":322,"../utils":329,"./../document":264,"./operators/bitwise":306}],298:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"../schematype":314,"../types/buffer":324,"../utils":331,"./../document":266,"./operators/bitwise":308}],300:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -73438,7 +73388,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaDate;
 
-},{"../error":279,"../schematype":312,"../utils":329}],299:[function(require,module,exports){
+},{"../error":281,"../schematype":314,"../utils":331}],301:[function(require,module,exports){
 (function (Buffer){
 /* eslint no-empty: 1 */
 
@@ -73592,7 +73542,7 @@ Decimal128.prototype.$conditionalHandlers =
 module.exports = Decimal128;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"../schematype":312,"../types/decimal128":323,"../utils":329,"./../document":264}],300:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"../schematype":314,"../types/decimal128":325,"../utils":331,"./../document":266}],302:[function(require,module,exports){
 /* eslint no-empty: 1 */
 
 /*!
@@ -73983,7 +73933,7 @@ function scopePaths(array, fields, init) {
 
 module.exports = DocumentArray;
 
-},{"../document":264,"../error/cast":277,"../schematype":312,"../services/model/discriminator":317,"../types/documentarray":324,"../types/embedded":325,"../utils":329,"./array":295,"events":177,"util":415}],301:[function(require,module,exports){
+},{"../document":266,"../error/cast":279,"../schematype":314,"../services/model/discriminator":319,"../types/documentarray":326,"../types/embedded":327,"../utils":331,"./array":297,"events":179,"util":417}],303:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -74241,7 +74191,7 @@ Embedded.prototype.discriminator = function(name, schema) {
   return this.caster.discriminators[name];
 };
 
-},{"../options":291,"../schematype":312,"../services/model/discriminator":317,"../types/subdocument":328,"./operators/exists":307,"./operators/geospatial":308,"./operators/helpers":309,"events":177}],302:[function(require,module,exports){
+},{"../options":293,"../schematype":314,"../services/model/discriminator":319,"../types/subdocument":330,"./operators/exists":309,"./operators/geospatial":310,"./operators/helpers":311,"events":179}],304:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -74275,7 +74225,7 @@ exports.Oid = exports.ObjectId;
 exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 
-},{"./array":295,"./boolean":296,"./buffer":297,"./date":298,"./decimal128":299,"./documentarray":300,"./embedded":301,"./mixed":303,"./number":304,"./objectid":305,"./string":311}],303:[function(require,module,exports){
+},{"./array":297,"./boolean":298,"./buffer":299,"./date":300,"./decimal128":301,"./documentarray":302,"./embedded":303,"./mixed":305,"./number":306,"./objectid":307,"./string":313}],305:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -74357,7 +74307,7 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../schematype":312,"../utils":329}],304:[function(require,module,exports){
+},{"../schematype":314,"../utils":331}],306:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -74651,7 +74601,7 @@ SchemaNumber.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaNumber;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"../error":279,"../schematype":312,"../utils":329,"./../document":264,"./operators/bitwise":306}],305:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"../error":281,"../schematype":314,"../utils":331,"./../document":266,"./operators/bitwise":308}],307:[function(require,module,exports){
 (function (Buffer){
 /* eslint no-empty: 1 */
 
@@ -74884,7 +74834,7 @@ function resetId(v) {
 module.exports = ObjectId;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"../schematype":312,"../types/objectid":327,"../utils":329,"./../document":264}],306:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"../schematype":314,"../types/objectid":329,"../utils":331,"./../document":266}],308:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -74924,7 +74874,7 @@ function _castNumber(path, num) {
 module.exports = handleBitwiseOperator;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":196,"../../error/cast":277}],307:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":198,"../../error/cast":279}],309:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -74939,7 +74889,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],308:[function(require,module,exports){
+},{}],310:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -75041,7 +74991,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":295,"./helpers":309}],309:[function(require,module,exports){
+},{"../array":297,"./helpers":311}],311:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75077,7 +75027,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":304}],310:[function(require,module,exports){
+},{"../number":306}],312:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75092,7 +75042,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],311:[function(require,module,exports){
+},{}],313:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -75618,7 +75568,7 @@ SchemaString.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaString;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"../error":279,"../schematype":312,"../utils":329,"./../document":264}],312:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"../error":281,"../schematype":314,"../utils":331,"./../document":266}],314:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -76716,7 +76666,7 @@ exports.CastError = CastError;
 exports.ValidatorError = ValidatorError;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":196,"./error":279,"./schema/operators/exists":307,"./schema/operators/type":310,"./utils":329}],313:[function(require,module,exports){
+},{"../../is-buffer/index.js":198,"./error":281,"./schema/operators/exists":309,"./schema/operators/type":312,"./utils":331}],315:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -76807,7 +76757,7 @@ function shouldFlatten(val) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"../types/objectid":327,"../utils":329,"buffer":139}],314:[function(require,module,exports){
+},{"../types/objectid":329,"../utils":331,"buffer":141}],316:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -76827,7 +76777,7 @@ module.exports = function cleanModifiedSubpaths(doc, path) {
   return deleted;
 };
 
-},{}],315:[function(require,module,exports){
+},{}],317:[function(require,module,exports){
 'use strict';
 
 var Document;
@@ -76975,7 +76925,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":264,"../../utils":329}],316:[function(require,module,exports){
+},{"../../document":266,"../../utils":331}],318:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77028,7 +76978,7 @@ function applyHooks(model, schema, options) {
     createWrapperSync('init', objToDecorate.$__init, null, kareemOptions);
 }
 
-},{}],317:[function(require,module,exports){
+},{}],319:[function(require,module,exports){
 'use strict';
 
 var defineKey = require('../document/compile').defineKey;
@@ -77163,7 +77113,7 @@ module.exports = function discriminator(model, name, schema) {
   return schema;
 };
 
-},{"../../utils":329,"../document/compile":315}],318:[function(require,module,exports){
+},{"../../utils":331,"../document/compile":317}],320:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77183,7 +77133,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],319:[function(require,module,exports){
+},{}],321:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -77213,7 +77163,7 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"./isDefiningProjection":318}],320:[function(require,module,exports){
+},{"./isDefiningProjection":320}],322:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -77393,7 +77343,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":329}],321:[function(require,module,exports){
+},{"./utils":331}],323:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -78235,7 +78185,7 @@ function _checkManualPopulation(arr, docs) {
 module.exports = exports = MongooseArray;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"../document":264,"../options":291,"../services/document/cleanModifiedSubpaths":314,"../utils":329,"./embedded":325,"./objectid":327}],322:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"../document":266,"../options":293,"../services/document/cleanModifiedSubpaths":316,"../utils":331,"./embedded":327,"./objectid":329}],324:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -78534,7 +78484,7 @@ MongooseBuffer.Binary = Binary;
 module.exports = MongooseBuffer;
 
 }).call(this,require("buffer").Buffer)
-},{"../drivers":271,"../utils":329,"buffer":139}],323:[function(require,module,exports){
+},{"../drivers":273,"../utils":331,"buffer":141}],325:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -78547,7 +78497,7 @@ module.exports = MongooseBuffer;
 
 module.exports = require('../drivers').Decimal128;
 
-},{"../drivers":271}],324:[function(require,module,exports){
+},{"../drivers":273}],326:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -78834,7 +78784,7 @@ MongooseDocumentArray.mixin = {
 module.exports = MongooseDocumentArray;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":196,"../document":264,"../options":291,"../schema/objectid":305,"../utils":329,"./array":321,"./objectid":327}],325:[function(require,module,exports){
+},{"../../../is-buffer/index.js":198,"../document":266,"../options":293,"../schema/objectid":307,"../utils":331,"./array":323,"./objectid":329}],327:[function(require,module,exports){
 /* eslint no-func-assign: 1 */
 
 /*!
@@ -79220,7 +79170,7 @@ EmbeddedDocument.prototype.parentArray = function() {
 
 module.exports = EmbeddedDocument;
 
-},{"../document_provider":265,"../options":291,"../utils":329,"events":177}],326:[function(require,module,exports){
+},{"../document_provider":267,"../options":293,"../utils":331,"events":179}],328:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -79238,7 +79188,7 @@ exports.ObjectId = require('./objectid');
 
 exports.Subdocument = require('./subdocument');
 
-},{"./array":321,"./buffer":322,"./decimal128":323,"./documentarray":324,"./embedded":325,"./objectid":327,"./subdocument":328}],327:[function(require,module,exports){
+},{"./array":323,"./buffer":324,"./decimal128":325,"./documentarray":326,"./embedded":327,"./objectid":329,"./subdocument":330}],329:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -79253,7 +79203,7 @@ var ObjectId = require('../drivers').ObjectId;
 
 module.exports = ObjectId;
 
-},{"../drivers":271}],328:[function(require,module,exports){
+},{"../drivers":273}],330:[function(require,module,exports){
 'use strict';
 
 var Document = require('../document');
@@ -79452,7 +79402,7 @@ function registerRemoveListener(sub) {
   owner.on('remove', emitRemove);
 }
 
-},{"../document":264,"../options":291,"../utils":329}],329:[function(require,module,exports){
+},{"../document":266,"../options":293,"../utils":331}],331:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -80278,7 +80228,7 @@ exports.immediate = function immediate(cb) {
 exports.noop = function() {};
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"./document":264,"./promise_provider":293,"./types":326,"./types/decimal128":323,"./types/objectid":327,"_process":367,"buffer":139,"mpath":331,"ms":342,"regexp-clone":393,"sliced":407}],330:[function(require,module,exports){
+},{"./document":266,"./promise_provider":295,"./types":328,"./types/decimal128":325,"./types/objectid":329,"_process":369,"buffer":141,"mpath":333,"ms":344,"regexp-clone":395,"sliced":409}],332:[function(require,module,exports){
 
 /**
  * VirtualType constructor
@@ -80383,10 +80333,10 @@ VirtualType.prototype.applySetters = function(value, scope) {
 
 module.exports = VirtualType;
 
-},{}],331:[function(require,module,exports){
+},{}],333:[function(require,module,exports){
 module.exports = exports = require('./lib');
 
-},{"./lib":332}],332:[function(require,module,exports){
+},{"./lib":334}],334:[function(require,module,exports){
 /**
  * Returns the value of object `o` at the given `path`.
  *
@@ -80663,7 +80613,7 @@ function K (v) {
   return v;
 }
 
-},{}],333:[function(require,module,exports){
+},{}],335:[function(require,module,exports){
 'use strict';
 
 /**
@@ -80711,7 +80661,7 @@ function notImplemented (method) {
   }
 }
 
-},{}],334:[function(require,module,exports){
+},{}],336:[function(require,module,exports){
 'use strict';
 
 var env = require('../env')
@@ -80726,7 +80676,7 @@ module.exports =
   require('./collection');
 
 
-},{"../env":336,"./collection":333,"./node":335}],335:[function(require,module,exports){
+},{"../env":338,"./collection":335,"./node":337}],337:[function(require,module,exports){
 'use strict';
 
 /**
@@ -80879,7 +80829,7 @@ NodeCollection.prototype.findCursor = function(match, findOptions) {
 
 module.exports = exports = NodeCollection;
 
-},{"../utils":339,"./collection":333}],336:[function(require,module,exports){
+},{"../utils":341,"./collection":335}],338:[function(require,module,exports){
 (function (process,global,Buffer){
 'use strict';
 
@@ -80905,7 +80855,7 @@ exports.type = exports.isNode ? 'node'
   : 'unknown'
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":367,"buffer":139}],337:[function(require,module,exports){
+},{"_process":369,"buffer":141}],339:[function(require,module,exports){
 'use strict';
 
 /**
@@ -83948,7 +83898,7 @@ module.exports = exports = Query;
 // TODO
 // test utils
 
-},{"./collection":334,"./collection/collection":333,"./env":336,"./permissions":338,"./utils":339,"assert":83,"bluebird":85,"debug":149,"sliced":340,"util":415}],338:[function(require,module,exports){
+},{"./collection":336,"./collection/collection":335,"./env":338,"./permissions":340,"./utils":341,"assert":85,"bluebird":87,"debug":151,"sliced":342,"util":417}],340:[function(require,module,exports){
 'use strict';
 
 var denied = exports;
@@ -84038,7 +83988,7 @@ denied.count.maxScan =
 denied.count.snapshot =
 denied.count.tailable = true;
 
-},{}],339:[function(require,module,exports){
+},{}],341:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -84362,10 +84312,10 @@ exports.isArgumentsObject = function(v) {
 };
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":367,"buffer":139,"regexp-clone":393}],340:[function(require,module,exports){
+},{"_process":369,"buffer":141,"regexp-clone":395}],342:[function(require,module,exports){
 module.exports = exports = require('./lib/sliced');
 
-},{"./lib/sliced":341}],341:[function(require,module,exports){
+},{"./lib/sliced":343}],343:[function(require,module,exports){
 
 /**
  * An Array.prototype.slice.call(arguments) alternative
@@ -84400,7 +84350,7 @@ module.exports = function (args, slice, sliceEnd) {
 }
 
 
-},{}],342:[function(require,module,exports){
+},{}],344:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -84554,7 +84504,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],343:[function(require,module,exports){
+},{}],345:[function(require,module,exports){
 exports.endianness = function () { return 'LE' };
 
 exports.hostname = function () {
@@ -84605,7 +84555,7 @@ exports.homedir = function () {
 	return '/'
 };
 
-},{}],344:[function(require,module,exports){
+},{}],346:[function(require,module,exports){
 'use strict';
 
 
@@ -84712,7 +84662,7 @@ exports.setTyped = function (on) {
 
 exports.setTyped(TYPED_OK);
 
-},{}],345:[function(require,module,exports){
+},{}],347:[function(require,module,exports){
 'use strict';
 
 // Note: adler32 takes 12% for level 0 and 2% for level 6.
@@ -84765,7 +84715,7 @@ function adler32(adler, buf, len, pos) {
 
 module.exports = adler32;
 
-},{}],346:[function(require,module,exports){
+},{}],348:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -84835,7 +84785,7 @@ module.exports = {
   //Z_NULL:                 null // Use -1 or null inline, depending on var type
 };
 
-},{}],347:[function(require,module,exports){
+},{}],349:[function(require,module,exports){
 'use strict';
 
 // Note: we can't get significant speed boost here.
@@ -84896,7 +84846,7 @@ function crc32(crc, buf, len, pos) {
 
 module.exports = crc32;
 
-},{}],348:[function(require,module,exports){
+},{}],350:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -86772,7 +86722,7 @@ exports.deflatePrime = deflatePrime;
 exports.deflateTune = deflateTune;
 */
 
-},{"../utils/common":344,"./adler32":345,"./crc32":347,"./messages":352,"./trees":353}],349:[function(require,module,exports){
+},{"../utils/common":346,"./adler32":347,"./crc32":349,"./messages":354,"./trees":355}],351:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -87119,7 +87069,7 @@ module.exports = function inflate_fast(strm, start) {
   return;
 };
 
-},{}],350:[function(require,module,exports){
+},{}],352:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -88677,7 +88627,7 @@ exports.inflateSyncPoint = inflateSyncPoint;
 exports.inflateUndermine = inflateUndermine;
 */
 
-},{"../utils/common":344,"./adler32":345,"./crc32":347,"./inffast":349,"./inftrees":351}],351:[function(require,module,exports){
+},{"../utils/common":346,"./adler32":347,"./crc32":349,"./inffast":351,"./inftrees":353}],353:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -89022,7 +88972,7 @@ module.exports = function inflate_table(type, lens, lens_index, codes, table, ta
   return 0;
 };
 
-},{"../utils/common":344}],352:[function(require,module,exports){
+},{"../utils/common":346}],354:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -89056,7 +89006,7 @@ module.exports = {
   '-6':   'incompatible version' /* Z_VERSION_ERROR (-6) */
 };
 
-},{}],353:[function(require,module,exports){
+},{}],355:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -90278,7 +90228,7 @@ exports._tr_flush_block  = _tr_flush_block;
 exports._tr_tally = _tr_tally;
 exports._tr_align = _tr_align;
 
-},{"../utils/common":344}],354:[function(require,module,exports){
+},{"../utils/common":346}],356:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -90327,7 +90277,7 @@ function ZStream() {
 
 module.exports = ZStream;
 
-},{}],355:[function(require,module,exports){
+},{}],357:[function(require,module,exports){
 module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.2": "aes-128-cbc",
 "2.16.840.1.101.3.4.1.3": "aes-128-ofb",
@@ -90341,7 +90291,7 @@ module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.43": "aes-256-ofb",
 "2.16.840.1.101.3.4.1.44": "aes-256-cfb"
 }
-},{}],356:[function(require,module,exports){
+},{}],358:[function(require,module,exports){
 // from https://github.com/indutny/self-signed/blob/gh-pages/lib/asn1.js
 // Fedor, you are amazing.
 'use strict'
@@ -90465,7 +90415,7 @@ exports.signature = asn1.define('signature', function () {
   )
 })
 
-},{"./certificate":357,"asn1.js":69}],357:[function(require,module,exports){
+},{"./certificate":359,"asn1.js":71}],359:[function(require,module,exports){
 // from https://github.com/Rantanen/node-dtls/blob/25a7dc861bda38cfeac93a723500eea4f0ac2e86/Certificate.js
 // thanks to @Rantanen
 
@@ -90555,7 +90505,7 @@ var X509Certificate = asn.define('X509Certificate', function () {
 
 module.exports = X509Certificate
 
-},{"asn1.js":69}],358:[function(require,module,exports){
+},{"asn1.js":71}],360:[function(require,module,exports){
 (function (Buffer){
 // adapted from https://github.com/apatil/pemstrip
 var findProc = /Proc-Type: 4,ENCRYPTED\n\r?DEK-Info: AES-((?:128)|(?:192)|(?:256))-CBC,([0-9A-H]+)\n\r?\n\r?([0-9A-z\n\r\+\/\=]+)\n\r?/m
@@ -90589,7 +90539,7 @@ module.exports = function (okey, password) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"browserify-aes":91,"buffer":139,"evp_bytestokey":178}],359:[function(require,module,exports){
+},{"browserify-aes":93,"buffer":141,"evp_bytestokey":180}],361:[function(require,module,exports){
 (function (Buffer){
 var asn1 = require('./asn1')
 var aesid = require('./aesid.json')
@@ -90699,7 +90649,7 @@ function decrypt (data, password) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./aesid.json":355,"./asn1":356,"./fixProc":358,"browserify-aes":91,"buffer":139,"pbkdf2":361}],360:[function(require,module,exports){
+},{"./aesid.json":357,"./asn1":358,"./fixProc":360,"browserify-aes":93,"buffer":141,"pbkdf2":363}],362:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -90927,13 +90877,13 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":367}],361:[function(require,module,exports){
+},{"_process":369}],363:[function(require,module,exports){
 
 exports.pbkdf2 = require('./lib/async')
 
 exports.pbkdf2Sync = require('./lib/sync')
 
-},{"./lib/async":362,"./lib/sync":365}],362:[function(require,module,exports){
+},{"./lib/async":364,"./lib/sync":367}],364:[function(require,module,exports){
 (function (process,global){
 var checkParameters = require('./precondition')
 var defaultEncoding = require('./default-encoding')
@@ -91035,7 +90985,7 @@ module.exports = function (password, salt, iterations, keylen, digest, callback)
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./default-encoding":363,"./precondition":364,"./sync":365,"_process":367,"safe-buffer":397}],363:[function(require,module,exports){
+},{"./default-encoding":365,"./precondition":366,"./sync":367,"_process":369,"safe-buffer":399}],365:[function(require,module,exports){
 (function (process){
 var defaultEncoding
 /* istanbul ignore next */
@@ -91049,7 +90999,7 @@ if (process.browser) {
 module.exports = defaultEncoding
 
 }).call(this,require('_process'))
-},{"_process":367}],364:[function(require,module,exports){
+},{"_process":369}],366:[function(require,module,exports){
 var MAX_ALLOC = Math.pow(2, 30) - 1 // default in iojs
 module.exports = function (iterations, keylen) {
   if (typeof iterations !== 'number') {
@@ -91069,7 +91019,7 @@ module.exports = function (iterations, keylen) {
   }
 }
 
-},{}],365:[function(require,module,exports){
+},{}],367:[function(require,module,exports){
 var md5 = require('create-hash/md5')
 var rmd160 = require('ripemd160')
 var sha = require('sha.js')
@@ -91172,7 +91122,7 @@ function pbkdf2 (password, salt, iterations, keylen, digest) {
 
 module.exports = pbkdf2
 
-},{"./default-encoding":363,"./precondition":364,"create-hash/md5":145,"ripemd160":396,"safe-buffer":397,"sha.js":400}],366:[function(require,module,exports){
+},{"./default-encoding":365,"./precondition":366,"create-hash/md5":147,"ripemd160":398,"safe-buffer":399,"sha.js":402}],368:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -91220,7 +91170,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 }).call(this,require('_process'))
-},{"_process":367}],367:[function(require,module,exports){
+},{"_process":369}],369:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -91406,7 +91356,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],368:[function(require,module,exports){
+},{}],370:[function(require,module,exports){
 exports.publicEncrypt = require('./publicEncrypt');
 exports.privateDecrypt = require('./privateDecrypt');
 
@@ -91417,7 +91367,7 @@ exports.privateEncrypt = function privateEncrypt(key, buf) {
 exports.publicDecrypt = function publicDecrypt(key, buf) {
   return exports.privateDecrypt(key, buf, true);
 };
-},{"./privateDecrypt":370,"./publicEncrypt":371}],369:[function(require,module,exports){
+},{"./privateDecrypt":372,"./publicEncrypt":373}],371:[function(require,module,exports){
 (function (Buffer){
 var createHash = require('create-hash');
 module.exports = function (seed, len) {
@@ -91436,7 +91386,7 @@ function i2ops(c) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"create-hash":143}],370:[function(require,module,exports){
+},{"buffer":141,"create-hash":145}],372:[function(require,module,exports){
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var mgf = require('./mgf');
@@ -91547,7 +91497,7 @@ function compare(a, b){
   return dif;
 }
 }).call(this,require("buffer").Buffer)
-},{"./mgf":369,"./withPublic":372,"./xor":373,"bn.js":86,"browserify-rsa":109,"buffer":139,"create-hash":143,"parse-asn1":359}],371:[function(require,module,exports){
+},{"./mgf":371,"./withPublic":374,"./xor":375,"bn.js":88,"browserify-rsa":111,"buffer":141,"create-hash":145,"parse-asn1":361}],373:[function(require,module,exports){
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var randomBytes = require('randombytes');
@@ -91645,7 +91595,7 @@ function nonZero(len, crypto) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
-},{"./mgf":369,"./withPublic":372,"./xor":373,"bn.js":86,"browserify-rsa":109,"buffer":139,"create-hash":143,"parse-asn1":359,"randombytes":378}],372:[function(require,module,exports){
+},{"./mgf":371,"./withPublic":374,"./xor":375,"bn.js":88,"browserify-rsa":111,"buffer":141,"create-hash":145,"parse-asn1":361,"randombytes":380}],374:[function(require,module,exports){
 (function (Buffer){
 var bn = require('bn.js');
 function withPublic(paddedMsg, key) {
@@ -91658,7 +91608,7 @@ function withPublic(paddedMsg, key) {
 
 module.exports = withPublic;
 }).call(this,require("buffer").Buffer)
-},{"bn.js":86,"buffer":139}],373:[function(require,module,exports){
+},{"bn.js":88,"buffer":141}],375:[function(require,module,exports){
 module.exports = function xor(a, b) {
   var len = a.length;
   var i = -1;
@@ -91667,7 +91617,7 @@ module.exports = function xor(a, b) {
   }
   return a
 };
-},{}],374:[function(require,module,exports){
+},{}],376:[function(require,module,exports){
 (function (global){
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 ;(function(root) {
@@ -92204,7 +92154,7 @@ module.exports = function xor(a, b) {
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],375:[function(require,module,exports){
+},{}],377:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92290,7 +92240,7 @@ var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-},{}],376:[function(require,module,exports){
+},{}],378:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92377,13 +92327,13 @@ var objectKeys = Object.keys || function (obj) {
   return res;
 };
 
-},{}],377:[function(require,module,exports){
+},{}],379:[function(require,module,exports){
 'use strict';
 
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
-},{"./decode":375,"./encode":376}],378:[function(require,module,exports){
+},{"./decode":377,"./encode":378}],380:[function(require,module,exports){
 (function (process,global){
 'use strict'
 
@@ -92425,7 +92375,7 @@ function randomBytes (size, cb) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":367,"safe-buffer":397}],379:[function(require,module,exports){
+},{"_process":369,"safe-buffer":399}],381:[function(require,module,exports){
 (function (process,global){
 'use strict'
 
@@ -92537,10 +92487,10 @@ function randomFillSync (buf, offset, size) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":367,"randombytes":378,"safe-buffer":397}],380:[function(require,module,exports){
+},{"_process":369,"randombytes":380,"safe-buffer":399}],382:[function(require,module,exports){
 module.exports = require('./lib/_stream_duplex.js');
 
-},{"./lib/_stream_duplex.js":381}],381:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":383}],383:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92571,7 +92521,7 @@ module.exports = require('./lib/_stream_duplex.js');
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args').nextTick;
+var pna = require('process-nextick-args');
 /*</replacement>*/
 
 /*<replacement>*/
@@ -92625,7 +92575,7 @@ function onend() {
 
   // no more data can be written.
   // But allow more writes to happen in this tick.
-  processNextTick(onEndNT, this);
+  pna.nextTick(onEndNT, this);
 }
 
 function onEndNT(self) {
@@ -92657,7 +92607,7 @@ Duplex.prototype._destroy = function (err, cb) {
   this.push(null);
   this.end();
 
-  processNextTick(cb, err);
+  pna.nextTick(cb, err);
 };
 
 function forEach(xs, f) {
@@ -92665,7 +92615,7 @@ function forEach(xs, f) {
     f(xs[i], i);
   }
 }
-},{"./_stream_readable":383,"./_stream_writable":385,"core-util-is":141,"inherits":195,"process-nextick-args":366}],382:[function(require,module,exports){
+},{"./_stream_readable":385,"./_stream_writable":387,"core-util-is":143,"inherits":197,"process-nextick-args":368}],384:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92713,7 +92663,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":384,"core-util-is":141,"inherits":195}],383:[function(require,module,exports){
+},{"./_stream_transform":386,"core-util-is":143,"inherits":197}],385:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -92740,7 +92690,7 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args').nextTick;
+var pna = require('process-nextick-args');
 /*</replacement>*/
 
 module.exports = Readable;
@@ -93212,7 +93162,7 @@ function emitReadable(stream) {
   if (!state.emittedReadable) {
     debug('emitReadable', state.flowing);
     state.emittedReadable = true;
-    if (state.sync) processNextTick(emitReadable_, stream);else emitReadable_(stream);
+    if (state.sync) pna.nextTick(emitReadable_, stream);else emitReadable_(stream);
   }
 }
 
@@ -93231,7 +93181,7 @@ function emitReadable_(stream) {
 function maybeReadMore(stream, state) {
   if (!state.readingMore) {
     state.readingMore = true;
-    processNextTick(maybeReadMore_, stream, state);
+    pna.nextTick(maybeReadMore_, stream, state);
   }
 }
 
@@ -93276,7 +93226,7 @@ Readable.prototype.pipe = function (dest, pipeOpts) {
   var doEnd = (!pipeOpts || pipeOpts.end !== false) && dest !== process.stdout && dest !== process.stderr;
 
   var endFn = doEnd ? onend : unpipe;
-  if (state.endEmitted) processNextTick(endFn);else src.once('end', endFn);
+  if (state.endEmitted) pna.nextTick(endFn);else src.once('end', endFn);
 
   dest.on('unpipe', onunpipe);
   function onunpipe(readable, unpipeInfo) {
@@ -93466,7 +93416,7 @@ Readable.prototype.on = function (ev, fn) {
       state.readableListening = state.needReadable = true;
       state.emittedReadable = false;
       if (!state.reading) {
-        processNextTick(nReadingNextTick, this);
+        pna.nextTick(nReadingNextTick, this);
       } else if (state.length) {
         emitReadable(this);
       }
@@ -93497,7 +93447,7 @@ Readable.prototype.resume = function () {
 function resume(stream, state) {
   if (!state.resumeScheduled) {
     state.resumeScheduled = true;
-    processNextTick(resume_, stream, state);
+    pna.nextTick(resume_, stream, state);
   }
 }
 
@@ -93705,7 +93655,7 @@ function endReadable(stream) {
 
   if (!state.endEmitted) {
     state.ended = true;
-    processNextTick(endReadableNT, state, stream);
+    pna.nextTick(endReadableNT, state, stream);
   }
 }
 
@@ -93731,7 +93681,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":381,"./internal/streams/BufferList":386,"./internal/streams/destroy":387,"./internal/streams/stream":388,"_process":367,"core-util-is":141,"events":177,"inherits":195,"isarray":197,"process-nextick-args":366,"safe-buffer":397,"string_decoder/":409,"util":88}],384:[function(require,module,exports){
+},{"./_stream_duplex":383,"./internal/streams/BufferList":388,"./internal/streams/destroy":389,"./internal/streams/stream":390,"_process":369,"core-util-is":143,"events":179,"inherits":197,"isarray":199,"process-nextick-args":368,"safe-buffer":399,"string_decoder/":411,"util":90}],386:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -93946,7 +93896,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":381,"core-util-is":141,"inherits":195}],385:[function(require,module,exports){
+},{"./_stream_duplex":383,"core-util-is":143,"inherits":197}],387:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -93977,7 +93927,7 @@ function done(stream, er, data) {
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args').nextTick;
+var pna = require('process-nextick-args');
 /*</replacement>*/
 
 module.exports = Writable;
@@ -94004,7 +93954,7 @@ function CorkedRequest(state) {
 /* </replacement> */
 
 /*<replacement>*/
-var asyncWrite = !process.browser && ['v0.10', 'v0.9.'].indexOf(process.version.slice(0, 5)) > -1 ? setImmediate : processNextTick;
+var asyncWrite = !process.browser && ['v0.10', 'v0.9.'].indexOf(process.version.slice(0, 5)) > -1 ? setImmediate : pna.nextTick;
 /*</replacement>*/
 
 /*<replacement>*/
@@ -94238,7 +94188,7 @@ function writeAfterEnd(stream, cb) {
   var er = new Error('write after end');
   // TODO: defer error events consistently everywhere, not just the cb
   stream.emit('error', er);
-  processNextTick(cb, er);
+  pna.nextTick(cb, er);
 }
 
 // Checks that a user-supplied chunk is valid, especially for the particular
@@ -94255,7 +94205,7 @@ function validChunk(stream, state, chunk, cb) {
   }
   if (er) {
     stream.emit('error', er);
-    processNextTick(cb, er);
+    pna.nextTick(cb, er);
     valid = false;
   }
   return valid;
@@ -94375,10 +94325,10 @@ function onwriteError(stream, state, sync, er, cb) {
   if (sync) {
     // defer the callback if we are being called synchronously
     // to avoid piling up things on the stack
-    processNextTick(cb, er);
+    pna.nextTick(cb, er);
     // this can emit finish, and it will always happen
     // after error
-    processNextTick(finishMaybe, stream, state);
+    pna.nextTick(finishMaybe, stream, state);
     stream._writableState.errorEmitted = true;
     stream.emit('error', er);
   } else {
@@ -94553,7 +94503,7 @@ function prefinish(stream, state) {
     if (typeof stream._final === 'function') {
       state.pendingcb++;
       state.finalCalled = true;
-      processNextTick(callFinal, stream, state);
+      pna.nextTick(callFinal, stream, state);
     } else {
       state.prefinished = true;
       stream.emit('prefinish');
@@ -94577,7 +94527,7 @@ function endWritable(stream, state, cb) {
   state.ending = true;
   finishMaybe(stream, state);
   if (cb) {
-    if (state.finished) processNextTick(cb);else stream.once('finish', cb);
+    if (state.finished) pna.nextTick(cb);else stream.once('finish', cb);
   }
   state.ended = true;
   stream.writable = false;
@@ -94626,7 +94576,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":381,"./internal/streams/destroy":387,"./internal/streams/stream":388,"_process":367,"core-util-is":141,"inherits":195,"process-nextick-args":366,"safe-buffer":397,"util-deprecate":412}],386:[function(require,module,exports){
+},{"./_stream_duplex":383,"./internal/streams/destroy":389,"./internal/streams/stream":390,"_process":369,"core-util-is":143,"inherits":197,"process-nextick-args":368,"safe-buffer":399,"util-deprecate":414}],388:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -94706,12 +94656,12 @@ if (util && util.inspect && util.inspect.custom) {
     return this.constructor.name + ' ' + obj;
   };
 }
-},{"safe-buffer":397,"util":88}],387:[function(require,module,exports){
+},{"safe-buffer":399,"util":90}],389:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args').nextTick;
+var pna = require('process-nextick-args');
 /*</replacement>*/
 
 // undocumented cb() API, needed for core, not for public API
@@ -94725,7 +94675,7 @@ function destroy(err, cb) {
     if (cb) {
       cb(err);
     } else if (err && (!this._writableState || !this._writableState.errorEmitted)) {
-      processNextTick(emitErrorNT, this, err);
+      pna.nextTick(emitErrorNT, this, err);
     }
     return this;
   }
@@ -94744,7 +94694,7 @@ function destroy(err, cb) {
 
   this._destroy(err || null, function (err) {
     if (!cb && err) {
-      processNextTick(emitErrorNT, _this, err);
+      pna.nextTick(emitErrorNT, _this, err);
       if (_this._writableState) {
         _this._writableState.errorEmitted = true;
       }
@@ -94781,13 +94731,13 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":366}],388:[function(require,module,exports){
+},{"process-nextick-args":368}],390:[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":177}],389:[function(require,module,exports){
+},{"events":179}],391:[function(require,module,exports){
 module.exports = require('./readable').PassThrough
 
-},{"./readable":390}],390:[function(require,module,exports){
+},{"./readable":392}],392:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -94796,13 +94746,13 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":381,"./lib/_stream_passthrough.js":382,"./lib/_stream_readable.js":383,"./lib/_stream_transform.js":384,"./lib/_stream_writable.js":385}],391:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":383,"./lib/_stream_passthrough.js":384,"./lib/_stream_readable.js":385,"./lib/_stream_transform.js":386,"./lib/_stream_writable.js":387}],393:[function(require,module,exports){
 module.exports = require('./readable').Transform
 
-},{"./readable":390}],392:[function(require,module,exports){
+},{"./readable":392}],394:[function(require,module,exports){
 module.exports = require('./lib/_stream_writable.js');
 
-},{"./lib/_stream_writable.js":385}],393:[function(require,module,exports){
+},{"./lib/_stream_writable.js":387}],395:[function(require,module,exports){
 
 var toString = Object.prototype.toString;
 
@@ -94824,7 +94774,7 @@ module.exports = exports = function (regexp) {
 }
 
 
-},{}],394:[function(require,module,exports){
+},{}],396:[function(require,module,exports){
 (function (process){
 var path = require('path'),
   fs = require('fs'),
@@ -94956,7 +94906,7 @@ require_optional.exists = function(name) {
 module.exports = require_optional;
 
 }).call(this,require('_process'))
-},{"_process":367,"fs":118,"path":360,"resolve-from":395,"semver":398,"util":415}],395:[function(require,module,exports){
+},{"_process":369,"fs":120,"path":362,"resolve-from":397,"semver":400,"util":417}],397:[function(require,module,exports){
 'use strict';
 var path = require('path');
 var Module = require('module');
@@ -94981,7 +94931,7 @@ module.exports = function (fromDir, moduleId) {
 	}
 };
 
-},{"module":118,"path":360}],396:[function(require,module,exports){
+},{"module":120,"path":362}],398:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -95276,7 +95226,7 @@ function fn5 (a, b, c, d, e, m, k, s) {
 module.exports = RIPEMD160
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":139,"hash-base":179,"inherits":195}],397:[function(require,module,exports){
+},{"buffer":141,"hash-base":181,"inherits":197}],399:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -95340,7 +95290,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":139}],398:[function(require,module,exports){
+},{"buffer":141}],400:[function(require,module,exports){
 (function (process){
 exports = module.exports = SemVer;
 
@@ -96668,7 +96618,7 @@ function coerce(version) {
 }
 
 }).call(this,require('_process'))
-},{"_process":367}],399:[function(require,module,exports){
+},{"_process":369}],401:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 // prototype class for hash functions
@@ -96751,7 +96701,7 @@ Hash.prototype._update = function () {
 
 module.exports = Hash
 
-},{"safe-buffer":397}],400:[function(require,module,exports){
+},{"safe-buffer":399}],402:[function(require,module,exports){
 var exports = module.exports = function SHA (algorithm) {
   algorithm = algorithm.toLowerCase()
 
@@ -96768,7 +96718,7 @@ exports.sha256 = require('./sha256')
 exports.sha384 = require('./sha384')
 exports.sha512 = require('./sha512')
 
-},{"./sha":401,"./sha1":402,"./sha224":403,"./sha256":404,"./sha384":405,"./sha512":406}],401:[function(require,module,exports){
+},{"./sha":403,"./sha1":404,"./sha224":405,"./sha256":406,"./sha384":407,"./sha512":408}],403:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
  * in FIPS PUB 180-1
@@ -96864,7 +96814,7 @@ Sha.prototype._hash = function () {
 
 module.exports = Sha
 
-},{"./hash":399,"inherits":195,"safe-buffer":397}],402:[function(require,module,exports){
+},{"./hash":401,"inherits":197,"safe-buffer":399}],404:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
  * in FIPS PUB 180-1
@@ -96965,7 +96915,7 @@ Sha1.prototype._hash = function () {
 
 module.exports = Sha1
 
-},{"./hash":399,"inherits":195,"safe-buffer":397}],403:[function(require,module,exports){
+},{"./hash":401,"inherits":197,"safe-buffer":399}],405:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97020,7 +96970,7 @@ Sha224.prototype._hash = function () {
 
 module.exports = Sha224
 
-},{"./hash":399,"./sha256":404,"inherits":195,"safe-buffer":397}],404:[function(require,module,exports){
+},{"./hash":401,"./sha256":406,"inherits":197,"safe-buffer":399}],406:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97157,7 +97107,7 @@ Sha256.prototype._hash = function () {
 
 module.exports = Sha256
 
-},{"./hash":399,"inherits":195,"safe-buffer":397}],405:[function(require,module,exports){
+},{"./hash":401,"inherits":197,"safe-buffer":399}],407:[function(require,module,exports){
 var inherits = require('inherits')
 var SHA512 = require('./sha512')
 var Hash = require('./hash')
@@ -97216,7 +97166,7 @@ Sha384.prototype._hash = function () {
 
 module.exports = Sha384
 
-},{"./hash":399,"./sha512":406,"inherits":195,"safe-buffer":397}],406:[function(require,module,exports){
+},{"./hash":401,"./sha512":408,"inherits":197,"safe-buffer":399}],408:[function(require,module,exports){
 var inherits = require('inherits')
 var Hash = require('./hash')
 var Buffer = require('safe-buffer').Buffer
@@ -97478,9 +97428,9 @@ Sha512.prototype._hash = function () {
 
 module.exports = Sha512
 
-},{"./hash":399,"inherits":195,"safe-buffer":397}],407:[function(require,module,exports){
-arguments[4][341][0].apply(exports,arguments)
-},{"dup":341}],408:[function(require,module,exports){
+},{"./hash":401,"inherits":197,"safe-buffer":399}],409:[function(require,module,exports){
+arguments[4][343][0].apply(exports,arguments)
+},{"dup":343}],410:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -97609,7 +97559,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":177,"inherits":195,"readable-stream/duplex.js":380,"readable-stream/passthrough.js":389,"readable-stream/readable.js":390,"readable-stream/transform.js":391,"readable-stream/writable.js":392}],409:[function(require,module,exports){
+},{"events":179,"inherits":197,"readable-stream/duplex.js":382,"readable-stream/passthrough.js":391,"readable-stream/readable.js":392,"readable-stream/transform.js":393,"readable-stream/writable.js":394}],411:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -97882,7 +97832,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":397}],410:[function(require,module,exports){
+},{"safe-buffer":399}],412:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -98616,7 +98566,7 @@ Url.prototype.parseHost = function() {
   if (host) this.hostname = host;
 };
 
-},{"./util":411,"punycode":374,"querystring":377}],411:[function(require,module,exports){
+},{"./util":413,"punycode":376,"querystring":379}],413:[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -98634,7 +98584,7 @@ module.exports = {
   }
 };
 
-},{}],412:[function(require,module,exports){
+},{}],414:[function(require,module,exports){
 (function (global){
 
 /**
@@ -98705,16 +98655,16 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],413:[function(require,module,exports){
-arguments[4][195][0].apply(exports,arguments)
-},{"dup":195}],414:[function(require,module,exports){
+},{}],415:[function(require,module,exports){
+arguments[4][197][0].apply(exports,arguments)
+},{"dup":197}],416:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],415:[function(require,module,exports){
+},{}],417:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -99304,7 +99254,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":414,"_process":367,"inherits":413}],416:[function(require,module,exports){
+},{"./support/isBuffer":416,"_process":369,"inherits":415}],418:[function(require,module,exports){
 var indexOf = require('indexof');
 
 var Object_keys = function (obj) {
@@ -99444,4 +99394,4 @@ exports.createContext = Script.createContext = function (context) {
     return copy;
 };
 
-},{"indexof":194}]},{},[68]);
+},{"indexof":196}]},{},[70]);

@@ -9,6 +9,22 @@ module QDM
     MP_START_DATE = Time.gm(2012, 1, 1, 0, 0).to_i
     TYPES = %w[ep eh].freeze
 
+    IPP = 'IPP'.freeze
+    DENOM = 'DENOM'.freeze
+    NUMER = 'NUMER'.freeze
+    NUMEX = 'NUMEX'.freeze
+    DENEXCEP = 'DENEXCEP'.freeze
+    DENEX = 'DENEX'.freeze
+    MSRPOPL = 'MSRPOPL'.freeze
+    OBSERV = 'OBSERV'.freeze
+    MSRPOPLEX = 'MSRPOPLEX'.freeze
+
+    STRAT = 'STRAT'.freeze
+
+    ALL_POPULATION_CODES = [STRAT, IPP, DENOM, DENEX, NUMER, NUMEX, DENEXCEP, MSRPOPL, OBSERV, MSRPOPLEX].freeze
+
+    CQL_SKIP_STATEMENTS = ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex'].freeze
+
     # ID/other measure information
     field :id, type: String
     field :measure_id, type: String
