@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
-const { String } = mongoose.Schema.Types.String;
+const mString = mongoose.Schema.Types.String;
 
 const ConceptSchema = mongoose.Schema({
-  code: String,
-  code_system: String,
-  code_system_name: String,
-  code_system_version: String,
-  display_name: String,
+  code: mString,
+  code_system: mString,
+  code_system_name: mString,
+  code_system_version: mString,
+  display_name: mString,
 });
 
 module.exports.ConceptSchema = ConceptSchema;
