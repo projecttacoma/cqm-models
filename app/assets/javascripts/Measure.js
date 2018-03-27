@@ -3,9 +3,8 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [Number, Array, String, Boolean, Mixed, ObjectId, Date] = [
+const [mNumber, mString, mBoolean, Mixed, ObjectId, mDate] = [
   mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.Array,
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Boolean,
   mongoose.Schema.Types.Mixed,
@@ -16,32 +15,32 @@ const [Number, Array, String, Boolean, Mixed, ObjectId, Date] = [
 const MeasureSchema = mongoose.Schema(
   {
     // ID/other measure information
-    id: String,
-    measure_id: String,
-    hqmf_id: String,
-    hqmf_set_id: String,
-    hqmf_version_number: Number,
-    cms_id: String,
-    title: String,
-    description: String,
-    type: String,
-    category: { type: String, default: 'Uncategorized' },
+    id: mString,
+    measure_id: mString,
+    hqmf_id: mString,
+    hqmf_set_id: mString,
+    hqmf_version_number: mNumber,
+    cms_id: mString,
+    title: mString,
+    description: mString,
+    type: mString,
+    category: { type: mString, default: 'Uncategorized' },
 
     // Measure type variables
-    episode_of_care: Boolean,
-    continuous_constiable: Boolean,
+    episode_of_care: mBoolean,
+    continuous_constiable: mBoolean,
     episode_ids: [],
 
     // Publishing data (used by Bonnie)
-    published: Boolean,
-    publish_date: Date,
-    version: Number,
+    published: mBoolean,
+    publish_date: mDate,
+    version: mNumber,
 
     // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,
-    cql: [String],
+    cql: [mString],
     elm: [Mixed],
-    main_cql_library: String,
+    main_cql_library: mString,
     cql_statement_dependencies: Mixed,
 
     // HQMF/Tacoma-specific Measure-logic related data
@@ -66,7 +65,7 @@ const MeasureSchema = mongoose.Schema(
   // Options
   {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }, // These are the Mongoid conventions for timestamps
-  },
+  }
 );
 
 module.exports.MeasureSchema = MeasureSchema;

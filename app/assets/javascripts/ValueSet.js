@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
 const Concept = require('./Concept.js');
 
-const { ConceptSchema } = Concept.ConceptSchema;
-
-const [Array, String, Mixed, ObjectId] = [
-  mongoose.Schema.Types.Array,
+const [mString, Mixed, ObjectId] = [
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Mixed,
   mongoose.Schema.Types.ObjectId,
@@ -12,12 +9,12 @@ const [Array, String, Mixed, ObjectId] = [
 
 const ValueSetSchema = mongoose.Schema(
   {
-    oid: String,
-    display_name: String,
-    version: String,
+    oid: mString,
+    display_name: mString,
+    version: mString,
     categories: Mixed,
 
-    concepts: [ConceptSchema],
+    concepts: [Concept.ConceptSchema],
 
     user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
     bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific
@@ -26,7 +23,7 @@ const ValueSetSchema = mongoose.Schema(
   // Options
   {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-  },
+  }
 );
 
 module.exports.ValueSetSchema = ValueSetSchema;

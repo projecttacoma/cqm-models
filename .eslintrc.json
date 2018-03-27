@@ -3,7 +3,13 @@
   "rules": {
     "max-len": ["error", {"code": 200, "ignoreComments": true}],
     "no-unused-vars": ["error", { "varsIgnorePattern": "Code|Quantity|Interval|Integer|Array|Float|Time|Number|Date|Mixed" }],
-    "camelcase": "off"
+    "camelcase": "off",
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline", 
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"}]
   },
   "env": {
     "jasmine": true
