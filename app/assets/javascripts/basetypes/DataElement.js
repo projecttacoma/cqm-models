@@ -9,6 +9,7 @@ function extendSchema(TSchema, definition, options) {
 
 const DataElementSchema = new Schema({
   data_element_codes: { type: [Code] },
+  description: { type: String },
 });
 
 // Returns the attribute requested on the data element.
