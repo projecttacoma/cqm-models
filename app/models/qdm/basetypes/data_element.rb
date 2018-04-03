@@ -7,6 +7,9 @@ module QDM
     # Codes that describe this datatype.
     field :data_element_codes, type: Array, default: []
 
+    # Optional description.
+    field :description, type: String
+
     # Returns the attribute requested on the datatype.
     def get(attribute)
       send(attribute) if has_attribute?(attribute)
