@@ -14,6 +14,7 @@ const IdSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   naming_system: String,
   value: String,
   qdm_version: { type: String, default: '5.3' },
+  class_name: { type: String, default: 'Id' },
 
 });
 

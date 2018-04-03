@@ -24,6 +24,7 @@ const SubstanceOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
   category: { type: String, default: 'substance' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  class_name: { type: String, default: 'SubstanceOrder' },
 
 });
 

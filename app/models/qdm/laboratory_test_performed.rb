@@ -17,5 +17,6 @@ module QDM
     field :category, type: String, default: 'laboratory_test'
     field :qdm_status, type: String, default: 'performed'
     field :qdm_version, type: String, default: '5.3'
+    field :class_name, type: String, default: 'LaboratoryTestPerformed'
   end
 end

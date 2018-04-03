@@ -15,6 +15,7 @@ const PatientCharacteristicSchema = DataElement.extendSchema(DataElement.DataEle
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.53' },
   category: { type: String, default: 'patient_characteristic' },
   qdm_version: { type: String, default: '5.3' },
+  class_name: { type: String, default: 'PatientCharacteristic' },
 
 });
 

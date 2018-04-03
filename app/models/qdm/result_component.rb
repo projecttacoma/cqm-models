@@ -5,5 +5,6 @@ module QDM
     embedded_in :patient
     field :reference_range, type: QDM::Interval
     field :qdm_version, type: String, default: '5.3'
+    field :class_name, type: String, default: 'ResultComponent'
   end
 end

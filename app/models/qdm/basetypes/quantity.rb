@@ -3,7 +3,7 @@ module QDM
   class Quantity
     attr_reader :value, :unit
 
-    # Code and code system are required (at minimum).
+    # Value and unit are required.
     def initialize(value, unit)
       @value = value
       @unit = unit
@@ -21,6 +21,8 @@ module QDM
       # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
       # [ value, unit ].
       def demongoize(object)
+        return nil unless object
+        object = object.symbolize_keys
         QDM::Quantity.new(object[:value], object[:unit]) if object.is_a?(Hash)
       end
 
@@ -28,8 +30,11 @@ module QDM
       # stored in the database.
       def mongoize(object)
         case object
+        when nil then nil
         when QDM::Quantity then object.mongoize
-        when Hash then QDM::Quantity.new(object[:value], object[:unit]).mongoize
+        when Hash
+          object = object.symbolize_keys
+          QDM::Quantity.new(object[:value], object[:unit]).mongoize
         else object
         end
       end

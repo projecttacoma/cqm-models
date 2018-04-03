@@ -5,5 +5,6 @@ module QDM
     embedded_in :patient
     field :participation_period, type: QDM::Interval
     field :qdm_version, type: String, default: '5.3'
+    field :class_name, type: String, default: 'Participation'
   end
 end

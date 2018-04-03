@@ -12,5 +12,6 @@ module QDM
     field :category, type: String, default: 'medication'
     field :qdm_status, type: String, default: 'active'
     field :qdm_version, type: String, default: '5.3'
+    field :class_name, type: String, default: 'MedicationActive'
   end
 end

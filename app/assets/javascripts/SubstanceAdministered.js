@@ -22,6 +22,7 @@ const SubstanceAdministeredSchema = DataElement.extendSchema(DataElement.DataEle
   category: { type: String, default: 'substance' },
   qdm_status: { type: String, default: 'administered' },
   qdm_version: { type: String, default: '5.3' },
+  class_name: { type: String, default: 'SubstanceAdministered' },
 
 });
 
