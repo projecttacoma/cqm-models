@@ -24,6 +24,8 @@ module QDM
       # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
       # [ code, code_system, descriptor, code_system_oid, version ].
       def demongoize(object)
+        return nil unless object
+        object = object.symbolize_keys
         QDM::Code.new(object[:code], object[:code_system], object[:descriptor], object[:code_system_oid], object[:version])
       end
 
@@ -31,8 +33,12 @@ module QDM
       # stored in the database.
       def mongoize(object)
         case object
+        when nil then nil
         when QDM::Code then object.mongoize
-        when Hash then QDM::Code.new(object[:code], object[:code_system], object[:descriptor], object[:code_system_oid], object[:version]).mongoize
+        when Hash
+          object = object.symbolize_keys
+          code_system = object[:system] ? object[:system] : object[:code_system]
+          QDM::Code.new(object[:code], code_system, object[:descriptor], object[:code_system_oid], object[:version]).mongoize
         else object
         end
       end

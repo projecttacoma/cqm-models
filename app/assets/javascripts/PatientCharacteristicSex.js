@@ -12,6 +12,7 @@ const [Number, String, Date] = [
 
 const PatientCharacteristicSexSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   qdm_version: { type: String, default: '5.3' },
+  class_name: { type: String, default: 'PatientCharacteristicSex' },
 
 });
 

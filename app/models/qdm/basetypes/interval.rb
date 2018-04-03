@@ -1,17 +1,19 @@
 module QDM
   # Represents an Interval
   class Interval
-    attr_reader :lt, :gt
+    attr_reader :low, :high
 
-    # Code and code system are required (at minimum).
-    def initialize(lt, gt)
-      @lt = lt
-      @gt = gt
+    # Low and high are required (at minimum).
+    def initialize(low, high, low_closed = true, high_closed = true)
+      @low = low
+      @high = high
+      @low_closed = low_closed
+      @high_closed = high_closed
     end
 
     # Converts an object of this instance into a database friendly value.
     def mongoize
-      { lt: @lt, gt: @gt }
+      { low: @low, high: @high, low_closed: @low_closed, high_closed: @high_closed }
     end
 
     class << self
@@ -19,17 +21,22 @@ module QDM
       # this custom class from it.
       #
       # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
-      # [ lt, gt ].
+      # [ low, high ].
       def demongoize(object)
-        QDM::Interval.new(object[:lt], object[:gt]) if object.is_a?(Hash)
+        return nil unless object
+        object = object.symbolize_keys
+        QDM::Interval.new(object[:low], object[:high], object[:low_closed], object[:high_closed]) if object.is_a?(Hash)
       end
 
       # Takes any possible object and converts it to how it would be
       # stored in the database.
       def mongoize(object)
         case object
+        when nil then nil
         when QDM::Interval then object.mongoize
-        when Hash then QDM::Interval.new(object[:lt], object[:gt]).mongoize
+        when Hash
+          object = object.symbolize_keys
+          QDM::Interval.new(object[:low], object[:high], object[:low_closed], object[:high_closed]).mongoize
         else object
         end
       end

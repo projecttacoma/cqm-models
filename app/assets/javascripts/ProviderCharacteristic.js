@@ -15,6 +15,7 @@ const ProviderCharacteristicSchema = DataElement.extendSchema(DataElement.DataEl
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.71' },
   category: { type: String, default: 'provider_characteristic' },
   qdm_version: { type: String, default: '5.3' },
+  class_name: { type: String, default: 'ProviderCharacteristic' },
 
 });
 
