@@ -26,7 +26,6 @@ const MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSc
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'MedicationOrder' },
 
 });
 

@@ -16,7 +16,6 @@ const PatientCharacteristicBirthdateSchema = DataElement.extendSchema(DataElemen
   category: { type: String, default: 'patient_characteristic' },
   qdm_status: { type: String, default: 'birthdate' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'PatientCharacteristicBirthdate' },
 
 });
 

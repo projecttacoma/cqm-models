@@ -18,7 +18,6 @@ const CommunicationFromPatientToProviderSchema = DataElement.extendSchema(DataEl
   category: { type: String, default: 'communication' },
   qdm_status: { type: String, default: 'from_patient_to_provider' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'CommunicationFromPatientToProvider' },
 
 });
 

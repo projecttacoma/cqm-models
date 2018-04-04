@@ -6,6 +6,5 @@ module QDM
     field :code, type: QDM::Code
     field :result
     field :qdm_version, type: String, default: '5.3'
-    field :class_name, type: String, default: 'Component'
   end
 end

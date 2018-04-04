@@ -25,7 +25,6 @@ const LaboratoryTestPerformedSchema = DataElement.extendSchema(DataElement.DataE
   category: { type: String, default: 'laboratory_test' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'LaboratoryTestPerformed' },
 
 });
 

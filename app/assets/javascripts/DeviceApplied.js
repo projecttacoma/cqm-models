@@ -21,7 +21,6 @@ const DeviceAppliedSchema = DataElement.extendSchema(DataElement.DataElementSche
   category: { type: String, default: 'device' },
   qdm_status: { type: String, default: 'applied' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'DeviceApplied' },
 
 });
 

@@ -10,6 +10,5 @@ module QDM
     field :category, type: String, default: 'condition'
     field :qdm_status, type: String, default: 'clinical_trial_participant'
     field :qdm_version, type: String, default: '5.3'
-    field :class_name, type: String, default: 'PatientCharacteristicClinicalTrialParticipant'
   end
 end

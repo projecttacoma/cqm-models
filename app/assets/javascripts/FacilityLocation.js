@@ -14,7 +14,6 @@ const FacilityLocationSchema = DataElement.extendSchema(DataElement.DataElementS
   code: Code,
   location_period: Interval,
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'FacilityLocation' },
 
 });
 

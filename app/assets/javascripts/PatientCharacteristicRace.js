@@ -15,7 +15,6 @@ const PatientCharacteristicRaceSchema = DataElement.extendSchema(DataElement.Dat
   category: { type: String, default: 'patient_characteristic' },
   qdm_status: { type: String, default: 'race' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'PatientCharacteristicRace' },
 
 });
 

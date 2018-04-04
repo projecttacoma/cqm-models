@@ -7,6 +7,5 @@ module QDM
     field :category, type: String, default: 'patient_characteristic'
     field :qdm_status, type: String, default: 'race'
     field :qdm_version, type: String, default: '5.3'
-    field :class_name, type: String, default: 'PatientCharacteristicRace'
   end
 end

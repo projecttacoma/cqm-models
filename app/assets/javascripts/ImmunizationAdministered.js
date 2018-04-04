@@ -22,7 +22,6 @@ const ImmunizationAdministeredSchema = DataElement.extendSchema(DataElement.Data
   category: { type: String, default: 'immunization' },
   qdm_status: { type: String, default: 'administered' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'ImmunizationAdministered' },
 
 });
 

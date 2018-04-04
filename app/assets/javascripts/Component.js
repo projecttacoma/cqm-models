@@ -14,7 +14,6 @@ const ComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, 
   code: Code,
   result: {},
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'Component' },
 
 });
 

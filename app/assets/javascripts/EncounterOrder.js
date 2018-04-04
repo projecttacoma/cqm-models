@@ -19,7 +19,6 @@ const EncounterOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
   category: { type: String, default: 'encounter' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'EncounterOrder' },
 
 });
 

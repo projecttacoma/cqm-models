@@ -19,7 +19,6 @@ const LaboratoryTestRecommendedSchema = DataElement.extendSchema(DataElement.Dat
   category: { type: String, default: 'laboratory_test' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'LaboratoryTestRecommended' },
 
 });
 

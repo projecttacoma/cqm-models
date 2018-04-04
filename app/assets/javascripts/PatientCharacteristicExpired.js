@@ -16,7 +16,6 @@ const PatientCharacteristicExpiredSchema = DataElement.extendSchema(DataElement.
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.57' },
   category: { type: String, default: 'condition' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'PatientCharacteristicExpired' },
 
 });
 
