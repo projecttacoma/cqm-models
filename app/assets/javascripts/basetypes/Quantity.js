@@ -1,24 +1,19 @@
 const mongoose = require('mongoose');
 
-class Quantity {
-  constructor(value, unit) {
-    this.value = value;
-    this.unit = unit;
-  }
-
-  toBSON() {
-    const quantity = {};
-    quantity.value = this.value;
-    quantity.unit = this.unit;
-    return quantity;
-  }
+function Quantity(key, options) {
+  mongoose.SchemaType.call(this, key, options, 'Quantity');
 }
+Quantity.prototype = Object.create(mongoose.SchemaType.prototype);
 
-class QuantitySchema extends mongoose.SchemaType {
-  static cast(quantity) {
-    return new Quantity(quantity.value, quantity.unit);
+Quantity.prototype.cast = (quantity) => {
+  if (typeof quantity.value === 'undefined') {
+    throw new Error(`Quantity: ${quantity} does not have a value`);
+  } else if (typeof quantity.unit === 'undefined') {
+    throw new Error(`Quantity: ${quantity} does not have a unit`);
   }
-}
 
-mongoose.Schema.Types.Quantity = QuantitySchema;
+  return { value: quantity.value, unit: quantity.unit };
+};
+
+mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;

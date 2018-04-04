@@ -1,28 +1,21 @@
 const mongoose = require('mongoose');
 
-class Interval {
-  constructor(low, high, low_closed, high_closed) {
-    this.low = low;
-    this.high = high;
-    this.low_closed = low_closed;
-    this.high_closed = high_closed;
-  }
-
-  toBSON() {
-    const interval = {};
-    interval.low = this.low;
-    interval.high = this.high;
-    interval.low_closed = this.low_closed;
-    interval.high_closed = this.high_closed;
-    return interval;
-  }
+function Interval(key, options) {
+  mongoose.SchemaType.call(this, key, options, 'Interval');
 }
+Interval.prototype = Object.create(mongoose.SchemaType.prototype);
 
-class IntervalSchema extends mongoose.SchemaType {
-  static cast(interval) {
-    return new Interval(interval.low, interval.high, interval.low_closed, interval.high_closed);
+Interval.prototype.cast = (interval) => {
+  if (typeof interval.low === 'undefined') {
+    throw new Error(`Interval: ${interval} does not have a low value`);
   }
-}
+  const val = { low: interval.low };
 
-mongoose.Schema.Types.Interval = IntervalSchema;
+  val.high = (typeof interval.high !== 'undefined') ? interval.high : null;
+  val.low_closed = (typeof interval.low_closed !== 'undefined') ? interval.low_closed : null;
+  val.high_closed = (typeof interval.high_closed !== 'undefined') ? interval.high_closed : null;
+  return val;
+};
+
+mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
