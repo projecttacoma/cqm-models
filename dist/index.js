@@ -20,6 +20,7 @@ const AdverseEventSchema = DataElement.extendSchema(DataElement.DataElementSchem
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.120' },
   category: { type: String, default: 'adverse_event' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'AdverseEvent' },
 
 });
 
@@ -48,6 +49,7 @@ const AllergyIntoleranceSchema = DataElement.extendSchema(DataElement.DataElemen
   category: { type: String, default: 'allergy' },
   qdm_status: { type: String, default: 'intolerance' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'AllergyIntolerance' },
 
 });
 
@@ -79,6 +81,7 @@ const AssessmentPerformedSchema = DataElement.extendSchema(DataElement.DataEleme
   category: { type: String, default: 'assessment' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'AssessmentPerformed' },
 
 });
 
@@ -107,6 +110,7 @@ const AssessmentRecommendedSchema = DataElement.extendSchema(DataElement.DataEle
   category: { type: String, default: 'assessment' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'AssessmentRecommended' },
 
 });
 
@@ -133,6 +137,7 @@ const CareGoalSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.7' },
   category: { type: String, default: 'care_goal' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CareGoal' },
 
 });
 
@@ -160,6 +165,7 @@ const CommunicationFromPatientToProviderSchema = DataElement.extendSchema(DataEl
   category: { type: String, default: 'communication' },
   qdm_status: { type: String, default: 'from_patient_to_provider' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CommunicationFromPatientToProvider' },
 
 });
 
@@ -187,6 +193,7 @@ const CommunicationFromProviderToPatientSchema = DataElement.extendSchema(DataEl
   category: { type: String, default: 'communication' },
   qdm_status: { type: String, default: 'from_provider_to_patient' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CommunicationFromProviderToPatient' },
 
 });
 
@@ -214,6 +221,7 @@ const CommunicationFromProviderToProviderSchema = DataElement.extendSchema(DataE
   category: { type: String, default: 'communication' },
   qdm_status: { type: String, default: 'from_provider_to_provider' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CommunicationFromProviderToProvider' },
 
 });
 
@@ -237,6 +245,7 @@ const ComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, 
   code: Code,
   result: {},
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Component' },
 
 });
 
@@ -283,6 +292,7 @@ const DeviceAppliedSchema = DataElement.extendSchema(DataElement.DataElementSche
   category: { type: String, default: 'device' },
   qdm_status: { type: String, default: 'applied' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DeviceApplied' },
 
 });
 
@@ -310,6 +320,7 @@ const DeviceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema
   category: { type: String, default: 'device' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DeviceOrder' },
 
 });
 
@@ -337,6 +348,7 @@ const DeviceRecommendedSchema = DataElement.extendSchema(DataElement.DataElement
   category: { type: String, default: 'device' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DeviceRecommended' },
 
 });
 
@@ -365,6 +377,7 @@ const DiagnosisSchema = DataElement.extendSchema(DataElement.DataElementSchema, 
   qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
   category: { type: String, default: 'condition' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Diagnosis' },
 
 });
 
@@ -393,6 +406,7 @@ const DiagnosticStudyOrderSchema = DataElement.extendSchema(DataElement.DataElem
   category: { type: String, default: 'diagnostic_study' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DiagnosticStudyOrder' },
 
 });
 
@@ -427,6 +441,7 @@ const DiagnosticStudyPerformedSchema = DataElement.extendSchema(DataElement.Data
   category: { type: String, default: 'diagnostic_study' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DiagnosticStudyPerformed' },
 
 });
 
@@ -455,6 +470,7 @@ const DiagnosticStudyRecommendedSchema = DataElement.extendSchema(DataElement.Da
   category: { type: String, default: 'diagnostic_study' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DiagnosticStudyRecommended' },
 
 });
 
@@ -483,6 +499,7 @@ const EncounterOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
   category: { type: String, default: 'encounter' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'EncounterOrder' },
 
 });
 
@@ -516,6 +533,7 @@ const EncounterPerformedSchema = DataElement.extendSchema(DataElement.DataElemen
   category: { type: String, default: 'encounter' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'EncounterPerformed' },
 
 });
 
@@ -544,6 +562,7 @@ const EncounterRecommendedSchema = DataElement.extendSchema(DataElement.DataElem
   category: { type: String, default: 'encounter' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'EncounterRecommended' },
 
 });
 
@@ -567,6 +586,7 @@ const FacilityLocationSchema = DataElement.extendSchema(DataElement.DataElementS
   code: Code,
   location_period: Interval,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'FacilityLocation' },
 
 });
 
@@ -593,6 +613,7 @@ const FamilyHistorySchema = DataElement.extendSchema(DataElement.DataElementSche
   qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
   category: { type: String, default: 'family_history' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'FamilyHistory' },
 
 });
 
@@ -616,6 +637,7 @@ const IdSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   naming_system: String,
   value: String,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Id' },
 
 });
 
@@ -647,6 +669,7 @@ const ImmunizationAdministeredSchema = DataElement.extendSchema(DataElement.Data
   category: { type: String, default: 'immunization' },
   qdm_status: { type: String, default: 'administered' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ImmunizationAdministered' },
 
 });
 
@@ -678,6 +701,7 @@ const ImmunizationOrderSchema = DataElement.extendSchema(DataElement.DataElement
   category: { type: String, default: 'immunization' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ImmunizationOrder' },
 
 });
 
@@ -705,6 +729,7 @@ const InterventionOrderSchema = DataElement.extendSchema(DataElement.DataElement
   category: { type: String, default: 'intervention' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'InterventionOrder' },
 
 });
 
@@ -735,6 +760,7 @@ const InterventionPerformedSchema = DataElement.extendSchema(DataElement.DataEle
   category: { type: String, default: 'intervention' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'InterventionPerformed' },
 
 });
 
@@ -762,6 +788,7 @@ const InterventionRecommendedSchema = DataElement.extendSchema(DataElement.DataE
   category: { type: String, default: 'intervention' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'InterventionRecommended' },
 
 });
 
@@ -790,6 +817,7 @@ const LaboratoryTestOrderSchema = DataElement.extendSchema(DataElement.DataEleme
   category: { type: String, default: 'laboratory_test' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'LaboratoryTestOrder' },
 
 });
 
@@ -824,6 +852,7 @@ const LaboratoryTestPerformedSchema = DataElement.extendSchema(DataElement.DataE
   category: { type: String, default: 'laboratory_test' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'LaboratoryTestPerformed' },
 
 });
 
@@ -852,6 +881,7 @@ const LaboratoryTestRecommendedSchema = DataElement.extendSchema(DataElement.Dat
   category: { type: String, default: 'laboratory_test' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'LaboratoryTestRecommended' },
 
 });
 
@@ -929,19 +959,7 @@ const MeasureSchema = mongoose.Schema(
   }
 );
 
-MeasureSchema.virtual('IPP').get(() => 'IPP');
-MeasureSchema.virtual('DENOM').get(() => 'DENOM');
-MeasureSchema.virtual('NUMER').get(() => 'NUMER');
-MeasureSchema.virtual('NUMEX').get(() => 'NUMEX');
-MeasureSchema.virtual('DENEXCEP').get(() => 'DENEXCEP');
-MeasureSchema.virtual('DENEX').get(() => 'DENEX');
-MeasureSchema.virtual('MSRPOPL').get(() => 'MSRPOPL');
-MeasureSchema.virtual('OBSERV').get(() => 'OBSERV');
-MeasureSchema.virtual('MSRPOPLEX').get(() => 'MSRPOPLEX');
-
-MeasureSchema.virtual('STRAT').get(() => 'STRAT');
-
-MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => [this.STRAT, this.IPP, this.DENOM, this.DENEX, this.NUMER, this.NUMEX, this.DENEXCEP, this.MSRPOPL, this.OBSERV, this.MSRPOPLEX]);
+MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => ['STRAT', 'IPP', 'DENOM', 'DENEX', 'NUMER', 'NUMEX', 'DENEXCEP', 'MSRPOPL', 'OBSERV', 'MSRPOPLEX']);
 
 MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex']);
 
@@ -993,6 +1011,7 @@ const MedicationActiveSchema = DataElement.extendSchema(DataElement.DataElementS
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'active' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationActive' },
 
 });
 
@@ -1025,6 +1044,7 @@ const MedicationAdministeredSchema = DataElement.extendSchema(DataElement.DataEl
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'administered' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationAdministered' },
 
 });
 
@@ -1056,6 +1076,7 @@ const MedicationDischargeSchema = DataElement.extendSchema(DataElement.DataEleme
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'discharge' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationDischarge' },
 
 });
 
@@ -1088,6 +1109,7 @@ const MedicationDispensedSchema = DataElement.extendSchema(DataElement.DataEleme
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'dispensed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationDispensed' },
 
 });
 
@@ -1123,6 +1145,7 @@ const MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSc
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationOrder' },
 
 });
 
@@ -1145,6 +1168,7 @@ const [Number, String, Date] = [
 const ParticipationSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   participation_period: Interval,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Participation' },
 
 });
 
@@ -1167,6 +1191,7 @@ const [Number, String, Date] = [
 const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   birth_datetime: Date,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Patient' },
   given_names: [String],
   family_name: String,
   bundle_id: String,
@@ -1337,6 +1362,7 @@ const PatientCareExperienceSchema = DataElement.extendSchema(DataElement.DataEle
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.52' },
   category: { type: String, default: 'care_experience' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCareExperience' },
 
 });
 
@@ -1361,6 +1387,7 @@ const PatientCharacteristicSchema = DataElement.extendSchema(DataElement.DataEle
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.53' },
   category: { type: String, default: 'patient_characteristic' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristic' },
 
 });
 
@@ -1386,6 +1413,7 @@ const PatientCharacteristicBirthdateSchema = DataElement.extendSchema(DataElemen
   category: { type: String, default: 'patient_characteristic' },
   qdm_status: { type: String, default: 'birthdate' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicBirthdate' },
 
 });
 
@@ -1413,6 +1441,7 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElement.extendSc
   category: { type: String, default: 'condition' },
   qdm_status: { type: String, default: 'clinical_trial_participant' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
 
 });
 
@@ -1437,6 +1466,7 @@ const PatientCharacteristicEthnicitySchema = DataElement.extendSchema(DataElemen
   category: { type: String, default: 'patient_characteristic' },
   qdm_status: { type: String, default: 'ethnicity' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicEthnicity' },
 
 });
 
@@ -1462,6 +1492,7 @@ const PatientCharacteristicExpiredSchema = DataElement.extendSchema(DataElement.
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.57' },
   category: { type: String, default: 'condition' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicExpired' },
 
 });
 
@@ -1487,6 +1518,7 @@ const PatientCharacteristicPayerSchema = DataElement.extendSchema(DataElement.Da
   category: { type: String, default: 'patient_characteristic' },
   qdm_status: { type: String, default: 'payer' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicPayer' },
 
 });
 
@@ -1511,6 +1543,7 @@ const PatientCharacteristicRaceSchema = DataElement.extendSchema(DataElement.Dat
   category: { type: String, default: 'patient_characteristic' },
   qdm_status: { type: String, default: 'race' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicRace' },
 
 });
 
@@ -1532,6 +1565,7 @@ const [Number, String, Date] = [
 
 const PatientCharacteristicSexSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicSex' },
 
 });
 
@@ -1561,6 +1595,7 @@ const PhysicalExamOrderSchema = DataElement.extendSchema(DataElement.DataElement
   category: { type: String, default: 'physical_exam' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PhysicalExamOrder' },
 
 });
 
@@ -1593,6 +1628,7 @@ const PhysicalExamPerformedSchema = DataElement.extendSchema(DataElement.DataEle
   category: { type: String, default: 'physical_exam' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PhysicalExamPerformed' },
 
 });
 
@@ -1622,6 +1658,7 @@ const PhysicalExamRecommendedSchema = DataElement.extendSchema(DataElement.DataE
   category: { type: String, default: 'physical_exam' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PhysicalExamRecommended' },
 
 });
 
@@ -1653,6 +1690,7 @@ const ProcedureOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
   category: { type: String, default: 'procedure' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProcedureOrder' },
 
 });
 
@@ -1689,6 +1727,7 @@ const ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElemen
   category: { type: String, default: 'procedure' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProcedurePerformed' },
 
 });
 
@@ -1720,6 +1759,7 @@ const ProcedureRecommendedSchema = DataElement.extendSchema(DataElement.DataElem
   category: { type: String, default: 'procedure' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProcedureRecommended' },
 
 });
 
@@ -1744,6 +1784,7 @@ const ProviderCareExperienceSchema = DataElement.extendSchema(DataElement.DataEl
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.70' },
   category: { type: String, default: 'care_experience' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProviderCareExperience' },
 
 });
 
@@ -1768,6 +1809,7 @@ const ProviderCharacteristicSchema = DataElement.extendSchema(DataElement.DataEl
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.71' },
   category: { type: String, default: 'provider_characteristic' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProviderCharacteristic' },
 
 });
 
@@ -1791,6 +1833,7 @@ const RatioSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   numerator: Quantity,
   denominator: Quantity,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Ratio' },
 
 });
 
@@ -1843,6 +1886,7 @@ const [Number, String, Date] = [
 const ResultComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   reference_range: Interval,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ResultComponent' },
 
 });
 
@@ -1874,6 +1918,7 @@ const SubstanceAdministeredSchema = DataElement.extendSchema(DataElement.DataEle
   category: { type: String, default: 'substance' },
   qdm_status: { type: String, default: 'administered' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'SubstanceAdministered' },
 
 });
 
@@ -1907,6 +1952,7 @@ const SubstanceOrderSchema = DataElement.extendSchema(DataElement.DataElementSch
   category: { type: String, default: 'substance' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'SubstanceOrder' },
 
 });
 
@@ -1940,6 +1986,7 @@ const SubstanceRecommendedSchema = DataElement.extendSchema(DataElement.DataElem
   category: { type: String, default: 'substance' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'SubstanceRecommended' },
 
 });
 
@@ -1966,6 +2013,7 @@ const SymptomSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.136' },
   category: { type: String, default: 'symptom' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Symptom' },
 
 });
 
@@ -2048,6 +2096,7 @@ function extendSchema(TSchema, definition, options) {
 
 const DataElementSchema = new Schema({
   data_element_codes: { type: [Code] },
+  description: { type: String },
 });
 
 // Returns the attribute requested on the data element.
@@ -2077,22 +2126,26 @@ module.exports.extendSchema = extendSchema;
 const mongoose = require('mongoose');
 
 class Interval {
-  constructor(lt, gt) {
-    this.lt = lt;
-    this.gt = gt;
+  constructor(low, high, low_closed, high_closed) {
+    this.low = low;
+    this.high = high;
+    this.low_closed = low_closed;
+    this.high_closed = high_closed;
   }
 
   toBSON() {
     const interval = {};
-    interval.lt = this.lt;
-    interval.gt = this.gt;
+    interval.low = this.low;
+    interval.high = this.high;
+    interval.low_closed = this.low_closed;
+    interval.high_closed = this.high_closed;
     return interval;
   }
 }
 
 class IntervalSchema extends mongoose.SchemaType {
   static cast(interval) {
-    return new Interval(interval.lt, interval.gt);
+    return new Interval(interval.low, interval.high, interval.low_closed, interval.high_closed);
   }
 }
 
@@ -32846,7 +32899,7 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
 },{"hash.js":182,"minimalistic-assert":205,"minimalistic-crypto-utils":206}],195:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
-  var eLen = (nBytes * 8) - mLen - 1
+  var eLen = nBytes * 8 - mLen - 1
   var eMax = (1 << eLen) - 1
   var eBias = eMax >> 1
   var nBits = -7
@@ -32859,12 +32912,12 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   e = s & ((1 << (-nBits)) - 1)
   s >>= (-nBits)
   nBits += eLen
-  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+  for (; nBits > 0; e = e * 256 + buffer[offset + i], i += d, nBits -= 8) {}
 
   m = e & ((1 << (-nBits)) - 1)
   e >>= (-nBits)
   nBits += mLen
-  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+  for (; nBits > 0; m = m * 256 + buffer[offset + i], i += d, nBits -= 8) {}
 
   if (e === 0) {
     e = 1 - eBias
@@ -32879,7 +32932,7 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
 
 exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   var e, m, c
-  var eLen = (nBytes * 8) - mLen - 1
+  var eLen = nBytes * 8 - mLen - 1
   var eMax = (1 << eLen) - 1
   var eBias = eMax >> 1
   var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
@@ -32912,7 +32965,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
       m = 0
       e = eMax
     } else if (e + eBias >= 1) {
-      m = ((value * c) - 1) * Math.pow(2, mLen)
+      m = (value * c - 1) * Math.pow(2, mLen)
       e = e + eBias
     } else {
       m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
@@ -92521,7 +92574,7 @@ module.exports = require('./lib/_stream_duplex.js');
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 /*<replacement>*/
@@ -92575,7 +92628,7 @@ function onend() {
 
   // no more data can be written.
   // But allow more writes to happen in this tick.
-  pna.nextTick(onEndNT, this);
+  processNextTick(onEndNT, this);
 }
 
 function onEndNT(self) {
@@ -92607,7 +92660,7 @@ Duplex.prototype._destroy = function (err, cb) {
   this.push(null);
   this.end();
 
-  pna.nextTick(cb, err);
+  processNextTick(cb, err);
 };
 
 function forEach(xs, f) {
@@ -92690,7 +92743,7 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 module.exports = Readable;
@@ -93162,7 +93215,7 @@ function emitReadable(stream) {
   if (!state.emittedReadable) {
     debug('emitReadable', state.flowing);
     state.emittedReadable = true;
-    if (state.sync) pna.nextTick(emitReadable_, stream);else emitReadable_(stream);
+    if (state.sync) processNextTick(emitReadable_, stream);else emitReadable_(stream);
   }
 }
 
@@ -93181,7 +93234,7 @@ function emitReadable_(stream) {
 function maybeReadMore(stream, state) {
   if (!state.readingMore) {
     state.readingMore = true;
-    pna.nextTick(maybeReadMore_, stream, state);
+    processNextTick(maybeReadMore_, stream, state);
   }
 }
 
@@ -93226,7 +93279,7 @@ Readable.prototype.pipe = function (dest, pipeOpts) {
   var doEnd = (!pipeOpts || pipeOpts.end !== false) && dest !== process.stdout && dest !== process.stderr;
 
   var endFn = doEnd ? onend : unpipe;
-  if (state.endEmitted) pna.nextTick(endFn);else src.once('end', endFn);
+  if (state.endEmitted) processNextTick(endFn);else src.once('end', endFn);
 
   dest.on('unpipe', onunpipe);
   function onunpipe(readable, unpipeInfo) {
@@ -93416,7 +93469,7 @@ Readable.prototype.on = function (ev, fn) {
       state.readableListening = state.needReadable = true;
       state.emittedReadable = false;
       if (!state.reading) {
-        pna.nextTick(nReadingNextTick, this);
+        processNextTick(nReadingNextTick, this);
       } else if (state.length) {
         emitReadable(this);
       }
@@ -93447,7 +93500,7 @@ Readable.prototype.resume = function () {
 function resume(stream, state) {
   if (!state.resumeScheduled) {
     state.resumeScheduled = true;
-    pna.nextTick(resume_, stream, state);
+    processNextTick(resume_, stream, state);
   }
 }
 
@@ -93655,7 +93708,7 @@ function endReadable(stream) {
 
   if (!state.endEmitted) {
     state.ended = true;
-    pna.nextTick(endReadableNT, state, stream);
+    processNextTick(endReadableNT, state, stream);
   }
 }
 
@@ -93927,7 +93980,7 @@ function done(stream, er, data) {
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 module.exports = Writable;
@@ -93954,7 +94007,7 @@ function CorkedRequest(state) {
 /* </replacement> */
 
 /*<replacement>*/
-var asyncWrite = !process.browser && ['v0.10', 'v0.9.'].indexOf(process.version.slice(0, 5)) > -1 ? setImmediate : pna.nextTick;
+var asyncWrite = !process.browser && ['v0.10', 'v0.9.'].indexOf(process.version.slice(0, 5)) > -1 ? setImmediate : processNextTick;
 /*</replacement>*/
 
 /*<replacement>*/
@@ -94188,7 +94241,7 @@ function writeAfterEnd(stream, cb) {
   var er = new Error('write after end');
   // TODO: defer error events consistently everywhere, not just the cb
   stream.emit('error', er);
-  pna.nextTick(cb, er);
+  processNextTick(cb, er);
 }
 
 // Checks that a user-supplied chunk is valid, especially for the particular
@@ -94205,7 +94258,7 @@ function validChunk(stream, state, chunk, cb) {
   }
   if (er) {
     stream.emit('error', er);
-    pna.nextTick(cb, er);
+    processNextTick(cb, er);
     valid = false;
   }
   return valid;
@@ -94325,10 +94378,10 @@ function onwriteError(stream, state, sync, er, cb) {
   if (sync) {
     // defer the callback if we are being called synchronously
     // to avoid piling up things on the stack
-    pna.nextTick(cb, er);
+    processNextTick(cb, er);
     // this can emit finish, and it will always happen
     // after error
-    pna.nextTick(finishMaybe, stream, state);
+    processNextTick(finishMaybe, stream, state);
     stream._writableState.errorEmitted = true;
     stream.emit('error', er);
   } else {
@@ -94503,7 +94556,7 @@ function prefinish(stream, state) {
     if (typeof stream._final === 'function') {
       state.pendingcb++;
       state.finalCalled = true;
-      pna.nextTick(callFinal, stream, state);
+      processNextTick(callFinal, stream, state);
     } else {
       state.prefinished = true;
       stream.emit('prefinish');
@@ -94527,7 +94580,7 @@ function endWritable(stream, state, cb) {
   state.ending = true;
   finishMaybe(stream, state);
   if (cb) {
-    if (state.finished) pna.nextTick(cb);else stream.once('finish', cb);
+    if (state.finished) processNextTick(cb);else stream.once('finish', cb);
   }
   state.ended = true;
   stream.writable = false;
@@ -94661,7 +94714,7 @@ if (util && util.inspect && util.inspect.custom) {
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 // undocumented cb() API, needed for core, not for public API
@@ -94675,7 +94728,7 @@ function destroy(err, cb) {
     if (cb) {
       cb(err);
     } else if (err && (!this._writableState || !this._writableState.errorEmitted)) {
-      pna.nextTick(emitErrorNT, this, err);
+      processNextTick(emitErrorNT, this, err);
     }
     return this;
   }
@@ -94694,7 +94747,7 @@ function destroy(err, cb) {
 
   this._destroy(err || null, function (err) {
     if (!cb && err) {
-      pna.nextTick(emitErrorNT, _this, err);
+      processNextTick(emitErrorNT, _this, err);
       if (_this._writableState) {
         _this._writableState.errorEmitted = true;
       }
