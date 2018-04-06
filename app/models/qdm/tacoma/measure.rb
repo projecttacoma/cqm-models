@@ -74,7 +74,7 @@ module QDM
     # Relations to other model classes
     belongs_to :user
     belongs_to :bundle, class_name: 'HealthDataStandards::CQM::Bundle'
-    has_and_belongs_to_many :records, inverse_of: nil
+    has_and_belongs_to_many :patients, inverse_of: nil
     has_one :package, class_name: 'CqlMeasurePackage', inverse_of: :measure, dependent: :destroy
 
     scope :by_measure_id, ->(id) { where('measure_id' => id) }
