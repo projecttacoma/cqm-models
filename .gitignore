@@ -15,3 +15,6 @@ yarn-error.log
 .rspec_status
 .DS_Store
 .byebug_history
+
+# Editor-specific files
+.vscode/
