@@ -20,6 +20,10 @@ const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
   data_elements: [],
+  // This field is for application specific information only. If both Bonnie
+  // Cypress use a common field, it should be made a field on this model,
+  // and not put into extended_data.
+  extended_data: {},
 });
 
 // Returns an array of elements that exist on this patient, that
