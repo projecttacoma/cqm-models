@@ -6,6 +6,11 @@
   # patient.
   embeds_many :data_elements
 
+  # This field is for application specific information only. If both Bonnie
+  # Cypress use a common field, it should be made a field on this model,
+  # and not put into extended_data.
+  field :extended_data, type: Hash
+
   # Returns an array of elements that exist on this patient, that
   # match the given HQMF data criteria OID.
   def get_by_hqmf_oid(hqmf_oid)
