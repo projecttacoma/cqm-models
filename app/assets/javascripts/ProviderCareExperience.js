@@ -15,6 +15,7 @@ const ProviderCareExperienceSchema = DataElement.extendSchema(DataElement.DataEl
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.70' },
   category: { type: String, default: 'care_experience' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProviderCareExperience' },
 
 });
 

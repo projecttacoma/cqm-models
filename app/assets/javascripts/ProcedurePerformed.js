@@ -27,6 +27,7 @@ const ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElemen
   category: { type: String, default: 'procedure' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProcedurePerformed' },
 
 });
 

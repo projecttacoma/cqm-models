@@ -13,6 +13,7 @@ const [Number, String, Date] = [
 const ParticipationSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   participation_period: Interval,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Participation' },
 
 });
 

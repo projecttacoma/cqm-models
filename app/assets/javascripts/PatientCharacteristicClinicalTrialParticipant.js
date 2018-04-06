@@ -18,6 +18,7 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElement.extendSc
   category: { type: String, default: 'condition' },
   qdm_status: { type: String, default: 'clinical_trial_participant' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
 
 });
 

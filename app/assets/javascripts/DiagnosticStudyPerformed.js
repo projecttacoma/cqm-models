@@ -25,6 +25,7 @@ const DiagnosticStudyPerformedSchema = DataElement.extendSchema(DataElement.Data
   category: { type: String, default: 'diagnostic_study' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DiagnosticStudyPerformed' },
 
 });
 

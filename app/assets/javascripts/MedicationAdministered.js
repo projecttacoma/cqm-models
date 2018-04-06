@@ -23,6 +23,7 @@ const MedicationAdministeredSchema = DataElement.extendSchema(DataElement.DataEl
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'administered' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationAdministered' },
 
 });
 

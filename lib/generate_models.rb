@@ -159,7 +159,8 @@ extra_fields_js = [
   { name: 'qrda_oid', type: 'System.String' },
   { name: 'category', type: 'System.String' },
   { name: 'qdm_status', type: 'System.String' },
-  { name: 'qdm_version', type: 'System.String' }
+  { name: 'qdm_version', type: 'System.String' },
+  { name: '_type', type: 'System.String' }
 ]
 datatypes.each do |datatype, attributes|
   attrs_with_extras = attributes + extra_fields_js
@@ -265,6 +266,9 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   else
     contents.gsub!(/  qdm_status: String,\n/, '') # Don't include this field
   end
+
+  # Add class
+  contents.gsub!(/  _type: String,\n/, "  _type: { type: String, default: '#{dc_name.camelize}' },\n")
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end

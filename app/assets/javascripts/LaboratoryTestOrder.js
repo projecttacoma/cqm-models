@@ -19,6 +19,7 @@ const LaboratoryTestOrderSchema = DataElement.extendSchema(DataElement.DataEleme
   category: { type: String, default: 'laboratory_test' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'LaboratoryTestOrder' },
 
 });
 

@@ -18,6 +18,7 @@ const DeviceRecommendedSchema = DataElement.extendSchema(DataElement.DataElement
   category: { type: String, default: 'device' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DeviceRecommended' },
 
 });
 

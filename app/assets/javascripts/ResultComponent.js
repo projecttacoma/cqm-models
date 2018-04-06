@@ -13,6 +13,7 @@ const [Number, String, Date] = [
 const ResultComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   reference_range: Interval,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ResultComponent' },
 
 });
 

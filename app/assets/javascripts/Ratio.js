@@ -14,6 +14,7 @@ const RatioSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   numerator: Quantity,
   denominator: Quantity,
   qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Ratio' },
 
 });
 
