@@ -20,7 +20,7 @@ const PhysicalExamRecommendedSchema = DataElement.extendSchema(DataElement.DataE
   category: { type: String, default: 'physical_exam' },
   qdm_status: { type: String, default: 'recommended' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'PhysicalExamRecommended' },
+  _type: { type: String, default: 'PhysicalExamRecommended' },
 
 });
 

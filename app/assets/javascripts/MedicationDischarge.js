@@ -22,7 +22,7 @@ const MedicationDischargeSchema = DataElement.extendSchema(DataElement.DataEleme
   category: { type: String, default: 'medication' },
   qdm_status: { type: String, default: 'discharge' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'MedicationDischarge' },
+  _type: { type: String, default: 'MedicationDischarge' },
 
 });
 

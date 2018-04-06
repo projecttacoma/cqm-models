@@ -6,6 +6,5 @@ module QDM
     field :naming_system, type: String
     field :value, type: String
     field :qdm_version, type: String, default: '5.3'
-    field :class_name, type: String, default: 'Id'
   end
 end

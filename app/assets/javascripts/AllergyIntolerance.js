@@ -19,7 +19,7 @@ const AllergyIntoleranceSchema = DataElement.extendSchema(DataElement.DataElemen
   category: { type: String, default: 'allergy' },
   qdm_status: { type: String, default: 'intolerance' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'AllergyIntolerance' },
+  _type: { type: String, default: 'AllergyIntolerance' },
 
 });
 

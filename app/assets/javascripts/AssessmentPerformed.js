@@ -22,7 +22,7 @@ const AssessmentPerformedSchema = DataElement.extendSchema(DataElement.DataEleme
   category: { type: String, default: 'assessment' },
   qdm_status: { type: String, default: 'performed' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'AssessmentPerformed' },
+  _type: { type: String, default: 'AssessmentPerformed' },
 
 });
 

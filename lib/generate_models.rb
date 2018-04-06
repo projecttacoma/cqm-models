@@ -131,8 +131,7 @@ extra_fields_rb = [
   'qrda_oid:String',
   'category:String',
   'qdm_status:String',
-  'qdm_version:String',
-  'class_name:String'
+  'qdm_version:String'
 ]
 base_module = 'QDM::'
 base_module = 'Test::QDM::' if IS_TEST
@@ -161,7 +160,7 @@ extra_fields_js = [
   { name: 'category', type: 'System.String' },
   { name: 'qdm_status', type: 'System.String' },
   { name: 'qdm_version', type: 'System.String' },
-  { name: 'class_name', type: 'System.String' }
+  { name: '_type', type: 'System.String' }
 ]
 datatypes.each do |datatype, attributes|
   attrs_with_extras = attributes + extra_fields_js
@@ -224,9 +223,6 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
     contents.gsub!(/  field :qdm_status, type: String\n/, '') # Don't include this field
   end
 
-  # Add class
-  contents.gsub!(/  field :class_name, type: String\n/, "  field :class_name, type: String, default: '#{dc_name.camelize}'\n")
-
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
@@ -272,7 +268,7 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   end
 
   # Add class
-  contents.gsub!(/  class_name: String,\n/, "  class_name: { type: String, default: '#{dc_name.camelize}' },\n")
+  contents.gsub!(/  _type: String,\n/, "  _type: { type: String, default: '#{dc_name.camelize}' },\n")
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end

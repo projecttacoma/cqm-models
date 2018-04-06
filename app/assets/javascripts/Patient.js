@@ -13,7 +13,7 @@ const [Number, String, Date] = [
 const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   birth_datetime: Date,
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'Patient' },
+  _type: { type: String, default: 'Patient' },
   given_names: [String],
   family_name: String,
   bundle_id: String,

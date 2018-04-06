@@ -20,7 +20,7 @@ const PhysicalExamOrderSchema = DataElement.extendSchema(DataElement.DataElement
   category: { type: String, default: 'physical_exam' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'PhysicalExamOrder' },
+  _type: { type: String, default: 'PhysicalExamOrder' },
 
 });
 

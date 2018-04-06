@@ -19,7 +19,7 @@ const AdverseEventSchema = DataElement.extendSchema(DataElement.DataElementSchem
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.120' },
   category: { type: String, default: 'adverse_event' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'AdverseEvent' },
+  _type: { type: String, default: 'AdverseEvent' },
 
 });
 

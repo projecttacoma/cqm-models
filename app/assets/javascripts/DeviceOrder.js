@@ -18,7 +18,7 @@ const DeviceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema
   category: { type: String, default: 'device' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'DeviceOrder' },
+  _type: { type: String, default: 'DeviceOrder' },
 
 });
 

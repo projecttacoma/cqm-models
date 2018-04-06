@@ -10,6 +10,5 @@ module QDM
     field :category, type: String, default: 'communication'
     field :qdm_status, type: String, default: 'from_provider_to_patient'
     field :qdm_version, type: String, default: '5.3'
-    field :class_name, type: String, default: 'CommunicationFromProviderToPatient'
   end
 end

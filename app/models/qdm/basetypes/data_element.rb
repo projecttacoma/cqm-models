@@ -33,5 +33,10 @@ module QDM
     def id
       _id
     end
+
+    # Include '_type' in any JSON output. This is necessary for deserialization.
+    def to_json(options = nil)
+      serializable_hash(methods: :_type).to_json(options)
+    end
   end
 end

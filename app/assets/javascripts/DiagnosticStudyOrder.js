@@ -19,7 +19,7 @@ const DiagnosticStudyOrderSchema = DataElement.extendSchema(DataElement.DataElem
   category: { type: String, default: 'diagnostic_study' },
   qdm_status: { type: String, default: 'order' },
   qdm_version: { type: String, default: '5.3' },
-  class_name: { type: String, default: 'DiagnosticStudyOrder' },
+  _type: { type: String, default: 'DiagnosticStudyOrder' },
 
 });
 

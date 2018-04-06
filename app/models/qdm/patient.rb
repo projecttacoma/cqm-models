@@ -4,7 +4,6 @@ module QDM
     include Mongoid::Document
     field :birth_datetime, type: DateTime
     field :qdm_version, type: String, default: '5.3'
-    field :class_name, type: String, default: 'Patient'
     field :given_names, type: Array
     field :family_name, type: String
     field :bundle_id, type: String
