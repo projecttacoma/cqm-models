@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const [mNumber, mString, Mixed, ObjectId] = [
+const [Number, String, Mixed, ObjectId] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Mixed,
@@ -10,16 +10,16 @@ const [mNumber, mString, Mixed, ObjectId] = [
 const IndividualResultSchema = mongoose.Schema(
   {
     // Population Attributes
-    STRAT: mNumber,
-    IPP: mNumber,
-    DENOM: mNumber,
-    NUMER: mNumber,
-    NUMEX: mNumber,
-    DENEX: mNumber,
-    DENEXCEP: mNumber,
-    MSRPOPL: mNumber,
-    OBSERV: mNumber,
-    MSRPOPLEX: mNumber,
+    STRAT: Number,
+    IPP: Number,
+    DENOM: Number,
+    NUMER: Number,
+    NUMEX: Number,
+    DENEX: Number,
+    DENEXCEP: Number,
+    MSRPOPL: Number,
+    OBSERV: Number,
+    MSRPOPLEX: Number,
 
     // Result Attributes
     clause_results: Mixed,
@@ -29,7 +29,7 @@ const IndividualResultSchema = mongoose.Schema(
     statement_results: Mixed,
 
     // Calculation State attributes
-    state: mString,
+    state: String,
 
     // Relations to other model classes
     measure: { type: ObjectId, ref: 'Measure' },
