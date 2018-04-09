@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Concept = require('./Concept.js');
 
-const [mString, Mixed, ObjectId] = [
+const [String, Mixed, ObjectId] = [
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Mixed,
   mongoose.Schema.Types.ObjectId,
@@ -9,9 +9,9 @@ const [mString, Mixed, ObjectId] = [
 
 const ValueSetSchema = mongoose.Schema(
   {
-    oid: mString,
-    display_name: mString,
-    version: mString,
+    oid: String,
+    display_name: String,
+    version: String,
     categories: Mixed,
 
     concepts: [Concept.ConceptSchema],
