@@ -128,7 +128,6 @@ PatientSchema.methods.findRecords = function findRecords(profile) {
   return [];
 };
 
-
 PatientSchema.methods.adverse_events = function adverse_events() {
   return this.get_data_elements({ category: 'adverse_event' });
 };
