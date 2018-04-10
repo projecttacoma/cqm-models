@@ -24,7 +24,11 @@ const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   // Cypress use a common field, it should be made a field on this model,
   // and not put into extended_data.
   extended_data: {},
-});
+}, { id: false });
+
+PatientSchema.methods.id = function id() {
+  return this._id;
+};
 
 // Returns an array of elements that exist on this patient, that
 // match the given HQMF data criteria OID.
@@ -49,6 +53,55 @@ PatientSchema.methods.get_data_elements = function get_data_elements(params) {
     return this.data_elements.filter(element => element.category === params.category);
   }
   return this.data_elements;
+};
+
+PatientSchema.methods.get_by_profile = function get_by_profile(profile, isNegated = null) {
+  if (isNegated === true) {
+    return this.data_elements.filter(element => (element.type === `QDM::${profile}` && typeof element.negation_rationale !== 'undefined'));
+  } else if (isNegated === false) {
+    return this.data_elements.filter(element => element.type === `QDM::${profile}` && typeof element.negation_rationale === 'undefined');
+  }
+  return this.data_elements.filter(element => element.type === `QDM::${profile}`);
+};
+
+// This method is called by the CQL execution engine on a CQLPatient when
+// the execution engine wants information on a record. A record could be patient
+// characteristic information about the patient, or it could be data criteria
+// that currently exist on this patient (data criteria you drag on a patient
+// in Bonnie's patient builder).
+// @param {String} profile - the data criteria requested by the execution engine
+// @returns {Object}
+PatientSchema.methods.findRecords = function findRecords(profile) {
+  if (profile === 'Patient') {
+    // Requested generic patient info
+    return { birthDatetime: this.birth_datetime };
+  } else if (/PatientCharacteristic/.test(profile)) {
+    // Requested a patient characteristic
+    return this.get_by_profile(profile);
+  } else if (profile != null) {
+    // Requested something else (probably a QDM data type).
+
+    // Strip model details from request. The requested profile string contains
+    // a lot of things we don't need or care about. Example, we might see
+    // something like:
+    // "{urn:healthit-gov:qdm:v5_0_draft}PatientCharacteristicEthnicity"
+    // Where we only care about: "PatientCharacteristicEthnicity".
+    let profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
+
+    // Check and handle negation status
+    if (/Positive/.test(profileStripped)) {
+      profileStripped = profileStripped.replace(/Positive/, '');
+      // Since the data criteria is 'Positive', it is not negated.
+      return this.get_by_profile(profileStripped, false);
+    } else if (/Negative/.test(profileStripped)) {
+      profileStripped = profileStripped.replace(/Negative/, '');
+      // Since the data criteria is 'Negative', it is negated.
+      return this.get_by_profile(profileStripped, true);
+    }
+    // No negation status, proceed normally
+    return this.get_by_profile(profileStripped);
+  }
+  return [];
 };
 
 PatientSchema.methods.adverse_events = function adverse_events() {
