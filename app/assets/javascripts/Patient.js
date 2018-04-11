@@ -92,7 +92,6 @@ PatientSchema.methods.get_by_profile = function get_by_profile(profile, isNegate
 // @param {String} profile - the data criteria requested by the execution engine
 // @returns {Object}
 PatientSchema.methods.findRecords = function findRecords(profile) {
-  console.log(`\n\n\n\n\n\nProfile: ${profile}`);
   // TODO: Still may be some unfinished work here
   let profileStripped;
   if (profile === 'Patient') {
@@ -101,7 +100,6 @@ PatientSchema.methods.findRecords = function findRecords(profile) {
   } else if (/PatientCharacteristic/.test(profile)) {
     // Requested a patient characteristic
     profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
-    console.log(`Returning1:\n${this.get_by_profile(profileStripped)}`);
     return this.get_by_profile(profileStripped);
   } else if (profile != null) {
     // Requested something else (probably a QDM data type).
@@ -117,16 +115,13 @@ PatientSchema.methods.findRecords = function findRecords(profile) {
     if (/Positive/.test(profileStripped)) {
       profileStripped = profileStripped.replace(/Positive/, '');
       // Since the data criteria is 'Positive', it is not negated.
-      console.log(`Returning+:\n${this.get_by_profile(profileStripped, false)}`);
       return this.get_by_profile(profileStripped, false);
     } else if (/Negative/.test(profileStripped)) {
       profileStripped = profileStripped.replace(/Negative/, '');
       // Since the data criteria is 'Negative', it is negated.
-      console.log(`Returning-:\n${this.get_by_profile(profileStripped, true)}`);
       return this.get_by_profile(profileStripped, true);
     }
     // No negation status, proceed normally
-    console.log(`Returning2:\n${this.get_by_profile(profileStripped)}`);
     return this.get_by_profile(profileStripped);
   }
   return [];

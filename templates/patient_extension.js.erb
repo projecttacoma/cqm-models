@@ -82,7 +82,6 @@ PatientSchema.methods.findRecords = function findRecords(profile) {
     return { birthDatetime: this.birth_datetime };
   } else if (/PatientCharacteristic/.test(profile)) {
     // Requested a patient characteristic
-    // TODO: Parse profile to qdm_version
     profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
     return this.get_by_profile(profileStripped);
   } else if (profile != null) {

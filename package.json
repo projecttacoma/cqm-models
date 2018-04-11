@@ -15,6 +15,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
+    "change-case": "^3.0.2",
     "mongoose": "^5.0.7"
   },
   "devDependencies": {
