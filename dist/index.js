@@ -1,6 +1,6 @@
 (function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s}return e})()({1:[function(require,module,exports){
 const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
+const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
@@ -11,7 +11,7 @@ const [Number, String, Date] = [
   mongoose.Schema.Types.Date,
 ];
 
-const AdverseEventSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
+const AdverseEventSchema = DataElementSchema({
   author_datetime: Date,
   relevant_period: Interval,
   severity: Code,
@@ -27,2208 +27,7 @@ const AdverseEventSchema = DataElement.extendSchema(DataElement.DataElementSchem
 module.exports.AdverseEventSchema = AdverseEventSchema;
 module.exports.AdverseEvent = mongoose.model('AdverseEvent', AdverseEventSchema);
 
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],2:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const AllergyIntoleranceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  prevalence_period: Interval,
-  type: Code,
-  severity: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.119' },
-  category: { type: String, default: 'allergy' },
-  qdm_status: { type: String, default: 'intolerance' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'AllergyIntolerance' },
-
-});
-
-module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
-module.exports.AllergyIntolerance = mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],3:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const AssessmentPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  negation_rationale: Code,
-  reason: Code,
-  method: Code,
-  result: {},
-  components: [],
-  related_to: [String],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
-  category: { type: String, default: 'assessment' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'AssessmentPerformed' },
-
-});
-
-module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
-module.exports.AssessmentPerformed = mongoose.model('AssessmentPerformed', AssessmentPerformedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],4:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const AssessmentRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  negation_rationale: Code,
-  reason: Code,
-  method: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.118' },
-  category: { type: String, default: 'assessment' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'AssessmentRecommended' },
-
-});
-
-module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
-module.exports.AssessmentRecommended = mongoose.model('AssessmentRecommended', AssessmentRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],5:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const CareGoalSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  relevant_period: Interval,
-  related_to: [String],
-  target_outcome: {},
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.7' },
-  category: { type: String, default: 'care_goal' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'CareGoal' },
-
-});
-
-module.exports.CareGoalSchema = CareGoalSchema;
-module.exports.CareGoal = mongoose.model('CareGoal', CareGoalSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],6:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const CommunicationFromPatientToProviderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  related_to: [String],
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.8' },
-  category: { type: String, default: 'communication' },
-  qdm_status: { type: String, default: 'from_patient_to_provider' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'CommunicationFromPatientToProvider' },
-
-});
-
-module.exports.CommunicationFromPatientToProviderSchema = CommunicationFromPatientToProviderSchema;
-module.exports.CommunicationFromPatientToProvider = mongoose.model('CommunicationFromPatientToProvider', CommunicationFromPatientToProviderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],7:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const CommunicationFromProviderToPatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  related_to: [String],
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.9' },
-  category: { type: String, default: 'communication' },
-  qdm_status: { type: String, default: 'from_provider_to_patient' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'CommunicationFromProviderToPatient' },
-
-});
-
-module.exports.CommunicationFromProviderToPatientSchema = CommunicationFromProviderToPatientSchema;
-module.exports.CommunicationFromProviderToPatient = mongoose.model('CommunicationFromProviderToPatient', CommunicationFromProviderToPatientSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],8:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const CommunicationFromProviderToProviderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  related_to: [String],
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.10' },
-  category: { type: String, default: 'communication' },
-  qdm_status: { type: String, default: 'from_provider_to_provider' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'CommunicationFromProviderToProvider' },
-
-});
-
-module.exports.CommunicationFromProviderToProviderSchema = CommunicationFromProviderToProviderSchema;
-module.exports.CommunicationFromProviderToProvider = mongoose.model('CommunicationFromProviderToProvider', CommunicationFromProviderToProviderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],9:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  code: Code,
-  result: {},
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Component' },
-
-});
-
-module.exports.ComponentSchema = ComponentSchema;
-module.exports.Component = mongoose.model('Component', ComponentSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],10:[function(require,module,exports){
-const mongoose = require('mongoose');
-
-const mString = mongoose.Schema.Types.String;
-
-const ConceptSchema = mongoose.Schema({
-  code: mString,
-  code_system: mString,
-  code_system_name: mString,
-  code_system_version: mString,
-  display_name: mString,
-});
-
-module.exports.ConceptSchema = ConceptSchema;
-module.exports.Concept = mongoose.model('concept', ConceptSchema);
-
-},{"mongoose":263}],11:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const DeviceAppliedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  negation_rationale: Code,
-  reason: Code,
-  anatomical_location_site: Code,
-  anatomical_approach_site: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.13' },
-  category: { type: String, default: 'device' },
-  qdm_status: { type: String, default: 'applied' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'DeviceApplied' },
-
-});
-
-module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
-module.exports.DeviceApplied = mongoose.model('DeviceApplied', DeviceAppliedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],12:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const DeviceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  negation_rationale: Code,
-  reason: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.15' },
-  category: { type: String, default: 'device' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'DeviceOrder' },
-
-});
-
-module.exports.DeviceOrderSchema = DeviceOrderSchema;
-module.exports.DeviceOrder = mongoose.model('DeviceOrder', DeviceOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],13:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const DeviceRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  negation_rationale: Code,
-  reason: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.16' },
-  category: { type: String, default: 'device' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'DeviceRecommended' },
-
-});
-
-module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
-module.exports.DeviceRecommended = mongoose.model('DeviceRecommended', DeviceRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],14:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const DiagnosisSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  prevalence_period: Interval,
-  anatomical_location_site: Code,
-  severity: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.110' },
-  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
-  category: { type: String, default: 'condition' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Diagnosis' },
-
-});
-
-module.exports.DiagnosisSchema = DiagnosisSchema;
-module.exports.Diagnosis = mongoose.model('Diagnosis', DiagnosisSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],15:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const DiagnosticStudyOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  method: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.22' },
-  category: { type: String, default: 'diagnostic_study' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'DiagnosticStudyOrder' },
-
-});
-
-module.exports.DiagnosticStudyOrderSchema = DiagnosticStudyOrderSchema;
-module.exports.DiagnosticStudyOrder = mongoose.model('DiagnosticStudyOrder', DiagnosticStudyOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],16:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const DiagnosticStudyPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  reason: Code,
-  result: {},
-  result_datetime: Date,
-  status: Code,
-  method: Code,
-  facility_location: Code,
-  negation_rationale: Code,
-  components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.23' },
-  category: { type: String, default: 'diagnostic_study' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'DiagnosticStudyPerformed' },
-
-});
-
-module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
-module.exports.DiagnosticStudyPerformed = mongoose.model('DiagnosticStudyPerformed', DiagnosticStudyPerformedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],17:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const DiagnosticStudyRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  method: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.24' },
-  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
-  category: { type: String, default: 'diagnostic_study' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'DiagnosticStudyRecommended' },
-
-});
-
-module.exports.DiagnosticStudyRecommendedSchema = DiagnosticStudyRecommendedSchema;
-module.exports.DiagnosticStudyRecommended = mongoose.model('DiagnosticStudyRecommended', DiagnosticStudyRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],18:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const EncounterOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  facility_location: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.27' },
-  category: { type: String, default: 'encounter' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'EncounterOrder' },
-
-});
-
-module.exports.EncounterOrderSchema = EncounterOrderSchema;
-module.exports.EncounterOrder = mongoose.model('EncounterOrder', EncounterOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],19:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const EncounterPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  admission_source: Code,
-  relevant_period: Interval,
-  discharge_disposition: Code,
-  facility_locations: [],
-  diagnoses: [Code],
-  principal_diagnosis: Code,
-  negation_rationale: Code,
-  length_of_stay: Quantity,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.5' },
-  category: { type: String, default: 'encounter' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'EncounterPerformed' },
-
-});
-
-module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
-module.exports.EncounterPerformed = mongoose.model('EncounterPerformed', EncounterPerformedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],20:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const EncounterRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  facility_location: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.28' },
-  category: { type: String, default: 'encounter' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'EncounterRecommended' },
-
-});
-
-module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
-module.exports.EncounterRecommended = mongoose.model('EncounterRecommended', EncounterRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],21:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const FacilityLocationSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  code: Code,
-  location_period: Interval,
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'FacilityLocation' },
-
-});
-
-module.exports.FacilityLocationSchema = FacilityLocationSchema;
-module.exports.FacilityLocation = mongoose.model('FacilityLocation', FacilityLocationSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],22:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const FamilyHistorySchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relationship: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.111' },
-  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
-  category: { type: String, default: 'family_history' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'FamilyHistory' },
-
-});
-
-module.exports.FamilyHistorySchema = FamilyHistorySchema;
-module.exports.FamilyHistory = mongoose.model('FamilyHistory', FamilyHistorySchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],23:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const IdSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  naming_system: String,
-  value: String,
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Id' },
-
-});
-
-module.exports.IdSchema = IdSchema;
-module.exports.Id = mongoose.model('Id', IdSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],24:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ImmunizationAdministeredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  dosage: Quantity,
-  supply: Quantity,
-  route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.112' },
-  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },
-  category: { type: String, default: 'immunization' },
-  qdm_status: { type: String, default: 'administered' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ImmunizationAdministered' },
-
-});
-
-module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
-module.exports.ImmunizationAdministered = mongoose.model('ImmunizationAdministered', ImmunizationAdministeredSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],25:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ImmunizationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  active_datetime: Date,
-  author_datetime: Date,
-  dosage: Quantity,
-  supply: Quantity,
-  reason: Code,
-  route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.113' },
-  category: { type: String, default: 'immunization' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ImmunizationOrder' },
-
-});
-
-module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
-module.exports.ImmunizationOrder = mongoose.model('ImmunizationOrder', ImmunizationOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],26:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const InterventionOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.35' },
-  category: { type: String, default: 'intervention' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'InterventionOrder' },
-
-});
-
-module.exports.InterventionOrderSchema = InterventionOrderSchema;
-module.exports.InterventionOrder = mongoose.model('InterventionOrder', InterventionOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],27:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const InterventionPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  reason: Code,
-  result: {},
-  status: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.36' },
-  category: { type: String, default: 'intervention' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'InterventionPerformed' },
-
-});
-
-module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
-module.exports.InterventionPerformed = mongoose.model('InterventionPerformed', InterventionPerformedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],28:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const InterventionRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.37' },
-  category: { type: String, default: 'intervention' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'InterventionRecommended' },
-
-});
-
-module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
-module.exports.InterventionRecommended = mongoose.model('InterventionRecommended', InterventionRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],29:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const LaboratoryTestOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  method: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.41' },
-  category: { type: String, default: 'laboratory_test' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'LaboratoryTestOrder' },
-
-});
-
-module.exports.LaboratoryTestOrderSchema = LaboratoryTestOrderSchema;
-module.exports.LaboratoryTestOrder = mongoose.model('LaboratoryTestOrder', LaboratoryTestOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],30:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const LaboratoryTestPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  status: Code,
-  method: Code,
-  result: {},
-  result_datetime: Date,
-  reason: Code,
-  reference_range: Interval,
-  negation_rationale: Code,
-  components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.42' },
-  category: { type: String, default: 'laboratory_test' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'LaboratoryTestPerformed' },
-
-});
-
-module.exports.LaboratoryTestPerformedSchema = LaboratoryTestPerformedSchema;
-module.exports.LaboratoryTestPerformed = mongoose.model('LaboratoryTestPerformed', LaboratoryTestPerformedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],31:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const LaboratoryTestRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  method: Code,
-  reason: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.43' },
-  category: { type: String, default: 'laboratory_test' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'LaboratoryTestRecommended' },
-
-});
-
-module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema;
-module.exports.LaboratoryTestRecommended = mongoose.model('LaboratoryTestRecommended', LaboratoryTestRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],32:[function(require,module,exports){
-const mongoose = require('mongoose');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [mNumber, mString, mBoolean, Mixed, ObjectId, mDate] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Boolean,
-  mongoose.Schema.Types.Mixed,
-  mongoose.Schema.Types.ObjectId,
-  mongoose.Schema.Types.Date,
-];
-
-const MeasureSchema = mongoose.Schema(
-  {
-    // ID/other measure information
-    id: mString,
-    measure_id: mString,
-    hqmf_id: mString,
-    hqmf_set_id: mString,
-    hqmf_version_number: mNumber,
-    cms_id: mString,
-    title: mString,
-    description: mString,
-    type: mString,
-    category: { type: mString, default: 'Uncategorized' },
-
-    // Measure type variables
-    episode_of_care: mBoolean,
-    continuous_constiable: mBoolean,
-    episode_ids: [],
-
-    // Publishing data (used by Bonnie)
-    published: mBoolean,
-    publish_date: mDate,
-    version: mNumber,
-
-    // ELM/CQL Measure-logic related data
-    elm_annotations: Mixed,
-    cql: [mString],
-    elm: [Mixed],
-    main_cql_library: mString,
-    cql_statement_dependencies: Mixed,
-
-    // HQMF/Tacoma-specific Measure-logic related data
-    population_criteria: Mixed,
-    data_criteria: Mixed,
-    source_data_criteria: Mixed,
-    measure_period: Interval,
-    measure_attributes: [],
-    populations: [Mixed],
-    populations_cql_map: Mixed,
-    observations: [Mixed],
-
-    value_sets: [{ type: ObjectId, ref: 'ValueSet' }],
-
-    complexity: Mixed, // Bonnie-specific?
-
-    // Relations to other model classes
-    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
-    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, but used in Bonnie-bundler as well
-    package: { type: ObjectId, ref: 'MeasurePackage' }, // Bonnie specific
-  },
-  // Options
-  {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }, // These are the Mongoid conventions for timestamps
-  }
-);
-
-MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => ['STRAT', 'IPP', 'DENOM', 'DENEX', 'NUMER', 'NUMEX', 'DENEXCEP', 'MSRPOPL', 'OBSERV', 'MSRPOPLEX']);
-
-MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex']);
-
-module.exports.MeasureSchema = MeasureSchema;
-module.exports.Measure = mongoose.model('measure', MeasureSchema);
-
-},{"./basetypes/Code":66,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],33:[function(require,module,exports){
-const mongoose = require('mongoose');
-
-const [mBuffer, ObjectId] = [
-  mongoose.Schema.Types.Buffer,
-  mongoose.Schema.Types.ObjectId,
-];
-
-const MeasurePackageSchema = mongoose.Schema(
-  {
-    file: mBuffer,
-    measure: { type: ObjectId, ref: 'Measure' },
-  },
-  // Options
-  {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-  }
-);
-
-module.exports.MeasurePackageSchema = MeasurePackageSchema;
-module.exports.MeasurePackage = mongoose.model('measure_package', MeasurePackageSchema);
-
-},{"mongoose":263}],34:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const MedicationActiveSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  relevant_period: Interval,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  route: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.44' },
-  category: { type: String, default: 'medication' },
-  qdm_status: { type: String, default: 'active' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'MedicationActive' },
-
-});
-
-module.exports.MedicationActiveSchema = MedicationActiveSchema;
-module.exports.MedicationActive = mongoose.model('MedicationActive', MedicationActiveSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],35:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const MedicationAdministeredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  route: Code,
-  reason: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.45' },
-  category: { type: String, default: 'medication' },
-  qdm_status: { type: String, default: 'administered' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'MedicationAdministered' },
-
-});
-
-module.exports.MedicationAdministeredSchema = MedicationAdministeredSchema;
-module.exports.MedicationAdministered = mongoose.model('MedicationAdministered', MedicationAdministeredSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],36:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const MedicationDischargeSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  refills: Number,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.48' },
-  category: { type: String, default: 'medication' },
-  qdm_status: { type: String, default: 'discharge' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'MedicationDischarge' },
-
-});
-
-module.exports.MedicationDischargeSchema = MedicationDischargeSchema;
-module.exports.MedicationDischarge = mongoose.model('MedicationDischarge', MedicationDischargeSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],37:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const MedicationDispensedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  refills: Number,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.49' },
-  category: { type: String, default: 'medication' },
-  qdm_status: { type: String, default: 'dispensed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'MedicationDispensed' },
-
-});
-
-module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
-module.exports.MedicationDispensed = mongoose.model('MedicationDispensed', MedicationDispensedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],38:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const MedicationOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  active_datetime: Date,
-  relevant_period: Interval,
-  author_datetime: Date,
-  refills: Number,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  route: Code,
-  method: Code,
-  reason: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.51' },
-  category: { type: String, default: 'medication' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'MedicationOrder' },
-
-});
-
-module.exports.MedicationOrderSchema = MedicationOrderSchema;
-module.exports.MedicationOrder = mongoose.model('MedicationOrder', MedicationOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],39:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ParticipationSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  participation_period: Interval,
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Participation' },
-
-});
-
-module.exports.ParticipationSchema = ParticipationSchema;
-module.exports.Participation = mongoose.model('Participation', ParticipationSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],40:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  birth_datetime: Date,
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Patient' },
-  given_names: [String],
-  family_name: String,
-  bundle_id: String,
-  // These are the "data criteria", or QDM datatype elements that exist on a
-  // patient.
-  data_elements: [],
-  // This field is for application specific information only. If both Bonnie
-  // Cypress use a common field, it should be made a field on this model,
-  // and not put into extended_data.
-  extended_data: {},
-}, { id: false });
-
-PatientSchema.methods.id = function id() {
-  return this._id;
-};
-
-// Returns an array of elements that exist on this patient, that
-// match the given HQMF data criteria OID.
-PatientSchema.methods.get_by_hqmf_oid = function get_by_hqmf_oid(hqmfOid) {
-  return this.data_elements.filter(element => element.hqmf_oid === hqmfOid);
-};
-
-// Returns an array of elements that exist on this patient, that
-// match the given QRDA data criteria OID.
-PatientSchema.methods.get_by_qrda_oid = function get_by_qrda_oid(qrdaOid) {
-  return this.data_elements.filter(element => element.qrda_oid === qrdaOid);
-};
-
-// Returns an array of elements that exist on this patient. Optionally
-// takes a category, which returns all elements of that QDM category.
-// Example: patient.get_data_elements(category = 'encounters') will return
-// all Encounter QDM data types active on the patient.
-PatientSchema.methods.get_data_elements = function get_data_elements(params) {
-  if (params.category && params.qdm_status) {
-    return this.data_elements.filter(element => (element.category === params.category) && (element.qdm_status === params.qdm_status));
-  } else if (params.category) {
-    return this.data_elements.filter(element => element.category === params.category);
-  }
-  return this.data_elements;
-};
-
-PatientSchema.methods.get_by_profile = function get_by_profile(profile, isNegated = null) {
-  if (isNegated === true) {
-    return this.data_elements.filter(element => (element.type === `QDM::${profile}` && typeof element.negation_rationale !== 'undefined'));
-  } else if (isNegated === false) {
-    return this.data_elements.filter(element => element.type === `QDM::${profile}` && typeof element.negation_rationale === 'undefined');
-  }
-  return this.data_elements.filter(element => element.type === `QDM::${profile}`);
-};
-
-// This method is called by the CQL execution engine on a CQLPatient when
-// the execution engine wants information on a record. A record could be patient
-// characteristic information about the patient, or it could be data criteria
-// that currently exist on this patient (data criteria you drag on a patient
-// in Bonnie's patient builder).
-// @param {String} profile - the data criteria requested by the execution engine
-// @returns {Object}
-PatientSchema.methods.findRecords = function findRecords(profile) {
-  if (profile === 'Patient') {
-    // Requested generic patient info
-    return { birthDatetime: this.birth_datetime };
-  } else if (/PatientCharacteristic/.test(profile)) {
-    // Requested a patient characteristic
-    return this.get_by_profile(profile);
-  } else if (profile != null) {
-    // Requested something else (probably a QDM data type).
-
-    // Strip model details from request. The requested profile string contains
-    // a lot of things we don't need or care about. Example, we might see
-    // something like:
-    // "{urn:healthit-gov:qdm:v5_0_draft}PatientCharacteristicEthnicity"
-    // Where we only care about: "PatientCharacteristicEthnicity".
-    let profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
-
-    // Check and handle negation status
-    if (/Positive/.test(profileStripped)) {
-      profileStripped = profileStripped.replace(/Positive/, '');
-      // Since the data criteria is 'Positive', it is not negated.
-      return this.get_by_profile(profileStripped, false);
-    } else if (/Negative/.test(profileStripped)) {
-      profileStripped = profileStripped.replace(/Negative/, '');
-      // Since the data criteria is 'Negative', it is negated.
-      return this.get_by_profile(profileStripped, true);
-    }
-    // No negation status, proceed normally
-    return this.get_by_profile(profileStripped);
-  }
-  return [];
-};
-
-PatientSchema.methods.adverse_events = function adverse_events() {
-  return this.get_data_elements({ category: 'adverse_event' });
-};
-
-PatientSchema.methods.allergies = function allergies() {
-  return this.get_data_elements({ category: 'allergy' });
-};
-
-PatientSchema.methods.assessments = function assessments() {
-  return this.get_data_elements({ category: 'assessment' });
-};
-
-PatientSchema.methods.care_experiences = function care_experiences() {
-  return this.get_data_elements({ category: 'care_experience' });
-};
-
-PatientSchema.methods.care_goals = function care_goals() {
-  return this.get_data_elements({ category: 'care_goal' });
-};
-
-PatientSchema.methods.communications = function communications() {
-  return this.get_data_elements({ category: 'communication' });
-};
-
-PatientSchema.methods.conditions = function conditions() {
-  return this.get_data_elements({ category: 'condition' });
-};
-
-PatientSchema.methods.devices = function devices() {
-  return this.get_data_elements({ category: 'device' });
-};
-
-PatientSchema.methods.diagnostic_studies = function diagnostic_studies() {
-  return this.get_data_elements({ category: 'diagnostic_study' });
-};
-
-PatientSchema.methods.encounters = function encounters() {
-  return this.get_data_elements({ category: 'encounter' });
-};
-
-PatientSchema.methods.family_history = function family_history() {
-  return this.get_data_elements({ category: 'family_history' });
-};
-
-PatientSchema.methods.functional_statuses = function functional_statuses() {
-  return this.get_data_elements({ category: 'functional_status' });
-};
-
-PatientSchema.methods.immunizations = function immunizations() {
-  return this.get_data_elements({ category: 'immunization' });
-};
-
-PatientSchema.methods.interventions = function interventions() {
-  return this.get_data_elements({ category: 'intervention' });
-};
-
-PatientSchema.methods.laboratory_tests = function laboratory_tests() {
-  return this.get_data_elements({ category: 'laboratory_test' });
-};
-
-PatientSchema.methods.medical_equipment = function medical_equipment() {
-  return this.get_data_elements({ category: 'medical_equipment' });
-};
-
-PatientSchema.methods.medications = function medications() {
-  return this.get_data_elements({ category: 'medication' });
-};
-
-PatientSchema.methods.physical_exams = function physical_exams() {
-  return this.get_data_elements({ category: 'physical_exam' });
-};
-
-PatientSchema.methods.preferences = function preferences() {
-  return this.get_data_elements({ category: 'preference' });
-};
-
-PatientSchema.methods.provider_characteristics = function provider_characteristics() {
-  return this.get_data_elements({ category: 'provider_characteristic' });
-};
-
-PatientSchema.methods.procedures = function procedures() {
-  return this.get_data_elements({ category: 'procedure' });
-};
-
-PatientSchema.methods.results = function results() {
-  return this.get_data_elements({ category: 'result' });
-};
-
-PatientSchema.methods.risk_category_assessments = function risk_category_assessments() {
-  return this.get_data_elements({ category: 'risk_category_assessment' });
-};
-
-PatientSchema.methods.social_history = function social_history() {
-  return this.get_data_elements({ category: 'social_history' });
-};
-
-PatientSchema.methods.substances = function substances() {
-  return this.get_data_elements({ category: 'substance' });
-};
-
-PatientSchema.methods.symptoms = function symptoms() {
-  return this.get_data_elements({ category: 'symptom' });
-};
-
-PatientSchema.methods.system_characteristics = function system_characteristics() {
-  return this.get_data_elements({ category: 'system_characteristic' });
-};
-
-PatientSchema.methods.transfers = function transfers() {
-  return this.get_data_elements({ category: 'transfer' });
-};
-
-PatientSchema.methods.vital_signs = function vital_signs() {
-  return this.get_data_elements({ category: 'vital_sign' });
-};
-
-module.exports.PatientSchema = PatientSchema;
-module.exports.Patient = mongoose.model('Patient', PatientSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],41:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCareExperienceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.52' },
-  category: { type: String, default: 'care_experience' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCareExperience' },
-
-});
-
-module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
-module.exports.PatientCareExperience = mongoose.model('PatientCareExperience', PatientCareExperienceSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],42:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.53' },
-  category: { type: String, default: 'patient_characteristic' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristic' },
-
-});
-
-module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
-module.exports.PatientCharacteristic = mongoose.model('PatientCharacteristic', PatientCharacteristicSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],43:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicBirthdateSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  birth_datetime: Date,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.54' },
-  category: { type: String, default: 'patient_characteristic' },
-  qdm_status: { type: String, default: 'birthdate' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristicBirthdate' },
-
-});
-
-module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirthdateSchema;
-module.exports.PatientCharacteristicBirthdate = mongoose.model('PatientCharacteristicBirthdate', PatientCharacteristicBirthdateSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],44:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicClinicalTrialParticipantSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  reason: Code,
-  relevant_period: Interval,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.6' },
-  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.51' },
-  category: { type: String, default: 'condition' },
-  qdm_status: { type: String, default: 'clinical_trial_participant' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
-
-});
-
-module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientCharacteristicClinicalTrialParticipantSchema;
-module.exports.PatientCharacteristicClinicalTrialParticipant = mongoose.model('PatientCharacteristicClinicalTrialParticipant', PatientCharacteristicClinicalTrialParticipantSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],45:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicEthnicitySchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.56' },
-  category: { type: String, default: 'patient_characteristic' },
-  qdm_status: { type: String, default: 'ethnicity' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristicEthnicity' },
-
-});
-
-module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthnicitySchema;
-module.exports.PatientCharacteristicEthnicity = mongoose.model('PatientCharacteristicEthnicity', PatientCharacteristicEthnicitySchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],46:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicExpiredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  expired_datetime: Date,
-  cause: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.57' },
-  category: { type: String, default: 'condition' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristicExpired' },
-
-});
-
-module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpiredSchema;
-module.exports.PatientCharacteristicExpired = mongoose.model('PatientCharacteristicExpired', PatientCharacteristicExpiredSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],47:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicPayerSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  relevant_period: Interval,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.58' },
-  category: { type: String, default: 'patient_characteristic' },
-  qdm_status: { type: String, default: 'payer' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristicPayer' },
-
-});
-
-module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSchema;
-module.exports.PatientCharacteristicPayer = mongoose.model('PatientCharacteristicPayer', PatientCharacteristicPayerSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],48:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicRaceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.59' },
-  category: { type: String, default: 'patient_characteristic' },
-  qdm_status: { type: String, default: 'race' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristicRace' },
-
-});
-
-module.exports.PatientCharacteristicRaceSchema = PatientCharacteristicRaceSchema;
-module.exports.PatientCharacteristicRace = mongoose.model('PatientCharacteristicRace', PatientCharacteristicRaceSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],49:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PatientCharacteristicSexSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PatientCharacteristicSex' },
-
-});
-
-module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
-module.exports.PatientCharacteristicSex = mongoose.model('PatientCharacteristicSex', PatientCharacteristicSexSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],50:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PhysicalExamOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  method: Code,
-  anatomical_location_site: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.61' },
-  category: { type: String, default: 'physical_exam' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PhysicalExamOrder' },
-
-});
-
-module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
-module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],51:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PhysicalExamPerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  reason: Code,
-  method: Code,
-  result: {},
-  anatomical_location_site: Code,
-  negation_rationale: Code,
-  components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.62' },
-  category: { type: String, default: 'physical_exam' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PhysicalExamPerformed' },
-
-});
-
-module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
-module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],52:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const PhysicalExamRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  method: Code,
-  anatomical_location_site: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '22.16.840.1.113883.10.20.28.3.63' },
-  category: { type: String, default: 'physical_exam' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'PhysicalExamRecommended' },
-
-});
-
-module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
-module.exports.PhysicalExamRecommended = mongoose.model('PhysicalExamRecommended', PhysicalExamRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],53:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ProcedureOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  method: Code,
-  anatomical_approach_site: Code,
-  anatomical_location_site: Code,
-  ordinality: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.66' },
-  category: { type: String, default: 'procedure' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ProcedureOrder' },
-
-});
-
-module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
-module.exports.ProcedureOrder = mongoose.model('ProcedureOrder', ProcedureOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],54:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ProcedurePerformedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  reason: Code,
-  method: Code,
-  result: {},
-  status: Code,
-  anatomical_approach_site: Code,
-  anatomical_location_site: Code,
-  ordinality: Code,
-  incision_datetime: Date,
-  negation_rationale: Code,
-  components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
-  category: { type: String, default: 'procedure' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ProcedurePerformed' },
-
-});
-
-module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
-module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],55:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ProcedureRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  method: Code,
-  anatomical_approach_site: Code,
-  anatomical_location_site: Code,
-  ordinality: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.68' },
-  category: { type: String, default: 'procedure' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ProcedureRecommended' },
-
-});
-
-module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
-module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],56:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ProviderCareExperienceSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.70' },
-  category: { type: String, default: 'care_experience' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ProviderCareExperience' },
-
-});
-
-module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
-module.exports.ProviderCareExperience = mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],57:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ProviderCharacteristicSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.71' },
-  category: { type: String, default: 'provider_characteristic' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ProviderCharacteristic' },
-
-});
-
-module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
-module.exports.ProviderCharacteristic = mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],58:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const RatioSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  numerator: Quantity,
-  denominator: Quantity,
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Ratio' },
-
-});
-
-module.exports.RatioSchema = RatioSchema;
-module.exports.Ratio = mongoose.model('Ratio', RatioSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],59:[function(require,module,exports){
-const mongoose = require('mongoose');
-
-const PlaceholderResultSchema = mongoose.Schema({
-  cache_id: String,
-  measure_id: String,
-  sub_id: String,
-  test_id: String,
-  effective_date: Number,
-  filters: Object,
-  prefilter: Object,
-  calculation_time: Date,
-  status: Object,
-  population_ids: Object,
-  STRAT: Number,
-  IPP: Number,
-  DENOM: Number,
-  NUMER: Number,
-  NUMEX: Number,
-  DENEX: Number,
-  DENEXCEP: Number,
-  MSRPOPL: Number,
-  OBSERV: Number,
-  MSRPOPLEX: Number,
-  supplemental_data: Object,
-});
-
-module.exports.ResultSchema = PlaceholderResultSchema;
-module.exports.Result = mongoose.model('Result', PlaceholderResultSchema);
-
-},{"mongoose":263}],60:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const ResultComponentSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  reference_range: Interval,
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'ResultComponent' },
-
-});
-
-module.exports.ResultComponentSchema = ResultComponentSchema;
-module.exports.ResultComponent = mongoose.model('ResultComponent', ResultComponentSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],61:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const SubstanceAdministeredSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  relevant_period: Interval,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.73' },
-  category: { type: String, default: 'substance' },
-  qdm_status: { type: String, default: 'administered' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'SubstanceAdministered' },
-
-});
-
-module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
-module.exports.SubstanceAdministered = mongoose.model('SubstanceAdministered', SubstanceAdministeredSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],62:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const SubstanceOrderSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  method: Code,
-  refills: Number,
-  route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.77' },
-  category: { type: String, default: 'substance' },
-  qdm_status: { type: String, default: 'order' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'SubstanceOrder' },
-
-});
-
-module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
-module.exports.SubstanceOrder = mongoose.model('SubstanceOrder', SubstanceOrderSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],63:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const SubstanceRecommendedSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  author_datetime: Date,
-  reason: Code,
-  dosage: Quantity,
-  supply: Quantity,
-  frequency: Code,
-  method: Code,
-  refills: Number,
-  route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.78' },
-  category: { type: String, default: 'substance' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'SubstanceRecommended' },
-
-});
-
-module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
-module.exports.SubstanceRecommended = mongoose.model('SubstanceRecommended', SubstanceRecommendedSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],64:[function(require,module,exports){
-const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-
-const [Number, String, Date] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
-];
-
-const SymptomSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
-  prevalence_period: Interval,
-  severity: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.116' },
-  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.136' },
-  category: { type: String, default: 'symptom' },
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Symptom' },
-
-});
-
-module.exports.SymptomSchema = SymptomSchema;
-module.exports.Symptom = mongoose.model('Symptom', SymptomSchema);
-
-},{"./basetypes/Code":66,"./basetypes/DataElement":67,"./basetypes/Interval":68,"./basetypes/Quantity":69,"mongoose":263}],65:[function(require,module,exports){
-const mongoose = require('mongoose');
-const Concept = require('./Concept.js');
-
-const [mString, Mixed, ObjectId] = [
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
-  mongoose.Schema.Types.ObjectId,
-];
-
-const ValueSetSchema = mongoose.Schema(
-  {
-    oid: mString,
-    display_name: mString,
-    version: mString,
-    categories: Mixed,
-
-    concepts: [Concept.ConceptSchema],
-
-    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
-    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific
-    measures: [{ type: ObjectId, ref: 'Measure' }],
-  },
-  // Options
-  {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-  }
-);
-
-module.exports.ValueSetSchema = ValueSetSchema;
-module.exports.ValueSet = mongoose.model('value_set', ValueSetSchema);
-
-},{"./Concept.js":10,"mongoose":263}],66:[function(require,module,exports){
-const mongoose = require('mongoose');
-
-function Code(key, options) {
-  mongoose.SchemaType.call(this, key, options, 'Code');
-}
-Code.prototype = Object.create(mongoose.SchemaType.prototype);
-
-Code.prototype.cast = (code) => {
-  if (typeof code.code === 'undefined') {
-    throw new Error(`Code: ${code} does not have a code`);
-  } else if (typeof code.code_system === 'undefined') {
-    throw new Error(`Code: ${code} does not have a code_system`);
-  }
-
-  const val = { code: code.code, code_system: code.code_system };
-
-  val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
-  val.code_system_oid = (typeof code.code_system_oid !== 'undefined') ? code.code_system_oid : null;
-  val.version = (typeof code.version !== 'undefined') ? code.version : null;
-
-  return val;
-};
-
-mongoose.Schema.Types.Code = Code;
-module.exports = Code;
-
-},{"mongoose":263}],67:[function(require,module,exports){
-const mongoose = require('mongoose');
-const Code = require('./Code.js');
-
-const [Schema] = [mongoose.Schema];
-
-function extendSchema(TSchema, definition, options) {
-  return new Schema(Object.assign({}, TSchema.obj, definition), options);
-}
-
-const DataElementSchema = new Schema({
-  data_element_codes: { type: [Code] },
-  description: { type: String },
-});
-
-// Returns the attribute requested on the data element.
-DataElementSchema.methods.get = function get(attribute) {
-  return this[attribute]();
-};
-
-// Returns all of the codes on this data element.
-DataElementSchema.methods.getCode = function getCode() {
-  return this.data_element_codes.map((code) => {
-    const result = {};
-    result.code = code.code;
-    result.system = code.system;
-    return result;
-  });
-};
-
-// Returns all of the codes on this data element.
-DataElementSchema.methods.codes = function getCode() {
-  return this.data_element_codes;
-};
-
-module.exports.DataElementSchema = DataElementSchema;
-module.exports.extendSchema = extendSchema;
-
-},{"./Code.js":66,"mongoose":263}],68:[function(require,module,exports){
-const mongoose = require('mongoose');
-
-function Interval(key, options) {
-  mongoose.SchemaType.call(this, key, options, 'Interval');
-}
-Interval.prototype = Object.create(mongoose.SchemaType.prototype);
-
-Interval.prototype.cast = (interval) => {
-  if (typeof interval.low === 'undefined') {
-    throw new Error(`Interval: ${interval} does not have a low value`);
-  }
-  const val = { low: interval.low };
-
-  val.high = (typeof interval.high !== 'undefined') ? interval.high : null;
-  val.low_closed = (typeof interval.low_closed !== 'undefined') ? interval.low_closed : null;
-  val.high_closed = (typeof interval.high_closed !== 'undefined') ? interval.high_closed : null;
-  return val;
-};
-
-mongoose.Schema.Types.Interval = Interval;
-module.exports = Interval;
-
-},{"mongoose":263}],69:[function(require,module,exports){
-const mongoose = require('mongoose');
-
-function Quantity(key, options) {
-  mongoose.SchemaType.call(this, key, options, 'Quantity');
-}
-Quantity.prototype = Object.create(mongoose.SchemaType.prototype);
-
-Quantity.prototype.cast = (quantity) => {
-  if (typeof quantity.value === 'undefined') {
-    throw new Error(`Quantity: ${quantity} does not have a value`);
-  } else if (typeof quantity.unit === 'undefined') {
-    throw new Error(`Quantity: ${quantity} does not have a unit`);
-  }
-
-  return { value: quantity.value, unit: quantity.unit };
-};
-
-mongoose.Schema.Types.Quantity = Quantity;
-module.exports = Quantity;
-
-},{"mongoose":263}],70:[function(require,module,exports){
-module.exports.Result = require('./Result.js').Result;
-module.exports.ResultSchema = require('./Result.js').ResultSchema;
-module.exports.Measure = require('./Measure.js').Measure;
-module.exports.MeasureSchema = require('./Measure.js').MeasureSchema;
-module.exports.MeasurePackage = require('./MeasurePackage.js').MeasurePackage;
-module.exports.MeasurePackageSchema = require('./MeasurePackage.js').MeasurePackageSchema;
-module.exports.ValueSet = require('./ValueSet.js').ValueSet;
-module.exports.ValueSetSchema = require('./ValueSet.js').ValueSetSchema;
-module.exports.Concept = require('./Concept.js').Concept;
-module.exports.ConceptSchema = require('./Concept.js').ConceptSchema;
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],2:[function(require,module,exports){
 module.exports.Patient = require('./Patient.js').Patient;
 module.exports.PatientSchema = require('./Patient.js').PatientSchema;
 module.exports.Id = require('./Id.js').Id;
@@ -2350,7 +149,2238 @@ module.exports.InterventionRecommendedSchema = require('./InterventionRecommende
 module.exports.PhysicalExamPerformed = require('./PhysicalExamPerformed.js').PhysicalExamPerformed;
 module.exports.PhysicalExamPerformedSchema = require('./PhysicalExamPerformed.js').PhysicalExamPerformedSchema;
 
-},{"./AdverseEvent.js":1,"./AllergyIntolerance.js":2,"./AssessmentPerformed.js":3,"./AssessmentRecommended.js":4,"./CareGoal.js":5,"./CommunicationFromPatientToProvider.js":6,"./CommunicationFromProviderToPatient.js":7,"./CommunicationFromProviderToProvider.js":8,"./Component.js":9,"./Concept.js":10,"./DeviceApplied.js":11,"./DeviceOrder.js":12,"./DeviceRecommended.js":13,"./Diagnosis.js":14,"./DiagnosticStudyOrder.js":15,"./DiagnosticStudyPerformed.js":16,"./DiagnosticStudyRecommended.js":17,"./EncounterOrder.js":18,"./EncounterPerformed.js":19,"./EncounterRecommended.js":20,"./FacilityLocation.js":21,"./FamilyHistory.js":22,"./Id.js":23,"./ImmunizationAdministered.js":24,"./ImmunizationOrder.js":25,"./InterventionOrder.js":26,"./InterventionPerformed.js":27,"./InterventionRecommended.js":28,"./LaboratoryTestOrder.js":29,"./LaboratoryTestPerformed.js":30,"./LaboratoryTestRecommended.js":31,"./Measure.js":32,"./MeasurePackage.js":33,"./MedicationActive.js":34,"./MedicationAdministered.js":35,"./MedicationDischarge.js":36,"./MedicationDispensed.js":37,"./MedicationOrder.js":38,"./Participation.js":39,"./Patient.js":40,"./PatientCareExperience.js":41,"./PatientCharacteristic.js":42,"./PatientCharacteristicBirthdate.js":43,"./PatientCharacteristicClinicalTrialParticipant.js":44,"./PatientCharacteristicEthnicity.js":45,"./PatientCharacteristicExpired.js":46,"./PatientCharacteristicPayer.js":47,"./PatientCharacteristicRace.js":48,"./PatientCharacteristicSex.js":49,"./PhysicalExamOrder.js":50,"./PhysicalExamPerformed.js":51,"./PhysicalExamRecommended.js":52,"./ProcedureOrder.js":53,"./ProcedurePerformed.js":54,"./ProcedureRecommended.js":55,"./ProviderCareExperience.js":56,"./ProviderCharacteristic.js":57,"./Ratio.js":58,"./Result.js":59,"./ResultComponent.js":60,"./SubstanceAdministered.js":61,"./SubstanceOrder.js":62,"./SubstanceRecommended.js":63,"./Symptom.js":64,"./ValueSet.js":65}],71:[function(require,module,exports){
+},{"./AdverseEvent.js":1,"./AllergyIntolerance.js":3,"./AssessmentPerformed.js":4,"./AssessmentRecommended.js":5,"./CareGoal.js":6,"./CommunicationFromPatientToProvider.js":7,"./CommunicationFromProviderToPatient.js":8,"./CommunicationFromProviderToProvider.js":9,"./Component.js":10,"./DeviceApplied.js":12,"./DeviceOrder.js":13,"./DeviceRecommended.js":14,"./Diagnosis.js":15,"./DiagnosticStudyOrder.js":16,"./DiagnosticStudyPerformed.js":17,"./DiagnosticStudyRecommended.js":18,"./EncounterOrder.js":19,"./EncounterPerformed.js":20,"./EncounterRecommended.js":21,"./FacilityLocation.js":22,"./FamilyHistory.js":23,"./Id.js":24,"./ImmunizationAdministered.js":25,"./ImmunizationOrder.js":26,"./InterventionOrder.js":27,"./InterventionPerformed.js":28,"./InterventionRecommended.js":29,"./LaboratoryTestOrder.js":30,"./LaboratoryTestPerformed.js":31,"./LaboratoryTestRecommended.js":32,"./MedicationActive.js":35,"./MedicationAdministered.js":36,"./MedicationDischarge.js":37,"./MedicationDispensed.js":38,"./MedicationOrder.js":39,"./Participation.js":40,"./Patient.js":41,"./PatientCareExperience.js":42,"./PatientCharacteristic.js":43,"./PatientCharacteristicBirthdate.js":44,"./PatientCharacteristicClinicalTrialParticipant.js":45,"./PatientCharacteristicEthnicity.js":46,"./PatientCharacteristicExpired.js":47,"./PatientCharacteristicPayer.js":48,"./PatientCharacteristicRace.js":49,"./PatientCharacteristicSex.js":50,"./PhysicalExamOrder.js":51,"./PhysicalExamPerformed.js":52,"./PhysicalExamRecommended.js":53,"./ProcedureOrder.js":54,"./ProcedurePerformed.js":55,"./ProcedureRecommended.js":56,"./ProviderCareExperience.js":57,"./ProviderCharacteristic.js":58,"./Ratio.js":59,"./ResultComponent.js":61,"./SubstanceAdministered.js":62,"./SubstanceOrder.js":63,"./SubstanceRecommended.js":64,"./Symptom.js":65}],3:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const AllergyIntoleranceSchema = DataElementSchema({
+  author_datetime: Date,
+  prevalence_period: Interval,
+  type: Code,
+  severity: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.119' },
+  category: { type: String, default: 'allergy' },
+  qdm_status: { type: String, default: 'intolerance' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'AllergyIntolerance' },
+
+});
+
+module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
+module.exports.AllergyIntolerance = mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],4:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const AssessmentPerformedSchema = DataElementSchema({
+  author_datetime: Date,
+  negation_rationale: Code,
+  reason: Code,
+  method: Code,
+  result: {},
+  components: [],
+  related_to: [String],
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
+  category: { type: String, default: 'assessment' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'AssessmentPerformed' },
+
+});
+
+module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
+module.exports.AssessmentPerformed = mongoose.model('AssessmentPerformed', AssessmentPerformedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],5:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const AssessmentRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  negation_rationale: Code,
+  reason: Code,
+  method: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.118' },
+  category: { type: String, default: 'assessment' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'AssessmentRecommended' },
+
+});
+
+module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
+module.exports.AssessmentRecommended = mongoose.model('AssessmentRecommended', AssessmentRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],6:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const CareGoalSchema = DataElementSchema({
+  relevant_period: Interval,
+  related_to: [String],
+  target_outcome: {},
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.7' },
+  category: { type: String, default: 'care_goal' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CareGoal' },
+
+});
+
+module.exports.CareGoalSchema = CareGoalSchema;
+module.exports.CareGoal = mongoose.model('CareGoal', CareGoalSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],7:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const CommunicationFromPatientToProviderSchema = DataElementSchema({
+  author_datetime: Date,
+  related_to: [String],
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.8' },
+  category: { type: String, default: 'communication' },
+  qdm_status: { type: String, default: 'from_patient_to_provider' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CommunicationFromPatientToProvider' },
+
+});
+
+module.exports.CommunicationFromPatientToProviderSchema = CommunicationFromPatientToProviderSchema;
+module.exports.CommunicationFromPatientToProvider = mongoose.model('CommunicationFromPatientToProvider', CommunicationFromPatientToProviderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],8:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const CommunicationFromProviderToPatientSchema = DataElementSchema({
+  author_datetime: Date,
+  related_to: [String],
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.9' },
+  category: { type: String, default: 'communication' },
+  qdm_status: { type: String, default: 'from_provider_to_patient' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CommunicationFromProviderToPatient' },
+
+});
+
+module.exports.CommunicationFromProviderToPatientSchema = CommunicationFromProviderToPatientSchema;
+module.exports.CommunicationFromProviderToPatient = mongoose.model('CommunicationFromProviderToPatient', CommunicationFromProviderToPatientSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],9:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const CommunicationFromProviderToProviderSchema = DataElementSchema({
+  author_datetime: Date,
+  related_to: [String],
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.10' },
+  category: { type: String, default: 'communication' },
+  qdm_status: { type: String, default: 'from_provider_to_provider' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'CommunicationFromProviderToProvider' },
+
+});
+
+module.exports.CommunicationFromProviderToProviderSchema = CommunicationFromProviderToProviderSchema;
+module.exports.CommunicationFromProviderToProvider = mongoose.model('CommunicationFromProviderToProvider', CommunicationFromProviderToProviderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],10:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ComponentSchema = DataElementSchema({
+  code: Code,
+  result: {},
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Component' },
+
+});
+
+module.exports.ComponentSchema = ComponentSchema;
+module.exports.Component = mongoose.model('Component', ComponentSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],11:[function(require,module,exports){
+const mongoose = require('mongoose');
+
+const mString = mongoose.Schema.Types.String;
+
+const ConceptSchema = mongoose.Schema({
+  code: mString,
+  code_system: mString,
+  code_system_name: mString,
+  code_system_version: mString,
+  display_name: mString,
+});
+
+module.exports.ConceptSchema = ConceptSchema;
+module.exports.Concept = mongoose.model('concept', ConceptSchema);
+
+},{"mongoose":264}],12:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const DeviceAppliedSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  negation_rationale: Code,
+  reason: Code,
+  anatomical_location_site: Code,
+  anatomical_approach_site: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.13' },
+  category: { type: String, default: 'device' },
+  qdm_status: { type: String, default: 'applied' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DeviceApplied' },
+
+});
+
+module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
+module.exports.DeviceApplied = mongoose.model('DeviceApplied', DeviceAppliedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],13:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const DeviceOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  negation_rationale: Code,
+  reason: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.15' },
+  category: { type: String, default: 'device' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DeviceOrder' },
+
+});
+
+module.exports.DeviceOrderSchema = DeviceOrderSchema;
+module.exports.DeviceOrder = mongoose.model('DeviceOrder', DeviceOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],14:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const DeviceRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  negation_rationale: Code,
+  reason: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.16' },
+  category: { type: String, default: 'device' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DeviceRecommended' },
+
+});
+
+module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
+module.exports.DeviceRecommended = mongoose.model('DeviceRecommended', DeviceRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],15:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const DiagnosisSchema = DataElementSchema({
+  author_datetime: Date,
+  prevalence_period: Interval,
+  anatomical_location_site: Code,
+  severity: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.110' },
+  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
+  category: { type: String, default: 'condition' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Diagnosis' },
+
+});
+
+module.exports.DiagnosisSchema = DiagnosisSchema;
+module.exports.Diagnosis = mongoose.model('Diagnosis', DiagnosisSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],16:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const DiagnosticStudyOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  method: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.22' },
+  category: { type: String, default: 'diagnostic_study' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DiagnosticStudyOrder' },
+
+});
+
+module.exports.DiagnosticStudyOrderSchema = DiagnosticStudyOrderSchema;
+module.exports.DiagnosticStudyOrder = mongoose.model('DiagnosticStudyOrder', DiagnosticStudyOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],17:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const DiagnosticStudyPerformedSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  reason: Code,
+  result: {},
+  result_datetime: Date,
+  status: Code,
+  method: Code,
+  facility_location: Code,
+  negation_rationale: Code,
+  components: [],
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.23' },
+  category: { type: String, default: 'diagnostic_study' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DiagnosticStudyPerformed' },
+
+});
+
+module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
+module.exports.DiagnosticStudyPerformed = mongoose.model('DiagnosticStudyPerformed', DiagnosticStudyPerformedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],18:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const DiagnosticStudyRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  method: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.24' },
+  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
+  category: { type: String, default: 'diagnostic_study' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'DiagnosticStudyRecommended' },
+
+});
+
+module.exports.DiagnosticStudyRecommendedSchema = DiagnosticStudyRecommendedSchema;
+module.exports.DiagnosticStudyRecommended = mongoose.model('DiagnosticStudyRecommended', DiagnosticStudyRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],19:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const EncounterOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  facility_location: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.27' },
+  category: { type: String, default: 'encounter' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'EncounterOrder' },
+
+});
+
+module.exports.EncounterOrderSchema = EncounterOrderSchema;
+module.exports.EncounterOrder = mongoose.model('EncounterOrder', EncounterOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],20:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const EncounterPerformedSchema = DataElementSchema({
+  author_datetime: Date,
+  admission_source: Code,
+  relevant_period: Interval,
+  discharge_disposition: Code,
+  facility_locations: [],
+  diagnoses: [Code],
+  principal_diagnosis: Code,
+  negation_rationale: Code,
+  length_of_stay: Quantity,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.5' },
+  category: { type: String, default: 'encounter' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'EncounterPerformed' },
+
+});
+
+module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
+module.exports.EncounterPerformed = mongoose.model('EncounterPerformed', EncounterPerformedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],21:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const EncounterRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  facility_location: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.28' },
+  category: { type: String, default: 'encounter' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'EncounterRecommended' },
+
+});
+
+module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
+module.exports.EncounterRecommended = mongoose.model('EncounterRecommended', EncounterRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],22:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const FacilityLocationSchema = DataElementSchema({
+  code: Code,
+  location_period: Interval,
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'FacilityLocation' },
+
+});
+
+module.exports.FacilityLocationSchema = FacilityLocationSchema;
+module.exports.FacilityLocation = mongoose.model('FacilityLocation', FacilityLocationSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],23:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const FamilyHistorySchema = DataElementSchema({
+  author_datetime: Date,
+  relationship: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.111' },
+  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
+  category: { type: String, default: 'family_history' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'FamilyHistory' },
+
+});
+
+module.exports.FamilyHistorySchema = FamilyHistorySchema;
+module.exports.FamilyHistory = mongoose.model('FamilyHistory', FamilyHistorySchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],24:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const IdSchema = DataElementSchema({
+  naming_system: String,
+  value: String,
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Id' },
+
+});
+
+module.exports.IdSchema = IdSchema;
+module.exports.Id = mongoose.model('Id', IdSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],25:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ImmunizationAdministeredSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  dosage: Quantity,
+  supply: Quantity,
+  route: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.112' },
+  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },
+  category: { type: String, default: 'immunization' },
+  qdm_status: { type: String, default: 'administered' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ImmunizationAdministered' },
+
+});
+
+module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
+module.exports.ImmunizationAdministered = mongoose.model('ImmunizationAdministered', ImmunizationAdministeredSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],26:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ImmunizationOrderSchema = DataElementSchema({
+  active_datetime: Date,
+  author_datetime: Date,
+  dosage: Quantity,
+  supply: Quantity,
+  reason: Code,
+  route: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.113' },
+  category: { type: String, default: 'immunization' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ImmunizationOrder' },
+
+});
+
+module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
+module.exports.ImmunizationOrder = mongoose.model('ImmunizationOrder', ImmunizationOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],27:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const InterventionOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.35' },
+  category: { type: String, default: 'intervention' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'InterventionOrder' },
+
+});
+
+module.exports.InterventionOrderSchema = InterventionOrderSchema;
+module.exports.InterventionOrder = mongoose.model('InterventionOrder', InterventionOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],28:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const InterventionPerformedSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  reason: Code,
+  result: {},
+  status: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.36' },
+  category: { type: String, default: 'intervention' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'InterventionPerformed' },
+
+});
+
+module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
+module.exports.InterventionPerformed = mongoose.model('InterventionPerformed', InterventionPerformedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],29:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const InterventionRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.37' },
+  category: { type: String, default: 'intervention' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'InterventionRecommended' },
+
+});
+
+module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
+module.exports.InterventionRecommended = mongoose.model('InterventionRecommended', InterventionRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],30:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const LaboratoryTestOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  method: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.41' },
+  category: { type: String, default: 'laboratory_test' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'LaboratoryTestOrder' },
+
+});
+
+module.exports.LaboratoryTestOrderSchema = LaboratoryTestOrderSchema;
+module.exports.LaboratoryTestOrder = mongoose.model('LaboratoryTestOrder', LaboratoryTestOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],31:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const LaboratoryTestPerformedSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  status: Code,
+  method: Code,
+  result: {},
+  result_datetime: Date,
+  reason: Code,
+  reference_range: Interval,
+  negation_rationale: Code,
+  components: [],
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.42' },
+  category: { type: String, default: 'laboratory_test' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'LaboratoryTestPerformed' },
+
+});
+
+module.exports.LaboratoryTestPerformedSchema = LaboratoryTestPerformedSchema;
+module.exports.LaboratoryTestPerformed = mongoose.model('LaboratoryTestPerformed', LaboratoryTestPerformedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],32:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const LaboratoryTestRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  method: Code,
+  reason: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.43' },
+  category: { type: String, default: 'laboratory_test' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'LaboratoryTestRecommended' },
+
+});
+
+module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema;
+module.exports.LaboratoryTestRecommended = mongoose.model('LaboratoryTestRecommended', LaboratoryTestRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],33:[function(require,module,exports){
+const mongoose = require('mongoose');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [mNumber, mString, mBoolean, Mixed, ObjectId, mDate] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Boolean,
+  mongoose.Schema.Types.Mixed,
+  mongoose.Schema.Types.ObjectId,
+  mongoose.Schema.Types.Date,
+];
+
+const MeasureSchema = mongoose.Schema(
+  {
+    // ID/other measure information
+    id: mString,
+    measure_id: mString,
+    hqmf_id: mString,
+    hqmf_set_id: mString,
+    hqmf_version_number: mNumber,
+    cms_id: mString,
+    title: mString,
+    description: mString,
+    type: mString,
+    category: { type: mString, default: 'Uncategorized' },
+
+    // Measure type variables
+    episode_of_care: mBoolean,
+    continuous_constiable: mBoolean,
+    episode_ids: [],
+
+    // Publishing data (used by Bonnie)
+    published: mBoolean,
+    publish_date: mDate,
+    version: mNumber,
+
+    // ELM/CQL Measure-logic related data
+    elm_annotations: Mixed,
+    cql: [mString],
+    elm: [Mixed],
+    main_cql_library: mString,
+    cql_statement_dependencies: Mixed,
+
+    // HQMF/Tacoma-specific Measure-logic related data
+    population_criteria: Mixed,
+    data_criteria: Mixed,
+    source_data_criteria: Mixed,
+    measure_period: Interval,
+    measure_attributes: [],
+    populations: [Mixed],
+    populations_cql_map: Mixed,
+    observations: [Mixed],
+
+    value_sets: [{ type: ObjectId, ref: 'ValueSet' }],
+
+    complexity: Mixed, // Bonnie-specific?
+
+    // Relations to other model classes
+    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
+    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, but used in Bonnie-bundler as well
+    package: { type: ObjectId, ref: 'MeasurePackage' }, // Bonnie specific
+  },
+  // Options
+  {
+    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }, // These are the Mongoid conventions for timestamps
+  }
+);
+
+MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => ['STRAT', 'IPP', 'DENOM', 'DENEX', 'NUMER', 'NUMEX', 'DENEXCEP', 'MSRPOPL', 'OBSERV', 'MSRPOPLEX']);
+
+MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex']);
+
+module.exports.MeasureSchema = MeasureSchema;
+module.exports.Measure = mongoose.model('measure', MeasureSchema);
+
+},{"./basetypes/Code":67,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],34:[function(require,module,exports){
+const mongoose = require('mongoose');
+
+const [mBuffer, ObjectId] = [
+  mongoose.Schema.Types.Buffer,
+  mongoose.Schema.Types.ObjectId,
+];
+
+const MeasurePackageSchema = mongoose.Schema(
+  {
+    file: mBuffer,
+    measure: { type: ObjectId, ref: 'Measure' },
+  },
+  // Options
+  {
+    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
+  }
+);
+
+module.exports.MeasurePackageSchema = MeasurePackageSchema;
+module.exports.MeasurePackage = mongoose.model('measure_package', MeasurePackageSchema);
+
+},{"mongoose":264}],35:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const MedicationActiveSchema = DataElementSchema({
+  relevant_period: Interval,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  route: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.44' },
+  category: { type: String, default: 'medication' },
+  qdm_status: { type: String, default: 'active' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationActive' },
+
+});
+
+module.exports.MedicationActiveSchema = MedicationActiveSchema;
+module.exports.MedicationActive = mongoose.model('MedicationActive', MedicationActiveSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],36:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const MedicationAdministeredSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  route: Code,
+  reason: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.45' },
+  category: { type: String, default: 'medication' },
+  qdm_status: { type: String, default: 'administered' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationAdministered' },
+
+});
+
+module.exports.MedicationAdministeredSchema = MedicationAdministeredSchema;
+module.exports.MedicationAdministered = mongoose.model('MedicationAdministered', MedicationAdministeredSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],37:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const MedicationDischargeSchema = DataElementSchema({
+  author_datetime: Date,
+  refills: Number,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  route: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.48' },
+  category: { type: String, default: 'medication' },
+  qdm_status: { type: String, default: 'discharge' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationDischarge' },
+
+});
+
+module.exports.MedicationDischargeSchema = MedicationDischargeSchema;
+module.exports.MedicationDischarge = mongoose.model('MedicationDischarge', MedicationDischargeSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],38:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const MedicationDispensedSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  refills: Number,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  route: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.49' },
+  category: { type: String, default: 'medication' },
+  qdm_status: { type: String, default: 'dispensed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationDispensed' },
+
+});
+
+module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
+module.exports.MedicationDispensed = mongoose.model('MedicationDispensed', MedicationDispensedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],39:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const MedicationOrderSchema = DataElementSchema({
+  active_datetime: Date,
+  relevant_period: Interval,
+  author_datetime: Date,
+  refills: Number,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  route: Code,
+  method: Code,
+  reason: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.51' },
+  category: { type: String, default: 'medication' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'MedicationOrder' },
+
+});
+
+module.exports.MedicationOrderSchema = MedicationOrderSchema;
+module.exports.MedicationOrder = mongoose.model('MedicationOrder', MedicationOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],40:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ParticipationSchema = DataElementSchema({
+  participation_period: Interval,
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Participation' },
+
+});
+
+module.exports.ParticipationSchema = ParticipationSchema;
+module.exports.Participation = mongoose.model('Participation', ParticipationSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],41:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientSchema = DataElementSchema({
+  birth_datetime: Date,
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Patient' },
+  given_names: [String],
+  family_name: String,
+  bundle_id: String,
+  // These are the "data criteria", or QDM datatype elements that exist on a
+  // patient.
+  data_elements: [],
+  // This field is for application specific information only. If both Bonnie
+  // Cypress use a common field, it should be made a field on this model,
+  // and not put into extended_data.
+  extended_data: {},
+}, { id: false });
+
+const AllDataElements = require('./AllDataElements');
+
+// After initialization of a Patient model, initialize every individual data element
+// to its respective Mongoose Model
+PatientSchema.methods.initializeDataElements = function initializeDataElements() {
+  let typeStripped;
+  const dataElementsInit = [];
+  this.data_elements.forEach((element) => {
+    typeStripped = element._type.replace(/QDM::/, '');
+    if (typeStripped in AllDataElements) {
+      dataElementsInit.push(AllDataElements[typeStripped](element));
+    } else {
+      dataElementsInit.push(element);
+    }
+  });
+  this.set({ data_elements: dataElementsInit });
+};
+
+PatientSchema.queue('initializeDataElements');
+
+PatientSchema.methods.id = function id() {
+  return this._id;
+};
+
+// Returns an array of elements that exist on this patient, that
+// match the given HQMF data criteria OID.
+PatientSchema.methods.get_by_hqmf_oid = function get_by_hqmf_oid(hqmfOid) {
+  return this.data_elements.filter(element => element.hqmf_oid === hqmfOid);
+};
+
+// Returns an array of elements that exist on this patient, that
+// match the given QRDA data criteria OID.
+PatientSchema.methods.get_by_qrda_oid = function get_by_qrda_oid(qrdaOid) {
+  return this.data_elements.filter(element => element.qrda_oid === qrdaOid);
+};
+
+// Returns an array of elements that exist on this patient. Optionally
+// takes a category, which returns all elements of that QDM category.
+// Example: patient.get_data_elements(category = 'encounters') will return
+// all Encounter QDM data types active on the patient.
+PatientSchema.methods.get_data_elements = function get_data_elements(params) {
+  if (params.category && params.qdm_status) {
+    return this.data_elements.filter(element => (element.category === params.category) && (element.qdm_status === params.qdm_status));
+  } else if (params.category) {
+    return this.data_elements.filter(element => element.category === params.category);
+  }
+  return this.data_elements;
+};
+
+PatientSchema.methods.get_by_profile = function get_by_profile(profile, isNegated = null) {
+  if (isNegated === true) {
+    return this.data_elements.filter(element => element._type === `QDM::${profile}` && (typeof element.negation_rationale !== 'undefined' && element.negation_rationale != null));
+  } else if (isNegated === false) {
+    return this.data_elements.filter(element => element._type === `QDM::${profile}` && (typeof element.negation_rationale === 'undefined' || element.negation_rationale == null));
+  }
+  return this.data_elements.filter(element => element._type === `QDM::${profile}`);
+};
+
+// This method is called by the CQL execution engine on a CQLPatient when
+// the execution engine wants information on a record. A record could be patient
+// characteristic information about the patient, or it could be data criteria
+// that currently exist on this patient (data criteria you drag on a patient
+// in Bonnie's patient builder).
+// @param {String} profile - the data criteria requested by the execution engine
+// @returns {Object}
+PatientSchema.methods.findRecords = function findRecords(profile) {
+  console.log(`\n\n\n\n\n\nProfile: ${profile}`);
+  // TODO: Still may be some unfinished work here
+  let profileStripped;
+  if (profile === 'Patient') {
+    // Requested generic patient info
+    return { birthDatetime: this.birth_datetime };
+  } else if (/PatientCharacteristic/.test(profile)) {
+    // Requested a patient characteristic
+    profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
+    console.log(`Returning1:\n${this.get_by_profile(profileStripped)}`);
+    return this.get_by_profile(profileStripped);
+  } else if (profile != null) {
+    // Requested something else (probably a QDM data type).
+
+    // Strip model details from request. The requested profile string contains
+    // a lot of things we don't need or care about. Example, we might see
+    // something like:
+    // "{urn:healthit-gov:qdm:v5_0_draft}PatientCharacteristicEthnicity"
+    // Where we only care about: "PatientCharacteristicEthnicity".
+    profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
+
+    // Check and handle negation status
+    if (/Positive/.test(profileStripped)) {
+      profileStripped = profileStripped.replace(/Positive/, '');
+      // Since the data criteria is 'Positive', it is not negated.
+      console.log(`Returning+:\n${this.get_by_profile(profileStripped, false)}`);
+      return this.get_by_profile(profileStripped, false);
+    } else if (/Negative/.test(profileStripped)) {
+      profileStripped = profileStripped.replace(/Negative/, '');
+      // Since the data criteria is 'Negative', it is negated.
+      console.log(`Returning-:\n${this.get_by_profile(profileStripped, true)}`);
+      return this.get_by_profile(profileStripped, true);
+    }
+    // No negation status, proceed normally
+    console.log(`Returning2:\n${this.get_by_profile(profileStripped)}`);
+    return this.get_by_profile(profileStripped);
+  }
+  return [];
+};
+
+
+PatientSchema.methods.adverse_events = function adverse_events() {
+  return this.get_data_elements({ category: 'adverse_event' });
+};
+
+PatientSchema.methods.allergies = function allergies() {
+  return this.get_data_elements({ category: 'allergy' });
+};
+
+PatientSchema.methods.assessments = function assessments() {
+  return this.get_data_elements({ category: 'assessment' });
+};
+
+PatientSchema.methods.care_experiences = function care_experiences() {
+  return this.get_data_elements({ category: 'care_experience' });
+};
+
+PatientSchema.methods.care_goals = function care_goals() {
+  return this.get_data_elements({ category: 'care_goal' });
+};
+
+PatientSchema.methods.communications = function communications() {
+  return this.get_data_elements({ category: 'communication' });
+};
+
+PatientSchema.methods.conditions = function conditions() {
+  return this.get_data_elements({ category: 'condition' });
+};
+
+PatientSchema.methods.devices = function devices() {
+  return this.get_data_elements({ category: 'device' });
+};
+
+PatientSchema.methods.diagnostic_studies = function diagnostic_studies() {
+  return this.get_data_elements({ category: 'diagnostic_study' });
+};
+
+PatientSchema.methods.encounters = function encounters() {
+  return this.get_data_elements({ category: 'encounter' });
+};
+
+PatientSchema.methods.family_history = function family_history() {
+  return this.get_data_elements({ category: 'family_history' });
+};
+
+PatientSchema.methods.functional_statuses = function functional_statuses() {
+  return this.get_data_elements({ category: 'functional_status' });
+};
+
+PatientSchema.methods.immunizations = function immunizations() {
+  return this.get_data_elements({ category: 'immunization' });
+};
+
+PatientSchema.methods.interventions = function interventions() {
+  return this.get_data_elements({ category: 'intervention' });
+};
+
+PatientSchema.methods.laboratory_tests = function laboratory_tests() {
+  return this.get_data_elements({ category: 'laboratory_test' });
+};
+
+PatientSchema.methods.medical_equipment = function medical_equipment() {
+  return this.get_data_elements({ category: 'medical_equipment' });
+};
+
+PatientSchema.methods.medications = function medications() {
+  return this.get_data_elements({ category: 'medication' });
+};
+
+PatientSchema.methods.physical_exams = function physical_exams() {
+  return this.get_data_elements({ category: 'physical_exam' });
+};
+
+PatientSchema.methods.preferences = function preferences() {
+  return this.get_data_elements({ category: 'preference' });
+};
+
+PatientSchema.methods.provider_characteristics = function provider_characteristics() {
+  return this.get_data_elements({ category: 'provider_characteristic' });
+};
+
+PatientSchema.methods.procedures = function procedures() {
+  return this.get_data_elements({ category: 'procedure' });
+};
+
+PatientSchema.methods.results = function results() {
+  return this.get_data_elements({ category: 'result' });
+};
+
+PatientSchema.methods.risk_category_assessments = function risk_category_assessments() {
+  return this.get_data_elements({ category: 'risk_category_assessment' });
+};
+
+PatientSchema.methods.social_history = function social_history() {
+  return this.get_data_elements({ category: 'social_history' });
+};
+
+PatientSchema.methods.substances = function substances() {
+  return this.get_data_elements({ category: 'substance' });
+};
+
+PatientSchema.methods.symptoms = function symptoms() {
+  return this.get_data_elements({ category: 'symptom' });
+};
+
+PatientSchema.methods.system_characteristics = function system_characteristics() {
+  return this.get_data_elements({ category: 'system_characteristic' });
+};
+
+PatientSchema.methods.transfers = function transfers() {
+  return this.get_data_elements({ category: 'transfer' });
+};
+
+PatientSchema.methods.vital_signs = function vital_signs() {
+  return this.get_data_elements({ category: 'vital_sign' });
+};
+
+module.exports.PatientSchema = PatientSchema;
+module.exports.Patient = mongoose.model('Patient', PatientSchema);
+
+},{"./AllDataElements":2,"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],42:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCareExperienceSchema = DataElementSchema({
+  author_datetime: Date,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.52' },
+  category: { type: String, default: 'care_experience' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCareExperience' },
+
+});
+
+module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
+module.exports.PatientCareExperience = mongoose.model('PatientCareExperience', PatientCareExperienceSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],43:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicSchema = DataElementSchema({
+  author_datetime: Date,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.53' },
+  category: { type: String, default: 'patient_characteristic' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristic' },
+
+});
+
+module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
+module.exports.PatientCharacteristic = mongoose.model('PatientCharacteristic', PatientCharacteristicSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],44:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicBirthdateSchema = DataElementSchema({
+  birth_datetime: Date,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.54' },
+  category: { type: String, default: 'patient_characteristic' },
+  qdm_status: { type: String, default: 'birthdate' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicBirthdate' },
+
+});
+
+module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirthdateSchema;
+module.exports.PatientCharacteristicBirthdate = mongoose.model('PatientCharacteristicBirthdate', PatientCharacteristicBirthdateSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],45:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
+  reason: Code,
+  relevant_period: Interval,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.6' },
+  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.51' },
+  category: { type: String, default: 'condition' },
+  qdm_status: { type: String, default: 'clinical_trial_participant' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
+
+});
+
+module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientCharacteristicClinicalTrialParticipantSchema;
+module.exports.PatientCharacteristicClinicalTrialParticipant = mongoose.model('PatientCharacteristicClinicalTrialParticipant', PatientCharacteristicClinicalTrialParticipantSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],46:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicEthnicitySchema = DataElementSchema({
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.56' },
+  category: { type: String, default: 'patient_characteristic' },
+  qdm_status: { type: String, default: 'ethnicity' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicEthnicity' },
+
+});
+
+module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthnicitySchema;
+module.exports.PatientCharacteristicEthnicity = mongoose.model('PatientCharacteristicEthnicity', PatientCharacteristicEthnicitySchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],47:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicExpiredSchema = DataElementSchema({
+  expired_datetime: Date,
+  cause: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.57' },
+  category: { type: String, default: 'condition' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicExpired' },
+
+});
+
+module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpiredSchema;
+module.exports.PatientCharacteristicExpired = mongoose.model('PatientCharacteristicExpired', PatientCharacteristicExpiredSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],48:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicPayerSchema = DataElementSchema({
+  relevant_period: Interval,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.58' },
+  category: { type: String, default: 'patient_characteristic' },
+  qdm_status: { type: String, default: 'payer' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicPayer' },
+
+});
+
+module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSchema;
+module.exports.PatientCharacteristicPayer = mongoose.model('PatientCharacteristicPayer', PatientCharacteristicPayerSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],49:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicRaceSchema = DataElementSchema({
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.59' },
+  category: { type: String, default: 'patient_characteristic' },
+  qdm_status: { type: String, default: 'race' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicRace' },
+
+});
+
+module.exports.PatientCharacteristicRaceSchema = PatientCharacteristicRaceSchema;
+module.exports.PatientCharacteristicRace = mongoose.model('PatientCharacteristicRace', PatientCharacteristicRaceSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],50:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PatientCharacteristicSexSchema = DataElementSchema({
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PatientCharacteristicSex' },
+
+});
+
+module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
+module.exports.PatientCharacteristicSex = mongoose.model('PatientCharacteristicSex', PatientCharacteristicSexSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],51:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PhysicalExamOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  method: Code,
+  anatomical_location_site: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.61' },
+  category: { type: String, default: 'physical_exam' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PhysicalExamOrder' },
+
+});
+
+module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
+module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],52:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PhysicalExamPerformedSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  reason: Code,
+  method: Code,
+  result: {},
+  anatomical_location_site: Code,
+  negation_rationale: Code,
+  components: [],
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.62' },
+  category: { type: String, default: 'physical_exam' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PhysicalExamPerformed' },
+
+});
+
+module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
+module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],53:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const PhysicalExamRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  method: Code,
+  anatomical_location_site: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '22.16.840.1.113883.10.20.28.3.63' },
+  category: { type: String, default: 'physical_exam' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'PhysicalExamRecommended' },
+
+});
+
+module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
+module.exports.PhysicalExamRecommended = mongoose.model('PhysicalExamRecommended', PhysicalExamRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],54:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ProcedureOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  method: Code,
+  anatomical_approach_site: Code,
+  anatomical_location_site: Code,
+  ordinality: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.66' },
+  category: { type: String, default: 'procedure' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProcedureOrder' },
+
+});
+
+module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
+module.exports.ProcedureOrder = mongoose.model('ProcedureOrder', ProcedureOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],55:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ProcedurePerformedSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  reason: Code,
+  method: Code,
+  result: {},
+  status: Code,
+  anatomical_approach_site: Code,
+  anatomical_location_site: Code,
+  ordinality: Code,
+  incision_datetime: Date,
+  negation_rationale: Code,
+  components: [],
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
+  category: { type: String, default: 'procedure' },
+  qdm_status: { type: String, default: 'performed' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProcedurePerformed' },
+
+});
+
+module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
+module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],56:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ProcedureRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  method: Code,
+  anatomical_approach_site: Code,
+  anatomical_location_site: Code,
+  ordinality: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.68' },
+  category: { type: String, default: 'procedure' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProcedureRecommended' },
+
+});
+
+module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
+module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],57:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ProviderCareExperienceSchema = DataElementSchema({
+  author_datetime: Date,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.70' },
+  category: { type: String, default: 'care_experience' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProviderCareExperience' },
+
+});
+
+module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
+module.exports.ProviderCareExperience = mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],58:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ProviderCharacteristicSchema = DataElementSchema({
+  author_datetime: Date,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.71' },
+  category: { type: String, default: 'provider_characteristic' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ProviderCharacteristic' },
+
+});
+
+module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
+module.exports.ProviderCharacteristic = mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],59:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const RatioSchema = DataElementSchema({
+  numerator: Quantity,
+  denominator: Quantity,
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Ratio' },
+
+});
+
+module.exports.RatioSchema = RatioSchema;
+module.exports.Ratio = mongoose.model('Ratio', RatioSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],60:[function(require,module,exports){
+const mongoose = require('mongoose');
+
+const PlaceholderResultSchema = mongoose.Schema({
+  cache_id: String,
+  measure_id: String,
+  sub_id: String,
+  test_id: String,
+  effective_date: Number,
+  filters: Object,
+  prefilter: Object,
+  calculation_time: Date,
+  status: Object,
+  population_ids: Object,
+  STRAT: Number,
+  IPP: Number,
+  DENOM: Number,
+  NUMER: Number,
+  NUMEX: Number,
+  DENEX: Number,
+  DENEXCEP: Number,
+  MSRPOPL: Number,
+  OBSERV: Number,
+  MSRPOPLEX: Number,
+  supplemental_data: Object,
+});
+
+module.exports.ResultSchema = PlaceholderResultSchema;
+module.exports.Result = mongoose.model('Result', PlaceholderResultSchema);
+
+},{"mongoose":264}],61:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const ResultComponentSchema = DataElementSchema({
+  reference_range: Interval,
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'ResultComponent' },
+
+});
+
+module.exports.ResultComponentSchema = ResultComponentSchema;
+module.exports.ResultComponent = mongoose.model('ResultComponent', ResultComponentSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],62:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const SubstanceAdministeredSchema = DataElementSchema({
+  author_datetime: Date,
+  relevant_period: Interval,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  route: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.73' },
+  category: { type: String, default: 'substance' },
+  qdm_status: { type: String, default: 'administered' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'SubstanceAdministered' },
+
+});
+
+module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
+module.exports.SubstanceAdministered = mongoose.model('SubstanceAdministered', SubstanceAdministeredSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],63:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const SubstanceOrderSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  method: Code,
+  refills: Number,
+  route: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.77' },
+  category: { type: String, default: 'substance' },
+  qdm_status: { type: String, default: 'order' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'SubstanceOrder' },
+
+});
+
+module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
+module.exports.SubstanceOrder = mongoose.model('SubstanceOrder', SubstanceOrderSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],64:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const SubstanceRecommendedSchema = DataElementSchema({
+  author_datetime: Date,
+  reason: Code,
+  dosage: Quantity,
+  supply: Quantity,
+  frequency: Code,
+  method: Code,
+  refills: Number,
+  route: Code,
+  negation_rationale: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.78' },
+  category: { type: String, default: 'substance' },
+  qdm_status: { type: String, default: 'recommended' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'SubstanceRecommended' },
+
+});
+
+module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
+module.exports.SubstanceRecommended = mongoose.model('SubstanceRecommended', SubstanceRecommendedSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],65:[function(require,module,exports){
+const mongoose = require('mongoose');
+const { DataElementSchema } = require('./basetypes/DataElement');
+const Code = require('./basetypes/Code');
+const Interval = require('./basetypes/Interval');
+const Quantity = require('./basetypes/Quantity');
+
+const [Number, String, Date] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Date,
+];
+
+const SymptomSchema = DataElementSchema({
+  prevalence_period: Interval,
+  severity: Code,
+  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.116' },
+  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.136' },
+  category: { type: String, default: 'symptom' },
+  qdm_version: { type: String, default: '5.3' },
+  _type: { type: String, default: 'Symptom' },
+
+});
+
+module.exports.SymptomSchema = SymptomSchema;
+module.exports.Symptom = mongoose.model('Symptom', SymptomSchema);
+
+},{"./basetypes/Code":67,"./basetypes/DataElement":68,"./basetypes/Interval":69,"./basetypes/Quantity":70,"mongoose":264}],66:[function(require,module,exports){
+const mongoose = require('mongoose');
+const Concept = require('./Concept.js');
+
+const [mString, Mixed, ObjectId] = [
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Mixed,
+  mongoose.Schema.Types.ObjectId,
+];
+
+const ValueSetSchema = mongoose.Schema(
+  {
+    oid: mString,
+    display_name: mString,
+    version: mString,
+    categories: Mixed,
+
+    concepts: [Concept.ConceptSchema],
+
+    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
+    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific
+    measures: [{ type: ObjectId, ref: 'Measure' }],
+  },
+  // Options
+  {
+    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
+  }
+);
+
+module.exports.ValueSetSchema = ValueSetSchema;
+module.exports.ValueSet = mongoose.model('value_set', ValueSetSchema);
+
+},{"./Concept.js":11,"mongoose":264}],67:[function(require,module,exports){
+const mongoose = require('mongoose');
+
+function Code(key, options) {
+  mongoose.SchemaType.call(this, key, options, 'Code');
+}
+Code.prototype = Object.create(mongoose.SchemaType.prototype);
+
+Code.prototype.cast = (code) => {
+  if (typeof code.code === 'undefined') {
+    throw new Error(`Code: ${code} does not have a code`);
+  } else if (typeof code.code_system === 'undefined') {
+    throw new Error(`Code: ${code} does not have a code_system`);
+  }
+
+  const val = { code: code.code, code_system: code.code_system };
+
+  val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
+  val.code_system_oid = (typeof code.code_system_oid !== 'undefined') ? code.code_system_oid : null;
+  val.version = (typeof code.version !== 'undefined') ? code.version : null;
+
+  return val;
+};
+
+mongoose.Schema.Types.Code = Code;
+module.exports = Code;
+
+},{"mongoose":264}],68:[function(require,module,exports){
+const mongoose = require('mongoose');
+const Code = require('./Code.js');
+
+const [Schema] = [mongoose.Schema];
+
+function DataElementSchema(add, options) {
+  const extended = new Schema({
+    data_element_codes: { type: [Code] },
+    description: { type: String },
+  }, options);
+
+  if (add) {
+    extended.add(add);
+  }
+
+  // Returns all of the codes on this data element.
+  extended.methods.getCode = function getCode() {
+    return this.data_element_codes.map((code) => {
+      const result = {};
+      result.code = code.code;
+      result.system = code.code_system;
+      return result;
+    });
+  };
+
+  // Returns all of the codes on this data element.
+  extended.methods.codes = function getCode() {
+    return this.data_element_codes;
+  };
+
+  return extended;
+}
+
+module.exports.DataElementSchema = DataElementSchema;
+
+},{"./Code.js":67,"mongoose":264}],69:[function(require,module,exports){
+const mongoose = require('mongoose');
+
+function Interval(key, options) {
+  mongoose.SchemaType.call(this, key, options, 'Interval');
+}
+Interval.prototype = Object.create(mongoose.SchemaType.prototype);
+
+Interval.prototype.cast = (interval) => {
+  if (typeof interval.low === 'undefined') {
+    throw new Error(`Interval: ${interval} does not have a low value`);
+  }
+  const val = { low: interval.low };
+
+  val.high = (typeof interval.high !== 'undefined') ? interval.high : null;
+  val.low_closed = (typeof interval.low_closed !== 'undefined') ? interval.low_closed : null;
+  val.high_closed = (typeof interval.high_closed !== 'undefined') ? interval.high_closed : null;
+  return val;
+};
+
+mongoose.Schema.Types.Interval = Interval;
+module.exports = Interval;
+
+},{"mongoose":264}],70:[function(require,module,exports){
+const mongoose = require('mongoose');
+
+function Quantity(key, options) {
+  mongoose.SchemaType.call(this, key, options, 'Quantity');
+}
+Quantity.prototype = Object.create(mongoose.SchemaType.prototype);
+
+Quantity.prototype.cast = (quantity) => {
+  if (typeof quantity.value === 'undefined') {
+    throw new Error(`Quantity: ${quantity} does not have a value`);
+  } else if (typeof quantity.unit === 'undefined') {
+    throw new Error(`Quantity: ${quantity} does not have a unit`);
+  }
+
+  return { value: quantity.value, unit: quantity.unit };
+};
+
+mongoose.Schema.Types.Quantity = Quantity;
+module.exports = Quantity;
+
+},{"mongoose":264}],71:[function(require,module,exports){
+module.exports = require('./AllDataElements.js');
+module.exports.Result = require('./Result.js').Result;
+module.exports.ResultSchema = require('./Result.js').ResultSchema;
+module.exports.Measure = require('./Measure.js').Measure;
+module.exports.MeasureSchema = require('./Measure.js').MeasureSchema;
+module.exports.MeasurePackage = require('./MeasurePackage.js').MeasurePackage;
+module.exports.MeasurePackageSchema = require('./MeasurePackage.js').MeasurePackageSchema;
+module.exports.ValueSet = require('./ValueSet.js').ValueSet;
+module.exports.ValueSetSchema = require('./ValueSet.js').ValueSetSchema;
+module.exports.Concept = require('./Concept.js').Concept;
+module.exports.ConceptSchema = require('./Concept.js').ConceptSchema;
+
+},{"./AllDataElements.js":2,"./Concept.js":11,"./Measure.js":33,"./MeasurePackage.js":34,"./Result.js":60,"./ValueSet.js":66}],72:[function(require,module,exports){
 var asn1 = exports;
 
 asn1.bignum = require('bn.js');
@@ -2361,7 +2391,7 @@ asn1.constants = require('./asn1/constants');
 asn1.decoders = require('./asn1/decoders');
 asn1.encoders = require('./asn1/encoders');
 
-},{"./asn1/api":72,"./asn1/base":74,"./asn1/constants":78,"./asn1/decoders":80,"./asn1/encoders":83,"bn.js":88}],72:[function(require,module,exports){
+},{"./asn1/api":73,"./asn1/base":75,"./asn1/constants":79,"./asn1/decoders":81,"./asn1/encoders":84,"bn.js":89}],73:[function(require,module,exports){
 var asn1 = require('../asn1');
 var inherits = require('inherits');
 
@@ -2424,7 +2454,7 @@ Entity.prototype.encode = function encode(data, enc, /* internal */ reporter) {
   return this._getEncoder(enc).encode(data, reporter);
 };
 
-},{"../asn1":71,"inherits":197,"vm":418}],73:[function(require,module,exports){
+},{"../asn1":72,"inherits":198,"vm":419}],74:[function(require,module,exports){
 var inherits = require('inherits');
 var Reporter = require('../base').Reporter;
 var Buffer = require('buffer').Buffer;
@@ -2542,7 +2572,7 @@ EncoderBuffer.prototype.join = function join(out, offset) {
   return out;
 };
 
-},{"../base":74,"buffer":141,"inherits":197}],74:[function(require,module,exports){
+},{"../base":75,"buffer":142,"inherits":198}],75:[function(require,module,exports){
 var base = exports;
 
 base.Reporter = require('./reporter').Reporter;
@@ -2550,7 +2580,7 @@ base.DecoderBuffer = require('./buffer').DecoderBuffer;
 base.EncoderBuffer = require('./buffer').EncoderBuffer;
 base.Node = require('./node');
 
-},{"./buffer":73,"./node":75,"./reporter":76}],75:[function(require,module,exports){
+},{"./buffer":74,"./node":76,"./reporter":77}],76:[function(require,module,exports){
 var Reporter = require('../base').Reporter;
 var EncoderBuffer = require('../base').EncoderBuffer;
 var DecoderBuffer = require('../base').DecoderBuffer;
@@ -3186,7 +3216,7 @@ Node.prototype._isPrintstr = function isPrintstr(str) {
   return /^[A-Za-z0-9 '\(\)\+,\-\.\/:=\?]*$/.test(str);
 };
 
-},{"../base":74,"minimalistic-assert":205}],76:[function(require,module,exports){
+},{"../base":75,"minimalistic-assert":206}],77:[function(require,module,exports){
 var inherits = require('inherits');
 
 function Reporter(options) {
@@ -3309,7 +3339,7 @@ ReporterError.prototype.rethrow = function rethrow(msg) {
   return this;
 };
 
-},{"inherits":197}],77:[function(require,module,exports){
+},{"inherits":198}],78:[function(require,module,exports){
 var constants = require('../constants');
 
 exports.tagClass = {
@@ -3353,7 +3383,7 @@ exports.tag = {
 };
 exports.tagByName = constants._reverse(exports.tag);
 
-},{"../constants":78}],78:[function(require,module,exports){
+},{"../constants":79}],79:[function(require,module,exports){
 var constants = exports;
 
 // Helper
@@ -3374,7 +3404,7 @@ constants._reverse = function reverse(map) {
 
 constants.der = require('./der');
 
-},{"./der":77}],79:[function(require,module,exports){
+},{"./der":78}],80:[function(require,module,exports){
 var inherits = require('inherits');
 
 var asn1 = require('../../asn1');
@@ -3700,13 +3730,13 @@ function derDecodeLen(buf, primitive, fail) {
   return len;
 }
 
-},{"../../asn1":71,"inherits":197}],80:[function(require,module,exports){
+},{"../../asn1":72,"inherits":198}],81:[function(require,module,exports){
 var decoders = exports;
 
 decoders.der = require('./der');
 decoders.pem = require('./pem');
 
-},{"./der":79,"./pem":81}],81:[function(require,module,exports){
+},{"./der":80,"./pem":82}],82:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -3757,7 +3787,7 @@ PEMDecoder.prototype.decode = function decode(data, options) {
   return DERDecoder.prototype.decode.call(this, input, options);
 };
 
-},{"./der":79,"buffer":141,"inherits":197}],82:[function(require,module,exports){
+},{"./der":80,"buffer":142,"inherits":198}],83:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -4054,13 +4084,13 @@ function encodeTag(tag, primitive, cls, reporter) {
   return res;
 }
 
-},{"../../asn1":71,"buffer":141,"inherits":197}],83:[function(require,module,exports){
+},{"../../asn1":72,"buffer":142,"inherits":198}],84:[function(require,module,exports){
 var encoders = exports;
 
 encoders.der = require('./der');
 encoders.pem = require('./pem');
 
-},{"./der":82,"./pem":84}],84:[function(require,module,exports){
+},{"./der":83,"./pem":85}],85:[function(require,module,exports){
 var inherits = require('inherits');
 
 var DEREncoder = require('./der');
@@ -4083,7 +4113,7 @@ PEMEncoder.prototype.encode = function encode(data, options) {
   return out.join('\n');
 };
 
-},{"./der":82,"inherits":197}],85:[function(require,module,exports){
+},{"./der":83,"inherits":198}],86:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -4577,7 +4607,7 @@ var objectKeys = Object.keys || function (obj) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":417}],86:[function(require,module,exports){
+},{"util/":418}],87:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -4695,7 +4725,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],87:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 (function (process,global){
 /* @preserve
  * The MIT License (MIT)
@@ -10317,7 +10347,7 @@ module.exports = ret;
 },{"./es5":13}]},{},[4])(4)
 });                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":369}],88:[function(require,module,exports){
+},{"_process":370}],89:[function(require,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -13746,7 +13776,7 @@ module.exports = ret;
   };
 })(typeof module === 'undefined' || module, this);
 
-},{"buffer":90}],89:[function(require,module,exports){
+},{"buffer":91}],90:[function(require,module,exports){
 var r;
 
 module.exports = function rand(len) {
@@ -13813,9 +13843,9 @@ if (typeof self === 'object') {
   }
 }
 
-},{"crypto":90}],90:[function(require,module,exports){
+},{"crypto":91}],91:[function(require,module,exports){
 
-},{}],91:[function(require,module,exports){
+},{}],92:[function(require,module,exports){
 // based on the aes implimentation in triple sec
 // https://github.com/keybase/triplesec
 // which is in turn based on the one from crypto-js
@@ -14045,7 +14075,7 @@ AES.prototype.scrub = function () {
 
 module.exports.AES = AES
 
-},{"safe-buffer":399}],92:[function(require,module,exports){
+},{"safe-buffer":400}],93:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -14164,7 +14194,7 @@ StreamCipher.prototype.setAAD = function setAAD (buf) {
 
 module.exports = StreamCipher
 
-},{"./aes":91,"./ghash":96,"./incr32":97,"buffer-xor":140,"cipher-base":142,"inherits":197,"safe-buffer":399}],93:[function(require,module,exports){
+},{"./aes":92,"./ghash":97,"./incr32":98,"buffer-xor":141,"cipher-base":143,"inherits":198,"safe-buffer":400}],94:[function(require,module,exports){
 var ciphers = require('./encrypter')
 var deciphers = require('./decrypter')
 var modes = require('./modes/list.json')
@@ -14179,7 +14209,7 @@ exports.createDecipher = exports.Decipher = deciphers.createDecipher
 exports.createDecipheriv = exports.Decipheriv = deciphers.createDecipheriv
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"./decrypter":94,"./encrypter":95,"./modes/list.json":105}],94:[function(require,module,exports){
+},{"./decrypter":95,"./encrypter":96,"./modes/list.json":106}],95:[function(require,module,exports){
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
 var MODES = require('./modes')
@@ -14302,7 +14332,7 @@ function createDecipher (suite, password) {
 exports.createDecipher = createDecipher
 exports.createDecipheriv = createDecipheriv
 
-},{"./aes":91,"./authCipher":92,"./modes":104,"./streamCipher":107,"cipher-base":142,"evp_bytestokey":180,"inherits":197,"safe-buffer":399}],95:[function(require,module,exports){
+},{"./aes":92,"./authCipher":93,"./modes":105,"./streamCipher":108,"cipher-base":143,"evp_bytestokey":181,"inherits":198,"safe-buffer":400}],96:[function(require,module,exports){
 var MODES = require('./modes')
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
@@ -14418,7 +14448,7 @@ function createCipher (suite, password) {
 exports.createCipheriv = createCipheriv
 exports.createCipher = createCipher
 
-},{"./aes":91,"./authCipher":92,"./modes":104,"./streamCipher":107,"cipher-base":142,"evp_bytestokey":180,"inherits":197,"safe-buffer":399}],96:[function(require,module,exports){
+},{"./aes":92,"./authCipher":93,"./modes":105,"./streamCipher":108,"cipher-base":143,"evp_bytestokey":181,"inherits":198,"safe-buffer":400}],97:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var ZEROES = Buffer.alloc(16, 0)
 
@@ -14509,7 +14539,7 @@ GHASH.prototype.final = function (abl, bl) {
 
 module.exports = GHASH
 
-},{"safe-buffer":399}],97:[function(require,module,exports){
+},{"safe-buffer":400}],98:[function(require,module,exports){
 function incr32 (iv) {
   var len = iv.length
   var item
@@ -14526,7 +14556,7 @@ function incr32 (iv) {
 }
 module.exports = incr32
 
-},{}],98:[function(require,module,exports){
+},{}],99:[function(require,module,exports){
 var xor = require('buffer-xor')
 
 exports.encrypt = function (self, block) {
@@ -14545,7 +14575,7 @@ exports.decrypt = function (self, block) {
   return xor(out, pad)
 }
 
-},{"buffer-xor":140}],99:[function(require,module,exports){
+},{"buffer-xor":141}],100:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var xor = require('buffer-xor')
 
@@ -14580,7 +14610,7 @@ exports.encrypt = function (self, data, decrypt) {
   return out
 }
 
-},{"buffer-xor":140,"safe-buffer":399}],100:[function(require,module,exports){
+},{"buffer-xor":141,"safe-buffer":400}],101:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -14624,7 +14654,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":399}],101:[function(require,module,exports){
+},{"safe-buffer":400}],102:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -14651,7 +14681,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":399}],102:[function(require,module,exports){
+},{"safe-buffer":400}],103:[function(require,module,exports){
 var xor = require('buffer-xor')
 var Buffer = require('safe-buffer').Buffer
 var incr32 = require('../incr32')
@@ -14683,7 +14713,7 @@ exports.encrypt = function (self, chunk) {
   return xor(chunk, pad)
 }
 
-},{"../incr32":97,"buffer-xor":140,"safe-buffer":399}],103:[function(require,module,exports){
+},{"../incr32":98,"buffer-xor":141,"safe-buffer":400}],104:[function(require,module,exports){
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 }
@@ -14692,7 +14722,7 @@ exports.decrypt = function (self, block) {
   return self._cipher.decryptBlock(block)
 }
 
-},{}],104:[function(require,module,exports){
+},{}],105:[function(require,module,exports){
 var modeModules = {
   ECB: require('./ecb'),
   CBC: require('./cbc'),
@@ -14712,7 +14742,7 @@ for (var key in modes) {
 
 module.exports = modes
 
-},{"./cbc":98,"./cfb":99,"./cfb1":100,"./cfb8":101,"./ctr":102,"./ecb":103,"./list.json":105,"./ofb":106}],105:[function(require,module,exports){
+},{"./cbc":99,"./cfb":100,"./cfb1":101,"./cfb8":102,"./ctr":103,"./ecb":104,"./list.json":106,"./ofb":107}],106:[function(require,module,exports){
 module.exports={
   "aes-128-ecb": {
     "cipher": "AES",
@@ -14905,7 +14935,7 @@ module.exports={
   }
 }
 
-},{}],106:[function(require,module,exports){
+},{}],107:[function(require,module,exports){
 (function (Buffer){
 var xor = require('buffer-xor')
 
@@ -14925,7 +14955,7 @@ exports.encrypt = function (self, chunk) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"buffer-xor":140}],107:[function(require,module,exports){
+},{"buffer":142,"buffer-xor":141}],108:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -14954,7 +14984,7 @@ StreamCipher.prototype._final = function () {
 
 module.exports = StreamCipher
 
-},{"./aes":91,"cipher-base":142,"inherits":197,"safe-buffer":399}],108:[function(require,module,exports){
+},{"./aes":92,"cipher-base":143,"inherits":198,"safe-buffer":400}],109:[function(require,module,exports){
 var ebtk = require('evp_bytestokey')
 var aes = require('browserify-aes/browser')
 var DES = require('browserify-des')
@@ -15029,7 +15059,7 @@ function getCiphers () {
 }
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"browserify-aes/browser":93,"browserify-aes/modes":104,"browserify-des":109,"browserify-des/modes":110,"evp_bytestokey":180}],109:[function(require,module,exports){
+},{"browserify-aes/browser":94,"browserify-aes/modes":105,"browserify-des":110,"browserify-des/modes":111,"evp_bytestokey":181}],110:[function(require,module,exports){
 (function (Buffer){
 var CipherBase = require('cipher-base')
 var des = require('des.js')
@@ -15076,7 +15106,7 @@ DES.prototype._final = function () {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"cipher-base":142,"des.js":153,"inherits":197}],110:[function(require,module,exports){
+},{"buffer":142,"cipher-base":143,"des.js":154,"inherits":198}],111:[function(require,module,exports){
 exports['des-ecb'] = {
   key: 8,
   iv: 0
@@ -15102,7 +15132,7 @@ exports['des-ede'] = {
   iv: 0
 }
 
-},{}],111:[function(require,module,exports){
+},{}],112:[function(require,module,exports){
 (function (Buffer){
 var bn = require('bn.js');
 var randomBytes = require('randombytes');
@@ -15146,10 +15176,10 @@ function getr(priv) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"bn.js":88,"buffer":141,"randombytes":380}],112:[function(require,module,exports){
+},{"bn.js":89,"buffer":142,"randombytes":381}],113:[function(require,module,exports){
 module.exports = require('./browser/algorithms.json')
 
-},{"./browser/algorithms.json":113}],113:[function(require,module,exports){
+},{"./browser/algorithms.json":114}],114:[function(require,module,exports){
 module.exports={
   "sha224WithRSAEncryption": {
     "sign": "rsa",
@@ -15303,7 +15333,7 @@ module.exports={
   }
 }
 
-},{}],114:[function(require,module,exports){
+},{}],115:[function(require,module,exports){
 module.exports={
   "1.3.132.0.10": "secp256k1",
   "1.3.132.0.33": "p224",
@@ -15313,7 +15343,7 @@ module.exports={
   "1.3.132.0.35": "p521"
 }
 
-},{}],115:[function(require,module,exports){
+},{}],116:[function(require,module,exports){
 (function (Buffer){
 var createHash = require('create-hash')
 var stream = require('stream')
@@ -15408,7 +15438,7 @@ module.exports = {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./algorithms.json":113,"./sign":116,"./verify":117,"buffer":141,"create-hash":145,"inherits":197,"stream":410}],116:[function(require,module,exports){
+},{"./algorithms.json":114,"./sign":117,"./verify":118,"buffer":142,"create-hash":146,"inherits":198,"stream":411}],117:[function(require,module,exports){
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var createHmac = require('create-hmac')
@@ -15557,7 +15587,7 @@ module.exports.getKey = getKey
 module.exports.makeKey = makeKey
 
 }).call(this,require("buffer").Buffer)
-},{"./curves.json":114,"bn.js":88,"browserify-rsa":111,"buffer":141,"create-hmac":148,"elliptic":163,"parse-asn1":361}],117:[function(require,module,exports){
+},{"./curves.json":115,"bn.js":89,"browserify-rsa":112,"buffer":142,"create-hmac":149,"elliptic":164,"parse-asn1":362}],118:[function(require,module,exports){
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var BN = require('bn.js')
@@ -15644,7 +15674,7 @@ function checkValue (b, q) {
 module.exports = verify
 
 }).call(this,require("buffer").Buffer)
-},{"./curves.json":114,"bn.js":88,"buffer":141,"elliptic":163,"parse-asn1":361}],118:[function(require,module,exports){
+},{"./curves.json":115,"bn.js":89,"buffer":142,"elliptic":164,"parse-asn1":362}],119:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 /* eslint camelcase: "off" */
@@ -16056,7 +16086,7 @@ Zlib.prototype._reset = function () {
 
 exports.Zlib = Zlib;
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":369,"assert":85,"buffer":141,"pako/lib/zlib/constants":348,"pako/lib/zlib/deflate.js":350,"pako/lib/zlib/inflate.js":352,"pako/lib/zlib/zstream":356}],119:[function(require,module,exports){
+},{"_process":370,"assert":86,"buffer":142,"pako/lib/zlib/constants":349,"pako/lib/zlib/deflate.js":351,"pako/lib/zlib/inflate.js":353,"pako/lib/zlib/zstream":357}],120:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -16668,9 +16698,9 @@ util.inherits(DeflateRaw, Zlib);
 util.inherits(InflateRaw, Zlib);
 util.inherits(Unzip, Zlib);
 }).call(this,require('_process'))
-},{"./binding":118,"_process":369,"assert":85,"buffer":141,"stream":410,"util":417}],120:[function(require,module,exports){
-arguments[4][90][0].apply(exports,arguments)
-},{"dup":90}],121:[function(require,module,exports){
+},{"./binding":119,"_process":370,"assert":86,"buffer":142,"stream":411,"util":418}],121:[function(require,module,exports){
+arguments[4][91][0].apply(exports,arguments)
+},{"dup":91}],122:[function(require,module,exports){
 (function (global){
 /**
  * Module dependencies.
@@ -17046,7 +17076,7 @@ module.exports = Binary;
 module.exports.Binary = Binary;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"buffer":141}],122:[function(require,module,exports){
+},{"buffer":142}],123:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -17427,7 +17457,7 @@ module.exports.BSONRegExp = BSONRegExp;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./binary":121,"./code":123,"./db_ref":124,"./decimal128":125,"./double":126,"./int_32":128,"./long":129,"./map":130,"./max_key":131,"./min_key":132,"./objectid":133,"./parser/calculate_size":134,"./parser/deserializer":135,"./parser/serializer":136,"./regexp":137,"./symbol":138,"./timestamp":139,"buffer":141}],123:[function(require,module,exports){
+},{"./binary":122,"./code":124,"./db_ref":125,"./decimal128":126,"./double":127,"./int_32":129,"./long":130,"./map":131,"./max_key":132,"./min_key":133,"./objectid":134,"./parser/calculate_size":135,"./parser/deserializer":136,"./parser/serializer":137,"./regexp":138,"./symbol":139,"./timestamp":140,"buffer":142}],124:[function(require,module,exports){
 /**
  * A class representation of the BSON Code type.
  *
@@ -17453,7 +17483,7 @@ Code.prototype.toJSON = function() {
 module.exports = Code;
 module.exports.Code = Code;
 
-},{}],124:[function(require,module,exports){
+},{}],125:[function(require,module,exports){
 /**
  * A class representation of the BSON DBRef type.
  *
@@ -17487,7 +17517,7 @@ DBRef.prototype.toJSON = function() {
 module.exports = DBRef;
 module.exports.DBRef = DBRef;
 
-},{}],125:[function(require,module,exports){
+},{}],126:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -18309,7 +18339,7 @@ module.exports = Decimal128;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./long":129,"buffer":141}],126:[function(require,module,exports){
+},{"./long":130,"buffer":142}],127:[function(require,module,exports){
 /**
  * A class representation of the BSON Double type.
  *
@@ -18344,7 +18374,7 @@ Double.prototype.toJSON = function() {
 module.exports = Double;
 module.exports.Double = Double;
 
-},{}],127:[function(require,module,exports){
+},{}],128:[function(require,module,exports){
 // Copyright (c) 2008, Fair Oaks Labs, Inc.
 // All rights reserved.
 //
@@ -18470,7 +18500,7 @@ var writeIEEE754 = function(buffer, value, offset, endian, mLen, nBytes) {
 exports.readIEEE754 = readIEEE754;
 exports.writeIEEE754 = writeIEEE754;
 
-},{}],128:[function(require,module,exports){
+},{}],129:[function(require,module,exports){
 /**
  * A class representation of a BSON Int32 type.
  *
@@ -18505,7 +18535,7 @@ Int32.prototype.toJSON = function() {
 module.exports = Int32;
 module.exports.Int32 = Int32;
 
-},{}],129:[function(require,module,exports){
+},{}],130:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -19358,7 +19388,7 @@ Long.TWO_PWR_24_ = Long.fromInt(1 << 24);
 module.exports = Long;
 module.exports.Long = Long;
 
-},{}],130:[function(require,module,exports){
+},{}],131:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -19490,7 +19520,7 @@ if (typeof global.Map !== 'undefined') {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],131:[function(require,module,exports){
+},{}],132:[function(require,module,exports){
 /**
  * A class representation of the BSON MaxKey type.
  *
@@ -19506,7 +19536,7 @@ function MaxKey() {
 module.exports = MaxKey;
 module.exports.MaxKey = MaxKey;
 
-},{}],132:[function(require,module,exports){
+},{}],133:[function(require,module,exports){
 /**
  * A class representation of the BSON MinKey type.
  *
@@ -19522,7 +19552,7 @@ function MinKey() {
 module.exports = MinKey;
 module.exports.MinKey = MinKey;
 
-},{}],133:[function(require,module,exports){
+},{}],134:[function(require,module,exports){
 (function (process,Buffer){
 /**
  * Machine id.
@@ -19907,7 +19937,7 @@ module.exports.ObjectID = ObjectID;
 module.exports.ObjectId = ObjectID;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":369,"buffer":141}],134:[function(require,module,exports){
+},{"_process":370,"buffer":142}],135:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -20164,7 +20194,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = calculateObjectSize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":121,"../code":123,"../db_ref":124,"../decimal128":125,"../double":126,"../long":129,"../max_key":131,"../min_key":132,"../objectid":133,"../regexp":137,"../symbol":138,"../timestamp":139,"buffer":141}],135:[function(require,module,exports){
+},{"../binary":122,"../code":124,"../db_ref":125,"../decimal128":126,"../double":127,"../long":130,"../max_key":132,"../min_key":133,"../objectid":134,"../regexp":138,"../symbol":139,"../timestamp":140,"buffer":142}],136:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -20948,7 +20978,7 @@ var JS_INT_MIN_LONG = Long.fromNumber(-0x20000000000000); // Any integer down to
 module.exports = deserialize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":121,"../code":123,"../db_ref":124,"../decimal128":125,"../double":126,"../int_32":128,"../long":129,"../max_key":131,"../min_key":132,"../objectid":133,"../regexp":137,"../symbol":138,"../timestamp":139,"buffer":141}],136:[function(require,module,exports){
+},{"../binary":122,"../code":124,"../db_ref":125,"../decimal128":126,"../double":127,"../int_32":129,"../long":130,"../max_key":132,"../min_key":133,"../objectid":134,"../regexp":138,"../symbol":139,"../timestamp":140,"buffer":142}],137:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -22131,7 +22161,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = serializeInto;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":198,"../binary":121,"../float_parser":127,"../long":129,"../map":130,"../min_key":132}],137:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":199,"../binary":122,"../float_parser":128,"../long":130,"../map":131,"../min_key":133}],138:[function(require,module,exports){
 /**
  * A class representation of the BSON RegExp type.
  *
@@ -22166,7 +22196,7 @@ function BSONRegExp(pattern, options) {
 module.exports = BSONRegExp;
 module.exports.BSONRegExp = BSONRegExp;
 
-},{}],138:[function(require,module,exports){
+},{}],139:[function(require,module,exports){
 /**
  * A class representation of the BSON Symbol type.
  *
@@ -22215,7 +22245,7 @@ Symbol.prototype.toJSON = function() {
 module.exports = Symbol;
 module.exports.Symbol = Symbol;
 
-},{}],139:[function(require,module,exports){
+},{}],140:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -23071,7 +23101,7 @@ Timestamp.TWO_PWR_24_ = Timestamp.fromInt(1 << 24);
 module.exports = Timestamp;
 module.exports.Timestamp = Timestamp;
 
-},{}],140:[function(require,module,exports){
+},{}],141:[function(require,module,exports){
 (function (Buffer){
 module.exports = function xor (a, b) {
   var length = Math.min(a.length, b.length)
@@ -23085,7 +23115,7 @@ module.exports = function xor (a, b) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141}],141:[function(require,module,exports){
+},{"buffer":142}],142:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -24823,7 +24853,7 @@ function numberIsNaN (obj) {
   return obj !== obj // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":86,"ieee754":195}],142:[function(require,module,exports){
+},{"base64-js":87,"ieee754":196}],143:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
 var StringDecoder = require('string_decoder').StringDecoder
@@ -24924,7 +24954,7 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 
 module.exports = CipherBase
 
-},{"inherits":197,"safe-buffer":399,"stream":410,"string_decoder":411}],143:[function(require,module,exports){
+},{"inherits":198,"safe-buffer":400,"stream":411,"string_decoder":412}],144:[function(require,module,exports){
 (function (Buffer){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -25035,7 +25065,7 @@ function objectToString(o) {
 }
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":198}],144:[function(require,module,exports){
+},{"../../is-buffer/index.js":199}],145:[function(require,module,exports){
 (function (Buffer){
 var elliptic = require('elliptic');
 var BN = require('bn.js');
@@ -25161,7 +25191,7 @@ function formatReturnValue(bn, enc, len) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"bn.js":88,"buffer":141,"elliptic":163}],145:[function(require,module,exports){
+},{"bn.js":89,"buffer":142,"elliptic":164}],146:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -25217,7 +25247,7 @@ module.exports = function createHash (alg) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./md5":147,"buffer":141,"cipher-base":142,"inherits":197,"ripemd160":398,"sha.js":402}],146:[function(require,module,exports){
+},{"./md5":148,"buffer":142,"cipher-base":143,"inherits":198,"ripemd160":399,"sha.js":403}],147:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var intSize = 4
@@ -25251,7 +25281,7 @@ module.exports = function hash (buf, fn) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141}],147:[function(require,module,exports){
+},{"buffer":142}],148:[function(require,module,exports){
 'use strict'
 /*
  * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
@@ -25404,7 +25434,7 @@ module.exports = function md5 (buf) {
   return makeHash(buf, core_md5)
 }
 
-},{"./make-hash":146}],148:[function(require,module,exports){
+},{"./make-hash":147}],149:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Legacy = require('./legacy')
@@ -25468,7 +25498,7 @@ module.exports = function createHmac (alg, key) {
   return new Hmac(alg, key)
 }
 
-},{"./legacy":149,"cipher-base":142,"create-hash/md5":147,"inherits":197,"ripemd160":398,"safe-buffer":399,"sha.js":402}],149:[function(require,module,exports){
+},{"./legacy":150,"cipher-base":143,"create-hash/md5":148,"inherits":198,"ripemd160":399,"safe-buffer":400,"sha.js":403}],150:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Buffer = require('safe-buffer').Buffer
@@ -25516,7 +25546,7 @@ Hmac.prototype._final = function () {
 }
 module.exports = Hmac
 
-},{"cipher-base":142,"inherits":197,"safe-buffer":399}],150:[function(require,module,exports){
+},{"cipher-base":143,"inherits":198,"safe-buffer":400}],151:[function(require,module,exports){
 'use strict'
 
 exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = require('randombytes')
@@ -25615,7 +25645,7 @@ exports.constants = {
   'POINT_CONVERSION_HYBRID': 6
 }
 
-},{"browserify-cipher":108,"browserify-sign":115,"browserify-sign/algos":112,"create-ecdh":144,"create-hash":145,"create-hmac":148,"diffie-hellman":159,"pbkdf2":363,"public-encrypt":370,"randombytes":380,"randomfill":381}],151:[function(require,module,exports){
+},{"browserify-cipher":109,"browserify-sign":116,"browserify-sign/algos":113,"create-ecdh":145,"create-hash":146,"create-hmac":149,"diffie-hellman":160,"pbkdf2":364,"public-encrypt":371,"randombytes":381,"randomfill":382}],152:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -25804,7 +25834,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":152,"_process":369}],152:[function(require,module,exports){
+},{"./debug":153,"_process":370}],153:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -26008,7 +26038,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":344}],153:[function(require,module,exports){
+},{"ms":345}],154:[function(require,module,exports){
 'use strict';
 
 exports.utils = require('./des/utils');
@@ -26017,7 +26047,7 @@ exports.DES = require('./des/des');
 exports.CBC = require('./des/cbc');
 exports.EDE = require('./des/ede');
 
-},{"./des/cbc":154,"./des/cipher":155,"./des/des":156,"./des/ede":157,"./des/utils":158}],154:[function(require,module,exports){
+},{"./des/cbc":155,"./des/cipher":156,"./des/des":157,"./des/ede":158,"./des/utils":159}],155:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26084,7 +26114,7 @@ proto._update = function _update(inp, inOff, out, outOff) {
   }
 };
 
-},{"inherits":197,"minimalistic-assert":205}],155:[function(require,module,exports){
+},{"inherits":198,"minimalistic-assert":206}],156:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26227,7 +26257,7 @@ Cipher.prototype._finalDecrypt = function _finalDecrypt() {
   return this._unpad(out);
 };
 
-},{"minimalistic-assert":205}],156:[function(require,module,exports){
+},{"minimalistic-assert":206}],157:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26372,7 +26402,7 @@ DES.prototype._decrypt = function _decrypt(state, lStart, rStart, out, off) {
   utils.rip(l, r, out, off);
 };
 
-},{"../des":153,"inherits":197,"minimalistic-assert":205}],157:[function(require,module,exports){
+},{"../des":154,"inherits":198,"minimalistic-assert":206}],158:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -26429,7 +26459,7 @@ EDE.prototype._update = function _update(inp, inOff, out, outOff) {
 EDE.prototype._pad = DES.prototype._pad;
 EDE.prototype._unpad = DES.prototype._unpad;
 
-},{"../des":153,"inherits":197,"minimalistic-assert":205}],158:[function(require,module,exports){
+},{"../des":154,"inherits":198,"minimalistic-assert":206}],159:[function(require,module,exports){
 'use strict';
 
 exports.readUInt32BE = function readUInt32BE(bytes, off) {
@@ -26687,7 +26717,7 @@ exports.padSplit = function padSplit(num, size, group) {
   return out.join(' ');
 };
 
-},{}],159:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 (function (Buffer){
 var generatePrime = require('./lib/generatePrime')
 var primes = require('./lib/primes.json')
@@ -26733,7 +26763,7 @@ exports.DiffieHellmanGroup = exports.createDiffieHellmanGroup = exports.getDiffi
 exports.createDiffieHellman = exports.DiffieHellman = createDiffieHellman
 
 }).call(this,require("buffer").Buffer)
-},{"./lib/dh":160,"./lib/generatePrime":161,"./lib/primes.json":162,"buffer":141}],160:[function(require,module,exports){
+},{"./lib/dh":161,"./lib/generatePrime":162,"./lib/primes.json":163,"buffer":142}],161:[function(require,module,exports){
 (function (Buffer){
 var BN = require('bn.js');
 var MillerRabin = require('miller-rabin');
@@ -26901,7 +26931,7 @@ function formatReturnValue(bn, enc) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./generatePrime":161,"bn.js":88,"buffer":141,"miller-rabin":204,"randombytes":380}],161:[function(require,module,exports){
+},{"./generatePrime":162,"bn.js":89,"buffer":142,"miller-rabin":205,"randombytes":381}],162:[function(require,module,exports){
 var randomBytes = require('randombytes');
 module.exports = findPrime;
 findPrime.simpleSieve = simpleSieve;
@@ -27008,7 +27038,7 @@ function findPrime(bits, gen) {
 
 }
 
-},{"bn.js":88,"miller-rabin":204,"randombytes":380}],162:[function(require,module,exports){
+},{"bn.js":89,"miller-rabin":205,"randombytes":381}],163:[function(require,module,exports){
 module.exports={
     "modp1": {
         "gen": "02",
@@ -27043,7 +27073,7 @@ module.exports={
         "prime": "ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dbe115974a3926f12fee5e438777cb6a932df8cd8bec4d073b931ba3bc832b68d9dd300741fa7bf8afc47ed2576f6936ba424663aab639c5ae4f5683423b4742bf1c978238f16cbe39d652de3fdb8befc848ad922222e04a4037c0713eb57a81a23f0c73473fc646cea306b4bcbc8862f8385ddfa9d4b7fa2c087e879683303ed5bdd3a062b3cf5b3a278a66d2a13f83f44f82ddf310ee074ab6a364597e899a0255dc164f31cc50846851df9ab48195ded7ea1b1d510bd7ee74d73faf36bc31ecfa268359046f4eb879f924009438b481c6cd7889a002ed5ee382bc9190da6fc026e479558e4475677e9aa9e3050e2765694dfc81f56e880b96e7160c980dd98edd3dfffffffffffffffff"
     }
 }
-},{}],163:[function(require,module,exports){
+},{}],164:[function(require,module,exports){
 'use strict';
 
 var elliptic = exports;
@@ -27058,7 +27088,7 @@ elliptic.curves = require('./elliptic/curves');
 elliptic.ec = require('./elliptic/ec');
 elliptic.eddsa = require('./elliptic/eddsa');
 
-},{"../package.json":178,"./elliptic/curve":166,"./elliptic/curves":169,"./elliptic/ec":170,"./elliptic/eddsa":173,"./elliptic/utils":177,"brorand":89}],164:[function(require,module,exports){
+},{"../package.json":179,"./elliptic/curve":167,"./elliptic/curves":170,"./elliptic/ec":171,"./elliptic/eddsa":174,"./elliptic/utils":178,"brorand":90}],165:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -27435,7 +27465,7 @@ BasePoint.prototype.dblp = function dblp(k) {
   return r;
 };
 
-},{"../../elliptic":163,"bn.js":88}],165:[function(require,module,exports){
+},{"../../elliptic":164,"bn.js":89}],166:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -27870,7 +27900,7 @@ Point.prototype.eqXToP = function eqXToP(x) {
 Point.prototype.toP = Point.prototype.normalize;
 Point.prototype.mixedAdd = Point.prototype.add;
 
-},{"../../elliptic":163,"../curve":166,"bn.js":88,"inherits":197}],166:[function(require,module,exports){
+},{"../../elliptic":164,"../curve":167,"bn.js":89,"inherits":198}],167:[function(require,module,exports){
 'use strict';
 
 var curve = exports;
@@ -27880,7 +27910,7 @@ curve.short = require('./short');
 curve.mont = require('./mont');
 curve.edwards = require('./edwards');
 
-},{"./base":164,"./edwards":165,"./mont":167,"./short":168}],167:[function(require,module,exports){
+},{"./base":165,"./edwards":166,"./mont":168,"./short":169}],168:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -28062,7 +28092,7 @@ Point.prototype.getX = function getX() {
   return this.x.fromRed();
 };
 
-},{"../../elliptic":163,"../curve":166,"bn.js":88,"inherits":197}],168:[function(require,module,exports){
+},{"../../elliptic":164,"../curve":167,"bn.js":89,"inherits":198}],169:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -29002,7 +29032,7 @@ JPoint.prototype.isInfinity = function isInfinity() {
   return this.z.cmpn(0) === 0;
 };
 
-},{"../../elliptic":163,"../curve":166,"bn.js":88,"inherits":197}],169:[function(require,module,exports){
+},{"../../elliptic":164,"../curve":167,"bn.js":89,"inherits":198}],170:[function(require,module,exports){
 'use strict';
 
 var curves = exports;
@@ -29209,7 +29239,7 @@ defineCurve('secp256k1', {
   ]
 });
 
-},{"../elliptic":163,"./precomputed/secp256k1":176,"hash.js":182}],170:[function(require,module,exports){
+},{"../elliptic":164,"./precomputed/secp256k1":177,"hash.js":183}],171:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29451,7 +29481,7 @@ EC.prototype.getKeyRecoveryParam = function(e, signature, Q, enc) {
   throw new Error('Unable to find valid recovery factor');
 };
 
-},{"../../elliptic":163,"./key":171,"./signature":172,"bn.js":88,"hmac-drbg":194}],171:[function(require,module,exports){
+},{"../../elliptic":164,"./key":172,"./signature":173,"bn.js":89,"hmac-drbg":195}],172:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29572,7 +29602,7 @@ KeyPair.prototype.inspect = function inspect() {
          ' pub: ' + (this.pub && this.pub.inspect()) + ' >';
 };
 
-},{"../../elliptic":163,"bn.js":88}],172:[function(require,module,exports){
+},{"../../elliptic":164,"bn.js":89}],173:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29709,7 +29739,7 @@ Signature.prototype.toDER = function toDER(enc) {
   return utils.encode(res, enc);
 };
 
-},{"../../elliptic":163,"bn.js":88}],173:[function(require,module,exports){
+},{"../../elliptic":164,"bn.js":89}],174:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -29829,7 +29859,7 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
-},{"../../elliptic":163,"./key":174,"./signature":175,"hash.js":182}],174:[function(require,module,exports){
+},{"../../elliptic":164,"./key":175,"./signature":176,"hash.js":183}],175:[function(require,module,exports){
 'use strict';
 
 var elliptic = require('../../elliptic');
@@ -29927,7 +29957,7 @@ KeyPair.prototype.getPublic = function getPublic(enc) {
 
 module.exports = KeyPair;
 
-},{"../../elliptic":163}],175:[function(require,module,exports){
+},{"../../elliptic":164}],176:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -29995,7 +30025,7 @@ Signature.prototype.toHex = function toHex() {
 
 module.exports = Signature;
 
-},{"../../elliptic":163,"bn.js":88}],176:[function(require,module,exports){
+},{"../../elliptic":164,"bn.js":89}],177:[function(require,module,exports){
 module.exports = {
   doubles: {
     step: 4,
@@ -30777,7 +30807,7 @@ module.exports = {
   }
 };
 
-},{}],177:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -30899,7 +30929,7 @@ function intFromLE(bytes) {
 utils.intFromLE = intFromLE;
 
 
-},{"bn.js":88,"minimalistic-assert":205,"minimalistic-crypto-utils":206}],178:[function(require,module,exports){
+},{"bn.js":89,"minimalistic-assert":206,"minimalistic-crypto-utils":207}],179:[function(require,module,exports){
 module.exports={
   "name": "elliptic",
   "version": "6.4.0",
@@ -30959,7 +30989,7 @@ module.exports={
   }
 }
 
-},{}],179:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -31480,7 +31510,7 @@ function functionBindPolyfill(context) {
   };
 }
 
-},{}],180:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var MD5 = require('md5.js')
 
@@ -31527,7 +31557,7 @@ function EVP_BytesToKey (password, salt, keyBits, ivLen) {
 
 module.exports = EVP_BytesToKey
 
-},{"md5.js":202,"safe-buffer":399}],181:[function(require,module,exports){
+},{"md5.js":203,"safe-buffer":400}],182:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var Transform = require('stream').Transform
@@ -31614,7 +31644,7 @@ HashBase.prototype._digest = function () {
 module.exports = HashBase
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"inherits":197,"stream":410}],182:[function(require,module,exports){
+},{"buffer":142,"inherits":198,"stream":411}],183:[function(require,module,exports){
 var hash = exports;
 
 hash.utils = require('./hash/utils');
@@ -31631,7 +31661,7 @@ hash.sha384 = hash.sha.sha384;
 hash.sha512 = hash.sha.sha512;
 hash.ripemd160 = hash.ripemd.ripemd160;
 
-},{"./hash/common":183,"./hash/hmac":184,"./hash/ripemd":185,"./hash/sha":186,"./hash/utils":193}],183:[function(require,module,exports){
+},{"./hash/common":184,"./hash/hmac":185,"./hash/ripemd":186,"./hash/sha":187,"./hash/utils":194}],184:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -31725,7 +31755,7 @@ BlockHash.prototype._pad = function pad() {
   return res;
 };
 
-},{"./utils":193,"minimalistic-assert":205}],184:[function(require,module,exports){
+},{"./utils":194,"minimalistic-assert":206}],185:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -31774,7 +31804,7 @@ Hmac.prototype.digest = function digest(enc) {
   return this.outer.digest(enc);
 };
 
-},{"./utils":193,"minimalistic-assert":205}],185:[function(require,module,exports){
+},{"./utils":194,"minimalistic-assert":206}],186:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -31922,7 +31952,7 @@ var sh = [
   8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11
 ];
 
-},{"./common":183,"./utils":193}],186:[function(require,module,exports){
+},{"./common":184,"./utils":194}],187:[function(require,module,exports){
 'use strict';
 
 exports.sha1 = require('./sha/1');
@@ -31931,7 +31961,7 @@ exports.sha256 = require('./sha/256');
 exports.sha384 = require('./sha/384');
 exports.sha512 = require('./sha/512');
 
-},{"./sha/1":187,"./sha/224":188,"./sha/256":189,"./sha/384":190,"./sha/512":191}],187:[function(require,module,exports){
+},{"./sha/1":188,"./sha/224":189,"./sha/256":190,"./sha/384":191,"./sha/512":192}],188:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32007,7 +32037,7 @@ SHA1.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":183,"../utils":193,"./common":192}],188:[function(require,module,exports){
+},{"../common":184,"../utils":194,"./common":193}],189:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32039,7 +32069,7 @@ SHA224.prototype._digest = function digest(enc) {
 };
 
 
-},{"../utils":193,"./256":189}],189:[function(require,module,exports){
+},{"../utils":194,"./256":190}],190:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32146,7 +32176,7 @@ SHA256.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":183,"../utils":193,"./common":192,"minimalistic-assert":205}],190:[function(require,module,exports){
+},{"../common":184,"../utils":194,"./common":193,"minimalistic-assert":206}],191:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32183,7 +32213,7 @@ SHA384.prototype._digest = function digest(enc) {
     return utils.split32(this.h.slice(0, 12), 'big');
 };
 
-},{"../utils":193,"./512":191}],191:[function(require,module,exports){
+},{"../utils":194,"./512":192}],192:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32515,7 +32545,7 @@ function g1_512_lo(xh, xl) {
   return r;
 }
 
-},{"../common":183,"../utils":193,"minimalistic-assert":205}],192:[function(require,module,exports){
+},{"../common":184,"../utils":194,"minimalistic-assert":206}],193:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -32566,7 +32596,7 @@ function g1_256(x) {
 }
 exports.g1_256 = g1_256;
 
-},{"../utils":193}],193:[function(require,module,exports){
+},{"../utils":194}],194:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -32821,7 +32851,7 @@ function shr64_lo(ah, al, num) {
 }
 exports.shr64_lo = shr64_lo;
 
-},{"inherits":197,"minimalistic-assert":205}],194:[function(require,module,exports){
+},{"inherits":198,"minimalistic-assert":206}],195:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -32936,10 +32966,10 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
   return utils.encode(res, enc);
 };
 
-},{"hash.js":182,"minimalistic-assert":205,"minimalistic-crypto-utils":206}],195:[function(require,module,exports){
+},{"hash.js":183,"minimalistic-assert":206,"minimalistic-crypto-utils":207}],196:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
-  var eLen = (nBytes * 8) - mLen - 1
+  var eLen = nBytes * 8 - mLen - 1
   var eMax = (1 << eLen) - 1
   var eBias = eMax >> 1
   var nBits = -7
@@ -32952,12 +32982,12 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   e = s & ((1 << (-nBits)) - 1)
   s >>= (-nBits)
   nBits += eLen
-  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+  for (; nBits > 0; e = e * 256 + buffer[offset + i], i += d, nBits -= 8) {}
 
   m = e & ((1 << (-nBits)) - 1)
   e >>= (-nBits)
   nBits += mLen
-  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+  for (; nBits > 0; m = m * 256 + buffer[offset + i], i += d, nBits -= 8) {}
 
   if (e === 0) {
     e = 1 - eBias
@@ -32972,7 +33002,7 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
 
 exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   var e, m, c
-  var eLen = (nBytes * 8) - mLen - 1
+  var eLen = nBytes * 8 - mLen - 1
   var eMax = (1 << eLen) - 1
   var eBias = eMax >> 1
   var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
@@ -33005,7 +33035,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
       m = 0
       e = eMax
     } else if (e + eBias >= 1) {
-      m = ((value * c) - 1) * Math.pow(2, mLen)
+      m = (value * c - 1) * Math.pow(2, mLen)
       e = e + eBias
     } else {
       m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
@@ -33022,7 +33052,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],196:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 
 var indexOf = [].indexOf;
 
@@ -33033,7 +33063,7 @@ module.exports = function(arr, obj){
   }
   return -1;
 };
-},{}],197:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -33058,7 +33088,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],198:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -33081,14 +33111,14 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],199:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],200:[function(require,module,exports){
+},{}],201:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -33520,7 +33550,7 @@ function decorateNextFn(fn) {
 module.exports = Kareem;
 
 }).call(this,require('_process'))
-},{"_process":369}],201:[function(require,module,exports){
+},{"_process":370}],202:[function(require,module,exports){
 (function (global){
 /**
  * lodash (Custom Build) <https://lodash.com/>
@@ -34455,7 +34485,7 @@ function get(object, path, defaultValue) {
 module.exports = get;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],202:[function(require,module,exports){
+},{}],203:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -34604,7 +34634,7 @@ function fnI (a, b, c, d, m, k, s) {
 module.exports = MD5
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"hash-base":203,"inherits":197}],203:[function(require,module,exports){
+},{"buffer":142,"hash-base":204,"inherits":198}],204:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
@@ -34701,7 +34731,7 @@ HashBase.prototype._digest = function () {
 
 module.exports = HashBase
 
-},{"inherits":197,"safe-buffer":399,"stream":410}],204:[function(require,module,exports){
+},{"inherits":198,"safe-buffer":400,"stream":411}],205:[function(require,module,exports){
 var bn = require('bn.js');
 var brorand = require('brorand');
 
@@ -34818,7 +34848,7 @@ MillerRabin.prototype.getDivisor = function getDivisor(n, k) {
   return false;
 };
 
-},{"bn.js":88,"brorand":89}],205:[function(require,module,exports){
+},{"bn.js":89,"brorand":90}],206:[function(require,module,exports){
 module.exports = assert;
 
 function assert(val, msg) {
@@ -34831,7 +34861,7 @@ assert.equal = function assertEqual(l, r, msg) {
     throw new Error(msg || ('Assertion failed: ' + l + ' != ' + r));
 };
 
-},{}],206:[function(require,module,exports){
+},{}],207:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -34891,7 +34921,7 @@ utils.encode = function encode(arr, enc) {
     return arr;
 };
 
-},{}],207:[function(require,module,exports){
+},{}],208:[function(require,module,exports){
 'use strict';
 
 var BSON = require('bson');
@@ -34931,7 +34961,7 @@ module.exports = {
   parseConnectionString: require('./lib/uri_parser')
 };
 
-},{"./lib/auth/gssapi":208,"./lib/auth/mongocr":209,"./lib/auth/plain":210,"./lib/auth/scram":211,"./lib/auth/x509":213,"./lib/connection/commands":215,"./lib/connection/connection":216,"./lib/connection/logger":217,"./lib/cursor":220,"./lib/error":221,"./lib/sessions":222,"./lib/topologies/mongos":223,"./lib/topologies/read_preference":224,"./lib/topologies/replset":225,"./lib/topologies/server":227,"./lib/uri_parser":229,"bson":122,"require_optional":396}],208:[function(require,module,exports){
+},{"./lib/auth/gssapi":209,"./lib/auth/mongocr":210,"./lib/auth/plain":211,"./lib/auth/scram":212,"./lib/auth/x509":214,"./lib/connection/commands":216,"./lib/connection/connection":217,"./lib/connection/logger":218,"./lib/cursor":221,"./lib/error":222,"./lib/sessions":223,"./lib/topologies/mongos":224,"./lib/topologies/read_preference":225,"./lib/topologies/replset":226,"./lib/topologies/server":228,"./lib/uri_parser":230,"bson":123,"require_optional":397}],209:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -35319,7 +35349,7 @@ GSSAPI.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = GSSAPI;
 
 }).call(this,require('_process'))
-},{"../connection/commands":215,"../error":221,"_process":369,"require_optional":396,"util":417}],209:[function(require,module,exports){
+},{"../connection/commands":216,"../error":222,"_process":370,"require_optional":397,"util":418}],210:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -35537,7 +35567,7 @@ MongoCR.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = MongoCR;
 
 }).call(this,require('_process'))
-},{"../connection/commands":215,"../error":221,"_process":369,"crypto":150,"util":417}],210:[function(require,module,exports){
+},{"../connection/commands":216,"../error":222,"_process":370,"crypto":151,"util":418}],211:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -35724,7 +35754,7 @@ Plain.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = Plain;
 
 }).call(this,require('_process'))
-},{"../connection/commands":215,"../connection/utils":219,"../error":221,"_process":369,"util":417}],211:[function(require,module,exports){
+},{"../connection/commands":216,"../connection/utils":220,"../error":222,"_process":370,"util":418}],212:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -36095,7 +36125,7 @@ ScramSHA1.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = ScramSHA1;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"../connection/commands":215,"../connection/utils":219,"../error":221,"_process":369,"buffer":141,"crypto":150,"util":417}],212:[function(require,module,exports){
+},{"../connection/commands":216,"../connection/utils":220,"../error":222,"_process":370,"buffer":142,"crypto":151,"util":418}],213:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -36403,7 +36433,7 @@ SSPI.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = SSPI;
 
 }).call(this,require('_process'))
-},{"../connection/commands":215,"../error":221,"_process":369,"require_optional":396,"util":417}],213:[function(require,module,exports){
+},{"../connection/commands":216,"../error":222,"_process":370,"require_optional":397,"util":418}],214:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -36586,7 +36616,7 @@ X509.prototype.reauthenticate = function(server, connections, callback) {
 module.exports = X509;
 
 }).call(this,require('_process'))
-},{"../connection/commands":215,"../error":221,"_process":369,"util":417}],214:[function(require,module,exports){
+},{"../connection/commands":216,"../error":222,"_process":370,"util":418}],215:[function(require,module,exports){
 'use strict';
 
 /**
@@ -36622,7 +36652,7 @@ CommandResult.prototype.toString = function() {
 
 module.exports = CommandResult;
 
-},{}],215:[function(require,module,exports){
+},{}],216:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -37157,7 +37187,7 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"../wireprotocol/shared":234,"./utils":219,"buffer":141}],216:[function(require,module,exports){
+},{"../wireprotocol/shared":235,"./utils":220,"buffer":142}],217:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -37961,7 +37991,7 @@ Connection.prototype.isConnected = function() {
 module.exports = Connection;
 
 }).call(this,require("buffer").Buffer)
-},{"../error":221,"../wireprotocol/compression":233,"../wireprotocol/shared":234,"./commands":215,"./logger":217,"./utils":219,"buffer":141,"crypto":150,"events":179,"net":120,"tls":120,"util":417}],217:[function(require,module,exports){
+},{"../error":222,"../wireprotocol/compression":234,"../wireprotocol/shared":235,"./commands":216,"./logger":218,"./utils":220,"buffer":142,"crypto":151,"events":180,"net":121,"tls":121,"util":418}],218:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -38211,7 +38241,7 @@ Logger.setLevel = function(_level) {
 module.exports = Logger;
 
 }).call(this,require('_process'))
-},{"../error":221,"_process":369,"util":417}],218:[function(require,module,exports){
+},{"../error":222,"_process":370,"util":418}],219:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -39836,7 +39866,7 @@ Pool._execute = _execute;
 module.exports = Pool;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"../auth/gssapi":208,"../auth/mongocr":209,"../auth/plain":210,"../auth/scram":211,"../auth/sspi":212,"../auth/x509":213,"../error":221,"../topologies/shared":228,"../wireprotocol/compression":233,"../wireprotocol/shared":234,"./command_result":214,"./commands":215,"./connection":216,"./logger":217,"_process":369,"buffer":141,"events":179,"util":417}],219:[function(require,module,exports){
+},{"../auth/gssapi":209,"../auth/mongocr":210,"../auth/plain":211,"../auth/scram":212,"../auth/sspi":213,"../auth/x509":214,"../error":222,"../topologies/shared":229,"../wireprotocol/compression":234,"../wireprotocol/shared":235,"./command_result":215,"./commands":216,"./connection":217,"./logger":218,"_process":370,"buffer":142,"events":180,"util":418}],220:[function(require,module,exports){
 'use strict';
 
 var f = require('util').format,
@@ -39951,7 +39981,7 @@ exports.debugOptions = debugOptions;
 exports.retrieveBSON = retrieveBSON;
 exports.retrieveSnappy = retrieveSnappy;
 
-},{"bson":122,"require_optional":396,"util":417}],220:[function(require,module,exports){
+},{"bson":123,"require_optional":397,"util":418}],221:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -40749,7 +40779,7 @@ Cursor.prototype.next = function(callback) {
 module.exports = Cursor;
 
 }).call(this,require('_process'))
-},{"./connection/logger":217,"./connection/utils":219,"./error":221,"_process":369,"util":417}],221:[function(require,module,exports){
+},{"./connection/logger":218,"./connection/utils":220,"./error":222,"_process":370,"util":418}],222:[function(require,module,exports){
 'use strict';
 
 var util = require('util');
@@ -40833,7 +40863,7 @@ module.exports = {
   MongoParseError: MongoParseError
 };
 
-},{"util":417}],222:[function(require,module,exports){
+},{"util":418}],223:[function(require,module,exports){
 'use strict';
 
 const retrieveBSON = require('./connection/utils').retrieveBSON,
@@ -41019,7 +41049,7 @@ module.exports = {
   ServerSessionPool: ServerSessionPool
 };
 
-},{"./connection/utils":219,"./utils":230,"events":179}],223:[function(require,module,exports){
+},{"./connection/utils":220,"./utils":231,"events":180}],224:[function(require,module,exports){
 'use strict';
 
 const inherits = require('util').inherits,
@@ -42473,7 +42503,7 @@ function emitTopologyDescriptionChanged(self) {
 
 module.exports = Mongos;
 
-},{"../auth/gssapi":208,"../auth/mongocr":209,"../auth/plain":210,"../auth/scram":211,"../auth/sspi":212,"../auth/x509":213,"../connection/logger":217,"../connection/utils":219,"../cursor":220,"../error":221,"./server":227,"./shared":228,"events":179,"util":417}],224:[function(require,module,exports){
+},{"../auth/gssapi":209,"../auth/mongocr":210,"../auth/plain":211,"../auth/scram":212,"../auth/sspi":213,"../auth/x509":214,"../connection/logger":218,"../connection/utils":220,"../cursor":221,"../error":222,"./server":228,"./shared":229,"events":180,"util":418}],225:[function(require,module,exports){
 'use strict';
 
 /**
@@ -42646,7 +42676,7 @@ ReadPreference.nearest = new ReadPreference('nearest');
 
 module.exports = ReadPreference;
 
-},{}],225:[function(require,module,exports){
+},{}],226:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -44335,7 +44365,7 @@ ReplSet.prototype.cursor = function(ns, cmd, options) {
 module.exports = ReplSet;
 
 }).call(this,require('_process'))
-},{"../auth/gssapi":208,"../auth/mongocr":209,"../auth/plain":210,"../auth/scram":211,"../auth/sspi":212,"../auth/x509":213,"../connection/logger":217,"../connection/utils":219,"../cursor":220,"../error":221,"./read_preference":224,"./replset_state":226,"./server":227,"./shared":228,"_process":369,"events":179,"util":417}],226:[function(require,module,exports){
+},{"../auth/gssapi":209,"../auth/mongocr":210,"../auth/plain":211,"../auth/scram":212,"../auth/sspi":213,"../auth/x509":214,"../connection/logger":218,"../connection/utils":220,"../cursor":221,"../error":222,"./read_preference":225,"./replset_state":227,"./server":228,"./shared":229,"_process":370,"events":180,"util":418}],227:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -45443,7 +45473,7 @@ function emitTopologyDescriptionChanged(self) {
 module.exports = ReplSetState;
 
 }).call(this,require("buffer").Buffer)
-},{"../connection/logger":217,"../error":221,"./read_preference":224,"./shared":228,"buffer":141,"events":179,"util":417}],227:[function(require,module,exports){
+},{"../connection/logger":218,"../error":222,"./read_preference":225,"./shared":229,"buffer":142,"events":180,"util":418}],228:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -46547,7 +46577,7 @@ Server.prototype.destroy = function(options) {
 
 module.exports = Server;
 
-},{"../connection/commands":215,"../connection/logger":217,"../connection/pool":218,"../connection/utils":219,"../cursor":220,"../error":221,"../wireprotocol/2_6_support":231,"../wireprotocol/3_2_support":232,"./read_preference":224,"./shared":228,"events":179,"util":417}],228:[function(require,module,exports){
+},{"../connection/commands":216,"../connection/logger":218,"../connection/pool":219,"../connection/utils":220,"../cursor":221,"../error":222,"../wireprotocol/2_6_support":232,"../wireprotocol/3_2_support":233,"./read_preference":225,"./shared":229,"events":180,"util":418}],229:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -47003,7 +47033,7 @@ module.exports.isRetryableWritesSupported = isRetryableWritesSupported;
 module.exports.getNextTransactionNumber = getNextTransactionNumber;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"../../package.json":235,"../connection/utils":219,"./read_preference":224,"_process":369,"buffer":141,"os":345,"util":417}],229:[function(require,module,exports){
+},{"../../package.json":236,"../connection/utils":220,"./read_preference":225,"_process":370,"buffer":142,"os":346,"util":418}],230:[function(require,module,exports){
 'use strict';
 const URL = require('url');
 const qs = require('querystring');
@@ -47302,7 +47332,7 @@ function parseConnectionString(uri, options, callback) {
 
 module.exports = parseConnectionString;
 
-},{"./error":221,"dns":120,"querystring":379,"url":412}],230:[function(require,module,exports){
+},{"./error":222,"dns":121,"querystring":380,"url":413}],231:[function(require,module,exports){
 'use strict';
 
 const crypto = require('crypto');
@@ -47318,7 +47348,7 @@ module.exports = {
   uuidV4: uuidV4
 };
 
-},{"crypto":150}],231:[function(require,module,exports){
+},{"crypto":151}],232:[function(require,module,exports){
 'use strict';
 
 var copy = require('../connection/utils').copy,
@@ -47694,7 +47724,7 @@ var setupCommand = function(bson, ns, cmd, cursorState, topology, options) {
 
 module.exports = WireProtocol;
 
-},{"../connection/commands":215,"../connection/utils":219,"../error":221,"./shared":234,"util":417}],232:[function(require,module,exports){
+},{"../connection/commands":216,"../connection/utils":220,"../error":222,"./shared":235,"util":418}],233:[function(require,module,exports){
 'use strict';
 
 var Query = require('../connection/commands').Query,
@@ -48286,7 +48316,7 @@ var setupCommand = function(bson, ns, cmd, cursorState, topology, options) {
 
 module.exports = WireProtocol;
 
-},{"../connection/commands":215,"../connection/utils":219,"../error":221,"./shared":234,"util":417}],233:[function(require,module,exports){
+},{"../connection/commands":216,"../connection/utils":220,"../error":222,"./shared":235,"util":418}],234:[function(require,module,exports){
 'use strict';
 
 var Snappy = require('../connection/utils').retrieveSnappy(),
@@ -48361,7 +48391,7 @@ module.exports = {
   decompress: decompress
 };
 
-},{"../connection/utils":219,"zlib":119}],234:[function(require,module,exports){
+},{"../connection/utils":220,"zlib":120}],235:[function(require,module,exports){
 'use strict';
 
 var ReadPreference = require('../topologies/read_preference'),
@@ -48418,7 +48448,7 @@ module.exports = {
   parseHeader: parseHeader
 };
 
-},{"../error":221,"../topologies/read_preference":224}],235:[function(require,module,exports){
+},{"../error":222,"../topologies/read_preference":225}],236:[function(require,module,exports){
 module.exports={
   "name": "mongodb-core",
   "version": "3.0.2",
@@ -48468,7 +48498,7 @@ module.exports={
   "homepage": "https://github.com/mongodb-js/mongodb-core"
 }
 
-},{}],236:[function(require,module,exports){
+},{}],237:[function(require,module,exports){
 'use strict';
 
 // Core module
@@ -48532,7 +48562,7 @@ connect.instrument = function(options, callback) {
 // Set our exports to be the connect function
 module.exports = connect;
 
-},{"./lib/admin":237,"./lib/apm":239,"./lib/collection":245,"./lib/cursor":247,"./lib/db":248,"./lib/gridfs-stream":250,"./lib/gridfs/chunk":252,"./lib/gridfs/grid_store":253,"./lib/mongo_client":255,"./lib/topologies/mongos":256,"./lib/topologies/replset":257,"./lib/topologies/server":258,"mongodb-core":207}],237:[function(require,module,exports){
+},{"./lib/admin":238,"./lib/apm":240,"./lib/collection":246,"./lib/cursor":248,"./lib/db":249,"./lib/gridfs-stream":251,"./lib/gridfs/chunk":253,"./lib/gridfs/grid_store":254,"./lib/mongo_client":256,"./lib/topologies/mongos":257,"./lib/topologies/replset":258,"./lib/topologies/server":259,"mongodb-core":208}],238:[function(require,module,exports){
 'use strict';
 
 var toError = require('./utils').toError,
@@ -48905,7 +48935,7 @@ define.classMethod('replSetGetStatus', { callback: true, promise: true });
 
 module.exports = Admin;
 
-},{"./metadata":254,"./utils":261}],238:[function(require,module,exports){
+},{"./metadata":255,"./utils":262}],239:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -49343,7 +49373,7 @@ AggregationCursor.CLOSED = 2;
 
 module.exports = AggregationCursor;
 
-},{"./cursor":247,"./metadata":254,"mongodb-core":207,"stream":410,"util":417}],239:[function(require,module,exports){
+},{"./cursor":248,"./metadata":255,"mongodb-core":208,"stream":411,"util":418}],240:[function(require,module,exports){
 'use strict';
 
 var EventEmitter = require('events').EventEmitter,
@@ -49984,7 +50014,7 @@ Instrumentation.prototype.uninstrument = function() {
 
 module.exports = Instrumentation;
 
-},{"./aggregation_cursor":238,"./bulk/ordered":242,"./bulk/unordered":243,"./collection":245,"./command_cursor":246,"./cursor":247,"./db":248,"./gridfs/grid_store":253,"events":179,"util":417}],240:[function(require,module,exports){
+},{"./aggregation_cursor":239,"./bulk/ordered":243,"./bulk/unordered":244,"./collection":246,"./command_cursor":247,"./cursor":248,"./db":249,"./gridfs/grid_store":254,"events":180,"util":418}],241:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -50118,7 +50148,7 @@ module.exports = function(self, username, password, options, callback) {
 };
 
 }).call(this,require('_process'))
-},{"./utils":261,"_process":369,"mongodb-core":207,"util":417}],241:[function(require,module,exports){
+},{"./utils":262,"_process":370,"mongodb-core":208,"util":418}],242:[function(require,module,exports){
 'use strict';
 
 var Long = require('mongodb-core').BSON.Long,
@@ -50585,7 +50615,7 @@ exports.INSERT = INSERT;
 exports.UPDATE = UPDATE;
 exports.REMOVE = REMOVE;
 
-},{"mongodb-core":207,"util":417}],242:[function(require,module,exports){
+},{"mongodb-core":208,"util":418}],243:[function(require,module,exports){
 'use strict';
 
 var common = require('./common'),
@@ -51204,7 +51234,7 @@ initializeOrderedBulkOp.OrderedBulkOperation = OrderedBulkOperation;
 module.exports = initializeOrderedBulkOp;
 module.exports.Bulk = OrderedBulkOperation;
 
-},{"../metadata":254,"../utils":261,"./common":241,"mongodb-core":207}],243:[function(require,module,exports){
+},{"../metadata":255,"../utils":262,"./common":242,"mongodb-core":208}],244:[function(require,module,exports){
 'use strict';
 
 var common = require('./common'),
@@ -51837,7 +51867,7 @@ initializeUnorderedBulkOp.UnorderedBulkOperation = UnorderedBulkOperation;
 module.exports = initializeUnorderedBulkOp;
 module.exports.Bulk = UnorderedBulkOperation;
 
-},{"../metadata":254,"../utils":261,"./common":241,"mongodb-core":207}],244:[function(require,module,exports){
+},{"../metadata":255,"../utils":262,"./common":242,"mongodb-core":208}],245:[function(require,module,exports){
 'use strict';
 
 var EventEmitter = require('events'),
@@ -52198,7 +52228,7 @@ var processNewChange = function(self, err, change, callback) {
 
 module.exports = ChangeStream;
 
-},{"./collection":245,"events":179,"mongodb-core":207,"util":417}],245:[function(require,module,exports){
+},{"./collection":246,"events":180,"mongodb-core":208,"util":418}],246:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -55339,7 +55369,7 @@ var getReadPreference = function(self, options, db) {
 module.exports = Collection;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":198,"./aggregation_cursor":238,"./bulk/ordered":242,"./bulk/unordered":243,"./change_stream":244,"./command_cursor":246,"./cursor":247,"./db":248,"./metadata":254,"./utils":261,"mongodb-core":207,"util":417}],246:[function(require,module,exports){
+},{"../../is-buffer/index.js":199,"./aggregation_cursor":239,"./bulk/ordered":243,"./bulk/unordered":244,"./change_stream":245,"./command_cursor":247,"./cursor":248,"./db":249,"./metadata":255,"./utils":262,"mongodb-core":208,"util":418}],247:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -55688,7 +55718,7 @@ CommandCursor.CLOSED = 2;
 
 module.exports = CommandCursor;
 
-},{"./cursor":247,"./metadata":254,"mongodb-core":207,"stream":410,"util":417}],247:[function(require,module,exports){
+},{"./cursor":248,"./metadata":255,"mongodb-core":208,"stream":411,"util":418}],248:[function(require,module,exports){
 'use strict';
 
 var inherits = require('util').inherits,
@@ -56994,7 +57024,7 @@ Cursor.GET_MORE = 3;
 
 module.exports = Cursor;
 
-},{"./metadata":254,"./utils":261,"mongodb-core":207,"stream":410,"util":417}],248:[function(require,module,exports){
+},{"./metadata":255,"./utils":262,"mongodb-core":208,"stream":411,"util":418}],249:[function(require,module,exports){
 'use strict';
 
 var EventEmitter = require('events').EventEmitter,
@@ -58805,7 +58835,7 @@ Db.SYSTEM_JS_COLLECTION = 'system.js';
 
 module.exports = Db;
 
-},{"./admin":237,"./collection":245,"./command_cursor":246,"./metadata":254,"./utils":261,"crypto":150,"events":179,"mongodb-core":207,"util":417}],249:[function(require,module,exports){
+},{"./admin":238,"./collection":246,"./command_cursor":247,"./metadata":255,"./utils":262,"crypto":151,"events":180,"mongodb-core":208,"util":418}],250:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -59224,7 +59254,7 @@ function __handleError(_this, error) {
 }
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"stream":410,"util":417}],250:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"stream":411,"util":418}],251:[function(require,module,exports){
 'use strict';
 
 var Emitter = require('events').EventEmitter;
@@ -59572,7 +59602,7 @@ function _drop(_this, callback) {
  * @param {MongoError} error An error instance representing any errors that occurred
  */
 
-},{"../utils":261,"./download":249,"./upload":251,"events":179,"util":417}],251:[function(require,module,exports){
+},{"../utils":262,"./download":250,"./upload":252,"events":180,"util":418}],252:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -60105,7 +60135,7 @@ function checkAborted(_this, callback) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"crypto":150,"mongodb-core":207,"stream":410,"util":417}],252:[function(require,module,exports){
+},{"buffer":142,"crypto":151,"mongodb-core":208,"stream":411,"util":418}],253:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -60343,7 +60373,7 @@ Chunk.DEFAULT_CHUNK_SIZE = 1024 * 255;
 module.exports = Chunk;
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"mongodb-core":207}],253:[function(require,module,exports){
+},{"buffer":142,"mongodb-core":208}],254:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -62298,7 +62328,7 @@ GridStoreStream.prototype.end = function(chunk, encoding, callback) {
 module.exports = GridStore;
 
 }).call(this,require('_process'))
-},{"../collection":245,"../metadata":254,"../utils":261,"./chunk":252,"_process":369,"buffer":141,"fs":120,"mongodb-core":207,"stream":410,"util":417}],254:[function(require,module,exports){
+},{"../collection":246,"../metadata":255,"../utils":262,"./chunk":253,"_process":370,"buffer":142,"fs":121,"mongodb-core":208,"stream":411,"util":418}],255:[function(require,module,exports){
 'use strict';
 
 var f = require('util').format;
@@ -62370,7 +62400,7 @@ Define.prototype.generate = function() {
 
 module.exports = Define;
 
-},{"util":417}],255:[function(require,module,exports){
+},{"util":418}],256:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
 
@@ -63328,7 +63358,7 @@ var connect = function(self, url, options, callback) {
 module.exports = MongoClient;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":198,"./authenticate":240,"./db":248,"./metadata":254,"./topologies/mongos":256,"./topologies/replset":257,"./topologies/server":258,"./url_parser":260,"./utils":261,"_process":369,"events":179,"mongodb-core":207,"util":417}],256:[function(require,module,exports){
+},{"../../is-buffer/index.js":199,"./authenticate":241,"./db":249,"./metadata":255,"./topologies/mongos":257,"./topologies/replset":258,"./topologies/server":259,"./url_parser":261,"./utils":262,"_process":370,"events":180,"mongodb-core":208,"util":418}],257:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -63776,7 +63806,7 @@ define.classMethod('connections', { callback: false, promise: false, returns: [A
 module.exports = Mongos;
 
 }).call(this,require('_process'))
-},{"../aggregation_cursor":238,"../command_cursor":246,"../cursor":247,"../metadata":254,"../utils":261,"./server":258,"./topology_base":259,"_process":369,"mongodb-core":207}],257:[function(require,module,exports){
+},{"../aggregation_cursor":239,"../command_cursor":247,"../cursor":248,"../metadata":255,"../utils":262,"./server":259,"./topology_base":260,"_process":370,"mongodb-core":208}],258:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -64281,7 +64311,7 @@ define.classMethod('connections', { callback: false, promise: false, returns: [A
 module.exports = ReplSet;
 
 }).call(this,require('_process'))
-},{"../aggregation_cursor":238,"../command_cursor":246,"../cursor":247,"../metadata":254,"../utils":261,"./server":258,"./topology_base":259,"_process":369,"mongodb-core":207}],258:[function(require,module,exports){
+},{"../aggregation_cursor":239,"../command_cursor":247,"../cursor":248,"../metadata":255,"../utils":262,"./server":259,"./topology_base":260,"_process":370,"mongodb-core":208}],259:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -64733,7 +64763,7 @@ define.classMethod('connections', { callback: false, promise: false, returns: [A
 module.exports = Server;
 
 }).call(this,require('_process'))
-},{"../aggregation_cursor":238,"../command_cursor":246,"../cursor":247,"../metadata":254,"../utils":261,"./topology_base":259,"_process":369,"mongodb-core":207}],259:[function(require,module,exports){
+},{"../aggregation_cursor":239,"../command_cursor":247,"../cursor":248,"../metadata":255,"../utils":262,"./topology_base":260,"_process":370,"mongodb-core":208}],260:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -65178,7 +65208,7 @@ exports.ServerCapabilities = ServerCapabilities;
 exports.TopologyBase = TopologyBase;
 
 }).call(this,require('_process'))
-},{"../../package.json":262,"../utils":261,"_process":369,"events":179,"mongodb-core":207,"os":345,"util":417}],260:[function(require,module,exports){
+},{"../../package.json":263,"../utils":262,"_process":370,"events":180,"mongodb-core":208,"os":346,"util":418}],261:[function(require,module,exports){
 'use strict';
 
 const ReadPreference = require('mongodb-core').ReadPreference,
@@ -65784,7 +65814,7 @@ function parseConnectionString(url, options) {
   return object;
 }
 
-},{"dns":120,"mongodb-core":207,"url":412,"util":417}],261:[function(require,module,exports){
+},{"dns":121,"mongodb-core":208,"url":413,"util":418}],262:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -66241,7 +66271,7 @@ exports.translateReadPreference = translateReadPreference;
 exports.executeOperation = executeOperation;
 
 }).call(this,require('_process'))
-},{"_process":369,"mongodb-core":207}],262:[function(require,module,exports){
+},{"_process":370,"mongodb-core":208}],263:[function(require,module,exports){
 module.exports={
   "name": "mongodb",
   "version": "3.0.2",
@@ -66296,7 +66326,7 @@ module.exports={
   "homepage": "https://github.com/mongodb/node-mongodb-native"
 }
 
-},{}],263:[function(require,module,exports){
+},{}],264:[function(require,module,exports){
 (function (Buffer){
 /* eslint-env browser */
 
@@ -66429,7 +66459,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./document_provider.js":267,"./error":281,"./promise_provider":295,"./schema":296,"./schematype.js":314,"./types":328,"./utils.js":331,"./virtualtype":332,"buffer":141}],264:[function(require,module,exports){
+},{"./document_provider.js":268,"./error":282,"./promise_provider":296,"./schema":297,"./schematype.js":315,"./types":329,"./utils.js":332,"./virtualtype":333,"buffer":142}],265:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -66549,7 +66579,7 @@ utils.each(
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":266,"./error":281,"./internal":292,"./schema":296,"./services/model/applyHooks":318,"./types/objectid":329,"./utils":331,"events":179}],265:[function(require,module,exports){
+},{"./document":267,"./error":282,"./internal":293,"./schema":297,"./services/model/applyHooks":319,"./types/objectid":330,"./utils":332,"events":180}],266:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -66857,7 +66887,7 @@ function _cast(val, numbertype, context) {
   }
 }
 
-},{"./error/strict":288,"./schema/index":304,"./utils":331,"util":417}],266:[function(require,module,exports){
+},{"./error/strict":289,"./schema/index":305,"./utils":332,"util":418}],267:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
 
@@ -69586,7 +69616,7 @@ Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":198,"./error":281,"./error/objectExpected":285,"./error/objectParameter":286,"./error/strict":288,"./internal":292,"./options":293,"./plugins/idGetter":294,"./schema":296,"./schema/mixed":305,"./schematype":314,"./services/common":315,"./services/document/cleanModifiedSubpaths":316,"./services/document/compile":317,"./services/projection/isDefiningProjection":320,"./services/projection/isExclusive":321,"./types/array":323,"./types/documentarray":326,"./types/embedded":327,"./utils":331,"./virtualtype":332,"_process":369,"events":179,"mpath":333,"util":417}],267:[function(require,module,exports){
+},{"../../is-buffer/index.js":199,"./error":282,"./error/objectExpected":286,"./error/objectParameter":287,"./error/strict":289,"./internal":293,"./options":294,"./plugins/idGetter":295,"./schema":297,"./schema/mixed":306,"./schematype":315,"./services/common":316,"./services/document/cleanModifiedSubpaths":317,"./services/document/compile":318,"./services/projection/isDefiningProjection":321,"./services/projection/isExclusive":322,"./types/array":324,"./types/documentarray":327,"./types/embedded":328,"./utils":332,"./virtualtype":333,"_process":370,"events":180,"mpath":334,"util":418}],268:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -69618,14 +69648,14 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":264,"./document.js":266}],268:[function(require,module,exports){
+},{"./browserDocument.js":265,"./document.js":267}],269:[function(require,module,exports){
 /*!
  * ignore
  */
 
 module.exports = function() {};
 
-},{}],269:[function(require,module,exports){
+},{}],270:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -69639,14 +69669,14 @@ var Binary = require('bson').Binary;
 
 module.exports = exports = Binary;
 
-},{"bson":122}],270:[function(require,module,exports){
+},{"bson":123}],271:[function(require,module,exports){
 /*!
  * ignore
  */
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":122}],271:[function(require,module,exports){
+},{"bson":123}],272:[function(require,module,exports){
 /*!
  * Module exports.
  */
@@ -69656,7 +69686,7 @@ exports.Decimal128 = require('./decimal128');
 exports.ObjectId = require('./objectid');
 exports.ReadPreference = require('./ReadPreference');
 
-},{"./ReadPreference":268,"./binary":269,"./decimal128":270,"./objectid":272}],272:[function(require,module,exports){
+},{"./ReadPreference":269,"./binary":270,"./decimal128":271,"./objectid":273}],273:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -69672,7 +69702,7 @@ var ObjectId = require('bson').ObjectID;
 
 module.exports = exports = ObjectId;
 
-},{"bson":122}],273:[function(require,module,exports){
+},{"bson":123}],274:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -69696,7 +69726,7 @@ if (typeof window === 'undefined') {
 module.exports = driver;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./browser":271,"./node-mongodb-native":277}],274:[function(require,module,exports){
+},{"./browser":272,"./node-mongodb-native":278}],275:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -69743,7 +69773,7 @@ module.exports = function readPref(pref, tags) {
   return new ReadPref(pref, tags);
 };
 
-},{"mongodb":236}],275:[function(require,module,exports){
+},{"mongodb":237}],276:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -69753,16 +69783,16 @@ var Binary = require('mongodb').Binary;
 
 module.exports = exports = Binary;
 
-},{"mongodb":236}],276:[function(require,module,exports){
+},{"mongodb":237}],277:[function(require,module,exports){
 /*!
  * ignore
  */
 
 module.exports = require('mongodb').Decimal128;
 
-},{"mongodb":236}],277:[function(require,module,exports){
-arguments[4][271][0].apply(exports,arguments)
-},{"./ReadPreference":274,"./binary":275,"./decimal128":276,"./objectid":278,"dup":271}],278:[function(require,module,exports){
+},{"mongodb":237}],278:[function(require,module,exports){
+arguments[4][272][0].apply(exports,arguments)
+},{"./ReadPreference":275,"./binary":276,"./decimal128":277,"./objectid":279,"dup":272}],279:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -69778,7 +69808,7 @@ var ObjectId = require('mongodb').ObjectId;
 
 module.exports = exports = ObjectId;
 
-},{"mongodb":236}],279:[function(require,module,exports){
+},{"mongodb":237}],280:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -69840,7 +69870,7 @@ CastError.prototype.setModel = function(model) {
 
 module.exports = CastError;
 
-},{"./":281,"util":417}],280:[function(require,module,exports){
+},{"./":282,"util":418}],281:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -69888,7 +69918,7 @@ DivergentArrayError.prototype.constructor = MongooseError;
 
 module.exports = DivergentArrayError;
 
-},{"./":281}],281:[function(require,module,exports){
+},{"./":282}],282:[function(require,module,exports){
 
 /**
  * MongooseError constructor
@@ -70006,7 +70036,7 @@ MongooseError.MissingSchemaError = require('./missingSchema');
 
 MongooseError.DivergentArrayError = require('./divergentArray');
 
-},{"./cast":279,"./divergentArray":280,"./messages":282,"./missingSchema":283,"./notFound":284,"./overwriteModel":287,"./validation":289,"./validator":290,"./version":291}],282:[function(require,module,exports){
+},{"./cast":280,"./divergentArray":281,"./messages":283,"./missingSchema":284,"./notFound":285,"./overwriteModel":288,"./validation":290,"./validator":291,"./version":292}],283:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -70052,7 +70082,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],283:[function(require,module,exports){
+},{}],284:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -70091,7 +70121,7 @@ MissingSchemaError.prototype.constructor = MongooseError;
 
 module.exports = MissingSchemaError;
 
-},{"./":281}],284:[function(require,module,exports){
+},{"./":282}],285:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70143,7 +70173,7 @@ DocumentNotFoundError.prototype.constructor = MongooseError;
 
 module.exports = DocumentNotFoundError;
 
-},{"./":281,"util":417}],285:[function(require,module,exports){
+},{"./":282,"util":418}],286:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70180,7 +70210,7 @@ ObjectExpectedError.prototype.constructor = MongooseError;
 
 module.exports = ObjectExpectedError;
 
-},{"./":281}],286:[function(require,module,exports){
+},{"./":282}],287:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70218,7 +70248,7 @@ ObjectParameterError.prototype.constructor = MongooseError;
 
 module.exports = ObjectParameterError;
 
-},{"./":281}],287:[function(require,module,exports){
+},{"./":282}],288:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -70255,7 +70285,7 @@ OverwriteModelError.prototype.constructor = MongooseError;
 
 module.exports = OverwriteModelError;
 
-},{"./":281}],288:[function(require,module,exports){
+},{"./":282}],289:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70293,7 +70323,7 @@ StrictModeError.prototype.constructor = MongooseError;
 
 module.exports = StrictModeError;
 
-},{"./":281}],289:[function(require,module,exports){
+},{"./":282}],290:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -70396,7 +70426,7 @@ function _generateMessage(err) {
 
 module.exports = exports = ValidationError;
 
-},{"./":281}],290:[function(require,module,exports){
+},{"./":282}],291:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -70480,7 +70510,7 @@ ValidatorError.prototype.toString = function() {
 
 module.exports = ValidatorError;
 
-},{"./":281}],291:[function(require,module,exports){
+},{"./":282}],292:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70515,7 +70545,7 @@ VersionError.prototype.constructor = MongooseError;
 
 module.exports = VersionError;
 
-},{"./":281}],292:[function(require,module,exports){
+},{"./":282}],293:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -70549,7 +70579,7 @@ function InternalCache() {
   this.fullPath = undefined;
 }
 
-},{"./statemachine":322}],293:[function(require,module,exports){
+},{"./statemachine":323}],294:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70565,7 +70595,7 @@ exports.internalToObjectOptions = {
   flattenDecimals: false
 };
 
-},{}],294:[function(require,module,exports){
+},{}],295:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70593,7 +70623,7 @@ function idGetter() {
   return null;
 }
 
-},{}],295:[function(require,module,exports){
+},{}],296:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -70644,7 +70674,7 @@ store.set(global.Promise);
 module.exports = store;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"assert":85,"mquery":339}],296:[function(require,module,exports){
+},{"assert":86,"mquery":340}],297:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -72483,7 +72513,7 @@ Schema.Types = MongooseTypes = require('./schema/index');
 exports.ObjectId = MongooseTypes.ObjectId;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":198,"./drivers":273,"./schema/index":304,"./schematype":314,"./utils":331,"./virtualtype":332,"events":179,"kareem":200,"mpath":333}],297:[function(require,module,exports){
+},{"../../is-buffer/index.js":199,"./drivers":274,"./schema/index":305,"./schematype":315,"./utils":332,"./virtualtype":333,"events":180,"kareem":201,"mpath":334}],298:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -72852,7 +72882,7 @@ handle.$regex = SchemaArray.prototype.castForQuery;
 
 module.exports = SchemaArray;
 
-},{"../cast":265,"../schematype":314,"../types":328,"../utils":331,"./boolean":298,"./buffer":299,"./date":300,"./mixed":305,"./number":306,"./objectid":307,"./operators/exists":309,"./operators/geospatial":310,"./operators/helpers":311,"./operators/type":312,"./string":313,"lodash.get":201,"util":417}],298:[function(require,module,exports){
+},{"../cast":266,"../schematype":315,"../types":329,"../utils":332,"./boolean":299,"./buffer":300,"./date":301,"./mixed":306,"./number":307,"./objectid":308,"./operators/exists":310,"./operators/geospatial":311,"./operators/helpers":312,"./operators/type":313,"./string":314,"lodash.get":202,"util":418}],299:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -72961,7 +72991,7 @@ SchemaBoolean.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBoolean;
 
-},{"../schematype":314,"../utils":331}],299:[function(require,module,exports){
+},{"../schematype":315,"../utils":332}],300:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -73181,7 +73211,7 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaBuffer;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"../schematype":314,"../types/buffer":324,"../utils":331,"./../document":266,"./operators/bitwise":308}],300:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"../schematype":315,"../types/buffer":325,"../utils":332,"./../document":267,"./operators/bitwise":309}],301:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -73481,7 +73511,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaDate;
 
-},{"../error":281,"../schematype":314,"../utils":331}],301:[function(require,module,exports){
+},{"../error":282,"../schematype":315,"../utils":332}],302:[function(require,module,exports){
 (function (Buffer){
 /* eslint no-empty: 1 */
 
@@ -73635,7 +73665,7 @@ Decimal128.prototype.$conditionalHandlers =
 module.exports = Decimal128;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"../schematype":314,"../types/decimal128":325,"../utils":331,"./../document":266}],302:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"../schematype":315,"../types/decimal128":326,"../utils":332,"./../document":267}],303:[function(require,module,exports){
 /* eslint no-empty: 1 */
 
 /*!
@@ -74026,7 +74056,7 @@ function scopePaths(array, fields, init) {
 
 module.exports = DocumentArray;
 
-},{"../document":266,"../error/cast":279,"../schematype":314,"../services/model/discriminator":319,"../types/documentarray":326,"../types/embedded":327,"../utils":331,"./array":297,"events":179,"util":417}],303:[function(require,module,exports){
+},{"../document":267,"../error/cast":280,"../schematype":315,"../services/model/discriminator":320,"../types/documentarray":327,"../types/embedded":328,"../utils":332,"./array":298,"events":180,"util":418}],304:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -74284,7 +74314,7 @@ Embedded.prototype.discriminator = function(name, schema) {
   return this.caster.discriminators[name];
 };
 
-},{"../options":293,"../schematype":314,"../services/model/discriminator":319,"../types/subdocument":330,"./operators/exists":309,"./operators/geospatial":310,"./operators/helpers":311,"events":179}],304:[function(require,module,exports){
+},{"../options":294,"../schematype":315,"../services/model/discriminator":320,"../types/subdocument":331,"./operators/exists":310,"./operators/geospatial":311,"./operators/helpers":312,"events":180}],305:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -74318,7 +74348,7 @@ exports.Oid = exports.ObjectId;
 exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 
-},{"./array":297,"./boolean":298,"./buffer":299,"./date":300,"./decimal128":301,"./documentarray":302,"./embedded":303,"./mixed":305,"./number":306,"./objectid":307,"./string":313}],305:[function(require,module,exports){
+},{"./array":298,"./boolean":299,"./buffer":300,"./date":301,"./decimal128":302,"./documentarray":303,"./embedded":304,"./mixed":306,"./number":307,"./objectid":308,"./string":314}],306:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -74400,7 +74430,7 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../schematype":314,"../utils":331}],306:[function(require,module,exports){
+},{"../schematype":315,"../utils":332}],307:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -74694,7 +74724,7 @@ SchemaNumber.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaNumber;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"../error":281,"../schematype":314,"../utils":331,"./../document":266,"./operators/bitwise":308}],307:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"../error":282,"../schematype":315,"../utils":332,"./../document":267,"./operators/bitwise":309}],308:[function(require,module,exports){
 (function (Buffer){
 /* eslint no-empty: 1 */
 
@@ -74927,7 +74957,7 @@ function resetId(v) {
 module.exports = ObjectId;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"../schematype":314,"../types/objectid":329,"../utils":331,"./../document":266}],308:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"../schematype":315,"../types/objectid":330,"../utils":332,"./../document":267}],309:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -74967,7 +74997,7 @@ function _castNumber(path, num) {
 module.exports = handleBitwiseOperator;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":198,"../../error/cast":279}],309:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":199,"../../error/cast":280}],310:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -74982,7 +75012,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],310:[function(require,module,exports){
+},{}],311:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -75084,7 +75114,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":297,"./helpers":311}],311:[function(require,module,exports){
+},{"../array":298,"./helpers":312}],312:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75120,7 +75150,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":306}],312:[function(require,module,exports){
+},{"../number":307}],313:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75135,7 +75165,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],313:[function(require,module,exports){
+},{}],314:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -75661,7 +75691,7 @@ SchemaString.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaString;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"../error":281,"../schematype":314,"../utils":331,"./../document":266}],314:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"../error":282,"../schematype":315,"../utils":332,"./../document":267}],315:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -76759,7 +76789,7 @@ exports.CastError = CastError;
 exports.ValidatorError = ValidatorError;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":198,"./error":281,"./schema/operators/exists":309,"./schema/operators/type":312,"./utils":331}],315:[function(require,module,exports){
+},{"../../is-buffer/index.js":199,"./error":282,"./schema/operators/exists":310,"./schema/operators/type":313,"./utils":332}],316:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -76850,7 +76880,7 @@ function shouldFlatten(val) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"../types/objectid":329,"../utils":331,"buffer":141}],316:[function(require,module,exports){
+},{"../types/objectid":330,"../utils":332,"buffer":142}],317:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -76870,7 +76900,7 @@ module.exports = function cleanModifiedSubpaths(doc, path) {
   return deleted;
 };
 
-},{}],317:[function(require,module,exports){
+},{}],318:[function(require,module,exports){
 'use strict';
 
 var Document;
@@ -77018,7 +77048,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":266,"../../utils":331}],318:[function(require,module,exports){
+},{"../../document":267,"../../utils":332}],319:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77071,7 +77101,7 @@ function applyHooks(model, schema, options) {
     createWrapperSync('init', objToDecorate.$__init, null, kareemOptions);
 }
 
-},{}],319:[function(require,module,exports){
+},{}],320:[function(require,module,exports){
 'use strict';
 
 var defineKey = require('../document/compile').defineKey;
@@ -77206,7 +77236,7 @@ module.exports = function discriminator(model, name, schema) {
   return schema;
 };
 
-},{"../../utils":331,"../document/compile":317}],320:[function(require,module,exports){
+},{"../../utils":332,"../document/compile":318}],321:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77226,7 +77256,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],321:[function(require,module,exports){
+},{}],322:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -77256,7 +77286,7 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"./isDefiningProjection":320}],322:[function(require,module,exports){
+},{"./isDefiningProjection":321}],323:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -77436,7 +77466,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":331}],323:[function(require,module,exports){
+},{"./utils":332}],324:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -78278,7 +78308,7 @@ function _checkManualPopulation(arr, docs) {
 module.exports = exports = MongooseArray;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"../document":266,"../options":293,"../services/document/cleanModifiedSubpaths":316,"../utils":331,"./embedded":327,"./objectid":329}],324:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"../document":267,"../options":294,"../services/document/cleanModifiedSubpaths":317,"../utils":332,"./embedded":328,"./objectid":330}],325:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -78577,7 +78607,7 @@ MongooseBuffer.Binary = Binary;
 module.exports = MongooseBuffer;
 
 }).call(this,require("buffer").Buffer)
-},{"../drivers":273,"../utils":331,"buffer":141}],325:[function(require,module,exports){
+},{"../drivers":274,"../utils":332,"buffer":142}],326:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -78590,7 +78620,7 @@ module.exports = MongooseBuffer;
 
 module.exports = require('../drivers').Decimal128;
 
-},{"../drivers":273}],326:[function(require,module,exports){
+},{"../drivers":274}],327:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -78877,7 +78907,7 @@ MongooseDocumentArray.mixin = {
 module.exports = MongooseDocumentArray;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":198,"../document":266,"../options":293,"../schema/objectid":307,"../utils":331,"./array":323,"./objectid":329}],327:[function(require,module,exports){
+},{"../../../is-buffer/index.js":199,"../document":267,"../options":294,"../schema/objectid":308,"../utils":332,"./array":324,"./objectid":330}],328:[function(require,module,exports){
 /* eslint no-func-assign: 1 */
 
 /*!
@@ -79263,7 +79293,7 @@ EmbeddedDocument.prototype.parentArray = function() {
 
 module.exports = EmbeddedDocument;
 
-},{"../document_provider":267,"../options":293,"../utils":331,"events":179}],328:[function(require,module,exports){
+},{"../document_provider":268,"../options":294,"../utils":332,"events":180}],329:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -79281,7 +79311,7 @@ exports.ObjectId = require('./objectid');
 
 exports.Subdocument = require('./subdocument');
 
-},{"./array":323,"./buffer":324,"./decimal128":325,"./documentarray":326,"./embedded":327,"./objectid":329,"./subdocument":330}],329:[function(require,module,exports){
+},{"./array":324,"./buffer":325,"./decimal128":326,"./documentarray":327,"./embedded":328,"./objectid":330,"./subdocument":331}],330:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -79296,7 +79326,7 @@ var ObjectId = require('../drivers').ObjectId;
 
 module.exports = ObjectId;
 
-},{"../drivers":273}],330:[function(require,module,exports){
+},{"../drivers":274}],331:[function(require,module,exports){
 'use strict';
 
 var Document = require('../document');
@@ -79495,7 +79525,7 @@ function registerRemoveListener(sub) {
   owner.on('remove', emitRemove);
 }
 
-},{"../document":266,"../options":293,"../utils":331}],331:[function(require,module,exports){
+},{"../document":267,"../options":294,"../utils":332}],332:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -80321,7 +80351,7 @@ exports.immediate = function immediate(cb) {
 exports.noop = function() {};
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"./document":266,"./promise_provider":295,"./types":328,"./types/decimal128":325,"./types/objectid":329,"_process":369,"buffer":141,"mpath":333,"ms":344,"regexp-clone":395,"sliced":409}],332:[function(require,module,exports){
+},{"./document":267,"./promise_provider":296,"./types":329,"./types/decimal128":326,"./types/objectid":330,"_process":370,"buffer":142,"mpath":334,"ms":345,"regexp-clone":396,"sliced":410}],333:[function(require,module,exports){
 
 /**
  * VirtualType constructor
@@ -80426,10 +80456,10 @@ VirtualType.prototype.applySetters = function(value, scope) {
 
 module.exports = VirtualType;
 
-},{}],333:[function(require,module,exports){
+},{}],334:[function(require,module,exports){
 module.exports = exports = require('./lib');
 
-},{"./lib":334}],334:[function(require,module,exports){
+},{"./lib":335}],335:[function(require,module,exports){
 /**
  * Returns the value of object `o` at the given `path`.
  *
@@ -80706,7 +80736,7 @@ function K (v) {
   return v;
 }
 
-},{}],335:[function(require,module,exports){
+},{}],336:[function(require,module,exports){
 'use strict';
 
 /**
@@ -80754,7 +80784,7 @@ function notImplemented (method) {
   }
 }
 
-},{}],336:[function(require,module,exports){
+},{}],337:[function(require,module,exports){
 'use strict';
 
 var env = require('../env')
@@ -80769,7 +80799,7 @@ module.exports =
   require('./collection');
 
 
-},{"../env":338,"./collection":335,"./node":337}],337:[function(require,module,exports){
+},{"../env":339,"./collection":336,"./node":338}],338:[function(require,module,exports){
 'use strict';
 
 /**
@@ -80922,7 +80952,7 @@ NodeCollection.prototype.findCursor = function(match, findOptions) {
 
 module.exports = exports = NodeCollection;
 
-},{"../utils":341,"./collection":335}],338:[function(require,module,exports){
+},{"../utils":342,"./collection":336}],339:[function(require,module,exports){
 (function (process,global,Buffer){
 'use strict';
 
@@ -80948,7 +80978,7 @@ exports.type = exports.isNode ? 'node'
   : 'unknown'
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":369,"buffer":141}],339:[function(require,module,exports){
+},{"_process":370,"buffer":142}],340:[function(require,module,exports){
 'use strict';
 
 /**
@@ -83991,7 +84021,7 @@ module.exports = exports = Query;
 // TODO
 // test utils
 
-},{"./collection":336,"./collection/collection":335,"./env":338,"./permissions":340,"./utils":341,"assert":85,"bluebird":87,"debug":151,"sliced":342,"util":417}],340:[function(require,module,exports){
+},{"./collection":337,"./collection/collection":336,"./env":339,"./permissions":341,"./utils":342,"assert":86,"bluebird":88,"debug":152,"sliced":343,"util":418}],341:[function(require,module,exports){
 'use strict';
 
 var denied = exports;
@@ -84081,7 +84111,7 @@ denied.count.maxScan =
 denied.count.snapshot =
 denied.count.tailable = true;
 
-},{}],341:[function(require,module,exports){
+},{}],342:[function(require,module,exports){
 (function (process,Buffer){
 'use strict';
 
@@ -84405,10 +84435,10 @@ exports.isArgumentsObject = function(v) {
 };
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":369,"buffer":141,"regexp-clone":395}],342:[function(require,module,exports){
+},{"_process":370,"buffer":142,"regexp-clone":396}],343:[function(require,module,exports){
 module.exports = exports = require('./lib/sliced');
 
-},{"./lib/sliced":343}],343:[function(require,module,exports){
+},{"./lib/sliced":344}],344:[function(require,module,exports){
 
 /**
  * An Array.prototype.slice.call(arguments) alternative
@@ -84443,7 +84473,7 @@ module.exports = function (args, slice, sliceEnd) {
 }
 
 
-},{}],344:[function(require,module,exports){
+},{}],345:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -84597,7 +84627,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],345:[function(require,module,exports){
+},{}],346:[function(require,module,exports){
 exports.endianness = function () { return 'LE' };
 
 exports.hostname = function () {
@@ -84648,7 +84678,7 @@ exports.homedir = function () {
 	return '/'
 };
 
-},{}],346:[function(require,module,exports){
+},{}],347:[function(require,module,exports){
 'use strict';
 
 
@@ -84755,7 +84785,7 @@ exports.setTyped = function (on) {
 
 exports.setTyped(TYPED_OK);
 
-},{}],347:[function(require,module,exports){
+},{}],348:[function(require,module,exports){
 'use strict';
 
 // Note: adler32 takes 12% for level 0 and 2% for level 6.
@@ -84808,7 +84838,7 @@ function adler32(adler, buf, len, pos) {
 
 module.exports = adler32;
 
-},{}],348:[function(require,module,exports){
+},{}],349:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -84878,7 +84908,7 @@ module.exports = {
   //Z_NULL:                 null // Use -1 or null inline, depending on var type
 };
 
-},{}],349:[function(require,module,exports){
+},{}],350:[function(require,module,exports){
 'use strict';
 
 // Note: we can't get significant speed boost here.
@@ -84939,7 +84969,7 @@ function crc32(crc, buf, len, pos) {
 
 module.exports = crc32;
 
-},{}],350:[function(require,module,exports){
+},{}],351:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -86815,7 +86845,7 @@ exports.deflatePrime = deflatePrime;
 exports.deflateTune = deflateTune;
 */
 
-},{"../utils/common":346,"./adler32":347,"./crc32":349,"./messages":354,"./trees":355}],351:[function(require,module,exports){
+},{"../utils/common":347,"./adler32":348,"./crc32":350,"./messages":355,"./trees":356}],352:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -87162,7 +87192,7 @@ module.exports = function inflate_fast(strm, start) {
   return;
 };
 
-},{}],352:[function(require,module,exports){
+},{}],353:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -88720,7 +88750,7 @@ exports.inflateSyncPoint = inflateSyncPoint;
 exports.inflateUndermine = inflateUndermine;
 */
 
-},{"../utils/common":346,"./adler32":347,"./crc32":349,"./inffast":351,"./inftrees":353}],353:[function(require,module,exports){
+},{"../utils/common":347,"./adler32":348,"./crc32":350,"./inffast":352,"./inftrees":354}],354:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -89065,7 +89095,7 @@ module.exports = function inflate_table(type, lens, lens_index, codes, table, ta
   return 0;
 };
 
-},{"../utils/common":346}],354:[function(require,module,exports){
+},{"../utils/common":347}],355:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -89099,7 +89129,7 @@ module.exports = {
   '-6':   'incompatible version' /* Z_VERSION_ERROR (-6) */
 };
 
-},{}],355:[function(require,module,exports){
+},{}],356:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -90321,7 +90351,7 @@ exports._tr_flush_block  = _tr_flush_block;
 exports._tr_tally = _tr_tally;
 exports._tr_align = _tr_align;
 
-},{"../utils/common":346}],356:[function(require,module,exports){
+},{"../utils/common":347}],357:[function(require,module,exports){
 'use strict';
 
 // (C) 1995-2013 Jean-loup Gailly and Mark Adler
@@ -90370,7 +90400,7 @@ function ZStream() {
 
 module.exports = ZStream;
 
-},{}],357:[function(require,module,exports){
+},{}],358:[function(require,module,exports){
 module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.2": "aes-128-cbc",
 "2.16.840.1.101.3.4.1.3": "aes-128-ofb",
@@ -90384,7 +90414,7 @@ module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.43": "aes-256-ofb",
 "2.16.840.1.101.3.4.1.44": "aes-256-cfb"
 }
-},{}],358:[function(require,module,exports){
+},{}],359:[function(require,module,exports){
 // from https://github.com/indutny/self-signed/blob/gh-pages/lib/asn1.js
 // Fedor, you are amazing.
 'use strict'
@@ -90508,7 +90538,7 @@ exports.signature = asn1.define('signature', function () {
   )
 })
 
-},{"./certificate":359,"asn1.js":71}],359:[function(require,module,exports){
+},{"./certificate":360,"asn1.js":72}],360:[function(require,module,exports){
 // from https://github.com/Rantanen/node-dtls/blob/25a7dc861bda38cfeac93a723500eea4f0ac2e86/Certificate.js
 // thanks to @Rantanen
 
@@ -90598,7 +90628,7 @@ var X509Certificate = asn.define('X509Certificate', function () {
 
 module.exports = X509Certificate
 
-},{"asn1.js":71}],360:[function(require,module,exports){
+},{"asn1.js":72}],361:[function(require,module,exports){
 (function (Buffer){
 // adapted from https://github.com/apatil/pemstrip
 var findProc = /Proc-Type: 4,ENCRYPTED\n\r?DEK-Info: AES-((?:128)|(?:192)|(?:256))-CBC,([0-9A-H]+)\n\r?\n\r?([0-9A-z\n\r\+\/\=]+)\n\r?/m
@@ -90632,7 +90662,7 @@ module.exports = function (okey, password) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"browserify-aes":93,"buffer":141,"evp_bytestokey":180}],361:[function(require,module,exports){
+},{"browserify-aes":94,"buffer":142,"evp_bytestokey":181}],362:[function(require,module,exports){
 (function (Buffer){
 var asn1 = require('./asn1')
 var aesid = require('./aesid.json')
@@ -90742,7 +90772,7 @@ function decrypt (data, password) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./aesid.json":357,"./asn1":358,"./fixProc":360,"browserify-aes":93,"buffer":141,"pbkdf2":363}],362:[function(require,module,exports){
+},{"./aesid.json":358,"./asn1":359,"./fixProc":361,"browserify-aes":94,"buffer":142,"pbkdf2":364}],363:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -90970,13 +91000,13 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":369}],363:[function(require,module,exports){
+},{"_process":370}],364:[function(require,module,exports){
 
 exports.pbkdf2 = require('./lib/async')
 
 exports.pbkdf2Sync = require('./lib/sync')
 
-},{"./lib/async":364,"./lib/sync":367}],364:[function(require,module,exports){
+},{"./lib/async":365,"./lib/sync":368}],365:[function(require,module,exports){
 (function (process,global){
 var checkParameters = require('./precondition')
 var defaultEncoding = require('./default-encoding')
@@ -91078,7 +91108,7 @@ module.exports = function (password, salt, iterations, keylen, digest, callback)
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./default-encoding":365,"./precondition":366,"./sync":367,"_process":369,"safe-buffer":399}],365:[function(require,module,exports){
+},{"./default-encoding":366,"./precondition":367,"./sync":368,"_process":370,"safe-buffer":400}],366:[function(require,module,exports){
 (function (process){
 var defaultEncoding
 /* istanbul ignore next */
@@ -91092,7 +91122,7 @@ if (process.browser) {
 module.exports = defaultEncoding
 
 }).call(this,require('_process'))
-},{"_process":369}],366:[function(require,module,exports){
+},{"_process":370}],367:[function(require,module,exports){
 var MAX_ALLOC = Math.pow(2, 30) - 1 // default in iojs
 module.exports = function (iterations, keylen) {
   if (typeof iterations !== 'number') {
@@ -91112,7 +91142,7 @@ module.exports = function (iterations, keylen) {
   }
 }
 
-},{}],367:[function(require,module,exports){
+},{}],368:[function(require,module,exports){
 var md5 = require('create-hash/md5')
 var rmd160 = require('ripemd160')
 var sha = require('sha.js')
@@ -91215,7 +91245,7 @@ function pbkdf2 (password, salt, iterations, keylen, digest) {
 
 module.exports = pbkdf2
 
-},{"./default-encoding":365,"./precondition":366,"create-hash/md5":147,"ripemd160":398,"safe-buffer":399,"sha.js":402}],368:[function(require,module,exports){
+},{"./default-encoding":366,"./precondition":367,"create-hash/md5":148,"ripemd160":399,"safe-buffer":400,"sha.js":403}],369:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -91263,7 +91293,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 }).call(this,require('_process'))
-},{"_process":369}],369:[function(require,module,exports){
+},{"_process":370}],370:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -91449,7 +91479,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],370:[function(require,module,exports){
+},{}],371:[function(require,module,exports){
 exports.publicEncrypt = require('./publicEncrypt');
 exports.privateDecrypt = require('./privateDecrypt');
 
@@ -91460,7 +91490,7 @@ exports.privateEncrypt = function privateEncrypt(key, buf) {
 exports.publicDecrypt = function publicDecrypt(key, buf) {
   return exports.privateDecrypt(key, buf, true);
 };
-},{"./privateDecrypt":372,"./publicEncrypt":373}],371:[function(require,module,exports){
+},{"./privateDecrypt":373,"./publicEncrypt":374}],372:[function(require,module,exports){
 (function (Buffer){
 var createHash = require('create-hash');
 module.exports = function (seed, len) {
@@ -91479,7 +91509,7 @@ function i2ops(c) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"create-hash":145}],372:[function(require,module,exports){
+},{"buffer":142,"create-hash":146}],373:[function(require,module,exports){
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var mgf = require('./mgf');
@@ -91590,7 +91620,7 @@ function compare(a, b){
   return dif;
 }
 }).call(this,require("buffer").Buffer)
-},{"./mgf":371,"./withPublic":374,"./xor":375,"bn.js":88,"browserify-rsa":111,"buffer":141,"create-hash":145,"parse-asn1":361}],373:[function(require,module,exports){
+},{"./mgf":372,"./withPublic":375,"./xor":376,"bn.js":89,"browserify-rsa":112,"buffer":142,"create-hash":146,"parse-asn1":362}],374:[function(require,module,exports){
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var randomBytes = require('randombytes');
@@ -91688,7 +91718,7 @@ function nonZero(len, crypto) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
-},{"./mgf":371,"./withPublic":374,"./xor":375,"bn.js":88,"browserify-rsa":111,"buffer":141,"create-hash":145,"parse-asn1":361,"randombytes":380}],374:[function(require,module,exports){
+},{"./mgf":372,"./withPublic":375,"./xor":376,"bn.js":89,"browserify-rsa":112,"buffer":142,"create-hash":146,"parse-asn1":362,"randombytes":381}],375:[function(require,module,exports){
 (function (Buffer){
 var bn = require('bn.js');
 function withPublic(paddedMsg, key) {
@@ -91701,7 +91731,7 @@ function withPublic(paddedMsg, key) {
 
 module.exports = withPublic;
 }).call(this,require("buffer").Buffer)
-},{"bn.js":88,"buffer":141}],375:[function(require,module,exports){
+},{"bn.js":89,"buffer":142}],376:[function(require,module,exports){
 module.exports = function xor(a, b) {
   var len = a.length;
   var i = -1;
@@ -91710,7 +91740,7 @@ module.exports = function xor(a, b) {
   }
   return a
 };
-},{}],376:[function(require,module,exports){
+},{}],377:[function(require,module,exports){
 (function (global){
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 ;(function(root) {
@@ -92247,7 +92277,7 @@ module.exports = function xor(a, b) {
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],377:[function(require,module,exports){
+},{}],378:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92333,7 +92363,7 @@ var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-},{}],378:[function(require,module,exports){
+},{}],379:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92420,13 +92450,13 @@ var objectKeys = Object.keys || function (obj) {
   return res;
 };
 
-},{}],379:[function(require,module,exports){
+},{}],380:[function(require,module,exports){
 'use strict';
 
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
-},{"./decode":377,"./encode":378}],380:[function(require,module,exports){
+},{"./decode":378,"./encode":379}],381:[function(require,module,exports){
 (function (process,global){
 'use strict'
 
@@ -92468,7 +92498,7 @@ function randomBytes (size, cb) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":369,"safe-buffer":399}],381:[function(require,module,exports){
+},{"_process":370,"safe-buffer":400}],382:[function(require,module,exports){
 (function (process,global){
 'use strict'
 
@@ -92580,10 +92610,10 @@ function randomFillSync (buf, offset, size) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":369,"randombytes":380,"safe-buffer":399}],382:[function(require,module,exports){
+},{"_process":370,"randombytes":381,"safe-buffer":400}],383:[function(require,module,exports){
 module.exports = require('./lib/_stream_duplex.js');
 
-},{"./lib/_stream_duplex.js":383}],383:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":384}],384:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92614,7 +92644,7 @@ module.exports = require('./lib/_stream_duplex.js');
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 /*<replacement>*/
@@ -92668,7 +92698,7 @@ function onend() {
 
   // no more data can be written.
   // But allow more writes to happen in this tick.
-  pna.nextTick(onEndNT, this);
+  processNextTick(onEndNT, this);
 }
 
 function onEndNT(self) {
@@ -92700,7 +92730,7 @@ Duplex.prototype._destroy = function (err, cb) {
   this.push(null);
   this.end();
 
-  pna.nextTick(cb, err);
+  processNextTick(cb, err);
 };
 
 function forEach(xs, f) {
@@ -92708,7 +92738,7 @@ function forEach(xs, f) {
     f(xs[i], i);
   }
 }
-},{"./_stream_readable":385,"./_stream_writable":387,"core-util-is":143,"inherits":197,"process-nextick-args":368}],384:[function(require,module,exports){
+},{"./_stream_readable":386,"./_stream_writable":388,"core-util-is":144,"inherits":198,"process-nextick-args":369}],385:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -92756,7 +92786,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":386,"core-util-is":143,"inherits":197}],385:[function(require,module,exports){
+},{"./_stream_transform":387,"core-util-is":144,"inherits":198}],386:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -92783,7 +92813,7 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 module.exports = Readable;
@@ -93255,7 +93285,7 @@ function emitReadable(stream) {
   if (!state.emittedReadable) {
     debug('emitReadable', state.flowing);
     state.emittedReadable = true;
-    if (state.sync) pna.nextTick(emitReadable_, stream);else emitReadable_(stream);
+    if (state.sync) processNextTick(emitReadable_, stream);else emitReadable_(stream);
   }
 }
 
@@ -93274,7 +93304,7 @@ function emitReadable_(stream) {
 function maybeReadMore(stream, state) {
   if (!state.readingMore) {
     state.readingMore = true;
-    pna.nextTick(maybeReadMore_, stream, state);
+    processNextTick(maybeReadMore_, stream, state);
   }
 }
 
@@ -93319,7 +93349,7 @@ Readable.prototype.pipe = function (dest, pipeOpts) {
   var doEnd = (!pipeOpts || pipeOpts.end !== false) && dest !== process.stdout && dest !== process.stderr;
 
   var endFn = doEnd ? onend : unpipe;
-  if (state.endEmitted) pna.nextTick(endFn);else src.once('end', endFn);
+  if (state.endEmitted) processNextTick(endFn);else src.once('end', endFn);
 
   dest.on('unpipe', onunpipe);
   function onunpipe(readable, unpipeInfo) {
@@ -93509,7 +93539,7 @@ Readable.prototype.on = function (ev, fn) {
       state.readableListening = state.needReadable = true;
       state.emittedReadable = false;
       if (!state.reading) {
-        pna.nextTick(nReadingNextTick, this);
+        processNextTick(nReadingNextTick, this);
       } else if (state.length) {
         emitReadable(this);
       }
@@ -93540,7 +93570,7 @@ Readable.prototype.resume = function () {
 function resume(stream, state) {
   if (!state.resumeScheduled) {
     state.resumeScheduled = true;
-    pna.nextTick(resume_, stream, state);
+    processNextTick(resume_, stream, state);
   }
 }
 
@@ -93748,7 +93778,7 @@ function endReadable(stream) {
 
   if (!state.endEmitted) {
     state.ended = true;
-    pna.nextTick(endReadableNT, state, stream);
+    processNextTick(endReadableNT, state, stream);
   }
 }
 
@@ -93774,7 +93804,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":383,"./internal/streams/BufferList":388,"./internal/streams/destroy":389,"./internal/streams/stream":390,"_process":369,"core-util-is":143,"events":179,"inherits":197,"isarray":199,"process-nextick-args":368,"safe-buffer":399,"string_decoder/":411,"util":90}],386:[function(require,module,exports){
+},{"./_stream_duplex":384,"./internal/streams/BufferList":389,"./internal/streams/destroy":390,"./internal/streams/stream":391,"_process":370,"core-util-is":144,"events":180,"inherits":198,"isarray":200,"process-nextick-args":369,"safe-buffer":400,"string_decoder/":412,"util":91}],387:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -93989,7 +94019,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":383,"core-util-is":143,"inherits":197}],387:[function(require,module,exports){
+},{"./_stream_duplex":384,"core-util-is":144,"inherits":198}],388:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -94020,7 +94050,7 @@ function done(stream, er, data) {
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 module.exports = Writable;
@@ -94047,7 +94077,7 @@ function CorkedRequest(state) {
 /* </replacement> */
 
 /*<replacement>*/
-var asyncWrite = !process.browser && ['v0.10', 'v0.9.'].indexOf(process.version.slice(0, 5)) > -1 ? setImmediate : pna.nextTick;
+var asyncWrite = !process.browser && ['v0.10', 'v0.9.'].indexOf(process.version.slice(0, 5)) > -1 ? setImmediate : processNextTick;
 /*</replacement>*/
 
 /*<replacement>*/
@@ -94281,7 +94311,7 @@ function writeAfterEnd(stream, cb) {
   var er = new Error('write after end');
   // TODO: defer error events consistently everywhere, not just the cb
   stream.emit('error', er);
-  pna.nextTick(cb, er);
+  processNextTick(cb, er);
 }
 
 // Checks that a user-supplied chunk is valid, especially for the particular
@@ -94298,7 +94328,7 @@ function validChunk(stream, state, chunk, cb) {
   }
   if (er) {
     stream.emit('error', er);
-    pna.nextTick(cb, er);
+    processNextTick(cb, er);
     valid = false;
   }
   return valid;
@@ -94418,10 +94448,10 @@ function onwriteError(stream, state, sync, er, cb) {
   if (sync) {
     // defer the callback if we are being called synchronously
     // to avoid piling up things on the stack
-    pna.nextTick(cb, er);
+    processNextTick(cb, er);
     // this can emit finish, and it will always happen
     // after error
-    pna.nextTick(finishMaybe, stream, state);
+    processNextTick(finishMaybe, stream, state);
     stream._writableState.errorEmitted = true;
     stream.emit('error', er);
   } else {
@@ -94596,7 +94626,7 @@ function prefinish(stream, state) {
     if (typeof stream._final === 'function') {
       state.pendingcb++;
       state.finalCalled = true;
-      pna.nextTick(callFinal, stream, state);
+      processNextTick(callFinal, stream, state);
     } else {
       state.prefinished = true;
       stream.emit('prefinish');
@@ -94620,7 +94650,7 @@ function endWritable(stream, state, cb) {
   state.ending = true;
   finishMaybe(stream, state);
   if (cb) {
-    if (state.finished) pna.nextTick(cb);else stream.once('finish', cb);
+    if (state.finished) processNextTick(cb);else stream.once('finish', cb);
   }
   state.ended = true;
   stream.writable = false;
@@ -94669,7 +94699,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":383,"./internal/streams/destroy":389,"./internal/streams/stream":390,"_process":369,"core-util-is":143,"inherits":197,"process-nextick-args":368,"safe-buffer":399,"util-deprecate":414}],388:[function(require,module,exports){
+},{"./_stream_duplex":384,"./internal/streams/destroy":390,"./internal/streams/stream":391,"_process":370,"core-util-is":144,"inherits":198,"process-nextick-args":369,"safe-buffer":400,"util-deprecate":415}],389:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -94749,12 +94779,12 @@ if (util && util.inspect && util.inspect.custom) {
     return this.constructor.name + ' ' + obj;
   };
 }
-},{"safe-buffer":399,"util":90}],389:[function(require,module,exports){
+},{"safe-buffer":400,"util":91}],390:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
 
-var pna = require('process-nextick-args');
+var processNextTick = require('process-nextick-args').nextTick;
 /*</replacement>*/
 
 // undocumented cb() API, needed for core, not for public API
@@ -94768,7 +94798,7 @@ function destroy(err, cb) {
     if (cb) {
       cb(err);
     } else if (err && (!this._writableState || !this._writableState.errorEmitted)) {
-      pna.nextTick(emitErrorNT, this, err);
+      processNextTick(emitErrorNT, this, err);
     }
     return this;
   }
@@ -94787,7 +94817,7 @@ function destroy(err, cb) {
 
   this._destroy(err || null, function (err) {
     if (!cb && err) {
-      pna.nextTick(emitErrorNT, _this, err);
+      processNextTick(emitErrorNT, _this, err);
       if (_this._writableState) {
         _this._writableState.errorEmitted = true;
       }
@@ -94824,13 +94854,13 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":368}],390:[function(require,module,exports){
+},{"process-nextick-args":369}],391:[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":179}],391:[function(require,module,exports){
+},{"events":180}],392:[function(require,module,exports){
 module.exports = require('./readable').PassThrough
 
-},{"./readable":392}],392:[function(require,module,exports){
+},{"./readable":393}],393:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -94839,13 +94869,13 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":383,"./lib/_stream_passthrough.js":384,"./lib/_stream_readable.js":385,"./lib/_stream_transform.js":386,"./lib/_stream_writable.js":387}],393:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":384,"./lib/_stream_passthrough.js":385,"./lib/_stream_readable.js":386,"./lib/_stream_transform.js":387,"./lib/_stream_writable.js":388}],394:[function(require,module,exports){
 module.exports = require('./readable').Transform
 
-},{"./readable":392}],394:[function(require,module,exports){
+},{"./readable":393}],395:[function(require,module,exports){
 module.exports = require('./lib/_stream_writable.js');
 
-},{"./lib/_stream_writable.js":387}],395:[function(require,module,exports){
+},{"./lib/_stream_writable.js":388}],396:[function(require,module,exports){
 
 var toString = Object.prototype.toString;
 
@@ -94867,7 +94897,7 @@ module.exports = exports = function (regexp) {
 }
 
 
-},{}],396:[function(require,module,exports){
+},{}],397:[function(require,module,exports){
 (function (process){
 var path = require('path'),
   fs = require('fs'),
@@ -94999,7 +95029,7 @@ require_optional.exists = function(name) {
 module.exports = require_optional;
 
 }).call(this,require('_process'))
-},{"_process":369,"fs":120,"path":362,"resolve-from":397,"semver":400,"util":417}],397:[function(require,module,exports){
+},{"_process":370,"fs":121,"path":363,"resolve-from":398,"semver":401,"util":418}],398:[function(require,module,exports){
 'use strict';
 var path = require('path');
 var Module = require('module');
@@ -95024,7 +95054,7 @@ module.exports = function (fromDir, moduleId) {
 	}
 };
 
-},{"module":120,"path":362}],398:[function(require,module,exports){
+},{"module":121,"path":363}],399:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -95319,7 +95349,7 @@ function fn5 (a, b, c, d, e, m, k, s) {
 module.exports = RIPEMD160
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":141,"hash-base":181,"inherits":197}],399:[function(require,module,exports){
+},{"buffer":142,"hash-base":182,"inherits":198}],400:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -95383,7 +95413,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":141}],400:[function(require,module,exports){
+},{"buffer":142}],401:[function(require,module,exports){
 (function (process){
 exports = module.exports = SemVer;
 
@@ -96711,7 +96741,7 @@ function coerce(version) {
 }
 
 }).call(this,require('_process'))
-},{"_process":369}],401:[function(require,module,exports){
+},{"_process":370}],402:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 // prototype class for hash functions
@@ -96794,7 +96824,7 @@ Hash.prototype._update = function () {
 
 module.exports = Hash
 
-},{"safe-buffer":399}],402:[function(require,module,exports){
+},{"safe-buffer":400}],403:[function(require,module,exports){
 var exports = module.exports = function SHA (algorithm) {
   algorithm = algorithm.toLowerCase()
 
@@ -96811,7 +96841,7 @@ exports.sha256 = require('./sha256')
 exports.sha384 = require('./sha384')
 exports.sha512 = require('./sha512')
 
-},{"./sha":403,"./sha1":404,"./sha224":405,"./sha256":406,"./sha384":407,"./sha512":408}],403:[function(require,module,exports){
+},{"./sha":404,"./sha1":405,"./sha224":406,"./sha256":407,"./sha384":408,"./sha512":409}],404:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
  * in FIPS PUB 180-1
@@ -96907,7 +96937,7 @@ Sha.prototype._hash = function () {
 
 module.exports = Sha
 
-},{"./hash":401,"inherits":197,"safe-buffer":399}],404:[function(require,module,exports){
+},{"./hash":402,"inherits":198,"safe-buffer":400}],405:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
  * in FIPS PUB 180-1
@@ -97008,7 +97038,7 @@ Sha1.prototype._hash = function () {
 
 module.exports = Sha1
 
-},{"./hash":401,"inherits":197,"safe-buffer":399}],405:[function(require,module,exports){
+},{"./hash":402,"inherits":198,"safe-buffer":400}],406:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97063,7 +97093,7 @@ Sha224.prototype._hash = function () {
 
 module.exports = Sha224
 
-},{"./hash":401,"./sha256":406,"inherits":197,"safe-buffer":399}],406:[function(require,module,exports){
+},{"./hash":402,"./sha256":407,"inherits":198,"safe-buffer":400}],407:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97200,7 +97230,7 @@ Sha256.prototype._hash = function () {
 
 module.exports = Sha256
 
-},{"./hash":401,"inherits":197,"safe-buffer":399}],407:[function(require,module,exports){
+},{"./hash":402,"inherits":198,"safe-buffer":400}],408:[function(require,module,exports){
 var inherits = require('inherits')
 var SHA512 = require('./sha512')
 var Hash = require('./hash')
@@ -97259,7 +97289,7 @@ Sha384.prototype._hash = function () {
 
 module.exports = Sha384
 
-},{"./hash":401,"./sha512":408,"inherits":197,"safe-buffer":399}],408:[function(require,module,exports){
+},{"./hash":402,"./sha512":409,"inherits":198,"safe-buffer":400}],409:[function(require,module,exports){
 var inherits = require('inherits')
 var Hash = require('./hash')
 var Buffer = require('safe-buffer').Buffer
@@ -97521,9 +97551,9 @@ Sha512.prototype._hash = function () {
 
 module.exports = Sha512
 
-},{"./hash":401,"inherits":197,"safe-buffer":399}],409:[function(require,module,exports){
-arguments[4][343][0].apply(exports,arguments)
-},{"dup":343}],410:[function(require,module,exports){
+},{"./hash":402,"inherits":198,"safe-buffer":400}],410:[function(require,module,exports){
+arguments[4][344][0].apply(exports,arguments)
+},{"dup":344}],411:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -97652,7 +97682,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":179,"inherits":197,"readable-stream/duplex.js":382,"readable-stream/passthrough.js":391,"readable-stream/readable.js":392,"readable-stream/transform.js":393,"readable-stream/writable.js":394}],411:[function(require,module,exports){
+},{"events":180,"inherits":198,"readable-stream/duplex.js":383,"readable-stream/passthrough.js":392,"readable-stream/readable.js":393,"readable-stream/transform.js":394,"readable-stream/writable.js":395}],412:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -97925,7 +97955,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":399}],412:[function(require,module,exports){
+},{"safe-buffer":400}],413:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -98659,7 +98689,7 @@ Url.prototype.parseHost = function() {
   if (host) this.hostname = host;
 };
 
-},{"./util":413,"punycode":376,"querystring":379}],413:[function(require,module,exports){
+},{"./util":414,"punycode":377,"querystring":380}],414:[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -98677,7 +98707,7 @@ module.exports = {
   }
 };
 
-},{}],414:[function(require,module,exports){
+},{}],415:[function(require,module,exports){
 (function (global){
 
 /**
@@ -98748,16 +98778,16 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],415:[function(require,module,exports){
-arguments[4][197][0].apply(exports,arguments)
-},{"dup":197}],416:[function(require,module,exports){
+},{}],416:[function(require,module,exports){
+arguments[4][198][0].apply(exports,arguments)
+},{"dup":198}],417:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],417:[function(require,module,exports){
+},{}],418:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -99347,7 +99377,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":416,"_process":369,"inherits":415}],418:[function(require,module,exports){
+},{"./support/isBuffer":417,"_process":370,"inherits":416}],419:[function(require,module,exports){
 var indexOf = require('indexof');
 
 var Object_keys = function (obj) {
@@ -99487,4 +99517,4 @@ exports.createContext = Script.createContext = function (context) {
     return copy;
 };
 
-},{"indexof":196}]},{},[70]);
+},{"indexof":197}]},{},[71]);
