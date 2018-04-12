@@ -4,17 +4,17 @@ module QDM
     attr_reader :code, :code_system, :descriptor, :code_system_oid, :version
 
     # Code and code system are required (at minimum).
-    def initialize(code, code_system, descriptor = nil, code_system_oid = nil, version = nil)
+    def initialize(code, codeSystem, descriptor = nil, codeSystemOid = nil, version = nil)
       @code = code
-      @code_system = code_system
+      @codeSystem = codeSystem
       @descriptor = descriptor
-      @code_system_oid = code_system_oid
+      @codeSystemOid = codeSystemOid
       @version = version
     end
 
     # Converts an object of this instance into a database friendly value.
     def mongoize
-      { code: @code, code_system: @code_system, descriptor: @descriptor, code_system_oid: @code_system_oid, version: @version }
+      { code: @code, code_system: @codeSystem, descriptor: @descriptor, code_system_oid: @codeSystemOid, version: @version }
     end
 
     class << self

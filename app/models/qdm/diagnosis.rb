@@ -3,13 +3,13 @@ module QDM
   class Diagnosis < DataElement
     include Mongoid::Document
     embedded_in :patient
-    field :author_datetime, type: DateTime
-    field :prevalence_period, type: QDM::Interval
-    field :anatomical_location_site, type: QDM::Code
+    field :authorDatetime, type: DateTime
+    field :prevalencePeriod, type: QDM::Interval
+    field :anatomicalLocationSite, type: QDM::Code
     field :severity, type: QDM::Code
-    field :hqmf_oid, type: String, default: '2.16.840.1.113883.10.20.28.3.110'
-    field :qrda_oid, type: String, default: '2.16.840.1.113883.10.20.24.3.135'
+    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.110'
+    field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.135'
     field :category, type: String, default: 'condition'
-    field :qdm_version, type: String, default: '5.3'
+    field :qdmVersion, type: String, default: '5.3'
   end
 end

@@ -11,17 +11,17 @@ const [Number, String] = [
 ];
 
 const AssessmentPerformedSchema = DataElementSchema({
-  author_datetime: DateTime,
-  negation_rationale: Code,
+  authorDatetime: DateTime,
+  negationRationale: Code,
   reason: Code,
   method: Code,
   result: {},
   components: [],
-  related_to: [String],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
+  relatedTo: [String],
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
   category: { type: String, default: 'assessment' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'performed' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'AssessmentPerformed' },
 
 });

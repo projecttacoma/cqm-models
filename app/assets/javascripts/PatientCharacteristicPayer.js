@@ -11,11 +11,11 @@ const [Number, String] = [
 ];
 
 const PatientCharacteristicPayerSchema = DataElementSchema({
-  relevant_period: Interval,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.58' },
+  relevantPeriod: Interval,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.58' },
   category: { type: String, default: 'patient_characteristic' },
-  qdm_status: { type: String, default: 'payer' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'payer' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'PatientCharacteristicPayer' },
 
 });

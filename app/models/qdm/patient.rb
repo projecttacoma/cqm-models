@@ -2,190 +2,190 @@ module QDM
   # app/models/qdm/patient.rb
   class Patient < DataElement
     include Mongoid::Document
-    field :birth_datetime, type: DateTime
-    field :qdm_version, type: String, default: '5.3'
-    field :given_names, type: Array
-    field :family_name, type: String
-    field :bundle_id, type: String
+    field :birthDatetime, type: DateTime
+    field :qdmVersion, type: String, default: '5.3'
+    field :givenNames, type: Array
+    field :familyName, type: String
+    field :bundleId, type: String
 
     # These are the "data criteria", or QDM datatype elements that exist on a
     # patient.
-    embeds_many :data_elements
+    embeds_many :dataElements
 
     # This field is for application specific information only. If both Bonnie
     # Cypress use a common field, it should be made a field on this model,
-    # and not put into extended_data.
-    field :extended_data, type: Hash
+    # and not put into extendedData.
+    field :extendedData, type: Hash
 
     # Returns an array of elements that exist on this patient, that
     # match the given HQMF data criteria OID.
-    def get_by_hqmf_oid(hqmf_oid)
-      data_elements.where(hqmf_oid: hqmf_oid) || []
+    def get_by_hqmfOid(hqmfOid)
+      data_elements.where(hqmfOid: hqmfOid) || []
     end
 
     # Returns an array of elements that exist on this patient, that
     # match the given QRDA data criteria OID.
-    def get_by_qrda_oid(qrda_oid)
-      data_elements.where(qrda_oid: qrda_oid) || []
+    def get_by_qrdaOid(qrdaOid)
+      dataElements.where(qrdaOid: qrdaOid) || []
     end
 
     # Returns an array of elements that exist on this patient. Optionally
     # takes a category and/or, which returns all elements of that QDM
-    # category. Example: patient.get_data_elements('encounters')
+    # category. Example: patient.get_dataElements('encounters')
     # will return all Encounter QDM data types active on the patient.
-    def get_data_elements(category = nil, status = nil)
+    def get_dataElements(category = nil, status = nil)
       if category && status
-        data_elements.where(category: category, qdm_status: status) || []
+        dataElements.where(category: category, qdmStatus: status) || []
       elsif category
-        data_elements.where(category: category) || []
+        dataElements.where(category: category) || []
       else
-        data_elements || []
+        dataElements || []
       end
     end
 
-    # Helper method; returns adverse_event data element types on this patient.
-    def adverse_events
-      get_data_elements('adverse_event')
+    # Helper method; returns adverseEvent data element types on this patient.
+    def adverseEvents
+      get_dataElements('adverseEvent')
     end
 
     # Helper method; returns allergy data element types on this patient.
     def allergies
-      get_data_elements('allergy')
+      get_dataElements('allergy')
     end
 
     # Helper method; returns assessment data element types on this patient.
     def assessments
-      get_data_elements('assessment')
+      get_dataElements('assessment')
     end
 
-    # Helper method; returns care_experience data element types on this patient.
-    def care_experiences
-      get_data_elements('care_experience')
+    # Helper method; returns careExperience data element types on this patient.
+    def careExperiences
+      get_dataElements('careExperience')
     end
 
-    # Helper method; returns care_goal data element types on this patient.
-    def care_goals
-      get_data_elements('care_goal')
+    # Helper method; returns careGoal data element types on this patient.
+    def careGoals
+      get_dataElements('careGoal')
     end
 
     # Helper method; returns communication data element types on this patient.
     def communications
-      get_data_elements('communication')
+      get_dataElements('communication')
     end
 
     # Helper method; returns condition data element types on this patient.
     def conditions
-      get_data_elements('condition')
+      get_dataElements('condition')
     end
 
     # Helper method; returns device data element types on this patient.
     def devices
-      get_data_elements('device')
+      get_dataElements('device')
     end
 
-    # Helper method; returns diagnostic_study data element types on this patient.
-    def diagnostic_studies
-      get_data_elements('diagnostic_study')
+    # Helper method; returns diagnosticStudy data element types on this patient.
+    def diagnosticStudies
+      get_dataElements('diagnosticStudy')
     end
 
     # Helper method; returns encounter data element types on this patient.
     def encounters
-      get_data_elements('encounter')
+      get_dataElements('encounter')
     end
 
-    # Helper method; returns family_history data element types on this patient.
-    def family_history
-      get_data_elements('family_history')
+    # Helper method; returns familyHistory data element types on this patient.
+    def familyHistory
+      get_dataElements('familyHistory')
     end
 
-    # Helper method; returns functional_status data element types on this patient.
-    def functional_statuses
-      get_data_elements('functional_status')
+    # Helper method; returns functionalStatus data element types on this patient.
+    def functionalStatuses
+      get_dataElements('functionalStatus')
     end
 
     # Helper method; returns immunization data element types on this patient.
     def immunizations
-      get_data_elements('immunization')
+      get_dataElements('immunization')
     end
 
     # Helper method; returns intervention data element types on this patient.
     def interventions
-      get_data_elements('intervention')
+      get_dataElements('intervention')
     end
 
-    # Helper method; returns laboratory_test data element types on this patient.
-    def laboratory_tests
-      get_data_elements('laboratory_test')
+    # Helper method; returns laboratoryTest data element types on this patient.
+    def laboratoryTests
+      get_dataElements('laboratoryTest')
     end
 
-    # Helper method; returns medical_equipment data element types on this patient.
-    def medical_equipment
-      get_data_elements('medical_equipment')
+    # Helper method; returns medicalEquipment data element types on this patient.
+    def medicalEquipment
+      get_dataElements('medicalEquipment')
     end
 
     # Helper method; returns medication data element types on this patient.
     def medications
-      get_data_elements('medication')
+      get_dataElements('medication')
     end
 
-    # Helper method; returns physical_exam data element types on this patient.
+    # Helper method; returns physicalExam data element types on this patient.
     def physical_exams
-      get_data_elements('physical_exam')
+      get_dataElements('physicalExam')
     end
 
     # Helper method; returns preference data element types on this patient.
     def preferences
-      get_data_elements('preference')
+      get_dataElements('preference')
     end
 
-    # Helper method; returns provider_characteristic data element types on this patient.
-    def provider_characteristics
-      get_data_elements('provider_characteristic')
+    # Helper method; returns providerCharacteristic data element types on this patient.
+    def providerCharacteristics
+      get_dataElements('providerCharacteristic')
     end
 
     # Helper method; returns procedure data element types on this patient.
     def procedures
-      get_data_elements('procedure')
+      get_dataElements('procedure')
     end
 
     # Helper method; returns result data element types on this patient.
     def results
-      get_data_elements('result')
+      get_dataElements('result')
     end
 
-    # Helper method; returns risk_category_assessment data element types on this patient.
-    def risk_category_assessments
-      get_data_elements('risk_category_assessment')
+    # Helper method; returns riskCategoryAssessment data element types on this patient.
+    def riskCategoryAssessments
+      get_dataElements('riskCategoryAssessment')
     end
 
-    # Helper method; returns social_history data element types on this patient.
-    def social_history
-      get_data_elements('social_history')
+    # Helper method; returns socialHistory data element types on this patient.
+    def socialHistory
+      get_dataElements('socialHistory')
     end
 
     # Helper method; returns substance data element types on this patient.
     def substances
-      get_data_elements('substance')
+      get_dataElements('substance')
     end
 
     # Helper method; returns symptom data element types on this patient.
     def symptoms
-      get_data_elements('symptom')
+      get_dataElements('symptom')
     end
 
-    # Helper method; returns system_characteristic data element types on this patient.
-    def system_characteristics
-      get_data_elements('system_characteristic')
+    # Helper method; returns systemCharacteristic data element types on this patient.
+    def systemCharacteristics
+      get_dataElements('systemCharacteristic')
     end
 
     # Helper method; returns transfer data element types on this patient.
     def transfers
-      get_data_elements('transfer')
+      get_dataElements('transfer')
     end
 
-    # Helper method; returns vital_sign data element types on this patient.
-    def vital_signs
-      get_data_elements('vital_sign')
+    # Helper method; returns vitalSign data element types on this patient.
+    def vitalSigns
+      get_dataElements('vitalSign')
     end
   end
 end

@@ -11,14 +11,14 @@ const [Number, String] = [
 ];
 
 const DiagnosticStudyRecommendedSchema = DataElementSchema({
-  author_datetime: DateTime,
+  authorDatetime: DateTime,
   method: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.24' },
-  qrda_oid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
+  negationRationale: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.24' },
+  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
   category: { type: String, default: 'diagnostic_study' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'recommended' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'DiagnosticStudyRecommended' },
 
 });

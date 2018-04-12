@@ -11,20 +11,20 @@ const [Number, String] = [
 ];
 
 const LaboratoryTestPerformedSchema = DataElementSchema({
-  author_datetime: DateTime,
-  relevant_period: Interval,
+  authorDatetime: DateTime,
+  relevantPeriod: Interval,
   status: Code,
   method: Code,
   result: {},
-  result_datetime: DateTime,
+  resultDatetime: DateTime,
   reason: Code,
-  reference_range: Interval,
-  negation_rationale: Code,
+  referenceRange: Interval,
+  negationRationale: Code,
   components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.42' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.42' },
   category: { type: String, default: 'laboratory_test' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'performed' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'LaboratoryTestPerformed' },
 
 });

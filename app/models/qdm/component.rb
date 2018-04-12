@@ -5,6 +5,6 @@ module QDM
     embedded_in :patient
     field :code, type: QDM::Code
     field :result
-    field :qdm_version, type: String, default: '5.3'
+    field :qdmVersion, type: String, default: '5.3'
   end
 end

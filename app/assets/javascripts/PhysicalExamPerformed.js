@@ -11,18 +11,18 @@ const [Number, String] = [
 ];
 
 const PhysicalExamPerformedSchema = DataElementSchema({
-  author_datetime: DateTime,
-  relevant_period: Interval,
+  authorDatetime: DateTime,
+  relevantPeriod: Interval,
   reason: Code,
   method: Code,
   result: {},
-  anatomical_location_site: Code,
-  negation_rationale: Code,
+  anatomicalLocationSite: Code,
+  negationRationale: Code,
   components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.62' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.62' },
   category: { type: String, default: 'physical_exam' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'performed' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'PhysicalExamPerformed' },
 
 });

@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 const Code = require('./Code.js');
-const changeCase = require('change-case');
 
 const [Schema] = [mongoose.Schema];
 
 function DataElementSchema(add, options) {
   const extended = new Schema({
-    data_element_codes: { type: [Code] },
+    dataElementCodes: { type: [Code] },
     description: { type: String },
   }, options);
 
@@ -14,6 +13,7 @@ function DataElementSchema(add, options) {
     extended.add(add);
   }
 
+<<<<<<< f21885514e4c999d2f292e8f0c159f98547ea101
 <<<<<<< e2c5d196252348bbb6ef14a6f640a89e2015c9ef
 <<<<<<< 59e4f221ab323fc1cab7d471f402f47ed0bd68fb
   // TODO: REMOVE THIS. No longer needed after the change to camelCase
@@ -62,6 +62,8 @@ function DataElementSchema(add, options) {
 
 <<<<<<< e2c5d196252348bbb6ef14a6f640a89e2015c9ef
 <<<<<<< 59e4f221ab323fc1cab7d471f402f47ed0bd68fb
+=======
+>>>>>>> Revert the naming of everything related to the patient model from snake_case to camelCase
   // Returns all of the codes on this data element
   // in a format usable by the cql-execution framework
 =======
@@ -72,7 +74,7 @@ function DataElementSchema(add, options) {
   // in a format usable by the cql-execution framework
 >>>>>>> Added comments and revised Interval fields
   extended.methods.getCode = function getCode() {
-    return this.data_element_codes.map((code) => {
+    return this.dataElementCodes.map((code) => {
       const result = {};
       result.code = code.code;
       result.system = code.code_system;
@@ -92,7 +94,7 @@ function DataElementSchema(add, options) {
   // in their normal form.
 >>>>>>> Added comments and revised Interval fields
   extended.methods.codes = function getCodes() {
-    return this.data_element_codes;
+    return this.dataElementCodes;
   };
 
   return extended;

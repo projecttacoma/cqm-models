@@ -11,14 +11,14 @@ const [Number, String] = [
 ];
 
 const AdverseEventSchema = DataElementSchema({
-  author_datetime: DateTime,
-  relevant_period: Interval,
+  authorDatetime: DateTime,
+  relevantPeriod: Interval,
   severity: Code,
-  facility_location: Code,
+  facilityLocation: Code,
   type: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.120' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.120' },
   category: { type: String, default: 'adverse_event' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'AdverseEvent' },
 
 });

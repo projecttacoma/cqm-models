@@ -4,16 +4,16 @@ module QDM
     attr_reader :low, :high
 
     # Low and high are required (at minimum).
-    def initialize(low, high, low_closed = true, high_closed = true)
+    def initialize(low, high, lowClosed = true, highClosed = true)
       @low = low
       @high = high
-      @low_closed = low_closed
-      @high_closed = high_closed
+      @lowClosed = lowClosed
+      @highClosed = highClosed
     end
 
     # Converts an object of this instance into a database friendly value.
     def mongoize
-      { low: @low, high: @high, low_closed: @low_closed, high_closed: @high_closed }
+      { low: @low, high: @high, lowClosed: @lowClosed, highClosed: @highClosed }
     end
 
     class << self
@@ -25,7 +25,7 @@ module QDM
       def demongoize(object)
         return nil unless object
         object = object.symbolize_keys
-        QDM::Interval.new(object[:low], object[:high], object[:low_closed], object[:high_closed]) if object.is_a?(Hash)
+        QDM::Interval.new(object[:low], object[:high], object[:lowClosed], object[:highClosed]) if object.is_a?(Hash)
       end
 
       # Takes any possible object and converts it to how it would be
@@ -36,7 +36,7 @@ module QDM
         when QDM::Interval then object.mongoize
         when Hash
           object = object.symbolize_keys
-          QDM::Interval.new(object[:low], object[:high], object[:low_closed], object[:high_closed]).mongoize
+          QDM::Interval.new(object[:low], object[:high], object[:lowClosed], object[:highClosed]).mongoize
         else object
         end
       end

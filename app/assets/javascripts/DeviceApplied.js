@@ -11,16 +11,16 @@ const [Number, String] = [
 ];
 
 const DeviceAppliedSchema = DataElementSchema({
-  author_datetime: DateTime,
-  relevant_period: Interval,
-  negation_rationale: Code,
+  authorDatetime: DateTime,
+  relevantPeriod: Interval,
+  negationRationale: Code,
   reason: Code,
-  anatomical_location_site: Code,
-  anatomical_approach_site: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.13' },
+  anatomicalLocationSite: Code,
+  anatomicalApproachSite: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.13' },
   category: { type: String, default: 'device' },
-  qdm_status: { type: String, default: 'applied' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'applied' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'DeviceApplied' },
 
 });

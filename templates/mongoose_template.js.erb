@@ -12,7 +12,7 @@ const [Number, String] = [
 
 const <%= datatype -%>Schema = DataElementSchema({
   <%- for attribute in attrs_with_extras -%>
-  <%= attribute[:name].underscore %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
+  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
   <%- end %>
 });
 

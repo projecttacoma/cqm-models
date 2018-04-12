@@ -11,9 +11,9 @@ const [Number, String] = [
 ];
 
 const IdSchema = DataElementSchema({
-  naming_system: String,
+  namingSystem: String,
   value: String,
-  qdm_version: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'Id' },
 
 });
