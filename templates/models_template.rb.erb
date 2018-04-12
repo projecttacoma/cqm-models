@@ -17,5 +17,5 @@ require_relative 'qdm/tacoma/concept'
 
 # Generated models
 <%- datatypes.each_key do |datatype| -%>
-require_relative 'qdm/<%= datatype %>'
+require_relative 'qdm/<%= datatype.underscore %>'
 <%- end -%>

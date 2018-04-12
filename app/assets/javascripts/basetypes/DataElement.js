@@ -77,7 +77,7 @@ function DataElementSchema(add, options) {
     return this.dataElementCodes.map((code) => {
       const result = {};
       result.code = code.code;
-      result.system = code.code_system;
+      result.system = code.codeSystem;
       return result;
     });
   };
