@@ -12,26 +12,8 @@ Interval.prototype.cast = (interval) => {
   const val = { low: interval.low };
 
   val.high = interval.high;
-  val.low_closed = interval.low_closed != null ? interval.low_closed : true;
-  val.high_closed = interval.high_closed != null ? interval.high_closed : true;
-  Object.defineProperty(val, 'lowClosed', {
-    enumerable: false,
-    get() {
-      return this.low_closed;
-    },
-    set(newValue) {
-      this.low_closed = newValue;
-    },
-  });
-  Object.defineProperty(val, 'highClosed', {
-    enumerable: false,
-    get() {
-      return this.high_closed;
-    },
-    set(newValue) {
-      this.high_closed = newValue;
-    },
-  });
+  val.lowClosed = interval.lowClosed != null ? interval.lowClosed : true;
+  val.highClosed = interval.highClosed != null ? interval.highClosed : true;
   return val;
 };
 
