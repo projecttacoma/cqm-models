@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const cql = require('cql-execution');
 
 function Interval(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Interval');
@@ -9,12 +10,7 @@ Interval.prototype.cast = (interval) => {
   if (typeof interval.low === 'undefined') {
     throw new Error(`Interval: ${interval} does not have a low value`);
   }
-  const val = { low: interval.low };
-
-  val.high = interval.high;
-  val.lowClosed = interval.lowClosed != null ? interval.lowClosed : true;
-  val.highClosed = interval.highClosed != null ? interval.highClosed : true;
-  return val;
+  return new cql.Interval(interval.low, interval.high, interval.lowClosed, interval.highClosed);
 };
 
 mongoose.Schema.Types.Interval = Interval;
