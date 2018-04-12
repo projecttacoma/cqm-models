@@ -55,6 +55,8 @@ PatientSchema.methods.get_data_elements = function get_data_elements(params) {
   return this.data_elements;
 };
 
+// Returns an array of dataElements that exist on the patient, queried by
+// QDM profile
 PatientSchema.methods.get_by_profile = function get_by_profile(profile, isNegated = null) {
   if (isNegated === true) {
     return this.data_elements.filter(element => (element.type === `QDM::${profile}` && typeof element.negation_rationale !== 'undefined'));
