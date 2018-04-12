@@ -14,12 +14,18 @@ function DataElementSchema(add, options) {
     extended.add(add);
   }
 
+<<<<<<< e2c5d196252348bbb6ef14a6f640a89e2015c9ef
 <<<<<<< 59e4f221ab323fc1cab7d471f402f47ed0bd68fb
   // TODO: REMOVE THIS. No longer needed after the change to camelCase
   // Mangle and override the Mongoose Model get() function to allow
   // camelCase queries to be interpreted as the snake_case fields
 =======
 >>>>>>> Add camel case alias to Interval, add camel case get() flexibility to data elements
+=======
+  // TODO: REMOVE THIS. No longer needed after the change to camelCase
+  // Mangle and override the Mongoose Model get() function to allow
+  // camelCase queries to be interpreted as the snake_case fields
+>>>>>>> Added comments and revised Interval fields
   extended.methods.get = function get(path, type) {
     let adhoc;
     const pathSnake = changeCase.snakeCase(path);
@@ -54,12 +60,17 @@ function DataElementSchema(add, options) {
     return obj;
   };
 
+<<<<<<< e2c5d196252348bbb6ef14a6f640a89e2015c9ef
 <<<<<<< 59e4f221ab323fc1cab7d471f402f47ed0bd68fb
   // Returns all of the codes on this data element
   // in a format usable by the cql-execution framework
 =======
   // Returns all of the codes on this data element.
 >>>>>>> Add camel case alias to Interval, add camel case get() flexibility to data elements
+=======
+  // Returns all of the codes on this data element
+  // in a format usable by the cql-execution framework
+>>>>>>> Added comments and revised Interval fields
   extended.methods.getCode = function getCode() {
     return this.data_element_codes.map((code) => {
       const result = {};
@@ -69,12 +80,17 @@ function DataElementSchema(add, options) {
     });
   };
 
+<<<<<<< e2c5d196252348bbb6ef14a6f640a89e2015c9ef
 <<<<<<< 59e4f221ab323fc1cab7d471f402f47ed0bd68fb
   // Returns all of the codes on this data element
   // in their normal form.
 =======
   // Returns all of the codes on this data element.
 >>>>>>> Add camel case alias to Interval, add camel case get() flexibility to data elements
+=======
+  // Returns all of the codes on this data element
+  // in their normal form.
+>>>>>>> Added comments and revised Interval fields
   extended.methods.codes = function getCodes() {
     return this.data_element_codes;
   };
