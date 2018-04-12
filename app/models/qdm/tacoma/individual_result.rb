@@ -4,6 +4,9 @@ module QDM
     include Mongoid::Document
     include Mongoid::Timestamps
 
+    # This is the Mongoid equivalent of the Mongoose "enum" attribute for :state. Throws an error if you try to assign a value that's not in this array.
+    validates_inclusion_of :state, in: %w[queued running complete cancelled failed]
+
     # Population Attributes
     field :STRAT, type: Integer
     field :IPP, type: Integer
@@ -19,12 +22,10 @@ module QDM
     # Result Attributes
     field :clause_results, type: Hash
     field :episode_results, type: Hash
-    filed :population_relevance, type: Hash
-    field :statement_relevance, type: Hash
     field :statement_results, type: Hash
 
     # Calculation state attributes
-    field :state, type: String
+    field :state, type: String, default: 'queued'
 
     # Relations to other model classes
     belongs_to :measure

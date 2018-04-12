@@ -24,12 +24,14 @@ const IndividualResultSchema = mongoose.Schema(
     // Result Attributes
     clause_results: Mixed,
     episode_results: Mixed,
-    population_relevance: Mixed,
-    statement_relevance: Mixed,
     statement_results: Mixed,
 
     // Calculation State attributes
-    state: String,
+    state: {
+      type: String,
+      enum: ['queued', 'running', 'complete', 'cancelled', 'failed'],
+      default: 'queued',
+    },
 
     // Relations to other model classes
     measure: { type: ObjectId, ref: 'Measure' },
