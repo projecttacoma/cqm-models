@@ -94,7 +94,6 @@ PatientSchema.methods.get_by_profile = function get_by_profile(profile, isNegate
 // @param {String} profile - the data criteria requested by the execution engine
 // @returns {Object}
 PatientSchema.methods.findRecords = function findRecords(profile) {
-  // TODO: Still may be some unfinished work here
   let profileStripped;
   if (profile === 'Patient') {
     // Requested generic patient info
