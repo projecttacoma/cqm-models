@@ -1,0 +1,4 @@
+<%- datatypes.each do |datatype, _| -%>
+module.exports.<%= datatype %> = require('./<%= datatype %>.js').<%= datatype %>;
+module.exports.<%= datatype %>Schema = require('./<%= datatype %>.js').<%= datatype %>Schema;
+<%- end -%>

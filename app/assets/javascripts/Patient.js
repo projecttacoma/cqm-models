@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
+const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
@@ -10,7 +10,7 @@ const [Number, String, Date] = [
   mongoose.Schema.Types.Date,
 ];
 
-const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
+const PatientSchema = DataElementSchema({
   birth_datetime: Date,
   qdm_version: { type: String, default: '5.3' },
   _type: { type: String, default: 'Patient' },
@@ -24,7 +24,31 @@ const PatientSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
   // Cypress use a common field, it should be made a field on this model,
   // and not put into extended_data.
   extended_data: {},
-});
+}, { id: false });
+
+const AllDataElements = require('./AllDataElements');
+
+// After initialization of a Patient model, initialize every individual data element
+// to its respective Mongoose Model
+PatientSchema.methods.initializeDataElements = function initializeDataElements() {
+  let typeStripped;
+  const dataElementsInit = [];
+  this.data_elements.forEach((element) => {
+    typeStripped = element._type.replace(/QDM::/, '');
+    if (typeStripped in AllDataElements) {
+      dataElementsInit.push(AllDataElements[typeStripped](element));
+    } else {
+      dataElementsInit.push(element);
+    }
+  });
+  this.set({ data_elements: dataElementsInit });
+};
+
+PatientSchema.queue('initializeDataElements');
+
+PatientSchema.methods.id = function id() {
+  return this._id;
+};
 
 // Returns an array of elements that exist on this patient, that
 // match the given HQMF data criteria OID.
@@ -50,6 +74,60 @@ PatientSchema.methods.get_data_elements = function get_data_elements(params) {
   }
   return this.data_elements;
 };
+
+// Returns an array of dataElements that exist on the patient, queried by
+// QDM profile
+PatientSchema.methods.get_by_profile = function get_by_profile(profile, isNegated = null) {
+  if (isNegated === true) {
+    return this.data_elements.filter(element => element._type === `QDM::${profile}` && (typeof element.negation_rationale !== 'undefined' && element.negation_rationale != null));
+  } else if (isNegated === false) {
+    return this.data_elements.filter(element => element._type === `QDM::${profile}` && (typeof element.negation_rationale === 'undefined' || element.negation_rationale == null));
+  }
+  return this.data_elements.filter(element => element._type === `QDM::${profile}`);
+};
+
+// This method is called by the CQL execution engine on a CQLPatient when
+// the execution engine wants information on a record. A record could be patient
+// characteristic information about the patient, or it could be data criteria
+// that currently exist on this patient (data criteria you drag on a patient
+// in Bonnie's patient builder).
+// @param {String} profile - the data criteria requested by the execution engine
+// @returns {Object}
+PatientSchema.methods.findRecords = function findRecords(profile) {
+  let profileStripped;
+  if (profile === 'Patient') {
+    // Requested generic patient info
+    return { birthDatetime: this.birth_datetime };
+  } else if (/PatientCharacteristic/.test(profile)) {
+    // Requested a patient characteristic
+    profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
+    return this.get_by_profile(profileStripped);
+  } else if (profile != null) {
+    // Requested something else (probably a QDM data type).
+
+    // Strip model details from request. The requested profile string contains
+    // a lot of things we don't need or care about. Example, we might see
+    // something like:
+    // "{urn:healthit-gov:qdm:v5_0_draft}PatientCharacteristicEthnicity"
+    // Where we only care about: "PatientCharacteristicEthnicity".
+    profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
+
+    // Check and handle negation status
+    if (/Positive/.test(profileStripped)) {
+      profileStripped = profileStripped.replace(/Positive/, '');
+      // Since the data criteria is 'Positive', it is not negated.
+      return this.get_by_profile(profileStripped, false);
+    } else if (/Negative/.test(profileStripped)) {
+      profileStripped = profileStripped.replace(/Negative/, '');
+      // Since the data criteria is 'Negative', it is negated.
+      return this.get_by_profile(profileStripped, true);
+    }
+    // No negation status, proceed normally
+    return this.get_by_profile(profileStripped);
+  }
+  return [];
+};
+
 
 PatientSchema.methods.adverse_events = function adverse_events() {
   return this.get_data_elements({ category: 'adverse_event' });

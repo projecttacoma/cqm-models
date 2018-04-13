@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
+const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
@@ -10,7 +10,7 @@ const [Number, String, Date] = [
   mongoose.Schema.Types.Date,
 ];
 
-const PatientCharacteristicEthnicitySchema = DataElement.extendSchema(DataElement.DataElementSchema, {
+const PatientCharacteristicEthnicitySchema = DataElementSchema({
   hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.56' },
   category: { type: String, default: 'patient_characteristic' },
   qdm_status: { type: String, default: 'ethnicity' },

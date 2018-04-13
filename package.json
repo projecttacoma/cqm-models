@@ -1,6 +1,6 @@
 {
   "name": "cqm-models",
-  "version": "0.5.0",
+  "version": "0.6.1",
   "description": "",
   "main": "app/assets/javascripts/index.js",
   "browser": {
@@ -15,6 +15,8 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
+    "change-case": "^3.0.2",
+    "cql-execution": "^1.2.0",
     "mongoose": "^5.0.7"
   },
   "devDependencies": {
