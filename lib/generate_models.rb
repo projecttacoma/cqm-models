@@ -174,6 +174,11 @@ unless IS_TEST
   renderer = ERB.new(indtemplate, nil, '-')
   file_path = 'app/assets/javascripts/index.js'
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
+
+  alltemplate = File.read('templates/all_data_elements_template.js.erb')
+  renderer = ERB.new(alltemplate, nil, '-')
+  file_path = 'app/assets/javascripts/AllDataElements.js'
+  File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 end
 
 ###############################################################################

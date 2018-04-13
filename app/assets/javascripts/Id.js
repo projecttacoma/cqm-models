@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const DataElement = require('./basetypes/DataElement');
+const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
@@ -10,7 +10,7 @@ const [Number, String, Date] = [
   mongoose.Schema.Types.Date,
 ];
 
-const IdSchema = DataElement.extendSchema(DataElement.DataElementSchema, {
+const IdSchema = DataElementSchema({
   naming_system: String,
   value: String,
   qdm_version: { type: String, default: '5.3' },

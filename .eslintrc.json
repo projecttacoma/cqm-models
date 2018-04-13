@@ -14,7 +14,7 @@
       "error",
       {
         "allow": [
-          "_id"
+          "_id", "_type", "_doc"
         ]
       }
     ]
