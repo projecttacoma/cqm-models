@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const cql = require('cql-execution');
 
 function Quantity(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Quantity');
@@ -12,7 +13,7 @@ Quantity.prototype.cast = (quantity) => {
     throw new Error(`Quantity: ${quantity} does not have a unit`);
   }
 
-  return { value: quantity.value, unit: quantity.unit };
+  return new cql.Quantity(quantity);
 };
 
 mongoose.Schema.Types.Quantity = Quantity;

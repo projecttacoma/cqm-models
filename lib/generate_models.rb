@@ -33,7 +33,7 @@ TYPE_LOOKUP_RB = {
 
 # Lookups for modelinfo 'element types' to JavaScript+Mongoose types.
 TYPE_LOOKUP_JS = {
-  'System.DateTime': 'Date',
+  'System.DateTime': 'DateTime',
   'System.Integer': 'Number',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
@@ -48,7 +48,7 @@ TYPE_LOOKUP_JS = {
   'list<System.Code>': '[Code]',
   'QDM.Id': 'String',
   'System.Decimal': 'Number',
-  'System.Time': 'Date',
+  'System.Time': 'DateTime',
   'System.Concept': '{}'
 }.stringify_keys!
 

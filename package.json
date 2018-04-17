@@ -17,6 +17,7 @@
   "dependencies": {
     "change-case": "^3.0.2",
     "cql-execution": "^1.2.0",
+    "moment": "^2.22.1",
     "mongoose": "^5.0.7"
   },
   "devDependencies": {
