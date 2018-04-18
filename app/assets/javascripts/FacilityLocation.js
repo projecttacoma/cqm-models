@@ -12,8 +12,8 @@ const [Number, String] = [
 
 const FacilityLocationSchema = DataElementSchema({
   code: Code,
-  location_period: Interval,
-  qdm_version: { type: String, default: '5.3' },
+  locationPeriod: Interval,
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'FacilityLocation' },
 
 });

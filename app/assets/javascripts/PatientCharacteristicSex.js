@@ -11,7 +11,7 @@ const [Number, String] = [
 ];
 
 const PatientCharacteristicSexSchema = DataElementSchema({
-  qdm_version: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'PatientCharacteristicSex' },
 
 });

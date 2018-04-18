@@ -11,22 +11,22 @@ const [Number, String] = [
 ];
 
 const ProcedurePerformedSchema = DataElementSchema({
-  author_datetime: DateTime,
-  relevant_period: Interval,
+  authorDatetime: DateTime,
+  relevantPeriod: Interval,
   reason: Code,
   method: Code,
   result: {},
   status: Code,
-  anatomical_approach_site: Code,
-  anatomical_location_site: Code,
+  anatomicalApproachSite: Code,
+  anatomicalLocationSite: Code,
   ordinality: Code,
-  incision_datetime: DateTime,
-  negation_rationale: Code,
+  incisionDatetime: DateTime,
+  negationRationale: Code,
   components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
   category: { type: String, default: 'procedure' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'performed' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'ProcedurePerformed' },
 
 });

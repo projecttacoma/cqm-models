@@ -1,20 +1,20 @@
 module QDM
   # Represents a Code
   class Code
-    attr_reader :code, :code_system, :descriptor, :code_system_oid, :version
+    attr_reader :code, :codeSystem, :descriptor, :codeSystemOid, :version
 
     # Code and code system are required (at minimum).
-    def initialize(code, code_system, descriptor = nil, code_system_oid = nil, version = nil)
+    def initialize(code, codeSystem, descriptor = nil, codeSystemOid = nil, version = nil)
       @code = code
-      @code_system = code_system
+      @codeSystem = codeSystem
       @descriptor = descriptor
-      @code_system_oid = code_system_oid
+      @codeSystemOid = codeSystemOid
       @version = version
     end
 
     # Converts an object of this instance into a database friendly value.
     def mongoize
-      { code: @code, code_system: @code_system, descriptor: @descriptor, code_system_oid: @code_system_oid, version: @version }
+      { code: @code, codeSystem: @codeSystem, descriptor: @descriptor, codeSystemOid: @codeSystemOid, version: @version }
     end
 
     class << self
@@ -22,11 +22,11 @@ module QDM
       # this custom class from it.
       #
       # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
-      # [ code, code_system, descriptor, code_system_oid, version ].
+      # [ code, codeSystem, descriptor, codeSystemOid, version ].
       def demongoize(object)
         return nil unless object
         object = object.symbolize_keys
-        QDM::Code.new(object[:code], object[:code_system], object[:descriptor], object[:code_system_oid], object[:version])
+        QDM::Code.new(object[:code], object[:codeSystem], object[:descriptor], object[:codeSystemOid], object[:version])
       end
 
       # Takes any possible object and converts it to how it would be
@@ -37,8 +37,8 @@ module QDM
         when QDM::Code then object.mongoize
         when Hash
           object = object.symbolize_keys
-          code_system = object[:system] ? object[:system] : object[:code_system]
-          QDM::Code.new(object[:code], code_system, object[:descriptor], object[:code_system_oid], object[:version]).mongoize
+          codeSystem = object[:system] ? object[:system] : object[:codeSystem]
+          QDM::Code.new(object[:code], codeSystem, object[:descriptor], object[:codeSystemOid], object[:version]).mongoize
         else object
         end
       end

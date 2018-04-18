@@ -11,20 +11,20 @@ const [Number, String] = [
 ];
 
 const DiagnosticStudyPerformedSchema = DataElementSchema({
-  author_datetime: DateTime,
-  relevant_period: Interval,
+  authorDatetime: DateTime,
+  relevantPeriod: Interval,
   reason: Code,
   result: {},
-  result_datetime: DateTime,
+  resultDatetime: DateTime,
   status: Code,
   method: Code,
-  facility_location: Code,
-  negation_rationale: Code,
+  facilityLocation: Code,
+  negationRationale: Code,
   components: [],
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.23' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.23' },
   category: { type: String, default: 'diagnostic_study' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'performed' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'DiagnosticStudyPerformed' },
 
 });

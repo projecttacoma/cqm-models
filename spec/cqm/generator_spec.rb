@@ -29,14 +29,14 @@ RSpec.describe QDM do
   # Given the contents of a Ruby model file, make sure it has the given attributes
   def ruby_model_has_attributes(ruby_contents, attributes)
     attributes.each do |attribute|
-      expect(ruby_contents.include?(attribute.underscore)).to be true
+      expect(ruby_contents.include?(attribute)).to be true
     end
   end
 
   # Given the contents of a JS model file, make sure it has the given attributes
   def js_model_has_attributes(js_contents, attributes)
     attributes.each do |attribute|
-      expect(js_contents.include?(attribute.underscore)).to be true
+      expect(js_contents.include?(attribute)).to be true
     end
   end
 

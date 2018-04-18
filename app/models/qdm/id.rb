@@ -3,8 +3,8 @@ module QDM
   class Id < DataElement
     include Mongoid::Document
     embedded_in :patient
-    field :naming_system, type: String
+    field :namingSystem, type: String
     field :value, type: String
-    field :qdm_version, type: String, default: '5.3'
+    field :qdmVersion, type: String, default: '5.3'
   end
 end

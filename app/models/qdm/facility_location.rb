@@ -4,7 +4,7 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :code, type: QDM::Code
-    field :location_period, type: QDM::Interval
-    field :qdm_version, type: String, default: '5.3'
+    field :locationPeriod, type: QDM::Interval
+    field :qdmVersion, type: String, default: '5.3'
   end
 end

@@ -11,10 +11,10 @@ const [Number, String] = [
 ];
 
 const PatientCharacteristicRaceSchema = DataElementSchema({
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.59' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.59' },
   category: { type: String, default: 'patient_characteristic' },
-  qdm_status: { type: String, default: 'race' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'race' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'PatientCharacteristicRace' },
 
 });

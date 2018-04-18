@@ -3,7 +3,7 @@ module QDM
   class Participation < DataElement
     include Mongoid::Document
     embedded_in :patient
-    field :participation_period, type: QDM::Interval
-    field :qdm_version, type: String, default: '5.3'
+    field :participationPeriod, type: QDM::Interval
+    field :qdmVersion, type: String, default: '5.3'
   end
 end

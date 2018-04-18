@@ -11,11 +11,11 @@ const [Number, String] = [
 ];
 
 const PatientCharacteristicBirthdateSchema = DataElementSchema({
-  birth_datetime: DateTime,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.54' },
+  birthDatetime: DateTime,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.54' },
   category: { type: String, default: 'patient_characteristic' },
-  qdm_status: { type: String, default: 'birthdate' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'birthdate' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'PatientCharacteristicBirthdate' },
 
 });

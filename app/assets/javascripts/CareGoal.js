@@ -11,12 +11,12 @@ const [Number, String] = [
 ];
 
 const CareGoalSchema = DataElementSchema({
-  relevant_period: Interval,
-  related_to: [String],
-  target_outcome: {},
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.7' },
+  relevantPeriod: Interval,
+  relatedTo: [String],
+  targetOutcome: {},
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.7' },
   category: { type: String, default: 'care_goal' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'CareGoal' },
 
 });

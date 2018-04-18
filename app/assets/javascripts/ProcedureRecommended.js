@@ -11,17 +11,17 @@ const [Number, String] = [
 ];
 
 const ProcedureRecommendedSchema = DataElementSchema({
-  author_datetime: DateTime,
+  authorDatetime: DateTime,
   reason: Code,
   method: Code,
-  anatomical_approach_site: Code,
-  anatomical_location_site: Code,
+  anatomicalApproachSite: Code,
+  anatomicalLocationSite: Code,
   ordinality: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.68' },
+  negationRationale: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.68' },
   category: { type: String, default: 'procedure' },
-  qdm_status: { type: String, default: 'recommended' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'recommended' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'ProcedureRecommended' },
 
 });

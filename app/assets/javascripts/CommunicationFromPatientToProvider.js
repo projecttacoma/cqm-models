@@ -11,13 +11,13 @@ const [Number, String] = [
 ];
 
 const CommunicationFromPatientToProviderSchema = DataElementSchema({
-  author_datetime: DateTime,
-  related_to: [String],
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.8' },
+  authorDatetime: DateTime,
+  relatedTo: [String],
+  negationRationale: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.8' },
   category: { type: String, default: 'communication' },
-  qdm_status: { type: String, default: 'from_patient_to_provider' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'from_patient_to_provider' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'CommunicationFromPatientToProvider' },
 
 });

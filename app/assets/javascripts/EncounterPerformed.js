@@ -11,19 +11,19 @@ const [Number, String] = [
 ];
 
 const EncounterPerformedSchema = DataElementSchema({
-  author_datetime: DateTime,
-  admission_source: Code,
-  relevant_period: Interval,
-  discharge_disposition: Code,
-  facility_locations: [],
+  authorDatetime: DateTime,
+  admissionSource: Code,
+  relevantPeriod: Interval,
+  dischargeDisposition: Code,
+  facilityLocations: [],
   diagnoses: [Code],
-  principal_diagnosis: Code,
-  negation_rationale: Code,
-  length_of_stay: Quantity,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.5' },
+  principalDiagnosis: Code,
+  negationRationale: Code,
+  lengthOfStay: Quantity,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.5' },
   category: { type: String, default: 'encounter' },
-  qdm_status: { type: String, default: 'performed' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'performed' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'EncounterPerformed' },
 
 });

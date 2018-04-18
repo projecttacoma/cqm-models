@@ -11,10 +11,10 @@ const [Number, String] = [
 ];
 
 const PatientCareExperienceSchema = DataElementSchema({
-  author_datetime: DateTime,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.52' },
+  authorDatetime: DateTime,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.52' },
   category: { type: String, default: 'care_experience' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'PatientCareExperience' },
 
 });

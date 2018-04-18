@@ -11,14 +11,14 @@ const [Number, String] = [
 ];
 
 const AllergyIntoleranceSchema = DataElementSchema({
-  author_datetime: DateTime,
-  prevalence_period: Interval,
+  authorDatetime: DateTime,
+  prevalencePeriod: Interval,
   type: Code,
   severity: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.119' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.119' },
   category: { type: String, default: 'allergy' },
-  qdm_status: { type: String, default: 'intolerance' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'intolerance' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'AllergyIntolerance' },
 
 });

@@ -11,17 +11,17 @@ const [Number, String] = [
 ];
 
 const MedicationDischargeSchema = DataElementSchema({
-  author_datetime: DateTime,
+  authorDatetime: DateTime,
   refills: Number,
   dosage: Quantity,
   supply: Quantity,
   frequency: Code,
   route: Code,
-  negation_rationale: Code,
-  hqmf_oid: { type: String, default: '2.16.840.1.113883.10.20.28.3.48' },
+  negationRationale: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.48' },
   category: { type: String, default: 'medication' },
-  qdm_status: { type: String, default: 'discharge' },
-  qdm_version: { type: String, default: '5.3' },
+  qdmStatus: { type: String, default: 'discharge' },
+  qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'MedicationDischarge' },
 
 });
