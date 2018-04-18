@@ -10,22 +10,6 @@
   extended_data: {},
 }, { id: false });
 
-const PatientSchema = DataElementSchema({
-  birth_datetime: Date,
-  qdm_version: { type: String, default: '5.3' },
-  _type: { type: String, default: 'Patient' },
-  given_names: [String],
-  family_name: String,
-  bundle_id: String,
-  // These are the "data criteria", or QDM datatype elements that exist on a
-  // patient.
-  data_elements: [],
-  // This field is for application specific information only. If both Bonnie
-  // Cypress use a common field, it should be made a field on this model,
-  // and not put into extended_data.
-  extended_data: {},
-}, { id: false });
-
 const AllDataElements = require('./AllDataElements');
 
 // After initialization of a Patient model, initialize every individual data element

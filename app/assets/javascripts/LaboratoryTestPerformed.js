@@ -3,20 +3,20 @@ const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
+const DateTime = require('./basetypes/DateTime');
 
-const [Number, String, Date] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
 ];
 
 const LaboratoryTestPerformedSchema = DataElementSchema({
-  author_datetime: Date,
+  author_datetime: DateTime,
   relevant_period: Interval,
   status: Code,
   method: Code,
   result: {},
-  result_datetime: Date,
+  result_datetime: DateTime,
   reason: Code,
   reference_range: Interval,
   negation_rationale: Code,

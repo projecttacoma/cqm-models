@@ -3,17 +3,17 @@ const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
+const DateTime = require('./basetypes/DateTime');
 
-const [Number, String, Date] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Date,
 ];
 
 const MedicationOrderSchema = DataElementSchema({
-  active_datetime: Date,
+  active_datetime: DateTime,
   relevant_period: Interval,
-  author_datetime: Date,
+  author_datetime: DateTime,
   refills: Number,
   dosage: Quantity,
   supply: Quantity,

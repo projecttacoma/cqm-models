@@ -1,4 +1,5 @@
 module.exports = require('./AllDataElements.js');
+module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;
 module.exports.ResultSchema = require('./Result.js').ResultSchema;
 module.exports.Measure = require('./Measure.js').Measure;
