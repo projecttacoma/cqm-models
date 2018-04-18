@@ -37,7 +37,7 @@ TYPE_LOOKUP_JS = {
   'System.Integer': 'Number',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
-  'System.Any': '{}',
+  'System.Any': 'Any',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
   'list<QDM.Component>': '[]',
