@@ -63,6 +63,7 @@ module QDM
     field :populations, type: Array
     field :populations_cql_map, type: Hash
     field :observations, type: Array
+    field :population_ids, type: Hash
 
     field :value_set_oids, type: Array, default: []
     field :value_set_oid_version_objects, type: Array, default: []
