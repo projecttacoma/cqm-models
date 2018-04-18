@@ -1,6 +1,6 @@
 module QDM
   # app/models/qdm/patient.rb
-  class Patient < DataElement
+  class Patient
     include Mongoid::Document
     field :birthDatetime, type: DateTime
     field :qdmVersion, type: String, default: '5.3'

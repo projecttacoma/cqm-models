@@ -316,7 +316,7 @@ end
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = ''
   File.open(file_name).each_line.with_index do |line, index|
-    line.gsub!("\n", " < DataElement\n") if index.zero?
+    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb')
     contents += "module QDM\n  # #{file_name}\n  #{line.gsub('QDM::', '')}" if index.zero?
     contents += '  ' unless index.zero? || line.blank?
     contents += line unless index.zero?
