@@ -5,7 +5,7 @@ const [Schema] = [mongoose.Schema];
 
 function DataElementSchema(add, options) {
   const extended = new Schema({
-    data_element_codes: { type: [Code] },
+    dataElementCodes: { type: [Code] },
     description: { type: String },
   }, options);
 
@@ -16,7 +16,7 @@ function DataElementSchema(add, options) {
   // Returns all of the codes on this data element
   // in a format usable by the cql-execution framework
   extended.methods.getCode = function getCode() {
-    return this.data_element_codes.map((code) => {
+    return this.dataElementCodes.map((code) => {
       const result = {};
       result.code = code.code;
       result.system = code.code_system;
@@ -27,7 +27,7 @@ function DataElementSchema(add, options) {
   // Returns all of the codes on this data element
   // in their normal form.
   extended.methods.codes = function getCodes() {
-    return this.data_element_codes;
+    return this.dataElementCodes;
   };
 
   return extended;
