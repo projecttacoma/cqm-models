@@ -4,7 +4,7 @@
 
   # These are the "data criteria", or QDM datatype elements that exist on a
   # patient.
-  embeds_many :dataElements
+  embeds_many :dataElements, class_name: 'QDM::DataElement'
 
   # This field is for application specific information only. If both Bonnie
   # Cypress use a common field, it should be made a field on this model,
