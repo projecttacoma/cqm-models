@@ -25,7 +25,7 @@ const PatientSchema = new Schema({
   // Cypress use a common field, it should be made a field on this model,
   // and not put into extendedData.
   extendedData: {},
-});
+}, { id: false });
 
 // After initialization of a Patient model, initialize every individual data element
 // to its respective Mongoose Model
