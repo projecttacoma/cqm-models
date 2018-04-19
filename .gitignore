@@ -7,6 +7,7 @@
 /pkg/
 /spec/reports/
 node_modules/
+tmp/
 
 # yarn error tracking
 yarn-error.log
