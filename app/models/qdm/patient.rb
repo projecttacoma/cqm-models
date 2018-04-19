@@ -1,6 +1,6 @@
 module QDM
   # app/models/qdm/patient.rb
-  class Patient < DataElement
+  class Patient
     include Mongoid::Document
     field :birthDatetime, type: DateTime
     field :qdmVersion, type: String, default: '5.3'
@@ -10,7 +10,7 @@ module QDM
 
     # These are the "data criteria", or QDM datatype elements that exist on a
     # patient.
-    embeds_many :dataElements
+    embeds_many :dataElements, class_name: 'QDM::DataElement'
 
     # This field is for application specific information only. If both Bonnie
     # Cypress use a common field, it should be made a field on this model,
@@ -186,6 +186,16 @@ module QDM
     # Helper method; returns vital_sign data element types on this patient.
     def vital_signs
       get_data_elements('vital_sign')
+    end
+
+    # Return the Mongo id.
+    def id
+      _id
+    end
+
+    # Include '_type' in any JSON output. This is necessary for deserialization.
+    def to_json(options = nil)
+      serializable_hash(methods: :_type).to_json(options)
     end
   end
 end
