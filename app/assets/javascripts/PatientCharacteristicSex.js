@@ -11,6 +11,9 @@ const [Number, String] = [
 ];
 
 const PatientCharacteristicSexSchema = DataElementSchema({
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.55' },
+  category: { type: String, default: 'patient_characteristic' },
+  qdmStatus: { type: String, default: 'gender' },
   qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'PatientCharacteristicSex' },
 

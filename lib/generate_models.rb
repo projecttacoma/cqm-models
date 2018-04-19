@@ -163,9 +163,18 @@ extra_fields_js = [
   { name: '_type', type: 'System.String' }
 ]
 datatypes.each do |datatype, attributes|
-  attrs_with_extras = attributes + extra_fields_js
-  puts '  ' + file_path + datatype + '.js'
-  File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
+  if datatype == 'Patient'
+    # Handle Patient as its own special case, with its own template.
+    patient_template = File.read('templates/patient_template.js.erb')
+    patient_renderer = ERB.new(patient_template, nil, '-')
+    attrs_with_extras = attributes + extra_fields_js
+    puts '  ' + file_path + datatype + '.js'
+    File.open(file_path + datatype + '.js', 'w') { |file| file.puts patient_renderer.result(binding) }
+  else
+    attrs_with_extras = attributes + extra_fields_js
+    puts '  ' + file_path + datatype + '.js'
+    File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
+  end
 end
 
 # Create require file (if not in test mode)
@@ -285,13 +294,6 @@ rb_patient = File.read(ruby_models_path + 'patient.rb')
 rb_patient.gsub!(/end/, renderer.result(binding))
 File.open(ruby_models_path + 'patient.rb', 'w') { |file| file.write(rb_patient) }
 
-# Inject JavaScript Patient model extensions
-template = File.read('templates/patient_extension.js.erb')
-renderer = ERB.new(template, nil, '-')
-rb_patient = File.read(js_models_path + 'Patient.js')
-rb_patient.gsub!(/\n\}\)\;/, '' + renderer.result(binding))
-File.open(js_models_path + 'Patient.js', 'w') { |file| file.write(rb_patient) }
-
 # Make sure Ruby models are in the correct module
 ruby_models_path = 'app/models/qdm/'
 ruby_models_path = 'app/models/test/qdm/' if IS_TEST
@@ -316,7 +318,7 @@ end
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = ''
   File.open(file_name).each_line.with_index do |line, index|
-    line.gsub!("\n", " < DataElement\n") if index.zero?
+    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb')
     contents += "module QDM\n  # #{file_name}\n  #{line.gsub('QDM::', '')}" if index.zero?
     contents += '  ' unless index.zero? || line.blank?
     contents += line unless index.zero?
