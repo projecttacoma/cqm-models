@@ -247,7 +247,7 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   contents = File.read(file_name)
 
   # Replace 'Any' type placeholder (these attributes could point to anything).
-  contents.gsub!(/: Any/, ': {}')
+  contents.gsub!(/: Any/, ': Any')
 
   # Add QDM version
   contents.gsub!(/qdmVersion: String/, "qdmVersion: { type: String, default: '#{qdm_version}' }")

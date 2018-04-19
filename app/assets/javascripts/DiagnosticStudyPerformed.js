@@ -15,7 +15,7 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
   reason: Code,
-  result: {},
+  result: Any,
   resultDatetime: DateTime,
   status: Code,
   method: Code,

@@ -16,7 +16,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   negationRationale: Code,
   reason: Code,
   method: Code,
-  result: {},
+  result: Any,
   components: [],
   relatedTo: [String],
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },

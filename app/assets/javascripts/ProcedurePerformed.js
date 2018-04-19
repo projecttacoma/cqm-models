@@ -16,7 +16,7 @@ const ProcedurePerformedSchema = DataElementSchema({
   relevantPeriod: Interval,
   reason: Code,
   method: Code,
-  result: {},
+  result: Any,
   status: Code,
   anatomicalApproachSite: Code,
   anatomicalLocationSite: Code,

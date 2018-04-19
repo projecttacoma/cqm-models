@@ -16,7 +16,7 @@ const PhysicalExamPerformedSchema = DataElementSchema({
   relevantPeriod: Interval,
   reason: Code,
   method: Code,
-  result: {},
+  result: Any,
   anatomicalLocationSite: Code,
   negationRationale: Code,
   components: [],

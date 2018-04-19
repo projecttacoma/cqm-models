@@ -16,7 +16,7 @@ const LaboratoryTestPerformedSchema = DataElementSchema({
   relevantPeriod: Interval,
   status: Code,
   method: Code,
-  result: {},
+  result: Any,
   resultDatetime: DateTime,
   reason: Code,
   referenceRange: Interval,
