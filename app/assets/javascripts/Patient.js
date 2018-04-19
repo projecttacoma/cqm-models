@@ -4,16 +4,18 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const AllDataElements = require('./AllDataElements');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
 
-const PatientSchema = DataElementSchema({
+const PatientSchema = new Schema({
   birthDatetime: DateTime,
   qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'Patient' },
+
   givenNames: [String],
   familyName: String,
   bundleId: String,
@@ -23,10 +25,8 @@ const PatientSchema = DataElementSchema({
   // This field is for application specific information only. If both Bonnie
   // Cypress use a common field, it should be made a field on this model,
   // and not put into extendedData.
-  extendedData: {},
-}, { id: false });
-
-const AllDataElements = require('./AllDataElements');
+  extendedData: {}
+});
 
 // After initialization of a Patient model, initialize every individual data element
 // to its respective Mongoose Model
