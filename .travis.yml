@@ -17,3 +17,5 @@ matrix:
           - "node_modules"
       script:
         - npm run lint
+script:
+  - ./bin/validate_dist.sh
