@@ -1,6 +1,7 @@
 matrix:
   include:
     - language: ruby
+      cache: bundler
       rvm:
         - 2.4.1
       services:
@@ -17,3 +18,4 @@ matrix:
           - "node_modules"
       script:
         - npm run lint
+        - ./bin/validate_dist.sh
