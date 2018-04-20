@@ -10,6 +10,8 @@ diff=`diff dist/index.js tmp/dist/index.js`
 
 # Exit with a non-zero code if the diff isn't empty
 if [ "$diff" != "" ]; then
-  echo "$diff"
+  echo "dist/index.js is out of date. Please run 'yarn run dist' locally and commit/push the result"
   exit 1
 fi
+
+echo "dist/index.js is up to date"
