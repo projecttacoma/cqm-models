@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'cqm-models'
-  spec.version       = '0.7.2'
+  spec.version       = '0.7.3'
   spec.authors       = ['aholmes@mitre.org', 'mokeefe@mitre.org', 'lades@mitre.org']
 
-  spec.summary       = 'cqm-models'
-  spec.description   = 'cqm-models'
+  spec.summary       = 'Mongo models that correspond to the QDM specification.'
+  spec.description   = 'This library contains auto generated Mongo (Mongoid) models that correspond to the QDM (Quality Data Model) specification.'
   spec.homepage      = 'https://github.com/projecttacoma/cqm-models'
   spec.license       = 'Apache-2.0'
 

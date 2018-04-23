@@ -1,7 +1,7 @@
 {
   "name": "cqm-models",
-  "version": "0.7.2",
-  "description": "",
+  "version": "0.7.3",
+  "description": "This library contains auto generated Mongo (Mongoose.js) models that correspond to the QDM (Quality Data Model) specification.",
   "main": "app/assets/javascripts/index.js",
   "browser": {
     "index.js": "dist/index.js"
