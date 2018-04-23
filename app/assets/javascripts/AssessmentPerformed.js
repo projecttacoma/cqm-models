@@ -4,6 +4,7 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const Any = require('./basetypes/Any');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -15,7 +16,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   negationRationale: Code,
   reason: Code,
   method: Code,
-  result: {},
+  result: Any,
   components: [],
   relatedTo: [String],
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
