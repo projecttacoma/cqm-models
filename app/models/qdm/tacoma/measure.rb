@@ -63,6 +63,7 @@ module QDM
     field :populations, type: Array
     field :populations_cql_map, type: Hash
     field :observations, type: Array
+    # TODO: Depending on how we restructure the Measure/Population object, may be deleted in the future
     field :population_ids, type: Hash
 
     field :value_set_oids, type: Array, default: []

@@ -52,6 +52,7 @@ const MeasureSchema = mongoose.Schema(
     populations: [Mixed],
     populations_cql_map: Mixed,
     observations: [Mixed],
+    // TODO: Depending on how we restructure the Measure/Population object, may be deleted in the future
     population_ids: Mixed,
 
     value_sets: [{ type: ObjectId, ref: 'ValueSet' }],
