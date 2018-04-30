@@ -26,6 +26,11 @@ const IndividualResultSchema = mongoose.Schema(
     episode_results: Mixed,
     statement_results: Mixed,
 
+    // This field is for application specific information only. If both Bonnie and
+    // Cypress use a common field, it should be made a field on this model,
+    // and not put into extendedData.
+    extendedData: {},
+
     // Calculation State attributes
     state: {
       type: String,

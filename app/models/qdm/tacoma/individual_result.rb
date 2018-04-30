@@ -24,6 +24,11 @@ module QDM
     field :episode_results, type: Hash
     field :statement_results, type: Hash
 
+    # This field is for application specific information only. If both Bonnie and
+    # Cypress use a common field, it should be made a field on this model,
+    # and not put into extendedData.
+    field :extendedData, type: Hash
+
     # Calculation state attributes
     field :state, type: String, default: 'queued'
 
