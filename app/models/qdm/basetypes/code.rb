@@ -1,7 +1,7 @@
 module QDM
   # Represents a Code
   class Code
-    attr_reader :code, :codeSystem, :descriptor, :codeSystemOid, :version
+    attr_accessor :code, :codeSystem, :descriptor, :codeSystemOid, :version
 
     # Code and code system are required (at minimum).
     def initialize(code, codeSystem, descriptor = nil, codeSystemOid = nil, version = nil)

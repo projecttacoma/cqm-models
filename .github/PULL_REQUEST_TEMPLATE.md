@@ -10,21 +10,14 @@ Pull requests into cqm-models require the following. Submitter and reviewer shou
 - [ ] If there were any JavaScript changes, this PR has updated the `dist` directory using `npm run dist`
 - [ ] If applicable, the library version number in `package.json` and `cqm-models.gemspec` has been updated
 
-**Reviewer 1:**
+**Bonnie Reviewer:**
 
 Name:
 - [ ] Code is maintainable and reusable, reuses existing code and infrastructure where appropriate, and accomplishes the task’s purpose
 - [ ] The tests appropriately test the new code, including edge cases
 - [ ] You have tried to break the code
 
-**Reviewer 2:**
-
-Name:
-- [ ] Code is maintainable and reusable, reuses existing code and infrastructure where appropriate, and accomplishes the task’s purpose
-- [ ] The tests appropriately test the new code, including edge cases
-- [ ] You have tried to break the code
-
-**Reviewer 3:**
+**Cypress Reviewer:**
 
 Name:
 - [ ] Code is maintainable and reusable, reuses existing code and infrastructure where appropriate, and accomplishes the task’s purpose
