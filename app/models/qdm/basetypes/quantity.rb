@@ -1,7 +1,7 @@
 module QDM
   # Represents a Quantity
   class Quantity
-    attr_reader :value, :unit
+    attr_accessor :value, :unit
 
     # Value and unit are required.
     def initialize(value, unit)

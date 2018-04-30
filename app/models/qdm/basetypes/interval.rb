@@ -1,7 +1,7 @@
 module QDM
   # Represents an Interval
   class Interval
-    attr_reader :low, :high
+    attr_accessor :low, :high, :lowClosed, :highClosed
 
     # Low and high are required (at minimum).
     def initialize(low, high, lowClosed = true, highClosed = true)
