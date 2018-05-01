@@ -6,12 +6,10 @@ module CQM
     field :display_name, type: String
     field :version, type: String
 
-    index(oid: 1)
+    index 'oid' => 1
 
     embeds_many :concepts
-    index 'concepts.code' => 1
-    index 'concepts.code_system_oid' => 1
-    index 'concepts.code_system_name' => 1
+
     scope :by_oid, ->(oid) { where(oid: oid) }
 
     # Provides an Array of Hashes. Each code system gets its own Hash
