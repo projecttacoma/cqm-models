@@ -12,13 +12,10 @@ const ValueSetSchema = mongoose.Schema(
     oid: String,
     display_name: String,
     version: String,
-    categories: Mixed,
 
     concepts: [Concept.ConceptSchema],
 
-    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
-    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific
-    measures: [{ type: ObjectId, ref: 'Measure' }],
+    measures: [{ type: ObjectId, ref: 'Measure', index: true }],
   },
   // Options
   {
