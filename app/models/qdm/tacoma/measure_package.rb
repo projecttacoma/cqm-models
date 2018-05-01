@@ -1,4 +1,4 @@
-module QDM
+module Tacoma
   # MeasurePackage stores the uploaded file for a given Measure, so it can be recreated if need be
   class MeasurePackage
     include Mongoid::Document

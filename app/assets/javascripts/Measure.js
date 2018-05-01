@@ -14,27 +14,23 @@ const [Number, String, Boolean, Mixed, ObjectId, Date] = [
 
 const MeasureSchema = mongoose.Schema(
   {
-    // ID/other measure information
-    id: String,
-    measure_id: String,
+    // A version-specific UUID for the measure
     hqmf_id: String,
+    // A version-neutral UUID for the measure
     hqmf_set_id: String,
-    hqmf_version_number: Number,
+    // A Semantic Version-compliant string (e.g. "2.3.4") for the measure
+    hqmf_version_number: String,
+    // A CMS-style string (e.g. "CMS2v4") for the measure
     cms_id: String,
     title: String,
     description: String,
+    // EP/EH, or "unknown"
     type: String,
     category: { type: String, default: 'Uncategorized' },
 
     // Measure type variables
     episode_of_care: Boolean,
     continuous_constiable: Boolean,
-    episode_ids: [],
-
-    // Publishing data (used by Bonnie)
-    published: Boolean,
-    publish_date: Date,
-    version: Number,
 
     // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,
@@ -55,14 +51,12 @@ const MeasureSchema = mongoose.Schema(
     // TODO: Depending on how we restructure the Measure/Population object, may be deleted in the future
     population_ids: Mixed,
 
-    value_sets: [{ type: ObjectId, ref: 'ValueSet' }],
-
-    complexity: Mixed, // Bonnie-specific?
-
     // Relations to other model classes
-    user: { type: ObjectId, ref: 'User', index: true }, // Bonnie-specific
-    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, but used in Bonnie-bundler as well
-    package: { type: ObjectId, ref: 'MeasurePackage' }, // Bonnie specific
+    bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, until we migrate the Bundle into cqm-models
+    package: { type: ObjectId, ref: 'MeasurePackage' }, // Bonnie-specific
+    patients: [{ type: ObjectId, ref: 'Patient', index: true }],
+
+    value_sets: [{ type: ObjectId, ref: 'ValueSet' }],
   },
   // Options
   {
