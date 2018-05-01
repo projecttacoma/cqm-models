@@ -1,4 +1,4 @@
-module Tacoma
+module CQM
   # Measure contains the information necessary to represent the CQL version of a Clinical Quality Measure,
   # As needed by the Bonnie & Cypress applications
   class Measure
