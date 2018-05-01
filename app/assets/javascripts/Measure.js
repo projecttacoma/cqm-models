@@ -30,7 +30,7 @@ const MeasureSchema = mongoose.Schema(
 
     // Measure type variables
     episode_of_care: Boolean,
-    continuous_constiable: Boolean,
+    continuous_variable: Boolean,
 
     // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,
