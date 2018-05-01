@@ -75,8 +75,7 @@ module CQM
     scope :by_type, ->(type) { where('type' => type) }
     scope :by_user, ->(user) { where user_id: user.id }
 
-    index 'user_id' => 1
-    index 'hqmf_id' => 1
+    index 'user_id' => 1, 'hqmf_set_id' => 1
 
     # Find the measures matching a patient
     def self.for_patient(record)
