@@ -1,4 +1,4 @@
-module Tacoma
+module CQM
   # Concept is an individual code within a ValueSet, including all of the associated metadata
   # such as code system, version, and display name
   class Concept

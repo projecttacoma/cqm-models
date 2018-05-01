@@ -1,4 +1,4 @@
-module Tacoma
+module CQM
   # ValueSet represents a collection of Concepts, used by the Measures to specify a set of codes for a particular topic
   class ValueSet
     include Mongoid::Document
