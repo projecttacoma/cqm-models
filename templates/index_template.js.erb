@@ -10,3 +10,5 @@ module.exports.ValueSet = require('./ValueSet.js').ValueSet;
 module.exports.ValueSetSchema = require('./ValueSet.js').ValueSetSchema;
 module.exports.Concept = require('./Concept.js').Concept;
 module.exports.ConceptSchema = require('./Concept.js').ConceptSchema;
+module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
+module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;

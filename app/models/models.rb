@@ -14,6 +14,7 @@ require_relative 'qdm/tacoma/measure'
 require_relative 'qdm/tacoma/measure_package'
 require_relative 'qdm/tacoma/valueset'
 require_relative 'qdm/tacoma/concept'
+require_relative 'qdm/tacoma/individual_result'
 
 # Generated models
 require_relative 'qdm/patient'
