@@ -39,8 +39,9 @@ const IndividualResultSchema = mongoose.Schema(
     },
 
     // Relations to other model classes
-    measure: { type: ObjectId, ref: 'Measure' },
-    patient: { type: ObjectId, ref: 'Patient' },
+    // 'alias' field makes it so you can call obj.measure, and get the object referenced by measure_id
+    measure_id: { type: ObjectId, ref: 'Measure', alias: 'measure' },
+    patient_id: { type: ObjectId, ref: 'Patient', alias: 'patient' },
 
   },
   // Options
