@@ -66,7 +66,7 @@ module CQM
     has_and_belongs_to_many :patients
 
     # Store this references as an Array on the Measure object,
-    # but don't care about the inverse relationship (e.g. we never really care 
+    # but don't care about the inverse relationship (e.g. we never really care
     # about getting all the measures from a ValueSet object,
     # hence the 'inverse_of: nil')
     has_and_belongs_to_many :value_sets, inverse_of: nil
