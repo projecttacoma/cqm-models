@@ -3,10 +3,7 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [mNumber, mString, mBoolean, Mixed, ObjectId, mDate] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Boolean,
+const [Mixed, ObjectId, mDate] = [
   mongoose.Schema.Types.Mixed,
   mongoose.Schema.Types.ObjectId,
   mongoose.Schema.Types.Date,
@@ -34,9 +31,9 @@ const MeasureSchema = mongoose.Schema(
 
     // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,
-    cql: [mString],
+    cql: [String],
     elm: [Mixed],
-    main_cql_library: mString,
+    main_cql_library: String,
     cql_statement_dependencies: Mixed,
 
     // HQMF/Tacoma-specific Measure-logic related data

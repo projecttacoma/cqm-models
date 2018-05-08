@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 const Concept = require('./Concept.js');
 
-const [mString, Mixed, ObjectId] = [
-  mongoose.Schema.Types.String,
+const [Mixed, ObjectId] = [
   mongoose.Schema.Types.Mixed,
   mongoose.Schema.Types.ObjectId,
 ];
