@@ -29,6 +29,16 @@ module QDM
       dataElements.where(qrdaOid: qrda_oid) || []
     end
 
+    # Shift all data elemement fields that deal with dates by the given value.
+    # Given value should be in seconds. Positive values shift forward, negative
+    # values shift backwards.
+    #
+    # Note: This will NOT shift dates on the patient itself, but will shift
+    # dates on the data elements that exist on the patient.
+    def shift_dates(seconds)
+      dataElements.each { |element| element.shift_dates(seconds) }
+    end
+
     # Returns an array of elements that exist on this patient. Optionally
     # takes a category and/or, which returns all elements of that QDM
     # category. Example: patient.get_data_elements('encounters')

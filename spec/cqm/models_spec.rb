@@ -36,6 +36,20 @@ RSpec.describe QDM do
     @patient_big.dataElements << QDM::EncounterPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')])
     @patient_big.dataElements << QDM::CommunicationFromProviderToPatient.new(authorDatetime: 3.years.ago, dataElementCodes: [QDM::Code.new('SNOMED-CT', '428341000124108')])
     @patient_big.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
+
+    # Patient with some data elements
+    bd = 70.years.ago
+    @patient_de1 = QDM::Patient.new(birthDatetime: bd, givenNames: %w['First1 Middle1'], familyName: 'Family1', bundleId: '1')
+    @patient_de1.dataElements << QDM::Diagnosis.new(authorDatetime: DateTime.new(2010, 1, 1, 4, 0, 0), dataElementCodes: [QDM::Code.new('E08.311', 'ICD-10-CM'), QDM::Code.new('362.01', 'ICD-9-CM'), QDM::Code.new('4855003', 'SNOMED-CT')])
+    @patient_de1.dataElements << QDM::EncounterPerformed.new(authorDatetime: DateTime.new(2010, 1, 2, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')])
+    @patient_de1.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: DateTime.new(2010, 1, 3, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
+
+    # Another patient with some data elements
+    bd = 20.years.ago
+    @patient_de2 = QDM::Patient.new(birthDatetime: bd, givenNames: %w['First2 Middle2'], familyName: 'Family2', bundleId: '1')
+    @patient_de2.dataElements << QDM::Diagnosis.new(authorDatetime: DateTime.new(2010, 1, 1, 4, 0, 0), dataElementCodes: [QDM::Code.new('E08.311', 'ICD-10-CM'), QDM::Code.new('362.01', 'ICD-9-CM'), QDM::Code.new('4855003', 'SNOMED-CT')])
+    @patient_de2.dataElements << QDM::EncounterPerformed.new(authorDatetime: DateTime.new(2010, 1, 2, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')])
+    @patient_de2.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: DateTime.new(2010, 1, 3, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
   end
 
   after(:all) do
@@ -65,5 +79,49 @@ RSpec.describe QDM do
 
   it 'patients return datatypes return codes using code_system_pairs' do
     expect(@patient_a.get_data_elements('procedure').first.code_system_pairs.count).to eq 2
+  end
+
+  it 'shift patient data elements forward in time' do
+    # Shift everything two hours ahead
+    @patient_de1.shift_dates(60 * 60 * 2)
+
+    # Diagnosis authorDatetime should be two hours ahead
+    expect(@patient_de1.conditions.first.authorDatetime.utc.to_s).to include('06:00:00')
+
+    # EncounterPerformed authorDatetime should be two hours ahead
+    expect(@patient_de1.encounters.first.authorDatetime.utc.to_s).to include('06:00:00')
+
+    # EncounterPerformed relevantPeriod high and low should be two hours ahead
+    expect(@patient_de1.encounters.first.relevantPeriod.low.utc.to_s).to include('06:00:00')
+    expect(@patient_de1.encounters.first.relevantPeriod.high.utc.to_s).to include('07:00:00')
+
+    # DiagnosticStudyPerformed authorDatetime should be two hours ahead
+    expect(@patient_de1.diagnostic_studies.first.authorDatetime.utc.to_s).to include('06:00:00')
+
+    # DiagnosticStudyPerformed relevantPeriod high and low should be two hours ahead
+    expect(@patient_de1.diagnostic_studies.first.relevantPeriod.low.utc.to_s).to include('06:00:00')
+    expect(@patient_de1.diagnostic_studies.first.relevantPeriod.high.utc.to_s).to include('07:00:00')
+  end
+
+  it 'shift patient data elements backwards in time' do
+    # Shift everything two hours behind
+    @patient_de2.shift_dates(-(60 * 60 * 2))
+
+    # Diagnosis authorDatetime should be two hours behind
+    expect(@patient_de2.conditions.first.authorDatetime.utc.to_s).to include('02:00:00')
+
+    # EncounterPerformed authorDatetime should be two hours behind
+    expect(@patient_de2.encounters.first.authorDatetime.utc.to_s).to include('02:00:00')
+
+    # EncounterPerformed relevantPeriod high and low should be two hours behind
+    expect(@patient_de2.encounters.first.relevantPeriod.low.utc.to_s).to include('02:00:00')
+    expect(@patient_de2.encounters.first.relevantPeriod.high.utc.to_s).to include('03:00:00')
+
+    # DiagnosticStudyPerformed authorDatetime should be two hours behind
+    expect(@patient_de2.diagnostic_studies.first.authorDatetime.utc.to_s).to include('02:00:00')
+
+    # DiagnosticStudyPerformed relevantPeriod high and low should be two hours behind
+    expect(@patient_de2.diagnostic_studies.first.relevantPeriod.low.utc.to_s).to include('02:00:00')
+    expect(@patient_de2.diagnostic_studies.first.relevantPeriod.high.utc.to_s).to include('03:00:00')
   end
 end

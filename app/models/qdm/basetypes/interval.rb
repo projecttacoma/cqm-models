@@ -16,6 +16,17 @@ module QDM
       { low: @low, high: @high, lowClosed: @lowClosed, highClosed: @highClosed }
     end
 
+    # Shift dates by the given value.
+    # Given value should be in seconds. Positive values shift forward, negative
+    # values shift backwards.
+    #
+    # NOTE: This will only shift if @high and @low are DateTimes.
+    def shift_dates(seconds)
+      @low = (@low.utc.to_time + seconds.seconds).to_datetime.new_offset(0) if @low.is_a? DateTime
+      @high = (@high.utc.to_time + seconds.seconds).to_datetime.new_offset(0) if @high.is_a? DateTime
+      self
+    end
+
     class << self
       # Get the object as it was stored in the database, and instantiate
       # this custom class from it.
