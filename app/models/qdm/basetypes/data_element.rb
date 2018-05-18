@@ -50,7 +50,7 @@ module QDM
           send(field + '=', (send(field).to_time + seconds.seconds).to_datetime)
         end
         # Check if field is an Interval
-        if send(field).is_a? Interval || send(field).is_a? DataElement
+        if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
           send(field + '=', send(field).shift_dates(seconds))
         end
       end
