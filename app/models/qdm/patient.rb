@@ -36,6 +36,7 @@ module QDM
     # Note: This will NOT shift dates on the patient itself, but will shift
     # dates on the data elements that exist on the patient.
     def shift_dates(seconds)
+      birthDatetime = (birthDatetime.utc.to_time + seconds.seconds).to_datetime.new_offset(0)
       dataElements.each { |element| element.shift_dates(seconds) }
     end
 
