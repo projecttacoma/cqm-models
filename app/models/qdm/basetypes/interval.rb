@@ -36,6 +36,7 @@ module QDM
       def demongoize(object)
         return nil unless object
         object = object.symbolize_keys
+        fix_datetime(object)
         QDM::Interval.new(object[:low], object[:high], object[:lowClosed], object[:highClosed]) if object.is_a?(Hash)
       end
 
@@ -47,9 +48,16 @@ module QDM
         when QDM::Interval then object.mongoize
         when Hash
           object = object.symbolize_keys
+          fix_datetime(object)
           QDM::Interval.new(object[:low], object[:high], object[:lowClosed], object[:highClosed]).mongoize
         else object
         end
+      end
+
+      def fix_datetime(object)
+        # Cast to DateTime if it is a string representing a DateTime
+        object[:low] = DateTime.strptime(object[:low]) if (object[:low].is_a? String) && DateTime.strptime(object[:low])
+        object[:high] = DateTime.strptime(object[:high]) if (object[:high].is_a? String) && DateTime.strptime(object[:high])
       end
 
       # Converts the object that was supplied to a criteria and converts it
