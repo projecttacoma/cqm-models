@@ -28,7 +28,7 @@
   "scripts": {
     "test": "jasmine",
     "lint": "eslint 'app/assets/javascripts/**/*.js'",
-    "dist": "browserify app/assets/javascripts/index.js > dist/index.js",
+    "dist": "yarn && browserify app/assets/javascripts/index.js > dist/index.js",
     "dist_test": "browserify app/assets/javascripts/index.js > tmp/dist/index.js"
   }
 }
