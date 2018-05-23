@@ -7,7 +7,7 @@ module CQM
 
     # These are the Mongoid equivalent of the Mongoose "enum" attribute for the respective fields.
     # They throw an error if you try to assign a value that's not in the array.
-    validates_inclusion_of :scoring_type, in: %w[PROPORTION RATIO CONTINUOUS_VARIABLE]
+    validates_inclusion_of :measure_scoring, in: %w[PROPORTION RATIO CONTINUOUS_VARIABLE]
     validates_inclusion_of :calculation_method, in: %w[PATIENT EPISODE_OF_CARE]
 
     TYPES = %w[ep eh].freeze
@@ -38,14 +38,10 @@ module CQM
     field :cms_id, type: String
     field :title, type: String, default: ''
     field :description, type: String, default: ''
-    # "EP", "EH", or "unknown" are the only values currently in use
-    field :type, type: String
-    # "uncategorized" and "Miscellaneous" are the only values currently in use
-    field :category, type: String, default: 'uncategorized'
 
     # Measure type variables
     # Note: these are constrained to an enumeration of value options above, via validates_inclusion_of
-    field :scoring_type, type: String, default: 'PROPORTION'
+    field :measure_scoring, type: String, default: 'PROPORTION'
     field :calculation_method, type: String, default: 'PATIENT'
 
     # ELM/CQL Measure-logic related data
@@ -81,7 +77,6 @@ module CQM
     has_and_belongs_to_many :value_sets, inverse_of: nil
 
     scope :by_measure_id, ->(id) { where('measure_id' => id) }
-    scope :by_type, ->(type) { where('type' => type) }
     scope :by_user, ->(user) { where user_id: user.id }
 
     index 'user_id' => 1, 'hqmf_set_id' => 1

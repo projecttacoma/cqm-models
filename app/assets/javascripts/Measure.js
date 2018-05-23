@@ -26,13 +26,9 @@ const MeasureSchema = mongoose.Schema(
     cms_id: String,
     title: String,
     description: String,
-    // "EP", "EH", or "unknown" are the only values currently in use
-    type: String,
-    // "uncategorized" and "Miscellaneous" are the only values currently in use
-    category: { type: String, default: 'uncategorized' },
 
     // Measure type variables
-    scoring_type: {
+    measure_scoring: {
       type: String,
       enum: ['PROPORTION', 'RATIO', 'CONTINUOUS_VARIABLE'],
       default: 'PROPORTION',
