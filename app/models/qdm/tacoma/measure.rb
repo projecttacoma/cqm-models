@@ -43,10 +43,12 @@ module CQM
 
     # ELM/CQL Measure-logic related data
     field :elm_annotations, type: Hash
-    field :cql, type: Array
+    # Field name changed from 'cql' to 'cql_libraries' because the semantics of
+    # embeds_many :cqls sounded weird
+    embeds_many :cql_libraries
     field :elm, type: Array
     field :main_cql_library, type: String
-    field :cql_statement_dependencies, type: Hash
+    embeds_many :cql_statement_dependencies
 
     # HQMF/Tacoma-specific Measure-logic related data
     field :population_criteria, type: Hash

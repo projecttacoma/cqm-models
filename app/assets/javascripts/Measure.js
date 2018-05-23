@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
+const CQLStatementDependencySchema = require('./CQLStatementDependency');
+const CQLLibrarySchema = require('./CQLLibrary');
 
 const [Number, String, Boolean, Mixed, ObjectId, Date] = [
   mongoose.Schema.Types.Number,
@@ -34,10 +36,13 @@ const MeasureSchema = mongoose.Schema(
 
     // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,
-    cql: [String],
+    // Field name changed from 'cql' to 'cql_libraries' because the semantics of
+    // embeds_many: cqls (on the Ruby side) sounded weird,
+    // and we wanted to keep the API consistent
+    cql: [CQLLibrarySchema],
     elm: [Mixed],
     main_cql_library: String,
-    cql_statement_dependencies: Mixed,
+    cql_statement_dependencies: [CQLStatementDependencySchema],
 
     // HQMF/Tacoma-specific Measure-logic related data
     population_criteria: Mixed,
