@@ -23,13 +23,22 @@ const MeasureSchema = mongoose.Schema(
     cms_id: String,
     title: String,
     description: String,
-    // EP/EH, or "unknown"
+    // "EP", "EH", or "unknown" are the only values currently in use
     type: String,
-    category: { type: String, default: 'Uncategorized' },
+    // "uncategorized" and "Miscellaneous" are the only values currently in use
+    category: { type: String, default: 'uncategorized' },
 
     // Measure type variables
-    episode_of_care: Boolean,
-    continuous_variable: Boolean,
+    scoring_type: {
+      type: String,
+      enum: ['PROPORTION', 'RATIO', 'CONTINUOUS_VARIABLE'],
+      default: 'PROPORTION',
+    },
+    calculation_method: {
+      type: String,
+      enum: ['PATIENT', 'EPISODE_OF_CARE'],
+      default: 'PATIENT',
+    },
 
     // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,

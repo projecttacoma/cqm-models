@@ -5,6 +5,11 @@ module CQM
     include Mongoid::Document
     include Mongoid::Timestamps
 
+    # These are the Mongoid equivalent of the Mongoose "enum" attribute for the respective fields.
+    # They throw an error if you try to assign a value that's not in the array.
+    validates_inclusion_of :scoring_type, in: %w[PROPORTION RATIO CONTINUOUS_VARIABLE]
+    validates_inclusion_of :calculation_method, in: %w[PATIENT EPISODE_OF_CARE]
+
     TYPES = %w[ep eh].freeze
 
     IPP = 'IPP'.freeze
@@ -33,13 +38,15 @@ module CQM
     field :cms_id, type: String
     field :title, type: String, default: ''
     field :description, type: String, default: ''
-    # EP/EH, or "unknown"
+    # "EP", "EH", or "unknown" are the only values currently in use
     field :type, type: String
+    # "uncategorized" and "Miscellaneous" are the only values currently in use
     field :category, type: String, default: 'uncategorized'
 
     # Measure type variables
-    field :episode_of_care, type: Boolean
-    field :continuous_variable, type: Boolean
+    # Note: these are constrained to an enumeration of value options above, via validates_inclusion_of
+    field :scoring_type, type: String, default: 'PROPORTION'
+    field :calculation_method, type: String, default: 'PATIENT'
 
     # ELM/CQL Measure-logic related data
     field :elm_annotations, type: Hash
