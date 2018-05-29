@@ -22,8 +22,12 @@ module QDM
     #
     # NOTE: This will only shift if @high and @low are DateTimes.
     def shift_dates(seconds)
-      @low = (@low.utc.to_time + seconds.seconds).to_datetime.new_offset(0) if @low.is_a? DateTime
-      @high = (@high.utc.to_time + seconds.seconds).to_datetime.new_offset(0) if @high.is_a? DateTime
+      if (@low.is_a? DateTime) || (@low.is_a? Time)
+        @low = (@low.utc.to_time + seconds.seconds).to_datetime.new_offset(0)
+      end
+      if (@high.is_a? DateTime) || (@high.is_a? Time)
+        @high = (@high.utc.to_time + seconds.seconds).to_datetime.new_offset(0)
+      end
       self
     end
 
