@@ -90,7 +90,7 @@ module CQM
     # Rebuild from population_criteria, data_criteria, and measure_period JSON
     def as_hqmf_model
       json = {
-        'id' => measure_id,
+        'id' => hqmf_id,
         'title' => title,
         'description' => description,
         'population_criteria' => population_criteria,
