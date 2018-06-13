@@ -98,5 +98,43 @@ module QDM
         end
       end
     end
+
+    class << self
+      # Get the object as it was stored in the database, and instantiate
+      # this custom class from it.
+      #
+      # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
+      # [ low, high ].
+      def demongoize(object)
+        return nil unless object
+        object = object.symbolize_keys
+        if object.is_a?(Hash)
+          de = QDM::DataElement.new
+          de.attribute_names.each do |field|
+            de.send(field + '=', object[field.to_sym])
+          end
+          de
+        else object
+        end
+      end
+
+      # Takes any possible object and converts it to how it would be
+      # stored in the database.
+      def mongoize(object)
+        case object
+        when nil then nil
+        when QDM::DataElement then object.mongoize
+        when Hash
+          object = object.symbolize_keys
+          de = QDM::DataElement.new
+          de.attribute_names.each do |field|
+            de.send(field + '=', object[field.to_sym])
+          end
+          de.mongoize
+        else object
+
+        end
+      end
+    end
   end
 end
