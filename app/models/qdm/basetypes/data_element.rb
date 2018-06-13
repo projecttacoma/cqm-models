@@ -109,11 +109,11 @@ module QDM
         return nil unless object
         object = object.symbolize_keys
         if object.is_a?(Hash)
-          de = QDM::DataElement.new
-          de.attribute_names.each do |field|
-            de.send(field + '=', object[field.to_sym])
+          data_element = QDM::DataElement.new
+          data_element.attribute_names.each do |field|
+            data_element.send(field + '=', object[field.to_sym])
           end
-          de
+          data_element
         else object
         end
       end
@@ -126,11 +126,11 @@ module QDM
         when QDM::DataElement then object.mongoize
         when Hash
           object = object.symbolize_keys
-          de = QDM::DataElement.new
-          de.attribute_names.each do |field|
-            de.send(field + '=', object[field.to_sym])
+          data_element = QDM::DataElement.new
+          data_element.attribute_names.each do |field|
+            data_element.send(field + '=', object[field.to_sym])
           end
-          de.mongoize
+          data_element.mongoize
         else object
 
         end
