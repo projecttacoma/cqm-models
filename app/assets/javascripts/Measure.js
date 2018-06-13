@@ -3,7 +3,7 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 
-const [mNumber, mString, mBoolean, Mixed, ObjectId, mDate] = [
+const [Number, String, Boolean, Mixed, ObjectId, Date] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Boolean,
@@ -15,32 +15,32 @@ const [mNumber, mString, mBoolean, Mixed, ObjectId, mDate] = [
 const MeasureSchema = mongoose.Schema(
   {
     // ID/other measure information
-    id: mString,
-    measure_id: mString,
-    hqmf_id: mString,
-    hqmf_set_id: mString,
-    hqmf_version_number: mNumber,
-    cms_id: mString,
-    title: mString,
-    description: mString,
-    type: mString,
-    category: { type: mString, default: 'Uncategorized' },
+    id: String,
+    measure_id: String,
+    hqmf_id: String,
+    hqmf_set_id: String,
+    hqmf_version_number: Number,
+    cms_id: String,
+    title: String,
+    description: String,
+    type: String,
+    category: { type: String, default: 'Uncategorized' },
 
     // Measure type variables
-    episode_of_care: mBoolean,
-    continuous_constiable: mBoolean,
+    episode_of_care: Boolean,
+    continuous_constiable: Boolean,
     episode_ids: [],
 
     // Publishing data (used by Bonnie)
-    published: mBoolean,
-    publish_date: mDate,
-    version: mNumber,
+    published: Boolean,
+    publish_date: Date,
+    version: Number,
 
     // ELM/CQL Measure-logic related data
     elm_annotations: Mixed,
-    cql: [mString],
+    cql: [String],
     elm: [Mixed],
-    main_cql_library: mString,
+    main_cql_library: String,
     cql_statement_dependencies: Mixed,
 
     // HQMF/Tacoma-specific Measure-logic related data
