@@ -38,6 +38,9 @@ function RecursiveCast(any) {
     });
     return casted;
   }
+  if (Number.isInteger(any)) {
+    return any;
+  }
   if (Date.parse(any)) {
     return cql.DateTime.fromDate(new Date(any), 0);
   }
