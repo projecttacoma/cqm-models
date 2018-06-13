@@ -80,6 +80,23 @@ module QDM
         else object
         end
       end
+
+      # Shift all fields that deal with dates by the given value.
+      # Given value should be in seconds. Positive values shift forward, negative
+      # values shift backwards.
+      def shift_dates(seconds)
+        # Iterate over fields
+        fields.keys.each do |field|
+          # Check if field is a DateTime
+          if send(field).is_a? DateTime
+            send(field + '=', (send(field).to_time + seconds.seconds).to_datetime)
+          end
+          # Check if field is an Interval
+          if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
+            send(field + '=', send(field).shift_dates(seconds))
+          end
+        end
+      end
     end
   end
 end
