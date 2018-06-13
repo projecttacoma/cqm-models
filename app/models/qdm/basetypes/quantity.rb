@@ -11,7 +11,7 @@ module QDM
 
     # Converts an object of this instance into a database friendly value.
     def mongoize
-      { value: @value, unit: @unit }
+      { value: @value, unit: @unit, _type: 'QDM::Quantity' }
     end
 
     class << self
