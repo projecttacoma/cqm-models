@@ -60,8 +60,8 @@ module QDM
 
       def fix_datetime(object)
         # Cast to DateTime if it is a string representing a DateTime
-        object[:low] = DateTime.strptime(object[:low]) if (object[:low].is_a? String) && DateTime.strptime(object[:low])
-        object[:high] = DateTime.strptime(object[:high]) if (object[:high].is_a? String) && DateTime.strptime(object[:high])
+        object[:low] = DateTime.parse(object[:low]) if (object[:low].is_a? String) && DateTime.parse(object[:low])
+        object[:high] = DateTime.parse(object[:high]) if (object[:high].is_a? String) && DateTime.parse(object[:high])
       end
 
       # Converts the object that was supplied to a criteria and converts it
