@@ -51,8 +51,6 @@ module QDM
       # Get the object as it was stored in the database, and instantiate
       # this custom class from it.
       #
-      # The array elements in demongoize are the same 5 elements used in mongoize, i.e.
-      # [ low, high ].
       def demongoize(object)
         return nil unless object
         object = object.symbolize_keys
