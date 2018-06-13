@@ -37,6 +37,9 @@ Naming/UncommunicativeMethodParamName:
 Naming/VariableName:
   Enabled: false
 
+Style/DateTime:
+  Enabled: false
+
 # Only disabled until the cyclomatic complexity method in measure.rb (ported from bonnie-bundler) is rewritten
 Lint/NestedMethodDefinition:
   Enabled: false
