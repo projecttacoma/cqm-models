@@ -4,6 +4,7 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -16,7 +17,7 @@ const EncounterPerformedSchema = DataElementSchema({
   admissionSource: Code,
   relevantPeriod: Interval,
   dischargeDisposition: Code,
-  facilityLocations: [],
+  facilityLocations: [FacilityLocationSchema],
   diagnoses: [Code],
   principalDiagnosis: Code,
   negationRationale: Code,
