@@ -13,7 +13,7 @@ module QDM
 
     # Converts an object of this instance into a database friendly value.
     def mongoize
-      { low: @low, high: @high, lowClosed: @lowClosed, highClosed: @highClosed }
+      { low: @low, high: @high, lowClosed: @lowClosed, highClosed: @highClosed, _type: 'QDM::Interval' }
     end
 
     class << self

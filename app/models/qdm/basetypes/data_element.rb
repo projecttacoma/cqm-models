@@ -34,9 +34,52 @@ module QDM
       _id
     end
 
+    def mongoize
+      json_representation = {}
+      attribute_names.each do |field|
+        json_representation[field] = send(field).mongoize
+      end
+      json_representation
+    end
+
     # Include '_type' in any JSON output. This is necessary for deserialization.
     def to_json(options = nil)
       serializable_hash(methods: :_type).to_json(options)
+    end
+
+    class << self
+      # Get the object as it was stored in the database, and instantiate
+      # this custom class from it.
+      #
+      def demongoize(object)
+        return nil unless object
+        object = object.symbolize_keys
+        if object.is_a?(Hash)
+          data_element = QDM::DataElement.new
+          data_element.attribute_names.each do |field|
+            data_element.send(field + '=', object[field.to_sym])
+          end
+          data_element
+        else object
+        end
+      end
+
+      # Takes any possible object and converts it to how it would be
+      # stored in the database.
+      def mongoize(object)
+        case object
+        when nil then nil
+        when QDM::DataElement then object.mongoize
+        when Hash
+          object = object.symbolize_keys
+          data_element = QDM::DataElement.new
+          data_element.attribute_names.each do |field|
+            data_element.send(field + '=', object[field.to_sym])
+          end
+          data_element.mongoize
+        else object
+        end
+      end
     end
   end
 end
