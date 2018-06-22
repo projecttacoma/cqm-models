@@ -413,6 +413,12 @@
     "category": "patient_characteristic",
     "status": "race"
   },
+  "participation": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.130",
+    "qrda_oid": "",
+    "category": "participation",
+    "status": ""
+  },
   "physical_exam": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.60",
     "qrda_oid": "",
