@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/projecttacoma/cqm-models.svg?branch=master)](https://travis-ci.org/projecttacoma/cqm-models)
 [![Gem Version](https://badge.fury.io/rb/cqm-models.svg)](https://badge.fury.io/rb/cqm-models)
+![NPM](https://img.shields.io/npm/v/cqm-models.svg?colorB=50c632)
 
 # cqm-models
 
