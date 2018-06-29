@@ -97,8 +97,7 @@ PatientSchema.methods.findRecords = function findRecords(profile) {
   let profileStripped;
   if (profile === 'Patient') {
     // Requested generic patient info
-    info = {};
-    info['birthDatetime'] = this.birthDatetime;
+    const info = { birthDatetime: this.birthDatetime };
     return [info];
   } else if (/PatientCharacteristic/.test(profile)) {
     // Requested a patient characteristic
