@@ -29,6 +29,12 @@ module QDM
       dataElementCodes.collect { |code| QDM::Code.demongoize(code) }
     end
 
+    # Helper method that returns the first code on this data element as a QDM::Code
+    # object.
+    def code
+      QDM::Code.demongoize(dataElementCodes.first) if dataElementCodes.first
+    end
+
     # Return the Mongo id for this datatype.
     def id
       _id
