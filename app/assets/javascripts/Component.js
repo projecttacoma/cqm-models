@@ -4,6 +4,8 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+
+const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -11,7 +13,7 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const ComponentSchema = DataElementSchema({
+const ComponentSchema = new mongoose.Schema({
   code: Code,
   result: Any,
   qdmVersion: { type: String, default: '5.3' },
