@@ -4,6 +4,7 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const { ComponentSchema } = require('./Component');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -23,7 +24,7 @@ const ProcedurePerformedSchema = DataElementSchema({
   ordinality: Code,
   incisionDatetime: DateTime,
   negationRationale: Code,
-  components: [],
+  components: [ComponentSchema],
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
   category: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'performed' },
