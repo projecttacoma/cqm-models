@@ -18,7 +18,8 @@ Code.prototype.cast = (code) => {
   val.codeSystemOid = (typeof code.codeSystemOid !== 'undefined') ? code.codeSystemOid : null;
   val.version = (typeof code.version !== 'undefined') ? code.version : null;
 
-  return val;
+  // Return a cql-execution code
+  return new cql.Code(val.code, val.codeSystem, val.version, val.descriptor);
 };
 
 mongoose.Schema.Types.Code = Code;
