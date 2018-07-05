@@ -12,7 +12,6 @@ const [Number, String] = [
 ];
 
 const ComponentSchema = DataElementSchema({
-  code: Code,
   result: Any,
   qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'Component' },

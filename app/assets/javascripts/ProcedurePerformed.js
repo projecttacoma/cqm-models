@@ -6,8 +6,6 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const Any = require('./basetypes/Any');
 
-const { ComponentSchema } = require('./Component');
-
 const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
@@ -25,7 +23,7 @@ const ProcedurePerformedSchema = DataElementSchema({
   ordinality: Code,
   incisionDatetime: DateTime,
   negationRationale: Code,
-  components: [ComponentSchema],
+  components: [],
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
   category: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'performed' },

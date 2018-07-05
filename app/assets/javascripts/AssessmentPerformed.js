@@ -4,7 +4,6 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -18,7 +17,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   reason: Code,
   method: Code,
   result: Any,
-  components: [ComponentSchema],
+  components: [],
   relatedTo: [String],
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
   category: { type: String, default: 'assessment' },
