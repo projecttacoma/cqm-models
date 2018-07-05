@@ -32,11 +32,15 @@ function DataElementSchema(add, options) {
       return null;
     }
   };
-  
+
   // Returns all of the codes on this data element
   // in their normal form.
   extended.methods.codes = function getCodes() {
     return this.dataElementCodes;
+  };
+
+  extended.methods.toString = function toString() {
+    return '[object Object]';
   };
 
   return extended;
