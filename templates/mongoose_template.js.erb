@@ -4,18 +4,26 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+<% unless datatype.downcase.include? 'component' %>const { ComponentSchema } = require('./Component');<% end %>
+<% unless datatype.downcase.include? 'facilitylocation' %>const { FacilityLocationSchema } = require('./FacilityLocation');<% end %>
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
+<% unless datatype == 'Component' || datatype == 'FacilityLocation' %>
 const <%= datatype -%>Schema = DataElementSchema({
   <%- for attribute in attrs_with_extras -%>
   <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
   <%- end %>
 });
-
+<% else %>
+const <%= datatype -%>Schema = new mongoose.Schema({
+  <%- for attribute in attrs_with_extras -%>
+  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
+  <%- end %>
+});
+<% end %>
 module.exports.<%= datatype %>Schema = <%= datatype %>Schema;
 module.exports.<%= datatype %> = mongoose.model('<%= datatype %>', <%= datatype %>Schema);

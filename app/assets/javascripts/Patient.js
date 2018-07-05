@@ -78,12 +78,11 @@ PatientSchema.methods.getDataElements = function getDataElements(params) {
 // Returns an array of dataElements that exist on the patient, queried by
 // QDM profile
 PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = null) {
-  if (isNegated === true) {
-    return this.dataElements.filter(element => element._type === `QDM::${profile}` && (typeof element.negationRationale !== 'undefined' && element.negationRationale != null));
-  } else if (isNegated === false) {
-    return this.dataElements.filter(element => element._type === `QDM::${profile}` && (typeof element.negationRationale === 'undefined' || element.negationRationale == null));
-  }
-  return this.dataElements.filter(element => element._type === `QDM::${profile}`);
+  // If isNegated == true, only return data elements with a negationRationale that isn't null.
+  // If isNegated == false, only return data elements with a null negationRationale.
+  // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
+  var results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
+  return results.map(result => AllDataElements[profile](result));
 };
 
 // This method is called by the CQL execution engine on a CQLPatient when
