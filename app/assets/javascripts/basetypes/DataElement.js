@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Code = require('./Code.js');
+const cql = require('cql-execution');
 
 const [Schema] = [mongoose.Schema];
 
@@ -17,10 +18,7 @@ function DataElementSchema(add, options) {
   // in a format usable by the cql-execution framework
   extended.methods.getCode = function getCode() {
     return this.dataElementCodes.map((code) => {
-      const result = {};
-      result.code = code.code;
-      result.system = code.code_system;
-      return result;
+      return new cql.Code(code.code, code.codeSystem, code.version, code.descriptor);
     });
   };
 
