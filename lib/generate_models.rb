@@ -136,8 +136,7 @@ extra_fields_rb = [
 base_module = 'QDM::'
 base_module = 'Test::QDM::' if IS_TEST
 datatypes.each do |datatype, attributes|
-  clean_attributes = attributes.reject { |attribute| attribute[:name] == 'code' } # All things have a code method by default.
-  Rails::Generators.invoke('mongoid:model', [base_module + datatype] + clean_attributes.collect { |attribute| attribute[:name] + ':' + TYPE_LOOKUP_RB[attribute[:type]] } + extra_fields_rb)
+  Rails::Generators.invoke('mongoid:model', [base_module + datatype] + attributes.collect { |attribute| attribute[:name] + ':' + TYPE_LOOKUP_RB[attribute[:type]] } + extra_fields_rb)
 end
 
 # Create require file (if not in test mode)
@@ -164,16 +163,15 @@ extra_fields_js = [
   { name: '_type', type: 'System.String' }
 ]
 datatypes.each do |datatype, attributes|
-  clean_attributes = attributes.reject { |attribute| attribute[:name] == 'code' } # All things have a code method by default.
   if datatype == 'Patient'
     # Handle Patient as its own special case, with its own template.
     patient_template = File.read('templates/patient_template.js.erb')
     patient_renderer = ERB.new(patient_template, nil, '-')
-    attrs_with_extras = clean_attributes + extra_fields_js
+    attrs_with_extras = attributes + extra_fields_js
     puts '  ' + file_path + datatype + '.js'
     File.open(file_path + datatype + '.js', 'w') { |file| file.puts patient_renderer.result(binding) }
   else
-    attrs_with_extras = clean_attributes + extra_fields_js
+    attrs_with_extras = attributes + extra_fields_js
     puts '  ' + file_path + datatype + '.js'
     File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
   end
