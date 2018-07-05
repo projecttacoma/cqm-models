@@ -39,10 +39,6 @@ function DataElementSchema(add, options) {
     return this.dataElementCodes;
   };
 
-  extended.methods.toString = function toString() {
-    return '[object Object]';
-  };
-
   return extended;
 }
 
