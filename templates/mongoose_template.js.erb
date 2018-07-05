@@ -4,8 +4,8 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
+<% unless datatype.downcase.include? 'component' %>const { ComponentSchema } = require('./Component');<% end %>
+<% unless datatype.downcase.include? 'facilitylocation' %>const { FacilityLocationSchema } = require('./FacilityLocation');<% end %>
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [

@@ -5,7 +5,7 @@ const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
+
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
