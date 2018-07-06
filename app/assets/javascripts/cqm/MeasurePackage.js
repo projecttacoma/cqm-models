@@ -5,7 +5,7 @@ const [mBuffer, ObjectId] = [
   mongoose.Schema.Types.ObjectId,
 ];
 
-const MeasurePackageSchema = mongoose.Schema(
+const MeasurePackageSchema = new mongoose.Schema(
   {
     file: mBuffer,
     measure: { type: ObjectId, ref: 'Measure' },
