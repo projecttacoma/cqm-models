@@ -7,7 +7,7 @@ const [String, Mixed, ObjectId] = [
   mongoose.Schema.Types.ObjectId,
 ];
 
-const ValueSetSchema = mongoose.Schema(
+const ValueSetSchema = new mongoose.Schema(
   {
     oid: String,
     display_name: String,

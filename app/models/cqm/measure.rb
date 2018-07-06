@@ -45,13 +45,10 @@ module CQM
     field :calculation_method, type: String, default: 'PATIENT'
 
     # ELM/CQL Measure-logic related data
-    field :elm_annotations, type: Hash
     # Field name changed from 'cql' to 'cql_libraries' because the semantics of
     # embeds_many :cqls sounded weird
-    embeds_many :cql_libraries
-    field :elm, type: Array
+    embeds_many :cql_libraries, class_name: 'CQM::CQLLibrary'
     field :main_cql_library, type: String
-    embeds_many :cql_statement_dependencies
 
     # HQMF/Tacoma-specific Measure-logic related data
     field :population_criteria, type: Hash
@@ -59,16 +56,13 @@ module CQM
     field :source_data_criteria, type: Hash
     field :measure_period, type: Hash
     field :measure_attributes, type: Array
-    field :populations, type: Array
-    field :populations_cql_map, type: Hash
-    field :observations, type: Array
-    # TODO: Depending on how we restructure the Measure/Population object, may be deleted in the future
-    field :population_ids, type: Hash
+
+    embeds_many :population_sets
 
     # Relations to other model classes
-    belongs_to :bundle, class_name: 'HealthDataStandards::CQM::Bundle' # Cypress-specific, until we migrate the Bundle into cqm-models
-    has_one :package, class_name: 'CqlMeasurePackage', inverse_of: :measure, dependent: :destroy # Bonnie-specific
-    has_and_belongs_to_many :patients
+    # Note: bundle is removed, Cypress may create their own bundle object and inject the relationship
+    has_one :package, class_name: 'CQM::MeasurePackage', inverse_of: :measure, dependent: :destroy # Bonnie-specific
+    has_and_belongs_to_many :patients, class_name: 'QDM::Patient'
 
     # Store this references as an Array on the Measure object,
     # but don't care about the inverse relationship (e.g. we never really care
@@ -76,15 +70,7 @@ module CQM
     # hence the 'inverse_of: nil')
     has_and_belongs_to_many :value_sets, inverse_of: nil
 
-    scope :by_measure_id, ->(id) { where('measure_id' => id) }
-    scope :by_user, ->(user) { where user_id: user.id }
-
-    index 'user_id' => 1, 'hqmf_set_id' => 1
-
-    # Find the measures matching a patient
-    def self.for_patient(record)
-      where user_id: record.user_id, hqmf_set_id: { '$in' => record.measure_ids }
-    end
+    scope :by_measure_id, ->(id) { where(measure_id: id) }
 
     # Returns the hqmf-parser's ruby implementation of an HQMF document.
     # Rebuild from population_criteria, data_criteria, and measure_period JSON
@@ -109,17 +95,6 @@ module CQM
 
     def all_data_criteria
       as_hqmf_model.all_data_criteria
-    end
-
-    # Note whether or not the measure is a continuous variable measure.
-    before_save :set_continuous_variable
-    def set_continuous_variable
-      # The return value of this function is not related to whether or not this
-      # measure is a CV measure. The true return value ensures false is not
-      # accidentally returned here, which would cause the chain of 'before_*' to
-      # stop executing.
-      self.continuous_variable = populations.map(&:keys).flatten.uniq.include? HQMF::PopulationCriteria::MSRPOPL
-      true
     end
   end
 end

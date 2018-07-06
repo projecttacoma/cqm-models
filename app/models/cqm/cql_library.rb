@@ -5,7 +5,11 @@ module CQM
     include Mongoid::Document
     embedded_in :measure
 
-    field :library_id, type: String
+    field :library_name, type: String
+    field :library_version, type: String
     field :cql, type: String
+    field :elm, type: Hash
+    field :elm_annotations, type: Hash
+    embeds_many :statement_dependencies, class_name: 'CQM::StatementDependency'
   end
 end

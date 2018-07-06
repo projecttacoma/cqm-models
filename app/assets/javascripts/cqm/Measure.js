@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-const CQLStatementDependencySchema = require('./CQLStatementDependency');
-const CQLLibrarySchema = require('./CQLLibrary');
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const CQLLibrarySchema = require('./CQLLibrary').CQLLibrarySchema;
+const PopulationSetSchema = require('./PopulationSet').PopulationSetSchema;
 
 const [Number, String, Boolean, Mixed, ObjectId, Date] = [
   mongoose.Schema.Types.Number,
@@ -14,7 +14,7 @@ const [Number, String, Boolean, Mixed, ObjectId, Date] = [
   mongoose.Schema.Types.Date,
 ];
 
-const MeasureSchema = mongoose.Schema(
+const MeasureSchema = new mongoose.Schema(
   {
     // A version-specific UUID for the measure
     hqmf_id: String,
@@ -39,15 +39,12 @@ const MeasureSchema = mongoose.Schema(
       default: 'PATIENT',
     },
 
-    // ELM/CQL Measure-logic related data
-    elm_annotations: Mixed,
+    // ELM/CQL Measure-logic related data encapsulated in CQLLibrarySchema
     // Field name changed from 'cql' to 'cql_libraries' because the semantics of
     // embeds_many: cqls (on the Ruby side) sounded weird,
     // and we wanted to keep the API consistent
-    cql: [CQLLibrarySchema],
-    elm: [Mixed],
+    cql_libraries: [CQLLibrarySchema],
     main_cql_library: String,
-    cql_statement_dependencies: [CQLStatementDependencySchema],
 
     // HQMF/Tacoma-specific Measure-logic related data
     population_criteria: Mixed,
@@ -55,11 +52,8 @@ const MeasureSchema = mongoose.Schema(
     source_data_criteria: Mixed,
     measure_period: Interval,
     measure_attributes: [],
-    populations: [Mixed],
-    populations_cql_map: Mixed,
-    observations: [Mixed],
-    // TODO: Depending on how we restructure the Measure/Population object, may be deleted in the future
-    population_ids: Mixed,
+
+    population_sets: [PopulationSetSchema],
 
     // Relations to other model classes
     bundle: { type: ObjectId, ref: 'Bundle' }, // Cypress-specific, until we migrate the Bundle into cqm-models
