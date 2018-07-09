@@ -5,10 +5,11 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const AllDataElements = require('./AllDataElements');
 
-const [Schema, Number, String] = [
+const [Schema, Number, String, Mixed] = [
   mongoose.Schema,
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Mixed
 ];
 
 const PatientSchema = new Schema({
