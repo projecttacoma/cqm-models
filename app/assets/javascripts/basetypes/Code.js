@@ -12,7 +12,7 @@ Code.prototype.cast = (code) => {
     throw new Error(`Code: ${code} does not have a codeSystem`);
   }
 
-  const val = { code: code.code, codeSystem: code.codeSystem };
+  const val = { code: code.code, codeSystem: code.codeSystem, system: code.codeSystem };
 
   val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
   val.codeSystemOid = (typeof code.codeSystemOid !== 'undefined') ? code.codeSystemOid : null;
