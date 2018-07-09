@@ -17,9 +17,7 @@ function DataElementSchema(add, options) {
   // Returns all of the codes on this data element in a format usable by
   // the cql-execution framework.
   extended.methods.getCode = function getCode() {
-    return this.dataElementCodes.map((code) => {
-      return new cql.Code(code.code, code.codeSystem, code.version, code.descriptor);
-    });
+    return this.dataElementCodes.map(code => new cql.Code(code.code, code.codeSystem, code.version, code.descriptor));
   };
 
   // Return the first code on this data element in a format usable by
@@ -28,9 +26,8 @@ function DataElementSchema(add, options) {
     if (this.dataElementCodes && this.dataElementCodes[0]) {
       const qdmCode = this.dataElementCodes[0];
       return new cql.Code(qdmCode.code, qdmCode.codeSystem, qdmCode.version, qdmCode.descriptor);
-    } else {
-      return null;
     }
+    return null;
   };
 
   // Returns all of the codes on this data element
