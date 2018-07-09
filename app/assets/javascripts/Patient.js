@@ -25,7 +25,10 @@ const PatientSchema = new Schema({
   // This field is for application specific information only. If both Bonnie
   // Cypress use a common field, it should be made a field on this model,
   // and not put into extendedData.
-  extendedData: {},
+  extendedData: {
+    type: Mixed,
+    default: {},
+  },
 }, { id: false });
 
 // After initialization of a Patient model, initialize every individual data element
