@@ -13,7 +13,7 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const FacilityLocationSchema = new mongoose.Schema({
+const FacilityLocationSchema = DataElementSchema({
   code: Code,
   locationPeriod: Interval,
   qdmVersion: { type: String, default: '5.3' },

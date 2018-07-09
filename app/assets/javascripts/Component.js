@@ -13,7 +13,7 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const ComponentSchema = new mongoose.Schema({
+const ComponentSchema = DataElementSchema({
   code: Code,
   result: Any,
   qdmVersion: { type: String, default: '5.3' },
