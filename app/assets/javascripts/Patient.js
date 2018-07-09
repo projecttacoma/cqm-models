@@ -9,7 +9,7 @@ const [Schema, Number, String, Mixed] = [
   mongoose.Schema,
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed
+  mongoose.Schema.Types.Mixed,
 ];
 
 const PatientSchema = new Schema({
