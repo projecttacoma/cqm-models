@@ -81,7 +81,7 @@ PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = 
   // If isNegated == true, only return data elements with a negationRationale that isn't null.
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
-  var results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
+  const results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
   return results.map(result => AllDataElements[profile](result));
 };
 

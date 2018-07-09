@@ -285,8 +285,8 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   contents.gsub!(/  _type: String,\n/, "  _type: { type: String, default: '#{dc_name.camelize}' },\n")
 
   # Component and Facility types
-  contents.gsub!(/facilityLocations: \[\]/, "facilityLocations: [FacilityLocationSchema]")
-  contents.gsub!(/components: \[\]/, "components: [ComponentSchema]")
+  contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
+  contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
