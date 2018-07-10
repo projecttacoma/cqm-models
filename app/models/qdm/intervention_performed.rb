@@ -5,10 +5,10 @@ module QDM
     embedded_in :patient
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
-    field :reason, type: Mixed
+    field :reason
     field :result
-    field :status, type: Mixed
-    field :negationRationale, type: Mixed
+    field :status
+    field :negationRationale
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.36'
     field :category, type: String, default: 'intervention'
     field :qdmStatus, type: String, default: 'performed'

@@ -5,10 +5,10 @@ module QDM
     embedded_in :patient
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
-    field :negationRationale, type: Mixed
-    field :reason, type: Mixed
-    field :anatomicalLocationSite, type: Mixed
-    field :anatomicalApproachSite, type: Mixed
+    field :negationRationale
+    field :reason
+    field :anatomicalLocationSite
+    field :anatomicalApproachSite
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.13'
     field :category, type: String, default: 'device'
     field :qdmStatus, type: String, default: 'applied'

@@ -4,9 +4,9 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
-    field :negationRationale, type: Mixed
-    field :reason, type: Mixed
-    field :method, type: Mixed
+    field :negationRationale
+    field :reason
+    field :method
     field :result
     field :components, type: Array
     field :relatedTo, type: Array

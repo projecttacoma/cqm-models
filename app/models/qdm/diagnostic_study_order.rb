@@ -4,9 +4,9 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
-    field :reason, type: Mixed
-    field :method, type: Mixed
-    field :negationRationale, type: Mixed
+    field :reason
+    field :method
+    field :negationRationale
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.22'
     field :category, type: String, default: 'diagnostic_study'
     field :qdmStatus, type: String, default: 'order'

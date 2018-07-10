@@ -8,16 +8,15 @@ const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
-const [Number, String, Mixed] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
 ];
 
 const DiagnosticStudyRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
-  method: Mixed,
-  negationRationale: Mixed,
+  method: Any,
+  negationRationale: Any,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.24' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
   category: { type: String, default: 'diagnostic_study' },

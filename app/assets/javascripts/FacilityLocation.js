@@ -8,14 +8,13 @@ const { ComponentSchema } = require('./Component');
 
 const Any = require('./basetypes/Any');
 
-const [Number, String, Mixed] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
 ];
 
 const FacilityLocationSchema = new mongoose.Schema({
-  code: Mixed,
+  code: Any,
   locationPeriod: Interval,
   qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'FacilityLocation' },
