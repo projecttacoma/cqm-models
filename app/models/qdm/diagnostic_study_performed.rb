@@ -5,13 +5,13 @@ module QDM
     embedded_in :patient
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
-    field :reason, type: Mixed
+    field :reason
     field :result
     field :resultDatetime, type: DateTime
-    field :status, type: Mixed
-    field :method, type: Mixed
-    field :facilityLocation, type: Mixed
-    field :negationRationale, type: Mixed
+    field :status
+    field :method
+    field :facilityLocation
+    field :negationRationale
     field :components, type: Array
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.23'
     field :category, type: String, default: 'diagnostic_study'

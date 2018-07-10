@@ -8,17 +8,16 @@ const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
-const [Number, String, Mixed] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
 ];
 
 const AssessmentPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
-  negationRationale: Mixed,
-  reason: Mixed,
-  method: Mixed,
+  negationRationale: Any,
+  reason: Any,
+  method: Any,
   result: Any,
   components: [ComponentSchema],
   relatedTo: [String],

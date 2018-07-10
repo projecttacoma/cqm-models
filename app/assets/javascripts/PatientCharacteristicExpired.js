@@ -8,15 +8,14 @@ const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
-const [Number, String, Mixed] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
 ];
 
 const PatientCharacteristicExpiredSchema = DataElementSchema({
   expiredDatetime: DateTime,
-  cause: Mixed,
+  cause: Any,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.57' },
   category: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'expired' },

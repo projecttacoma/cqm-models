@@ -5,8 +5,8 @@ module QDM
     embedded_in :patient
     field :authorDatetime, type: DateTime
     field :prevalencePeriod, type: QDM::Interval
-    field :anatomicalLocationSite, type: Mixed
-    field :severity, type: Mixed
+    field :anatomicalLocationSite
+    field :severity
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.110'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.135'
     field :category, type: String, default: 'condition'

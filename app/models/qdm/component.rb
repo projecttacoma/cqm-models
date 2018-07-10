@@ -3,7 +3,7 @@ module QDM
   class Component < DataElement
     include Mongoid::Document
     embedded_in :patient
-    field :code, type: Mixed
+    field :code
     field :result
     field :qdmVersion, type: String, default: '5.3'
   end

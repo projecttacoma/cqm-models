@@ -8,22 +8,21 @@ const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
-const [Number, String, Mixed] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
 ];
 
 const LaboratoryTestPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
-  status: Mixed,
-  method: Mixed,
+  status: Any,
+  method: Any,
   result: Any,
   resultDatetime: DateTime,
-  reason: Mixed,
+  reason: Any,
   referenceRange: Interval,
-  negationRationale: Mixed,
+  negationRationale: Any,
   components: [ComponentSchema],
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.42' },
   category: { type: String, default: 'laboratory_test' },
