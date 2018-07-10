@@ -15,10 +15,10 @@ const [Number, String] = [
 
 const PhysicalExamOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
-  reason: Code,
-  method: Code,
-  anatomicalLocationSite: Code,
-  negationRationale: Code,
+  reason: Mixed,
+  method: Mixed,
+  anatomicalLocationSite: Mixed,
+  negationRationale: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.61' },
   category: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'order' },

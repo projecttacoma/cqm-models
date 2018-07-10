@@ -15,8 +15,8 @@ const [Number, String] = [
 
 const DiagnosticStudyRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
-  method: Code,
-  negationRationale: Code,
+  method: Mixed,
+  negationRationale: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.24' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
   category: { type: String, default: 'diagnostic_study' },

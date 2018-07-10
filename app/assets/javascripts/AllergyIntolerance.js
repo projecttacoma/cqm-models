@@ -16,8 +16,8 @@ const [Number, String] = [
 const AllergyIntoleranceSchema = DataElementSchema({
   authorDatetime: DateTime,
   prevalencePeriod: Interval,
-  type: Code,
-  severity: Code,
+  type: Mixed,
+  severity: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.119' },
   category: { type: String, default: 'allergy' },
   qdmStatus: { type: String, default: 'intolerance' },

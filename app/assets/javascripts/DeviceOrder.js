@@ -15,8 +15,8 @@ const [Number, String] = [
 
 const DeviceOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
-  negationRationale: Code,
-  reason: Code,
+  negationRationale: Mixed,
+  reason: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.15' },
   category: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'order' },
