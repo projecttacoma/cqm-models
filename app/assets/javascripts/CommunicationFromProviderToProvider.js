@@ -16,7 +16,7 @@ const [Number, String] = [
 const CommunicationFromProviderToProviderSchema = DataElementSchema({
   authorDatetime: DateTime,
   relatedTo: [String],
-  negationRationale: Code,
+  negationRationale: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.10' },
   category: { type: String, default: 'communication' },
   qdmStatus: { type: String, default: 'from_provider_to_provider' },

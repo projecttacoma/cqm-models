@@ -4,11 +4,11 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
-    field :reason, type: QDM::Code
+    field :reason, type: Mixed
     field :dosage, type: QDM::Quantity
     field :supply, type: QDM::Quantity
-    field :route, type: QDM::Code
-    field :negationRationale, type: QDM::Code
+    field :route, type: Mixed
+    field :negationRationale, type: Mixed
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.112'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.140'
     field :category, type: String, default: 'immunization'

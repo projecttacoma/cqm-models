@@ -5,11 +5,11 @@ module QDM
     embedded_in :patient
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
-    field :reason, type: QDM::Code
-    field :method, type: QDM::Code
+    field :reason, type: Mixed
+    field :method, type: Mixed
     field :result
-    field :anatomicalLocationSite, type: QDM::Code
-    field :negationRationale, type: QDM::Code
+    field :anatomicalLocationSite, type: Mixed
+    field :negationRationale, type: Mixed
     field :components, type: Array
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.62'
     field :category, type: String, default: 'physical_exam'

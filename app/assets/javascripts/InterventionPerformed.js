@@ -16,10 +16,10 @@ const [Number, String] = [
 const InterventionPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
-  reason: Code,
+  reason: Mixed,
   result: Any,
-  status: Code,
-  negationRationale: Code,
+  status: Mixed,
+  negationRationale: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.36' },
   category: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'performed' },

@@ -15,12 +15,12 @@ const [Number, String] = [
 
 const ProcedureOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
-  reason: Code,
-  method: Code,
-  anatomicalApproachSite: Code,
-  anatomicalLocationSite: Code,
-  ordinality: Code,
-  negationRationale: Code,
+  reason: Mixed,
+  method: Mixed,
+  anatomicalApproachSite: Mixed,
+  anatomicalLocationSite: Mixed,
+  ordinality: Mixed,
+  negationRationale: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.66' },
   category: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'order' },

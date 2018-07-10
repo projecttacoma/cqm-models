@@ -4,7 +4,7 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :prevalencePeriod, type: QDM::Interval
-    field :severity, type: QDM::Code
+    field :severity, type: Mixed
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.116'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.136'
     field :category, type: String, default: 'symptom'
