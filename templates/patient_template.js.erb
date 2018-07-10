@@ -5,10 +5,11 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const AllDataElements = require('./AllDataElements');
 
-const [Schema, Number, String] = [
+const [Schema, Number, String, Mixed] = [
   mongoose.Schema,
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Mixed,
 ];
 
 const PatientSchema = new Schema({
@@ -24,7 +25,10 @@ const PatientSchema = new Schema({
   // This field is for application specific information only. If both Bonnie
   // Cypress use a common field, it should be made a field on this model,
   // and not put into extendedData.
-  extendedData: {},
+  extendedData: {
+    type: Mixed,
+    default: {},
+  },
 }, { id: false });
 
 // After initialization of a Patient model, initialize every individual data element
@@ -77,12 +81,11 @@ PatientSchema.methods.getDataElements = function getDataElements(params) {
 // Returns an array of dataElements that exist on the patient, queried by
 // QDM profile
 PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = null) {
-  if (isNegated === true) {
-    return this.dataElements.filter(element => element._type === `QDM::${profile}` && (typeof element.negationRationale !== 'undefined' && element.negationRationale != null));
-  } else if (isNegated === false) {
-    return this.dataElements.filter(element => element._type === `QDM::${profile}` && (typeof element.negationRationale === 'undefined' || element.negationRationale == null));
-  }
-  return this.dataElements.filter(element => element._type === `QDM::${profile}`);
+  // If isNegated == true, only return data elements with a negationRationale that isn't null.
+  // If isNegated == false, only return data elements with a null negationRationale.
+  // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
+  const results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
+  return results.map(result => AllDataElements[profile](result));
 };
 
 // This method is called by the CQL execution engine on a CQLPatient when

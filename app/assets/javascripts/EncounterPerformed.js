@@ -19,7 +19,7 @@ const EncounterPerformedSchema = DataElementSchema({
   relevantPeriod: Interval,
   dischargeDisposition: Code,
   facilityLocations: [FacilityLocationSchema],
-  diagnoses: [Code],
+  diagnoses: [],
   principalDiagnosis: Code,
   negationRationale: Code,
   lengthOfStay: Quantity,
