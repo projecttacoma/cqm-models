@@ -8,9 +8,10 @@ const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
-const [Number, String] = [
+const [Number, String, Mixed] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Mixed,
 ];
 
 const DiagnosticStudyOrderSchema = DataElementSchema({
