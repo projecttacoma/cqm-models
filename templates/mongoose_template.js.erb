@@ -8,9 +8,10 @@ const DateTime = require('./basetypes/DateTime');
 <% unless datatype.downcase.include? 'facilitylocation' %>const { FacilityLocationSchema } = require('./FacilityLocation');<% end %>
 const Any = require('./basetypes/Any');
 
-const [Number, String] = [
+const [Number, String, Mixed] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Mixed,
 ];
 <% unless datatype == 'Component' || datatype == 'FacilityLocation' %>
 const <%= datatype -%>Schema = DataElementSchema({
