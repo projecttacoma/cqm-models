@@ -15,9 +15,9 @@ const [Number, String] = [
 
 const AssessmentPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
-  negationRationale: Code,
-  reason: Code,
-  method: Code,
+  negationRationale: Mixed,
+  reason: Mixed,
+  method: Mixed,
   result: Any,
   components: [ComponentSchema],
   relatedTo: [String],

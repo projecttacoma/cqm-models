@@ -14,7 +14,7 @@ const [Number, String] = [
 ];
 
 const FacilityLocationSchema = new mongoose.Schema({
-  code: Code,
+  code: Mixed,
   locationPeriod: Interval,
   qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'FacilityLocation' },

@@ -8,9 +8,9 @@ module QDM
     field :refills, type: Integer
     field :dosage, type: QDM::Quantity
     field :supply, type: QDM::Quantity
-    field :frequency, type: QDM::Code
-    field :route, type: QDM::Code
-    field :negationRationale, type: QDM::Code
+    field :frequency, type: Mixed
+    field :route, type: Mixed
+    field :negationRationale, type: Mixed
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.49'
     field :category, type: String, default: 'medication'
     field :qdmStatus, type: String, default: 'dispensed'

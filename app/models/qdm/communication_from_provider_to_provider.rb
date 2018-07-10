@@ -5,7 +5,7 @@ module QDM
     embedded_in :patient
     field :authorDatetime, type: DateTime
     field :relatedTo, type: Array
-    field :negationRationale, type: QDM::Code
+    field :negationRationale, type: Mixed
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.10'
     field :category, type: String, default: 'communication'
     field :qdmStatus, type: String, default: 'from_provider_to_provider'

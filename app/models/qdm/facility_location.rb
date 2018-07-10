@@ -3,7 +3,7 @@ module QDM
   class FacilityLocation < DataElement
     include Mongoid::Document
     embedded_in :patient
-    field :code, type: QDM::Code
+    field :code, type: Mixed
     field :locationPeriod, type: QDM::Interval
     field :qdmVersion, type: String, default: '5.3'
   end

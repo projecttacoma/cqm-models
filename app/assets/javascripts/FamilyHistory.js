@@ -15,7 +15,7 @@ const [Number, String] = [
 
 const FamilyHistorySchema = DataElementSchema({
   authorDatetime: DateTime,
-  relationship: Code,
+  relationship: Mixed,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.111' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
   category: { type: String, default: 'family_history' },
