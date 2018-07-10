@@ -8,10 +8,9 @@ const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
-const [Number, String, Mixed] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
 ];
 
 const ImmunizationOrderSchema = DataElementSchema({
@@ -19,9 +18,9 @@ const ImmunizationOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   dosage: Quantity,
   supply: Quantity,
-  reason: Mixed,
-  route: Mixed,
-  negationRationale: Mixed,
+  reason: Any,
+  route: Any,
+  negationRationale: Any,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.113' },
   category: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'order' },

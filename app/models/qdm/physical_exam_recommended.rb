@@ -4,10 +4,10 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
-    field :reason, type: Mixed
-    field :method, type: Mixed
-    field :anatomicalLocationSite, type: Mixed
-    field :negationRationale, type: Mixed
+    field :reason
+    field :method
+    field :anatomicalLocationSite
+    field :negationRationale
     field :hqmfOid, type: String, default: '22.16.840.1.113883.10.20.28.3.63'
     field :category, type: String, default: 'physical_exam'
     field :qdmStatus, type: String, default: 'recommended'

@@ -4,13 +4,13 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
-    field :admissionSource, type: Mixed
+    field :admissionSource
     field :relevantPeriod, type: QDM::Interval
-    field :dischargeDisposition, type: Mixed
+    field :dischargeDisposition
     field :facilityLocations, type: Array
     field :diagnoses, type: Array
-    field :principalDiagnosis, type: Mixed
-    field :negationRationale, type: Mixed
+    field :principalDiagnosis
+    field :negationRationale
     field :lengthOfStay, type: QDM::Quantity
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.5'
     field :category, type: String, default: 'encounter'

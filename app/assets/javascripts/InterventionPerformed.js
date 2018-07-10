@@ -8,19 +8,18 @@ const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
 const Any = require('./basetypes/Any');
 
-const [Number, String, Mixed] = [
+const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
 ];
 
 const InterventionPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
-  reason: Mixed,
+  reason: Any,
   result: Any,
-  status: Mixed,
-  negationRationale: Mixed,
+  status: Any,
+  negationRationale: Any,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.36' },
   category: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'performed' },
