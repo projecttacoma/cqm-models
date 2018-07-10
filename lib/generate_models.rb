@@ -45,7 +45,7 @@ TYPE_LOOKUP_JS = {
   'list<QDM.Id>': '[String]',
   'list<QDM.ResultComponent>': '[]',
   'list<QDM.FacilityLocation>': '[]',
-  'list<System.Code>': '[Code]',
+  'list<System.Code>': '[]',
   'QDM.Id': 'String',
   'System.Decimal': 'Number',
   'System.Time': 'DateTime',
