@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const cql = require('cql-execution');
 
 function Code(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Code');
@@ -19,7 +18,7 @@ Code.prototype.cast = (code) => {
   val.codeSystemOid = (typeof code.codeSystemOid !== 'undefined') ? code.codeSystemOid : null;
   val.version = (typeof code.version !== 'undefined') ? code.version : null;
 
-  return new cql.Code(val.code, val.codeSystem, val.version, val.descriptor);
+  return val;
 };
 
 mongoose.Schema.Types.Code = Code;
