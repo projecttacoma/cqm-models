@@ -12,9 +12,9 @@ function RecursiveCast(any) {
   }
   if(any && any.code && any.codeSystem){
     if (typeof any.code === 'undefined') {
-      throw new Error(`Code: ${code} does not have a code`);
-    } else if (typeof code.codeSystem === 'undefined') {
-      throw new Error(`Code: ${code} does not have a codeSystem`);
+      throw new Error(`Code: ${any} does not have a code`);
+    } else if (typeof any.codeSystem === 'undefined') {
+      throw new Error(`Code: ${any} does not have a codeSystem`);
     }
   
     const val = { code: any.code, codeSystem: any.codeSystem };
