@@ -15,9 +15,9 @@ const [Number, String] = [
 
 const LaboratoryTestRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
-  method: Any,
-  reason: Any,
-  negationRationale: Any,
+  method: Code,
+  reason: Code,
+  negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.43' },
   category: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'recommended' },
