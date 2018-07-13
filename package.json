@@ -7,7 +7,7 @@
     "index.js": "dist/index.js"
   },
   "repository": "https://github.com/projecttacoma/cqm-models.git",
-  "homepage": "https://github.com/projectcypress/cqm-models#readme",
+  "homepage": "https://github.com/projecttacoma/cqm-models#readme",
   "contributors": [
     "Louis Ades <lades@mitre.org>",
     "Michael O'Keefe <mokeefe@mitre.org>",
