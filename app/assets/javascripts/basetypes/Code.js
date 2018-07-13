@@ -7,7 +7,7 @@ function Code(key, options) {
 Code.prototype = Object.create(mongoose.SchemaType.prototype);
 
 function Cast(code) {
-  if (code) {
+  if (code != null) {
     // handles codes that have not yet been cast to a code and those that have already been cast to a code
     if (code.code && (code.codeSystem || code.system)) {
       if (typeof code.code === 'undefined') {
@@ -26,7 +26,7 @@ function Cast(code) {
     }
     throw new Error(`Expected a code. Received ${code}.`);
   } else {
-    // returns a falsey value if passed a falsey value
+    // returns a null or undefined if what is passed in is null or undefined
     return code;
   }
 }
