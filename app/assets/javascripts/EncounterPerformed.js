@@ -15,13 +15,13 @@ const [Number, String] = [
 
 const EncounterPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
-  admissionSource: Any,
+  admissionSource: Code,
   relevantPeriod: Interval,
-  dischargeDisposition: Any,
+  dischargeDisposition: Code,
   facilityLocations: [FacilityLocationSchema],
-  diagnoses: [Any],
-  principalDiagnosis: Any,
-  negationRationale: Any,
+  diagnoses: [Code],
+  principalDiagnosis: Code,
+  negationRationale: Code,
   lengthOfStay: Quantity,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.5' },
   category: { type: String, default: 'encounter' },

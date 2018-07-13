@@ -15,11 +15,11 @@ const [Number, String] = [
 
 const ImmunizationAdministeredSchema = DataElementSchema({
   authorDatetime: DateTime,
-  reason: Any,
+  reason: Code,
   dosage: Quantity,
   supply: Quantity,
-  route: Any,
-  negationRationale: Any,
+  route: Code,
+  negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.112' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },
   category: { type: String, default: 'immunization' },
