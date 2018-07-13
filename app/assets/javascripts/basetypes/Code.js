@@ -6,7 +6,7 @@ function Code(key, options) {
 }
 Code.prototype = Object.create(mongoose.SchemaType.prototype);
 
-Code.prototype.cast = (code) => { 
+Code.prototype.cast = (code) => {
   if (code != null) {
     // handles codes that have not yet been cast to a code and those that have already been cast to a code
     if (code.code && (code.codeSystem || code.system)) {
@@ -29,9 +29,7 @@ Code.prototype.cast = (code) => {
     // returns a null or undefined if what is passed in is null or undefined
     return code;
   }
-}
-
-Code.prototype.cast = code => Cast(code);
+};
 
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
