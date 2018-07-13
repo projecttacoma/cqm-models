@@ -7,10 +7,10 @@ module QDM
     field :relevantPeriod, type: QDM::Interval
     field :dosage, type: QDM::Quantity
     field :supply, type: QDM::Quantity
-    field :frequency
-    field :route
-    field :reason
-    field :negationRationale
+    field :frequency, type: QDM::Code
+    field :route, type: QDM::Code
+    field :reason, type: QDM::Code
+    field :negationRationale, type: QDM::Code
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.45'
     field :category, type: String, default: 'medication'
     field :qdmStatus, type: String, default: 'administered'

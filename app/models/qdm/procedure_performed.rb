@@ -5,15 +5,15 @@ module QDM
     embedded_in :patient
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
-    field :reason
-    field :method
+    field :reason, type: QDM::Code
+    field :method, type: QDM::Code
     field :result
-    field :status
-    field :anatomicalApproachSite
-    field :anatomicalLocationSite
-    field :ordinality
+    field :status, type: QDM::Code
+    field :anatomicalApproachSite, type: QDM::Code
+    field :anatomicalLocationSite, type: QDM::Code
+    field :ordinality, type: QDM::Code
     field :incisionDatetime, type: DateTime
-    field :negationRationale
+    field :negationRationale, type: QDM::Code
     field :components, type: Array
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.67'
     field :category, type: String, default: 'procedure'
