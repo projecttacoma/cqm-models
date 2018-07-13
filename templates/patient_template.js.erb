@@ -81,18 +81,28 @@ PatientSchema.methods.getDataElements = function getDataElements(params) {
 // Returns an array of dataElements that exist on the patient, queried by
 // QDM profile
 PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = null) {
-  // If isNegated == true, only return data elements with a negationRationale that isn't null.
+  // If isNegated == true, only return data elements with a negationRationale that is not null.
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
   const results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
-  return results.map(result => AllDataElements[profile](result));
+  return results.map(result => {
+    var addFunctionsBack = false;
+    var getCodeFunction = result.__proto__.getCode;
+    var codeFunction = result.__proto__.code;
+    var removedMongooseItems = AllDataElements[profile](result).toObject();
+    // toObject() will remove all mongoose functions but also removed the getCode and code functions
+    // the execution engine requires the code and getCode functions so we have to add them back
+    removedMongooseItems.getCode = getCodeFunction;
+    removedMongooseItems.code = codeFunction;
+    return removedMongooseItems;
+  });
 };
 
 // This method is called by the CQL execution engine on a CQLPatient when
 // the execution engine wants information on a record. A record could be patient
 // characteristic information about the patient, or it could be data criteria
 // that currently exist on this patient (data criteria you drag on a patient
-// in Bonnie's patient builder).
+// in Bonnie patient builder).
 // @param {String} profile - the data criteria requested by the execution engine
 // @returns {Object}
 PatientSchema.methods.findRecords = function findRecords(profile) {
@@ -109,7 +119,7 @@ PatientSchema.methods.findRecords = function findRecords(profile) {
     // Requested something else (probably a QDM data type).
 
     // Strip model details from request. The requested profile string contains
-    // a lot of things we don't need or care about. Example, we might see
+    // a lot of things we do not need or care about. Example, we might see
     // something like:
     // "{urn:healthit-gov:qdm:v5_0_draft}PatientCharacteristicEthnicity"
     // Where we only care about: "PatientCharacteristicEthnicity".
