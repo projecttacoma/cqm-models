@@ -85,11 +85,10 @@ PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = 
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
   const results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
-  return results.map(result => {
-    var addFunctionsBack = false;
-    var getCodeFunction = result.__proto__.getCode;
-    var codeFunction = result.__proto__.code;
-    var removedMongooseItems = AllDataElements[profile](result).toObject();
+  return results.map((result) => {
+    const getCodeFunction = Object.getPrototypeOf(result).getCode;
+    const codeFunction = Object.getPrototypeOf(result).code;
+    const removedMongooseItems = AllDataElements[profile](result).toObject();
     // toObject() will remove all mongoose functions but also removed the getCode and code functions
     // the execution engine requires the code and getCode functions so we have to add them back
     removedMongooseItems.getCode = getCodeFunction;
