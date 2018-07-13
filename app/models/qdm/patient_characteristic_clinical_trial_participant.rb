@@ -3,7 +3,7 @@ module QDM
   class PatientCharacteristicClinicalTrialParticipant < DataElement
     include Mongoid::Document
     embedded_in :patient
-    field :reason
+    field :reason, type: QDM::Code
     field :relevantPeriod, type: QDM::Interval
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.6'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.51'

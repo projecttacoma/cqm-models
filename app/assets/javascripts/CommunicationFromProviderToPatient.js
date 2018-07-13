@@ -16,7 +16,7 @@ const [Number, String] = [
 const CommunicationFromProviderToPatientSchema = DataElementSchema({
   authorDatetime: DateTime,
   relatedTo: [String],
-  negationRationale: Any,
+  negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.9' },
   category: { type: String, default: 'communication' },
   qdmStatus: { type: String, default: 'from_provider_to_patient' },

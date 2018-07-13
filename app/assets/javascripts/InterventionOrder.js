@@ -15,8 +15,8 @@ const [Number, String] = [
 
 const InterventionOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
-  reason: Any,
-  negationRationale: Any,
+  reason: Code,
+  negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.35' },
   category: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'order' },
