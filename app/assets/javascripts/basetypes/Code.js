@@ -6,7 +6,7 @@ function Code(key, options) {
 }
 Code.prototype = Object.create(mongoose.SchemaType.prototype);
 
-Code.prototype.cast = function(code) {
+function Cast(code) {
   if (code) {
     // handles codes that have not yet been cast to a code and those that have already been cast to a code
     if (code.code && (code.codeSystem || code.system)) {
@@ -23,14 +23,15 @@ Code.prototype.cast = function(code) {
       val.version = (typeof code.version !== 'undefined') ? code.version : null;
 
       return new cql.Code(val.code, val.codeSystem, val.version, val.descriptor);
-    } else {
-      throw new Error(`Expected a code and did not receive a code.`);
     }
+    throw new Error(`Expected a code. Received ${code}.`);
   } else {
     // returns a falsey value if passed a falsey value
     return code;
   }
 }
+
+Code.prototype.cast = code => Cast(code);
 
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
