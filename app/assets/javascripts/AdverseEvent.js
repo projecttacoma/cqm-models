@@ -17,7 +17,7 @@ const AdverseEventSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
   severity: Code,
-  facilityLocation: Code,
+  facilityLocation: FacilityLocationSchema,
   type: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.120' },
   category: { type: String, default: 'adverse_event' },

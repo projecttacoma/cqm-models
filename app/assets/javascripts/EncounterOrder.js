@@ -16,7 +16,7 @@ const [Number, String] = [
 const EncounterOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
-  facilityLocation: Code,
+  facilityLocation: FacilityLocationSchema,
   negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.27' },
   category: { type: String, default: 'encounter' },
