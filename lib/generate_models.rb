@@ -288,6 +288,7 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
   contents.gsub!(/facilityLocation: Code/, 'facilityLocation: FacilityLocationSchema')
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
+  contents.gsub!(/component: Code/, 'component: ComponentSchema')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
