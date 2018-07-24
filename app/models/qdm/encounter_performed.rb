@@ -7,7 +7,7 @@ module QDM
     field :admissionSource, type: QDM::Code
     field :relevantPeriod, type: QDM::Interval
     field :dischargeDisposition, type: QDM::Code
-    field :facilityLocations, type: Array
+    field :facilityLocations, type: Array, default: []
     field :diagnoses, type: Array
     field :principalDiagnosis, type: QDM::Code
     field :negationRationale, type: QDM::Code

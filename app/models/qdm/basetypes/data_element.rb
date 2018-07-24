@@ -61,6 +61,13 @@ module QDM
         if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
           send(field + '=', send(field).shift_dates(seconds))
         end
+
+        # Special case for facility locations
+        next unless field == 'facilityLocations'
+        send(field).each do |facility_location|
+          facility_location['locationPeriod'][:low] = facility_location['locationPeriod'][:low].to_time + seconds
+          facility_location['locationPeriod'][:high] = facility_location['locationPeriod'][:high].to_time + seconds
+        end
       end
     end
 

@@ -42,7 +42,7 @@ RSpec.describe QDM do
     @patient_de1 = QDM::Patient.new(birthDatetime: bd, givenNames: %w['First1 Middle1'], familyName: 'Family1', bundleId: '1')
     @patient_de1.dataElements << QDM::PatientCharacteristicBirthdate.new(birthDatetime: bd)
     @patient_de1.dataElements << QDM::Diagnosis.new(authorDatetime: DateTime.new(2010, 1, 1, 4, 0, 0), dataElementCodes: [QDM::Code.new('E08.311', 'ICD-10-CM'), QDM::Code.new('362.01', 'ICD-9-CM'), QDM::Code.new('4855003', 'SNOMED-CT')])
-    @patient_de1.dataElements << QDM::EncounterPerformed.new(authorDatetime: DateTime.new(2010, 1, 2, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')])
+    @patient_de1.dataElements << QDM::EncounterPerformed.new(authorDatetime: DateTime.new(2010, 1, 2, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')], facilityLocations: [QDM::FacilityLocation.new(locationPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)))])
     @patient_de1.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: DateTime.new(2010, 1, 3, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
 
     # Another patient with some data elements
@@ -50,7 +50,7 @@ RSpec.describe QDM do
     @patient_de2 = QDM::Patient.new(birthDatetime: bd, givenNames: %w['First2 Middle2'], familyName: 'Family2', bundleId: '1')
     @patient_de2.dataElements << QDM::PatientCharacteristicBirthdate.new(birthDatetime: bd)
     @patient_de2.dataElements << QDM::Diagnosis.new(authorDatetime: DateTime.new(2010, 1, 1, 4, 0, 0), dataElementCodes: [QDM::Code.new('E08.311', 'ICD-10-CM'), QDM::Code.new('362.01', 'ICD-9-CM'), QDM::Code.new('4855003', 'SNOMED-CT')])
-    @patient_de2.dataElements << QDM::EncounterPerformed.new(authorDatetime: DateTime.new(2010, 1, 2, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')])
+    @patient_de2.dataElements << QDM::EncounterPerformed.new(authorDatetime: DateTime.new(2010, 1, 2, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')], facilityLocations: [QDM::FacilityLocation.new(locationPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)))])
     @patient_de2.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: DateTime.new(2010, 1, 3, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
   end
 
@@ -97,6 +97,10 @@ RSpec.describe QDM do
     expect(@patient_de1.encounters.first.relevantPeriod.low.utc.to_s).to include('06:00:00')
     expect(@patient_de1.encounters.first.relevantPeriod.high.utc.to_s).to include('07:00:00')
 
+    # EncounterPerformed facilityLocation high and low should be two hours ahead
+    expect(@patient_de1.encounters.first.facilityLocations.first['locationPeriod'][:low].utc.to_s).to include('06:00:00')
+    expect(@patient_de1.encounters.first.facilityLocations.first['locationPeriod'][:high].utc.to_s).to include('07:00:00')
+
     # DiagnosticStudyPerformed authorDatetime should be two hours ahead
     expect(@patient_de1.diagnostic_studies.first.authorDatetime.utc.to_s).to include('06:00:00')
 
@@ -118,6 +122,10 @@ RSpec.describe QDM do
     # EncounterPerformed relevantPeriod high and low should be two hours behind
     expect(@patient_de2.encounters.first.relevantPeriod.low.utc.to_s).to include('02:00:00')
     expect(@patient_de2.encounters.first.relevantPeriod.high.utc.to_s).to include('03:00:00')
+
+    # EncounterPerformed facilityLocation high and low should be two hours behind
+    expect(@patient_de2.encounters.first.facilityLocations.first['locationPeriod'][:low].utc.to_s).to include('02:00:00')
+    expect(@patient_de2.encounters.first.facilityLocations.first['locationPeriod'][:high].utc.to_s).to include('03:00:00')
 
     # DiagnosticStudyPerformed authorDatetime should be two hours behind
     expect(@patient_de2.diagnostic_studies.first.authorDatetime.utc.to_s).to include('02:00:00')
