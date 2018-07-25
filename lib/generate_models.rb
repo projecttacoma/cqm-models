@@ -208,6 +208,9 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   # Add QDM version
   contents.gsub!(/field :qdmVersion, type: String/, "field :qdmVersion, type: String, default: '#{qdm_version}'")
 
+  # Add default to [] for facilityLocations
+  contents.gsub!(/field :facilityLocations, type: Array/, 'field :facilityLocations, type: Array, default: []')
+
   # Add HQMF oid (if it exists in the given HQMF oid mapping file)
   dc_name = File.basename(file_name, '.*')
   if oids[dc_name].present? && oids[dc_name]['hqmf_oid'].present?
