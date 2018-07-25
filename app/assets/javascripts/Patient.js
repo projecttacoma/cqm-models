@@ -81,6 +81,9 @@ PatientSchema.methods.getDataElements = function getDataElements(params) {
 
 // Returns an array of dataElements that exist on the patient, queried by
 // QDM profile
+// @param {string} profile - the data criteria requested by the execution engine
+// @param {boolean} isNegated - whether dataElements should be returned based on their negation status
+// @returns {DataElement[]}
 PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = null) {
   // If isNegated == true, only return data elements with a negationRationale that is not null.
   // If isNegated == false, only return data elements with a null negationRationale.
@@ -89,11 +92,13 @@ PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = 
   return results.map((result) => {
     const getCodeFunction = Object.getPrototypeOf(result).getCode;
     const codeFunction = Object.getPrototypeOf(result).code;
+    const idField = result.id;
     const removedMongooseItems = AllDataElements[profile](result).toObject();
     // toObject() will remove all mongoose functions but also removed the getCode and code functions
     // the execution engine requires the code and getCode functions so we have to add them back
     removedMongooseItems.getCode = getCodeFunction;
     removedMongooseItems.code = codeFunction;
+    removedMongooseItems.id = idField;
     return removedMongooseItems;
   });
 };
