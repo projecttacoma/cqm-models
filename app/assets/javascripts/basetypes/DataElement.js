@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
+const Id = require('../Id')
 
 const [Schema] = [mongoose.Schema];
 
 function DataElementSchema(add, options) {
+  if (!options.hasOwnProperty('id'))
+    options.id = false;
   const extended = new Schema({
     dataElementCodes: { type: [] },
     description: { type: String },
@@ -29,6 +32,15 @@ function DataElementSchema(add, options) {
     }
     return null;
   };
+
+  if (!add.hasOwnProperty('id')) {
+    extended.methods.id = function code() {
+      if (this._id) {
+        return new Id.Id({value:this._id});
+      }
+      return null;
+    }
+  }
 
   return extended;
 }
