@@ -13,13 +13,13 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const IdSchema = DataElementSchema({
+const IdSchema = mongoose.Schema({
   namingSystem: String,
   value: String,
   qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'Id' },
 
-});
+},{_id:false, id:false});
 
 module.exports.IdSchema = IdSchema;
 module.exports.Id = mongoose.model('Id', IdSchema);

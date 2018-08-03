@@ -6,11 +6,16 @@ const Id = require('../Id')
 const [Schema] = [mongoose.Schema];
 
 function DataElementSchema(add, options) {
-  if (!options.hasOwnProperty('id'))
-    options.id = false;
+  options.id = false;
   const extended = new Schema({
     dataElementCodes: { type: [] },
     description: { type: String },
+    id: {
+      type: Id.IdSchema, 
+      default: function() {
+        return this._id ? new Id.Id({value:this._id.toString(), namingSystem:null}) : null;
+      }
+    }
   }, options);
 
   if (add) {
@@ -32,15 +37,6 @@ function DataElementSchema(add, options) {
     }
     return null;
   };
-
-  if (!add.hasOwnProperty('id')) {
-    extended.methods.id = function code() {
-      if (this._id) {
-        return new Id.Id({value:this._id});
-      }
-      return null;
-    }
-  }
 
   return extended;
 }
