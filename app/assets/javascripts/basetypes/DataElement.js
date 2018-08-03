@@ -12,7 +12,7 @@ function DataElementSchema(add, options) {
     id: {
       type: Id.IdSchema, 
       default: function() {
-        return this._id ? new Id.Id({value:this._id.toString(), namingSystem:null}) : null;
+        return new Id.Id({value:(this._id ? this._id.toString() : mongoose.Types.ObjectId().toString()), namingSystem:null});
       }
     }
   }, options);
