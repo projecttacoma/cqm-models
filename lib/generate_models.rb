@@ -151,7 +151,7 @@ puts 'Generating JavaScript models...'
 
 # Create JavaScript models
 template = File.read('templates/mongoose_template.js.erb')
-renderer = ERB.new(template, nil, '-')
+default_renderer = ERB.new(template, nil, '-')
 file_path = 'app/assets/javascripts/'
 file_path = 'tmp/' if IS_TEST
 extra_fields_js = [
@@ -162,19 +162,19 @@ extra_fields_js = [
   { name: 'qdmVersion', type: 'System.String' },
   { name: '_type', type: 'System.String' }
 ]
+datatype_custom_templates = {
+  Patient: 'templates/patient_template.js.erb',
+  Id: 'templates/id_template.js.erb'
+}
 datatypes.each do |datatype, attributes|
-  if datatype == 'Patient'
-    # Handle Patient as its own special case, with its own template.
-    patient_template = File.read('templates/patient_template.js.erb')
-    patient_renderer = ERB.new(patient_template, nil, '-')
-    attrs_with_extras = attributes + extra_fields_js
-    puts '  ' + file_path + datatype + '.js'
-    File.open(file_path + datatype + '.js', 'w') { |file| file.puts patient_renderer.result(binding) }
-  else
-    attrs_with_extras = attributes + extra_fields_js
-    puts '  ' + file_path + datatype + '.js'
-    File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
+  renderer = default_renderer
+  if datatype_custom_templates.key?(datatype.to_sym)
+    puts "using custom template for #{datatype}"
+    renderer = ERB.new(File.read(datatype_custom_templates[datatype.to_sym]), nil, '-')
   end
+  attrs_with_extras = attributes + extra_fields_js # this field gets used in the template
+  puts '  ' + file_path + datatype + '.js'
+  File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
 end
 
 # Create require file (if not in test mode)

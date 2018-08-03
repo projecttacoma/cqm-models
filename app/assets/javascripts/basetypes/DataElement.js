@@ -6,7 +6,6 @@ const Id = require('../Id')
 const [Schema] = [mongoose.Schema];
 
 function DataElementSchema(add, options) {
-  options.id = false;
   const extended = new Schema({
     dataElementCodes: { type: [] },
     description: { type: String },
