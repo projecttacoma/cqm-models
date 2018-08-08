@@ -25,7 +25,6 @@ TYPE_LOOKUP_RB = {
   'list<QDM.ResultComponent>': 'Array',
   'list<QDM.FacilityLocation>': 'Array',
   'list<System.Code>': 'Array',
-  'QDM.Id': 'String',
   'System.Decimal': 'Float',
   'System.Time': 'Time',
   'System.Concept': 'Any'
@@ -42,11 +41,10 @@ TYPE_LOOKUP_JS = {
   'interval<System.Quantity>': 'Interval',
   'list<QDM.Component>': '[]',
   'System.String': 'String',
-  'list<QDM.Id>': '[String]',
+  'list<QDM.Id>': '[]',
   'list<QDM.ResultComponent>': '[]',
   'list<QDM.FacilityLocation>': '[]',
   'list<System.Code>': '[Code]',
-  'QDM.Id': 'String',
   'System.Decimal': 'Number',
   'System.Time': 'DateTime',
   'System.Concept': '{}'

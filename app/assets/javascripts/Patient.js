@@ -92,9 +92,9 @@ PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = 
   return results.map((result) => {
     const removedMongooseItems = AllDataElements[profile](result).toObject();
     // toObject() will remove all mongoose functions but also remove the schema methods, so we add them back
-    for (const [method_name, method] of Object.entries(Object.getPrototypeOf(result).schema.methods)) {
-      removedMongooseItems[method_name] = method
-    }
+    Object.entries(Object.getPrototypeOf(result).schema.methods).forEach(([method_name, method]) => {
+      removedMongooseItems[method_name] = method;
+    });
     return removedMongooseItems;
   });
 };

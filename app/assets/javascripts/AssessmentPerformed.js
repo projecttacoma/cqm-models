@@ -20,7 +20,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   method: Code,
   result: Any,
   components: [ComponentSchema],
-  relatedTo: [String],
+  relatedTo: [],
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
   category: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'performed' },

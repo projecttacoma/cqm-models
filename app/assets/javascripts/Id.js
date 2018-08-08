@@ -11,7 +11,7 @@ const IdSchema = mongoose.Schema({
   qdmVersion: { type: String, default: '5.3' },
   _type: { type: String, default: 'Id' },
 
-},{_id:false, id:false});
+}, { _id: false, id: false });
 
 module.exports.IdSchema = IdSchema;
 module.exports.Id = mongoose.model('Id', IdSchema);
