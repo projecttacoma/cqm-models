@@ -6,6 +6,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
+const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [

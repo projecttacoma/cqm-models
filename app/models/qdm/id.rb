@@ -1,6 +1,6 @@
 module QDM
   # app/models/qdm/id.rb
-  class Id < DataElement
+  class Id
     include Mongoid::Document
     embedded_in :patient
     field :namingSystem, type: String

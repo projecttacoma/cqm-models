@@ -6,6 +6,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 <% unless datatype.downcase.include? 'component' %>const { ComponentSchema } = require('./Component');<% end %>
 <% unless datatype.downcase.include? 'facilitylocation' %>const { FacilityLocationSchema } = require('./FacilityLocation');<% end %>
+<% unless datatype.downcase == 'id' %>const { IdSchema } = require('./Id');<% end %>
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
