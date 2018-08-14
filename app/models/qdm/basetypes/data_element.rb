@@ -15,7 +15,7 @@ module QDM
 
     def initialize(options = {})
       super(options)
-      id = get(:_id).to_s if attributes['_id'] else BSON::ObjectId.new.to_s
+      id = attributes['_id'] ? get(:_id).to_s : BSON::ObjectId.new.to_s
       attributes['id'] = QDM::Id.new(value: id) if attributes['id'].nil?
     end
 
