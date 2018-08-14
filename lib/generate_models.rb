@@ -238,6 +238,9 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
     contents.gsub!(/  field :qdmStatus, type: String\n/, '') # Don't include this field
   end
 
+  # Make relatedTo embeds_many instead of field
+  contents.gsub!(/  field :relatedTo, type: Array\n/, "  embeds_many :relatedTo, class_name: 'QDM::Id'\n")
+
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
@@ -285,13 +288,12 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   # Add class
   contents.gsub!(/  _type: String,\n/, "  _type: { type: String, default: '#{dc_name.camelize}' },\n")
 
-  # Component and Facility types
+  # Component, Facility, and Id types
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
   contents.gsub!(/facilityLocation: Code/, 'facilityLocation: FacilityLocationSchema')
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
   contents.gsub!(/component: Code/, 'component: ComponentSchema')
   contents.gsub!(/relatedTo: \[\]/, 'relatedTo: [IdSchema]')
-  contents.gsub!(/relatedTo: Code/, 'relatedTo: IdSchema')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -318,8 +320,14 @@ end
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
-  next if File.basename(file_name) == 'patient.rb'
-  contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
+  # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
+  if File.basename(file_name) == 'id.rb'
+    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
+  else
+    not_embedded_in_patient_files = ['patient.rb', 'component.rb', 'facility_location.rb']
+    next if not_embedded_in_patient_files.include?(File.basename(file_name))
+    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
+  end
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 

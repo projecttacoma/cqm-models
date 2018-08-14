@@ -11,6 +11,7 @@ RSpec.describe QDM do
     @patient_a = QDM::Patient.new(birthDatetime: 75.years.ago, givenNames: %w['Example Patient'], familyName: 'A-eh', bundleId: 'A')
     @patient_b = QDM::Patient.new(birthDatetime: 35.years.ago, givenNames: %w['Example Patient'], familyName: 'B-bee', bundleId: 'B')
     @patient_c = QDM::Patient.new(birthDatetime: 15.years.ago, givenNames: %w['Example Patient'], familyName: 'C-cee', bundleId: 'C')
+    @patient_a.save
 
     # Create example data elements
     @patient_a.dataElements << QDM::ProcedurePerformed.new(patient: @patient_a, authorDatetime: 1.day.ago, dataElementCodes: [QDM::Code.new('bogus code', 'bogus code system'), QDM::Code.new('bogus code', 'bogus code system')])
@@ -44,6 +45,7 @@ RSpec.describe QDM do
     @patient_de1.dataElements << QDM::Diagnosis.new(authorDatetime: DateTime.new(2010, 1, 1, 4, 0, 0), dataElementCodes: [QDM::Code.new('E08.311', 'ICD-10-CM'), QDM::Code.new('362.01', 'ICD-9-CM'), QDM::Code.new('4855003', 'SNOMED-CT')])
     @patient_de1.dataElements << QDM::EncounterPerformed.new(authorDatetime: DateTime.new(2010, 1, 2, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)), principalDiagnosis: QDM::Code.new('SNOMED-CT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMED-CT', '17436001'), QDM::Code.new('99241', 'CPT')], facilityLocations: [QDM::FacilityLocation.new(locationPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)))])
     @patient_de1.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: DateTime.new(2010, 1, 3, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
+    @patient_de1.dataElements << QDM::CareGoal.new(relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
 
     # Another patient with some data elements
     bd = 20.years.ago
@@ -64,6 +66,11 @@ RSpec.describe QDM do
     expect(@patient_a.birthDatetime).to be
     expect(@patient_b.givenNames).to be
     expect(@patient_c.bundleId).to be
+  end
+
+  it 'patient dataElements have an Id' do
+    expect(@patient_a.dataElements[0].id).to be
+    expect(@patient_a.dataElements[0].id.value).to eq @patient_a.dataElements[0]._id.to_s
   end
 
   it 'patients return datatypes that return attributes using get' do
@@ -133,5 +140,15 @@ RSpec.describe QDM do
     # DiagnosticStudyPerformed relevantPeriod high and low should be two hours behind
     expect(@patient_de2.diagnostic_studies.first.relevantPeriod.low.utc.to_s).to include('02:00:00')
     expect(@patient_de2.diagnostic_studies.first.relevantPeriod.high.utc.to_s).to include('03:00:00')
+  end
+
+  it 'relatedTo properly links data elements' do
+    # Add a link to another data element
+    care_goal = @patient_de1.dataElements.last
+    expect(@patient_de1.dataElements.first.id).to be
+    care_goal.relatedTo << @patient_de1.dataElements.first.id
+    id = QDM::Id.new(value: @patient_de1.dataElements.first.id.value)
+    expect(care_goal.relatedTo.first.value).to eq id.value
+    @patient_de1.save
   end
 end

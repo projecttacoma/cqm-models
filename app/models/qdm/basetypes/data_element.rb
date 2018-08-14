@@ -11,18 +11,12 @@ module QDM
     # Optional description.
     field :description, type: String
 
-    # The id field, if needed will be created based on _id or from scratch
-    field :id, type: QDM::Id, default: lambda {
-      QDM::Id.new(value: has_attribute?(:_id) ? _id.to_s : BSON::ObjectId.new.to_s)
-    }
+    embeds_one :id, class_name: 'QDM::Id'
 
-    # Overwrite the default id function added by mongoid
-    def id
-      attributes['id']
-    end
-
-    def id=(qdmId)
-      attributes['id'] = qdmId
+    def initialize(options = {})
+      super(options)
+      id = get(:_id).to_s if attributes['_id'] else BSON::ObjectId.new.to_s
+      attributes['id'] = QDM::Id.new(value: id) if attributes['id'].nil?
     end
 
     # Returns the attribute requested on the datatype.
