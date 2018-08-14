@@ -199,6 +199,11 @@ module QDM
       get_data_elements('vital_sign')
     end
 
+    # Return the Mongo id.
+    def id
+      _id
+    end
+
     # Include '_type' in any JSON output. This is necessary for deserialization.
     def to_json(options = nil)
       serializable_hash(methods: :_type).to_json(options)

@@ -49,6 +49,10 @@ PatientSchema.methods.initializeDataElements = function initializeDataElements()
 
 PatientSchema.queue('initializeDataElements');
 
+PatientSchema.methods.id = function id() {
+  return this._id;
+};
+
 // Returns an array of elements that exist on this patient, that
 // match the given HQMF data criteria OID.
 PatientSchema.methods.getByHqmfOid = function getByHqmfOid(hqmfOid) {
