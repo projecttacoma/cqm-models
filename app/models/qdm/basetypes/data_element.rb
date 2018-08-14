@@ -19,6 +19,10 @@ module QDM
       attributes['id'] = QDM::Id.new(value: id) if attributes['id'].nil?
     end
 
+    def id=(qdmId)
+      attributes['id'] = qdmId
+    end
+
     # Returns the attribute requested on the datatype.
     def get(attribute)
       send(attribute) if has_attribute?(attribute)
