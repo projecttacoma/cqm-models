@@ -58,5 +58,15 @@ describe('The Any class', () => {
       expect(returned_obj[2] instanceof Object).toEqual(true);
       expect(returned_obj[2].hi).toEqual('no');
     });
+
+    it('Should handle decimal values the same as integer values by returning the value', () => {
+      const decimalValue = 0.3;
+      const integerValue = 1;
+      const returnedDecimalObject = Any.prototype.cast(decimalValue);
+      const returnedIntegerObject = Any.prototype.cast(integerValue);
+
+      expect(decimalValue).toEqual(returnedDecimalObject);
+      expect(integerValue).toEqual(returnedIntegerObject);
+    });
   });
 });

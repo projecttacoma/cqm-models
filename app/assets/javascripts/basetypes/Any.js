@@ -53,7 +53,7 @@ function RecursiveCast(any) {
     });
     return casted;
   }
-  if (Number.isInteger(any)) {
+  if (Number.isFinite(any)) {
     return any;
   }
   if (Date.parse(any)) {
