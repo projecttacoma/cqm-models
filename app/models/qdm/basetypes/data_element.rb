@@ -1,4 +1,3 @@
-require_relative('../id.rb')
 module QDM
   # Represents QDM datatype (parent class of all generated QDM datatype models)
   class DataElement
