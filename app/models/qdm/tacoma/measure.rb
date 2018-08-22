@@ -73,9 +73,8 @@ module QDM
 
     # Relations to other model classes
     belongs_to :user
-    belongs_to :bundle, class_name: 'HealthDataStandards::CQM::Bundle'
     has_and_belongs_to_many :patients, inverse_of: nil
-    has_one :package, class_name: 'CqlMeasurePackage', inverse_of: :measure, dependent: :destroy
+    has_one :package, class_name: 'QDM::MeasurePackage', inverse_of: :measure, dependent: :destroy
 
     scope :by_measure_id, ->(id) { where('measure_id' => id) }
     scope :by_type, ->(type) { where('type' => type) }
@@ -90,7 +89,7 @@ module QDM
     def value_sets
       options = { oid: value_set_oids }
       options[:user_id] = user.id if user?
-      @value_sets ||= HealthDataStandards::SVS::ValueSet.in(options)
+      @value_sets ||= QDM::ValueSet.in(options)
       @value_sets
     end
 
