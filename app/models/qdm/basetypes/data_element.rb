@@ -14,12 +14,8 @@ module QDM
 
     def initialize(options = {})
       super(options)
-      id = attributes['_id'] ? get(:_id).to_s : BSON::ObjectId.new.to_s
-      attributes['id'] = QDM::Id.new(value: id) if attributes['id'].nil?
-    end
-
-    def id=(qdmId)
-      attributes['id'] = qdmId
+      # default id to the mongo ObjectId for this DataElement if it isnt already defined
+      self.id = QDM::Id.new(value: _id.to_s) unless self.id?
     end
 
     # Returns the attribute requested on the datatype.
