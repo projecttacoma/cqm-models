@@ -16,6 +16,41 @@ module QDM
     index 'bundle_id' => 1
     scope :by_oid, ->(oid) { where(oid: oid) }
 
+    CODE_SYSTEMS = {
+      '2.16.840.1.113883.6.1' =>    'LOINC',
+      '2.16.840.1.113883.6.96' =>   'SNOMED-CT',
+      '2.16.840.1.113883.6.12' =>   'CPT',
+      #'2.16.840.1.113883.3.88.12.80.32' => 'CPT', # Encounter Type from C32, a subset of CPT
+      '2.16.840.1.113883.6.88' =>   'RxNorm',
+      '2.16.840.1.113883.6.103' =>  'ICD-9-CM',
+      '2.16.840.1.113883.6.104' =>  'ICD-9-PCS',
+      '2.16.840.1.113883.6.4' =>   'ICD-10-PCS',
+      '2.16.840.1.113883.6.90' =>   'ICD-10-CM',
+      '2.16.840.1.113883.6.14' =>   'HCP',
+      '2.16.840.1.113883.6.285' =>   'HCPCS',
+      '2.16.840.1.113883.5.2' => "HL7 Marital Status",
+      '2.16.840.1.113883.12.292' => 'CVX',
+      '2.16.840.1.113883.5.83' => 'HITSP C80 Observation Status',
+      '2.16.840.1.113883.3.26.1.1' => 'NCI Thesaurus',
+      '2.16.840.1.113883.3.88.12.80.20' => 'FDA',
+      "2.16.840.1.113883.4.9" => "UNII",
+      "2.16.840.1.113883.6.69" => "NDC",
+      '2.16.840.1.113883.5.14' => 'HL7 ActStatus',
+      '2.16.840.1.113883.6.259' => 'HL7 Healthcare Service Location',
+      '2.16.840.1.113883.12.112' => 'DischargeDisposition',
+      '2.16.840.1.113883.5.4' => 'HL7 Act Code',
+      '2.16.840.1.113883.1.11.18877' => 'HL7 Relationship Code',
+      '2.16.840.1.113883.6.238' => 'CDC Race',
+      '2.16.840.1.113883.6.177' => 'NLM MeSH',
+      '2.16.840.1.113883.5.1076' => "Religious Affiliation",
+      '2.16.840.1.113883.1.11.19717' => "HL7 ActNoImmunicationReason",
+      '2.16.840.1.113883.3.88.12.80.33' => "NUBC",
+      '2.16.840.1.113883.1.11.78' => "HL7 Observation Interpretation",
+      '2.16.840.1.113883.3.221.5' => "Source of Payment Typology",
+      '2.16.840.1.113883.6.13' => 'CDT',
+      '2.16.840.1.113883.18.2' => 'AdministrativeSex'
+    }
+
     # Provides an Array of Hashes. Each code system gets its own Hash
     # The hash has a key of "set" for the code system name and "values"
     # for the actual code list
@@ -44,7 +79,7 @@ module QDM
 
     def self.extract_concepts(vs_element)
       vs_element.xpath('//vs:Concept').collect do |con|
-        code_system_name = HealthDataStandards::Util::CodeSystemHelper::CODE_SYSTEMS[con['codeSystem']] || con['codeSystemName']
+        code_system_name = CODE_SYSTEMS[con['codeSystem']] || con['codeSystemName']
         Concept.new(code: con['code'],
                     code_system_name: code_system_name,
                     code_system_version: con['codeSystemVersion'],
