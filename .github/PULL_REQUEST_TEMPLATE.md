@@ -10,7 +10,6 @@ Pull requests into cqm-models require the following. Submitter and reviewer shou
 - [ ] If there were any JavaScript changes, this PR has updated the `dist` directory using `npm run dist`
 - [ ] If applicable, the library version number in `package.json` and `cqm-models.gemspec` has been updated
 - [ ] All changes can be reproduced by running the generator script
-- [ ] cqm-execution fixtures have been updated using this branch in the cqm-converter
 
 **Bonnie Reviewer:**
 
@@ -19,6 +18,7 @@ Name:
 - [ ] The tests appropriately test the new code, including edge cases
 - [ ] You have tried to break the code
 - [ ] You have executed the generator script, and made sure no changes were made that the generator did not reproduce itself
+- [ ] Cqm-execution fixtures have been updated with the update_cqm_execution_fixtures.sh script inside server-scripts using this branch in the cqm-converter
 
 **Cypress Reviewer:**
 
