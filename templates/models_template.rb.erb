@@ -22,5 +22,5 @@ require_relative 'qdm/tacoma/individual_result'
 # Generated models
 <%- datatypes.each_key do |datatype| -%>
 <%- next if datatype.underscore == 'id' -%>
-require_relative 'qdm/<%= datatype.underscore%>'
+require_relative 'qdm/<%= datatype.underscore %>'
 <%- end -%>
