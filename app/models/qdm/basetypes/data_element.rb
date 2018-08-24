@@ -10,6 +10,14 @@ module QDM
     # Optional description.
     field :description, type: String
 
+    embeds_one :id, class_name: 'QDM::Id'
+
+    def initialize(options = {})
+      super(options)
+      # default id to the mongo ObjectId for this DataElement if it isnt already defined
+      self.id = QDM::Id.new(value: _id.to_s) unless id?
+    end
+
     # Returns the attribute requested on the datatype.
     def get(attribute)
       send(attribute) if has_attribute?(attribute)
@@ -27,11 +35,6 @@ module QDM
     # objects.
     def codes
       dataElementCodes.collect { |code| QDM::Code.demongoize(code) }
-    end
-
-    # Return the Mongo id for this datatype.
-    def id
-      _id
     end
 
     def mongoize

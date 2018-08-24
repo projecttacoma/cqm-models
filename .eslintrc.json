@@ -2,7 +2,7 @@
   "extends": "airbnb-base",
   "rules": {
     "max-len": ["error", {"code": 200, "ignoreComments": true}],
-    "no-unused-vars": ["error", { "varsIgnorePattern": "DataElementSchema|ComponentSchema|FacilityLocationSchema|Code|Quantity|Interval|Integer|Array|Float|Time|Number|Date|Mixed|Any" }],
+    "no-unused-vars": ["error", { "varsIgnorePattern": "IdSchema|DataElementSchema|ComponentSchema|FacilityLocationSchema|Code|Quantity|Interval|Integer|Array|Float|Time|Number|Date|Mixed|Any" }],
     "camelcase": "off",
     "comma-dangle": ["error", {
       "arrays": "always-multiline",

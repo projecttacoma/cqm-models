@@ -3,6 +3,9 @@ module QDM
 end
 require 'mongoid'
 
+# Generated models that are dependencies for base types
+require_relative 'qdm/id'
+
 # base types
 require_relative 'qdm/basetypes/code'
 require_relative 'qdm/basetypes/interval'
@@ -18,5 +21,6 @@ require_relative 'qdm/tacoma/individual_result'
 
 # Generated models
 <%- datatypes.each_key do |datatype| -%>
+<%- next if datatype.underscore == 'id' -%>
 require_relative 'qdm/<%= datatype.underscore %>'
 <%- end -%>

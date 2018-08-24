@@ -3,6 +3,9 @@ module QDM
 end
 require 'mongoid'
 
+# Generated models that are dependencies for base types
+require_relative 'qdm/id'
+
 # base types
 require_relative 'qdm/basetypes/code'
 require_relative 'qdm/basetypes/interval'
@@ -18,7 +21,6 @@ require_relative 'qdm/tacoma/individual_result'
 
 # Generated models
 require_relative 'qdm/patient'
-require_relative 'qdm/id'
 require_relative 'qdm/ratio'
 require_relative 'qdm/physical_exam_order'
 require_relative 'qdm/participation'

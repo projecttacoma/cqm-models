@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
+const Id = require('../Id');
 
 const [Schema] = [mongoose.Schema];
 
@@ -8,6 +9,12 @@ function DataElementSchema(add, options) {
   const extended = new Schema({
     dataElementCodes: { type: [] },
     description: { type: String },
+    id: {
+      type: Id.IdSchema,
+      default() {
+        return new Id.Id({ value: (this._id ? this._id.toString() : mongoose.Types.ObjectId().toString()), namingSystem: null });
+      },
+    },
   }, options);
 
   if (add) {
