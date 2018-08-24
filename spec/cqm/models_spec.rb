@@ -6,7 +6,9 @@ RSpec.describe QDM do
     system('rm tmp/*.js')
     system('rm -rf app/models/test')
     system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.3.xml data/oids.json TEST')
+  end
 
+  before(:each) do
     # Create example patients
     @patient_a = QDM::Patient.new(birthDatetime: 75.years.ago, givenNames: %w['Example Patient'], familyName: 'A-eh', bundleId: 'A')
     @patient_b = QDM::Patient.new(birthDatetime: 35.years.ago, givenNames: %w['Example Patient'], familyName: 'B-bee', bundleId: 'B')
