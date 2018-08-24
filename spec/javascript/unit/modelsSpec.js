@@ -4,6 +4,6 @@ const QDMPatientSchema = require('./../../../app/assets/javascripts/index.js').P
 describe('QDMPatient', () => {
   it('basic test', () => {
     const QDMPatient = Mongoose.model('QDMPatient', QDMPatientSchema);
-    //fail();
+    expect(() => {new QDMPatient()}).not.toThrow();
   });
 });
