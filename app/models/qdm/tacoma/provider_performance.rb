@@ -5,8 +5,6 @@ class ProviderPerformance
   field :end_date, type: Integer
   
   belongs_to :provider
-  embedded_in :record
-  
 
   def shift_dates(date_diff)
     self.start_date = self.start_date.nil? ? nil : self.start_date + date_diff

@@ -7,62 +7,55 @@ module QDM
     CCN_OID = '2.16.840.1.113883.4.336'.freeze
 
     field :specialty   , type: String
-    field :phone       , type: String
     field :title       , type: String
     field :given_name  , type: String
     field :family_name , type: String
 
-
     validates_uniqueness_of :npi, allow_blank: true
 
-    embeds_one :organization
     embeds_many :addresses
     embeds_many :telecoms
-    embeds_many :cda_identifiers, class_name: "CDAIdentifier", as: :cda_identifiable
+    embeds_many :identifiers, class_name: "QDM::Id"
 
-    scope :by_npi, ->(an_npi){ where("cda_identifiers.root" => NPI_OID, "cda_identifiers.extension" => an_npi)}
+    scope :by_npi, ->(an_npi){ where("identifiers.namingSystem" => NPI_OID, "identifiers.value" => an_npi)}
 
     def npi=(an_npi)
-      cda_id_npi = self.cda_identifiers.where(root: NPI_OID).first
+      cda_id_npi = self.identifiers.where(namingSystem: NPI_OID).first
       if cda_id_npi
-        cda_id_npi.extension = an_npi
+        cda_id_npi.value = an_npi
         cda_id_npi.save!
       else
-        self.cda_identifiers << CDAIdentifier.new(root: NPI_OID, extension: an_npi)
+        self.identifiers << QDM::Id.new(namingSystem: NPI_OID, value: an_npi)
       end
     end
 
     def npi
-      cda_id_npi = self.cda_identifiers.where(root: NPI_OID).first
-      cda_id_npi ? cda_id_npi.extension : nil
+      cda_id_npi = self.identifiers.where(namingSystem: NPI_OID).first
+      cda_id_npi ? cda_id_npi.value : nil
     end
 
     def tin=(a_tin)
-      self.cda_identifiers << CDAIdentifier.new(root: TAX_ID_OID, extension: a_tin)
+      self.identifiers << QDM::Id.new(namingSystem: TAX_ID_OID, value: a_tin)
     end
 
     def tin
-      cda_id_tin = self.cda_identifiers.where(root: TAX_ID_OID).first
-      cda_id_tin ? cda_id_tin.extension : nil
+      cda_id_tin = self.identifiers.where(namingSystem: TAX_ID_OID).first
+      cda_id_tin ? cda_id_tin.value : nil
     end
 
     def ccn=(a_ccn)
-      cda_id_ccn = self.cda_identifiers.where(root: CCN_OID).first
+      cda_id_ccn = self.identifiers.where(namingSystem: CCN_OID).first
       if cda_id_ccn
-        cda_id_ccn.extension = a_ccn
+        cda_id_ccn.value = a_ccn
         cda_id_ccn.save!
       else
-        self.cda_identifiers << CDAIdentifier.new(root: CCN_OID, extension: a_ccn)
+        self.identifiers << QDM::Id.new(namingSystem: CCN_OID, value: a_ccn)
       end
     end
 
     def ccn
-      cda_id_ccn = self.cda_identifiers.where(root: CCN_OID).first
-      cda_id_ccn ? cda_id_ccn.extension : nil
-    end
-
-    def records(effective_date=nil)
-      Record.by_provider(self, effective_date)
+      cda_id_ccn = self.identifiers.where(namingSystem: CCN_OID).first
+      cda_id_ccn ? cda_id_ccn.value : nil
     end
 
     # validate the NPI, should be 10 or 15 digits total with the final digit being a
@@ -96,18 +89,6 @@ module QDM
       sum = (9*sum)%10
 
       return sum.to_s
-    end
-
-    # When using the ProviderImporter class this method will be called if a parsed
-    # provider can not be found in the database if the parsed provider does not
-    # have an npi number associated with it.  This allows applications to handle
-    # this how they see fit by redefining this method.  The default implementation
-    # is to return an orphan parent (the singular provider without an NPI) if one
-    # exists.  If this method call return nil an attempt will be made to discover
-    # the Provider by name matching and if that fails a Provider will be created
-    # in the db based on the information in the parsed hash.
-    def self.resolve_provider(provider_hash, patient=nil)
-      Provider.where(:npi => nil).first
     end
   end
 
