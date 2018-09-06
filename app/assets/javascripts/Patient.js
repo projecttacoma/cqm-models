@@ -14,7 +14,7 @@ const [Schema, Number, String, Mixed] = [
 
 const PatientSchema = new Schema({
   birthDatetime: DateTime,
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Patient' },
 
   givenNames: [String],

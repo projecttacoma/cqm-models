@@ -18,14 +18,13 @@ const ImmunizationAdministeredSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
   dosage: Quantity,
-  supply: Quantity,
   route: Code,
   negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.112' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },
   category: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'administered' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ImmunizationAdministered' },
 
 });

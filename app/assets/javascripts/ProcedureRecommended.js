@@ -17,15 +17,13 @@ const [Number, String] = [
 const ProcedureRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
-  method: Code,
-  anatomicalApproachSite: Code,
   anatomicalLocationSite: Code,
   ordinality: Code,
   negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.68' },
   category: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'recommended' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProcedureRecommended' },
 
 });

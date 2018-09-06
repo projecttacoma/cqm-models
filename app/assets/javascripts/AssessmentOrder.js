@@ -14,25 +14,14 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const ProcedurePerformedSchema = DataElementSchema({
+const AssessmentOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
-  relevantPeriod: Interval,
-  reason: Code,
-  method: Code,
-  result: Any,
-  status: Code,
-  anatomicalLocationSite: Code,
-  ordinality: Code,
-  incisionDatetime: DateTime,
   negationRationale: Code,
-  components: [ComponentSchema],
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
-  category: { type: String, default: 'procedure' },
-  qdmStatus: { type: String, default: 'performed' },
+  reason: Code,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedurePerformed' },
+  _type: { type: String, default: 'AssessmentOrder' },
 
 });
 
-module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
-module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
+module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
+module.exports.AssessmentOrder = mongoose.model('AssessmentOrder', AssessmentOrderSchema);

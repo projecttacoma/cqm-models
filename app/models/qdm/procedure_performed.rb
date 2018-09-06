@@ -9,7 +9,6 @@ module QDM
     field :method, type: QDM::Code
     field :result
     field :status, type: QDM::Code
-    field :anatomicalApproachSite, type: QDM::Code
     field :anatomicalLocationSite, type: QDM::Code
     field :ordinality, type: QDM::Code
     field :incisionDatetime, type: DateTime
@@ -18,6 +17,6 @@ module QDM
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.67'
     field :category, type: String, default: 'procedure'
     field :qdmStatus, type: String, default: 'performed'
-    field :qdmVersion, type: String, default: '5.3'
+    field :qdmVersion, type: String, default: '5.4'
   end
 end

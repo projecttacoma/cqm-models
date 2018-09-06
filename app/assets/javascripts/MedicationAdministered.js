@@ -18,7 +18,6 @@ const MedicationAdministeredSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
   dosage: Quantity,
-  supply: Quantity,
   frequency: Code,
   route: Code,
   reason: Code,
@@ -26,7 +25,7 @@ const MedicationAdministeredSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.45' },
   category: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'administered' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'MedicationAdministered' },
 
 });

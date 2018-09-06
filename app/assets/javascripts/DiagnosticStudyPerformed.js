@@ -28,7 +28,7 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.23' },
   category: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'performed' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DiagnosticStudyPerformed' },
 
 });

@@ -14,25 +14,19 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const ProcedurePerformedSchema = DataElementSchema({
+const CommunicationPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
+  category: Code,
+  medium: Code,
+  sender: Code,
+  recipient: Code,
+  relatedTo: [IdSchema],
   relevantPeriod: Interval,
-  reason: Code,
-  method: Code,
-  result: Any,
-  status: Code,
-  anatomicalLocationSite: Code,
-  ordinality: Code,
-  incisionDatetime: DateTime,
   negationRationale: Code,
-  components: [ComponentSchema],
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
-  category: { type: String, default: 'procedure' },
-  qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedurePerformed' },
+  _type: { type: String, default: 'CommunicationPerformed' },
 
 });
 
-module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
-module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
+module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
+module.exports.CommunicationPerformed = mongoose.model('CommunicationPerformed', CommunicationPerformedSchema);
