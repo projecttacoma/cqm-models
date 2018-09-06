@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const cql = require('cql-execution');
 
 function Ratio(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Ratio');
