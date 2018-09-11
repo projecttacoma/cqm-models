@@ -8,9 +8,10 @@ require_relative 'qdm/id'
 
 # base types
 require_relative 'qdm/basetypes/code'
+require_relative 'qdm/basetypes/data_element'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
-require_relative 'qdm/basetypes/data_element'
+require_relative 'qdm/basetypes/ratio'
 
 # Tacoma-specific models
 require_relative 'qdm/tacoma/measure'
