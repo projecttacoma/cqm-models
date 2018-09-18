@@ -19,6 +19,8 @@ const DiagnosticStudyOrderSchema = DataElementSchema({
   reason: Code,
   negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.22' },
+  qdmCategory: { type: String, default: 'diagnostic_study' },
+  qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DiagnosticStudyOrder' },
 

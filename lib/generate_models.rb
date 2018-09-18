@@ -129,7 +129,7 @@ end
 extra_fields_rb = [
   'hqmfOid:String',
   'qrdaOid:String',
-  'category:String',
+  'qdmCategory:String',
   'qdmStatus:String',
   'qdmVersion:String'
 ]
@@ -157,7 +157,7 @@ file_path = 'tmp/' if IS_TEST
 extra_fields_js = [
   { name: 'hqmfOid', type: 'System.String' },
   { name: 'qrdaOid', type: 'System.String' },
-  { name: 'category', type: 'System.String' },
+  { name: 'qdmCategory', type: 'System.String' },
   { name: 'qdmStatus', type: 'System.String' },
   { name: 'qdmVersion', type: 'System.String' },
   { name: '_type', type: 'System.String' }
@@ -227,15 +227,15 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   end
 
   # Add category
-  if oids[dc_name].present? && oids[dc_name]['category'].present?
-    contents.gsub!(/  field :category, type: String\n/, "  field :category, type: String, default: '#{oids[dc_name]['category']}'\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_category'].present?
+    contents.gsub!(/  field :qdmCategory, type: String\n/, "  field :qdmCategory, type: String, default: '#{oids[dc_name]['qdm_category']}'\n")
   else
-    contents.gsub!(/  field :category, type: String\n/, '') # Don't include this field
+    contents.gsub!(/  field :qdmCategory, type: String\n/, '') # Don't include this field
   end
 
   # Add status
-  if oids[dc_name].present? && oids[dc_name]['status'].present?
-    contents.gsub!(/  field :qdmStatus, type: String\n/, "  field :qdmStatus, type: String, default: '#{oids[dc_name]['status']}'\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_status'].present?
+    contents.gsub!(/  field :qdmStatus, type: String\n/, "  field :qdmStatus, type: String, default: '#{oids[dc_name]['qdm_status']}'\n")
   else
     contents.gsub!(/  field :qdmStatus, type: String\n/, '') # Don't include this field
   end
@@ -274,15 +274,15 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   end
 
   # Add category
-  if oids[dc_name].present? && oids[dc_name]['category'].present?
-    contents.gsub!(/  category: String,\n/, "  category: { type: String, default: '#{oids[dc_name]['category']}' },\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_category'].present?
+    contents.gsub!(/  qdmCategory: String,\n/, "  qdmCategory: { type: String, default: '#{oids[dc_name]['qdm_category']}' },\n")
   else
-    contents.gsub!(/  category: String,\n/, '') # Don't include this field
+    contents.gsub!(/  qdmCategory: String,\n/, '') # Don't include this field
   end
 
   # Add status
-  if oids[dc_name].present? && oids[dc_name]['status'].present?
-    contents.gsub!(/  qdmStatus: String,\n/, "  qdmStatus: { type: String, default: '#{oids[dc_name]['status']}' },\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_status'].present?
+    contents.gsub!(/  qdmStatus: String,\n/, "  qdmStatus: { type: String, default: '#{oids[dc_name]['qdm_status']}' },\n")
   else
     contents.gsub!(/  qdmStatus: String,\n/, '') # Don't include this field
   end

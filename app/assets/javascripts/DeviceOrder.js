@@ -19,6 +19,8 @@ const DeviceOrderSchema = DataElementSchema({
   negationRationale: Code,
   reason: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.15' },
+  qdmCategory: { type: String, default: 'device' },
+  qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DeviceOrder' },
 

@@ -40,9 +40,9 @@
   # will return all Encounter QDM data types active on the patient.
   def get_data_elements(category = nil, status = nil)
     if category && status
-      dataElements.where(category: category, qdmStatus: status) || []
+      dataElements.where(qdmCategory: category, qdmStatus: status) || []
     elsif category
-      dataElements.where(category: category) || []
+      dataElements.where(qdmCategory: category) || []
     else
       dataElements || []
     end

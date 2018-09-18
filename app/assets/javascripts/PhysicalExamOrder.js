@@ -20,6 +20,8 @@ const PhysicalExamOrderSchema = DataElementSchema({
   anatomicalLocationSite: Code,
   negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.61' },
+  qdmCategory: { type: String, default: 'physical_exam' },
+  qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PhysicalExamOrder' },
 

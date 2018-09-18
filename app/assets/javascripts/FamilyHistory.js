@@ -19,6 +19,7 @@ const FamilyHistorySchema = DataElementSchema({
   relationship: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.111' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
+  qdmCategory: { type: String, default: 'family_history' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'FamilyHistory' },
 
