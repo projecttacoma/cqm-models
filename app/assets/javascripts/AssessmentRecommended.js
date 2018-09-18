@@ -19,8 +19,6 @@ const AssessmentRecommendedSchema = DataElementSchema({
   negationRationale: Code,
   reason: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.118' },
-  category: { type: String, default: 'assessment' },
-  qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AssessmentRecommended' },
 

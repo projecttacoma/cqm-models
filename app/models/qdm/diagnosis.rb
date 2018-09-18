@@ -9,7 +9,6 @@ module QDM
     field :severity, type: QDM::Code
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.110'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.135'
-    field :category, type: String, default: 'condition'
     field :qdmVersion, type: String, default: '5.4'
   end
 end

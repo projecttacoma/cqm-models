@@ -22,8 +22,6 @@ const SubstanceAdministeredSchema = DataElementSchema({
   route: Code,
   negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.73' },
-  category: { type: String, default: 'substance' },
-  qdmStatus: { type: String, default: 'administered' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'SubstanceAdministered' },
 

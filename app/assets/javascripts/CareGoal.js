@@ -19,7 +19,6 @@ const CareGoalSchema = DataElementSchema({
   relatedTo: [IdSchema],
   targetOutcome: Any,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.7' },
-  category: { type: String, default: 'care_goal' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'CareGoal' },
 
