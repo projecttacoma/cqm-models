@@ -47,6 +47,12 @@
     "category": "communication",
     "status": "from_provider_to_provider"
   },
+  "communication_performed": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.132",
+    "qrda_oid": "",
+    "category": "communication",
+    "status": "performed"
+  },
   "device_adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.11",
     "qrda_oid": "",
