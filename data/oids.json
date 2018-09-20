@@ -11,6 +11,12 @@
     "qdm_category": "allergy",
     "qdm_status": "intolerance"
   },
+  "assessment_order": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.131",
+    "qrda_oid": "",
+    "qdm_category": "assessment",
+    "qdm_status": "order"
+  },
   "assessment_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.117",
     "qrda_oid": "",
