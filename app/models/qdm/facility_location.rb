@@ -4,6 +4,6 @@ module QDM
     include Mongoid::Document
     field :code, type: QDM::Code
     field :locationPeriod, type: QDM::Interval
-    field :qdmVersion, type: String, default: '5.3'
+    field :qdmVersion, type: String, default: '5.4'
   end
 end

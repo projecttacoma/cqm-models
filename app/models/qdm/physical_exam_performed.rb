@@ -12,8 +12,8 @@ module QDM
     field :negationRationale, type: QDM::Code
     field :components, type: Array
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.62'
-    field :category, type: String, default: 'physical_exam'
+    field :qdmCategory, type: String, default: 'physical_exam'
     field :qdmStatus, type: String, default: 'performed'
-    field :qdmVersion, type: String, default: '5.3'
+    field :qdmVersion, type: String, default: '5.4'
   end
 end

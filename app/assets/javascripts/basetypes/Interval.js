@@ -23,10 +23,10 @@ Interval.prototype.cast = (interval) => {
 
   // Cast to DateTime if it is a string representing a DateTime
   if (casted.low && Date.parse(casted.low)) {
-    casted.low = cql.DateTime.fromDate(new Date(casted.low), 0);
+    casted.low = cql.DateTime.fromJSDate(new Date(casted.low), 0);
   }
   if (casted.high && Date.parse(casted.high)) {
-    casted.high = cql.DateTime.fromDate(new Date(casted.high), 0);
+    casted.high = cql.DateTime.fromJSDate(new Date(casted.high), 0);
   }
   return casted;
 };
