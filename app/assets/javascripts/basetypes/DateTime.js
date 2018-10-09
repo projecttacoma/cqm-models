@@ -11,7 +11,7 @@ DateTime.prototype.cast = (dateTime) => {
     throw new Error(`DateTime: ${dateTime} is not a valid DateTime`);
   }
 
-  return cql.DateTime.fromDate(new Date(dateTime), 0);
+  return cql.DateTime.fromJSDate(new Date(dateTime), 0);
 };
 
 mongoose.Schema.Types.DateTime = DateTime;

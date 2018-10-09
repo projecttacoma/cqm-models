@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+
+const [Number, String] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+];
+
+const IdSchema = mongoose.Schema({
+  <%- for attribute in attrs_with_extras -%>
+  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
+  <%- end %>
+}, { _id: false, id: false });
+
+module.exports.IdSchema = IdSchema;
+module.exports.Id = mongoose.model('Id', IdSchema);

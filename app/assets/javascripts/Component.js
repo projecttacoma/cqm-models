@@ -6,6 +6,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 
 const { FacilityLocationSchema } = require('./FacilityLocation');
+const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -16,7 +17,7 @@ const [Number, String] = [
 const ComponentSchema = new mongoose.Schema({
   code: Code,
   result: Any,
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Component' },
 
 });

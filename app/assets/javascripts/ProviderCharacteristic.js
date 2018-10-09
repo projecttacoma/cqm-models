@@ -6,6 +6,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
+const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -16,8 +17,8 @@ const [Number, String] = [
 const ProviderCharacteristicSchema = DataElementSchema({
   authorDatetime: DateTime,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.71' },
-  category: { type: String, default: 'provider_characteristic' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmCategory: { type: String, default: 'provider_characteristic' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProviderCharacteristic' },
 
 });

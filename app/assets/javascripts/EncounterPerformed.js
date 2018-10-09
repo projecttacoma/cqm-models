@@ -6,6 +6,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
+const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -24,9 +25,9 @@ const EncounterPerformedSchema = DataElementSchema({
   negationRationale: Code,
   lengthOfStay: Quantity,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.5' },
-  category: { type: String, default: 'encounter' },
+  qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'performed' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'EncounterPerformed' },
 
 });

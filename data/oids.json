@@ -2,589 +2,601 @@
   "adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.120",
     "qrda_oid": "",
-    "category": "adverse_event",
-    "status": ""
+    "qdm_category": "adverse_event",
+    "qdm_status": ""
   },
   "allergy_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.119",
     "qrda_oid": "",
-    "category": "allergy",
-    "status": "intolerance"
+    "qdm_category": "allergy",
+    "qdm_status": "intolerance"
+  },
+  "assessment_order": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.131",
+    "qrda_oid": "",
+    "qdm_category": "assessment",
+    "qdm_status": "order"
   },
   "assessment_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.117",
     "qrda_oid": "",
-    "category": "assessment",
-    "status": "performed"
+    "qdm_category": "assessment",
+    "qdm_status": "performed"
   },
   "assessment_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.118",
     "qrda_oid": "",
-    "category": "assessment",
-    "status": "recommended"
+    "qdm_category": "assessment",
+    "qdm_status": "recommended"
   },
   "care_goal": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.7",
     "qrda_oid": "",
-    "category": "care_goal",
-    "status": ""
+    "qdm_category": "care_goal",
+    "qdm_status": ""
   },
   "communication_from_patient_to_provider": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.8",
     "qrda_oid": "",
-    "category": "communication",
-    "status": "from_patient_to_provider"
+    "qdm_category": "communication",
+    "qdm_status": "from_patient_to_provider"
   },
   "communication_from_provider_to_patient": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.9",
     "qrda_oid": "",
-    "category": "communication",
-    "status": "from_provider_to_patient"
+    "qdm_category": "communication",
+    "qdm_status": "from_provider_to_patient"
   },
   "communication_from_provider_to_provider": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.10",
     "qrda_oid": "",
-    "category": "communication",
-    "status": "from_provider_to_provider"
+    "qdm_category": "communication",
+    "qdm_status": "from_provider_to_provider"
+  },
+  "communication_performed": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.132",
+    "qrda_oid": "",
+    "qdm_category": "communication",
+    "qdm_status": "performed"
   },
   "device_adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.11",
     "qrda_oid": "",
-    "category": "device",
-    "status": "adverse_event"
+    "qdm_category": "device",
+    "qdm_status": "adverse_event"
   },
   "device_allergy": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.12",
     "qrda_oid": "",
-    "category": "device",
-    "status": "allergy"
+    "qdm_category": "device",
+    "qdm_status": "allergy"
   },
   "device_applied": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.13",
     "qrda_oid": "",
-    "category": "device",
-    "status": "applied"
+    "qdm_category": "device",
+    "qdm_status": "applied"
   },
   "device_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.14",
     "qrda_oid": "",
-    "category": "device",
-    "status": "intolerance"
+    "qdm_category": "device",
+    "qdm_status": "intolerance"
   },
   "device_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.15",
     "qrda_oid": "",
-    "category": "device",
-    "status": "order"
+    "qdm_category": "device",
+    "qdm_status": "order"
   },
   "device_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.16",
     "qrda_oid": "",
-    "category": "device",
-    "status": "recommended"
+    "qdm_category": "device",
+    "qdm_status": "recommended"
   },
   "diagnosis": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.110",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.135",
-    "category": "condition",
-    "status": ""
+    "qdm_category": "condition",
+    "qdm_status": ""
   },
   "diagnosis_active": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.1",
     "qrda_oid": "",
-    "category": "condition",
-    "status": "active"
+    "qdm_category": "condition",
+    "qdm_status": "active"
   },
   "diagnosis_family_history": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.17",
     "qrda_oid": "",
-    "category": "condition",
-    "status": "family_history"
+    "qdm_category": "condition",
+    "qdm_status": "family_history"
   },
   "diagnosis_inactive": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.18",
     "qrda_oid": "",
-    "category": "condition",
-    "status": "inactive"
+    "qdm_category": "condition",
+    "qdm_status": "inactive"
   },
   "diagnosis_resolved": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.19",
     "qrda_oid": "",
-    "category": "condition",
-    "status": "resolved"
+    "qdm_category": "condition",
+    "qdm_status": "resolved"
   },
   "diagnostic_study_adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.20",
     "qrda_oid": "",
-    "category": "diagnostic_study",
-    "status": "adverse_event"
+    "qdm_category": "diagnostic_study",
+    "qdm_status": "adverse_event"
   },
   "diagnostic_study_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.21",
     "qrda_oid": "",
-    "category": "diagnostic_study",
-    "status": "intolerance"
+    "qdm_category": "diagnostic_study",
+    "qdm_status": "intolerance"
   },
   "diagnostic_study_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.22",
     "qrda_oid": "",
-    "category": "diagnostic_study",
-    "status": "order"
+    "qdm_category": "diagnostic_study",
+    "qdm_status": "order"
   },
   "diagnostic_study_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.23",
     "qrda_oid": "",
-    "category": "diagnostic_study",
-    "status": "performed"
+    "qdm_category": "diagnostic_study",
+    "qdm_status": "performed"
   },
   "diagnostic_study_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.24",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.19",
-    "category": "diagnostic_study",
-    "status": "recommended"
+    "qdm_category": "diagnostic_study",
+    "qdm_status": "recommended"
   },
   "diagnostic_study_result": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.25",
     "qrda_oid": "",
-    "category": "diagnostic_study",
-    "status": "result"
+    "qdm_category": "diagnostic_study",
+    "qdm_status": "result"
   },
   "encounter": {
     "hqmf_oid": "2.16.840.1.113883.3.560.1.4",
     "qrda_oid": "",
-    "category": "encounter",
-    "status": ""
+    "qdm_category": "encounter",
+    "qdm_status": ""
   },
   "encounter_active": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.26",
     "qrda_oid": "",
-    "category": "encounter",
-    "status": "active"
+    "qdm_category": "encounter",
+    "qdm_status": "active"
   },
   "encounter_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.27",
     "qrda_oid": "",
-    "category": "encounter",
-    "status": "order"
+    "qdm_category": "encounter",
+    "qdm_status": "order"
   },
   "encounter_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.5",
     "qrda_oid": "",
-    "category": "encounter",
-    "status": "performed"
+    "qdm_category": "encounter",
+    "qdm_status": "performed"
   },
   "encounter_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.28",
     "qrda_oid": "",
-    "category": "encounter",
-    "status": "recommended"
+    "qdm_category": "encounter",
+    "qdm_status": "recommended"
   },
   "family_history": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.111",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.12",
-    "category": "family_history",
-    "status": ""
+    "qdm_category": "family_history",
+    "qdm_status": ""
   },
   "functional_status_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.29",
     "qrda_oid": "",
-    "category": "functional_status",
-    "status": "order"
+    "qdm_category": "functional_status",
+    "qdm_status": "order"
   },
   "functional_status_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.30",
     "qrda_oid": "",
-    "category": "functional_status",
-    "status": "performed"
+    "qdm_category": "functional_status",
+    "qdm_status": "performed"
   },
   "functional_status_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.31",
     "qrda_oid": "",
-    "category": "functional_status",
-    "status": "recommended"
+    "qdm_category": "functional_status",
+    "qdm_status": "recommended"
   },
   "functional_status_result": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.32",
     "qrda_oid": "",
-    "category": "functional_status",
-    "status": "result"
+    "qdm_category": "functional_status",
+    "qdm_status": "result"
   },
   "immunization_administered": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.112",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.140",
-    "category": "immunization",
-    "status": "administered"
+    "qdm_category": "immunization",
+    "qdm_status": "administered"
   },
   "immunization_allergy": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.114",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.44",
-    "category": "immunization",
-    "status": "allergy"
+    "qdm_category": "immunization",
+    "qdm_status": "allergy"
   },
   "immunization_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.115",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.46",
-    "category": "immunization",
-    "status": "intolerance"
+    "qdm_category": "immunization",
+    "qdm_status": "intolerance"
   },
   "immunization_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.113",
     "qrda_oid": "",
-    "category": "immunization",
-    "status": "order"
+    "qdm_category": "immunization",
+    "qdm_status": "order"
   },
   "intervention_adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.33",
     "qrda_oid": "",
-    "category": "intervention",
-    "status": "adverse_event"
+    "qdm_category": "intervention",
+    "qdm_status": "adverse_event"
   },
   "intervention_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.34",
     "qrda_oid": "",
-    "category": "intervention",
-    "status": "intolerance"
+    "qdm_category": "intervention",
+    "qdm_status": "intolerance"
   },
   "intervention_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.35",
     "qrda_oid": "",
-    "category": "intervention",
-    "status": "order"
+    "qdm_category": "intervention",
+    "qdm_status": "order"
   },
   "intervention_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.36",
     "qrda_oid": "",
-    "category": "intervention",
-    "status": "performed"
+    "qdm_category": "intervention",
+    "qdm_status": "performed"
   },
   "intervention_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.37",
     "qrda_oid": "",
-    "category": "intervention",
-    "status": "recommended"
+    "qdm_category": "intervention",
+    "qdm_status": "recommended"
   },
   "intervention_result": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.38",
     "qrda_oid": "",
-    "category": "intervention",
-    "status": "result"
+    "qdm_category": "intervention",
+    "qdm_status": "result"
   },
   "laboratory_test": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.4",
     "qrda_oid": "",
-    "category": "laboratory_test",
-    "status": ""
+    "qdm_category": "laboratory_test",
+    "qdm_status": ""
   },
   "laboratory_test_adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.39",
     "qrda_oid": "",
-    "category": "laboratory_test",
-    "status": "adverse_event"
+    "qdm_category": "laboratory_test",
+    "qdm_status": "adverse_event"
   },
   "laboratory_test_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.40",
     "qrda_oid": "",
-    "category": "laboratory_test",
-    "status": "intolerance"
+    "qdm_category": "laboratory_test",
+    "qdm_status": "intolerance"
   },
   "laboratory_test_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.41",
     "qrda_oid": "",
-    "category": "laboratory_test",
-    "status": "order"
+    "qdm_category": "laboratory_test",
+    "qdm_status": "order"
   },
   "laboratory_test_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.42",
     "qrda_oid": "",
-    "category": "laboratory_test",
-    "status": "performed"
+    "qdm_category": "laboratory_test",
+    "qdm_status": "performed"
   },
   "laboratory_test_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.43",
     "qrda_oid": "",
-    "category": "laboratory_test",
-    "status": "recommended"
+    "qdm_category": "laboratory_test",
+    "qdm_status": "recommended"
   },
   "medication_active": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.44",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "active"
+    "qdm_category": "medication",
+    "qdm_status": "active"
   },
   "medication_administered": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.45",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "administered"
+    "qdm_category": "medication",
+    "qdm_status": "administered"
   },
   "medication_adverse_effects": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.46",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "adverse_effects"
+    "qdm_category": "medication",
+    "qdm_status": "adverse_effects"
   },
   "medication_allergy": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.47",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "allergy"
+    "qdm_category": "medication",
+    "qdm_status": "allergy"
   },
   "medication_discharge": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.48",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "discharge"
+    "qdm_category": "medication",
+    "qdm_status": "discharge"
   },
   "medication_dispensed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.49",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "dispensed"
+    "qdm_category": "medication",
+    "qdm_status": "dispensed"
   },
   "medication_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.50",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "intolerance"
+    "qdm_category": "medication",
+    "qdm_status": "intolerance"
   },
   "medication_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.51",
     "qrda_oid": "",
-    "category": "medication",
-    "status": "order"
+    "qdm_category": "medication",
+    "qdm_status": "order"
   },
   "patient_care_experience": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.52",
     "qrda_oid": "",
-    "category": "care_experience",
-    "status": ""
+    "qdm_category": "care_experience",
+    "qdm_status": ""
   },
   "patient_characteristic": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.53",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": ""
+    "qdm_category": "patient_characteristic",
+    "qdm_status": ""
   },
   "patient_characteristic_birthdate": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.54",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": "birthdate"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "birthdate"
   },
   "patient_characteristic_clinical_trial_participant": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.6",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.51",
-    "category": "patient_characteristic",
-    "status": "clinical_trial_participant"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "clinical_trial_participant"
   },
   "patient_characteristic_ethnicity": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.56",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": "ethnicity"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "ethnicity"
   },
   "patient_characteristic_expired": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.57",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": "expired"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "expired"
   },
   "patient_characteristic_sex": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.55",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": "gender"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "gender"
   },
   "patient_characteristic_gender": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.55",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": "gender"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "gender"
   },
   "patient_characteristic_payer": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.58",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": "payer"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "payer"
   },
   "patient_characteristic_race": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.59",
     "qrda_oid": "",
-    "category": "patient_characteristic",
-    "status": "race"
+    "qdm_category": "patient_characteristic",
+    "qdm_status": "race"
   },
   "participation": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.4.130",
     "qrda_oid": "",
-    "category": "participation",
-    "status": ""
+    "qdm_category": "participation",
+    "qdm_status": ""
   },
   "physical_exam": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.60",
     "qrda_oid": "",
-    "category": "physical_exam",
-    "status": ""
+    "qdm_category": "physical_exam",
+    "qdm_status": ""
   },
   "physical_exam_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.61",
     "qrda_oid": "",
-    "category": "physical_exam",
-    "status": "order"
+    "qdm_category": "physical_exam",
+    "qdm_status": "order"
   },
   "physical_exam_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.62",
     "qrda_oid": "",
-    "category": "physical_exam",
-    "status": "performed"
+    "qdm_category": "physical_exam",
+    "qdm_status": "performed"
   },
   "physical_exam_recommended": {
     "hqmf_oid": "22.16.840.1.113883.10.20.28.3.63",
     "qrda_oid": "",
-    "category": "physical_exam",
-    "status": "recommended"
+    "qdm_category": "physical_exam",
+    "qdm_status": "recommended"
   },
   "preference_patient": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.86",
     "qrda_oid": "",
-    "category": "preference",
-    "status": "patient"
+    "qdm_category": "preference",
+    "qdm_status": "patient"
   },
   "preference_provider": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.87",
     "qrda_oid": "",
-    "category": "preference",
-    "status": "provider"
+    "qdm_category": "preference",
+    "qdm_status": "provider"
   },
   "procedure_adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.64",
     "qrda_oid": "",
-    "category": "procedure",
-    "status": "adverse_event"
+    "qdm_category": "procedure",
+    "qdm_status": "adverse_event"
   },
   "procedure_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.65",
     "qrda_oid": "",
-    "category": "procedure",
-    "status": "intolerance"
+    "qdm_category": "procedure",
+    "qdm_status": "intolerance"
   },
   "procedure_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.66",
     "qrda_oid": "",
-    "category": "procedure",
-    "status": "order"
+    "qdm_category": "procedure",
+    "qdm_status": "order"
   },
   "procedure_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.67",
     "qrda_oid": "",
-    "category": "procedure",
-    "status": "performed"
+    "qdm_category": "procedure",
+    "qdm_status": "performed"
   },
   "procedure_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.68",
     "qrda_oid": "",
-    "category": "procedure",
-    "status": "recommended"
+    "qdm_category": "procedure",
+    "qdm_status": "recommended"
   },
   "procedure_result": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.69",
     "qrda_oid": "",
-    "category": "procedure",
-    "status": "result"
+    "qdm_category": "procedure",
+    "qdm_status": "result"
   },
   "provider_care_experience": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.70",
     "qrda_oid": "",
-    "category": "care_experience",
-    "status": ""
+    "qdm_category": "care_experience",
+    "qdm_status": ""
   },
   "provider_characteristic": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.71",
     "qrda_oid": "",
-    "category": "provider_characteristic",
-    "status": ""
+    "qdm_category": "provider_characteristic",
+    "qdm_status": ""
   },
   "risk_category_assessment": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.72",
     "qrda_oid": "",
-    "category": "risk_category_assessment",
-    "status": ""
+    "qdm_category": "risk_category_assessment",
+    "qdm_status": ""
   },
   "substance_administered": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.73",
     "qrda_oid": "",
-    "category": "substance",
-    "status": "administered"
+    "qdm_category": "substance",
+    "qdm_status": "administered"
   },
   "substance_adverse_event": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.46.74",
     "qrda_oid": "",
-    "category": "substance",
-    "status": "adverse_event"
+    "qdm_category": "substance",
+    "qdm_status": "adverse_event"
   },
   "substance_allergy": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.75",
     "qrda_oid": "",
-    "category": "substance",
-    "status": "allergy"
+    "qdm_category": "substance",
+    "qdm_status": "allergy"
   },
   "substance_intolerance": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.76",
     "qrda_oid": "",
-    "category": "substance",
-    "status": "intolerance"
+    "qdm_category": "substance",
+    "qdm_status": "intolerance"
   },
   "substance_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.77",
     "qrda_oid": "",
-    "category": "substance",
-    "status": "order"
+    "qdm_category": "substance",
+    "qdm_status": "order"
   },
   "substance_recommended": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.78",
     "qrda_oid": "",
-    "category": "substance",
-    "status": "recommended"
+    "qdm_category": "substance",
+    "qdm_status": "recommended"
   },
   "symptom": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.116",
     "qrda_oid": "2.16.840.1.113883.10.20.24.3.136",
-    "category": "symptom",
-    "status": ""
+    "qdm_category": "symptom",
+    "qdm_status": ""
   },
   "symptom_active": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.79",
     "qrda_oid": "",
-    "category": "symptom",
-    "status": "active"
+    "qdm_category": "symptom",
+    "qdm_status": "active"
   },
   "symptom_assessed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.80",
     "qrda_oid": "",
-    "category": "symptom",
-    "status": "assessed"
+    "qdm_category": "symptom",
+    "qdm_status": "assessed"
   },
   "symptom_inactive": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.81",
     "qrda_oid": "",
-    "category": "symptom",
-    "status": "inactive"
+    "qdm_category": "symptom",
+    "qdm_status": "inactive"
   },
   "symptom_resolved": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.82",
     "qrda_oid": "",
-    "category": "symptom",
-    "status": "resolved"
+    "qdm_category": "symptom",
+    "qdm_status": "resolved"
   },
   "transfer_from": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.84",
     "qrda_oid": "",
-    "category": "transfer",
-    "status": "from"
+    "qdm_category": "transfer",
+    "qdm_status": "from"
   },
   "transfer_to": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.3.85",
     "qrda_oid": "",
-    "category": "transfer",
-    "status": "to"
+    "qdm_category": "transfer",
+    "qdm_status": "to"
   }
 }

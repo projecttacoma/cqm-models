@@ -14,7 +14,7 @@ const [Schema, Number, String, Mixed] = [
 
 const PatientSchema = new Schema({
   birthDatetime: DateTime,
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Patient' },
 
   givenNames: [String],
@@ -71,10 +71,10 @@ PatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
 // Example: patient.getDataElements(category = 'encounters') will return
 // all Encounter QDM data types active on the patient.
 PatientSchema.methods.getDataElements = function getDataElements(params) {
-  if (params.category && params.qdmStatus) {
-    return this.dataElements.filter(element => (element.category === params.category) && (element.qdmStatus === params.qdmStatus));
+  if (params.qdmCategory && params.qdmStatus) {
+    return this.dataElements.filter(element => (element.qdmCategory === params.qdmCategory) && (element.qdmStatus === params.qdmStatus));
   } else if (params.category) {
-    return this.dataElements.filter(element => element.category === params.category);
+    return this.dataElements.filter(element => element.qdmCategory === params.qdmCategory);
   }
   return this.dataElements;
 };
@@ -90,15 +90,11 @@ PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = 
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
   const results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
   return results.map((result) => {
-    const getCodeFunction = Object.getPrototypeOf(result).getCode;
-    const codeFunction = Object.getPrototypeOf(result).code;
-    const idField = result.id;
     const removedMongooseItems = AllDataElements[profile](result).toObject();
-    // toObject() will remove all mongoose functions but also removed the getCode and code functions
-    // the execution engine requires the code and getCode functions so we have to add them back
-    removedMongooseItems.getCode = getCodeFunction;
-    removedMongooseItems.code = codeFunction;
-    removedMongooseItems.id = idField;
+    // toObject() will remove all mongoose functions but also remove the schema methods, so we add them back
+    Object.entries(Object.getPrototypeOf(result).schema.methods).forEach(([method_name, method]) => {
+      removedMongooseItems[method_name] = method;
+    });
     return removedMongooseItems;
   });
 };

@@ -16,6 +16,7 @@ TYPE_LOOKUP_RB = {
   'System.Integer': 'Integer',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
+  'QDM.Id': 'Id',
   'System.Any': 'Any',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
@@ -25,7 +26,6 @@ TYPE_LOOKUP_RB = {
   'list<QDM.ResultComponent>': 'Array',
   'list<QDM.FacilityLocation>': 'Array',
   'list<System.Code>': 'Array',
-  'QDM.Id': 'String',
   'System.Decimal': 'Float',
   'System.Time': 'Time',
   'System.Concept': 'Any'
@@ -38,15 +38,15 @@ TYPE_LOOKUP_JS = {
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
   'System.Any': 'Any',
+  'QDM.Id': 'IdSchema',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
   'list<QDM.Component>': '[]',
   'System.String': 'String',
-  'list<QDM.Id>': '[String]',
+  'list<QDM.Id>': '[]',
   'list<QDM.ResultComponent>': '[]',
   'list<QDM.FacilityLocation>': '[]',
   'list<System.Code>': '[Code]',
-  'QDM.Id': 'String',
   'System.Decimal': 'Number',
   'System.Time': 'DateTime',
   'System.Concept': '{}'
@@ -129,7 +129,7 @@ end
 extra_fields_rb = [
   'hqmfOid:String',
   'qrdaOid:String',
-  'category:String',
+  'qdmCategory:String',
   'qdmStatus:String',
   'qdmVersion:String'
 ]
@@ -151,30 +151,30 @@ puts 'Generating JavaScript models...'
 
 # Create JavaScript models
 template = File.read('templates/mongoose_template.js.erb')
-renderer = ERB.new(template, nil, '-')
+default_renderer = ERB.new(template, nil, '-')
 file_path = 'app/assets/javascripts/'
 file_path = 'tmp/' if IS_TEST
 extra_fields_js = [
   { name: 'hqmfOid', type: 'System.String' },
   { name: 'qrdaOid', type: 'System.String' },
-  { name: 'category', type: 'System.String' },
+  { name: 'qdmCategory', type: 'System.String' },
   { name: 'qdmStatus', type: 'System.String' },
   { name: 'qdmVersion', type: 'System.String' },
   { name: '_type', type: 'System.String' }
 ]
+datatype_custom_templates = {
+  Patient: 'templates/patient_template.js.erb',
+  Id: 'templates/id_template.js.erb'
+}
 datatypes.each do |datatype, attributes|
-  if datatype == 'Patient'
-    # Handle Patient as its own special case, with its own template.
-    patient_template = File.read('templates/patient_template.js.erb')
-    patient_renderer = ERB.new(patient_template, nil, '-')
-    attrs_with_extras = attributes + extra_fields_js
-    puts '  ' + file_path + datatype + '.js'
-    File.open(file_path + datatype + '.js', 'w') { |file| file.puts patient_renderer.result(binding) }
-  else
-    attrs_with_extras = attributes + extra_fields_js
-    puts '  ' + file_path + datatype + '.js'
-    File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
+  renderer = default_renderer
+  if datatype_custom_templates.key?(datatype.to_sym)
+    puts "using custom template for #{datatype}"
+    renderer = ERB.new(File.read(datatype_custom_templates[datatype.to_sym]), nil, '-')
   end
+  attrs_with_extras = attributes + extra_fields_js # this field gets used in the template
+  puts '  ' + file_path + datatype + '.js'
+  File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
 end
 
 # Create require file (if not in test mode)
@@ -227,18 +227,21 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   end
 
   # Add category
-  if oids[dc_name].present? && oids[dc_name]['category'].present?
-    contents.gsub!(/  field :category, type: String\n/, "  field :category, type: String, default: '#{oids[dc_name]['category']}'\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_category'].present?
+    contents.gsub!(/  field :qdmCategory, type: String\n/, "  field :qdmCategory, type: String, default: '#{oids[dc_name]['qdm_category']}'\n")
   else
-    contents.gsub!(/  field :category, type: String\n/, '') # Don't include this field
+    contents.gsub!(/  field :qdmCategory, type: String\n/, '') # Don't include this field
   end
 
   # Add status
-  if oids[dc_name].present? && oids[dc_name]['status'].present?
-    contents.gsub!(/  field :qdmStatus, type: String\n/, "  field :qdmStatus, type: String, default: '#{oids[dc_name]['status']}'\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_status'].present?
+    contents.gsub!(/  field :qdmStatus, type: String\n/, "  field :qdmStatus, type: String, default: '#{oids[dc_name]['qdm_status']}'\n")
   else
     contents.gsub!(/  field :qdmStatus, type: String\n/, '') # Don't include this field
   end
+
+  # Make relatedTo embeds_many instead of field
+  contents.gsub!(/  field :relatedTo, type: Array\n/, "  embeds_many :relatedTo, class_name: 'QDM::Id'\n")
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -271,15 +274,15 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   end
 
   # Add category
-  if oids[dc_name].present? && oids[dc_name]['category'].present?
-    contents.gsub!(/  category: String,\n/, "  category: { type: String, default: '#{oids[dc_name]['category']}' },\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_category'].present?
+    contents.gsub!(/  qdmCategory: String,\n/, "  qdmCategory: { type: String, default: '#{oids[dc_name]['qdm_category']}' },\n")
   else
-    contents.gsub!(/  category: String,\n/, '') # Don't include this field
+    contents.gsub!(/  qdmCategory: String,\n/, '') # Don't include this field
   end
 
   # Add status
-  if oids[dc_name].present? && oids[dc_name]['status'].present?
-    contents.gsub!(/  qdmStatus: String,\n/, "  qdmStatus: { type: String, default: '#{oids[dc_name]['status']}' },\n")
+  if oids[dc_name].present? && oids[dc_name]['qdm_status'].present?
+    contents.gsub!(/  qdmStatus: String,\n/, "  qdmStatus: { type: String, default: '#{oids[dc_name]['qdm_status']}' },\n")
   else
     contents.gsub!(/  qdmStatus: String,\n/, '') # Don't include this field
   end
@@ -287,11 +290,12 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   # Add class
   contents.gsub!(/  _type: String,\n/, "  _type: { type: String, default: '#{dc_name.camelize}' },\n")
 
-  # Component and Facility types
+  # Component, Facility, and Id types
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
   contents.gsub!(/facilityLocation: Code/, 'facilityLocation: FacilityLocationSchema')
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
   contents.gsub!(/component: Code/, 'component: ComponentSchema')
+  contents.gsub!(/relatedTo: \[\]/, 'relatedTo: [IdSchema]')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -318,8 +322,14 @@ end
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
-  next if File.basename(file_name) == 'patient.rb'
-  contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
+  # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
+  if File.basename(file_name) == 'id.rb'
+    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
+  else
+    not_embedded_in_patient_files = ['patient.rb', 'component.rb', 'facility_location.rb']
+    next if not_embedded_in_patient_files.include?(File.basename(file_name))
+    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
+  end
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
@@ -327,7 +337,7 @@ end
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = ''
   File.open(file_name).each_line.with_index do |line, index|
-    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb')
+    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb') && !file_name.include?('/id.rb')
     contents += "module QDM\n  # #{file_name}\n  #{line.gsub('QDM::', '')}" if index.zero?
     contents += '  ' unless index.zero? || line.blank?
     contents += line unless index.zero?

@@ -39,10 +39,10 @@ function RecursiveCast(any) {
 
     // Cast to DateTime if it is a string representing a DateTime
     if (casted.low && Date.parse(casted.low)) {
-      casted.low = cql.DateTime.fromDate(new Date(casted.low), 0);
+      casted.low = cql.DateTime.fromJSDate(new Date(casted.low), 0);
     }
     if (casted.high && Date.parse(casted.high)) {
-      casted.high = cql.DateTime.fromDate(new Date(casted.high), 0);
+      casted.high = cql.DateTime.fromJSDate(new Date(casted.high), 0);
     }
     return casted;
   }
@@ -57,7 +57,7 @@ function RecursiveCast(any) {
     return any;
   }
   if (Date.parse(any)) {
-    return cql.DateTime.fromDate(new Date(any), 0);
+    return cql.DateTime.fromJSDate(new Date(any), 0);
   }
   return any;
 }

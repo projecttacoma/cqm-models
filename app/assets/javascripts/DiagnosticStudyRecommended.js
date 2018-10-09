@@ -6,6 +6,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const { ComponentSchema } = require('./Component');
 const { FacilityLocationSchema } = require('./FacilityLocation');
+const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
 
 const [Number, String] = [
@@ -15,13 +16,12 @@ const [Number, String] = [
 
 const DiagnosticStudyRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
-  method: Code,
   negationRationale: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.24' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
-  category: { type: String, default: 'diagnostic_study' },
+  qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'recommended' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DiagnosticStudyRecommended' },
 
 });
