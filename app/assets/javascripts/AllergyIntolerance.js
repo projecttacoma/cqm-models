@@ -20,9 +20,9 @@ const AllergyIntoleranceSchema = DataElementSchema({
   type: Code,
   severity: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.119' },
-  category: { type: String, default: 'allergy' },
+  qdmCategory: { type: String, default: 'allergy' },
   qdmStatus: { type: String, default: 'intolerance' },
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AllergyIntolerance' },
 
 });

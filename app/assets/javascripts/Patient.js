@@ -14,7 +14,7 @@ const [Schema, Number, String, Mixed] = [
 
 const PatientSchema = new Schema({
   birthDatetime: DateTime,
-  qdmVersion: { type: String, default: '5.3' },
+  qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Patient' },
 
   givenNames: [String],
@@ -71,10 +71,10 @@ PatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
 // Example: patient.getDataElements(category = 'encounters') will return
 // all Encounter QDM data types active on the patient.
 PatientSchema.methods.getDataElements = function getDataElements(params) {
-  if (params.category && params.qdmStatus) {
-    return this.dataElements.filter(element => (element.category === params.category) && (element.qdmStatus === params.qdmStatus));
+  if (params.qdmCategory && params.qdmStatus) {
+    return this.dataElements.filter(element => (element.qdmCategory === params.qdmCategory) && (element.qdmStatus === params.qdmStatus));
   } else if (params.category) {
-    return this.dataElements.filter(element => element.category === params.category);
+    return this.dataElements.filter(element => element.qdmCategory === params.qdmCategory);
   }
   return this.dataElements;
 };

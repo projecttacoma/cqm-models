@@ -3,7 +3,7 @@ module QDM
   class Patient
     include Mongoid::Document
     field :birthDatetime, type: DateTime
-    field :qdmVersion, type: String, default: '5.3'
+    field :qdmVersion, type: String, default: '5.4'
     field :givenNames, type: Array
     field :familyName, type: String
     field :bundleId, type: String
@@ -46,9 +46,9 @@ module QDM
     # will return all Encounter QDM data types active on the patient.
     def get_data_elements(category = nil, status = nil)
       if category && status
-        dataElements.where(category: category, qdmStatus: status) || []
+        dataElements.where(qdmCategory: category, qdmStatus: status) || []
       elsif category
-        dataElements.where(category: category) || []
+        dataElements.where(qdmCategory: category) || []
       else
         dataElements || []
       end
