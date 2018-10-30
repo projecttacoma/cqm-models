@@ -6,7 +6,7 @@ module QDM
     # Low and high are required (at minimum).
     def initialize(low, high, lowClosed = true, highClosed = true)
       @low = low
-      @high = high
+      @high = high.is_a?(DateTime) && (high.year > 9999) ? high.change(year: 9999) : high
       @lowClosed = lowClosed
       @highClosed = highClosed
     end
