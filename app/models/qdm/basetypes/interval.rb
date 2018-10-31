@@ -25,15 +25,11 @@ module QDM
       if (@low.is_a? DateTime) || (@low.is_a? Time)
         @low = (@low.utc.to_time + seconds.seconds).to_datetime.new_offset(0)
       end
-      if ((@high.is_a? DateTime) || (@high.is_a? Time)) && !high_unbound?
+      if (@high.is_a? DateTime) || (@high.is_a? Time)
         @high = (@high.utc.to_time + seconds.seconds).to_datetime.new_offset(0)
+        @high = (@high.year > 9999) ? @high.change(year: 9999) : @high
       end
       self
-    end
-
-    def high_unbound?
-      return @high.year >= 9999 if @high.is_a? DateTime
-      false
     end
 
     class << self
