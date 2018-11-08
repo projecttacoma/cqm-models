@@ -62,7 +62,7 @@ describe('CQM', () => {
         main_cql_library: 'TestMainLibrary'
       });
       measure_package = new CQM.MeasurePackage({
-        file: new Buffer("TEST DATA")
+        file: "TEST DATA"
       });
       measure.package = measure_package
       err = measure_package.validateSync();

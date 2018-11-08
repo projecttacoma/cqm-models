@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
-const [mBuffer, ObjectId] = [
+const [Buffer, ObjectId] = [
   mongoose.Schema.Types.Buffer,
   mongoose.Schema.Types.ObjectId,
 ];
 
 const MeasurePackageSchema = new mongoose.Schema(
   {
-    file: mBuffer,
+    file: Buffer,
     measure: { type: ObjectId, ref: 'Measure' },
   },
   // Options
