@@ -4,6 +4,7 @@ matrix:
       cache: bundler
       rvm:
         - 2.4.1
+        - 2.3.7
       services:
         - mongodb
       script:
