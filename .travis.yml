@@ -4,6 +4,14 @@ matrix:
       cache: bundler
       rvm:
         - 2.4.1
+      services:
+        - mongodb
+      script:
+        - bundle exec rake
+        - bundle exec rubocop
+    - language: ruby
+      cache: bundler
+      rvm:
         - 2.3.7
       services:
         - mongodb
