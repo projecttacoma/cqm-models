@@ -10,8 +10,6 @@ RSpec.describe QDM::Interval do
 
     interval = QDM::Interval.new(dt_low, dt_high)
 
-    expect(interval.high_unbound?).to be true
-
     interval.shift_dates(shift_seconds)
 
     expect(interval.high).to eq(dt_high)
