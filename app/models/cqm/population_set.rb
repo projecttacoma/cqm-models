@@ -37,7 +37,7 @@ module CQM
     embedded_in :population_set
   end
   
-  class PorportionPopulationMap < PopulationMap
+  class ProportionPopulationMap < PopulationMap
     include Mongoid::Document
 
     embeds_one :IPP, class_name: "CQM::StatementReference"
