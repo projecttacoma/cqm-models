@@ -19,6 +19,7 @@ module CQM
     embedded_in :population_set
 
     field :title, type: String
+    field :id, type: String
     embeds_one :statement, class_name: "CQM::StatementReference"
   end
   

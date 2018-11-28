@@ -25,6 +25,7 @@ const PopulationMapSchema = new mongoose.Schema(
 const StratificationSchema = new mongoose.Schema(
   {
     title: String,
+    id: String,
     statement: StatementReferenceSchema
   }
 );

@@ -27,10 +27,22 @@ const MeasureSchema = new mongoose.Schema(
     title: String,
     description: String,
 
+    //Composite/component measure fields
+    composite: {
+      type: Boolean,
+      default: false
+    },
+    component: {
+      type: Boolean,
+      default: false
+    },
+    component_hqmf_set_ids: [String],
+    composite_hqmf_set_id: String,
+
     // Measure type variables
     measure_scoring: {
       type: String,
-      enum: ['PROPORTION', 'RATIO', 'CONTINUOUS_VARIABLE'],
+      enum: ['PROPORTION', 'RATIO', 'CONTINUOUS_VARIABLE', 'COHORT'],
       default: 'PROPORTION',
     },
     calculation_method: {

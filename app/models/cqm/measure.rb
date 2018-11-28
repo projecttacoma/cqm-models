@@ -7,7 +7,7 @@ module CQM
 
     # These are the Mongoid equivalent of the Mongoose "enum" attribute for the respective fields.
     # They throw an error if you try to assign a value that's not in the array.
-    validates_inclusion_of :measure_scoring, in: %w[PROPORTION RATIO CONTINUOUS_VARIABLE]
+    validates_inclusion_of :measure_scoring, in: %w[PROPORTION RATIO CONTINUOUS_VARIABLE COHORT]
     validates_inclusion_of :calculation_method, in: %w[PATIENT EPISODE_OF_CARE]
 
     TYPES = %w[ep eh].freeze
@@ -38,6 +38,12 @@ module CQM
     field :cms_id, type: String
     field :title, type: String, default: ''
     field :description, type: String, default: ''
+
+    # Composite/component measure fields
+    field :composite, type: Boolean, default: false
+    field :component, type: Boolean, default: false
+    field :component_hqmf_set_ids, type: Array, default: []
+    field :composite_hqmf_set_id, type: String
 
     # Measure type variables
     # Note: these are constrained to an enumeration of value options above, via validates_inclusion_of
