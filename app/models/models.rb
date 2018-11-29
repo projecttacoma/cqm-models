@@ -12,7 +12,6 @@ require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/data_element'
 
-
 # Tacoma-specific models
 require_relative 'qdm/tacoma/provider'
 require_relative 'qdm/tacoma/provider_performance'
