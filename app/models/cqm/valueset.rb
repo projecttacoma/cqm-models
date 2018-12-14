@@ -6,7 +6,7 @@ module CQM
     field :display_name, type: String
     field :version, type: String
 
-    index 'oid' => 1
+    index oid: 1
 
     embeds_many :concepts
 
