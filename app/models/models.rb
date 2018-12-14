@@ -21,6 +21,7 @@ require_relative 'cqm/concept'
 require_relative 'cqm/cql_statement_dependency'
 require_relative 'cqm/cql_library'
 require_relative 'cqm/population_set'
+require_relative 'cqm/patient'
 
 # Generated models
 require_relative 'qdm/patient'
