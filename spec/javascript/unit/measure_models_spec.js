@@ -86,6 +86,7 @@ describe('CQM', () => {
         cql: "define \"test1\": \"test2\" union \"Helper.test34\"\ndefine \"test2\": 'testing'",
         elm: { test: { elm: 'data' } },
         elm_annotations: { test: { elm: 'data' } },
+        is_main_library: true,
         statement_dependencies: [
           new CQM.StatementDependency({ statement_name: 'test1', statement_references: [
             new CQM.StatementReference({ library_name: 'TestMainLibrary', statement_name: 'test2' }),

@@ -14,6 +14,7 @@ const CQLLibrarySchema = new mongoose.Schema(
     cql: String,
     elm: Mixed,
     elm_annotations: Mixed,
+    is_main_library: { type: Boolean, default: false },
     statement_dependencies: [StatementDependencySchema]
   },
   // Options
