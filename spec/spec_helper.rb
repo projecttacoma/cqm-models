@@ -5,7 +5,6 @@ require 'cqm/models'
 require 'nokogiri'
 require 'byebug'
 
-
 SimpleCov.start do
   add_filter 'spec/**/*'
 end
