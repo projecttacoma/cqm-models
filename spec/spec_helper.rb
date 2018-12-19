@@ -3,6 +3,12 @@ require 'cqm/models'
 require 'nokogiri'
 require 'byebug'
 
+require 'simplecov'
+SimpleCov.start
+
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
+
 Mongoid.load!('config/mongoid.yml', :test)
 
 RSpec.configure do |config|
