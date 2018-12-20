@@ -1,9 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe CQM::Measure do
-
   it 'can construct a measure' do
-    expect{
+    expect do
       measure = CQM::Measure.new(
         title: 'Basic Measure',
         hqmf_id: '40280582-5C5B-CF39-015C-A69BB10D15D8',
@@ -13,9 +12,9 @@ RSpec.describe CQM::Measure do
         main_cql_library: 'TestMainLibrary'
       )
       measure.save!
-    }.to_not raise_error
+    end.to_not raise_error
   end
-  
+
   it 'can construct and save a measure with two population_sets' do
     measure = CQM::Measure.new(
       title: 'Measure with two population sets',
@@ -50,7 +49,7 @@ RSpec.describe CQM::Measure do
   end
 
   it 'can construct and save a measure with a package' do
-    expect{
+    expect do
       measure = CQM::Measure.new(
         title: 'Measure with package',
         hqmf_id: '53180582-5C5B-CF39-015C-A69BB10D15D8',
@@ -60,16 +59,16 @@ RSpec.describe CQM::Measure do
         main_cql_library: 'TestMainLibrary'
       )
       measure_package = CQM::MeasurePackage.new(
-        file: BSON::Binary.new("TEST DATA", :generic)
+        file: BSON::Binary.new('TEST DATA', :generic)
       )
       measure.package = measure_package
       measure_package.save!
       measure.save!
-    }.to_not raise_error
+    end.to_not raise_error
   end
 
   it 'can construct a measure with two cql libraries' do
-    expect{
+    expect do
       measure = CQM::Measure.new(
         title: 'Measure with two cql libraries',
         hqmf_id: '40280582-5C5B-CF39-015C-A69BB10D15D8',
@@ -86,11 +85,11 @@ RSpec.describe CQM::Measure do
         elm_annotations: { test: { elm: 'data' } },
         is_main_library: true,
         statement_dependencies: [
-          CQM::StatementDependency.new(statement_name: 'test1', statement_references: [
-            CQM::StatementReference.new(library_name: 'TestMainLibrary', statement_name: 'test2'),
-            CQM::StatementReference.new(library_name: 'TestHelperLibrary', statement_name: 'test34')
-            ]
-          ),
+          CQM::StatementDependency.new(statement_name: 'test1', statement_references:
+            [
+              CQM::StatementReference.new(library_name: 'TestMainLibrary', statement_name: 'test2'),
+              CQM::StatementReference.new(library_name: 'TestHelperLibrary', statement_name: 'test34')
+            ]),
           CQM::StatementDependency.new(statement_name: 'test2', statement_references: [])
         ]
       )
@@ -101,14 +100,14 @@ RSpec.describe CQM::Measure do
         elm: { test: { elm: 'data' } },
         elm_annotations: { test: { elm: 'data' } },
         statement_dependencies: [
-          CQM::StatementDependency.new(statement_name: 'test34', statement_references: [
-            CQM::StatementReference.new(library_name: 'TestHelperLibrary', statement_name: 'test35')
-            ]
-          ),
+          CQM::StatementDependency.new(statement_name: 'test34', statement_references:
+            [
+              CQM::StatementReference.new(library_name: 'TestHelperLibrary', statement_name: 'test35')
+            ]),
           CQM::StatementDependency.new(statement_name: 'test35', statement_references: [])
         ]
       )
       measure.save!
-    }.to_not raise_error
+    end.to_not raise_error
   end
 end

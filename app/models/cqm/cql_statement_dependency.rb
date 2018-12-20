@@ -1,5 +1,4 @@
 module CQM
-
   # Statement is a given CQL Statement within a CQL Library, which has many dependencies
   class StatementDependency
     include Mongoid::Document

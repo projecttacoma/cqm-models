@@ -10,8 +10,5 @@ module CQM
     field :display_name, type: String
 
     embedded_in :value_set
-
-    scope :by_code_system_name, ->(cs) { where(code_system_name: cs) }
-    scope :by_code_system_oid, ->(cs) { where(code_system_oid: cs) }
   end
 end

@@ -23,7 +23,5 @@ RSpec.configure do |config|
 end
 
 def dump_database
-  Mongoid.default_client.collections.each do |c|
-    c.drop()
-  end
+  Mongoid.default_client.collections.each(&:drop)
 end
