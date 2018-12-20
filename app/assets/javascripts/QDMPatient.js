@@ -12,14 +12,11 @@ const [Schema, Number, String, Mixed] = [
   mongoose.Schema.Types.Mixed,
 ];
 
-const PatientSchema = new Schema({
+const QDMPatientSchema = new Schema({
   birthDatetime: DateTime,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Patient' },
+  _type: { type: String, default: 'QDMPatient' },
 
-  givenNames: [String],
-  familyName: String,
-  bundleId: String,
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
   dataElements: [],
@@ -34,7 +31,7 @@ const PatientSchema = new Schema({
 
 // After initialization of a Patient model, initialize every individual data element
 // to its respective Mongoose Model
-PatientSchema.methods.initializeDataElements = function initializeDataElements() {
+QDMPatientSchema.methods.initializeDataElements = function initializeDataElements() {
   let typeStripped;
   const dataElementsInit = [];
   this.dataElements.forEach((element) => {
@@ -48,21 +45,21 @@ PatientSchema.methods.initializeDataElements = function initializeDataElements()
   this.set({ dataElements: dataElementsInit });
 };
 
-PatientSchema.queue('initializeDataElements');
+QDMPatientSchema.queue('initializeDataElements');
 
-PatientSchema.methods.id = function id() {
+QDMPatientSchema.methods.id = function id() {
   return this._id;
 };
 
 // Returns an array of elements that exist on this patient, that
 // match the given HQMF data criteria OID.
-PatientSchema.methods.getByHqmfOid = function getByHqmfOid(hqmfOid) {
+QDMPatientSchema.methods.getByHqmfOid = function getByHqmfOid(hqmfOid) {
   return this.dataElements.filter(element => element.hqmfOid === hqmfOid);
 };
 
 // Returns an array of elements that exist on this patient, that
 // match the given QRDA data criteria OID.
-PatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
+QDMPatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
   return this.dataElements.filter(element => element.qrdaOid === qrdaOid);
 };
 
@@ -70,7 +67,7 @@ PatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
 // takes a category, which returns all elements of that QDM category.
 // Example: patient.getDataElements(category = 'encounters') will return
 // all Encounter QDM data types active on the patient.
-PatientSchema.methods.getDataElements = function getDataElements(params) {
+QDMPatientSchema.methods.getDataElements = function getDataElements(params) {
   if (params.qdmCategory && params.qdmStatus) {
     return this.dataElements.filter(element => (element.qdmCategory === params.qdmCategory) && (element.qdmStatus === params.qdmStatus));
   } else if (params.category) {
@@ -84,7 +81,7 @@ PatientSchema.methods.getDataElements = function getDataElements(params) {
 // @param {string} profile - the data criteria requested by the execution engine
 // @param {boolean} isNegated - whether dataElements should be returned based on their negation status
 // @returns {DataElement[]}
-PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = null) {
+QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = null) {
   // If isNegated == true, only return data elements with a negationRationale that is not null.
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
@@ -106,7 +103,7 @@ PatientSchema.methods.getByProfile = function getByProfile(profile, isNegated = 
 // in Bonnie patient builder).
 // @param {String} profile - the data criteria requested by the execution engine
 // @returns {Object}
-PatientSchema.methods.findRecords = function findRecords(profile) {
+QDMPatientSchema.methods.findRecords = function findRecords(profile) {
   let profileStripped;
   if (profile === 'Patient') {
     // Requested generic patient info
@@ -142,121 +139,121 @@ PatientSchema.methods.findRecords = function findRecords(profile) {
   return [];
 };
 
-PatientSchema.methods.adverse_events = function adverse_events() {
+QDMPatientSchema.methods.adverse_events = function adverse_events() {
   return this.getDataElements({ category: 'adverse_event' });
 };
 
-PatientSchema.methods.allergies = function allergies() {
+QDMPatientSchema.methods.allergies = function allergies() {
   return this.getDataElements({ category: 'allergy' });
 };
 
-PatientSchema.methods.assessments = function assessments() {
+QDMPatientSchema.methods.assessments = function assessments() {
   return this.getDataElements({ category: 'assessment' });
 };
 
-PatientSchema.methods.care_experiences = function care_experiences() {
+QDMPatientSchema.methods.care_experiences = function care_experiences() {
   return this.getDataElements({ category: 'care_experience' });
 };
 
-PatientSchema.methods.care_goals = function care_goals() {
+QDMPatientSchema.methods.care_goals = function care_goals() {
   return this.getDataElements({ category: 'care_goal' });
 };
 
-PatientSchema.methods.communications = function communications() {
+QDMPatientSchema.methods.communications = function communications() {
   return this.getDataElements({ category: 'communication' });
 };
 
-PatientSchema.methods.conditions = function conditions() {
+QDMPatientSchema.methods.conditions = function conditions() {
   return this.getDataElements({ category: 'condition' });
 };
 
-PatientSchema.methods.devices = function devices() {
+QDMPatientSchema.methods.devices = function devices() {
   return this.getDataElements({ category: 'device' });
 };
 
-PatientSchema.methods.diagnostic_studies = function diagnostic_studies() {
+QDMPatientSchema.methods.diagnostic_studies = function diagnostic_studies() {
   return this.getDataElements({ category: 'diagnostic_study' });
 };
 
-PatientSchema.methods.encounters = function encounters() {
+QDMPatientSchema.methods.encounters = function encounters() {
   return this.getDataElements({ category: 'encounter' });
 };
 
-PatientSchema.methods.family_history = function family_history() {
+QDMPatientSchema.methods.family_history = function family_history() {
   return this.getDataElements({ category: 'family_history' });
 };
 
-PatientSchema.methods.functional_statuses = function functional_statuses() {
+QDMPatientSchema.methods.functional_statuses = function functional_statuses() {
   return this.getDataElements({ category: 'functional_status' });
 };
 
-PatientSchema.methods.immunizations = function immunizations() {
+QDMPatientSchema.methods.immunizations = function immunizations() {
   return this.getDataElements({ category: 'immunization' });
 };
 
-PatientSchema.methods.interventions = function interventions() {
+QDMPatientSchema.methods.interventions = function interventions() {
   return this.getDataElements({ category: 'intervention' });
 };
 
-PatientSchema.methods.laboratory_tests = function laboratory_tests() {
+QDMPatientSchema.methods.laboratory_tests = function laboratory_tests() {
   return this.getDataElements({ category: 'laboratory_test' });
 };
 
-PatientSchema.methods.medical_equipment = function medical_equipment() {
+QDMPatientSchema.methods.medical_equipment = function medical_equipment() {
   return this.getDataElements({ category: 'medical_equipment' });
 };
 
-PatientSchema.methods.medications = function medications() {
+QDMPatientSchema.methods.medications = function medications() {
   return this.getDataElements({ category: 'medication' });
 };
 
-PatientSchema.methods.physical_exams = function physical_exams() {
+QDMPatientSchema.methods.physical_exams = function physical_exams() {
   return this.getDataElements({ category: 'physical_exam' });
 };
 
-PatientSchema.methods.preferences = function preferences() {
+QDMPatientSchema.methods.preferences = function preferences() {
   return this.getDataElements({ category: 'preference' });
 };
 
-PatientSchema.methods.provider_characteristics = function provider_characteristics() {
+QDMPatientSchema.methods.provider_characteristics = function provider_characteristics() {
   return this.getDataElements({ category: 'provider_characteristic' });
 };
 
-PatientSchema.methods.procedures = function procedures() {
+QDMPatientSchema.methods.procedures = function procedures() {
   return this.getDataElements({ category: 'procedure' });
 };
 
-PatientSchema.methods.results = function results() {
+QDMPatientSchema.methods.results = function results() {
   return this.getDataElements({ category: 'result' });
 };
 
-PatientSchema.methods.risk_category_assessments = function risk_category_assessments() {
+QDMPatientSchema.methods.risk_category_assessments = function risk_category_assessments() {
   return this.getDataElements({ category: 'risk_category_assessment' });
 };
 
-PatientSchema.methods.social_history = function social_history() {
+QDMPatientSchema.methods.social_history = function social_history() {
   return this.getDataElements({ category: 'social_history' });
 };
 
-PatientSchema.methods.substances = function substances() {
+QDMPatientSchema.methods.substances = function substances() {
   return this.getDataElements({ category: 'substance' });
 };
 
-PatientSchema.methods.symptoms = function symptoms() {
+QDMPatientSchema.methods.symptoms = function symptoms() {
   return this.getDataElements({ category: 'symptom' });
 };
 
-PatientSchema.methods.system_characteristics = function system_characteristics() {
+QDMPatientSchema.methods.system_characteristics = function system_characteristics() {
   return this.getDataElements({ category: 'system_characteristic' });
 };
 
-PatientSchema.methods.transfers = function transfers() {
+QDMPatientSchema.methods.transfers = function transfers() {
   return this.getDataElements({ category: 'transfer' });
 };
 
-PatientSchema.methods.vital_signs = function vital_signs() {
+QDMPatientSchema.methods.vital_signs = function vital_signs() {
   return this.getDataElements({ category: 'vital_sign' });
 };
 
-module.exports.PatientSchema = PatientSchema;
-module.exports.Patient = mongoose.model('Patient', PatientSchema);
+module.exports.QDMPatientSchema = QDMPatientSchema;
+module.exports.QDMPatient = mongoose.model('QDMPatient', QDMPatientSchema);

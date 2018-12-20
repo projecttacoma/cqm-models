@@ -5,7 +5,7 @@ module QDM
     field :birthDatetime, type: DateTime
     field :qdmVersion, type: String, default: '5.4'
 
-    belongs_to :tacomaPatient, class_name: 'CQM::TacomaPatient'
+    embedded_in :tacomaPatient, class_name: 'CQM::Patient'
 
     # These are the "data criteria", or QDM datatype elements that exist on a
     # patient.

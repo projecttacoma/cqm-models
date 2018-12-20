@@ -69,7 +69,7 @@ module CQM
     # Relations to other model classes
     # Note: bundle is removed, Cypress may create their own bundle object and inject the relationship
     has_one :package, class_name: 'CQM::MeasurePackage', inverse_of: :measure, dependent: :destroy # Bonnie-specific
-    has_and_belongs_to_many :patients, class_name: 'QDM::Patient'
+    has_and_belongs_to_many :patients, class_name: 'CQM::Patient'
 
     # Store this references as an Array on the Measure object,
     # but don't care about the inverse relationship (e.g. we never really care

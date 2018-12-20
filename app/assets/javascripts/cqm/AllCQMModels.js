@@ -16,3 +16,5 @@ module.exports.PopulationSet = require('./PopulationSet.js').PopulationSet;
 module.exports.PopulationSetSchema = require('./PopulationSet.js').PopulationSetSchema;
 module.exports.PopulationMap = require('./PopulationSet.js').PopulationMap;
 module.exports.PopulationMapSchema = require('./PopulationSet.js').PopulationMapSchema;
+module.exports.Patient = require('./Patient.js').Patient;
+module.exports.PatientSchema = require('./Patient.js').PatientSchema;
