@@ -28,7 +28,7 @@ const StratificationSchema = new mongoose.Schema({
 const ObservationSchema = new mongoose.Schema({
   title: String,
   observation_function: StatementReferenceSchema,
-  aggregation_typee: String,
+  aggregation_type: String,
 });
 
 const PopulationSetSchema = new mongoose.Schema({
