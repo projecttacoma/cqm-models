@@ -1,5 +1,5 @@
 module CQM
-
+  # Patient model that holds non-QDM data for the patient
   class Patient
     include Mongoid::Document
     field :givenNames, type: Array
@@ -9,10 +9,9 @@ module CQM
     field :notes, type: String
     embeds_one :qdmPatient, class_name: 'QDM::Patient', autobuild: true
 
-     # Include '_type' in any JSON output. This is necessary for deserialization.
+    # Include '_type' in any JSON output. This is necessary for deserialization.
     def to_json(options = nil)
       serializable_hash(include: :patient).to_json(options)
     end
-
   end
 end

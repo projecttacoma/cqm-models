@@ -3,8 +3,7 @@ const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
-const AllDataElements = require('../AllDataElements');
-const QDMPatientSchema = require('../QDMPatient').QDMPatientSchema;
+const { QDMPatientSchema } = require('../QDMPatient');
 
 const [Schema, Number, String, Mixed] = [
   mongoose.Schema,
