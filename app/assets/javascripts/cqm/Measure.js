@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
-const CQLLibrarySchema = require('./CQLLibrary').CQLLibrarySchema;
-const PopulationSetSchema = require('./PopulationSet').PopulationSetSchema;
+const { CQLLibrarySchema } = require('./CQLLibrary');
+const { PopulationSetSchema } = require('./PopulationSet');
 
 const [Number, String, Boolean, Mixed, ObjectId, Date] = [
   mongoose.Schema.Types.Number,
@@ -27,14 +27,14 @@ const MeasureSchema = new mongoose.Schema(
     title: String,
     description: String,
 
-    //Composite/component measure fields
+    // Composite/component measure fields
     composite: {
       type: Boolean,
-      default: false
+      default: false,
     },
     component: {
       type: Boolean,
-      default: false
+      default: false,
     },
     component_hqmf_set_ids: [String],
     composite_hqmf_set_id: String,

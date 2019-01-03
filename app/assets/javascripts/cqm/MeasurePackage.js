@@ -9,7 +9,7 @@ const [mBuffer, ObjectId] = [
 const MeasurePackageSchema = new mongoose.Schema(
   {
     file: mBuffer,
-    measure: { type: ObjectId, ref: 'Measure' }
+    measure: { type: ObjectId, ref: 'Measure' },
   },
   // Options
   {

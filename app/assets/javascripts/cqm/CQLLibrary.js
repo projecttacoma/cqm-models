@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-const StatementDependencySchema = require('./CQLStatementDependency').StatementDependencySchema
+const { StatementDependencySchema } = require('./CQLStatementDependency');
 
-const [Mixed, ObjectId, mDate] = [
+const [Mixed, mDate] = [
   mongoose.Schema.Types.Mixed,
-  mongoose.Schema.Types.ObjectId,
   mongoose.Schema.Types.Date,
 ];
 
@@ -15,7 +14,7 @@ const CQLLibrarySchema = new mongoose.Schema(
     elm: Mixed,
     elm_annotations: Mixed,
     is_main_library: { type: Boolean, default: false },
-    statement_dependencies: [StatementDependencySchema]
+    statement_dependencies: [StatementDependencySchema],
   },
   // Options
   {

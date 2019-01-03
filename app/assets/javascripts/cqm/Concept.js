@@ -5,7 +5,7 @@ const ConceptSchema = new mongoose.Schema({
   code_system_oid: String,
   code_system_name: String,
   code_system_version: String,
-  display_name: String
+  display_name: String,
 });
 
 module.exports.ConceptSchema = ConceptSchema;
