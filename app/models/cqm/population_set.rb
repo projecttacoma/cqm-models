@@ -32,6 +32,7 @@ module CQM
     embedded_in :population_set
 
     embeds_one :observation_function, class_name: 'CQM::StatementReference'
+    embeds_one :observation_parameter, class_name: 'CQM::StatementReference'
     field :aggregation_type, type: String
   end
 
