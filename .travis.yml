@@ -19,6 +19,9 @@ matrix:
         - bundle exec rake
         - bundle exec rubocop
     - language: node_js
+      install:
+        - npm install -g codecov
+        - npm install -g istanbul
       node_js:
         - "node"
         - "lts/*"
@@ -29,3 +32,5 @@ matrix:
         - npm run lint
         - yarn run test
         - ./bin/validate_dist.sh
+        - istanbul cover ./node_modules/jasmine/bin/jasmine.js
+        - codecov

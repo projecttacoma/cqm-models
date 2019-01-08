@@ -23,10 +23,11 @@
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "istanbul": "^0.4.5",
     "jasmine": "^2.9.0"
   },
   "scripts": {
-    "test": "jasmine",
+    "test": "istanbul cover jasmine",
     "lint": "eslint 'app/assets/javascripts/**/*.js'",
     "dist": "yarn && browserify app/assets/javascripts/index.js > dist/index.js",
     "dist_test": "browserify app/assets/javascripts/index.js > tmp/dist/index.js"
