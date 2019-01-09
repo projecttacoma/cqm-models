@@ -31,9 +31,7 @@ const AdverseEventSchema = DataElementSchema({
 module.exports.AdverseEventSchema = AdverseEventSchema;
 module.exports.AdverseEvent = mongoose.model('AdverseEvent', AdverseEventSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":404}],2:[function(require,module,exports){
-module.exports.QDMPatient = require('./QDMPatient.js').QDMPatient;
-module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],2:[function(require,module,exports){
 module.exports.Id = require('./Id.js').Id;
 module.exports.IdSchema = require('./Id.js').IdSchema;
 module.exports.PhysicalExamOrder = require('./PhysicalExamOrder.js').PhysicalExamOrder;
@@ -148,6 +146,8 @@ module.exports.InterventionRecommended = require('./InterventionRecommended.js')
 module.exports.InterventionRecommendedSchema = require('./InterventionRecommended.js').InterventionRecommendedSchema;
 module.exports.PhysicalExamPerformed = require('./PhysicalExamPerformed.js').PhysicalExamPerformed;
 module.exports.PhysicalExamPerformedSchema = require('./PhysicalExamPerformed.js').PhysicalExamPerformedSchema;
+module.exports.QDMPatient = require('./QDMPatient.js').QDMPatient;
+module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
 
 },{"./AdverseEvent.js":1,"./AllergyIntolerance.js":3,"./AssessmentOrder.js":4,"./AssessmentPerformed.js":5,"./AssessmentRecommended.js":6,"./CareGoal.js":7,"./CommunicationPerformed.js":8,"./Component.js":9,"./DeviceApplied.js":10,"./DeviceOrder.js":11,"./DeviceRecommended.js":12,"./Diagnosis.js":13,"./DiagnosticStudyOrder.js":14,"./DiagnosticStudyPerformed.js":15,"./DiagnosticStudyRecommended.js":16,"./EncounterOrder.js":17,"./EncounterPerformed.js":18,"./EncounterRecommended.js":19,"./FacilityLocation.js":20,"./FamilyHistory.js":21,"./Id.js":22,"./ImmunizationAdministered.js":23,"./ImmunizationOrder.js":24,"./InterventionOrder.js":26,"./InterventionPerformed.js":27,"./InterventionRecommended.js":28,"./LaboratoryTestOrder.js":29,"./LaboratoryTestPerformed.js":30,"./LaboratoryTestRecommended.js":31,"./MedicationActive.js":32,"./MedicationAdministered.js":33,"./MedicationDischarge.js":34,"./MedicationDispensed.js":35,"./MedicationOrder.js":36,"./Participation.js":37,"./PatientCareExperience.js":38,"./PatientCharacteristic.js":39,"./PatientCharacteristicBirthdate.js":40,"./PatientCharacteristicClinicalTrialParticipant.js":41,"./PatientCharacteristicEthnicity.js":42,"./PatientCharacteristicExpired.js":43,"./PatientCharacteristicPayer.js":44,"./PatientCharacteristicRace.js":45,"./PatientCharacteristicSex.js":46,"./PhysicalExamOrder.js":47,"./PhysicalExamPerformed.js":48,"./PhysicalExamRecommended.js":49,"./ProcedureOrder.js":50,"./ProcedurePerformed.js":51,"./ProcedureRecommended.js":52,"./ProviderCareExperience.js":53,"./ProviderCharacteristic.js":54,"./QDMPatient.js":55,"./ResultComponent.js":57,"./SubstanceAdministered.js":58,"./SubstanceOrder.js":59,"./SubstanceRecommended.js":60,"./Symptom.js":61}],3:[function(require,module,exports){
 const mongoose = require('mongoose');
@@ -1371,7 +1371,7 @@ const PatientCareExperienceSchema = DataElementSchema({
 module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
 module.exports.PatientCareExperience = mongoose.model('PatientCareExperience', PatientCareExperienceSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],40:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],39:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1400,7 +1400,7 @@ const PatientCharacteristicSchema = DataElementSchema({
 module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
 module.exports.PatientCharacteristic = mongoose.model('PatientCharacteristic', PatientCharacteristicSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],41:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],40:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1430,7 +1430,7 @@ const PatientCharacteristicBirthdateSchema = DataElementSchema({
 module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirthdateSchema;
 module.exports.PatientCharacteristicBirthdate = mongoose.model('PatientCharacteristicBirthdate', PatientCharacteristicBirthdateSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],42:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],41:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1462,7 +1462,7 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
 module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientCharacteristicClinicalTrialParticipantSchema;
 module.exports.PatientCharacteristicClinicalTrialParticipant = mongoose.model('PatientCharacteristicClinicalTrialParticipant', PatientCharacteristicClinicalTrialParticipantSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],43:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],42:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1491,7 +1491,7 @@ const PatientCharacteristicEthnicitySchema = DataElementSchema({
 module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthnicitySchema;
 module.exports.PatientCharacteristicEthnicity = mongoose.model('PatientCharacteristicEthnicity', PatientCharacteristicEthnicitySchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],44:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],43:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1522,7 +1522,7 @@ const PatientCharacteristicExpiredSchema = DataElementSchema({
 module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpiredSchema;
 module.exports.PatientCharacteristicExpired = mongoose.model('PatientCharacteristicExpired', PatientCharacteristicExpiredSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],45:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],44:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1552,7 +1552,7 @@ const PatientCharacteristicPayerSchema = DataElementSchema({
 module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSchema;
 module.exports.PatientCharacteristicPayer = mongoose.model('PatientCharacteristicPayer', PatientCharacteristicPayerSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],46:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],45:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1581,7 +1581,7 @@ const PatientCharacteristicRaceSchema = DataElementSchema({
 module.exports.PatientCharacteristicRaceSchema = PatientCharacteristicRaceSchema;
 module.exports.PatientCharacteristicRace = mongoose.model('PatientCharacteristicRace', PatientCharacteristicRaceSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],47:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],46:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1610,7 +1610,7 @@ const PatientCharacteristicSexSchema = DataElementSchema({
 module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
 module.exports.PatientCharacteristicSex = mongoose.model('PatientCharacteristicSex', PatientCharacteristicSexSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],48:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],47:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1643,7 +1643,7 @@ const PhysicalExamOrderSchema = DataElementSchema({
 module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
 module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],49:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],48:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1680,7 +1680,7 @@ const PhysicalExamPerformedSchema = DataElementSchema({
 module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
 module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],50:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],49:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1713,7 +1713,7 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
 module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
 module.exports.PhysicalExamRecommended = mongoose.model('PhysicalExamRecommended', PhysicalExamRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],51:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],50:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1747,7 +1747,7 @@ const ProcedureOrderSchema = DataElementSchema({
 module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 module.exports.ProcedureOrder = mongoose.model('ProcedureOrder', ProcedureOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],52:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],51:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1787,7 +1787,7 @@ const ProcedurePerformedSchema = DataElementSchema({
 module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
 module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],53:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],52:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1821,7 +1821,7 @@ const ProcedureRecommendedSchema = DataElementSchema({
 module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
 module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],54:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],53:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1850,7 +1850,7 @@ const ProviderCareExperienceSchema = DataElementSchema({
 module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
 module.exports.ProviderCareExperience = mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],55:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],54:[function(require,module,exports){
 const mongoose = require('mongoose');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
@@ -1879,7 +1879,7 @@ const ProviderCharacteristicSchema = DataElementSchema({
 module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
 module.exports.ProviderCharacteristic = mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],56:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],55:[function(require,module,exports){
 const mongoose = require('mongoose');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1897,7 +1897,7 @@ const [Schema, Number, String, Mixed] = [
 const QDMPatientSchema = new Schema({
   birthDatetime: DateTime,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'QDMPatient' },
+  _type: { type: String, default: 'QdmPatient' },
 
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
@@ -2140,7 +2140,7 @@ QDMPatientSchema.methods.vital_signs = function vital_signs() {
 module.exports.QDMPatientSchema = QDMPatientSchema;
 module.exports.QDMPatient = mongoose.model('QDMPatient', QDMPatientSchema);
 
-},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":404}],56:[function(require,module,exports){
+},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":240}],56:[function(require,module,exports){
 const mongoose = require('mongoose');
 
 const PlaceholderResultSchema = mongoose.Schema({
