@@ -29,7 +29,8 @@ matrix:
         directories:
           - "node_modules"
       script:
-        - npm run lint
+        - yarn install
+        - yarn run lint
         - yarn run test
         - ./bin/validate_dist.sh
         - istanbul cover ./node_modules/jasmine/bin/jasmine.js
