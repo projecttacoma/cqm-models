@@ -147,6 +147,12 @@ unless IS_TEST
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 end
 
+# Javascript PatientSchema for was renamed to QDMPatient since it just contains the QDM data
+if datatypes['Patient']
+  datatypes['QDMPatient'] = datatypes['Patient']
+  datatypes.delete('Patient')
+end
+
 puts 'Generating JavaScript models...'
 
 # Create JavaScript models
@@ -163,7 +169,7 @@ extra_fields_js = [
   { name: '_type', type: 'System.String' }
 ]
 datatype_custom_templates = {
-  Patient: 'templates/patient_template.js.erb',
+  QDMPatient: 'templates/patient_template.js.erb',
   Id: 'templates/id_template.js.erb'
 }
 datatypes.each do |datatype, attributes|
@@ -182,11 +188,13 @@ unless IS_TEST
   indtemplate = File.read('templates/index_template.js.erb')
   renderer = ERB.new(indtemplate, nil, '-')
   file_path = 'app/assets/javascripts/index.js'
+  puts '  ' + file_path
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 
   alltemplate = File.read('templates/all_data_elements_template.js.erb')
   renderer = ERB.new(alltemplate, nil, '-')
   file_path = 'app/assets/javascripts/AllDataElements.js'
+  puts '  ' + file_path
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 end
 

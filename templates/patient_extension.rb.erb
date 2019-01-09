@@ -1,6 +1,4 @@
-  field :givenNames, type: Array
-  field :familyName, type: String
-  field :bundleId, type: String
+  embedded_in :tacomaPatient, class_name: 'CQM::Patient'
 
   # These are the "data criteria", or QDM datatype elements that exist on a
   # patient.

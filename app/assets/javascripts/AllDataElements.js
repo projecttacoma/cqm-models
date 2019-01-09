@@ -1,5 +1,3 @@
-module.exports.QDMPatient = require('./QDMPatient.js').QDMPatient;
-module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
 module.exports.Id = require('./Id.js').Id;
 module.exports.IdSchema = require('./Id.js').IdSchema;
 module.exports.PhysicalExamOrder = require('./PhysicalExamOrder.js').PhysicalExamOrder;
@@ -114,3 +112,5 @@ module.exports.InterventionRecommended = require('./InterventionRecommended.js')
 module.exports.InterventionRecommendedSchema = require('./InterventionRecommended.js').InterventionRecommendedSchema;
 module.exports.PhysicalExamPerformed = require('./PhysicalExamPerformed.js').PhysicalExamPerformed;
 module.exports.PhysicalExamPerformedSchema = require('./PhysicalExamPerformed.js').PhysicalExamPerformedSchema;
+module.exports.QDMPatient = require('./QDMPatient.js').QDMPatient;
+module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
