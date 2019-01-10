@@ -11,7 +11,7 @@ module CQM
 
     # Include '_type' in any JSON output. This is necessary for deserialization.
     def to_json(options = nil)
-      serializable_hash(include: :patient).to_json(options)
+      serializable_hash(include: :_type).to_json(options)
     end
   end
 end
