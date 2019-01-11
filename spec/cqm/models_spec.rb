@@ -81,6 +81,12 @@ RSpec.describe QDM do
     expect(@patient_a.qdmPatient.dataElements[0].id.value).to eq @patient_a.qdmPatient.dataElements[0]._id.to_s
   end
 
+  it 'patient still has _type attributes after json conversion' do
+    expect(@patient_a.qdmPatient.dataElements[0]._type).to eq('QDM::ProcedurePerformed')
+    @patient_a_json = JSON.parse(@patient_a.to_json(except: '_id'))
+    expect(@patient_a_json['qdmPatient']['dataElements'].first['_type']).to eq('QDM::ProcedurePerformed')
+  end
+
   it 'patients return datatypes that return attributes using get' do
     expect(@patient_a.qdmPatient.get_data_elements('procedure', 'performed').first.get('authorDatetime')).to be
     expect(@patient_a.qdmPatient.get_data_elements('encounter', 'order').first.get('reason')).to be
