@@ -1918,11 +1918,7 @@ QDMPatientSchema.methods.initializeDataElements = function initializeDataElement
   const dataElementsInit = [];
   this.dataElements.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
-    if (typeStripped in AllDataElements) {
-      dataElementsInit.push(AllDataElements[typeStripped](element));
-    } else {
-      dataElementsInit.push(element);
-    }
+    dataElementsInit.push(AllDataElements[typeStripped](element));
   });
   this.set({ dataElements: dataElementsInit });
 };
