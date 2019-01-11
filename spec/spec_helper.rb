@@ -1,15 +1,8 @@
-require 'simplecov'
-require 'codecov'
+require_relative './simplecov_init'
 require 'bundler/setup'
 require 'cqm/models'
 require 'nokogiri'
 require 'byebug'
-
-SimpleCov.start do
-  add_filter 'spec/**/*'
-end
-
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 Mongoid.load!('config/mongoid.yml', :test)
 
