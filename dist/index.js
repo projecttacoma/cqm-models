@@ -2768,7 +2768,7 @@ const PopulationMapSchema = new mongoose.Schema({
 
 const StratificationSchema = new mongoose.Schema({
   title: String,
-  id: String,
+  stratification_id: String,
   statement: StatementReferenceSchema,
 });
 
@@ -2781,7 +2781,7 @@ const ObservationSchema = new mongoose.Schema({
 
 const PopulationSetSchema = new mongoose.Schema({
   title: String,
-  id: String,
+  population_set_id: String,
   populations: PopulationMapSchema,
   stratifications: [StratificationSchema],
   supplemental_data_elements: [StatementReferenceSchema],
@@ -2817,8 +2817,6 @@ const ValueSetSchema = new mongoose.Schema(
     version: String,
 
     concepts: [Concept.ConceptSchema],
-
-    measures: [{ type: ObjectId, ref: 'Measure', index: true }],
   },
   // Options
   {
