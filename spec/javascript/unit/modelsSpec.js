@@ -126,6 +126,85 @@ describe('QDMPatient', () => {
       expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'order'}).length).toEqual(1);
     });
   });
+  describe('Individual Data Element methods', () => {
+    it('can return each data element by its named getter', () => {
+      this.AllergyIntolerance = Mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);
+      this.AssessmentPerformed = Mongoose.model('AssessmentPerformed', AssessmentPerformedSchema);
+      this.ProviderCareExperience = Mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
+      this.CommunicationPerformed = Mongoose.model('CommunicationPerformed', CommunicationPerformedSchema);
+      this.Diagnosis = Mongoose.model('Diagnosis', DiagnosisSchema);
+      this.DeviceApplied = Mongoose.model('DeviceApplied', DeviceAppliedSchema);
+      this.DiagnosticStudyOrder = Mongoose.model('DiagnosticStudyOrder', DiagnosticStudyOrderSchema);
+      this.EncounterPerformed = Mongoose.model('EncounterPerformed', EncounterPerformedSchema);
+      this.FamilyHistory = Mongoose.model('FamilyHistory', FamilyHistorySchema);
+      this.ImmunizationAdministered = Mongoose.model('ImmunizationAdministered', ImmunizationAdministeredSchema);
+      this.InterventionPerformed = Mongoose.model('InterventionPerformed', InterventionPerformedSchema);
+      this.LaboratoryTestOrder = Mongoose.model('LaboratoryTestOrder', LaboratoryTestOrderSchema);
+      this.MedicationActive = Mongoose.model('MedicationActive', MedicationActiveSchema);
+      this.PhysicalExamOrder = Mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
+      this.ProviderCharacteristic = Mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);
+      this.ProcedureOrder = Mongoose.model('ProcedureOrder', ProcedureOrderSchema);
+      this.SubstanceAdministered = Mongoose.model('SubstanceAdministered', SubstanceAdministeredSchema);
+      this.Symptom = Mongoose.model('Symptom', SymptomSchema);
+
+      qdmPatient = new this.QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new this.AdverseEvent(),
+          new this.AllergyIntolerance(),
+          new this.AssessmentPerformed(),
+          new this.ProviderCareExperience(),
+          new this.CareGoal(),
+          new this.CommunicationPerformed(),
+          new this.Diagnosis(),
+          new this.DeviceApplied(),
+          new this.DiagnosticStudyOrder(),
+          new this.EncounterPerformed(),
+          new this.FamilyHistory(),
+          new this.ImmunizationAdministered(),
+          new this.InterventionPerformed(),
+          new this.LaboratoryTestOrder(),
+          new this.MedicationActive(),
+          new this.PhysicalExamOrder(),
+          new this.ProviderCharacteristic(),
+          new this.ProcedureOrder(),
+          new this.SubstanceAdministered(),
+          new this.Symptom(),
+        ]
+      });
+      expect(qdmPatient.getDataElements().length).toEqual(20);
+      expect(qdmPatient.adverse_events().length).toEqual(1);
+      expect(qdmPatient.allergies().length).toEqual(1);
+      expect(qdmPatient.assessments().length).toEqual(1);
+      expect(qdmPatient.care_experiences().length).toEqual(1);
+      expect(qdmPatient.care_goals().length).toEqual(1);
+      expect(qdmPatient.communications().length).toEqual(1);
+      expect(qdmPatient.conditions().length).toEqual(1);
+      expect(qdmPatient.devices().length).toEqual(1);
+      expect(qdmPatient.diagnostic_studies().length).toEqual(1);
+      expect(qdmPatient.encounters().length).toEqual(1);
+      expect(qdmPatient.family_history().length).toEqual(1);
+      expect(qdmPatient.functional_statuses().length).toEqual(0);
+      expect(qdmPatient.immunizations().length).toEqual(1);
+      expect(qdmPatient.interventions().length).toEqual(1);
+      expect(qdmPatient.laboratory_tests().length).toEqual(1);
+      expect(qdmPatient.medical_equipment().length).toEqual(0);
+      expect(qdmPatient.medications().length).toEqual(1);
+      expect(qdmPatient.physical_exams().length).toEqual(1);
+      expect(qdmPatient.preferences().length).toEqual(0);
+      expect(qdmPatient.provider_characteristics().length).toEqual(1);
+      expect(qdmPatient.procedures().length).toEqual(1);
+      expect(qdmPatient.results().length).toEqual(0);
+      expect(qdmPatient.risk_category_assessments().length).toEqual(0);
+      expect(qdmPatient.social_history().length).toEqual(0);
+      expect(qdmPatient.substances().length).toEqual(1);
+      expect(qdmPatient.symptoms().length).toEqual(1);
+      expect(qdmPatient.system_characteristics().length).toEqual(0);
+      expect(qdmPatient.transfers().length).toEqual(0);
+      expect(qdmPatient.vital_signs().length).toEqual(0);
+    });
+  });
 });
 
 describe('CQMPatient', () => {
