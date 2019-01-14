@@ -31,6 +31,8 @@ const SymptomSchema = require('./../../../app/assets/javascripts/Symptom.js').Sy
 describe('QDMPatient', () => {
   beforeEach( () => {
     this.QDMPatient = Mongoose.model('QDMPatient', QDMPatientSchema);
+    this.AdverseEvent = Mongoose.model('AdverseEvent', AdverseEventSchema);
+    this.CareGoal = Mongoose.model('CareGoal', CareGoalSchema);
   });
 
   it('can create a blank patient', () => {
@@ -44,6 +46,7 @@ describe('QDMPatient', () => {
     });
     err = qdmPatient.validateSync();
     expect(err).toBeUndefined();
+    expect(qdmPatient.id()).toBeDefined();
   });
 
   describe('InitializeDataElements', () => {
@@ -78,6 +81,49 @@ describe('QDMPatient', () => {
       });
       qdmPatient.initializeDataElements;
       expect(qdmPatient.dataElements.length).toEqual(2);
+    });
+  });
+  describe('getDataElements', () => {
+    it('can return dataElements with and without qdmCategory', () => {
+      qdmPatient = new this.QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new this.AdverseEvent(),
+          new this.CareGoal(),
+          new this.CareGoal(),
+          new this.MedicationOrder(),
+          new this.AdverseEvent(),
+          new this.AdverseEvent(),
+        ]
+      });
+      expect(qdmPatient.getDataElements().length).toEqual(6);
+      expect(qdmPatient.getDataElements({qdmCategory: 'care_goal'}).length).toEqual(2);
+      expect(qdmPatient.getDataElements({qdmCategory: 'medication'}).length).toEqual(1);
+      expect(qdmPatient.getDataElements({qdmCategory: 'adverse_event'}).length).toEqual(3);
+    });
+
+    it('can return dataElements with qdmCategory and qdmStatus', () => {
+      this.DeviceApplied = Mongoose.model('DeviceApplied', DeviceAppliedSchema);
+      this.DeviceOrder = Mongoose.model('DeviceOrder', DeviceOrderSchema);
+      this.DeviceRecommended = Mongoose.model('DeviceRecommended', DeviceRecommendedSchema);
+
+      qdmPatient = new this.QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new this.DeviceApplied(),
+          new this.DeviceApplied(),
+          new this.DeviceOrder(),
+          new this.DeviceRecommended(),
+          new this.DeviceRecommended(),
+          new this.DeviceRecommended(),
+        ]
+      });
+      expect(qdmPatient.getDataElements({qdmCategory: 'device'}).length).toEqual(6);
+      expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'applied'}).length).toEqual(2);
+      expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'recommended'}).length).toEqual(3);
+      expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'order'}).length).toEqual(1);
     });
   });
 });
