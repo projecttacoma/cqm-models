@@ -222,6 +222,25 @@ describe('QDMPatient', () => {
       expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.3.7').length).toEqual(2);
     });
   });
+
+  describe('getByQrdaOid', () => {
+    it('can return dataElements given an qrda oid', () => {
+      this.Diagnosis = Mongoose.model('Diagnosis', DiagnosisSchema);
+      this.FamilyHistory = Mongoose.model('FamilyHistory', FamilyHistorySchema);
+
+      qdmPatient = new this.QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new this.Diagnosis(),
+          new this.FamilyHistory(),
+          new this.FamilyHistory(),
+        ]
+      });
+      expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.135').length).toEqual(1);
+      expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.12').length).toEqual(2);
+    });
+  });
 });
 
 describe('CQMPatient', () => {
