@@ -126,6 +126,7 @@ describe('QDMPatient', () => {
       expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'order'}).length).toEqual(1);
     });
   });
+
   describe('Individual Data Element methods', () => {
     it('can return each data element by its named getter', () => {
       this.AllergyIntolerance = Mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);
@@ -203,6 +204,22 @@ describe('QDMPatient', () => {
       expect(qdmPatient.system_characteristics().length).toEqual(0);
       expect(qdmPatient.transfers().length).toEqual(0);
       expect(qdmPatient.vital_signs().length).toEqual(0);
+    });
+  });
+
+  describe('getByHqmfOid', () => {
+    it('can return dataElements given an hqmf oid', () => {
+      qdmPatient = new this.QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new this.AdverseEvent(),
+          new this.CareGoal(),
+          new this.CareGoal(),
+        ]
+      });
+      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.3.120').length).toEqual(1);
+      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.3.7').length).toEqual(2);
     });
   });
 });
