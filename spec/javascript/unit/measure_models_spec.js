@@ -30,7 +30,7 @@ describe('CQM', () => {
       });
       measure.population_sets.push(new CQM.PopulationSet({
         title: 'Test Population 1',
-        id: 'some id',
+        population_set_id: 'some id',
         populations: new CQM.PopulationMap({
           IPP: new CQM.StatementReference({ library_name: 'TestMainLibrary', statement_name: 'Initial Population 1' }),
           DENOM: new CQM.StatementReference({ library_name: 'TestMainLibrary', statement_name: 'Denominator 1' }),
@@ -40,7 +40,7 @@ describe('CQM', () => {
       }));
       measure.population_sets.push(new CQM.PopulationSet({
         title: 'Test Population 2',
-        id: 'some id two',
+        population_set_id: 'some id two',
         populations: new CQM.PopulationMap({
           IPP: new CQM.StatementReference({ library_name: 'TestMainLibrary', statement_name: 'Initial Population 2' }),
           DENOM: new CQM.StatementReference({ library_name: 'TestMainLibrary', statement_name: 'Denominator 2' }),

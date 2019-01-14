@@ -11,7 +11,7 @@ module CQM
     embeds_many :observations
 
     field :title, type: String
-    field :id, type: String
+    field :population_set_id, type: String
   end
 
   # Stratification info
@@ -21,7 +21,7 @@ module CQM
     embedded_in :population_set
 
     field :title, type: String
-    field :id, type: String
+    field :stratification_id, type: String
     embeds_one :statement, class_name: 'CQM::StatementReference'
   end
 

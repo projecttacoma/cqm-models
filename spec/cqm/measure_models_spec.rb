@@ -27,7 +27,7 @@ RSpec.describe CQM::Measure do
     )
     measure.population_sets << CQM::PopulationSet.new(
       title: 'Test Population 1',
-      id: 'some id',
+      population_set_id: 'some id',
       populations: CQM::ProportionPopulationMap.new(
         IPP: CQM::StatementReference.new(library_name: 'TestMainLibrary', statement_name: 'Initial Population 1'),
         DENOM: CQM::StatementReference.new(library_name: 'TestMainLibrary', statement_name: 'Denominator 1'),
@@ -37,7 +37,7 @@ RSpec.describe CQM::Measure do
     )
     measure.population_sets << CQM::PopulationSet.new(
       title: 'Test Population 2',
-      id: 'some id two',
+      population_set_id: 'some id two',
       populations: CQM::ProportionPopulationMap.new(
         IPP: CQM::StatementReference.new(library_name: 'TestMainLibrary', statement_name: 'Initial Population 2'),
         DENOM: CQM::StatementReference.new(library_name: 'TestMainLibrary', statement_name: 'Denominator 2'),

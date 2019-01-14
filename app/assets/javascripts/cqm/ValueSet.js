@@ -14,8 +14,6 @@ const ValueSetSchema = new mongoose.Schema(
     version: String,
 
     concepts: [Concept.ConceptSchema],
-
-    measures: [{ type: ObjectId, ref: 'Measure', index: true }],
   },
   // Options
   {
