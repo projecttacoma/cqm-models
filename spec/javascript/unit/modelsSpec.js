@@ -4,6 +4,29 @@ const MedicationOrderSchema = require('./../../../app/assets/javascripts/index.j
 const PatientSchema = require('./../../../app/assets/javascripts/index.js').PatientSchema;
 const QDMPatientSchema = require('./../../../app/assets/javascripts/index.js').QDMPatientSchema;
 
+// Data Element Schemas
+const AdverseEventSchema = require('./../../../app/assets/javascripts/AdverseEvent.js').AdverseEventSchema;
+const AllergyIntoleranceSchema = require('./../../../app/assets/javascripts/AllergyIntolerance.js').AllergyIntoleranceSchema;
+const AssessmentPerformedSchema = require('./../../../app/assets/javascripts/AssessmentPerformed.js').AssessmentPerformedSchema;
+const ProviderCareExperienceSchema = require('./../../../app/assets/javascripts/ProviderCareExperience.js').ProviderCareExperienceSchema;
+const CareGoalSchema = require('./../../../app/assets/javascripts/CareGoal.js').CareGoalSchema;
+const CommunicationPerformedSchema = require('./../../../app/assets/javascripts/CommunicationPerformed.js').CommunicationPerformedSchema;
+const DiagnosisSchema = require('./../../../app/assets/javascripts/Diagnosis.js').DiagnosisSchema;
+const DeviceAppliedSchema = require('./../../../app/assets/javascripts/DeviceApplied.js').DeviceAppliedSchema;
+const DeviceOrderSchema = require('./../../../app/assets/javascripts/DeviceOrder.js').DeviceOrderSchema;
+const DeviceRecommendedSchema = require('./../../../app/assets/javascripts/DeviceRecommended.js').DeviceRecommendedSchema;
+const DiagnosticStudyOrderSchema = require('./../../../app/assets/javascripts/DiagnosticStudyOrder.js').DiagnosticStudyOrderSchema;
+const EncounterPerformedSchema = require('./../../../app/assets/javascripts/EncounterPerformed.js').EncounterPerformedSchema;
+const FamilyHistorySchema = require('./../../../app/assets/javascripts/FamilyHistory.js').FamilyHistorySchema;
+const ImmunizationAdministeredSchema = require('./../../../app/assets/javascripts/ImmunizationAdministered.js').ImmunizationAdministeredSchema;
+const InterventionPerformedSchema = require('./../../../app/assets/javascripts/InterventionPerformed.js').InterventionPerformedSchema;
+const LaboratoryTestOrderSchema = require('./../../../app/assets/javascripts/LaboratoryTestOrder.js').LaboratoryTestOrderSchema;
+const MedicationActiveSchema = require('./../../../app/assets/javascripts/MedicationActive.js').MedicationActiveSchema;
+const PhysicalExamOrderSchema = require('./../../../app/assets/javascripts/PhysicalExamOrder.js').PhysicalExamOrderSchema;
+const ProviderCharacteristicSchema = require('./../../../app/assets/javascripts/ProviderCharacteristic.js').ProviderCharacteristicSchema;
+const ProcedureOrderSchema = require('./../../../app/assets/javascripts/ProcedureOrder.js').ProcedureOrderSchema;
+const SubstanceAdministeredSchema = require('./../../../app/assets/javascripts/SubstanceAdministered.js').SubstanceAdministeredSchema;
+const SymptomSchema = require('./../../../app/assets/javascripts/Symptom.js').SymptomSchema;
 
 describe('QDMPatient', () => {
   beforeEach( () => {
