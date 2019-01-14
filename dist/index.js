@@ -2804,11 +2804,7 @@ module.exports.PopulationSet = mongoose.model('population_set', PopulationSetSch
 const mongoose = require('mongoose');
 const Concept = require('./Concept.js');
 
-const [String, Mixed, ObjectId] = [
-  mongoose.Schema.Types.String,
-  mongoose.Schema.Types.Mixed,
-  mongoose.Schema.Types.ObjectId,
-];
+const [String] = [mongoose.Schema.Types.String];
 
 const ValueSetSchema = new mongoose.Schema(
   {
