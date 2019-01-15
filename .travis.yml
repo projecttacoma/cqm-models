@@ -33,5 +33,4 @@ matrix:
         - yarn run lint
         - yarn run test
         - ./bin/validate_dist.sh
-        - istanbul cover ./node_modules/jasmine/bin/jasmine.js
         - codecov
