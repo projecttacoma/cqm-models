@@ -35,11 +35,7 @@ QDMPatientSchema.methods.initializeDataElements = function initializeDataElement
   const dataElementsInit = [];
   this.dataElements.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
-    if (typeStripped in AllDataElements) {
-      dataElementsInit.push(AllDataElements[typeStripped](element));
-    } else {
-      dataElementsInit.push(element);
-    }
+    dataElementsInit.push(AllDataElements[typeStripped](element));
   });
   this.set({ dataElements: dataElementsInit });
 };
@@ -63,13 +59,13 @@ QDMPatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
 };
 
 // Returns an array of elements that exist on this patient. Optionally
-// takes a category, which returns all elements of that QDM category.
-// Example: patient.getDataElements(category = 'encounters') will return
+// takes a qdmCategory, which returns all elements of that QDM qdmCategory.
+// Example: patient.getDataElements({qdmCategory: 'encounters'}) will return
 // all Encounter QDM data types active on the patient.
 QDMPatientSchema.methods.getDataElements = function getDataElements(params) {
-  if (params.qdmCategory && params.qdmStatus) {
+  if (params !== undefined && params.qdmCategory !== undefined && params.qdmStatus !== undefined) {
     return this.dataElements.filter(element => (element.qdmCategory === params.qdmCategory) && (element.qdmStatus === params.qdmStatus));
-  } else if (params.category) {
+  } else if (params !== undefined && params.qdmCategory !== undefined) {
     return this.dataElements.filter(element => element.qdmCategory === params.qdmCategory);
   }
   return this.dataElements;
@@ -84,7 +80,7 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
   // If isNegated == true, only return data elements with a negationRationale that is not null.
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
-  const results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
+  const results = this.dataElements.filter(element => (element._type === `QDM::${profile}` || element._type === profile) && (isNegated === null || !!element.negationRationale === isNegated));
   return results.map((result) => {
     const removedMongooseItems = AllDataElements[profile](result).toObject();
     // toObject() will remove all mongoose functions but also remove the schema methods, so we add them back
@@ -139,119 +135,119 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
 };
 
 QDMPatientSchema.methods.adverse_events = function adverse_events() {
-  return this.getDataElements({ category: 'adverse_event' });
+  return this.getDataElements({ qdmCategory: 'adverse_event' });
 };
 
 QDMPatientSchema.methods.allergies = function allergies() {
-  return this.getDataElements({ category: 'allergy' });
+  return this.getDataElements({ qdmCategory: 'allergy' });
 };
 
 QDMPatientSchema.methods.assessments = function assessments() {
-  return this.getDataElements({ category: 'assessment' });
+  return this.getDataElements({ qdmCategory: 'assessment' });
 };
 
 QDMPatientSchema.methods.care_experiences = function care_experiences() {
-  return this.getDataElements({ category: 'care_experience' });
+  return this.getDataElements({ qdmCategory: 'care_experience' });
 };
 
 QDMPatientSchema.methods.care_goals = function care_goals() {
-  return this.getDataElements({ category: 'care_goal' });
+  return this.getDataElements({ qdmCategory: 'care_goal' });
 };
 
 QDMPatientSchema.methods.communications = function communications() {
-  return this.getDataElements({ category: 'communication' });
+  return this.getDataElements({ qdmCategory: 'communication' });
 };
 
 QDMPatientSchema.methods.conditions = function conditions() {
-  return this.getDataElements({ category: 'condition' });
+  return this.getDataElements({ qdmCategory: 'condition' });
 };
 
 QDMPatientSchema.methods.devices = function devices() {
-  return this.getDataElements({ category: 'device' });
+  return this.getDataElements({ qdmCategory: 'device' });
 };
 
 QDMPatientSchema.methods.diagnostic_studies = function diagnostic_studies() {
-  return this.getDataElements({ category: 'diagnostic_study' });
+  return this.getDataElements({ qdmCategory: 'diagnostic_study' });
 };
 
 QDMPatientSchema.methods.encounters = function encounters() {
-  return this.getDataElements({ category: 'encounter' });
+  return this.getDataElements({ qdmCategory: 'encounter' });
 };
 
 QDMPatientSchema.methods.family_history = function family_history() {
-  return this.getDataElements({ category: 'family_history' });
+  return this.getDataElements({ qdmCategory: 'family_history' });
 };
 
 QDMPatientSchema.methods.functional_statuses = function functional_statuses() {
-  return this.getDataElements({ category: 'functional_status' });
+  return this.getDataElements({ qdmCategory: 'functional_status' });
 };
 
 QDMPatientSchema.methods.immunizations = function immunizations() {
-  return this.getDataElements({ category: 'immunization' });
+  return this.getDataElements({ qdmCategory: 'immunization' });
 };
 
 QDMPatientSchema.methods.interventions = function interventions() {
-  return this.getDataElements({ category: 'intervention' });
+  return this.getDataElements({ qdmCategory: 'intervention' });
 };
 
 QDMPatientSchema.methods.laboratory_tests = function laboratory_tests() {
-  return this.getDataElements({ category: 'laboratory_test' });
+  return this.getDataElements({ qdmCategory: 'laboratory_test' });
 };
 
 QDMPatientSchema.methods.medical_equipment = function medical_equipment() {
-  return this.getDataElements({ category: 'medical_equipment' });
+  return this.getDataElements({ qdmCategory: 'medical_equipment' });
 };
 
 QDMPatientSchema.methods.medications = function medications() {
-  return this.getDataElements({ category: 'medication' });
+  return this.getDataElements({ qdmCategory: 'medication' });
 };
 
 QDMPatientSchema.methods.physical_exams = function physical_exams() {
-  return this.getDataElements({ category: 'physical_exam' });
+  return this.getDataElements({ qdmCategory: 'physical_exam' });
 };
 
 QDMPatientSchema.methods.preferences = function preferences() {
-  return this.getDataElements({ category: 'preference' });
+  return this.getDataElements({ qdmCategory: 'preference' });
 };
 
 QDMPatientSchema.methods.provider_characteristics = function provider_characteristics() {
-  return this.getDataElements({ category: 'provider_characteristic' });
+  return this.getDataElements({ qdmCategory: 'provider_characteristic' });
 };
 
 QDMPatientSchema.methods.procedures = function procedures() {
-  return this.getDataElements({ category: 'procedure' });
+  return this.getDataElements({ qdmCategory: 'procedure' });
 };
 
 QDMPatientSchema.methods.results = function results() {
-  return this.getDataElements({ category: 'result' });
+  return this.getDataElements({ qdmCategory: 'result' });
 };
 
 QDMPatientSchema.methods.risk_category_assessments = function risk_category_assessments() {
-  return this.getDataElements({ category: 'risk_category_assessment' });
+  return this.getDataElements({ qdmCategory: 'risk_category_assessment' });
 };
 
 QDMPatientSchema.methods.social_history = function social_history() {
-  return this.getDataElements({ category: 'social_history' });
+  return this.getDataElements({ qdmCategory: 'social_history' });
 };
 
 QDMPatientSchema.methods.substances = function substances() {
-  return this.getDataElements({ category: 'substance' });
+  return this.getDataElements({ qdmCategory: 'substance' });
 };
 
 QDMPatientSchema.methods.symptoms = function symptoms() {
-  return this.getDataElements({ category: 'symptom' });
+  return this.getDataElements({ qdmCategory: 'symptom' });
 };
 
 QDMPatientSchema.methods.system_characteristics = function system_characteristics() {
-  return this.getDataElements({ category: 'system_characteristic' });
+  return this.getDataElements({ qdmCategory: 'system_characteristic' });
 };
 
 QDMPatientSchema.methods.transfers = function transfers() {
-  return this.getDataElements({ category: 'transfer' });
+  return this.getDataElements({ qdmCategory: 'transfer' });
 };
 
 QDMPatientSchema.methods.vital_signs = function vital_signs() {
-  return this.getDataElements({ category: 'vital_sign' });
+  return this.getDataElements({ qdmCategory: 'vital_sign' });
 };
 
 module.exports.QDMPatientSchema = QDMPatientSchema;
