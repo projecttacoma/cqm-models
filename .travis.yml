@@ -6,7 +6,9 @@ matrix:
         - 2.4.1
       services:
         - mongodb
-      before_install: gem install bundler -v "< 2.0"
+      before_install:
+        - gem uninstall bundler
+        - gem install bundler -v "< 2.0"
       script:
         - bundle exec rake
         - bundle exec rubocop
@@ -16,7 +18,9 @@ matrix:
         - 2.3.8
       services:
         - mongodb
-      before_install: gem install bundler -v "< 2.0"
+      before_install:
+        - gem uninstall bundler
+        - gem install bundler -v "< 2.0"
       script:
         - bundle exec rake
         - bundle exec rubocop
