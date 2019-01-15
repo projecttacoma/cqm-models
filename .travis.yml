@@ -7,7 +7,7 @@ matrix:
       services:
         - mongodb
       before_install:
-        - gem uninstall bundler
+        - gem uninstall --force -x bundler
         - gem install bundler -v "< 2.0"
       script:
         - bundle exec rake
@@ -19,7 +19,7 @@ matrix:
       services:
         - mongodb
       before_install:
-        - gem uninstall bundler
+        - gem uninstall --force -x bundler
         - gem install bundler -v "< 2.0"
       script:
         - bundle exec rake
