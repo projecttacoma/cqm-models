@@ -54,32 +54,32 @@ describe('QDMPatient', () => {
       this.MedicationOrder = Mongoose.model('MedicationOrder', MedicationOrderSchema);
     });
 
-    it('can initialize an empty data elements array', () => {
+    it('can handle an empty data elements array', () => {
       qdmPatient = new this.QDMPatient({
         birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
         qdmVersion: '0.0',
       });
-      qdmPatient.initializeDataElements;
+      qdmPatient.initializeDataElements();
       expect(qdmPatient.dataElements.length).toEqual(0);
     });
 
-    it('can initialize an data elements array with a single entry', () => {
+    it('can initialize a data elements array with a single entry', () => {
       qdmPatient = new this.QDMPatient({
         birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
         qdmVersion: '0.0',
         dataElements: [new this.MedicationOrder()]
       });
-      qdmPatient.initializeDataElements;
+      qdmPatient.initializeDataElements();
       expect(qdmPatient.dataElements.length).toEqual(1);
     });
 
-    it('can initialize an data elements array with a multiple entries', () => {
+    it('can initialize a data elements array with a multiple entries', () => {
       qdmPatient = new this.QDMPatient({
         birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
         qdmVersion: '0.0',
         dataElements: [new this.MedicationOrder(), new this.MedicationOrder()]
       });
-      qdmPatient.initializeDataElements;
+      qdmPatient.initializeDataElements();
       expect(qdmPatient.dataElements.length).toEqual(2);
     });
   });
@@ -239,6 +239,45 @@ describe('QDMPatient', () => {
       });
       expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.135').length).toEqual(1);
       expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.12').length).toEqual(2);
+    });
+  });
+
+  describe('findRecords', () => {
+    beforeEach( () => {
+      this.EncounterPerformed = Mongoose.model('EncounterPerformed', EncounterPerformedSchema);
+
+      qdmPatient = new this.QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new this.AdverseEvent(),
+          new this.CareGoal(),
+          new this.CareGoal(),
+          new this.EncounterPerformed(),
+          new this.EncounterPerformed(),
+          new this.EncounterPerformed({
+            negationRationale: new cql.Code('do', 're', 'mi')
+          }),
+        ]
+      });
+    });
+
+    it('can return empty array when no parameters are given', () => {
+      expect(qdmPatient.findRecords()).toEqual([]);
+    });
+
+    it('can return generic patient info', () => {
+      expect(qdmPatient.findRecords('Patient')[0].birthDatetime).toBeDefined();
+    });
+
+    it('can return all patient characteristics of a specific caregory', () => {
+      // If possible, set the patient to have an ethnicity so this function returns a non-empty array
+      expect(qdmPatient.findRecords('PatientCharacteristicEthnicity').length).toEqual(0);
+    });
+    it('can return all dataElements of a specific category', () => {
+      expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
+      expect(qdmPatient.findRecords('PositiveEncounterPerformed').length).toEqual(2);
+      expect(qdmPatient.findRecords('NegativeEncounterPerformed').length).toEqual(1);
     });
   });
 });
