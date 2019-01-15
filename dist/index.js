@@ -1946,11 +1946,9 @@ QDMPatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
 // Example: patient.getDataElements({qdmCategory: 'encounters'}) will return
 // all Encounter QDM data types active on the patient.
 QDMPatientSchema.methods.getDataElements = function getDataElements(params) {
-  if (params == null || params.qdmCategory == null) {
-    return this.dataElements;
-  } else if (params.qdmCategory && params.qdmStatus) {
+  if (params !== undefined && params.qdmCategory !== undefined && params.qdmStatus !== undefined) {
     return this.dataElements.filter(element => (element.qdmCategory === params.qdmCategory) && (element.qdmStatus === params.qdmStatus));
-  } else if (params.qdmCategory) {
+  } else if (params !== undefined && params.qdmCategory !== undefined) {
     return this.dataElements.filter(element => element.qdmCategory === params.qdmCategory);
   }
   return this.dataElements;
@@ -1965,7 +1963,7 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
   // If isNegated == true, only return data elements with a negationRationale that is not null.
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
-  const results = this.dataElements.filter(element => element._type === `QDM::${profile}` && (isNegated === null || !!element.negationRationale === isNegated));
+  const results = this.dataElements.filter(element => (element._type === `QDM::${profile}` || element._type === profile) && (isNegated === null || !!element.negationRationale === isNegated));
   return results.map((result) => {
     const removedMongooseItems = AllDataElements[profile](result).toObject();
     // toObject() will remove all mongoose functions but also remove the schema methods, so we add them back
