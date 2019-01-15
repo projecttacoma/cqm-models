@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/projecttacoma/cqm-models.svg?branch=master)](https://travis-ci.org/projecttacoma/cqm-models)
+[![Build Status](https://travis-ci.com/projecttacoma/cqm-models.svg?branch=master)](https://travis-ci.com/projecttacoma/cqm-models)
 [![codecov](https://codecov.io/gh/projecttacoma/cqm-models/branch/master/graph/badge.svg)](https://codecov.io/gh/projecttacoma/cqm-models)
 [![Gem Version](https://badge.fury.io/rb/cqm-models.svg)](https://badge.fury.io/rb/cqm-models)
 ![NPM](https://img.shields.io/npm/v/cqm-models.svg)
