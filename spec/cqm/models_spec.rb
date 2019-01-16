@@ -31,7 +31,7 @@ RSpec.describe QDM do
     @patient_c.qdmPatient.dataElements << QDM::EncounterOrder.new(patient: @patient_c, reason: QDM::Code.new('bogus code', 'bogus code system'))
     @patient_c.qdmPatient.dataElements << QDM::MedicationDispensed.new(patient: @patient_c, relevantPeriod: QDM::Interval.new(1.year.ago, 1.month.ago), dosage: QDM::Quantity.new('1', 'mg'))
 
-    # Create more detailed (and relatistic) patient; more useful for testing calculation with
+    # Create more detailed (and realistic) patient; more useful for testing calculation with
     bd = 75.years.ago
     @patient_big = CQM::Patient.new(givenNames: %w['First Middle'], familyName: 'Family', bundleId: '1')
     @patient_big.qdmPatient.birthDatetime = bd
@@ -83,8 +83,12 @@ RSpec.describe QDM do
 
   it 'patient still has _type attributes after json conversion' do
     expect(@patient_a.qdmPatient.dataElements[0]._type).to eq('QDM::ProcedurePerformed')
+    # JSON conversion for CQM patient
     @patient_a_json = JSON.parse(@patient_a.to_json(except: '_id'))
     expect(@patient_a_json['qdmPatient']['dataElements'].first['_type']).to eq('QDM::ProcedurePerformed')
+    # JSON conversion for QDM patient
+    @qdm_patient_a_json = JSON.parse(@patient_a.qdmPatient.to_json(except: '_id'))
+    expect(@qdm_patient_a_json['dataElements'].first['_type']).to eq('QDM::ProcedurePerformed')
   end
 
   it 'patients return datatypes that return attributes using get' do
