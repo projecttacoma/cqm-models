@@ -47,7 +47,7 @@ bundle exec rake
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see [tags on this repository](https://github.com/projecttacoma/bonnie/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see [tags on this repository](https://github.com/projecttacoma/cqm-models/tags). 
 
 
 ## License
