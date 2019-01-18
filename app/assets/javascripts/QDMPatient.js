@@ -13,9 +13,10 @@ const [Schema, Number, String, Mixed] = [
 ];
 
 const QDMPatientSchema = new Schema({
-  <%- for attribute in attrs_with_extras -%>
-  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
-  <%- end %>
+  birthDatetime: DateTime,
+  qdmVersion: { type: String, default: '5.4' },
+  _type: { type: String, default: 'QdmPatient' },
+
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
   dataElements: [],
