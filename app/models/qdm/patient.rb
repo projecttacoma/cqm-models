@@ -4,9 +4,7 @@ module QDM
     include Mongoid::Document
     field :birthDatetime, type: DateTime
     field :qdmVersion, type: String, default: '5.4'
-    field :givenNames, type: Array
-    field :familyName, type: String
-    field :bundleId, type: String
+    embedded_in :tacomaPatient, class_name: 'CQM::Patient'
 
     # These are the "data criteria", or QDM datatype elements that exist on a
     # patient.
@@ -206,7 +204,7 @@ module QDM
 
     # Include '_type' in any JSON output. This is necessary for deserialization.
     def to_json(options = nil)
-      serializable_hash(methods: :_type).to_json(options)
+      serializable_hash(methods: :_type, include: :_type).to_json(options)
     end
   end
 end

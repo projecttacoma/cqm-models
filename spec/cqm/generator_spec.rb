@@ -51,6 +51,8 @@ RSpec.describe QDM do
     datatypes.each do |datatype, attributes|
       expect(File.file?('app/models/test/qdm/' + datatype.underscore + '.rb')).to be true
       ruby_model_has_attributes(File.read('app/models/test/qdm/' + datatype.underscore + '.rb'), attributes)
+      # Javascript PatientSchema was renamed to QDMPatient since it just contains the QDM data
+      datatype = 'QDMPatient' if datatype == 'Patient'
       js_model_has_attributes(File.read('tmp/' + datatype + '.js'), attributes)
     end
   end
