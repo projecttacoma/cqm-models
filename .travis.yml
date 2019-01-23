@@ -40,5 +40,5 @@ matrix:
         - yarn install
         - yarn run lint
         - yarn run test
-        - ./bin/validate_dist.sh
+        - ./bin/validate_dist_and_browser.sh
         - codecov
