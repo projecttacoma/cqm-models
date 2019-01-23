@@ -9,34 +9,37 @@ module QDM
             patient = nil
 
             datatypes.each do |type|
-                # 1 Patient Per data element type containing negated and non-negated type (if negatable)
-                if (patient == nil || patient_per_type)
-                    patient = QDM::Patient.new()
-                    patient.extendedData =  {}
-                    patient.extendedData['medical_record_number'] = "1"
-                    patient.familyName = "#{type} Test Patient"
-                    # TODO: randomize birthDateTime
-                    patient.birthDatetime = DateTime.new(1994)
-                    patient.givenNames = [type]
-                    # Add patient characteristics
-                    data_element = generate_loaded_datatype("QDM::PatientCharacteristicSex")
+                if (!type.include? "PatientCharacteristic")
+                    # 1 Patient Per data element type containing negated and non-negated type (if negatable)
+                    if (patient == nil || patient_per_type)
+                        patient = QDM::Patient.new()
+                        patient.extendedData =  {}
+                        patient.extendedData['medical_record_number'] = "1"
+                        patient.familyName = "#{type} Test Patient"
+                        # TODO: randomize birthDateTime
+                        patient.birthDatetime = DateTime.new(1994)
+                        patient.givenNames = [type]
+                        # Add patient characteristics
+                        data_element = generate_loaded_datatype("QDM::PatientCharacteristicSex")
+                        patient.dataElements.push(data_element)
+                        data_element = generate_loaded_datatype("QDM::PatientCharacteristicRace")
+                        patient.dataElements.push(data_element)
+                        data_element = generate_loaded_datatype("QDM::PatientCharacteristicEthnicity")
+                        patient.dataElements.push(data_element)
+                        data_element = generate_loaded_datatype("QDM::PatientCharacteristicBirthdate")
+                        patient.dataElements.push(data_element)
+                    end
+
+                    data_element = generate_loaded_datatype(type)
                     patient.dataElements.push(data_element)
-                    data_element = generate_loaded_datatype("QDM::PatientCharacteristicRace")
-                    patient.dataElements.push(data_element)
-                    data_element = generate_loaded_datatype("QDM::PatientCharacteristicEthnicity")
-                    patient.dataElements.push(data_element)
-                    data_element = generate_loaded_datatype("QDM::PatientCharacteristicBirthdate")
-                    patient.dataElements.push(data_element)
-                end
-                data_element = generate_loaded_datatype(type)
-                patient.dataElements.push(data_element)
-                # if type is negatable, add a negated version to the patient
-                if (data_element.fields.keys.include? "negationRationale")
-                    negated_data_element = generate_loaded_datatype(type, true)
-                    patient.dataElements.push(negated_data_element)
-                end
-                if (patient_per_type)
-                    patients.push(patient)
+                    # if type is negatable, add a negated version to the patient
+                    if (data_element.fields.keys.include? "negationRationale")
+                        negated_data_element = generate_loaded_datatype(type, true)
+                        patient.dataElements.push(negated_data_element)
+                    end
+                    if (patient_per_type)
+                        patients.push(patient)
+                    end
                 end
             end
 
@@ -78,9 +81,7 @@ module QDM
 
         def self.populate_fields(field_name, data_element, negate_data_element)
             # There are certain fields that we want to populate manually
-            if(field_name.include? "PatientCharacteristic")
-                return
-            elsif (field_name == "description")
+            if(field_name.include? "PatientCharacteristic" || field_name == "description")
                 # Skip the setting of patient description for now
             elsif (field_name == "negationRationale")
                 if (negate_data_element)
