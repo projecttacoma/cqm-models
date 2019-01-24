@@ -81,8 +81,9 @@ module QDM
 
         def self.populate_fields(field_name, data_element, negate_data_element)
             # There are certain fields that we want to populate manually
-            if(field_name.include? "PatientCharacteristic" || field_name == "description")
+            if (field_name == "description")
                 # Skip the setting of patient description for now
+                return
             elsif (field_name == "negationRationale")
                 if (negate_data_element)
                     data_element[field_name] = generate_code_field
