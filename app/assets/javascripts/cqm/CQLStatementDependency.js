@@ -11,7 +11,5 @@ const StatementDependencySchema = new mongoose.Schema({
 });
 
 module.exports.StatementDependencySchema = StatementDependencySchema;
-module.exports.StatementDependency = mongoose.model('statement_dependency', StatementDependencySchema);
 
 module.exports.StatementReferenceSchema = StatementReferenceSchema;
-module.exports.StatementReference = mongoose.model('statement_reference', StatementReferenceSchema);

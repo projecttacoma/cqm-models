@@ -9,4 +9,3 @@ const ConceptSchema = new mongoose.Schema({
 });
 
 module.exports.ConceptSchema = ConceptSchema;
-module.exports.Concept = mongoose.model('concept', ConceptSchema);

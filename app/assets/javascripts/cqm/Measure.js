@@ -85,4 +85,3 @@ MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => ['STRAT', 'IPP', 'DENOM'
 MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex']);
 
 module.exports.MeasureSchema = MeasureSchema;
-module.exports.Measure = mongoose.model('measure', MeasureSchema);

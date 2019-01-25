@@ -18,4 +18,3 @@ const ValueSetSchema = new mongoose.Schema(
 );
 
 module.exports.ValueSetSchema = ValueSetSchema;
-module.exports.ValueSet = mongoose.model('value_set', ValueSetSchema);

@@ -25,4 +25,3 @@ const PlaceholderResultSchema = mongoose.Schema({
 });
 
 module.exports.ResultSchema = PlaceholderResultSchema;
-module.exports.Result = mongoose.model('Result', PlaceholderResultSchema);

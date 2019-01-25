@@ -42,13 +42,9 @@ const PopulationSetSchema = new mongoose.Schema({
 });
 
 module.exports.StratificationSchema = StratificationSchema;
-module.exports.stratification = mongoose.model('stratification', StratificationSchema);
 
 module.exports.ObservationSchema = ObservationSchema;
-module.exports.Observation = mongoose.model('observation', ObservationSchema);
 
 module.exports.PopulationMapSchema = PopulationMapSchema;
-module.exports.PopulationMap = mongoose.model('population_map', PopulationMapSchema);
 
 module.exports.PopulationSetSchema = PopulationSetSchema;
-module.exports.PopulationSet = mongoose.model('population_set', PopulationSetSchema);

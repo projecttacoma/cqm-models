@@ -15,6 +15,7 @@ const DeviceRecommendedSchema = require('./../../../app/assets/javascripts/Devic
 const DiagnosticStudyOrderSchema = require('./../../../app/assets/javascripts/DiagnosticStudyOrder.js').DiagnosticStudyOrderSchema;
 const EncounterPerformedSchema = require('./../../../app/assets/javascripts/EncounterPerformed.js').EncounterPerformedSchema;
 const FamilyHistorySchema = require('./../../../app/assets/javascripts/FamilyHistory.js').FamilyHistorySchema;
+const IdSchema = require('./../../../app/assets/javascripts/Id.js').IdSchema;
 const ImmunizationAdministeredSchema = require('./../../../app/assets/javascripts/ImmunizationAdministered.js').ImmunizationAdministeredSchema;
 const InterventionPerformedSchema = require('./../../../app/assets/javascripts/InterventionPerformed.js').InterventionPerformedSchema;
 const LaboratoryTestOrderSchema = require('./../../../app/assets/javascripts/LaboratoryTestOrder.js').LaboratoryTestOrderSchema;
@@ -27,6 +28,7 @@ const ProcedureOrderSchema = require('./../../../app/assets/javascripts/Procedur
 const QDMPatientSchema = require('./../../../app/assets/javascripts/QDMPatient.js').QDMPatientSchema;
 const SubstanceAdministeredSchema = require('./../../../app/assets/javascripts/SubstanceAdministered.js').SubstanceAdministeredSchema;
 const SymptomSchema = require('./../../../app/assets/javascripts/Symptom.js').SymptomSchema;
+const Id = Mongoose.model('Id', IdSchema);
 
 describe('QDMPatient', () => {
   beforeEach( () => {

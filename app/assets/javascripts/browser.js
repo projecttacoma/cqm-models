@@ -1,0 +1,1 @@
+window.cqmModels = require('./schemas');

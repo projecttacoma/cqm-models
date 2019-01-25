@@ -18,4 +18,3 @@ const MeasurePackageSchema = new mongoose.Schema(
 );
 
 module.exports.MeasurePackageSchema = MeasurePackageSchema;
-module.exports.MeasurePackage = mongoose.model('measure_package', MeasurePackageSchema);
