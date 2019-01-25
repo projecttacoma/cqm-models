@@ -12,6 +12,8 @@ require_relative 'qdm/basetypes/data_element'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/ratio'
+# FacilityLocation is technically a basetype
+require_relative 'qdm/facility_location'
 
 # Tacoma-specific models
 require_relative 'cqm/measure'
@@ -22,6 +24,9 @@ require_relative 'cqm/cql_statement_dependency'
 require_relative 'cqm/cql_library'
 require_relative 'cqm/population_set'
 require_relative 'cqm/patient'
+
+# Make Patient Generation Available
+require_relative '../../lib/generate_patients'
 
 # Generated models
 require_relative 'qdm/patient'
@@ -81,4 +86,3 @@ require_relative 'qdm/medication_order'
 require_relative 'qdm/substance_recommended'
 require_relative 'qdm/intervention_recommended'
 require_relative 'qdm/physical_exam_performed'
-require_relative '../../lib/generate_patients'
