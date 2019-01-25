@@ -6,45 +6,47 @@ module QDM
         def self.generate_exhastive_data_element_patients(patient_per_type = true)
             datatypes = get_datatypes(File.join(File.dirname(__FILE__), '../modelinfo/qdm-modelinfo-5.4.xml'))
             patients = []
-            patient = nil
+            cqm_patient = nil
 
             datatypes.each do |type|
                 if (!type.include? "PatientCharacteristic")
                     # 1 Patient Per data element type containing negated and non-negated type (if negatable)
-                    if (patient == nil || patient_per_type)
-                        patient = QDM::Patient.new()
-                        patient.extendedData =  {}
-                        patient.extendedData['medical_record_number'] = "1"
-                        patient.familyName = "#{type} Test Patient"
+                    if (cqm_patient == nil || patient_per_type)
+                        cqm_patient = CQM::Patient.new()
+                        qdm_patient = QDM::Patient.new()
+                        cqm_patient.givenNames = [type]
+                        cqm_patient.familyName = "#{type} Test Patient"
+                        qdm_patient.extendedData =  {}
+                        qdm_patient.extendedData['medical_record_number'] = "1"
                         # TODO: randomize birthDateTime
-                        patient.birthDatetime = DateTime.new(1994)
-                        patient.givenNames = [type]
+                        qdm_patient.birthDatetime = DateTime.new(1994)
                         # Add patient characteristics
                         data_element = generate_loaded_datatype("QDM::PatientCharacteristicSex")
-                        patient.dataElements.push(data_element)
+                        qdm_patient.dataElements.push(data_element)
                         data_element = generate_loaded_datatype("QDM::PatientCharacteristicRace")
-                        patient.dataElements.push(data_element)
+                        qdm_patient.dataElements.push(data_element)
                         data_element = generate_loaded_datatype("QDM::PatientCharacteristicEthnicity")
-                        patient.dataElements.push(data_element)
+                        qdm_patient.dataElements.push(data_element)
                         data_element = generate_loaded_datatype("QDM::PatientCharacteristicBirthdate")
-                        patient.dataElements.push(data_element)
+                        qdm_patient.dataElements.push(data_element)
+                        cqm_patient.qdmPatient = qdm_patient
                     end
 
                     data_element = generate_loaded_datatype(type)
-                    patient.dataElements.push(data_element)
+                    qdm_patient.dataElements.push(data_element)
                     # if type is negatable, add a negated version to the patient
                     if (data_element.fields.keys.include? "negationRationale")
                         negated_data_element = generate_loaded_datatype(type, true)
-                        patient.dataElements.push(negated_data_element)
+                        qdm_patient.dataElements.push(negated_data_element)
                     end
                     if (patient_per_type)
-                        patients.push(patient)
+                        patients.push(cqm_patient)
                     end
                 end
             end
 
             if (!patient_per_type)
-                return [patient]
+                return [cqm_patient]
             else
                 return patients
             end
@@ -91,7 +93,7 @@ module QDM
                     data_element[field_name] = nil
                 end
             elsif (field_name == "components")
-                data_element[field_name] = [QDM::Component.new()]
+                data_element[field_name] = [generate_component]
             elsif (field_name == "result")
                 # TODO: Result can be MANY Integer, Decimal, Code, Quantity or Ratio randomize this
                 data_element[field_name] = generate_code_field
@@ -101,6 +103,15 @@ module QDM
             elsif (field_name == "dataElementCodes")
                 # Populate dataElementCodes with codes specifically for data element type
                 data_element[field_name] = [generate_code_field]
+            elsif (field_name == "facilityLocations")
+                # TODO Randomize number of facility locations added
+                data_element[field_name] = [generate_facility_location]
+            elsif (field_name == "facilityLocation")
+                # TODO Randomize number of facility locations added
+                data_element[field_name] = generate_facility_location
+            elsif (field_name == "targetOutcome")
+                # TODO Randomize type of targetOutcome, use code for now
+                data_element[field_name] = generate_code_field
             else
                 # Fallback to populating fields by expected type
                 populate_field_by_type(field_name, data_element)
@@ -118,8 +129,7 @@ module QDM
                 # TODO: Randomize date
                 data_element[field_name] = DateTime.new(2019)
             elsif (field_type == QDM::Interval)
-                # TODO: Randomize Interval Type (Date,DateTime....) and randomize values, including lowClosed & highClosed
-                data_element[field_name] = QDM::Interval.new(DateTime.new(2018),DateTime.new(2019))
+                data_element[field_name] = generate_date_interval_field
             elsif (field_type == QDM::Quantity)
                 # TODO Randomize value and parameters for Quantity
                 data_element[field_name] = QDM::Quantity.new(100, "mg")
@@ -134,9 +144,29 @@ module QDM
             end
         end
 
+        def self.generate_component
+            component = QDM::Component.new()
+            component.code = generate_code_field
+            # TODO Randomize the type of the result
+            component.result = generate_code_field
+            return component
+        end
+
+        def self.generate_facility_location
+            facility_location = QDM::FacilityLocation.new()
+            facility_location.code = generate_code_field
+            facility_location.locationPeriod = generate_date_interval_field
+            return facility_location
+        end
+
         def self.generate_code_field
             # TODO: use code with all parameters, possibly randomize parameter values and optional information
             return QDM::Code.new('1234','SNOMED-CT')
+        end
+
+        def self.generate_date_interval_field
+            # TODO: Randomize dates in interval and open/closed parameters
+            return QDM::Interval.new(DateTime.new(2018),DateTime.new(2019))
         end
 
     end
