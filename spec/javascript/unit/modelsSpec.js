@@ -1,8 +1,5 @@
 const cql = require('cql-execution');
 const Mongoose = require('mongoose');
-const MedicationOrderSchema = require('./../../../app/assets/javascripts/index.js').MedicationOrderSchema;
-const PatientSchema = require('./../../../app/assets/javascripts/index.js').PatientSchema;
-const QDMPatientSchema = require('./../../../app/assets/javascripts/index.js').QDMPatientSchema;
 
 // Data Element Schemas
 const AdverseEventSchema = require('./../../../app/assets/javascripts/AdverseEvent.js').AdverseEventSchema;
@@ -22,9 +19,12 @@ const ImmunizationAdministeredSchema = require('./../../../app/assets/javascript
 const InterventionPerformedSchema = require('./../../../app/assets/javascripts/InterventionPerformed.js').InterventionPerformedSchema;
 const LaboratoryTestOrderSchema = require('./../../../app/assets/javascripts/LaboratoryTestOrder.js').LaboratoryTestOrderSchema;
 const MedicationActiveSchema = require('./../../../app/assets/javascripts/MedicationActive.js').MedicationActiveSchema;
+const MedicationOrderSchema = require('./../../../app/assets/javascripts/MedicationOrder.js').MedicationOrderSchema;
+const PatientSchema = require('./../../../app/assets/javascripts/cqm/Patient.js').PatientSchema;
 const PhysicalExamOrderSchema = require('./../../../app/assets/javascripts/PhysicalExamOrder.js').PhysicalExamOrderSchema;
 const ProviderCharacteristicSchema = require('./../../../app/assets/javascripts/ProviderCharacteristic.js').ProviderCharacteristicSchema;
 const ProcedureOrderSchema = require('./../../../app/assets/javascripts/ProcedureOrder.js').ProcedureOrderSchema;
+const QDMPatientSchema = require('./../../../app/assets/javascripts/QDMPatient.js').QDMPatientSchema;
 const SubstanceAdministeredSchema = require('./../../../app/assets/javascripts/SubstanceAdministered.js').SubstanceAdministeredSchema;
 const SymptomSchema = require('./../../../app/assets/javascripts/Symptom.js').SymptomSchema;
 
