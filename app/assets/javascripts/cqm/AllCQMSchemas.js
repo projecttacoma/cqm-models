@@ -1,0 +1,10 @@
+module.exports.MeasureSchema = require('./Measure.js').MeasureSchema;
+module.exports.MeasurePackageSchema = require('./MeasurePackage.js').MeasurePackageSchema;
+module.exports.StatementDependencySchema = require('./CQLStatementDependency.js').StatementDependencySchema;
+module.exports.StatementReferenceSchema = require('./CQLStatementDependency.js').StatementReferenceSchema;
+module.exports.CQLLibrarySchema = require('./CQLLibrary.js').CQLLibrarySchema;
+module.exports.ValueSetSchema = require('./ValueSet.js').ValueSetSchema;
+module.exports.ConceptSchema = require('./Concept.js').ConceptSchema;
+module.exports.PopulationSetSchema = require('./PopulationSet.js').PopulationSetSchema;
+module.exports.PopulationMapSchema = require('./PopulationSet.js').PopulationMapSchema;
+module.exports.PatientSchema = require('./Patient.js').PatientSchema;
