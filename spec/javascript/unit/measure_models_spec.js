@@ -1,5 +1,4 @@
 const CQM = require('./../../../app/assets/javascripts/cqm/AllCQMModels')
-const Buffer = require('mongoose').Schema.Types.Buffer;
 
 describe('CQM', () => {
 
