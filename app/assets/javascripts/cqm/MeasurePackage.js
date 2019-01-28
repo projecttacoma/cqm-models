@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
+// using mBuffer to not conflict with system Buffer
 const [mBuffer, ObjectId] = [
   mongoose.Schema.Types.Buffer,
   mongoose.Schema.Types.ObjectId,
 ];
 
-const MeasurePackageSchema = mongoose.Schema(
+const MeasurePackageSchema = new mongoose.Schema(
   {
     file: mBuffer,
     measure: { type: ObjectId, ref: 'Measure' },

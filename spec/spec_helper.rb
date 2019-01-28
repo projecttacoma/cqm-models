@@ -16,4 +16,12 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.before(:suite) do
+    dump_database
+  end
+end
+
+def dump_database
+  Mongoid.default_client.collections.each(&:drop)
 end

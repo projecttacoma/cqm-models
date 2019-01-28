@@ -14,11 +14,14 @@ require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/ratio'
 
 # Tacoma-specific models
-require_relative 'qdm/tacoma/measure'
-require_relative 'qdm/tacoma/measure_package'
-require_relative 'qdm/tacoma/valueset'
-require_relative 'qdm/tacoma/concept'
-require_relative 'qdm/tacoma/individual_result'
+require_relative 'cqm/measure'
+require_relative 'cqm/measure_package'
+require_relative 'cqm/valueset'
+require_relative 'cqm/concept'
+require_relative 'cqm/cql_statement_dependency'
+require_relative 'cqm/cql_library'
+require_relative 'cqm/population_set'
+require_relative 'cqm/patient'
 
 # Generated models
 require_relative 'qdm/patient'

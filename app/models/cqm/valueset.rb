@@ -1,19 +1,15 @@
-module QDM
+module CQM
   # ValueSet represents a collection of Concepts, used by the Measures to specify a set of codes for a particular topic
   class ValueSet
     include Mongoid::Document
     field :oid, type: String
     field :display_name, type: String
     field :version, type: String
-    field :user_id, type: String # Eventually we need to delete this from bundles when exporting
-    field :categories, type: Hash
 
-    index(oid: 1)
+    index oid: 1
+
     embeds_many :concepts
-    index 'concepts.code' => 1
-    index 'concepts.code_system' => 1
-    index 'concepts.code_system_name' => 1
-    index 'bundle_id' => 1
+
     scope :by_oid, ->(oid) { where(oid: oid) }
 
     # Provides an Array of Hashes. Each code system gets its own Hash
@@ -38,7 +34,6 @@ module QDM
       return unless vs_element
       vs = ValueSet.new(oid: vs_element['ID'], display_name: vs_element['displayName'], version: vs_element['version'])
       vs.concepts = extract_concepts(vs_element)
-      vs.categories = extract_categories(vs_element)
       vs
     end
 
@@ -48,21 +43,8 @@ module QDM
         Concept.new(code: con['code'],
                     code_system_name: code_system_name,
                     code_system_version: con['codeSystemVersion'],
-                    display_name: con['displayName'], code_system: con['codeSystem'])
+                    display_name: con['displayName'], code_system_oid: con['codeSystem'])
       end
-    end
-
-    def self.extract_categories(vs_element)
-      category_hash = Hash.new { |h, k| h[k] = [] }
-      groups_with_categories = vs_element.xpath("//vs:Group/@ID[../@displayName='CATEGORY']")
-      groups_with_categories.each do |group_number|
-        measure = vs_element.xpath("//vs:Group[@displayName='CMS eMeasure ID' and @ID='#{group_number}']/vs:Keyword").text
-        categories_for_group = vs_element.xpath("//vs:Group[@displayName='CATEGORY' and @ID='#{group_number}']/vs:Keyword")
-        categories_for_group.each do |category|
-          category_hash[measure] << category.text
-        end
-      end
-      !category_hash.empty? ? category_hash : nil
     end
   end
 end
