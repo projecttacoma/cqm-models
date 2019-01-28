@@ -31,4 +31,3 @@ const AssessmentPerformedSchema = DataElementSchema({
 });
 
 module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
-module.exports.AssessmentPerformed = mongoose.model('AssessmentPerformed', AssessmentPerformedSchema);

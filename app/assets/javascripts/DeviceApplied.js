@@ -29,4 +29,3 @@ const DeviceAppliedSchema = DataElementSchema({
 });
 
 module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
-module.exports.DeviceApplied = mongoose.model('DeviceApplied', DeviceAppliedSchema);

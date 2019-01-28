@@ -27,4 +27,3 @@ const DeviceRecommendedSchema = DataElementSchema({
 });
 
 module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
-module.exports.DeviceRecommended = mongoose.model('DeviceRecommended', DeviceRecommendedSchema);

@@ -28,4 +28,3 @@ const PhysicalExamOrderSchema = DataElementSchema({
 });
 
 module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
-module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);

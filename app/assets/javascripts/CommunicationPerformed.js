@@ -32,4 +32,3 @@ const CommunicationPerformedSchema = DataElementSchema({
 });
 
 module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
-module.exports.CommunicationPerformed = mongoose.model('CommunicationPerformed', CommunicationPerformedSchema);

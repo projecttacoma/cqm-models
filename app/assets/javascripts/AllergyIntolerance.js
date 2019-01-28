@@ -28,4 +28,3 @@ const AllergyIntoleranceSchema = DataElementSchema({
 });
 
 module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
-module.exports.AllergyIntolerance = mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);

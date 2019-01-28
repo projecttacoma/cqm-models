@@ -34,4 +34,3 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
 });
 
 module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
-module.exports.DiagnosticStudyPerformed = mongoose.model('DiagnosticStudyPerformed', DiagnosticStudyPerformedSchema);

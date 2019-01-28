@@ -26,4 +26,3 @@ const PatientCharacteristicExpiredSchema = DataElementSchema({
 });
 
 module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpiredSchema;
-module.exports.PatientCharacteristicExpired = mongoose.model('PatientCharacteristicExpired', PatientCharacteristicExpiredSchema);

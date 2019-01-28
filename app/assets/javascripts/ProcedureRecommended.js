@@ -29,4 +29,3 @@ const ProcedureRecommendedSchema = DataElementSchema({
 });
 
 module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
-module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);

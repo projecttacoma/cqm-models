@@ -25,4 +25,3 @@ const PatientCharacteristicBirthdateSchema = DataElementSchema({
 });
 
 module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirthdateSchema;
-module.exports.PatientCharacteristicBirthdate = mongoose.model('PatientCharacteristicBirthdate', PatientCharacteristicBirthdateSchema);

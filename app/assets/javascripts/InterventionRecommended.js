@@ -27,4 +27,3 @@ const InterventionRecommendedSchema = DataElementSchema({
 });
 
 module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
-module.exports.InterventionRecommended = mongoose.model('InterventionRecommended', InterventionRecommendedSchema);

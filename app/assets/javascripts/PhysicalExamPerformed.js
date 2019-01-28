@@ -32,4 +32,3 @@ const PhysicalExamPerformedSchema = DataElementSchema({
 });
 
 module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
-module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);

@@ -30,4 +30,3 @@ const ImmunizationAdministeredSchema = DataElementSchema({
 });
 
 module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
-module.exports.ImmunizationAdministered = mongoose.model('ImmunizationAdministered', ImmunizationAdministeredSchema);

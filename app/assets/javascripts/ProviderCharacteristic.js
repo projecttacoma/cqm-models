@@ -24,4 +24,3 @@ const ProviderCharacteristicSchema = DataElementSchema({
 });
 
 module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
-module.exports.ProviderCharacteristic = mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);

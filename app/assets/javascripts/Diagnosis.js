@@ -28,4 +28,3 @@ const DiagnosisSchema = DataElementSchema({
 });
 
 module.exports.DiagnosisSchema = DiagnosisSchema;
-module.exports.Diagnosis = mongoose.model('Diagnosis', DiagnosisSchema);

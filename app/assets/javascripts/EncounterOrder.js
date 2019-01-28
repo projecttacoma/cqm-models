@@ -28,4 +28,3 @@ const EncounterOrderSchema = DataElementSchema({
 });
 
 module.exports.EncounterOrderSchema = EncounterOrderSchema;
-module.exports.EncounterOrder = mongoose.model('EncounterOrder', EncounterOrderSchema);

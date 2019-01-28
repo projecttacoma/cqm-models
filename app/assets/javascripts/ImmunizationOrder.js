@@ -31,4 +31,3 @@ const ImmunizationOrderSchema = DataElementSchema({
 });
 
 module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
-module.exports.ImmunizationOrder = mongoose.model('ImmunizationOrder', ImmunizationOrderSchema);

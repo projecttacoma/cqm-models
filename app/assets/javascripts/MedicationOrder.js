@@ -36,4 +36,3 @@ const MedicationOrderSchema = DataElementSchema({
 });
 
 module.exports.MedicationOrderSchema = MedicationOrderSchema;
-module.exports.MedicationOrder = mongoose.model('MedicationOrder', MedicationOrderSchema);

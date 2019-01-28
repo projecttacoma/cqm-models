@@ -29,4 +29,3 @@ const ProcedureOrderSchema = DataElementSchema({
 });
 
 module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
-module.exports.ProcedureOrder = mongoose.model('ProcedureOrder', ProcedureOrderSchema);

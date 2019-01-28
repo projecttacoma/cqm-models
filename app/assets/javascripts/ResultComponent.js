@@ -22,4 +22,3 @@ const ResultComponentSchema = DataElementSchema({
 });
 
 module.exports.ResultComponentSchema = ResultComponentSchema;
-module.exports.ResultComponent = mongoose.model('ResultComponent', ResultComponentSchema);

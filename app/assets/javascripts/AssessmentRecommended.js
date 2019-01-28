@@ -27,4 +27,3 @@ const AssessmentRecommendedSchema = DataElementSchema({
 });
 
 module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
-module.exports.AssessmentRecommended = mongoose.model('AssessmentRecommended', AssessmentRecommendedSchema);

@@ -23,4 +23,3 @@ const FacilityLocationSchema = new mongoose.Schema({
 });
 
 module.exports.FacilityLocationSchema = FacilityLocationSchema;
-module.exports.FacilityLocation = mongoose.model('FacilityLocation', FacilityLocationSchema);

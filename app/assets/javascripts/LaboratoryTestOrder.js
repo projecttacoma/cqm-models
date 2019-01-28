@@ -27,4 +27,3 @@ const LaboratoryTestOrderSchema = DataElementSchema({
 });
 
 module.exports.LaboratoryTestOrderSchema = LaboratoryTestOrderSchema;
-module.exports.LaboratoryTestOrder = mongoose.model('LaboratoryTestOrder', LaboratoryTestOrderSchema);

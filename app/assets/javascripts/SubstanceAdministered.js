@@ -30,4 +30,3 @@ const SubstanceAdministeredSchema = DataElementSchema({
 });
 
 module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
-module.exports.SubstanceAdministered = mongoose.model('SubstanceAdministered', SubstanceAdministeredSchema);

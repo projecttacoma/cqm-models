@@ -28,4 +28,3 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
 });
 
 module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
-module.exports.PhysicalExamRecommended = mongoose.model('PhysicalExamRecommended', PhysicalExamRecommendedSchema);

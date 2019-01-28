@@ -28,4 +28,3 @@ const EncounterRecommendedSchema = DataElementSchema({
 });
 
 module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
-module.exports.EncounterRecommended = mongoose.model('EncounterRecommended', EncounterRecommendedSchema);

@@ -24,4 +24,3 @@ const PatientCareExperienceSchema = DataElementSchema({
 });
 
 module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
-module.exports.PatientCareExperience = mongoose.model('PatientCareExperience', PatientCareExperienceSchema);

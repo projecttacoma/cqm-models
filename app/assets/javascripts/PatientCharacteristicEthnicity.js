@@ -24,4 +24,3 @@ const PatientCharacteristicEthnicitySchema = DataElementSchema({
 });
 
 module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthnicitySchema;
-module.exports.PatientCharacteristicEthnicity = mongoose.model('PatientCharacteristicEthnicity', PatientCharacteristicEthnicitySchema);

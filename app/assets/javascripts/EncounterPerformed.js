@@ -33,4 +33,3 @@ const EncounterPerformedSchema = DataElementSchema({
 });
 
 module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
-module.exports.EncounterPerformed = mongoose.model('EncounterPerformed', EncounterPerformedSchema);

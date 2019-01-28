@@ -23,4 +23,3 @@ const ComponentSchema = new mongoose.Schema({
 });
 
 module.exports.ComponentSchema = ComponentSchema;
-module.exports.Component = mongoose.model('Component', ComponentSchema);

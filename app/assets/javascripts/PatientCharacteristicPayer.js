@@ -25,4 +25,3 @@ const PatientCharacteristicPayerSchema = DataElementSchema({
 });
 
 module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSchema;
-module.exports.PatientCharacteristicPayer = mongoose.model('PatientCharacteristicPayer', PatientCharacteristicPayerSchema);

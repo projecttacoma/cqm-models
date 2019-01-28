@@ -30,4 +30,3 @@ const InterventionPerformedSchema = DataElementSchema({
 });
 
 module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
-module.exports.InterventionPerformed = mongoose.model('InterventionPerformed', InterventionPerformedSchema);

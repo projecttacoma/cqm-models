@@ -31,4 +31,3 @@ const SubstanceRecommendedSchema = DataElementSchema({
 });
 
 module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
-module.exports.SubstanceRecommended = mongoose.model('SubstanceRecommended', SubstanceRecommendedSchema);

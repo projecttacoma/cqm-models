@@ -27,4 +27,3 @@ const AssessmentOrderSchema = DataElementSchema({
 });
 
 module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
-module.exports.AssessmentOrder = mongoose.model('AssessmentOrder', AssessmentOrderSchema);

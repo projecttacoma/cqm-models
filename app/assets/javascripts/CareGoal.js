@@ -26,4 +26,3 @@ const CareGoalSchema = DataElementSchema({
 });
 
 module.exports.CareGoalSchema = CareGoalSchema;
-module.exports.CareGoal = mongoose.model('CareGoal', CareGoalSchema);

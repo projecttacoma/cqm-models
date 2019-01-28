@@ -34,4 +34,3 @@ const LaboratoryTestPerformedSchema = DataElementSchema({
 });
 
 module.exports.LaboratoryTestPerformedSchema = LaboratoryTestPerformedSchema;
-module.exports.LaboratoryTestPerformed = mongoose.model('LaboratoryTestPerformed', LaboratoryTestPerformedSchema);

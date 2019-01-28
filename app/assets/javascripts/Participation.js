@@ -24,4 +24,3 @@ const ParticipationSchema = DataElementSchema({
 });
 
 module.exports.ParticipationSchema = ParticipationSchema;
-module.exports.Participation = mongoose.model('Participation', ParticipationSchema);

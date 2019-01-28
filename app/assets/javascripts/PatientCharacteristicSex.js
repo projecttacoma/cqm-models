@@ -24,4 +24,3 @@ const PatientCharacteristicSexSchema = DataElementSchema({
 });
 
 module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
-module.exports.PatientCharacteristicSex = mongoose.model('PatientCharacteristicSex', PatientCharacteristicSexSchema);

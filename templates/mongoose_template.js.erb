@@ -27,4 +27,3 @@ const <%= datatype -%>Schema = new mongoose.Schema({
 });
 <% end %>
 module.exports.<%= datatype %>Schema = <%= datatype %>Schema;
-module.exports.<%= datatype %> = mongoose.model('<%= datatype %>', <%= datatype %>Schema);

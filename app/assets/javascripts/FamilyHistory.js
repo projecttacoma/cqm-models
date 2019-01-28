@@ -26,4 +26,3 @@ const FamilyHistorySchema = DataElementSchema({
 });
 
 module.exports.FamilyHistorySchema = FamilyHistorySchema;
-module.exports.FamilyHistory = mongoose.model('FamilyHistory', FamilyHistorySchema);

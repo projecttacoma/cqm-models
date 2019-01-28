@@ -35,4 +35,3 @@ const ProcedurePerformedSchema = DataElementSchema({
 });
 
 module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
-module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
