@@ -12,11 +12,12 @@ module QDM
       datatypes = get_datatypes(File.join(File.dirname(__FILE__), '../modelinfo/qdm-modelinfo-5.4.xml'))
       patients = []
       cqm_patient = nil
+      qdm_patient = nil
       datatypes.each do |type|
         next if type.include? 'PatientCharacteristic'
         # 1 Patient Per data element type containing negated and non-negated type (if negatable)
-        if cqm_patient.nil? || patient_per_type
-          cqm_patient = QDM::BaseTypeGeneration.generate_cqm_patient
+        if cqm_patient.nil? || qdm_patient.nil? || patient_per_type
+          cqm_patient = QDM::BaseTypeGeneration.generate_cqm_patient(type)
           qdm_patient = QDM::BaseTypeGeneration.generate_qdm_patient
           # Add patient characteristics
           data_element = generate_loaded_datatype('QDM::PatientCharacteristicSex')

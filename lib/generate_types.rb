@@ -38,7 +38,7 @@ module QDM
       QDM::Interval.new(DateTime.new(2018), DateTime.new(2019))
     end
 
-    def self.generate_cqm_patient
+    def self.generate_cqm_patient(type)
       cqm_patient = CQM::Patient.new
       cqm_patient.givenNames = [type]
       cqm_patient.familyName = "#{type} Test Patient"
