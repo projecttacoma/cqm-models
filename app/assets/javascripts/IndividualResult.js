@@ -54,3 +54,4 @@ const IndividualResultSchema = mongoose.Schema(
 );
 
 module.exports.IndividualResultSchema = IndividualResultSchema;
+module.exports.IndividualResult = mongoose.model('IndividtualResult', IndividualResultSchema);

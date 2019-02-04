@@ -55,4 +55,4 @@ module.exports.MedicationOrderSchema = require('./MedicationOrder.js').Medicatio
 module.exports.SubstanceRecommendedSchema = require('./SubstanceRecommended.js').SubstanceRecommendedSchema;
 module.exports.InterventionRecommendedSchema = require('./InterventionRecommended.js').InterventionRecommendedSchema;
 module.exports.PhysicalExamPerformedSchema = require('./PhysicalExamPerformed.js').PhysicalExamPerformedSchema;
-// module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
+module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
