@@ -958,7 +958,7 @@ const IndividualResultSchema = mongoose.Schema(
 );
 
 module.exports.IndividualResultSchema = IndividualResultSchema;
-module.exports.IndividualResult = mongoose.model('IndividtualResult', IndividualResultSchema);
+module.exports.IndividualResult = mongoose.model('individual_result', IndividualResultSchema);
 
 },{"mongoose":242}],26:[function(require,module,exports){
 const mongoose = require('mongoose');
@@ -2443,6 +2443,7 @@ module.exports = Code;
 const mongoose = require('mongoose');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
+const IdSchema = require('../Id').IdSchema;
 
 const [Schema] = [mongoose.Schema];
 
@@ -2451,7 +2452,9 @@ function DataElementSchema(add, options) {
     dataElementCodes: { type: [] },
     description: { type: String },
     id: {
-      type: Schema.Types.ObjectId, ref: 'Id',
+      type: IdSchema, ref: 'Id',
+      default: { value: this._id ? this._id.toString() : mongoose.Types.ObjectId().toString(),
+                 namingSystem: null }
     },
   }, options);
 
@@ -2480,7 +2483,7 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-},{"./Code.js":63,"cql-execution":105,"mongoose":242}],65:[function(require,module,exports){
+},{"../Id":22,"./Code.js":63,"cql-execution":105,"mongoose":242}],65:[function(require,module,exports){
 const mongoose = require('mongoose');
 const cql = require('cql-execution');
 
