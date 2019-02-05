@@ -1,6 +1,7 @@
-let allDataElements = require('./AllDataElements.js');
-let allCqmModels = require('./cqm/AllCqmModels.js');
-module.exports = {...allDataElements, ...allCqmModels};
+const allDataElements = require('./AllDataElements.js');
+const allCqmModels = require('./cqm/AllCQMModels.js');
+
+module.exports = { ...allDataElements, ...allCqmModels };
 module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;
 module.exports.ResultSchema = require('./Result.js').ResultSchema;
