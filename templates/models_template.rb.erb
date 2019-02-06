@@ -31,6 +31,6 @@ require_relative '../../lib/generate_patients'
 # Generated models
 <%- datatypes.each_key do |datatype| -%>
 <%- next if datatype.underscore == 'id' -%>
-<%- next if datatype.underscore == 'facilityLocation' -%>
+<%- next if datatype.underscore == 'facility_location' -%>
 require_relative 'qdm/<%= datatype.underscore %>'
 <%- end -%>
