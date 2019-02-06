@@ -6,7 +6,7 @@ module QDM
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
     field :severity, type: QDM::Code
-    field :facilityLocation, type: QDM::Code
+    field :facilityLocation, type: QDM::FacilityLocation
     field :type, type: QDM::Code
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.120'
     field :qdmCategory, type: String, default: 'adverse_event'

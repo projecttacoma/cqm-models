@@ -10,7 +10,7 @@ module QDM
     field :resultDatetime, type: DateTime
     field :status, type: QDM::Code
     field :method, type: QDM::Code
-    field :facilityLocation, type: QDM::Code
+    field :facilityLocation, type: QDM::FacilityLocation
     field :negationRationale, type: QDM::Code
     field :components, type: Array
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.23'
