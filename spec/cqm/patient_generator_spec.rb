@@ -5,8 +5,8 @@ RSpec.describe QDM::PatientGeneration do
     count = 0
     # Each patient gets 4 charactaristics by default
     patient_characteristics = 4
-    stacked_patient = QDM::PatientGeneration.generate_exhastive_data_element_patients(false)[0]
-    stacked_patients = QDM::PatientGeneration.generate_exhastive_data_element_patients(true)
+    stacked_patient = QDM::PatientGeneration.generate_exhastive_data_element_patients(false, 'qdm-modelinfo-5.4.xml')[0]
+    stacked_patients = QDM::PatientGeneration.generate_exhastive_data_element_patients(true, 'qdm-modelinfo-5.4.xml')
     stacked_patients.each do |patient|
       count += (patient.qdmPatient.dataElements.size - patient_characteristics)
     end

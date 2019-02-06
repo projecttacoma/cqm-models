@@ -30,6 +30,20 @@ JavaScript: `app/assets/javascripts/`
 
 The JavaScript models as-is are intended to be used server side under something like node.js. A browserified version that can be used client side is included as `dist/index.js`.
 
+## QDM Patient Generator Script (lib/generate_patients.rb)
+
+The QDM patient generator script can be used to create CQMPatients that have a QDMPatient which contains every data element type specified in the model-info file
+
+To generate a set of patients using the most recent model-info file, each of which has a single data element in addition to the 5 PatientCharactaristic types execute the following:
+```
+QDM::PatientGeneration.generate_exhastive_data_element_patients()
+```
+
+To generate a single patient that has every data element from a specific model-info file execute the following:
+```
+QDM::PatientGeneration.generate_exhastive_data_element_patients(false, 'qdm-modelinfo-5.3.xml')
+```
+
 ## Running the tests
 
 ### To run frontend Jasmine tests 
