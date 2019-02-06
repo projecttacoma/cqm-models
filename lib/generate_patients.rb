@@ -63,7 +63,7 @@ module QDM
       data_element = QDM.const_get(data_element_type).new
       fields = data_element.typed_attributes.keys
       fields.each do |field_name|
-        # Ignore these fields, they are used by mongoose
+        # Ignore these fields, they are used by mongo
         next if %w[_id _type].include? field_name
         if !data_element[field_name] || data_element[field_name] == []
           populate_fields(field_name, data_element, negate_data_element)
