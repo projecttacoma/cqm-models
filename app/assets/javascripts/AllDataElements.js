@@ -58,6 +58,7 @@ const { SubstanceRecommendedSchema } = require('./SubstanceRecommended.js');
 const { InterventionRecommendedSchema } = require('./InterventionRecommended.js');
 const { PhysicalExamPerformedSchema } = require('./PhysicalExamPerformed.js');
 const { QDMPatientSchema } = require('./QDMPatient.js');
+const { IndividualResultSchema } = require('./IndividualResult.js');
 
 module.exports.IdSchema = IdSchema;
 module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
@@ -117,6 +118,7 @@ module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
 module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
 module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
 module.exports.QDMPatientSchema = QDMPatientSchema;
+module.exports.IndividualResultSchema = IndividualResultSchema;
 
 module.exports.Id = mongoose.model('Id', IdSchema);
 module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
@@ -175,4 +177,5 @@ module.exports.MedicationOrder = mongoose.model('MedicationOrder', MedicationOrd
 module.exports.SubstanceRecommended = mongoose.model('SubstanceRecommended', SubstanceRecommendedSchema);
 module.exports.InterventionRecommended = mongoose.model('InterventionRecommended', InterventionRecommendedSchema);
 module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);
-// module.exports.QDMPatient = mongoose.model('QDMPatient', QDMPatientSchema);
+module.exports.QDMPatient = mongoose.model('QDMPatient', QDMPatientSchema);
+module.exports.IndividualResult = mongoose.model('individual_result', IndividualResultSchema);

@@ -1,9 +1,18 @@
-const allDataElements = require('./AllDataElements.js');
-const allCqmModels = require('./cqm/AllCQMModels.js');
-
-module.exports = { ...allDataElements, ...allCqmModels };
+module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;
 module.exports.ResultSchema = require('./Result.js').ResultSchema;
-module.exports.IndividualResultSchema = require('./IndividualResult.js').IndividualResultSchema;
-module.exports.IndividualResult = require('./IndividualResult.js').IndividualResult;
+module.exports.Measure = require('./cqm/Measure.js').Measure;
+module.exports.MeasureSchema = require('./cqm/Measure.js').MeasureSchema;
+module.exports.MeasurePackage = require('./cqm/MeasurePackage.js').MeasurePackage;
+module.exports.MeasurePackageSchema = require('./cqm/MeasurePackage.js').MeasurePackageSchema;
+module.exports.StatementDependency = require('./cqm/CQLStatementDependency.js').StatementDependency;
+module.exports.StatementDependencySchema = require('./cqm/CQLStatementDependency.js').StatementDependencySchema;
+module.exports.CQLLibrary = require('./cqm/CQLLibrary.js').CQLLibrary;
+module.exports.CQLLibrarySchema = require('./cqm/CQLLibrary.js').CQLLibrarySchema;
+module.exports.ValueSet = require('./cqm/ValueSet.js').ValueSet;
+module.exports.ValueSetSchema = require('./cqm/ValueSet.js').ValueSetSchema;
+module.exports.Concept = require('./cqm/Concept.js').Concept;
+module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
+module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
+module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;

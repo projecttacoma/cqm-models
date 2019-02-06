@@ -3,11 +3,14 @@ const mongoose = require('mongoose');
 <%- datatypes.each do |datatype, _| -%>
 const { <%= datatype %>Schema } = require('./<%= datatype %>.js');
 <%- end -%>
+const { IndividualResultSchema } = require('./IndividualResult.js');
 
 <%- datatypes.each do |datatype, _| -%>
 module.exports.<%= datatype %>Schema = <%= datatype %>Schema;
 <%- end -%>
+module.exports.IndividualResultSchema = IndividualResultSchema;
 
 <%- datatypes.each do |datatype, _| -%>
 module.exports.<%= datatype %> = mongoose.model('<%= datatype %>', <%= datatype %>Schema);
 <%- end -%>
+module.exports.IndividualResult = mongoose.model('individual_result', IndividualResultSchema);
