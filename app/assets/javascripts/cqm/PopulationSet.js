@@ -43,6 +43,14 @@ const PopulationSetSchema = new mongoose.Schema({
   observations: [ObservationSchema],
 });
 
+if (!PopulationSetSchema.options.toObject) PopulationSetSchema.options.toObject = {};
+PopulationSetSchema.options.toObject.transform = function (doc, ret, options) {
+  // remove the _id of every document before returning the result
+  delete ret._id;
+  delete ret._type;
+  return ret;
+}
+
 module.exports.StratificationSchema = StratificationSchema;
 class Stratification extends mongoose.Document {
   constructor(object) {
