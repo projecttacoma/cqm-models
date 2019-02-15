@@ -30,6 +30,7 @@
     "test": "istanbul cover jasmine -x 'spec/**/*'",
     "lint": "eslint 'app/assets/javascripts/**/*.js'",
     "dist": "yarn && browserify app/assets/javascripts/index.js > dist/index.js",
-    "dist_test": "browserify app/assets/javascripts/index.js > tmp/dist/index.js"
+    "dist_test": "browserify app/assets/javascripts/index.js > tmp/dist/index.js",
+    "build-cql": "cd ./node_modules/cql-execution && yarn install && cd ../../"
   }
 }
