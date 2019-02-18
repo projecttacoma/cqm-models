@@ -38,7 +38,6 @@ matrix:
           - "node_modules"
       script:
         - yarn install
-        - ./bin/build_cql_execution.sh
         - yarn run lint
         - yarn run test
         - ./bin/validate_dist.sh
