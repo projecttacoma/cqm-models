@@ -3,7 +3,11 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const AllDataElements = require('./AllDataElements');
+const AllDataElementSchemas = require('./AllDataElementSchemas');
+<%- datatypes.each do |datatype, _| -%>
+<%- next if datatype == 'QDMPatient' -%>
+const <%= datatype %>Schema = require('./<%= datatype %>');
+<%- end -%>
 
 const [Schema, Number, String, Mixed] = [
   mongoose.Schema,
@@ -16,9 +20,13 @@ const QDMPatientSchema = new Schema({
   <%- for attribute in attrs_with_extras -%>
   <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
   <%- end %>
-  // These are the "data criteria", or QDM datatype elements that exist on a
-  // patient.
-  dataElements: [],
+  // "data criteria", or QDM datatype elements that may exist on a patient.
+  <%- datatypes.each do |datatype, _| -%>
+  <%- next if datatype == 'QDMPatient' -%>
+  <%= datatype %>:  [<%= datatype %>Schema],
+  <%- end -%>
+
+
   // This field is for application specific information only. If both Bonnie
   // Cypress use a common field, it should be made a field on this model,
   // and not put into extendedData.
@@ -27,20 +35,6 @@ const QDMPatientSchema = new Schema({
     default: {},
   },
 }, { id: false });
-
-// After initialization of a Patient model, initialize every individual data element
-// to its respective Mongoose Model
-QDMPatientSchema.methods.initializeDataElements = function initializeDataElements() {
-  let typeStripped;
-  const dataElementsInit = [];
-  this.dataElements.forEach((element) => {
-    typeStripped = element._type.replace(/QDM::/, '');
-    dataElementsInit.push(AllDataElements[typeStripped](element));
-  });
-  this.set({ dataElements: dataElementsInit });
-};
-
-QDMPatientSchema.queue('initializeDataElements');
 
 QDMPatientSchema.methods.id = function id() {
   return this._id;
@@ -134,120 +128,11 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
   return [];
 };
 
-QDMPatientSchema.methods.adverse_events = function adverse_events() {
-  return this.getDataElements({ qdmCategory: 'adverse_event' });
-};
-
-QDMPatientSchema.methods.allergies = function allergies() {
-  return this.getDataElements({ qdmCategory: 'allergy' });
-};
-
-QDMPatientSchema.methods.assessments = function assessments() {
-  return this.getDataElements({ qdmCategory: 'assessment' });
-};
-
-QDMPatientSchema.methods.care_experiences = function care_experiences() {
-  return this.getDataElements({ qdmCategory: 'care_experience' });
-};
-
-QDMPatientSchema.methods.care_goals = function care_goals() {
-  return this.getDataElements({ qdmCategory: 'care_goal' });
-};
-
-QDMPatientSchema.methods.communications = function communications() {
-  return this.getDataElements({ qdmCategory: 'communication' });
-};
-
-QDMPatientSchema.methods.conditions = function conditions() {
-  return this.getDataElements({ qdmCategory: 'condition' });
-};
-
-QDMPatientSchema.methods.devices = function devices() {
-  return this.getDataElements({ qdmCategory: 'device' });
-};
-
-QDMPatientSchema.methods.diagnostic_studies = function diagnostic_studies() {
-  return this.getDataElements({ qdmCategory: 'diagnostic_study' });
-};
-
-QDMPatientSchema.methods.encounters = function encounters() {
-  return this.getDataElements({ qdmCategory: 'encounter' });
-};
-
-QDMPatientSchema.methods.family_history = function family_history() {
-  return this.getDataElements({ qdmCategory: 'family_history' });
-};
-
-QDMPatientSchema.methods.functional_statuses = function functional_statuses() {
-  return this.getDataElements({ qdmCategory: 'functional_status' });
-};
-
-QDMPatientSchema.methods.immunizations = function immunizations() {
-  return this.getDataElements({ qdmCategory: 'immunization' });
-};
-
-QDMPatientSchema.methods.interventions = function interventions() {
-  return this.getDataElements({ qdmCategory: 'intervention' });
-};
-
-QDMPatientSchema.methods.laboratory_tests = function laboratory_tests() {
-  return this.getDataElements({ qdmCategory: 'laboratory_test' });
-};
-
-QDMPatientSchema.methods.medical_equipment = function medical_equipment() {
-  return this.getDataElements({ qdmCategory: 'medical_equipment' });
-};
-
-QDMPatientSchema.methods.medications = function medications() {
-  return this.getDataElements({ qdmCategory: 'medication' });
-};
-
-QDMPatientSchema.methods.physical_exams = function physical_exams() {
-  return this.getDataElements({ qdmCategory: 'physical_exam' });
-};
-
-QDMPatientSchema.methods.preferences = function preferences() {
-  return this.getDataElements({ qdmCategory: 'preference' });
-};
-
-QDMPatientSchema.methods.provider_characteristics = function provider_characteristics() {
-  return this.getDataElements({ qdmCategory: 'provider_characteristic' });
-};
-
-QDMPatientSchema.methods.procedures = function procedures() {
-  return this.getDataElements({ qdmCategory: 'procedure' });
-};
-
-QDMPatientSchema.methods.results = function results() {
-  return this.getDataElements({ qdmCategory: 'result' });
-};
-
-QDMPatientSchema.methods.risk_category_assessments = function risk_category_assessments() {
-  return this.getDataElements({ qdmCategory: 'risk_category_assessment' });
-};
-
-QDMPatientSchema.methods.social_history = function social_history() {
-  return this.getDataElements({ qdmCategory: 'social_history' });
-};
-
-QDMPatientSchema.methods.substances = function substances() {
-  return this.getDataElements({ qdmCategory: 'substance' });
-};
-
-QDMPatientSchema.methods.symptoms = function symptoms() {
-  return this.getDataElements({ qdmCategory: 'symptom' });
-};
-
-QDMPatientSchema.methods.system_characteristics = function system_characteristics() {
-  return this.getDataElements({ qdmCategory: 'system_characteristic' });
-};
-
-QDMPatientSchema.methods.transfers = function transfers() {
-  return this.getDataElements({ qdmCategory: 'transfer' });
-};
-
-QDMPatientSchema.methods.vital_signs = function vital_signs() {
-  return this.getDataElements({ qdmCategory: 'vital_sign' });
-};
+<%# <%- datatypes.each do |datatype, _| -%>
+<%# <%- next if datatype == 'QDMPatient' -%>
+<%# QDMPatientSchema.methods.<%= datatype %> <%#= function <%= datatype %>
+  <%# return this.<%= datatype %>
+<%# } %>
+<%# <%- end -%>
 
 module.exports.QDMPatientSchema = QDMPatientSchema;

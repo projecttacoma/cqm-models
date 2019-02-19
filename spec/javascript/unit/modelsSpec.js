@@ -32,6 +32,7 @@ const Id = Mongoose.model('Id', IdSchema);
 
 describe('QDMPatient', () => {
   beforeEach( () => {
+    this.QDMPatient = new document 
     this.QDMPatient = Mongoose.model('QDMPatient', QDMPatientSchema);
     this.AdverseEvent = Mongoose.model('AdverseEvent', AdverseEventSchema);
     this.CareGoal = Mongoose.model('CareGoal', CareGoalSchema);
