@@ -27,7 +27,7 @@
     "jasmine": "^2.9.0"
   },
   "scripts": {
-    "postinstall": "./bin/build_cql_execution.sh",
+    "prepublish": "./bin/build_cql_execution.sh",
     "test": "istanbul cover jasmine -x 'spec/**/*'",
     "lint": "eslint 'app/assets/javascripts/**/*.js'",
     "dist": "yarn && browserify app/assets/javascripts/index.js > dist/index.js",
