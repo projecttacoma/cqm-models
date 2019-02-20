@@ -24,4 +24,9 @@ const ParticipationSchema = DataElementSchema({
 });
 
 module.exports.ParticipationSchema = ParticipationSchema;
-module.exports.Participation = mongoose.model('Participation', ParticipationSchema);
+class Participation extends mongoose.Document {
+  constructor(object) {
+    super(object, ParticipationSchema);
+  }
+}
+module.exports.Participation = Participation;

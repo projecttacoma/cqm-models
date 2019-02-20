@@ -54,4 +54,9 @@ const IndividualResultSchema = mongoose.Schema(
 );
 
 module.exports.IndividualResultSchema = IndividualResultSchema;
-module.exports.IndividualResult = mongoose.model('individual_result', IndividualResultSchema);
+class IndividualResult extends mongoose.Document {
+  constructor(object) {
+    super(object, IndividualResultSchema);
+  }
+}
+module.exports.IndividualResult = IndividualResult;

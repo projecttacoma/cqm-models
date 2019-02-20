@@ -31,4 +31,9 @@ const SubstanceRecommendedSchema = DataElementSchema({
 });
 
 module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
-module.exports.SubstanceRecommended = mongoose.model('SubstanceRecommended', SubstanceRecommendedSchema);
+class SubstanceRecommended extends mongoose.Document {
+  constructor(object) {
+    super(object, SubstanceRecommendedSchema);
+  }
+}
+module.exports.SubstanceRecommended = SubstanceRecommended;

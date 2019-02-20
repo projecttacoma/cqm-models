@@ -23,4 +23,9 @@ const ComponentSchema = new mongoose.Schema({
 });
 
 module.exports.ComponentSchema = ComponentSchema;
-module.exports.Component = mongoose.model('Component', ComponentSchema);
+class Component extends mongoose.Document {
+  constructor(object) {
+    super(object, ComponentSchema);
+  }
+}
+module.exports.Component = Component;

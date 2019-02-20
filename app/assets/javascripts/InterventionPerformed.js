@@ -30,4 +30,9 @@ const InterventionPerformedSchema = DataElementSchema({
 });
 
 module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
-module.exports.InterventionPerformed = mongoose.model('InterventionPerformed', InterventionPerformedSchema);
+class InterventionPerformed extends mongoose.Document {
+  constructor(object) {
+    super(object, InterventionPerformedSchema);
+  }
+}
+module.exports.InterventionPerformed = InterventionPerformed;

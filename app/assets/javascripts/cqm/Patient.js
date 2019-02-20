@@ -25,4 +25,9 @@ const PatientSchema = new Schema({
 }, { id: false });
 
 module.exports.PatientSchema = PatientSchema;
-module.exports.Patient = mongoose.model('Patient', PatientSchema);
+class Patient extends mongoose.Document {
+  constructor(object) {
+    super(object, PatientSchema);
+  }
+}
+module.exports.Patient = Patient;

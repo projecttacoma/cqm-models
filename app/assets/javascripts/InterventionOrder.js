@@ -27,4 +27,9 @@ const InterventionOrderSchema = DataElementSchema({
 });
 
 module.exports.InterventionOrderSchema = InterventionOrderSchema;
-module.exports.InterventionOrder = mongoose.model('InterventionOrder', InterventionOrderSchema);
+class InterventionOrder extends mongoose.Document {
+  constructor(object) {
+    super(object, InterventionOrderSchema);
+  }
+}
+module.exports.InterventionOrder = InterventionOrder;

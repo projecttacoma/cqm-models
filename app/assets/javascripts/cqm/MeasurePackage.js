@@ -18,4 +18,9 @@ const MeasurePackageSchema = new mongoose.Schema(
 );
 
 module.exports.MeasurePackageSchema = MeasurePackageSchema;
-module.exports.MeasurePackage = mongoose.model('measure_package', MeasurePackageSchema);
+class MeasurePackage extends mongoose.Document {
+  constructor(object) {
+    super(object, MeasurePackageSchema);
+  }
+}
+module.exports.MeasurePackage = MeasurePackage;

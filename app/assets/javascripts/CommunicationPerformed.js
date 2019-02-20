@@ -32,4 +32,9 @@ const CommunicationPerformedSchema = DataElementSchema({
 });
 
 module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
-module.exports.CommunicationPerformed = mongoose.model('CommunicationPerformed', CommunicationPerformedSchema);
+class CommunicationPerformed extends mongoose.Document {
+  constructor(object) {
+    super(object, CommunicationPerformedSchema);
+  }
+}
+module.exports.CommunicationPerformed = CommunicationPerformed;

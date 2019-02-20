@@ -24,4 +24,9 @@ const ProviderCareExperienceSchema = DataElementSchema({
 });
 
 module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
-module.exports.ProviderCareExperience = mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
+class ProviderCareExperience extends mongoose.Document {
+  constructor(object) {
+    super(object, ProviderCareExperienceSchema);
+  }
+}
+module.exports.ProviderCareExperience = ProviderCareExperience;

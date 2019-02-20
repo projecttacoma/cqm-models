@@ -30,4 +30,9 @@ const ImmunizationAdministeredSchema = DataElementSchema({
 });
 
 module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
-module.exports.ImmunizationAdministered = mongoose.model('ImmunizationAdministered', ImmunizationAdministeredSchema);
+class ImmunizationAdministered extends mongoose.Document {
+  constructor(object) {
+    super(object, ImmunizationAdministeredSchema);
+  }
+}
+module.exports.ImmunizationAdministered = ImmunizationAdministered;

@@ -28,4 +28,9 @@ const PhysicalExamOrderSchema = DataElementSchema({
 });
 
 module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
-module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
+class PhysicalExamOrder extends mongoose.Document {
+  constructor(object) {
+    super(object, PhysicalExamOrderSchema);
+  }
+}
+module.exports.PhysicalExamOrder = PhysicalExamOrder;

@@ -28,4 +28,9 @@ const MedicationActiveSchema = DataElementSchema({
 });
 
 module.exports.MedicationActiveSchema = MedicationActiveSchema;
-module.exports.MedicationActive = mongoose.model('MedicationActive', MedicationActiveSchema);
+class MedicationActive extends mongoose.Document {
+  constructor(object) {
+    super(object, MedicationActiveSchema);
+  }
+}
+module.exports.MedicationActive = MedicationActive;

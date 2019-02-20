@@ -23,4 +23,9 @@ const FacilityLocationSchema = new mongoose.Schema({
 });
 
 module.exports.FacilityLocationSchema = FacilityLocationSchema;
-module.exports.FacilityLocation = mongoose.model('FacilityLocation', FacilityLocationSchema);
+class FacilityLocation extends mongoose.Document {
+  constructor(object) {
+    super(object, FacilityLocationSchema);
+  }
+}
+module.exports.FacilityLocation = FacilityLocation;

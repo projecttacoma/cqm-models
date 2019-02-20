@@ -24,4 +24,9 @@ const PatientCharacteristicSchema = DataElementSchema({
 });
 
 module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
-module.exports.PatientCharacteristic = mongoose.model('PatientCharacteristic', PatientCharacteristicSchema);
+class PatientCharacteristic extends mongoose.Document {
+  constructor(object) {
+    super(object, PatientCharacteristicSchema);
+  }
+}
+module.exports.PatientCharacteristic = PatientCharacteristic;

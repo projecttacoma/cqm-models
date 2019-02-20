@@ -28,4 +28,9 @@ const DiagnosisSchema = DataElementSchema({
 });
 
 module.exports.DiagnosisSchema = DiagnosisSchema;
-module.exports.Diagnosis = mongoose.model('Diagnosis', DiagnosisSchema);
+class Diagnosis extends mongoose.Document {
+  constructor(object) {
+    super(object, DiagnosisSchema);
+  }
+}
+module.exports.Diagnosis = Diagnosis;

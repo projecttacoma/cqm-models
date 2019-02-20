@@ -28,4 +28,9 @@ const EncounterOrderSchema = DataElementSchema({
 });
 
 module.exports.EncounterOrderSchema = EncounterOrderSchema;
-module.exports.EncounterOrder = mongoose.model('EncounterOrder', EncounterOrderSchema);
+class EncounterOrder extends mongoose.Document {
+  constructor(object) {
+    super(object, EncounterOrderSchema);
+  }
+}
+module.exports.EncounterOrder = EncounterOrder;

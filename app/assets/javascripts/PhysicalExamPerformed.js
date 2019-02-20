@@ -32,4 +32,9 @@ const PhysicalExamPerformedSchema = DataElementSchema({
 });
 
 module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
-module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);
+class PhysicalExamPerformed extends mongoose.Document {
+  constructor(object) {
+    super(object, PhysicalExamPerformedSchema);
+  }
+}
+module.exports.PhysicalExamPerformed = PhysicalExamPerformed;

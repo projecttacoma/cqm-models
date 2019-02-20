@@ -35,4 +35,9 @@ const MedicationDispensedSchema = DataElementSchema({
 });
 
 module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
-module.exports.MedicationDispensed = mongoose.model('MedicationDispensed', MedicationDispensedSchema);
+class MedicationDispensed extends mongoose.Document {
+  constructor(object) {
+    super(object, MedicationDispensedSchema);
+  }
+}
+module.exports.MedicationDispensed = MedicationDispensed;

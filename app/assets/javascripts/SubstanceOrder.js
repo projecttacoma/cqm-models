@@ -32,4 +32,9 @@ const SubstanceOrderSchema = DataElementSchema({
 });
 
 module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
-module.exports.SubstanceOrder = mongoose.model('SubstanceOrder', SubstanceOrderSchema);
+class SubstanceOrder extends mongoose.Document {
+  constructor(object) {
+    super(object, SubstanceOrderSchema);
+  }
+}
+module.exports.SubstanceOrder = SubstanceOrder;

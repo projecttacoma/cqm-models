@@ -29,4 +29,9 @@ const ProcedureRecommendedSchema = DataElementSchema({
 });
 
 module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
-module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);
+class ProcedureRecommended extends mongoose.Document {
+  constructor(object) {
+    super(object, ProcedureRecommendedSchema);
+  }
+}
+module.exports.ProcedureRecommended = ProcedureRecommended;

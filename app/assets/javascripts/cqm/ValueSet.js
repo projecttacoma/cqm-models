@@ -18,4 +18,9 @@ const ValueSetSchema = new mongoose.Schema(
 );
 
 module.exports.ValueSetSchema = ValueSetSchema;
-module.exports.ValueSet = mongoose.model('value_set', ValueSetSchema);
+class ValueSet extends mongoose.Document {
+  constructor(object) {
+    super(object, ValueSetSchema);
+  }
+}
+module.exports.ValueSet = ValueSet;

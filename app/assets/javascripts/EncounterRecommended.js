@@ -28,4 +28,9 @@ const EncounterRecommendedSchema = DataElementSchema({
 });
 
 module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
-module.exports.EncounterRecommended = mongoose.model('EncounterRecommended', EncounterRecommendedSchema);
+class EncounterRecommended extends mongoose.Document {
+  constructor(object) {
+    super(object, EncounterRecommendedSchema);
+  }
+}
+module.exports.EncounterRecommended = EncounterRecommended;

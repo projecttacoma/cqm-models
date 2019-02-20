@@ -80,9 +80,18 @@ const MeasureSchema = new mongoose.Schema(
   }
 );
 
-MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => ['STRAT', 'IPP', 'DENOM', 'DENEX', 'NUMER', 'NUMEX', 'DENEXCEP', 'MSRPOPL', 'OBSERV', 'MSRPOPLEX']);
-
-MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex']);
-
 module.exports.MeasureSchema = MeasureSchema;
-module.exports.Measure = mongoose.model('measure', MeasureSchema);
+class Measure extends mongoose.Document {
+  constructor(object) {
+    super(object, MeasureSchema);
+  }
+
+  static getAllPopulationCodes() {
+    return ['STRAT', 'IPP', 'DENOM', 'DENEX', 'NUMER', 'NUMEX', 'DENEXCEP', 'MSRPOPL', 'OBSERV', 'MSRPOPLEX'];
+  }
+
+  static getCqlSkipStatements() {
+    return ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex'];
+  }
+}
+module.exports.Measure = Measure;

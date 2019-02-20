@@ -28,4 +28,9 @@ const AllergyIntoleranceSchema = DataElementSchema({
 });
 
 module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
-module.exports.AllergyIntolerance = mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);
+class AllergyIntolerance extends mongoose.Document {
+  constructor(object) {
+    super(object, AllergyIntoleranceSchema);
+  }
+}
+module.exports.AllergyIntolerance = AllergyIntolerance;

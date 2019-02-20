@@ -34,4 +34,9 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
 });
 
 module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
-module.exports.DiagnosticStudyPerformed = mongoose.model('DiagnosticStudyPerformed', DiagnosticStudyPerformedSchema);
+class DiagnosticStudyPerformed extends mongoose.Document {
+  constructor(object) {
+    super(object, DiagnosticStudyPerformedSchema);
+  }
+}
+module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;

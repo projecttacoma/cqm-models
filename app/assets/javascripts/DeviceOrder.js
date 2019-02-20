@@ -27,4 +27,9 @@ const DeviceOrderSchema = DataElementSchema({
 });
 
 module.exports.DeviceOrderSchema = DeviceOrderSchema;
-module.exports.DeviceOrder = mongoose.model('DeviceOrder', DeviceOrderSchema);
+class DeviceOrder extends mongoose.Document {
+  constructor(object) {
+    super(object, DeviceOrderSchema);
+  }
+}
+module.exports.DeviceOrder = DeviceOrder;

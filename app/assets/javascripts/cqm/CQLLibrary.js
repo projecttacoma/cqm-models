@@ -23,4 +23,9 @@ const CQLLibrarySchema = new mongoose.Schema(
 );
 
 module.exports.CQLLibrarySchema = CQLLibrarySchema;
-module.exports.CQLLibrary = mongoose.model('cql_library', CQLLibrarySchema);
+class CQLLibrary extends mongoose.Document {
+  constructor(object) {
+    super(object, CQLLibrarySchema);
+  }
+}
+module.exports.CQLLibrary = CQLLibrary;

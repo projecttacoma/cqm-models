@@ -27,4 +27,9 @@ const AssessmentRecommendedSchema = DataElementSchema({
 });
 
 module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
-module.exports.AssessmentRecommended = mongoose.model('AssessmentRecommended', AssessmentRecommendedSchema);
+class AssessmentRecommended extends mongoose.Document {
+  constructor(object) {
+    super(object, AssessmentRecommendedSchema);
+  }
+}
+module.exports.AssessmentRecommended = AssessmentRecommended;

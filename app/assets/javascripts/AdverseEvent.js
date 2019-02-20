@@ -28,4 +28,9 @@ const AdverseEventSchema = DataElementSchema({
 });
 
 module.exports.AdverseEventSchema = AdverseEventSchema;
-module.exports.AdverseEvent = mongoose.model('AdverseEvent', AdverseEventSchema);
+class AdverseEvent extends mongoose.Document {
+  constructor(object) {
+    super(object, AdverseEventSchema);
+  }
+}
+module.exports.AdverseEvent = AdverseEvent;
