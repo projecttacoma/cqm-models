@@ -2,8 +2,11 @@ module QDM
   # app/models/qdm/component.rb
   class Component < DataElement
     include Mongoid::Document
-    field :code, type: QDM::Code
-    field :result
-    field :qdmVersion, type: String, default: '5.4'
+    field :code
+    field :value
+    field :dataAbsentReason
+    field :interpretation
+    field :referenceRange
+    field :qdmVersion, type: String, default: '4.0.0'
   end
 end

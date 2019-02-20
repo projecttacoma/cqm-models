@@ -15,9 +15,12 @@ const [Number, String] = [
 ];
 
 const ComponentSchema = new mongoose.Schema({
-  code: Code,
-  result: Any,
-  qdmVersion: { type: String, default: '5.4' },
+  code: Any,
+  value: Any,
+  dataAbsentReason: Any,
+  interpretation: Any,
+  referenceRange: Any,
+  qdmVersion: { type: String, default: '4.0.0' },
   _type: { type: String, default: 'Component' },
 
 });

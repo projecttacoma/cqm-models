@@ -1,0 +1,54 @@
+module QDM
+  # app/models/qdm/activity_definition.rb
+  class ActivityDefinition < DataElement
+    include Mongoid::Document
+    embedded_in :patient
+    field :url
+    field :identifier
+    field :version
+    field :name
+    field :title
+    field :subtitle
+    field :status
+    field :experimental
+    field :subject
+    field :date
+    field :publisher
+    field :contact
+    field :description
+    field :useContext
+    field :jurisdiction
+    field :purpose
+    field :usage
+    field :copyright
+    field :approvalDate
+    field :lastReviewDate
+    field :effectivePeriod
+    field :topic
+    field :author
+    field :editor
+    field :reviewer
+    field :endorser
+    field :relatedArtifact
+    field :library
+    field :kind
+    field :profile
+    field :code
+    field :intent
+    field :priority
+    field :doNotPerform
+    field :timing
+    field :location
+    field :participant
+    field :product
+    field :quantity
+    field :dosage
+    field :bodySite
+    field :specimenRequirement
+    field :observationRequirement
+    field :observationResultRequirement
+    field :transform
+    field :dynamicValue
+    field :qdmVersion, type: String, default: '4.0.0'
+  end
+end

@@ -3,8 +3,7 @@ module QDM
   class Id
     include Mongoid::Document
     embedded_in :data_element
-    field :namingSystem, type: String
-    field :value, type: String
-    field :qdmVersion, type: String, default: '5.4'
+    field :value
+    field :qdmVersion, type: String, default: '4.0.0'
   end
 end

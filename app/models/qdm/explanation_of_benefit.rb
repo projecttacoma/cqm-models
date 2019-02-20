@@ -1,0 +1,51 @@
+module QDM
+  # app/models/qdm/explanation_of_benefit.rb
+  class ExplanationOfBenefit < DataElement
+    include Mongoid::Document
+    embedded_in :patient
+    field :identifier
+    field :status
+    field :type
+    field :subType
+    field :use
+    field :patient
+    field :billablePeriod
+    field :created
+    field :enterer
+    field :insurer
+    field :provider
+    field :priority
+    field :fundsReserveRequested
+    field :fundsReserve
+    field :related
+    field :prescription
+    field :originalPrescription
+    field :payee
+    field :referral
+    field :facility
+    field :claim
+    field :claimResponse
+    field :outcome
+    field :disposition
+    field :preAuthRef
+    field :preAuthRefPeriod
+    field :careTeam
+    field :supportingInfo
+    field :diagnosis
+    field :procedure
+    field :precedence
+    field :insurance
+    field :accident
+    field :item
+    field :addItem
+    field :adjudication
+    field :total
+    field :payment
+    field :formQDM::Code
+    field :form
+    field :processNote
+    field :benefitPeriod
+    field :benefitBalance
+    field :qdmVersion, type: String, default: '4.0.0'
+  end
+end

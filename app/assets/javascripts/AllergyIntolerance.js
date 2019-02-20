@@ -15,14 +15,26 @@ const [Number, String] = [
 ];
 
 const AllergyIntoleranceSchema = DataElementSchema({
-  authorDatetime: DateTime,
-  prevalencePeriod: Interval,
-  type: Code,
-  severity: Code,
+  identifier: Any,
+  clinicalStatus: Any,
+  verificationStatus: Any,
+  type: Any,
+  category: Any,
+  criticality: Any,
+  code: Any,
+  patient: Any,
+  encounter: Any,
+  onset: Any,
+  recordedDate: Any,
+  recorder: Any,
+  asserter: Any,
+  lastOccurrence: Any,
+  note: Any,
+  reaction: Any,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.119' },
   qdmCategory: { type: String, default: 'allergy' },
   qdmStatus: { type: String, default: 'intolerance' },
-  qdmVersion: { type: String, default: '5.4' },
+  qdmVersion: { type: String, default: '4.0.0' },
   _type: { type: String, default: 'AllergyIntolerance' },
 
 });

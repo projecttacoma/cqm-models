@@ -13,8 +13,23 @@ const [Schema, Number, String, Mixed] = [
 ];
 
 const QDMPatientSchema = new Schema({
-  birthDatetime: DateTime,
-  qdmVersion: { type: String, default: '5.4' },
+  identifier: Any,
+  active: Any,
+  name: Any,
+  telecom: Any,
+  gender: Any,
+  birthDate: Any,
+  deceased: Any,
+  address: Any,
+  maritalStatus: Any,
+  multipleBirth: Any,
+  photo: Any,
+  contact: Any,
+  communication: Any,
+  generalPractitioner: Any,
+  managingOrganization: Any,
+  link: Any,
+  qdmVersion: { type: String, default: '4.0.0' },
   _type: { type: String, default: 'QdmPatient' },
 
   // These are the "data criteria", or QDM datatype elements that exist on a

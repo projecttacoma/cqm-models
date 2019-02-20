@@ -15,14 +15,11 @@ const [Number, String] = [
 ];
 
 const DiagnosisSchema = DataElementSchema({
-  authorDatetime: DateTime,
-  prevalencePeriod: Interval,
-  anatomicalLocationSite: Code,
-  severity: Code,
+  diagnosis: Any,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.110' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
   qdmCategory: { type: String, default: 'condition' },
-  qdmVersion: { type: String, default: '5.4' },
+  qdmVersion: { type: String, default: '4.0.0' },
   _type: { type: String, default: 'Diagnosis' },
 
 });
