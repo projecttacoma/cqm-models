@@ -1,5 +1,5 @@
 const cql = require('cql-execution');
-const Mongoose = require('mongoose');
+const Mongoose = require('mongoose/browser');
 const MedicationOrderSchema = require('./../../../app/assets/javascripts/index.js').MedicationOrderSchema;
 const PatientSchema = require('./../../../app/assets/javascripts/index.js').PatientSchema;
 const QDMPatientSchema = require('./../../../app/assets/javascripts/index.js').QDMPatientSchema;

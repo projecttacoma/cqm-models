@@ -1,5 +1,5 @@
 (function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s}return e})()({1:[function(require,module,exports){
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -31,7 +31,7 @@ const AdverseEventSchema = DataElementSchema({
 module.exports.AdverseEventSchema = AdverseEventSchema;
 module.exports.AdverseEvent = mongoose.model('AdverseEvent', AdverseEventSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],2:[function(require,module,exports){
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],2:[function(require,module,exports){
 module.exports.Id = require('./Id.js').Id;
 module.exports.IdSchema = require('./Id.js').IdSchema;
 module.exports.PhysicalExamOrder = require('./PhysicalExamOrder.js').PhysicalExamOrder;
@@ -150,7 +150,7 @@ module.exports.QDMPatient = require('./QDMPatient.js').QDMPatient;
 module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
 
 },{"./AdverseEvent.js":1,"./AllergyIntolerance.js":3,"./AssessmentOrder.js":4,"./AssessmentPerformed.js":5,"./AssessmentRecommended.js":6,"./CareGoal.js":7,"./CommunicationPerformed.js":8,"./Component.js":9,"./DeviceApplied.js":10,"./DeviceOrder.js":11,"./DeviceRecommended.js":12,"./Diagnosis.js":13,"./DiagnosticStudyOrder.js":14,"./DiagnosticStudyPerformed.js":15,"./DiagnosticStudyRecommended.js":16,"./EncounterOrder.js":17,"./EncounterPerformed.js":18,"./EncounterRecommended.js":19,"./FacilityLocation.js":20,"./FamilyHistory.js":21,"./Id.js":22,"./ImmunizationAdministered.js":23,"./ImmunizationOrder.js":24,"./InterventionOrder.js":26,"./InterventionPerformed.js":27,"./InterventionRecommended.js":28,"./LaboratoryTestOrder.js":29,"./LaboratoryTestPerformed.js":30,"./LaboratoryTestRecommended.js":31,"./MedicationActive.js":32,"./MedicationAdministered.js":33,"./MedicationDischarge.js":34,"./MedicationDispensed.js":35,"./MedicationOrder.js":36,"./Participation.js":37,"./PatientCareExperience.js":38,"./PatientCharacteristic.js":39,"./PatientCharacteristicBirthdate.js":40,"./PatientCharacteristicClinicalTrialParticipant.js":41,"./PatientCharacteristicEthnicity.js":42,"./PatientCharacteristicExpired.js":43,"./PatientCharacteristicPayer.js":44,"./PatientCharacteristicRace.js":45,"./PatientCharacteristicSex.js":46,"./PhysicalExamOrder.js":47,"./PhysicalExamPerformed.js":48,"./PhysicalExamRecommended.js":49,"./ProcedureOrder.js":50,"./ProcedurePerformed.js":51,"./ProcedureRecommended.js":52,"./ProviderCareExperience.js":53,"./ProviderCharacteristic.js":54,"./QDMPatient.js":55,"./ResultComponent.js":57,"./SubstanceAdministered.js":58,"./SubstanceOrder.js":59,"./SubstanceRecommended.js":60,"./Symptom.js":61}],3:[function(require,module,exports){
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -182,8 +182,8 @@ const AllergyIntoleranceSchema = DataElementSchema({
 module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
 module.exports.AllergyIntolerance = mongoose.model('AllergyIntolerance', AllergyIntoleranceSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],4:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],4:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -214,8 +214,8 @@ const AssessmentOrderSchema = DataElementSchema({
 module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
 module.exports.AssessmentOrder = mongoose.model('AssessmentOrder', AssessmentOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],5:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],5:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -250,8 +250,8 @@ const AssessmentPerformedSchema = DataElementSchema({
 module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
 module.exports.AssessmentPerformed = mongoose.model('AssessmentPerformed', AssessmentPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],6:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],6:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -282,8 +282,8 @@ const AssessmentRecommendedSchema = DataElementSchema({
 module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
 module.exports.AssessmentRecommended = mongoose.model('AssessmentRecommended', AssessmentRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],7:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],7:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -313,8 +313,8 @@ const CareGoalSchema = DataElementSchema({
 module.exports.CareGoalSchema = CareGoalSchema;
 module.exports.CareGoal = mongoose.model('CareGoal', CareGoalSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],8:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],8:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -350,8 +350,8 @@ const CommunicationPerformedSchema = DataElementSchema({
 module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
 module.exports.CommunicationPerformed = mongoose.model('CommunicationPerformed', CommunicationPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],9:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],9:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -378,8 +378,8 @@ const ComponentSchema = new mongoose.Schema({
 module.exports.ComponentSchema = ComponentSchema;
 module.exports.Component = mongoose.model('Component', ComponentSchema);
 
-},{"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],10:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],10:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -412,8 +412,8 @@ const DeviceAppliedSchema = DataElementSchema({
 module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
 module.exports.DeviceApplied = mongoose.model('DeviceApplied', DeviceAppliedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],11:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],11:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -444,8 +444,8 @@ const DeviceOrderSchema = DataElementSchema({
 module.exports.DeviceOrderSchema = DeviceOrderSchema;
 module.exports.DeviceOrder = mongoose.model('DeviceOrder', DeviceOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],12:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],12:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -476,8 +476,8 @@ const DeviceRecommendedSchema = DataElementSchema({
 module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
 module.exports.DeviceRecommended = mongoose.model('DeviceRecommended', DeviceRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],13:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],13:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -509,8 +509,8 @@ const DiagnosisSchema = DataElementSchema({
 module.exports.DiagnosisSchema = DiagnosisSchema;
 module.exports.Diagnosis = mongoose.model('Diagnosis', DiagnosisSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],14:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],14:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -541,8 +541,8 @@ const DiagnosticStudyOrderSchema = DataElementSchema({
 module.exports.DiagnosticStudyOrderSchema = DiagnosticStudyOrderSchema;
 module.exports.DiagnosticStudyOrder = mongoose.model('DiagnosticStudyOrder', DiagnosticStudyOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],15:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],15:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -580,8 +580,8 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
 module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
 module.exports.DiagnosticStudyPerformed = mongoose.model('DiagnosticStudyPerformed', DiagnosticStudyPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],16:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],16:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -612,8 +612,8 @@ const DiagnosticStudyRecommendedSchema = DataElementSchema({
 module.exports.DiagnosticStudyRecommendedSchema = DiagnosticStudyRecommendedSchema;
 module.exports.DiagnosticStudyRecommended = mongoose.model('DiagnosticStudyRecommended', DiagnosticStudyRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],17:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],17:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -645,8 +645,8 @@ const EncounterOrderSchema = DataElementSchema({
 module.exports.EncounterOrderSchema = EncounterOrderSchema;
 module.exports.EncounterOrder = mongoose.model('EncounterOrder', EncounterOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],18:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],18:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -683,8 +683,8 @@ const EncounterPerformedSchema = DataElementSchema({
 module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
 module.exports.EncounterPerformed = mongoose.model('EncounterPerformed', EncounterPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],19:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],19:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -716,8 +716,8 @@ const EncounterRecommendedSchema = DataElementSchema({
 module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
 module.exports.EncounterRecommended = mongoose.model('EncounterRecommended', EncounterRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],20:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],20:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -744,8 +744,8 @@ const FacilityLocationSchema = new mongoose.Schema({
 module.exports.FacilityLocationSchema = FacilityLocationSchema;
 module.exports.FacilityLocation = mongoose.model('FacilityLocation', FacilityLocationSchema);
 
-},{"./Component":9,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],21:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],21:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -775,8 +775,8 @@ const FamilyHistorySchema = DataElementSchema({
 module.exports.FamilyHistorySchema = FamilyHistorySchema;
 module.exports.FamilyHistory = mongoose.model('FamilyHistory', FamilyHistorySchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],22:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],22:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -794,8 +794,8 @@ const IdSchema = mongoose.Schema({
 module.exports.IdSchema = IdSchema;
 module.exports.Id = mongoose.model('Id', IdSchema);
 
-},{"mongoose":248}],23:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"mongoose/browser":248}],23:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -829,8 +829,8 @@ const ImmunizationAdministeredSchema = DataElementSchema({
 module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
 module.exports.ImmunizationAdministered = mongoose.model('ImmunizationAdministered', ImmunizationAdministeredSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],24:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],24:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -865,8 +865,8 @@ const ImmunizationOrderSchema = DataElementSchema({
 module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
 module.exports.ImmunizationOrder = mongoose.model('ImmunizationOrder', ImmunizationOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],25:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],25:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 
 const [Number, String, Mixed, ObjectId] = [
   mongoose.Schema.Types.Number,
@@ -924,8 +924,8 @@ const IndividualResultSchema = mongoose.Schema(
 module.exports.IndividualResultSchema = IndividualResultSchema;
 module.exports.IndividualResult = mongoose.model('individual_result', IndividualResultSchema);
 
-},{"mongoose":248}],26:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"mongoose/browser":248}],26:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -956,8 +956,8 @@ const InterventionOrderSchema = DataElementSchema({
 module.exports.InterventionOrderSchema = InterventionOrderSchema;
 module.exports.InterventionOrder = mongoose.model('InterventionOrder', InterventionOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],27:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],27:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -991,8 +991,8 @@ const InterventionPerformedSchema = DataElementSchema({
 module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
 module.exports.InterventionPerformed = mongoose.model('InterventionPerformed', InterventionPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],28:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],28:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1023,8 +1023,8 @@ const InterventionRecommendedSchema = DataElementSchema({
 module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
 module.exports.InterventionRecommended = mongoose.model('InterventionRecommended', InterventionRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],29:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],29:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1055,8 +1055,8 @@ const LaboratoryTestOrderSchema = DataElementSchema({
 module.exports.LaboratoryTestOrderSchema = LaboratoryTestOrderSchema;
 module.exports.LaboratoryTestOrder = mongoose.model('LaboratoryTestOrder', LaboratoryTestOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],30:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],30:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1094,8 +1094,8 @@ const LaboratoryTestPerformedSchema = DataElementSchema({
 module.exports.LaboratoryTestPerformedSchema = LaboratoryTestPerformedSchema;
 module.exports.LaboratoryTestPerformed = mongoose.model('LaboratoryTestPerformed', LaboratoryTestPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],31:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],31:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1126,8 +1126,8 @@ const LaboratoryTestRecommendedSchema = DataElementSchema({
 module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema;
 module.exports.LaboratoryTestRecommended = mongoose.model('LaboratoryTestRecommended', LaboratoryTestRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],32:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],32:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1159,8 +1159,8 @@ const MedicationActiveSchema = DataElementSchema({
 module.exports.MedicationActiveSchema = MedicationActiveSchema;
 module.exports.MedicationActive = mongoose.model('MedicationActive', MedicationActiveSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],33:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],33:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1195,8 +1195,8 @@ const MedicationAdministeredSchema = DataElementSchema({
 module.exports.MedicationAdministeredSchema = MedicationAdministeredSchema;
 module.exports.MedicationAdministered = mongoose.model('MedicationAdministered', MedicationAdministeredSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],34:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],34:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1232,8 +1232,8 @@ const MedicationDischargeSchema = DataElementSchema({
 module.exports.MedicationDischargeSchema = MedicationDischargeSchema;
 module.exports.MedicationDischarge = mongoose.model('MedicationDischarge', MedicationDischargeSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],35:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],35:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1272,8 +1272,8 @@ const MedicationDispensedSchema = DataElementSchema({
 module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
 module.exports.MedicationDispensed = mongoose.model('MedicationDispensed', MedicationDispensedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],36:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],36:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1313,8 +1313,8 @@ const MedicationOrderSchema = DataElementSchema({
 module.exports.MedicationOrderSchema = MedicationOrderSchema;
 module.exports.MedicationOrder = mongoose.model('MedicationOrder', MedicationOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],37:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],37:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1342,8 +1342,8 @@ const ParticipationSchema = DataElementSchema({
 module.exports.ParticipationSchema = ParticipationSchema;
 module.exports.Participation = mongoose.model('Participation', ParticipationSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],38:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],38:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1371,8 +1371,8 @@ const PatientCareExperienceSchema = DataElementSchema({
 module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
 module.exports.PatientCareExperience = mongoose.model('PatientCareExperience', PatientCareExperienceSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],39:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],39:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1400,8 +1400,8 @@ const PatientCharacteristicSchema = DataElementSchema({
 module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
 module.exports.PatientCharacteristic = mongoose.model('PatientCharacteristic', PatientCharacteristicSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],40:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],40:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1430,8 +1430,8 @@ const PatientCharacteristicBirthdateSchema = DataElementSchema({
 module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirthdateSchema;
 module.exports.PatientCharacteristicBirthdate = mongoose.model('PatientCharacteristicBirthdate', PatientCharacteristicBirthdateSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],41:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],41:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1462,8 +1462,8 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
 module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientCharacteristicClinicalTrialParticipantSchema;
 module.exports.PatientCharacteristicClinicalTrialParticipant = mongoose.model('PatientCharacteristicClinicalTrialParticipant', PatientCharacteristicClinicalTrialParticipantSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],42:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],42:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1491,8 +1491,8 @@ const PatientCharacteristicEthnicitySchema = DataElementSchema({
 module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthnicitySchema;
 module.exports.PatientCharacteristicEthnicity = mongoose.model('PatientCharacteristicEthnicity', PatientCharacteristicEthnicitySchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],43:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],43:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1522,8 +1522,8 @@ const PatientCharacteristicExpiredSchema = DataElementSchema({
 module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpiredSchema;
 module.exports.PatientCharacteristicExpired = mongoose.model('PatientCharacteristicExpired', PatientCharacteristicExpiredSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],44:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],44:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1552,8 +1552,8 @@ const PatientCharacteristicPayerSchema = DataElementSchema({
 module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSchema;
 module.exports.PatientCharacteristicPayer = mongoose.model('PatientCharacteristicPayer', PatientCharacteristicPayerSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],45:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],45:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1581,8 +1581,8 @@ const PatientCharacteristicRaceSchema = DataElementSchema({
 module.exports.PatientCharacteristicRaceSchema = PatientCharacteristicRaceSchema;
 module.exports.PatientCharacteristicRace = mongoose.model('PatientCharacteristicRace', PatientCharacteristicRaceSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],46:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],46:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1610,8 +1610,8 @@ const PatientCharacteristicSexSchema = DataElementSchema({
 module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
 module.exports.PatientCharacteristicSex = mongoose.model('PatientCharacteristicSex', PatientCharacteristicSexSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],47:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],47:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1643,8 +1643,8 @@ const PhysicalExamOrderSchema = DataElementSchema({
 module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
 module.exports.PhysicalExamOrder = mongoose.model('PhysicalExamOrder', PhysicalExamOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],48:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],48:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1680,8 +1680,8 @@ const PhysicalExamPerformedSchema = DataElementSchema({
 module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
 module.exports.PhysicalExamPerformed = mongoose.model('PhysicalExamPerformed', PhysicalExamPerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],49:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],49:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1713,8 +1713,8 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
 module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
 module.exports.PhysicalExamRecommended = mongoose.model('PhysicalExamRecommended', PhysicalExamRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],50:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],50:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1747,8 +1747,8 @@ const ProcedureOrderSchema = DataElementSchema({
 module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 module.exports.ProcedureOrder = mongoose.model('ProcedureOrder', ProcedureOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],51:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],51:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1787,8 +1787,8 @@ const ProcedurePerformedSchema = DataElementSchema({
 module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
 module.exports.ProcedurePerformed = mongoose.model('ProcedurePerformed', ProcedurePerformedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],52:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],52:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1821,8 +1821,8 @@ const ProcedureRecommendedSchema = DataElementSchema({
 module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
 module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],53:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],53:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1850,8 +1850,8 @@ const ProviderCareExperienceSchema = DataElementSchema({
 module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
 module.exports.ProviderCareExperience = mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],54:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],54:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -1879,8 +1879,8 @@ const ProviderCharacteristicSchema = DataElementSchema({
 module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
 module.exports.ProviderCharacteristic = mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],55:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],55:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
@@ -2136,8 +2136,8 @@ QDMPatientSchema.methods.vital_signs = function vital_signs() {
 module.exports.QDMPatientSchema = QDMPatientSchema;
 module.exports.QDMPatient = mongoose.model('QDMPatient', QDMPatientSchema);
 
-},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],56:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],56:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
   cache_id: String,
@@ -2166,8 +2166,8 @@ const PlaceholderResultSchema = mongoose.Schema({
 module.exports.ResultSchema = PlaceholderResultSchema;
 module.exports.Result = mongoose.model('Result', PlaceholderResultSchema);
 
-},{"mongoose":248}],57:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"mongoose/browser":248}],57:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2193,8 +2193,8 @@ const ResultComponentSchema = DataElementSchema({
 module.exports.ResultComponentSchema = ResultComponentSchema;
 module.exports.ResultComponent = mongoose.model('ResultComponent', ResultComponentSchema);
 
-},{"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],58:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],58:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2228,8 +2228,8 @@ const SubstanceAdministeredSchema = DataElementSchema({
 module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
 module.exports.SubstanceAdministered = mongoose.model('SubstanceAdministered', SubstanceAdministeredSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],59:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],59:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2265,8 +2265,8 @@ const SubstanceOrderSchema = DataElementSchema({
 module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
 module.exports.SubstanceOrder = mongoose.model('SubstanceOrder', SubstanceOrderSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],60:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],60:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2301,8 +2301,8 @@ const SubstanceRecommendedSchema = DataElementSchema({
 module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
 module.exports.SubstanceRecommended = mongoose.model('SubstanceRecommended', SubstanceRecommendedSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],61:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],61:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2332,8 +2332,8 @@ const SymptomSchema = DataElementSchema({
 module.exports.SymptomSchema = SymptomSchema;
 module.exports.Symptom = mongoose.model('Symptom', SymptomSchema);
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose":248}],62:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":248}],62:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
 function Any(key, options) {
@@ -2402,8 +2402,8 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
-},{"cql-execution":103,"mongoose":248}],63:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"cql-execution":103,"mongoose/browser":248}],63:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
 function Code(key, options) {
@@ -2439,8 +2439,8 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
-},{"cql-execution":103,"mongoose":248}],64:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"cql-execution":103,"mongoose/browser":248}],64:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
 const Id = require('../Id');
@@ -2484,8 +2484,8 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-},{"../Id":22,"./Code.js":63,"cql-execution":103,"mongoose":248}],65:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"../Id":22,"./Code.js":63,"cql-execution":103,"mongoose/browser":248}],65:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
 function DateTime(key, options) {
@@ -2504,8 +2504,8 @@ DateTime.prototype.cast = (dateTime) => {
 mongoose.Schema.Types.DateTime = DateTime;
 module.exports = DateTime;
 
-},{"cql-execution":103,"mongoose":248}],66:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"cql-execution":103,"mongoose/browser":248}],66:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
 function Interval(key, options) {
@@ -2541,8 +2541,8 @@ Interval.prototype.cast = (interval) => {
 mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
 
-},{"cql-execution":103,"mongoose":248}],67:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"cql-execution":103,"mongoose/browser":248}],67:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
 function Quantity(key, options) {
@@ -2563,8 +2563,8 @@ Quantity.prototype.cast = (quantity) => {
 mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;
 
-},{"cql-execution":103,"mongoose":248}],68:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"cql-execution":103,"mongoose/browser":248}],68:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { StatementDependencySchema } = require('./CQLStatementDependency');
 
 const [Mixed, mDate] = [
@@ -2591,8 +2591,8 @@ const CQLLibrarySchema = new mongoose.Schema(
 module.exports.CQLLibrarySchema = CQLLibrarySchema;
 module.exports.CQLLibrary = mongoose.model('cql_library', CQLLibrarySchema);
 
-},{"./CQLStatementDependency":69,"mongoose":248}],69:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./CQLStatementDependency":69,"mongoose/browser":248}],69:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
   library_name: String,
@@ -2610,8 +2610,8 @@ module.exports.StatementDependency = mongoose.model('statement_dependency', Stat
 module.exports.StatementReferenceSchema = StatementReferenceSchema;
 module.exports.StatementReference = mongoose.model('statement_reference', StatementReferenceSchema);
 
-},{"mongoose":248}],70:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"mongoose/browser":248}],70:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
   code: String,
@@ -2624,8 +2624,8 @@ const ConceptSchema = new mongoose.Schema({
 module.exports.ConceptSchema = ConceptSchema;
 module.exports.Concept = mongoose.model('concept', ConceptSchema);
 
-},{"mongoose":248}],71:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"mongoose/browser":248}],71:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -2714,8 +2714,8 @@ MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Paye
 module.exports.MeasureSchema = MeasureSchema;
 module.exports.Measure = mongoose.model('measure', MeasureSchema);
 
-},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":73,"mongoose":248}],72:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":73,"mongoose/browser":248}],72:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
 const [mBuffer, ObjectId] = [
@@ -2737,8 +2737,8 @@ const MeasurePackageSchema = new mongoose.Schema(
 module.exports.MeasurePackageSchema = MeasurePackageSchema;
 module.exports.MeasurePackage = mongoose.model('measure_package', MeasurePackageSchema);
 
-},{"mongoose":248}],73:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"mongoose/browser":248}],73:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
 
 const [Mixed] = [
@@ -2793,8 +2793,8 @@ module.exports.PopulationMap = mongoose.model('population_map', PopulationMapSch
 module.exports.PopulationSetSchema = PopulationSetSchema;
 module.exports.PopulationSet = mongoose.model('population_set', PopulationSetSchema);
 
-},{"./CQLStatementDependency":69,"mongoose":248}],74:[function(require,module,exports){
-const mongoose = require('mongoose');
+},{"./CQLStatementDependency":69,"mongoose/browser":248}],74:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
 const [String] = [mongoose.Schema.Types.String];
@@ -2816,7 +2816,7 @@ const ValueSetSchema = new mongoose.Schema(
 module.exports.ValueSetSchema = ValueSetSchema;
 module.exports.ValueSet = mongoose.model('value_set', ValueSetSchema);
 
-},{"./Concept.js":70,"mongoose":248}],75:[function(require,module,exports){
+},{"./Concept.js":70,"mongoose/browser":248}],75:[function(require,module,exports){
 module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;

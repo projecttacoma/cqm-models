@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
 const [mBuffer, ObjectId] = [

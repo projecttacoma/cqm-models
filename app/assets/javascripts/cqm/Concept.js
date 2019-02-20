@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
   code: String,

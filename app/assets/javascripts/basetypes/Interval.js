@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
 function Interval(key, options) {

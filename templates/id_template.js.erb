@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
