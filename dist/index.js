@@ -2996,6 +2996,7 @@ const MeasureSchema = new mongoose.Schema(
       enum: ['PATIENT', 'EPISODE_OF_CARE'],
       default: 'PATIENT',
     },
+    calculate_sdes: Boolean,
 
     // ELM/CQL Measure-logic related data encapsulated in CQLLibrarySchema
     // Field name changed from 'cql' to 'cql_libraries' because the semantics of
