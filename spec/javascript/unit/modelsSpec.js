@@ -172,7 +172,21 @@ describe('QDMPatient', () => {
       expect(qdmPatient.vital_signs().length).toEqual(0);
     });
   });
-
+  describe('getByHqmfOid', () => {
+    it('can return dataElements given an hqmf oid', () => {
+      qdmPatient = new QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new AdverseEvent(),
+          new CareGoal(),
+          new CareGoal(),
+        ]
+      });
+      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.3.120').length).toEqual(1);
+      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.3.7').length).toEqual(2);
+    });
+  });
 
   describe('getByQrdaOid', () => {
     it('can return dataElements given an qrda oid', () => {
