@@ -52,6 +52,7 @@ const PatientCharacteristicSex = require('./../../../app/assets/javascripts/Pati
 const PhysicalExamOrder = require('./../../../app/assets/javascripts/PhysicalExamOrder.js').PhysicalExamOrder;
 const PhysicalExamPerformed = require('./../../../app/assets/javascripts/PhysicalExamPerformed.js').PhysicalExamPerformed;
 const PhysicalExamRecommended = require('./../../../app/assets/javascripts/PhysicalExamRecommended.js').PhysicalExamRecommended;
+const PopulationMap = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').PopulationMap;
 const PopulationSet = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').PopulationSet;
 const ProviderCharacteristic = require('./../../../app/assets/javascripts/ProviderCharacteristic.js').ProviderCharacteristic;
 const ProcedureOrder = require('./../../../app/assets/javascripts/ProcedureOrder.js').ProcedureOrder;
@@ -365,6 +366,18 @@ describe('PopulationSet', () => {
   it('can create an Observation', () => {
     new Observation();
   });
+
+  it('can create a PopulationMap', () => {
+    new PopulationMap();
+  });
+
+  it('gets rid of _id and _type when calling toObject on PopulationMap', () => {
+    populationMap = new PopulationMap();
+    objectPopulationMap = populationMap.toObject();
+    expect(objectPopulationMap._id).toBeUndefined();
+    expect(objectPopulationMap._type).toBeUndefined();
+  });
+
   it('can create a PopulationSet', () => {
     new PopulationSet();
   });
