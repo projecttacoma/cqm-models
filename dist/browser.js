@@ -3069,6 +3069,7 @@ class MeasurePackage extends mongoose.Document {
 module.exports.MeasurePackage = MeasurePackage;
 
 },{"mongoose/browser":253}],74:[function(require,module,exports){
+/* eslint-disable no-unused-vars, no-param-reassign */
 const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
 
@@ -3093,12 +3094,12 @@ const PopulationMapSchema = new mongoose.Schema({
 });
 
 if (!PopulationMapSchema.options.toObject) PopulationMapSchema.options.toObject = {};
-PopulationMapSchema.options.toObject.transform = function (doc, ret, options) {
-  // remove the _id of every document before returning the result
+PopulationMapSchema.options.toObject.transform = function transform(doc, ret, options) {
+  // remove the _id and _type of every document before returning the result
   delete ret._id;
   delete ret._type;
   return ret;
-}
+};
 
 
 const StratificationSchema = new mongoose.Schema({
