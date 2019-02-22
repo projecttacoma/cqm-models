@@ -58,6 +58,7 @@ const ProcedurePerformed = require('./../../../app/assets/javascripts/ProcedureP
 const ProcedureRecommended = require('./../../../app/assets/javascripts/ProcedureRecommended.js').ProcedureRecommended;
 const QDMPatient = require('./../../../app/assets/javascripts/QDMPatient.js').QDMPatient;
 const ResultComponent = require('./../../../app/assets/javascripts/ResultComponent.js').ResultComponent;
+const Stratification = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').Stratification;
 const SubstanceAdministered = require('./../../../app/assets/javascripts/SubstanceAdministered.js').SubstanceAdministered;
 const SubstanceOrder = require('./../../../app/assets/javascripts/SubstanceOrder.js').SubstanceOrder;
 const SubstanceRecommended = require('./../../../app/assets/javascripts/SubstanceRecommended.js').SubstanceRecommended;
@@ -360,6 +361,10 @@ describe('ValueSet', () => {
 
 describe('PopulationSet', () => {
   it('can create a PopulationSet', () => {
+    new PopulationSet();
+  });
+
+  it('can create a Stratification', () => {
     new PopulationSet();
   });
 });
