@@ -4,28 +4,55 @@ const Mongoose = require('mongoose/browser');
 // Data Element Schemas
 const AdverseEvent = require('./../../../app/assets/javascripts/AdverseEvent.js').AdverseEvent;
 const AllergyIntolerance = require('./../../../app/assets/javascripts/AllergyIntolerance.js').AllergyIntolerance;
+const AssessmentOrder = require('./../../../app/assets/javascripts/AssessmentOrder.js').AssessmentOrder;
 const AssessmentPerformed = require('./../../../app/assets/javascripts/AssessmentPerformed.js').AssessmentPerformed;
 const ProviderCareExperience = require('./../../../app/assets/javascripts/ProviderCareExperience.js').ProviderCareExperience;
 const CareGoal = require('./../../../app/assets/javascripts/CareGoal.js').CareGoal;
+const Component = require('./../../../app/assets/javascripts/Component.js').Component;
 const CommunicationPerformed = require('./../../../app/assets/javascripts/CommunicationPerformed.js').CommunicationPerformed;
 const Diagnosis = require('./../../../app/assets/javascripts/Diagnosis.js').Diagnosis;
 const DeviceApplied = require('./../../../app/assets/javascripts/DeviceApplied.js').DeviceApplied;
 const DeviceOrder = require('./../../../app/assets/javascripts/DeviceOrder.js').DeviceOrder;
 const DeviceRecommended = require('./../../../app/assets/javascripts/DeviceRecommended.js').DeviceRecommended;
 const DiagnosticStudyOrder = require('./../../../app/assets/javascripts/DiagnosticStudyOrder.js').DiagnosticStudyOrder;
+const DiagnosticStudyPerformed = require('./../../../app/assets/javascripts/DiagnosticStudyPerformed.js').DiagnosticStudyPerformed;
+const DiagnosticStudyRecommended = require('./../../../app/assets/javascripts/DiagnosticStudyRecommended.js').DiagnosticStudyRecommended;
+const EncounterOrder = require('./../../../app/assets/javascripts/EncounterOrder.js').EncounterOrder;
 const EncounterPerformed = require('./../../../app/assets/javascripts/EncounterPerformed.js').EncounterPerformed;
+const EncounterRecommended = require('./../../../app/assets/javascripts/EncounterRecommended.js').EncounterRecommended;
+const FacilityLocation = require('./../../../app/assets/javascripts/FacilityLocation.js').FacilityLocation;
 const FamilyHistory = require('./../../../app/assets/javascripts/FamilyHistory.js').FamilyHistory;
 const ImmunizationAdministered = require('./../../../app/assets/javascripts/ImmunizationAdministered.js').ImmunizationAdministered;
+const ImmunizationOrder = require('./../../../app/assets/javascripts/ImmunizationOrder.js').ImmunizationOrder;
 const InterventionPerformed = require('./../../../app/assets/javascripts/InterventionPerformed.js').InterventionPerformed;
+const InterventionRecommended = require('./../../../app/assets/javascripts/InterventionRecommended.js').InterventionRecommended;
 const LaboratoryTestOrder = require('./../../../app/assets/javascripts/LaboratoryTestOrder.js').LaboratoryTestOrder;
+const LaboratoryTestPerformed = require('./../../../app/assets/javascripts/LaboratoryTestPerformed.js').LaboratoryTestPerformed;
+const LaboratoryTestRecommended = require('./../../../app/assets/javascripts/LaboratoryTestRecommended.js').LaboratoryTestRecommended;
 const MedicationActive = require('./../../../app/assets/javascripts/MedicationActive.js').MedicationActive;
+const MedicationAdministered = require('./../../../app/assets/javascripts/MedicationAdministered.js').MedicationAdministered;
+const MedicationDischarge = require('./../../../app/assets/javascripts/MedicationDischarge.js').MedicationDischarge;
+const MedicationDispensed = require('./../../../app/assets/javascripts/MedicationDispensed.js').MedicationDispensed;
 const MedicationOrder = require('./../../../app/assets/javascripts/MedicationOrder.js').MedicationOrder;
+const Participation = require('./../../../app/assets/javascripts/Participation.js').Participation;
 const Patient = require('./../../../app/assets/javascripts/cqm/Patient.js').Patient;
+const PatientCharacteristic = require('./../../../app/assets/javascripts/PatientCharacteristic.js').PatientCharacteristic;
+const PatientCharacteristicBirthdate = require('./../../../app/assets/javascripts/PatientCharacteristicBirthdate.js').PatientCharacteristicBirthdate;
+const PatientCharacteristicExpired = require('./../../../app/assets/javascripts/PatientCharacteristicExpired.js').PatientCharacteristicExpired;
+const PatientCharacteristicPayer = require('./../../../app/assets/javascripts/PatientCharacteristicPayer.js').PatientCharacteristicPayer;
+const PatientCharacteristicClinicalTrialParticipant = require('./../../../app/assets/javascripts/PatientCharacteristicClinicalTrialParticipant.js').PatientCharacteristicClinicalTrialParticipant;
+const PatientCharacteristicRace = require('./../../../app/assets/javascripts/PatientCharacteristicRace.js').PatientCharacteristicRace;
+const PatientCharacteristicSex = require('./../../../app/assets/javascripts/PatientCharacteristicSex.js').PatientCharacteristicSex;
 const PhysicalExamOrder = require('./../../../app/assets/javascripts/PhysicalExamOrder.js').PhysicalExamOrder;
+const PhysicalExamPerformed = require('./../../../app/assets/javascripts/PhysicalExamPerformed.js').PhysicalExamPerformed;
+const PhysicalExamRecommended = require('./../../../app/assets/javascripts/PhysicalExamRecommended.js').PhysicalExamRecommended;
 const ProviderCharacteristic = require('./../../../app/assets/javascripts/ProviderCharacteristic.js').ProviderCharacteristic;
 const ProcedureOrder = require('./../../../app/assets/javascripts/ProcedureOrder.js').ProcedureOrder;
+const ProcedurePerformed = require('./../../../app/assets/javascripts/ProcedurePerformed.js').ProcedurePerformed;
 const QDMPatient = require('./../../../app/assets/javascripts/QDMPatient.js').QDMPatient;
+const ResultComponent = require('./../../../app/assets/javascripts/ResultComponent.js').ResultComponent;
 const SubstanceAdministered = require('./../../../app/assets/javascripts/SubstanceAdministered.js').SubstanceAdministered;
+const SubstanceRecommended = require('./../../../app/assets/javascripts/SubstanceRecommended.js').SubstanceRecommended;
 const Symptom = require('./../../../app/assets/javascripts/Symptom.js').Symptom;
 
 describe('QDMPatient', () => {
@@ -120,52 +147,79 @@ describe('QDMPatient', () => {
         dataElements: [
           new AdverseEvent(),
           new AllergyIntolerance(),
+          new AssessmentOrder(),
           new AssessmentPerformed(),
           new ProviderCareExperience(),
           new CareGoal(),
           new CommunicationPerformed(),
+          new Component(),
           new Diagnosis(),
           new DeviceApplied(),
           new DiagnosticStudyOrder(),
+          new DiagnosticStudyPerformed(),
+          new DiagnosticStudyRecommended(),
+          new EncounterOrder(),
           new EncounterPerformed(),
+          new EncounterRecommended(),
+          new FacilityLocation(),
           new FamilyHistory(),
           new ImmunizationAdministered(),
+          new ImmunizationOrder(),
           new InterventionPerformed(),
+          new InterventionRecommended(),
           new LaboratoryTestOrder(),
+          new LaboratoryTestPerformed(),
+          new LaboratoryTestRecommended(),
           new MedicationActive(),
+          new MedicationAdministered(),
+          new MedicationDischarge(),
+          new MedicationDispensed(),
+          new Participation(),
+          new PatientCharacteristic(),
+          new PatientCharacteristicBirthdate(),
+          new PatientCharacteristicExpired(),
+          new PatientCharacteristicPayer(),
+          new PatientCharacteristicClinicalTrialParticipant(),
+          new PatientCharacteristicRace(),
+          new PatientCharacteristicSex(),
           new PhysicalExamOrder(),
+          new PhysicalExamPerformed(),
+          new PhysicalExamRecommended(),
           new ProviderCharacteristic(),
           new ProcedureOrder(),
+          new ProcedurePerformed(),
+          new ResultComponent(),
           new SubstanceAdministered(),
+          new SubstanceRecommended(),
           new Symptom(),
         ]
       });
-      expect(qdmPatient.getDataElements().length).toEqual(20);
+      expect(qdmPatient.getDataElements().length).toEqual(47);
       expect(qdmPatient.adverse_events().length).toEqual(1);
       expect(qdmPatient.allergies().length).toEqual(1);
-      expect(qdmPatient.assessments().length).toEqual(1);
+      expect(qdmPatient.assessments().length).toEqual(2);
       expect(qdmPatient.care_experiences().length).toEqual(1);
       expect(qdmPatient.care_goals().length).toEqual(1);
       expect(qdmPatient.communications().length).toEqual(1);
       expect(qdmPatient.conditions().length).toEqual(1);
       expect(qdmPatient.devices().length).toEqual(1);
-      expect(qdmPatient.diagnostic_studies().length).toEqual(1);
-      expect(qdmPatient.encounters().length).toEqual(1);
+      expect(qdmPatient.diagnostic_studies().length).toEqual(3);
+      expect(qdmPatient.encounters().length).toEqual(3);
       expect(qdmPatient.family_history().length).toEqual(1);
       expect(qdmPatient.functional_statuses().length).toEqual(0);
-      expect(qdmPatient.immunizations().length).toEqual(1);
-      expect(qdmPatient.interventions().length).toEqual(1);
-      expect(qdmPatient.laboratory_tests().length).toEqual(1);
+      expect(qdmPatient.immunizations().length).toEqual(2);
+      expect(qdmPatient.interventions().length).toEqual(2);
+      expect(qdmPatient.laboratory_tests().length).toEqual(3);
       expect(qdmPatient.medical_equipment().length).toEqual(0);
-      expect(qdmPatient.medications().length).toEqual(1);
-      expect(qdmPatient.physical_exams().length).toEqual(1);
+      expect(qdmPatient.medications().length).toEqual(4);
+      expect(qdmPatient.physical_exams().length).toEqual(3);
       expect(qdmPatient.preferences().length).toEqual(0);
       expect(qdmPatient.provider_characteristics().length).toEqual(1);
-      expect(qdmPatient.procedures().length).toEqual(1);
+      expect(qdmPatient.procedures().length).toEqual(2);
       expect(qdmPatient.results().length).toEqual(0);
       expect(qdmPatient.risk_category_assessments().length).toEqual(0);
       expect(qdmPatient.social_history().length).toEqual(0);
-      expect(qdmPatient.substances().length).toEqual(1);
+      expect(qdmPatient.substances().length).toEqual(2);
       expect(qdmPatient.symptoms().length).toEqual(1);
       expect(qdmPatient.system_characteristics().length).toEqual(0);
       expect(qdmPatient.transfers().length).toEqual(0);
