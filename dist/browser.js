@@ -3037,14 +3037,6 @@ class Measure extends mongoose.Document {
   constructor(object) {
     super(object, MeasureSchema);
   }
-
-  static getAllPopulationCodes() {
-    return ['STRAT', 'IPP', 'DENOM', 'DENEX', 'NUMER', 'NUMEX', 'DENEXCEP', 'MSRPOPL', 'OBSERV', 'MSRPOPLEX'];
-  }
-
-  static getCqlSkipStatements() {
-    return ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex'];
-  }
 }
 module.exports.Measure = Measure;
 
