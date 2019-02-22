@@ -37,6 +37,7 @@ const MedicationAdministered = require('./../../../app/assets/javascripts/Medica
 const MedicationDischarge = require('./../../../app/assets/javascripts/MedicationDischarge.js').MedicationDischarge;
 const MedicationDispensed = require('./../../../app/assets/javascripts/MedicationDispensed.js').MedicationDispensed;
 const MedicationOrder = require('./../../../app/assets/javascripts/MedicationOrder.js').MedicationOrder;
+const Observation = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').Observation;
 const Participation = require('./../../../app/assets/javascripts/Participation.js').Participation;
 const Patient = require('./../../../app/assets/javascripts/cqm/Patient.js').Patient;
 const PatientCareExperience = require('./../../../app/assets/javascripts/PatientCareExperience.js').PatientCareExperience;
@@ -360,12 +361,16 @@ describe('ValueSet', () => {
 });
 
 describe('PopulationSet', () => {
+
+  it('can create an Observation', () => {
+    new Observation();
+  });
   it('can create a PopulationSet', () => {
     new PopulationSet();
   });
 
   it('can create a Stratification', () => {
-    new PopulationSet();
+    new Stratification();
   });
 });
 
