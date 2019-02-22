@@ -3090,6 +3090,8 @@ const PopulationMapSchema = new mongoose.Schema({
   DENEXCEP: StatementReferenceSchema,
   MSRPOPL: StatementReferenceSchema,
   MSRPOPLEX: StatementReferenceSchema,
+  // STRAT is only here so cqm-execution can handle stratification results compliation with the current approach.
+  STRAT: StatementReferenceSchema,
 });
 
 const StratificationSchema = new mongoose.Schema({

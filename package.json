@@ -11,7 +11,8 @@
   "contributors": [
     "Louis Ades <lades@mitre.org>",
     "Michael O'Keefe <mokeefe@mitre.org>",
-    "Adam Holmes <aholmes@mitre.org>"
+    "Adam Holmes <aholmes@mitre.org>",
+    "Chris Hossenlopp <hossenlopp@mitre.org>"
   ],
   "license": "Apache-2.0",
   "dependencies": {
