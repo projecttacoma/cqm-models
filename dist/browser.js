@@ -2910,7 +2910,7 @@ const StatementReferenceSchema = new mongoose.Schema({
 
 const StatementDependencySchema = new mongoose.Schema({
   statement_name: String,
-  dependencies: [StatementReferenceSchema],
+  statement_references: [StatementReferenceSchema],
 });
 
 module.exports.StatementReferenceSchema = StatementReferenceSchema;
