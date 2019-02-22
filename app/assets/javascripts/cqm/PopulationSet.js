@@ -21,6 +21,15 @@ const PopulationMapSchema = new mongoose.Schema({
   STRAT: StatementReferenceSchema,
 });
 
+if (!PopulationMapSchema.options.toObject) PopulationMapSchema.options.toObject = {};
+PopulationMapSchema.options.toObject.transform = function (doc, ret, options) {
+  // remove the _id of every document before returning the result
+  delete ret._id;
+  delete ret._type;
+  return ret;
+}
+
+
 const StratificationSchema = new mongoose.Schema({
   title: String,
   stratification_id: String,
@@ -42,14 +51,6 @@ const PopulationSetSchema = new mongoose.Schema({
   supplemental_data_elements: [StatementReferenceSchema],
   observations: [ObservationSchema],
 });
-
-if (!PopulationSetSchema.options.toObject) PopulationSetSchema.options.toObject = {};
-PopulationSetSchema.options.toObject.transform = function (doc, ret, options) {
-  // remove the _id of every document before returning the result
-  delete ret._id;
-  delete ret._type;
-  return ret;
-}
 
 module.exports.StratificationSchema = StratificationSchema;
 class Stratification extends mongoose.Document {

@@ -3087,6 +3087,15 @@ const PopulationMapSchema = new mongoose.Schema({
   STRAT: StatementReferenceSchema,
 });
 
+if (!PopulationMapSchema.options.toObject) PopulationMapSchema.options.toObject = {};
+PopulationMapSchema.options.toObject.transform = function (doc, ret, options) {
+  // remove the _id of every document before returning the result
+  delete ret._id;
+  delete ret._type;
+  return ret;
+}
+
+
 const StratificationSchema = new mongoose.Schema({
   title: String,
   stratification_id: String,
