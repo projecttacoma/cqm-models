@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -14,4 +14,9 @@ const IdSchema = mongoose.Schema({
 }, { _id: false, id: false });
 
 module.exports.IdSchema = IdSchema;
-module.exports.Id = mongoose.model('Id', IdSchema);
+class Id extends mongoose.Document {
+  constructor(object) {
+    super(object, IdSchema);
+  }
+}
+module.exports.Id = Id;

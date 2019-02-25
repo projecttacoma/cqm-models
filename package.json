@@ -11,12 +11,13 @@
   "contributors": [
     "Louis Ades <lades@mitre.org>",
     "Michael O'Keefe <mokeefe@mitre.org>",
-    "Adam Holmes <aholmes@mitre.org>"
+    "Adam Holmes <aholmes@mitre.org>",
+    "Chris Hossenlopp <hossenlopp@mitre.org>"
   ],
   "license": "Apache-2.0",
   "dependencies": {
     "cql-execution": "https://github.com/cqframework/cql-execution.git",
-    "mongoose": "^5.4.2"
+    "mongoose": "^5.4.14"
   },
   "devDependencies": {
     "browserify": "^16.1.0",
@@ -31,6 +32,8 @@
     "test": "istanbul cover jasmine -x 'spec/**/*'",
     "lint": "eslint 'app/assets/javascripts/**/*.js'",
     "dist": "yarn && browserify app/assets/javascripts/index.js > dist/index.js",
+    "browser": "browserify app/assets/javascripts/browser.js > dist/browser.js",
+    "browser_test": "browserify app/assets/javascripts/browser.js > tmp/dist/browser.js",
     "dist_test": "browserify app/assets/javascripts/index.js > tmp/dist/index.js",
     "build-cql": "cd ./node_modules/cql-execution && yarn install && cd ../../"
   }

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -27,4 +27,9 @@ const <%= datatype -%>Schema = new mongoose.Schema({
 });
 <% end %>
 module.exports.<%= datatype %>Schema = <%= datatype %>Schema;
-module.exports.<%= datatype %> = mongoose.model('<%= datatype %>', <%= datatype %>Schema);
+class <%= datatype %> extends mongoose.Document {
+  constructor(object) {
+    super(object, <%= datatype %>Schema);
+  }
+}
+module.exports.<%= datatype %> = <%= datatype %>;

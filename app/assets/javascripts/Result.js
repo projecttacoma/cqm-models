@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
   cache_id: String,
@@ -25,4 +25,9 @@ const PlaceholderResultSchema = mongoose.Schema({
 });
 
 module.exports.ResultSchema = PlaceholderResultSchema;
-module.exports.Result = mongoose.model('Result', PlaceholderResultSchema);
+class PlaceholderResult extends mongoose.Document {
+  constructor(object) {
+    super(object, PlaceholderResultSchema);
+  }
+}
+module.exports.PlaceholderResult = PlaceholderResult;

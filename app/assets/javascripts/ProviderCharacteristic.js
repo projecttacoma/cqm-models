@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -24,4 +24,9 @@ const ProviderCharacteristicSchema = DataElementSchema({
 });
 
 module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
-module.exports.ProviderCharacteristic = mongoose.model('ProviderCharacteristic', ProviderCharacteristicSchema);
+class ProviderCharacteristic extends mongoose.Document {
+  constructor(object) {
+    super(object, ProviderCharacteristicSchema);
+  }
+}
+module.exports.ProviderCharacteristic = ProviderCharacteristic;

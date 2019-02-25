@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
   library_name: String,
@@ -7,11 +7,21 @@ const StatementReferenceSchema = new mongoose.Schema({
 
 const StatementDependencySchema = new mongoose.Schema({
   statement_name: String,
-  dependencies: [StatementReferenceSchema],
+  statement_references: [StatementReferenceSchema],
 });
 
-module.exports.StatementDependencySchema = StatementDependencySchema;
-module.exports.StatementDependency = mongoose.model('statement_dependency', StatementDependencySchema);
-
 module.exports.StatementReferenceSchema = StatementReferenceSchema;
-module.exports.StatementReference = mongoose.model('statement_reference', StatementReferenceSchema);
+class StatementReference extends mongoose.Document {
+  constructor(object) {
+    super(object, StatementReferenceSchema);
+  }
+}
+module.exports.StatementReference = StatementReference;
+
+module.exports.StatementDependencySchema = StatementDependencySchema;
+class StatementDependency extends mongoose.Document {
+  constructor(object) {
+    super(object, StatementDependencySchema);
+  }
+}
+module.exports.StatementDependency = StatementDependency;

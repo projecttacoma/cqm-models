@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -29,4 +29,9 @@ const ProcedureRecommendedSchema = DataElementSchema({
 });
 
 module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
-module.exports.ProcedureRecommended = mongoose.model('ProcedureRecommended', ProcedureRecommendedSchema);
+class ProcedureRecommended extends mongoose.Document {
+  constructor(object) {
+    super(object, ProcedureRecommendedSchema);
+  }
+}
+module.exports.ProcedureRecommended = ProcedureRecommended;

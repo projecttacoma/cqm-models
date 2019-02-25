@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -24,4 +24,9 @@ const ProviderCareExperienceSchema = DataElementSchema({
 });
 
 module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
-module.exports.ProviderCareExperience = mongoose.model('ProviderCareExperience', ProviderCareExperienceSchema);
+class ProviderCareExperience extends mongoose.Document {
+  constructor(object) {
+    super(object, ProviderCareExperienceSchema);
+  }
+}
+module.exports.ProviderCareExperience = ProviderCareExperience;

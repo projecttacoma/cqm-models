@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -50,6 +50,7 @@ const MeasureSchema = new mongoose.Schema(
       enum: ['PATIENT', 'EPISODE_OF_CARE'],
       default: 'PATIENT',
     },
+    calculate_sdes: Boolean,
 
     // ELM/CQL Measure-logic related data encapsulated in CQLLibrarySchema
     // Field name changed from 'cql' to 'cql_libraries' because the semantics of
@@ -80,9 +81,10 @@ const MeasureSchema = new mongoose.Schema(
   }
 );
 
-MeasureSchema.virtual('ALL_POPULATION_CODES').get(() => ['STRAT', 'IPP', 'DENOM', 'DENEX', 'NUMER', 'NUMEX', 'DENEXCEP', 'MSRPOPL', 'OBSERV', 'MSRPOPLEX']);
-
-MeasureSchema.virtual('cqlSkipStatements').get(() => ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex']);
-
 module.exports.MeasureSchema = MeasureSchema;
-module.exports.Measure = mongoose.model('measure', MeasureSchema);
+class Measure extends mongoose.Document {
+  constructor(object) {
+    super(object, MeasureSchema);
+  }
+}
+module.exports.Measure = Measure;

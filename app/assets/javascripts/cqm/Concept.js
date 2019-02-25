@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
   code: String,
@@ -9,4 +9,9 @@ const ConceptSchema = new mongoose.Schema({
 });
 
 module.exports.ConceptSchema = ConceptSchema;
-module.exports.Concept = mongoose.model('concept', ConceptSchema);
+class Concept extends mongoose.Document {
+  constructor(object) {
+    super(object, ConceptSchema);
+  }
+}
+module.exports.Concept = Concept;

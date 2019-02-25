@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -28,4 +28,9 @@ const EncounterOrderSchema = DataElementSchema({
 });
 
 module.exports.EncounterOrderSchema = EncounterOrderSchema;
-module.exports.EncounterOrder = mongoose.model('EncounterOrder', EncounterOrderSchema);
+class EncounterOrder extends mongoose.Document {
+  constructor(object) {
+    super(object, EncounterOrderSchema);
+  }
+}
+module.exports.EncounterOrder = EncounterOrder;

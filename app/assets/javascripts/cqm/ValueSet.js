@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
 const [String] = [mongoose.Schema.Types.String];
@@ -18,4 +18,9 @@ const ValueSetSchema = new mongoose.Schema(
 );
 
 module.exports.ValueSetSchema = ValueSetSchema;
-module.exports.ValueSet = mongoose.model('value_set', ValueSetSchema);
+class ValueSet extends mongoose.Document {
+  constructor(object) {
+    super(object, ValueSetSchema);
+  }
+}
+module.exports.ValueSet = ValueSet;

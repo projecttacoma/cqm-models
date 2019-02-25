@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
@@ -35,12 +35,10 @@ QDMPatientSchema.methods.initializeDataElements = function initializeDataElement
   const dataElementsInit = [];
   this.dataElements.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
-    dataElementsInit.push(AllDataElements[typeStripped](element));
+    dataElementsInit.push(new AllDataElements[typeStripped](element));
   });
   this.set({ dataElements: dataElementsInit });
 };
-
-QDMPatientSchema.queue('initializeDataElements');
 
 QDMPatientSchema.methods.id = function id() {
   return this._id;
@@ -82,9 +80,9 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
   const results = this.dataElements.filter(element => (element._type === `QDM::${profile}` || element._type === profile) && (isNegated === null || !!element.negationRationale === isNegated));
   return results.map((result) => {
-    const removedMongooseItems = AllDataElements[profile](result).toObject();
+    const removedMongooseItems = new AllDataElements[profile](result).toObject({ virtuals: true });
     // toObject() will remove all mongoose functions but also remove the schema methods, so we add them back
-    Object.entries(Object.getPrototypeOf(result).schema.methods).forEach(([method_name, method]) => {
+    Object.entries(result.schema.methods).forEach(([method_name, method]) => {
       removedMongooseItems[method_name] = method;
     });
     return removedMongooseItems;
@@ -251,4 +249,10 @@ QDMPatientSchema.methods.vital_signs = function vital_signs() {
 };
 
 module.exports.QDMPatientSchema = QDMPatientSchema;
-module.exports.QDMPatient = mongoose.model('QDMPatient', QDMPatientSchema);
+class QDMPatient extends mongoose.Document {
+  constructor(object) {
+    super(object, QDMPatientSchema);
+    this.initializeDataElements();
+  }
+}
+module.exports.QDMPatient = QDMPatient;

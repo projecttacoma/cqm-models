@@ -41,5 +41,6 @@ matrix:
         - yarn run lint
         - yarn run test
         - ./bin/validate_dist.sh
+        - ./bin/validate_browser.sh
         - ./bin/validate_generator.sh
         - codecov

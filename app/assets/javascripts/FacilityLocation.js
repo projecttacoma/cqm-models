@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose/browser');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -23,4 +23,9 @@ const FacilityLocationSchema = new mongoose.Schema({
 });
 
 module.exports.FacilityLocationSchema = FacilityLocationSchema;
-module.exports.FacilityLocation = mongoose.model('FacilityLocation', FacilityLocationSchema);
+class FacilityLocation extends mongoose.Document {
+  constructor(object) {
+    super(object, FacilityLocationSchema);
+  }
+}
+module.exports.FacilityLocation = FacilityLocation;
