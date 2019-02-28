@@ -12,8 +12,9 @@ require_relative 'qdm/basetypes/data_element'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/ratio'
-# FacilityLocation is technically a basetype
-require_relative 'qdm/facility_location'
+require_relative 'qdm/basetypes/facility_location'
+require_relative 'qdm/basetypes/component'
+
 
 # Tacoma-specific models
 require_relative 'cqm/measure'
@@ -50,7 +51,6 @@ require_relative 'qdm/device_order'
 require_relative 'qdm/diagnostic_study_performed'
 require_relative 'qdm/intervention_order'
 require_relative 'qdm/family_history'
-require_relative 'qdm/component'
 require_relative 'qdm/result_component'
 require_relative 'qdm/medication_active'
 require_relative 'qdm/laboratory_test_order'
