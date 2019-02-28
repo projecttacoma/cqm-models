@@ -22,6 +22,7 @@ module CQM
 
     field :title, type: String
     field :stratification_id, type: String
+    field :hqmf_id, type: String
     embeds_one :statement, class_name: 'CQM::StatementReference'
   end
 
