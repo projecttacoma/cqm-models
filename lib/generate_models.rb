@@ -107,7 +107,7 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
   end
 
   # Store datatype and its attributes (reject irrelevant datatypes)
-  next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType')
+  next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType') || datatype_name == 'FacilityLocation' || datatype_name== 'Component'
   datatypes[datatype_name] = attributes
 end
 
