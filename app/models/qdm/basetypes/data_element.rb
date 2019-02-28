@@ -66,10 +66,17 @@ module QDM
         end
 
         # Special case for facility locations
-        next unless field == 'facilityLocations'
-        send(field).each do |facility_location|
-          facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
-          facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+        if field == 'facilityLocations'
+          send(field).each do |facility_location|
+            facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
+            facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+          end
+        elsif field == 'facilityLocation'
+            facility_location = send(field)
+            if facility_location != nil
+              facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
+              facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+            end
         end
       end
     end
