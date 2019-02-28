@@ -34,6 +34,7 @@ module CQM
     embeds_one :observation_function, class_name: 'CQM::StatementReference'
     embeds_one :observation_parameter, class_name: 'CQM::StatementReference'
     field :aggregation_type, type: String
+    field :hqmf_id, type: String
   end
 
   # Base class for the population maps

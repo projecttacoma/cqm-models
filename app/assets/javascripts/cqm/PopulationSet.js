@@ -42,6 +42,7 @@ const ObservationSchema = new mongoose.Schema({
   observation_function: StatementReferenceSchema,
   observation_parameter: StatementReferenceSchema,
   aggregation_type: String,
+  hqmf_id: String,
 });
 
 const PopulationSetSchema = new mongoose.Schema({
