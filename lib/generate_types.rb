@@ -4,18 +4,16 @@ module QDM
   # BaseTypeGeneration contains functions to randomly generate basetypes used by PatientGeneration
   module BaseTypeGeneration
     def self.generate_component
-      component = QDM::Component.new
-      component.code = generate_code_field
+      code = generate_code_field
       # TODO: Randomize the type of the result
-      component.result = generate_code_field
-      component
+      result = generate_code_field
+      QDM::Component.new(code, result)
     end
 
     def self.generate_facility_location
-      facility_location = QDM::FacilityLocation.new
-      facility_location.code = generate_code_field
-      facility_location.locationPeriod = generate_date_interval_field
-      facility_location
+      code = generate_code_field
+      locationPeriod = generate_date_interval_field
+      QDM::FacilityLocation.new(code, locationPeriod)
     end
 
     def self.generate_code_field
