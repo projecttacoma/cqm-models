@@ -30,7 +30,6 @@ module QDM
           qdm_patient.dataElements.push(birthdate)
           cqm_patient.qdmPatient = qdm_patient
         end
-
         data_element = generate_loaded_datatype(type)
         qdm_patient.dataElements.push(data_element)
         # if type is negatable, add a negated version to the patient

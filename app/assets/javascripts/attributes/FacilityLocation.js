@@ -1,13 +1,12 @@
 const mongoose = require('mongoose/browser');
-const { DataElementSchema } = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
 
-const { IdSchema } = require('./Id');
-const Any = require('./basetypes/Any');
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Any = require('../basetypes/Any');
+
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,

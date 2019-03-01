@@ -12,9 +12,9 @@ require_relative 'qdm/basetypes/data_element'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/ratio'
-require_relative 'qdm/basetypes/facility_location'
-require_relative 'qdm/basetypes/component'
-
+require_relative 'qdm/attributes/attribute'
+require_relative 'qdm/attributes/facility_location'
+require_relative 'qdm/attributes/component'
 
 # Tacoma-specific models
 require_relative 'cqm/measure'

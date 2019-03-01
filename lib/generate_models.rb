@@ -107,7 +107,7 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
   end
 
   # Store datatype and its attributes (reject irrelevant datatypes)
-  next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType') || datatype_name == 'FacilityLocation' || datatype_name== 'Component'
+  next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType')
   datatypes[datatype_name] = attributes
 end
 
@@ -172,6 +172,7 @@ datatype_custom_templates = {
   QDMPatient: 'templates/patient_template.js.erb',
   Id: 'templates/id_template.js.erb'
 }
+
 datatypes.each do |datatype, attributes|
   renderer = default_renderer
   if datatype_custom_templates.key?(datatype.to_sym)
@@ -195,7 +196,14 @@ unless IS_TEST
   renderer = ERB.new(alltemplate, nil, '-')
   file_path = 'app/assets/javascripts/AllDataElements.js'
   puts '  ' + file_path
-  File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
+  File.open(file_path, 'w') { |file| 
+    file.puts renderer.result(binding)
+    # Manually add the attribute schemas that were skipped
+    file.puts "module.exports.Component = require('./attributes/Component.js').Component;"
+    file.puts "module.exports.ComponentSchema = require('./attributes/Component.js').ComponentSchema;"
+    file.puts "module.exports.FacilityLocation = require('./attributes/FacilityLocation.js').FacilityLocation;"
+    file.puts "module.exports.FacilityLocationSchema = require('./attributes/FacilityLocation.js').FacilityLocationSchema;"
+  }
 end
 
 ###############################################################################
@@ -348,7 +356,8 @@ end
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = ''
   File.open(file_name).each_line.with_index do |line, index|
-    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb') && !file_name.include?('/id.rb')
+    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb') && !file_name.include?('/id.rb') && !file_name.include?('/component.rb') && !file_name.include?('/facility_location.rb')
+    line.gsub!("\n", " < Attribute\n") if index.zero? && (file_name.include?('/component.rb') || file_name.include?('/facility_location.rb'))
     contents += "module QDM\n  # #{file_name}\n  #{line.gsub('QDM::', '')}" if index.zero?
     contents += '  ' unless index.zero? || line.blank?
     contents += line unless index.zero?
@@ -356,5 +365,11 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents += 'end'
   File.open(file_name, 'w') { |file| file.puts contents }
 end
+
+puts 'Moving Attribute Schemas To Their Own Directory'
+File.rename 'app/models/qdm/facility_location.rb', 'app/models/qdm/attributes/facility_location.rb'
+File.rename 'app/models/qdm/component.rb', 'app/models/qdm/attributes/component.rb'
+File.rename 'app/assets/javascripts/FacilityLocation.js', 'app/assets/javascripts/attributes/FacilityLocation.js'
+File.rename 'app/assets/javascripts/Component.js', 'app/assets/javascripts/attributes/Component.js'
 
 puts 'Done.'

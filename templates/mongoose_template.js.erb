@@ -1,13 +1,22 @@
 const mongoose = require('mongoose/browser');
+<% unless datatype.downcase == 'component' || datatype.downcase == 'facilitylocation' %>
+<% unless datatype.downcase == 'id' %>const { IdSchema } = require('./Id');<% end %>
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-<% unless datatype.downcase.include? 'component' %>const { ComponentSchema } = require('./Component');<% end %>
-<% unless datatype.downcase.include? 'facilitylocation' %>const { FacilityLocationSchema } = require('./FacilityLocation');<% end %>
-<% unless datatype.downcase == 'id' %>const { IdSchema } = require('./Id');<% end %>
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+<% else %>
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Any = require('../basetypes/Any');
+<% end %>
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
