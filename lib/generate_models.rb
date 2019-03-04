@@ -198,8 +198,8 @@ unless IS_TEST
   puts '  ' + file_path
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
   contents = File.read(file_path)
-  contents.gsub!(/\/FacilityLocation.js/, '/attributes/FacilityLocation.js')
-  contents.gsub!(/\/Component.js/, '/attributes/Component.js')
+  contents.gsub!(%r{\/FacilityLocation.js}, '/attributes/FacilityLocation.js')
+  contents.gsub!(%r{\/Component.js}, '/attributes/Component.js')
   File.open(file_path, 'w') { |file| file.puts contents }
 end
 
