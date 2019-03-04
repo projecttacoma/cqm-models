@@ -11,7 +11,6 @@ const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
 
 
-
 const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
