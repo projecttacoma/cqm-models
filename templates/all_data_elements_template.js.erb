@@ -1,6 +1,4 @@
 <%- datatypes.each do |datatype, _| -%>
-    <% unless datatype.downcase == 'component' || datatype.downcase == 'facilitylocation' %> 
-        module.exports.<%= datatype %> = require('./<%= datatype %>.js').<%= datatype %>;
-        module.exports.<%= datatype %>Schema = require('./<%= datatype %>.js').<%= datatype %>Schema;
-    <% end %>
+module.exports.<%= datatype %> = require('./<%= datatype %>.js').<%= datatype %>;
+module.exports.<%= datatype %>Schema = require('./<%= datatype %>.js').<%= datatype %>Schema;
 <%- end -%>

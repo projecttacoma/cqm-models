@@ -196,14 +196,11 @@ unless IS_TEST
   renderer = ERB.new(alltemplate, nil, '-')
   file_path = 'app/assets/javascripts/AllDataElements.js'
   puts '  ' + file_path
-  File.open(file_path, 'w') { |file| 
-    file.puts renderer.result(binding)
-    # Manually add the attribute schemas that were skipped
-    file.puts "module.exports.Component = require('./attributes/Component.js').Component;"
-    file.puts "module.exports.ComponentSchema = require('./attributes/Component.js').ComponentSchema;"
-    file.puts "module.exports.FacilityLocation = require('./attributes/FacilityLocation.js').FacilityLocation;"
-    file.puts "module.exports.FacilityLocationSchema = require('./attributes/FacilityLocation.js').FacilityLocationSchema;"
-  }
+  File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
+  contents = File.read(file_path)
+  contents.gsub!(/\/FacilityLocation.js/, '/attributes/FacilityLocation.js')
+  contents.gsub!(/\/Component.js/, '/attributes/Component.js')
+  File.open(file_path, 'w') { |file| file.puts contents }
 end
 
 ###############################################################################
@@ -372,12 +369,12 @@ if IS_TEST
   Dir.mkdir(ruby_models_path + 'attributes')
   Dir.mkdir(js_models_path + 'attributes')
 end
-if File.exists?(ruby_models_path + 'facility_location.rb')
-  File.rename ruby_models_path + 'facility_location.rb', ruby_models_path +'attributes/facility_location.rb'
+if File.exist?(ruby_models_path + 'facility_location.rb')
+  File.rename ruby_models_path + 'facility_location.rb', ruby_models_path + 'attributes/facility_location.rb'
   File.rename js_models_path + 'FacilityLocation.js', js_models_path + 'attributes/FacilityLocation.js'
 end
-if File.exists?(ruby_models_path + 'component.rb')
-  File.rename ruby_models_path +'component.rb', ruby_models_path + 'attributes/component.rb'
+if File.exist?(ruby_models_path + 'component.rb')
+  File.rename ruby_models_path + 'component.rb', ruby_models_path + 'attributes/component.rb'
   File.rename js_models_path + 'Component.js', js_models_path + 'attributes/Component.js'
 end
 
