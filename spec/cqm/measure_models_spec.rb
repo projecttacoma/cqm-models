@@ -48,6 +48,19 @@ RSpec.describe CQM::Measure do
     measure.save!
   end
 
+  it 'can construct a measure with multiple population_sets and stratifications and execute all_stratifications' do
+    measure = CQM::Measure.new
+    measure.population_sets << CQM::PopulationSet.new(
+      title: 'PS1',
+      stratifications: [CQM::Stratification.new(title: 'PS1 S1'), CQM::Stratification.new(title: 'PS1 S2')]
+    )
+    measure.population_sets << CQM::PopulationSet.new(
+      title: 'PS2',
+      stratifications: [CQM::Stratification.new(title: 'PS2 S1'), CQM::Stratification.new(title: 'PS2 S2')]
+    )
+    expect(measure.all_stratifications.map(&:title)).to eq(['PS1 S1', 'PS1 S2', 'PS2 S1', 'PS2 S2'])
+  end
+
   it 'can construct and save a measure with a package' do
     expect do
       measure = CQM::Measure.new(
