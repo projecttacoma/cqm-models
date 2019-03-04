@@ -72,11 +72,11 @@ module QDM
             facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
           end
         elsif field == 'facilityLocation'
-            facility_location = send(field)
-            if facility_location != nil
-              facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
-              facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
-            end
+          facility_location = send(field)
+          unless facility_location.nil?
+            facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
+            facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+          end
         end
       end
     end
@@ -89,7 +89,7 @@ module QDM
         return nil unless object
         object = object.symbolize_keys
         if object.is_a?(Hash)
-          data_element = QDM::DataElement.new
+          data_element = QDM.const_get(object[:_type])
           data_element.attribute_names.each do |field|
             data_element.send(field + '=', object[field.to_sym])
           end
@@ -106,7 +106,7 @@ module QDM
         when QDM::DataElement then object.mongoize
         when Hash
           object = object.symbolize_keys
-          data_element = QDM::DataElement.new
+          data_element = QDM.const_get(object[:_type])
           data_element.attribute_names.each do |field|
             data_element.send(field + '=', object[field.to_sym])
           end
