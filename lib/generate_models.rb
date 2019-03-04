@@ -367,9 +367,18 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
 end
 
 puts 'Moving Attribute Schemas To Their Own Directory'
-File.rename 'app/models/qdm/facility_location.rb', 'app/models/qdm/attributes/facility_location.rb'
-File.rename 'app/models/qdm/component.rb', 'app/models/qdm/attributes/component.rb'
-File.rename 'app/assets/javascripts/FacilityLocation.js', 'app/assets/javascripts/attributes/FacilityLocation.js'
-File.rename 'app/assets/javascripts/Component.js', 'app/assets/javascripts/attributes/Component.js'
+# Create ruby attributes directory if it doesn't exist, directory won't exist in test mode
+if IS_TEST
+  Dir.mkdir(ruby_models_path + 'attributes')
+  Dir.mkdir(js_models_path + 'attributes')
+end
+if File.exists?(ruby_models_path + 'facility_location.rb')
+  File.rename ruby_models_path + 'facility_location.rb', ruby_models_path +'attributes/facility_location.rb'
+  File.rename js_models_path + 'FacilityLocation.js', js_models_path + 'attributes/FacilityLocation.js'
+end
+if File.exists?(ruby_models_path + 'component.rb')
+  File.rename ruby_models_path +'component.rb', ruby_models_path + 'attributes/component.rb'
+  File.rename js_models_path + 'Component.js', js_models_path + 'attributes/Component.js'
+end
 
 puts 'Done.'
