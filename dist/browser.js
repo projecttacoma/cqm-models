@@ -3010,6 +3010,7 @@ const mongoose = require('mongoose/browser');
 const StatementReferenceSchema = new mongoose.Schema({
   library_name: String,
   statement_name: String,
+  hqmf_id: String,
 });
 
 const StatementDependencySchema = new mongoose.Schema({
@@ -3136,6 +3137,10 @@ const MeasureSchema = new mongoose.Schema(
   }
 );
 
+MeasureSchema.methods.all_stratifications = function all_stratifications() {
+  return this.population_sets.flatMap(ps => ps.stratifications);
+};
+
 module.exports.MeasureSchema = MeasureSchema;
 class Measure extends mongoose.Document {
   constructor(object) {
@@ -3209,6 +3214,7 @@ PopulationMapSchema.options.toObject.transform = function transform(doc, ret, op
 const StratificationSchema = new mongoose.Schema({
   title: String,
   stratification_id: String,
+  hqmf_id: String,
   statement: StatementReferenceSchema,
 });
 
@@ -3217,6 +3223,7 @@ const ObservationSchema = new mongoose.Schema({
   observation_function: StatementReferenceSchema,
   observation_parameter: StatementReferenceSchema,
   aggregation_type: String,
+  hqmf_id: String,
 });
 
 const PopulationSetSchema = new mongoose.Schema({

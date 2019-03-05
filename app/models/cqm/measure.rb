@@ -10,8 +10,6 @@ module CQM
     validates_inclusion_of :measure_scoring, in: %w[PROPORTION RATIO CONTINUOUS_VARIABLE COHORT]
     validates_inclusion_of :calculation_method, in: %w[PATIENT EPISODE_OF_CARE]
 
-    TYPES = %w[ep eh].freeze
-
     IPP = 'IPP'.freeze
     DENOM = 'DENOM'.freeze
     NUMER = 'NUMER'.freeze
@@ -78,6 +76,10 @@ module CQM
     has_and_belongs_to_many :value_sets, inverse_of: nil
 
     scope :by_measure_id, ->(id) { where(measure_id: id) }
+
+    def all_stratifications
+      population_sets.flat_map(&:stratifications)
+    end
 
     # Returns the hqmf-parser's ruby implementation of an HQMF document.
     # Rebuild from population_criteria, data_criteria, and measure_period JSON

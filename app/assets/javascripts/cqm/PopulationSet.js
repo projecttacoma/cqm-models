@@ -34,6 +34,7 @@ PopulationMapSchema.options.toObject.transform = function transform(doc, ret, op
 const StratificationSchema = new mongoose.Schema({
   title: String,
   stratification_id: String,
+  hqmf_id: String,
   statement: StatementReferenceSchema,
 });
 
@@ -42,6 +43,7 @@ const ObservationSchema = new mongoose.Schema({
   observation_function: StatementReferenceSchema,
   observation_parameter: StatementReferenceSchema,
   aggregation_type: String,
+  hqmf_id: String,
 });
 
 const PopulationSetSchema = new mongoose.Schema({
