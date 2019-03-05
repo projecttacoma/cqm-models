@@ -2,7 +2,6 @@ module QDM
   # Represents QDM attribute
   class Attribute
     include Mongoid::Document
-    embedded_in :data_element
 
     def initialize(options = {})
       super(options)
@@ -27,38 +26,38 @@ module QDM
     end
 
     class << self
-    # Get the object as it was stored in the database, and instantiate
-    # this custom class from it.
-    def demongoize(object)
-      return nil unless object
-      object = object.symbolize_keys
-      if object.is_a?(Hash)
-        # This will turn the object into the concrete type eg: facilityLocation
-        data_element = QDM.const_get(object[:_type]).new
-        data_element.attribute_names.each do |field|
-          data_element.send(field + '=', object[field.to_sym])
-        end
-        data_element
-      else object
-      end
-    end
-
-    # Takes any possible object and converts it to how it would be
-    # stored in the database.
-    def mongoize(object)
-      case object
-      when nil then nil
-      when QDM::Attribute then object.mongoize
-      when Hash
+      # Get the object as it was stored in the database, and instantiate
+      # this custom class from it.
+      def demongoize(object)
+        return nil unless object
         object = object.symbolize_keys
-        data_element = QDM.const_get(object[:_type]).new
-        data_element.attribute_names.each do |field|
-          data_element.send(field + '=', object[field.to_sym])
+        if object.is_a?(Hash)
+          # This will turn the object into the concrete type eg: facilityLocation
+          data_element = QDM.const_get(object[:_type]).new
+          data_element.attribute_names.each do |field|
+            data_element.send(field + '=', object[field.to_sym])
+          end
+          data_element
+        else object
         end
-        data_element.mongoize
-      else object
       end
-    end
+
+      # Takes any possible object and converts it to how it would be
+      # stored in the database.
+      def mongoize(object)
+        case object
+        when nil then nil
+        when QDM::Attribute then object.mongoize
+        when Hash
+          object = object.symbolize_keys
+          data_element = QDM.const_get(object[:_type]).new
+          data_element.attribute_names.each do |field|
+            data_element.send(field + '=', object[field.to_sym])
+          end
+          data_element.mongoize
+        else object
+        end
+      end
     end
   end
 end

@@ -68,18 +68,21 @@ module QDM
         # Special case for facility locations
         if field == 'facilityLocations'
           send(field).each do |facility_location|
-            facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
-            facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+            shift_facility_location_dates(facility_location, seconds)
           end
         elsif field == 'facilityLocation'
           facility_location = send(field)
           unless facility_location.nil?
-            facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
-            facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+            shift_facility_location_dates(facility_location, seconds)
             send(field + '=', facility_location)
           end
         end
       end
+    end
+
+    def shift_facility_location_dates(facility_location, seconds)
+      facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
+      facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
     end
 
     class << self
