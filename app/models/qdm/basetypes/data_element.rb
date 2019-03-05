@@ -77,6 +77,7 @@ module QDM
             facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
             facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
           end
+          send(field + '=', facility_location)
         end
       end
     end
