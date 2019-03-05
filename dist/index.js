@@ -3132,6 +3132,10 @@ const MeasureSchema = new mongoose.Schema(
   }
 );
 
+MeasureSchema.methods.all_stratifications = function all_stratifications() {
+  return this.population_sets.flatMap(ps => ps.stratifications);
+};
+
 module.exports.MeasureSchema = MeasureSchema;
 class Measure extends mongoose.Document {
   constructor(object) {
