@@ -138,7 +138,6 @@ RSpec.describe QDM do
     # DiatnosticStudyPerformed facilityLocation high and low should be two hours ahead
     expect(@patient_de1.qdmPatient.diagnostic_studies.first.facilityLocation['locationPeriod'][:low].utc.to_s).to include('06:00:00')
     expect(@patient_de1.qdmPatient.diagnostic_studies.first.facilityLocation['locationPeriod'][:high].utc.to_s).to include('07:00:00')
-
   end
 
   it 'shift patient data elements backwards in time' do
