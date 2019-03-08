@@ -15,7 +15,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "cql-execution": "https://github.com/cqframework/cql-execution.git#bonnie-v3.1.1",
+    "cql-execution": "https://github.com/cqframework/cql-execution.git#no_coded_uncertainty",
     "mongoose": "^5.0.7"
   },
   "devDependencies": {
