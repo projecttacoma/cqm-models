@@ -1,14 +1,16 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -36,7 +38,7 @@ class AdverseEvent extends mongoose.Document {
 }
 module.exports.AdverseEvent = AdverseEvent;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],2:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],2:[function(require,module,exports){
 module.exports.Id = require('./Id.js').Id;
 module.exports.IdSchema = require('./Id.js').IdSchema;
 module.exports.PhysicalExamOrder = require('./PhysicalExamOrder.js').PhysicalExamOrder;
@@ -79,12 +81,12 @@ module.exports.InterventionOrder = require('./InterventionOrder.js').Interventio
 module.exports.InterventionOrderSchema = require('./InterventionOrder.js').InterventionOrderSchema;
 module.exports.FamilyHistory = require('./FamilyHistory.js').FamilyHistory;
 module.exports.FamilyHistorySchema = require('./FamilyHistory.js').FamilyHistorySchema;
-module.exports.Component = require('./Component.js').Component;
-module.exports.ComponentSchema = require('./Component.js').ComponentSchema;
+module.exports.Component = require('./attributes/Component.js').Component;
+module.exports.ComponentSchema = require('./attributes/Component.js').ComponentSchema;
 module.exports.ResultComponent = require('./ResultComponent.js').ResultComponent;
 module.exports.ResultComponentSchema = require('./ResultComponent.js').ResultComponentSchema;
-module.exports.FacilityLocation = require('./FacilityLocation.js').FacilityLocation;
-module.exports.FacilityLocationSchema = require('./FacilityLocation.js').FacilityLocationSchema;
+module.exports.FacilityLocation = require('./attributes/FacilityLocation.js').FacilityLocation;
+module.exports.FacilityLocationSchema = require('./attributes/FacilityLocation.js').FacilityLocationSchema;
 module.exports.MedicationActive = require('./MedicationActive.js').MedicationActive;
 module.exports.MedicationActiveSchema = require('./MedicationActive.js').MedicationActiveSchema;
 module.exports.LaboratoryTestOrder = require('./LaboratoryTestOrder.js').LaboratoryTestOrder;
@@ -154,17 +156,19 @@ module.exports.PhysicalExamPerformedSchema = require('./PhysicalExamPerformed.js
 module.exports.QDMPatient = require('./QDMPatient.js').QDMPatient;
 module.exports.QDMPatientSchema = require('./QDMPatient.js').QDMPatientSchema;
 
-},{"./AdverseEvent.js":1,"./AllergyIntolerance.js":3,"./AssessmentOrder.js":4,"./AssessmentPerformed.js":5,"./AssessmentRecommended.js":6,"./CareGoal.js":7,"./CommunicationPerformed.js":8,"./Component.js":9,"./DeviceApplied.js":10,"./DeviceOrder.js":11,"./DeviceRecommended.js":12,"./Diagnosis.js":13,"./DiagnosticStudyOrder.js":14,"./DiagnosticStudyPerformed.js":15,"./DiagnosticStudyRecommended.js":16,"./EncounterOrder.js":17,"./EncounterPerformed.js":18,"./EncounterRecommended.js":19,"./FacilityLocation.js":20,"./FamilyHistory.js":21,"./Id.js":22,"./ImmunizationAdministered.js":23,"./ImmunizationOrder.js":24,"./InterventionOrder.js":26,"./InterventionPerformed.js":27,"./InterventionRecommended.js":28,"./LaboratoryTestOrder.js":29,"./LaboratoryTestPerformed.js":30,"./LaboratoryTestRecommended.js":31,"./MedicationActive.js":32,"./MedicationAdministered.js":33,"./MedicationDischarge.js":34,"./MedicationDispensed.js":35,"./MedicationOrder.js":36,"./Participation.js":37,"./PatientCareExperience.js":38,"./PatientCharacteristic.js":39,"./PatientCharacteristicBirthdate.js":40,"./PatientCharacteristicClinicalTrialParticipant.js":41,"./PatientCharacteristicEthnicity.js":42,"./PatientCharacteristicExpired.js":43,"./PatientCharacteristicPayer.js":44,"./PatientCharacteristicRace.js":45,"./PatientCharacteristicSex.js":46,"./PhysicalExamOrder.js":47,"./PhysicalExamPerformed.js":48,"./PhysicalExamRecommended.js":49,"./ProcedureOrder.js":50,"./ProcedurePerformed.js":51,"./ProcedureRecommended.js":52,"./ProviderCareExperience.js":53,"./ProviderCharacteristic.js":54,"./QDMPatient.js":55,"./ResultComponent.js":57,"./SubstanceAdministered.js":58,"./SubstanceOrder.js":59,"./SubstanceRecommended.js":60,"./Symptom.js":61}],3:[function(require,module,exports){
+},{"./AdverseEvent.js":1,"./AllergyIntolerance.js":3,"./AssessmentOrder.js":4,"./AssessmentPerformed.js":5,"./AssessmentRecommended.js":6,"./CareGoal.js":7,"./CommunicationPerformed.js":8,"./DeviceApplied.js":9,"./DeviceOrder.js":10,"./DeviceRecommended.js":11,"./Diagnosis.js":12,"./DiagnosticStudyOrder.js":13,"./DiagnosticStudyPerformed.js":14,"./DiagnosticStudyRecommended.js":15,"./EncounterOrder.js":16,"./EncounterPerformed.js":17,"./EncounterRecommended.js":18,"./FamilyHistory.js":19,"./Id.js":20,"./ImmunizationAdministered.js":21,"./ImmunizationOrder.js":22,"./InterventionOrder.js":24,"./InterventionPerformed.js":25,"./InterventionRecommended.js":26,"./LaboratoryTestOrder.js":27,"./LaboratoryTestPerformed.js":28,"./LaboratoryTestRecommended.js":29,"./MedicationActive.js":30,"./MedicationAdministered.js":31,"./MedicationDischarge.js":32,"./MedicationDispensed.js":33,"./MedicationOrder.js":34,"./Participation.js":35,"./PatientCareExperience.js":36,"./PatientCharacteristic.js":37,"./PatientCharacteristicBirthdate.js":38,"./PatientCharacteristicClinicalTrialParticipant.js":39,"./PatientCharacteristicEthnicity.js":40,"./PatientCharacteristicExpired.js":41,"./PatientCharacteristicPayer.js":42,"./PatientCharacteristicRace.js":43,"./PatientCharacteristicSex.js":44,"./PhysicalExamOrder.js":45,"./PhysicalExamPerformed.js":46,"./PhysicalExamRecommended.js":47,"./ProcedureOrder.js":48,"./ProcedurePerformed.js":49,"./ProcedureRecommended.js":50,"./ProviderCareExperience.js":51,"./ProviderCharacteristic.js":52,"./QDMPatient.js":53,"./ResultComponent.js":55,"./SubstanceAdministered.js":56,"./SubstanceOrder.js":57,"./SubstanceRecommended.js":58,"./Symptom.js":59,"./attributes/Component.js":60,"./attributes/FacilityLocation.js":61}],3:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -192,17 +196,19 @@ class AllergyIntolerance extends mongoose.Document {
 }
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],4:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],4:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -229,17 +235,19 @@ class AssessmentOrder extends mongoose.Document {
 }
 module.exports.AssessmentOrder = AssessmentOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],5:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],5:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -270,17 +278,19 @@ class AssessmentPerformed extends mongoose.Document {
 }
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],6:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],6:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -307,17 +317,19 @@ class AssessmentRecommended extends mongoose.Document {
 }
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],7:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],7:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -343,17 +355,19 @@ class CareGoal extends mongoose.Document {
 }
 module.exports.CareGoal = CareGoal;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],8:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],8:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -385,50 +399,19 @@ class CommunicationPerformed extends mongoose.Document {
 }
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],9:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],9:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
 
-const [Number, String] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-];
-
-const ComponentSchema = new mongoose.Schema({
-  code: Code,
-  result: Any,
-  qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Component' },
-
-});
-
-module.exports.ComponentSchema = ComponentSchema;
-class Component extends mongoose.Document {
-  constructor(object) {
-    super(object, ComponentSchema);
-  }
-}
-module.exports.Component = Component;
-
-},{"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],10:[function(require,module,exports){
-const mongoose = require('mongoose/browser');
-const { DataElementSchema } = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
-const Any = require('./basetypes/Any');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -457,17 +440,19 @@ class DeviceApplied extends mongoose.Document {
 }
 module.exports.DeviceApplied = DeviceApplied;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],11:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],10:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -494,17 +479,19 @@ class DeviceOrder extends mongoose.Document {
 }
 module.exports.DeviceOrder = DeviceOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],12:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],11:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -531,17 +518,19 @@ class DeviceRecommended extends mongoose.Document {
 }
 module.exports.DeviceRecommended = DeviceRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],13:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],12:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -569,17 +558,19 @@ class Diagnosis extends mongoose.Document {
 }
 module.exports.Diagnosis = Diagnosis;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],14:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],13:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -606,17 +597,19 @@ class DiagnosticStudyOrder extends mongoose.Document {
 }
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],15:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],14:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -650,17 +643,19 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 }
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],16:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],15:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -687,17 +682,19 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 }
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],17:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],16:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -725,17 +722,19 @@ class EncounterOrder extends mongoose.Document {
 }
 module.exports.EncounterOrder = EncounterOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],18:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],17:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -768,17 +767,19 @@ class EncounterPerformed extends mongoose.Document {
 }
 module.exports.EncounterPerformed = EncounterPerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],19:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],18:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -806,50 +807,19 @@ class EncounterRecommended extends mongoose.Document {
 }
 module.exports.EncounterRecommended = EncounterRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],20:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],19:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
 
-const [Number, String] = [
-  mongoose.Schema.Types.Number,
-  mongoose.Schema.Types.String,
-];
-
-const FacilityLocationSchema = new mongoose.Schema({
-  code: Code,
-  locationPeriod: Interval,
-  qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'FacilityLocation' },
-
-});
-
-module.exports.FacilityLocationSchema = FacilityLocationSchema;
-class FacilityLocation extends mongoose.Document {
-  constructor(object) {
-    super(object, FacilityLocationSchema);
-  }
-}
-module.exports.FacilityLocation = FacilityLocation;
-
-},{"./Component":9,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],21:[function(require,module,exports){
-const mongoose = require('mongoose/browser');
-const { DataElementSchema } = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
-const Any = require('./basetypes/Any');
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -875,7 +845,7 @@ class FamilyHistory extends mongoose.Document {
 }
 module.exports.FamilyHistory = FamilyHistory;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],22:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],20:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
@@ -899,17 +869,19 @@ class Id extends mongoose.Document {
 }
 module.exports.Id = Id;
 
-},{"mongoose/browser":253}],23:[function(require,module,exports){
+},{"mongoose/browser":253}],21:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -939,17 +911,19 @@ class ImmunizationAdministered extends mongoose.Document {
 }
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],24:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],22:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -980,7 +954,7 @@ class ImmunizationOrder extends mongoose.Document {
 }
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],25:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],23:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String, Mixed, ObjectId] = [
@@ -1044,17 +1018,19 @@ class IndividualResult extends mongoose.Document {
 }
 module.exports.IndividualResult = IndividualResult;
 
-},{"mongoose/browser":253}],26:[function(require,module,exports){
+},{"mongoose/browser":253}],24:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1081,17 +1057,19 @@ class InterventionOrder extends mongoose.Document {
 }
 module.exports.InterventionOrder = InterventionOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],27:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],25:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1121,17 +1099,19 @@ class InterventionPerformed extends mongoose.Document {
 }
 module.exports.InterventionPerformed = InterventionPerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],28:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],26:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1158,17 +1138,19 @@ class InterventionRecommended extends mongoose.Document {
 }
 module.exports.InterventionRecommended = InterventionRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],29:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],27:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1195,17 +1177,19 @@ class LaboratoryTestOrder extends mongoose.Document {
 }
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],30:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],28:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1239,17 +1223,19 @@ class LaboratoryTestPerformed extends mongoose.Document {
 }
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],31:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],29:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1276,17 +1262,19 @@ class LaboratoryTestRecommended extends mongoose.Document {
 }
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],32:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],30:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1314,17 +1302,19 @@ class MedicationActive extends mongoose.Document {
 }
 module.exports.MedicationActive = MedicationActive;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],33:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],31:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1355,17 +1345,19 @@ class MedicationAdministered extends mongoose.Document {
 }
 module.exports.MedicationAdministered = MedicationAdministered;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],34:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],32:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1397,17 +1389,19 @@ class MedicationDischarge extends mongoose.Document {
 }
 module.exports.MedicationDischarge = MedicationDischarge;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],35:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],33:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1442,17 +1436,19 @@ class MedicationDispensed extends mongoose.Document {
 }
 module.exports.MedicationDispensed = MedicationDispensed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],36:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],34:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1488,17 +1484,19 @@ class MedicationOrder extends mongoose.Document {
 }
 module.exports.MedicationOrder = MedicationOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],37:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],35:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1522,17 +1520,19 @@ class Participation extends mongoose.Document {
 }
 module.exports.Participation = Participation;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],38:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],36:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1556,17 +1556,19 @@ class PatientCareExperience extends mongoose.Document {
 }
 module.exports.PatientCareExperience = PatientCareExperience;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],39:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],37:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1590,17 +1592,19 @@ class PatientCharacteristic extends mongoose.Document {
 }
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],40:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],38:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1625,17 +1629,19 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 }
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],41:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],39:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1662,17 +1668,19 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 }
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],42:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],40:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1696,17 +1704,19 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 }
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],43:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],41:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1732,17 +1742,19 @@ class PatientCharacteristicExpired extends mongoose.Document {
 }
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],44:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],42:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1767,17 +1779,19 @@ class PatientCharacteristicPayer extends mongoose.Document {
 }
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],45:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],43:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1801,17 +1815,19 @@ class PatientCharacteristicRace extends mongoose.Document {
 }
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],46:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],44:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1835,17 +1851,19 @@ class PatientCharacteristicSex extends mongoose.Document {
 }
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],47:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],45:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1873,17 +1891,19 @@ class PhysicalExamOrder extends mongoose.Document {
 }
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],48:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],46:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1915,17 +1935,19 @@ class PhysicalExamPerformed extends mongoose.Document {
 }
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],49:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],47:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1953,17 +1975,19 @@ class PhysicalExamRecommended extends mongoose.Document {
 }
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],50:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],48:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1992,17 +2016,19 @@ class ProcedureOrder extends mongoose.Document {
 }
 module.exports.ProcedureOrder = ProcedureOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],51:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],49:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2037,17 +2063,19 @@ class ProcedurePerformed extends mongoose.Document {
 }
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],52:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],50:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2076,17 +2104,19 @@ class ProcedureRecommended extends mongoose.Document {
 }
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],53:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],51:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2110,17 +2140,19 @@ class ProviderCareExperience extends mongoose.Document {
 }
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],54:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],52:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2144,7 +2176,7 @@ class ProviderCharacteristic extends mongoose.Document {
 }
 module.exports.ProviderCharacteristic = ProviderCharacteristic;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],55:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],53:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2405,7 +2437,7 @@ class QDMPatient extends mongoose.Document {
 }
 module.exports.QDMPatient = QDMPatient;
 
-},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],56:[function(require,module,exports){
+},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],54:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2440,17 +2472,19 @@ class PlaceholderResult extends mongoose.Document {
 }
 module.exports.PlaceholderResult = PlaceholderResult;
 
-},{"mongoose/browser":253}],57:[function(require,module,exports){
+},{"mongoose/browser":253}],55:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2472,17 +2506,19 @@ class ResultComponent extends mongoose.Document {
 }
 module.exports.ResultComponent = ResultComponent;
 
-},{"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],58:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],56:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2512,17 +2548,19 @@ class SubstanceAdministered extends mongoose.Document {
 }
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],59:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2554,17 +2592,19 @@ class SubstanceOrder extends mongoose.Document {
 }
 module.exports.SubstanceOrder = SubstanceOrder;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],60:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],58:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2595,17 +2635,19 @@ class SubstanceRecommended extends mongoose.Document {
 }
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],61:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],59:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
+
+const { IdSchema } = require('./Id');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const { ComponentSchema } = require('./Component');
-const { FacilityLocationSchema } = require('./FacilityLocation');
-const { IdSchema } = require('./Id');
 const Any = require('./basetypes/Any');
+const { ComponentSchema } = require('./attributes/Component');
+const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2631,7 +2673,69 @@ class Symptom extends mongoose.Document {
 }
 module.exports.Symptom = Symptom;
 
-},{"./Component":9,"./FacilityLocation":20,"./Id":22,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],62:[function(require,module,exports){
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],60:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
+
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Any = require('../basetypes/Any');
+
+
+const [Number, String] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+];
+
+const ComponentSchema = new mongoose.Schema({
+  code: Code,
+  result: Any,
+  qdmVersion: { type: String, default: '5.4' },
+  _type: { type: String, default: 'Component' },
+
+});
+
+module.exports.ComponentSchema = ComponentSchema;
+class Component extends mongoose.Document {
+  constructor(object) {
+    super(object, ComponentSchema);
+  }
+}
+module.exports.Component = Component;
+
+},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],61:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
+
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Any = require('../basetypes/Any');
+
+
+const [Number, String] = [
+  mongoose.Schema.Types.Number,
+  mongoose.Schema.Types.String,
+];
+
+const FacilityLocationSchema = new mongoose.Schema({
+  code: Code,
+  locationPeriod: Interval,
+  qdmVersion: { type: String, default: '5.4' },
+  _type: { type: String, default: 'FacilityLocation' },
+
+});
+
+module.exports.FacilityLocationSchema = FacilityLocationSchema;
+class FacilityLocation extends mongoose.Document {
+  constructor(object) {
+    super(object, FacilityLocationSchema);
+  }
+}
+module.exports.FacilityLocation = FacilityLocation;
+
+},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],62:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -2783,7 +2887,7 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-},{"../Id":22,"./Code.js":63,"cql-execution":107,"mongoose/browser":253}],65:[function(require,module,exports){
+},{"../Id":20,"./Code.js":63,"cql-execution":107,"mongoose/browser":253}],65:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3211,7 +3315,7 @@ module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
 module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
 module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;
 
-},{"./AllDataElements.js":2,"./IndividualResult":25,"./Result.js":56,"./cqm/CQLLibrary.js":69,"./cqm/CQLStatementDependency.js":70,"./cqm/Concept.js":71,"./cqm/Measure.js":72,"./cqm/MeasurePackage.js":73,"./cqm/ValueSet.js":75,"cql-execution":107}],77:[function(require,module,exports){
+},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":69,"./cqm/CQLStatementDependency.js":70,"./cqm/Concept.js":71,"./cqm/Measure.js":72,"./cqm/MeasurePackage.js":73,"./cqm/ValueSet.js":75,"cql-execution":107}],77:[function(require,module,exports){
 (function (global){
 'use strict';
 

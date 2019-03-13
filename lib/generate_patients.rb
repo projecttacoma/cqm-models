@@ -30,7 +30,6 @@ module QDM
           qdm_patient.dataElements.push(birthdate)
           cqm_patient.qdmPatient = qdm_patient
         end
-
         data_element = generate_loaded_datatype(type)
         qdm_patient.dataElements.push(data_element)
         # if type is negatable, add a negated version to the patient
@@ -83,10 +82,7 @@ module QDM
       elsif field_name == 'result'
         # TODO: Result can be MANY Integer, Decimal, Code, Quantity or Ratio randomize this
         data_element[field_name] = QDM::BaseTypeGeneration.generate_code_field
-      elsif field_name == 'diagnoses'
-        # TODO: Randomize count and contents of diagnosis
-        data_element[field_name] = [QDM::Diagnosis.new]
-      elsif field_name == 'dataElementCodes'
+      elsif %w[diagnoses dataElementCodes].include? field_name
         # TODO: Populate dataElementCodes with codes specifically for data element type
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_code_field]
       elsif field_name == 'facilityLocations'

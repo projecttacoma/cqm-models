@@ -1,6 +1,6 @@
 module QDM
   # app/models/qdm/component.rb
-  class Component < DataElement
+  class Component < Attribute
     include Mongoid::Document
     field :code, type: QDM::Code
     field :result

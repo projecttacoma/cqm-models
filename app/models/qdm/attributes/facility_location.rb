@@ -1,6 +1,6 @@
 module QDM
   # app/models/qdm/facility_location.rb
-  class FacilityLocation < DataElement
+  class FacilityLocation < Attribute
     include Mongoid::Document
     field :code, type: QDM::Code
     field :locationPeriod, type: QDM::Interval

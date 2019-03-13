@@ -49,23 +49,29 @@ RSpec.describe QDM do
     expect(system("ruby lib/generate_models.rb #{modelinfo_file} #{hqmf_oid_file} TEST")).to be true
     datatypes = get_datatypes_attributes(modelinfo_file)
     datatypes.each do |datatype, attributes|
-      expect(File.file?('app/models/test/qdm/' + datatype.underscore + '.rb')).to be true
-      ruby_model_has_attributes(File.read('app/models/test/qdm/' + datatype.underscore + '.rb'), attributes)
-      # Javascript PatientSchema was renamed to QDMPatient since it just contains the QDM data
-      datatype = 'QDMPatient' if datatype == 'Patient'
-      js_model_has_attributes(File.read('tmp/' + datatype + '.js'), attributes)
+      if datatype != 'Component' && datatype != 'FacilityLocation'
+        expect(File.file?('app/models/test/qdm/' + datatype.underscore + '.rb')).to be true
+        ruby_model_has_attributes(File.read('app/models/test/qdm/' + datatype.underscore + '.rb'), attributes)
+        # Javascript PatientSchema was renamed to QDMPatient since it just contains the QDM data
+        datatype = 'QDMPatient' if datatype == 'Patient'
+        js_model_has_attributes(File.read('tmp/' + datatype + '.js'), attributes)
+      else
+        expect(File.file?('app/models/test/qdm/attributes/' + datatype.underscore + '.rb')).to be true
+        ruby_model_has_attributes(File.read('app/models/test/qdm/attributes/' + datatype.underscore + '.rb'), attributes)
+        js_model_has_attributes(File.read('tmp/attributes/' + datatype + '.js'), attributes)
+      end
     end
   end
 
   before(:all) do
     # Clear old test models (if they are still there for some reason)
-    system 'rm tmp/*.js'
+    system 'rm -rf tmp/*'
     system 'rm -rf app/models/test'
   end
 
   after(:each) do
     # Clear just generated test models
-    system 'rm tmp/*.js'
+    system 'rm -rf tmp/*'
     system 'rm -rf app/models/test'
   end
 

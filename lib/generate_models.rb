@@ -172,6 +172,7 @@ datatype_custom_templates = {
   QDMPatient: 'templates/patient_template.js.erb',
   Id: 'templates/id_template.js.erb'
 }
+
 datatypes.each do |datatype, attributes|
   renderer = default_renderer
   if datatype_custom_templates.key?(datatype.to_sym)
@@ -196,6 +197,10 @@ unless IS_TEST
   file_path = 'app/assets/javascripts/AllDataElements.js'
   puts '  ' + file_path
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
+  contents = File.read(file_path)
+  contents.gsub!(%r{\/FacilityLocation.js}, '/attributes/FacilityLocation.js')
+  contents.gsub!(%r{\/Component.js}, '/attributes/Component.js')
+  File.open(file_path, 'w') { |file| file.puts contents }
 end
 
 ###############################################################################
@@ -348,13 +353,29 @@ end
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = ''
   File.open(file_name).each_line.with_index do |line, index|
-    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb') && !file_name.include?('/id.rb')
+    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb') && !file_name.include?('/id.rb') && !file_name.include?('/component.rb') && !file_name.include?('/facility_location.rb')
+    line.gsub!("\n", " < Attribute\n") if index.zero? && (file_name.include?('/component.rb') || file_name.include?('/facility_location.rb'))
     contents += "module QDM\n  # #{file_name}\n  #{line.gsub('QDM::', '')}" if index.zero?
     contents += '  ' unless index.zero? || line.blank?
     contents += line unless index.zero?
   end
   contents += 'end'
   File.open(file_name, 'w') { |file| file.puts contents }
+end
+
+puts 'Moving Attribute Schemas To Their Own Directory'
+# Create ruby attributes directory if it doesn't exist, directory won't exist in test mode
+if IS_TEST
+  Dir.mkdir(ruby_models_path + 'attributes')
+  Dir.mkdir(js_models_path + 'attributes')
+end
+if File.exist?(ruby_models_path + 'facility_location.rb')
+  File.rename ruby_models_path + 'facility_location.rb', ruby_models_path + 'attributes/facility_location.rb'
+  File.rename js_models_path + 'FacilityLocation.js', js_models_path + 'attributes/FacilityLocation.js'
+end
+if File.exist?(ruby_models_path + 'component.rb')
+  File.rename ruby_models_path + 'component.rb', ruby_models_path + 'attributes/component.rb'
+  File.rename js_models_path + 'Component.js', js_models_path + 'attributes/Component.js'
 end
 
 puts 'Done.'

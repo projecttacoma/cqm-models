@@ -66,12 +66,23 @@ module QDM
         end
 
         # Special case for facility locations
-        next unless field == 'facilityLocations'
-        send(field).each do |facility_location|
-          facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
-          facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+        if field == 'facilityLocations'
+          send(field).each do |facility_location|
+            shift_facility_location_dates(facility_location, seconds)
+          end
+        elsif field == 'facilityLocation'
+          facility_location = send(field)
+          unless facility_location.nil?
+            shift_facility_location_dates(facility_location, seconds)
+            send(field + '=', facility_location)
+          end
         end
       end
+    end
+
+    def shift_facility_location_dates(facility_location, seconds)
+      facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
+      facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
     end
 
     class << self
@@ -82,7 +93,7 @@ module QDM
         return nil unless object
         object = object.symbolize_keys
         if object.is_a?(Hash)
-          data_element = QDM::DataElement.new
+          data_element = QDM.const_get(object[:_type])
           data_element.attribute_names.each do |field|
             data_element.send(field + '=', object[field.to_sym])
           end
@@ -99,7 +110,7 @@ module QDM
         when QDM::DataElement then object.mongoize
         when Hash
           object = object.symbolize_keys
-          data_element = QDM::DataElement.new
+          data_element = QDM.const_get(object[:_type])
           data_element.attribute_names.each do |field|
             data_element.send(field + '=', object[field.to_sym])
           end
