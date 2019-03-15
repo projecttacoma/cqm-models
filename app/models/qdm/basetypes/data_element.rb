@@ -10,6 +10,9 @@ module QDM
     # Optional description.
     field :description, type: String
 
+    # Valueset oid of the specific type.
+    field :codeListId, type: String
+
     embeds_one :id, class_name: 'QDM::Id'
 
     def initialize(options = {})
