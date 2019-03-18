@@ -200,6 +200,10 @@ QDMPatientSchema.methods.medications = function medications() {
   return this.getDataElements({ qdmCategory: 'medication' });
 };
 
+QDMPatientSchema.methods.patient_characteristics = function patient_characteristics() {
+  return this.getDataElements({ qdmCategory: 'patient_characteristic' });
+};
+
 QDMPatientSchema.methods.physical_exams = function physical_exams() {
   return this.getDataElements({ qdmCategory: 'physical_exam' });
 };

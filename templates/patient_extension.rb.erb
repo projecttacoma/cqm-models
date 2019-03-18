@@ -131,6 +131,11 @@
     get_data_elements('medication')
   end
 
+  # Helper method; returns patient_characteristic data element types on this patient.
+  def patient_characteristics
+    get_data_elements('patient_characteristic')
+  end
+
   # Helper method; returns physical_exam data element types on this patient.
   def physical_exams
     get_data_elements('physical_exam')
