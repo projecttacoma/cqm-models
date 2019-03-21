@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const AdverseEventSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
@@ -28,6 +29,7 @@ const AdverseEventSchema = DataElementSchema({
   _type: { type: String, default: 'AdverseEvent' },
 
 });
+
 module.exports.AdverseEventSchema = AdverseEventSchema;
 class AdverseEvent extends mongoose.Document {
   constructor(object) {

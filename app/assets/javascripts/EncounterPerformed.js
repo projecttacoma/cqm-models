@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const EncounterPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   admissionSource: Code,
@@ -33,6 +34,7 @@ const EncounterPerformedSchema = DataElementSchema({
   _type: { type: String, default: 'EncounterPerformed' },
 
 });
+
 module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
 class EncounterPerformed extends mongoose.Document {
   constructor(object) {

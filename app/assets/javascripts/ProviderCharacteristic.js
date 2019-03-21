@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const ProviderCharacteristicSchema = DataElementSchema({
   authorDatetime: DateTime,
   hqmfTitle: { type: String, default: 'Provider Characteristic' },
@@ -24,6 +25,7 @@ const ProviderCharacteristicSchema = DataElementSchema({
   _type: { type: String, default: 'ProviderCharacteristic' },
 
 });
+
 module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
 class ProviderCharacteristic extends mongoose.Document {
   constructor(object) {

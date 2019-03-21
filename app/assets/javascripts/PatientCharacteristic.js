@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const PatientCharacteristicSchema = DataElementSchema({
   authorDatetime: DateTime,
   hqmfTitle: { type: String, default: 'Patient Characteristic' },
@@ -24,6 +25,7 @@ const PatientCharacteristicSchema = DataElementSchema({
   _type: { type: String, default: 'PatientCharacteristic' },
 
 });
+
 module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
 class PatientCharacteristic extends mongoose.Document {
   constructor(object) {

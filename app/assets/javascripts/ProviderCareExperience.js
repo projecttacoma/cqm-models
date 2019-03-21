@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const ProviderCareExperienceSchema = DataElementSchema({
   authorDatetime: DateTime,
   hqmfTitle: { type: String, default: 'Provider Care Experience' },
@@ -24,6 +25,7 @@ const ProviderCareExperienceSchema = DataElementSchema({
   _type: { type: String, default: 'ProviderCareExperience' },
 
 });
+
 module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
 class ProviderCareExperience extends mongoose.Document {
   constructor(object) {

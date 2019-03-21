@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const MedicationAdministeredSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
@@ -31,6 +32,7 @@ const MedicationAdministeredSchema = DataElementSchema({
   _type: { type: String, default: 'MedicationAdministered' },
 
 });
+
 module.exports.MedicationAdministeredSchema = MedicationAdministeredSchema;
 class MedicationAdministered extends mongoose.Document {
   constructor(object) {

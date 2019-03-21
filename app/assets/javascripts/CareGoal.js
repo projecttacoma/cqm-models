@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const CareGoalSchema = DataElementSchema({
   relevantPeriod: Interval,
   relatedTo: [IdSchema],
@@ -26,6 +27,7 @@ const CareGoalSchema = DataElementSchema({
   _type: { type: String, default: 'CareGoal' },
 
 });
+
 module.exports.CareGoalSchema = CareGoalSchema;
 class CareGoal extends mongoose.Document {
   constructor(object) {

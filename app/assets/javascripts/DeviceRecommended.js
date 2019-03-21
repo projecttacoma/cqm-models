@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const DeviceRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
@@ -27,6 +28,7 @@ const DeviceRecommendedSchema = DataElementSchema({
   _type: { type: String, default: 'DeviceRecommended' },
 
 });
+
 module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
 class DeviceRecommended extends mongoose.Document {
   constructor(object) {

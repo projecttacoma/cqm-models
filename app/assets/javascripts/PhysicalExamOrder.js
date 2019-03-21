@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const PhysicalExamOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
@@ -28,6 +29,7 @@ const PhysicalExamOrderSchema = DataElementSchema({
   _type: { type: String, default: 'PhysicalExamOrder' },
 
 });
+
 module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
 class PhysicalExamOrder extends mongoose.Document {
   constructor(object) {

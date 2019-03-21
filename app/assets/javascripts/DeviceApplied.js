@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const DeviceAppliedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantPeriod: Interval,
@@ -29,6 +30,7 @@ const DeviceAppliedSchema = DataElementSchema({
   _type: { type: String, default: 'DeviceApplied' },
 
 });
+
 module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
 class DeviceApplied extends mongoose.Document {
   constructor(object) {

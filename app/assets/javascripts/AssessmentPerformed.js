@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const AssessmentPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
@@ -31,6 +32,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   _type: { type: String, default: 'AssessmentPerformed' },
 
 });
+
 module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
 class AssessmentPerformed extends mongoose.Document {
   constructor(object) {

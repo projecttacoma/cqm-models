@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const AssessmentOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
@@ -27,6 +28,7 @@ const AssessmentOrderSchema = DataElementSchema({
   _type: { type: String, default: 'AssessmentOrder' },
 
 });
+
 module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
 class AssessmentOrder extends mongoose.Document {
   constructor(object) {

@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const DeviceOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
@@ -27,6 +28,7 @@ const DeviceOrderSchema = DataElementSchema({
   _type: { type: String, default: 'DeviceOrder' },
 
 });
+
 module.exports.DeviceOrderSchema = DeviceOrderSchema;
 class DeviceOrder extends mongoose.Document {
   constructor(object) {

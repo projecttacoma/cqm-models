@@ -15,6 +15,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const SubstanceOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
@@ -32,6 +33,7 @@ const SubstanceOrderSchema = DataElementSchema({
   _type: { type: String, default: 'SubstanceOrder' },
 
 });
+
 module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
 class SubstanceOrder extends mongoose.Document {
   constructor(object) {

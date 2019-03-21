@@ -11,6 +11,7 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
+
 const FacilityLocationSchema = new mongoose.Schema({
   code: Code,
   locationPeriod: Interval,
@@ -18,6 +19,7 @@ const FacilityLocationSchema = new mongoose.Schema({
   _type: { type: String, default: 'FacilityLocation' },
 
 });
+
 module.exports.FacilityLocationSchema = FacilityLocationSchema;
 class FacilityLocation extends mongoose.Document {
   constructor(object) {
