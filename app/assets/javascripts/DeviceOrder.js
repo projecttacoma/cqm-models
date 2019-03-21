@@ -20,6 +20,7 @@ const DeviceOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
+  hqmfTitle: { type: String, default: 'Device, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.15' },
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'order' },

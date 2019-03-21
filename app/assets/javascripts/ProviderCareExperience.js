@@ -18,6 +18,7 @@ const [Number, String] = [
 
 const ProviderCareExperienceSchema = DataElementSchema({
   authorDatetime: DateTime,
+  hqmfTitle: { type: String, default: 'Provider Care Experience' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.70' },
   qdmCategory: { type: String, default: 'care_experience' },
   qdmVersion: { type: String, default: '5.4' },

@@ -1,10 +1,11 @@
 #! /usr/bin/env ruby
-
 require 'nokogiri'
 require 'active_support/all'
 require 'rails/generators'
 require 'erb'
 require 'json'
+require_relative './generators/custom_mongo/model_generator'
+
 
 ###############################################################################
 # Helpers
@@ -86,6 +87,8 @@ datatypes = {}
 modelinfo.xpath('//ns4:typeInfo').each do |type|
   # Grab the name of this QDM datatype
   datatype_name = type.attributes['name'].value.split('.').last
+  # Reject irrelevant datatypes
+  next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType')
 
   # Grab the QDM attributes for this datatype
   attributes = []
@@ -106,9 +109,25 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
     attributes << { name: attribute_name, type: attribute_type }
   end
 
-  # Store datatype and its attributes (reject irrelevant datatypes)
-  next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType')
-  datatypes[datatype_name] = attributes
+  # Add the label as hqmfTitle if available
+  hqmf_title = type['label']
+  if hqmf_title.nil? #If there's no label, check if there is a "positive" profile
+    positive_profile = modelinfo.at_xpath("/ns4:modelInfo/ns4:typeInfo[@xsi:type='ns4:ProfileInfo'][@identifier='Positive#{datatype_name}']")
+    hqmf_title = positive_profile["label"] unless positive_profile.nil?
+  end
+  attributes << { name: 'hqmfTitle', type: 'System.String', default: hqmf_title } unless hqmf_title.nil?
+
+  # Add the extra info that is manually maintained in the "oids" file
+  extra_info = oids[datatype_name.underscore]
+  if extra_info.present?
+    attributes << { name: 'hqmfOid', type: 'System.String', default: extra_info['hqmf_oid'] } if extra_info['hqmf_oid'].present?
+    attributes << { name: 'qrdaOid', type: 'System.String', default: extra_info['qrda_oid'] } if extra_info['qrda_oid'].present?
+    attributes << { name: 'qdmCategory', type: 'System.String', default: extra_info['qdm_category'] } if extra_info['qdm_category'].present?
+    attributes << { name: 'qdmStatus', type: 'System.String', default: extra_info['qdm_status'] } if extra_info['qdm_status'].present?
+  end
+  attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
+
+  datatypes[datatype_name] = {attributes: attributes}
 end
 
 ###############################################################################
@@ -118,26 +137,28 @@ end
 puts 'Generating Ruby models...'
 
 # Do a quick sanity check on attribute types
-datatypes.each do |datatype, attributes|
-  attributes.each do |attribute|
+datatypes.each do |datatype, info|
+  info[:attributes].each do |attribute|
     raise 'Unsupported type from modelinfo file for Ruby types: ' + attribute[:type] + 'from: ' + datatype if TYPE_LOOKUP_RB[attribute[:type]].blank?
     raise 'Unsupported type from modelinfo file for JavaScript types: ' + attribute[:type] + 'from: ' + datatype if TYPE_LOOKUP_JS[attribute[:type]].blank?
   end
 end
 
 # Create Ruby models
-extra_fields_rb = [
-  'hqmfOid:String',
-  'qrdaOid:String',
-  'qdmCategory:String',
-  'qdmStatus:String',
-  'qdmVersion:String'
-]
 base_module = 'QDM::'
 base_module = 'Test::QDM::' if IS_TEST
-datatypes.each do |datatype, attributes|
-  Rails::Generators.invoke('mongoid:model', [base_module + datatype] + attributes.collect { |attribute| attribute[:name] + ':' + TYPE_LOOKUP_RB[attribute[:type]] } + extra_fields_rb)
+datatypes.each do |datatype, info|
+  name = base_module + datatype
+  attributes = info[:attributes].map do |attribute|
+    attribute = attribute.dup
+    attribute[:type] = TYPE_LOOKUP_RB[attribute[:type]]
+    attribute
+  end
+  generator_args = [name, attributes]
+  Rails::Generators.invoke('custom_mongo:model', generator_args)
 end
+
+
 
 # Create require file (if not in test mode)
 unless IS_TEST
@@ -160,26 +181,19 @@ template = File.read('templates/mongoose_template.js.erb')
 default_renderer = ERB.new(template, nil, '-')
 file_path = 'app/assets/javascripts/'
 file_path = 'tmp/' if IS_TEST
-extra_fields_js = [
-  { name: 'hqmfOid', type: 'System.String' },
-  { name: 'qrdaOid', type: 'System.String' },
-  { name: 'qdmCategory', type: 'System.String' },
-  { name: 'qdmStatus', type: 'System.String' },
-  { name: 'qdmVersion', type: 'System.String' },
-  { name: '_type', type: 'System.String' }
-]
 datatype_custom_templates = {
   QDMPatient: 'templates/patient_template.js.erb',
   Id: 'templates/id_template.js.erb'
 }
 
-datatypes.each do |datatype, attributes|
+datatypes.each do |datatype, info|
   renderer = default_renderer
   if datatype_custom_templates.key?(datatype.to_sym)
     puts "using custom template for #{datatype}"
     renderer = ERB.new(File.read(datatype_custom_templates[datatype.to_sym]), nil, '-')
   end
-  attrs_with_extras = attributes + extra_fields_js # this field gets used in the template
+  attrs_with_extras = info[:attributes] # this field gets used in the template
+  attrs_with_extras << { name: '_type', type: 'System.String', default: datatype } # Add Class
   puts '  ' + file_path + datatype + '.js'
   File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
 end
@@ -218,43 +232,11 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   # Cut out the 'Any' type placeholder (these attributes could point to anything).
   contents.gsub!(/, type: Any/, '')
 
-  # Add QDM version
-  contents.gsub!(/field :qdmVersion, type: String/, "field :qdmVersion, type: String, default: '#{qdm_version}'")
-
   # Add default to [] for facilityLocations
   contents.gsub!(/field :facilityLocations, type: Array/, 'field :facilityLocations, type: Array, default: []')
 
   # Make facilityLocation of type QDM::FacilityLocation
   contents.gsub!(/field :facilityLocation, type: Code/, 'field :facilityLocation, type: QDM::FacilityLocation')
-
-  # Add HQMF oid (if it exists in the given HQMF oid mapping file)
-  dc_name = File.basename(file_name, '.*')
-  if oids[dc_name].present? && oids[dc_name]['hqmf_oid'].present?
-    contents.gsub!(/  field :hqmfOid, type: String\n/, "  field :hqmfOid, type: String, default: '#{oids[dc_name]['hqmf_oid']}'\n")
-  else
-    contents.gsub!(/  field :hqmfOid, type: String\n/, '') # Don't include this field
-  end
-
-  # Add QRDA oid (if it exists in the given QRDA oid mapping file)
-  if oids[dc_name].present? && oids[dc_name]['qrda_oid'].present?
-    contents.gsub!(/  field :qrdaOid, type: String\n/, "  field :qrdaOid, type: String, default: '#{oids[dc_name]['qrda_oid']}'\n")
-  else
-    contents.gsub!(/  field :qrdaOid, type: String\n/, '') # Don't include this field
-  end
-
-  # Add category
-  if oids[dc_name].present? && oids[dc_name]['qdm_category'].present?
-    contents.gsub!(/  field :qdmCategory, type: String\n/, "  field :qdmCategory, type: String, default: '#{oids[dc_name]['qdm_category']}'\n")
-  else
-    contents.gsub!(/  field :qdmCategory, type: String\n/, '') # Don't include this field
-  end
-
-  # Add status
-  if oids[dc_name].present? && oids[dc_name]['qdm_status'].present?
-    contents.gsub!(/  field :qdmStatus, type: String\n/, "  field :qdmStatus, type: String, default: '#{oids[dc_name]['qdm_status']}'\n")
-  else
-    contents.gsub!(/  field :qdmStatus, type: String\n/, '') # Don't include this field
-  end
 
   # Make relatedTo embeds_many instead of field
   contents.gsub!(/  field :relatedTo, type: Array\n/, "  embeds_many :relatedTo, class_name: 'QDM::Id'\n")
@@ -270,41 +252,6 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
 
   # Replace 'Any' type placeholder (these attributes could point to anything).
   contents.gsub!(/: Any/, ': Any')
-
-  # Add QDM version
-  contents.gsub!(/qdmVersion: String/, "qdmVersion: { type: String, default: '#{qdm_version}' }")
-
-  # Add HQMF oid (if it exists in the given HQMF oid mapping file)
-  dc_name = File.basename(file_name.underscore, '.*')
-  if oids[dc_name].present? && oids[dc_name]['hqmf_oid'].present?
-    contents.gsub!(/  hqmfOid: String,\n/, "  hqmfOid: { type: String, default: '#{oids[dc_name]['hqmf_oid']}' },\n")
-  else
-    contents.gsub!(/  hqmfOid: String,\n/, '') # Don't include this field
-  end
-
-  # Add QRDA oid (if it exists in the given QRDA oid mapping file)
-  if oids[dc_name].present? && oids[dc_name]['qrda_oid'].present?
-    contents.gsub!(/  qrdaOid: String,\n/, "  qrdaOid: { type: String, default: '#{oids[dc_name]['qrda_oid']}' },\n")
-  else
-    contents.gsub!(/  qrdaOid: String,\n/, '') # Don't include this field
-  end
-
-  # Add category
-  if oids[dc_name].present? && oids[dc_name]['qdm_category'].present?
-    contents.gsub!(/  qdmCategory: String,\n/, "  qdmCategory: { type: String, default: '#{oids[dc_name]['qdm_category']}' },\n")
-  else
-    contents.gsub!(/  qdmCategory: String,\n/, '') # Don't include this field
-  end
-
-  # Add status
-  if oids[dc_name].present? && oids[dc_name]['qdm_status'].present?
-    contents.gsub!(/  qdmStatus: String,\n/, "  qdmStatus: { type: String, default: '#{oids[dc_name]['qdm_status']}' },\n")
-  else
-    contents.gsub!(/  qdmStatus: String,\n/, '') # Don't include this field
-  end
-
-  # Add class
-  contents.gsub!(/  _type: String,\n/, "  _type: { type: String, default: '#{dc_name.camelize}' },\n")
 
   # Component, Facility, and Id types
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')

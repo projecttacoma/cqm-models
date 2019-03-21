@@ -23,6 +23,7 @@ const SubstanceAdministeredSchema = DataElementSchema({
   frequency: Code,
   route: Code,
   negationRationale: Code,
+  hqmfTitle: { type: String, default: 'Substance, Administered' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.73' },
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'administered' },

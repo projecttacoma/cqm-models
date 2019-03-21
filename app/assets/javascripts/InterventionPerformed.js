@@ -23,6 +23,7 @@ const InterventionPerformedSchema = DataElementSchema({
   result: Any,
   status: Code,
   negationRationale: Code,
+  hqmfTitle: { type: String, default: 'Intervention, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.36' },
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'performed' },

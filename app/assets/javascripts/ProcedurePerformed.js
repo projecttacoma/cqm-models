@@ -28,6 +28,7 @@ const ProcedurePerformedSchema = DataElementSchema({
   incisionDatetime: DateTime,
   negationRationale: Code,
   components: [ComponentSchema],
+  hqmfTitle: { type: String, default: 'Procedure, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.67' },
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'performed' },

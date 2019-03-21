@@ -18,6 +18,7 @@ const [Number, String] = [
 
 const PatientCharacteristicPayerSchema = DataElementSchema({
   relevantPeriod: Interval,
+  hqmfTitle: { type: String, default: 'Patient Characteristic Payer' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.58' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'payer' },

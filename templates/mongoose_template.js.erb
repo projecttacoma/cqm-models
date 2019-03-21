@@ -24,7 +24,7 @@ const [Number, String] = [
 <% unless datatype == 'Component' || datatype == 'FacilityLocation' %>
 const <%= datatype -%>Schema = DataElementSchema({
   <%- for attribute in attrs_with_extras -%>
-  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
+  <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
   <%- end %>
 });
 <% else %>

@@ -13,6 +13,7 @@ module QDM
     field :referenceRange, type: QDM::Interval
     field :negationRationale, type: QDM::Code
     field :components, type: Array
+    field :hqmfTitle, type: String, default: 'Laboratory Test, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.42'
     field :qdmCategory, type: String, default: 'laboratory_test'
     field :qdmStatus, type: String, default: 'performed'

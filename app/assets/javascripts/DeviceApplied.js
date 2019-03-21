@@ -22,6 +22,7 @@ const DeviceAppliedSchema = DataElementSchema({
   negationRationale: Code,
   reason: Code,
   anatomicalLocationSite: Code,
+  hqmfTitle: { type: String, default: 'Device, Applied' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.13' },
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'applied' },

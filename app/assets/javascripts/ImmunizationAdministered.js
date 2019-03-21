@@ -22,6 +22,7 @@ const ImmunizationAdministeredSchema = DataElementSchema({
   dosage: Quantity,
   route: Code,
   negationRationale: Code,
+  hqmfTitle: { type: String, default: 'Immunization, Administered' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.112' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },
   qdmCategory: { type: String, default: 'immunization' },

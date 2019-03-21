@@ -24,6 +24,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   result: Any,
   components: [ComponentSchema],
   relatedTo: [IdSchema],
+  hqmfTitle: { type: String, default: 'Assessment, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.117' },
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'performed' },

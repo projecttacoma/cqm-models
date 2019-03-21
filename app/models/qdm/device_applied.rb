@@ -8,6 +8,7 @@ module QDM
     field :negationRationale, type: QDM::Code
     field :reason, type: QDM::Code
     field :anatomicalLocationSite, type: QDM::Code
+    field :hqmfTitle, type: String, default: 'Device, Applied'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.13'
     field :qdmCategory, type: String, default: 'device'
     field :qdmStatus, type: String, default: 'applied'

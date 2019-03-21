@@ -12,6 +12,7 @@ module QDM
     field :principalDiagnosis, type: QDM::Code
     field :negationRationale, type: QDM::Code
     field :lengthOfStay, type: QDM::Quantity
+    field :hqmfTitle, type: String, default: 'Encounter, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.5'
     field :qdmCategory, type: String, default: 'encounter'
     field :qdmStatus, type: String, default: 'performed'

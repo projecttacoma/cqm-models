@@ -26,6 +26,7 @@ const EncounterPerformedSchema = DataElementSchema({
   principalDiagnosis: Code,
   negationRationale: Code,
   lengthOfStay: Quantity,
+  hqmfTitle: { type: String, default: 'Encounter, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.5' },
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'performed' },

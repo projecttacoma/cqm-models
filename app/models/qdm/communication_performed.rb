@@ -11,6 +11,7 @@ module QDM
     embeds_many :relatedTo, class_name: 'QDM::Id'
     field :relevantPeriod, type: QDM::Interval
     field :negationRationale, type: QDM::Code
+    field :hqmfTitle, type: String, default: 'Communication, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.132'
     field :qdmCategory, type: String, default: 'communication'
     field :qdmStatus, type: String, default: 'performed'

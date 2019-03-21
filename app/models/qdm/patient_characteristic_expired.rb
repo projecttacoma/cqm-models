@@ -5,6 +5,7 @@ module QDM
     embedded_in :patient
     field :expiredDatetime, type: DateTime
     field :cause, type: QDM::Code
+    field :hqmfTitle, type: String, default: 'Patient Characteristic Expired'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.57'
     field :qdmCategory, type: String, default: 'patient_characteristic'
     field :qdmStatus, type: String, default: 'expired'
