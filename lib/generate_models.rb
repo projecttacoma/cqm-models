@@ -83,6 +83,9 @@ qdm_version = modelinfo.xpath('//ns4:modelInfo').first.attributes['version'].val
 # Datatypes (keys are the datatype name, values are the datatype attributes)
 datatypes = {}
 
+# We will export a hqmfOid to datatype map
+hqmfOid_to_datatype_map = {}
+
 # Loop through each typeInfo node (each of these is a QDM datatype)
 modelinfo.xpath('//ns4:typeInfo').each do |type|
   # Grab the name of this QDM datatype
@@ -120,10 +123,11 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
   # Add the extra info that is manually maintained in the "oids" file
   extra_info = oids[datatype_name.underscore]
   if extra_info.present?
-    attributes << { name: 'hqmfOid', type: 'System.String', default: extra_info['hqmf_oid'] } if extra_info['hqmf_oid'].present?
+    attributes << { name: 'hqmfOid', type: 'System.String', default: extra_info['hqmf_oid'] }
     attributes << { name: 'qrdaOid', type: 'System.String', default: extra_info['qrda_oid'] } if extra_info['qrda_oid'].present?
     attributes << { name: 'qdmCategory', type: 'System.String', default: extra_info['qdm_category'] } if extra_info['qdm_category'].present?
     attributes << { name: 'qdmStatus', type: 'System.String', default: extra_info['qdm_status'] } if extra_info['qdm_status'].present?
+    hqmfOid_to_datatype_map[extra_info['hqmf_oid']] = datatype_name if extra_info['hqmf_oid'].present?
   end
   attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
 
@@ -158,8 +162,6 @@ datatypes.each do |datatype, info|
   Rails::Generators.invoke('custom_mongo:model', generator_args)
 end
 
-
-
 # Create require file (if not in test mode)
 unless IS_TEST
   model_template = File.read('templates/models_template.rb.erb')
@@ -193,7 +195,7 @@ datatypes.each do |datatype, info|
     renderer = ERB.new(File.read(datatype_custom_templates[datatype.to_sym]), nil, '-')
   end
   attrs_with_extras = info[:attributes] # this field gets used in the template
-  attrs_with_extras << { name: '_type', type: 'System.String', default: datatype } # Add Class
+  attrs_with_extras << { name: '_type', type: 'System.String', default: datatype.underscore.camelize } # Add Class
   puts '  ' + file_path + datatype + '.js'
   File.open(file_path + datatype + '.js', 'w') { |file| file.puts renderer.result(binding) }
 end
@@ -324,5 +326,14 @@ if File.exist?(ruby_models_path + 'component.rb')
   File.rename ruby_models_path + 'component.rb', ruby_models_path + 'attributes/component.rb'
   File.rename js_models_path + 'Component.js', js_models_path + 'attributes/Component.js'
 end
+
+puts 'Create hqmfOid to datatype map as json file'
+require 'pry'
+binding.pry
+f = File.open("app/hqmfOid_to_datatype_map.json","w")
+f.write(JSON.pretty_generate(hqmfOid_to_datatype_map))
+f.close
+# hqmfOid_to_datatype_map
+
 
 puts 'Done.'
