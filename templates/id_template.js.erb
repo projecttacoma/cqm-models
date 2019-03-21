@@ -7,7 +7,7 @@ const [Number, String] = [
 
 const IdSchema = mongoose.Schema({
   <%- for attribute in attrs_with_extras -%>
-  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
+  <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
   <%- end %>
 }, { _id: false, id: false });
 

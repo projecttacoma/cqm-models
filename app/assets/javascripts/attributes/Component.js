@@ -11,15 +11,13 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const ComponentSchema = new mongoose.Schema({
   code: Code,
   result: Any,
-  qdmVersion: String,
-  _type: String,
+  qdmVersion: { type: String, default: '5.4' },
+  _type: { type: String, default: 'Component' },
 
 });
-
 module.exports.ComponentSchema = ComponentSchema;
 class Component extends mongoose.Document {
   constructor(object) {

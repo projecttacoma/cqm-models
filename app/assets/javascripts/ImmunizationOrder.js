@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const ImmunizationOrderSchema = DataElementSchema({
   activeDatetime: DateTime,
   authorDatetime: DateTime,
@@ -32,7 +31,6 @@ const ImmunizationOrderSchema = DataElementSchema({
   _type: { type: String, default: 'ImmunizationOrder' },
 
 });
-
 module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
 class ImmunizationOrder extends mongoose.Document {
   constructor(object) {

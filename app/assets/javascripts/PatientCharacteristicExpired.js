@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const PatientCharacteristicExpiredSchema = DataElementSchema({
   expiredDatetime: DateTime,
   cause: Code,
@@ -27,7 +26,6 @@ const PatientCharacteristicExpiredSchema = DataElementSchema({
   _type: { type: String, default: 'PatientCharacteristicExpired' },
 
 });
-
 module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpiredSchema;
 class PatientCharacteristicExpired extends mongoose.Document {
   constructor(object) {

@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const ProcedureRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
@@ -30,7 +29,6 @@ const ProcedureRecommendedSchema = DataElementSchema({
   _type: { type: String, default: 'ProcedureRecommended' },
 
 });
-
 module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
 class ProcedureRecommended extends mongoose.Document {
   constructor(object) {

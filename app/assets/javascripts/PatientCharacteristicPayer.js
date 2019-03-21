@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const PatientCharacteristicPayerSchema = DataElementSchema({
   relevantPeriod: Interval,
   hqmfTitle: { type: String, default: 'Patient Characteristic Payer' },
@@ -26,7 +25,6 @@ const PatientCharacteristicPayerSchema = DataElementSchema({
   _type: { type: String, default: 'PatientCharacteristicPayer' },
 
 });
-
 module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSchema;
 class PatientCharacteristicPayer extends mongoose.Document {
   constructor(object) {

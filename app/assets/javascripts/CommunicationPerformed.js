@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const CommunicationPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   category: Code,
@@ -33,7 +32,6 @@ const CommunicationPerformedSchema = DataElementSchema({
   _type: { type: String, default: 'CommunicationPerformed' },
 
 });
-
 module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
 class CommunicationPerformed extends mongoose.Document {
   constructor(object) {

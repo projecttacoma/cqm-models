@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const ProcedureOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
@@ -30,7 +29,6 @@ const ProcedureOrderSchema = DataElementSchema({
   _type: { type: String, default: 'ProcedureOrder' },
 
 });
-
 module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 class ProcedureOrder extends mongoose.Document {
   constructor(object) {

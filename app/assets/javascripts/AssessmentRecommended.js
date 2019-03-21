@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const AssessmentRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
@@ -28,7 +27,6 @@ const AssessmentRecommendedSchema = DataElementSchema({
   _type: { type: String, default: 'AssessmentRecommended' },
 
 });
-
 module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
 class AssessmentRecommended extends mongoose.Document {
   constructor(object) {

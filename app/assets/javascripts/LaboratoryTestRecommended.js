@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const LaboratoryTestRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
@@ -28,7 +27,6 @@ const LaboratoryTestRecommendedSchema = DataElementSchema({
   _type: { type: String, default: 'LaboratoryTestRecommended' },
 
 });
-
 module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema;
 class LaboratoryTestRecommended extends mongoose.Document {
   constructor(object) {

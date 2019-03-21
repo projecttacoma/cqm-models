@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const ParticipationSchema = DataElementSchema({
   participationPeriod: Interval,
   hqmfTitle: { type: String, default: 'Participation' },
@@ -25,7 +24,6 @@ const ParticipationSchema = DataElementSchema({
   _type: { type: String, default: 'Participation' },
 
 });
-
 module.exports.ParticipationSchema = ParticipationSchema;
 class Participation extends mongoose.Document {
   constructor(object) {

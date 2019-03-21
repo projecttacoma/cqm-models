@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const AllergyIntoleranceSchema = DataElementSchema({
   authorDatetime: DateTime,
   prevalencePeriod: Interval,
@@ -29,7 +28,6 @@ const AllergyIntoleranceSchema = DataElementSchema({
   _type: { type: String, default: 'AllergyIntolerance' },
 
 });
-
 module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
 class AllergyIntolerance extends mongoose.Document {
   constructor(object) {

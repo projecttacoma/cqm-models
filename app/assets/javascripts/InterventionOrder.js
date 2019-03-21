@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const InterventionOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
@@ -28,7 +27,6 @@ const InterventionOrderSchema = DataElementSchema({
   _type: { type: String, default: 'InterventionOrder' },
 
 });
-
 module.exports.InterventionOrderSchema = InterventionOrderSchema;
 class InterventionOrder extends mongoose.Document {
   constructor(object) {

@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const FamilyHistorySchema = DataElementSchema({
   authorDatetime: DateTime,
   relationship: Code,
@@ -27,7 +26,6 @@ const FamilyHistorySchema = DataElementSchema({
   _type: { type: String, default: 'FamilyHistory' },
 
 });
-
 module.exports.FamilyHistorySchema = FamilyHistorySchema;
 class FamilyHistory extends mongoose.Document {
   constructor(object) {

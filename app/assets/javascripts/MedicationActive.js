@@ -15,7 +15,6 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
 const MedicationActiveSchema = DataElementSchema({
   relevantPeriod: Interval,
   dosage: Quantity,
@@ -29,7 +28,6 @@ const MedicationActiveSchema = DataElementSchema({
   _type: { type: String, default: 'MedicationActive' },
 
 });
-
 module.exports.MedicationActiveSchema = MedicationActiveSchema;
 class MedicationActive extends mongoose.Document {
   constructor(object) {
