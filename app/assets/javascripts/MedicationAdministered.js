@@ -25,7 +25,7 @@ const MedicationAdministeredSchema = DataElementSchema({
   reason: Code,
   negationRationale: Code,
   hqmfTitle: { type: String, default: 'Medication, Administered' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.45' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.45' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'administered' },
   qdmVersion: { type: String, default: '5.4' },

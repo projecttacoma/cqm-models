@@ -12,7 +12,7 @@ module QDM
     field :route, type: QDM::Code
     field :negationRationale, type: QDM::Code
     field :hqmfTitle, type: String, default: 'Medication, Discharge'
-    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.48'
+    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.48'
     field :qdmCategory, type: String, default: 'medication'
     field :qdmStatus, type: String, default: 'discharge'
     field :qdmVersion, type: String, default: '5.4'

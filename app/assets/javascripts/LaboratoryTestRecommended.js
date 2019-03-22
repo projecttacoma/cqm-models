@@ -21,7 +21,7 @@ const LaboratoryTestRecommendedSchema = DataElementSchema({
   reason: Code,
   negationRationale: Code,
   hqmfTitle: { type: String, default: 'Laboratory Test, Recommended' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.43' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.43' },
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },

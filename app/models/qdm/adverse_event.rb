@@ -9,7 +9,7 @@ module QDM
     field :facilityLocation, type: QDM::FacilityLocation
     field :type, type: QDM::Code
     field :hqmfTitle, type: String, default: 'Adverse Event'
-    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.120'
+    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.120'
     field :qdmCategory, type: String, default: 'adverse_event'
     field :qdmVersion, type: String, default: '5.4'
   end

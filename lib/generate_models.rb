@@ -328,12 +328,9 @@ if File.exist?(ruby_models_path + 'component.rb')
 end
 
 puts 'Create hqmfOid to datatype map as json file'
-require 'pry'
-binding.pry
-f = File.open("app/hqmfOid_to_datatype_map.json","w")
+f = File.open("app/models/hqmfOid_to_datatype_map.json","w")
 f.write(JSON.pretty_generate(hqmfOid_to_datatype_map))
 f.close
-# hqmfOid_to_datatype_map
 
 
 puts 'Done.'

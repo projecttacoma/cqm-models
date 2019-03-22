@@ -23,7 +23,7 @@ const ProcedureOrderSchema = DataElementSchema({
   ordinality: Code,
   negationRationale: Code,
   hqmfTitle: { type: String, default: 'Procedure, Order' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.66' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.66' },
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },

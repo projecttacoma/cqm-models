@@ -22,7 +22,7 @@ const MedicationActiveSchema = DataElementSchema({
   frequency: Code,
   route: Code,
   hqmfTitle: { type: String, default: 'Medication, Active' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.44' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.44' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'active' },
   qdmVersion: { type: String, default: '5.4' },

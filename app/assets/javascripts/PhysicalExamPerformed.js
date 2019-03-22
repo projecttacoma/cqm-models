@@ -26,7 +26,7 @@ const PhysicalExamPerformedSchema = DataElementSchema({
   negationRationale: Code,
   components: [ComponentSchema],
   hqmfTitle: { type: String, default: 'Physical Exam, Performed' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.62' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.62' },
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },

@@ -1,6 +1,6 @@
 require "rails/generators/named_base"
 require "rails/generators/active_model"
-require "/Users/cspringatecombs/.rvm/gems/ruby-2.3.7/gems/mongoid-6.3.0/lib/rails/generators/mongoid/model/model_generator.rb"
+require File.join(Gem::Specification.find_by_name("mongoid").gem_dir, 'lib/rails/generators/mongoid/model/model_generator.rb')
 
 module Rails
   module Generators
@@ -26,7 +26,7 @@ module CustomMongo
       end
 
       def create_model_file
-        template "/Users/cspringatecombs/git/cqm-models/lib/generators/custom_mongo/model.rb.tt", File.join("app/models", class_path, "#{file_name}.rb")
+        template File.join(File.dirname(__FILE__), 'model.rb.tt'), File.join("app/models", class_path, "#{file_name}.rb")
       end
 
 

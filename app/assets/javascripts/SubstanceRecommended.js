@@ -25,7 +25,7 @@ const SubstanceRecommendedSchema = DataElementSchema({
   route: Code,
   negationRationale: Code,
   hqmfTitle: { type: String, default: 'Substance, Recommended' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.78' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.78' },
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },

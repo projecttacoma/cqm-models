@@ -8,7 +8,7 @@ module QDM
     field :anatomicalLocationSite, type: QDM::Code
     field :severity, type: QDM::Code
     field :hqmfTitle, type: String, default: 'Diagnosis'
-    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.110'
+    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.110'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.135'
     field :qdmCategory, type: String, default: 'condition'
     field :qdmVersion, type: String, default: '5.4'

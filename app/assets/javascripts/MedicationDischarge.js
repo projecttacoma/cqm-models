@@ -26,7 +26,7 @@ const MedicationDischargeSchema = DataElementSchema({
   route: Code,
   negationRationale: Code,
   hqmfTitle: { type: String, default: 'Medication, Discharge' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.48' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.48' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'discharge' },
   qdmVersion: { type: String, default: '5.4' },

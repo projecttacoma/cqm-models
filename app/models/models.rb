@@ -3,6 +3,9 @@ module QDM
 end
 require 'mongoid'
 
+# ModelFinder
+require_relative 'model_finder'
+
 # Generated models that are dependencies for base types
 require_relative 'qdm/id'
 
