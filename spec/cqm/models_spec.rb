@@ -76,6 +76,7 @@ RSpec.describe QDM do
     expect(@patient_a.qdmPatient.birthDatetime).to be
     expect(@patient_b.givenNames).to be
     expect(@patient_c.bundleId).to be
+    expect(@patient_big.qdmPatient.patient_characteristics.length).to eq 4
   end
 
   it 'patient dataElements have an Id' do
