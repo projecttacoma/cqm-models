@@ -57,9 +57,9 @@ module CQM
 
     # HQMF/Tacoma-specific Measure-logic related data
     field :population_criteria, type: Hash
-    field :source_data_criteria, type: Array
     field :measure_period, type: Hash
     field :measure_attributes, type: Array
+    embeds_many :source_data_criteria, class_name: 'QDM::DataElement'
 
     embeds_many :population_sets
 

@@ -17,7 +17,7 @@ See the top of the `lib/generate_models.rb` script for RubyGem requirements.
 
 To use, execute the following:
 ```
-ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids.json
+ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids_qdm_5.4.json
 ```
 
 The first parameter is the file path to the modelinfo file you wish to generate from. The second parameter is the OID map file. You must include both.

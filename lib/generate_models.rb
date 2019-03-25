@@ -6,7 +6,6 @@ require 'erb'
 require 'json'
 require_relative './generators/custom_mongo/model_generator'
 
-
 ###############################################################################
 # Helpers
 ###############################################################################
@@ -114,16 +113,16 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
 
   # Add the label as hqmfTitle if available
   hqmf_title = type['label']
-  if hqmf_title.nil? #If there's no label, check if there is a "positive" profile
+  if hqmf_title.nil? # If there's no label, check if there is a "positive" profile
     positive_profile = modelinfo.at_xpath("/ns4:modelInfo/ns4:typeInfo[@xsi:type='ns4:ProfileInfo'][@identifier='Positive#{datatype_name}']")
-    hqmf_title = positive_profile["label"] unless positive_profile.nil?
+    hqmf_title = positive_profile['label'] unless positive_profile.nil?
   end
   attributes << { name: 'hqmfTitle', type: 'System.String', default: hqmf_title } unless hqmf_title.nil?
 
   # Add the extra info that is manually maintained in the "oids" file
   extra_info = oids[datatype_name.underscore]
   if extra_info.present?
-    attributes << { name: 'hqmfOid', type: 'System.String', default: extra_info['hqmf_oid'] }
+    attributes << { name: 'hqmfOid', type: 'System.String', default: extra_info['hqmf_oid'] } if extra_info['hqmf_oid'].present?
     attributes << { name: 'qrdaOid', type: 'System.String', default: extra_info['qrda_oid'] } if extra_info['qrda_oid'].present?
     attributes << { name: 'qdmCategory', type: 'System.String', default: extra_info['qdm_category'] } if extra_info['qdm_category'].present?
     attributes << { name: 'qdmStatus', type: 'System.String', default: extra_info['qdm_status'] } if extra_info['qdm_status'].present?
@@ -131,7 +130,7 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
   end
   attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
 
-  datatypes[datatype_name] = {attributes: attributes}
+  datatypes[datatype_name] = { attributes: attributes }
 end
 
 ###############################################################################
@@ -328,9 +327,8 @@ if File.exist?(ruby_models_path + 'component.rb')
 end
 
 puts 'Create hqmfOid to datatype map as json file'
-f = File.open("app/models/hqmfOid_to_datatype_map.json","w")
+f = File.open('app/models/hqmfOid_to_datatype_map.json', 'w')
 f.write(JSON.pretty_generate(hqmfOid_to_datatype_map))
 f.close
-
 
 puts 'Done.'

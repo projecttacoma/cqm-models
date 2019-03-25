@@ -28,6 +28,9 @@ Metrics/CyclomaticComplexity:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/RedundantReturn:
+  Enabled: false
+
 Lint/ScriptPermission:
   Enabled: false
 

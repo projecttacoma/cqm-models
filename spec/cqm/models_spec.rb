@@ -5,7 +5,7 @@ RSpec.describe QDM do
     # Clear old test models (if they are still there for some reason)
     system('rm tmp/*.js')
     system('rm -rf app/models/test')
-    system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids.json TEST')
+    system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids_qdm_5.4.json TEST')
   end
 
   before(:each) do
