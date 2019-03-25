@@ -111,8 +111,7 @@ module QDM
       elsif field_type == QDM::Quantity
         data_element[field_name] = QDM::BaseTypeGeneration.generate_quantity
       elsif field_type == QDM::Id
-        # TODO: randomize value
-        data_element[field_name] = QDM::Id.new
+        data_element[field_name] = QDM::BaseTypeGeneration.generate_qdm_id
       elsif field_type == Integer
         # TODO: randomize value
         data_element[field_name] = 3

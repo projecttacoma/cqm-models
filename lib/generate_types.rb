@@ -52,5 +52,13 @@ module QDM
       qdm_patient.birthDatetime = generate_datetime
       qdm_patient
     end
+
+    def self.generate_qdm_id
+      # TODO: randomize values
+      qdm_id = QDM::Id.new
+      qdm_id.value = 'TestValue'
+      qdm_id.namingSystem = 'TestNamingSystem'
+      qdm_id
+    end
   end
 end
