@@ -20,10 +20,11 @@ const DeviceRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  hqmfTitle: { type: String, default: 'Device, Recommended' },
+  qdmTitle: { type: String, default: 'Device, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.16' },
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'recommended' },
+  hqmfTitle: { type: String, default: 'Device, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DeviceRecommended' },
 

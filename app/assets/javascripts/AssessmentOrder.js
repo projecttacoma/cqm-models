@@ -20,10 +20,11 @@ const AssessmentOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  hqmfTitle: { type: String, default: 'Assessment, Order' },
+  qdmTitle: { type: String, default: 'Assessment, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.131' },
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'order' },
+  hqmfTitle: { type: String, default: 'Assessment, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AssessmentOrder' },
 

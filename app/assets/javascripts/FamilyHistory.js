@@ -19,10 +19,11 @@ const [Number, String] = [
 const FamilyHistorySchema = DataElementSchema({
   authorDatetime: DateTime,
   relationship: Code,
-  hqmfTitle: { type: String, default: 'Family History' },
+  qdmTitle: { type: String, default: 'Family History' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.111' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
   qdmCategory: { type: String, default: 'family_history' },
+  hqmfTitle: { type: String, default: 'Family History' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'FamilyHistory' },
 

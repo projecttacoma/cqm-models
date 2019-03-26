@@ -3,6 +3,7 @@ module QDM
   class DataElement
     include Mongoid::Document
     embedded_in :patient
+    embedded_in :measure
 
     # Codes that describe this datatype.
     field :dataElementCodes, type: Array, default: []

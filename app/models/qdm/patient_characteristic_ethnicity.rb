@@ -3,10 +3,11 @@ module QDM
   class PatientCharacteristicEthnicity < DataElement
     include Mongoid::Document
     embedded_in :patient
-    field :hqmfTitle, type: String, default: 'Patient Characteristic Ethnicity'
+    field :qdmTitle, type: String, default: 'Patient Characteristic Ethnicity'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.56'
     field :qdmCategory, type: String, default: 'patient_characteristic'
     field :qdmStatus, type: String, default: 'ethnicity'
+    field :hqmfTitle, type: String, default: 'Patient Characteristic Ethnicity'
     field :qdmVersion, type: String, default: '5.4'
   end
 end

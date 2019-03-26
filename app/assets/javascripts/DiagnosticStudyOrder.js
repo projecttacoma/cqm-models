@@ -20,10 +20,11 @@ const DiagnosticStudyOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
   negationRationale: Code,
-  hqmfTitle: { type: String, default: 'Diagnostic Study, Order' },
+  qdmTitle: { type: String, default: 'Diagnostic Study, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.22' },
   qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'order' },
+  hqmfTitle: { type: String, default: 'Diagnostic Study, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DiagnosticStudyOrder' },
 

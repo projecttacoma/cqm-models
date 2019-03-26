@@ -185,6 +185,13 @@
     "qdm_category": "medication",
     "qdm_status": "order"
   },
+  "participation": {
+    "hqmf_title": "Program Participation",
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.130",
+    "qrda_oid": "",
+    "qdm_category": "participation",
+    "qdm_status": ""
+  },
   "patient_care_experience": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.4.52",
     "qrda_oid": "",

@@ -24,10 +24,11 @@ const ImmunizationOrderSchema = DataElementSchema({
   reason: Code,
   route: Code,
   negationRationale: Code,
-  hqmfTitle: { type: String, default: 'Immunization, Order' },
+  qdmTitle: { type: String, default: 'Immunization, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.113' },
   qdmCategory: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'order' },
+  hqmfTitle: { type: String, default: 'Immunization, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ImmunizationOrder' },
 

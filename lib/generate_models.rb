@@ -111,13 +111,13 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
     attributes << { name: attribute_name, type: attribute_type }
   end
 
-  # Add the label as hqmfTitle if available
-  hqmf_title = type['label']
-  if hqmf_title.nil? # If there's no label, check if there is a "positive" profile
+  # Add the label as qdmTitle
+  qdm_title = type['label']
+  if qdm_title.nil? # If there's no label, check if there is a "positive" profile
     positive_profile = modelinfo.at_xpath("/ns4:modelInfo/ns4:typeInfo[@xsi:type='ns4:ProfileInfo'][@identifier='Positive#{datatype_name}']")
-    hqmf_title = positive_profile['label'] unless positive_profile.nil?
+    qdm_title = positive_profile['label'] unless positive_profile.nil?
   end
-  attributes << { name: 'hqmfTitle', type: 'System.String', default: hqmf_title } unless hqmf_title.nil?
+  attributes << { name: 'qdmTitle', type: 'System.String', default: qdm_title } unless qdm_title.nil?
 
   # Add the extra info that is manually maintained in the "oids" file
   extra_info = oids[datatype_name.underscore]
@@ -128,6 +128,10 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
     attributes << { name: 'qdmStatus', type: 'System.String', default: extra_info['qdm_status'] } if extra_info['qdm_status'].present?
     hqmfOid_to_datatype_map[extra_info['hqmf_oid']] = datatype_name if extra_info['hqmf_oid'].present?
   end
+
+  # hqmf title is usually the same as the qdm title, if not 'hqmf_title'' should be set manually in the oids file
+  hqmf_title = (extra_info.present? ? extra_info['hqmf_title'] : nil) || qdm_title
+  attributes << { name: 'hqmfTitle', type: 'System.String', default: hqmf_title } if hqmf_title.present?
   attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
 
   datatypes[datatype_name] = { attributes: attributes }
