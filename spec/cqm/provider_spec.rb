@@ -5,7 +5,7 @@ RSpec.describe CQM::Provider do
     expect do
       provider = CQM::Provider.new(
         givenNames: ['Joe'],
-        familyName: ['Smith'],
+        familyName: 'Smith',
         specialty: '282N00000X',
         title: 'Dr.'
       )
