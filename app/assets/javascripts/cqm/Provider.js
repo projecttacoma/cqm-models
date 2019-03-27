@@ -31,12 +31,7 @@ const ProviderSchema = new Schema({
   title: String,
   addresses: [AddressSchema],
   telecoms: [TelecomSchema],
-  id: {
-    type: Id.IdSchema,
-    default() {
-      return new Id.Id({ value: (this._id ? this._id.toString() : mongoose.Types.ObjectId().toString()), namingSystem: null });
-    },
-  },
+  ids: [Id.IdSchema],
 
 }, { id: false });
 

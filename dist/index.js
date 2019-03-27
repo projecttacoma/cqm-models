@@ -39,7 +39,11 @@ class AdverseEvent extends mongoose.Document {
 }
 module.exports.AdverseEvent = AdverseEvent;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],2:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],2:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 module.exports.Id = require('./Id.js').Id;
 module.exports.IdSchema = require('./Id.js').IdSchema;
 module.exports.PhysicalExamOrder = require('./PhysicalExamOrder.js').PhysicalExamOrder;
@@ -198,7 +202,11 @@ class AllergyIntolerance extends mongoose.Document {
 }
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],4:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],4:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -238,7 +246,11 @@ class AssessmentOrder extends mongoose.Document {
 }
 module.exports.AssessmentOrder = AssessmentOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],5:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],5:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -282,7 +294,11 @@ class AssessmentPerformed extends mongoose.Document {
 }
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],6:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],6:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -322,7 +338,11 @@ class AssessmentRecommended extends mongoose.Document {
 }
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],7:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],7:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -361,7 +381,11 @@ class CareGoal extends mongoose.Document {
 }
 module.exports.CareGoal = CareGoal;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],8:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],8:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -406,7 +430,11 @@ class CommunicationPerformed extends mongoose.Document {
 }
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],9:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],9:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -448,7 +476,11 @@ class DeviceApplied extends mongoose.Document {
 }
 module.exports.DeviceApplied = DeviceApplied;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],10:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],10:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -488,7 +520,11 @@ class DeviceOrder extends mongoose.Document {
 }
 module.exports.DeviceOrder = DeviceOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],11:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],11:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -528,7 +564,11 @@ class DeviceRecommended extends mongoose.Document {
 }
 module.exports.DeviceRecommended = DeviceRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],12:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],12:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -569,7 +609,11 @@ class Diagnosis extends mongoose.Document {
 }
 module.exports.Diagnosis = Diagnosis;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],13:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],13:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -609,7 +653,11 @@ class DiagnosticStudyOrder extends mongoose.Document {
 }
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],14:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],14:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -656,7 +704,11 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 }
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],15:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],15:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -696,7 +748,11 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 }
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],16:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],16:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -737,7 +793,11 @@ class EncounterOrder extends mongoose.Document {
 }
 module.exports.EncounterOrder = EncounterOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],17:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],17:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -783,7 +843,11 @@ class EncounterPerformed extends mongoose.Document {
 }
 module.exports.EncounterPerformed = EncounterPerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],18:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],18:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -824,7 +888,11 @@ class EncounterRecommended extends mongoose.Document {
 }
 module.exports.EncounterRecommended = EncounterRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],19:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],19:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -863,7 +931,11 @@ class FamilyHistory extends mongoose.Document {
 }
 module.exports.FamilyHistory = FamilyHistory;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],20:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],20:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
@@ -887,7 +959,11 @@ class Id extends mongoose.Document {
 }
 module.exports.Id = Id;
 
+<<<<<<< HEAD
 },{"mongoose/browser":253}],21:[function(require,module,exports){
+=======
+},{"mongoose/browser":242}],21:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -930,7 +1006,11 @@ class ImmunizationAdministered extends mongoose.Document {
 }
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],22:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],22:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -974,7 +1054,11 @@ class ImmunizationOrder extends mongoose.Document {
 }
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],23:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],23:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const [Number, String, Mixed, ObjectId] = [
@@ -1038,7 +1122,11 @@ class IndividualResult extends mongoose.Document {
 }
 module.exports.IndividualResult = IndividualResult;
 
+<<<<<<< HEAD
 },{"mongoose/browser":253}],24:[function(require,module,exports){
+=======
+},{"mongoose/browser":242}],24:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1078,7 +1166,11 @@ class InterventionOrder extends mongoose.Document {
 }
 module.exports.InterventionOrder = InterventionOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],25:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],25:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1121,7 +1213,11 @@ class InterventionPerformed extends mongoose.Document {
 }
 module.exports.InterventionPerformed = InterventionPerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],26:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],26:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1161,7 +1257,11 @@ class InterventionRecommended extends mongoose.Document {
 }
 module.exports.InterventionRecommended = InterventionRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],27:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],27:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1201,7 +1301,11 @@ class LaboratoryTestOrder extends mongoose.Document {
 }
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],28:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],28:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1248,7 +1352,11 @@ class LaboratoryTestPerformed extends mongoose.Document {
 }
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],29:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],29:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1288,7 +1396,11 @@ class LaboratoryTestRecommended extends mongoose.Document {
 }
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],30:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],30:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1329,7 +1441,11 @@ class MedicationActive extends mongoose.Document {
 }
 module.exports.MedicationActive = MedicationActive;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],31:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],31:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1373,7 +1489,11 @@ class MedicationAdministered extends mongoose.Document {
 }
 module.exports.MedicationAdministered = MedicationAdministered;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],32:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],32:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1418,7 +1538,11 @@ class MedicationDischarge extends mongoose.Document {
 }
 module.exports.MedicationDischarge = MedicationDischarge;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],33:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],33:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1466,7 +1590,11 @@ class MedicationDispensed extends mongoose.Document {
 }
 module.exports.MedicationDispensed = MedicationDispensed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],34:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],34:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1515,7 +1643,11 @@ class MedicationOrder extends mongoose.Document {
 }
 module.exports.MedicationOrder = MedicationOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],35:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],35:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1552,7 +1684,11 @@ class Participation extends mongoose.Document {
 }
 module.exports.Participation = Participation;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],36:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],36:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1589,7 +1725,11 @@ class PatientCareExperience extends mongoose.Document {
 }
 module.exports.PatientCareExperience = PatientCareExperience;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],37:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],37:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1626,7 +1766,11 @@ class PatientCharacteristic extends mongoose.Document {
 }
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],38:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],38:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1664,7 +1808,11 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 }
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],39:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],39:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1704,7 +1852,11 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 }
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],40:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],40:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1741,7 +1893,11 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 }
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],41:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],41:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1780,7 +1936,11 @@ class PatientCharacteristicExpired extends mongoose.Document {
 }
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],42:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],42:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1818,7 +1978,11 @@ class PatientCharacteristicPayer extends mongoose.Document {
 }
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],43:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],43:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1855,7 +2019,11 @@ class PatientCharacteristicRace extends mongoose.Document {
 }
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],44:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],44:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1892,7 +2060,11 @@ class PatientCharacteristicSex extends mongoose.Document {
 }
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],45:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],45:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1933,7 +2105,11 @@ class PhysicalExamOrder extends mongoose.Document {
 }
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],46:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],46:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1978,7 +2154,11 @@ class PhysicalExamPerformed extends mongoose.Document {
 }
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],47:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],47:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2019,7 +2199,11 @@ class PhysicalExamRecommended extends mongoose.Document {
 }
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],48:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],48:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2061,7 +2245,11 @@ class ProcedureOrder extends mongoose.Document {
 }
 module.exports.ProcedureOrder = ProcedureOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],49:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],49:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2109,7 +2297,11 @@ class ProcedurePerformed extends mongoose.Document {
 }
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],50:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],50:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2151,7 +2343,11 @@ class ProcedureRecommended extends mongoose.Document {
 }
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],51:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],51:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2188,7 +2384,11 @@ class ProviderCareExperience extends mongoose.Document {
 }
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],52:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],52:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2225,7 +2425,11 @@ class ProviderCharacteristic extends mongoose.Document {
 }
 module.exports.ProviderCharacteristic = ProviderCharacteristic;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],53:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],53:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2490,7 +2694,11 @@ class QDMPatient extends mongoose.Document {
 }
 module.exports.QDMPatient = QDMPatient;
 
+<<<<<<< HEAD
 },{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],54:[function(require,module,exports){
+=======
+},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],54:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2525,7 +2733,11 @@ class PlaceholderResult extends mongoose.Document {
 }
 module.exports.PlaceholderResult = PlaceholderResult;
 
+<<<<<<< HEAD
 },{"mongoose/browser":253}],55:[function(require,module,exports){
+=======
+},{"mongoose/browser":242}],55:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2559,7 +2771,11 @@ class ResultComponent extends mongoose.Document {
 }
 module.exports.ResultComponent = ResultComponent;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],56:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],56:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2602,7 +2818,11 @@ class SubstanceAdministered extends mongoose.Document {
 }
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],57:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],57:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2647,7 +2867,11 @@ class SubstanceOrder extends mongoose.Document {
 }
 module.exports.SubstanceOrder = SubstanceOrder;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],58:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],58:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2691,7 +2915,11 @@ class SubstanceRecommended extends mongoose.Document {
 }
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],59:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],59:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2730,7 +2958,11 @@ class Symptom extends mongoose.Document {
 }
 module.exports.Symptom = Symptom;
 
+<<<<<<< HEAD
 },{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],60:[function(require,module,exports){
+=======
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],60:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -2761,7 +2993,11 @@ class Component extends mongoose.Document {
 }
 module.exports.Component = Component;
 
+<<<<<<< HEAD
 },{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],61:[function(require,module,exports){
+=======
+},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":242}],61:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -2792,7 +3028,11 @@ class FacilityLocation extends mongoose.Document {
 }
 module.exports.FacilityLocation = FacilityLocation;
 
+<<<<<<< HEAD
 },{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],62:[function(require,module,exports){
+=======
+},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":242}],62:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -2862,7 +3102,11 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
+<<<<<<< HEAD
 },{"cql-execution":107,"mongoose/browser":253}],63:[function(require,module,exports){
+=======
+},{"cql-execution":100,"mongoose/browser":242}],63:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -2899,7 +3143,11 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
+<<<<<<< HEAD
 },{"cql-execution":107,"mongoose/browser":253}],64:[function(require,module,exports){
+=======
+},{"cql-execution":100,"mongoose/browser":242}],64:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
@@ -2945,7 +3193,11 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
+<<<<<<< HEAD
 },{"../Id":20,"./Code.js":63,"cql-execution":107,"mongoose/browser":253}],65:[function(require,module,exports){
+=======
+},{"../Id":20,"./Code.js":63,"cql-execution":100,"mongoose/browser":242}],65:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -2965,7 +3217,11 @@ DateTime.prototype.cast = (dateTime) => {
 mongoose.Schema.Types.DateTime = DateTime;
 module.exports = DateTime;
 
+<<<<<<< HEAD
 },{"cql-execution":107,"mongoose/browser":253}],66:[function(require,module,exports){
+=======
+},{"cql-execution":100,"mongoose/browser":242}],66:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3002,7 +3258,11 @@ Interval.prototype.cast = (interval) => {
 mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
 
+<<<<<<< HEAD
 },{"cql-execution":107,"mongoose/browser":253}],67:[function(require,module,exports){
+=======
+},{"cql-execution":100,"mongoose/browser":242}],67:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3024,7 +3284,11 @@ Quantity.prototype.cast = (quantity) => {
 mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;
 
+<<<<<<< HEAD
 },{"cql-execution":107,"mongoose/browser":253}],68:[function(require,module,exports){
+=======
+},{"cql-execution":100,"mongoose/browser":242}],68:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const { StatementDependencySchema } = require('./CQLStatementDependency');
 
@@ -3057,7 +3321,11 @@ class CQLLibrary extends mongoose.Document {
 }
 module.exports.CQLLibrary = CQLLibrary;
 
+<<<<<<< HEAD
 },{"./CQLStatementDependency":69,"mongoose/browser":253}],69:[function(require,module,exports){
+=======
+},{"./CQLStatementDependency":69,"mongoose/browser":242}],69:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
@@ -3087,7 +3355,11 @@ class StatementDependency extends mongoose.Document {
 }
 module.exports.StatementDependency = StatementDependency;
 
+<<<<<<< HEAD
 },{"mongoose/browser":253}],70:[function(require,module,exports){
+=======
+},{"mongoose/browser":242}],70:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
@@ -3106,7 +3378,11 @@ class Concept extends mongoose.Document {
 }
 module.exports.Concept = Concept;
 
+<<<<<<< HEAD
 },{"mongoose/browser":253}],71:[function(require,module,exports){
+=======
+},{"mongoose/browser":242}],71:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -3202,7 +3478,15 @@ class Measure extends mongoose.Document {
 }
 module.exports.Measure = Measure;
 
+<<<<<<< HEAD
 },{"../basetypes/Code":63,"../basetypes/DataElement":64,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":253}],72:[function(require,module,exports){
+=======
+<<<<<<< HEAD
+},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":253}],72:[function(require,module,exports){
+=======
+},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":73,"mongoose/browser":242}],72:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
@@ -3230,6 +3514,7 @@ class MeasurePackage extends mongoose.Document {
 }
 module.exports.MeasurePackage = MeasurePackage;
 
+<<<<<<< HEAD
 },{"mongoose/browser":253}],73:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
@@ -3266,6 +3551,9 @@ class Patient extends mongoose.Document {
 module.exports.Patient = Patient;
 
 },{"../QDMPatient":53,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],74:[function(require,module,exports){
+=======
+},{"mongoose/browser":242}],73:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 /* eslint-disable no-unused-vars, no-param-reassign */
 const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
@@ -3355,7 +3643,11 @@ class PopulationSet extends mongoose.Document {
 }
 module.exports.PopulationSet = PopulationSet;
 
+<<<<<<< HEAD
 },{"./CQLStatementDependency":69,"mongoose/browser":253}],75:[function(require,module,exports){
+=======
+},{"./CQLStatementDependency":69,"mongoose/browser":242}],74:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
@@ -3383,7 +3675,11 @@ class ValueSet extends mongoose.Document {
 }
 module.exports.ValueSet = ValueSet;
 
+<<<<<<< HEAD
 },{"./Concept.js":70,"mongoose/browser":253}],76:[function(require,module,exports){
+=======
+},{"./Concept.js":70,"mongoose/browser":242}],75:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;
@@ -3405,1276 +3701,12 @@ module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
 module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
 module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;
 
+<<<<<<< HEAD
 },{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/Patient.js":73,"./cqm/ValueSet.js":75,"cql-execution":107}],77:[function(require,module,exports){
 (function (global){
 'use strict';
-
-// compare and isBuffer taken from https://github.com/feross/buffer/blob/680e9e5e488f22aac27599a57dc844a6315928dd/index.js
-// original notice:
-
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
- * @license  MIT
- */
-function compare(a, b) {
-  if (a === b) {
-    return 0;
-  }
-
-  var x = a.length;
-  var y = b.length;
-
-  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
-    if (a[i] !== b[i]) {
-      x = a[i];
-      y = b[i];
-      break;
-    }
-  }
-
-  if (x < y) {
-    return -1;
-  }
-  if (y < x) {
-    return 1;
-  }
-  return 0;
-}
-function isBuffer(b) {
-  if (global.Buffer && typeof global.Buffer.isBuffer === 'function') {
-    return global.Buffer.isBuffer(b);
-  }
-  return !!(b != null && b._isBuffer);
-}
-
-// based on node assert, original notice:
-
-// http://wiki.commonjs.org/wiki/Unit_Testing/1.0
-//
-// THIS IS NOT TESTED NOR LIKELY TO WORK OUTSIDE V8!
-//
-// Originally from narwhal.js (http://narwhaljs.org)
-// Copyright (c) 2009 Thomas Robinson <280north.com>
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the 'Software'), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var util = require('util/');
-var hasOwn = Object.prototype.hasOwnProperty;
-var pSlice = Array.prototype.slice;
-var functionsHaveNames = (function () {
-  return function foo() {}.name === 'foo';
-}());
-function pToString (obj) {
-  return Object.prototype.toString.call(obj);
-}
-function isView(arrbuf) {
-  if (isBuffer(arrbuf)) {
-    return false;
-  }
-  if (typeof global.ArrayBuffer !== 'function') {
-    return false;
-  }
-  if (typeof ArrayBuffer.isView === 'function') {
-    return ArrayBuffer.isView(arrbuf);
-  }
-  if (!arrbuf) {
-    return false;
-  }
-  if (arrbuf instanceof DataView) {
-    return true;
-  }
-  if (arrbuf.buffer && arrbuf.buffer instanceof ArrayBuffer) {
-    return true;
-  }
-  return false;
-}
-// 1. The assert module provides functions that throw
-// AssertionError's when particular conditions are not met. The
-// assert module must conform to the following interface.
-
-var assert = module.exports = ok;
-
-// 2. The AssertionError is defined in assert.
-// new assert.AssertionError({ message: message,
-//                             actual: actual,
-//                             expected: expected })
-
-var regex = /\s*function\s+([^\(\s]*)\s*/;
-// based on https://github.com/ljharb/function.prototype.name/blob/adeeeec8bfcc6068b187d7d9fb3d5bb1d3a30899/implementation.js
-function getName(func) {
-  if (!util.isFunction(func)) {
-    return;
-  }
-  if (functionsHaveNames) {
-    return func.name;
-  }
-  var str = func.toString();
-  var match = str.match(regex);
-  return match && match[1];
-}
-assert.AssertionError = function AssertionError(options) {
-  this.name = 'AssertionError';
-  this.actual = options.actual;
-  this.expected = options.expected;
-  this.operator = options.operator;
-  if (options.message) {
-    this.message = options.message;
-    this.generatedMessage = false;
-  } else {
-    this.message = getMessage(this);
-    this.generatedMessage = true;
-  }
-  var stackStartFunction = options.stackStartFunction || fail;
-  if (Error.captureStackTrace) {
-    Error.captureStackTrace(this, stackStartFunction);
-  } else {
-    // non v8 browsers so we can have a stacktrace
-    var err = new Error();
-    if (err.stack) {
-      var out = err.stack;
-
-      // try to strip useless frames
-      var fn_name = getName(stackStartFunction);
-      var idx = out.indexOf('\n' + fn_name);
-      if (idx >= 0) {
-        // once we have located the function frame
-        // we need to strip out everything before it (and its line)
-        var next_line = out.indexOf('\n', idx + 1);
-        out = out.substring(next_line + 1);
-      }
-
-      this.stack = out;
-    }
-  }
-};
-
-// assert.AssertionError instanceof Error
-util.inherits(assert.AssertionError, Error);
-
-function truncate(s, n) {
-  if (typeof s === 'string') {
-    return s.length < n ? s : s.slice(0, n);
-  } else {
-    return s;
-  }
-}
-function inspect(something) {
-  if (functionsHaveNames || !util.isFunction(something)) {
-    return util.inspect(something);
-  }
-  var rawname = getName(something);
-  var name = rawname ? ': ' + rawname : '';
-  return '[Function' +  name + ']';
-}
-function getMessage(self) {
-  return truncate(inspect(self.actual), 128) + ' ' +
-         self.operator + ' ' +
-         truncate(inspect(self.expected), 128);
-}
-
-// At present only the three keys mentioned above are used and
-// understood by the spec. Implementations or sub modules can pass
-// other keys to the AssertionError's constructor - they will be
-// ignored.
-
-// 3. All of the following functions must throw an AssertionError
-// when a corresponding condition is not met, with a message that
-// may be undefined if not provided.  All assertion methods provide
-// both the actual and expected values to the assertion error for
-// display purposes.
-
-function fail(actual, expected, message, operator, stackStartFunction) {
-  throw new assert.AssertionError({
-    message: message,
-    actual: actual,
-    expected: expected,
-    operator: operator,
-    stackStartFunction: stackStartFunction
-  });
-}
-
-// EXTENSION! allows for well behaved errors defined elsewhere.
-assert.fail = fail;
-
-// 4. Pure assertion tests whether a value is truthy, as determined
-// by !!guard.
-// assert.ok(guard, message_opt);
-// This statement is equivalent to assert.equal(true, !!guard,
-// message_opt);. To test strictly for the value true, use
-// assert.strictEqual(true, guard, message_opt);.
-
-function ok(value, message) {
-  if (!value) fail(value, true, message, '==', assert.ok);
-}
-assert.ok = ok;
-
-// 5. The equality assertion tests shallow, coercive equality with
-// ==.
-// assert.equal(actual, expected, message_opt);
-
-assert.equal = function equal(actual, expected, message) {
-  if (actual != expected) fail(actual, expected, message, '==', assert.equal);
-};
-
-// 6. The non-equality assertion tests for whether two objects are not equal
-// with != assert.notEqual(actual, expected, message_opt);
-
-assert.notEqual = function notEqual(actual, expected, message) {
-  if (actual == expected) {
-    fail(actual, expected, message, '!=', assert.notEqual);
-  }
-};
-
-// 7. The equivalence assertion tests a deep equality relation.
-// assert.deepEqual(actual, expected, message_opt);
-
-assert.deepEqual = function deepEqual(actual, expected, message) {
-  if (!_deepEqual(actual, expected, false)) {
-    fail(actual, expected, message, 'deepEqual', assert.deepEqual);
-  }
-};
-
-assert.deepStrictEqual = function deepStrictEqual(actual, expected, message) {
-  if (!_deepEqual(actual, expected, true)) {
-    fail(actual, expected, message, 'deepStrictEqual', assert.deepStrictEqual);
-  }
-};
-
-function _deepEqual(actual, expected, strict, memos) {
-  // 7.1. All identical values are equivalent, as determined by ===.
-  if (actual === expected) {
-    return true;
-  } else if (isBuffer(actual) && isBuffer(expected)) {
-    return compare(actual, expected) === 0;
-
-  // 7.2. If the expected value is a Date object, the actual value is
-  // equivalent if it is also a Date object that refers to the same time.
-  } else if (util.isDate(actual) && util.isDate(expected)) {
-    return actual.getTime() === expected.getTime();
-
-  // 7.3 If the expected value is a RegExp object, the actual value is
-  // equivalent if it is also a RegExp object with the same source and
-  // properties (`global`, `multiline`, `lastIndex`, `ignoreCase`).
-  } else if (util.isRegExp(actual) && util.isRegExp(expected)) {
-    return actual.source === expected.source &&
-           actual.global === expected.global &&
-           actual.multiline === expected.multiline &&
-           actual.lastIndex === expected.lastIndex &&
-           actual.ignoreCase === expected.ignoreCase;
-
-  // 7.4. Other pairs that do not both pass typeof value == 'object',
-  // equivalence is determined by ==.
-  } else if ((actual === null || typeof actual !== 'object') &&
-             (expected === null || typeof expected !== 'object')) {
-    return strict ? actual === expected : actual == expected;
-
-  // If both values are instances of typed arrays, wrap their underlying
-  // ArrayBuffers in a Buffer each to increase performance
-  // This optimization requires the arrays to have the same type as checked by
-  // Object.prototype.toString (aka pToString). Never perform binary
-  // comparisons for Float*Arrays, though, since e.g. +0 === -0 but their
-  // bit patterns are not identical.
-  } else if (isView(actual) && isView(expected) &&
-             pToString(actual) === pToString(expected) &&
-             !(actual instanceof Float32Array ||
-               actual instanceof Float64Array)) {
-    return compare(new Uint8Array(actual.buffer),
-                   new Uint8Array(expected.buffer)) === 0;
-
-  // 7.5 For all other Object pairs, including Array objects, equivalence is
-  // determined by having the same number of owned properties (as verified
-  // with Object.prototype.hasOwnProperty.call), the same set of keys
-  // (although not necessarily the same order), equivalent values for every
-  // corresponding key, and an identical 'prototype' property. Note: this
-  // accounts for both named and indexed properties on Arrays.
-  } else if (isBuffer(actual) !== isBuffer(expected)) {
-    return false;
-  } else {
-    memos = memos || {actual: [], expected: []};
-
-    var actualIndex = memos.actual.indexOf(actual);
-    if (actualIndex !== -1) {
-      if (actualIndex === memos.expected.indexOf(expected)) {
-        return true;
-      }
-    }
-
-    memos.actual.push(actual);
-    memos.expected.push(expected);
-
-    return objEquiv(actual, expected, strict, memos);
-  }
-}
-
-function isArguments(object) {
-  return Object.prototype.toString.call(object) == '[object Arguments]';
-}
-
-function objEquiv(a, b, strict, actualVisitedObjects) {
-  if (a === null || a === undefined || b === null || b === undefined)
-    return false;
-  // if one is a primitive, the other must be same
-  if (util.isPrimitive(a) || util.isPrimitive(b))
-    return a === b;
-  if (strict && Object.getPrototypeOf(a) !== Object.getPrototypeOf(b))
-    return false;
-  var aIsArgs = isArguments(a);
-  var bIsArgs = isArguments(b);
-  if ((aIsArgs && !bIsArgs) || (!aIsArgs && bIsArgs))
-    return false;
-  if (aIsArgs) {
-    a = pSlice.call(a);
-    b = pSlice.call(b);
-    return _deepEqual(a, b, strict);
-  }
-  var ka = objectKeys(a);
-  var kb = objectKeys(b);
-  var key, i;
-  // having the same number of owned properties (keys incorporates
-  // hasOwnProperty)
-  if (ka.length !== kb.length)
-    return false;
-  //the same set of keys (although not necessarily the same order),
-  ka.sort();
-  kb.sort();
-  //~~~cheap key test
-  for (i = ka.length - 1; i >= 0; i--) {
-    if (ka[i] !== kb[i])
-      return false;
-  }
-  //equivalent values for every corresponding key, and
-  //~~~possibly expensive deep test
-  for (i = ka.length - 1; i >= 0; i--) {
-    key = ka[i];
-    if (!_deepEqual(a[key], b[key], strict, actualVisitedObjects))
-      return false;
-  }
-  return true;
-}
-
-// 8. The non-equivalence assertion tests for any deep inequality.
-// assert.notDeepEqual(actual, expected, message_opt);
-
-assert.notDeepEqual = function notDeepEqual(actual, expected, message) {
-  if (_deepEqual(actual, expected, false)) {
-    fail(actual, expected, message, 'notDeepEqual', assert.notDeepEqual);
-  }
-};
-
-assert.notDeepStrictEqual = notDeepStrictEqual;
-function notDeepStrictEqual(actual, expected, message) {
-  if (_deepEqual(actual, expected, true)) {
-    fail(actual, expected, message, 'notDeepStrictEqual', notDeepStrictEqual);
-  }
-}
-
-
-// 9. The strict equality assertion tests strict equality, as determined by ===.
-// assert.strictEqual(actual, expected, message_opt);
-
-assert.strictEqual = function strictEqual(actual, expected, message) {
-  if (actual !== expected) {
-    fail(actual, expected, message, '===', assert.strictEqual);
-  }
-};
-
-// 10. The strict non-equality assertion tests for strict inequality, as
-// determined by !==.  assert.notStrictEqual(actual, expected, message_opt);
-
-assert.notStrictEqual = function notStrictEqual(actual, expected, message) {
-  if (actual === expected) {
-    fail(actual, expected, message, '!==', assert.notStrictEqual);
-  }
-};
-
-function expectedException(actual, expected) {
-  if (!actual || !expected) {
-    return false;
-  }
-
-  if (Object.prototype.toString.call(expected) == '[object RegExp]') {
-    return expected.test(actual);
-  }
-
-  try {
-    if (actual instanceof expected) {
-      return true;
-    }
-  } catch (e) {
-    // Ignore.  The instanceof check doesn't work for arrow functions.
-  }
-
-  if (Error.isPrototypeOf(expected)) {
-    return false;
-  }
-
-  return expected.call({}, actual) === true;
-}
-
-function _tryBlock(block) {
-  var error;
-  try {
-    block();
-  } catch (e) {
-    error = e;
-  }
-  return error;
-}
-
-function _throws(shouldThrow, block, expected, message) {
-  var actual;
-
-  if (typeof block !== 'function') {
-    throw new TypeError('"block" argument must be a function');
-  }
-
-  if (typeof expected === 'string') {
-    message = expected;
-    expected = null;
-  }
-
-  actual = _tryBlock(block);
-
-  message = (expected && expected.name ? ' (' + expected.name + ').' : '.') +
-            (message ? ' ' + message : '.');
-
-  if (shouldThrow && !actual) {
-    fail(actual, expected, 'Missing expected exception' + message);
-  }
-
-  var userProvidedMessage = typeof message === 'string';
-  var isUnwantedException = !shouldThrow && util.isError(actual);
-  var isUnexpectedException = !shouldThrow && actual && !expected;
-
-  if ((isUnwantedException &&
-      userProvidedMessage &&
-      expectedException(actual, expected)) ||
-      isUnexpectedException) {
-    fail(actual, expected, 'Got unwanted exception' + message);
-  }
-
-  if ((shouldThrow && actual && expected &&
-      !expectedException(actual, expected)) || (!shouldThrow && actual)) {
-    throw actual;
-  }
-}
-
-// 11. Expected to throw an error:
-// assert.throws(block, Error_opt, message_opt);
-
-assert.throws = function(block, /*optional*/error, /*optional*/message) {
-  _throws(true, block, error, message);
-};
-
-// EXTENSION! This is annoying to write outside this module.
-assert.doesNotThrow = function(block, /*optional*/error, /*optional*/message) {
-  _throws(false, block, error, message);
-};
-
-assert.ifError = function(err) { if (err) throw err; };
-
-var objectKeys = Object.keys || function (obj) {
-  var keys = [];
-  for (var key in obj) {
-    if (hasOwn.call(obj, key)) keys.push(key);
-  }
-  return keys;
-};
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":80}],78:[function(require,module,exports){
-if (typeof Object.create === 'function') {
-  // implementation from standard node.js 'util' module
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    ctor.prototype = Object.create(superCtor.prototype, {
-      constructor: {
-        value: ctor,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-  };
-} else {
-  // old school shim for old browsers
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    var TempCtor = function () {}
-    TempCtor.prototype = superCtor.prototype
-    ctor.prototype = new TempCtor()
-    ctor.prototype.constructor = ctor
-  }
-}
-
-},{}],79:[function(require,module,exports){
-module.exports = function isBuffer(arg) {
-  return arg && typeof arg === 'object'
-    && typeof arg.copy === 'function'
-    && typeof arg.fill === 'function'
-    && typeof arg.readUInt8 === 'function';
-}
-},{}],80:[function(require,module,exports){
-(function (process,global){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var formatRegExp = /%[sdj%]/g;
-exports.format = function(f) {
-  if (!isString(f)) {
-    var objects = [];
-    for (var i = 0; i < arguments.length; i++) {
-      objects.push(inspect(arguments[i]));
-    }
-    return objects.join(' ');
-  }
-
-  var i = 1;
-  var args = arguments;
-  var len = args.length;
-  var str = String(f).replace(formatRegExp, function(x) {
-    if (x === '%%') return '%';
-    if (i >= len) return x;
-    switch (x) {
-      case '%s': return String(args[i++]);
-      case '%d': return Number(args[i++]);
-      case '%j':
-        try {
-          return JSON.stringify(args[i++]);
-        } catch (_) {
-          return '[Circular]';
-        }
-      default:
-        return x;
-    }
-  });
-  for (var x = args[i]; i < len; x = args[++i]) {
-    if (isNull(x) || !isObject(x)) {
-      str += ' ' + x;
-    } else {
-      str += ' ' + inspect(x);
-    }
-  }
-  return str;
-};
-
-
-// Mark that a method should not be used.
-// Returns a modified function which warns once by default.
-// If --no-deprecation is set, then it is a no-op.
-exports.deprecate = function(fn, msg) {
-  // Allow for deprecating things in the process of starting up.
-  if (isUndefined(global.process)) {
-    return function() {
-      return exports.deprecate(fn, msg).apply(this, arguments);
-    };
-  }
-
-  if (process.noDeprecation === true) {
-    return fn;
-  }
-
-  var warned = false;
-  function deprecated() {
-    if (!warned) {
-      if (process.throwDeprecation) {
-        throw new Error(msg);
-      } else if (process.traceDeprecation) {
-        console.trace(msg);
-      } else {
-        console.error(msg);
-      }
-      warned = true;
-    }
-    return fn.apply(this, arguments);
-  }
-
-  return deprecated;
-};
-
-
-var debugs = {};
-var debugEnviron;
-exports.debuglog = function(set) {
-  if (isUndefined(debugEnviron))
-    debugEnviron = process.env.NODE_DEBUG || '';
-  set = set.toUpperCase();
-  if (!debugs[set]) {
-    if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
-      var pid = process.pid;
-      debugs[set] = function() {
-        var msg = exports.format.apply(exports, arguments);
-        console.error('%s %d: %s', set, pid, msg);
-      };
-    } else {
-      debugs[set] = function() {};
-    }
-  }
-  return debugs[set];
-};
-
-
-/**
- * Echos the value of a value. Trys to print the value out
- * in the best way possible given the different types.
- *
- * @param {Object} obj The object to print out.
- * @param {Object} opts Optional options object that alters the output.
- */
-/* legacy: obj, showHidden, depth, colors*/
-function inspect(obj, opts) {
-  // default options
-  var ctx = {
-    seen: [],
-    stylize: stylizeNoColor
-  };
-  // legacy...
-  if (arguments.length >= 3) ctx.depth = arguments[2];
-  if (arguments.length >= 4) ctx.colors = arguments[3];
-  if (isBoolean(opts)) {
-    // legacy...
-    ctx.showHidden = opts;
-  } else if (opts) {
-    // got an "options" object
-    exports._extend(ctx, opts);
-  }
-  // set default options
-  if (isUndefined(ctx.showHidden)) ctx.showHidden = false;
-  if (isUndefined(ctx.depth)) ctx.depth = 2;
-  if (isUndefined(ctx.colors)) ctx.colors = false;
-  if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
-  if (ctx.colors) ctx.stylize = stylizeWithColor;
-  return formatValue(ctx, obj, ctx.depth);
-}
-exports.inspect = inspect;
-
-
-// http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
-inspect.colors = {
-  'bold' : [1, 22],
-  'italic' : [3, 23],
-  'underline' : [4, 24],
-  'inverse' : [7, 27],
-  'white' : [37, 39],
-  'grey' : [90, 39],
-  'black' : [30, 39],
-  'blue' : [34, 39],
-  'cyan' : [36, 39],
-  'green' : [32, 39],
-  'magenta' : [35, 39],
-  'red' : [31, 39],
-  'yellow' : [33, 39]
-};
-
-// Don't use 'blue' not visible on cmd.exe
-inspect.styles = {
-  'special': 'cyan',
-  'number': 'yellow',
-  'boolean': 'yellow',
-  'undefined': 'grey',
-  'null': 'bold',
-  'string': 'green',
-  'date': 'magenta',
-  // "name": intentionally not styling
-  'regexp': 'red'
-};
-
-
-function stylizeWithColor(str, styleType) {
-  var style = inspect.styles[styleType];
-
-  if (style) {
-    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
-           '\u001b[' + inspect.colors[style][1] + 'm';
-  } else {
-    return str;
-  }
-}
-
-
-function stylizeNoColor(str, styleType) {
-  return str;
-}
-
-
-function arrayToHash(array) {
-  var hash = {};
-
-  array.forEach(function(val, idx) {
-    hash[val] = true;
-  });
-
-  return hash;
-}
-
-
-function formatValue(ctx, value, recurseTimes) {
-  // Provide a hook for user-specified inspect functions.
-  // Check that value is an object with an inspect function on it
-  if (ctx.customInspect &&
-      value &&
-      isFunction(value.inspect) &&
-      // Filter out the util module, it's inspect function is special
-      value.inspect !== exports.inspect &&
-      // Also filter out any prototype objects using the circular check.
-      !(value.constructor && value.constructor.prototype === value)) {
-    var ret = value.inspect(recurseTimes, ctx);
-    if (!isString(ret)) {
-      ret = formatValue(ctx, ret, recurseTimes);
-    }
-    return ret;
-  }
-
-  // Primitive types cannot have properties
-  var primitive = formatPrimitive(ctx, value);
-  if (primitive) {
-    return primitive;
-  }
-
-  // Look up the keys of the object.
-  var keys = Object.keys(value);
-  var visibleKeys = arrayToHash(keys);
-
-  if (ctx.showHidden) {
-    keys = Object.getOwnPropertyNames(value);
-  }
-
-  // IE doesn't make error fields non-enumerable
-  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
-  if (isError(value)
-      && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
-    return formatError(value);
-  }
-
-  // Some type of object without properties can be shortcutted.
-  if (keys.length === 0) {
-    if (isFunction(value)) {
-      var name = value.name ? ': ' + value.name : '';
-      return ctx.stylize('[Function' + name + ']', 'special');
-    }
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    }
-    if (isDate(value)) {
-      return ctx.stylize(Date.prototype.toString.call(value), 'date');
-    }
-    if (isError(value)) {
-      return formatError(value);
-    }
-  }
-
-  var base = '', array = false, braces = ['{', '}'];
-
-  // Make Array say that they are Array
-  if (isArray(value)) {
-    array = true;
-    braces = ['[', ']'];
-  }
-
-  // Make functions say that they are functions
-  if (isFunction(value)) {
-    var n = value.name ? ': ' + value.name : '';
-    base = ' [Function' + n + ']';
-  }
-
-  // Make RegExps say that they are RegExps
-  if (isRegExp(value)) {
-    base = ' ' + RegExp.prototype.toString.call(value);
-  }
-
-  // Make dates with properties first say the date
-  if (isDate(value)) {
-    base = ' ' + Date.prototype.toUTCString.call(value);
-  }
-
-  // Make error with message first say the error
-  if (isError(value)) {
-    base = ' ' + formatError(value);
-  }
-
-  if (keys.length === 0 && (!array || value.length == 0)) {
-    return braces[0] + base + braces[1];
-  }
-
-  if (recurseTimes < 0) {
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    } else {
-      return ctx.stylize('[Object]', 'special');
-    }
-  }
-
-  ctx.seen.push(value);
-
-  var output;
-  if (array) {
-    output = formatArray(ctx, value, recurseTimes, visibleKeys, keys);
-  } else {
-    output = keys.map(function(key) {
-      return formatProperty(ctx, value, recurseTimes, visibleKeys, key, array);
-    });
-  }
-
-  ctx.seen.pop();
-
-  return reduceToSingleString(output, base, braces);
-}
-
-
-function formatPrimitive(ctx, value) {
-  if (isUndefined(value))
-    return ctx.stylize('undefined', 'undefined');
-  if (isString(value)) {
-    var simple = '\'' + JSON.stringify(value).replace(/^"|"$/g, '')
-                                             .replace(/'/g, "\\'")
-                                             .replace(/\\"/g, '"') + '\'';
-    return ctx.stylize(simple, 'string');
-  }
-  if (isNumber(value))
-    return ctx.stylize('' + value, 'number');
-  if (isBoolean(value))
-    return ctx.stylize('' + value, 'boolean');
-  // For some reason typeof null is "object", so special case here.
-  if (isNull(value))
-    return ctx.stylize('null', 'null');
-}
-
-
-function formatError(value) {
-  return '[' + Error.prototype.toString.call(value) + ']';
-}
-
-
-function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
-  var output = [];
-  for (var i = 0, l = value.length; i < l; ++i) {
-    if (hasOwnProperty(value, String(i))) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          String(i), true));
-    } else {
-      output.push('');
-    }
-  }
-  keys.forEach(function(key) {
-    if (!key.match(/^\d+$/)) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          key, true));
-    }
-  });
-  return output;
-}
-
-
-function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
-  var name, str, desc;
-  desc = Object.getOwnPropertyDescriptor(value, key) || { value: value[key] };
-  if (desc.get) {
-    if (desc.set) {
-      str = ctx.stylize('[Getter/Setter]', 'special');
-    } else {
-      str = ctx.stylize('[Getter]', 'special');
-    }
-  } else {
-    if (desc.set) {
-      str = ctx.stylize('[Setter]', 'special');
-    }
-  }
-  if (!hasOwnProperty(visibleKeys, key)) {
-    name = '[' + key + ']';
-  }
-  if (!str) {
-    if (ctx.seen.indexOf(desc.value) < 0) {
-      if (isNull(recurseTimes)) {
-        str = formatValue(ctx, desc.value, null);
-      } else {
-        str = formatValue(ctx, desc.value, recurseTimes - 1);
-      }
-      if (str.indexOf('\n') > -1) {
-        if (array) {
-          str = str.split('\n').map(function(line) {
-            return '  ' + line;
-          }).join('\n').substr(2);
-        } else {
-          str = '\n' + str.split('\n').map(function(line) {
-            return '   ' + line;
-          }).join('\n');
-        }
-      }
-    } else {
-      str = ctx.stylize('[Circular]', 'special');
-    }
-  }
-  if (isUndefined(name)) {
-    if (array && key.match(/^\d+$/)) {
-      return str;
-    }
-    name = JSON.stringify('' + key);
-    if (name.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)) {
-      name = name.substr(1, name.length - 2);
-      name = ctx.stylize(name, 'name');
-    } else {
-      name = name.replace(/'/g, "\\'")
-                 .replace(/\\"/g, '"')
-                 .replace(/(^"|"$)/g, "'");
-      name = ctx.stylize(name, 'string');
-    }
-  }
-
-  return name + ': ' + str;
-}
-
-
-function reduceToSingleString(output, base, braces) {
-  var numLinesEst = 0;
-  var length = output.reduce(function(prev, cur) {
-    numLinesEst++;
-    if (cur.indexOf('\n') >= 0) numLinesEst++;
-    return prev + cur.replace(/\u001b\[\d\d?m/g, '').length + 1;
-  }, 0);
-
-  if (length > 60) {
-    return braces[0] +
-           (base === '' ? '' : base + '\n ') +
-           ' ' +
-           output.join(',\n  ') +
-           ' ' +
-           braces[1];
-  }
-
-  return braces[0] + base + ' ' + output.join(', ') + ' ' + braces[1];
-}
-
-
-// NOTE: These type checking functions intentionally don't use `instanceof`
-// because it is fragile and can be easily faked with `Object.create()`.
-function isArray(ar) {
-  return Array.isArray(ar);
-}
-exports.isArray = isArray;
-
-function isBoolean(arg) {
-  return typeof arg === 'boolean';
-}
-exports.isBoolean = isBoolean;
-
-function isNull(arg) {
-  return arg === null;
-}
-exports.isNull = isNull;
-
-function isNullOrUndefined(arg) {
-  return arg == null;
-}
-exports.isNullOrUndefined = isNullOrUndefined;
-
-function isNumber(arg) {
-  return typeof arg === 'number';
-}
-exports.isNumber = isNumber;
-
-function isString(arg) {
-  return typeof arg === 'string';
-}
-exports.isString = isString;
-
-function isSymbol(arg) {
-  return typeof arg === 'symbol';
-}
-exports.isSymbol = isSymbol;
-
-function isUndefined(arg) {
-  return arg === void 0;
-}
-exports.isUndefined = isUndefined;
-
-function isRegExp(re) {
-  return isObject(re) && objectToString(re) === '[object RegExp]';
-}
-exports.isRegExp = isRegExp;
-
-function isObject(arg) {
-  return typeof arg === 'object' && arg !== null;
-}
-exports.isObject = isObject;
-
-function isDate(d) {
-  return isObject(d) && objectToString(d) === '[object Date]';
-}
-exports.isDate = isDate;
-
-function isError(e) {
-  return isObject(e) &&
-      (objectToString(e) === '[object Error]' || e instanceof Error);
-}
-exports.isError = isError;
-
-function isFunction(arg) {
-  return typeof arg === 'function';
-}
-exports.isFunction = isFunction;
-
-function isPrimitive(arg) {
-  return arg === null ||
-         typeof arg === 'boolean' ||
-         typeof arg === 'number' ||
-         typeof arg === 'string' ||
-         typeof arg === 'symbol' ||  // ES6 symbol
-         typeof arg === 'undefined';
-}
-exports.isPrimitive = isPrimitive;
-
-exports.isBuffer = require('./support/isBuffer');
-
-function objectToString(o) {
-  return Object.prototype.toString.call(o);
-}
-
-
-function pad(n) {
-  return n < 10 ? '0' + n.toString(10) : n.toString(10);
-}
-
-
-var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
-              'Oct', 'Nov', 'Dec'];
-
-// 26 Feb 16:19:34
-function timestamp() {
-  var d = new Date();
-  var time = [pad(d.getHours()),
-              pad(d.getMinutes()),
-              pad(d.getSeconds())].join(':');
-  return [d.getDate(), months[d.getMonth()], time].join(' ');
-}
-
-
-// log is just a thin wrapper to console.log that prepends a timestamp
-exports.log = function() {
-  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
-};
-
-
-/**
- * Inherit the prototype methods from one constructor into another.
- *
- * The Function.prototype.inherits from lang.js rewritten as a standalone
- * function (not on Function.prototype). NOTE: If this file is to be loaded
- * during bootstrapping this function needs to be rewritten using some native
- * functions as prototype setup using normal JavaScript does not work as
- * expected during bootstrapping (see mirror.js in r114903).
- *
- * @param {function} ctor Constructor function which needs to inherit the
- *     prototype.
- * @param {function} superCtor Constructor function to inherit prototype from.
- */
-exports.inherits = require('inherits');
-
-exports._extend = function(origin, add) {
-  // Don't do anything if add isn't an object
-  if (!add || !isObject(add)) return origin;
-
-  var keys = Object.keys(add);
-  var i = keys.length;
-  while (i--) {
-    origin[keys[i]] = add[keys[i]];
-  }
-  return origin;
-};
-
-function hasOwnProperty(obj, prop) {
-  return Object.prototype.hasOwnProperty.call(obj, prop);
-}
-
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":79,"_process":356,"inherits":78}],81:[function(require,module,exports){
-'use strict'
-
-exports.byteLength = byteLength
-exports.toByteArray = toByteArray
-exports.fromByteArray = fromByteArray
-
-var lookup = []
-var revLookup = []
-var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
-
-var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-for (var i = 0, len = code.length; i < len; ++i) {
-  lookup[i] = code[i]
-  revLookup[code.charCodeAt(i)] = i
-}
-
-// Support decoding URL-safe base64 strings, as Node.js does.
-// See: https://en.wikipedia.org/wiki/Base64#URL_applications
-revLookup['-'.charCodeAt(0)] = 62
-revLookup['_'.charCodeAt(0)] = 63
-
-function getLens (b64) {
-  var len = b64.length
-
-  if (len % 4 > 0) {
-    throw new Error('Invalid string. Length must be a multiple of 4')
-  }
-
-  // Trim off extra bytes after placeholder bytes are found
-  // See: https://github.com/beatgammit/base64-js/issues/42
-  var validLen = b64.indexOf('=')
-  if (validLen === -1) validLen = len
-
-  var placeHoldersLen = validLen === len
-    ? 0
-    : 4 - (validLen % 4)
-
-  return [validLen, placeHoldersLen]
-}
-
-// base64 is 4/3 + up to two characters of the original data
-function byteLength (b64) {
-  var lens = getLens(b64)
-  var validLen = lens[0]
-  var placeHoldersLen = lens[1]
-  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
-}
-
-function _byteLength (b64, validLen, placeHoldersLen) {
-  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
-}
-
-function toByteArray (b64) {
-  var tmp
-  var lens = getLens(b64)
-  var validLen = lens[0]
-  var placeHoldersLen = lens[1]
-
-  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
-
-  var curByte = 0
-
-  // if there are placeholders, only get up to the last complete 4 chars
-  var len = placeHoldersLen > 0
-    ? validLen - 4
-    : validLen
-
-  for (var i = 0; i < len; i += 4) {
-    tmp =
-      (revLookup[b64.charCodeAt(i)] << 18) |
-      (revLookup[b64.charCodeAt(i + 1)] << 12) |
-      (revLookup[b64.charCodeAt(i + 2)] << 6) |
-      revLookup[b64.charCodeAt(i + 3)]
-    arr[curByte++] = (tmp >> 16) & 0xFF
-    arr[curByte++] = (tmp >> 8) & 0xFF
-    arr[curByte++] = tmp & 0xFF
-  }
-
-  if (placeHoldersLen === 2) {
-    tmp =
-      (revLookup[b64.charCodeAt(i)] << 2) |
-      (revLookup[b64.charCodeAt(i + 1)] >> 4)
-    arr[curByte++] = tmp & 0xFF
-  }
-
-  if (placeHoldersLen === 1) {
-    tmp =
-      (revLookup[b64.charCodeAt(i)] << 10) |
-      (revLookup[b64.charCodeAt(i + 1)] << 4) |
-      (revLookup[b64.charCodeAt(i + 2)] >> 2)
-    arr[curByte++] = (tmp >> 8) & 0xFF
-    arr[curByte++] = tmp & 0xFF
-  }
-
-  return arr
-}
-
-function tripletToBase64 (num) {
-  return lookup[num >> 18 & 0x3F] +
-    lookup[num >> 12 & 0x3F] +
-    lookup[num >> 6 & 0x3F] +
-    lookup[num & 0x3F]
-}
-
-function encodeChunk (uint8, start, end) {
-  var tmp
-  var output = []
-  for (var i = start; i < end; i += 3) {
-    tmp =
-      ((uint8[i] << 16) & 0xFF0000) +
-      ((uint8[i + 1] << 8) & 0xFF00) +
-      (uint8[i + 2] & 0xFF)
-    output.push(tripletToBase64(tmp))
-  }
-  return output.join('')
-}
-
-function fromByteArray (uint8) {
-  var tmp
-  var len = uint8.length
-  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
-  var parts = []
-  var maxChunkLength = 16383 // must be multiple of 3
-
-  // go through the array every three bytes, we'll deal with trailing stuff later
-  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
-    parts.push(encodeChunk(
-      uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)
-    ))
-  }
-
-  // pad the end with zeros, but make sure to not forget the extra bytes
-  if (extraBytes === 1) {
-    tmp = uint8[len - 1]
-    parts.push(
-      lookup[tmp >> 2] +
-      lookup[(tmp << 4) & 0x3F] +
-      '=='
-    )
-  } else if (extraBytes === 2) {
-    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
-    parts.push(
-      lookup[tmp >> 10] +
-      lookup[(tmp >> 4) & 0x3F] +
-      lookup[(tmp << 2) & 0x3F] +
-      '='
-    )
-  }
-
-  return parts.join('')
-}
-
-},{}],82:[function(require,module,exports){
+=======
+},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/ValueSet.js":74,"cql-execution":100}],76:[function(require,module,exports){
 (function (process,global,setImmediate){
 /* @preserve
  * The MIT License (MIT)
@@ -4716,6 +3748,7 @@ function any(promises) {
     ret.init();
     return promise;
 }
+>>>>>>> A provider has a list of ids
 
 Promise.any = function (promises) {
     return any(promises);
@@ -5177,6 +4210,63 @@ Promise.prototype._cancelPromises = function() {
     if (this._length() > 0) this._settlePromises();
 };
 
+<<<<<<< HEAD
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"util/":80}],78:[function(require,module,exports){
+if (typeof Object.create === 'function') {
+  // implementation from standard node.js 'util' module
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    ctor.prototype = Object.create(superCtor.prototype, {
+      constructor: {
+        value: ctor,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+  };
+} else {
+  // old school shim for old browsers
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    var TempCtor = function () {}
+    TempCtor.prototype = superCtor.prototype
+    ctor.prototype = new TempCtor()
+    ctor.prototype.constructor = ctor
+  }
+}
+
+},{}],79:[function(require,module,exports){
+module.exports = function isBuffer(arg) {
+  return arg && typeof arg === 'object'
+    && typeof arg.copy === 'function'
+    && typeof arg.fill === 'function'
+    && typeof arg.readUInt8 === 'function';
+}
+},{}],80:[function(require,module,exports){
+(function (process,global){
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+=======
 Promise.prototype._unsetOnCancel = function() {
     this._onCancelField = undefined;
 };
@@ -5184,6 +4274,7 @@ Promise.prototype._unsetOnCancel = function() {
 Promise.prototype._isCancellable = function() {
     return this.isPending() && !this._isCancelled();
 };
+>>>>>>> A provider has a list of ids
 
 Promise.prototype.isCancellable = function() {
     return this.isPending() && !this.isCancelled();
@@ -5856,6 +4947,15 @@ function removeDuplicateOrEmptyJumps(stacks) {
     }
 }
 
+<<<<<<< HEAD
+}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./support/isBuffer":79,"_process":356,"inherits":78}],81:[function(require,module,exports){
+'use strict'
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+=======
 function removeCommonRoots(stacks) {
     var current = stacks[0];
     for (var i = 1; i < stacks.length; ++i) {
@@ -5863,6 +4963,7 @@ function removeCommonRoots(stacks) {
         var currentLastIndex = current.length - 1;
         var currentLastLine = current[currentLastIndex];
         var commonRootMeetPoint = -1;
+>>>>>>> A provider has a list of ids
 
         for (var j = prev.length - 1; j >= 0; --j) {
             if (prev[j] === currentLastLine) {
@@ -6060,12 +5161,56 @@ function setBounds(firstLineError, lastLineError) {
     };
 }
 
+<<<<<<< HEAD
+},{}],82:[function(require,module,exports){
+(function (process,global,setImmediate){
+/* @preserve
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2013-2017 Petka Antonov
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ * 
+ */
+/**
+ * bluebird build version 3.5.1
+ * Features enabled: core, race, call_get, generators, map, nodeify, promisify, props, reduce, settle, some, using, timers, filter, any, each
+*/
+!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.Promise=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof _dereq_=="function"&&_dereq_;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof _dereq_=="function"&&_dereq_;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise) {
+var SomePromiseArray = Promise._SomePromiseArray;
+function any(promises) {
+    var ret = new SomePromiseArray(promises);
+    var promise = ret.promise();
+    ret.setHowMany(1);
+    ret.setUnwrap();
+    ret.init();
+    return promise;
+=======
 function CapturedTrace(parent) {
     this._parent = parent;
     this._promisesCreated = 0;
     var length = this._length = 1 + (parent === undefined ? 0 : parent._length);
     captureStackTrace(this, CapturedTrace);
     if (length > 32) this.uncycle();
+>>>>>>> A provider has a list of ids
 }
 util.inherits(CapturedTrace, Error);
 Context.CapturedTrace = CapturedTrace;
@@ -10300,7 +9445,7 @@ module.exports = ret;
 },{"./es5":13}]},{},[4])(4)
 });                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"_process":356,"timers":360}],83:[function(require,module,exports){
+},{"_process":358,"timers":359}],77:[function(require,module,exports){
 (function (global){
 /**
  * Module dependencies.
@@ -10686,7 +9831,7 @@ module.exports = Binary;
 module.exports.Binary = Binary;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"buffer":103}],84:[function(require,module,exports){
+},{"buffer":353}],78:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -11075,7 +10220,7 @@ module.exports.BSONRegExp = BSONRegExp;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./binary":83,"./code":85,"./db_ref":86,"./decimal128":87,"./double":88,"./int_32":90,"./long":91,"./map":92,"./max_key":93,"./min_key":94,"./objectid":95,"./parser/calculate_size":96,"./parser/deserializer":97,"./parser/serializer":98,"./regexp":100,"./symbol":101,"./timestamp":102,"buffer":103}],85:[function(require,module,exports){
+},{"./binary":77,"./code":79,"./db_ref":80,"./decimal128":81,"./double":82,"./int_32":84,"./long":85,"./map":86,"./max_key":87,"./min_key":88,"./objectid":89,"./parser/calculate_size":90,"./parser/deserializer":91,"./parser/serializer":92,"./regexp":94,"./symbol":95,"./timestamp":96,"buffer":353}],79:[function(require,module,exports){
 /**
  * A class representation of the BSON Code type.
  *
@@ -11101,7 +10246,7 @@ Code.prototype.toJSON = function() {
 module.exports = Code;
 module.exports.Code = Code;
 
-},{}],86:[function(require,module,exports){
+},{}],80:[function(require,module,exports){
 /**
  * A class representation of the BSON DBRef type.
  *
@@ -11135,7 +10280,7 @@ DBRef.prototype.toJSON = function() {
 module.exports = DBRef;
 module.exports.DBRef = DBRef;
 
-},{}],87:[function(require,module,exports){
+},{}],81:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -11569,8 +10714,20 @@ Decimal128.fromString = function(string) {
       endOfString = endOfString + 1;
     }
 
+<<<<<<< HEAD
+},{"./es5":13}]},{},[4])(4)
+});                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
+}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
+},{"_process":356,"timers":360}],83:[function(require,module,exports){
+(function (global){
+/**
+ * Module dependencies.
+ * @ignore
+ */
+=======
     var roundDigit = parseInt(string[firstNonZero + lastDigit + 1], 10);
     var roundBit = 0;
+>>>>>>> A provider has a list of ids
 
     if (roundDigit >= 5) {
       roundBit = 1;
@@ -11957,7 +11114,7 @@ module.exports = Decimal128;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./long":91,"buffer":103}],88:[function(require,module,exports){
+},{"./long":85,"buffer":353}],82:[function(require,module,exports){
 /**
  * A class representation of the BSON Double type.
  *
@@ -11992,7 +11149,7 @@ Double.prototype.toJSON = function() {
 module.exports = Double;
 module.exports.Double = Double;
 
-},{}],89:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
 // Copyright (c) 2008, Fair Oaks Labs, Inc.
 // All rights reserved.
 //
@@ -12118,7 +11275,7 @@ var writeIEEE754 = function(buffer, value, offset, endian, mLen, nBytes) {
 exports.readIEEE754 = readIEEE754;
 exports.writeIEEE754 = writeIEEE754;
 
-},{}],90:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 /**
  * A class representation of a BSON Int32 type.
  *
@@ -12146,14 +11303,24 @@ Int32.prototype.valueOf = function() {
 /**
  * @ignore
  */
+<<<<<<< HEAD
+module.exports = Binary;
+module.exports.Binary = Binary;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"buffer":103}],84:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
 Int32.prototype.toJSON = function() {
   return this.value;
 };
+>>>>>>> A provider has a list of ids
 
 module.exports = Int32;
 module.exports.Int32 = Int32;
 
-},{}],91:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -12468,12 +11635,30 @@ Long.prototype.compare = function(other) {
     return 1;
   }
 
+<<<<<<< HEAD
+}).call(this,require("buffer").Buffer)
+},{"./binary":83,"./code":85,"./db_ref":86,"./decimal128":87,"./double":88,"./int_32":90,"./long":91,"./map":92,"./max_key":93,"./min_key":94,"./objectid":95,"./parser/calculate_size":96,"./parser/deserializer":97,"./parser/serializer":98,"./regexp":100,"./symbol":101,"./timestamp":102,"buffer":103}],85:[function(require,module,exports){
+/**
+ * A class representation of the BSON Code type.
+ *
+ * @class
+ * @param {(string|function)} code a string or function.
+ * @param {Object} [scope] an optional scope for the function.
+ * @return {Code}
+ */
+var Code = function Code(code, scope) {
+  if (!(this instanceof Code)) return new Code(code, scope);
+  this._bsontype = 'Code';
+  this.code = code;
+  this.scope = scope;
+=======
   // at this point, the signs are the same, so subtraction will not overflow
   if (this.subtract(other).isNegative()) {
     return -1;
   } else {
     return 1;
   }
+>>>>>>> A provider has a list of ids
 };
 
 /**
@@ -12490,6 +11675,13 @@ Long.prototype.negate = function() {
   }
 };
 
+<<<<<<< HEAD
+module.exports = Code;
+module.exports.Code = Code;
+
+},{}],86:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /**
  * Returns the sum of this and the given Long.
  *
@@ -12553,11 +11745,17 @@ Long.prototype.multiply = function(other) {
     return Long.ZERO;
   }
 
+<<<<<<< HEAD
+},{}],87:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
   if (this.equals(Long.MIN_VALUE)) {
     return other.isOdd() ? Long.MIN_VALUE : Long.ZERO;
   } else if (other.equals(Long.MIN_VALUE)) {
     return this.isOdd() ? Long.MIN_VALUE : Long.ZERO;
   }
+>>>>>>> A provider has a list of ids
 
   if (this.isNegative()) {
     if (other.isNegative()) {
@@ -13006,7 +12204,7 @@ Long.TWO_PWR_24_ = Long.fromInt(1 << 24);
 module.exports = Long;
 module.exports.Long = Long;
 
-},{}],92:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -13138,7 +12336,7 @@ if (typeof global.Map !== 'undefined') {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],93:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 /**
  * A class representation of the BSON MaxKey type.
  *
@@ -13154,7 +12352,7 @@ function MaxKey() {
 module.exports = MaxKey;
 module.exports.MaxKey = MaxKey;
 
-},{}],94:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 /**
  * A class representation of the BSON MinKey type.
  *
@@ -13170,7 +12368,7 @@ function MinKey() {
 module.exports = MinKey;
 module.exports.MinKey = MinKey;
 
-},{}],95:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 (function (process,Buffer){
 // Custom inspect property name / symbol.
 var inspect = 'inspect';
@@ -13536,6 +12734,28 @@ ObjectID.isValid = function isValid(id) {
   return false;
 };
 
+<<<<<<< HEAD
+module.exports = Decimal128;
+module.exports.Decimal128 = Decimal128;
+
+}).call(this,require("buffer").Buffer)
+},{"./long":91,"buffer":103}],88:[function(require,module,exports){
+/**
+ * A class representation of the BSON Double type.
+ *
+ * @class
+ * @param {number} value the number we want to represent as a double.
+ * @return {Double}
+ */
+function Double(value) {
+  if (!(this instanceof Double)) return new Double(value);
+
+  this._bsontype = 'Double';
+  this.value = value;
+}
+
+=======
+>>>>>>> A provider has a list of ids
 /**
 * @ignore
 */
@@ -13556,12 +12776,66 @@ Object.defineProperty(ObjectID.prototype, 'generationTime', {
 /**
  * Expose.
  */
+<<<<<<< HEAD
+Double.prototype.toJSON = function() {
+  return this.value;
+};
+
+module.exports = Double;
+module.exports.Double = Double;
+
+},{}],89:[function(require,module,exports){
+// Copyright (c) 2008, Fair Oaks Labs, Inc.
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+//  * Redistributions of source code must retain the above copyright notice,
+//    this list of conditions and the following disclaimer.
+//
+//  * Redistributions in binary form must reproduce the above copyright notice,
+//    this list of conditions and the following disclaimer in the documentation
+//    and/or other materials provided with the distribution.
+//
+//  * Neither the name of Fair Oaks Labs, Inc. nor the names of its contributors
+//    may be used to endorse or promote products derived from this software
+//    without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+// ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+// POSSIBILITY OF SUCH DAMAGE.
+//
+//
+// Modifications to writeIEEE754 to support negative zeroes made by Brian White
+
+var readIEEE754 = function(buffer, offset, endian, mLen, nBytes) {
+  var e,
+    m,
+    bBE = endian === 'big',
+    eLen = nBytes * 8 - mLen - 1,
+    eMax = (1 << eLen) - 1,
+    eBias = eMax >> 1,
+    nBits = -7,
+    i = bBE ? 0 : nBytes - 1,
+    d = bBE ? 1 : -1,
+    s = buffer[offset + i];
+=======
 module.exports = ObjectID;
 module.exports.ObjectID = ObjectID;
 module.exports.ObjectId = ObjectID;
+>>>>>>> A provider has a list of ids
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":356,"buffer":103,"util":362}],96:[function(require,module,exports){
+},{"_process":358,"buffer":353,"util":361}],90:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -13614,18 +12888,135 @@ var calculateObjectSize = function calculateObjectSize(
     }
   }
 
+<<<<<<< HEAD
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8);
+
+  e = (e << mLen) | m;
+  eLen += mLen;
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8);
+
+  buffer[offset + i - d] |= s * 128;
+};
+
+exports.readIEEE754 = readIEEE754;
+exports.writeIEEE754 = writeIEEE754;
+
+},{}],90:[function(require,module,exports){
+/**
+ * A class representation of a BSON Int32 type.
+ *
+ * @class
+ * @param {number} value the number we want to represent as an int32.
+ * @return {Int32}
+ */
+var Int32 = function(value) {
+  if (!(this instanceof Int32)) return new Int32(value);
+
+  this._bsontype = 'Int32';
+  this.value = value;
+};
+
+/**
+ * Access the number value.
+ *
+ * @method
+ * @return {number} returns the wrapped int32 number.
+ */
+Int32.prototype.valueOf = function() {
+  return this.value;
+=======
   return totalLength;
+>>>>>>> A provider has a list of ids
 };
 
 /**
  * @ignore
  * @api private
  */
+<<<<<<< HEAD
+Int32.prototype.toJSON = function() {
+  return this.value;
+};
+
+module.exports = Int32;
+module.exports.Int32 = Int32;
+
+},{}],91:[function(require,module,exports){
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// Copyright 2009 Google Inc. All Rights Reserved
+
+/**
+ * Defines a Long class for representing a 64-bit two's-complement
+ * integer value, which faithfully simulates the behavior of a Java "Long". This
+ * implementation is derived from LongLib in GWT.
+ *
+ * Constructs a 64-bit two's-complement integer, given its low and high 32-bit
+ * values as *signed* integers.  See the from* functions below for more
+ * convenient ways of constructing Longs.
+ *
+ * The internal representation of a Long is the two given signed, 32-bit values.
+ * We use 32-bit pieces because these are the size of integers on which
+ * Javascript performs bit-operations.  For operations like addition and
+ * multiplication, we split each number into 16-bit pieces, which can easily be
+ * multiplied within Javascript's floating-point representation without overflow
+ * or change in sign.
+ *
+ * In the algorithms below, we frequently reduce the negative case to the
+ * positive case by negating the input(s) and then post-processing the result.
+ * Note that we must ALWAYS check specially whether those values are MIN_VALUE
+ * (-2^63) because -MIN_VALUE == MIN_VALUE (since 2^63 cannot be represented as
+ * a positive number, it overflows back into a negative).  Not handling this
+ * case would often result in infinite recursion.
+ *
+ * @class
+ * @param {number} low  the low (signed) 32 bits of the Long.
+ * @param {number} high the high (signed) 32 bits of the Long.
+ * @return {Long}
+ */
+function Long(low, high) {
+  if (!(this instanceof Long)) return new Long(low, high);
+
+  this._bsontype = 'Long';
+  /**
+   * @type {number}
+   * @ignore
+   */
+  this.low_ = low | 0; // force into 32 signed bits.
+
+  /**
+   * @type {number}
+   * @ignore
+   */
+  this.high_ = high | 0; // force into 32 signed bits.
+}
+
+/**
+ * Return the int value.
+ *
+ * @method
+ * @return {number} the value, assuming it is a 32-bit integer.
+ */
+Long.prototype.toInt = function() {
+  return this.low_;
+};
+=======
 function calculateElement(name, value, serializeFunctions, isArray, ignoreUndefined) {
   // If we have toBSON defined, override the current object
   if (value && value.toBSON) {
     value = value.toBSON();
   }
+>>>>>>> A provider has a list of ids
 
   switch (typeof value) {
     case 'string':
@@ -13820,7 +13211,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = calculateObjectSize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":83,"../code":85,"../db_ref":86,"../decimal128":87,"../double":88,"../long":91,"../max_key":93,"../min_key":94,"../objectid":95,"../regexp":100,"../symbol":101,"../timestamp":102,"./utils":99,"buffer":103}],97:[function(require,module,exports){
+},{"../binary":77,"../code":79,"../db_ref":80,"../decimal128":81,"../double":82,"../long":85,"../max_key":87,"../min_key":88,"../objectid":89,"../regexp":94,"../symbol":95,"../timestamp":96,"./utils":93,"buffer":353}],91:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -14453,6 +13844,26 @@ BSON.BSON_DATA_ARRAY = 4;
  **/
 BSON.BSON_DATA_BINARY = 5;
 /**
+<<<<<<< HEAD
+ * Expose.
+ */
+module.exports = Long;
+module.exports.Long = Long;
+
+},{}],92:[function(require,module,exports){
+(function (global){
+'use strict';
+
+// We have an ES6 Map available, return the native instance
+if (typeof global.Map !== 'undefined') {
+  module.exports = global.Map;
+  module.exports.Map = global.Map;
+} else {
+  // We will return a polyfill
+  var Map = function(array) {
+    this._keys = [];
+    this._values = {};
+=======
  * Binary BSON Type
  *
  * @classconstant BSON_DATA_UNDEFINED
@@ -14548,6 +13959,7 @@ BSON.BSON_DATA_MIN_KEY = 0xff;
  * @classconstant BSON_DATA_MAX_KEY
  **/
 BSON.BSON_DATA_MAX_KEY = 0x7f;
+>>>>>>> A provider has a list of ids
 
 /**
  * Binary Default Type
@@ -14604,7 +14016,7 @@ var JS_INT_MIN_LONG = Long.fromNumber(-0x20000000000000); // Any integer down to
 module.exports = deserialize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":83,"../code":85,"../db_ref":86,"../decimal128":87,"../double":88,"../int_32":90,"../long":91,"../max_key":93,"../min_key":94,"../objectid":95,"../regexp":100,"../symbol":101,"../timestamp":102,"buffer":103}],98:[function(require,module,exports){
+},{"../binary":77,"../code":79,"../db_ref":80,"../decimal128":81,"../double":82,"../int_32":84,"../long":85,"../max_key":87,"../min_key":88,"../objectid":89,"../regexp":94,"../symbol":95,"../timestamp":96,"buffer":353}],92:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -14732,8 +14144,21 @@ var serializeNumber = function(buffer, key, value, index, isArray) {
     index = index + 8;
   }
 
+<<<<<<< HEAD
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],93:[function(require,module,exports){
+/**
+ * A class representation of the BSON MaxKey type.
+ *
+ * @class
+ * @return {MaxKey} A MaxKey instance
+ */
+function MaxKey() {
+  if (!(this instanceof MaxKey)) return new MaxKey();
+=======
   return index;
 };
+>>>>>>> A provider has a list of ids
 
 var serializeNull = function(buffer, key, value, index, isArray) {
   // Set long type
@@ -14763,6 +14188,17 @@ var serializeBoolean = function(buffer, key, value, index, isArray) {
   return index;
 };
 
+<<<<<<< HEAD
+},{}],94:[function(require,module,exports){
+/**
+ * A class representation of the BSON MinKey type.
+ *
+ * @class
+ * @return {MinKey} A MinKey instance
+ */
+function MinKey() {
+  if (!(this instanceof MinKey)) return new MinKey();
+=======
 var serializeDate = function(buffer, key, value, index, isArray) {
   // Write the type
   buffer[index++] = BSON.BSON_DATA_DATE;
@@ -14773,6 +14209,7 @@ var serializeDate = function(buffer, key, value, index, isArray) {
   // Encode the name
   index = index + numberOfWrittenBytes;
   buffer[index++] = 0;
+>>>>>>> A provider has a list of ids
 
   // Write the date
   var dateInMilis = Long.fromNumber(value.getTime());
@@ -14817,6 +14254,12 @@ var serializeRegExp = function(buffer, key, value, index, isArray) {
   return index;
 };
 
+<<<<<<< HEAD
+},{}],95:[function(require,module,exports){
+(function (process,Buffer){
+// Custom inspect property name / symbol.
+var inspect = 'inspect';
+=======
 var serializeBSONRegExp = function(buffer, key, value, index, isArray) {
   // Write the type
   buffer[index++] = BSON.BSON_DATA_REGEXP;
@@ -14827,6 +14270,7 @@ var serializeBSONRegExp = function(buffer, key, value, index, isArray) {
   // Encode the name
   index = index + numberOfWrittenBytes;
   buffer[index++] = 0;
+>>>>>>> A provider has a list of ids
 
   // Check the pattern for 0 bytes
   if (value.pattern.match(regexp) != null) {
@@ -15392,12 +14836,19 @@ var serializeInto = function serializeInto(
     var iterator = object.entries();
     var done = false;
 
+<<<<<<< HEAD
+}).call(this,require('_process'),require("buffer").Buffer)
+},{"_process":356,"buffer":103,"util":362}],96:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
     while (!done) {
       // Unpack the next entry
       var entry = iterator.next();
       done = entry.done;
       // Are we done, then skip and terminate
       if (done) continue;
+>>>>>>> A provider has a list of ids
 
       // Get the entry values
       key = entry.value[0];
@@ -15784,14 +15235,37 @@ BSON.BSON_INT64_MIN = -Math.pow(2, 63);
 BSON.JS_INT_MAX = 0x20000000000000; // Any integer up to 2^53 can be precisely represented by a double.
 BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precisely represented by a double.
 
+<<<<<<< HEAD
+module.exports = calculateObjectSize;
+
+}).call(this,require("buffer").Buffer)
+},{"../binary":83,"../code":85,"../db_ref":86,"../decimal128":87,"../double":88,"../long":91,"../max_key":93,"../min_key":94,"../objectid":95,"../regexp":100,"../symbol":101,"../timestamp":102,"./utils":99,"buffer":103}],97:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+
+var Long = require('../long').Long,
+  Double = require('../double').Double,
+  Timestamp = require('../timestamp').Timestamp,
+  ObjectID = require('../objectid').ObjectID,
+  Symbol = require('../symbol').Symbol,
+  Code = require('../code').Code,
+  MinKey = require('../min_key').MinKey,
+  MaxKey = require('../max_key').MaxKey,
+  Decimal128 = require('../decimal128'),
+  Int32 = require('../int_32'),
+  DBRef = require('../db_ref').DBRef,
+  BSONRegExp = require('../regexp').BSONRegExp,
+  Binary = require('../binary').Binary;
+=======
 // Internal long versions
 // var JS_INT_MAX_LONG = Long.fromNumber(0x20000000000000); // Any integer up to 2^53 can be precisely represented by a double.
 // var JS_INT_MIN_LONG = Long.fromNumber(-0x20000000000000); // Any integer down to -2^53 can be precisely represented by a double.
+>>>>>>> A provider has a list of ids
 
 module.exports = serializeInto;
 
-}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":251,"../binary":83,"../float_parser":89,"../long":91,"../map":92,"../min_key":94,"./utils":99}],99:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../binary":77,"../float_parser":83,"../long":85,"../map":86,"../min_key":88,"./utils":93}],93:[function(require,module,exports){
 'use strict';
 
 /**
@@ -15807,7 +15281,7 @@ module.exports = {
 };
 
 
-},{}],100:[function(require,module,exports){
+},{}],94:[function(require,module,exports){
 /**
  * A class representation of the BSON RegExp type.
  *
@@ -15842,7 +15316,7 @@ function BSONRegExp(pattern, options) {
 module.exports = BSONRegExp;
 module.exports.BSONRegExp = BSONRegExp;
 
-},{}],101:[function(require,module,exports){
+},{}],95:[function(require,module,exports){
 (function (Buffer){
 // Custom inspect property name / symbol.
 var inspect = Buffer ? require('util').inspect.custom || 'inspect' : 'inspect';
@@ -15896,7 +15370,7 @@ module.exports = Symbol;
 module.exports.Symbol = Symbol;
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":103,"util":362}],102:[function(require,module,exports){
+},{"buffer":353,"util":361}],96:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -16752,1786 +16226,7 @@ Timestamp.TWO_PWR_24_ = Timestamp.fromInt(1 << 24);
 module.exports = Timestamp;
 module.exports.Timestamp = Timestamp;
 
-},{}],103:[function(require,module,exports){
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-/* eslint-disable no-proto */
-
-'use strict'
-
-var base64 = require('base64-js')
-var ieee754 = require('ieee754')
-
-exports.Buffer = Buffer
-exports.SlowBuffer = SlowBuffer
-exports.INSPECT_MAX_BYTES = 50
-
-var K_MAX_LENGTH = 0x7fffffff
-exports.kMaxLength = K_MAX_LENGTH
-
-/**
- * If `Buffer.TYPED_ARRAY_SUPPORT`:
- *   === true    Use Uint8Array implementation (fastest)
- *   === false   Print warning and recommend using `buffer` v4.x which has an Object
- *               implementation (most compatible, even IE6)
- *
- * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
- * Opera 11.6+, iOS 4.2+.
- *
- * We report that the browser does not support typed arrays if the are not subclassable
- * using __proto__. Firefox 4-29 lacks support for adding new properties to `Uint8Array`
- * (See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438). IE 10 lacks support
- * for __proto__ and has a buggy typed array implementation.
- */
-Buffer.TYPED_ARRAY_SUPPORT = typedArraySupport()
-
-if (!Buffer.TYPED_ARRAY_SUPPORT && typeof console !== 'undefined' &&
-    typeof console.error === 'function') {
-  console.error(
-    'This browser lacks typed array (Uint8Array) support which is required by ' +
-    '`buffer` v5.x. Use `buffer` v4.x if you require old browser support.'
-  )
-}
-
-function typedArraySupport () {
-  // Can typed array instances can be augmented?
-  try {
-    var arr = new Uint8Array(1)
-    arr.__proto__ = { __proto__: Uint8Array.prototype, foo: function () { return 42 } }
-    return arr.foo() === 42
-  } catch (e) {
-    return false
-  }
-}
-
-Object.defineProperty(Buffer.prototype, 'parent', {
-  enumerable: true,
-  get: function () {
-    if (!Buffer.isBuffer(this)) return undefined
-    return this.buffer
-  }
-})
-
-Object.defineProperty(Buffer.prototype, 'offset', {
-  enumerable: true,
-  get: function () {
-    if (!Buffer.isBuffer(this)) return undefined
-    return this.byteOffset
-  }
-})
-
-function createBuffer (length) {
-  if (length > K_MAX_LENGTH) {
-    throw new RangeError('The value "' + length + '" is invalid for option "size"')
-  }
-  // Return an augmented `Uint8Array` instance
-  var buf = new Uint8Array(length)
-  buf.__proto__ = Buffer.prototype
-  return buf
-}
-
-/**
- * The Buffer constructor returns instances of `Uint8Array` that have their
- * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
- * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
- * and the `Uint8Array` methods. Square bracket notation works as expected -- it
- * returns a single octet.
- *
- * The `Uint8Array` prototype remains unmodified.
- */
-
-function Buffer (arg, encodingOrOffset, length) {
-  // Common case.
-  if (typeof arg === 'number') {
-    if (typeof encodingOrOffset === 'string') {
-      throw new TypeError(
-        'The "string" argument must be of type string. Received type number'
-      )
-    }
-    return allocUnsafe(arg)
-  }
-  return from(arg, encodingOrOffset, length)
-}
-
-// Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
-if (typeof Symbol !== 'undefined' && Symbol.species != null &&
-    Buffer[Symbol.species] === Buffer) {
-  Object.defineProperty(Buffer, Symbol.species, {
-    value: null,
-    configurable: true,
-    enumerable: false,
-    writable: false
-  })
-}
-
-Buffer.poolSize = 8192 // not used by this implementation
-
-function from (value, encodingOrOffset, length) {
-  if (typeof value === 'string') {
-    return fromString(value, encodingOrOffset)
-  }
-
-  if (ArrayBuffer.isView(value)) {
-    return fromArrayLike(value)
-  }
-
-  if (value == null) {
-    throw TypeError(
-      'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
-      'or Array-like Object. Received type ' + (typeof value)
-    )
-  }
-
-  if (isInstance(value, ArrayBuffer) ||
-      (value && isInstance(value.buffer, ArrayBuffer))) {
-    return fromArrayBuffer(value, encodingOrOffset, length)
-  }
-
-  if (typeof value === 'number') {
-    throw new TypeError(
-      'The "value" argument must not be of type number. Received type number'
-    )
-  }
-
-  var valueOf = value.valueOf && value.valueOf()
-  if (valueOf != null && valueOf !== value) {
-    return Buffer.from(valueOf, encodingOrOffset, length)
-  }
-
-  var b = fromObject(value)
-  if (b) return b
-
-  if (typeof Symbol !== 'undefined' && Symbol.toPrimitive != null &&
-      typeof value[Symbol.toPrimitive] === 'function') {
-    return Buffer.from(
-      value[Symbol.toPrimitive]('string'), encodingOrOffset, length
-    )
-  }
-
-  throw new TypeError(
-    'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
-    'or Array-like Object. Received type ' + (typeof value)
-  )
-}
-
-/**
- * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
- * if value is a number.
- * Buffer.from(str[, encoding])
- * Buffer.from(array)
- * Buffer.from(buffer)
- * Buffer.from(arrayBuffer[, byteOffset[, length]])
- **/
-Buffer.from = function (value, encodingOrOffset, length) {
-  return from(value, encodingOrOffset, length)
-}
-
-// Note: Change prototype *after* Buffer.from is defined to workaround Chrome bug:
-// https://github.com/feross/buffer/pull/148
-Buffer.prototype.__proto__ = Uint8Array.prototype
-Buffer.__proto__ = Uint8Array
-
-function assertSize (size) {
-  if (typeof size !== 'number') {
-    throw new TypeError('"size" argument must be of type number')
-  } else if (size < 0) {
-    throw new RangeError('The value "' + size + '" is invalid for option "size"')
-  }
-}
-
-function alloc (size, fill, encoding) {
-  assertSize(size)
-  if (size <= 0) {
-    return createBuffer(size)
-  }
-  if (fill !== undefined) {
-    // Only pay attention to encoding if it's a string. This
-    // prevents accidentally sending in a number that would
-    // be interpretted as a start offset.
-    return typeof encoding === 'string'
-      ? createBuffer(size).fill(fill, encoding)
-      : createBuffer(size).fill(fill)
-  }
-  return createBuffer(size)
-}
-
-/**
- * Creates a new filled Buffer instance.
- * alloc(size[, fill[, encoding]])
- **/
-Buffer.alloc = function (size, fill, encoding) {
-  return alloc(size, fill, encoding)
-}
-
-function allocUnsafe (size) {
-  assertSize(size)
-  return createBuffer(size < 0 ? 0 : checked(size) | 0)
-}
-
-/**
- * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
- * */
-Buffer.allocUnsafe = function (size) {
-  return allocUnsafe(size)
-}
-/**
- * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
- */
-Buffer.allocUnsafeSlow = function (size) {
-  return allocUnsafe(size)
-}
-
-function fromString (string, encoding) {
-  if (typeof encoding !== 'string' || encoding === '') {
-    encoding = 'utf8'
-  }
-
-  if (!Buffer.isEncoding(encoding)) {
-    throw new TypeError('Unknown encoding: ' + encoding)
-  }
-
-  var length = byteLength(string, encoding) | 0
-  var buf = createBuffer(length)
-
-  var actual = buf.write(string, encoding)
-
-  if (actual !== length) {
-    // Writing a hex string, for example, that contains invalid characters will
-    // cause everything after the first invalid character to be ignored. (e.g.
-    // 'abxxcd' will be treated as 'ab')
-    buf = buf.slice(0, actual)
-  }
-
-  return buf
-}
-
-function fromArrayLike (array) {
-  var length = array.length < 0 ? 0 : checked(array.length) | 0
-  var buf = createBuffer(length)
-  for (var i = 0; i < length; i += 1) {
-    buf[i] = array[i] & 255
-  }
-  return buf
-}
-
-function fromArrayBuffer (array, byteOffset, length) {
-  if (byteOffset < 0 || array.byteLength < byteOffset) {
-    throw new RangeError('"offset" is outside of buffer bounds')
-  }
-
-  if (array.byteLength < byteOffset + (length || 0)) {
-    throw new RangeError('"length" is outside of buffer bounds')
-  }
-
-  var buf
-  if (byteOffset === undefined && length === undefined) {
-    buf = new Uint8Array(array)
-  } else if (length === undefined) {
-    buf = new Uint8Array(array, byteOffset)
-  } else {
-    buf = new Uint8Array(array, byteOffset, length)
-  }
-
-  // Return an augmented `Uint8Array` instance
-  buf.__proto__ = Buffer.prototype
-  return buf
-}
-
-function fromObject (obj) {
-  if (Buffer.isBuffer(obj)) {
-    var len = checked(obj.length) | 0
-    var buf = createBuffer(len)
-
-    if (buf.length === 0) {
-      return buf
-    }
-
-    obj.copy(buf, 0, 0, len)
-    return buf
-  }
-
-  if (obj.length !== undefined) {
-    if (typeof obj.length !== 'number' || numberIsNaN(obj.length)) {
-      return createBuffer(0)
-    }
-    return fromArrayLike(obj)
-  }
-
-  if (obj.type === 'Buffer' && Array.isArray(obj.data)) {
-    return fromArrayLike(obj.data)
-  }
-}
-
-function checked (length) {
-  // Note: cannot use `length < K_MAX_LENGTH` here because that fails when
-  // length is NaN (which is otherwise coerced to zero.)
-  if (length >= K_MAX_LENGTH) {
-    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
-                         'size: 0x' + K_MAX_LENGTH.toString(16) + ' bytes')
-  }
-  return length | 0
-}
-
-function SlowBuffer (length) {
-  if (+length != length) { // eslint-disable-line eqeqeq
-    length = 0
-  }
-  return Buffer.alloc(+length)
-}
-
-Buffer.isBuffer = function isBuffer (b) {
-  return b != null && b._isBuffer === true &&
-    b !== Buffer.prototype // so Buffer.isBuffer(Buffer.prototype) will be false
-}
-
-Buffer.compare = function compare (a, b) {
-  if (isInstance(a, Uint8Array)) a = Buffer.from(a, a.offset, a.byteLength)
-  if (isInstance(b, Uint8Array)) b = Buffer.from(b, b.offset, b.byteLength)
-  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
-    throw new TypeError(
-      'The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array'
-    )
-  }
-
-  if (a === b) return 0
-
-  var x = a.length
-  var y = b.length
-
-  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
-    if (a[i] !== b[i]) {
-      x = a[i]
-      y = b[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-Buffer.isEncoding = function isEncoding (encoding) {
-  switch (String(encoding).toLowerCase()) {
-    case 'hex':
-    case 'utf8':
-    case 'utf-8':
-    case 'ascii':
-    case 'latin1':
-    case 'binary':
-    case 'base64':
-    case 'ucs2':
-    case 'ucs-2':
-    case 'utf16le':
-    case 'utf-16le':
-      return true
-    default:
-      return false
-  }
-}
-
-Buffer.concat = function concat (list, length) {
-  if (!Array.isArray(list)) {
-    throw new TypeError('"list" argument must be an Array of Buffers')
-  }
-
-  if (list.length === 0) {
-    return Buffer.alloc(0)
-  }
-
-  var i
-  if (length === undefined) {
-    length = 0
-    for (i = 0; i < list.length; ++i) {
-      length += list[i].length
-    }
-  }
-
-  var buffer = Buffer.allocUnsafe(length)
-  var pos = 0
-  for (i = 0; i < list.length; ++i) {
-    var buf = list[i]
-    if (isInstance(buf, Uint8Array)) {
-      buf = Buffer.from(buf)
-    }
-    if (!Buffer.isBuffer(buf)) {
-      throw new TypeError('"list" argument must be an Array of Buffers')
-    }
-    buf.copy(buffer, pos)
-    pos += buf.length
-  }
-  return buffer
-}
-
-function byteLength (string, encoding) {
-  if (Buffer.isBuffer(string)) {
-    return string.length
-  }
-  if (ArrayBuffer.isView(string) || isInstance(string, ArrayBuffer)) {
-    return string.byteLength
-  }
-  if (typeof string !== 'string') {
-    throw new TypeError(
-      'The "string" argument must be one of type string, Buffer, or ArrayBuffer. ' +
-      'Received type ' + typeof string
-    )
-  }
-
-  var len = string.length
-  var mustMatch = (arguments.length > 2 && arguments[2] === true)
-  if (!mustMatch && len === 0) return 0
-
-  // Use a for loop to avoid recursion
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'ascii':
-      case 'latin1':
-      case 'binary':
-        return len
-      case 'utf8':
-      case 'utf-8':
-        return utf8ToBytes(string).length
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return len * 2
-      case 'hex':
-        return len >>> 1
-      case 'base64':
-        return base64ToBytes(string).length
-      default:
-        if (loweredCase) {
-          return mustMatch ? -1 : utf8ToBytes(string).length // assume utf8
-        }
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-Buffer.byteLength = byteLength
-
-function slowToString (encoding, start, end) {
-  var loweredCase = false
-
-  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
-  // property of a typed array.
-
-  // This behaves neither like String nor Uint8Array in that we set start/end
-  // to their upper/lower bounds if the value passed is out of range.
-  // undefined is handled specially as per ECMA-262 6th Edition,
-  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
-  if (start === undefined || start < 0) {
-    start = 0
-  }
-  // Return early if start > this.length. Done here to prevent potential uint32
-  // coercion fail below.
-  if (start > this.length) {
-    return ''
-  }
-
-  if (end === undefined || end > this.length) {
-    end = this.length
-  }
-
-  if (end <= 0) {
-    return ''
-  }
-
-  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
-  end >>>= 0
-  start >>>= 0
-
-  if (end <= start) {
-    return ''
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  while (true) {
-    switch (encoding) {
-      case 'hex':
-        return hexSlice(this, start, end)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Slice(this, start, end)
-
-      case 'ascii':
-        return asciiSlice(this, start, end)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Slice(this, start, end)
-
-      case 'base64':
-        return base64Slice(this, start, end)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return utf16leSlice(this, start, end)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = (encoding + '').toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-// This property is used by `Buffer.isBuffer` (and the `is-buffer` npm package)
-// to detect a Buffer instance. It's not possible to use `instanceof Buffer`
-// reliably in a browserify context because there could be multiple different
-// copies of the 'buffer' package in use. This method works even for Buffer
-// instances that were created from another copy of the `buffer` package.
-// See: https://github.com/feross/buffer/issues/154
-Buffer.prototype._isBuffer = true
-
-function swap (b, n, m) {
-  var i = b[n]
-  b[n] = b[m]
-  b[m] = i
-}
-
-Buffer.prototype.swap16 = function swap16 () {
-  var len = this.length
-  if (len % 2 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 16-bits')
-  }
-  for (var i = 0; i < len; i += 2) {
-    swap(this, i, i + 1)
-  }
-  return this
-}
-
-Buffer.prototype.swap32 = function swap32 () {
-  var len = this.length
-  if (len % 4 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 32-bits')
-  }
-  for (var i = 0; i < len; i += 4) {
-    swap(this, i, i + 3)
-    swap(this, i + 1, i + 2)
-  }
-  return this
-}
-
-Buffer.prototype.swap64 = function swap64 () {
-  var len = this.length
-  if (len % 8 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 64-bits')
-  }
-  for (var i = 0; i < len; i += 8) {
-    swap(this, i, i + 7)
-    swap(this, i + 1, i + 6)
-    swap(this, i + 2, i + 5)
-    swap(this, i + 3, i + 4)
-  }
-  return this
-}
-
-Buffer.prototype.toString = function toString () {
-  var length = this.length
-  if (length === 0) return ''
-  if (arguments.length === 0) return utf8Slice(this, 0, length)
-  return slowToString.apply(this, arguments)
-}
-
-Buffer.prototype.toLocaleString = Buffer.prototype.toString
-
-Buffer.prototype.equals = function equals (b) {
-  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
-  if (this === b) return true
-  return Buffer.compare(this, b) === 0
-}
-
-Buffer.prototype.inspect = function inspect () {
-  var str = ''
-  var max = exports.INSPECT_MAX_BYTES
-  str = this.toString('hex', 0, max).replace(/(.{2})/g, '$1 ').trim()
-  if (this.length > max) str += ' ... '
-  return '<Buffer ' + str + '>'
-}
-
-Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
-  if (isInstance(target, Uint8Array)) {
-    target = Buffer.from(target, target.offset, target.byteLength)
-  }
-  if (!Buffer.isBuffer(target)) {
-    throw new TypeError(
-      'The "target" argument must be one of type Buffer or Uint8Array. ' +
-      'Received type ' + (typeof target)
-    )
-  }
-
-  if (start === undefined) {
-    start = 0
-  }
-  if (end === undefined) {
-    end = target ? target.length : 0
-  }
-  if (thisStart === undefined) {
-    thisStart = 0
-  }
-  if (thisEnd === undefined) {
-    thisEnd = this.length
-  }
-
-  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
-    throw new RangeError('out of range index')
-  }
-
-  if (thisStart >= thisEnd && start >= end) {
-    return 0
-  }
-  if (thisStart >= thisEnd) {
-    return -1
-  }
-  if (start >= end) {
-    return 1
-  }
-
-  start >>>= 0
-  end >>>= 0
-  thisStart >>>= 0
-  thisEnd >>>= 0
-
-  if (this === target) return 0
-
-  var x = thisEnd - thisStart
-  var y = end - start
-  var len = Math.min(x, y)
-
-  var thisCopy = this.slice(thisStart, thisEnd)
-  var targetCopy = target.slice(start, end)
-
-  for (var i = 0; i < len; ++i) {
-    if (thisCopy[i] !== targetCopy[i]) {
-      x = thisCopy[i]
-      y = targetCopy[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
-// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
-//
-// Arguments:
-// - buffer - a Buffer to search
-// - val - a string, Buffer, or number
-// - byteOffset - an index into `buffer`; will be clamped to an int32
-// - encoding - an optional encoding, relevant is val is a string
-// - dir - true for indexOf, false for lastIndexOf
-function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
-  // Empty buffer means no match
-  if (buffer.length === 0) return -1
-
-  // Normalize byteOffset
-  if (typeof byteOffset === 'string') {
-    encoding = byteOffset
-    byteOffset = 0
-  } else if (byteOffset > 0x7fffffff) {
-    byteOffset = 0x7fffffff
-  } else if (byteOffset < -0x80000000) {
-    byteOffset = -0x80000000
-  }
-  byteOffset = +byteOffset // Coerce to Number.
-  if (numberIsNaN(byteOffset)) {
-    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
-    byteOffset = dir ? 0 : (buffer.length - 1)
-  }
-
-  // Normalize byteOffset: negative offsets start from the end of the buffer
-  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
-  if (byteOffset >= buffer.length) {
-    if (dir) return -1
-    else byteOffset = buffer.length - 1
-  } else if (byteOffset < 0) {
-    if (dir) byteOffset = 0
-    else return -1
-  }
-
-  // Normalize val
-  if (typeof val === 'string') {
-    val = Buffer.from(val, encoding)
-  }
-
-  // Finally, search either indexOf (if dir is true) or lastIndexOf
-  if (Buffer.isBuffer(val)) {
-    // Special case: looking for empty string/buffer always fails
-    if (val.length === 0) {
-      return -1
-    }
-    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
-  } else if (typeof val === 'number') {
-    val = val & 0xFF // Search for a byte value [0-255]
-    if (typeof Uint8Array.prototype.indexOf === 'function') {
-      if (dir) {
-        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
-      } else {
-        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
-      }
-    }
-    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
-  }
-
-  throw new TypeError('val must be string, number or Buffer')
-}
-
-function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
-  var indexSize = 1
-  var arrLength = arr.length
-  var valLength = val.length
-
-  if (encoding !== undefined) {
-    encoding = String(encoding).toLowerCase()
-    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
-        encoding === 'utf16le' || encoding === 'utf-16le') {
-      if (arr.length < 2 || val.length < 2) {
-        return -1
-      }
-      indexSize = 2
-      arrLength /= 2
-      valLength /= 2
-      byteOffset /= 2
-    }
-  }
-
-  function read (buf, i) {
-    if (indexSize === 1) {
-      return buf[i]
-    } else {
-      return buf.readUInt16BE(i * indexSize)
-    }
-  }
-
-  var i
-  if (dir) {
-    var foundIndex = -1
-    for (i = byteOffset; i < arrLength; i++) {
-      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
-        if (foundIndex === -1) foundIndex = i
-        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
-      } else {
-        if (foundIndex !== -1) i -= i - foundIndex
-        foundIndex = -1
-      }
-    }
-  } else {
-    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
-    for (i = byteOffset; i >= 0; i--) {
-      var found = true
-      for (var j = 0; j < valLength; j++) {
-        if (read(arr, i + j) !== read(val, j)) {
-          found = false
-          break
-        }
-      }
-      if (found) return i
-    }
-  }
-
-  return -1
-}
-
-Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
-  return this.indexOf(val, byteOffset, encoding) !== -1
-}
-
-Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
-}
-
-Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
-}
-
-function hexWrite (buf, string, offset, length) {
-  offset = Number(offset) || 0
-  var remaining = buf.length - offset
-  if (!length) {
-    length = remaining
-  } else {
-    length = Number(length)
-    if (length > remaining) {
-      length = remaining
-    }
-  }
-
-  var strLen = string.length
-
-  if (length > strLen / 2) {
-    length = strLen / 2
-  }
-  for (var i = 0; i < length; ++i) {
-    var parsed = parseInt(string.substr(i * 2, 2), 16)
-    if (numberIsNaN(parsed)) return i
-    buf[offset + i] = parsed
-  }
-  return i
-}
-
-function utf8Write (buf, string, offset, length) {
-  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-function asciiWrite (buf, string, offset, length) {
-  return blitBuffer(asciiToBytes(string), buf, offset, length)
-}
-
-function latin1Write (buf, string, offset, length) {
-  return asciiWrite(buf, string, offset, length)
-}
-
-function base64Write (buf, string, offset, length) {
-  return blitBuffer(base64ToBytes(string), buf, offset, length)
-}
-
-function ucs2Write (buf, string, offset, length) {
-  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-Buffer.prototype.write = function write (string, offset, length, encoding) {
-  // Buffer#write(string)
-  if (offset === undefined) {
-    encoding = 'utf8'
-    length = this.length
-    offset = 0
-  // Buffer#write(string, encoding)
-  } else if (length === undefined && typeof offset === 'string') {
-    encoding = offset
-    length = this.length
-    offset = 0
-  // Buffer#write(string, offset[, length][, encoding])
-  } else if (isFinite(offset)) {
-    offset = offset >>> 0
-    if (isFinite(length)) {
-      length = length >>> 0
-      if (encoding === undefined) encoding = 'utf8'
-    } else {
-      encoding = length
-      length = undefined
-    }
-  } else {
-    throw new Error(
-      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
-    )
-  }
-
-  var remaining = this.length - offset
-  if (length === undefined || length > remaining) length = remaining
-
-  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
-    throw new RangeError('Attempt to write outside buffer bounds')
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'hex':
-        return hexWrite(this, string, offset, length)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Write(this, string, offset, length)
-
-      case 'ascii':
-        return asciiWrite(this, string, offset, length)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Write(this, string, offset, length)
-
-      case 'base64':
-        // Warning: maxLength not taken into account in base64Write
-        return base64Write(this, string, offset, length)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return ucs2Write(this, string, offset, length)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-Buffer.prototype.toJSON = function toJSON () {
-  return {
-    type: 'Buffer',
-    data: Array.prototype.slice.call(this._arr || this, 0)
-  }
-}
-
-function base64Slice (buf, start, end) {
-  if (start === 0 && end === buf.length) {
-    return base64.fromByteArray(buf)
-  } else {
-    return base64.fromByteArray(buf.slice(start, end))
-  }
-}
-
-function utf8Slice (buf, start, end) {
-  end = Math.min(buf.length, end)
-  var res = []
-
-  var i = start
-  while (i < end) {
-    var firstByte = buf[i]
-    var codePoint = null
-    var bytesPerSequence = (firstByte > 0xEF) ? 4
-      : (firstByte > 0xDF) ? 3
-        : (firstByte > 0xBF) ? 2
-          : 1
-
-    if (i + bytesPerSequence <= end) {
-      var secondByte, thirdByte, fourthByte, tempCodePoint
-
-      switch (bytesPerSequence) {
-        case 1:
-          if (firstByte < 0x80) {
-            codePoint = firstByte
-          }
-          break
-        case 2:
-          secondByte = buf[i + 1]
-          if ((secondByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
-            if (tempCodePoint > 0x7F) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 3:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
-            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 4:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          fourthByte = buf[i + 3]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
-            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
-              codePoint = tempCodePoint
-            }
-          }
-      }
-    }
-
-    if (codePoint === null) {
-      // we did not generate a valid codePoint so insert a
-      // replacement char (U+FFFD) and advance only 1 byte
-      codePoint = 0xFFFD
-      bytesPerSequence = 1
-    } else if (codePoint > 0xFFFF) {
-      // encode to utf16 (surrogate pair dance)
-      codePoint -= 0x10000
-      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
-      codePoint = 0xDC00 | codePoint & 0x3FF
-    }
-
-    res.push(codePoint)
-    i += bytesPerSequence
-  }
-
-  return decodeCodePointsArray(res)
-}
-
-// Based on http://stackoverflow.com/a/22747272/680742, the browser with
-// the lowest limit is Chrome, with 0x10000 args.
-// We go 1 magnitude less, for safety
-var MAX_ARGUMENTS_LENGTH = 0x1000
-
-function decodeCodePointsArray (codePoints) {
-  var len = codePoints.length
-  if (len <= MAX_ARGUMENTS_LENGTH) {
-    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
-  }
-
-  // Decode in chunks to avoid "call stack size exceeded".
-  var res = ''
-  var i = 0
-  while (i < len) {
-    res += String.fromCharCode.apply(
-      String,
-      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
-    )
-  }
-  return res
-}
-
-function asciiSlice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i] & 0x7F)
-  }
-  return ret
-}
-
-function latin1Slice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i])
-  }
-  return ret
-}
-
-function hexSlice (buf, start, end) {
-  var len = buf.length
-
-  if (!start || start < 0) start = 0
-  if (!end || end < 0 || end > len) end = len
-
-  var out = ''
-  for (var i = start; i < end; ++i) {
-    out += toHex(buf[i])
-  }
-  return out
-}
-
-function utf16leSlice (buf, start, end) {
-  var bytes = buf.slice(start, end)
-  var res = ''
-  for (var i = 0; i < bytes.length; i += 2) {
-    res += String.fromCharCode(bytes[i] + (bytes[i + 1] * 256))
-  }
-  return res
-}
-
-Buffer.prototype.slice = function slice (start, end) {
-  var len = this.length
-  start = ~~start
-  end = end === undefined ? len : ~~end
-
-  if (start < 0) {
-    start += len
-    if (start < 0) start = 0
-  } else if (start > len) {
-    start = len
-  }
-
-  if (end < 0) {
-    end += len
-    if (end < 0) end = 0
-  } else if (end > len) {
-    end = len
-  }
-
-  if (end < start) end = start
-
-  var newBuf = this.subarray(start, end)
-  // Return an augmented `Uint8Array` instance
-  newBuf.__proto__ = Buffer.prototype
-  return newBuf
-}
-
-/*
- * Need to make sure that buffer isn't trying to write out of bounds.
- */
-function checkOffset (offset, ext, length) {
-  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
-  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
-}
-
-Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) {
-    checkOffset(offset, byteLength, this.length)
-  }
-
-  var val = this[offset + --byteLength]
-  var mul = 1
-  while (byteLength > 0 && (mul *= 0x100)) {
-    val += this[offset + --byteLength] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  return this[offset]
-}
-
-Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return this[offset] | (this[offset + 1] << 8)
-}
-
-Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return (this[offset] << 8) | this[offset + 1]
-}
-
-Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return ((this[offset]) |
-      (this[offset + 1] << 8) |
-      (this[offset + 2] << 16)) +
-      (this[offset + 3] * 0x1000000)
-}
-
-Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] * 0x1000000) +
-    ((this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    this[offset + 3])
-}
-
-Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var i = byteLength
-  var mul = 1
-  var val = this[offset + --i]
-  while (i > 0 && (mul *= 0x100)) {
-    val += this[offset + --i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  if (!(this[offset] & 0x80)) return (this[offset])
-  return ((0xff - this[offset] + 1) * -1)
-}
-
-Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset] | (this[offset + 1] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset + 1] | (this[offset] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset]) |
-    (this[offset + 1] << 8) |
-    (this[offset + 2] << 16) |
-    (this[offset + 3] << 24)
-}
-
-Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] << 24) |
-    (this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    (this[offset + 3])
-}
-
-Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, true, 23, 4)
-}
-
-Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, false, 23, 4)
-}
-
-Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, true, 52, 8)
-}
-
-Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, false, 52, 8)
-}
-
-function checkInt (buf, value, offset, ext, max, min) {
-  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
-  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-}
-
-Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var mul = 1
-  var i = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  this[offset] = (value & 0xff)
-  this[offset + 1] = (value >>> 8)
-  return offset + 2
-}
-
-Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  this[offset] = (value >>> 8)
-  this[offset + 1] = (value & 0xff)
-  return offset + 2
-}
-
-Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  this[offset + 3] = (value >>> 24)
-  this[offset + 2] = (value >>> 16)
-  this[offset + 1] = (value >>> 8)
-  this[offset] = (value & 0xff)
-  return offset + 4
-}
-
-Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  this[offset] = (value >>> 24)
-  this[offset + 1] = (value >>> 16)
-  this[offset + 2] = (value >>> 8)
-  this[offset + 3] = (value & 0xff)
-  return offset + 4
-}
-
-Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    var limit = Math.pow(2, (8 * byteLength) - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = 0
-  var mul = 1
-  var sub = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    var limit = Math.pow(2, (8 * byteLength) - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  var sub = 0
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
-  if (value < 0) value = 0xff + value + 1
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  this[offset] = (value & 0xff)
-  this[offset + 1] = (value >>> 8)
-  return offset + 2
-}
-
-Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  this[offset] = (value >>> 8)
-  this[offset + 1] = (value & 0xff)
-  return offset + 2
-}
-
-Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  this[offset] = (value & 0xff)
-  this[offset + 1] = (value >>> 8)
-  this[offset + 2] = (value >>> 16)
-  this[offset + 3] = (value >>> 24)
-  return offset + 4
-}
-
-Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  if (value < 0) value = 0xffffffff + value + 1
-  this[offset] = (value >>> 24)
-  this[offset + 1] = (value >>> 16)
-  this[offset + 2] = (value >>> 8)
-  this[offset + 3] = (value & 0xff)
-  return offset + 4
-}
-
-function checkIEEE754 (buf, value, offset, ext, max, min) {
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-  if (offset < 0) throw new RangeError('Index out of range')
-}
-
-function writeFloat (buf, value, offset, littleEndian, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 23, 4)
-  return offset + 4
-}
-
-Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, false, noAssert)
-}
-
-function writeDouble (buf, value, offset, littleEndian, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 52, 8)
-  return offset + 8
-}
-
-Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, false, noAssert)
-}
-
-// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
-Buffer.prototype.copy = function copy (target, targetStart, start, end) {
-  if (!Buffer.isBuffer(target)) throw new TypeError('argument should be a Buffer')
-  if (!start) start = 0
-  if (!end && end !== 0) end = this.length
-  if (targetStart >= target.length) targetStart = target.length
-  if (!targetStart) targetStart = 0
-  if (end > 0 && end < start) end = start
-
-  // Copy 0 bytes; we're done
-  if (end === start) return 0
-  if (target.length === 0 || this.length === 0) return 0
-
-  // Fatal error conditions
-  if (targetStart < 0) {
-    throw new RangeError('targetStart out of bounds')
-  }
-  if (start < 0 || start >= this.length) throw new RangeError('Index out of range')
-  if (end < 0) throw new RangeError('sourceEnd out of bounds')
-
-  // Are we oob?
-  if (end > this.length) end = this.length
-  if (target.length - targetStart < end - start) {
-    end = target.length - targetStart + start
-  }
-
-  var len = end - start
-
-  if (this === target && typeof Uint8Array.prototype.copyWithin === 'function') {
-    // Use built-in when available, missing from IE11
-    this.copyWithin(targetStart, start, end)
-  } else if (this === target && start < targetStart && targetStart < end) {
-    // descending copy from end
-    for (var i = len - 1; i >= 0; --i) {
-      target[i + targetStart] = this[i + start]
-    }
-  } else {
-    Uint8Array.prototype.set.call(
-      target,
-      this.subarray(start, end),
-      targetStart
-    )
-  }
-
-  return len
-}
-
-// Usage:
-//    buffer.fill(number[, offset[, end]])
-//    buffer.fill(buffer[, offset[, end]])
-//    buffer.fill(string[, offset[, end]][, encoding])
-Buffer.prototype.fill = function fill (val, start, end, encoding) {
-  // Handle string cases:
-  if (typeof val === 'string') {
-    if (typeof start === 'string') {
-      encoding = start
-      start = 0
-      end = this.length
-    } else if (typeof end === 'string') {
-      encoding = end
-      end = this.length
-    }
-    if (encoding !== undefined && typeof encoding !== 'string') {
-      throw new TypeError('encoding must be a string')
-    }
-    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
-      throw new TypeError('Unknown encoding: ' + encoding)
-    }
-    if (val.length === 1) {
-      var code = val.charCodeAt(0)
-      if ((encoding === 'utf8' && code < 128) ||
-          encoding === 'latin1') {
-        // Fast path: If `val` fits into a single byte, use that numeric value.
-        val = code
-      }
-    }
-  } else if (typeof val === 'number') {
-    val = val & 255
-  }
-
-  // Invalid ranges are not set to a default, so can range check early.
-  if (start < 0 || this.length < start || this.length < end) {
-    throw new RangeError('Out of range index')
-  }
-
-  if (end <= start) {
-    return this
-  }
-
-  start = start >>> 0
-  end = end === undefined ? this.length : end >>> 0
-
-  if (!val) val = 0
-
-  var i
-  if (typeof val === 'number') {
-    for (i = start; i < end; ++i) {
-      this[i] = val
-    }
-  } else {
-    var bytes = Buffer.isBuffer(val)
-      ? val
-      : Buffer.from(val, encoding)
-    var len = bytes.length
-    if (len === 0) {
-      throw new TypeError('The value "' + val +
-        '" is invalid for argument "value"')
-    }
-    for (i = 0; i < end - start; ++i) {
-      this[i + start] = bytes[i % len]
-    }
-  }
-
-  return this
-}
-
-// HELPER FUNCTIONS
-// ================
-
-var INVALID_BASE64_RE = /[^+/0-9A-Za-z-_]/g
-
-function base64clean (str) {
-  // Node takes equal signs as end of the Base64 encoding
-  str = str.split('=')[0]
-  // Node strips out invalid characters like \n and \t from the string, base64-js does not
-  str = str.trim().replace(INVALID_BASE64_RE, '')
-  // Node converts strings with length < 2 to ''
-  if (str.length < 2) return ''
-  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
-  while (str.length % 4 !== 0) {
-    str = str + '='
-  }
-  return str
-}
-
-function toHex (n) {
-  if (n < 16) return '0' + n.toString(16)
-  return n.toString(16)
-}
-
-function utf8ToBytes (string, units) {
-  units = units || Infinity
-  var codePoint
-  var length = string.length
-  var leadSurrogate = null
-  var bytes = []
-
-  for (var i = 0; i < length; ++i) {
-    codePoint = string.charCodeAt(i)
-
-    // is surrogate component
-    if (codePoint > 0xD7FF && codePoint < 0xE000) {
-      // last char was a lead
-      if (!leadSurrogate) {
-        // no lead yet
-        if (codePoint > 0xDBFF) {
-          // unexpected trail
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        } else if (i + 1 === length) {
-          // unpaired lead
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        }
-
-        // valid lead
-        leadSurrogate = codePoint
-
-        continue
-      }
-
-      // 2 leads in a row
-      if (codePoint < 0xDC00) {
-        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-        leadSurrogate = codePoint
-        continue
-      }
-
-      // valid surrogate pair
-      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
-    } else if (leadSurrogate) {
-      // valid bmp char, but last char was a lead
-      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-    }
-
-    leadSurrogate = null
-
-    // encode utf8
-    if (codePoint < 0x80) {
-      if ((units -= 1) < 0) break
-      bytes.push(codePoint)
-    } else if (codePoint < 0x800) {
-      if ((units -= 2) < 0) break
-      bytes.push(
-        codePoint >> 0x6 | 0xC0,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x10000) {
-      if ((units -= 3) < 0) break
-      bytes.push(
-        codePoint >> 0xC | 0xE0,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x110000) {
-      if ((units -= 4) < 0) break
-      bytes.push(
-        codePoint >> 0x12 | 0xF0,
-        codePoint >> 0xC & 0x3F | 0x80,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else {
-      throw new Error('Invalid code point')
-    }
-  }
-
-  return bytes
-}
-
-function asciiToBytes (str) {
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    // Node's code seems to be doing this and not & 0x7F..
-    byteArray.push(str.charCodeAt(i) & 0xFF)
-  }
-  return byteArray
-}
-
-function utf16leToBytes (str, units) {
-  var c, hi, lo
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    if ((units -= 2) < 0) break
-
-    c = str.charCodeAt(i)
-    hi = c >> 8
-    lo = c % 256
-    byteArray.push(lo)
-    byteArray.push(hi)
-  }
-
-  return byteArray
-}
-
-function base64ToBytes (str) {
-  return base64.toByteArray(base64clean(str))
-}
-
-function blitBuffer (src, dst, offset, length) {
-  for (var i = 0; i < length; ++i) {
-    if ((i + offset >= dst.length) || (i >= src.length)) break
-    dst[i + offset] = src[i]
-  }
-  return i
-}
-
-// ArrayBuffer or Uint8Array objects from other contexts (i.e. iframes) do not pass
-// the `instanceof` check but they should be treated as of that type.
-// See: https://github.com/feross/buffer/issues/166
-function isInstance (obj, type) {
-  return obj instanceof type ||
-    (obj != null && obj.constructor != null && obj.constructor.name != null &&
-      obj.constructor.name === type.name)
-}
-function numberIsNaN (obj) {
-  // For IE11 support
-  return obj !== obj // eslint-disable-line no-self-compare
-}
-
-},{"base64-js":81,"ieee754":249}],104:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, CodeService, ValueSet, ref;
@@ -18594,7 +16289,14 @@ function numberIsNaN (obj) {
       }
     };
 
+<<<<<<< HEAD
+}).call(this,require("buffer").Buffer)
+},{"../binary":83,"../code":85,"../db_ref":86,"../decimal128":87,"../double":88,"../int_32":90,"../long":91,"../max_key":93,"../min_key":94,"../objectid":95,"../regexp":100,"../symbol":101,"../timestamp":102,"buffer":103}],98:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
     return CodeService;
+>>>>>>> A provider has a list of ids
 
   })();
 
@@ -18604,7 +16306,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./datatypes/datatypes":109}],105:[function(require,module,exports){
+},{"./datatypes/datatypes":102}],98:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DT, element, i, len, ref;
@@ -18621,7 +16323,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./datatypes/datatypes":109}],106:[function(require,module,exports){
+},{"./datatypes/datatypes":102}],99:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DT, FHIR, Patient, PatientSource, Record, toDate, typeIsArray;
@@ -18875,7 +16577,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./datatypes/datatypes":109,"./fhir/models":193,"./util/util":238}],107:[function(require,module,exports){
+},{"./datatypes/datatypes":102,"./fhir/models":186,"./util/util":231}],100:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var codeservice, context, datatypes, exec, expression, library, patient, quantity, ratio, repository, results;
@@ -18940,7 +16642,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./cql-code-service":104,"./cql-patient":106,"./datatypes/datatypes":109,"./elm/expression":123,"./elm/library":128,"./elm/quantity":135,"./elm/ratio":137,"./runtime/context":232,"./runtime/executor":233,"./runtime/repository":234,"./runtime/results":235}],108:[function(require,module,exports){
+},{"./cql-code-service":97,"./cql-patient":99,"./datatypes/datatypes":102,"./elm/expression":116,"./elm/library":121,"./elm/quantity":128,"./elm/ratio":130,"./runtime/context":225,"./runtime/executor":226,"./runtime/repository":227,"./runtime/results":228}],101:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, CodeSystem, Concept, ValueSet, codesInList, codesMatch, toCodeList, typeIsArray;
@@ -19081,12 +16783,18 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":238}],109:[function(require,module,exports){
+},{"../util/util":231}],102:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var clinical, datetime, element, i, interval, j, len, len1, lib, libs, logic, ref, uncertainty;
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
+},{"../../../../is-buffer/index.js":251,"../binary":83,"../float_parser":89,"../long":91,"../map":92,"../min_key":94,"./utils":99}],99:[function(require,module,exports){
+'use strict';
+=======
   logic = require('./logic');
+>>>>>>> A provider has a list of ids
 
   clinical = require('./clinical');
 
@@ -19094,7 +16802,19 @@ function numberIsNaN (obj) {
 
   datetime = require('./datetime');
 
+<<<<<<< HEAD
+},{}],100:[function(require,module,exports){
+/**
+ * A class representation of the BSON RegExp type.
+ *
+ * @class
+ * @return {BSONRegExp} A MinKey instance
+ */
+function BSONRegExp(pattern, options) {
+  if (!(this instanceof BSONRegExp)) return new BSONRegExp();
+=======
   interval = require('./interval');
+>>>>>>> A provider has a list of ids
 
   libs = [logic, clinical, uncertainty, datetime, interval];
 
@@ -19107,11 +16827,18 @@ function numberIsNaN (obj) {
     }
   }
 
+<<<<<<< HEAD
+},{}],101:[function(require,module,exports){
+(function (Buffer){
+// Custom inspect property name / symbol.
+var inspect = Buffer ? require('util').inspect.custom || 'inspect' : 'inspect';
+=======
 }).call(this);
+>>>>>>> A provider has a list of ids
 
 
 
-},{"./clinical":108,"./datetime":110,"./interval":112,"./logic":113,"./uncertainty":114}],110:[function(require,module,exports){
+},{"./clinical":101,"./datetime":103,"./interval":105,"./logic":106,"./uncertainty":107}],103:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Date, DateTime, Uncertainty, cqlFormatStringToMomentFormatString, daysInMonth, getTimezoneSeparatorFromString, isValidDateStringFormat, isValidDateTimeStringFormat, jsDate, moment, normalizeMillisecondsField, normalizeMillisecondsFieldInString, ref,
@@ -19123,6 +16850,23 @@ function numberIsNaN (obj) {
 
   moment = require('moment');
 
+<<<<<<< HEAD
+}).call(this,require("buffer").Buffer)
+},{"buffer":103,"util":362}],102:[function(require,module,exports){
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// Copyright 2009 Google Inc. All Rights Reserved
+=======
   DateTime = (function() {
     DateTime.Unit = {
       YEAR: 'year',
@@ -19134,6 +16878,7 @@ function numberIsNaN (obj) {
       SECOND: 'second',
       MILLISECOND: 'millisecond'
     };
+>>>>>>> A provider has a list of ids
 
     DateTime.FIELDS = [DateTime.Unit.YEAR, DateTime.Unit.MONTH, DateTime.Unit.DAY, DateTime.Unit.HOUR, DateTime.Unit.MINUTE, DateTime.Unit.SECOND, DateTime.Unit.MILLISECOND];
 
@@ -20177,6 +17922,16 @@ function numberIsNaN (obj) {
     throw new Error('Tried to floor a field that has no floor value: ' + field);
   };
 
+<<<<<<< HEAD
+},{}],103:[function(require,module,exports){
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+=======
   DateTime.prototype.getFieldCieling = Date.prototype.getFieldCieling = function(field) {
     if (field === 'month') {
       return 12;
@@ -20198,6 +17953,7 @@ function numberIsNaN (obj) {
     }
     throw new Error('Tried to clieling a field that has no cieling value: ' + field);
   };
+>>>>>>> A provider has a list of ids
 
   daysInMonth = function(year, month) {
     if (!((year != null) && (month != null))) {
@@ -20272,7 +18028,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":238,"./uncertainty":114,"moment":239}],111:[function(require,module,exports){
+},{"../util/util":231,"./uncertainty":107,"moment":232}],104:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Exception;
@@ -20291,7 +18047,7 @@ function numberIsNaN (obj) {
 
 
 
-},{}],112:[function(require,module,exports){
+},{}],105:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Interval, ThreeValuedLogic, Uncertainty, cmp, maxValueForInstance, minValueForInstance, predecessor, ref, successor;
@@ -20753,7 +18509,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/comparison":236,"../util/math":237,"./datetime":110,"./logic":113,"./uncertainty":114}],113:[function(require,module,exports){
+},{"../util/comparison":229,"../util/math":230,"./datetime":103,"./logic":106,"./uncertainty":107}],106:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var ThreeValuedLogic,
@@ -20815,7 +18571,7 @@ function numberIsNaN (obj) {
 
 
 
-},{}],114:[function(require,module,exports){
+},{}],107:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var ThreeValuedLogic, Uncertainty;
@@ -20941,7 +18697,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./logic":113}],115:[function(require,module,exports){
+},{"./logic":106}],108:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AggregateExpression, AllTrue, AnyTrue, Avg, Count, Exception, Expression, GeometricMean, Max, Median, Min, Mode, PopulationStdDev, PopulationVariance, Product, Quantity, StdDev, Sum, Variance, allTrue, anyTrue, build, compact, numerical_sort, productValue, quantitiesOrArg, quantityOrValue, ref, typeIsArray,
@@ -21386,7 +19142,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/exception":111,"../util/util":238,"./builder":117,"./expression":123,"./quantity":135}],116:[function(require,module,exports){
+},{"../datatypes/exception":104,"../util/util":231,"./builder":110,"./expression":116,"./quantity":128}],109:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Abs, Add, Ceiling, Divide, Exp, Expression, Floor, Ln, Log, MathUtil, MaxValue, MinValue, Modulo, Multiply, Negate, Power, Predecessor, Quantity, Round, Subtract, Successor, Truncate, TruncatedDivide, allTrue, anyTrue, build, ref, typeIsArray,
@@ -21794,7 +19550,14 @@ function numberIsNaN (obj) {
 
     MIN_VALUES['{urn:hl7-org:elm-types:r1}Decimal'] = MathUtil.MIN_FLOAT_VALUE;
 
+<<<<<<< HEAD
+},{"base64-js":81,"ieee754":249}],104:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Code, CodeService, ValueSet, ref;
+=======
     MIN_VALUES['{urn:hl7-org:elm-types:r1}DateTime'] = MathUtil.MIN_DATE_VALUE;
+>>>>>>> A provider has a list of ids
 
     MIN_VALUES['{urn:hl7-org:elm-types:r1}Time'] = MathUtil.MIN_TIME_VALUE;
 
@@ -21829,7 +19592,14 @@ function numberIsNaN (obj) {
 
     MAX_VALUES = {};
 
+<<<<<<< HEAD
+},{"./datatypes/datatypes":109}],105:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var DT, element, i, len, ref;
+=======
     MAX_VALUES['{urn:hl7-org:elm-types:r1}Integer'] = MathUtil.MAX_INT_VALUE;
+>>>>>>> A provider has a list of ids
 
     MAX_VALUES['{urn:hl7-org:elm-types:r1}Decimal'] = MathUtil.MAX_FLOAT_VALUE;
 
@@ -21857,7 +19627,14 @@ function numberIsNaN (obj) {
       }
     };
 
+<<<<<<< HEAD
+},{"./datatypes/datatypes":109}],106:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var DT, FHIR, Patient, PatientSource, Record, toDate, typeIsArray;
+=======
     return MaxValue;
+>>>>>>> A provider has a list of ids
 
   })(Expression);
 
@@ -21907,7 +19684,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/math":237,"../util/util":238,"./builder":117,"./expression":123,"./quantity":135}],117:[function(require,module,exports){
+},{"../util/math":230,"../util/util":231,"./builder":110,"./expression":116,"./quantity":128}],110:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var E, build, constructByName, functionExists, typeIsArray;
@@ -21955,7 +19732,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":238,"./expressions":124}],118:[function(require,module,exports){
+},{"../util/util":231,"./expressions":117}],111:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AnyInValueSet, CalculateAge, CalculateAgeAt, CodeDef, CodeRef, CodeSystemDef, Concept, ConceptDef, ConceptRef, Expression, InValueSet, ValueSetDef, ValueSetRef, build, dt,
@@ -21992,10 +19769,17 @@ function numberIsNaN (obj) {
   module.exports.ValueSetRef = ValueSetRef = (function(superClass) {
     extend(ValueSetRef, superClass);
 
+<<<<<<< HEAD
+},{"./datatypes/datatypes":109,"./fhir/models":193,"./util/util":238}],107:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var codeservice, context, datatypes, exec, expression, library, patient, quantity, ratio, repository, results;
+=======
     function ValueSetRef(json) {
       ValueSetRef.__super__.constructor.apply(this, arguments);
       this.name = json.name;
     }
+>>>>>>> A provider has a list of ids
 
     ValueSetRef.prototype.exec = function(ctx) {
       var valueset;
@@ -22154,7 +19938,14 @@ function numberIsNaN (obj) {
       return new dt.Concept(codes, this.display);
     };
 
+<<<<<<< HEAD
+},{"./cql-code-service":104,"./cql-patient":106,"./datatypes/datatypes":109,"./elm/expression":123,"./elm/library":128,"./elm/quantity":135,"./elm/ratio":137,"./runtime/context":232,"./runtime/executor":233,"./runtime/repository":234,"./runtime/results":235}],108:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Code, CodeSystem, Concept, ValueSet, codesInList, codesMatch, toCodeList, typeIsArray;
+=======
     return ConceptDef;
+>>>>>>> A provider has a list of ids
 
   })(Expression);
 
@@ -22275,7 +20066,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":109,"./builder":117,"./expression":123}],119:[function(require,module,exports){
+},{"../datatypes/datatypes":102,"./builder":110,"./expression":116}],112:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Greater, GreaterOrEqual, Less, LessOrEqual, Uncertainty,
@@ -22378,7 +20169,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":109,"./expression":123}],120:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../util/util":238}],109:[function(require,module,exports){
+=======
+},{"../datatypes/datatypes":102,"./expression":116}],113:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Case, CaseItem, Expression, If, build, equals,
@@ -22484,7 +20279,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/comparison":236,"./builder":117,"./expression":123}],121:[function(require,module,exports){
+<<<<<<< HEAD
+},{"./clinical":108,"./datetime":110,"./interval":112,"./logic":113,"./uncertainty":114}],110:[function(require,module,exports){
+=======
+},{"../util/comparison":229,"./builder":110,"./expression":116}],114:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DT, Date, DateFrom, DateTime, DateTimeComponentFrom, DifferenceBetween, DurationBetween, Expression, Literal, Now, SameOrAfter, SameOrBefore, Time, TimeFrom, TimeOfDay, TimezoneFrom, Today, build,
@@ -22888,7 +20687,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":109,"./builder":117,"./expression":123,"./literal":130}],122:[function(require,module,exports){
+},{"../datatypes/datatypes":102,"./builder":110,"./expression":116,"./literal":123}],115:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, IncludeDef, UnimplementedExpression, UsingDef, VersionedIdentifier, ref,
@@ -22934,7 +20733,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":123}],123:[function(require,module,exports){
+},{"./expression":116}],116:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, UnimplementedExpression, build, typeIsArray,
@@ -23018,7 +20817,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":238,"./builder":117}],124:[function(require,module,exports){
+},{"../util/util":231,"./builder":110}],117:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var aggregate, arithmetic, clinical, comparison, conditional, datetime, declaration, element, expression, external, i, instance, interval, j, len, len1, lib, libs, list, literal, logical, nullological, overloaded, parameters, quantity, query, ratio, ref, reusable, string, structured, type;
@@ -23086,7 +20885,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./aggregate":115,"./arithmetic":116,"./clinical":118,"./comparison":119,"./conditional":120,"./datetime":121,"./declaration":122,"./expression":123,"./external":125,"./instance":126,"./interval":127,"./list":129,"./literal":130,"./logical":131,"./nullological":132,"./overloaded":133,"./parameters":134,"./quantity":135,"./query":136,"./ratio":137,"./reusable":138,"./string":139,"./structured":140,"./type":141}],125:[function(require,module,exports){
+},{"./aggregate":108,"./arithmetic":109,"./clinical":111,"./comparison":112,"./conditional":113,"./datetime":114,"./declaration":115,"./expression":116,"./external":118,"./instance":119,"./interval":120,"./list":122,"./literal":123,"./logical":124,"./nullological":125,"./overloaded":126,"./parameters":127,"./quantity":128,"./query":129,"./ratio":130,"./reusable":131,"./string":132,"./structured":133,"./type":134}],118:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Retrieve, build, typeIsArray,
@@ -23163,7 +20962,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":238,"./builder":117,"./expression":123}],126:[function(require,module,exports){
+},{"../util/util":231,"./builder":110,"./expression":116}],119:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, Concept, Element, Expression, Instance, Quantity, build, ref,
@@ -23240,7 +21039,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":109,"./builder":117,"./expression":123,"./quantity":135}],127:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../util/util":238,"./uncertainty":114,"moment":239}],111:[function(require,module,exports){
+=======
+},{"../datatypes/datatypes":102,"./builder":110,"./expression":116,"./quantity":128}],120:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, doSubtraction, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor,
@@ -23250,7 +21053,14 @@ function numberIsNaN (obj) {
 
   ref = require('./expression'), Expression = ref.Expression, UnimplementedExpression = ref.UnimplementedExpression;
 
+<<<<<<< HEAD
+},{}],112:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var DateTime, Interval, ThreeValuedLogic, Uncertainty, cmp, maxValueForInstance, minValueForInstance, predecessor, ref, successor;
+=======
   ThreeValuedLogic = require('../datatypes/logic').ThreeValuedLogic;
+>>>>>>> A provider has a list of ids
 
   build = require('./builder').build;
 
@@ -23481,7 +21291,16 @@ function numberIsNaN (obj) {
 
     return Width;
 
+<<<<<<< HEAD
+},{"../util/comparison":236,"../util/math":237,"./datetime":110,"./logic":113,"./uncertainty":114}],113:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var ThreeValuedLogic,
+    slice = [].slice,
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+=======
   })(Expression);
+>>>>>>> A provider has a list of ids
 
   module.exports.Start = Start = (function(superClass) {
     extend(Start, superClass);
@@ -23532,11 +21351,25 @@ function numberIsNaN (obj) {
       this.precision = (ref3 = json.precision) != null ? ref3.toLowerCase() : void 0;
     }
 
+<<<<<<< HEAD
+},{}],114:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var ThreeValuedLogic, Uncertainty;
+
+  ThreeValuedLogic = require('./logic').ThreeValuedLogic;
+
+  module.exports.Uncertainty = Uncertainty = (function() {
+    Uncertainty.from = function(obj) {
+      if (obj instanceof Uncertainty) {
+        return obj;
+=======
     Starts.prototype.exec = function(ctx) {
       var a, b, ref3;
       ref3 = this.execArgs(ctx), a = ref3[0], b = ref3[1];
       if ((a != null) && (b != null)) {
         return a.starts(b, this.precision);
+>>>>>>> A provider has a list of ids
       } else {
         return null;
       }
@@ -23631,7 +21464,73 @@ function numberIsNaN (obj) {
           return 'mismatch';
         }
       } else {
+<<<<<<< HEAD
+        return null;
+      }
+    };
+
+    Uncertainty.prototype.greaterThan = function(other) {
+      other = Uncertainty.from(other);
+      return other.lessThan(this);
+    };
+
+    Uncertainty.prototype.lessThanOrEquals = function(other) {
+      other = Uncertainty.from(other);
+      return ThreeValuedLogic.not(this.greaterThan(other));
+    };
+
+    Uncertainty.prototype.greaterThanOrEquals = function(other) {
+      other = Uncertainty.from(other);
+      return ThreeValuedLogic.not(this.lessThan(other));
+    };
+
+    return Uncertainty;
+
+  })();
+
+}).call(this);
+
+
+
+},{"./logic":113}],115:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var AggregateExpression, AllTrue, AnyTrue, Avg, Count, Exception, Expression, GeometricMean, Max, Median, Min, Mode, PopulationStdDev, PopulationVariance, Product, Quantity, StdDev, Sum, Variance, allTrue, anyTrue, build, compact, numerical_sort, productValue, quantitiesOrArg, quantityOrValue, ref, typeIsArray,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty,
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  Expression = require('./expression').Expression;
+
+  ref = require('../util/util'), typeIsArray = ref.typeIsArray, allTrue = ref.allTrue, anyTrue = ref.anyTrue, compact = ref.compact, numerical_sort = ref.numerical_sort;
+
+  build = require('./builder').build;
+
+  Exception = require('../datatypes/exception').Exception;
+
+  Quantity = require('./quantity');
+
+  quantitiesOrArg = function(arr) {
+    var allQs, i, j, len, someQs, unit, values;
+    arr = compact(arr);
+    if (arr.length === 0) {
+      return arr;
+    }
+    allQs = arr.every(function(x) {
+      return x.isQuantity;
+    });
+    someQs = arr.some(function(x) {
+      return x.isQuantity;
+    });
+    if (allQs) {
+      unit = arr[0].unit;
+      values = [];
+      for (j = 0, len = arr.length; j < len; j++) {
+        i = arr[j];
+        values.push(i.convertUnits(unit));
+=======
         return 'mismatch';
+>>>>>>> A provider has a list of ids
       }
     }
     return type;
@@ -23968,7 +21867,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/interval":112,"../datatypes/logic":113,"../util/comparison":236,"../util/math":237,"./builder":117,"./expression":123,"./quantity":135}],128:[function(require,module,exports){
+},{"../datatypes/interval":105,"../datatypes/logic":106,"../util/comparison":229,"../util/math":230,"./builder":110,"./expression":116,"./quantity":128}],121:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var CodeDef, CodeSystemDef, ConceptDef, ExpressionDef, FunctionDef, Library, ParameterDef, Results, ValueSetDef, ref;
@@ -24070,7 +21969,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../runtime/results":235,"./expressions":124}],129:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../datatypes/exception":111,"../util/util":238,"./builder":117,"./expression":123,"./quantity":135}],116:[function(require,module,exports){
+=======
+},{"../runtime/results":228,"./expressions":117}],122:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Current, Distinct, Exists, Expression, Filter, First, Flatten, ForEach, IndexOf, Last, List, SingletonFrom, Times, ToList, UnimplementedExpression, ValueSet, build, doContains, doDistinct, doIncludes, equals, ref, typeIsArray,
@@ -24438,7 +22341,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":109,"../util/comparison":236,"../util/util":238,"./builder":117,"./expression":123}],130:[function(require,module,exports){
+},{"../datatypes/datatypes":102,"../util/comparison":229,"../util/util":231,"./builder":110,"./expression":116}],123:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var BooleanLiteral, DecimalLiteral, Expression, IntegerLiteral, Literal, StringLiteral,
@@ -24564,7 +22467,28 @@ function numberIsNaN (obj) {
           return true;
         }
       }
+<<<<<<< HEAD
+    };
+
+    return Predecessor;
+
+  })(Expression);
+
+}).call(this);
+
+
+
+},{"../util/math":237,"../util/util":238,"./builder":117,"./expression":123,"./quantity":135}],117:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var E, build, constructByName, functionExists, typeIsArray;
+
+  E = require('./expressions');
+
+  typeIsArray = require('../util/util').typeIsArray;
+=======
     });
+>>>>>>> A provider has a list of ids
 
     StringLiteral.prototype.exec = function(ctx) {
       return this.value.replace(/\\'/g, "'").replace(/\\"/g, "\"");
@@ -24578,7 +22502,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":123}],131:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../util/util":238,"./expressions":124}],118:[function(require,module,exports){
+=======
+},{"./expression":116}],124:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var And, Expression, IsFalse, IsTrue, Not, Or, ThreeValuedLogic, Xor,
@@ -24683,7 +22611,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":109,"./expression":123}],132:[function(require,module,exports){
+},{"../datatypes/datatypes":102,"./expression":116}],125:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Coalesce, Expression, IsNull, Null,
@@ -24759,7 +22687,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":123}],133:[function(require,module,exports){
+},{"./expression":116}],126:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var After, Contains, DT, DateTime, Equal, Equivalent, Except, Exception, Expression, IVL, In, IncludedIn, Includes, Indexer, Intersect, LIST, Length, NotEqual, ProperIncludedIn, ProperIncludes, STRING, SameAs, ThreeValuedLogic, Union, build, equals, equivalent, ref, typeIsArray,
@@ -24782,7 +22710,16 @@ function numberIsNaN (obj) {
 
   DT = require('./datetime');
 
+<<<<<<< HEAD
+},{"../datatypes/datatypes":109,"./builder":117,"./expression":123}],119:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Expression, Greater, GreaterOrEqual, Less, LessOrEqual, Uncertainty,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   LIST = require('./list');
+>>>>>>> A provider has a list of ids
 
   IVL = require('./interval');
 
@@ -24879,8 +22816,30 @@ function numberIsNaN (obj) {
 
   })(Expression);
 
+<<<<<<< HEAD
+}).call(this);
+
+
+
+},{"../datatypes/datatypes":109,"./expression":123}],120:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Case, CaseItem, Expression, If, build, equals,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Expression = require('./expression').Expression;
+
+  build = require('./builder').build;
+
+  equals = require('../util/comparison').equals;
+
+  module.exports.If = If = (function(superClass) {
+    extend(If, superClass);
+=======
   module.exports.Except = Except = (function(superClass) {
     extend(Except, superClass);
+>>>>>>> A provider has a list of ids
 
     function Except(json) {
       Except.__super__.constructor.apply(this, arguments);
@@ -24935,8 +22894,35 @@ function numberIsNaN (obj) {
 
   })(Expression);
 
+<<<<<<< HEAD
+}).call(this);
+
+
+
+},{"../util/comparison":236,"./builder":117,"./expression":123}],121:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var DT, Date, DateFrom, DateTime, DateTimeComponentFrom, DifferenceBetween, DurationBetween, Expression, Literal, Now, SameOrAfter, SameOrBefore, Time, TimeFrom, TimeOfDay, TimezoneFrom, Today, build,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty,
+    slice = [].slice;
+
+  Expression = require('./expression').Expression;
+
+  build = require('./builder').build;
+
+  Literal = require('./literal').Literal;
+
+  DT = require('../datatypes/datatypes');
+
+  module.exports.DateTime = DateTime = (function(superClass) {
+    extend(DateTime, superClass);
+
+    DateTime.PROPERTIES = ['year', 'month', 'day', 'hour', 'minute', 'second', 'millisecond', 'timezoneOffset'];
+=======
   module.exports.Indexer = Indexer = (function(superClass) {
     extend(Indexer, superClass);
+>>>>>>> A provider has a list of ids
 
     function Indexer(json) {
       Indexer.__super__.constructor.apply(this, arguments);
@@ -25245,7 +23231,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datetime":110,"../datatypes/exception":111,"../datatypes/logic":113,"../util/comparison":236,"../util/util":238,"./builder":117,"./datetime":121,"./expression":123,"./interval":127,"./list":129,"./string":139}],134:[function(require,module,exports){
+},{"../datatypes/datetime":103,"../datatypes/exception":104,"../datatypes/logic":106,"../util/comparison":229,"../util/util":231,"./builder":110,"./datetime":114,"./expression":116,"./interval":120,"./list":122,"./string":132}],127:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, ParameterDef, ParameterRef, build,
@@ -25304,7 +23290,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":117,"./expression":123}],135:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../datatypes/datatypes":109,"./builder":117,"./expression":123,"./literal":130}],122:[function(require,module,exports){
+=======
+},{"./builder":110,"./expression":116}],128:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, Exception, Expression, FunctionRef, Quantity, ValueSet, build, clean_unit, coalesceToOne, convert_value, createQuantity, decimalAdjust, doScaledAddition, isValidDecimal, is_valid_ucum_unit, ref, ref1, ucum, ucum_multiply, ucum_time_units, ucum_to_cql_units, ucum_unit, unitValidityCache, units_to_string,
@@ -25352,12 +23342,21 @@ function numberIsNaN (obj) {
       }
     });
 
+<<<<<<< HEAD
+},{"./expression":123}],123:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Expression, UnimplementedExpression, build, typeIsArray,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     Quantity.prototype.clone = function() {
       return new Quantity({
         value: this.value,
         unit: this.unit
       });
     };
+>>>>>>> A provider has a list of ids
 
     Quantity.prototype.exec = function(ctx) {
       return this;
@@ -25549,9 +23548,16 @@ function numberIsNaN (obj) {
     'ms': 'millisecond'
   };
 
+<<<<<<< HEAD
+},{"../util/util":238,"./builder":117}],124:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var aggregate, arithmetic, clinical, comparison, conditional, datetime, declaration, element, expression, external, i, instance, interval, j, len, len1, lib, libs, list, literal, logical, nullological, overloaded, parameters, quantity, query, ratio, ref, reusable, string, structured, type;
+=======
   ucum_unit = function(unit) {
     return ucum_time_units[unit] || unit || '';
   };
+>>>>>>> A provider has a list of ids
 
   convert_value = function(value, from, to) {
     var e;
@@ -25673,6 +23679,14 @@ function numberIsNaN (obj) {
     }
   };
 
+<<<<<<< HEAD
+},{"./aggregate":115,"./arithmetic":116,"./clinical":118,"./comparison":119,"./conditional":120,"./datetime":121,"./declaration":122,"./expression":123,"./external":125,"./instance":126,"./interval":127,"./list":129,"./literal":130,"./logical":131,"./nullological":132,"./overloaded":133,"./parameters":134,"./quantity":135,"./query":136,"./ratio":137,"./reusable":138,"./string":139,"./structured":140,"./type":141}],125:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Expression, Retrieve, build, typeIsArray,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   doScaledAddition = function(a, b, scaleForB) {
     var a_unit, b_unit, ref2, val;
     if (a instanceof Quantity && b instanceof Quantity) {
@@ -25692,6 +23706,7 @@ function numberIsNaN (obj) {
       throw new Error("Unsupported argument types.");
     }
   };
+>>>>>>> A provider has a list of ids
 
   module.exports.doAddition = function(a, b) {
     return doScaledAddition(a, b, 1);
@@ -25744,7 +23759,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":109,"../datatypes/exception":111,"../util/math":237,"./builder":117,"./expression":123,"./reusable":138,"ucum":247}],136:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../util/util":238,"./builder":117,"./expression":123}],126:[function(require,module,exports){
+=======
+},{"../datatypes/datatypes":102,"../datatypes/exception":104,"../util/math":230,"./builder":110,"./expression":116,"./reusable":131,"ucum":240}],129:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AliasRef, AliasedQuerySource, ByColumn, ByDirection, ByExpression, Context, Expression, LetClause, MultiSource, Query, QueryLetRef, ReturnClause, Sort, SortClause, UnimplementedExpression, With, Without, allTrue, build, equals, ref, ref1, toDistinctList, typeIsArray,
@@ -25777,7 +23796,57 @@ function numberIsNaN (obj) {
       this.expression = build(json.expression);
     }
 
+<<<<<<< HEAD
+    Instance.prototype.exec = function(ctx) {
+      var el, i, len, obj, ref1;
+      obj = {};
+      ref1 = this.element;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        el = ref1[i];
+        obj[el.name] = el.exec(ctx);
+      }
+      switch (this.classType) {
+        case "{urn:hl7-org:elm-types:r1}Quantity":
+          return new Quantity(obj);
+        case "{urn:hl7-org:elm-types:r1}Code":
+          return new Code(obj.code, obj.system, obj.version, obj.display);
+        case "{urn:hl7-org:elm-types:r1}Concept":
+          return new Concept(obj.codes, obj.display);
+        default:
+          return obj;
+      }
+    };
+
+    return Instance;
+
+  })(Expression);
+
+}).call(this);
+
+
+
+},{"../datatypes/datatypes":109,"./builder":117,"./expression":123,"./quantity":135}],127:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, doSubtraction, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty,
+    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  ref = require('./expression'), Expression = ref.Expression, UnimplementedExpression = ref.UnimplementedExpression;
+
+  ThreeValuedLogic = require('../datatypes/logic').ThreeValuedLogic;
+
+  build = require('./builder').build;
+
+  ref1 = require('./quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, doSubtraction = ref1.doSubtraction, compare_units = ref1.compare_units, convert_value = ref1.convert_value;
+
+  ref2 = require('../util/math'), successor = ref2.successor, predecessor = ref2.predecessor, MIN_FLOAT_PRECISION_VALUE = ref2.MIN_FLOAT_PRECISION_VALUE;
+
+  dtivl = require('../datatypes/interval');
+=======
     return LetClause;
+>>>>>>> A provider has a list of ids
 
   })();
 
@@ -26137,7 +24206,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../runtime/context":232,"../util/comparison":236,"../util/util":238,"./builder":117,"./expression":123}],137:[function(require,module,exports){
+},{"../runtime/context":225,"../util/comparison":229,"../util/util":231,"./builder":110,"./expression":116}],130:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Exception, Expression, Quantity, Ratio, createRatio,
@@ -26225,7 +24294,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/exception":111,"./expression":123,"./quantity":135}],138:[function(require,module,exports){
+},{"../datatypes/exception":104,"./expression":116,"./quantity":128}],131:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, ExpressionDef, ExpressionRef, FunctionDef, FunctionRef, IdentifierRef, OperandRef, build,
@@ -26384,7 +24453,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":117,"./expression":123}],139:[function(require,module,exports){
+},{"./builder":110,"./expression":116}],132:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Combine, Concatenate, EndsWith, Expression, Lower, PositionOf, Split, SplitOnMatches, StartsWith, Substring, UnimplementedExpression, Upper, build, ref,
@@ -26481,8 +24550,15 @@ function numberIsNaN (obj) {
 
   })(UnimplementedExpression);
 
+<<<<<<< HEAD
+},{"../datatypes/interval":112,"../datatypes/logic":113,"../util/comparison":236,"../util/math":237,"./builder":117,"./expression":123,"./quantity":135}],128:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var CodeDef, CodeSystemDef, ConceptDef, ExpressionDef, FunctionDef, Library, ParameterDef, Results, ValueSetDef, ref;
+=======
   module.exports.Upper = Upper = (function(superClass) {
     extend(Upper, superClass);
+>>>>>>> A provider has a list of ids
 
     function Upper(json) {
       Upper.__super__.constructor.apply(this, arguments);
@@ -26545,7 +24621,16 @@ function numberIsNaN (obj) {
 
     return PositionOf;
 
+<<<<<<< HEAD
+},{"../runtime/results":235,"./expressions":124}],129:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Current, Distinct, Exists, Expression, Filter, First, Flatten, ForEach, IndexOf, Last, List, SingletonFrom, Times, ToList, UnimplementedExpression, ValueSet, build, doContains, doDistinct, doIncludes, equals, ref, typeIsArray,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   })(Expression);
+>>>>>>> A provider has a list of ids
 
   module.exports.Substring = Substring = (function(superClass) {
     extend(Substring, superClass);
@@ -26625,7 +24710,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":117,"./expression":123}],140:[function(require,module,exports){
+},{"./builder":110,"./expression":116}],133:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Property, Tuple, TupleElement, TupleElementDefinition, UnimplementedExpression, build, ref,
@@ -26745,7 +24830,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":117,"./expression":123}],141:[function(require,module,exports){
+},{"./builder":110,"./expression":116}],134:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var As, Concept, Convert, ConvertsToBoolean, ConvertsToDate, ConvertsToDateTime, ConvertsToDecimal, ConvertsToInteger, ConvertsToQuantity, ConvertsToString, ConvertsToTime, Date, DateTime, Expression, FunctionRef, IntervalTypeSpecifier, Is, ListTypeSpecifier, NamedTypeSpecifier, ToBoolean, ToConcept, ToDate, ToDateTime, ToDecimal, ToInteger, ToQuantity, ToString, ToTime, TupleTypeSpecifier, UnimplementedExpression, isValidDecimal, isValidInteger, limitDecimalPrecision, normalizeMillisecondsField, parseQuantity, ref, ref1, ref2,
@@ -27025,7 +25110,16 @@ function numberIsNaN (obj) {
 
     return ToTime;
 
+<<<<<<< HEAD
+},{"../datatypes/datatypes":109,"../util/comparison":236,"../util/util":238,"./builder":117,"./expression":123}],130:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var BooleanLiteral, DecimalLiteral, Expression, IntegerLiteral, Literal, StringLiteral,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   })(Expression);
+>>>>>>> A provider has a list of ids
 
   module.exports.Convert = Convert = (function(superClass) {
     extend(Convert, superClass);
@@ -27161,9 +25255,18 @@ function numberIsNaN (obj) {
   module.exports.ConvertsToQuantity = ConvertsToQuantity = (function(superClass) {
     extend(ConvertsToQuantity, superClass);
 
+<<<<<<< HEAD
+},{"./expression":123}],131:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var And, Expression, IsFalse, IsTrue, Not, Or, ThreeValuedLogic, Xor,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     function ConvertsToQuantity() {
       return ConvertsToQuantity.__super__.constructor.apply(this, arguments);
     }
+>>>>>>> A provider has a list of ids
 
     return ConvertsToQuantity;
 
@@ -27239,7 +25342,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/clinical":108,"../datatypes/datetime":110,"../util/math":237,"../util/util":238,"./expression":123,"./quantity":135,"./reusable":138}],142:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../datatypes/datatypes":109,"./expression":123}],132:[function(require,module,exports){
+=======
+},{"../datatypes/clinical":101,"../datatypes/datetime":103,"../util/math":230,"../util/util":231,"./expression":116,"./quantity":128,"./reusable":131}],135:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Alert, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -27282,7 +25389,16 @@ function numberIsNaN (obj) {
 
   HumanName = CORE.HumanName;
 
+<<<<<<< HEAD
+},{"./expression":123}],133:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var After, Contains, DT, DateTime, Equal, Equivalent, Except, Exception, Expression, IVL, In, IncludedIn, Includes, Indexer, Intersect, LIST, Length, NotEqual, ProperIncludedIn, ProperIncludes, STRING, SameAs, ThreeValuedLogic, Union, build, equals, equivalent, ref, typeIsArray,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   Address = CORE.Address;
+>>>>>>> A provider has a list of ids
 
   Ratio = CORE.Ratio;
 
@@ -27398,7 +25514,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],143:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],136:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AllergyIntolerance, AllergyIntoleranceEventComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -27583,6 +25699,15 @@ function numberIsNaN (obj) {
 
   })(BackboneElement);
 
+<<<<<<< HEAD
+},{"../datatypes/datetime":110,"../datatypes/exception":111,"../datatypes/logic":113,"../util/comparison":236,"../util/util":238,"./builder":117,"./datetime":121,"./expression":123,"./interval":127,"./list":129,"./string":139}],134:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Expression, ParameterDef, ParameterRef, build,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
+>>>>>>> A provider has a list of ids
 
   /**
   Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
@@ -27756,7 +25881,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],144:[function(require,module,exports){
+<<<<<<< HEAD
+},{"./builder":117,"./expression":123}],135:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],137:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Appointment, AppointmentParticipantComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28103,7 +26232,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],145:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../datatypes/datatypes":109,"../datatypes/exception":111,"../util/math":237,"./builder":117,"./expression":123,"./reusable":138,"ucum":247}],136:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],138:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AppointmentResponse, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28324,7 +26457,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],146:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],139:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, Availability, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28357,7 +26490,16 @@ function numberIsNaN (obj) {
 
   BackboneElement = CORE.BackboneElement;
 
+<<<<<<< HEAD
+},{"../runtime/context":232,"../util/comparison":236,"../util/util":238,"./builder":117,"./expression":123}],137:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Exception, Expression, Quantity, Ratio, createRatio,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   DomainResource = CORE.DomainResource;
+>>>>>>> A provider has a list of ids
 
   ContactPoint = CORE.ContactPoint;
 
@@ -28492,7 +26634,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],147:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../datatypes/exception":111,"./expression":123,"./quantity":135}],138:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],140:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Basic, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28603,11 +26749,20 @@ function numberIsNaN (obj) {
     @returns {Reference}
      */
 
+<<<<<<< HEAD
+},{"./builder":117,"./expression":123}],139:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Combine, Concatenate, EndsWith, Expression, Lower, PositionOf, Split, SplitOnMatches, StartsWith, Substring, UnimplementedExpression, Upper, build, ref,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     Basic.prototype.subject = function() {
       if (this.json['subject']) {
         return new Reference(this.json['subject']);
       }
     };
+>>>>>>> A provider has a list of ids
 
 
     /**
@@ -28643,7 +26798,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],148:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],141:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Binary, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28747,7 +26902,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],149:[function(require,module,exports){
+<<<<<<< HEAD
+},{"./builder":117,"./expression":123}],140:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],142:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Bundle, BundleEntryComponent, BundleEntryDeletedComponent, BundleLinkComponent, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28798,7 +26957,16 @@ function numberIsNaN (obj) {
 
   Reference = CORE.Reference;
 
+<<<<<<< HEAD
+},{"./builder":117,"./expression":123}],141:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var As, Concept, Convert, ConvertsToBoolean, ConvertsToDate, ConvertsToDateTime, ConvertsToDecimal, ConvertsToInteger, ConvertsToQuantity, ConvertsToString, ConvertsToTime, Date, DateTime, Expression, FunctionRef, IntervalTypeSpecifier, Is, ListTypeSpecifier, NamedTypeSpecifier, ToBoolean, ToConcept, ToDate, ToDateTime, ToDecimal, ToInteger, ToQuantity, ToString, ToTime, TupleTypeSpecifier, UnimplementedExpression, isValidDecimal, isValidInteger, limitDecimalPrecision, normalizeMillisecondsField, parseQuantity, ref, ref1, ref2,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   CodeableConcept = CORE.CodeableConcept;
+>>>>>>> A provider has a list of ids
 
   Identifier = CORE.Identifier;
 
@@ -29095,7 +27263,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],150:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],143:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CarePlan, CarePlanActivityComponent, CarePlanActivitySimpleComponent, CarePlanGoalComponent, CarePlanParticipantComponent, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29169,6 +27337,25 @@ function numberIsNaN (obj) {
       CarePlanParticipantComponent.__super__.constructor.call(this, this.json);
     }
 
+<<<<<<< HEAD
+    return TupleTypeSpecifier;
+
+  })(UnimplementedExpression);
+
+}).call(this);
+
+
+
+},{"../datatypes/clinical":108,"../datatypes/datetime":110,"../util/math":237,"../util/util":238,"./expression":123,"./quantity":135,"./reusable":138}],142:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Alert, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     Indicates specific responsibility of an individual within the care plan.  E.g. "Primary physician", "Team coordinator", "Caregiver", etc.
@@ -29348,6 +27535,45 @@ function numberIsNaN (obj) {
       }
     };
 
+<<<<<<< HEAD
+    return Alert;
+
+  })(DomainResource);
+
+  module.exports.Alert = Alert;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],143:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, AllergyIntolerance, AllergyIntoleranceEventComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     Identifies who's expected to be involved in the activity.
@@ -29695,7 +27921,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],151:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],144:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],144:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AddedItemAdjudicationComponent, AddedItemComponent, AddedItemDetailAdjudicationComponent, AddedItemsDetailComponent, Address, Attachment, BackboneElement, CORE, ClaimResponse, CodeableConcept, Coding, ContactPoint, DT, DetailAdjudicationComponent, DomainResource, Element, ElementDefinition, ErrorsComponent, Extension, HumanName, Identifier, ItemAdjudicationComponent, ItemDetailComponent, ItemSubdetailComponent, ItemsComponent, Narrative, NotesComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SubdetailAdjudicationComponent, Timing,
@@ -30101,7 +28331,16 @@ function numberIsNaN (obj) {
       }
     };
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],145:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, AppointmentResponse, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     return ItemsComponent;
+>>>>>>> A provider has a list of ids
 
   })(BackboneElement);
 
@@ -30389,6 +28628,15 @@ function numberIsNaN (obj) {
       ErrorsComponent.__super__.constructor.call(this, this.json);
     }
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],146:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, Availability, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     The sequence number of the line item submitted which contains the error. This value is ommitted when the error is elsewhere.
@@ -30598,11 +28846,20 @@ function numberIsNaN (obj) {
     @returns {Reference}
      */
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],147:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, Basic, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     ClaimResponse.prototype.requestOrganization = function() {
       if (this.json['requestOrganization']) {
         return new Reference(this.json['requestOrganization']);
       }
     };
+>>>>>>> A provider has a list of ids
 
 
     /**
@@ -30741,6 +28998,57 @@ function numberIsNaN (obj) {
       }
     };
 
+<<<<<<< HEAD
+    return Basic;
+
+  })(DomainResource);
+
+  module.exports.Basic = Basic;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],148:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, Binary, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+  BackboneElement = CORE.BackboneElement;
+
+  DomainResource = CORE.DomainResource;
+
+  ContactPoint = CORE.ContactPoint;
+
+  ElementDefinition = CORE.ElementDefinition;
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     Reason for the payment adjustment.
@@ -30842,7 +29150,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],152:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],149:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],145:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, CommunicationRequest, CommunicationRequestMessagePartComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -31190,7 +29502,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],153:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],150:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],146:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Composition, CompositionAttesterComponent, CompositionEventComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SectionComponent, Timing,
@@ -31660,7 +29976,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],154:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],151:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],147:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptMap, ConceptMapElementComponent, ConceptMapElementMapComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OtherElementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -32122,7 +30442,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],155:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],148:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Condition, ConditionDueToComponent, ConditionEvidenceComponent, ConditionLocationComponent, ConditionOccurredFollowingComponent, ConditionStageComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -32698,7 +31018,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],156:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],149:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Conformance, ConformanceDocumentComponent, ConformanceImplementationComponent, ConformanceMessagingComponent, ConformanceMessagingEventComponent, ConformanceRestComponent, ConformanceRestOperationComponent, ConformanceRestResourceComponent, ConformanceRestResourceSearchParamComponent, ConformanceRestSecurityCertificateComponent, ConformanceRestSecurityComponent, ConformanceSoftwareComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, ResourceInteractionComponent, SampledData, SystemInteractionComponent, Timing,
@@ -32723,6 +31043,98 @@ function numberIsNaN (obj) {
 
   Resource = CORE.Resource;
 
+<<<<<<< HEAD
+    /**
+    Payment identifer.
+    @returns {Identifier}
+     */
+
+    ClaimResponse.prototype.paymentRef = function() {
+      if (this.json['paymentRef']) {
+        return new Identifier(this.json['paymentRef']);
+      }
+    };
+
+
+    /**
+    Status of funds reservation (For provider, for Patient, None).
+    @returns {Coding}
+     */
+
+    ClaimResponse.prototype.reserved = function() {
+      if (this.json['reserved']) {
+        return new Coding(this.json['reserved']);
+      }
+    };
+
+
+    /**
+    The form to be used for printing the content.
+    @returns {Coding}
+     */
+
+    ClaimResponse.prototype.form = function() {
+      if (this.json['form']) {
+        return new Coding(this.json['form']);
+      }
+    };
+
+
+    /**
+    Note text.
+    @returns {Array} an array of {@link NotesComponent} objects
+     */
+
+    ClaimResponse.prototype.note = function() {
+      var i, item, len, ref, results;
+      if (this.json['note']) {
+        ref = this.json['note'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new NotesComponent(item));
+        }
+        return results;
+      }
+    };
+
+    return ClaimResponse;
+
+  })(DomainResource);
+
+  module.exports.ClaimResponse = ClaimResponse;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],152:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, CommunicationRequest, CommunicationRequestMessagePartComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+=======
+>>>>>>> A provider has a list of ids
   Range = CORE.Range;
 
   Quantity = CORE.Quantity;
@@ -32994,9 +31406,18 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link String} objects
      */
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],153:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Composition, CompositionAttesterComponent, CompositionEventComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SectionComponent, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     ResourceInteractionComponent.prototype.documentation = function() {
       return this.json['documentation'];
     };
+>>>>>>> A provider has a list of ids
 
     return ResourceInteractionComponent;
 
@@ -33480,11 +31901,20 @@ function numberIsNaN (obj) {
     @returns {Reference}
      */
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],154:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptMap, ConceptMapElementComponent, ConceptMapElementMapComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OtherElementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     ConformanceMessagingEventComponent.prototype.request = function() {
       if (this.json['request']) {
         return new Reference(this.json['request']);
       }
     };
+>>>>>>> A provider has a list of ids
 
 
     /**
@@ -33887,7 +32317,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],157:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],155:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],150:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contract, ContractSignerComponent, ContractTermComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -34426,7 +32860,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],158:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],156:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],151:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contraindication, ContraindicationMitigationComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -34693,7 +33131,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],159:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],152:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Base, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ElementDefinitionBindingComponent, ElementDefinitionConstraintComponent, ElementDefinitionMappingComponent, ElementDefinitionSlicingComponent, Extension, HumanName, Identifier, Narrative, Parameters, ParametersParameterComponent, Period, Quantity, Range, Ratio, Reference, Resource, ResourceMetaComponent, SampledData, Timing, TimingRepeatComponent, TypeRefComponent,
@@ -35610,6 +34048,15 @@ function numberIsNaN (obj) {
       TypeRefComponent.__super__.constructor.call(this, this.json);
     }
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],157:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contract, ContractSignerComponent, ContractTermComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     Name of Data type or Resource that is a(or the) type used for this element.
@@ -36126,6 +34573,42 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link ElementDefinitionMappingComponent} objects
      */
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],158:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contraindication, ContraindicationMitigationComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+  BackboneElement = CORE.BackboneElement;
+
+  DomainResource = CORE.DomainResource;
+=======
     ElementDefinition.prototype.mapping = function() {
       var i, item, len, ref, results;
       if (this.json['mapping']) {
@@ -36138,6 +34621,7 @@ function numberIsNaN (obj) {
         return results;
       }
     };
+>>>>>>> A provider has a list of ids
 
     return ElementDefinition;
 
@@ -36389,8 +34873,17 @@ function numberIsNaN (obj) {
   @exports HumanName as HumanName
    */
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],159:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, Base, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ElementDefinitionBindingComponent, ElementDefinitionConstraintComponent, ElementDefinitionMappingComponent, ElementDefinitionSlicingComponent, Extension, HumanName, Identifier, Narrative, Parameters, ParametersParameterComponent, Period, Quantity, Range, Ratio, Reference, Resource, ResourceMetaComponent, SampledData, Timing, TimingRepeatComponent, TypeRefComponent,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
   HumanName = (function(superClass) {
     extend(HumanName, superClass);
+>>>>>>> A provider has a list of ids
 
     function HumanName(json) {
       this.json = json;
@@ -36880,7 +35373,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105}],160:[function(require,module,exports){
+},{"../cql-datatypes":98}],153:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Coverage, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -37112,7 +35605,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],161:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],154:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DataElement, DataElementBindingComponent, DataElementMappingComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -37570,7 +36063,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],162:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],155:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, Device, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -37812,7 +36305,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],163:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],156:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceComponent, DeviceComponentProductionSpecificationComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -38081,7 +36574,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],164:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],157:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceUseRequest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -38377,7 +36870,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],165:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],158:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceUseStatement, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -38408,6 +36901,83 @@ function numberIsNaN (obj) {
 
   Attachment = CORE.Attachment;
 
+<<<<<<< HEAD
+  /**
+  This special resource type is used to represent [operation](operations.html] request and response. It has no other use, and there is no RESTful end=point associated with it.
+  @class Parameters
+  @exports Parameters as Parameters
+   */
+
+  Parameters = (function(superClass) {
+    extend(Parameters, superClass);
+
+    function Parameters(json) {
+      this.json = json;
+      Parameters.__super__.constructor.call(this, this.json);
+    }
+
+
+    /**
+    A parameter passed to or received from the operation.
+    @returns {Array} an array of {@link ParametersParameterComponent} objects
+     */
+
+    Parameters.prototype.parameter = function() {
+      var i, item, len, ref, results;
+      if (this.json['parameter']) {
+        ref = this.json['parameter'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new ParametersParameterComponent(item));
+        }
+        return results;
+      }
+    };
+
+    return Parameters;
+
+  })(Resource);
+
+  module.exports.Parameters = Parameters;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105}],160:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Coverage, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+=======
+>>>>>>> A provider has a list of ids
   BackboneElement = CORE.BackboneElement;
 
   DomainResource = CORE.DomainResource;
@@ -38612,7 +37182,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],166:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],161:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],159:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticOrder, DiagnosticOrderEventComponent, DiagnosticOrderItemComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39013,7 +37587,83 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],167:[function(require,module,exports){
+<<<<<<< HEAD
+    /**
+    An sample value for this element demonstrating the type of information that would typically be captured.
+    @returns {Array} an array of {@link } objects
+     */
+
+    DataElement.prototype.example = function() {
+      return this.json['example'];
+    };
+
+
+    /**
+    Indicates the shortest length that SHALL be supported by conformant instances without truncation.
+    @returns {Array} an array of {@link Number} objects
+     */
+
+    DataElement.prototype.maxLength = function() {
+      return this.json['maxLength'];
+    };
+
+
+    /**
+    Identifies the units of measure in which the data element should be captured or expressed.
+    @returns {CodeableConcept}
+     */
+
+    DataElement.prototype.units = function() {
+      if (this.json['units']) {
+        return new CodeableConcept(this.json['units']);
+      }
+    };
+
+
+    /**
+    Binds to a value set if this element is coded (code, Coding, CodeableConcept).
+    @returns {DataElementBindingComponent}
+     */
+
+    DataElement.prototype.binding = function() {
+      if (this.json['binding']) {
+        return new DataElementBindingComponent(this.json['binding']);
+      }
+    };
+
+
+    /**
+    Identifies a concept from an external specification that roughly corresponds to this element.
+    @returns {Array} an array of {@link DataElementMappingComponent} objects
+     */
+
+    DataElement.prototype.mapping = function() {
+      var i, item, len, ref, results;
+      if (this.json['mapping']) {
+        ref = this.json['mapping'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new DataElementMappingComponent(item));
+        }
+        return results;
+      }
+    };
+
+    return DataElement;
+
+  })(DomainResource);
+
+  module.exports.DataElement = DataElement;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],162:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],160:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticReport, DiagnosticReportImageComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39219,7 +37869,158 @@ function numberIsNaN (obj) {
 
 
     /**
+<<<<<<< HEAD
+    A network address on which the device may be contacted directly.
+    @returns {Array} an array of {@link String} objects
+     */
+
+    Device.prototype.url = function() {
+      return this.json['url'];
+    };
+
+    return Device;
+
+  })(DomainResource);
+
+  module.exports.Device = Device;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],163:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceComponent, DeviceComponentProductionSpecificationComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+  BackboneElement = CORE.BackboneElement;
+
+  DomainResource = CORE.DomainResource;
+
+  ContactPoint = CORE.ContactPoint;
+
+  ElementDefinition = CORE.ElementDefinition;
+
+  Extension = CORE.Extension;
+
+  HumanName = CORE.HumanName;
+
+  Address = CORE.Address;
+
+  Ratio = CORE.Ratio;
+
+  SampledData = CORE.SampledData;
+
+  Reference = CORE.Reference;
+
+  CodeableConcept = CORE.CodeableConcept;
+
+  Identifier = CORE.Identifier;
+
+  Narrative = CORE.Narrative;
+
+  Element = CORE.Element;
+
+
+  /** 
+  Embedded class
+  @class DeviceComponentProductionSpecificationComponent
+  @exports  DeviceComponentProductionSpecificationComponent as DeviceComponentProductionSpecificationComponent
+   */
+
+  DeviceComponentProductionSpecificationComponent = (function(superClass) {
+    extend(DeviceComponentProductionSpecificationComponent, superClass);
+
+    function DeviceComponentProductionSpecificationComponent(json) {
+      this.json = json;
+      DeviceComponentProductionSpecificationComponent.__super__.constructor.call(this, this.json);
+    }
+
+
+    /**
+    Describes the specification type, such as, serial number, part number, hardware revision, software revision, etc.
+    @returns {CodeableConcept}
+     */
+
+    DeviceComponentProductionSpecificationComponent.prototype.specType = function() {
+      if (this.json['specType']) {
+        return new CodeableConcept(this.json['specType']);
+      }
+    };
+
+
+    /**
+    Describes the internal component unique identification. This is a provision for manufacture specific standard components using a private OID. 11073-10101 has a partition for private OID semantic that the manufacture can make use of.
+    @returns {Identifier}
+     */
+
+    DeviceComponentProductionSpecificationComponent.prototype.componentId = function() {
+      if (this.json['componentId']) {
+        return new Identifier(this.json['componentId']);
+      }
+    };
+
+
+    /**
+    Describes the printable string defining the component.
+    @returns {Array} an array of {@link String} objects
+     */
+
+    DeviceComponentProductionSpecificationComponent.prototype.productionSpec = function() {
+      return this.json['productionSpec'];
+    };
+
+    return DeviceComponentProductionSpecificationComponent;
+
+  })(BackboneElement);
+
+
+  /**
+  Describes the characteristics, operational status and capabilities of a medical-related component of a medical device.
+  @class DeviceComponent
+  @exports DeviceComponent as DeviceComponent
+   */
+
+  DeviceComponent = (function(superClass) {
+    extend(DeviceComponent, superClass);
+
+    function DeviceComponent(json) {
+      this.json = json;
+      DeviceComponent.__super__.constructor.call(this, this.json);
+    }
+
+
+    /**
+    Describes the specific component type as defined in the object-oriented or metric nomenclature partition.
+=======
     The section of the diagnostic service that performs the examination e.g. biochemistry, hematology, MRI.
+>>>>>>> A provider has a list of ids
     @returns {CodeableConcept}
      */
 
@@ -39387,7 +38188,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],168:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],164:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],161:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentManifest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39656,7 +38461,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],169:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],165:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],162:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentReference, DocumentReferenceContextComponent, DocumentReferenceRelatesToComponent, DocumentReferenceServiceComponent, DocumentReferenceServiceParameterComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40005,6 +38814,14 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link Reference} objects
      */
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],166:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticOrder, DiagnosticOrderEventComponent, DiagnosticOrderItemComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
     DocumentReference.prototype.author = function() {
       var i, item, len, ref, results;
       if (this.json['author']) {
@@ -40017,6 +38834,7 @@ function numberIsNaN (obj) {
         return results;
       }
     };
+>>>>>>> A provider has a list of ids
 
 
     /**
@@ -40240,7 +39058,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],170:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],167:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],163:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Eligibility, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40415,7 +39237,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],171:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],164:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EligibilityResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40436,6 +39258,158 @@ function numberIsNaN (obj) {
 
   Parameters = CORE.Parameters;
 
+<<<<<<< HEAD
+    DiagnosticReport.prototype.specimen = function() {
+      var i, item, len, ref, results;
+      if (this.json['specimen']) {
+        ref = this.json['specimen'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new Reference(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    Observations that are part of this diagnostic report. Observations can be simple name/value pairs (e.g. "atomic" results), or they can be grouping observations that include references to other members of the group (e.g. "panels").
+    @returns {Array} an array of {@link Reference} objects
+     */
+
+    DiagnosticReport.prototype.result = function() {
+      var i, item, len, ref, results;
+      if (this.json['result']) {
+        ref = this.json['result'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new Reference(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    One or more links to full details of any imaging performed during the diagnostic investigation. Typically, this is imaging performed by DICOM enabled modalities, but this is not required. A fully enabled PACS viewer can use this information to provide views of the source images.
+    @returns {Array} an array of {@link Reference} objects
+     */
+
+    DiagnosticReport.prototype.imagingStudy = function() {
+      var i, item, len, ref, results;
+      if (this.json['imagingStudy']) {
+        ref = this.json['imagingStudy'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new Reference(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    A list of key images associated with this report. The images are generally created during the diagnostic process, and may be directly of the patient, or of treated specimens (i.e. slides of interest).
+    @returns {Array} an array of {@link DiagnosticReportImageComponent} objects
+     */
+
+    DiagnosticReport.prototype.image = function() {
+      var i, item, len, ref, results;
+      if (this.json['image']) {
+        ref = this.json['image'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new DiagnosticReportImageComponent(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    Concise and clinically contextualized narrative interpretation of the diagnostic report.
+    @returns {Array} an array of {@link String} objects
+     */
+
+    DiagnosticReport.prototype.conclusion = function() {
+      return this.json['conclusion'];
+    };
+
+
+    /**
+    Codes for the conclusion.
+    @returns {Array} an array of {@link CodeableConcept} objects
+     */
+
+    DiagnosticReport.prototype.codedDiagnosis = function() {
+      var i, item, len, ref, results;
+      if (this.json['codedDiagnosis']) {
+        ref = this.json['codedDiagnosis'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new CodeableConcept(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.
+    @returns {Array} an array of {@link Attachment} objects
+     */
+
+    DiagnosticReport.prototype.presentedForm = function() {
+      var i, item, len, ref, results;
+      if (this.json['presentedForm']) {
+        ref = this.json['presentedForm'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new Attachment(item));
+        }
+        return results;
+      }
+    };
+
+    return DiagnosticReport;
+
+  })(DomainResource);
+
+  module.exports.DiagnosticReport = DiagnosticReport;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],168:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentManifest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+=======
+>>>>>>> A provider has a list of ids
   Coding = CORE.Coding;
 
   Resource = CORE.Resource;
@@ -40622,7 +39596,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],172:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],169:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],165:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Encounter, EncounterHospitalizationAccomodationComponent, EncounterHospitalizationComponent, EncounterLocationComponent, EncounterParticipantComponent, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41240,7 +40218,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],173:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],170:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],166:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Enrollment, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41451,7 +40433,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],174:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],171:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],167:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EnrollmentResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41658,7 +40644,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],175:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],172:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],168:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ExplanationOfBenefit, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41865,7 +40855,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],176:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],169:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, ExtensionDefinition, ExtensionDefinitionMappingComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42215,7 +41205,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],177:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],173:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],170:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, FamilyHistory, FamilyHistoryRelationComponent, FamilyHistoryRelationConditionComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42428,6 +41422,15 @@ function numberIsNaN (obj) {
       return new Quantity(this.json['ageAge']);
     };
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],174:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EnrollmentResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     The actual or approximate age of the relative at the time the family history is recorded.
@@ -42628,7 +41631,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],178:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],175:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],171:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, Group, GroupCharacteristicComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42853,6 +41860,15 @@ function numberIsNaN (obj) {
       return this.json['quantity'];
     };
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],176:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, ExtensionDefinition, ExtensionDefinitionMappingComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     Identifies the traits shared by members of the group.
@@ -42901,7 +41917,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],179:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],172:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HealthcareService, HealthcareServiceAvailableTimeComponent, HealthcareServiceNotAvailableTimeComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, ServiceTypeComponent, Timing,
@@ -43212,6 +42228,75 @@ function numberIsNaN (obj) {
       }
     };
 
+<<<<<<< HEAD
+    return ExtensionDefinition;
+
+  })(DomainResource);
+
+  module.exports.ExtensionDefinition = ExtensionDefinition;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],177:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, FamilyHistory, FamilyHistoryRelationComponent, FamilyHistoryRelationConditionComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+  BackboneElement = CORE.BackboneElement;
+
+  DomainResource = CORE.DomainResource;
+
+  ContactPoint = CORE.ContactPoint;
+
+  ElementDefinition = CORE.ElementDefinition;
+
+  Extension = CORE.Extension;
+
+  HumanName = CORE.HumanName;
+
+  Address = CORE.Address;
+
+  Ratio = CORE.Ratio;
+
+  SampledData = CORE.SampledData;
+
+  Reference = CORE.Reference;
+
+  CodeableConcept = CORE.CodeableConcept;
+
+  Identifier = CORE.Identifier;
+
+  Narrative = CORE.Narrative;
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     Further description of the service as it would be presented to a consumer while searching.
@@ -43528,7 +42613,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],180:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],178:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],173:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImagingObjectSelection, InstanceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SeriesComponent, StudyComponent, Timing,
@@ -43906,7 +42995,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],181:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],179:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],174:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImagingStudy, ImagingStudySeriesComponent, ImagingStudySeriesInstanceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -44437,7 +43530,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],182:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],180:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],175:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Immunization, ImmunizationExplanationComponent, ImmunizationReactionComponent, ImmunizationVaccinationProtocolComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -44969,7 +44066,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],183:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],181:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],176:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImmunizationRecommendation, ImmunizationRecommendationRecommendationComponent, ImmunizationRecommendationRecommendationDateCriterionComponent, ImmunizationRecommendationRecommendationProtocolComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45341,7 +44442,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],184:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],182:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],177:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, List, ListEntryComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45615,7 +44720,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],185:[function(require,module,exports){
+},{"../cql-datatypes":98,"./core":152}],178:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Location, LocationPositionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45898,7 +45003,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],186:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],183:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],179:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Media, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46133,7 +45242,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],187:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],184:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],180:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Medication, MedicationPackageComponent, MedicationPackageContentComponent, MedicationProductComponent, MedicationProductIngredientComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46481,7 +45594,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],188:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],185:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],181:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationAdministration, MedicationAdministrationDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46677,7 +45794,133 @@ function numberIsNaN (obj) {
 
     return MedicationAdministrationDosageComponent;
 
+<<<<<<< HEAD
+    /**
+    The absolute geographic location of the Location, expressed in a KML compatible manner (see notes below for KML).
+    @returns {LocationPositionComponent}
+     */
+
+    Location.prototype.position = function() {
+      if (this.json['position']) {
+        return new LocationPositionComponent(this.json['position']);
+      }
+    };
+
+
+    /**
+    The organization that is responsible for the provisioning and upkeep of the location.
+    @returns {Reference}
+     */
+
+    Location.prototype.managingOrganization = function() {
+      if (this.json['managingOrganization']) {
+        return new Reference(this.json['managingOrganization']);
+      }
+    };
+
+
+    /**
+    active | suspended | inactive.
+    @returns {Array} an array of {@link String} objects
+     */
+
+    Location.prototype.status = function() {
+      return this.json['status'];
+    };
+
+
+    /**
+    Another Location which this Location is physically part of.
+    @returns {Reference}
+     */
+
+    Location.prototype.partOf = function() {
+      if (this.json['partOf']) {
+        return new Reference(this.json['partOf']);
+      }
+    };
+
+
+    /**
+    Indicates whether a resource instance represents a specific location or a class of locations.
+    @returns {Array} an array of {@link String} objects
+     */
+
+    Location.prototype.mode = function() {
+      return this.json['mode'];
+    };
+
+    return Location;
+
+  })(DomainResource);
+
+  module.exports.Location = Location;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],186:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Media, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+  BackboneElement = CORE.BackboneElement;
+
+  DomainResource = CORE.DomainResource;
+
+  ContactPoint = CORE.ContactPoint;
+
+  ElementDefinition = CORE.ElementDefinition;
+
+  Extension = CORE.Extension;
+
+  HumanName = CORE.HumanName;
+
+  Address = CORE.Address;
+
+  Ratio = CORE.Ratio;
+
+  SampledData = CORE.SampledData;
+
+  Reference = CORE.Reference;
+
+  CodeableConcept = CORE.CodeableConcept;
+
+  Identifier = CORE.Identifier;
+
+  Narrative = CORE.Narrative;
+
+  Element = CORE.Element;
+=======
   })(BackboneElement);
+>>>>>>> A provider has a list of ids
 
 
   /**
@@ -46886,7 +46129,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],189:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],187:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],182:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationDispense, MedicationDispenseDispenseComponent, MedicationDispenseDispenseDosageComponent, MedicationDispenseSubstitutionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -47181,6 +46428,93 @@ function numberIsNaN (obj) {
       }
     };
 
+<<<<<<< HEAD
+    return Medication;
+
+  })(DomainResource);
+
+  module.exports.Medication = Medication;
+
+}).call(this);
+
+
+
+},{"../cql-datatypes":105,"./core":159}],188:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationAdministration, MedicationAdministrationDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+  BackboneElement = CORE.BackboneElement;
+
+  DomainResource = CORE.DomainResource;
+
+  ContactPoint = CORE.ContactPoint;
+
+  ElementDefinition = CORE.ElementDefinition;
+
+  Extension = CORE.Extension;
+
+  HumanName = CORE.HumanName;
+
+  Address = CORE.Address;
+
+  Ratio = CORE.Ratio;
+
+  SampledData = CORE.SampledData;
+
+  Reference = CORE.Reference;
+
+  CodeableConcept = CORE.CodeableConcept;
+
+  Identifier = CORE.Identifier;
+
+  Narrative = CORE.Narrative;
+
+  Element = CORE.Element;
+
+
+  /** 
+  Embedded class
+  @class MedicationAdministrationDosageComponent
+  @exports  MedicationAdministrationDosageComponent as MedicationAdministrationDosageComponent
+   */
+
+  MedicationAdministrationDosageComponent = (function(superClass) {
+    extend(MedicationAdministrationDosageComponent, superClass);
+
+    function MedicationAdministrationDosageComponent(json) {
+      this.json = json;
+      MedicationAdministrationDosageComponent.__super__.constructor.call(this, this.json);
+    }
+
+=======
+>>>>>>> A provider has a list of ids
 
     /**
     The time when the dispensed product was packaged and reviewed.
@@ -47449,7 +46783,11 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":105,"./core":159}],190:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],189:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],183:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationPrescription, MedicationPrescriptionDispenseComponent, MedicationPrescriptionDosageInstructionComponent, MedicationPrescriptionSubstitutionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -47986,6 +47324,493 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
+},{"../cql-datatypes":105,"./core":159}],190:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],184:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationStatement, MedicationStatementDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DT = require('../cql-datatypes');
+
+  CORE = require('./core');
+
+  Element = CORE.Element;
+
+  Resource = CORE.Resource;
+
+  Timing = CORE.Timing;
+
+  Period = CORE.Period;
+
+  Parameters = CORE.Parameters;
+
+  Coding = CORE.Coding;
+
+  Resource = CORE.Resource;
+
+  Range = CORE.Range;
+
+  Quantity = CORE.Quantity;
+
+  Attachment = CORE.Attachment;
+
+  BackboneElement = CORE.BackboneElement;
+
+  DomainResource = CORE.DomainResource;
+
+  ContactPoint = CORE.ContactPoint;
+
+  ElementDefinition = CORE.ElementDefinition;
+
+  Extension = CORE.Extension;
+
+  HumanName = CORE.HumanName;
+
+  Address = CORE.Address;
+
+  Ratio = CORE.Ratio;
+
+  SampledData = CORE.SampledData;
+
+  Reference = CORE.Reference;
+
+  CodeableConcept = CORE.CodeableConcept;
+
+  Identifier = CORE.Identifier;
+
+  Narrative = CORE.Narrative;
+
+  Element = CORE.Element;
+
+
+  /** 
+  Embedded class
+  @class MedicationStatementDosageComponent
+  @exports  MedicationStatementDosageComponent as MedicationStatementDosageComponent
+   */
+
+  MedicationStatementDosageComponent = (function(superClass) {
+    extend(MedicationStatementDosageComponent, superClass);
+
+    function MedicationStatementDosageComponent(json) {
+      this.json = json;
+      MedicationStatementDosageComponent.__super__.constructor.call(this, this.json);
+    }
+
+
+    /**
+    The timing schedule for giving the medication to the patient.  The Schedule data type allows many different expressions, for example.  "Every  8 hours"; "Three times a day"; "1/2 an hour before breakfast for 10 days from 23-Dec 2011:";  "15 Oct 2013, 17 Oct 2013 and 1 Nov 2013".
+    @returns {Timing}
+     */
+
+    MedicationStatementDosageComponent.prototype.schedule = function() {
+      if (this.json['schedule']) {
+        return new Timing(this.json['schedule']);
+      }
+    };
+
+
+    /**
+    If set to true or if specified as a CodeableConcept, indicates that the medication is only taken when needed within the specified schedule rather than at every scheduled dose.  If a CodeableConcept is present, it indicates the pre-condition for taking the Medication.
+    @returns {Array} an array of {@link boolean} objects
+     */
+
+    MedicationStatementDosageComponent.prototype.asNeededBoolean = function() {
+      return this.json['asNeededBoolean'];
+    };
+
+
+    /**
+    If set to true or if specified as a CodeableConcept, indicates that the medication is only taken when needed within the specified schedule rather than at every scheduled dose.  If a CodeableConcept is present, it indicates the pre-condition for taking the Medication.
+    @returns {CodeableConcept}
+     */
+
+    MedicationStatementDosageComponent.prototype.asNeededCodeableConcept = function() {
+      if (this.json['asNeededCodeableConcept']) {
+        return new CodeableConcept(this.json['asNeededCodeableConcept']);
+      }
+    };
+
+
+    /**
+    A coded specification of the anatomic site where the medication first enters the body.
+    @returns {CodeableConcept}
+     */
+
+    MedicationStatementDosageComponent.prototype.site = function() {
+      if (this.json['site']) {
+        return new CodeableConcept(this.json['site']);
+      }
+    };
+
+
+    /**
+    A code specifying the route or physiological path of administration of a therapeutic agent into or onto a subject.
+    @returns {CodeableConcept}
+     */
+
+    MedicationStatementDosageComponent.prototype.route = function() {
+      if (this.json['route']) {
+        return new CodeableConcept(this.json['route']);
+      }
+    };
+
+
+    /**
+    A coded value indicating the method by which the medication is introduced into or onto the body. Most commonly used for injections.  Examples:  Slow Push; Deep IV.
+    
+    Terminologies used often pre-coordinate this term with the route and or form of administration.
+    @returns {CodeableConcept}
+     */
+
+    MedicationStatementDosageComponent.prototype.method = function() {
+      if (this.json['method']) {
+        return new CodeableConcept(this.json['method']);
+      }
+    };
+
+
+    /**
+    The amount of therapeutic or other substance given at one administration event.
+    @returns {Quantity}
+     */
+
+    MedicationStatementDosageComponent.prototype.quantity = function() {
+      if (this.json['quantity']) {
+        return new Quantity(this.json['quantity']);
+      }
+    };
+
+
+    /**
+    Identifies the speed with which the substance is introduced into the subject. Typically the rate for an infusion. 200ml in 2 hours.
+    @returns {Ratio}
+     */
+
+    MedicationStatementDosageComponent.prototype.rate = function() {
+      if (this.json['rate']) {
+        return new Ratio(this.json['rate']);
+      }
+    };
+
+
+    /**
+    The maximum total quantity of a therapeutic substance that may be administered to a subject over the period of time. E.g. 1000mg in 24 hours.
+    @returns {Ratio}
+     */
+
+    MedicationStatementDosageComponent.prototype.maxDosePerPeriod = function() {
+      if (this.json['maxDosePerPeriod']) {
+        return new Ratio(this.json['maxDosePerPeriod']);
+      }
+    };
+
+    return MedicationStatementDosageComponent;
+
+  })(BackboneElement);
+
+
+  /**
+  A record of medication being taken by a patient, or that the medication has been given to a patient where the record is the result of a report from the patient or another clinician.
+  @class MedicationStatement
+  @exports MedicationStatement as MedicationStatement
+   */
+
+  MedicationStatement = (function(superClass) {
+    extend(MedicationStatement, superClass);
+
+    function MedicationStatement(json) {
+      this.json = json;
+      MedicationStatement.__super__.constructor.call(this, this.json);
+    }
+
+
+    /**
+    External identifier - FHIR will generate its own internal IDs (probably URLs) which do not need to be explicitly managed by the resource.  The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event.  Particularly important if these records have to be updated.
+    @returns {Array} an array of {@link Identifier} objects
+     */
+
+    MedicationStatement.prototype.identifier = function() {
+      var i, item, len, ref, results;
+      if (this.json['identifier']) {
+        ref = this.json['identifier'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new Identifier(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    The person or animal who is /was taking the medication.
+    @returns {Reference}
+     */
+
+    MedicationStatement.prototype.patient = function() {
+      if (this.json['patient']) {
+        return new Reference(this.json['patient']);
+      }
+    };
+
+
+    /**
+    Set this to true if the record is saying that the medication was NOT taken.
+    @returns {Array} an array of {@link boolean} objects
+     */
+
+    MedicationStatement.prototype.wasNotGiven = function() {
+      return this.json['wasNotGiven'];
+    };
+
+
+    /**
+    A code indicating why the medication was not taken.
+    @returns {Array} an array of {@link CodeableConcept} objects
+     */
+
+    MedicationStatement.prototype.reasonNotGiven = function() {
+      var i, item, len, ref, results;
+      if (this.json['reasonNotGiven']) {
+        ref = this.json['reasonNotGiven'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new CodeableConcept(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    The interval of time during which it is being asserted that the patient was taking the medication.
+    @returns {Period}
+     */
+
+    MedicationStatement.prototype.whenGiven = function() {
+      if (this.json['whenGiven']) {
+        return new Period(this.json['whenGiven']);
+      }
+    };
+
+
+    /**
+    Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.
+    @returns {Reference}
+     */
+
+<<<<<<< HEAD
+    MedicationPrescriptionSubstitutionComponent.prototype.type = function() {
+      if (this.json['type']) {
+        return new CodeableConcept(this.json['type']);
+      }
+    };
+
+
+    /**
+    Indicates the reason for the substitution, or why substitution must or must not be performed.
+    @returns {CodeableConcept}
+     */
+
+    MedicationPrescriptionSubstitutionComponent.prototype.reason = function() {
+      if (this.json['reason']) {
+        return new CodeableConcept(this.json['reason']);
+      }
+    };
+
+    return MedicationPrescriptionSubstitutionComponent;
+
+  })(BackboneElement);
+
+
+  /**
+  An order for both supply of the medication and the instructions for administration of the medicine to a patient.
+  @class MedicationPrescription
+  @exports MedicationPrescription as MedicationPrescription
+   */
+
+  MedicationPrescription = (function(superClass) {
+    extend(MedicationPrescription, superClass);
+
+    function MedicationPrescription(json) {
+      this.json = json;
+      MedicationPrescription.__super__.constructor.call(this, this.json);
+    }
+
+
+    /**
+    External identifier - one that would be used by another non-FHIR system - for example a re-imbursement system might issue its own id for each prescription that is created.  This is particularly important where FHIR only provides part of an erntire workflow process where records have to be tracked through an entire system.
+    @returns {Array} an array of {@link Identifier} objects
+     */
+
+    MedicationPrescription.prototype.identifier = function() {
+      var i, item, len, ref, results;
+      if (this.json['identifier']) {
+        ref = this.json['identifier'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new Identifier(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    The date (and perhaps time) when the prescription was written.
+    @returns {Array} an array of {@link Date} objects
+     */
+
+    MedicationPrescription.prototype.dateWritten = function() {
+      if (this.json['dateWritten']) {
+        return DT.DateTime.parse(this.json['dateWritten']);
+      }
+    };
+
+
+    /**
+    A code specifying the state of the order.  Generally this will be active or completed state.
+    @returns {Array} an array of {@link String} objects
+     */
+
+    MedicationPrescription.prototype.status = function() {
+      return this.json['status'];
+    };
+
+
+    /**
+    A link to a resource representing the person to whom the medication will be given.
+    @returns {Reference}
+     */
+
+    MedicationPrescription.prototype.patient = function() {
+      if (this.json['patient']) {
+        return new Reference(this.json['patient']);
+      }
+    };
+
+
+    /**
+    The healthcare professional responsible for authorizing the prescription.
+    @returns {Reference}
+     */
+
+    MedicationPrescription.prototype.prescriber = function() {
+      if (this.json['prescriber']) {
+        return new Reference(this.json['prescriber']);
+      }
+    };
+
+
+    /**
+    A link to a resource that identifies the particular occurrence of contact between patient and health care provider.
+    @returns {Reference}
+     */
+
+    MedicationPrescription.prototype.encounter = function() {
+      if (this.json['encounter']) {
+        return new Reference(this.json['encounter']);
+      }
+    };
+
+
+    /**
+    Can be the reason or the indication for writing the prescription.
+    @returns {CodeableConcept}
+     */
+
+    MedicationPrescription.prototype.reasonCodeableConcept = function() {
+      if (this.json['reasonCodeableConcept']) {
+        return new CodeableConcept(this.json['reasonCodeableConcept']);
+      }
+    };
+
+
+    /**
+    Can be the reason or the indication for writing the prescription.
+    @returns {Reference}
+     */
+
+    MedicationPrescription.prototype.reasonReference = function() {
+      if (this.json['reasonReference']) {
+        return new Reference(this.json['reasonReference']);
+      }
+    };
+
+
+    /**
+    Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.
+    @returns {Reference}
+     */
+
+    MedicationPrescription.prototype.medication = function() {
+      if (this.json['medication']) {
+        return new Reference(this.json['medication']);
+      }
+    };
+
+
+    /**
+    Indicates how the medication is to be used by the patient.
+    @returns {Array} an array of {@link MedicationPrescriptionDosageInstructionComponent} objects
+     */
+
+    MedicationPrescription.prototype.dosageInstruction = function() {
+      var i, item, len, ref, results;
+      if (this.json['dosageInstruction']) {
+        ref = this.json['dosageInstruction'];
+        results = [];
+        for (i = 0, len = ref.length; i < len; i++) {
+          item = ref[i];
+          results.push(new MedicationPrescriptionDosageInstructionComponent(item));
+        }
+        return results;
+      }
+    };
+
+
+    /**
+    Deals with details of the dispense part of the order.
+    @returns {MedicationPrescriptionDispenseComponent}
+     */
+
+    MedicationPrescription.prototype.dispense = function() {
+      if (this.json['dispense']) {
+        return new MedicationPrescriptionDispenseComponent(this.json['dispense']);
+      }
+    };
+
+
+    /**
+    Indicates whether or not substitution can or should be part of the dispense. In some cases substitution must happen, in other cases substitution must not happen, and in others it does not matter. This block explains the prescriber's intent. If nothing is specified substitution may be done.
+    @returns {MedicationPrescriptionSubstitutionComponent}
+     */
+
+    MedicationPrescription.prototype.substitution = function() {
+      if (this.json['substitution']) {
+        return new MedicationPrescriptionSubstitutionComponent(this.json['substitution']);
+      }
+    };
+
+    return MedicationPrescription;
+
+  })(DomainResource);
+
+  module.exports.MedicationPrescription = MedicationPrescription;
+
+}).call(this);
+
+
+
 },{"../cql-datatypes":105,"./core":159}],191:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
@@ -48265,6 +48090,8 @@ function numberIsNaN (obj) {
     @returns {Reference}
      */
 
+=======
+>>>>>>> A provider has a list of ids
     MedicationStatement.prototype.medication = function() {
       if (this.json['medication']) {
         return new Reference(this.json['medication']);
@@ -48319,7 +48146,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],192:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],185:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MessageDestinationComponent, MessageHeader, MessageHeaderResponseComponent, MessageSourceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -48732,7 +48563,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],193:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],186:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   module.exports = require('./core');
@@ -48917,7 +48752,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"./alert":142,"./allergyintolerance":143,"./appointment":144,"./appointmentresponse":145,"./availability":146,"./basic":147,"./binary":148,"./bundle":149,"./careplan":150,"./claimresponse":151,"./communicationrequest":152,"./composition":153,"./conceptmap":154,"./condition":155,"./conformance":156,"./contract":157,"./contraindication":158,"./core":159,"./coverage":160,"./dataelement":161,"./device":162,"./devicecomponent":163,"./deviceuserequest":164,"./deviceusestatement":165,"./diagnosticorder":166,"./diagnosticreport":167,"./documentmanifest":168,"./documentreference":169,"./eligibility":170,"./eligibilityresponse":171,"./encounter":172,"./enrollment":173,"./enrollmentresponse":174,"./explanationofbenefit":175,"./extensiondefinition":176,"./familyhistory":177,"./group":178,"./healthcareservice":179,"./imagingobjectselection":180,"./imagingstudy":181,"./immunization":182,"./immunizationrecommendation":183,"./list":184,"./location":185,"./media":186,"./medication":187,"./medicationadministration":188,"./medicationdispense":189,"./medicationprescription":190,"./medicationstatement":191,"./messageheader":192,"./namingsystem":194,"./nutritionorder":195,"./observation":196,"./operationdefinition":197,"./operationoutcome":198,"./oralhealthclaim":199,"./order":200,"./orderresponse":201,"./organization":202,"./other":203,"./patient":204,"./paymentnotice":205,"./paymentreconciliation":206,"./pendedrequest":207,"./practitioner":208,"./procedure":209,"./procedurerequest":210,"./profile":211,"./provenance":212,"./query":213,"./questionnaire":214,"./questionnaireanswers":215,"./readjudicate":216,"./referralrequest":217,"./relatedperson":218,"./reversal":219,"./riskassessment":220,"./searchparameter":221,"./securityevent":222,"./slot":223,"./specimen":224,"./statusrequest":225,"./statusresponse":226,"./subscription":227,"./substance":228,"./supply":229,"./supportingdocumentation":230,"./valueset":231}],194:[function(require,module,exports){
+=======
+},{"./alert":135,"./allergyintolerance":136,"./appointment":137,"./appointmentresponse":138,"./availability":139,"./basic":140,"./binary":141,"./bundle":142,"./careplan":143,"./claimresponse":144,"./communicationrequest":145,"./composition":146,"./conceptmap":147,"./condition":148,"./conformance":149,"./contract":150,"./contraindication":151,"./core":152,"./coverage":153,"./dataelement":154,"./device":155,"./devicecomponent":156,"./deviceuserequest":157,"./deviceusestatement":158,"./diagnosticorder":159,"./diagnosticreport":160,"./documentmanifest":161,"./documentreference":162,"./eligibility":163,"./eligibilityresponse":164,"./encounter":165,"./enrollment":166,"./enrollmentresponse":167,"./explanationofbenefit":168,"./extensiondefinition":169,"./familyhistory":170,"./group":171,"./healthcareservice":172,"./imagingobjectselection":173,"./imagingstudy":174,"./immunization":175,"./immunizationrecommendation":176,"./list":177,"./location":178,"./media":179,"./medication":180,"./medicationadministration":181,"./medicationdispense":182,"./medicationprescription":183,"./medicationstatement":184,"./messageheader":185,"./namingsystem":187,"./nutritionorder":188,"./observation":189,"./operationdefinition":190,"./operationoutcome":191,"./oralhealthclaim":192,"./order":193,"./orderresponse":194,"./organization":195,"./other":196,"./patient":197,"./paymentnotice":198,"./paymentreconciliation":199,"./pendedrequest":200,"./practitioner":201,"./procedure":202,"./procedurerequest":203,"./profile":204,"./provenance":205,"./query":206,"./questionnaire":207,"./questionnaireanswers":208,"./readjudicate":209,"./referralrequest":210,"./relatedperson":211,"./reversal":212,"./riskassessment":213,"./searchparameter":214,"./securityevent":215,"./slot":216,"./specimen":217,"./statusrequest":218,"./statusresponse":219,"./subscription":220,"./substance":221,"./supply":222,"./supportingdocumentation":223,"./valueset":224}],187:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, NamingSystem, NamingSystemContactComponent, NamingSystemUniqueIdComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -49237,7 +49076,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],195:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],188:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, NutritionOrder, NutritionOrderItemComponent, NutritionOrderItemEnteralFormulaComponent, NutritionOrderItemOralDietComponent, NutritionOrderItemOralDietNutrientsComponent, NutritionOrderItemOralDietTextureComponent, NutritionOrderItemSupplementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -49943,7 +49786,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],196:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],189:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Observation, ObservationReferenceRangeComponent, ObservationRelatedComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -50480,7 +50327,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],197:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],190:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OperationDefinition, OperationDefinitionParameterComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -50868,7 +50719,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],198:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],191:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OperationOutcome, OperationOutcomeIssueComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -51032,7 +50887,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],199:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],192:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, CoverageComponent, DT, DetailComponent, DiagnosisComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ItemsComponent, MissingTeethComponent, Narrative, OralHealthClaim, OrthodonticPlanComponent, Parameters, PayeeComponent, Period, ProsthesisComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, SubDetailComponent, Timing,
@@ -52408,7 +52267,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],200:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],193:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Order, OrderWhenComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -52669,7 +52532,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],201:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],194:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OrderResponse, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -52871,7 +52738,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],202:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],195:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Organization, OrganizationContactComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -53178,7 +53049,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],203:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],196:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Other, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -53329,7 +53204,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],204:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],197:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AnimalComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Patient, PatientLinkComponent, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -53905,7 +53784,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],205:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],198:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PaymentNotice, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54116,7 +53999,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],206:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],199:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DetailsComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, NotesComponent, Parameters, PaymentReconciliation, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54548,7 +54435,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],207:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],200:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PendedRequest, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54767,7 +54658,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],208:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],201:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Practitioner, PractitionerQualificationComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55154,7 +55049,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],209:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],202:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Procedure, ProcedurePerformerComponent, ProcedureRelatedItemComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55533,7 +55432,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],210:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],203:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, ProcedureRequest, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55844,7 +55747,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],211:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],204:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConstraintComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Profile, ProfileMappingComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -56247,7 +56154,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],212:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],205:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Provenance, ProvenanceAgentComponent, ProvenanceEntityComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -56592,7 +56503,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],213:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],206:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Query, QueryResponseComponent, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -56880,7 +56795,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],214:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],207:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, GroupComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, QuestionComponent, Questionnaire, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -57282,7 +57201,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],215:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],208:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, GroupComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, QuestionAnswerComponent, QuestionComponent, QuestionnaireAnswers, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -57803,7 +57726,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],216:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],209:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ItemsComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Readjudicate, Reference, Resource, SampledData, Timing,
@@ -58060,7 +57987,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],217:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],210:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, ReferralRequest, Resource, SampledData, Timing,
@@ -58348,7 +58279,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],218:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],211:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, RelatedPerson, Resource, SampledData, Timing,
@@ -58547,7 +58482,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],219:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],212:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PayeeComponent, Period, Quantity, Range, Ratio, Reference, Resource, Reversal, ReversalCoverageComponent, SampledData, Timing,
@@ -58920,7 +58859,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],220:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],213:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, RiskAssessment, RiskAssessmentPredictionComponent, SampledData, Timing,
@@ -59233,7 +59176,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],221:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],214:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SearchParameter, Timing,
@@ -59426,7 +59373,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],222:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],215:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SecurityEvent, SecurityEventEventComponent, SecurityEventObjectComponent, SecurityEventObjectDetailComponent, SecurityEventParticipantComponent, SecurityEventParticipantNetworkComponent, SecurityEventSourceComponent, Timing,
@@ -60048,7 +59999,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],223:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],216:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Slot, Timing,
@@ -60241,7 +60196,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],224:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],217:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Specimen, SpecimenCollectionComponent, SpecimenContainerComponent, SpecimenSourceComponent, SpecimenTreatmentComponent, Timing,
@@ -60778,7 +60737,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],225:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],218:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, StatusRequest, Timing,
@@ -60977,7 +60940,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],226:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],219:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, StatusResponse, StatusResponseNotesComponent, Timing,
@@ -61277,7 +61244,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],227:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],220:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Subscription, SubscriptionChannelComponent, SubscriptionTagComponent, Timing,
@@ -61571,7 +61542,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],228:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],221:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Substance, SubstanceIngredientComponent, SubstanceInstanceComponent, Timing,
@@ -61806,7 +61781,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],229:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],222:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Supply, SupplyDispenseComponent, Timing,
@@ -62111,7 +62090,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],230:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],223:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SupportingDocumentation, SupportingDocumentationDetailComponent, Timing,
@@ -62418,7 +62401,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],231:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],224:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptDefinitionComponent, ConceptDefinitionDesignationComponent, ConceptReferenceComponent, ConceptSetComponent, ConceptSetFilterComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing, ValueSet, ValueSetComposeComponent, ValueSetDefineComponent, ValueSetExpansionComponent, ValueSetExpansionContainsComponent,
@@ -63308,7 +63295,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql-datatypes":105,"./core":159}],232:[function(require,module,exports){
+=======
+},{"../cql-datatypes":98,"./core":152}],225:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Context, Exception, Library, PatientContext, PopulationContext, dt, typeIsArray, util,
@@ -63748,7 +63739,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../datatypes/datatypes":109,"../datatypes/exception":111,"../elm/library":128,"../util/util":238,"util":362}],233:[function(require,module,exports){
+=======
+},{"../datatypes/datatypes":102,"../datatypes/exception":104,"../elm/library":121,"../util/util":231,"util":361}],226:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Executor, PatientContext, PopulationContext, Results, ref;
@@ -63830,7 +63825,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"./context":232,"./results":235}],234:[function(require,module,exports){
+=======
+},{"./context":225,"./results":228}],227:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Repository, cql;
@@ -63872,7 +63871,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../cql":107}],235:[function(require,module,exports){
+=======
+},{"../cql":100}],228:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Results;
@@ -63907,7 +63910,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{}],236:[function(require,module,exports){
+=======
+},{}],229:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Uncertainty, areDateTimesOrQuantities, areNumbers, classesEqual, codesAreEquivalent, compareEveryItemInArrays, compareObjects, deepCompareKeysAndValues, equals, equivalent, getClassOfObjects, getKeysFromObject, isCode, isFunction, isUncertainty;
@@ -64156,7 +64163,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../datatypes/datetime":110,"../datatypes/uncertainty":114}],237:[function(require,module,exports){
+=======
+},{"../datatypes/datetime":103,"../datatypes/uncertainty":107}],230:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Exception, MAX_DATE_VALUE, MAX_FLOAT_VALUE, MAX_INT_VALUE, MAX_TIME_VALUE, MIN_DATE_VALUE, MIN_FLOAT_PRECISION_VALUE, MIN_FLOAT_VALUE, MIN_INT_VALUE, MIN_TIME_VALUE, OverFlowException, Uncertainty, isValidDecimal, isValidInteger, predecessor, successor,
@@ -64388,7 +64399,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{"../datatypes/datetime":110,"../datatypes/exception":111,"../datatypes/uncertainty":114}],238:[function(require,module,exports){
+=======
+},{"../datatypes/datetime":103,"../datatypes/exception":104,"../datatypes/uncertainty":107}],231:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // Generated by CoffeeScript 1.12.7
 (function() {
   var getTimezoneSeparatorFromString, normalizeMillisecondsField, normalizeMillisecondsFieldInString, typeIsArray;
@@ -64475,7 +64490,11 @@ function numberIsNaN (obj) {
 
 
 
+<<<<<<< HEAD
 },{}],239:[function(require,module,exports){
+=======
+},{}],232:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 //! moment.js
 //! version : 2.20.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -69012,7 +69031,11 @@ return hooks;
 
 })));
 
+<<<<<<< HEAD
 },{}],240:[function(require,module,exports){
+=======
+},{}],233:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 module.exports={
   "10*": {
     "value": 10,
@@ -70216,10 +70239,17 @@ module.exports={
   }
 }
 
+<<<<<<< HEAD
 },{}],241:[function(require,module,exports){
 module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":true,"A":true,"V":true,"F":true,"Ohm":true,"S":true,"Wb":true,"Cel":true,"T":true,"H":true,"lm":true,"lx":true,"Bq":true,"Gy":true,"Sv":true,"l":true,"L":true,"ar":true,"t":true,"bar":true,"u":true,"eV":true,"pc":true,"[c]":true,"[h]":true,"[k]":true,"[eps_0]":true,"[mu_0]":true,"[e]":true,"[m_e]":true,"[m_p]":true,"[G]":true,"[g]":true,"[ly]":true,"gf":true,"Ky":true,"Gal":true,"dyn":true,"erg":true,"P":true,"Bi":true,"St":true,"Mx":true,"G":true,"Oe":true,"Gb":true,"sb":true,"Lmb":true,"ph":true,"Ci":true,"R":true,"RAD":true,"REM":true,"cal_[15]":true,"cal_[20]":true,"cal_m":true,"cal_IT":true,"cal_th":true,"cal":true,"tex":true,"m[H2O]":true,"m[Hg]":true,"eq":true,"osm":true,"g%":true,"kat":true,"U":true,"[iU]":true,"[IU]":true,"Np":true,"B":true,"B[SPL]":true,"B[V]":true,"B[mV]":true,"B[uV]":true,"B[10.nV]":true,"B[W]":true,"B[kW]":true,"st":true,"mho":true,"bit":true,"By":true,"Bd":true,"m":true,"s":true,"g":true,"rad":true,"K":true,"C":true,"cd":true}
 
 },{}],242:[function(require,module,exports){
+=======
+},{}],234:[function(require,module,exports){
+module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":true,"A":true,"V":true,"F":true,"Ohm":true,"S":true,"Wb":true,"Cel":true,"T":true,"H":true,"lm":true,"lx":true,"Bq":true,"Gy":true,"Sv":true,"l":true,"L":true,"ar":true,"t":true,"bar":true,"u":true,"eV":true,"pc":true,"[c]":true,"[h]":true,"[k]":true,"[eps_0]":true,"[mu_0]":true,"[e]":true,"[m_e]":true,"[m_p]":true,"[G]":true,"[g]":true,"[ly]":true,"gf":true,"Ky":true,"Gal":true,"dyn":true,"erg":true,"P":true,"Bi":true,"St":true,"Mx":true,"G":true,"Oe":true,"Gb":true,"sb":true,"Lmb":true,"ph":true,"Ci":true,"R":true,"RAD":true,"REM":true,"cal_[15]":true,"cal_[20]":true,"cal_m":true,"cal_IT":true,"cal_th":true,"cal":true,"tex":true,"m[H2O]":true,"m[Hg]":true,"eq":true,"osm":true,"g%":true,"kat":true,"U":true,"[iU]":true,"[IU]":true,"Np":true,"B":true,"B[SPL]":true,"B[V]":true,"B[mV]":true,"B[uV]":true,"B[10.nV]":true,"B[W]":true,"B[kW]":true,"st":true,"mho":true,"bit":true,"By":true,"Bd":true,"m":true,"s":true,"g":true,"rad":true,"K":true,"C":true,"cd":true}
+
+},{}],235:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 module.exports={
   "Y": {
     "CODE": "YA",
@@ -70583,7 +70613,11 @@ module.exports={
   }
 }
 
+<<<<<<< HEAD
 },{}],243:[function(require,module,exports){
+=======
+},{}],236:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 module.exports={
   "Y": 1e+24,
   "Z": 1e+21,
@@ -70611,7 +70645,11 @@ module.exports={
   "Ti": 1099511627776
 }
 
+<<<<<<< HEAD
 },{}],244:[function(require,module,exports){
+=======
+},{}],237:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 module.exports = (function() {
   /*
    * Generated by PEG.js 0.8.0.
@@ -72159,7 +72197,11 @@ module.exports = (function() {
   };
 })();
 
+<<<<<<< HEAD
 },{"../lib/helpers":246,"./metrics.json":241,"./prefixMetadata.json":242,"./prefixes.json":243,"./unitMetadata.json":245}],245:[function(require,module,exports){
+=======
+},{"../lib/helpers":239,"./metrics.json":234,"./prefixMetadata.json":235,"./prefixes.json":236,"./unitMetadata.json":238}],238:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 module.exports={
   "10*": {
     "isBase": false,
@@ -78346,7 +78388,11 @@ module.exports={
   }
 }
 
+<<<<<<< HEAD
 },{}],246:[function(require,module,exports){
+module.exports = {
+=======
+},{}],239:[function(require,module,exports){
 module.exports = {
 
   multiply: function multiply(t, ms) {
@@ -78416,7 +78462,7 @@ module.exports = {
   }
 }
 
-},{}],247:[function(require,module,exports){
+},{}],240:[function(require,module,exports){
 parser = require('./generated/ucum-parser.js');
 equivalents = require('./generated/equivalents.json');
 helpers = require('./lib/helpers.js');
@@ -78646,643 +78692,7 @@ function unitQuery(criteria, resultFields){
     return obj;
   });
 }
-},{"./generated/equivalents.json":240,"./generated/ucum-parser.js":244,"./generated/unitMetadata.json":245,"./lib/helpers.js":246}],248:[function(require,module,exports){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var objectCreate = Object.create || objectCreatePolyfill
-var objectKeys = Object.keys || objectKeysPolyfill
-var bind = Function.prototype.bind || functionBindPolyfill
-
-function EventEmitter() {
-  if (!this._events || !Object.prototype.hasOwnProperty.call(this, '_events')) {
-    this._events = objectCreate(null);
-    this._eventsCount = 0;
-  }
-
-  this._maxListeners = this._maxListeners || undefined;
-}
-module.exports = EventEmitter;
-
-// Backwards-compat with node 0.10.x
-EventEmitter.EventEmitter = EventEmitter;
-
-EventEmitter.prototype._events = undefined;
-EventEmitter.prototype._maxListeners = undefined;
-
-// By default EventEmitters will print a warning if more than 10 listeners are
-// added to it. This is a useful default which helps finding memory leaks.
-var defaultMaxListeners = 10;
-
-var hasDefineProperty;
-try {
-  var o = {};
-  if (Object.defineProperty) Object.defineProperty(o, 'x', { value: 0 });
-  hasDefineProperty = o.x === 0;
-} catch (err) { hasDefineProperty = false }
-if (hasDefineProperty) {
-  Object.defineProperty(EventEmitter, 'defaultMaxListeners', {
-    enumerable: true,
-    get: function() {
-      return defaultMaxListeners;
-    },
-    set: function(arg) {
-      // check whether the input is a positive number (whose value is zero or
-      // greater and not a NaN).
-      if (typeof arg !== 'number' || arg < 0 || arg !== arg)
-        throw new TypeError('"defaultMaxListeners" must be a positive number');
-      defaultMaxListeners = arg;
-    }
-  });
-} else {
-  EventEmitter.defaultMaxListeners = defaultMaxListeners;
-}
-
-// Obviously not all Emitters should be limited to 10. This function allows
-// that to be increased. Set to zero for unlimited.
-EventEmitter.prototype.setMaxListeners = function setMaxListeners(n) {
-  if (typeof n !== 'number' || n < 0 || isNaN(n))
-    throw new TypeError('"n" argument must be a positive number');
-  this._maxListeners = n;
-  return this;
-};
-
-function $getMaxListeners(that) {
-  if (that._maxListeners === undefined)
-    return EventEmitter.defaultMaxListeners;
-  return that._maxListeners;
-}
-
-EventEmitter.prototype.getMaxListeners = function getMaxListeners() {
-  return $getMaxListeners(this);
-};
-
-// These standalone emit* functions are used to optimize calling of event
-// handlers for fast cases because emit() itself often has a variable number of
-// arguments and can be deoptimized because of that. These functions always have
-// the same number of arguments and thus do not get deoptimized, so the code
-// inside them can execute faster.
-function emitNone(handler, isFn, self) {
-  if (isFn)
-    handler.call(self);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self);
-  }
-}
-function emitOne(handler, isFn, self, arg1) {
-  if (isFn)
-    handler.call(self, arg1);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self, arg1);
-  }
-}
-function emitTwo(handler, isFn, self, arg1, arg2) {
-  if (isFn)
-    handler.call(self, arg1, arg2);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self, arg1, arg2);
-  }
-}
-function emitThree(handler, isFn, self, arg1, arg2, arg3) {
-  if (isFn)
-    handler.call(self, arg1, arg2, arg3);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self, arg1, arg2, arg3);
-  }
-}
-
-function emitMany(handler, isFn, self, args) {
-  if (isFn)
-    handler.apply(self, args);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].apply(self, args);
-  }
-}
-
-EventEmitter.prototype.emit = function emit(type) {
-  var er, handler, len, args, i, events;
-  var doError = (type === 'error');
-
-  events = this._events;
-  if (events)
-    doError = (doError && events.error == null);
-  else if (!doError)
-    return false;
-
-  // If there is no 'error' event listener then throw.
-  if (doError) {
-    if (arguments.length > 1)
-      er = arguments[1];
-    if (er instanceof Error) {
-      throw er; // Unhandled 'error' event
-    } else {
-      // At least give some kind of context to the user
-      var err = new Error('Unhandled "error" event. (' + er + ')');
-      err.context = er;
-      throw err;
-    }
-    return false;
-  }
-
-  handler = events[type];
-
-  if (!handler)
-    return false;
-
-  var isFn = typeof handler === 'function';
-  len = arguments.length;
-  switch (len) {
-      // fast cases
-    case 1:
-      emitNone(handler, isFn, this);
-      break;
-    case 2:
-      emitOne(handler, isFn, this, arguments[1]);
-      break;
-    case 3:
-      emitTwo(handler, isFn, this, arguments[1], arguments[2]);
-      break;
-    case 4:
-      emitThree(handler, isFn, this, arguments[1], arguments[2], arguments[3]);
-      break;
-      // slower
-    default:
-      args = new Array(len - 1);
-      for (i = 1; i < len; i++)
-        args[i - 1] = arguments[i];
-      emitMany(handler, isFn, this, args);
-  }
-
-  return true;
-};
-
-function _addListener(target, type, listener, prepend) {
-  var m;
-  var events;
-  var existing;
-
-  if (typeof listener !== 'function')
-    throw new TypeError('"listener" argument must be a function');
-
-  events = target._events;
-  if (!events) {
-    events = target._events = objectCreate(null);
-    target._eventsCount = 0;
-  } else {
-    // To avoid recursion in the case that type === "newListener"! Before
-    // adding it to the listeners, first emit "newListener".
-    if (events.newListener) {
-      target.emit('newListener', type,
-          listener.listener ? listener.listener : listener);
-
-      // Re-assign `events` because a newListener handler could have caused the
-      // this._events to be assigned to a new object
-      events = target._events;
-    }
-    existing = events[type];
-  }
-
-  if (!existing) {
-    // Optimize the case of one listener. Don't need the extra array object.
-    existing = events[type] = listener;
-    ++target._eventsCount;
-  } else {
-    if (typeof existing === 'function') {
-      // Adding the second element, need to change to array.
-      existing = events[type] =
-          prepend ? [listener, existing] : [existing, listener];
-    } else {
-      // If we've already got an array, just append.
-      if (prepend) {
-        existing.unshift(listener);
-      } else {
-        existing.push(listener);
-      }
-    }
-
-    // Check for listener leak
-    if (!existing.warned) {
-      m = $getMaxListeners(target);
-      if (m && m > 0 && existing.length > m) {
-        existing.warned = true;
-        var w = new Error('Possible EventEmitter memory leak detected. ' +
-            existing.length + ' "' + String(type) + '" listeners ' +
-            'added. Use emitter.setMaxListeners() to ' +
-            'increase limit.');
-        w.name = 'MaxListenersExceededWarning';
-        w.emitter = target;
-        w.type = type;
-        w.count = existing.length;
-        if (typeof console === 'object' && console.warn) {
-          console.warn('%s: %s', w.name, w.message);
-        }
-      }
-    }
-  }
-
-  return target;
-}
-
-EventEmitter.prototype.addListener = function addListener(type, listener) {
-  return _addListener(this, type, listener, false);
-};
-
-EventEmitter.prototype.on = EventEmitter.prototype.addListener;
-
-EventEmitter.prototype.prependListener =
-    function prependListener(type, listener) {
-      return _addListener(this, type, listener, true);
-    };
-
-function onceWrapper() {
-  if (!this.fired) {
-    this.target.removeListener(this.type, this.wrapFn);
-    this.fired = true;
-    switch (arguments.length) {
-      case 0:
-        return this.listener.call(this.target);
-      case 1:
-        return this.listener.call(this.target, arguments[0]);
-      case 2:
-        return this.listener.call(this.target, arguments[0], arguments[1]);
-      case 3:
-        return this.listener.call(this.target, arguments[0], arguments[1],
-            arguments[2]);
-      default:
-        var args = new Array(arguments.length);
-        for (var i = 0; i < args.length; ++i)
-          args[i] = arguments[i];
-        this.listener.apply(this.target, args);
-    }
-  }
-}
-
-function _onceWrap(target, type, listener) {
-  var state = { fired: false, wrapFn: undefined, target: target, type: type, listener: listener };
-  var wrapped = bind.call(onceWrapper, state);
-  wrapped.listener = listener;
-  state.wrapFn = wrapped;
-  return wrapped;
-}
-
-EventEmitter.prototype.once = function once(type, listener) {
-  if (typeof listener !== 'function')
-    throw new TypeError('"listener" argument must be a function');
-  this.on(type, _onceWrap(this, type, listener));
-  return this;
-};
-
-EventEmitter.prototype.prependOnceListener =
-    function prependOnceListener(type, listener) {
-      if (typeof listener !== 'function')
-        throw new TypeError('"listener" argument must be a function');
-      this.prependListener(type, _onceWrap(this, type, listener));
-      return this;
-    };
-
-// Emits a 'removeListener' event if and only if the listener was removed.
-EventEmitter.prototype.removeListener =
-    function removeListener(type, listener) {
-      var list, events, position, i, originalListener;
-
-      if (typeof listener !== 'function')
-        throw new TypeError('"listener" argument must be a function');
-
-      events = this._events;
-      if (!events)
-        return this;
-
-      list = events[type];
-      if (!list)
-        return this;
-
-      if (list === listener || list.listener === listener) {
-        if (--this._eventsCount === 0)
-          this._events = objectCreate(null);
-        else {
-          delete events[type];
-          if (events.removeListener)
-            this.emit('removeListener', type, list.listener || listener);
-        }
-      } else if (typeof list !== 'function') {
-        position = -1;
-
-        for (i = list.length - 1; i >= 0; i--) {
-          if (list[i] === listener || list[i].listener === listener) {
-            originalListener = list[i].listener;
-            position = i;
-            break;
-          }
-        }
-
-        if (position < 0)
-          return this;
-
-        if (position === 0)
-          list.shift();
-        else
-          spliceOne(list, position);
-
-        if (list.length === 1)
-          events[type] = list[0];
-
-        if (events.removeListener)
-          this.emit('removeListener', type, originalListener || listener);
-      }
-
-      return this;
-    };
-
-EventEmitter.prototype.removeAllListeners =
-    function removeAllListeners(type) {
-      var listeners, events, i;
-
-      events = this._events;
-      if (!events)
-        return this;
-
-      // not listening for removeListener, no need to emit
-      if (!events.removeListener) {
-        if (arguments.length === 0) {
-          this._events = objectCreate(null);
-          this._eventsCount = 0;
-        } else if (events[type]) {
-          if (--this._eventsCount === 0)
-            this._events = objectCreate(null);
-          else
-            delete events[type];
-        }
-        return this;
-      }
-
-      // emit removeListener for all listeners on all events
-      if (arguments.length === 0) {
-        var keys = objectKeys(events);
-        var key;
-        for (i = 0; i < keys.length; ++i) {
-          key = keys[i];
-          if (key === 'removeListener') continue;
-          this.removeAllListeners(key);
-        }
-        this.removeAllListeners('removeListener');
-        this._events = objectCreate(null);
-        this._eventsCount = 0;
-        return this;
-      }
-
-      listeners = events[type];
-
-      if (typeof listeners === 'function') {
-        this.removeListener(type, listeners);
-      } else if (listeners) {
-        // LIFO order
-        for (i = listeners.length - 1; i >= 0; i--) {
-          this.removeListener(type, listeners[i]);
-        }
-      }
-
-      return this;
-    };
-
-function _listeners(target, type, unwrap) {
-  var events = target._events;
-
-  if (!events)
-    return [];
-
-  var evlistener = events[type];
-  if (!evlistener)
-    return [];
-
-  if (typeof evlistener === 'function')
-    return unwrap ? [evlistener.listener || evlistener] : [evlistener];
-
-  return unwrap ? unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
-}
-
-EventEmitter.prototype.listeners = function listeners(type) {
-  return _listeners(this, type, true);
-};
-
-EventEmitter.prototype.rawListeners = function rawListeners(type) {
-  return _listeners(this, type, false);
-};
-
-EventEmitter.listenerCount = function(emitter, type) {
-  if (typeof emitter.listenerCount === 'function') {
-    return emitter.listenerCount(type);
-  } else {
-    return listenerCount.call(emitter, type);
-  }
-};
-
-EventEmitter.prototype.listenerCount = listenerCount;
-function listenerCount(type) {
-  var events = this._events;
-
-  if (events) {
-    var evlistener = events[type];
-
-    if (typeof evlistener === 'function') {
-      return 1;
-    } else if (evlistener) {
-      return evlistener.length;
-    }
-  }
-
-  return 0;
-}
-
-EventEmitter.prototype.eventNames = function eventNames() {
-  return this._eventsCount > 0 ? Reflect.ownKeys(this._events) : [];
-};
-
-// About 1.5x faster than the two-arg version of Array#splice().
-function spliceOne(list, index) {
-  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1)
-    list[i] = list[k];
-  list.pop();
-}
-
-function arrayClone(arr, n) {
-  var copy = new Array(n);
-  for (var i = 0; i < n; ++i)
-    copy[i] = arr[i];
-  return copy;
-}
-
-function unwrapListeners(arr) {
-  var ret = new Array(arr.length);
-  for (var i = 0; i < ret.length; ++i) {
-    ret[i] = arr[i].listener || arr[i];
-  }
-  return ret;
-}
-
-function objectCreatePolyfill(proto) {
-  var F = function() {};
-  F.prototype = proto;
-  return new F;
-}
-function objectKeysPolyfill(obj) {
-  var keys = [];
-  for (var k in obj) if (Object.prototype.hasOwnProperty.call(obj, k)) {
-    keys.push(k);
-  }
-  return k;
-}
-function functionBindPolyfill(context) {
-  var fn = this;
-  return function () {
-    return fn.apply(context, arguments);
-  };
-}
-
-},{}],249:[function(require,module,exports){
-exports.read = function (buffer, offset, isLE, mLen, nBytes) {
-  var e, m
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var nBits = -7
-  var i = isLE ? (nBytes - 1) : 0
-  var d = isLE ? -1 : 1
-  var s = buffer[offset + i]
-
-  i += d
-
-  e = s & ((1 << (-nBits)) - 1)
-  s >>= (-nBits)
-  nBits += eLen
-  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
-
-  m = e & ((1 << (-nBits)) - 1)
-  e >>= (-nBits)
-  nBits += mLen
-  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
-
-  if (e === 0) {
-    e = 1 - eBias
-  } else if (e === eMax) {
-    return m ? NaN : ((s ? -1 : 1) * Infinity)
-  } else {
-    m = m + Math.pow(2, mLen)
-    e = e - eBias
-  }
-  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
-}
-
-exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
-  var e, m, c
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
-  var i = isLE ? 0 : (nBytes - 1)
-  var d = isLE ? 1 : -1
-  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
-
-  value = Math.abs(value)
-
-  if (isNaN(value) || value === Infinity) {
-    m = isNaN(value) ? 1 : 0
-    e = eMax
-  } else {
-    e = Math.floor(Math.log(value) / Math.LN2)
-    if (value * (c = Math.pow(2, -e)) < 1) {
-      e--
-      c *= 2
-    }
-    if (e + eBias >= 1) {
-      value += rt / c
-    } else {
-      value += rt * Math.pow(2, 1 - eBias)
-    }
-    if (value * c >= 2) {
-      e++
-      c /= 2
-    }
-
-    if (e + eBias >= eMax) {
-      m = 0
-      e = eMax
-    } else if (e + eBias >= 1) {
-      m = ((value * c) - 1) * Math.pow(2, mLen)
-      e = e + eBias
-    } else {
-      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
-      e = 0
-    }
-  }
-
-  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
-
-  e = (e << mLen) | m
-  eLen += mLen
-  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
-
-  buffer[offset + i - d] |= s * 128
-}
-
-},{}],250:[function(require,module,exports){
-arguments[4][78][0].apply(exports,arguments)
-},{"dup":78}],251:[function(require,module,exports){
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-// The _isBuffer check is for Safari 5-7 support, because it's missing
-// Object.prototype.constructor. Remove this eventually
-module.exports = function (obj) {
-  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
-}
-
-function isBuffer (obj) {
-  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
-}
-
-// For Node v0.10 support. Remove this eventually.
-function isSlowBuffer (obj) {
-  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
-}
-
-},{}],252:[function(require,module,exports){
+},{"./generated/equivalents.json":233,"./generated/ucum-parser.js":237,"./generated/unitMetadata.json":238,"./lib/helpers.js":239}],241:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -79789,7 +79199,7 @@ function decorateNextFn(fn) {
 module.exports = Kareem;
 
 }).call(this,require('_process'))
-},{"_process":356}],253:[function(require,module,exports){
+},{"_process":358}],242:[function(require,module,exports){
 /**
  * Export lib/mongoose
  *
@@ -79799,7 +79209,7 @@ module.exports = Kareem;
 
 module.exports = require('./lib/browser');
 
-},{"./lib/browser":254}],254:[function(require,module,exports){
+},{"./lib/browser":243}],243:[function(require,module,exports){
 (function (Buffer){
 /* eslint-env browser */
 
@@ -79936,7 +79346,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./document_provider.js":264,"./driver":265,"./drivers/browser":269,"./error":273,"./promise_provider":307,"./schema":309,"./schematype.js":330,"./types":337,"./utils.js":341,"./virtualtype":342,"buffer":103}],255:[function(require,module,exports){
+},{"./document_provider.js":253,"./driver":254,"./drivers/browser":258,"./error":262,"./promise_provider":296,"./schema":298,"./schematype.js":319,"./types":326,"./utils.js":330,"./virtualtype":331,"buffer":353}],244:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -80040,7 +79450,7 @@ utils.each(
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":263,"./error":273,"./helpers/model/applyHooks":292,"./schema":309,"./types/objectid":339,"./utils":341,"events":248}],256:[function(require,module,exports){
+},{"./document":252,"./error":262,"./helpers/model/applyHooks":281,"./schema":298,"./types/objectid":328,"./utils":330,"events":354}],245:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -80381,10 +79791,11 @@ function _cast(val, numbertype, context) {
     }
   }
 }
-},{"./error/strict":282,"./helpers/get":290,"./schema/index":317,"./schema/operators/text":326,"./utils":341,"util":362}],257:[function(require,module,exports){
+},{"./error/strict":271,"./helpers/get":279,"./schema/index":306,"./schema/operators/text":315,"./utils":330,"util":361}],246:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
+>>>>>>> A provider has a list of ids
 
 /*!
  * Given a value, cast it to a boolean, or throw a `CastError` if the value
@@ -80414,7 +79825,7 @@ module.exports = function castBoolean(value, path) {
 module.exports.convertToTrue = new Set([true, 'true', 1, '1', 'yes']);
 module.exports.convertToFalse = new Set([false, 'false', 0, '0', 'no']);
 
-},{"../error/cast":271}],258:[function(require,module,exports){
+},{"../error/cast":260}],247:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -80450,13 +79861,21 @@ module.exports = function castDate(value) {
     date = new Date(value);
   }
 
+<<<<<<< HEAD
+},{}],247:[function(require,module,exports){
+parser = require('./generated/ucum-parser.js');
+equivalents = require('./generated/equivalents.json');
+helpers = require('./lib/helpers.js');
+unitMetadata = require('./generated/unitMetadata.json');
+=======
   if (!isNaN(date.valueOf())) {
     return date;
   }
+>>>>>>> A provider has a list of ids
 
   assert.ok(false);
 };
-},{"assert":77}],259:[function(require,module,exports){
+},{"assert":348}],248:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -80494,8 +79913,8 @@ module.exports = function castDecimal128(value) {
 
   assert.ok(false);
 };
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../types/decimal128":334,"assert":77}],260:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../types/decimal128":323,"assert":348}],249:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -80542,7 +79961,7 @@ module.exports = function castNumber(val) {
   assert.ok(false);
 };
 
-},{"assert":77}],261:[function(require,module,exports){
+},{"assert":348}],250:[function(require,module,exports){
 'use strict';
 
 const ObjectId = require('../driver').get().ObjectId;
@@ -80572,7 +79991,7 @@ module.exports = function castObjectId(value) {
 
   assert.ok(false);
 };
-},{"../driver":265,"assert":77}],262:[function(require,module,exports){
+},{"../driver":254,"assert":348}],251:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -80609,9 +80028,81 @@ module.exports = function castString(value, path) {
   throw new CastError('string', value, path);
 };
 
-},{"../error/cast":271}],263:[function(require,module,exports){
+<<<<<<< HEAD
+// searches the unit metadata for all unit metadata
+// criteria is an object like
+//   { properties: 'area', isMetric: 'yes' }
+// where the key/value pairs form a logical intersection, i.e. all criteria must be met
+// resultFields is an array to pre-reduce the result set fields
+function unitQuery(criteria, resultFields){
+  return Object.keys(unitMetadata).filter((unit) => {
+    var keys = Object.keys(criteria);
+    for(var ii = 0; ii < keys.length; ii++){
+      var key = keys[ii];
+      var val = unitMetadata[unit][key];
+      var value = criteria[key];
+      if(val && (typeof val === 'object')){
+        // it's a list of values, it's a match if the target value occurs in the list
+        if(val.indexOf(value) === -1){
+          return false;
+        }
+      }
+      else{
+        // it's a non-object, make a direct comparison
+        if(unitMetadata[unit][key] !== value){
+          return false;
+        }
+      }
+    }
+    return true;
+  }).map((key) => {
+    var obj = {};
+    if(resultFields){
+      if(resultFields.length) {
+        obj[key] = {};
+        resultFields.forEach((field) => {
+          if (unitMetadata[key][field] !== undefined) {
+            obj[key][field] = JSON.parse(JSON.stringify(unitMetadata[key][field]));
+          }
+        });
+      }
+      else{
+        // just return the keys if an empty array gets passed for resultSet
+        obj = key;
+      }
+    }
+    else{
+      obj[key] = JSON.parse(JSON.stringify(unitMetadata[key]));
+    }
+    return obj;
+  });
+}
+},{"./generated/equivalents.json":240,"./generated/ucum-parser.js":244,"./generated/unitMetadata.json":245,"./lib/helpers.js":246}],248:[function(require,module,exports){
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+=======
+},{"../error/cast":260}],252:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
+>>>>>>> A provider has a list of ids
 
 /*!
  * Module dependencies.
@@ -81233,8 +80724,21 @@ Document.prototype.updateOne = function updateOne(doc, options, callback) {
     return query.exec(callback);
   }
 
+<<<<<<< HEAD
+},{}],249:[function(require,module,exports){
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+=======
   return query;
 };
+>>>>>>> A provider has a list of ids
 
 /**
  * Sends a replaceOne command with this document `_id` as the query selector.
@@ -81333,10 +80837,22 @@ Document.prototype.$set = function $set(path, val, type, options) {
     ? options.strict
     : this.$__.strictMode;
 
+<<<<<<< HEAD
+},{}],250:[function(require,module,exports){
+arguments[4][78][0].apply(exports,arguments)
+},{"dup":78}],251:[function(require,module,exports){
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+=======
   if (adhoc) {
     adhocs = this.$__.adhocPaths || (this.$__.adhocPaths = {});
     adhocs[path] = this.schema.interpretAsType(path, type, this.schema.options);
   }
+>>>>>>> A provider has a list of ids
 
   if (typeof path !== 'string') {
     // new Document({ key: val })
@@ -81358,12 +80874,18 @@ Document.prototype.$set = function $set(path, val, type, options) {
       keys = Object.keys(path);
       const len = keys.length;
 
+<<<<<<< HEAD
+},{}],252:[function(require,module,exports){
+(function (process){
+'use strict';
+=======
       if (len === 0 && !this.schema.options.minimize) {
         if (val) {
           this.$set(val, {});
         }
         return this;
       }
+>>>>>>> A provider has a list of ids
 
       while (i < len) {
         _handleIndex.call(this, i++);
@@ -81749,6 +81271,11 @@ Document.prototype.$__shouldModify = function(pathToMark, path, constructing, pa
   return false;
 };
 
+<<<<<<< HEAD
+}).call(this,require('_process'))
+},{"_process":356}],253:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /**
  * Handles the actual setting of the value and marking the path modified if appropriate.
  *
@@ -81758,8 +81285,20 @@ Document.prototype.$__shouldModify = function(pathToMark, path, constructing, pa
  * @instance
  */
 
+<<<<<<< HEAD
+'use strict';
+
+module.exports = require('./lib/browser');
+
+},{"./lib/browser":254}],254:[function(require,module,exports){
+(function (Buffer){
+/* eslint-env browser */
+
+'use strict';
+=======
 Document.prototype.$__set = function(pathToMark, path, constructing, parts, schema, val, priorVal) {
   Embedded = Embedded || require('./types/embedded');
+>>>>>>> A provider has a list of ids
 
   const shouldModify = this.$__shouldModify(pathToMark, path, constructing, parts,
     schema, val, priorVal);
@@ -81865,6 +81404,48 @@ Document.prototype.setValue = function(path, val) {
  * @param {Schema|String|Number|Buffer|*} [type] optionally specify a type for on-the-fly attributes
  * @api public
  */
+<<<<<<< HEAD
+exports.Document = DocumentProvider();
+
+/*!
+ * Module exports.
+ */
+
+if (typeof window !== 'undefined') {
+  window.mongoose = module.exports;
+  window.Buffer = Buffer;
+}
+
+}).call(this,require("buffer").Buffer)
+},{"./document_provider.js":264,"./driver":265,"./drivers/browser":269,"./error":273,"./promise_provider":307,"./schema":309,"./schematype.js":330,"./types":337,"./utils.js":341,"./virtualtype":342,"buffer":103}],255:[function(require,module,exports){
+/*!
+ * Module dependencies.
+ */
+
+'use strict';
+
+const NodeJSDocument = require('./document');
+const EventEmitter = require('events').EventEmitter;
+const MongooseError = require('./error');
+const Schema = require('./schema');
+const ObjectId = require('./types/objectid');
+const ValidationError = MongooseError.ValidationError;
+const applyHooks = require('./helpers/model/applyHooks');
+const utils = require('./utils');
+
+/**
+ * Document constructor.
+ *
+ * @param {Object} obj the values to set
+ * @param {Object} [fields] optional object containing the fields which were selected in the query returning this document and any populated paths data
+ * @param {Boolean} [skipId] bool, should we auto create an ObjectId _id
+ * @inherits NodeJS EventEmitter http://nodejs.org/api/events.html#events_class_events_eventemitter
+ * @event `init`: Emitted on a document after it has was retrieved from the db and fully hydrated by Mongoose.
+ * @event `save`: Emitted when the document is successfully saved
+ * @api private
+ */
+=======
+>>>>>>> A provider has a list of ids
 
 Document.prototype.get = function(path, type, options) {
   let adhoc;
@@ -81956,12 +81537,20 @@ Document.prototype.$__path = function(path) {
  * @api public
  */
 
+<<<<<<< HEAD
+Document.ValidationError = ValidationError;
+module.exports = exports = Document;
+
+},{"./document":263,"./error":273,"./helpers/model/applyHooks":292,"./schema":309,"./types/objectid":339,"./utils":341,"events":248}],256:[function(require,module,exports){
+'use strict';
+=======
 Document.prototype.markModified = function(path, scope) {
   this.$__.activePaths.modify(path);
   if (scope != null && !this.ownerDocument) {
     this.$__.pathsToScopes[path] = scope;
   }
 };
+>>>>>>> A provider has a list of ids
 
 /**
  * Clears the modified state on the specified path.
@@ -82143,6 +81732,12 @@ Document.prototype.$isDeleted = function(val) {
   if (arguments.length === 0) {
     return !!this.$__.isDeleted;
   }
+<<<<<<< HEAD
+}
+},{"./error/strict":282,"./helpers/get":290,"./schema/index":317,"./schema/operators/text":326,"./utils":341,"util":362}],257:[function(require,module,exports){
+'use strict';
+=======
+>>>>>>> A provider has a list of ids
 
   this.$__.isDeleted = !!val;
   return this;
@@ -82193,11 +81788,16 @@ Document.prototype.isInit = function(path) {
  * @api public
  */
 
+<<<<<<< HEAD
+},{"../error/cast":271}],258:[function(require,module,exports){
+'use strict';
+=======
 Document.prototype.isSelected = function isSelected(path) {
   if (this.$__.selected) {
     if (path === '_id') {
       return this.$__.selected._id !== 0;
     }
+>>>>>>> A provider has a list of ids
 
     const paths = Object.keys(this.$__.selected);
     let i = paths.length;
@@ -82252,6 +81852,12 @@ Document.prototype.isSelected = function isSelected(path) {
 
   return true;
 };
+<<<<<<< HEAD
+},{"assert":77}],259:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
+>>>>>>> A provider has a list of ids
 
 /**
  * Checks if `path` was explicitly selected. If no projection, always returns
@@ -82311,6 +81917,12 @@ Document.prototype.isDirectSelected = function isDirectSelected(path) {
 
   return true;
 };
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
+},{"../../../is-buffer/index.js":251,"../types/decimal128":334,"assert":77}],260:[function(require,module,exports){
+'use strict';
+=======
+>>>>>>> A provider has a list of ids
 
 /**
  * Executes registered validation rules for this document.
@@ -82368,6 +81980,10 @@ function _getPathsToValidate(doc) {
 
   _evaluateRequiredFunctions(doc);
 
+<<<<<<< HEAD
+},{"assert":77}],261:[function(require,module,exports){
+'use strict';
+=======
   // only validate required fields when necessary
   let paths = Object.keys(doc.$__.activePaths.states.require).filter(function(path) {
     if (!doc.isSelected(path) && !doc.isModified(path)) {
@@ -82378,6 +81994,7 @@ function _getPathsToValidate(doc) {
     }
     return true;
   });
+>>>>>>> A provider has a list of ids
 
   paths = paths.concat(Object.keys(doc.$__.activePaths.states.init));
   paths = paths.concat(Object.keys(doc.$__.activePaths.states.modify));
@@ -82446,6 +82063,12 @@ function _getPathsToValidate(doc) {
     }
   }
 
+<<<<<<< HEAD
+  assert.ok(false);
+};
+},{"../driver":265,"assert":77}],262:[function(require,module,exports){
+'use strict';
+=======
   len = paths.length;
   for (i = 0; i < len; ++i) {
     const path = paths[i];
@@ -82453,6 +82076,7 @@ function _getPathsToValidate(doc) {
     if (!_pathType || !_pathType.$isSchemaMap) {
       continue;
     }
+>>>>>>> A provider has a list of ids
 
     const val = doc.getValue(path);
     if (val == null) {
@@ -82525,8 +82149,14 @@ Document.prototype.$__validate = function(callback) {
       return;
     }
 
+<<<<<<< HEAD
+},{"../error/cast":271}],263:[function(require,module,exports){
+(function (Buffer,process){
+'use strict';
+=======
     validated[path] = true;
     total++;
+>>>>>>> A provider has a list of ids
 
     process.nextTick(function() {
       const p = _this.schema.path(path);
@@ -83792,8 +83422,8 @@ Document.prototype.$__fullPath = function(path) {
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":251,"./error":273,"./error/objectExpected":278,"./error/objectParameter":279,"./error/strict":282,"./helpers/common":286,"./helpers/document/cleanModifiedSubpaths":287,"./helpers/document/compile":288,"./helpers/document/getEmbeddedDiscriminatorPath":289,"./helpers/get":290,"./helpers/projection/isDefiningProjection":295,"./helpers/projection/isExclusive":296,"./helpers/symbols":301,"./internal":304,"./options":305,"./plugins/idGetter":306,"./schema/mixed":319,"./schematype":330,"./types/array":332,"./types/documentarray":335,"./types/embedded":336,"./utils":341,"./virtualtype":342,"_process":356,"events":248,"mpath":344,"util":362}],264:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")},require('_process'))
+},{"../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"./error":262,"./error/objectExpected":267,"./error/objectParameter":268,"./error/strict":271,"./helpers/common":275,"./helpers/document/cleanModifiedSubpaths":276,"./helpers/document/compile":277,"./helpers/document/getEmbeddedDiscriminatorPath":278,"./helpers/get":279,"./helpers/projection/isDefiningProjection":284,"./helpers/projection/isExclusive":285,"./helpers/symbols":290,"./internal":293,"./options":294,"./plugins/idGetter":295,"./schema/mixed":308,"./schematype":319,"./types/array":321,"./types/documentarray":324,"./types/embedded":325,"./utils":330,"./virtualtype":331,"_process":358,"events":354,"mpath":333,"util":361}],253:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -83825,7 +83455,7 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":255,"./document.js":263}],265:[function(require,module,exports){
+},{"./browserDocument.js":244,"./document.js":252}],254:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -83842,7 +83472,7 @@ module.exports.set = function(v) {
   driver = v;
 };
 
-},{}],266:[function(require,module,exports){
+},{}],255:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -83851,7 +83481,7 @@ module.exports.set = function(v) {
 
 module.exports = function() {};
 
-},{}],267:[function(require,module,exports){
+},{}],256:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -83867,7 +83497,7 @@ const Binary = require('bson').Binary;
 
 module.exports = exports = Binary;
 
-},{"bson":84}],268:[function(require,module,exports){
+},{"bson":78}],257:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -83876,7 +83506,7 @@ module.exports = exports = Binary;
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":84}],269:[function(require,module,exports){
+},{"bson":78}],258:[function(require,module,exports){
 /*!
  * Module exports.
  */
@@ -83891,7 +83521,7 @@ exports.Decimal128 = require('./decimal128');
 exports.ObjectId = require('./objectid');
 exports.ReadPreference = require('./ReadPreference');
 
-},{"./ReadPreference":266,"./binary":267,"./decimal128":268,"./objectid":270}],270:[function(require,module,exports){
+},{"./ReadPreference":255,"./binary":256,"./decimal128":257,"./objectid":259}],259:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -83921,7 +83551,7 @@ Object.defineProperty(ObjectId.prototype, '_id', {
 
 module.exports = exports = ObjectId;
 
-},{"bson":84}],271:[function(require,module,exports){
+},{"bson":78}],260:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -83985,7 +83615,7 @@ CastError.prototype.setModel = function(model) {
 
 module.exports = CastError;
 
-},{"./mongooseError":276,"util":362}],272:[function(require,module,exports){
+},{"./mongooseError":265,"util":361}],261:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -84035,7 +83665,7 @@ DivergentArrayError.prototype.constructor = MongooseError;
 
 module.exports = DivergentArrayError;
 
-},{"./":273}],273:[function(require,module,exports){
+},{"./":262}],262:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('./mongooseError');
@@ -84143,7 +83773,7 @@ MongooseError.MissingSchemaError = require('./missingSchema');
 
 MongooseError.DivergentArrayError = require('./divergentArray');
 
-},{"./cast":271,"./divergentArray":272,"./messages":274,"./missingSchema":275,"./mongooseError":276,"./notFound":277,"./overwriteModel":280,"./parallelSave":281,"./validation":283,"./validator":284,"./version":285}],274:[function(require,module,exports){
+},{"./cast":260,"./divergentArray":261,"./messages":263,"./missingSchema":264,"./mongooseError":265,"./notFound":266,"./overwriteModel":269,"./parallelSave":270,"./validation":272,"./validator":273,"./version":274}],263:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -84191,7 +83821,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],275:[function(require,module,exports){
+},{}],264:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -84232,7 +83862,7 @@ MissingSchemaError.prototype.constructor = MongooseError;
 
 module.exports = MissingSchemaError;
 
-},{"./":273}],276:[function(require,module,exports){
+},{"./":262}],265:[function(require,module,exports){
 'use strict';
 
 /**
@@ -84289,7 +83919,7 @@ MongooseError.prototype.constructor = Error;
 
 module.exports = MongooseError;
 
-},{}],277:[function(require,module,exports){
+},{}],266:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84343,7 +83973,7 @@ DocumentNotFoundError.prototype.constructor = MongooseError;
 
 module.exports = DocumentNotFoundError;
 
-},{"./":273,"util":362}],278:[function(require,module,exports){
+},{"./":262,"util":361}],267:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -84382,7 +84012,7 @@ ObjectExpectedError.prototype.constructor = MongooseError;
 
 module.exports = ObjectExpectedError;
 
-},{"./":273}],279:[function(require,module,exports){
+},{"./":262}],268:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -84422,7 +84052,7 @@ ObjectParameterError.prototype.constructor = MongooseError;
 
 module.exports = ObjectParameterError;
 
-},{"./":273}],280:[function(require,module,exports){
+},{"./":262}],269:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -84461,7 +84091,7 @@ OverwriteModelError.prototype.constructor = MongooseError;
 
 module.exports = OverwriteModelError;
 
-},{"./":273}],281:[function(require,module,exports){
+},{"./":262}],270:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84496,7 +84126,7 @@ ParallelSaveError.prototype.constructor = MongooseError;
 
 module.exports = ParallelSaveError;
 
-},{"./":273}],282:[function(require,module,exports){
+},{"./":262}],271:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -84536,7 +84166,7 @@ StrictModeError.prototype.constructor = MongooseError;
 
 module.exports = StrictModeError;
 
-},{"./":273}],283:[function(require,module,exports){
+},{"./":262}],272:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -84650,7 +84280,7 @@ function _generateMessage(err) {
 
 module.exports = exports = ValidationError;
 
-},{"./":273,"util":362}],284:[function(require,module,exports){
+},{"./":262,"util":361}],273:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -84741,7 +84371,7 @@ ValidatorError.prototype.toString = function() {
 
 module.exports = ValidatorError;
 
-},{"./":273}],285:[function(require,module,exports){
+},{"./":262}],274:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84779,7 +84409,7 @@ VersionError.prototype.constructor = MongooseError;
 
 module.exports = VersionError;
 
-},{"./":273}],286:[function(require,module,exports){
+},{"./":262}],275:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -84870,7 +84500,7 @@ function shouldFlatten(val) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"../types/objectid":339,"../utils":341,"buffer":103}],287:[function(require,module,exports){
+},{"../types/objectid":328,"../utils":330,"buffer":353}],276:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84897,7 +84527,7 @@ module.exports = function cleanModifiedSubpaths(doc, path, options) {
   return deleted;
 };
 
-},{}],288:[function(require,module,exports){
+},{}],277:[function(require,module,exports){
 'use strict';
 
 const get = require('../../helpers/get');
@@ -85046,7 +84676,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":263,"../../helpers/get":290,"../../helpers/symbols":301,"../../utils":341}],289:[function(require,module,exports){
+},{"../../document":252,"../../helpers/get":279,"../../helpers/symbols":290,"../../utils":330}],278:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -85091,7 +84721,7 @@ module.exports = function getEmbeddedDiscriminatorPath(doc, path, options) {
   return typeOnly ? type : schema;
 };
 
-},{"../get":290}],290:[function(require,module,exports){
+},{"../get":279}],279:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85131,7 +84761,7 @@ function getProperty(obj, prop) {
   }
   return obj[prop];
 }
-},{}],291:[function(require,module,exports){
+},{}],280:[function(require,module,exports){
 (function (process){
 /*!
  * Centralize this so we can more easily work around issues with people
@@ -85146,8 +84776,13 @@ module.exports = function immediate(cb) {
   return process.nextTick(cb);
 };
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
+},{"../../is-buffer/index.js":251,"./error":273,"./error/objectExpected":278,"./error/objectParameter":279,"./error/strict":282,"./helpers/common":286,"./helpers/document/cleanModifiedSubpaths":287,"./helpers/document/compile":288,"./helpers/document/getEmbeddedDiscriminatorPath":289,"./helpers/get":290,"./helpers/projection/isDefiningProjection":295,"./helpers/projection/isExclusive":296,"./helpers/symbols":301,"./internal":304,"./options":305,"./plugins/idGetter":306,"./schema/mixed":319,"./schematype":330,"./types/array":332,"./types/documentarray":335,"./types/embedded":336,"./utils":341,"./virtualtype":342,"_process":356,"events":248,"mpath":344,"util":362}],264:[function(require,module,exports){
+=======
 }).call(this,require('_process'))
-},{"_process":356}],292:[function(require,module,exports){
+},{"_process":358}],281:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 'use strict';
 
 const symbols = require('../../schema/symbols');
@@ -85163,6 +84798,10 @@ module.exports = applyHooks;
  * ignore
  */
 
+<<<<<<< HEAD
+},{"./browserDocument.js":255,"./document.js":263}],265:[function(require,module,exports){
+'use strict';
+=======
 applyHooks.middlewareFunctions = [
   'save',
   'validate',
@@ -85170,6 +84809,7 @@ applyHooks.middlewareFunctions = [
   'updateOne',
   'init'
 ];
+>>>>>>> A provider has a list of ids
 
 /*!
  * Register hooks for this model
@@ -85205,9 +84845,16 @@ function applyHooks(model, schema, options) {
     }
   }
 
+<<<<<<< HEAD
+},{}],266:[function(require,module,exports){
+/*!
+ * ignore
+ */
+=======
   // Built-in hooks rely on hooking internal functions in order to support
   // promises and make it so that `doc.save.toString()` provides meaningful
   // information.
+>>>>>>> A provider has a list of ids
 
   const middleware = schema.s.hooks.
     filter(hook => {
@@ -85228,7 +84875,11 @@ function applyHooks(model, schema, options) {
       return true;
     });
 
+<<<<<<< HEAD
+},{}],267:[function(require,module,exports){
+=======
   model._middleware = middleware;
+>>>>>>> A provider has a list of ids
 
   objToDecorate.$__save = middleware.
     createWrapper('save', objToDecorate.$__save, null, kareemOptions);
@@ -85271,7 +84922,7 @@ function applyHooks(model, schema, options) {
   }
 }
 
-},{"../../schema/symbols":329,"../../utils":341}],293:[function(require,module,exports){
+},{"../../schema/symbols":318,"../../utils":330}],282:[function(require,module,exports){
 'use strict';
 
 const defineKey = require('../document/compile').defineKey;
@@ -85285,6 +84936,10 @@ const CUSTOMIZABLE_DISCRIMINATOR_OPTIONS = {
   id: true
 };
 
+<<<<<<< HEAD
+},{"bson":84}],268:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /*!
  * ignore
  */
@@ -85300,6 +84955,12 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
         '" can only be a discriminator of the root model');
   }
 
+<<<<<<< HEAD
+},{"bson":84}],269:[function(require,module,exports){
+/*!
+ * Module exports.
+ */
+=======
   if (applyPlugins) {
     const applyPluginsToDiscriminators = get(model.base,
       'options.applyPluginsToDiscriminators', false);
@@ -85309,6 +84970,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
       skipTopLevel: !applyPluginsToDiscriminators
     });
   }
+>>>>>>> A provider has a list of ids
 
   const key = model.schema.options.discriminatorKey;
 
@@ -85322,10 +84984,14 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   model.schema.add(baseSchemaAddition);
   defineKey(key, null, model.prototype, null, [key], model.schema.options);
 
+<<<<<<< HEAD
+},{"./ReadPreference":266,"./binary":267,"./decimal128":268,"./objectid":270}],270:[function(require,module,exports){
+=======
   if (schema.path(key) && schema.path(key).options.$skipDiscriminatorCheck !== true) {
     throw new Error('Discriminator "' + name +
         '" cannot have field with name "' + key + '"');
   }
+>>>>>>> A provider has a list of ids
 
   let value = name;
   if (typeof tiedValue == 'string' && tiedValue.length) {
@@ -85388,10 +85054,15 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
       schema.options.collection = baseSchema.options.collection;
     }
 
+<<<<<<< HEAD
+},{"bson":84}],271:[function(require,module,exports){
+'use strict';
+=======
     const toJSON = schema.options.toJSON;
     const toObject = schema.options.toObject;
     const _id = schema.options._id;
     const id = schema.options.id;
+>>>>>>> A provider has a list of ids
 
     const keys = Object.keys(schema.options);
     schema.options.discriminatorKey = baseSchema.options.discriminatorKey;
@@ -85445,7 +85116,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   return schema;
 };
 
-},{"../../utils":341,"../document/compile":288,"../get":290}],294:[function(require,module,exports){
+},{"../../utils":330,"../document/compile":277,"../get":279}],283:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('../../error/mongooseError');
@@ -85462,11 +85133,15 @@ function validateRef(ref, path) {
     return;
   }
 
+<<<<<<< HEAD
+},{"./mongooseError":276,"util":362}],272:[function(require,module,exports){
+=======
   throw new MongooseError('Invalid ref at path "' + path + '". Got ' +
     util.inspect(ref, { depth: 0 }));
 }
-},{"../../error/mongooseError":276,"util":362}],295:[function(require,module,exports){
+},{"../../error/mongooseError":265,"util":361}],284:[function(require,module,exports){
 'use strict';
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -85485,7 +85160,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],296:[function(require,module,exports){
+},{}],285:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -85515,14 +85190,23 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"./isDefiningProjection":295}],297:[function(require,module,exports){
+},{"./isDefiningProjection":284}],286:[function(require,module,exports){
 'use strict';
 
 /*!
  * ignore
  */
 
+<<<<<<< HEAD
+module.exports = DivergentArrayError;
+
+},{"./":273}],273:[function(require,module,exports){
+'use strict';
+
+const MongooseError = require('./mongooseError');
+=======
 module.exports = applyQueryMiddleware;
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -85583,7 +85267,7 @@ function applyQueryMiddleware(Query, model) {
     });
 }
 
-},{}],298:[function(require,module,exports){
+},{}],287:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -85661,9 +85345,13 @@ module.exports = function getIndexes(schema) {
           options.background = true;
         }
 
+<<<<<<< HEAD
+},{"./cast":271,"./divergentArray":272,"./messages":274,"./missingSchema":275,"./mongooseError":276,"./notFound":277,"./overwriteModel":280,"./parallelSave":281,"./validation":283,"./validator":284,"./version":285}],274:[function(require,module,exports){
+=======
         indexes.push([field, options]);
       }
     }
+>>>>>>> A provider has a list of ids
 
     schemaStack.delete(schema);
 
@@ -85709,10 +85397,14 @@ module.exports = function getIndexes(schema) {
   }
 };
 
-},{"../../utils":341,"../get":290}],299:[function(require,module,exports){
+},{"../../utils":330,"../get":279}],288:[function(require,module,exports){
 'use strict';
 
+<<<<<<< HEAD
+},{}],275:[function(require,module,exports){
+=======
 module.exports = handleTimestampOption;
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -85734,7 +85426,7 @@ function handleTimestampOption(arg, prop) {
   }
   return arg[prop];
 }
-},{}],300:[function(require,module,exports){
+},{}],289:[function(require,module,exports){
 'use strict';
 
 module.exports = function merge(s1, s2) {
@@ -85754,19 +85446,23 @@ module.exports = function merge(s1, s2) {
 
   s1.s.hooks.merge(s2.s.hooks, false);
 };
-},{}],301:[function(require,module,exports){
+},{}],290:[function(require,module,exports){
 'use strict';
 
 exports.validatorErrorSymbol = Symbol.for('mongoose:validatorError');
 
 exports.documentArrayParent = Symbol.for('mongoose:documentArrayParent');
 
+<<<<<<< HEAD
+},{"./":273}],276:[function(require,module,exports){
+=======
 exports.modelSymbol = Symbol.for('mongoose#Model');
 
 exports.getSymbol = Symbol.for('mongoose#Document#get');
 
 exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
-},{}],302:[function(require,module,exports){
+},{}],291:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 'use strict';
 
 const handleTimestampOption = require('../schema/handleTimestampOption');
@@ -85791,6 +85487,10 @@ function applyTimestampsToChildren(now, update, schema) {
 
   const hasDollarKey = keys.length && keys[0].charAt(0) === '$';
 
+<<<<<<< HEAD
+},{}],277:[function(require,module,exports){
+'use strict';
+=======
   if (hasDollarKey) {
     if (update.$push) {
       for (key in update.$push) {
@@ -85839,6 +85539,7 @@ function applyTimestampsToChildren(now, update, schema) {
           applyTimestampsToSingleNested(update.$set[key], path, now);
         } else if (path.$parentSchema !== schema && path.$parentSchema != null) {
           const parentPath = path.$parentSchema.$schemaType;
+>>>>>>> A provider has a list of ids
 
           if (parentPath == null) {
             continue;
@@ -85907,9 +85608,16 @@ function applyTimestampsToChildren(now, update, schema) {
 function applyTimestampsToDocumentArray(arr, schematype, now) {
   const timestamps = schematype.schema.options.timestamps;
 
+<<<<<<< HEAD
+},{"./":273,"util":362}],278:[function(require,module,exports){
+/*!
+ * Module dependencies.
+ */
+=======
   if (!timestamps) {
     return;
   }
+>>>>>>> A provider has a list of ids
 
   const len = arr.length;
 
@@ -85940,7 +85648,7 @@ function applyTimestampsToSingleNested(subdoc, schematype, now) {
     subdoc[createdAt] = now;
   }
 }
-},{"../schema/handleTimestampOption":299}],303:[function(require,module,exports){
+},{"../schema/handleTimestampOption":288}],292:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85951,6 +85659,10 @@ const get = require('../get');
 
 module.exports = applyTimestampsToUpdate;
 
+<<<<<<< HEAD
+},{"./":273}],279:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /*!
  * ignore
  */
@@ -86004,10 +85716,14 @@ function applyTimestampsToUpdate(now, createdAt, updatedAt, currentUpdate, optio
     delete updates.$set;
   }
 
+<<<<<<< HEAD
+},{"./":273}],280:[function(require,module,exports){
+=======
   return updates;
 }
+>>>>>>> A provider has a list of ids
 
-},{"../get":290}],304:[function(require,module,exports){
+},{"../get":279}],293:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -86046,7 +85762,7 @@ function InternalCache() {
   this.fullPath = undefined;
 }
 
-},{"./statemachine":331}],305:[function(require,module,exports){
+},{"./statemachine":320}],294:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -86062,7 +85778,11 @@ exports.internalToObjectOptions = {
   flattenDecimals: false
 };
 
-},{}],306:[function(require,module,exports){
+<<<<<<< HEAD
+},{"./":273}],281:[function(require,module,exports){
+=======
+},{}],295:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 'use strict';
 
 /*!
@@ -86092,7 +85812,7 @@ function idGetter() {
   return null;
 }
 
-},{}],307:[function(require,module,exports){
+},{}],296:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -86113,10 +85833,16 @@ const store = {
   _promise: null
 };
 
+<<<<<<< HEAD
+},{"./":273}],282:[function(require,module,exports){
+/*!
+ * Module dependencies.
+=======
 /**
  * Get the current promise constructor
  *
  * @api private
+>>>>>>> A provider has a list of ids
  */
 
 store.get = function() {
@@ -86145,9 +85871,13 @@ store.set(global.Promise);
 module.exports = store;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"assert":77,"mquery":350}],308:[function(require,module,exports){
+},{"assert":348,"mquery":339}],297:[function(require,module,exports){
 'use strict';
 
+<<<<<<< HEAD
+},{"./":273}],283:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /*!
  * Module dependencies
  */
@@ -86326,7 +86056,14 @@ exports.applyPaths = function applyPaths(fields, schema) {
       delete fields[plusPath];
     }
 
+<<<<<<< HEAD
+},{"./":273,"util":362}],284:[function(require,module,exports){
+/*!
+ * Module dependencies.
+ */
+=======
     if (typeof type.selected !== 'boolean') return;
+>>>>>>> A provider has a list of ids
 
     if (hasPlusPath) {
       // forced inclusion
@@ -86454,8 +86191,12 @@ exports.handleDeleteWriteOpResult = function handleDeleteWriteOpResult(callback)
   };
 };
 
-},{"./helpers/get":290,"./helpers/projection/isDefiningProjection":295,"./utils":341}],309:[function(require,module,exports){
+<<<<<<< HEAD
+},{"./":273}],285:[function(require,module,exports){
+=======
+},{"./helpers/get":279,"./helpers/projection/isDefiningProjection":284,"./utils":330}],298:[function(require,module,exports){
 (function (Buffer){
+>>>>>>> A provider has a list of ids
 'use strict';
 
 /*!
@@ -86575,8 +86316,14 @@ function Schema(obj, options) {
     this.add(obj);
   }
 
+<<<<<<< HEAD
+},{"./":273}],286:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
   // check if _id's value is a subdocument (gh-2276)
   const _idSubDoc = obj && obj._id && utils.isObject(obj._id);
+>>>>>>> A provider has a list of ids
 
   // ensure the documents get an auto _id unless disabled
   const auto_id = !this.paths['_id'] &&
@@ -86686,6 +86433,11 @@ Object.defineProperty(Schema.prototype, 'childSchemas', {
 
 Schema.prototype.obj;
 
+<<<<<<< HEAD
+}).call(this,require("buffer").Buffer)
+},{"../types/objectid":339,"../utils":341,"buffer":103}],287:[function(require,module,exports){
+'use strict';
+=======
 /**
  * Schema as flat paths
  *
@@ -86700,6 +86452,7 @@ Schema.prototype.obj;
  * @memberOf Schema
  * @instance
  */
+>>>>>>> A provider has a list of ids
 
 Schema.prototype.paths;
 
@@ -86738,6 +86491,10 @@ Schema.prototype.tree;
  * @instance
  */
 
+<<<<<<< HEAD
+},{}],288:[function(require,module,exports){
+'use strict';
+=======
 Schema.prototype.clone = function() {
   const s = new Schema({}, this._userProvidedOptions);
   s.base = this.base;
@@ -86754,6 +86511,7 @@ Schema.prototype.clone = function() {
   s._originalSchema = this._originalSchema == null ?
     this._originalSchema :
     this._originalSchema.clone();
+>>>>>>> A provider has a list of ids
 
   s.tree = utils.clone(this.tree);
   s.paths = utils.clone(this.paths);
@@ -86898,6 +86656,10 @@ Schema.prototype.add = function add(obj, prefix) {
   return this;
 };
 
+<<<<<<< HEAD
+},{"../../document":263,"../../helpers/get":290,"../../helpers/symbols":301,"../../utils":341}],289:[function(require,module,exports){
+'use strict';
+=======
 /**
  * Reserved document keys.
  *
@@ -86910,6 +86672,7 @@ Schema.prototype.add = function add(obj, prefix) {
  *      var schema = new Schema(..);
  *      schema.methods.init = function () {} // potentially breaking
  */
+>>>>>>> A provider has a list of ids
 
 Schema.reserved = Object.create(null);
 Schema.prototype.reserved = Schema.reserved;
@@ -86998,9 +86761,14 @@ Schema.prototype.path = function(path, obj) {
     throw new Error('`' + path + '` may not be used as a schema pathname');
   }
 
+<<<<<<< HEAD
+},{"../get":290}],290:[function(require,module,exports){
+'use strict';
+=======
   if (warnings[path]) {
     console.log('WARN: ' + warnings[path]);
   }
+>>>>>>> A provider has a list of ids
 
   if (typeof obj === 'object' && 'ref' in obj) {
     validateRef(obj.ref, path);
@@ -87040,6 +86808,21 @@ Schema.prototype.path = function(path, obj) {
       obj.of || { type: {} }, this.options);
     schemaType.$__schemaType = this.paths[path + '.$*'];
   }
+<<<<<<< HEAD
+  return obj[prop];
+}
+},{}],291:[function(require,module,exports){
+(function (process){
+/*!
+ * Centralize this so we can more easily work around issues with people
+ * stubbing out `process.nextTick()` in tests using sinon:
+ * https://github.com/sinonjs/lolex#automatically-incrementing-mocked-time
+ * See gh-6074
+ */
+
+'use strict';
+=======
+>>>>>>> A provider has a list of ids
 
   if (schemaType.$isSingleNested) {
     for (const key in schemaType.schema.paths) {
@@ -87050,12 +86833,18 @@ Schema.prototype.path = function(path, obj) {
         schemaType.schema.singleNestedPaths[key];
     }
 
+<<<<<<< HEAD
+}).call(this,require('_process'))
+},{"_process":356}],292:[function(require,module,exports){
+'use strict';
+=======
     Object.defineProperty(schemaType.schema, 'base', {
       configurable: true,
       enumerable: false,
       writable: false,
       value: this.base
     });
+>>>>>>> A provider has a list of ids
 
     schemaType.caster.base = this.base;
     this.childSchemas.push({
@@ -87151,6 +86940,10 @@ Schema.prototype.interpretAsType = function(path, obj, options) {
       return new MongooseTypes.Array(path, this.interpretAsType(path, cast, options), obj);
     }
 
+<<<<<<< HEAD
+},{"../../schema/symbols":329,"../../utils":341}],293:[function(require,module,exports){
+'use strict';
+=======
     if (typeof cast === 'string') {
       cast = MongooseTypes[cast.charAt(0).toUpperCase() + cast.substring(1)];
     } else if (cast && (!cast[options.typeKey] || (options.typeKey === 'type' && cast.type.type))
@@ -87175,6 +86968,7 @@ Schema.prototype.interpretAsType = function(path, obj, options) {
         return new MongooseTypes.Array(path, MongooseTypes.Mixed, obj);
       }
     }
+>>>>>>> A provider has a list of ids
 
     if (cast) {
       type = cast[options.typeKey] && (options.typeKey !== 'type' || !cast.type.type)
@@ -87358,6 +87152,10 @@ Schema.prototype.pathType = function(path) {
   return 'adhocOrUndefined';
 };
 
+<<<<<<< HEAD
+},{"../../utils":341,"../document/compile":288,"../get":290}],294:[function(require,module,exports){
+'use strict';
+=======
 /**
  * Returns true iff this path is a child of a mixed schema.
  *
@@ -87365,6 +87163,7 @@ Schema.prototype.pathType = function(path) {
  * @return {Boolean}
  * @api private
  */
+>>>>>>> A provider has a list of ids
 
 Schema.prototype.hasMixedParent = function(path) {
   const subpaths = path.split(/\./g);
@@ -87398,9 +87197,17 @@ Schema.prototype.setupTimestamp = function(timestamps) {
     return;
   }
 
+<<<<<<< HEAD
+  throw new MongooseError('Invalid ref at path "' + path + '". Got ' +
+    util.inspect(ref, { depth: 0 }));
+}
+},{"../../error/mongooseError":276,"util":362}],295:[function(require,module,exports){
+'use strict';
+=======
   const createdAt = handleTimestampOption(timestamps, 'createdAt');
   const updatedAt = handleTimestampOption(timestamps, 'updatedAt');
   const schemaAdditions = {};
+>>>>>>> A provider has a list of ids
 
   this.$timestamps = { createdAt: createdAt, updatedAt: updatedAt };
 
@@ -87412,7 +87219,12 @@ Schema.prototype.setupTimestamp = function(timestamps) {
     schemaAdditions[createdAt] = Date;
   }
 
+<<<<<<< HEAD
+},{}],296:[function(require,module,exports){
+'use strict';
+=======
   this.add(schemaAdditions);
+>>>>>>> A provider has a list of ids
 
   this.pre('save', function(next) {
     if (get(this, '$__.saveOptions.timestamps') === false) {
@@ -87454,6 +87266,10 @@ Schema.prototype.setupTimestamp = function(timestamps) {
 
   _setTimestampsOnUpdate[symbols.builtInMiddleware] = true;
 
+<<<<<<< HEAD
+},{"./isDefiningProjection":295}],297:[function(require,module,exports){
+'use strict';
+=======
   this.pre('findOneAndUpdate', _setTimestampsOnUpdate);
   this.pre('replaceOne', _setTimestampsOnUpdate);
   this.pre('update', _setTimestampsOnUpdate);
@@ -87468,6 +87284,7 @@ Schema.prototype.setupTimestamp = function(timestamps) {
     next();
   }
 };
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -87537,6 +87354,14 @@ function getPositionalPathType(self, path) {
   return 'adhocOrUndefined';
 }
 
+<<<<<<< HEAD
+},{}],298:[function(require,module,exports){
+'use strict';
+
+const get = require('../get');
+const utils = require('../../utils');
+=======
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -87779,6 +87604,10 @@ Schema.prototype.static = function(name, fn) {
   return this;
 };
 
+<<<<<<< HEAD
+},{"../../utils":341,"../get":290}],299:[function(require,module,exports){
+'use strict';
+=======
 /**
  * Defines an index (most likely compound) for this schema.
  *
@@ -87791,6 +87620,7 @@ Schema.prototype.static = function(name, fn) {
  * @param {String} [options.expires=null] Mongoose-specific syntactic sugar, uses [ms](https://www.npmjs.com/package/ms) to convert `expires` option into seconds for the `expireAfterSeconds` in the above link.
  * @api public
  */
+>>>>>>> A provider has a list of ids
 
 Schema.prototype.index = function(fields, options) {
   fields || (fields = {});
@@ -87843,6 +87673,16 @@ Schema.prototype.set = function(key, value, _tags) {
       this._userProvidedOptions[key] = this.options[key];
       break;
   }
+<<<<<<< HEAD
+  return arg[prop];
+}
+},{}],300:[function(require,module,exports){
+'use strict';
+
+module.exports = function merge(s1, s2) {
+  s1.add(s2.obj);
+=======
+>>>>>>> A provider has a list of ids
 
   return this;
 };
@@ -87855,11 +87695,18 @@ const safeDeprecationWarning = 'Mongoose: The `safe` option for schemas is ' +
   'deprecated. Use the `writeConcern` option instead: ' +
   'http://bit.ly/mongoose-write-concern';
 
+<<<<<<< HEAD
+  s1.s.hooks.merge(s2.s.hooks, false);
+};
+},{}],301:[function(require,module,exports){
+'use strict';
+=======
 const setSafe = util.deprecate(function setSafe(options, value) {
   options.safe = value === false ?
     {w: 0} :
     value;
 }, safeDeprecationWarning);
+>>>>>>> A provider has a list of ids
 
 /**
  * Gets a schema option.
@@ -87889,6 +87736,11 @@ Schema.prototype.get = function(key) {
 
 const indexTypes = '2d 2dsphere hashed text'.split(' ');
 
+<<<<<<< HEAD
+exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
+},{}],302:[function(require,module,exports){
+'use strict';
+=======
 Object.defineProperty(Schema, 'indexTypes', {
   get: function() {
     return indexTypes;
@@ -87897,6 +87749,7 @@ Object.defineProperty(Schema, 'indexTypes', {
     throw new Error('Cannot overwrite Schema.indexTypes');
   }
 });
+>>>>>>> A provider has a list of ids
 
 /**
  * Returns a list of indexes that this schema declares, via `schema.index()`
@@ -88146,8 +87999,22 @@ Schema.prototype.loadClass = function(model, virtualsOnly) {
     }
   }, this);
 
+<<<<<<< HEAD
+  const createdAt = handleTimestampOption(timestamps, 'createdAt');
+  const updatedAt = handleTimestampOption(timestamps, 'updatedAt');
+  if (updatedAt != null) {
+    subdoc[updatedAt] = now;
+  }
+  if (createdAt != null) {
+    subdoc[createdAt] = now;
+  }
+}
+},{"../schema/handleTimestampOption":299}],303:[function(require,module,exports){
+'use strict';
+=======
   return this;
 };
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -88230,6 +88097,13 @@ Schema.prototype._getSchema = function(path) {
   return search(parts, _this);
 };
 
+<<<<<<< HEAD
+  return updates;
+}
+
+},{"../get":290}],304:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /*!
  * ignore
  */
@@ -88287,18 +88161,37 @@ Schema.prototype._getPathType = function(path) {
     return { schema: foundschema || schema, pathType: 'undefined' };
   }
 
+<<<<<<< HEAD
+},{"./statemachine":331}],305:[function(require,module,exports){
+'use strict';
+=======
   // look for arrays
   return search(path.split('.'), _this);
 };
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
  */
 
+<<<<<<< HEAD
+exports.internalToObjectOptions = {
+  transform: false,
+  virtuals: false,
+  getters: false,
+  _skipDepopulateTopLevel: true,
+  depopulate: true,
+  flattenDecimals: false
+};
+
+},{}],306:[function(require,module,exports){
+'use strict';
+=======
 function isArrayFilter(piece) {
   return piece.indexOf('$[') === 0 &&
     piece.lastIndexOf(']') === piece.length - 1;
 }
+>>>>>>> A provider has a list of ids
 
 /*!
  * Module exports.
@@ -88337,14 +88230,19 @@ module.exports = exports = Schema;
 
 Schema.Types = MongooseTypes = require('./schema/index');
 
+<<<<<<< HEAD
+},{}],307:[function(require,module,exports){
+(function (global){
+=======
+>>>>>>> A provider has a list of ids
 /*!
  * ignore
  */
 
 exports.ObjectId = MongooseTypes.ObjectId;
 
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":251,"./driver":265,"./helpers/get":290,"./helpers/model/applyHooks":292,"./helpers/populate/validateRef":294,"./helpers/query/applyQueryMiddleware":297,"./helpers/schema/getIndexes":298,"./helpers/schema/handleTimestampOption":299,"./helpers/schema/merge":300,"./helpers/update/applyTimestampsToChildren":302,"./helpers/update/applyTimestampsToUpdate":303,"./schema/index":317,"./schema/symbols":329,"./schematype":330,"./utils":341,"./virtualtype":342,"events":248,"kareem":252,"mpath":344,"util":362}],310:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"./driver":254,"./helpers/get":279,"./helpers/model/applyHooks":281,"./helpers/populate/validateRef":283,"./helpers/query/applyQueryMiddleware":286,"./helpers/schema/getIndexes":287,"./helpers/schema/handleTimestampOption":288,"./helpers/schema/merge":289,"./helpers/update/applyTimestampsToChildren":291,"./helpers/update/applyTimestampsToUpdate":292,"./schema/index":306,"./schema/symbols":318,"./schematype":319,"./utils":330,"./virtualtype":331,"events":354,"kareem":241,"mpath":333,"util":361}],299:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -88411,9 +88309,15 @@ function SchemaArray(key, cast, options, schemaOptions) {
       }
     }
 
+<<<<<<< HEAD
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"assert":77,"mquery":350}],308:[function(require,module,exports){
+'use strict';
+=======
     if (cast === Object) {
       cast = Mixed;
     }
+>>>>>>> A provider has a list of ids
 
     // support { type: 'String' }
     const name = typeof cast === 'string'
@@ -88772,7 +88676,12 @@ handle.$in = SchemaType.prototype.$conditionalHandlers.$in;
 
 module.exports = SchemaArray;
 
-},{"../cast":256,"../error/mongooseError":276,"../helpers/get":290,"../queryhelpers":308,"../schematype":330,"../types":337,"../utils":341,"./boolean":311,"./buffer":312,"./date":313,"./map":318,"./mixed":319,"./number":320,"./objectid":321,"./operators/exists":323,"./operators/geospatial":324,"./operators/helpers":325,"./operators/type":327,"./string":328,"util":362}],311:[function(require,module,exports){
+<<<<<<< HEAD
+},{"./helpers/get":290,"./helpers/projection/isDefiningProjection":295,"./utils":341}],309:[function(require,module,exports){
+(function (Buffer){
+=======
+},{"../cast":245,"../error/mongooseError":265,"../helpers/get":279,"../queryhelpers":297,"../schematype":319,"../types":326,"../utils":330,"./boolean":300,"./buffer":301,"./date":302,"./map":307,"./mixed":308,"./number":309,"./objectid":310,"./operators/exists":312,"./operators/geospatial":313,"./operators/helpers":314,"./operators/type":316,"./string":317,"util":361}],300:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 'use strict';
 
 /*!
@@ -88982,7 +88891,7 @@ SchemaBoolean.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBoolean;
 
-},{"../cast/boolean":257,"../error/cast":271,"../schematype":330,"../utils":341}],312:[function(require,module,exports){
+},{"../cast/boolean":246,"../error/cast":260,"../schematype":319,"../utils":330}],301:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -89235,8 +89144,8 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBuffer;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../schematype":330,"../types/buffer":333,"../utils":341,"./../document":263,"./operators/bitwise":322}],313:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../schematype":319,"../types/buffer":322,"../utils":330,"./../document":252,"./operators/bitwise":311}],302:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -89592,7 +89501,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaDate;
 
-},{"../cast/date":258,"../error":273,"../schematype":330,"../utils":341}],314:[function(require,module,exports){
+},{"../cast/date":247,"../error":262,"../schematype":319,"../utils":330}],303:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -89805,8 +89714,8 @@ Decimal128.prototype.$conditionalHandlers =
 
 module.exports = Decimal128;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/decimal128":259,"../schematype":330,"../types/decimal128":334,"../utils":341,"./../document":263}],315:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../cast/decimal128":248,"../schematype":319,"../types/decimal128":323,"../utils":330,"./../document":252}],304:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -90286,7 +90195,7 @@ function scopePaths(array, fields, init) {
 
 module.exports = DocumentArray;
 
-},{"../error/cast":271,"../helpers/model/discriminator":293,"../queryhelpers":308,"../schematype":330,"../types/documentarray":335,"../types/embedded":336,"../utils":341,"./array":310,"events":248,"util":362}],316:[function(require,module,exports){
+},{"../error/cast":260,"../helpers/model/discriminator":282,"../queryhelpers":297,"../schematype":319,"../types/documentarray":324,"../types/embedded":325,"../utils":330,"./array":299,"events":354,"util":361}],305:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -90464,6 +90373,11 @@ Embedded.prototype.cast = function(val, doc, init, priorVal) {
     return obj;
   }, {});
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
+},{"../../is-buffer/index.js":251,"./driver":265,"./helpers/get":290,"./helpers/model/applyHooks":292,"./helpers/populate/validateRef":294,"./helpers/query/applyQueryMiddleware":297,"./helpers/schema/getIndexes":298,"./helpers/schema/handleTimestampOption":299,"./helpers/schema/merge":300,"./helpers/update/applyTimestampsToChildren":302,"./helpers/update/applyTimestampsToUpdate":303,"./schema/index":317,"./schema/symbols":329,"./schematype":330,"./utils":341,"./virtualtype":342,"events":248,"kareem":252,"mpath":344,"util":362}],310:[function(require,module,exports){
+'use strict';
+=======
   if (init) {
     subdoc = new Constructor(void 0, selected, doc);
     subdoc.init(val);
@@ -90471,6 +90385,7 @@ Embedded.prototype.cast = function(val, doc, init, priorVal) {
     if (Object.keys(val).length === 0) {
       return new Constructor({}, selected, doc);
     }
+>>>>>>> A provider has a list of ids
 
     return new Constructor(val, selected, doc, undefined, { priorDoc: priorVal });
   }
@@ -90608,7 +90523,7 @@ Embedded.prototype.discriminator = function(name, schema) {
   return this.caster.discriminators[name];
 };
 
-},{"../error/cast":271,"../error/objectExpected":278,"../helpers/get":290,"../helpers/model/discriminator":293,"../options":305,"../queryhelpers":308,"../schematype":330,"../types/subdocument":340,"./operators/exists":323,"./operators/geospatial":324,"./operators/helpers":325,"events":248}],317:[function(require,module,exports){
+},{"../error/cast":260,"../error/objectExpected":267,"../helpers/get":279,"../helpers/model/discriminator":282,"../options":294,"../queryhelpers":297,"../schematype":319,"../types/subdocument":329,"./operators/exists":312,"./operators/geospatial":313,"./operators/helpers":314,"events":354}],306:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -90646,7 +90561,7 @@ exports.Oid = exports.ObjectId;
 exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 
-},{"./array":310,"./boolean":311,"./buffer":312,"./date":313,"./decimal128":314,"./documentarray":315,"./embedded":316,"./map":318,"./mixed":319,"./number":320,"./objectid":321,"./string":328}],318:[function(require,module,exports){
+},{"./array":299,"./boolean":300,"./buffer":301,"./date":302,"./decimal128":303,"./documentarray":304,"./embedded":305,"./map":307,"./mixed":308,"./number":309,"./objectid":310,"./string":317}],307:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -90687,7 +90602,7 @@ class Map extends SchemaType {
 
 module.exports = Map;
 
-},{"../schematype":330,"../types/map":338}],319:[function(require,module,exports){
+},{"../schematype":319,"../types/map":327}],308:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -90794,8 +90709,12 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../schematype":330,"../utils":341,"./symbols":329}],320:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cast":256,"../error/mongooseError":276,"../helpers/get":290,"../queryhelpers":308,"../schematype":330,"../types":337,"../utils":341,"./boolean":311,"./buffer":312,"./date":313,"./map":318,"./mixed":319,"./number":320,"./objectid":321,"./operators/exists":323,"./operators/geospatial":324,"./operators/helpers":325,"./operators/type":327,"./string":328,"util":362}],311:[function(require,module,exports){
+=======
+},{"../schematype":319,"../utils":330,"./symbols":318}],309:[function(require,module,exports){
 (function (Buffer){
+>>>>>>> A provider has a list of ids
 'use strict';
 
 /*!
@@ -90999,6 +90918,66 @@ SchemaNumber.prototype.min = function(value, message) {
   return this;
 };
 
+<<<<<<< HEAD
+/*!
+ * Module exports.
+ */
+
+module.exports = SchemaBoolean;
+
+},{"../cast/boolean":257,"../error/cast":271,"../schematype":330,"../utils":341}],312:[function(require,module,exports){
+(function (Buffer){
+/*!
+ * Module dependencies.
+ */
+
+'use strict';
+
+const handleBitwiseOperator = require('./operators/bitwise');
+const utils = require('../utils');
+
+const MongooseBuffer = require('../types/buffer');
+const SchemaType = require('../schematype');
+
+const Binary = MongooseBuffer.Binary;
+const CastError = SchemaType.CastError;
+let Document;
+
+/**
+ * Buffer SchemaType constructor
+ *
+ * @param {String} key
+ * @param {Object} options
+ * @inherits SchemaType
+ * @api public
+ */
+
+function SchemaBuffer(key, options) {
+  SchemaType.call(this, key, options, 'Buffer');
+}
+
+/**
+ * This schema type's name, to defend against minifiers that mangle
+ * function names.
+ *
+ * @api public
+ */
+SchemaBuffer.schemaName = 'Buffer';
+
+/*!
+ * Inherits from SchemaType.
+ */
+SchemaBuffer.prototype = Object.create(SchemaType.prototype);
+SchemaBuffer.prototype.constructor = SchemaBuffer;
+
+/*!
+ * ignore
+ */
+
+SchemaBuffer._checkRequired = v => !!(v && v.length);
+
+=======
+>>>>>>> A provider has a list of ids
 /**
  * Sets a maximum number validator.
  *
@@ -91168,9 +91147,14 @@ SchemaNumber.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaNumber;
 
+<<<<<<< HEAD
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/number":260,"../error":273,"../schematype":330,"../utils":341,"./../document":263,"./operators/bitwise":322}],321:[function(require,module,exports){
+},{"../../../is-buffer/index.js":251,"../schematype":330,"../types/buffer":333,"../utils":341,"./../document":263,"./operators/bitwise":322}],313:[function(require,module,exports){
+=======
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../cast/number":249,"../error":262,"../schematype":319,"../utils":330,"./../document":252,"./operators/bitwise":311}],310:[function(require,module,exports){
 (function (Buffer){
+>>>>>>> A provider has a list of ids
 /*!
  * Module dependencies.
  */
@@ -91464,8 +91448,8 @@ function resetId(v) {
 
 module.exports = ObjectId;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/objectid":261,"../schematype":330,"../types/objectid":339,"../utils":341,"./../document":263}],322:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../cast/objectid":250,"../schematype":319,"../types/objectid":328,"../utils":330,"./../document":252}],311:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -91506,8 +91490,8 @@ function _castNumber(path, num) {
 
 module.exports = handleBitwiseOperator;
 
-}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":251,"../../error/cast":271}],323:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../../error/cast":260}],312:[function(require,module,exports){
 'use strict';
 
 const castBoolean = require('../../cast/boolean');
@@ -91521,7 +91505,7 @@ module.exports = function(val) {
   return castBoolean(val, path);
 };
 
-},{"../../cast/boolean":257}],324:[function(require,module,exports){
+},{"../../cast/boolean":246}],313:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -91625,7 +91609,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":310,"./helpers":325}],325:[function(require,module,exports){
+},{"../array":299,"./helpers":314}],314:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -91659,7 +91643,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":320}],326:[function(require,module,exports){
+},{"../number":309}],315:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -91700,7 +91684,7 @@ module.exports = function(val, path) {
   return val;
 };
 
-},{"../../cast/boolean":257,"../../cast/string":262,"../../error/cast":271}],327:[function(require,module,exports){
+},{"../../cast/boolean":246,"../../cast/string":251,"../../error/cast":260}],316:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -91715,7 +91699,11 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],328:[function(require,module,exports){
+<<<<<<< HEAD
+},{"../cast/date":258,"../error":273,"../schematype":330,"../utils":341}],314:[function(require,module,exports){
+=======
+},{}],317:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 (function (Buffer){
 'use strict';
 
@@ -91916,6 +91904,40 @@ SchemaString.prototype.enum = function() {
       this.enumValues.push(this.cast(values[i]));
     }
   }
+<<<<<<< HEAD
+};
+
+/*!
+ * ignore
+ */
+
+function handleSingle(val) {
+  return this.cast(val);
+}
+
+Decimal128.prototype.$conditionalHandlers =
+    utils.options(SchemaType.prototype.$conditionalHandlers, {
+      $gt: handleSingle,
+      $gte: handleSingle,
+      $lt: handleSingle,
+      $lte: handleSingle
+    });
+
+/*!
+ * Module exports.
+ */
+
+module.exports = Decimal128;
+
+}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
+},{"../../../is-buffer/index.js":251,"../cast/decimal128":259,"../schematype":330,"../types/decimal128":334,"../utils":341,"./../document":263}],315:[function(require,module,exports){
+'use strict';
+
+/*!
+ * Module dependencies.
+ */
+=======
+>>>>>>> A provider has a list of ids
 
   const vals = this.enumValues;
   this.enumValidator = function(v) {
@@ -92323,8 +92345,26 @@ SchemaString.prototype.castForQuery = function($conditional, val) {
     return val;
   }
 
+<<<<<<< HEAD
+  return hasKeys && selected || undefined;
+}
+
+/*!
+ * Module exports.
+ */
+
+module.exports = DocumentArray;
+
+},{"../error/cast":271,"../helpers/model/discriminator":293,"../queryhelpers":308,"../schematype":330,"../types/documentarray":335,"../types/embedded":336,"../utils":341,"./array":310,"events":248,"util":362}],316:[function(require,module,exports){
+'use strict';
+
+/*!
+ * Module dependencies.
+ */
+=======
   return this._castForQuery(val);
 };
+>>>>>>> A provider has a list of ids
 
 /*!
  * Module exports.
@@ -92332,14 +92372,14 @@ SchemaString.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaString;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/string":262,"../error":273,"../schematype":330,"../utils":341,"./../document":263}],329:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../cast/string":251,"../error":262,"../schematype":319,"../utils":330,"./../document":252}],318:[function(require,module,exports){
 'use strict';
 
 exports.schemaMixedSymbol = Symbol.for('mongoose:schema_mixed');
 
 exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
-},{}],330:[function(require,module,exports){
+},{}],319:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -93026,12 +93066,79 @@ SchemaType.prototype.validate = function(obj, message, type) {
  * @api public
  */
 
+<<<<<<< HEAD
+Embedded.prototype.discriminator = function(name, schema) {
+  discriminator(this.caster, name, schema);
+
+  this.caster.discriminators[name] = _createConstructor(schema);
+
+  return this.caster.discriminators[name];
+};
+
+},{"../error/cast":271,"../error/objectExpected":278,"../helpers/get":290,"../helpers/model/discriminator":293,"../options":305,"../queryhelpers":308,"../schematype":330,"../types/subdocument":340,"./operators/exists":323,"./operators/geospatial":324,"./operators/helpers":325,"events":248}],317:[function(require,module,exports){
+
+/*!
+ * Module exports.
+ */
+
+'use strict';
+
+exports.String = require('./string');
+
+exports.Number = require('./number');
+
+exports.Boolean = require('./boolean');
+
+exports.DocumentArray = require('./documentarray');
+
+exports.Embedded = require('./embedded');
+
+exports.Array = require('./array');
+
+exports.Buffer = require('./buffer');
+
+exports.Date = require('./date');
+
+exports.ObjectId = require('./objectid');
+
+exports.Mixed = require('./mixed');
+
+exports.Decimal128 = exports.Decimal = require('./decimal128');
+
+exports.Map = require('./map');
+
+// alias
+
+exports.Oid = exports.ObjectId;
+exports.Object = exports.Mixed;
+exports.Bool = exports.Boolean;
+
+},{"./array":310,"./boolean":311,"./buffer":312,"./date":313,"./decimal128":314,"./documentarray":315,"./embedded":316,"./map":318,"./mixed":319,"./number":320,"./objectid":321,"./string":328}],318:[function(require,module,exports){
+'use strict';
+
+/*!
+ * ignore
+ */
+
+const MongooseMap = require('../types/map');
+const SchemaType = require('../schematype');
+
+/*!
+ * ignore
+ */
+
+class Map extends SchemaType {
+  constructor(key, options) {
+    super(key, options, 'Map');
+    this.$isSchemaMap = true;
+=======
 SchemaType.prototype.required = function(required, message) {
   let customOptions = {};
   if (typeof required === 'object') {
     customOptions = required;
     message = customOptions.message || message;
     required = required.isRequired;
+>>>>>>> A provider has a list of ids
   }
 
   if (required === false) {
@@ -93043,6 +93150,17 @@ SchemaType.prototype.required = function(required, message) {
     delete this.originalRequiredValue;
     return this;
   }
+<<<<<<< HEAD
+}
+
+module.exports = Map;
+
+},{"../schematype":330,"../types/map":338}],319:[function(require,module,exports){
+/*!
+ * Module dependencies.
+ */
+=======
+>>>>>>> A provider has a list of ids
 
   const _this = this;
   this.isRequired = true;
@@ -93147,11 +93265,19 @@ SchemaType.prototype.getDefault = function(scope, init) {
  * @api private
  */
 
+<<<<<<< HEAD
+module.exports = Mixed;
+
+},{"../schematype":330,"../utils":341,"./symbols":329}],320:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
 SchemaType.prototype._applySetters = function(value, scope, init, priorVal) {
   let v = value;
   const setters = this.setters;
   let len = setters.length;
   const caster = this.caster;
+>>>>>>> A provider has a list of ids
 
   while (len--) {
     v = setters[len].call(scope, v, this);
@@ -93582,9 +93708,22 @@ SchemaType.prototype.castForQuery = function($conditional, val) {
 };
 
 /*!
+<<<<<<< HEAD
+ * Module exports.
+ */
+
+module.exports = SchemaNumber;
+
+}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
+},{"../../../is-buffer/index.js":251,"../cast/number":260,"../error":273,"../schematype":330,"../utils":341,"./../document":263,"./operators/bitwise":322}],321:[function(require,module,exports){
+(function (Buffer){
+/*!
+ * Module dependencies.
+=======
  * Internal switch for runSetters
  *
  * @api private
+>>>>>>> A provider has a list of ids
  */
 
 SchemaType.prototype._castForQuery = function(val) {
@@ -93637,8 +93776,8 @@ exports.CastError = CastError;
 
 exports.ValidatorError = ValidatorError;
 
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":251,"./error":273,"./helpers/get":290,"./helpers/immediate":291,"./helpers/symbols":301,"./schema/operators/exists":323,"./schema/operators/type":327,"./utils":341}],331:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"./error":262,"./helpers/get":279,"./helpers/immediate":280,"./helpers/symbols":290,"./schema/operators/exists":312,"./schema/operators/type":316,"./utils":330}],320:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -93820,7 +93959,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":341}],332:[function(require,module,exports){
+},{"./utils":330}],321:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -94052,6 +94191,14 @@ MongooseArray.mixin = {
     return this;
   },
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
+},{"../../../is-buffer/index.js":251,"../cast/objectid":261,"../schematype":330,"../types/objectid":339,"../utils":341,"./../document":263}],322:[function(require,module,exports){
+(function (Buffer){
+/*!
+ * Module requirements.
+ */
+=======
   /**
    * Depopulates stored atomic operation values as necessary for direct insertion to MongoDB.
    *
@@ -94063,6 +94210,7 @@ MongooseArray.mixin = {
    * @instance
    * @api private
    */
+>>>>>>> A provider has a list of ids
 
   $__getAtomics: function() {
     const ret = [];
@@ -94100,8 +94248,14 @@ MongooseArray.mixin = {
       ret.push([op, val]);
     }
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
+},{"../../../../is-buffer/index.js":251,"../../error/cast":271}],323:[function(require,module,exports){
+'use strict';
+=======
     return ret;
   },
+>>>>>>> A provider has a list of ids
 
   /**
    * Returns the number of pending atomic operations to send to the db for this array.
@@ -94120,6 +94274,12 @@ MongooseArray.mixin = {
     return Object.keys(this._atomics).length;
   },
 
+<<<<<<< HEAD
+},{"../../cast/boolean":257}],324:[function(require,module,exports){
+/*!
+ * Module requirements.
+ */
+=======
   /**
    * Internal helper for .map()
    *
@@ -94131,6 +94291,7 @@ MongooseArray.mixin = {
   _mapCast: function(val, index) {
     return this._cast(val, this.length + index);
   },
+>>>>>>> A provider has a list of ids
 
   /**
    * Wraps [`Array#push`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/push) with proper change tracking.
@@ -94388,6 +94549,10 @@ MongooseArray.mixin = {
     return this;
   },
 
+<<<<<<< HEAD
+},{"../array":310,"./helpers":325}],325:[function(require,module,exports){
+'use strict';
+=======
   /**
    * Wraps [`Array#splice`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice) with proper change tracking and casting.
    *
@@ -94399,6 +94564,7 @@ MongooseArray.mixin = {
    * @method splice
    * @memberOf MongooseArray
    */
+>>>>>>> A provider has a list of ids
 
   splice: function splice() {
     let ret;
@@ -94444,6 +94610,10 @@ MongooseArray.mixin = {
     return this.length;
   },
 
+<<<<<<< HEAD
+},{"../number":320}],326:[function(require,module,exports){
+'use strict';
+=======
   /**
    * Wraps [`Array#sort`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort) with proper change tracking.
    *
@@ -94455,6 +94625,7 @@ MongooseArray.mixin = {
    * @method sort
    * @memberOf MongooseArray
    */
+>>>>>>> A provider has a list of ids
 
   sort: function() {
     const ret = [].sort.apply(this, arguments);
@@ -94511,6 +94682,10 @@ MongooseArray.mixin = {
           found = ~this.indexOf(v);
       }
 
+<<<<<<< HEAD
+},{"../../cast/boolean":257,"../../cast/string":262,"../../error/cast":271}],327:[function(require,module,exports){
+'use strict';
+=======
       if (!found) {
         [].push.call(this, v);
         this._registerAtomic('$addToSet', v);
@@ -94518,6 +94693,7 @@ MongooseArray.mixin = {
         [].push.call(added, v);
       }
     }, this);
+>>>>>>> A provider has a list of ids
 
     return added;
   },
@@ -94556,6 +94732,11 @@ MongooseArray.mixin = {
     return this;
   },
 
+<<<<<<< HEAD
+},{}],328:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
   /**
    * Returns a native js Array.
    *
@@ -94565,6 +94746,7 @@ MongooseArray.mixin = {
    * @method toObject
    * @memberOf MongooseArray
    */
+>>>>>>> A provider has a list of ids
 
   toObject: function(options) {
     if (options && options.depopulate) {
@@ -94671,8 +94853,8 @@ function _checkManualPopulation(arr, docs) {
 
 module.exports = exports = MongooseArray;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../document":263,"../helpers/document/cleanModifiedSubpaths":287,"../helpers/get":290,"../options":305,"../utils":341,"./embedded":336,"./objectid":339,"util":362}],333:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../document":252,"../helpers/document/cleanModifiedSubpaths":276,"../helpers/get":279,"../options":294,"../utils":330,"./embedded":325,"./objectid":328,"util":361}],322:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -94979,7 +95161,7 @@ MongooseBuffer.Binary = Binary;
 
 module.exports = MongooseBuffer;
 
-},{"../driver":265,"../utils":341,"safe-buffer":358}],334:[function(require,module,exports){
+},{"../driver":254,"../utils":330,"safe-buffer":346}],323:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -94994,7 +95176,7 @@ module.exports = MongooseBuffer;
 
 module.exports = require('../driver').get().Decimal128;
 
-},{"../driver":265}],335:[function(require,module,exports){
+},{"../driver":254}],324:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -95357,8 +95539,8 @@ MongooseDocumentArray.mixin = {
 
 module.exports = MongooseDocumentArray;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/objectid":261,"../document":263,"../helpers/get":290,"../helpers/symbols":301,"../options":305,"../queryhelpers":308,"../utils":341,"./array":332,"./objectid":339,"util":362}],336:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../cast/objectid":250,"../document":252,"../helpers/get":279,"../helpers/symbols":290,"../options":294,"../queryhelpers":297,"../utils":330,"./array":321,"./objectid":328,"util":361}],325:[function(require,module,exports){
 /* eslint no-func-assign: 1 */
 
 /*!
@@ -95411,19 +95593,32 @@ function EmbeddedDocument(obj, parentArr, skipId, fields, index) {
   });
 }
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
+},{"../../../is-buffer/index.js":251,"../cast/string":262,"../error":273,"../schematype":330,"../utils":341,"./../document":263}],329:[function(require,module,exports){
+'use strict';
+=======
 /*!
  * Inherit from Document
  */
 EmbeddedDocument.prototype = Object.create(Document.prototype);
 EmbeddedDocument.prototype.constructor = EmbeddedDocument;
+>>>>>>> A provider has a list of ids
 
 for (const i in EventEmitter.prototype) {
   EmbeddedDocument[i] = EventEmitter.prototype[i];
 }
 
+<<<<<<< HEAD
+exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
+},{}],330:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
 EmbeddedDocument.prototype.toBSON = function() {
   return this.toObject(internalToObjectOptions);
 };
+>>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -95804,7 +95999,7 @@ EmbeddedDocument.prototype.parentArray = function() {
 
 module.exports = EmbeddedDocument;
 
-},{"../document_provider":264,"../helpers/get":290,"../helpers/immediate":291,"../helpers/symbols":301,"../options":305,"../utils":341,"events":248,"util":362}],337:[function(require,module,exports){
+},{"../document_provider":253,"../helpers/get":279,"../helpers/immediate":280,"../helpers/symbols":290,"../options":294,"../utils":330,"events":354,"util":361}],326:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -95826,7 +96021,7 @@ exports.Map = require('./map');
 
 exports.Subdocument = require('./subdocument');
 
-},{"./array":332,"./buffer":333,"./decimal128":334,"./documentarray":335,"./embedded":336,"./map":338,"./objectid":339,"./subdocument":340}],338:[function(require,module,exports){
+},{"./array":321,"./buffer":322,"./decimal128":323,"./documentarray":324,"./embedded":325,"./map":327,"./objectid":328,"./subdocument":329}],327:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../schema/mixed');
@@ -96020,7 +96215,7 @@ function checkValidKey(key) {
 
 module.exports = MongooseMap;
 
-},{"../helpers/get":290,"../schema/mixed":319,"util":362}],339:[function(require,module,exports){
+},{"../helpers/get":279,"../schema/mixed":308,"util":361}],328:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -96052,7 +96247,7 @@ ObjectId.prototype[objectIdSymbol] = true;
 
 module.exports = ObjectId;
 
-},{"../driver":265,"../helpers/symbols":301}],340:[function(require,module,exports){
+},{"../driver":254,"../helpers/symbols":290}],329:[function(require,module,exports){
 'use strict';
 
 const Document = require('../document');
@@ -96290,7 +96485,7 @@ function registerRemoveListener(sub) {
   owner.on('remove', emitRemove);
 }
 
-},{"../document":263,"../helpers/immediate":291,"../helpers/symbols":301,"../options":305,"../utils":341}],341:[function(require,module,exports){
+},{"../document":252,"../helpers/immediate":280,"../helpers/symbols":290,"../options":294,"../utils":330}],330:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -96650,8 +96845,19 @@ exports.random = function() {
  * @api private
  */
 
+<<<<<<< HEAD
+module.exports = exports = SchemaType;
+
+exports.CastError = CastError;
+
+exports.ValidatorError = ValidatorError;
+
+}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
+},{"../../is-buffer/index.js":251,"./error":273,"./helpers/get":290,"./helpers/immediate":291,"./helpers/symbols":301,"./schema/operators/exists":323,"./schema/operators/type":327,"./utils":341}],331:[function(require,module,exports){
+=======
 exports.merge = function merge(to, from, options, path) {
   options = options || {};
+>>>>>>> A provider has a list of ids
 
   const keys = Object.keys(from);
   let i = 0;
@@ -96822,10 +97028,23 @@ exports.tick = function tick(callback) {
  * @api private
  */
 
+<<<<<<< HEAD
+StateMachine.prototype.map = function map() {
+  this.map = this._iter('map');
+  return this.map.apply(this, arguments);
+};
+
+},{"./utils":341}],332:[function(require,module,exports){
+(function (Buffer){
+/*!
+ * Module dependencies.
+ */
+=======
 exports.isMongooseObject = function(v) {
   Document || (Document = require('./document'));
   MongooseArray || (MongooseArray = require('./types').Array);
   MongooseBuffer || (MongooseBuffer = require('./types').Buffer);
+>>>>>>> A provider has a list of ids
 
   if (v == null) {
     return false;
@@ -97268,7 +97487,7 @@ exports.each = function(arr, fn) {
 exports.noop = function() {};
 
 }).call(this,require('_process'))
-},{"./document":263,"./helpers/get":290,"./promise_provider":307,"./types":337,"./types/decimal128":334,"./types/objectid":339,"_process":356,"mpath":344,"ms":343,"regexp-clone":357,"safe-buffer":358,"sliced":359}],342:[function(require,module,exports){
+},{"./document":252,"./helpers/get":279,"./promise_provider":296,"./types":326,"./types/decimal128":323,"./types/objectid":328,"_process":358,"mpath":333,"ms":332,"regexp-clone":345,"safe-buffer":346,"sliced":347}],331:[function(require,module,exports){
 'use strict';
 
 /**
@@ -97414,7 +97633,7 @@ VirtualType.prototype.applySetters = function(value, scope) {
 
 module.exports = VirtualType;
 
-},{}],343:[function(require,module,exports){
+},{}],332:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -97578,10 +97797,10 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],344:[function(require,module,exports){
+},{}],333:[function(require,module,exports){
 module.exports = exports = require('./lib');
 
-},{"./lib":345}],345:[function(require,module,exports){
+},{"./lib":334}],334:[function(require,module,exports){
 (function (global){
 // Make sure Map exists for old Node.js versions
 var Map = global.Map != null ? global.Map : function() {};
@@ -97766,9 +97985,17 @@ exports.set = function (path, val, o, special, map, _copying) {
     ? path.split('.')
     : path
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
+},{"../../../is-buffer/index.js":251,"../document":263,"../helpers/document/cleanModifiedSubpaths":287,"../helpers/get":290,"../options":305,"../utils":341,"./embedded":336,"./objectid":339,"util":362}],333:[function(require,module,exports){
+/*!
+ * Module dependencies.
+ */
+=======
   if (!Array.isArray(parts)) {
     throw new TypeError('Invalid `path`. Must be either string or array');
   }
+>>>>>>> A provider has a list of ids
 
   if (null == o) return;
 
@@ -97884,7 +98111,7 @@ function K (v) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],346:[function(require,module,exports){
+},{}],335:[function(require,module,exports){
 'use strict';
 
 /**
@@ -97932,7 +98159,7 @@ function notImplemented(method) {
   };
 }
 
-},{}],347:[function(require,module,exports){
+},{}],336:[function(require,module,exports){
 'use strict';
 
 var env = require('../env');
@@ -97947,7 +98174,7 @@ module.exports =
       require('./collection');
 
 
-},{"../env":349,"./collection":346,"./node":348}],348:[function(require,module,exports){
+},{"../env":338,"./collection":335,"./node":337}],337:[function(require,module,exports){
 'use strict';
 
 /**
@@ -98094,13 +98321,17 @@ NodeCollection.prototype.findCursor = function(match, findOptions) {
  * TODO
  */
 
+<<<<<<< HEAD
+},{"../driver":265,"../utils":341,"safe-buffer":358}],334:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /**
  * Expose
  */
 
 module.exports = exports = NodeCollection;
 
-},{"../utils":352,"./collection":346}],349:[function(require,module,exports){
+},{"../utils":341,"./collection":335}],338:[function(require,module,exports){
 (function (process,global,Buffer){
 'use strict';
 
@@ -98110,11 +98341,17 @@ exports.isNode = 'undefined' != typeof process
            && 'function' == typeof Buffer
            && process.argv;
 
+<<<<<<< HEAD
+},{"../driver":265}],335:[function(require,module,exports){
+(function (Buffer){
+'use strict';
+=======
 exports.isMongo = !exports.isNode
            && 'function' == typeof printjson
            && 'function' == typeof ObjectId
            && 'function' == typeof rs
            && 'function' == typeof sh;
+>>>>>>> A provider has a list of ids
 
 exports.isBrowser = !exports.isNode
                  && !exports.isMongo
@@ -98126,7 +98363,7 @@ exports.type = exports.isNode ? 'node'
       : 'unknown';
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":356,"buffer":103}],350:[function(require,module,exports){
+},{"_process":358,"buffer":353}],339:[function(require,module,exports){
 'use strict';
 
 /**
@@ -98479,6 +98716,11 @@ Query.prototype.eq = function eq(val) {
   return this;
 };
 
+<<<<<<< HEAD
+}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
+},{"../../../is-buffer/index.js":251,"../cast/objectid":261,"../document":263,"../helpers/get":290,"../helpers/symbols":301,"../options":305,"../queryhelpers":308,"../utils":341,"./array":332,"./objectid":339,"util":362}],336:[function(require,module,exports){
+/* eslint no-func-assign: 1 */
+=======
 /**
  * Specifies arguments for an `$or` condition.
  *
@@ -98490,6 +98732,7 @@ Query.prototype.eq = function eq(val) {
  * @return {Query} this
  * @api public
  */
+>>>>>>> A provider has a list of ids
 
 Query.prototype.or = function or(array) {
   var or = this._conditions.$or || (this._conditions.$or = []);
@@ -99200,6 +99443,9 @@ Query.prototype.geometry = function geometry() {
 
   var val, path;
 
+<<<<<<< HEAD
+},{"../document_provider":264,"../helpers/get":290,"../helpers/immediate":291,"../helpers/symbols":301,"../options":305,"../utils":341,"events":248,"util":362}],337:[function(require,module,exports){
+=======
   if (1 === arguments.length) {
     this._ensurePath('geometry');
     path = this._path;
@@ -99207,6 +99453,7 @@ Query.prototype.geometry = function geometry() {
   } else {
     throw new TypeError('Invalid argument');
   }
+>>>>>>> A provider has a list of ids
 
   if (!(val.type && Array.isArray(val.coordinates))) {
     throw new TypeError('Invalid argument');
@@ -99254,7 +99501,12 @@ Query.prototype.select = function select() {
     throw new Error('Invalid select: select only takes 1 argument');
   }
 
+<<<<<<< HEAD
+},{"./array":332,"./buffer":333,"./decimal128":334,"./documentarray":335,"./embedded":336,"./map":338,"./objectid":339,"./subdocument":340}],338:[function(require,module,exports){
+'use strict';
+=======
   this._validate('select');
+>>>>>>> A provider has a list of ids
 
   var fields = this._fields || (this._fields = {});
   var type = typeof arg;
@@ -99488,7 +99740,11 @@ function _pushMap(opts, map) {
 }
 
 
+<<<<<<< HEAD
+},{"../helpers/get":290,"../schema/mixed":319,"util":362}],339:[function(require,module,exports){
+=======
 
+>>>>>>> A provider has a list of ids
 /**
  * Specifies the limit option.
  *
@@ -99591,6 +99847,25 @@ function _pushMap(opts, map) {
   };
 });
 
+<<<<<<< HEAD
+ObjectId.prototype[objectIdSymbol] = true;
+
+module.exports = ObjectId;
+
+},{"../driver":265,"../helpers/symbols":301}],340:[function(require,module,exports){
+'use strict';
+
+const Document = require('../document');
+const immediate = require('../helpers/immediate');
+const internalToObjectOptions = require('../options').internalToObjectOptions;
+const utils = require('../utils');
+
+const documentArrayParent = require('../helpers/symbols').documentArrayParent;
+
+module.exports = Subdocument;
+
+=======
+>>>>>>> A provider has a list of ids
 /**
  * Specifies the maxTimeMS option.
  *
@@ -99800,6 +100075,52 @@ Query.prototype.read = Query.prototype.setReadPreference = function(pref) {
 /**
  * Sets the readConcern option for the query.
  *
+<<<<<<< HEAD
+ * @param {EmbeddedDocument} sub
+ * @api private
+ */
+
+function registerRemoveListener(sub) {
+  let owner = sub.ownerDocument();
+
+  function emitRemove() {
+    owner.removeListener('save', emitRemove);
+    owner.removeListener('remove', emitRemove);
+    sub.emit('remove', sub);
+    sub.constructor.emit('remove', sub);
+    owner = sub = null;
+  }
+
+  owner.on('save', emitRemove);
+  owner.on('remove', emitRemove);
+}
+
+},{"../document":263,"../helpers/immediate":291,"../helpers/symbols":301,"../options":305,"../utils":341}],341:[function(require,module,exports){
+(function (process){
+'use strict';
+
+/*!
+ * Module dependencies.
+ */
+
+const Decimal = require('./types/decimal128');
+const ObjectId = require('./types/objectid');
+const PromiseProvider = require('./promise_provider');
+const cloneRegExp = require('regexp-clone');
+const get = require('./helpers/get');
+const sliced = require('sliced');
+const mpath = require('mpath');
+const ms = require('ms');
+const Buffer = require('safe-buffer').Buffer;
+
+const emittedSymbol = Symbol.for('mongoose:emitted');
+
+let MongooseBuffer;
+let MongooseArray;
+let Document;
+
+const specialProperties = new Set(['__proto__', 'constructor', 'prototype']);
+=======
  * ####Example:
  *
  *     new Query().readConcern('local')
@@ -99827,6 +100148,7 @@ Query.prototype.read = Query.prototype.setReadPreference = function(pref) {
  *     majority      MongoDB 3.2+ The query returns the data that has been acknowledged by a majority of the replica set members. The documents returned by the read operation are durable, even in the event of failure.
  *     linearizable  MongoDB 3.4+ The query returns data that reflects all successful majority-acknowledged writes that completed prior to the start of the read operation. The query may wait for concurrently executing writes to propagate to a majority of replica set members before returning results.
  *     snapshot      MongoDB 4.0+ Only available for operations within multi-document transactions. Upon transaction commit with write concern "majority", the transaction operations are guaranteed to have read from a snapshot of majority-committed data.
+>>>>>>> A provider has a list of ids
 
 
  *
@@ -100996,6 +101318,11 @@ Query.prototype._wrapCallback = function(method, callback, queryInfo) {
 
     var startTime = new Date().getTime();
 
+<<<<<<< HEAD
+}).call(this,require('_process'))
+},{"./document":263,"./helpers/get":290,"./promise_provider":307,"./types":337,"./types/decimal128":334,"./types/objectid":339,"_process":356,"mpath":344,"ms":343,"regexp-clone":357,"safe-buffer":358,"sliced":359}],342:[function(require,module,exports){
+'use strict';
+=======
     return function wrapperCallback(err, result) {
       if (traceCallback) {
         var millis = new Date().getTime() - startTime;
@@ -101010,6 +101337,7 @@ Query.prototype._wrapCallback = function(method, callback, queryInfo) {
 
   return callback;
 };
+>>>>>>> A provider has a list of ids
 
 /**
  * Add trace function that gets called when the query is executed.
@@ -101146,6 +101474,10 @@ Query.prototype.stream = function(streamOptions) {
   return this._collection.findStream(conds, options, streamOptions);
 };
 
+<<<<<<< HEAD
+},{}],343:[function(require,module,exports){
+=======
+>>>>>>> A provider has a list of ids
 /**
  * Determines if field selection has been made.
  *
@@ -101248,9 +101580,28 @@ Query.prototype._optionsForExec = function() {
  * @api private
  */
 
+<<<<<<< HEAD
+function plural(ms, msAbs, n, name) {
+  var isPlural = msAbs >= n * 1.5;
+  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
+}
+
+},{}],344:[function(require,module,exports){
+module.exports = exports = require('./lib');
+
+},{"./lib":345}],345:[function(require,module,exports){
+(function (global){
+// Make sure Map exists for old Node.js versions
+var Map = global.Map != null ? global.Map : function() {};
+
+// These properties are special and can open client libraries to security
+// issues
+var ignoreProperties = ['__proto__', 'constructor', 'prototype'];
+=======
 Query.prototype._fieldsForExec = function() {
   return utils.clone(this._fields);
 };
+>>>>>>> A provider has a list of ids
 
 /**
  * Return an update document with corrected $set operations.
@@ -101381,7 +101732,7 @@ module.exports = exports = Query;
 // TODO
 // test utils
 
-},{"./collection":347,"./collection/collection":346,"./env":349,"./permissions":351,"./utils":352,"assert":77,"bluebird":82,"debug":353,"sliced":359,"util":362}],351:[function(require,module,exports){
+},{"./collection":336,"./collection/collection":335,"./env":338,"./permissions":340,"./utils":341,"assert":348,"bluebird":76,"debug":342,"sliced":347,"util":361}],340:[function(require,module,exports){
 'use strict';
 
 var denied = exports;
@@ -101471,8 +101822,13 @@ denied.count.maxScan =
 denied.count.snapshot =
 denied.count.tailable = true;
 
-},{}],352:[function(require,module,exports){
+<<<<<<< HEAD
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],346:[function(require,module,exports){
+=======
+},{}],341:[function(require,module,exports){
 (function (process,setImmediate){
+>>>>>>> A provider has a list of ids
 'use strict';
 
 /*!
@@ -101495,8 +101851,13 @@ var clone = exports.clone = function clone(obj, options) {
   if (obj === undefined || obj === null)
     return obj;
 
+<<<<<<< HEAD
+},{}],347:[function(require,module,exports){
+'use strict';
+=======
   if (Array.isArray(obj))
     return exports.cloneArray(obj, options);
+>>>>>>> A provider has a list of ids
 
   if (obj.constructor) {
     if (/ObjectI[dD]$/.test(obj.constructor.name)) {
@@ -101518,8 +101879,13 @@ var clone = exports.clone = function clone(obj, options) {
     if ('Date' === obj.constructor.name || 'Function' === obj.constructor.name)
       return new obj.constructor(+obj);
 
+<<<<<<< HEAD
+},{"../env":349,"./collection":346,"./node":348}],348:[function(require,module,exports){
+'use strict';
+=======
     if ('RegExp' === obj.constructor.name)
       return RegExpClone(obj);
+>>>>>>> A provider has a list of ids
 
     if ('Buffer' === obj.constructor.name)
       return exports.cloneBuffer(obj);
@@ -101813,11 +102179,44 @@ var soon = exports.soon = 'function' == typeof setImmediate
  * @return {Buffer}
  */
 
+<<<<<<< HEAD
+module.exports = exports = NodeCollection;
+
+},{"../utils":352,"./collection":346}],349:[function(require,module,exports){
+(function (process,global,Buffer){
+'use strict';
+
+exports.isNode = 'undefined' != typeof process
+           && 'object' == typeof module
+           && 'object' == typeof global
+           && 'function' == typeof Buffer
+           && process.argv;
+
+exports.isMongo = !exports.isNode
+           && 'function' == typeof printjson
+           && 'function' == typeof ObjectId
+           && 'function' == typeof rs
+           && 'function' == typeof sh;
+
+exports.isBrowser = !exports.isNode
+                 && !exports.isMongo
+                 && 'undefined' != typeof window;
+
+exports.type = exports.isNode ? 'node'
+  : exports.isMongo ? 'mongo'
+    : exports.isBrowser ? 'browser'
+      : 'unknown';
+
+}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
+},{"_process":356,"buffer":103}],350:[function(require,module,exports){
+'use strict';
+=======
 exports.cloneBuffer = function(buff) {
   var dupe = Buffer.alloc(buff.length);
   buff.copy(dupe, 0, 0, buff.length);
   return dupe;
 };
+>>>>>>> A provider has a list of ids
 
 /**
  * Check if this object is an arguments object
@@ -101831,7 +102230,7 @@ exports.isArgumentsObject = function(v) {
 };
 
 }).call(this,require('_process'),require("timers").setImmediate)
-},{"_process":356,"regexp-clone":357,"safe-buffer":358,"timers":360}],353:[function(require,module,exports){
+},{"_process":358,"regexp-clone":345,"safe-buffer":346,"timers":359}],342:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -102030,7 +102429,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":354,"_process":356}],354:[function(require,module,exports){
+},{"./debug":343,"_process":358}],343:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -102257,7 +102656,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":355}],355:[function(require,module,exports){
+},{"ms":344}],344:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -102411,7 +102810,3877 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
+},{}],345:[function(require,module,exports){
+
+var toString = Object.prototype.toString;
+
+function isRegExp (o) {
+  return 'object' == typeof o
+      && '[object RegExp]' == toString.call(o);
+}
+
+module.exports = exports = function (regexp) {
+  if (!isRegExp(regexp)) {
+    throw new TypeError('Not a RegExp');
+  }
+
+  var flags = [];
+  if (regexp.global) flags.push('g');
+  if (regexp.multiline) flags.push('m');
+  if (regexp.ignoreCase) flags.push('i');
+  return new RegExp(regexp.source, flags.join(''));
+}
+
+
+},{}],346:[function(require,module,exports){
+/* eslint-disable node/no-deprecated-api */
+var buffer = require('buffer')
+var Buffer = buffer.Buffer
+
+// alternative to using Object.keys for old browsers
+function copyProps (src, dst) {
+  for (var key in src) {
+    dst[key] = src[key]
+  }
+}
+if (Buffer.from && Buffer.alloc && Buffer.allocUnsafe && Buffer.allocUnsafeSlow) {
+  module.exports = buffer
+} else {
+  // Copy properties from require('buffer')
+  copyProps(buffer, exports)
+  exports.Buffer = SafeBuffer
+}
+
+function SafeBuffer (arg, encodingOrOffset, length) {
+  return Buffer(arg, encodingOrOffset, length)
+}
+
+// Copy static methods from Buffer
+copyProps(Buffer, SafeBuffer)
+
+SafeBuffer.from = function (arg, encodingOrOffset, length) {
+  if (typeof arg === 'number') {
+    throw new TypeError('Argument must not be a number')
+  }
+  return Buffer(arg, encodingOrOffset, length)
+}
+
+SafeBuffer.alloc = function (size, fill, encoding) {
+  if (typeof size !== 'number') {
+    throw new TypeError('Argument must be a number')
+  }
+  var buf = Buffer(size)
+  if (fill !== undefined) {
+    if (typeof encoding === 'string') {
+      buf.fill(fill, encoding)
+    } else {
+      buf.fill(fill)
+    }
+  } else {
+    buf.fill(0)
+  }
+  return buf
+}
+
+SafeBuffer.allocUnsafe = function (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('Argument must be a number')
+  }
+  return Buffer(size)
+}
+
+SafeBuffer.allocUnsafeSlow = function (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('Argument must be a number')
+  }
+  return buffer.SlowBuffer(size)
+}
+
+},{"buffer":353}],347:[function(require,module,exports){
+
+/**
+ * An Array.prototype.slice.call(arguments) alternative
+ *
+ * @param {Object} args something with a length
+ * @param {Number} slice
+ * @param {Number} sliceEnd
+ * @api public
+ */
+
+module.exports = function (args, slice, sliceEnd) {
+  var ret = [];
+  var len = args.length;
+
+  if (0 === len) return ret;
+
+  var start = slice < 0
+    ? Math.max(0, slice + len)
+    : slice || 0;
+
+  if (sliceEnd !== undefined) {
+    len = sliceEnd < 0
+      ? sliceEnd + len
+      : sliceEnd
+  }
+
+  while (len-- > start) {
+    ret[len - start] = args[len];
+  }
+
+  return ret;
+}
+
+
+},{}],348:[function(require,module,exports){
+(function (global){
+'use strict';
+
+// compare and isBuffer taken from https://github.com/feross/buffer/blob/680e9e5e488f22aac27599a57dc844a6315928dd/index.js
+// original notice:
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+function compare(a, b) {
+  if (a === b) {
+    return 0;
+  }
+
+  var x = a.length;
+  var y = b.length;
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i];
+      y = b[i];
+      break;
+    }
+  }
+
+  if (x < y) {
+    return -1;
+  }
+  if (y < x) {
+    return 1;
+  }
+  return 0;
+}
+function isBuffer(b) {
+  if (global.Buffer && typeof global.Buffer.isBuffer === 'function') {
+    return global.Buffer.isBuffer(b);
+  }
+  return !!(b != null && b._isBuffer);
+}
+
+// based on node assert, original notice:
+
+// http://wiki.commonjs.org/wiki/Unit_Testing/1.0
+//
+// THIS IS NOT TESTED NOR LIKELY TO WORK OUTSIDE V8!
+//
+// Originally from narwhal.js (http://narwhaljs.org)
+// Copyright (c) 2009 Thomas Robinson <280north.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the 'Software'), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+// sell copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var util = require('util/');
+var hasOwn = Object.prototype.hasOwnProperty;
+var pSlice = Array.prototype.slice;
+var functionsHaveNames = (function () {
+  return function foo() {}.name === 'foo';
+}());
+function pToString (obj) {
+  return Object.prototype.toString.call(obj);
+}
+function isView(arrbuf) {
+  if (isBuffer(arrbuf)) {
+    return false;
+  }
+  if (typeof global.ArrayBuffer !== 'function') {
+    return false;
+  }
+  if (typeof ArrayBuffer.isView === 'function') {
+    return ArrayBuffer.isView(arrbuf);
+  }
+  if (!arrbuf) {
+    return false;
+  }
+  if (arrbuf instanceof DataView) {
+    return true;
+  }
+  if (arrbuf.buffer && arrbuf.buffer instanceof ArrayBuffer) {
+    return true;
+  }
+  return false;
+}
+// 1. The assert module provides functions that throw
+// AssertionError's when particular conditions are not met. The
+// assert module must conform to the following interface.
+
+var assert = module.exports = ok;
+
+// 2. The AssertionError is defined in assert.
+// new assert.AssertionError({ message: message,
+//                             actual: actual,
+//                             expected: expected })
+
+var regex = /\s*function\s+([^\(\s]*)\s*/;
+// based on https://github.com/ljharb/function.prototype.name/blob/adeeeec8bfcc6068b187d7d9fb3d5bb1d3a30899/implementation.js
+function getName(func) {
+  if (!util.isFunction(func)) {
+    return;
+  }
+  if (functionsHaveNames) {
+    return func.name;
+  }
+  var str = func.toString();
+  var match = str.match(regex);
+  return match && match[1];
+}
+assert.AssertionError = function AssertionError(options) {
+  this.name = 'AssertionError';
+  this.actual = options.actual;
+  this.expected = options.expected;
+  this.operator = options.operator;
+  if (options.message) {
+    this.message = options.message;
+    this.generatedMessage = false;
+  } else {
+    this.message = getMessage(this);
+    this.generatedMessage = true;
+  }
+  var stackStartFunction = options.stackStartFunction || fail;
+  if (Error.captureStackTrace) {
+    Error.captureStackTrace(this, stackStartFunction);
+  } else {
+    // non v8 browsers so we can have a stacktrace
+    var err = new Error();
+    if (err.stack) {
+      var out = err.stack;
+
+      // try to strip useless frames
+      var fn_name = getName(stackStartFunction);
+      var idx = out.indexOf('\n' + fn_name);
+      if (idx >= 0) {
+        // once we have located the function frame
+        // we need to strip out everything before it (and its line)
+        var next_line = out.indexOf('\n', idx + 1);
+        out = out.substring(next_line + 1);
+      }
+
+      this.stack = out;
+    }
+  }
+};
+
+// assert.AssertionError instanceof Error
+util.inherits(assert.AssertionError, Error);
+
+function truncate(s, n) {
+  if (typeof s === 'string') {
+    return s.length < n ? s : s.slice(0, n);
+  } else {
+    return s;
+  }
+}
+function inspect(something) {
+  if (functionsHaveNames || !util.isFunction(something)) {
+    return util.inspect(something);
+  }
+  var rawname = getName(something);
+  var name = rawname ? ': ' + rawname : '';
+  return '[Function' +  name + ']';
+}
+function getMessage(self) {
+  return truncate(inspect(self.actual), 128) + ' ' +
+         self.operator + ' ' +
+         truncate(inspect(self.expected), 128);
+}
+
+// At present only the three keys mentioned above are used and
+// understood by the spec. Implementations or sub modules can pass
+// other keys to the AssertionError's constructor - they will be
+// ignored.
+
+// 3. All of the following functions must throw an AssertionError
+// when a corresponding condition is not met, with a message that
+// may be undefined if not provided.  All assertion methods provide
+// both the actual and expected values to the assertion error for
+// display purposes.
+
+function fail(actual, expected, message, operator, stackStartFunction) {
+  throw new assert.AssertionError({
+    message: message,
+    actual: actual,
+    expected: expected,
+    operator: operator,
+    stackStartFunction: stackStartFunction
+  });
+}
+
+// EXTENSION! allows for well behaved errors defined elsewhere.
+assert.fail = fail;
+
+// 4. Pure assertion tests whether a value is truthy, as determined
+// by !!guard.
+// assert.ok(guard, message_opt);
+// This statement is equivalent to assert.equal(true, !!guard,
+// message_opt);. To test strictly for the value true, use
+// assert.strictEqual(true, guard, message_opt);.
+
+function ok(value, message) {
+  if (!value) fail(value, true, message, '==', assert.ok);
+}
+assert.ok = ok;
+
+// 5. The equality assertion tests shallow, coercive equality with
+// ==.
+// assert.equal(actual, expected, message_opt);
+
+assert.equal = function equal(actual, expected, message) {
+  if (actual != expected) fail(actual, expected, message, '==', assert.equal);
+};
+
+// 6. The non-equality assertion tests for whether two objects are not equal
+// with != assert.notEqual(actual, expected, message_opt);
+
+assert.notEqual = function notEqual(actual, expected, message) {
+  if (actual == expected) {
+    fail(actual, expected, message, '!=', assert.notEqual);
+  }
+};
+
+// 7. The equivalence assertion tests a deep equality relation.
+// assert.deepEqual(actual, expected, message_opt);
+
+assert.deepEqual = function deepEqual(actual, expected, message) {
+  if (!_deepEqual(actual, expected, false)) {
+    fail(actual, expected, message, 'deepEqual', assert.deepEqual);
+  }
+};
+
+assert.deepStrictEqual = function deepStrictEqual(actual, expected, message) {
+  if (!_deepEqual(actual, expected, true)) {
+    fail(actual, expected, message, 'deepStrictEqual', assert.deepStrictEqual);
+  }
+};
+
+function _deepEqual(actual, expected, strict, memos) {
+  // 7.1. All identical values are equivalent, as determined by ===.
+  if (actual === expected) {
+    return true;
+  } else if (isBuffer(actual) && isBuffer(expected)) {
+    return compare(actual, expected) === 0;
+
+  // 7.2. If the expected value is a Date object, the actual value is
+  // equivalent if it is also a Date object that refers to the same time.
+  } else if (util.isDate(actual) && util.isDate(expected)) {
+    return actual.getTime() === expected.getTime();
+
+  // 7.3 If the expected value is a RegExp object, the actual value is
+  // equivalent if it is also a RegExp object with the same source and
+  // properties (`global`, `multiline`, `lastIndex`, `ignoreCase`).
+  } else if (util.isRegExp(actual) && util.isRegExp(expected)) {
+    return actual.source === expected.source &&
+           actual.global === expected.global &&
+           actual.multiline === expected.multiline &&
+           actual.lastIndex === expected.lastIndex &&
+           actual.ignoreCase === expected.ignoreCase;
+
+  // 7.4. Other pairs that do not both pass typeof value == 'object',
+  // equivalence is determined by ==.
+  } else if ((actual === null || typeof actual !== 'object') &&
+             (expected === null || typeof expected !== 'object')) {
+    return strict ? actual === expected : actual == expected;
+
+  // If both values are instances of typed arrays, wrap their underlying
+  // ArrayBuffers in a Buffer each to increase performance
+  // This optimization requires the arrays to have the same type as checked by
+  // Object.prototype.toString (aka pToString). Never perform binary
+  // comparisons for Float*Arrays, though, since e.g. +0 === -0 but their
+  // bit patterns are not identical.
+  } else if (isView(actual) && isView(expected) &&
+             pToString(actual) === pToString(expected) &&
+             !(actual instanceof Float32Array ||
+               actual instanceof Float64Array)) {
+    return compare(new Uint8Array(actual.buffer),
+                   new Uint8Array(expected.buffer)) === 0;
+
+  // 7.5 For all other Object pairs, including Array objects, equivalence is
+  // determined by having the same number of owned properties (as verified
+  // with Object.prototype.hasOwnProperty.call), the same set of keys
+  // (although not necessarily the same order), equivalent values for every
+  // corresponding key, and an identical 'prototype' property. Note: this
+  // accounts for both named and indexed properties on Arrays.
+  } else if (isBuffer(actual) !== isBuffer(expected)) {
+    return false;
+  } else {
+    memos = memos || {actual: [], expected: []};
+
+    var actualIndex = memos.actual.indexOf(actual);
+    if (actualIndex !== -1) {
+      if (actualIndex === memos.expected.indexOf(expected)) {
+        return true;
+      }
+    }
+
+    memos.actual.push(actual);
+    memos.expected.push(expected);
+
+    return objEquiv(actual, expected, strict, memos);
+  }
+}
+
+function isArguments(object) {
+  return Object.prototype.toString.call(object) == '[object Arguments]';
+}
+
+function objEquiv(a, b, strict, actualVisitedObjects) {
+  if (a === null || a === undefined || b === null || b === undefined)
+    return false;
+  // if one is a primitive, the other must be same
+  if (util.isPrimitive(a) || util.isPrimitive(b))
+    return a === b;
+  if (strict && Object.getPrototypeOf(a) !== Object.getPrototypeOf(b))
+    return false;
+  var aIsArgs = isArguments(a);
+  var bIsArgs = isArguments(b);
+  if ((aIsArgs && !bIsArgs) || (!aIsArgs && bIsArgs))
+    return false;
+  if (aIsArgs) {
+    a = pSlice.call(a);
+    b = pSlice.call(b);
+    return _deepEqual(a, b, strict);
+  }
+  var ka = objectKeys(a);
+  var kb = objectKeys(b);
+  var key, i;
+  // having the same number of owned properties (keys incorporates
+  // hasOwnProperty)
+  if (ka.length !== kb.length)
+    return false;
+  //the same set of keys (although not necessarily the same order),
+  ka.sort();
+  kb.sort();
+  //~~~cheap key test
+  for (i = ka.length - 1; i >= 0; i--) {
+    if (ka[i] !== kb[i])
+      return false;
+  }
+  //equivalent values for every corresponding key, and
+  //~~~possibly expensive deep test
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!_deepEqual(a[key], b[key], strict, actualVisitedObjects))
+      return false;
+  }
+  return true;
+}
+
+// 8. The non-equivalence assertion tests for any deep inequality.
+// assert.notDeepEqual(actual, expected, message_opt);
+
+assert.notDeepEqual = function notDeepEqual(actual, expected, message) {
+  if (_deepEqual(actual, expected, false)) {
+    fail(actual, expected, message, 'notDeepEqual', assert.notDeepEqual);
+  }
+};
+
+assert.notDeepStrictEqual = notDeepStrictEqual;
+function notDeepStrictEqual(actual, expected, message) {
+  if (_deepEqual(actual, expected, true)) {
+    fail(actual, expected, message, 'notDeepStrictEqual', notDeepStrictEqual);
+  }
+}
+
+
+// 9. The strict equality assertion tests strict equality, as determined by ===.
+// assert.strictEqual(actual, expected, message_opt);
+
+assert.strictEqual = function strictEqual(actual, expected, message) {
+  if (actual !== expected) {
+    fail(actual, expected, message, '===', assert.strictEqual);
+  }
+};
+
+// 10. The strict non-equality assertion tests for strict inequality, as
+// determined by !==.  assert.notStrictEqual(actual, expected, message_opt);
+
+assert.notStrictEqual = function notStrictEqual(actual, expected, message) {
+  if (actual === expected) {
+    fail(actual, expected, message, '!==', assert.notStrictEqual);
+  }
+};
+
+function expectedException(actual, expected) {
+  if (!actual || !expected) {
+    return false;
+  }
+
+  if (Object.prototype.toString.call(expected) == '[object RegExp]') {
+    return expected.test(actual);
+  }
+
+  try {
+    if (actual instanceof expected) {
+      return true;
+    }
+  } catch (e) {
+    // Ignore.  The instanceof check doesn't work for arrow functions.
+  }
+
+  if (Error.isPrototypeOf(expected)) {
+    return false;
+  }
+
+  return expected.call({}, actual) === true;
+}
+
+function _tryBlock(block) {
+  var error;
+  try {
+    block();
+  } catch (e) {
+    error = e;
+  }
+  return error;
+}
+
+function _throws(shouldThrow, block, expected, message) {
+  var actual;
+
+  if (typeof block !== 'function') {
+    throw new TypeError('"block" argument must be a function');
+  }
+
+  if (typeof expected === 'string') {
+    message = expected;
+    expected = null;
+  }
+
+  actual = _tryBlock(block);
+
+  message = (expected && expected.name ? ' (' + expected.name + ').' : '.') +
+            (message ? ' ' + message : '.');
+
+  if (shouldThrow && !actual) {
+    fail(actual, expected, 'Missing expected exception' + message);
+  }
+
+  var userProvidedMessage = typeof message === 'string';
+  var isUnwantedException = !shouldThrow && util.isError(actual);
+  var isUnexpectedException = !shouldThrow && actual && !expected;
+
+  if ((isUnwantedException &&
+      userProvidedMessage &&
+      expectedException(actual, expected)) ||
+      isUnexpectedException) {
+    fail(actual, expected, 'Got unwanted exception' + message);
+  }
+
+  if ((shouldThrow && actual && expected &&
+      !expectedException(actual, expected)) || (!shouldThrow && actual)) {
+    throw actual;
+  }
+}
+
+// 11. Expected to throw an error:
+// assert.throws(block, Error_opt, message_opt);
+
+assert.throws = function(block, /*optional*/error, /*optional*/message) {
+  _throws(true, block, error, message);
+};
+
+// EXTENSION! This is annoying to write outside this module.
+assert.doesNotThrow = function(block, /*optional*/error, /*optional*/message) {
+  _throws(false, block, error, message);
+};
+
+assert.ifError = function(err) { if (err) throw err; };
+
+var objectKeys = Object.keys || function (obj) {
+  var keys = [];
+  for (var key in obj) {
+    if (hasOwn.call(obj, key)) keys.push(key);
+  }
+  return keys;
+};
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"util/":351}],349:[function(require,module,exports){
+if (typeof Object.create === 'function') {
+  // implementation from standard node.js 'util' module
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    ctor.prototype = Object.create(superCtor.prototype, {
+      constructor: {
+        value: ctor,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+  };
+} else {
+  // old school shim for old browsers
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    var TempCtor = function () {}
+    TempCtor.prototype = superCtor.prototype
+    ctor.prototype = new TempCtor()
+    ctor.prototype.constructor = ctor
+  }
+}
+
+},{}],350:[function(require,module,exports){
+module.exports = function isBuffer(arg) {
+  return arg && typeof arg === 'object'
+    && typeof arg.copy === 'function'
+    && typeof arg.fill === 'function'
+    && typeof arg.readUInt8 === 'function';
+}
+},{}],351:[function(require,module,exports){
+(function (process,global){
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var formatRegExp = /%[sdj%]/g;
+exports.format = function(f) {
+  if (!isString(f)) {
+    var objects = [];
+    for (var i = 0; i < arguments.length; i++) {
+      objects.push(inspect(arguments[i]));
+    }
+    return objects.join(' ');
+  }
+
+  var i = 1;
+  var args = arguments;
+  var len = args.length;
+  var str = String(f).replace(formatRegExp, function(x) {
+    if (x === '%%') return '%';
+    if (i >= len) return x;
+    switch (x) {
+      case '%s': return String(args[i++]);
+      case '%d': return Number(args[i++]);
+      case '%j':
+        try {
+          return JSON.stringify(args[i++]);
+        } catch (_) {
+          return '[Circular]';
+        }
+      default:
+        return x;
+    }
+  });
+  for (var x = args[i]; i < len; x = args[++i]) {
+    if (isNull(x) || !isObject(x)) {
+      str += ' ' + x;
+    } else {
+      str += ' ' + inspect(x);
+    }
+  }
+  return str;
+};
+
+
+// Mark that a method should not be used.
+// Returns a modified function which warns once by default.
+// If --no-deprecation is set, then it is a no-op.
+exports.deprecate = function(fn, msg) {
+  // Allow for deprecating things in the process of starting up.
+  if (isUndefined(global.process)) {
+    return function() {
+      return exports.deprecate(fn, msg).apply(this, arguments);
+    };
+  }
+
+  if (process.noDeprecation === true) {
+    return fn;
+  }
+
+  var warned = false;
+  function deprecated() {
+    if (!warned) {
+      if (process.throwDeprecation) {
+        throw new Error(msg);
+      } else if (process.traceDeprecation) {
+        console.trace(msg);
+      } else {
+        console.error(msg);
+      }
+      warned = true;
+    }
+    return fn.apply(this, arguments);
+  }
+
+  return deprecated;
+};
+
+
+var debugs = {};
+var debugEnviron;
+exports.debuglog = function(set) {
+  if (isUndefined(debugEnviron))
+    debugEnviron = process.env.NODE_DEBUG || '';
+  set = set.toUpperCase();
+  if (!debugs[set]) {
+    if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
+      var pid = process.pid;
+      debugs[set] = function() {
+        var msg = exports.format.apply(exports, arguments);
+        console.error('%s %d: %s', set, pid, msg);
+      };
+    } else {
+      debugs[set] = function() {};
+    }
+  }
+  return debugs[set];
+};
+
+
+/**
+ * Echos the value of a value. Trys to print the value out
+ * in the best way possible given the different types.
+ *
+ * @param {Object} obj The object to print out.
+ * @param {Object} opts Optional options object that alters the output.
+ */
+/* legacy: obj, showHidden, depth, colors*/
+function inspect(obj, opts) {
+  // default options
+  var ctx = {
+    seen: [],
+    stylize: stylizeNoColor
+  };
+  // legacy...
+  if (arguments.length >= 3) ctx.depth = arguments[2];
+  if (arguments.length >= 4) ctx.colors = arguments[3];
+  if (isBoolean(opts)) {
+    // legacy...
+    ctx.showHidden = opts;
+  } else if (opts) {
+    // got an "options" object
+    exports._extend(ctx, opts);
+  }
+  // set default options
+  if (isUndefined(ctx.showHidden)) ctx.showHidden = false;
+  if (isUndefined(ctx.depth)) ctx.depth = 2;
+  if (isUndefined(ctx.colors)) ctx.colors = false;
+  if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
+  if (ctx.colors) ctx.stylize = stylizeWithColor;
+  return formatValue(ctx, obj, ctx.depth);
+}
+exports.inspect = inspect;
+
+
+// http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
+inspect.colors = {
+  'bold' : [1, 22],
+  'italic' : [3, 23],
+  'underline' : [4, 24],
+  'inverse' : [7, 27],
+  'white' : [37, 39],
+  'grey' : [90, 39],
+  'black' : [30, 39],
+  'blue' : [34, 39],
+  'cyan' : [36, 39],
+  'green' : [32, 39],
+  'magenta' : [35, 39],
+  'red' : [31, 39],
+  'yellow' : [33, 39]
+};
+
+// Don't use 'blue' not visible on cmd.exe
+inspect.styles = {
+  'special': 'cyan',
+  'number': 'yellow',
+  'boolean': 'yellow',
+  'undefined': 'grey',
+  'null': 'bold',
+  'string': 'green',
+  'date': 'magenta',
+  // "name": intentionally not styling
+  'regexp': 'red'
+};
+
+
+function stylizeWithColor(str, styleType) {
+  var style = inspect.styles[styleType];
+
+  if (style) {
+    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
+           '\u001b[' + inspect.colors[style][1] + 'm';
+  } else {
+    return str;
+  }
+}
+
+
+function stylizeNoColor(str, styleType) {
+  return str;
+}
+
+
+function arrayToHash(array) {
+  var hash = {};
+
+  array.forEach(function(val, idx) {
+    hash[val] = true;
+  });
+
+  return hash;
+}
+
+
+function formatValue(ctx, value, recurseTimes) {
+  // Provide a hook for user-specified inspect functions.
+  // Check that value is an object with an inspect function on it
+  if (ctx.customInspect &&
+      value &&
+      isFunction(value.inspect) &&
+      // Filter out the util module, it's inspect function is special
+      value.inspect !== exports.inspect &&
+      // Also filter out any prototype objects using the circular check.
+      !(value.constructor && value.constructor.prototype === value)) {
+    var ret = value.inspect(recurseTimes, ctx);
+    if (!isString(ret)) {
+      ret = formatValue(ctx, ret, recurseTimes);
+    }
+    return ret;
+  }
+
+  // Primitive types cannot have properties
+  var primitive = formatPrimitive(ctx, value);
+  if (primitive) {
+    return primitive;
+  }
+
+  // Look up the keys of the object.
+  var keys = Object.keys(value);
+  var visibleKeys = arrayToHash(keys);
+
+  if (ctx.showHidden) {
+    keys = Object.getOwnPropertyNames(value);
+  }
+
+  // IE doesn't make error fields non-enumerable
+  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
+  if (isError(value)
+      && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
+    return formatError(value);
+  }
+
+  // Some type of object without properties can be shortcutted.
+  if (keys.length === 0) {
+    if (isFunction(value)) {
+      var name = value.name ? ': ' + value.name : '';
+      return ctx.stylize('[Function' + name + ']', 'special');
+    }
+    if (isRegExp(value)) {
+      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
+    }
+    if (isDate(value)) {
+      return ctx.stylize(Date.prototype.toString.call(value), 'date');
+    }
+    if (isError(value)) {
+      return formatError(value);
+    }
+  }
+
+  var base = '', array = false, braces = ['{', '}'];
+
+  // Make Array say that they are Array
+  if (isArray(value)) {
+    array = true;
+    braces = ['[', ']'];
+  }
+
+  // Make functions say that they are functions
+  if (isFunction(value)) {
+    var n = value.name ? ': ' + value.name : '';
+    base = ' [Function' + n + ']';
+  }
+
+  // Make RegExps say that they are RegExps
+  if (isRegExp(value)) {
+    base = ' ' + RegExp.prototype.toString.call(value);
+  }
+
+  // Make dates with properties first say the date
+  if (isDate(value)) {
+    base = ' ' + Date.prototype.toUTCString.call(value);
+  }
+
+  // Make error with message first say the error
+  if (isError(value)) {
+    base = ' ' + formatError(value);
+  }
+
+  if (keys.length === 0 && (!array || value.length == 0)) {
+    return braces[0] + base + braces[1];
+  }
+
+  if (recurseTimes < 0) {
+    if (isRegExp(value)) {
+      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
+    } else {
+      return ctx.stylize('[Object]', 'special');
+    }
+  }
+
+  ctx.seen.push(value);
+
+  var output;
+  if (array) {
+    output = formatArray(ctx, value, recurseTimes, visibleKeys, keys);
+  } else {
+    output = keys.map(function(key) {
+      return formatProperty(ctx, value, recurseTimes, visibleKeys, key, array);
+    });
+  }
+
+  ctx.seen.pop();
+
+  return reduceToSingleString(output, base, braces);
+}
+
+
+function formatPrimitive(ctx, value) {
+  if (isUndefined(value))
+    return ctx.stylize('undefined', 'undefined');
+  if (isString(value)) {
+    var simple = '\'' + JSON.stringify(value).replace(/^"|"$/g, '')
+                                             .replace(/'/g, "\\'")
+                                             .replace(/\\"/g, '"') + '\'';
+    return ctx.stylize(simple, 'string');
+  }
+  if (isNumber(value))
+    return ctx.stylize('' + value, 'number');
+  if (isBoolean(value))
+    return ctx.stylize('' + value, 'boolean');
+  // For some reason typeof null is "object", so special case here.
+  if (isNull(value))
+    return ctx.stylize('null', 'null');
+}
+
+
+function formatError(value) {
+  return '[' + Error.prototype.toString.call(value) + ']';
+}
+
+
+function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
+  var output = [];
+  for (var i = 0, l = value.length; i < l; ++i) {
+    if (hasOwnProperty(value, String(i))) {
+      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
+          String(i), true));
+    } else {
+      output.push('');
+    }
+  }
+  keys.forEach(function(key) {
+    if (!key.match(/^\d+$/)) {
+      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
+          key, true));
+    }
+  });
+  return output;
+}
+
+
+function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
+  var name, str, desc;
+  desc = Object.getOwnPropertyDescriptor(value, key) || { value: value[key] };
+  if (desc.get) {
+    if (desc.set) {
+      str = ctx.stylize('[Getter/Setter]', 'special');
+    } else {
+      str = ctx.stylize('[Getter]', 'special');
+    }
+  } else {
+    if (desc.set) {
+      str = ctx.stylize('[Setter]', 'special');
+    }
+  }
+  if (!hasOwnProperty(visibleKeys, key)) {
+    name = '[' + key + ']';
+  }
+  if (!str) {
+    if (ctx.seen.indexOf(desc.value) < 0) {
+      if (isNull(recurseTimes)) {
+        str = formatValue(ctx, desc.value, null);
+      } else {
+        str = formatValue(ctx, desc.value, recurseTimes - 1);
+      }
+      if (str.indexOf('\n') > -1) {
+        if (array) {
+          str = str.split('\n').map(function(line) {
+            return '  ' + line;
+          }).join('\n').substr(2);
+        } else {
+          str = '\n' + str.split('\n').map(function(line) {
+            return '   ' + line;
+          }).join('\n');
+        }
+      }
+    } else {
+      str = ctx.stylize('[Circular]', 'special');
+    }
+  }
+  if (isUndefined(name)) {
+    if (array && key.match(/^\d+$/)) {
+      return str;
+    }
+    name = JSON.stringify('' + key);
+    if (name.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)) {
+      name = name.substr(1, name.length - 2);
+      name = ctx.stylize(name, 'name');
+    } else {
+      name = name.replace(/'/g, "\\'")
+                 .replace(/\\"/g, '"')
+                 .replace(/(^"|"$)/g, "'");
+      name = ctx.stylize(name, 'string');
+    }
+  }
+
+  return name + ': ' + str;
+}
+
+
+function reduceToSingleString(output, base, braces) {
+  var numLinesEst = 0;
+  var length = output.reduce(function(prev, cur) {
+    numLinesEst++;
+    if (cur.indexOf('\n') >= 0) numLinesEst++;
+    return prev + cur.replace(/\u001b\[\d\d?m/g, '').length + 1;
+  }, 0);
+
+  if (length > 60) {
+    return braces[0] +
+           (base === '' ? '' : base + '\n ') +
+           ' ' +
+           output.join(',\n  ') +
+           ' ' +
+           braces[1];
+  }
+
+  return braces[0] + base + ' ' + output.join(', ') + ' ' + braces[1];
+}
+
+
+// NOTE: These type checking functions intentionally don't use `instanceof`
+// because it is fragile and can be easily faked with `Object.create()`.
+function isArray(ar) {
+  return Array.isArray(ar);
+}
+exports.isArray = isArray;
+
+function isBoolean(arg) {
+  return typeof arg === 'boolean';
+}
+exports.isBoolean = isBoolean;
+
+function isNull(arg) {
+  return arg === null;
+}
+exports.isNull = isNull;
+
+function isNullOrUndefined(arg) {
+  return arg == null;
+}
+exports.isNullOrUndefined = isNullOrUndefined;
+
+function isNumber(arg) {
+  return typeof arg === 'number';
+}
+exports.isNumber = isNumber;
+
+function isString(arg) {
+  return typeof arg === 'string';
+}
+exports.isString = isString;
+
+function isSymbol(arg) {
+  return typeof arg === 'symbol';
+}
+exports.isSymbol = isSymbol;
+
+function isUndefined(arg) {
+  return arg === void 0;
+}
+exports.isUndefined = isUndefined;
+
+function isRegExp(re) {
+  return isObject(re) && objectToString(re) === '[object RegExp]';
+}
+exports.isRegExp = isRegExp;
+
+function isObject(arg) {
+  return typeof arg === 'object' && arg !== null;
+}
+exports.isObject = isObject;
+
+function isDate(d) {
+  return isObject(d) && objectToString(d) === '[object Date]';
+}
+exports.isDate = isDate;
+
+function isError(e) {
+  return isObject(e) &&
+      (objectToString(e) === '[object Error]' || e instanceof Error);
+}
+exports.isError = isError;
+
+function isFunction(arg) {
+  return typeof arg === 'function';
+}
+exports.isFunction = isFunction;
+
+function isPrimitive(arg) {
+  return arg === null ||
+         typeof arg === 'boolean' ||
+         typeof arg === 'number' ||
+         typeof arg === 'string' ||
+         typeof arg === 'symbol' ||  // ES6 symbol
+         typeof arg === 'undefined';
+}
+exports.isPrimitive = isPrimitive;
+
+exports.isBuffer = require('./support/isBuffer');
+
+function objectToString(o) {
+  return Object.prototype.toString.call(o);
+}
+
+
+function pad(n) {
+  return n < 10 ? '0' + n.toString(10) : n.toString(10);
+}
+
+
+var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
+              'Oct', 'Nov', 'Dec'];
+
+// 26 Feb 16:19:34
+function timestamp() {
+  var d = new Date();
+  var time = [pad(d.getHours()),
+              pad(d.getMinutes()),
+              pad(d.getSeconds())].join(':');
+  return [d.getDate(), months[d.getMonth()], time].join(' ');
+}
+
+
+// log is just a thin wrapper to console.log that prepends a timestamp
+exports.log = function() {
+  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
+};
+
+
+/**
+ * Inherit the prototype methods from one constructor into another.
+ *
+ * The Function.prototype.inherits from lang.js rewritten as a standalone
+ * function (not on Function.prototype). NOTE: If this file is to be loaded
+ * during bootstrapping this function needs to be rewritten using some native
+ * functions as prototype setup using normal JavaScript does not work as
+ * expected during bootstrapping (see mirror.js in r114903).
+ *
+ * @param {function} ctor Constructor function which needs to inherit the
+ *     prototype.
+ * @param {function} superCtor Constructor function to inherit prototype from.
+ */
+exports.inherits = require('inherits');
+
+exports._extend = function(origin, add) {
+  // Don't do anything if add isn't an object
+  if (!add || !isObject(add)) return origin;
+
+  var keys = Object.keys(add);
+  var i = keys.length;
+  while (i--) {
+    origin[keys[i]] = add[keys[i]];
+  }
+  return origin;
+};
+
+function hasOwnProperty(obj, prop) {
+  return Object.prototype.hasOwnProperty.call(obj, prop);
+}
+
+}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./support/isBuffer":350,"_process":358,"inherits":349}],352:[function(require,module,exports){
+'use strict'
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+// Support decoding URL-safe base64 strings, as Node.js does.
+// See: https://en.wikipedia.org/wiki/Base64#URL_applications
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function getLens (b64) {
+  var len = b64.length
+
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // Trim off extra bytes after placeholder bytes are found
+  // See: https://github.com/beatgammit/base64-js/issues/42
+  var validLen = b64.indexOf('=')
+  if (validLen === -1) validLen = len
+
+  var placeHoldersLen = validLen === len
+    ? 0
+    : 4 - (validLen % 4)
+
+  return [validLen, placeHoldersLen]
+}
+
+// base64 is 4/3 + up to two characters of the original data
+function byteLength (b64) {
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function _byteLength (b64, validLen, placeHoldersLen) {
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function toByteArray (b64) {
+  var tmp
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+
+  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
+
+  var curByte = 0
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  var len = placeHoldersLen > 0
+    ? validLen - 4
+    : validLen
+
+  for (var i = 0; i < len; i += 4) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 18) |
+      (revLookup[b64.charCodeAt(i + 1)] << 12) |
+      (revLookup[b64.charCodeAt(i + 2)] << 6) |
+      revLookup[b64.charCodeAt(i + 3)]
+    arr[curByte++] = (tmp >> 16) & 0xFF
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 2) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 2) |
+      (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 1) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 10) |
+      (revLookup[b64.charCodeAt(i + 1)] << 4) |
+      (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] +
+    lookup[num >> 12 & 0x3F] +
+    lookup[num >> 6 & 0x3F] +
+    lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp =
+      ((uint8[i] << 16) & 0xFF0000) +
+      ((uint8[i + 1] << 8) & 0xFF00) +
+      (uint8[i + 2] & 0xFF)
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(
+      uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)
+    ))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 2] +
+      lookup[(tmp << 4) & 0x3F] +
+      '=='
+    )
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 10] +
+      lookup[(tmp >> 4) & 0x3F] +
+      lookup[(tmp << 2) & 0x3F] +
+      '='
+    )
+  }
+
+  return parts.join('')
+}
+
+},{}],353:[function(require,module,exports){
+(function (Buffer){
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+'use strict'
+
+var base64 = require('base64-js')
+var ieee754 = require('ieee754')
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+var K_MAX_LENGTH = 0x7fffffff
+exports.kMaxLength = K_MAX_LENGTH
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Print warning and recommend using `buffer` v4.x which has an Object
+ *               implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * We report that the browser does not support typed arrays if the are not subclassable
+ * using __proto__. Firefox 4-29 lacks support for adding new properties to `Uint8Array`
+ * (See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438). IE 10 lacks support
+ * for __proto__ and has a buggy typed array implementation.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = typedArraySupport()
+
+if (!Buffer.TYPED_ARRAY_SUPPORT && typeof console !== 'undefined' &&
+    typeof console.error === 'function') {
+  console.error(
+    'This browser lacks typed array (Uint8Array) support which is required by ' +
+    '`buffer` v5.x. Use `buffer` v4.x if you require old browser support.'
+  )
+}
+
+function typedArraySupport () {
+  // Can typed array instances can be augmented?
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = { __proto__: Uint8Array.prototype, foo: function () { return 42 } }
+    return arr.foo() === 42
+  } catch (e) {
+    return false
+  }
+}
+
+Object.defineProperty(Buffer.prototype, 'parent', {
+  enumerable: true,
+  get: function () {
+    if (!Buffer.isBuffer(this)) return undefined
+    return this.buffer
+  }
+})
+
+Object.defineProperty(Buffer.prototype, 'offset', {
+  enumerable: true,
+  get: function () {
+    if (!Buffer.isBuffer(this)) return undefined
+    return this.byteOffset
+  }
+})
+
+function createBuffer (length) {
+  if (length > K_MAX_LENGTH) {
+    throw new RangeError('The value "' + length + '" is invalid for option "size"')
+  }
+  // Return an augmented `Uint8Array` instance
+  var buf = new Uint8Array(length)
+  buf.__proto__ = Buffer.prototype
+  return buf
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new TypeError(
+        'The "string" argument must be of type string. Received type number'
+      )
+    }
+    return allocUnsafe(arg)
+  }
+  return from(arg, encodingOrOffset, length)
+}
+
+// Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+if (typeof Symbol !== 'undefined' && Symbol.species != null &&
+    Buffer[Symbol.species] === Buffer) {
+  Object.defineProperty(Buffer, Symbol.species, {
+    value: null,
+    configurable: true,
+    enumerable: false,
+    writable: false
+  })
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+function from (value, encodingOrOffset, length) {
+  if (typeof value === 'string') {
+    return fromString(value, encodingOrOffset)
+  }
+
+  if (ArrayBuffer.isView(value)) {
+    return fromArrayLike(value)
+  }
+
+  if (value == null) {
+    throw TypeError(
+      'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
+      'or Array-like Object. Received type ' + (typeof value)
+    )
+  }
+
+  if (isInstance(value, ArrayBuffer) ||
+      (value && isInstance(value.buffer, ArrayBuffer))) {
+    return fromArrayBuffer(value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'number') {
+    throw new TypeError(
+      'The "value" argument must not be of type number. Received type number'
+    )
+  }
+
+  var valueOf = value.valueOf && value.valueOf()
+  if (valueOf != null && valueOf !== value) {
+    return Buffer.from(valueOf, encodingOrOffset, length)
+  }
+
+  var b = fromObject(value)
+  if (b) return b
+
+  if (typeof Symbol !== 'undefined' && Symbol.toPrimitive != null &&
+      typeof value[Symbol.toPrimitive] === 'function') {
+    return Buffer.from(
+      value[Symbol.toPrimitive]('string'), encodingOrOffset, length
+    )
+  }
+
+  throw new TypeError(
+    'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
+    'or Array-like Object. Received type ' + (typeof value)
+  )
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(value, encodingOrOffset, length)
+}
+
+// Note: Change prototype *after* Buffer.from is defined to workaround Chrome bug:
+// https://github.com/feross/buffer/pull/148
+Buffer.prototype.__proto__ = Uint8Array.prototype
+Buffer.__proto__ = Uint8Array
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be of type number')
+  } else if (size < 0) {
+    throw new RangeError('The value "' + size + '" is invalid for option "size"')
+  }
+}
+
+function alloc (size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(size).fill(fill, encoding)
+      : createBuffer(size).fill(fill)
+  }
+  return createBuffer(size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(size, fill, encoding)
+}
+
+function allocUnsafe (size) {
+  assertSize(size)
+  return createBuffer(size < 0 ? 0 : checked(size) | 0)
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(size)
+}
+
+function fromString (string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('Unknown encoding: ' + encoding)
+  }
+
+  var length = byteLength(string, encoding) | 0
+  var buf = createBuffer(length)
+
+  var actual = buf.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    buf = buf.slice(0, actual)
+  }
+
+  return buf
+}
+
+function fromArrayLike (array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  var buf = createBuffer(length)
+  for (var i = 0; i < length; i += 1) {
+    buf[i] = array[i] & 255
+  }
+  return buf
+}
+
+function fromArrayBuffer (array, byteOffset, length) {
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('"offset" is outside of buffer bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('"length" is outside of buffer bounds')
+  }
+
+  var buf
+  if (byteOffset === undefined && length === undefined) {
+    buf = new Uint8Array(array)
+  } else if (length === undefined) {
+    buf = new Uint8Array(array, byteOffset)
+  } else {
+    buf = new Uint8Array(array, byteOffset, length)
+  }
+
+  // Return an augmented `Uint8Array` instance
+  buf.__proto__ = Buffer.prototype
+  return buf
+}
+
+function fromObject (obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    var buf = createBuffer(len)
+
+    if (buf.length === 0) {
+      return buf
+    }
+
+    obj.copy(buf, 0, 0, len)
+    return buf
+  }
+
+  if (obj.length !== undefined) {
+    if (typeof obj.length !== 'number' || numberIsNaN(obj.length)) {
+      return createBuffer(0)
+    }
+    return fromArrayLike(obj)
+  }
+
+  if (obj.type === 'Buffer' && Array.isArray(obj.data)) {
+    return fromArrayLike(obj.data)
+  }
+}
+
+function checked (length) {
+  // Note: cannot use `length < K_MAX_LENGTH` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= K_MAX_LENGTH) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + K_MAX_LENGTH.toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return b != null && b._isBuffer === true &&
+    b !== Buffer.prototype // so Buffer.isBuffer(Buffer.prototype) will be false
+}
+
+Buffer.compare = function compare (a, b) {
+  if (isInstance(a, Uint8Array)) a = Buffer.from(a, a.offset, a.byteLength)
+  if (isInstance(b, Uint8Array)) b = Buffer.from(b, b.offset, b.byteLength)
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError(
+      'The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array'
+    )
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!Array.isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (isInstance(buf, Uint8Array)) {
+      buf = Buffer.from(buf)
+    }
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (ArrayBuffer.isView(string) || isInstance(string, ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    throw new TypeError(
+      'The "string" argument must be one of type string, Buffer, or ArrayBuffer. ' +
+      'Received type ' + typeof string
+    )
+  }
+
+  var len = string.length
+  var mustMatch = (arguments.length > 2 && arguments[2] === true)
+  if (!mustMatch && len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) {
+          return mustMatch ? -1 : utf8ToBytes(string).length // assume utf8
+        }
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// This property is used by `Buffer.isBuffer` (and the `is-buffer` npm package)
+// to detect a Buffer instance. It's not possible to use `instanceof Buffer`
+// reliably in a browserify context because there could be multiple different
+// copies of the 'buffer' package in use. This method works even for Buffer
+// instances that were created from another copy of the `buffer` package.
+// See: https://github.com/feross/buffer/issues/154
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.toLocaleString = Buffer.prototype.toString
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  str = this.toString('hex', 0, max).replace(/(.{2})/g, '$1 ').trim()
+  if (this.length > max) str += ' ... '
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (isInstance(target, Uint8Array)) {
+    target = Buffer.from(target, target.offset, target.byteLength)
+  }
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError(
+      'The "target" argument must be one of type Buffer or Uint8Array. ' +
+      'Received type ' + (typeof target)
+    )
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset // Coerce to Number.
+  if (numberIsNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  var strLen = string.length
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (numberIsNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset >>> 0
+    if (isFinite(length)) {
+      length = length >>> 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+        : (firstByte > 0xBF) ? 2
+          : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + (bytes[i + 1] * 256))
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf = this.subarray(start, end)
+  // Return an augmented `Uint8Array` instance
+  newBuf.__proto__ = Buffer.prototype
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+<<<<<<< HEAD
+},{"./collection":347,"./collection/collection":346,"./env":349,"./permissions":351,"./utils":352,"assert":77,"bluebird":82,"debug":353,"sliced":359,"util":362}],351:[function(require,module,exports){
+'use strict';
+=======
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+>>>>>>> A provider has a list of ids
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  this[offset] = (value & 0xff)
+  this[offset + 1] = (value >>> 8)
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  this[offset] = (value >>> 8)
+  this[offset + 1] = (value & 0xff)
+  return offset + 2
+}
+
+<<<<<<< HEAD
+},{}],352:[function(require,module,exports){
+(function (process,setImmediate){
+'use strict';
+=======
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  this[offset + 3] = (value >>> 24)
+  this[offset + 2] = (value >>> 16)
+  this[offset + 1] = (value >>> 8)
+  this[offset] = (value & 0xff)
+  return offset + 4
+}
+>>>>>>> A provider has a list of ids
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  this[offset] = (value >>> 24)
+  this[offset + 1] = (value >>> 16)
+  this[offset + 2] = (value >>> 8)
+  this[offset + 3] = (value & 0xff)
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    var limit = Math.pow(2, (8 * byteLength) - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    var limit = Math.pow(2, (8 * byteLength) - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  this[offset] = (value & 0xff)
+  this[offset + 1] = (value >>> 8)
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  this[offset] = (value >>> 8)
+  this[offset + 1] = (value & 0xff)
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  this[offset] = (value & 0xff)
+  this[offset + 1] = (value >>> 8)
+  this[offset + 2] = (value >>> 16)
+  this[offset + 3] = (value >>> 24)
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  this[offset] = (value >>> 24)
+  this[offset + 1] = (value >>> 16)
+  this[offset + 2] = (value >>> 8)
+  this[offset + 3] = (value & 0xff)
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!Buffer.isBuffer(target)) throw new TypeError('argument should be a Buffer')
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('Index out of range')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+
+  if (this === target && typeof Uint8Array.prototype.copyWithin === 'function') {
+    // Use built-in when available, missing from IE11
+    this.copyWithin(targetStart, start, end)
+  } else if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (var i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, end),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if ((encoding === 'utf8' && code < 128) ||
+          encoding === 'latin1') {
+        // Fast path: If `val` fits into a single byte, use that numeric value.
+        val = code
+      }
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : Buffer.from(val, encoding)
+    var len = bytes.length
+    if (len === 0) {
+      throw new TypeError('The value "' + val +
+        '" is invalid for argument "value"')
+    }
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node takes equal signs as end of the Base64 encoding
+  str = str.split('=')[0]
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = str.trim().replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+// ArrayBuffer or Uint8Array objects from other contexts (i.e. iframes) do not pass
+// the `instanceof` check but they should be treated as of that type.
+// See: https://github.com/feross/buffer/issues/166
+function isInstance (obj, type) {
+  return obj instanceof type ||
+    (obj != null && obj.constructor != null && obj.constructor.name != null &&
+      obj.constructor.name === type.name)
+}
+function numberIsNaN (obj) {
+  // For IE11 support
+  return obj !== obj // eslint-disable-line no-self-compare
+}
+
+}).call(this,require("buffer").Buffer)
+},{"base64-js":352,"buffer":353,"ieee754":355}],354:[function(require,module,exports){
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var objectCreate = Object.create || objectCreatePolyfill
+var objectKeys = Object.keys || objectKeysPolyfill
+var bind = Function.prototype.bind || functionBindPolyfill
+
+function EventEmitter() {
+  if (!this._events || !Object.prototype.hasOwnProperty.call(this, '_events')) {
+    this._events = objectCreate(null);
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}
+module.exports = EventEmitter;
+
+// Backwards-compat with node 0.10.x
+EventEmitter.EventEmitter = EventEmitter;
+
+<<<<<<< HEAD
+}).call(this,require('_process'),require("timers").setImmediate)
+},{"_process":356,"regexp-clone":357,"safe-buffer":358,"timers":360}],353:[function(require,module,exports){
+(function (process){
+/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+=======
+EventEmitter.prototype._events = undefined;
+EventEmitter.prototype._maxListeners = undefined;
+>>>>>>> A provider has a list of ids
+
+// By default EventEmitters will print a warning if more than 10 listeners are
+// added to it. This is a useful default which helps finding memory leaks.
+var defaultMaxListeners = 10;
+
+var hasDefineProperty;
+try {
+  var o = {};
+  if (Object.defineProperty) Object.defineProperty(o, 'x', { value: 0 });
+  hasDefineProperty = o.x === 0;
+} catch (err) { hasDefineProperty = false }
+if (hasDefineProperty) {
+  Object.defineProperty(EventEmitter, 'defaultMaxListeners', {
+    enumerable: true,
+    get: function() {
+      return defaultMaxListeners;
+    },
+    set: function(arg) {
+      // check whether the input is a positive number (whose value is zero or
+      // greater and not a NaN).
+      if (typeof arg !== 'number' || arg < 0 || arg !== arg)
+        throw new TypeError('"defaultMaxListeners" must be a positive number');
+      defaultMaxListeners = arg;
+    }
+  });
+} else {
+  EventEmitter.defaultMaxListeners = defaultMaxListeners;
+}
+
+// Obviously not all Emitters should be limited to 10. This function allows
+// that to be increased. Set to zero for unlimited.
+EventEmitter.prototype.setMaxListeners = function setMaxListeners(n) {
+  if (typeof n !== 'number' || n < 0 || isNaN(n))
+    throw new TypeError('"n" argument must be a positive number');
+  this._maxListeners = n;
+  return this;
+};
+
+function $getMaxListeners(that) {
+  if (that._maxListeners === undefined)
+    return EventEmitter.defaultMaxListeners;
+  return that._maxListeners;
+}
+
+EventEmitter.prototype.getMaxListeners = function getMaxListeners() {
+  return $getMaxListeners(this);
+};
+
+// These standalone emit* functions are used to optimize calling of event
+// handlers for fast cases because emit() itself often has a variable number of
+// arguments and can be deoptimized because of that. These functions always have
+// the same number of arguments and thus do not get deoptimized, so the code
+// inside them can execute faster.
+function emitNone(handler, isFn, self) {
+  if (isFn)
+    handler.call(self);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self);
+  }
+}
+function emitOne(handler, isFn, self, arg1) {
+  if (isFn)
+    handler.call(self, arg1);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self, arg1);
+  }
+}
+function emitTwo(handler, isFn, self, arg1, arg2) {
+  if (isFn)
+    handler.call(self, arg1, arg2);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self, arg1, arg2);
+  }
+}
+function emitThree(handler, isFn, self, arg1, arg2, arg3) {
+  if (isFn)
+    handler.call(self, arg1, arg2, arg3);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self, arg1, arg2, arg3);
+  }
+}
+
+function emitMany(handler, isFn, self, args) {
+  if (isFn)
+    handler.apply(self, args);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].apply(self, args);
+  }
+}
+
+EventEmitter.prototype.emit = function emit(type) {
+  var er, handler, len, args, i, events;
+  var doError = (type === 'error');
+
+  events = this._events;
+  if (events)
+    doError = (doError && events.error == null);
+  else if (!doError)
+    return false;
+
+  // If there is no 'error' event listener then throw.
+  if (doError) {
+    if (arguments.length > 1)
+      er = arguments[1];
+    if (er instanceof Error) {
+      throw er; // Unhandled 'error' event
+    } else {
+      // At least give some kind of context to the user
+      var err = new Error('Unhandled "error" event. (' + er + ')');
+      err.context = er;
+      throw err;
+    }
+    return false;
+  }
+
+  handler = events[type];
+
+  if (!handler)
+    return false;
+
+  var isFn = typeof handler === 'function';
+  len = arguments.length;
+  switch (len) {
+      // fast cases
+    case 1:
+      emitNone(handler, isFn, this);
+      break;
+    case 2:
+      emitOne(handler, isFn, this, arguments[1]);
+      break;
+    case 3:
+      emitTwo(handler, isFn, this, arguments[1], arguments[2]);
+      break;
+    case 4:
+      emitThree(handler, isFn, this, arguments[1], arguments[2], arguments[3]);
+      break;
+      // slower
+    default:
+      args = new Array(len - 1);
+      for (i = 1; i < len; i++)
+        args[i - 1] = arguments[i];
+      emitMany(handler, isFn, this, args);
+  }
+
+  return true;
+};
+
+function _addListener(target, type, listener, prepend) {
+  var m;
+  var events;
+  var existing;
+
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
+
+  events = target._events;
+  if (!events) {
+    events = target._events = objectCreate(null);
+    target._eventsCount = 0;
+  } else {
+    // To avoid recursion in the case that type === "newListener"! Before
+    // adding it to the listeners, first emit "newListener".
+    if (events.newListener) {
+      target.emit('newListener', type,
+          listener.listener ? listener.listener : listener);
+
+      // Re-assign `events` because a newListener handler could have caused the
+      // this._events to be assigned to a new object
+      events = target._events;
+    }
+    existing = events[type];
+  }
+
+  if (!existing) {
+    // Optimize the case of one listener. Don't need the extra array object.
+    existing = events[type] = listener;
+    ++target._eventsCount;
+  } else {
+    if (typeof existing === 'function') {
+      // Adding the second element, need to change to array.
+      existing = events[type] =
+          prepend ? [listener, existing] : [existing, listener];
+    } else {
+      // If we've already got an array, just append.
+      if (prepend) {
+        existing.unshift(listener);
+      } else {
+        existing.push(listener);
+      }
+    }
+
+    // Check for listener leak
+    if (!existing.warned) {
+      m = $getMaxListeners(target);
+      if (m && m > 0 && existing.length > m) {
+        existing.warned = true;
+        var w = new Error('Possible EventEmitter memory leak detected. ' +
+            existing.length + ' "' + String(type) + '" listeners ' +
+            'added. Use emitter.setMaxListeners() to ' +
+            'increase limit.');
+        w.name = 'MaxListenersExceededWarning';
+        w.emitter = target;
+        w.type = type;
+        w.count = existing.length;
+        if (typeof console === 'object' && console.warn) {
+          console.warn('%s: %s', w.name, w.message);
+        }
+      }
+    }
+  }
+
+  return target;
+}
+
+EventEmitter.prototype.addListener = function addListener(type, listener) {
+  return _addListener(this, type, listener, false);
+};
+
+EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+
+EventEmitter.prototype.prependListener =
+    function prependListener(type, listener) {
+      return _addListener(this, type, listener, true);
+    };
+
+function onceWrapper() {
+  if (!this.fired) {
+    this.target.removeListener(this.type, this.wrapFn);
+    this.fired = true;
+    switch (arguments.length) {
+      case 0:
+        return this.listener.call(this.target);
+      case 1:
+        return this.listener.call(this.target, arguments[0]);
+      case 2:
+        return this.listener.call(this.target, arguments[0], arguments[1]);
+      case 3:
+        return this.listener.call(this.target, arguments[0], arguments[1],
+            arguments[2]);
+      default:
+        var args = new Array(arguments.length);
+        for (var i = 0; i < args.length; ++i)
+          args[i] = arguments[i];
+        this.listener.apply(this.target, args);
+    }
+  }
+}
+
+<<<<<<< HEAD
+}).call(this,require('_process'))
+},{"./debug":354,"_process":356}],354:[function(require,module,exports){
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = require('ms');
+
+/**
+ * Active `debug` instances.
+ */
+exports.instances = [];
+=======
+function _onceWrap(target, type, listener) {
+  var state = { fired: false, wrapFn: undefined, target: target, type: type, listener: listener };
+  var wrapped = bind.call(onceWrapper, state);
+  wrapped.listener = listener;
+  state.wrapFn = wrapped;
+  return wrapped;
+}
+>>>>>>> A provider has a list of ids
+
+EventEmitter.prototype.once = function once(type, listener) {
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
+  this.on(type, _onceWrap(this, type, listener));
+  return this;
+};
+
+EventEmitter.prototype.prependOnceListener =
+    function prependOnceListener(type, listener) {
+      if (typeof listener !== 'function')
+        throw new TypeError('"listener" argument must be a function');
+      this.prependListener(type, _onceWrap(this, type, listener));
+      return this;
+    };
+
+// Emits a 'removeListener' event if and only if the listener was removed.
+EventEmitter.prototype.removeListener =
+    function removeListener(type, listener) {
+      var list, events, position, i, originalListener;
+
+      if (typeof listener !== 'function')
+        throw new TypeError('"listener" argument must be a function');
+
+      events = this._events;
+      if (!events)
+        return this;
+
+      list = events[type];
+      if (!list)
+        return this;
+
+      if (list === listener || list.listener === listener) {
+        if (--this._eventsCount === 0)
+          this._events = objectCreate(null);
+        else {
+          delete events[type];
+          if (events.removeListener)
+            this.emit('removeListener', type, list.listener || listener);
+        }
+      } else if (typeof list !== 'function') {
+        position = -1;
+
+        for (i = list.length - 1; i >= 0; i--) {
+          if (list[i] === listener || list[i].listener === listener) {
+            originalListener = list[i].listener;
+            position = i;
+            break;
+          }
+        }
+
+        if (position < 0)
+          return this;
+
+        if (position === 0)
+          list.shift();
+        else
+          spliceOne(list, position);
+
+        if (list.length === 1)
+          events[type] = list[0];
+
+        if (events.removeListener)
+          this.emit('removeListener', type, originalListener || listener);
+      }
+
+      return this;
+    };
+
+EventEmitter.prototype.removeAllListeners =
+    function removeAllListeners(type) {
+      var listeners, events, i;
+
+      events = this._events;
+      if (!events)
+        return this;
+
+      // not listening for removeListener, no need to emit
+      if (!events.removeListener) {
+        if (arguments.length === 0) {
+          this._events = objectCreate(null);
+          this._eventsCount = 0;
+        } else if (events[type]) {
+          if (--this._eventsCount === 0)
+            this._events = objectCreate(null);
+          else
+            delete events[type];
+        }
+        return this;
+      }
+
+      // emit removeListener for all listeners on all events
+      if (arguments.length === 0) {
+        var keys = objectKeys(events);
+        var key;
+        for (i = 0; i < keys.length; ++i) {
+          key = keys[i];
+          if (key === 'removeListener') continue;
+          this.removeAllListeners(key);
+        }
+        this.removeAllListeners('removeListener');
+        this._events = objectCreate(null);
+        this._eventsCount = 0;
+        return this;
+      }
+
+      listeners = events[type];
+
+      if (typeof listeners === 'function') {
+        this.removeListener(type, listeners);
+      } else if (listeners) {
+        // LIFO order
+        for (i = listeners.length - 1; i >= 0; i--) {
+          this.removeListener(type, listeners[i]);
+        }
+      }
+
+      return this;
+    };
+
+function _listeners(target, type, unwrap) {
+  var events = target._events;
+
+  if (!events)
+    return [];
+
+  var evlistener = events[type];
+  if (!evlistener)
+    return [];
+
+  if (typeof evlistener === 'function')
+    return unwrap ? [evlistener.listener || evlistener] : [evlistener];
+
+  return unwrap ? unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
+}
+
+EventEmitter.prototype.listeners = function listeners(type) {
+  return _listeners(this, type, true);
+};
+
+EventEmitter.prototype.rawListeners = function rawListeners(type) {
+  return _listeners(this, type, false);
+};
+
+EventEmitter.listenerCount = function(emitter, type) {
+  if (typeof emitter.listenerCount === 'function') {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+};
+
+EventEmitter.prototype.listenerCount = listenerCount;
+function listenerCount(type) {
+  var events = this._events;
+
+  if (events) {
+    var evlistener = events[type];
+
+    if (typeof evlistener === 'function') {
+      return 1;
+    } else if (evlistener) {
+      return evlistener.length;
+    }
+  }
+
+  return 0;
+}
+
+EventEmitter.prototype.eventNames = function eventNames() {
+  return this._eventsCount > 0 ? Reflect.ownKeys(this._events) : [];
+};
+
+// About 1.5x faster than the two-arg version of Array#splice().
+function spliceOne(list, index) {
+  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1)
+    list[i] = list[k];
+  list.pop();
+}
+
+function arrayClone(arr, n) {
+  var copy = new Array(n);
+  for (var i = 0; i < n; ++i)
+    copy[i] = arr[i];
+  return copy;
+}
+
+function unwrapListeners(arr) {
+  var ret = new Array(arr.length);
+  for (var i = 0; i < ret.length; ++i) {
+    ret[i] = arr[i].listener || arr[i];
+  }
+  return ret;
+}
+
+function objectCreatePolyfill(proto) {
+  var F = function() {};
+  F.prototype = proto;
+  return new F;
+}
+function objectKeysPolyfill(obj) {
+  var keys = [];
+  for (var k in obj) if (Object.prototype.hasOwnProperty.call(obj, k)) {
+    keys.push(k);
+  }
+  return k;
+}
+function functionBindPolyfill(context) {
+  var fn = this;
+  return function () {
+    return fn.apply(context, arguments);
+  };
+}
+
+<<<<<<< HEAD
+},{"ms":355}],355:[function(require,module,exports){
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var y = d * 365.25;
+=======
+},{}],355:[function(require,module,exports){
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+>>>>>>> A provider has a list of ids
+
+  i += d
+
+  e = s & ((1 << (-nBits)) - 1)
+  s >>= (-nBits)
+  nBits += eLen
+  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e & ((1 << (-nBits)) - 1)
+  e >>= (-nBits)
+  nBits += mLen
+  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) < 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias >= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c >= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias >= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias >= 1) {
+      m = ((value * c) - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e << mLen) | m
+  eLen += mLen
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
 },{}],356:[function(require,module,exports){
+arguments[4][349][0].apply(exports,arguments)
+},{"dup":349}],357:[function(require,module,exports){
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
+}
+
+function isBuffer (obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer (obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
+}
+
+<<<<<<< HEAD
+},{}],356:[function(require,module,exports){
+=======
+},{}],358:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -102597,6 +106866,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
+<<<<<<< HEAD
 },{}],357:[function(require,module,exports){
 
 var toString = Object.prototype.toString;
@@ -102719,6 +106989,9 @@ module.exports = function (args, slice, sliceEnd) {
 
 
 },{}],360:[function(require,module,exports){
+=======
+},{}],359:[function(require,module,exports){
+>>>>>>> A provider has a list of ids
 (function (setImmediate,clearImmediate){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -102797,8 +107070,16 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
+<<<<<<< HEAD
 },{"process/browser.js":356,"timers":360}],361:[function(require,module,exports){
 arguments[4][79][0].apply(exports,arguments)
 },{"dup":79}],362:[function(require,module,exports){
 arguments[4][80][0].apply(exports,arguments)
 },{"./support/isBuffer":361,"_process":356,"dup":80,"inherits":250}]},{},[76]);
+=======
+},{"process/browser.js":358,"timers":359}],360:[function(require,module,exports){
+arguments[4][350][0].apply(exports,arguments)
+},{"dup":350}],361:[function(require,module,exports){
+arguments[4][351][0].apply(exports,arguments)
+},{"./support/isBuffer":360,"_process":358,"dup":351,"inherits":356}]},{},[75]);
+>>>>>>> A provider has a list of ids
