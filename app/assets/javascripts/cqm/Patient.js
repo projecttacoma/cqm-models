@@ -4,6 +4,7 @@ const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const { QDMPatientSchema } = require('../QDMPatient');
+const { ProviderSchema } = require('./Provider');
 
 const [Schema, Number, String, Mixed] = [
   mongoose.Schema,
@@ -21,6 +22,7 @@ const PatientSchema = new Schema({
   expectedValues: [],
   notes: String,
   qdmPatient: QDMPatientSchema,
+  providers: [ProviderSchema],
 
 }, { id: false });
 
