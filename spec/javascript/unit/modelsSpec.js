@@ -232,6 +232,7 @@ describe('QDMPatient', () => {
       expect(qdmPatient.medications().length).toEqual(4);
       expect(qdmPatient.physical_exams().length).toEqual(3);
       expect(qdmPatient.preferences().length).toEqual(0);
+      expect(qdmPatient.patient_characteristics().length).toEqual(8);
       expect(qdmPatient.provider_characteristics().length).toEqual(1);
       expect(qdmPatient.procedures().length).toEqual(3);
       expect(qdmPatient.results().length).toEqual(0);
