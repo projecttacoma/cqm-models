@@ -29,7 +29,6 @@ const SubstanceOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.77' },
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Substance, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'SubstanceOrder' },
 

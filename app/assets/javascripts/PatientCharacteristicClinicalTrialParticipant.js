@@ -24,7 +24,6 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.51' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'clinical_trial_participant' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Clinical Trial Participant' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
 

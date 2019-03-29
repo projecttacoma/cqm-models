@@ -32,7 +32,6 @@ const MedicationDispensedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.49' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'dispensed' },
-  hqmfTitle: { type: String, default: 'Medication, Dispensed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'MedicationDispensed' },
 

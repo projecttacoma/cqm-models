@@ -26,7 +26,6 @@ const AdverseEventSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Adverse Event' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.120' },
   qdmCategory: { type: String, default: 'adverse_event' },
-  hqmfTitle: { type: String, default: 'Adverse Event' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AdverseEvent' },
 
@@ -186,7 +185,6 @@ const AllergyIntoleranceSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.119' },
   qdmCategory: { type: String, default: 'allergy' },
   qdmStatus: { type: String, default: 'intolerance' },
-  hqmfTitle: { type: String, default: 'Allergy/Intolerance' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AllergyIntolerance' },
 
@@ -227,7 +225,6 @@ const AssessmentOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.131' },
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Assessment, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AssessmentOrder' },
 
@@ -272,7 +269,6 @@ const AssessmentPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.117' },
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Assessment, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AssessmentPerformed' },
 
@@ -313,7 +309,6 @@ const AssessmentRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.118' },
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Assessment, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'AssessmentRecommended' },
 
@@ -353,7 +348,6 @@ const CareGoalSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Care Goal' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.7' },
   qdmCategory: { type: String, default: 'care_goal' },
-  hqmfTitle: { type: String, default: 'Care Goal' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'CareGoal' },
 
@@ -399,7 +393,6 @@ const CommunicationPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.132' },
   qdmCategory: { type: String, default: 'communication' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Communication, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'CommunicationPerformed' },
 
@@ -442,7 +435,6 @@ const DeviceAppliedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.13' },
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'applied' },
-  hqmfTitle: { type: String, default: 'Device, Applied' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DeviceApplied' },
 
@@ -483,7 +475,6 @@ const DeviceOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.15' },
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Device, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DeviceOrder' },
 
@@ -524,7 +515,6 @@ const DeviceRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.16' },
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Device, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DeviceRecommended' },
 
@@ -566,7 +556,6 @@ const DiagnosisSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.110' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
   qdmCategory: { type: String, default: 'condition' },
-  hqmfTitle: { type: String, default: 'Diagnosis' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Diagnosis' },
 
@@ -607,7 +596,6 @@ const DiagnosticStudyOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.22' },
   qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Diagnostic Study, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DiagnosticStudyOrder' },
 
@@ -655,7 +643,6 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.23' },
   qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Diagnostic Study, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DiagnosticStudyPerformed' },
 
@@ -696,7 +683,6 @@ const DiagnosticStudyRecommendedSchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
   qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Diagnostic Study, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DiagnosticStudyRecommended' },
 
@@ -738,7 +724,6 @@ const EncounterOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.27' },
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Encounter, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'EncounterOrder' },
 
@@ -785,7 +770,6 @@ const EncounterPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.5' },
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Encounter, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'EncounterPerformed' },
 
@@ -827,7 +811,6 @@ const EncounterRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.28' },
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Encounter, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'EncounterRecommended' },
 
@@ -867,7 +850,6 @@ const FamilyHistorySchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.111' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
   qdmCategory: { type: String, default: 'family_history' },
-  hqmfTitle: { type: String, default: 'Family History' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'FamilyHistory' },
 
@@ -935,7 +917,6 @@ const ImmunizationAdministeredSchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },
   qdmCategory: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'administered' },
-  hqmfTitle: { type: String, default: 'Immunization, Administered' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ImmunizationAdministered' },
 
@@ -980,7 +961,6 @@ const ImmunizationOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.113' },
   qdmCategory: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Immunization, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ImmunizationOrder' },
 
@@ -1085,7 +1065,6 @@ const InterventionOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.35' },
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Intervention, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'InterventionOrder' },
 
@@ -1129,7 +1108,6 @@ const InterventionPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.36' },
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Intervention, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'InterventionPerformed' },
 
@@ -1170,7 +1148,6 @@ const InterventionRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.37' },
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Intervention, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'InterventionRecommended' },
 
@@ -1211,7 +1188,6 @@ const LaboratoryTestOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.41' },
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Laboratory Test, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'LaboratoryTestOrder' },
 
@@ -1259,7 +1235,6 @@ const LaboratoryTestPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.42' },
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Laboratory Test, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'LaboratoryTestPerformed' },
 
@@ -1300,7 +1275,6 @@ const LaboratoryTestRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.43' },
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Laboratory Test, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'LaboratoryTestRecommended' },
 
@@ -1342,7 +1316,6 @@ const MedicationActiveSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.44' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'active' },
-  hqmfTitle: { type: String, default: 'Medication, Active' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'MedicationActive' },
 
@@ -1387,7 +1360,6 @@ const MedicationAdministeredSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.45' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'administered' },
-  hqmfTitle: { type: String, default: 'Medication, Administered' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'MedicationAdministered' },
 
@@ -1433,7 +1405,6 @@ const MedicationDischargeSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.48' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'discharge' },
-  hqmfTitle: { type: String, default: 'Medication, Discharge' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'MedicationDischarge' },
 
@@ -1482,7 +1453,6 @@ const MedicationDispensedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.49' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'dispensed' },
-  hqmfTitle: { type: String, default: 'Medication, Dispensed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'MedicationDispensed' },
 
@@ -1532,7 +1502,6 @@ const MedicationOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.51' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Medication, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'MedicationOrder' },
 
@@ -1570,7 +1539,6 @@ const ParticipationSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Participation' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.130' },
   qdmCategory: { type: String, default: 'participation' },
-  hqmfTitle: { type: String, default: 'Program Participation' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Participation' },
 
@@ -1608,7 +1576,6 @@ const PatientCareExperienceSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Patient Care Experience' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.52' },
   qdmCategory: { type: String, default: 'care_experience' },
-  hqmfTitle: { type: String, default: 'Patient Care Experience' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCareExperience' },
 
@@ -1646,7 +1613,6 @@ const PatientCharacteristicSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Patient Characteristic' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.53' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristic' },
 
@@ -1685,7 +1651,6 @@ const PatientCharacteristicBirthdateSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.54' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'birthdate' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Birthdate' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicBirthdate' },
 
@@ -1726,7 +1691,6 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.51' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'clinical_trial_participant' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Clinical Trial Participant' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
 
@@ -1764,7 +1728,6 @@ const PatientCharacteristicEthnicitySchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.56' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'ethnicity' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Ethnicity' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicEthnicity' },
 
@@ -1804,7 +1767,6 @@ const PatientCharacteristicExpiredSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.57' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'expired' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Expired' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicExpired' },
 
@@ -1843,7 +1805,6 @@ const PatientCharacteristicPayerSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.58' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'payer' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Payer' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicPayer' },
 
@@ -1881,7 +1842,6 @@ const PatientCharacteristicRaceSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.59' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'race' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Race' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicRace' },
 
@@ -1919,7 +1879,6 @@ const PatientCharacteristicSexSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.55' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'gender' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic Sex' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristicSex' },
 
@@ -1961,7 +1920,6 @@ const PhysicalExamOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.61' },
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Physical Exam, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PhysicalExamOrder' },
 
@@ -2007,7 +1965,6 @@ const PhysicalExamPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.62' },
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Physical Exam, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PhysicalExamPerformed' },
 
@@ -2049,7 +2006,6 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '22.16.840.1.113883.10.20.28.4.63' },
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Physical Exam, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PhysicalExamRecommended' },
 
@@ -2092,7 +2048,6 @@ const ProcedureOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.66' },
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Procedure, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProcedureOrder' },
 
@@ -2141,7 +2096,6 @@ const ProcedurePerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.67' },
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Procedure, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProcedurePerformed' },
 
@@ -2184,7 +2138,6 @@ const ProcedureRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.68' },
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Procedure, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProcedureRecommended' },
 
@@ -2222,7 +2175,6 @@ const ProviderCareExperienceSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Provider Care Experience' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.70' },
   qdmCategory: { type: String, default: 'care_experience' },
-  hqmfTitle: { type: String, default: 'Provider Care Experience' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProviderCareExperience' },
 
@@ -2260,7 +2212,6 @@ const ProviderCharacteristicSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Provider Characteristic' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.71' },
   qdmCategory: { type: String, default: 'provider_characteristic' },
-  hqmfTitle: { type: String, default: 'Provider Characteristic' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProviderCharacteristic' },
 
@@ -2638,7 +2589,6 @@ const SubstanceAdministeredSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.73' },
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'administered' },
-  hqmfTitle: { type: String, default: 'Substance, Administered' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'SubstanceAdministered' },
 
@@ -2684,7 +2634,6 @@ const SubstanceOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.77' },
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Substance, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'SubstanceOrder' },
 
@@ -2729,7 +2678,6 @@ const SubstanceRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.78' },
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Substance, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'SubstanceRecommended' },
 
@@ -2769,7 +2717,6 @@ const SymptomSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.116' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.136' },
   qdmCategory: { type: String, default: 'symptom' },
-  hqmfTitle: { type: String, default: 'Symptom' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Symptom' },
 

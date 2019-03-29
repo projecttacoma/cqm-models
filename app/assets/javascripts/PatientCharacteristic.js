@@ -21,7 +21,6 @@ const PatientCharacteristicSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Patient Characteristic' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.53' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
-  hqmfTitle: { type: String, default: 'Patient Characteristic' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristic' },
 

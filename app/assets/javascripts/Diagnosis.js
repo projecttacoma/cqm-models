@@ -25,7 +25,6 @@ const DiagnosisSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.110' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
   qdmCategory: { type: String, default: 'condition' },
-  hqmfTitle: { type: String, default: 'Diagnosis' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'Diagnosis' },
 

@@ -129,9 +129,6 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
     hqmfOid_to_datatype_map[extra_info['hqmf_oid']] = datatype_name if extra_info['hqmf_oid'].present?
   end
 
-  # hqmf title is usually the same as the qdm title, if not 'hqmf_title'' should be set manually in the oids file
-  hqmf_title = (extra_info.present? ? extra_info['hqmf_title'] : nil) || qdm_title
-  attributes << { name: 'hqmfTitle', type: 'System.String', default: hqmf_title } if hqmf_title.present?
   attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
 
   datatypes[datatype_name] = { attributes: attributes }

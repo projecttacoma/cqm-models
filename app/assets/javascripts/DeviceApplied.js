@@ -26,7 +26,6 @@ const DeviceAppliedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.13' },
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'applied' },
-  hqmfTitle: { type: String, default: 'Device, Applied' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'DeviceApplied' },
 

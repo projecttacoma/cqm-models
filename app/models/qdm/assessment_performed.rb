@@ -14,7 +14,6 @@ module QDM
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.117'
     field :qdmCategory, type: String, default: 'assessment'
     field :qdmStatus, type: String, default: 'performed'
-    field :hqmfTitle, type: String, default: 'Assessment, Performed'
     field :qdmVersion, type: String, default: '5.4'
   end
 end

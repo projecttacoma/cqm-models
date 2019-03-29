@@ -26,7 +26,6 @@ const ProcedureRecommendedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.68' },
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'recommended' },
-  hqmfTitle: { type: String, default: 'Procedure, Recommended' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProcedureRecommended' },
 

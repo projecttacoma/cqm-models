@@ -9,7 +9,6 @@ module QDM
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.111'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.12'
     field :qdmCategory, type: String, default: 'family_history'
-    field :hqmfTitle, type: String, default: 'Family History'
     field :qdmVersion, type: String, default: '5.4'
   end
 end

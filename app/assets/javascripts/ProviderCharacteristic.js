@@ -21,7 +21,6 @@ const ProviderCharacteristicSchema = DataElementSchema({
   qdmTitle: { type: String, default: 'Provider Characteristic' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.71' },
   qdmCategory: { type: String, default: 'provider_characteristic' },
-  hqmfTitle: { type: String, default: 'Provider Characteristic' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'ProviderCharacteristic' },
 

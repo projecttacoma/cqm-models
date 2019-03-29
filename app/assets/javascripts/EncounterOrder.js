@@ -25,7 +25,6 @@ const EncounterOrderSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.27' },
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'order' },
-  hqmfTitle: { type: String, default: 'Encounter, Order' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'EncounterOrder' },
 

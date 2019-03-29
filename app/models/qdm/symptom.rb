@@ -9,7 +9,6 @@ module QDM
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.116'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.136'
     field :qdmCategory, type: String, default: 'symptom'
-    field :hqmfTitle, type: String, default: 'Symptom'
     field :qdmVersion, type: String, default: '5.4'
   end
 end

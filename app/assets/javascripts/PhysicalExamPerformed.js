@@ -29,7 +29,6 @@ const PhysicalExamPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.62' },
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'performed' },
-  hqmfTitle: { type: String, default: 'Physical Exam, Performed' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PhysicalExamPerformed' },
 
