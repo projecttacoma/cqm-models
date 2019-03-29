@@ -3207,11 +3207,7 @@ class Measure extends mongoose.Document {
 }
 module.exports.Measure = Measure;
 
-<<<<<<< HEAD
-},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":69,"./PopulationSet":75,"mongoose/browser":254}],73:[function(require,module,exports){
-=======
-},{"../basetypes/Code":63,"../basetypes/DataElement":64,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":69,"./PopulationSet":74,"mongoose/browser":253}],73:[function(require,module,exports){
->>>>>>> updates to model
+},{"../basetypes/Code":63,"../basetypes/DataElement":64,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":69,"./PopulationSet":75,"mongoose/browser":254}],73:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
