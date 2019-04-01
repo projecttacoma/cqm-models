@@ -76,30 +76,30 @@ RSpec.describe QDM do
   end
 
   it 'generates each QDM 5.4 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.4.xml', 'data/oids.json')
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.4.xml', 'data/oids_qdm_5.4.json')
   end
 
   it 'generates each QDM 5.3 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.3.xml', 'data/oids.json')
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.3.xml', 'data/oids_qdm_5.4.json')
   end
 
   it 'generates each QDM 5.0.2 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.2.xml', 'data/oids.json')
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.2.xml', 'data/oids_qdm_5.4.json')
   end
 
   it 'generates each QDM 5.0.1 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.1.xml', 'data/oids.json')
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.1.xml', 'data/oids_qdm_5.4.json')
   end
 
   it 'generates each QDM 5.0 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.xml', 'data/oids.json')
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.xml', 'data/oids_qdm_5.4.json')
   end
 
   it 'generates each QDM 4.3 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.3.xml', 'data/oids.json')
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.3.xml', 'data/oids_qdm_5.4.json')
   end
 
   it 'generates each QDM 4.2 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.2.xml', 'data/oids.json')
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.2.xml', 'data/oids_qdm_5.4.json')
   end
 end

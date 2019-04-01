@@ -6,7 +6,8 @@ module QDM
     field :relevantPeriod, type: QDM::Interval
     embeds_many :relatedTo, class_name: 'QDM::Id'
     field :targetOutcome
-    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.7'
+    field :qdmTitle, type: String, default: 'Care Goal'
+    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.7'
     field :qdmCategory, type: String, default: 'care_goal'
     field :qdmVersion, type: String, default: '5.4'
   end

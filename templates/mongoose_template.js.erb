@@ -21,19 +21,13 @@ const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-<% unless datatype == 'Component' || datatype == 'FacilityLocation' %>
-const <%= datatype -%>Schema = DataElementSchema({
+
+const <%= datatype -%>Schema = <% unless datatype == 'Component' || datatype == 'FacilityLocation' %>DataElementSchema<% else %>new mongoose.Schema<%- end %>({
   <%- for attribute in attrs_with_extras -%>
-  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
+  <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
   <%- end %>
 });
-<% else %>
-const <%= datatype -%>Schema = new mongoose.Schema({
-  <%- for attribute in attrs_with_extras -%>
-  <%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,
-  <%- end %>
-});
-<% end %>
+
 module.exports.<%= datatype %>Schema = <%= datatype %>Schema;
 class <%= datatype %> extends mongoose.Document {
   constructor(object) {

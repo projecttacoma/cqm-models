@@ -256,8 +256,8 @@ describe('QDMPatient', () => {
           new CareGoal(),
         ]
       });
-      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.3.120').length).toEqual(1);
-      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.3.7').length).toEqual(2);
+      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.4.120').length).toEqual(1);
+      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.4.7').length).toEqual(2);
     });
   });
 

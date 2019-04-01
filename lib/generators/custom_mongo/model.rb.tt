@@ -1,0 +1,20 @@
+<% module_namespacing do -%>
+class <%= class_name %><%= " < #{options[:parent].classify}" if options[:parent] %>
+<% unless options[:parent] -%>
+  include Mongoid::Document
+<% end -%>
+<% if options[:timestamps] -%>
+  include Mongoid::Timestamps
+<% end -%>
+<% if options[:collection] -%>
+  store_in collection: "<%= options[:collection] %>"
+<% end -%>
+<% attributes.reject{|attr| attr.reference?}.each do |attribute| -%>
+  field :<%= attribute.name %>, type: <%= attribute.type_class %><% if attribute.default -%>, default: '<%= attribute.default %>'<% end -%>
+
+<% end -%>
+<% attributes.select{|attr| attr.reference? }.each do |attribute| -%>
+  embedded_in :<%= attribute.name%>
+<% end -%>
+end
+<% end -%>

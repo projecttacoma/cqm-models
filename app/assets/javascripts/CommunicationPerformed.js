@@ -25,6 +25,7 @@ const CommunicationPerformedSchema = DataElementSchema({
   relatedTo: [IdSchema],
   relevantPeriod: Interval,
   negationRationale: Code,
+  qdmTitle: { type: String, default: 'Communication, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.132' },
   qdmCategory: { type: String, default: 'communication' },
   qdmStatus: { type: String, default: 'performed' },

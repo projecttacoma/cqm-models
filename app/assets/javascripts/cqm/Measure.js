@@ -2,6 +2,7 @@ const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
+const DataElementSchema = require('../basetypes/DataElement').DataElementSchema();
 const { CQLLibrarySchema } = require('./CQLLibrary');
 const { PopulationSetSchema } = require('./PopulationSet');
 
@@ -61,8 +62,7 @@ const MeasureSchema = new mongoose.Schema(
 
     // HQMF/Tacoma-specific Measure-logic related data
     population_criteria: Mixed,
-    data_criteria: Mixed,
-    source_data_criteria: Mixed,
+    source_data_criteria: [DataElementSchema],
     measure_period: Interval,
     measure_attributes: [],
 

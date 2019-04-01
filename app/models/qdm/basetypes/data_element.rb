@@ -3,12 +3,16 @@ module QDM
   class DataElement
     include Mongoid::Document
     embedded_in :patient
+    embedded_in :measure
 
     # Codes that describe this datatype.
     field :dataElementCodes, type: Array, default: []
 
     # Optional description.
     field :description, type: String
+
+    # Valueset oid of the specific type.
+    field :codeListId, type: String
 
     embeds_one :id, class_name: 'QDM::Id'
 

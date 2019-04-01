@@ -10,7 +10,8 @@ module QDM
     field :result
     field :components, type: Array
     embeds_many :relatedTo, class_name: 'QDM::Id'
-    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.3.117'
+    field :qdmTitle, type: String, default: 'Assessment, Performed'
+    field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.117'
     field :qdmCategory, type: String, default: 'assessment'
     field :qdmStatus, type: String, default: 'performed'
     field :qdmVersion, type: String, default: '5.4'

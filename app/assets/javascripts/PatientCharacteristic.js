@@ -18,7 +18,8 @@ const [Number, String] = [
 
 const PatientCharacteristicSchema = DataElementSchema({
   authorDatetime: DateTime,
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.53' },
+  qdmTitle: { type: String, default: 'Patient Characteristic' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.53' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmVersion: { type: String, default: '5.4' },
   _type: { type: String, default: 'PatientCharacteristic' },

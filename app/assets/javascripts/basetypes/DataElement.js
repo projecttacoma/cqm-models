@@ -9,6 +9,7 @@ function DataElementSchema(add, options) {
   const extended = new Schema({
     dataElementCodes: { type: [] },
     description: { type: String },
+    codeListId: { type: String },
     id: {
       type: Id.IdSchema,
       default() {

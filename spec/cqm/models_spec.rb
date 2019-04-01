@@ -5,7 +5,7 @@ RSpec.describe QDM do
     # Clear old test models (if they are still there for some reason)
     system('rm tmp/*.js')
     system('rm -rf app/models/test')
-    system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids.json TEST')
+    system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids_qdm_5.4.json TEST')
   end
 
   before(:each) do
@@ -20,7 +20,7 @@ RSpec.describe QDM do
 
     # Create example data elements
     @patient_a.qdmPatient.dataElements << QDM::ProcedurePerformed.new(patient: @patient_a, authorDatetime: 1.day.ago, dataElementCodes: [QDM::Code.new('bogus code', 'bogus code system'), QDM::Code.new('bogus code', 'bogus code system')])
-    @patient_a.qdmPatient.dataElements << QDM::EncounterOrder.new(patient: @patient_a, reason: QDM::Code.new('bogus code', 'bogus code system'))
+    @patient_a.qdmPatient.dataElements << QDM::EncounterOrder.new(patient: @patient_a, reason: QDM::Code.new('bogus code', 'bogus code system'), codeListId: '123.456')
     @patient_a.qdmPatient.dataElements << QDM::MedicationDispensed.new(patient: @patient_a, relevantPeriod: QDM::Interval.new(1.year.ago, 1.month.ago), dosage: QDM::Quantity.new('1', 'mg'))
 
     @patient_b.qdmPatient.dataElements << QDM::ProcedurePerformed.new(patient: @patient_b, authorDatetime: 1.day.ago, dataElementCodes: [QDM::Code.new('bogus code', 'bogus code system'), QDM::Code.new('bogus code', 'bogus code system')])
@@ -82,6 +82,10 @@ RSpec.describe QDM do
   it 'patient dataElements have an Id' do
     expect(@patient_a.qdmPatient.dataElements[0].id).to be
     expect(@patient_a.qdmPatient.dataElements[0].id.value).to eq @patient_a.qdmPatient.dataElements[0]._id.to_s
+  end
+
+  it 'patient dataElements can have codeListId' do
+    expect(@patient_a.qdmPatient.dataElements[1].codeListId).to eq '123.456'
   end
 
   it 'patient still has _type attributes after json conversion' do

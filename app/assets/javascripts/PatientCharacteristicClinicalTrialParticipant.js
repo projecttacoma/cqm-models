@@ -19,7 +19,8 @@ const [Number, String] = [
 const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
   reason: Code,
   relevantPeriod: Interval,
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.6' },
+  qdmTitle: { type: String, default: 'Patient Characteristic Clinical Trial Participant' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.6' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.51' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'clinical_trial_participant' },

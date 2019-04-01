@@ -19,7 +19,8 @@ const [Number, String] = [
 const PatientCharacteristicExpiredSchema = DataElementSchema({
   expiredDatetime: DateTime,
   cause: Code,
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.3.57' },
+  qdmTitle: { type: String, default: 'Patient Characteristic Expired' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.57' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'expired' },
   qdmVersion: { type: String, default: '5.4' },
