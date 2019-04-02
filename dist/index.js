@@ -39,15 +39,7 @@ class AdverseEvent extends mongoose.Document {
 }
 module.exports.AdverseEvent = AdverseEvent;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],2:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],2:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],2:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],2:[function(require,module,exports){
 module.exports.Id = require('./Id.js').Id;
 module.exports.IdSchema = require('./Id.js').IdSchema;
 module.exports.PhysicalExamOrder = require('./PhysicalExamOrder.js').PhysicalExamOrder;
@@ -206,15 +198,7 @@ class AllergyIntolerance extends mongoose.Document {
 }
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],4:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],4:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],4:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],4:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -254,15 +238,7 @@ class AssessmentOrder extends mongoose.Document {
 }
 module.exports.AssessmentOrder = AssessmentOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],5:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],5:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],5:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],5:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -306,15 +282,7 @@ class AssessmentPerformed extends mongoose.Document {
 }
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],6:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],6:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],6:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],6:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -354,15 +322,7 @@ class AssessmentRecommended extends mongoose.Document {
 }
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],7:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],7:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],7:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],7:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -401,15 +361,7 @@ class CareGoal extends mongoose.Document {
 }
 module.exports.CareGoal = CareGoal;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],8:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],8:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],8:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],8:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -454,15 +406,7 @@ class CommunicationPerformed extends mongoose.Document {
 }
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],9:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],9:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],9:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],9:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -504,15 +448,7 @@ class DeviceApplied extends mongoose.Document {
 }
 module.exports.DeviceApplied = DeviceApplied;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],10:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],10:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],10:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],10:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -552,15 +488,7 @@ class DeviceOrder extends mongoose.Document {
 }
 module.exports.DeviceOrder = DeviceOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],11:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],11:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],11:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],11:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -600,15 +528,7 @@ class DeviceRecommended extends mongoose.Document {
 }
 module.exports.DeviceRecommended = DeviceRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],12:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],12:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],12:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],12:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -649,15 +569,7 @@ class Diagnosis extends mongoose.Document {
 }
 module.exports.Diagnosis = Diagnosis;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],13:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],13:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],13:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],13:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -697,15 +609,7 @@ class DiagnosticStudyOrder extends mongoose.Document {
 }
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],14:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],14:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],14:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],14:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -752,15 +656,7 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 }
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],15:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],15:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],15:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],15:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -800,15 +696,7 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 }
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],16:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],16:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],16:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],16:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -849,15 +737,7 @@ class EncounterOrder extends mongoose.Document {
 }
 module.exports.EncounterOrder = EncounterOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],17:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],17:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],17:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],17:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -903,15 +783,7 @@ class EncounterPerformed extends mongoose.Document {
 }
 module.exports.EncounterPerformed = EncounterPerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],18:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],18:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],18:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],18:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -952,15 +824,7 @@ class EncounterRecommended extends mongoose.Document {
 }
 module.exports.EncounterRecommended = EncounterRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],19:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],19:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],19:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],19:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -999,15 +863,7 @@ class FamilyHistory extends mongoose.Document {
 }
 module.exports.FamilyHistory = FamilyHistory;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],20:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],20:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],20:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],20:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
@@ -1031,15 +887,7 @@ class Id extends mongoose.Document {
 }
 module.exports.Id = Id;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"mongoose/browser":253}],21:[function(require,module,exports){
-=======
-},{"mongoose/browser":242}],21:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"mongoose/browser":252}],21:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"mongoose/browser":244}],21:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1082,15 +930,7 @@ class ImmunizationAdministered extends mongoose.Document {
 }
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],22:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],22:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],22:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],22:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1134,15 +974,7 @@ class ImmunizationOrder extends mongoose.Document {
 }
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],23:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],23:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],23:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],23:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String, Mixed, ObjectId] = [
@@ -1206,15 +1038,7 @@ class IndividualResult extends mongoose.Document {
 }
 module.exports.IndividualResult = IndividualResult;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"mongoose/browser":253}],24:[function(require,module,exports){
-=======
-},{"mongoose/browser":242}],24:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"mongoose/browser":252}],24:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"mongoose/browser":244}],24:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1254,15 +1078,7 @@ class InterventionOrder extends mongoose.Document {
 }
 module.exports.InterventionOrder = InterventionOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],25:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],25:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],25:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],25:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1305,15 +1121,7 @@ class InterventionPerformed extends mongoose.Document {
 }
 module.exports.InterventionPerformed = InterventionPerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],26:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],26:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],26:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],26:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1353,15 +1161,7 @@ class InterventionRecommended extends mongoose.Document {
 }
 module.exports.InterventionRecommended = InterventionRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],27:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],27:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],27:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],27:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1401,15 +1201,7 @@ class LaboratoryTestOrder extends mongoose.Document {
 }
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],28:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],28:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],28:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],28:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1456,15 +1248,7 @@ class LaboratoryTestPerformed extends mongoose.Document {
 }
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],29:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],29:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],29:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],29:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1504,15 +1288,7 @@ class LaboratoryTestRecommended extends mongoose.Document {
 }
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],30:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],30:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],30:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],30:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1553,15 +1329,7 @@ class MedicationActive extends mongoose.Document {
 }
 module.exports.MedicationActive = MedicationActive;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],31:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],31:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],31:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],31:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1605,15 +1373,7 @@ class MedicationAdministered extends mongoose.Document {
 }
 module.exports.MedicationAdministered = MedicationAdministered;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],32:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],32:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],32:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],32:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1658,15 +1418,7 @@ class MedicationDischarge extends mongoose.Document {
 }
 module.exports.MedicationDischarge = MedicationDischarge;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],33:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],33:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],33:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],33:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1714,15 +1466,7 @@ class MedicationDispensed extends mongoose.Document {
 }
 module.exports.MedicationDispensed = MedicationDispensed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],34:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],34:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],34:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],34:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1771,15 +1515,7 @@ class MedicationOrder extends mongoose.Document {
 }
 module.exports.MedicationOrder = MedicationOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],35:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],35:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],35:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],35:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1816,15 +1552,7 @@ class Participation extends mongoose.Document {
 }
 module.exports.Participation = Participation;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],36:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],36:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],36:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],36:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1861,15 +1589,7 @@ class PatientCareExperience extends mongoose.Document {
 }
 module.exports.PatientCareExperience = PatientCareExperience;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],37:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],37:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],37:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],37:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1906,15 +1626,7 @@ class PatientCharacteristic extends mongoose.Document {
 }
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],38:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],38:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],38:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],38:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -1952,15 +1664,7 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 }
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],39:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],39:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],39:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],39:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2000,15 +1704,7 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 }
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],40:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],40:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],40:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],40:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2045,15 +1741,7 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 }
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],41:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],41:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],41:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],41:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2092,15 +1780,7 @@ class PatientCharacteristicExpired extends mongoose.Document {
 }
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],42:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],42:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],42:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],42:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2138,15 +1818,7 @@ class PatientCharacteristicPayer extends mongoose.Document {
 }
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],43:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],43:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],43:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],43:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2183,15 +1855,7 @@ class PatientCharacteristicRace extends mongoose.Document {
 }
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],44:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],44:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],44:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],44:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2228,15 +1892,7 @@ class PatientCharacteristicSex extends mongoose.Document {
 }
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],45:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],45:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],45:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],45:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2277,15 +1933,7 @@ class PhysicalExamOrder extends mongoose.Document {
 }
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],46:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],46:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],46:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],46:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2330,15 +1978,7 @@ class PhysicalExamPerformed extends mongoose.Document {
 }
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],47:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],47:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],47:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],47:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2379,15 +2019,7 @@ class PhysicalExamRecommended extends mongoose.Document {
 }
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],48:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],48:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],48:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],48:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2429,15 +2061,7 @@ class ProcedureOrder extends mongoose.Document {
 }
 module.exports.ProcedureOrder = ProcedureOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],49:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],49:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],49:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],49:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2485,15 +2109,7 @@ class ProcedurePerformed extends mongoose.Document {
 }
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],50:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],50:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],50:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],50:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2535,15 +2151,7 @@ class ProcedureRecommended extends mongoose.Document {
 }
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],51:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],51:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],51:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],51:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2580,15 +2188,7 @@ class ProviderCareExperience extends mongoose.Document {
 }
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],52:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],52:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],52:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],52:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2625,15 +2225,7 @@ class ProviderCharacteristic extends mongoose.Document {
 }
 module.exports.ProviderCharacteristic = ProviderCharacteristic;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],53:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],53:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],53:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],53:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2898,15 +2490,7 @@ class QDMPatient extends mongoose.Document {
 }
 module.exports.QDMPatient = QDMPatient;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],54:[function(require,module,exports){
-=======
-},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],54:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],54:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./AllDataElements":2,"./basetypes/Code":63,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],54:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2941,15 +2525,7 @@ class PlaceholderResult extends mongoose.Document {
 }
 module.exports.PlaceholderResult = PlaceholderResult;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"mongoose/browser":253}],55:[function(require,module,exports){
-=======
-},{"mongoose/browser":242}],55:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"mongoose/browser":252}],55:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"mongoose/browser":244}],55:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -2983,15 +2559,7 @@ class ResultComponent extends mongoose.Document {
 }
 module.exports.ResultComponent = ResultComponent;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],56:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],56:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],56:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],56:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -3034,15 +2602,7 @@ class SubstanceAdministered extends mongoose.Document {
 }
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],57:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],57:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],57:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -3087,15 +2647,7 @@ class SubstanceOrder extends mongoose.Document {
 }
 module.exports.SubstanceOrder = SubstanceOrder;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],58:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],58:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],58:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],58:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -3139,15 +2691,7 @@ class SubstanceRecommended extends mongoose.Document {
 }
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],59:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],59:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],59:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],59:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdSchema } = require('./Id');
@@ -3186,15 +2730,7 @@ class Symptom extends mongoose.Document {
 }
 module.exports.Symptom = Symptom;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":253}],60:[function(require,module,exports){
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":242}],60:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":252}],60:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Id":20,"./attributes/Component":60,"./attributes/FacilityLocation":61,"./basetypes/Any":62,"./basetypes/Code":63,"./basetypes/DataElement":64,"./basetypes/DateTime":65,"./basetypes/Interval":66,"./basetypes/Quantity":67,"mongoose/browser":244}],60:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3225,15 +2761,7 @@ class Component extends mongoose.Document {
 }
 module.exports.Component = Component;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],61:[function(require,module,exports){
-=======
-},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":242}],61:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":252}],61:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":244}],61:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3264,15 +2792,7 @@ class FacilityLocation extends mongoose.Document {
 }
 module.exports.FacilityLocation = FacilityLocation;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],62:[function(require,module,exports){
-=======
-},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":242}],62:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":252}],62:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../basetypes/Any":62,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":244}],62:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3342,15 +2862,7 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"cql-execution":107,"mongoose/browser":253}],63:[function(require,module,exports){
-=======
-},{"cql-execution":100,"mongoose/browser":242}],63:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"cql-execution":106,"mongoose/browser":252}],63:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"cql-execution":102,"mongoose/browser":244}],63:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3387,15 +2899,7 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"cql-execution":107,"mongoose/browser":253}],64:[function(require,module,exports){
-=======
-},{"cql-execution":100,"mongoose/browser":242}],64:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"cql-execution":106,"mongoose/browser":252}],64:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"cql-execution":102,"mongoose/browser":244}],64:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
@@ -3441,15 +2945,7 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../Id":20,"./Code.js":63,"cql-execution":107,"mongoose/browser":253}],65:[function(require,module,exports){
-=======
-},{"../Id":20,"./Code.js":63,"cql-execution":100,"mongoose/browser":242}],65:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../Id":20,"./Code.js":63,"cql-execution":106,"mongoose/browser":252}],65:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../Id":20,"./Code.js":63,"cql-execution":102,"mongoose/browser":244}],65:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3469,15 +2965,7 @@ DateTime.prototype.cast = (dateTime) => {
 mongoose.Schema.Types.DateTime = DateTime;
 module.exports = DateTime;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"cql-execution":107,"mongoose/browser":253}],66:[function(require,module,exports){
-=======
-},{"cql-execution":100,"mongoose/browser":242}],66:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"cql-execution":106,"mongoose/browser":252}],66:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"cql-execution":102,"mongoose/browser":244}],66:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3514,15 +3002,7 @@ Interval.prototype.cast = (interval) => {
 mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"cql-execution":107,"mongoose/browser":253}],67:[function(require,module,exports){
-=======
-},{"cql-execution":100,"mongoose/browser":242}],67:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"cql-execution":106,"mongoose/browser":252}],67:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"cql-execution":102,"mongoose/browser":244}],67:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3544,15 +3024,7 @@ Quantity.prototype.cast = (quantity) => {
 mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"cql-execution":107,"mongoose/browser":253}],68:[function(require,module,exports){
-=======
-},{"cql-execution":100,"mongoose/browser":242}],68:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"cql-execution":106,"mongoose/browser":252}],68:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"cql-execution":102,"mongoose/browser":244}],68:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { StatementDependencySchema } = require('./CQLStatementDependency');
 
@@ -3585,15 +3057,7 @@ class CQLLibrary extends mongoose.Document {
 }
 module.exports.CQLLibrary = CQLLibrary;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./CQLStatementDependency":69,"mongoose/browser":253}],69:[function(require,module,exports){
-=======
-},{"./CQLStatementDependency":69,"mongoose/browser":242}],69:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./CQLStatementDependency":69,"mongoose/browser":252}],69:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./CQLStatementDependency":69,"mongoose/browser":244}],69:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
@@ -3623,15 +3087,7 @@ class StatementDependency extends mongoose.Document {
 }
 module.exports.StatementDependency = StatementDependency;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"mongoose/browser":253}],70:[function(require,module,exports){
-=======
-},{"mongoose/browser":242}],70:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"mongoose/browser":252}],70:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"mongoose/browser":244}],70:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
@@ -3650,15 +3106,7 @@ class Concept extends mongoose.Document {
 }
 module.exports.Concept = Concept;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"mongoose/browser":253}],71:[function(require,module,exports){
-=======
-},{"mongoose/browser":242}],71:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"mongoose/browser":252}],71:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"mongoose/browser":244}],71:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -3756,6 +3204,7 @@ module.exports.Measure = Measure;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 },{"../basetypes/Code":63,"../basetypes/DataElement":64,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":253}],72:[function(require,module,exports){
 =======
 =======
@@ -3772,6 +3221,9 @@ module.exports.Measure = Measure;
 },{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":73,"mongoose/browser":252}],72:[function(require,module,exports){
 >>>>>>> Add providers to patient
 >>>>>>> Add providers to patient
+=======
+},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":244}],72:[function(require,module,exports){
+>>>>>>> add Provider to index_template.js
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
@@ -3799,15 +3251,14 @@ class MeasurePackage extends mongoose.Document {
 }
 module.exports.MeasurePackage = MeasurePackage;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"mongoose/browser":253}],73:[function(require,module,exports){
+},{"mongoose/browser":244}],73:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const { QDMPatientSchema } = require('../QDMPatient');
+const { ProviderSchema } = require('./Provider');
 
 const [Schema, Number, String, Mixed] = [
   mongoose.Schema,
@@ -3825,6 +3276,7 @@ const PatientSchema = new Schema({
   expectedValues: [],
   notes: String,
   qdmPatient: QDMPatientSchema,
+  providers: [ProviderSchema],
 
 }, { id: false });
 
@@ -3836,13 +3288,7 @@ class Patient extends mongoose.Document {
 }
 module.exports.Patient = Patient;
 
-},{"../QDMPatient":53,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"mongoose/browser":253}],74:[function(require,module,exports){
-=======
-},{"mongoose/browser":242}],73:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"mongoose/browser":252}],73:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../QDMPatient":53,"../basetypes/Code":63,"../basetypes/DateTime":65,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./Provider":75,"mongoose/browser":244}],74:[function(require,module,exports){
 /* eslint-disable no-unused-vars, no-param-reassign */
 const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
@@ -3932,15 +3378,53 @@ class PopulationSet extends mongoose.Document {
 }
 module.exports.PopulationSet = PopulationSet;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./CQLStatementDependency":69,"mongoose/browser":253}],75:[function(require,module,exports){
-=======
-},{"./CQLStatementDependency":69,"mongoose/browser":242}],74:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./CQLStatementDependency":69,"mongoose/browser":252}],74:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./CQLStatementDependency":69,"mongoose/browser":244}],75:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
+const Id = require('../Id');
+
+const [Schema, String, Boolean] = [
+  mongoose.Schema,
+  mongoose.Schema.Types.String,
+  mongoose.Schema.Types.Boolean,
+];
+
+const AddressSchema = new mongoose.Schema({
+  street: [String],
+  city: String,
+  state: String,
+  zip: String,
+  country: String,
+  use: String,
+});
+
+const TelecomSchema = new mongoose.Schema({
+  use: String,
+  value: String,
+  preferred: Boolean,
+});
+
+const ProviderSchema = new Schema({
+  _type: { type: String, default: 'Provider' },
+
+  givenNames: [String],
+  familyName: String,
+  specialty: String,
+  title: String,
+  addresses: [AddressSchema],
+  telecoms: [TelecomSchema],
+  ids: [Id.IdSchema],
+
+}, { id: false });
+
+module.exports.ProviderSchema = ProviderSchema;
+class Provider extends mongoose.Document {
+  constructor(object) {
+    super(object, ProviderSchema);
+  }
+}
+module.exports.Provider = Provider;
+
+},{"../Id":20,"mongoose/browser":244}],76:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
@@ -3968,15 +3452,7 @@ class ValueSet extends mongoose.Document {
 }
 module.exports.ValueSet = ValueSet;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./Concept.js":70,"mongoose/browser":253}],76:[function(require,module,exports){
-=======
-},{"./Concept.js":70,"mongoose/browser":242}],75:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./Concept.js":70,"mongoose/browser":252}],75:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./Concept.js":70,"mongoose/browser":244}],77:[function(require,module,exports){
 module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;
@@ -3998,1468 +3474,7 @@ module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
 module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
 module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/Patient.js":73,"./cqm/ValueSet.js":75,"cql-execution":107}],77:[function(require,module,exports){
-(function (global){
-'use strict';
-=======
-},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/ValueSet.js":74,"cql-execution":100}],76:[function(require,module,exports){
-(function (process,global,setImmediate){
-/* @preserve
- * The MIT License (MIT)
- * 
- * Copyright (c) 2013-2017 Petka Antonov
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- * 
- */
-/**
- * bluebird build version 3.5.1
- * Features enabled: core, race, call_get, generators, map, nodeify, promisify, props, reduce, settle, some, using, timers, filter, any, each
-*/
-!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.Promise=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof _dereq_=="function"&&_dereq_;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof _dereq_=="function"&&_dereq_;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
-"use strict";
-module.exports = function(Promise) {
-var SomePromiseArray = Promise._SomePromiseArray;
-function any(promises) {
-    var ret = new SomePromiseArray(promises);
-    var promise = ret.promise();
-    ret.setHowMany(1);
-    ret.setUnwrap();
-    ret.init();
-    return promise;
-}
->>>>>>> A provider has a list of ids
-=======
-},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/ValueSet.js":74,"cql-execution":106}],76:[function(require,module,exports){
-(function (global){
-'use strict';
->>>>>>> Add providers to patient
-
-// compare and isBuffer taken from https://github.com/feross/buffer/blob/680e9e5e488f22aac27599a57dc844a6315928dd/index.js
-// original notice:
-
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
- * @license  MIT
- */
-function compare(a, b) {
-  if (a === b) {
-    return 0;
-  }
-
-  var x = a.length;
-  var y = b.length;
-
-  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
-    if (a[i] !== b[i]) {
-      x = a[i];
-      y = b[i];
-      break;
-    }
-  }
-
-  if (x < y) {
-    return -1;
-  }
-  if (y < x) {
-    return 1;
-  }
-  return 0;
-}
-function isBuffer(b) {
-  if (global.Buffer && typeof global.Buffer.isBuffer === 'function') {
-    return global.Buffer.isBuffer(b);
-  }
-  return !!(b != null && b._isBuffer);
-}
-
-// based on node assert, original notice:
-
-// http://wiki.commonjs.org/wiki/Unit_Testing/1.0
-//
-// THIS IS NOT TESTED NOR LIKELY TO WORK OUTSIDE V8!
-//
-// Originally from narwhal.js (http://narwhaljs.org)
-// Copyright (c) 2009 Thomas Robinson <280north.com>
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the 'Software'), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var util = require('util/');
-var hasOwn = Object.prototype.hasOwnProperty;
-var pSlice = Array.prototype.slice;
-var functionsHaveNames = (function () {
-  return function foo() {}.name === 'foo';
-}());
-function pToString (obj) {
-  return Object.prototype.toString.call(obj);
-}
-function isView(arrbuf) {
-  if (isBuffer(arrbuf)) {
-    return false;
-  }
-  if (typeof global.ArrayBuffer !== 'function') {
-    return false;
-  }
-  if (typeof ArrayBuffer.isView === 'function') {
-    return ArrayBuffer.isView(arrbuf);
-  }
-  if (!arrbuf) {
-    return false;
-  }
-  if (arrbuf instanceof DataView) {
-    return true;
-  }
-  if (arrbuf.buffer && arrbuf.buffer instanceof ArrayBuffer) {
-    return true;
-  }
-  return false;
-}
-// 1. The assert module provides functions that throw
-// AssertionError's when particular conditions are not met. The
-// assert module must conform to the following interface.
-
-var assert = module.exports = ok;
-
-// 2. The AssertionError is defined in assert.
-// new assert.AssertionError({ message: message,
-//                             actual: actual,
-//                             expected: expected })
-
-var regex = /\s*function\s+([^\(\s]*)\s*/;
-// based on https://github.com/ljharb/function.prototype.name/blob/adeeeec8bfcc6068b187d7d9fb3d5bb1d3a30899/implementation.js
-function getName(func) {
-  if (!util.isFunction(func)) {
-    return;
-  }
-  if (functionsHaveNames) {
-    return func.name;
-  }
-  var str = func.toString();
-  var match = str.match(regex);
-  return match && match[1];
-}
-assert.AssertionError = function AssertionError(options) {
-  this.name = 'AssertionError';
-  this.actual = options.actual;
-  this.expected = options.expected;
-  this.operator = options.operator;
-  if (options.message) {
-    this.message = options.message;
-    this.generatedMessage = false;
-  } else {
-    this.message = getMessage(this);
-    this.generatedMessage = true;
-  }
-  var stackStartFunction = options.stackStartFunction || fail;
-  if (Error.captureStackTrace) {
-    Error.captureStackTrace(this, stackStartFunction);
-  } else {
-    // non v8 browsers so we can have a stacktrace
-    var err = new Error();
-    if (err.stack) {
-      var out = err.stack;
-
-      // try to strip useless frames
-      var fn_name = getName(stackStartFunction);
-      var idx = out.indexOf('\n' + fn_name);
-      if (idx >= 0) {
-        // once we have located the function frame
-        // we need to strip out everything before it (and its line)
-        var next_line = out.indexOf('\n', idx + 1);
-        out = out.substring(next_line + 1);
-      }
-
-      this.stack = out;
-    }
-  }
-};
-
-// assert.AssertionError instanceof Error
-util.inherits(assert.AssertionError, Error);
-
-function truncate(s, n) {
-  if (typeof s === 'string') {
-    return s.length < n ? s : s.slice(0, n);
-  } else {
-    return s;
-  }
-}
-function inspect(something) {
-  if (functionsHaveNames || !util.isFunction(something)) {
-    return util.inspect(something);
-  }
-  var rawname = getName(something);
-  var name = rawname ? ': ' + rawname : '';
-  return '[Function' +  name + ']';
-}
-function getMessage(self) {
-  return truncate(inspect(self.actual), 128) + ' ' +
-         self.operator + ' ' +
-         truncate(inspect(self.expected), 128);
-}
-
-// At present only the three keys mentioned above are used and
-// understood by the spec. Implementations or sub modules can pass
-// other keys to the AssertionError's constructor - they will be
-// ignored.
-
-// 3. All of the following functions must throw an AssertionError
-// when a corresponding condition is not met, with a message that
-// may be undefined if not provided.  All assertion methods provide
-// both the actual and expected values to the assertion error for
-// display purposes.
-
-function fail(actual, expected, message, operator, stackStartFunction) {
-  throw new assert.AssertionError({
-    message: message,
-    actual: actual,
-    expected: expected,
-    operator: operator,
-    stackStartFunction: stackStartFunction
-  });
-}
-
-// EXTENSION! allows for well behaved errors defined elsewhere.
-assert.fail = fail;
-
-// 4. Pure assertion tests whether a value is truthy, as determined
-// by !!guard.
-// assert.ok(guard, message_opt);
-// This statement is equivalent to assert.equal(true, !!guard,
-// message_opt);. To test strictly for the value true, use
-// assert.strictEqual(true, guard, message_opt);.
-
-function ok(value, message) {
-  if (!value) fail(value, true, message, '==', assert.ok);
-}
-assert.ok = ok;
-
-// 5. The equality assertion tests shallow, coercive equality with
-// ==.
-// assert.equal(actual, expected, message_opt);
-
-assert.equal = function equal(actual, expected, message) {
-  if (actual != expected) fail(actual, expected, message, '==', assert.equal);
-};
-
-// 6. The non-equality assertion tests for whether two objects are not equal
-// with != assert.notEqual(actual, expected, message_opt);
-
-assert.notEqual = function notEqual(actual, expected, message) {
-  if (actual == expected) {
-    fail(actual, expected, message, '!=', assert.notEqual);
-  }
-};
-
-// 7. The equivalence assertion tests a deep equality relation.
-// assert.deepEqual(actual, expected, message_opt);
-
-assert.deepEqual = function deepEqual(actual, expected, message) {
-  if (!_deepEqual(actual, expected, false)) {
-    fail(actual, expected, message, 'deepEqual', assert.deepEqual);
-  }
-};
-
-assert.deepStrictEqual = function deepStrictEqual(actual, expected, message) {
-  if (!_deepEqual(actual, expected, true)) {
-    fail(actual, expected, message, 'deepStrictEqual', assert.deepStrictEqual);
-  }
-};
-
-function _deepEqual(actual, expected, strict, memos) {
-  // 7.1. All identical values are equivalent, as determined by ===.
-  if (actual === expected) {
-    return true;
-  } else if (isBuffer(actual) && isBuffer(expected)) {
-    return compare(actual, expected) === 0;
-
-  // 7.2. If the expected value is a Date object, the actual value is
-  // equivalent if it is also a Date object that refers to the same time.
-  } else if (util.isDate(actual) && util.isDate(expected)) {
-    return actual.getTime() === expected.getTime();
-
-  // 7.3 If the expected value is a RegExp object, the actual value is
-  // equivalent if it is also a RegExp object with the same source and
-  // properties (`global`, `multiline`, `lastIndex`, `ignoreCase`).
-  } else if (util.isRegExp(actual) && util.isRegExp(expected)) {
-    return actual.source === expected.source &&
-           actual.global === expected.global &&
-           actual.multiline === expected.multiline &&
-           actual.lastIndex === expected.lastIndex &&
-           actual.ignoreCase === expected.ignoreCase;
-
-  // 7.4. Other pairs that do not both pass typeof value == 'object',
-  // equivalence is determined by ==.
-  } else if ((actual === null || typeof actual !== 'object') &&
-             (expected === null || typeof expected !== 'object')) {
-    return strict ? actual === expected : actual == expected;
-
-  // If both values are instances of typed arrays, wrap their underlying
-  // ArrayBuffers in a Buffer each to increase performance
-  // This optimization requires the arrays to have the same type as checked by
-  // Object.prototype.toString (aka pToString). Never perform binary
-  // comparisons for Float*Arrays, though, since e.g. +0 === -0 but their
-  // bit patterns are not identical.
-  } else if (isView(actual) && isView(expected) &&
-             pToString(actual) === pToString(expected) &&
-             !(actual instanceof Float32Array ||
-               actual instanceof Float64Array)) {
-    return compare(new Uint8Array(actual.buffer),
-                   new Uint8Array(expected.buffer)) === 0;
-
-  // 7.5 For all other Object pairs, including Array objects, equivalence is
-  // determined by having the same number of owned properties (as verified
-  // with Object.prototype.hasOwnProperty.call), the same set of keys
-  // (although not necessarily the same order), equivalent values for every
-  // corresponding key, and an identical 'prototype' property. Note: this
-  // accounts for both named and indexed properties on Arrays.
-  } else if (isBuffer(actual) !== isBuffer(expected)) {
-    return false;
-  } else {
-    memos = memos || {actual: [], expected: []};
-
-    var actualIndex = memos.actual.indexOf(actual);
-    if (actualIndex !== -1) {
-      if (actualIndex === memos.expected.indexOf(expected)) {
-        return true;
-      }
-    }
-
-    memos.actual.push(actual);
-    memos.expected.push(expected);
-
-    return objEquiv(actual, expected, strict, memos);
-  }
-}
-
-function isArguments(object) {
-  return Object.prototype.toString.call(object) == '[object Arguments]';
-}
-
-function objEquiv(a, b, strict, actualVisitedObjects) {
-  if (a === null || a === undefined || b === null || b === undefined)
-    return false;
-  // if one is a primitive, the other must be same
-  if (util.isPrimitive(a) || util.isPrimitive(b))
-    return a === b;
-  if (strict && Object.getPrototypeOf(a) !== Object.getPrototypeOf(b))
-    return false;
-  var aIsArgs = isArguments(a);
-  var bIsArgs = isArguments(b);
-  if ((aIsArgs && !bIsArgs) || (!aIsArgs && bIsArgs))
-    return false;
-  if (aIsArgs) {
-    a = pSlice.call(a);
-    b = pSlice.call(b);
-    return _deepEqual(a, b, strict);
-  }
-  var ka = objectKeys(a);
-  var kb = objectKeys(b);
-  var key, i;
-  // having the same number of owned properties (keys incorporates
-  // hasOwnProperty)
-  if (ka.length !== kb.length)
-    return false;
-  //the same set of keys (although not necessarily the same order),
-  ka.sort();
-  kb.sort();
-  //~~~cheap key test
-  for (i = ka.length - 1; i >= 0; i--) {
-    if (ka[i] !== kb[i])
-      return false;
-  }
-  //equivalent values for every corresponding key, and
-  //~~~possibly expensive deep test
-  for (i = ka.length - 1; i >= 0; i--) {
-    key = ka[i];
-    if (!_deepEqual(a[key], b[key], strict, actualVisitedObjects))
-      return false;
-  }
-  return true;
-}
-
-// 8. The non-equivalence assertion tests for any deep inequality.
-// assert.notDeepEqual(actual, expected, message_opt);
-
-assert.notDeepEqual = function notDeepEqual(actual, expected, message) {
-  if (_deepEqual(actual, expected, false)) {
-    fail(actual, expected, message, 'notDeepEqual', assert.notDeepEqual);
-  }
-};
-
-assert.notDeepStrictEqual = notDeepStrictEqual;
-function notDeepStrictEqual(actual, expected, message) {
-  if (_deepEqual(actual, expected, true)) {
-    fail(actual, expected, message, 'notDeepStrictEqual', notDeepStrictEqual);
-  }
-}
-
-
-// 9. The strict equality assertion tests strict equality, as determined by ===.
-// assert.strictEqual(actual, expected, message_opt);
-
-assert.strictEqual = function strictEqual(actual, expected, message) {
-  if (actual !== expected) {
-    fail(actual, expected, message, '===', assert.strictEqual);
-  }
-};
-
-// 10. The strict non-equality assertion tests for strict inequality, as
-// determined by !==.  assert.notStrictEqual(actual, expected, message_opt);
-
-assert.notStrictEqual = function notStrictEqual(actual, expected, message) {
-  if (actual === expected) {
-    fail(actual, expected, message, '!==', assert.notStrictEqual);
-  }
-};
-
-function expectedException(actual, expected) {
-  if (!actual || !expected) {
-    return false;
-  }
-
-  if (Object.prototype.toString.call(expected) == '[object RegExp]') {
-    return expected.test(actual);
-  }
-
-  try {
-    if (actual instanceof expected) {
-      return true;
-    }
-  } catch (e) {
-    // Ignore.  The instanceof check doesn't work for arrow functions.
-  }
-
-  if (Error.isPrototypeOf(expected)) {
-    return false;
-  }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":80}],78:[function(require,module,exports){
-if (typeof Object.create === 'function') {
-  // implementation from standard node.js 'util' module
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    ctor.prototype = Object.create(superCtor.prototype, {
-      constructor: {
-        value: ctor,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-  };
-} else {
-  // old school shim for old browsers
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    var TempCtor = function () {}
-    TempCtor.prototype = superCtor.prototype
-    ctor.prototype = new TempCtor()
-    ctor.prototype.constructor = ctor
-  }
-}
-
-},{}],79:[function(require,module,exports){
-module.exports = function isBuffer(arg) {
-  return arg && typeof arg === 'object'
-    && typeof arg.copy === 'function'
-    && typeof arg.fill === 'function'
-    && typeof arg.readUInt8 === 'function';
-}
-},{}],80:[function(require,module,exports){
-(function (process,global){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-=======
-Promise.prototype._unsetOnCancel = function() {
-    this._onCancelField = undefined;
-};
-
-Promise.prototype._isCancellable = function() {
-    return this.isPending() && !this._isCancelled();
-};
->>>>>>> A provider has a list of ids
-=======
-  return expected.call({}, actual) === true;
-}
-
-function _tryBlock(block) {
-  var error;
-  try {
-    block();
-  } catch (e) {
-    error = e;
-  }
-  return error;
-}
->>>>>>> Add providers to patient
-
-function _throws(shouldThrow, block, expected, message) {
-  var actual;
-
-  if (typeof block !== 'function') {
-    throw new TypeError('"block" argument must be a function');
-  }
-
-  if (typeof expected === 'string') {
-    message = expected;
-    expected = null;
-  }
-
-  actual = _tryBlock(block);
-
-  message = (expected && expected.name ? ' (' + expected.name + ').' : '.') +
-            (message ? ' ' + message : '.');
-
-  if (shouldThrow && !actual) {
-    fail(actual, expected, 'Missing expected exception' + message);
-  }
-
-  var userProvidedMessage = typeof message === 'string';
-  var isUnwantedException = !shouldThrow && util.isError(actual);
-  var isUnexpectedException = !shouldThrow && actual && !expected;
-
-  if ((isUnwantedException &&
-      userProvidedMessage &&
-      expectedException(actual, expected)) ||
-      isUnexpectedException) {
-    fail(actual, expected, 'Got unwanted exception' + message);
-  }
-
-  if ((shouldThrow && actual && expected &&
-      !expectedException(actual, expected)) || (!shouldThrow && actual)) {
-    throw actual;
-  }
-}
-
-// 11. Expected to throw an error:
-// assert.throws(block, Error_opt, message_opt);
-
-assert.throws = function(block, /*optional*/error, /*optional*/message) {
-  _throws(true, block, error, message);
-};
-
-// EXTENSION! This is annoying to write outside this module.
-assert.doesNotThrow = function(block, /*optional*/error, /*optional*/message) {
-  _throws(false, block, error, message);
-};
-
-assert.ifError = function(err) { if (err) throw err; };
-
-var objectKeys = Object.keys || function (obj) {
-  var keys = [];
-  for (var key in obj) {
-    if (hasOwn.call(obj, key)) keys.push(key);
-  }
-  return keys;
-};
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":79}],77:[function(require,module,exports){
-if (typeof Object.create === 'function') {
-  // implementation from standard node.js 'util' module
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    ctor.prototype = Object.create(superCtor.prototype, {
-      constructor: {
-        value: ctor,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-  };
-} else {
-  // old school shim for old browsers
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    var TempCtor = function () {}
-    TempCtor.prototype = superCtor.prototype
-    ctor.prototype = new TempCtor()
-    ctor.prototype.constructor = ctor
-  }
-}
-
-},{}],78:[function(require,module,exports){
-module.exports = function isBuffer(arg) {
-  return arg && typeof arg === 'object'
-    && typeof arg.copy === 'function'
-    && typeof arg.fill === 'function'
-    && typeof arg.readUInt8 === 'function';
-}
-},{}],79:[function(require,module,exports){
-(function (process,global){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var formatRegExp = /%[sdj%]/g;
-exports.format = function(f) {
-  if (!isString(f)) {
-    var objects = [];
-    for (var i = 0; i < arguments.length; i++) {
-      objects.push(inspect(arguments[i]));
-    }
-    return objects.join(' ');
-  }
-
-  var i = 1;
-  var args = arguments;
-  var len = args.length;
-  var str = String(f).replace(formatRegExp, function(x) {
-    if (x === '%%') return '%';
-    if (i >= len) return x;
-    switch (x) {
-      case '%s': return String(args[i++]);
-      case '%d': return Number(args[i++]);
-      case '%j':
-        try {
-          return JSON.stringify(args[i++]);
-        } catch (_) {
-          return '[Circular]';
-        }
-      default:
-        return x;
-    }
-  });
-  for (var x = args[i]; i < len; x = args[++i]) {
-    if (isNull(x) || !isObject(x)) {
-      str += ' ' + x;
-    } else {
-      str += ' ' + inspect(x);
-    }
-  }
-  return str;
-};
-
-
-// Mark that a method should not be used.
-// Returns a modified function which warns once by default.
-// If --no-deprecation is set, then it is a no-op.
-exports.deprecate = function(fn, msg) {
-  // Allow for deprecating things in the process of starting up.
-  if (isUndefined(global.process)) {
-    return function() {
-      return exports.deprecate(fn, msg).apply(this, arguments);
-    };
-  }
-
-  if (process.noDeprecation === true) {
-    return fn;
-  }
-
-  var warned = false;
-  function deprecated() {
-    if (!warned) {
-      if (process.throwDeprecation) {
-        throw new Error(msg);
-      } else if (process.traceDeprecation) {
-        console.trace(msg);
-      } else {
-        console.error(msg);
-      }
-      warned = true;
-    }
-    return fn.apply(this, arguments);
-  }
-
-  return deprecated;
-};
-
-
-var debugs = {};
-var debugEnviron;
-exports.debuglog = function(set) {
-  if (isUndefined(debugEnviron))
-    debugEnviron = process.env.NODE_DEBUG || '';
-  set = set.toUpperCase();
-  if (!debugs[set]) {
-    if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
-      var pid = process.pid;
-      debugs[set] = function() {
-        var msg = exports.format.apply(exports, arguments);
-        console.error('%s %d: %s', set, pid, msg);
-      };
-    } else {
-      debugs[set] = function() {};
-    }
-  }
-  return debugs[set];
-};
-
-
-/**
- * Echos the value of a value. Trys to print the value out
- * in the best way possible given the different types.
- *
- * @param {Object} obj The object to print out.
- * @param {Object} opts Optional options object that alters the output.
- */
-/* legacy: obj, showHidden, depth, colors*/
-function inspect(obj, opts) {
-  // default options
-  var ctx = {
-    seen: [],
-    stylize: stylizeNoColor
-  };
-  // legacy...
-  if (arguments.length >= 3) ctx.depth = arguments[2];
-  if (arguments.length >= 4) ctx.colors = arguments[3];
-  if (isBoolean(opts)) {
-    // legacy...
-    ctx.showHidden = opts;
-  } else if (opts) {
-    // got an "options" object
-    exports._extend(ctx, opts);
-  }
-  // set default options
-  if (isUndefined(ctx.showHidden)) ctx.showHidden = false;
-  if (isUndefined(ctx.depth)) ctx.depth = 2;
-  if (isUndefined(ctx.colors)) ctx.colors = false;
-  if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
-  if (ctx.colors) ctx.stylize = stylizeWithColor;
-  return formatValue(ctx, obj, ctx.depth);
-}
-exports.inspect = inspect;
-
-
-// http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
-inspect.colors = {
-  'bold' : [1, 22],
-  'italic' : [3, 23],
-  'underline' : [4, 24],
-  'inverse' : [7, 27],
-  'white' : [37, 39],
-  'grey' : [90, 39],
-  'black' : [30, 39],
-  'blue' : [34, 39],
-  'cyan' : [36, 39],
-  'green' : [32, 39],
-  'magenta' : [35, 39],
-  'red' : [31, 39],
-  'yellow' : [33, 39]
-};
-
-// Don't use 'blue' not visible on cmd.exe
-inspect.styles = {
-  'special': 'cyan',
-  'number': 'yellow',
-  'boolean': 'yellow',
-  'undefined': 'grey',
-  'null': 'bold',
-  'string': 'green',
-  'date': 'magenta',
-  // "name": intentionally not styling
-  'regexp': 'red'
-};
-
-
-function stylizeWithColor(str, styleType) {
-  var style = inspect.styles[styleType];
-
-  if (style) {
-    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
-           '\u001b[' + inspect.colors[style][1] + 'm';
-  } else {
-    return str;
-  }
-}
-
-
-function stylizeNoColor(str, styleType) {
-  return str;
-}
-
-
-function arrayToHash(array) {
-  var hash = {};
-
-  array.forEach(function(val, idx) {
-    hash[val] = true;
-  });
-
-  return hash;
-}
-
-
-function formatValue(ctx, value, recurseTimes) {
-  // Provide a hook for user-specified inspect functions.
-  // Check that value is an object with an inspect function on it
-  if (ctx.customInspect &&
-      value &&
-      isFunction(value.inspect) &&
-      // Filter out the util module, it's inspect function is special
-      value.inspect !== exports.inspect &&
-      // Also filter out any prototype objects using the circular check.
-      !(value.constructor && value.constructor.prototype === value)) {
-    var ret = value.inspect(recurseTimes, ctx);
-    if (!isString(ret)) {
-      ret = formatValue(ctx, ret, recurseTimes);
-    }
-    return ret;
-  }
-
-  // Primitive types cannot have properties
-  var primitive = formatPrimitive(ctx, value);
-  if (primitive) {
-    return primitive;
-  }
-
-  // Look up the keys of the object.
-  var keys = Object.keys(value);
-  var visibleKeys = arrayToHash(keys);
-
-  if (ctx.showHidden) {
-    keys = Object.getOwnPropertyNames(value);
-  }
-
-  // IE doesn't make error fields non-enumerable
-  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
-  if (isError(value)
-      && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
-    return formatError(value);
-  }
-
-  // Some type of object without properties can be shortcutted.
-  if (keys.length === 0) {
-    if (isFunction(value)) {
-      var name = value.name ? ': ' + value.name : '';
-      return ctx.stylize('[Function' + name + ']', 'special');
-    }
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    }
-    if (isDate(value)) {
-      return ctx.stylize(Date.prototype.toString.call(value), 'date');
-    }
-    if (isError(value)) {
-      return formatError(value);
-    }
-  }
-
-  var base = '', array = false, braces = ['{', '}'];
-
-  // Make Array say that they are Array
-  if (isArray(value)) {
-    array = true;
-    braces = ['[', ']'];
-  }
-
-  // Make functions say that they are functions
-  if (isFunction(value)) {
-    var n = value.name ? ': ' + value.name : '';
-    base = ' [Function' + n + ']';
-  }
-
-  // Make RegExps say that they are RegExps
-  if (isRegExp(value)) {
-    base = ' ' + RegExp.prototype.toString.call(value);
-  }
-
-  // Make dates with properties first say the date
-  if (isDate(value)) {
-    base = ' ' + Date.prototype.toUTCString.call(value);
-  }
-
-  // Make error with message first say the error
-  if (isError(value)) {
-    base = ' ' + formatError(value);
-  }
-
-  if (keys.length === 0 && (!array || value.length == 0)) {
-    return braces[0] + base + braces[1];
-  }
-
-  if (recurseTimes < 0) {
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    } else {
-      return ctx.stylize('[Object]', 'special');
-    }
-  }
-
-  ctx.seen.push(value);
-
-  var output;
-  if (array) {
-    output = formatArray(ctx, value, recurseTimes, visibleKeys, keys);
-  } else {
-    output = keys.map(function(key) {
-      return formatProperty(ctx, value, recurseTimes, visibleKeys, key, array);
-    });
-  }
-
-  ctx.seen.pop();
-
-  return reduceToSingleString(output, base, braces);
-}
-
-
-function formatPrimitive(ctx, value) {
-  if (isUndefined(value))
-    return ctx.stylize('undefined', 'undefined');
-  if (isString(value)) {
-    var simple = '\'' + JSON.stringify(value).replace(/^"|"$/g, '')
-                                             .replace(/'/g, "\\'")
-                                             .replace(/\\"/g, '"') + '\'';
-    return ctx.stylize(simple, 'string');
-  }
-  if (isNumber(value))
-    return ctx.stylize('' + value, 'number');
-  if (isBoolean(value))
-    return ctx.stylize('' + value, 'boolean');
-  // For some reason typeof null is "object", so special case here.
-  if (isNull(value))
-    return ctx.stylize('null', 'null');
-}
-
-
-function formatError(value) {
-  return '[' + Error.prototype.toString.call(value) + ']';
-}
-
-
-function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
-  var output = [];
-  for (var i = 0, l = value.length; i < l; ++i) {
-    if (hasOwnProperty(value, String(i))) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          String(i), true));
-    } else {
-      output.push('');
-    }
-  }
-  keys.forEach(function(key) {
-    if (!key.match(/^\d+$/)) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          key, true));
-    }
-  });
-  return output;
-}
-
-
-function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
-  var name, str, desc;
-  desc = Object.getOwnPropertyDescriptor(value, key) || { value: value[key] };
-  if (desc.get) {
-    if (desc.set) {
-      str = ctx.stylize('[Getter/Setter]', 'special');
-    } else {
-      str = ctx.stylize('[Getter]', 'special');
-    }
-  } else {
-    if (desc.set) {
-      str = ctx.stylize('[Setter]', 'special');
-    }
-  }
-  if (!hasOwnProperty(visibleKeys, key)) {
-    name = '[' + key + ']';
-  }
-  if (!str) {
-    if (ctx.seen.indexOf(desc.value) < 0) {
-      if (isNull(recurseTimes)) {
-        str = formatValue(ctx, desc.value, null);
-      } else {
-        str = formatValue(ctx, desc.value, recurseTimes - 1);
-      }
-      if (str.indexOf('\n') > -1) {
-        if (array) {
-          str = str.split('\n').map(function(line) {
-            return '  ' + line;
-          }).join('\n').substr(2);
-        } else {
-          str = '\n' + str.split('\n').map(function(line) {
-            return '   ' + line;
-          }).join('\n');
-        }
-      }
-    } else {
-      str = ctx.stylize('[Circular]', 'special');
-    }
-  }
-  if (isUndefined(name)) {
-    if (array && key.match(/^\d+$/)) {
-      return str;
-    }
-    name = JSON.stringify('' + key);
-    if (name.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)) {
-      name = name.substr(1, name.length - 2);
-      name = ctx.stylize(name, 'name');
-    } else {
-      name = name.replace(/'/g, "\\'")
-                 .replace(/\\"/g, '"')
-                 .replace(/(^"|"$)/g, "'");
-      name = ctx.stylize(name, 'string');
-    }
-  }
-
-  return name + ': ' + str;
-}
-
-
-function reduceToSingleString(output, base, braces) {
-  var numLinesEst = 0;
-  var length = output.reduce(function(prev, cur) {
-    numLinesEst++;
-    if (cur.indexOf('\n') >= 0) numLinesEst++;
-    return prev + cur.replace(/\u001b\[\d\d?m/g, '').length + 1;
-  }, 0);
-
-  if (length > 60) {
-    return braces[0] +
-           (base === '' ? '' : base + '\n ') +
-           ' ' +
-           output.join(',\n  ') +
-           ' ' +
-           braces[1];
-  }
-
-  return braces[0] + base + ' ' + output.join(', ') + ' ' + braces[1];
-}
-
-
-// NOTE: These type checking functions intentionally don't use `instanceof`
-// because it is fragile and can be easily faked with `Object.create()`.
-function isArray(ar) {
-  return Array.isArray(ar);
-}
-exports.isArray = isArray;
-
-function isBoolean(arg) {
-  return typeof arg === 'boolean';
-}
-exports.isBoolean = isBoolean;
-
-function isNull(arg) {
-  return arg === null;
-}
-exports.isNull = isNull;
-
-function isNullOrUndefined(arg) {
-  return arg == null;
-}
-exports.isNullOrUndefined = isNullOrUndefined;
-
-function isNumber(arg) {
-  return typeof arg === 'number';
-}
-exports.isNumber = isNumber;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":79,"_process":356,"inherits":78}],81:[function(require,module,exports){
-'use strict'
-
-exports.byteLength = byteLength
-exports.toByteArray = toByteArray
-exports.fromByteArray = fromByteArray
-=======
-function removeCommonRoots(stacks) {
-    var current = stacks[0];
-    for (var i = 1; i < stacks.length; ++i) {
-        var prev = stacks[i];
-        var currentLastIndex = current.length - 1;
-        var currentLastLine = current[currentLastIndex];
-        var commonRootMeetPoint = -1;
->>>>>>> A provider has a list of ids
-=======
-function isString(arg) {
-  return typeof arg === 'string';
-}
-exports.isString = isString;
->>>>>>> Add providers to patient
-
-function isSymbol(arg) {
-  return typeof arg === 'symbol';
-}
-exports.isSymbol = isSymbol;
-
-function isUndefined(arg) {
-  return arg === void 0;
-}
-exports.isUndefined = isUndefined;
-
-function isRegExp(re) {
-  return isObject(re) && objectToString(re) === '[object RegExp]';
-}
-exports.isRegExp = isRegExp;
-
-function isObject(arg) {
-  return typeof arg === 'object' && arg !== null;
-}
-exports.isObject = isObject;
-
-function isDate(d) {
-  return isObject(d) && objectToString(d) === '[object Date]';
-}
-exports.isDate = isDate;
-
-function isError(e) {
-  return isObject(e) &&
-      (objectToString(e) === '[object Error]' || e instanceof Error);
-}
-exports.isError = isError;
-
-function isFunction(arg) {
-  return typeof arg === 'function';
-}
-exports.isFunction = isFunction;
-
-function isPrimitive(arg) {
-  return arg === null ||
-         typeof arg === 'boolean' ||
-         typeof arg === 'number' ||
-         typeof arg === 'string' ||
-         typeof arg === 'symbol' ||  // ES6 symbol
-         typeof arg === 'undefined';
-}
-exports.isPrimitive = isPrimitive;
-
-exports.isBuffer = require('./support/isBuffer');
-
-function objectToString(o) {
-  return Object.prototype.toString.call(o);
-}
-
-
-function pad(n) {
-  return n < 10 ? '0' + n.toString(10) : n.toString(10);
-}
-
-
-var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
-              'Oct', 'Nov', 'Dec'];
-
-// 26 Feb 16:19:34
-function timestamp() {
-  var d = new Date();
-  var time = [pad(d.getHours()),
-              pad(d.getMinutes()),
-              pad(d.getSeconds())].join(':');
-  return [d.getDate(), months[d.getMonth()], time].join(' ');
-}
-
-
-// log is just a thin wrapper to console.log that prepends a timestamp
-exports.log = function() {
-  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
-};
-
-
-/**
- * Inherit the prototype methods from one constructor into another.
- *
- * The Function.prototype.inherits from lang.js rewritten as a standalone
- * function (not on Function.prototype). NOTE: If this file is to be loaded
- * during bootstrapping this function needs to be rewritten using some native
- * functions as prototype setup using normal JavaScript does not work as
- * expected during bootstrapping (see mirror.js in r114903).
- *
- * @param {function} ctor Constructor function which needs to inherit the
- *     prototype.
- * @param {function} superCtor Constructor function to inherit prototype from.
- */
-exports.inherits = require('inherits');
-
-exports._extend = function(origin, add) {
-  // Don't do anything if add isn't an object
-  if (!add || !isObject(add)) return origin;
-
-  var keys = Object.keys(add);
-  var i = keys.length;
-  while (i--) {
-    origin[keys[i]] = add[keys[i]];
-  }
-  return origin;
-};
-
-function hasOwnProperty(obj, prop) {
-  return Object.prototype.hasOwnProperty.call(obj, prop);
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],82:[function(require,module,exports){
-(function (process,global,setImmediate){
-/* @preserve
- * The MIT License (MIT)
- * 
- * Copyright (c) 2013-2017 Petka Antonov
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- * 
- */
-/**
- * bluebird build version 3.5.1
- * Features enabled: core, race, call_get, generators, map, nodeify, promisify, props, reduce, settle, some, using, timers, filter, any, each
-*/
-!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.Promise=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof _dereq_=="function"&&_dereq_;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof _dereq_=="function"&&_dereq_;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
-"use strict";
-module.exports = function(Promise) {
-var SomePromiseArray = Promise._SomePromiseArray;
-function any(promises) {
-    var ret = new SomePromiseArray(promises);
-    var promise = ret.promise();
-    ret.setHowMany(1);
-    ret.setUnwrap();
-    ret.init();
-    return promise;
-=======
-function CapturedTrace(parent) {
-    this._parent = parent;
-    this._promisesCreated = 0;
-    var length = this._length = 1 + (parent === undefined ? 0 : parent._length);
-    captureStackTrace(this, CapturedTrace);
-    if (length > 32) this.uncycle();
->>>>>>> A provider has a list of ids
-=======
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":78,"_process":355,"inherits":77}],80:[function(require,module,exports){
-'use strict'
-
-exports.byteLength = byteLength
-exports.toByteArray = toByteArray
-exports.fromByteArray = fromByteArray
-
-var lookup = []
-var revLookup = []
-var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
-
-var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-for (var i = 0, len = code.length; i < len; ++i) {
-  lookup[i] = code[i]
-  revLookup[code.charCodeAt(i)] = i
->>>>>>> Add providers to patient
-}
-
-// Support decoding URL-safe base64 strings, as Node.js does.
-// See: https://en.wikipedia.org/wiki/Base64#URL_applications
-revLookup['-'.charCodeAt(0)] = 62
-revLookup['_'.charCodeAt(0)] = 63
-
-function getLens (b64) {
-  var len = b64.length
-
-  if (len % 4 > 0) {
-    throw new Error('Invalid string. Length must be a multiple of 4')
-  }
-
-  // Trim off extra bytes after placeholder bytes are found
-  // See: https://github.com/beatgammit/base64-js/issues/42
-  var validLen = b64.indexOf('=')
-  if (validLen === -1) validLen = len
-
-  var placeHoldersLen = validLen === len
-    ? 0
-    : 4 - (validLen % 4)
-
-  return [validLen, placeHoldersLen]
-}
-
-// base64 is 4/3 + up to two characters of the original data
-function byteLength (b64) {
-  var lens = getLens(b64)
-  var validLen = lens[0]
-  var placeHoldersLen = lens[1]
-  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
-}
-
-function _byteLength (b64, validLen, placeHoldersLen) {
-  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
-}
-
-function toByteArray (b64) {
-  var tmp
-  var lens = getLens(b64)
-  var validLen = lens[0]
-  var placeHoldersLen = lens[1]
-
-  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
-
-  var curByte = 0
-
-  // if there are placeholders, only get up to the last complete 4 chars
-  var len = placeHoldersLen > 0
-    ? validLen - 4
-    : validLen
-
-  for (var i = 0; i < len; i += 4) {
-    tmp =
-      (revLookup[b64.charCodeAt(i)] << 18) |
-      (revLookup[b64.charCodeAt(i + 1)] << 12) |
-      (revLookup[b64.charCodeAt(i + 2)] << 6) |
-      revLookup[b64.charCodeAt(i + 3)]
-    arr[curByte++] = (tmp >> 16) & 0xFF
-    arr[curByte++] = (tmp >> 8) & 0xFF
-    arr[curByte++] = tmp & 0xFF
-  }
-
-  if (placeHoldersLen === 2) {
-    tmp =
-      (revLookup[b64.charCodeAt(i)] << 2) |
-      (revLookup[b64.charCodeAt(i + 1)] >> 4)
-    arr[curByte++] = tmp & 0xFF
-  }
-
-  if (placeHoldersLen === 1) {
-    tmp =
-      (revLookup[b64.charCodeAt(i)] << 10) |
-      (revLookup[b64.charCodeAt(i + 1)] << 4) |
-      (revLookup[b64.charCodeAt(i + 2)] >> 2)
-    arr[curByte++] = (tmp >> 8) & 0xFF
-    arr[curByte++] = tmp & 0xFF
-  }
-
-  return arr
-}
-
-function tripletToBase64 (num) {
-  return lookup[num >> 18 & 0x3F] +
-    lookup[num >> 12 & 0x3F] +
-    lookup[num >> 6 & 0x3F] +
-    lookup[num & 0x3F]
-}
-
-function encodeChunk (uint8, start, end) {
-  var tmp
-  var output = []
-  for (var i = start; i < end; i += 3) {
-    tmp =
-      ((uint8[i] << 16) & 0xFF0000) +
-      ((uint8[i + 1] << 8) & 0xFF00) +
-      (uint8[i + 2] & 0xFF)
-    output.push(tripletToBase64(tmp))
-  }
-  return output.join('')
-}
-
-function fromByteArray (uint8) {
-  var tmp
-  var len = uint8.length
-  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
-  var parts = []
-  var maxChunkLength = 16383 // must be multiple of 3
-
-  // go through the array every three bytes, we'll deal with trailing stuff later
-  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
-    parts.push(encodeChunk(
-      uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)
-    ))
-  }
-
-  // pad the end with zeros, but make sure to not forget the extra bytes
-  if (extraBytes === 1) {
-    tmp = uint8[len - 1]
-    parts.push(
-      lookup[tmp >> 2] +
-      lookup[(tmp << 4) & 0x3F] +
-      '=='
-    )
-  } else if (extraBytes === 2) {
-    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
-    parts.push(
-      lookup[tmp >> 10] +
-      lookup[(tmp >> 4) & 0x3F] +
-      lookup[(tmp << 2) & 0x3F] +
-      '='
-    )
-  }
-
-  return parts.join('')
-}
-
-},{}],81:[function(require,module,exports){
+},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/Patient.js":73,"./cqm/ValueSet.js":76,"cql-execution":102}],78:[function(require,module,exports){
 (function (process,global,setImmediate){
 /* @preserve
  * The MIT License (MIT)
@@ -10374,25 +8389,8 @@ function doThenable(x, then, context) {
     return ret;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./es5":13}]},{},[4])(4)
-});                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"_process":356,"timers":360}],83:[function(require,module,exports){
-(function (global){
-/**
- * Module dependencies.
- * @ignore
- */
-=======
-    var roundDigit = parseInt(string[firstNonZero + lastDigit + 1], 10);
-    var roundBit = 0;
->>>>>>> A provider has a list of ids
-=======
 return tryConvertToPromise;
 };
->>>>>>> Add providers to patient
 
 },{"./util":36}],34:[function(_dereq_,module,exports){
 "use strict";
@@ -11053,24 +9051,6 @@ function domainBind(self, cb) {
     return self.bind(cb);
 }
 
-<<<<<<< HEAD
-/**
- * @ignore
- */
-<<<<<<< HEAD
-module.exports = Binary;
-module.exports.Binary = Binary;
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"buffer":103}],84:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-Int32.prototype.toJSON = function() {
-  return this.value;
-};
->>>>>>> A provider has a list of ids
-=======
 var ret = {
     isClass: isClass,
     isIdentifier: isIdentifier,
@@ -11111,7 +9091,6 @@ ret.isRecentNode = ret.isNode && (function() {
     var version = process.versions.node.split(".").map(Number);
     return (version[0] === 0 && version[1] > 10) || (version[0] > 0);
 })();
->>>>>>> Add providers to patient
 
 if (ret.isNode) ret.toFastProperties(process);
 
@@ -11121,7 +9100,7 @@ module.exports = ret;
 },{"./es5":13}]},{},[4])(4)
 });                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"_process":355,"timers":359}],82:[function(require,module,exports){
+},{"_process":360,"timers":361}],79:[function(require,module,exports){
 (function (global){
 /**
  * Module dependencies.
@@ -11507,37 +9486,10 @@ module.exports = Binary;
 module.exports.Binary = Binary;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"buffer":102}],83:[function(require,module,exports){
+},{"buffer":355}],80:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,require("buffer").Buffer)
-},{"./binary":83,"./code":85,"./db_ref":86,"./decimal128":87,"./double":88,"./int_32":90,"./long":91,"./map":92,"./max_key":93,"./min_key":94,"./objectid":95,"./parser/calculate_size":96,"./parser/deserializer":97,"./parser/serializer":98,"./regexp":100,"./symbol":101,"./timestamp":102,"buffer":103}],85:[function(require,module,exports){
-/**
- * A class representation of the BSON Code type.
- *
- * @class
- * @param {(string|function)} code a string or function.
- * @param {Object} [scope] an optional scope for the function.
- * @return {Code}
- */
-var Code = function Code(code, scope) {
-  if (!(this instanceof Code)) return new Code(code, scope);
-  this._bsontype = 'Code';
-  this.code = code;
-  this.scope = scope;
-=======
-  // at this point, the signs are the same, so subtraction will not overflow
-  if (this.subtract(other).isNegative()) {
-    return -1;
-  } else {
-    return 1;
-  }
->>>>>>> A provider has a list of ids
-};
-=======
 var Map = require('./map'),
   Long = require('./long'),
   Double = require('./double'),
@@ -11557,7 +9509,6 @@ var Map = require('./map'),
 var deserialize = require('./parser/deserializer'),
   serializer = require('./parser/serializer'),
   calculateObjectSize = require('./parser/calculate_size');
->>>>>>> Add providers to patient
 
 /**
  * @ignore
@@ -11617,13 +9568,6 @@ BSON.prototype.serialize = function serialize(object, options) {
   return finishedBuffer;
 };
 
-<<<<<<< HEAD
-module.exports = Code;
-module.exports.Code = Code;
-
-},{}],86:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
 /**
  * Serialize a Javascript object using a predefined Buffer and index into the buffer, useful when pre-allocating the space for serialization.
  *
@@ -11692,24 +9636,10 @@ BSON.prototype.deserialize = function(buffer, options) {
 BSON.prototype.calculateObjectSize = function(object, options) {
   options = options || {};
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],87:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-  if (this.equals(Long.MIN_VALUE)) {
-    return other.isOdd() ? Long.MIN_VALUE : Long.ZERO;
-  } else if (other.equals(Long.MIN_VALUE)) {
-    return this.isOdd() ? Long.MIN_VALUE : Long.ZERO;
-  }
->>>>>>> A provider has a list of ids
-=======
   var serializeFunctions =
     typeof options.serializeFunctions === 'boolean' ? options.serializeFunctions : false;
   var ignoreUndefined =
     typeof options.ignoreUndefined === 'boolean' ? options.ignoreUndefined : true;
->>>>>>> Add providers to patient
 
   return calculateObjectSize(object, serializeFunctions, ignoreUndefined);
 };
@@ -11945,7 +9875,7 @@ module.exports.BSONRegExp = BSONRegExp;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./binary":82,"./code":84,"./db_ref":85,"./decimal128":86,"./double":87,"./int_32":89,"./long":90,"./map":91,"./max_key":92,"./min_key":93,"./objectid":94,"./parser/calculate_size":95,"./parser/deserializer":96,"./parser/serializer":97,"./regexp":99,"./symbol":100,"./timestamp":101,"buffer":102}],84:[function(require,module,exports){
+},{"./binary":79,"./code":81,"./db_ref":82,"./decimal128":83,"./double":84,"./int_32":86,"./long":87,"./map":88,"./max_key":89,"./min_key":90,"./objectid":91,"./parser/calculate_size":92,"./parser/deserializer":93,"./parser/serializer":94,"./regexp":96,"./symbol":97,"./timestamp":98,"buffer":355}],81:[function(require,module,exports){
 /**
  * A class representation of the BSON Code type.
  *
@@ -11971,7 +9901,7 @@ Code.prototype.toJSON = function() {
 module.exports = Code;
 module.exports.Code = Code;
 
-},{}],85:[function(require,module,exports){
+},{}],82:[function(require,module,exports){
 /**
  * A class representation of the BSON DBRef type.
  *
@@ -12005,7 +9935,7 @@ DBRef.prototype.toJSON = function() {
 module.exports = DBRef;
 module.exports.DBRef = DBRef;
 
-},{}],86:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -12464,127 +10394,6 @@ Decimal128.fromString = function(string) {
         if (++digits[dIdx] > 9) {
           digits[dIdx] = 0;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module.exports = Decimal128;
-module.exports.Decimal128 = Decimal128;
-
-}).call(this,require("buffer").Buffer)
-},{"./long":91,"buffer":103}],88:[function(require,module,exports){
-/**
- * A class representation of the BSON Double type.
- *
- * @class
- * @param {number} value the number we want to represent as a double.
- * @return {Double}
- */
-function Double(value) {
-  if (!(this instanceof Double)) return new Double(value);
-
-  this._bsontype = 'Double';
-  this.value = value;
-}
-
-=======
->>>>>>> A provider has a list of ids
-/**
-* @ignore
-*/
-Object.defineProperty(ObjectID.prototype, 'generationTime', {
-  enumerable: true,
-  get: function() {
-    return this.id[3] | (this.id[2] << 8) | (this.id[1] << 16) | (this.id[0] << 24);
-  },
-  set: function(value) {
-    // Encode time into first 4 bytes
-    this.id[3] = value & 0xff;
-    this.id[2] = (value >> 8) & 0xff;
-    this.id[1] = (value >> 16) & 0xff;
-    this.id[0] = (value >> 24) & 0xff;
-  }
-});
-
-/**
- * Expose.
- */
-<<<<<<< HEAD
-Double.prototype.toJSON = function() {
-  return this.value;
-};
-
-module.exports = Double;
-module.exports.Double = Double;
-
-},{}],89:[function(require,module,exports){
-// Copyright (c) 2008, Fair Oaks Labs, Inc.
-// All rights reserved.
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are met:
-//
-//  * Redistributions of source code must retain the above copyright notice,
-//    this list of conditions and the following disclaimer.
-//
-//  * Redistributions in binary form must reproduce the above copyright notice,
-//    this list of conditions and the following disclaimer in the documentation
-//    and/or other materials provided with the distribution.
-//
-//  * Neither the name of Fair Oaks Labs, Inc. nor the names of its contributors
-//    may be used to endorse or promote products derived from this software
-//    without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-// ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
-// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-// POSSIBILITY OF SUCH DAMAGE.
-//
-//
-// Modifications to writeIEEE754 to support negative zeroes made by Brian White
-
-var readIEEE754 = function(buffer, offset, endian, mLen, nBytes) {
-  var e,
-    m,
-    bBE = endian === 'big',
-    eLen = nBytes * 8 - mLen - 1,
-    eMax = (1 << eLen) - 1,
-    eBias = eMax >> 1,
-    nBits = -7,
-    i = bBE ? 0 : nBytes - 1,
-    d = bBE ? 1 : -1,
-    s = buffer[offset + i];
-=======
-module.exports = ObjectID;
-module.exports.ObjectID = ObjectID;
-module.exports.ObjectId = ObjectID;
->>>>>>> A provider has a list of ids
-
-}).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":358,"buffer":353,"util":361}],90:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-
-var Long = require('../long').Long,
-  Double = require('../double').Double,
-  Timestamp = require('../timestamp').Timestamp,
-  ObjectID = require('../objectid').ObjectID,
-  Symbol = require('../symbol').Symbol,
-  BSONRegExp = require('../regexp').BSONRegExp,
-  Code = require('../code').Code,
-  Decimal128 = require('../decimal128'),
-  MinKey = require('../min_key').MinKey,
-  MaxKey = require('../max_key').MaxKey,
-  DBRef = require('../db_ref').DBRef,
-  Binary = require('../binary').Binary;
-
-var normalizedFunctionString = require('./utils').normalizedFunctionString;
-=======
           // overflowed most significant digit
           if (dIdx === 0) {
             if (exponent < EXPONENT_MAX) {
@@ -12602,7 +10411,6 @@ var normalizedFunctionString = require('./utils').normalizedFunctionString;
       }
     }
   }
->>>>>>> Add providers to patient
 
   // Encode significand
   // The high 17 digits of the significand
@@ -12640,144 +10448,13 @@ var normalizedFunctionString = require('./utils').normalizedFunctionString;
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8);
-
-  e = (e << mLen) | m;
-  eLen += mLen;
-  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8);
-
-  buffer[offset + i - d] |= s * 128;
-};
-
-exports.readIEEE754 = readIEEE754;
-exports.writeIEEE754 = writeIEEE754;
-
-},{}],90:[function(require,module,exports){
-/**
- * A class representation of a BSON Int32 type.
- *
- * @class
- * @param {number} value the number we want to represent as an int32.
- * @return {Int32}
- */
-var Int32 = function(value) {
-  if (!(this instanceof Int32)) return new Int32(value);
-
-  this._bsontype = 'Int32';
-  this.value = value;
-};
-
-/**
- * Access the number value.
- *
- * @method
- * @return {number} returns the wrapped int32 number.
- */
-Int32.prototype.valueOf = function() {
-  return this.value;
-=======
-  return totalLength;
->>>>>>> A provider has a list of ids
-};
-
-/**
- * @ignore
- * @api private
- */
-<<<<<<< HEAD
-Int32.prototype.toJSON = function() {
-  return this.value;
-};
-
-module.exports = Int32;
-module.exports.Int32 = Int32;
-
-},{}],91:[function(require,module,exports){
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-//
-// Copyright 2009 Google Inc. All Rights Reserved
-
-/**
- * Defines a Long class for representing a 64-bit two's-complement
- * integer value, which faithfully simulates the behavior of a Java "Long". This
- * implementation is derived from LongLib in GWT.
- *
- * Constructs a 64-bit two's-complement integer, given its low and high 32-bit
- * values as *signed* integers.  See the from* functions below for more
- * convenient ways of constructing Longs.
- *
- * The internal representation of a Long is the two given signed, 32-bit values.
- * We use 32-bit pieces because these are the size of integers on which
- * Javascript performs bit-operations.  For operations like addition and
- * multiplication, we split each number into 16-bit pieces, which can easily be
- * multiplied within Javascript's floating-point representation without overflow
- * or change in sign.
- *
- * In the algorithms below, we frequently reduce the negative case to the
- * positive case by negating the input(s) and then post-processing the result.
- * Note that we must ALWAYS check specially whether those values are MIN_VALUE
- * (-2^63) because -MIN_VALUE == MIN_VALUE (since 2^63 cannot be represented as
- * a positive number, it overflows back into a negative).  Not handling this
- * case would often result in infinite recursion.
- *
- * @class
- * @param {number} low  the low (signed) 32 bits of the Long.
- * @param {number} high the high (signed) 32 bits of the Long.
- * @return {Long}
- */
-function Long(low, high) {
-  if (!(this instanceof Long)) return new Long(low, high);
-
-  this._bsontype = 'Long';
-  /**
-   * @type {number}
-   * @ignore
-   */
-  this.low_ = low | 0; // force into 32 signed bits.
-
-  /**
-   * @type {number}
-   * @ignore
-   */
-  this.high_ = high | 0; // force into 32 signed bits.
-}
-
-/**
- * Return the int value.
- *
- * @method
- * @return {number} the value, assuming it is a 32-bit integer.
- */
-Long.prototype.toInt = function() {
-  return this.low_;
-};
-=======
-function calculateElement(name, value, serializeFunctions, isArray, ignoreUndefined) {
-  // If we have toBSON defined, override the current object
-  if (value && value.toBSON) {
-    value = value.toBSON();
-=======
   var significand = multiply64x2(significandHigh, Long.fromString('100000000000000000'));
 
   significand.low = significand.low.add(significandLow);
 
   if (lessThan(significand.low, significandLow)) {
     significand.high = significand.high.add(Long.fromNumber(1));
->>>>>>> Add providers to patient
   }
->>>>>>> A provider has a list of ids
 
   // Biased exponent
   biasedExponent = exponent + EXPONENT_BIAS;
@@ -13080,7 +10757,7 @@ module.exports = Decimal128;
 module.exports.Decimal128 = Decimal128;
 
 }).call(this,require("buffer").Buffer)
-},{"./long":90,"buffer":102}],87:[function(require,module,exports){
+},{"./long":87,"buffer":355}],84:[function(require,module,exports){
 /**
  * A class representation of the BSON Double type.
  *
@@ -13115,7 +10792,7 @@ Double.prototype.toJSON = function() {
 module.exports = Double;
 module.exports.Double = Double;
 
-},{}],88:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 // Copyright (c) 2008, Fair Oaks Labs, Inc.
 // All rights reserved.
 //
@@ -13241,7 +10918,7 @@ var writeIEEE754 = function(buffer, value, offset, endian, mLen, nBytes) {
 exports.readIEEE754 = readIEEE754;
 exports.writeIEEE754 = writeIEEE754;
 
-},{}],89:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 /**
  * A class representation of a BSON Int32 type.
  *
@@ -13276,7 +10953,7 @@ Int32.prototype.toJSON = function() {
 module.exports = Int32;
 module.exports.Int32 = Int32;
 
-},{}],90:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -13337,31 +11014,7 @@ function Long(low, high) {
 }
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
- * Expose.
- */
-module.exports = Long;
-module.exports.Long = Long;
-
-},{}],92:[function(require,module,exports){
-(function (global){
-'use strict';
-
-// We have an ES6 Map available, return the native instance
-if (typeof global.Map !== 'undefined') {
-  module.exports = global.Map;
-  module.exports.Map = global.Map;
-} else {
-  // We will return a polyfill
-  var Map = function(array) {
-    this._keys = [];
-    this._values = {};
-=======
- * Binary BSON Type
-=======
  * Return the int value.
->>>>>>> Add providers to patient
  *
  * @method
  * @return {number} the value, assuming it is a 32-bit integer.
@@ -13575,12 +11228,6 @@ Long.prototype.lessThanOrEqual = function(other) {
 /**
  * Return whether this Long is greater than the other.
  *
-<<<<<<< HEAD
- * @classconstant BSON_DATA_MAX_KEY
- **/
-BSON.BSON_DATA_MAX_KEY = 0x7f;
->>>>>>> A provider has a list of ids
-=======
  * @method
  * @param {Long} other Long to compare against.
  * @return {boolean} whether this Long is greater than the other.
@@ -13588,7 +11235,6 @@ BSON.BSON_DATA_MAX_KEY = 0x7f;
 Long.prototype.greaterThan = function(other) {
   return this.compare(other) > 0;
 };
->>>>>>> Add providers to patient
 
 /**
  * Return whether this Long is greater than or equal to the other.
@@ -13850,28 +11496,11 @@ Long.prototype.div = function(other) {
       approxRes = Long.ONE;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],93:[function(require,module,exports){
-/**
- * A class representation of the BSON MaxKey type.
- *
- * @class
- * @return {MaxKey} A MaxKey instance
- */
-function MaxKey() {
-  if (!(this instanceof MaxKey)) return new MaxKey();
-=======
-  return index;
-=======
     res = res.add(approxRes);
     rem = rem.subtract(approxRem);
   }
   return res;
->>>>>>> Add providers to patient
 };
->>>>>>> A provider has a list of ids
 
 /**
  * Returns this Long modulo the given one.
@@ -13894,46 +11523,6 @@ Long.prototype.not = function() {
   return Long.fromBits(~this.low_, ~this.high_);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],94:[function(require,module,exports){
-/**
- * A class representation of the BSON MinKey type.
- *
- * @class
- * @return {MinKey} A MinKey instance
- */
-function MinKey() {
-  if (!(this instanceof MinKey)) return new MinKey();
-=======
-var serializeDate = function(buffer, key, value, index, isArray) {
-  // Write the type
-  buffer[index++] = BSON.BSON_DATA_DATE;
-  // Number of written bytes
-  var numberOfWrittenBytes = !isArray
-    ? buffer.write(key, index, 'utf8')
-    : buffer.write(key, index, 'ascii');
-  // Encode the name
-  index = index + numberOfWrittenBytes;
-  buffer[index++] = 0;
->>>>>>> A provider has a list of ids
-
-  // Write the date
-  var dateInMilis = Long.fromNumber(value.getTime());
-  var lowBits = dateInMilis.getLowBits();
-  var highBits = dateInMilis.getHighBits();
-  // Encode low bits
-  buffer[index++] = lowBits & 0xff;
-  buffer[index++] = (lowBits >> 8) & 0xff;
-  buffer[index++] = (lowBits >> 16) & 0xff;
-  buffer[index++] = (lowBits >> 24) & 0xff;
-  // Encode high bits
-  buffer[index++] = highBits & 0xff;
-  buffer[index++] = (highBits >> 8) & 0xff;
-  buffer[index++] = (highBits >> 16) & 0xff;
-  buffer[index++] = (highBits >> 24) & 0xff;
-  return index;
-=======
 /**
  * Returns the bitwise-AND of this Long and the given one.
  *
@@ -13943,7 +11532,6 @@ var serializeDate = function(buffer, key, value, index, isArray) {
  */
 Long.prototype.and = function(other) {
   return Long.fromBits(this.low_ & other.low_, this.high_ & other.high_);
->>>>>>> Add providers to patient
 };
 
 /**
@@ -13957,51 +11545,6 @@ Long.prototype.or = function(other) {
   return Long.fromBits(this.low_ | other.low_, this.high_ | other.high_);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],95:[function(require,module,exports){
-(function (process,Buffer){
-// Custom inspect property name / symbol.
-var inspect = 'inspect';
-=======
-var serializeBSONRegExp = function(buffer, key, value, index, isArray) {
-  // Write the type
-  buffer[index++] = BSON.BSON_DATA_REGEXP;
-  // Number of written bytes
-  var numberOfWrittenBytes = !isArray
-    ? buffer.write(key, index, 'utf8')
-    : buffer.write(key, index, 'ascii');
-  // Encode the name
-  index = index + numberOfWrittenBytes;
-  buffer[index++] = 0;
->>>>>>> A provider has a list of ids
-
-  // Check the pattern for 0 bytes
-  if (value.pattern.match(regexp) != null) {
-    // The BSON spec doesn't allow keys with null bytes because keys are
-    // null-terminated.
-    throw Error('pattern ' + value.pattern + ' must not contain null bytes');
-  }
-
-  // Adjust the index
-  index = index + buffer.write(value.pattern, index, 'utf8');
-  // Write zero
-  buffer[index++] = 0x00;
-  // Write the options
-  index =
-    index +
-    buffer.write(
-      value.options
-        .split('')
-        .sort()
-        .join(''),
-      index,
-      'utf8'
-    );
-  // Add ending zero
-  buffer[index++] = 0x00;
-  return index;
-=======
 /**
  * Returns the bitwise-XOR of this Long and the given one.
  *
@@ -14011,7 +11554,6 @@ var serializeBSONRegExp = function(buffer, key, value, index, isArray) {
  */
 Long.prototype.xor = function(other) {
   return Long.fromBits(this.low_ ^ other.low_, this.high_ ^ other.high_);
->>>>>>> Add providers to patient
 };
 
 /**
@@ -14264,7 +11806,7 @@ Long.TWO_PWR_24_ = Long.fromInt(1 << 24);
 module.exports = Long;
 module.exports.Long = Long;
 
-},{}],91:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -14289,27 +11831,7 @@ if (typeof global.Map !== 'undefined') {
       // to the location in the ordered keys list
       this._values[key] = { v: value, i: this._keys.length - 1 };
     }
-<<<<<<< HEAD
-  } else if (object instanceof Map) {
-    var iterator = object.entries();
-    var done = false;
-
-<<<<<<< HEAD
-}).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":356,"buffer":103,"util":362}],96:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-    while (!done) {
-      // Unpack the next entry
-      var entry = iterator.next();
-      done = entry.done;
-      // Are we done, then skip and terminate
-      if (done) continue;
->>>>>>> A provider has a list of ids
-=======
   };
->>>>>>> Add providers to patient
 
   Map.prototype.clear = function() {
     this._keys = [];
@@ -14416,7 +11938,7 @@ if (typeof global.Map !== 'undefined') {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],92:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 /**
  * A class representation of the BSON MaxKey type.
  *
@@ -14432,7 +11954,7 @@ function MaxKey() {
 module.exports = MaxKey;
 module.exports.MaxKey = MaxKey;
 
-},{}],93:[function(require,module,exports){
+},{}],90:[function(require,module,exports){
 /**
  * A class representation of the BSON MinKey type.
  *
@@ -14448,7 +11970,7 @@ function MinKey() {
 module.exports = MinKey;
 module.exports.MinKey = MinKey;
 
-},{}],94:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 (function (process,Buffer){
 // Custom inspect property name / symbol.
 var inspect = 'inspect';
@@ -14489,36 +12011,7 @@ var ObjectID = function ObjectID(id) {
   if (id instanceof ObjectID) return id;
   if (!(this instanceof ObjectID)) return new ObjectID(id);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module.exports = calculateObjectSize;
-
-}).call(this,require("buffer").Buffer)
-},{"../binary":83,"../code":85,"../db_ref":86,"../decimal128":87,"../double":88,"../long":91,"../max_key":93,"../min_key":94,"../objectid":95,"../regexp":100,"../symbol":101,"../timestamp":102,"./utils":99,"buffer":103}],97:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-
-var Long = require('../long').Long,
-  Double = require('../double').Double,
-  Timestamp = require('../timestamp').Timestamp,
-  ObjectID = require('../objectid').ObjectID,
-  Symbol = require('../symbol').Symbol,
-  Code = require('../code').Code,
-  MinKey = require('../min_key').MinKey,
-  MaxKey = require('../max_key').MaxKey,
-  Decimal128 = require('../decimal128'),
-  Int32 = require('../int_32'),
-  DBRef = require('../db_ref').DBRef,
-  BSONRegExp = require('../regexp').BSONRegExp,
-  Binary = require('../binary').Binary;
-=======
-// Internal long versions
-// var JS_INT_MAX_LONG = Long.fromNumber(0x20000000000000); // Any integer up to 2^53 can be precisely represented by a double.
-// var JS_INT_MIN_LONG = Long.fromNumber(-0x20000000000000); // Any integer down to -2^53 can be precisely represented by a double.
->>>>>>> A provider has a list of ids
-=======
   this._bsontype = 'ObjectID';
->>>>>>> Add providers to patient
 
   // The most common usecase (blank id, new objectId instance)
   if (id == null || typeof id === 'number') {
@@ -14868,7 +12361,7 @@ module.exports.ObjectID = ObjectID;
 module.exports.ObjectId = ObjectID;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":355,"buffer":102,"util":361}],95:[function(require,module,exports){
+},{"_process":360,"buffer":355,"util":363}],92:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -15127,7 +12620,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = calculateObjectSize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":82,"../code":84,"../db_ref":85,"../decimal128":86,"../double":87,"../long":90,"../max_key":92,"../min_key":93,"../objectid":94,"../regexp":99,"../symbol":100,"../timestamp":101,"./utils":98,"buffer":102}],96:[function(require,module,exports){
+},{"../binary":79,"../code":81,"../db_ref":82,"../decimal128":83,"../double":84,"../long":87,"../max_key":89,"../min_key":90,"../objectid":91,"../regexp":96,"../symbol":97,"../timestamp":98,"./utils":95,"buffer":355}],93:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -15369,19 +12862,8 @@ var deserializeObject = function(buffer, index, options, isArray) {
       var totalBinarySize = binarySize;
       var subType = buffer[index++];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,require("buffer").Buffer)
-},{"../binary":83,"../code":85,"../db_ref":86,"../decimal128":87,"../double":88,"../int_32":90,"../long":91,"../max_key":93,"../min_key":94,"../objectid":95,"../regexp":100,"../symbol":101,"../timestamp":102,"buffer":103}],98:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-    return CodeService;
->>>>>>> A provider has a list of ids
-=======
       // Did we have a negative binary size, throw
       if (binarySize < 0) throw new Error('Negative binary type element size found');
->>>>>>> Add providers to patient
 
       // Is the length longer than the document
       if (binarySize > buffer.length) throw new Error('Binary type size larger than document size');
@@ -15922,7 +13404,7 @@ var JS_INT_MIN_LONG = Long.fromNumber(-0x20000000000000); // Any integer down to
 module.exports = deserialize;
 
 }).call(this,require("buffer").Buffer)
-},{"../binary":82,"../code":84,"../db_ref":85,"../decimal128":86,"../double":87,"../int_32":89,"../long":90,"../max_key":92,"../min_key":93,"../objectid":94,"../regexp":99,"../symbol":100,"../timestamp":101,"buffer":102}],97:[function(require,module,exports){
+},{"../binary":79,"../code":81,"../db_ref":82,"../decimal128":83,"../double":84,"../int_32":86,"../long":87,"../max_key":89,"../min_key":90,"../objectid":91,"../regexp":96,"../symbol":97,"../timestamp":98,"buffer":355}],94:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -16587,15 +14069,6 @@ var serializeDBRef = function(buffer, key, value, index, depth, serializeFunctio
     );
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":251,"../binary":83,"../float_parser":89,"../long":91,"../map":92,"../min_key":94,"./utils":99}],99:[function(require,module,exports){
-'use strict';
-=======
-  logic = require('./logic');
->>>>>>> A provider has a list of ids
-=======
   // Calculate object size
   var size = endIndex - startIndex;
   // Write the size
@@ -16606,7 +14079,6 @@ var serializeDBRef = function(buffer, key, value, index, depth, serializeFunctio
   // Set index
   return endIndex;
 };
->>>>>>> Add providers to patient
 
 var serializeInto = function serializeInto(
   buffer,
@@ -16628,28 +14100,12 @@ var serializeInto = function serializeInto(
   var index = startingIndex + 4;
   // var self = this;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],100:[function(require,module,exports){
-/**
- * A class representation of the BSON RegExp type.
- *
- * @class
- * @return {BSONRegExp} A MinKey instance
- */
-function BSONRegExp(pattern, options) {
-  if (!(this instanceof BSONRegExp)) return new BSONRegExp();
-=======
-  interval = require('./interval');
->>>>>>> A provider has a list of ids
-=======
   // Special case isArray
   if (Array.isArray(object)) {
     // Get object keys
     for (var i = 0; i < object.length; i++) {
       var key = '' + i;
       var value = object[i];
->>>>>>> Add providers to patient
 
       // Is there an override value
       if (value && value.toBSON) {
@@ -16736,23 +14192,12 @@ function BSONRegExp(pattern, options) {
     var iterator = object.entries();
     var done = false;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],101:[function(require,module,exports){
-(function (Buffer){
-// Custom inspect property name / symbol.
-var inspect = Buffer ? require('util').inspect.custom || 'inspect' : 'inspect';
-=======
-}).call(this);
->>>>>>> A provider has a list of ids
-=======
     while (!done) {
       // Unpack the next entry
       var entry = iterator.next();
       done = entry.done;
       // Are we done, then skip and terminate
       if (done) continue;
->>>>>>> Add providers to patient
 
       // Get the entry values
       key = entry.value[0];
@@ -16859,40 +14304,8 @@ var inspect = Buffer ? require('util').inspect.custom || 'inspect' : 'inspect';
         value = value.toBSON();
       }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,require("buffer").Buffer)
-},{"buffer":103,"util":362}],102:[function(require,module,exports){
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-//
-// Copyright 2009 Google Inc. All Rights Reserved
-=======
-  DateTime = (function() {
-    DateTime.Unit = {
-      YEAR: 'year',
-      MONTH: 'month',
-      WEEK: 'week',
-      DAY: 'day',
-      HOUR: 'hour',
-      MINUTE: 'minute',
-      SECOND: 'second',
-      MILLISECOND: 'millisecond'
-    };
->>>>>>> A provider has a list of ids
-=======
       // Check the type of the value
       type = typeof value;
->>>>>>> Add providers to patient
 
       // Check the key and throw error if it's illegal
       if (typeof key === 'string' && ignoreKeys.indexOf(key) === -1) {
@@ -17177,8 +14590,8 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 
 module.exports = serializeInto;
 
-}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":250,"../binary":82,"../float_parser":88,"../long":90,"../map":91,"../min_key":93,"./utils":98}],98:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../binary":79,"../float_parser":85,"../long":87,"../map":88,"../min_key":90,"./utils":95}],95:[function(require,module,exports){
 'use strict';
 
 /**
@@ -17194,7 +14607,7 @@ module.exports = {
 };
 
 
-},{}],99:[function(require,module,exports){
+},{}],96:[function(require,module,exports){
 /**
  * A class representation of the BSON RegExp type.
  *
@@ -17229,7 +14642,7 @@ function BSONRegExp(pattern, options) {
 module.exports = BSONRegExp;
 module.exports.BSONRegExp = BSONRegExp;
 
-},{}],100:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 (function (Buffer){
 // Custom inspect property name / symbol.
 var inspect = Buffer ? require('util').inspect.custom || 'inspect' : 'inspect';
@@ -17283,7 +14696,7 @@ module.exports = Symbol;
 module.exports.Symbol = Symbol;
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":102,"util":361}],101:[function(require,module,exports){
+},{"buffer":355,"util":363}],98:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -17886,40 +15299,6 @@ Timestamp.prototype.xor = function(other) {
   return Timestamp.fromBits(this.low_ ^ other.low_, this.high_ ^ other.high_);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],103:[function(require,module,exports){
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-/* eslint-disable no-proto */
-=======
-  DateTime.prototype.getFieldCieling = Date.prototype.getFieldCieling = function(field) {
-    if (field === 'month') {
-      return 12;
-    }
-    if (field === 'day') {
-      return daysInMonth(this.year, this.month);
-    }
-    if (field === 'hour') {
-      return 23;
-    }
-    if (field === 'minute') {
-      return 59;
-    }
-    if (field === 'second') {
-      return 59;
-    }
-    if (field === 'millisecond') {
-      return 999;
-    }
-    throw new Error('Tried to clieling a field that has no cieling value: ' + field);
-  };
->>>>>>> A provider has a list of ids
-=======
 /**
  * Returns this Timestamp with bits shifted to the left by the given amount.
  *
@@ -17941,7 +15320,6 @@ Timestamp.prototype.shiftLeft = function(numBits) {
     }
   }
 };
->>>>>>> Add providers to patient
 
 /**
  * Returns this Timestamp with bits shifted to the right by the given amount.
@@ -18174,1819 +15552,7 @@ Timestamp.TWO_PWR_24_ = Timestamp.fromInt(1 << 24);
 module.exports = Timestamp;
 module.exports.Timestamp = Timestamp;
 
-},{}],102:[function(require,module,exports){
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-/* eslint-disable no-proto */
-
-'use strict'
-
-var base64 = require('base64-js')
-var ieee754 = require('ieee754')
-
-exports.Buffer = Buffer
-exports.SlowBuffer = SlowBuffer
-exports.INSPECT_MAX_BYTES = 50
-
-var K_MAX_LENGTH = 0x7fffffff
-exports.kMaxLength = K_MAX_LENGTH
-
-/**
- * If `Buffer.TYPED_ARRAY_SUPPORT`:
- *   === true    Use Uint8Array implementation (fastest)
- *   === false   Print warning and recommend using `buffer` v4.x which has an Object
- *               implementation (most compatible, even IE6)
- *
- * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
- * Opera 11.6+, iOS 4.2+.
- *
- * We report that the browser does not support typed arrays if the are not subclassable
- * using __proto__. Firefox 4-29 lacks support for adding new properties to `Uint8Array`
- * (See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438). IE 10 lacks support
- * for __proto__ and has a buggy typed array implementation.
- */
-Buffer.TYPED_ARRAY_SUPPORT = typedArraySupport()
-
-if (!Buffer.TYPED_ARRAY_SUPPORT && typeof console !== 'undefined' &&
-    typeof console.error === 'function') {
-  console.error(
-    'This browser lacks typed array (Uint8Array) support which is required by ' +
-    '`buffer` v5.x. Use `buffer` v4.x if you require old browser support.'
-  )
-}
-
-function typedArraySupport () {
-  // Can typed array instances can be augmented?
-  try {
-    var arr = new Uint8Array(1)
-    arr.__proto__ = { __proto__: Uint8Array.prototype, foo: function () { return 42 } }
-    return arr.foo() === 42
-  } catch (e) {
-    return false
-  }
-}
-
-Object.defineProperty(Buffer.prototype, 'parent', {
-  enumerable: true,
-  get: function () {
-    if (!Buffer.isBuffer(this)) return undefined
-    return this.buffer
-  }
-})
-
-Object.defineProperty(Buffer.prototype, 'offset', {
-  enumerable: true,
-  get: function () {
-    if (!Buffer.isBuffer(this)) return undefined
-    return this.byteOffset
-  }
-})
-
-function createBuffer (length) {
-  if (length > K_MAX_LENGTH) {
-    throw new RangeError('The value "' + length + '" is invalid for option "size"')
-  }
-  // Return an augmented `Uint8Array` instance
-  var buf = new Uint8Array(length)
-  buf.__proto__ = Buffer.prototype
-  return buf
-}
-
-/**
- * The Buffer constructor returns instances of `Uint8Array` that have their
- * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
- * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
- * and the `Uint8Array` methods. Square bracket notation works as expected -- it
- * returns a single octet.
- *
- * The `Uint8Array` prototype remains unmodified.
- */
-
-function Buffer (arg, encodingOrOffset, length) {
-  // Common case.
-  if (typeof arg === 'number') {
-    if (typeof encodingOrOffset === 'string') {
-      throw new TypeError(
-        'The "string" argument must be of type string. Received type number'
-      )
-    }
-    return allocUnsafe(arg)
-  }
-  return from(arg, encodingOrOffset, length)
-}
-
-// Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
-if (typeof Symbol !== 'undefined' && Symbol.species != null &&
-    Buffer[Symbol.species] === Buffer) {
-  Object.defineProperty(Buffer, Symbol.species, {
-    value: null,
-    configurable: true,
-    enumerable: false,
-    writable: false
-  })
-}
-
-Buffer.poolSize = 8192 // not used by this implementation
-
-function from (value, encodingOrOffset, length) {
-  if (typeof value === 'string') {
-    return fromString(value, encodingOrOffset)
-  }
-
-  if (ArrayBuffer.isView(value)) {
-    return fromArrayLike(value)
-  }
-
-  if (value == null) {
-    throw TypeError(
-      'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
-      'or Array-like Object. Received type ' + (typeof value)
-    )
-  }
-
-  if (isInstance(value, ArrayBuffer) ||
-      (value && isInstance(value.buffer, ArrayBuffer))) {
-    return fromArrayBuffer(value, encodingOrOffset, length)
-  }
-
-  if (typeof value === 'number') {
-    throw new TypeError(
-      'The "value" argument must not be of type number. Received type number'
-    )
-  }
-
-  var valueOf = value.valueOf && value.valueOf()
-  if (valueOf != null && valueOf !== value) {
-    return Buffer.from(valueOf, encodingOrOffset, length)
-  }
-
-  var b = fromObject(value)
-  if (b) return b
-
-  if (typeof Symbol !== 'undefined' && Symbol.toPrimitive != null &&
-      typeof value[Symbol.toPrimitive] === 'function') {
-    return Buffer.from(
-      value[Symbol.toPrimitive]('string'), encodingOrOffset, length
-    )
-  }
-
-  throw new TypeError(
-    'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
-    'or Array-like Object. Received type ' + (typeof value)
-  )
-}
-
-/**
- * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
- * if value is a number.
- * Buffer.from(str[, encoding])
- * Buffer.from(array)
- * Buffer.from(buffer)
- * Buffer.from(arrayBuffer[, byteOffset[, length]])
- **/
-Buffer.from = function (value, encodingOrOffset, length) {
-  return from(value, encodingOrOffset, length)
-}
-
-// Note: Change prototype *after* Buffer.from is defined to workaround Chrome bug:
-// https://github.com/feross/buffer/pull/148
-Buffer.prototype.__proto__ = Uint8Array.prototype
-Buffer.__proto__ = Uint8Array
-
-function assertSize (size) {
-  if (typeof size !== 'number') {
-    throw new TypeError('"size" argument must be of type number')
-  } else if (size < 0) {
-    throw new RangeError('The value "' + size + '" is invalid for option "size"')
-  }
-}
-
-function alloc (size, fill, encoding) {
-  assertSize(size)
-  if (size <= 0) {
-    return createBuffer(size)
-  }
-  if (fill !== undefined) {
-    // Only pay attention to encoding if it's a string. This
-    // prevents accidentally sending in a number that would
-    // be interpretted as a start offset.
-    return typeof encoding === 'string'
-      ? createBuffer(size).fill(fill, encoding)
-      : createBuffer(size).fill(fill)
-  }
-  return createBuffer(size)
-}
-
-/**
- * Creates a new filled Buffer instance.
- * alloc(size[, fill[, encoding]])
- **/
-Buffer.alloc = function (size, fill, encoding) {
-  return alloc(size, fill, encoding)
-}
-
-function allocUnsafe (size) {
-  assertSize(size)
-  return createBuffer(size < 0 ? 0 : checked(size) | 0)
-}
-
-/**
- * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
- * */
-Buffer.allocUnsafe = function (size) {
-  return allocUnsafe(size)
-}
-/**
- * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
- */
-Buffer.allocUnsafeSlow = function (size) {
-  return allocUnsafe(size)
-}
-
-function fromString (string, encoding) {
-  if (typeof encoding !== 'string' || encoding === '') {
-    encoding = 'utf8'
-  }
-
-  if (!Buffer.isEncoding(encoding)) {
-    throw new TypeError('Unknown encoding: ' + encoding)
-  }
-
-  var length = byteLength(string, encoding) | 0
-  var buf = createBuffer(length)
-
-  var actual = buf.write(string, encoding)
-
-  if (actual !== length) {
-    // Writing a hex string, for example, that contains invalid characters will
-    // cause everything after the first invalid character to be ignored. (e.g.
-    // 'abxxcd' will be treated as 'ab')
-    buf = buf.slice(0, actual)
-  }
-
-  return buf
-}
-
-function fromArrayLike (array) {
-  var length = array.length < 0 ? 0 : checked(array.length) | 0
-  var buf = createBuffer(length)
-  for (var i = 0; i < length; i += 1) {
-    buf[i] = array[i] & 255
-  }
-  return buf
-}
-
-function fromArrayBuffer (array, byteOffset, length) {
-  if (byteOffset < 0 || array.byteLength < byteOffset) {
-    throw new RangeError('"offset" is outside of buffer bounds')
-  }
-
-  if (array.byteLength < byteOffset + (length || 0)) {
-    throw new RangeError('"length" is outside of buffer bounds')
-  }
-
-  var buf
-  if (byteOffset === undefined && length === undefined) {
-    buf = new Uint8Array(array)
-  } else if (length === undefined) {
-    buf = new Uint8Array(array, byteOffset)
-  } else {
-    buf = new Uint8Array(array, byteOffset, length)
-  }
-
-  // Return an augmented `Uint8Array` instance
-  buf.__proto__ = Buffer.prototype
-  return buf
-}
-
-function fromObject (obj) {
-  if (Buffer.isBuffer(obj)) {
-    var len = checked(obj.length) | 0
-    var buf = createBuffer(len)
-
-    if (buf.length === 0) {
-      return buf
-    }
-
-    obj.copy(buf, 0, 0, len)
-    return buf
-  }
-
-  if (obj.length !== undefined) {
-    if (typeof obj.length !== 'number' || numberIsNaN(obj.length)) {
-      return createBuffer(0)
-    }
-    return fromArrayLike(obj)
-  }
-
-  if (obj.type === 'Buffer' && Array.isArray(obj.data)) {
-    return fromArrayLike(obj.data)
-  }
-}
-
-function checked (length) {
-  // Note: cannot use `length < K_MAX_LENGTH` here because that fails when
-  // length is NaN (which is otherwise coerced to zero.)
-  if (length >= K_MAX_LENGTH) {
-    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
-                         'size: 0x' + K_MAX_LENGTH.toString(16) + ' bytes')
-  }
-  return length | 0
-}
-
-function SlowBuffer (length) {
-  if (+length != length) { // eslint-disable-line eqeqeq
-    length = 0
-  }
-  return Buffer.alloc(+length)
-}
-
-Buffer.isBuffer = function isBuffer (b) {
-  return b != null && b._isBuffer === true &&
-    b !== Buffer.prototype // so Buffer.isBuffer(Buffer.prototype) will be false
-}
-
-Buffer.compare = function compare (a, b) {
-  if (isInstance(a, Uint8Array)) a = Buffer.from(a, a.offset, a.byteLength)
-  if (isInstance(b, Uint8Array)) b = Buffer.from(b, b.offset, b.byteLength)
-  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
-    throw new TypeError(
-      'The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array'
-    )
-  }
-
-  if (a === b) return 0
-
-  var x = a.length
-  var y = b.length
-
-  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
-    if (a[i] !== b[i]) {
-      x = a[i]
-      y = b[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-Buffer.isEncoding = function isEncoding (encoding) {
-  switch (String(encoding).toLowerCase()) {
-    case 'hex':
-    case 'utf8':
-    case 'utf-8':
-    case 'ascii':
-    case 'latin1':
-    case 'binary':
-    case 'base64':
-    case 'ucs2':
-    case 'ucs-2':
-    case 'utf16le':
-    case 'utf-16le':
-      return true
-    default:
-      return false
-  }
-}
-
-Buffer.concat = function concat (list, length) {
-  if (!Array.isArray(list)) {
-    throw new TypeError('"list" argument must be an Array of Buffers')
-  }
-
-  if (list.length === 0) {
-    return Buffer.alloc(0)
-  }
-
-  var i
-  if (length === undefined) {
-    length = 0
-    for (i = 0; i < list.length; ++i) {
-      length += list[i].length
-    }
-  }
-
-  var buffer = Buffer.allocUnsafe(length)
-  var pos = 0
-  for (i = 0; i < list.length; ++i) {
-    var buf = list[i]
-    if (isInstance(buf, Uint8Array)) {
-      buf = Buffer.from(buf)
-    }
-    if (!Buffer.isBuffer(buf)) {
-      throw new TypeError('"list" argument must be an Array of Buffers')
-    }
-    buf.copy(buffer, pos)
-    pos += buf.length
-  }
-  return buffer
-}
-
-function byteLength (string, encoding) {
-  if (Buffer.isBuffer(string)) {
-    return string.length
-  }
-  if (ArrayBuffer.isView(string) || isInstance(string, ArrayBuffer)) {
-    return string.byteLength
-  }
-  if (typeof string !== 'string') {
-    throw new TypeError(
-      'The "string" argument must be one of type string, Buffer, or ArrayBuffer. ' +
-      'Received type ' + typeof string
-    )
-  }
-
-  var len = string.length
-  var mustMatch = (arguments.length > 2 && arguments[2] === true)
-  if (!mustMatch && len === 0) return 0
-
-  // Use a for loop to avoid recursion
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'ascii':
-      case 'latin1':
-      case 'binary':
-        return len
-      case 'utf8':
-      case 'utf-8':
-        return utf8ToBytes(string).length
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return len * 2
-      case 'hex':
-        return len >>> 1
-      case 'base64':
-        return base64ToBytes(string).length
-      default:
-        if (loweredCase) {
-          return mustMatch ? -1 : utf8ToBytes(string).length // assume utf8
-        }
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-Buffer.byteLength = byteLength
-
-function slowToString (encoding, start, end) {
-  var loweredCase = false
-
-  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
-  // property of a typed array.
-
-  // This behaves neither like String nor Uint8Array in that we set start/end
-  // to their upper/lower bounds if the value passed is out of range.
-  // undefined is handled specially as per ECMA-262 6th Edition,
-  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
-  if (start === undefined || start < 0) {
-    start = 0
-  }
-  // Return early if start > this.length. Done here to prevent potential uint32
-  // coercion fail below.
-  if (start > this.length) {
-    return ''
-  }
-
-  if (end === undefined || end > this.length) {
-    end = this.length
-  }
-
-  if (end <= 0) {
-    return ''
-  }
-
-  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
-  end >>>= 0
-  start >>>= 0
-
-  if (end <= start) {
-    return ''
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  while (true) {
-    switch (encoding) {
-      case 'hex':
-        return hexSlice(this, start, end)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Slice(this, start, end)
-
-      case 'ascii':
-        return asciiSlice(this, start, end)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Slice(this, start, end)
-
-      case 'base64':
-        return base64Slice(this, start, end)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return utf16leSlice(this, start, end)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = (encoding + '').toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-// This property is used by `Buffer.isBuffer` (and the `is-buffer` npm package)
-// to detect a Buffer instance. It's not possible to use `instanceof Buffer`
-// reliably in a browserify context because there could be multiple different
-// copies of the 'buffer' package in use. This method works even for Buffer
-// instances that were created from another copy of the `buffer` package.
-// See: https://github.com/feross/buffer/issues/154
-Buffer.prototype._isBuffer = true
-
-function swap (b, n, m) {
-  var i = b[n]
-  b[n] = b[m]
-  b[m] = i
-}
-
-Buffer.prototype.swap16 = function swap16 () {
-  var len = this.length
-  if (len % 2 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 16-bits')
-  }
-  for (var i = 0; i < len; i += 2) {
-    swap(this, i, i + 1)
-  }
-  return this
-}
-
-Buffer.prototype.swap32 = function swap32 () {
-  var len = this.length
-  if (len % 4 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 32-bits')
-  }
-  for (var i = 0; i < len; i += 4) {
-    swap(this, i, i + 3)
-    swap(this, i + 1, i + 2)
-  }
-  return this
-}
-
-Buffer.prototype.swap64 = function swap64 () {
-  var len = this.length
-  if (len % 8 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 64-bits')
-  }
-  for (var i = 0; i < len; i += 8) {
-    swap(this, i, i + 7)
-    swap(this, i + 1, i + 6)
-    swap(this, i + 2, i + 5)
-    swap(this, i + 3, i + 4)
-  }
-  return this
-}
-
-Buffer.prototype.toString = function toString () {
-  var length = this.length
-  if (length === 0) return ''
-  if (arguments.length === 0) return utf8Slice(this, 0, length)
-  return slowToString.apply(this, arguments)
-}
-
-Buffer.prototype.toLocaleString = Buffer.prototype.toString
-
-Buffer.prototype.equals = function equals (b) {
-  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
-  if (this === b) return true
-  return Buffer.compare(this, b) === 0
-}
-
-Buffer.prototype.inspect = function inspect () {
-  var str = ''
-  var max = exports.INSPECT_MAX_BYTES
-  str = this.toString('hex', 0, max).replace(/(.{2})/g, '$1 ').trim()
-  if (this.length > max) str += ' ... '
-  return '<Buffer ' + str + '>'
-}
-
-Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
-  if (isInstance(target, Uint8Array)) {
-    target = Buffer.from(target, target.offset, target.byteLength)
-  }
-  if (!Buffer.isBuffer(target)) {
-    throw new TypeError(
-      'The "target" argument must be one of type Buffer or Uint8Array. ' +
-      'Received type ' + (typeof target)
-    )
-  }
-
-  if (start === undefined) {
-    start = 0
-  }
-  if (end === undefined) {
-    end = target ? target.length : 0
-  }
-  if (thisStart === undefined) {
-    thisStart = 0
-  }
-  if (thisEnd === undefined) {
-    thisEnd = this.length
-  }
-
-  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
-    throw new RangeError('out of range index')
-  }
-
-  if (thisStart >= thisEnd && start >= end) {
-    return 0
-  }
-  if (thisStart >= thisEnd) {
-    return -1
-  }
-  if (start >= end) {
-    return 1
-  }
-
-  start >>>= 0
-  end >>>= 0
-  thisStart >>>= 0
-  thisEnd >>>= 0
-
-  if (this === target) return 0
-
-  var x = thisEnd - thisStart
-  var y = end - start
-  var len = Math.min(x, y)
-
-  var thisCopy = this.slice(thisStart, thisEnd)
-  var targetCopy = target.slice(start, end)
-
-  for (var i = 0; i < len; ++i) {
-    if (thisCopy[i] !== targetCopy[i]) {
-      x = thisCopy[i]
-      y = targetCopy[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
-// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
-//
-// Arguments:
-// - buffer - a Buffer to search
-// - val - a string, Buffer, or number
-// - byteOffset - an index into `buffer`; will be clamped to an int32
-// - encoding - an optional encoding, relevant is val is a string
-// - dir - true for indexOf, false for lastIndexOf
-function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
-  // Empty buffer means no match
-  if (buffer.length === 0) return -1
-
-  // Normalize byteOffset
-  if (typeof byteOffset === 'string') {
-    encoding = byteOffset
-    byteOffset = 0
-  } else if (byteOffset > 0x7fffffff) {
-    byteOffset = 0x7fffffff
-  } else if (byteOffset < -0x80000000) {
-    byteOffset = -0x80000000
-  }
-  byteOffset = +byteOffset // Coerce to Number.
-  if (numberIsNaN(byteOffset)) {
-    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
-    byteOffset = dir ? 0 : (buffer.length - 1)
-  }
-
-  // Normalize byteOffset: negative offsets start from the end of the buffer
-  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
-  if (byteOffset >= buffer.length) {
-    if (dir) return -1
-    else byteOffset = buffer.length - 1
-  } else if (byteOffset < 0) {
-    if (dir) byteOffset = 0
-    else return -1
-  }
-
-  // Normalize val
-  if (typeof val === 'string') {
-    val = Buffer.from(val, encoding)
-  }
-
-  // Finally, search either indexOf (if dir is true) or lastIndexOf
-  if (Buffer.isBuffer(val)) {
-    // Special case: looking for empty string/buffer always fails
-    if (val.length === 0) {
-      return -1
-    }
-    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
-  } else if (typeof val === 'number') {
-    val = val & 0xFF // Search for a byte value [0-255]
-    if (typeof Uint8Array.prototype.indexOf === 'function') {
-      if (dir) {
-        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
-      } else {
-        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
-      }
-    }
-    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
-  }
-
-  throw new TypeError('val must be string, number or Buffer')
-}
-
-function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
-  var indexSize = 1
-  var arrLength = arr.length
-  var valLength = val.length
-
-  if (encoding !== undefined) {
-    encoding = String(encoding).toLowerCase()
-    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
-        encoding === 'utf16le' || encoding === 'utf-16le') {
-      if (arr.length < 2 || val.length < 2) {
-        return -1
-      }
-      indexSize = 2
-      arrLength /= 2
-      valLength /= 2
-      byteOffset /= 2
-    }
-  }
-
-  function read (buf, i) {
-    if (indexSize === 1) {
-      return buf[i]
-    } else {
-      return buf.readUInt16BE(i * indexSize)
-    }
-  }
-
-  var i
-  if (dir) {
-    var foundIndex = -1
-    for (i = byteOffset; i < arrLength; i++) {
-      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
-        if (foundIndex === -1) foundIndex = i
-        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
-      } else {
-        if (foundIndex !== -1) i -= i - foundIndex
-        foundIndex = -1
-      }
-    }
-  } else {
-    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
-    for (i = byteOffset; i >= 0; i--) {
-      var found = true
-      for (var j = 0; j < valLength; j++) {
-        if (read(arr, i + j) !== read(val, j)) {
-          found = false
-          break
-        }
-      }
-      if (found) return i
-    }
-  }
-
-  return -1
-}
-
-Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
-  return this.indexOf(val, byteOffset, encoding) !== -1
-}
-
-Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
-}
-
-Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
-}
-
-function hexWrite (buf, string, offset, length) {
-  offset = Number(offset) || 0
-  var remaining = buf.length - offset
-  if (!length) {
-    length = remaining
-  } else {
-    length = Number(length)
-    if (length > remaining) {
-      length = remaining
-    }
-  }
-
-  var strLen = string.length
-
-  if (length > strLen / 2) {
-    length = strLen / 2
-  }
-  for (var i = 0; i < length; ++i) {
-    var parsed = parseInt(string.substr(i * 2, 2), 16)
-    if (numberIsNaN(parsed)) return i
-    buf[offset + i] = parsed
-  }
-  return i
-}
-
-function utf8Write (buf, string, offset, length) {
-  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-function asciiWrite (buf, string, offset, length) {
-  return blitBuffer(asciiToBytes(string), buf, offset, length)
-}
-
-function latin1Write (buf, string, offset, length) {
-  return asciiWrite(buf, string, offset, length)
-}
-
-function base64Write (buf, string, offset, length) {
-  return blitBuffer(base64ToBytes(string), buf, offset, length)
-}
-
-function ucs2Write (buf, string, offset, length) {
-  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-Buffer.prototype.write = function write (string, offset, length, encoding) {
-  // Buffer#write(string)
-  if (offset === undefined) {
-    encoding = 'utf8'
-    length = this.length
-    offset = 0
-  // Buffer#write(string, encoding)
-  } else if (length === undefined && typeof offset === 'string') {
-    encoding = offset
-    length = this.length
-    offset = 0
-  // Buffer#write(string, offset[, length][, encoding])
-  } else if (isFinite(offset)) {
-    offset = offset >>> 0
-    if (isFinite(length)) {
-      length = length >>> 0
-      if (encoding === undefined) encoding = 'utf8'
-    } else {
-      encoding = length
-      length = undefined
-    }
-  } else {
-    throw new Error(
-      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
-    )
-  }
-
-  var remaining = this.length - offset
-  if (length === undefined || length > remaining) length = remaining
-
-  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
-    throw new RangeError('Attempt to write outside buffer bounds')
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'hex':
-        return hexWrite(this, string, offset, length)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Write(this, string, offset, length)
-
-      case 'ascii':
-        return asciiWrite(this, string, offset, length)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Write(this, string, offset, length)
-
-      case 'base64':
-        // Warning: maxLength not taken into account in base64Write
-        return base64Write(this, string, offset, length)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return ucs2Write(this, string, offset, length)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-Buffer.prototype.toJSON = function toJSON () {
-  return {
-    type: 'Buffer',
-    data: Array.prototype.slice.call(this._arr || this, 0)
-  }
-}
-
-function base64Slice (buf, start, end) {
-  if (start === 0 && end === buf.length) {
-    return base64.fromByteArray(buf)
-  } else {
-    return base64.fromByteArray(buf.slice(start, end))
-  }
-}
-
-function utf8Slice (buf, start, end) {
-  end = Math.min(buf.length, end)
-  var res = []
-
-  var i = start
-  while (i < end) {
-    var firstByte = buf[i]
-    var codePoint = null
-    var bytesPerSequence = (firstByte > 0xEF) ? 4
-      : (firstByte > 0xDF) ? 3
-        : (firstByte > 0xBF) ? 2
-          : 1
-
-    if (i + bytesPerSequence <= end) {
-      var secondByte, thirdByte, fourthByte, tempCodePoint
-
-      switch (bytesPerSequence) {
-        case 1:
-          if (firstByte < 0x80) {
-            codePoint = firstByte
-          }
-          break
-        case 2:
-          secondByte = buf[i + 1]
-          if ((secondByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
-            if (tempCodePoint > 0x7F) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 3:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
-            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 4:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          fourthByte = buf[i + 3]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
-            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
-              codePoint = tempCodePoint
-            }
-          }
-      }
-    }
-
-    if (codePoint === null) {
-      // we did not generate a valid codePoint so insert a
-      // replacement char (U+FFFD) and advance only 1 byte
-      codePoint = 0xFFFD
-      bytesPerSequence = 1
-    } else if (codePoint > 0xFFFF) {
-      // encode to utf16 (surrogate pair dance)
-      codePoint -= 0x10000
-      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
-      codePoint = 0xDC00 | codePoint & 0x3FF
-    }
-
-    res.push(codePoint)
-    i += bytesPerSequence
-  }
-
-  return decodeCodePointsArray(res)
-}
-
-// Based on http://stackoverflow.com/a/22747272/680742, the browser with
-// the lowest limit is Chrome, with 0x10000 args.
-// We go 1 magnitude less, for safety
-var MAX_ARGUMENTS_LENGTH = 0x1000
-
-function decodeCodePointsArray (codePoints) {
-  var len = codePoints.length
-  if (len <= MAX_ARGUMENTS_LENGTH) {
-    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
-  }
-
-  // Decode in chunks to avoid "call stack size exceeded".
-  var res = ''
-  var i = 0
-  while (i < len) {
-    res += String.fromCharCode.apply(
-      String,
-      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
-    )
-  }
-  return res
-}
-
-function asciiSlice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i] & 0x7F)
-  }
-  return ret
-}
-
-function latin1Slice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i])
-  }
-  return ret
-}
-
-function hexSlice (buf, start, end) {
-  var len = buf.length
-
-  if (!start || start < 0) start = 0
-  if (!end || end < 0 || end > len) end = len
-
-  var out = ''
-  for (var i = start; i < end; ++i) {
-    out += toHex(buf[i])
-  }
-  return out
-}
-
-function utf16leSlice (buf, start, end) {
-  var bytes = buf.slice(start, end)
-  var res = ''
-  for (var i = 0; i < bytes.length; i += 2) {
-    res += String.fromCharCode(bytes[i] + (bytes[i + 1] * 256))
-  }
-  return res
-}
-
-Buffer.prototype.slice = function slice (start, end) {
-  var len = this.length
-  start = ~~start
-  end = end === undefined ? len : ~~end
-
-  if (start < 0) {
-    start += len
-    if (start < 0) start = 0
-  } else if (start > len) {
-    start = len
-  }
-
-  if (end < 0) {
-    end += len
-    if (end < 0) end = 0
-  } else if (end > len) {
-    end = len
-  }
-
-  if (end < start) end = start
-
-  var newBuf = this.subarray(start, end)
-  // Return an augmented `Uint8Array` instance
-  newBuf.__proto__ = Buffer.prototype
-  return newBuf
-}
-
-/*
- * Need to make sure that buffer isn't trying to write out of bounds.
- */
-function checkOffset (offset, ext, length) {
-  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
-  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
-}
-
-Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) {
-    checkOffset(offset, byteLength, this.length)
-  }
-
-  var val = this[offset + --byteLength]
-  var mul = 1
-  while (byteLength > 0 && (mul *= 0x100)) {
-    val += this[offset + --byteLength] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  return this[offset]
-}
-
-Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return this[offset] | (this[offset + 1] << 8)
-}
-
-Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return (this[offset] << 8) | this[offset + 1]
-}
-
-Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return ((this[offset]) |
-      (this[offset + 1] << 8) |
-      (this[offset + 2] << 16)) +
-      (this[offset + 3] * 0x1000000)
-}
-
-Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] * 0x1000000) +
-    ((this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    this[offset + 3])
-}
-
-Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var i = byteLength
-  var mul = 1
-  var val = this[offset + --i]
-  while (i > 0 && (mul *= 0x100)) {
-    val += this[offset + --i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  if (!(this[offset] & 0x80)) return (this[offset])
-  return ((0xff - this[offset] + 1) * -1)
-}
-
-Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset] | (this[offset + 1] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset + 1] | (this[offset] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset]) |
-    (this[offset + 1] << 8) |
-    (this[offset + 2] << 16) |
-    (this[offset + 3] << 24)
-}
-
-Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] << 24) |
-    (this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    (this[offset + 3])
-}
-
-Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, true, 23, 4)
-}
-
-Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, false, 23, 4)
-}
-
-Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, true, 52, 8)
-}
-
-Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, false, 52, 8)
-}
-
-function checkInt (buf, value, offset, ext, max, min) {
-  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
-  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-}
-
-Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var mul = 1
-  var i = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  byteLength = byteLength >>> 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  this[offset] = (value & 0xff)
-  this[offset + 1] = (value >>> 8)
-  return offset + 2
-}
-
-Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  this[offset] = (value >>> 8)
-  this[offset + 1] = (value & 0xff)
-  return offset + 2
-}
-
-Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  this[offset + 3] = (value >>> 24)
-  this[offset + 2] = (value >>> 16)
-  this[offset + 1] = (value >>> 8)
-  this[offset] = (value & 0xff)
-  return offset + 4
-}
-
-Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  this[offset] = (value >>> 24)
-  this[offset + 1] = (value >>> 16)
-  this[offset + 2] = (value >>> 8)
-  this[offset + 3] = (value & 0xff)
-  return offset + 4
-}
-
-Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    var limit = Math.pow(2, (8 * byteLength) - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = 0
-  var mul = 1
-  var sub = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    var limit = Math.pow(2, (8 * byteLength) - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  var sub = 0
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
-  if (value < 0) value = 0xff + value + 1
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  this[offset] = (value & 0xff)
-  this[offset + 1] = (value >>> 8)
-  return offset + 2
-}
-
-Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  this[offset] = (value >>> 8)
-  this[offset + 1] = (value & 0xff)
-  return offset + 2
-}
-
-Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  this[offset] = (value & 0xff)
-  this[offset + 1] = (value >>> 8)
-  this[offset + 2] = (value >>> 16)
-  this[offset + 3] = (value >>> 24)
-  return offset + 4
-}
-
-Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  if (value < 0) value = 0xffffffff + value + 1
-  this[offset] = (value >>> 24)
-  this[offset + 1] = (value >>> 16)
-  this[offset + 2] = (value >>> 8)
-  this[offset + 3] = (value & 0xff)
-  return offset + 4
-}
-
-function checkIEEE754 (buf, value, offset, ext, max, min) {
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-  if (offset < 0) throw new RangeError('Index out of range')
-}
-
-function writeFloat (buf, value, offset, littleEndian, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 23, 4)
-  return offset + 4
-}
-
-Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, false, noAssert)
-}
-
-function writeDouble (buf, value, offset, littleEndian, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 52, 8)
-  return offset + 8
-}
-
-Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, false, noAssert)
-}
-
-// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
-Buffer.prototype.copy = function copy (target, targetStart, start, end) {
-  if (!Buffer.isBuffer(target)) throw new TypeError('argument should be a Buffer')
-  if (!start) start = 0
-  if (!end && end !== 0) end = this.length
-  if (targetStart >= target.length) targetStart = target.length
-  if (!targetStart) targetStart = 0
-  if (end > 0 && end < start) end = start
-
-  // Copy 0 bytes; we're done
-  if (end === start) return 0
-  if (target.length === 0 || this.length === 0) return 0
-
-  // Fatal error conditions
-  if (targetStart < 0) {
-    throw new RangeError('targetStart out of bounds')
-  }
-  if (start < 0 || start >= this.length) throw new RangeError('Index out of range')
-  if (end < 0) throw new RangeError('sourceEnd out of bounds')
-
-  // Are we oob?
-  if (end > this.length) end = this.length
-  if (target.length - targetStart < end - start) {
-    end = target.length - targetStart + start
-  }
-
-  var len = end - start
-
-  if (this === target && typeof Uint8Array.prototype.copyWithin === 'function') {
-    // Use built-in when available, missing from IE11
-    this.copyWithin(targetStart, start, end)
-  } else if (this === target && start < targetStart && targetStart < end) {
-    // descending copy from end
-    for (var i = len - 1; i >= 0; --i) {
-      target[i + targetStart] = this[i + start]
-    }
-  } else {
-    Uint8Array.prototype.set.call(
-      target,
-      this.subarray(start, end),
-      targetStart
-    )
-  }
-
-  return len
-}
-
-// Usage:
-//    buffer.fill(number[, offset[, end]])
-//    buffer.fill(buffer[, offset[, end]])
-//    buffer.fill(string[, offset[, end]][, encoding])
-Buffer.prototype.fill = function fill (val, start, end, encoding) {
-  // Handle string cases:
-  if (typeof val === 'string') {
-    if (typeof start === 'string') {
-      encoding = start
-      start = 0
-      end = this.length
-    } else if (typeof end === 'string') {
-      encoding = end
-      end = this.length
-    }
-    if (encoding !== undefined && typeof encoding !== 'string') {
-      throw new TypeError('encoding must be a string')
-    }
-    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
-      throw new TypeError('Unknown encoding: ' + encoding)
-    }
-    if (val.length === 1) {
-      var code = val.charCodeAt(0)
-      if ((encoding === 'utf8' && code < 128) ||
-          encoding === 'latin1') {
-        // Fast path: If `val` fits into a single byte, use that numeric value.
-        val = code
-      }
-    }
-  } else if (typeof val === 'number') {
-    val = val & 255
-  }
-
-  // Invalid ranges are not set to a default, so can range check early.
-  if (start < 0 || this.length < start || this.length < end) {
-    throw new RangeError('Out of range index')
-  }
-
-  if (end <= start) {
-    return this
-  }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"base64-js":81,"ieee754":249}],104:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Code, CodeService, ValueSet, ref;
-=======
-    MIN_VALUES['{urn:hl7-org:elm-types:r1}DateTime'] = MathUtil.MIN_DATE_VALUE;
->>>>>>> A provider has a list of ids
-=======
-  start = start >>> 0
-  end = end === undefined ? this.length : end >>> 0
->>>>>>> Add providers to patient
-
-  if (!val) val = 0
-
-  var i
-  if (typeof val === 'number') {
-    for (i = start; i < end; ++i) {
-      this[i] = val
-    }
-  } else {
-    var bytes = Buffer.isBuffer(val)
-      ? val
-      : Buffer.from(val, encoding)
-    var len = bytes.length
-    if (len === 0) {
-      throw new TypeError('The value "' + val +
-        '" is invalid for argument "value"')
-    }
-    for (i = 0; i < end - start; ++i) {
-      this[i + start] = bytes[i % len]
-    }
-  }
-
-  return this
-}
-
-// HELPER FUNCTIONS
-// ================
-
-var INVALID_BASE64_RE = /[^+/0-9A-Za-z-_]/g
-
-function base64clean (str) {
-  // Node takes equal signs as end of the Base64 encoding
-  str = str.split('=')[0]
-  // Node strips out invalid characters like \n and \t from the string, base64-js does not
-  str = str.trim().replace(INVALID_BASE64_RE, '')
-  // Node converts strings with length < 2 to ''
-  if (str.length < 2) return ''
-  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
-  while (str.length % 4 !== 0) {
-    str = str + '='
-  }
-  return str
-}
-
-function toHex (n) {
-  if (n < 16) return '0' + n.toString(16)
-  return n.toString(16)
-}
-
-function utf8ToBytes (string, units) {
-  units = units || Infinity
-  var codePoint
-  var length = string.length
-  var leadSurrogate = null
-  var bytes = []
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./datatypes/datatypes":109}],105:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var DT, element, i, len, ref;
-=======
-    MAX_VALUES['{urn:hl7-org:elm-types:r1}Integer'] = MathUtil.MAX_INT_VALUE;
->>>>>>> A provider has a list of ids
-=======
-  for (var i = 0; i < length; ++i) {
-    codePoint = string.charCodeAt(i)
->>>>>>> Add providers to patient
-
-    // is surrogate component
-    if (codePoint > 0xD7FF && codePoint < 0xE000) {
-      // last char was a lead
-      if (!leadSurrogate) {
-        // no lead yet
-        if (codePoint > 0xDBFF) {
-          // unexpected trail
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        } else if (i + 1 === length) {
-          // unpaired lead
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        }
-
-        // valid lead
-        leadSurrogate = codePoint
-
-        continue
-      }
-
-      // 2 leads in a row
-      if (codePoint < 0xDC00) {
-        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-        leadSurrogate = codePoint
-        continue
-      }
-
-      // valid surrogate pair
-      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
-    } else if (leadSurrogate) {
-      // valid bmp char, but last char was a lead
-      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-    }
-
-    leadSurrogate = null
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./datatypes/datatypes":109}],106:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var DT, FHIR, Patient, PatientSource, Record, toDate, typeIsArray;
-=======
-    return MaxValue;
->>>>>>> A provider has a list of ids
-=======
-    // encode utf8
-    if (codePoint < 0x80) {
-      if ((units -= 1) < 0) break
-      bytes.push(codePoint)
-    } else if (codePoint < 0x800) {
-      if ((units -= 2) < 0) break
-      bytes.push(
-        codePoint >> 0x6 | 0xC0,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x10000) {
-      if ((units -= 3) < 0) break
-      bytes.push(
-        codePoint >> 0xC | 0xE0,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x110000) {
-      if ((units -= 4) < 0) break
-      bytes.push(
-        codePoint >> 0x12 | 0xF0,
-        codePoint >> 0xC & 0x3F | 0x80,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else {
-      throw new Error('Invalid code point')
-    }
-  }
->>>>>>> Add providers to patient
-
-  return bytes
-}
-
-function asciiToBytes (str) {
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    // Node's code seems to be doing this and not & 0x7F..
-    byteArray.push(str.charCodeAt(i) & 0xFF)
-  }
-  return byteArray
-}
-
-function utf16leToBytes (str, units) {
-  var c, hi, lo
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    if ((units -= 2) < 0) break
-
-    c = str.charCodeAt(i)
-    hi = c >> 8
-    lo = c % 256
-    byteArray.push(lo)
-    byteArray.push(hi)
-  }
-
-  return byteArray
-}
-
-function base64ToBytes (str) {
-  return base64.toByteArray(base64clean(str))
-}
-
-function blitBuffer (src, dst, offset, length) {
-  for (var i = 0; i < length; ++i) {
-    if ((i + offset >= dst.length) || (i >= src.length)) break
-    dst[i + offset] = src[i]
-  }
-  return i
-}
-
-// ArrayBuffer or Uint8Array objects from other contexts (i.e. iframes) do not pass
-// the `instanceof` check but they should be treated as of that type.
-// See: https://github.com/feross/buffer/issues/166
-function isInstance (obj, type) {
-  return obj instanceof type ||
-    (obj != null && obj.constructor != null && obj.constructor.name != null &&
-      obj.constructor.name === type.name)
-}
-function numberIsNaN (obj) {
-  // For IE11 support
-  return obj !== obj // eslint-disable-line no-self-compare
-}
-
-},{"base64-js":80,"ieee754":248}],103:[function(require,module,exports){
+},{}],99:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, CodeService, ValueSet, ref;
@@ -20059,7 +15625,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./datatypes/datatypes":108}],104:[function(require,module,exports){
+},{"./datatypes/datatypes":104}],100:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DT, element, i, len, ref;
@@ -20076,7 +15642,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./datatypes/datatypes":108}],105:[function(require,module,exports){
+},{"./datatypes/datatypes":104}],101:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DT, FHIR, Patient, PatientSource, Record, toDate, typeIsArray;
@@ -20114,24 +15680,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-  })(Expression);
-
-  module.exports.ValueSetRef = ValueSetRef = (function(superClass) {
-    extend(ValueSetRef, superClass);
-
-<<<<<<< HEAD
-},{"./datatypes/datatypes":109,"./fhir/models":193,"./util/util":238}],107:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var codeservice, context, datatypes, exec, expression, library, patient, quantity, ratio, repository, results;
-=======
-    function ValueSetRef(json) {
-      ValueSetRef.__super__.constructor.apply(this, arguments);
-      this.name = json.name;
-    }
->>>>>>> A provider has a list of ids
-=======
     Record.prototype.getInterval = function(field) {
       var end, start, val;
       val = this.get(field);
@@ -20141,7 +15689,6 @@ function numberIsNaN (obj) {
         return new DT.Interval(start, end);
       }
     };
->>>>>>> Add providers to patient
 
     Record.prototype.getDateOrInterval = function(field) {
       var val;
@@ -20347,20 +15894,9 @@ function numberIsNaN (obj) {
 
 }).call(this);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./cql-code-service":104,"./cql-patient":106,"./datatypes/datatypes":109,"./elm/expression":123,"./elm/library":128,"./elm/quantity":135,"./elm/ratio":137,"./runtime/context":232,"./runtime/executor":233,"./runtime/repository":234,"./runtime/results":235}],108:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Code, CodeSystem, Concept, ValueSet, codesInList, codesMatch, toCodeList, typeIsArray;
-=======
-    return ConceptDef;
->>>>>>> A provider has a list of ids
-=======
->>>>>>> Add providers to patient
 
 
-},{"./datatypes/datatypes":108,"./fhir/models":192,"./util/util":237}],106:[function(require,module,exports){
+},{"./datatypes/datatypes":104,"./fhir/models":188,"./util/util":233}],102:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var codeservice, context, datatypes, exec, expression, library, patient, quantity, ratio, repository, results;
@@ -20425,7 +15961,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./cql-code-service":103,"./cql-patient":105,"./datatypes/datatypes":108,"./elm/expression":122,"./elm/library":127,"./elm/quantity":134,"./elm/ratio":136,"./runtime/context":231,"./runtime/executor":232,"./runtime/repository":233,"./runtime/results":234}],107:[function(require,module,exports){
+},{"./cql-code-service":99,"./cql-patient":101,"./datatypes/datatypes":104,"./elm/expression":118,"./elm/library":123,"./elm/quantity":130,"./elm/ratio":132,"./runtime/context":227,"./runtime/executor":228,"./runtime/repository":229,"./runtime/results":230}],103:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, CodeSystem, Concept, ValueSet, codesInList, codesMatch, toCodeList, typeIsArray;
@@ -20487,47 +16023,7 @@ function numberIsNaN (obj) {
           return true;
         }
       }
-<<<<<<< HEAD
-      return args[0].greaterThanOrEquals(args[1]);
-    };
-
-    return GreaterOrEqual;
-
-  })(Expression);
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../util/util":238}],109:[function(require,module,exports){
-=======
-},{"../datatypes/datatypes":102,"./expression":116}],113:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Case, CaseItem, Expression, If, build, equals,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  Expression = require('./expression').Expression;
-
-  build = require('./builder').build;
-
-  equals = require('../util/comparison').equals;
-
-  module.exports.If = If = (function(superClass) {
-    extend(If, superClass);
-
-    function If(json) {
-      If.__super__.constructor.apply(this, arguments);
-      this.condition = build(json.condition);
-      this.th = build(json.then);
-      this.els = build(json["else"]);
-    }
-=======
     });
->>>>>>> Add providers to patient
 
     ValueSet.prototype.hasMatch = function(code) {
       var codeItem, codesList, i, len, matchFound, multipleCodeSystemsExist, ref;
@@ -20606,15 +16102,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./clinical":108,"./datetime":110,"./interval":112,"./logic":113,"./uncertainty":114}],110:[function(require,module,exports){
-=======
-},{"../util/comparison":229,"./builder":110,"./expression":116}],114:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../util/util":237}],108:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../util/util":233}],104:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var clinical, datetime, element, i, interval, j, len, len1, lib, libs, logic, ref, uncertainty;
@@ -20644,7 +16132,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./clinical":107,"./datetime":109,"./interval":111,"./logic":112,"./uncertainty":113}],109:[function(require,module,exports){
+},{"./clinical":103,"./datetime":105,"./interval":107,"./logic":108,"./uncertainty":109}],105:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Date, DateTime, Uncertainty, cqlFormatStringToMomentFormatString, daysInMonth, getTimezoneSeparatorFromString, isValidDateStringFormat, isValidDateTimeStringFormat, jsDate, moment, normalizeMillisecondsField, normalizeMillisecondsFieldInString, ref,
@@ -21300,49 +16788,12 @@ function numberIsNaN (obj) {
       return result;
     };
 
-<<<<<<< HEAD
-    return Instance;
-
-  })(Expression);
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../util/util":238,"./uncertainty":114,"moment":239}],111:[function(require,module,exports){
-=======
-},{"../datatypes/datatypes":102,"./builder":110,"./expression":116,"./quantity":128}],120:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, doSubtraction, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty,
-    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
-
-  ref = require('./expression'), Expression = ref.Expression, UnimplementedExpression = ref.UnimplementedExpression;
-
-<<<<<<< HEAD
-},{}],112:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var DateTime, Interval, ThreeValuedLogic, Uncertainty, cmp, maxValueForInstance, minValueForInstance, predecessor, ref, successor;
-=======
-  ThreeValuedLogic = require('../datatypes/logic').ThreeValuedLogic;
->>>>>>> A provider has a list of ids
-
-  build = require('./builder').build;
-
-  ref1 = require('./quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, doSubtraction = ref1.doSubtraction, compare_units = ref1.compare_units, convert_value = ref1.convert_value;
-=======
     Date.prototype.toUncertainty = function() {
       var high, low, ref1, ref2, ref3;
       low = this.toJSDate();
       high = new Date(this.year, (ref1 = this.month) != null ? ref1 : 12, (ref2 = this.day) != null ? ref2 : (new jsDate(this.year, (ref3 = this.month) != null ? ref3 : 12, 0)).getDate()).toJSDate();
       return new Uncertainty(low, high);
     };
->>>>>>> Add providers to patient
 
     Date.prototype.toJSDate = function() {
       var d, mo, ref1, ref2, y;
@@ -21816,18 +17267,6 @@ function numberIsNaN (obj) {
     return moment(string, cqlFormatStringToMomentFormatString(cqlFormatStringWithLength[string.length]), strict).isValid();
   };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../util/comparison":236,"../util/math":237,"./datetime":110,"./logic":113,"./uncertainty":114}],113:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var ThreeValuedLogic,
-    slice = [].slice,
-    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
-=======
-  })(Expression);
->>>>>>> A provider has a list of ids
-=======
   cqlFormatStringToMomentFormatString = function(string) {
     var momentString, ref1, timeAndTimeZoneOffset, timezoneSeparator, yearMonthDay;
     ref1 = string.split('T'), yearMonthDay = ref1[0], timeAndTimeZoneOffset = ref1[1];
@@ -21845,7 +17284,6 @@ function numberIsNaN (obj) {
     }
     return momentString = momentString.replace(/f/g, 'S');
   };
->>>>>>> Add providers to patient
 
   module.exports.DateTime = DateTime;
 
@@ -21855,7 +17293,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":237,"./uncertainty":113,"moment":238}],110:[function(require,module,exports){
+},{"../util/util":233,"./uncertainty":109,"moment":234}],106:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Exception;
@@ -21874,36 +17312,10 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],114:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var ThreeValuedLogic, Uncertainty;
-
-  ThreeValuedLogic = require('./logic').ThreeValuedLogic;
-
-  module.exports.Uncertainty = Uncertainty = (function() {
-    Uncertainty.from = function(obj) {
-      if (obj instanceof Uncertainty) {
-        return obj;
-=======
-    Starts.prototype.exec = function(ctx) {
-      var a, b, ref3;
-      ref3 = this.execArgs(ctx), a = ref3[0], b = ref3[1];
-      if ((a != null) && (b != null)) {
-        return a.starts(b, this.precision);
->>>>>>> A provider has a list of ids
-      } else {
-        return null;
-      }
-    };
-=======
-},{}],111:[function(require,module,exports){
+},{}],107:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Interval, ThreeValuedLogic, Uncertainty, cmp, maxValueForInstance, minValueForInstance, predecessor, ref, successor;
->>>>>>> Add providers to patient
 
   DateTime = require('./datetime').DateTime;
 
@@ -21976,77 +17388,7 @@ function numberIsNaN (obj) {
       if (!(other instanceof Interval)) {
         return this.contains(other, precision);
       } else {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return null;
-      }
-    };
-
-    Uncertainty.prototype.greaterThan = function(other) {
-      other = Uncertainty.from(other);
-      return other.lessThan(this);
-    };
-
-    Uncertainty.prototype.lessThanOrEquals = function(other) {
-      other = Uncertainty.from(other);
-      return ThreeValuedLogic.not(this.greaterThan(other));
-    };
-
-    Uncertainty.prototype.greaterThanOrEquals = function(other) {
-      other = Uncertainty.from(other);
-      return ThreeValuedLogic.not(this.lessThan(other));
-    };
-
-    return Uncertainty;
-
-  })();
-
-}).call(this);
-
-
-
-},{"./logic":113}],115:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var AggregateExpression, AllTrue, AnyTrue, Avg, Count, Exception, Expression, GeometricMean, Max, Median, Min, Mode, PopulationStdDev, PopulationVariance, Product, Quantity, StdDev, Sum, Variance, allTrue, anyTrue, build, compact, numerical_sort, productValue, quantitiesOrArg, quantityOrValue, ref, typeIsArray,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty,
-    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
-
-  Expression = require('./expression').Expression;
-
-  ref = require('../util/util'), typeIsArray = ref.typeIsArray, allTrue = ref.allTrue, anyTrue = ref.anyTrue, compact = ref.compact, numerical_sort = ref.numerical_sort;
-
-  build = require('./builder').build;
-
-  Exception = require('../datatypes/exception').Exception;
-
-  Quantity = require('./quantity');
-
-  quantitiesOrArg = function(arr) {
-    var allQs, i, j, len, someQs, unit, values;
-    arr = compact(arr);
-    if (arr.length === 0) {
-      return arr;
-    }
-    allQs = arr.every(function(x) {
-      return x.isQuantity;
-    });
-    someQs = arr.some(function(x) {
-      return x.isQuantity;
-    });
-    if (allQs) {
-      unit = arr[0].unit;
-      values = [];
-      for (j = 0, len = arr.length; j < len; j++) {
-        i = arr[j];
-        values.push(i.convertUnits(unit));
-=======
-        return 'mismatch';
->>>>>>> A provider has a list of ids
-=======
         return other.includes(this);
->>>>>>> Add providers to patient
       }
     };
 
@@ -22432,7 +17774,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/comparison":235,"../util/math":236,"./datetime":109,"./logic":112,"./uncertainty":113}],112:[function(require,module,exports){
+},{"../util/comparison":231,"../util/math":232,"./datetime":105,"./logic":108,"./uncertainty":109}],108:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var ThreeValuedLogic,
@@ -22494,7 +17836,7 @@ function numberIsNaN (obj) {
 
 
 
-},{}],113:[function(require,module,exports){
+},{}],109:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var ThreeValuedLogic, Uncertainty;
@@ -22620,15 +17962,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/exception":111,"../util/util":238,"./builder":117,"./expression":123,"./quantity":135}],116:[function(require,module,exports){
-=======
-},{"../runtime/results":228,"./expressions":117}],122:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"./logic":112}],114:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./logic":108}],110:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AggregateExpression, AllTrue, AnyTrue, Avg, Count, Exception, Expression, GeometricMean, Max, Median, Min, Mode, PopulationStdDev, PopulationVariance, Product, Quantity, StdDev, Sum, Variance, allTrue, anyTrue, build, compact, numerical_sort, productValue, quantitiesOrArg, quantityOrValue, ref, typeIsArray,
@@ -23073,7 +18407,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/exception":110,"../util/util":237,"./builder":116,"./expression":122,"./quantity":134}],115:[function(require,module,exports){
+},{"../datatypes/exception":106,"../util/util":233,"./builder":112,"./expression":118,"./quantity":130}],111:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Abs, Add, Ceiling, Divide, Exp, Expression, Floor, Ln, Log, MathUtil, MaxValue, MinValue, Modulo, Multiply, Negate, Power, Predecessor, Quantity, Round, Subtract, Successor, Truncate, TruncatedDivide, allTrue, anyTrue, build, ref, typeIsArray,
@@ -23142,59 +18476,9 @@ function numberIsNaN (obj) {
           }
         });
       }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    };
-
-    return Predecessor;
-
-  })(Expression);
-
-}).call(this);
-
-
-
-},{"../util/math":237,"../util/util":238,"./builder":117,"./expression":123,"./quantity":135}],117:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var E, build, constructByName, functionExists, typeIsArray;
-
-  E = require('./expressions');
-
-  typeIsArray = require('../util/util').typeIsArray;
-=======
-    });
->>>>>>> A provider has a list of ids
-
-    StringLiteral.prototype.exec = function(ctx) {
-      return this.value.replace(/\\'/g, "'").replace(/\\"/g, "\"");
-    };
-
-    return StringLiteral;
-
-  })(Literal);
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../util/util":238,"./expressions":124}],118:[function(require,module,exports){
-=======
-},{"./expression":116}],124:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var And, Expression, IsFalse, IsTrue, Not, Or, ThreeValuedLogic, Xor,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  Expression = require('./expression').Expression;
-=======
     };
 
     return Subtract;
->>>>>>> Add providers to patient
 
   })(Expression);
 
@@ -23428,55 +18712,8 @@ function numberIsNaN (obj) {
 
   })(Expression);
 
-<<<<<<< HEAD
-}).call(this);
-
-
-
-},{"./expression":116}],126:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var After, Contains, DT, DateTime, Equal, Equivalent, Except, Exception, Expression, IVL, In, IncludedIn, Includes, Indexer, Intersect, LIST, Length, NotEqual, ProperIncludedIn, ProperIncludes, STRING, SameAs, ThreeValuedLogic, Union, build, equals, equivalent, ref, typeIsArray,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  Expression = require('./expression').Expression;
-
-  ThreeValuedLogic = require('../datatypes/logic').ThreeValuedLogic;
-
-  DateTime = require('../datatypes/datetime').DateTime;
-
-  Exception = require('../datatypes/exception').Exception;
-
-  typeIsArray = require('../util/util').typeIsArray;
-
-  ref = require('../util/comparison'), equals = ref.equals, equivalent = ref.equivalent;
-
-  build = require('./builder').build;
-
-  DT = require('./datetime');
-
-<<<<<<< HEAD
-},{"../datatypes/datatypes":109,"./builder":117,"./expression":123}],119:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Expression, Greater, GreaterOrEqual, Less, LessOrEqual, Uncertainty,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-  LIST = require('./list');
->>>>>>> A provider has a list of ids
-
-  IVL = require('./interval');
-
-  STRING = require('./string');
-
-  module.exports.Equal = Equal = (function(superClass) {
-    extend(Equal, superClass);
-=======
   module.exports.Ln = Ln = (function(superClass) {
     extend(Ln, superClass);
->>>>>>> Add providers to patient
 
     function Ln(json) {
       Ln.__super__.constructor.apply(this, arguments);
@@ -23567,35 +18804,8 @@ function numberIsNaN (obj) {
 
   })(Expression);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this);
-
-
-
-},{"../datatypes/datatypes":109,"./expression":123}],120:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Case, CaseItem, Expression, If, build, equals,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  Expression = require('./expression').Expression;
-
-  build = require('./builder').build;
-
-  equals = require('../util/comparison').equals;
-
-  module.exports.If = If = (function(superClass) {
-    extend(If, superClass);
-=======
-  module.exports.Except = Except = (function(superClass) {
-    extend(Except, superClass);
->>>>>>> A provider has a list of ids
-=======
   module.exports.MinValue = MinValue = (function(superClass) {
     var MIN_VALUES;
->>>>>>> Add providers to patient
 
     extend(MinValue, superClass);
 
@@ -23633,40 +18843,8 @@ function numberIsNaN (obj) {
 
   })(Expression);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this);
-
-
-
-},{"../util/comparison":236,"./builder":117,"./expression":123}],121:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var DT, Date, DateFrom, DateTime, DateTimeComponentFrom, DifferenceBetween, DurationBetween, Expression, Literal, Now, SameOrAfter, SameOrBefore, Time, TimeFrom, TimeOfDay, TimezoneFrom, Today, build,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty,
-    slice = [].slice;
-
-  Expression = require('./expression').Expression;
-
-  build = require('./builder').build;
-
-  Literal = require('./literal').Literal;
-
-  DT = require('../datatypes/datatypes');
-
-  module.exports.DateTime = DateTime = (function(superClass) {
-    extend(DateTime, superClass);
-
-    DateTime.PROPERTIES = ['year', 'month', 'day', 'hour', 'minute', 'second', 'millisecond', 'timezoneOffset'];
-=======
-  module.exports.Indexer = Indexer = (function(superClass) {
-    extend(Indexer, superClass);
->>>>>>> A provider has a list of ids
-=======
   module.exports.MaxValue = MaxValue = (function(superClass) {
     var MAX_VALUES;
->>>>>>> Add providers to patient
 
     extend(MaxValue, superClass);
 
@@ -23750,7 +18928,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/math":236,"../util/util":237,"./builder":116,"./expression":122,"./quantity":134}],116:[function(require,module,exports){
+},{"../util/math":232,"../util/util":233,"./builder":112,"./expression":118,"./quantity":130}],112:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var E, build, constructByName, functionExists, typeIsArray;
@@ -23798,7 +18976,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":237,"./expressions":123}],117:[function(require,module,exports){
+},{"../util/util":233,"./expressions":119}],113:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AnyInValueSet, CalculateAge, CalculateAgeAt, CodeDef, CodeRef, CodeSystemDef, Concept, ConceptDef, ConceptRef, Expression, InValueSet, ValueSetDef, ValueSetRef, build, dt,
@@ -23982,18 +19160,6 @@ function numberIsNaN (obj) {
       this.codes = json.code;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/datatypes":109,"./builder":117,"./expression":123,"./literal":130}],122:[function(require,module,exports){
-=======
-},{"./builder":110,"./expression":116}],128:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Code, Exception, Expression, FunctionRef, Quantity, ValueSet, build, clean_unit, coalesceToOne, convert_value, createQuantity, decimalAdjust, doScaledAddition, isValidDecimal, is_valid_ucum_unit, ref, ref1, ucum, ucum_multiply, ucum_time_units, ucum_to_cql_units, ucum_unit, unitValidityCache, units_to_string,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
     ConceptDef.prototype.exec = function(ctx) {
       var code, codes;
       codes = (function() {
@@ -24008,7 +19174,6 @@ function numberIsNaN (obj) {
       }).call(this);
       return new dt.Concept(codes, this.display);
     };
->>>>>>> Add providers to patient
 
     return ConceptDef;
 
@@ -24048,28 +19213,11 @@ function numberIsNaN (obj) {
       }
     });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./expression":123}],123:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Expression, UnimplementedExpression, build, typeIsArray,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    Quantity.prototype.clone = function() {
-      return new Quantity({
-        value: this.value,
-        unit: this.unit
-      });
-=======
     Concept.prototype.toCode = function(ctx, code) {
       var ref, system;
       system = (ref = ctx.getCodeSystem(code.system.name)) != null ? ref.id : void 0;
       return new dt.Code(code.code, system, code.version, code.display);
->>>>>>> Add providers to patient
     };
->>>>>>> A provider has a list of ids
 
     Concept.prototype.exec = function(ctx) {
       var code, codes;
@@ -24148,7 +19296,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":108,"./builder":116,"./expression":122}],118:[function(require,module,exports){
+},{"../datatypes/datatypes":104,"./builder":112,"./expression":118}],114:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Greater, GreaterOrEqual, Less, LessOrEqual, Uncertainty,
@@ -24251,25 +19399,12 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../util/util":238,"./builder":117}],124:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var aggregate, arithmetic, clinical, comparison, conditional, datetime, declaration, element, expression, external, i, instance, interval, j, len, len1, lib, libs, list, literal, logical, nullological, overloaded, parameters, quantity, query, ratio, ref, reusable, string, structured, type;
-=======
-  ucum_unit = function(unit) {
-    return ucum_time_units[unit] || unit || '';
-  };
->>>>>>> A provider has a list of ids
-=======
-},{"../datatypes/datatypes":108,"./expression":122}],119:[function(require,module,exports){
+},{"../datatypes/datatypes":104,"./expression":118}],115:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Case, CaseItem, Expression, If, build, equals,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
->>>>>>> Add providers to patient
 
   Expression = require('./expression').Expression;
 
@@ -24337,50 +19472,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./aggregate":115,"./arithmetic":116,"./clinical":118,"./comparison":119,"./conditional":120,"./datetime":121,"./declaration":122,"./expression":123,"./external":125,"./instance":126,"./interval":127,"./list":129,"./literal":130,"./logical":131,"./nullological":132,"./overloaded":133,"./parameters":134,"./quantity":135,"./query":136,"./ratio":137,"./reusable":138,"./string":139,"./structured":140,"./type":141}],125:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Expression, Retrieve, build, typeIsArray,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-  doScaledAddition = function(a, b, scaleForB) {
-    var a_unit, b_unit, ref2, val;
-    if (a instanceof Quantity && b instanceof Quantity) {
-      ref2 = [coalesceToOne(a.unit), coalesceToOne(b.unit)], a_unit = ref2[0], b_unit = ref2[1];
-      val = convert_value(b.value * scaleForB, b_unit, a_unit);
-      if (val == null) {
-        return null;
-      }
-      return new Quantity({
-        unit: a_unit,
-        value: a.value + val
-      });
-    } else if (a.copy && a.add) {
-      b_unit = b instanceof Quantity ? coalesceToOne(b.unit) : b.unit;
-      return a.copy().add(b.value * scaleForB, clean_unit(b_unit));
-    } else {
-      throw new Error("Unsupported argument types.");
-    }
-  };
->>>>>>> A provider has a list of ids
-
-  module.exports.doAddition = function(a, b) {
-    return doScaledAddition(a, b, 1);
-  };
-
-  module.exports.doSubtraction = function(a, b) {
-    return doScaledAddition(a, b, -1);
-  };
-
-  module.exports.doDivision = function(a, b) {
-    if (a instanceof Quantity) {
-      return a.dividedBy(b);
-    }
-  };
-=======
     Case.prototype.exec_selected = function(ctx) {
       var ci, i, len, ref, val;
       val = this.comparand.execute(ctx);
@@ -24393,7 +19484,6 @@ function numberIsNaN (obj) {
       }
       return this.els.execute(ctx);
     };
->>>>>>> Add providers to patient
 
     Case.prototype.exec_standard = function(ctx) {
       var ci, i, len, ref;
@@ -24415,15 +19505,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../util/util":238,"./builder":117,"./expression":123}],126:[function(require,module,exports){
-=======
-},{"../datatypes/datatypes":102,"../datatypes/exception":104,"../util/math":230,"./builder":110,"./expression":116,"./reusable":131,"ucum":240}],129:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../util/comparison":235,"./builder":116,"./expression":122}],120:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../util/comparison":231,"./builder":112,"./expression":118}],116:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DT, Date, DateFrom, DateTime, DateTimeComponentFrom, DifferenceBetween, DurationBetween, Expression, Literal, Now, SameOrAfter, SameOrBefore, Time, TimeFrom, TimeOfDay, TimezoneFrom, Today, build,
@@ -24503,59 +19585,6 @@ function numberIsNaN (obj) {
       Date.__super__.constructor.apply(this, arguments);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Instance.prototype.exec = function(ctx) {
-      var el, i, len, obj, ref1;
-      obj = {};
-      ref1 = this.element;
-      for (i = 0, len = ref1.length; i < len; i++) {
-        el = ref1[i];
-        obj[el.name] = el.exec(ctx);
-      }
-      switch (this.classType) {
-        case "{urn:hl7-org:elm-types:r1}Quantity":
-          return new Quantity(obj);
-        case "{urn:hl7-org:elm-types:r1}Code":
-          return new Code(obj.code, obj.system, obj.version, obj.display);
-        case "{urn:hl7-org:elm-types:r1}Concept":
-          return new Concept(obj.codes, obj.display);
-        default:
-          return obj;
-      }
-    };
-
-    return Instance;
-
-  })(Expression);
-
-}).call(this);
-
-
-
-},{"../datatypes/datatypes":109,"./builder":117,"./expression":123,"./quantity":135}],127:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, doSubtraction, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty,
-    indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
-
-  ref = require('./expression'), Expression = ref.Expression, UnimplementedExpression = ref.UnimplementedExpression;
-
-  ThreeValuedLogic = require('../datatypes/logic').ThreeValuedLogic;
-
-  build = require('./builder').build;
-
-  ref1 = require('./quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, doSubtraction = ref1.doSubtraction, compare_units = ref1.compare_units, convert_value = ref1.convert_value;
-
-  ref2 = require('../util/math'), successor = ref2.successor, predecessor = ref2.predecessor, MIN_FLOAT_PRECISION_VALUE = ref2.MIN_FLOAT_PRECISION_VALUE;
-
-  dtivl = require('../datatypes/interval');
-=======
-    return LetClause;
->>>>>>> A provider has a list of ids
-=======
     Object.defineProperties(Date.prototype, {
       isDate: {
         get: function() {
@@ -24563,7 +19592,6 @@ function numberIsNaN (obj) {
         }
       }
     });
->>>>>>> Add providers to patient
 
     Date.prototype.exec = function(ctx) {
       var args, i, len, p, property, ref;
@@ -24881,7 +19909,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":108,"./builder":116,"./expression":122,"./literal":129}],121:[function(require,module,exports){
+},{"../datatypes/datatypes":104,"./builder":112,"./expression":118,"./literal":125}],117:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, IncludeDef, UnimplementedExpression, UsingDef, VersionedIdentifier, ref,
@@ -24927,7 +19955,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":122}],122:[function(require,module,exports){
+},{"./expression":118}],118:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, UnimplementedExpression, build, typeIsArray,
@@ -25011,7 +20039,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":237,"./builder":116}],123:[function(require,module,exports){
+},{"../util/util":233,"./builder":112}],119:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var aggregate, arithmetic, clinical, comparison, conditional, datetime, declaration, element, expression, external, i, instance, interval, j, len, len1, lib, libs, list, literal, logical, nullological, overloaded, parameters, quantity, query, ratio, ref, reusable, string, structured, type;
@@ -25064,19 +20092,7 @@ function numberIsNaN (obj) {
 
   overloaded = require('./overloaded');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/interval":112,"../datatypes/logic":113,"../util/comparison":236,"../util/math":237,"./builder":117,"./expression":123,"./quantity":135}],128:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var CodeDef, CodeSystemDef, ConceptDef, ExpressionDef, FunctionDef, Library, ParameterDef, Results, ValueSetDef, ref;
-=======
-  module.exports.Upper = Upper = (function(superClass) {
-    extend(Upper, superClass);
->>>>>>> A provider has a list of ids
-=======
   libs = [expression, aggregate, arithmetic, clinical, comparison, conditional, datetime, declaration, external, instance, interval, list, literal, logical, nullological, parameters, query, quantity, ratio, reusable, string, structured, type, overloaded];
->>>>>>> Add providers to patient
 
   for (i = 0, len = libs.length; i < len; i++) {
     lib = libs[i];
@@ -25091,7 +20107,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./aggregate":114,"./arithmetic":115,"./clinical":117,"./comparison":118,"./conditional":119,"./datetime":120,"./declaration":121,"./expression":122,"./external":124,"./instance":125,"./interval":126,"./list":128,"./literal":129,"./logical":130,"./nullological":131,"./overloaded":132,"./parameters":133,"./quantity":134,"./query":135,"./ratio":136,"./reusable":137,"./string":138,"./structured":139,"./type":140}],124:[function(require,module,exports){
+},{"./aggregate":110,"./arithmetic":111,"./clinical":113,"./comparison":114,"./conditional":115,"./datetime":116,"./declaration":117,"./expression":118,"./external":120,"./instance":121,"./interval":122,"./list":124,"./literal":125,"./logical":126,"./nullological":127,"./overloaded":128,"./parameters":129,"./quantity":130,"./query":131,"./ratio":132,"./reusable":133,"./string":134,"./structured":135,"./type":136}],120:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Retrieve, build, typeIsArray,
@@ -25124,51 +20140,12 @@ function numberIsNaN (obj) {
       if (this.codes && typeof this.codes.exec === 'function') {
         codes = this.codes.execute(ctx);
       }
-<<<<<<< HEAD
-    };
-
-    return PositionOf;
-
-<<<<<<< HEAD
-},{"../runtime/results":235,"./expressions":124}],129:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Current, Distinct, Exists, Expression, Filter, First, Flatten, ForEach, IndexOf, Last, List, SingletonFrom, Times, ToList, UnimplementedExpression, ValueSet, build, doContains, doDistinct, doIncludes, equals, ref, typeIsArray,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-  })(Expression);
->>>>>>> A provider has a list of ids
-
-  module.exports.Substring = Substring = (function(superClass) {
-    extend(Substring, superClass);
-
-    function Substring(json) {
-      Substring.__super__.constructor.apply(this, arguments);
-      this.stringToSub = build(json.stringToSub);
-      this.startIndex = build(json.startIndex);
-      this.length = build(json['length']);
-    }
-
-    Substring.prototype.exec = function(ctx) {
-      var length, startIndex, stringToSub;
-      stringToSub = this.stringToSub.execute(ctx);
-      startIndex = this.startIndex.execute(ctx);
-      length = this.length != null ? this.length.execute(ctx) : null;
-      if ((stringToSub == null) || (startIndex == null) || startIndex < 0 || startIndex >= stringToSub.length) {
-        return null;
-      } else if (length != null) {
-        return stringToSub.substr(startIndex, length);
-      } else {
-        return stringToSub.substr(startIndex);
-=======
       if (codes) {
         records = records.filter((function(_this) {
           return function(r) {
             return _this.recordMatchesCodesOrVS(r, codes);
           };
         })(this));
->>>>>>> Add providers to patient
       }
       if (this.dateRange && this.dateProperty) {
         range = this.dateRange.execute(ctx);
@@ -25207,7 +20184,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":237,"./builder":116,"./expression":122}],125:[function(require,module,exports){
+},{"../util/util":233,"./builder":112,"./expression":118}],121:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, Concept, Element, Expression, Instance, Quantity, build, ref,
@@ -25284,7 +20261,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":108,"./builder":116,"./expression":122,"./quantity":134}],126:[function(require,module,exports){
+},{"../datatypes/datatypes":104,"./builder":112,"./expression":118,"./quantity":130}],122:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, doSubtraction, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor,
@@ -25545,16 +20522,7 @@ function numberIsNaN (obj) {
 
     return Start;
 
-<<<<<<< HEAD
-},{"../datatypes/datatypes":109,"../util/comparison":236,"../util/util":238,"./builder":117,"./expression":123}],130:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var BooleanLiteral, DecimalLiteral, Expression, IntegerLiteral, Literal, StringLiteral,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
   })(Expression);
->>>>>>> A provider has a list of ids
 
   module.exports.End = End = (function(superClass) {
     extend(End, superClass);
@@ -25839,20 +20807,6 @@ function numberIsNaN (obj) {
       return this.makeNumericIntervalList(interval.low, interval.high, interval.lowClosed, interval.highClosed, per.value);
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./expression":123}],131:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var And, Expression, IsFalse, IsTrue, Not, Or, ThreeValuedLogic, Xor,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    function ConvertsToQuantity() {
-      return ConvertsToQuantity.__super__.constructor.apply(this, arguments);
-    }
->>>>>>> A provider has a list of ids
-=======
     Expand.prototype.makeNumericIntervalList = function(low, high, lowClosed, highClosed, per) {
       var gap, point_intervals, results, width, x;
       point_intervals = Number.isInteger(low) && Number.isInteger(high) && Number.isInteger(per);
@@ -25877,7 +20831,6 @@ function numberIsNaN (obj) {
       })();
       return results;
     };
->>>>>>> Add providers to patient
 
     return Expand;
 
@@ -26036,7 +20989,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/interval":111,"../datatypes/logic":112,"../util/comparison":235,"../util/math":236,"./builder":116,"./expression":122,"./quantity":134}],127:[function(require,module,exports){
+},{"../datatypes/interval":107,"../datatypes/logic":108,"../util/comparison":231,"../util/math":232,"./builder":112,"./expression":118,"./quantity":130}],123:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var CodeDef, CodeSystemDef, ConceptDef, ExpressionDef, FunctionDef, Library, ParameterDef, Results, ValueSetDef, ref;
@@ -26138,15 +21091,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/datatypes":109,"./expression":123}],132:[function(require,module,exports){
-=======
-},{"../datatypes/clinical":101,"../datatypes/datetime":103,"../util/math":230,"../util/util":231,"./expression":116,"./quantity":128,"./reusable":131}],135:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../runtime/results":234,"./expressions":123}],128:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../runtime/results":230,"./expressions":119}],124:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Current, Distinct, Exists, Expression, Filter, First, Flatten, ForEach, IndexOf, Last, List, SingletonFrom, Times, ToList, UnimplementedExpression, ValueSet, build, doContains, doDistinct, doIncludes, equals, ref, typeIsArray,
@@ -26224,18 +21169,6 @@ function numberIsNaN (obj) {
     return doDistinct(a.concat(b));
   };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./expression":123}],133:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var After, Contains, DT, DateTime, Equal, Equivalent, Except, Exception, Expression, IVL, In, IncludedIn, Includes, Indexer, Intersect, LIST, Length, NotEqual, ProperIncludedIn, ProperIncludes, STRING, SameAs, ThreeValuedLogic, Union, build, equals, equivalent, ref, typeIsArray,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-  Address = CORE.Address;
->>>>>>> A provider has a list of ids
-=======
   module.exports.doExcept = function(a, b) {
     var itm, j, len, results, setList;
     setList = doDistinct(a);
@@ -26248,7 +21181,6 @@ function numberIsNaN (obj) {
     }
     return results;
   };
->>>>>>> Add providers to patient
 
   module.exports.doIntersect = function(a, b) {
     var itm, j, len, results, setList;
@@ -26527,7 +21459,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":108,"../util/comparison":235,"../util/util":237,"./builder":116,"./expression":122}],129:[function(require,module,exports){
+},{"../datatypes/datatypes":104,"../util/comparison":231,"../util/util":233,"./builder":112,"./expression":118}],125:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var BooleanLiteral, DecimalLiteral, Expression, IntegerLiteral, Literal, StringLiteral,
@@ -26667,24 +21599,12 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/datetime":110,"../datatypes/exception":111,"../datatypes/logic":113,"../util/comparison":236,"../util/util":238,"./builder":117,"./datetime":121,"./expression":123,"./interval":127,"./list":129,"./string":139}],134:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Expression, ParameterDef, ParameterRef, build,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
->>>>>>> A provider has a list of ids
-=======
-},{"./expression":122}],130:[function(require,module,exports){
+},{"./expression":118}],126:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var And, Expression, IsFalse, IsTrue, Not, Or, ThreeValuedLogic, Xor,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
->>>>>>> Add providers to patient
 
   Expression = require('./expression').Expression;
 
@@ -26784,15 +21704,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./builder":117,"./expression":123}],135:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],137:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../datatypes/datatypes":108,"./expression":122}],131:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../datatypes/datatypes":104,"./expression":118}],127:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Coalesce, Expression, IsNull, Null,
@@ -26868,7 +21780,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":122}],132:[function(require,module,exports){
+},{"./expression":118}],128:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var After, Contains, DT, DateTime, Equal, Equivalent, Except, Exception, Expression, IVL, In, IncludedIn, Includes, Indexer, Intersect, LIST, Length, NotEqual, ProperIncludedIn, ProperIncludes, STRING, SameAs, ThreeValuedLogic, Union, build, equals, equivalent, ref, typeIsArray,
@@ -27153,44 +22065,7 @@ function numberIsNaN (obj) {
       return lib.doIncludes(container, contained, this.precision);
     };
 
-<<<<<<< HEAD
-    return Appointment;
-
-  })(DomainResource);
-
-  module.exports.Appointment = Appointment;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../datatypes/datatypes":109,"../datatypes/exception":111,"../util/math":237,"./builder":117,"./expression":123,"./reusable":138,"ucum":247}],136:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],138:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, AppointmentResponse, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-=======
     return Includes;
->>>>>>> Add providers to patient
 
   })(Expression);
 
@@ -27391,7 +22266,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datetime":109,"../datatypes/exception":110,"../datatypes/logic":112,"../util/comparison":235,"../util/util":237,"./builder":116,"./datetime":120,"./expression":122,"./interval":126,"./list":128,"./string":138}],133:[function(require,module,exports){
+},{"../datatypes/datetime":105,"../datatypes/exception":106,"../datatypes/logic":108,"../util/comparison":231,"../util/util":233,"./builder":112,"./datetime":116,"./expression":118,"./interval":122,"./list":124,"./string":134}],129:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, ParameterDef, ParameterRef, build,
@@ -27450,7 +22325,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":116,"./expression":122}],134:[function(require,module,exports){
+},{"./builder":112,"./expression":118}],130:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, Exception, Expression, FunctionRef, Quantity, ValueSet, build, clean_unit, coalesceToOne, convert_value, createQuantity, decimalAdjust, doScaledAddition, isValidDecimal, is_valid_ucum_unit, ref, ref1, ucum, ucum_multiply, ucum_time_units, ucum_to_cql_units, ucum_unit, unitValidityCache, units_to_string,
@@ -27474,18 +22349,6 @@ function numberIsNaN (obj) {
   module.exports.Quantity = Quantity = (function(superClass) {
     extend(Quantity, superClass);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../runtime/context":232,"../util/comparison":236,"../util/util":238,"./builder":117,"./expression":123}],137:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Exception, Expression, Quantity, Ratio, createRatio,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-  DomainResource = CORE.DomainResource;
->>>>>>> A provider has a list of ids
-=======
     function Quantity(json) {
       Quantity.__super__.constructor.apply(this, arguments);
       this.unit = json.unit;
@@ -27501,7 +22364,6 @@ function numberIsNaN (obj) {
         throw new Error("\'" + this.unit + "\' is not a valid UCUM unit.");
       }
     }
->>>>>>> Add providers to patient
 
     Object.defineProperties(Quantity.prototype, {
       isQuantity: {
@@ -27903,15 +22765,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/exception":111,"./expression":123,"./quantity":135}],138:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],140:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../datatypes/datatypes":108,"../datatypes/exception":110,"../util/math":236,"./builder":116,"./expression":122,"./reusable":137,"ucum":246}],135:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../datatypes/datatypes":104,"../datatypes/exception":106,"../util/math":232,"./builder":112,"./expression":118,"./reusable":133,"ucum":242}],131:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AliasRef, AliasedQuerySource, ByColumn, ByDirection, ByExpression, Context, Expression, LetClause, MultiSource, Query, QueryLetRef, ReturnClause, Sort, SortClause, UnimplementedExpression, With, Without, allTrue, build, equals, ref, ref1, toDistinctList, typeIsArray,
@@ -28044,19 +22898,6 @@ function numberIsNaN (obj) {
       this.high_order = this.low_order * -1;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./builder":117,"./expression":123}],139:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Combine, Concatenate, EndsWith, Expression, Lower, PositionOf, Split, SplitOnMatches, StartsWith, Substring, UnimplementedExpression, Upper, build, ref,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    Basic.prototype.subject = function() {
-      if (this.json['subject']) {
-        return new Reference(this.json['subject']);
-=======
     ByExpression.prototype.exec = function(ctx, a, b) {
       var a_val, b_val, sctx;
       sctx = ctx.childContext(a);
@@ -28069,10 +22910,8 @@ function numberIsNaN (obj) {
         return this.low_order;
       } else {
         return this.high_order;
->>>>>>> Add providers to patient
       }
     };
->>>>>>> A provider has a list of ids
 
     return ByExpression;
 
@@ -28319,7 +23158,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../runtime/context":231,"../util/comparison":235,"../util/util":237,"./builder":116,"./expression":122}],136:[function(require,module,exports){
+},{"../runtime/context":227,"../util/comparison":231,"../util/util":233,"./builder":112,"./expression":118}],132:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Exception, Expression, Quantity, Ratio, createRatio,
@@ -28407,15 +23246,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./builder":117,"./expression":123}],140:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],142:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../datatypes/exception":110,"./expression":122,"./quantity":134}],137:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../datatypes/exception":106,"./expression":118,"./quantity":130}],133:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, ExpressionDef, ExpressionRef, FunctionDef, FunctionRef, IdentifierRef, OperandRef, build,
@@ -28491,34 +23322,11 @@ function numberIsNaN (obj) {
   module.exports.FunctionRef = FunctionRef = (function(superClass) {
     extend(FunctionRef, superClass);
 
-<<<<<<< HEAD
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-<<<<<<< HEAD
-},{"./builder":117,"./expression":123}],141:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var As, Concept, Convert, ConvertsToBoolean, ConvertsToDate, ConvertsToDateTime, ConvertsToDecimal, ConvertsToInteger, ConvertsToQuantity, ConvertsToString, ConvertsToTime, Date, DateTime, Expression, FunctionRef, IntervalTypeSpecifier, Is, ListTypeSpecifier, NamedTypeSpecifier, ToBoolean, ToConcept, ToDate, ToDateTime, ToDecimal, ToInteger, ToQuantity, ToString, ToTime, TupleTypeSpecifier, UnimplementedExpression, isValidDecimal, isValidInteger, limitDecimalPrecision, normalizeMillisecondsField, parseQuantity, ref, ref1, ref2,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-  CodeableConcept = CORE.CodeableConcept;
->>>>>>> A provider has a list of ids
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-=======
     function FunctionRef(json) {
       FunctionRef.__super__.constructor.apply(this, arguments);
       this.name = json.name;
       this.library = json.libraryName;
     }
->>>>>>> Add providers to patient
 
     FunctionRef.prototype.exec = function(ctx) {
       var args, child_ctx, functionDef, i, j, len, p, ref, ref1, ref2;
@@ -28597,7 +23405,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":116,"./expression":122}],138:[function(require,module,exports){
+},{"./builder":112,"./expression":118}],134:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Combine, Concatenate, EndsWith, Expression, Lower, PositionOf, Split, SplitOnMatches, StartsWith, Substring, UnimplementedExpression, Upper, build, ref,
@@ -28838,7 +23646,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":116,"./expression":122}],139:[function(require,module,exports){
+},{"./builder":112,"./expression":118}],135:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Property, Tuple, TupleElement, TupleElementDefinition, UnimplementedExpression, build, ref,
@@ -28950,29 +23758,7 @@ function numberIsNaN (obj) {
       return TupleElementDefinition.__super__.constructor.apply(this, arguments);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return TupleTypeSpecifier;
-
-  })(UnimplementedExpression);
-
-}).call(this);
-
-
-
-},{"../datatypes/clinical":108,"../datatypes/datetime":110,"../util/math":237,"../util/util":238,"./expression":123,"./quantity":135,"./reusable":138}],142:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Alert, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-=======
->>>>>>> A provider has a list of ids
-=======
     return TupleElementDefinition;
->>>>>>> Add providers to patient
 
   })(UnimplementedExpression);
 
@@ -28980,7 +23766,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":116,"./expression":122}],140:[function(require,module,exports){
+},{"./builder":112,"./expression":118}],136:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var As, Concept, Convert, ConvertsToBoolean, ConvertsToDate, ConvertsToDateTime, ConvertsToDecimal, ConvertsToInteger, ConvertsToQuantity, ConvertsToString, ConvertsToTime, Date, DateTime, Expression, FunctionRef, IntervalTypeSpecifier, Is, ListTypeSpecifier, NamedTypeSpecifier, ToBoolean, ToConcept, ToDate, ToDateTime, ToDecimal, ToInteger, ToQuantity, ToString, ToTime, TupleTypeSpecifier, UnimplementedExpression, isValidDecimal, isValidInteger, limitDecimalPrecision, normalizeMillisecondsField, parseQuantity, ref, ref1, ref2,
@@ -29111,49 +23897,7 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return Alert;
-
-  })(DomainResource);
-
-  module.exports.Alert = Alert;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],143:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, AllergyIntolerance, AllergyIntoleranceEventComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-=======
->>>>>>> A provider has a list of ids
-=======
     return ToDateTime;
->>>>>>> Add providers to patient
 
   })(Expression);
 
@@ -29516,15 +24260,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],144:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],144:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../datatypes/clinical":107,"../datatypes/datetime":109,"../util/math":236,"../util/util":237,"./expression":122,"./quantity":134,"./reusable":137}],141:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../datatypes/clinical":103,"../datatypes/datetime":105,"../util/math":232,"../util/util":233,"./expression":118,"./quantity":130,"./reusable":133}],137:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Alert, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29683,7 +24419,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],142:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],138:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AllergyIntolerance, AllergyIntoleranceEventComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29864,20 +24600,7 @@ function numberIsNaN (obj) {
       return this.json['comment'];
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],145:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, AppointmentResponse, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    return ItemsComponent;
->>>>>>> A provider has a list of ids
-=======
     return AllergyIntoleranceEventComponent;
->>>>>>> Add providers to patient
 
   })(BackboneElement);
 
@@ -30054,7 +24777,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],143:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],139:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Appointment, AppointmentParticipantComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -30128,15 +24851,6 @@ function numberIsNaN (obj) {
       AppointmentParticipantComponent.__super__.constructor.call(this, this.json);
     }
 
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],146:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, Availability, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
->>>>>>> A provider has a list of ids
 
     /**
     Role of participant in the appointment.
@@ -30298,26 +25012,11 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link Date} objects
      */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],147:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, Basic, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    ClaimResponse.prototype.requestOrganization = function() {
-      if (this.json['requestOrganization']) {
-        return new Reference(this.json['requestOrganization']);
-=======
     Appointment.prototype.end = function() {
       if (this.json['end']) {
         return DT.DateTime.parse(this.json['end']);
->>>>>>> Add providers to patient
       }
     };
->>>>>>> A provider has a list of ids
 
 
     /**
@@ -30425,7 +25124,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],144:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],140:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AppointmentResponse, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -30549,14 +25248,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return Basic;
-
-  })(DomainResource);
-
-  module.exports.Basic = Basic;
-=======
 
     /**
     A Person of device that is participating in the appointment, usually Practitioner, Patient, RelatedPerson or Device.
@@ -30649,168 +25340,15 @@ function numberIsNaN (obj) {
   })(DomainResource);
 
   module.exports.AppointmentResponse = AppointmentResponse;
->>>>>>> Add providers to patient
 
 }).call(this);
 
 
 
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],148:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, Binary, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-=======
->>>>>>> A provider has a list of ids
-
-    /**
-    Reason for the payment adjustment.
-    @returns {Coding}
-     */
-
-    ClaimResponse.prototype.paymentAdjustmentReason = function() {
-      if (this.json['paymentAdjustmentReason']) {
-        return new Coding(this.json['paymentAdjustmentReason']);
-      }
-    };
-
-
-    /**
-    Estimated payment data.
-    @returns {Array} an array of {@link Date} objects
-     */
-
-    ClaimResponse.prototype.paymentDate = function() {
-      if (this.json['paymentDate']) {
-        return DT.DateTime.parse(this.json['paymentDate']);
-      }
-    };
-
-
-    /**
-    Payable less any payment adjustment.
-    @returns {Money}
-     */
-
-    ClaimResponse.prototype.paymentAmount = function() {
-      if (this.json['paymentAmount']) {
-        return new Money(this.json['paymentAmount']);
-      }
-    };
-
-
-    /**
-    Payment identifer.
-    @returns {Identifier}
-     */
-
-    ClaimResponse.prototype.paymentRef = function() {
-      if (this.json['paymentRef']) {
-        return new Identifier(this.json['paymentRef']);
-      }
-    };
-
-
-    /**
-    Status of funds reservation (For provider, for Patient, None).
-    @returns {Coding}
-     */
-
-    ClaimResponse.prototype.reserved = function() {
-      if (this.json['reserved']) {
-        return new Coding(this.json['reserved']);
-      }
-    };
-
-
-    /**
-    The form to be used for printing the content.
-    @returns {Coding}
-     */
-
-    ClaimResponse.prototype.form = function() {
-      if (this.json['form']) {
-        return new Coding(this.json['form']);
-      }
-    };
-
-
-    /**
-    Note text.
-    @returns {Array} an array of {@link NotesComponent} objects
-     */
-
-    ClaimResponse.prototype.note = function() {
-      var i, item, len, ref, results;
-      if (this.json['note']) {
-        ref = this.json['note'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new NotesComponent(item));
-        }
-        return results;
-      }
-    };
-
-    return ClaimResponse;
-
-  })(DomainResource);
-
-  module.exports.ClaimResponse = ClaimResponse;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],149:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],145:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, CommunicationRequest, CommunicationRequestMessagePartComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-=======
-},{"../cql-datatypes":104,"./core":158}],145:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],141:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, Availability, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
->>>>>>> Add providers to patient
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
@@ -30975,7 +25513,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],146:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],142:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Basic, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -31126,15 +25664,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],150:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],146:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],147:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],143:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Binary, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -31238,7 +25768,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],148:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],144:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Bundle, BundleEntryComponent, BundleEntryDeletedComponent, BundleLinkComponent, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -31586,15 +26116,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],151:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],147:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],149:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],145:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CarePlan, CarePlanActivityComponent, CarePlanActivitySimpleComponent, CarePlanGoalComponent, CarePlanParticipantComponent, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -32194,7 +26716,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],150:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],146:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AddedItemAdjudicationComponent, AddedItemComponent, AddedItemDetailAdjudicationComponent, AddedItemsDetailComponent, Address, Attachment, BackboneElement, CORE, ClaimResponse, CodeableConcept, Coding, ContactPoint, DT, DetailAdjudicationComponent, DomainResource, Element, ElementDefinition, ErrorsComponent, Extension, HumanName, Identifier, ItemAdjudicationComponent, ItemDetailComponent, ItemSubdetailComponent, ItemsComponent, Narrative, NotesComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SubdetailAdjudicationComponent, Timing,
@@ -32874,107 +27396,11 @@ function numberIsNaN (obj) {
   })(BackboneElement);
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-    Payment identifer.
-    @returns {Identifier}
-     */
-
-    ClaimResponse.prototype.paymentRef = function() {
-      if (this.json['paymentRef']) {
-        return new Identifier(this.json['paymentRef']);
-      }
-    };
-
-
-    /**
-    Status of funds reservation (For provider, for Patient, None).
-    @returns {Coding}
-     */
-
-    ClaimResponse.prototype.reserved = function() {
-      if (this.json['reserved']) {
-        return new Coding(this.json['reserved']);
-      }
-    };
-
-
-    /**
-    The form to be used for printing the content.
-    @returns {Coding}
-     */
-
-    ClaimResponse.prototype.form = function() {
-      if (this.json['form']) {
-        return new Coding(this.json['form']);
-      }
-    };
-
-
-    /**
-    Note text.
-    @returns {Array} an array of {@link NotesComponent} objects
-     */
-
-    ClaimResponse.prototype.note = function() {
-      var i, item, len, ref, results;
-      if (this.json['note']) {
-        ref = this.json['note'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new NotesComponent(item));
-        }
-        return results;
-      }
-    };
-
-    return ClaimResponse;
-
-  })(DomainResource);
-
-  module.exports.ClaimResponse = ClaimResponse;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],152:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, CommunicationRequest, CommunicationRequestMessagePartComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-=======
->>>>>>> A provider has a list of ids
-  Range = CORE.Range;
-=======
   /** 
   Embedded class
   @class ErrorsComponent
   @exports  ErrorsComponent as ErrorsComponent
    */
->>>>>>> Add providers to patient
 
   ErrorsComponent = (function(superClass) {
     extend(ErrorsComponent, superClass);
@@ -33275,18 +27701,6 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link ErrorsComponent} objects
      */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],153:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Composition, CompositionAttesterComponent, CompositionEventComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SectionComponent, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    ResourceInteractionComponent.prototype.documentation = function() {
-      return this.json['documentation'];
-=======
     ClaimResponse.prototype.error = function() {
       var i, item, len, ref, results;
       if (this.json['error']) {
@@ -33298,9 +27712,7 @@ function numberIsNaN (obj) {
         }
         return results;
       }
->>>>>>> Add providers to patient
     };
->>>>>>> A provider has a list of ids
 
 
     /**
@@ -33451,7 +27863,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],151:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],147:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, CommunicationRequest, CommunicationRequestMessagePartComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -33771,26 +28183,11 @@ function numberIsNaN (obj) {
     @returns {Reference}
      */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],154:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptMap, ConceptMapElementComponent, ConceptMapElementMapComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OtherElementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    ConformanceMessagingEventComponent.prototype.request = function() {
-      if (this.json['request']) {
-        return new Reference(this.json['request']);
-=======
     CommunicationRequest.prototype.subject = function() {
       if (this.json['subject']) {
         return new Reference(this.json['subject']);
->>>>>>> Add providers to patient
       }
     };
->>>>>>> A provider has a list of ids
 
 
     /**
@@ -33814,7 +28211,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],152:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],148:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Composition, CompositionAttesterComponent, CompositionEventComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SectionComponent, Timing,
@@ -34284,15 +28681,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],155:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],150:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],153:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],149:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptMap, ConceptMapElementComponent, ConceptMapElementMapComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OtherElementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -34754,15 +29143,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],156:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],151:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],154:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],150:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Condition, ConditionDueToComponent, ConditionEvidenceComponent, ConditionLocationComponent, ConditionOccurredFollowingComponent, ConditionStageComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -35338,7 +29719,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],155:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],151:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Conformance, ConformanceDocumentComponent, ConformanceImplementationComponent, ConformanceMessagingComponent, ConformanceMessagingEventComponent, ConformanceRestComponent, ConformanceRestOperationComponent, ConformanceRestResourceComponent, ConformanceRestResourceSearchParamComponent, ConformanceRestSecurityCertificateComponent, ConformanceRestSecurityComponent, ConformanceSoftwareComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, ResourceInteractionComponent, SampledData, SystemInteractionComponent, Timing,
@@ -35986,37 +30367,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return ElementDefinitionSlicingComponent;
-
-  })(Element);
-
-
-  /** 
-  Embedded class
-  @class TypeRefComponent
-  @exports  TypeRefComponent as TypeRefComponent
-   */
-
-  TypeRefComponent = (function(superClass) {
-    extend(TypeRefComponent, superClass);
-
-    function TypeRefComponent(json) {
-      this.json = json;
-      TypeRefComponent.__super__.constructor.call(this, this.json);
-    }
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],157:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contract, ContractSignerComponent, ContractTermComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
->>>>>>> A provider has a list of ids
-=======
->>>>>>> Add providers to patient
 
     /**
     A specification of restful operations supported by the system.
@@ -36558,7 +30908,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],156:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],152:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contract, ContractSignerComponent, ContractTermComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -36579,59 +30929,7 @@ function numberIsNaN (obj) {
 
   Parameters = CORE.Parameters;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],158:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contraindication, ContraindicationMitigationComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
   Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-=======
-    ElementDefinition.prototype.mapping = function() {
-      var i, item, len, ref, results;
-      if (this.json['mapping']) {
-        ref = this.json['mapping'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new ElementDefinitionMappingComponent(item));
-        }
-        return results;
-      }
-    };
->>>>>>> A provider has a list of ids
-=======
-  Coding = CORE.Coding;
->>>>>>> Add providers to patient
 
   Resource = CORE.Resource;
 
@@ -36939,39 +31237,6 @@ function numberIsNaN (obj) {
       return this.json['points'];
     };
 
-<<<<<<< HEAD
-    return Address;
-
-  })(Element);
-
-  module.exports.Address = Address;
-
-
-  /**
-  A human's name with the ability to identify parts and usage.
-  @class HumanName
-  @exports HumanName as HumanName
-   */
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],159:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, Base, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ElementDefinitionBindingComponent, ElementDefinitionConstraintComponent, ElementDefinitionMappingComponent, ElementDefinitionSlicingComponent, Extension, HumanName, Identifier, Narrative, Parameters, ParametersParameterComponent, Period, Quantity, Range, Ratio, Reference, Resource, ResourceMetaComponent, SampledData, Timing, TimingRepeatComponent, TypeRefComponent,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-  HumanName = (function(superClass) {
-    extend(HumanName, superClass);
->>>>>>> A provider has a list of ids
-
-    function HumanName(json) {
-      this.json = json;
-      HumanName.__super__.constructor.call(this, this.json);
-    }
-
-=======
->>>>>>> Add providers to patient
 
     /**
     The quantity times the unit price for an addtional service or product or charge. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points = net Amount. Quantity, factor and points are assumed to be 1 if not supplied.
@@ -37182,7 +31447,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],157:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],153:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contraindication, ContraindicationMitigationComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -37449,7 +31714,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],158:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],154:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Base, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ElementDefinitionBindingComponent, ElementDefinitionConstraintComponent, ElementDefinitionMappingComponent, ElementDefinitionSlicingComponent, Extension, HumanName, Identifier, Narrative, Parameters, ParametersParameterComponent, Period, Quantity, Range, Ratio, Reference, Resource, ResourceMetaComponent, SampledData, Timing, TimingRepeatComponent, TypeRefComponent,
@@ -38936,87 +33201,6 @@ function numberIsNaN (obj) {
       return this.json['when'];
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  /**
-  This special resource type is used to represent [operation](operations.html] request and response. It has no other use, and there is no RESTful end=point associated with it.
-  @class Parameters
-  @exports Parameters as Parameters
-   */
-
-  Parameters = (function(superClass) {
-    extend(Parameters, superClass);
-
-    function Parameters(json) {
-      this.json = json;
-      Parameters.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    A parameter passed to or received from the operation.
-    @returns {Array} an array of {@link ParametersParameterComponent} objects
-     */
-
-    Parameters.prototype.parameter = function() {
-      var i, item, len, ref, results;
-      if (this.json['parameter']) {
-        ref = this.json['parameter'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new ParametersParameterComponent(item));
-        }
-        return results;
-      }
-    };
-
-    return Parameters;
-
-  })(Resource);
-
-  module.exports.Parameters = Parameters;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105}],160:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Coverage, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-=======
->>>>>>> A provider has a list of ids
-  BackboneElement = CORE.BackboneElement;
-=======
->>>>>>> Add providers to patient
 
     /**
     How long each repetition should last.
@@ -39220,24 +33404,11 @@ function numberIsNaN (obj) {
   module.exports.Address = Address;
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],161:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],159:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticOrder, DiagnosticOrderEventComponent, DiagnosticOrderItemComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
   /**
   A human's name with the ability to identify parts and usage.
   @class HumanName
   @exports HumanName as HumanName
    */
->>>>>>> Add providers to patient
 
   HumanName = (function(superClass) {
     extend(HumanName, superClass);
@@ -39730,87 +33901,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-    An sample value for this element demonstrating the type of information that would typically be captured.
-    @returns {Array} an array of {@link } objects
-     */
-
-    DataElement.prototype.example = function() {
-      return this.json['example'];
-    };
-
-
-    /**
-    Indicates the shortest length that SHALL be supported by conformant instances without truncation.
-    @returns {Array} an array of {@link Number} objects
-     */
-
-    DataElement.prototype.maxLength = function() {
-      return this.json['maxLength'];
-    };
-
-
-    /**
-    Identifies the units of measure in which the data element should be captured or expressed.
-    @returns {CodeableConcept}
-     */
-
-    DataElement.prototype.units = function() {
-      if (this.json['units']) {
-        return new CodeableConcept(this.json['units']);
-      }
-    };
-
-
-    /**
-    Binds to a value set if this element is coded (code, Coding, CodeableConcept).
-    @returns {DataElementBindingComponent}
-     */
-
-    DataElement.prototype.binding = function() {
-      if (this.json['binding']) {
-        return new DataElementBindingComponent(this.json['binding']);
-      }
-    };
-
-
-    /**
-    Identifies a concept from an external specification that roughly corresponds to this element.
-    @returns {Array} an array of {@link DataElementMappingComponent} objects
-     */
-
-    DataElement.prototype.mapping = function() {
-      var i, item, len, ref, results;
-      if (this.json['mapping']) {
-        ref = this.json['mapping'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new DataElementMappingComponent(item));
-        }
-        return results;
-      }
-    };
-
-    return DataElement;
-
-  })(DomainResource);
-
-  module.exports.DataElement = DataElement;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],162:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],160:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104}],159:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100}],155:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Coverage, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39981,164 +34072,8 @@ function numberIsNaN (obj) {
 
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-    A network address on which the device may be contacted directly.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    Device.prototype.url = function() {
-      return this.json['url'];
-    };
-
-    return Device;
-
-  })(DomainResource);
-
-  module.exports.Device = Device;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],163:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceComponent, DeviceComponentProductionSpecificationComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-
-  Extension = CORE.Extension;
-
-  HumanName = CORE.HumanName;
-
-  Address = CORE.Address;
-
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-  CodeableConcept = CORE.CodeableConcept;
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-
-  Element = CORE.Element;
-
-
-  /** 
-  Embedded class
-  @class DeviceComponentProductionSpecificationComponent
-  @exports  DeviceComponentProductionSpecificationComponent as DeviceComponentProductionSpecificationComponent
-   */
-
-  DeviceComponentProductionSpecificationComponent = (function(superClass) {
-    extend(DeviceComponentProductionSpecificationComponent, superClass);
-
-    function DeviceComponentProductionSpecificationComponent(json) {
-      this.json = json;
-      DeviceComponentProductionSpecificationComponent.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    Describes the specification type, such as, serial number, part number, hardware revision, software revision, etc.
-    @returns {CodeableConcept}
-     */
-
-    DeviceComponentProductionSpecificationComponent.prototype.specType = function() {
-      if (this.json['specType']) {
-        return new CodeableConcept(this.json['specType']);
-      }
-    };
-
-
-    /**
-    Describes the internal component unique identification. This is a provision for manufacture specific standard components using a private OID. 11073-10101 has a partition for private OID semantic that the manufacture can make use of.
-    @returns {Identifier}
-     */
-
-    DeviceComponentProductionSpecificationComponent.prototype.componentId = function() {
-      if (this.json['componentId']) {
-        return new Identifier(this.json['componentId']);
-      }
-    };
-
-
-    /**
-    Describes the printable string defining the component.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    DeviceComponentProductionSpecificationComponent.prototype.productionSpec = function() {
-      return this.json['productionSpec'];
-    };
-
-    return DeviceComponentProductionSpecificationComponent;
-
-  })(BackboneElement);
-
-
-  /**
-  Describes the characteristics, operational status and capabilities of a medical-related component of a medical device.
-  @class DeviceComponent
-  @exports DeviceComponent as DeviceComponent
-   */
-
-  DeviceComponent = (function(superClass) {
-    extend(DeviceComponent, superClass);
-
-    function DeviceComponent(json) {
-      this.json = json;
-      DeviceComponent.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    Describes the specific component type as defined in the object-oriented or metric nomenclature partition.
-=======
-    The section of the diagnostic service that performs the examination e.g. biochemistry, hematology, MRI.
->>>>>>> A provider has a list of ids
-    @returns {CodeableConcept}
-=======
     An optional counter for a particular instance of the identified coverage which increments upon each renewal.
     @returns {Array} an array of {@link Number} objects
->>>>>>> Add providers to patient
      */
 
     Coverage.prototype.sequence = function() {
@@ -40198,7 +34133,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],160:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],156:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DataElement, DataElementBindingComponent, DataElementMappingComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40298,22 +34233,9 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link String} objects
      */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],164:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],161:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentManifest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
     DataElementBindingComponent.prototype.description = function() {
       return this.json['description'];
     };
->>>>>>> Add providers to patient
 
 
     /**
@@ -40669,15 +34591,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],165:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],162:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],161:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],157:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, Device, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40919,7 +34833,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],162:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],158:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceComponent, DeviceComponentProductionSpecificationComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40964,31 +34878,7 @@ function numberIsNaN (obj) {
 
   Address = CORE.Address;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],166:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticOrder, DiagnosticOrderEventComponent, DiagnosticOrderItemComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
-    DocumentReference.prototype.author = function() {
-      var i, item, len, ref, results;
-      if (this.json['author']) {
-        ref = this.json['author'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Reference(item));
-        }
-        return results;
-      }
-    };
->>>>>>> A provider has a list of ids
-=======
   Ratio = CORE.Ratio;
->>>>>>> Add providers to patient
 
   SampledData = CORE.SampledData;
 
@@ -41212,15 +35102,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],167:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],163:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],163:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],159:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceUseRequest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41516,7 +35398,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],164:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],160:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceUseStatement, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41537,158 +35419,6 @@ function numberIsNaN (obj) {
 
   Parameters = CORE.Parameters;
 
-<<<<<<< HEAD
-    DiagnosticReport.prototype.specimen = function() {
-      var i, item, len, ref, results;
-      if (this.json['specimen']) {
-        ref = this.json['specimen'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Reference(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    Observations that are part of this diagnostic report. Observations can be simple name/value pairs (e.g. "atomic" results), or they can be grouping observations that include references to other members of the group (e.g. "panels").
-    @returns {Array} an array of {@link Reference} objects
-     */
-
-    DiagnosticReport.prototype.result = function() {
-      var i, item, len, ref, results;
-      if (this.json['result']) {
-        ref = this.json['result'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Reference(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    One or more links to full details of any imaging performed during the diagnostic investigation. Typically, this is imaging performed by DICOM enabled modalities, but this is not required. A fully enabled PACS viewer can use this information to provide views of the source images.
-    @returns {Array} an array of {@link Reference} objects
-     */
-
-    DiagnosticReport.prototype.imagingStudy = function() {
-      var i, item, len, ref, results;
-      if (this.json['imagingStudy']) {
-        ref = this.json['imagingStudy'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Reference(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    A list of key images associated with this report. The images are generally created during the diagnostic process, and may be directly of the patient, or of treated specimens (i.e. slides of interest).
-    @returns {Array} an array of {@link DiagnosticReportImageComponent} objects
-     */
-
-    DiagnosticReport.prototype.image = function() {
-      var i, item, len, ref, results;
-      if (this.json['image']) {
-        ref = this.json['image'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new DiagnosticReportImageComponent(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    Concise and clinically contextualized narrative interpretation of the diagnostic report.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    DiagnosticReport.prototype.conclusion = function() {
-      return this.json['conclusion'];
-    };
-
-
-    /**
-    Codes for the conclusion.
-    @returns {Array} an array of {@link CodeableConcept} objects
-     */
-
-    DiagnosticReport.prototype.codedDiagnosis = function() {
-      var i, item, len, ref, results;
-      if (this.json['codedDiagnosis']) {
-        ref = this.json['codedDiagnosis'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new CodeableConcept(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.
-    @returns {Array} an array of {@link Attachment} objects
-     */
-
-    DiagnosticReport.prototype.presentedForm = function() {
-      var i, item, len, ref, results;
-      if (this.json['presentedForm']) {
-        ref = this.json['presentedForm'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Attachment(item));
-        }
-        return results;
-      }
-    };
-
-    return DiagnosticReport;
-
-  })(DomainResource);
-
-  module.exports.DiagnosticReport = DiagnosticReport;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],168:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentManifest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-=======
->>>>>>> A provider has a list of ids
   Coding = CORE.Coding;
 
   Resource = CORE.Resource;
@@ -41903,15 +35633,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],169:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],165:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],165:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],161:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticOrder, DiagnosticOrderEventComponent, DiagnosticOrderItemComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42312,7 +36034,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],166:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],162:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticReport, DiagnosticReportImageComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42686,15 +36408,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],170:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],166:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],167:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],163:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentManifest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42963,15 +36677,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],171:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],167:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],168:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],164:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentReference, DocumentReferenceContextComponent, DocumentReferenceRelatesToComponent, DocumentReferenceServiceComponent, DocumentReferenceServiceParameterComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -43166,50 +36872,7 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return EnrollmentResponse;
-
-  })(DomainResource);
-
-  module.exports.EnrollmentResponse = EnrollmentResponse;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],172:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],168:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ExplanationOfBenefit, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-=======
     return DocumentReferenceServiceComponent;
->>>>>>> Add providers to patient
 
   })(BackboneElement);
 
@@ -43598,7 +37261,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],169:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],165:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Eligibility, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -43773,15 +37436,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],173:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],170:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],170:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],166:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EligibilityResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -43968,171 +37623,7 @@ function numberIsNaN (obj) {
 
 
     /**
-<<<<<<< HEAD
-    The actual or approximate date of birth of the relative.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    FamilyHistoryRelationComponent.prototype.bornString = function() {
-      return this.json['bornString'];
-    };
-
-    FamilyHistoryRelationComponent.prototype.ageAge = function() {
-      return new Quantity(this.json['ageAge']);
-    };
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],174:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EnrollmentResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
->>>>>>> A provider has a list of ids
-
-    /**
-    The actual or approximate age of the relative at the time the family history is recorded.
-    @returns {Range}
-     */
-
-    FamilyHistoryRelationComponent.prototype.ageRange = function() {
-      if (this.json['ageRange']) {
-        return new Range(this.json['ageRange']);
-      }
-    };
-
-
-    /**
-    The actual or approximate age of the relative at the time the family history is recorded.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    FamilyHistoryRelationComponent.prototype.ageString = function() {
-      return this.json['ageString'];
-    };
-
-
-    /**
-    If this resource is indicating that the related person is deceased, then an indicator of whether the person is deceased (yes) or not (no) or the age or age range or description of age at death - can be indicated here. If the reason for death is known, then it can be indicated in the outcome code of the condition - in this case the deceased property should still be set.
-    @returns {Array} an array of {@link boolean} objects
-     */
-
-    FamilyHistoryRelationComponent.prototype.deceasedBoolean = function() {
-      return this.json['deceasedBoolean'];
-    };
-
-    FamilyHistoryRelationComponent.prototype.deceasedAge = function() {
-      return new Quantity(this.json['deceasedAge']);
-    };
-
-
-    /**
-    If this resource is indicating that the related person is deceased, then an indicator of whether the person is deceased (yes) or not (no) or the age or age range or description of age at death - can be indicated here. If the reason for death is known, then it can be indicated in the outcome code of the condition - in this case the deceased property should still be set.
-    @returns {Range}
-     */
-
-    FamilyHistoryRelationComponent.prototype.deceasedRange = function() {
-      if (this.json['deceasedRange']) {
-        return new Range(this.json['deceasedRange']);
-      }
-    };
-
-
-    /**
-    If this resource is indicating that the related person is deceased, then an indicator of whether the person is deceased (yes) or not (no) or the age or age range or description of age at death - can be indicated here. If the reason for death is known, then it can be indicated in the outcome code of the condition - in this case the deceased property should still be set.
-    @returns {Array} an array of {@link Date} objects
-     */
-
-    FamilyHistoryRelationComponent.prototype.deceasedDate = function() {
-      if (this.json['deceasedDate']) {
-        return DT.DateTime.parse(this.json['deceasedDate']);
-      }
-    };
-
-
-    /**
-    If this resource is indicating that the related person is deceased, then an indicator of whether the person is deceased (yes) or not (no) or the age or age range or description of age at death - can be indicated here. If the reason for death is known, then it can be indicated in the outcome code of the condition - in this case the deceased property should still be set.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    FamilyHistoryRelationComponent.prototype.deceasedString = function() {
-      return this.json['deceasedString'];
-    };
-
-
-    /**
-    This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    FamilyHistoryRelationComponent.prototype.note = function() {
-      return this.json['note'];
-    };
-
-
-    /**
-    The significant Conditions (or condition) that the family member had. This is a repeating section to allow a system to represent more than one condition per resource, though there is nothing stopping multiple resources - one per condition.
-    @returns {Array} an array of {@link FamilyHistoryRelationConditionComponent} objects
-     */
-
-    FamilyHistoryRelationComponent.prototype.condition = function() {
-      var i, item, len, ref, results;
-      if (this.json['condition']) {
-        ref = this.json['condition'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new FamilyHistoryRelationConditionComponent(item));
-        }
-        return results;
-      }
-    };
-
-    return FamilyHistoryRelationComponent;
-
-  })(BackboneElement);
-
-
-  /**
-  Significant health events and conditions for people related to the subject relevant in the context of care for the subject.
-  @class FamilyHistory
-  @exports FamilyHistory as FamilyHistory
-   */
-
-  FamilyHistory = (function(superClass) {
-    extend(FamilyHistory, superClass);
-
-    function FamilyHistory(json) {
-      this.json = json;
-      FamilyHistory.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    This records identifiers associated with this family history record that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).
-    @returns {Array} an array of {@link Identifier} objects
-     */
-
-    FamilyHistory.prototype.identifier = function() {
-      var i, item, len, ref, results;
-      if (this.json['identifier']) {
-        ref = this.json['identifier'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Identifier(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    The person who this history concerns.
-=======
     The organization which is responsible for the services rendered to the patient.
->>>>>>> Add providers to patient
     @returns {Reference}
      */
 
@@ -44152,15 +37643,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],175:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],171:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],171:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],167:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Encounter, EncounterHospitalizationAccomodationComponent, EncounterHospitalizationComponent, EncounterLocationComponent, EncounterParticipantComponent, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -44406,15 +37889,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],176:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, ExtensionDefinition, ExtensionDefinitionMappingComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
->>>>>>> A provider has a list of ids
 
     /**
     Special courtesies (VIP, board member).
@@ -44619,75 +38093,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return ExtensionDefinition;
-
-  })(DomainResource);
-
-  module.exports.ExtensionDefinition = ExtensionDefinition;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],177:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, FamilyHistory, FamilyHistoryRelationComponent, FamilyHistoryRelationConditionComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-
-  Extension = CORE.Extension;
-
-  HumanName = CORE.HumanName;
-
-  Address = CORE.Address;
-
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-  CodeableConcept = CORE.CodeableConcept;
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-=======
->>>>>>> A provider has a list of ids
 
     /**
     The patient present at the encounter.
@@ -44856,15 +38261,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],178:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],173:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],172:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],168:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Enrollment, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45075,7 +38472,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],173:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],169:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EnrollmentResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45282,15 +38679,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],179:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],174:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],174:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],170:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ExplanationOfBenefit, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45497,7 +38886,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],175:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],171:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, ExtensionDefinition, ExtensionDefinitionMappingComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45847,15 +39236,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],180:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],175:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],176:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],172:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, FamilyHistory, FamilyHistoryRelationComponent, FamilyHistoryRelationConditionComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46268,15 +39649,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],181:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],176:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],177:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],173:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, Group, GroupCharacteristicComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46549,15 +39922,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],182:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],177:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],178:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],174:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HealthcareService, HealthcareServiceAvailableTimeComponent, HealthcareServiceNotAvailableTimeComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, ServiceTypeComponent, Timing,
@@ -47184,15 +40549,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],183:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],179:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],179:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],175:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImagingObjectSelection, InstanceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SeriesComponent, StudyComponent, Timing,
@@ -47570,15 +40927,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],184:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],180:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],180:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],176:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImagingStudy, ImagingStudySeriesComponent, ImagingStudySeriesInstanceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -47862,80 +41211,7 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return Medication;
-
-  })(DomainResource);
-
-  module.exports.Medication = Medication;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],185:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],181:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationAdministration, MedicationAdministrationDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-
-  Extension = CORE.Extension;
-
-  HumanName = CORE.HumanName;
-
-  Address = CORE.Address;
-
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-  CodeableConcept = CORE.CodeableConcept;
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-=======
     return ImagingStudySeriesComponent;
->>>>>>> Add providers to patient
 
   })(BackboneElement);
 
@@ -48002,156 +41278,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return MedicationAdministrationDosageComponent;
-
-<<<<<<< HEAD
-    /**
-    The absolute geographic location of the Location, expressed in a KML compatible manner (see notes below for KML).
-    @returns {LocationPositionComponent}
-     */
-
-    Location.prototype.position = function() {
-      if (this.json['position']) {
-        return new LocationPositionComponent(this.json['position']);
-      }
-    };
-
-
-    /**
-    The organization that is responsible for the provisioning and upkeep of the location.
-    @returns {Reference}
-     */
-
-    Location.prototype.managingOrganization = function() {
-      if (this.json['managingOrganization']) {
-        return new Reference(this.json['managingOrganization']);
-      }
-    };
-
-
-    /**
-    active | suspended | inactive.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    Location.prototype.status = function() {
-      return this.json['status'];
-    };
-
-
-    /**
-    Another Location which this Location is physically part of.
-    @returns {Reference}
-     */
-
-    Location.prototype.partOf = function() {
-      if (this.json['partOf']) {
-        return new Reference(this.json['partOf']);
-      }
-    };
-
-
-    /**
-    Indicates whether a resource instance represents a specific location or a class of locations.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    Location.prototype.mode = function() {
-      return this.json['mode'];
-    };
-
-    return Location;
-
-  })(DomainResource);
-
-  module.exports.Location = Location;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],186:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Media, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-
-  Extension = CORE.Extension;
-
-  HumanName = CORE.HumanName;
-
-  Address = CORE.Address;
-
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-  CodeableConcept = CORE.CodeableConcept;
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-
-  Element = CORE.Element;
-=======
-  })(BackboneElement);
->>>>>>> A provider has a list of ids
-
-
-  /**
-  Describes the event of a patient being given a dose of a medication.  This may be as simple as swallowing a tablet or it may be a long running infusion.
-  
-  Related resources tie this event to the authorizing prescription, and the specific encounter between patient and health care practitioner.
-  @class MedicationAdministration
-  @exports MedicationAdministration as MedicationAdministration
-   */
-
-  MedicationAdministration = (function(superClass) {
-    extend(MedicationAdministration, superClass);
-
-    function MedicationAdministration(json) {
-      this.json = json;
-      MedicationAdministration.__super__.constructor.call(this, this.json);
-    }
-
-=======
->>>>>>> Add providers to patient
 
     /**
     Other identifiers for the study.
@@ -48332,15 +41458,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],187:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],182:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],181:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],177:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Immunization, ImmunizationExplanationComponent, ImmunizationReactionComponent, ImmunizationVaccinationProtocolComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -48686,93 +41804,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return Medication;
-
-  })(DomainResource);
-
-  module.exports.Medication = Medication;
-
-}).call(this);
-
-
-
-},{"../cql-datatypes":105,"./core":159}],188:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationAdministration, MedicationAdministrationDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-
-  Extension = CORE.Extension;
-
-  HumanName = CORE.HumanName;
-
-  Address = CORE.Address;
-
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-  CodeableConcept = CORE.CodeableConcept;
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-
-  Element = CORE.Element;
-
-
-  /** 
-  Embedded class
-  @class MedicationAdministrationDosageComponent
-  @exports  MedicationAdministrationDosageComponent as MedicationAdministrationDosageComponent
-   */
-
-  MedicationAdministrationDosageComponent = (function(superClass) {
-    extend(MedicationAdministrationDosageComponent, superClass);
-
-    function MedicationAdministrationDosageComponent(json) {
-      this.json = json;
-      MedicationAdministrationDosageComponent.__super__.constructor.call(this, this.json);
-    }
-
-=======
->>>>>>> A provider has a list of ids
 
     /**
     Indicates if the vaccination was refused.
@@ -48959,15 +41990,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],189:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],183:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],182:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],178:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImmunizationRecommendation, ImmunizationRecommendationRecommendationComponent, ImmunizationRecommendationRecommendationDateCriterionComponent, ImmunizationRecommendationRecommendationProtocolComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -49339,15 +42362,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],190:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],184:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],183:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],179:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, List, ListEntryComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -49601,264 +42616,6 @@ function numberIsNaN (obj) {
 
 
     /**
-<<<<<<< HEAD
-    The person or animal who is /was taking the medication.
-    @returns {Reference}
-     */
-
-    MedicationStatement.prototype.patient = function() {
-      if (this.json['patient']) {
-        return new Reference(this.json['patient']);
-      }
-    };
-
-
-    /**
-    Set this to true if the record is saying that the medication was NOT taken.
-    @returns {Array} an array of {@link boolean} objects
-     */
-
-    MedicationStatement.prototype.wasNotGiven = function() {
-      return this.json['wasNotGiven'];
-    };
-
-
-    /**
-    A code indicating why the medication was not taken.
-    @returns {Array} an array of {@link CodeableConcept} objects
-     */
-
-    MedicationStatement.prototype.reasonNotGiven = function() {
-      var i, item, len, ref, results;
-      if (this.json['reasonNotGiven']) {
-        ref = this.json['reasonNotGiven'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new CodeableConcept(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    The interval of time during which it is being asserted that the patient was taking the medication.
-    @returns {Period}
-     */
-
-    MedicationStatement.prototype.whenGiven = function() {
-      if (this.json['whenGiven']) {
-        return new Period(this.json['whenGiven']);
-      }
-    };
-
-
-    /**
-    Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.
-    @returns {Reference}
-     */
-
-<<<<<<< HEAD
-    MedicationPrescriptionSubstitutionComponent.prototype.type = function() {
-      if (this.json['type']) {
-        return new CodeableConcept(this.json['type']);
-      }
-    };
-
-
-    /**
-    Indicates the reason for the substitution, or why substitution must or must not be performed.
-    @returns {CodeableConcept}
-     */
-
-    MedicationPrescriptionSubstitutionComponent.prototype.reason = function() {
-      if (this.json['reason']) {
-        return new CodeableConcept(this.json['reason']);
-      }
-    };
-
-    return MedicationPrescriptionSubstitutionComponent;
-
-  })(BackboneElement);
-
-
-  /**
-  An order for both supply of the medication and the instructions for administration of the medicine to a patient.
-  @class MedicationPrescription
-  @exports MedicationPrescription as MedicationPrescription
-   */
-
-  MedicationPrescription = (function(superClass) {
-    extend(MedicationPrescription, superClass);
-
-    function MedicationPrescription(json) {
-      this.json = json;
-      MedicationPrescription.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    External identifier - one that would be used by another non-FHIR system - for example a re-imbursement system might issue its own id for each prescription that is created.  This is particularly important where FHIR only provides part of an erntire workflow process where records have to be tracked through an entire system.
-    @returns {Array} an array of {@link Identifier} objects
-     */
-
-    MedicationPrescription.prototype.identifier = function() {
-      var i, item, len, ref, results;
-      if (this.json['identifier']) {
-        ref = this.json['identifier'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Identifier(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    The date (and perhaps time) when the prescription was written.
-    @returns {Array} an array of {@link Date} objects
-     */
-
-    MedicationPrescription.prototype.dateWritten = function() {
-      if (this.json['dateWritten']) {
-        return DT.DateTime.parse(this.json['dateWritten']);
-      }
-    };
-
-
-    /**
-    A code specifying the state of the order.  Generally this will be active or completed state.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    MedicationPrescription.prototype.status = function() {
-      return this.json['status'];
-    };
-
-
-    /**
-    A link to a resource representing the person to whom the medication will be given.
-    @returns {Reference}
-     */
-
-    MedicationPrescription.prototype.patient = function() {
-      if (this.json['patient']) {
-        return new Reference(this.json['patient']);
-      }
-    };
-
-
-    /**
-    The healthcare professional responsible for authorizing the prescription.
-    @returns {Reference}
-     */
-
-    MedicationPrescription.prototype.prescriber = function() {
-      if (this.json['prescriber']) {
-        return new Reference(this.json['prescriber']);
-      }
-    };
-
-
-    /**
-    A link to a resource that identifies the particular occurrence of contact between patient and health care provider.
-    @returns {Reference}
-     */
-
-    MedicationPrescription.prototype.encounter = function() {
-      if (this.json['encounter']) {
-        return new Reference(this.json['encounter']);
-      }
-    };
-
-
-    /**
-    Can be the reason or the indication for writing the prescription.
-    @returns {CodeableConcept}
-     */
-
-    MedicationPrescription.prototype.reasonCodeableConcept = function() {
-      if (this.json['reasonCodeableConcept']) {
-        return new CodeableConcept(this.json['reasonCodeableConcept']);
-      }
-    };
-
-
-    /**
-    Can be the reason or the indication for writing the prescription.
-    @returns {Reference}
-     */
-
-    MedicationPrescription.prototype.reasonReference = function() {
-      if (this.json['reasonReference']) {
-        return new Reference(this.json['reasonReference']);
-      }
-    };
-
-
-    /**
-    Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.
-    @returns {Reference}
-     */
-
-    MedicationPrescription.prototype.medication = function() {
-      if (this.json['medication']) {
-        return new Reference(this.json['medication']);
-      }
-    };
-
-
-    /**
-    Indicates how the medication is to be used by the patient.
-    @returns {Array} an array of {@link MedicationPrescriptionDosageInstructionComponent} objects
-     */
-
-    MedicationPrescription.prototype.dosageInstruction = function() {
-      var i, item, len, ref, results;
-      if (this.json['dosageInstruction']) {
-        ref = this.json['dosageInstruction'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new MedicationPrescriptionDosageInstructionComponent(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    Deals with details of the dispense part of the order.
-    @returns {MedicationPrescriptionDispenseComponent}
-     */
-
-    MedicationPrescription.prototype.dispense = function() {
-      if (this.json['dispense']) {
-        return new MedicationPrescriptionDispenseComponent(this.json['dispense']);
-      }
-    };
-
-
-    /**
-    Indicates whether or not substitution can or should be part of the dispense. In some cases substitution must happen, in other cases substitution must not happen, and in others it does not matter. This block explains the prescriber's intent. If nothing is specified substitution may be done.
-    @returns {MedicationPrescriptionSubstitutionComponent}
-     */
-
-    MedicationPrescription.prototype.substitution = function() {
-      if (this.json['substitution']) {
-        return new MedicationPrescriptionSubstitutionComponent(this.json['substitution']);
-      }
-    };
-
-    return MedicationPrescription;
-
-  })(DomainResource);
-
-  module.exports.MedicationPrescription = MedicationPrescription;
-=======
     If the list is empty, why the list is empty.
     @returns {CodeableConcept}
      */
@@ -49874,362 +42631,15 @@ function numberIsNaN (obj) {
   })(DomainResource);
 
   module.exports.List = List;
->>>>>>> Add providers to patient
 
 }).call(this);
 
 
 
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],191:[function(require,module,exports){
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationStatement, MedicationStatementDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-
-  Extension = CORE.Extension;
-
-  HumanName = CORE.HumanName;
-
-  Address = CORE.Address;
-
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-  CodeableConcept = CORE.CodeableConcept;
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-
-  Element = CORE.Element;
-
-
-  /** 
-  Embedded class
-  @class MedicationStatementDosageComponent
-  @exports  MedicationStatementDosageComponent as MedicationStatementDosageComponent
-   */
-
-  MedicationStatementDosageComponent = (function(superClass) {
-    extend(MedicationStatementDosageComponent, superClass);
-
-    function MedicationStatementDosageComponent(json) {
-      this.json = json;
-      MedicationStatementDosageComponent.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    The timing schedule for giving the medication to the patient.  The Schedule data type allows many different expressions, for example.  "Every  8 hours"; "Three times a day"; "1/2 an hour before breakfast for 10 days from 23-Dec 2011:";  "15 Oct 2013, 17 Oct 2013 and 1 Nov 2013".
-    @returns {Timing}
-     */
-
-    MedicationStatementDosageComponent.prototype.schedule = function() {
-      if (this.json['schedule']) {
-        return new Timing(this.json['schedule']);
-      }
-    };
-
-
-    /**
-    If set to true or if specified as a CodeableConcept, indicates that the medication is only taken when needed within the specified schedule rather than at every scheduled dose.  If a CodeableConcept is present, it indicates the pre-condition for taking the Medication.
-    @returns {Array} an array of {@link boolean} objects
-     */
-
-    MedicationStatementDosageComponent.prototype.asNeededBoolean = function() {
-      return this.json['asNeededBoolean'];
-    };
-
-
-    /**
-    If set to true or if specified as a CodeableConcept, indicates that the medication is only taken when needed within the specified schedule rather than at every scheduled dose.  If a CodeableConcept is present, it indicates the pre-condition for taking the Medication.
-    @returns {CodeableConcept}
-     */
-
-    MedicationStatementDosageComponent.prototype.asNeededCodeableConcept = function() {
-      if (this.json['asNeededCodeableConcept']) {
-        return new CodeableConcept(this.json['asNeededCodeableConcept']);
-      }
-    };
-
-
-    /**
-    A coded specification of the anatomic site where the medication first enters the body.
-    @returns {CodeableConcept}
-     */
-
-    MedicationStatementDosageComponent.prototype.site = function() {
-      if (this.json['site']) {
-        return new CodeableConcept(this.json['site']);
-      }
-    };
-
-
-    /**
-    A code specifying the route or physiological path of administration of a therapeutic agent into or onto a subject.
-    @returns {CodeableConcept}
-     */
-
-    MedicationStatementDosageComponent.prototype.route = function() {
-      if (this.json['route']) {
-        return new CodeableConcept(this.json['route']);
-      }
-    };
-
-
-    /**
-    A coded value indicating the method by which the medication is introduced into or onto the body. Most commonly used for injections.  Examples:  Slow Push; Deep IV.
-    
-    Terminologies used often pre-coordinate this term with the route and or form of administration.
-    @returns {CodeableConcept}
-     */
-
-    MedicationStatementDosageComponent.prototype.method = function() {
-      if (this.json['method']) {
-        return new CodeableConcept(this.json['method']);
-      }
-    };
-
-
-    /**
-    The amount of therapeutic or other substance given at one administration event.
-    @returns {Quantity}
-     */
-
-    MedicationStatementDosageComponent.prototype.quantity = function() {
-      if (this.json['quantity']) {
-        return new Quantity(this.json['quantity']);
-      }
-    };
-
-
-    /**
-    Identifies the speed with which the substance is introduced into the subject. Typically the rate for an infusion. 200ml in 2 hours.
-    @returns {Ratio}
-     */
-
-    MedicationStatementDosageComponent.prototype.rate = function() {
-      if (this.json['rate']) {
-        return new Ratio(this.json['rate']);
-      }
-    };
-
-
-    /**
-    The maximum total quantity of a therapeutic substance that may be administered to a subject over the period of time. E.g. 1000mg in 24 hours.
-    @returns {Ratio}
-     */
-
-    MedicationStatementDosageComponent.prototype.maxDosePerPeriod = function() {
-      if (this.json['maxDosePerPeriod']) {
-        return new Ratio(this.json['maxDosePerPeriod']);
-      }
-    };
-
-    return MedicationStatementDosageComponent;
-
-  })(BackboneElement);
-
-
-  /**
-  A record of medication being taken by a patient, or that the medication has been given to a patient where the record is the result of a report from the patient or another clinician.
-  @class MedicationStatement
-  @exports MedicationStatement as MedicationStatement
-   */
-
-  MedicationStatement = (function(superClass) {
-    extend(MedicationStatement, superClass);
-
-    function MedicationStatement(json) {
-      this.json = json;
-      MedicationStatement.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    External identifier - FHIR will generate its own internal IDs (probably URLs) which do not need to be explicitly managed by the resource.  The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event.  Particularly important if these records have to be updated.
-    @returns {Array} an array of {@link Identifier} objects
-     */
-
-    MedicationStatement.prototype.identifier = function() {
-      var i, item, len, ref, results;
-      if (this.json['identifier']) {
-        ref = this.json['identifier'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Identifier(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    The person or animal who is /was taking the medication.
-    @returns {Reference}
-     */
-
-    MedicationStatement.prototype.patient = function() {
-      if (this.json['patient']) {
-        return new Reference(this.json['patient']);
-      }
-    };
-
-
-    /**
-    Set this to true if the record is saying that the medication was NOT taken.
-    @returns {Array} an array of {@link boolean} objects
-     */
-
-    MedicationStatement.prototype.wasNotGiven = function() {
-      return this.json['wasNotGiven'];
-    };
-
-
-    /**
-    A code indicating why the medication was not taken.
-    @returns {Array} an array of {@link CodeableConcept} objects
-     */
-
-    MedicationStatement.prototype.reasonNotGiven = function() {
-      var i, item, len, ref, results;
-      if (this.json['reasonNotGiven']) {
-        ref = this.json['reasonNotGiven'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new CodeableConcept(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    The interval of time during which it is being asserted that the patient was taking the medication.
-    @returns {Period}
-     */
-
-    MedicationStatement.prototype.whenGiven = function() {
-      if (this.json['whenGiven']) {
-        return new Period(this.json['whenGiven']);
-      }
-    };
-
-
-    /**
-    Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.
-    @returns {Reference}
-     */
-
-=======
->>>>>>> A provider has a list of ids
-    MedicationStatement.prototype.medication = function() {
-      if (this.json['medication']) {
-        return new Reference(this.json['medication']);
-      }
-    };
-
-
-    /**
-    An identifier or a link to a resource that identifies a device used in administering the medication to the patient.
-    @returns {Array} an array of {@link Reference} objects
-     */
-
-    MedicationStatement.prototype.device = function() {
-      var i, item, len, ref, results;
-      if (this.json['device']) {
-        ref = this.json['device'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new Reference(item));
-        }
-        return results;
-      }
-    };
-
-
-    /**
-    Indicates how the medication is/was used by the patient.
-    @returns {Array} an array of {@link MedicationStatementDosageComponent} objects
-     */
-
-    MedicationStatement.prototype.dosage = function() {
-      var i, item, len, ref, results;
-      if (this.json['dosage']) {
-        ref = this.json['dosage'];
-        results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          item = ref[i];
-          results.push(new MedicationStatementDosageComponent(item));
-        }
-        return results;
-      }
-    };
-
-    return MedicationStatement;
-
-  })(DomainResource);
-
-  module.exports.MedicationStatement = MedicationStatement;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],192:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],185:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MessageDestinationComponent, MessageHeader, MessageHeaderResponseComponent, MessageSourceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-=======
-},{"../cql-datatypes":104,"./core":158}],184:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],180:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Location, LocationPositionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
->>>>>>> Add providers to patient
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
@@ -50509,7 +42919,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],185:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],181:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Media, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -50712,17 +43122,6 @@ function numberIsNaN (obj) {
       return this.json['frames'];
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],193:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],186:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  module.exports = require('./core');
-=======
->>>>>>> Add providers to patient
 
     /**
     The duration of the recording in seconds - for audio and video.
@@ -50755,15 +43154,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./alert":142,"./allergyintolerance":143,"./appointment":144,"./appointmentresponse":145,"./availability":146,"./basic":147,"./binary":148,"./bundle":149,"./careplan":150,"./claimresponse":151,"./communicationrequest":152,"./composition":153,"./conceptmap":154,"./condition":155,"./conformance":156,"./contract":157,"./contraindication":158,"./core":159,"./coverage":160,"./dataelement":161,"./device":162,"./devicecomponent":163,"./deviceuserequest":164,"./deviceusestatement":165,"./diagnosticorder":166,"./diagnosticreport":167,"./documentmanifest":168,"./documentreference":169,"./eligibility":170,"./eligibilityresponse":171,"./encounter":172,"./enrollment":173,"./enrollmentresponse":174,"./explanationofbenefit":175,"./extensiondefinition":176,"./familyhistory":177,"./group":178,"./healthcareservice":179,"./imagingobjectselection":180,"./imagingstudy":181,"./immunization":182,"./immunizationrecommendation":183,"./list":184,"./location":185,"./media":186,"./medication":187,"./medicationadministration":188,"./medicationdispense":189,"./medicationprescription":190,"./medicationstatement":191,"./messageheader":192,"./namingsystem":194,"./nutritionorder":195,"./observation":196,"./operationdefinition":197,"./operationoutcome":198,"./oralhealthclaim":199,"./order":200,"./orderresponse":201,"./organization":202,"./other":203,"./patient":204,"./paymentnotice":205,"./paymentreconciliation":206,"./pendedrequest":207,"./practitioner":208,"./procedure":209,"./procedurerequest":210,"./profile":211,"./provenance":212,"./query":213,"./questionnaire":214,"./questionnaireanswers":215,"./readjudicate":216,"./referralrequest":217,"./relatedperson":218,"./reversal":219,"./riskassessment":220,"./searchparameter":221,"./securityevent":222,"./slot":223,"./specimen":224,"./statusrequest":225,"./statusresponse":226,"./subscription":227,"./substance":228,"./supply":229,"./supportingdocumentation":230,"./valueset":231}],194:[function(require,module,exports){
-=======
-},{"./alert":135,"./allergyintolerance":136,"./appointment":137,"./appointmentresponse":138,"./availability":139,"./basic":140,"./binary":141,"./bundle":142,"./careplan":143,"./claimresponse":144,"./communicationrequest":145,"./composition":146,"./conceptmap":147,"./condition":148,"./conformance":149,"./contract":150,"./contraindication":151,"./core":152,"./coverage":153,"./dataelement":154,"./device":155,"./devicecomponent":156,"./deviceuserequest":157,"./deviceusestatement":158,"./diagnosticorder":159,"./diagnosticreport":160,"./documentmanifest":161,"./documentreference":162,"./eligibility":163,"./eligibilityresponse":164,"./encounter":165,"./enrollment":166,"./enrollmentresponse":167,"./explanationofbenefit":168,"./extensiondefinition":169,"./familyhistory":170,"./group":171,"./healthcareservice":172,"./imagingobjectselection":173,"./imagingstudy":174,"./immunization":175,"./immunizationrecommendation":176,"./list":177,"./location":178,"./media":179,"./medication":180,"./medicationadministration":181,"./medicationdispense":182,"./medicationprescription":183,"./medicationstatement":184,"./messageheader":185,"./namingsystem":187,"./nutritionorder":188,"./observation":189,"./operationdefinition":190,"./operationoutcome":191,"./oralhealthclaim":192,"./order":193,"./orderresponse":194,"./organization":195,"./other":196,"./patient":197,"./paymentnotice":198,"./paymentreconciliation":199,"./pendedrequest":200,"./practitioner":201,"./procedure":202,"./procedurerequest":203,"./profile":204,"./provenance":205,"./query":206,"./questionnaire":207,"./questionnaireanswers":208,"./readjudicate":209,"./referralrequest":210,"./relatedperson":211,"./reversal":212,"./riskassessment":213,"./searchparameter":214,"./securityevent":215,"./slot":216,"./specimen":217,"./statusrequest":218,"./statusresponse":219,"./subscription":220,"./substance":221,"./supply":222,"./supportingdocumentation":223,"./valueset":224}],187:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],186:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],182:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Medication, MedicationPackageComponent, MedicationPackageContentComponent, MedicationProductComponent, MedicationProductIngredientComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -51111,15 +43502,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],195:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],188:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],187:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],183:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationAdministration, MedicationAdministrationDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -51524,7 +43907,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],188:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],184:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationDispense, MedicationDispenseDispenseComponent, MedicationDispenseDispenseDosageComponent, MedicationDispenseSubstitutionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -51694,113 +44077,10 @@ function numberIsNaN (obj) {
 
 
     /**
-<<<<<<< HEAD
-    The workflow status of the nutrition order request, e.g., Active, Inactive, Pending, Held, Canceled, Suspended.
-    @returns {Array} an array of {@link String} objects
-     */
-
-    NutritionOrder.prototype.status = function() {
-      return this.json['status'];
-    };
-
-    return NutritionOrder;
-
-  })(DomainResource);
-
-  module.exports.NutritionOrder = NutritionOrder;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],196:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],189:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Observation, ObservationReferenceRangeComponent, ObservationRelatedComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-
-  Quantity = CORE.Quantity;
-
-  Attachment = CORE.Attachment;
-
-  BackboneElement = CORE.BackboneElement;
-
-  DomainResource = CORE.DomainResource;
-
-  ContactPoint = CORE.ContactPoint;
-
-  ElementDefinition = CORE.ElementDefinition;
-
-  Extension = CORE.Extension;
-
-  HumanName = CORE.HumanName;
-
-  Address = CORE.Address;
-
-  Ratio = CORE.Ratio;
-
-  SampledData = CORE.SampledData;
-
-  Reference = CORE.Reference;
-
-  CodeableConcept = CORE.CodeableConcept;
-
-  Identifier = CORE.Identifier;
-
-  Narrative = CORE.Narrative;
-
-  Element = CORE.Element;
-
-
-  /** 
-  Embedded class
-  @class ObservationReferenceRangeComponent
-  @exports  ObservationReferenceRangeComponent as ObservationReferenceRangeComponent
-   */
-
-  ObservationReferenceRangeComponent = (function(superClass) {
-    extend(ObservationReferenceRangeComponent, superClass);
-
-    function ObservationReferenceRangeComponent(json) {
-      this.json = json;
-      ObservationReferenceRangeComponent.__super__.constructor.call(this, this.json);
-    }
-
-
-    /**
-    The value of the low bound of the reference range. If this is omitted, the low bound of the reference range is assumed to be meaningless. E.g. <2.3.
-    @returns {Quantity}
-=======
     A coded value indicating the method by which the medication is introduced into or onto the body. Most commonly used for injections.  Examples:  Slow Push; Deep IV.
     
     Terminologies used often pre-coordinate this term with the route and or form of administration.
     @returns {CodeableConcept}
->>>>>>> Add providers to patient
      */
 
     MedicationDispenseDispenseDosageComponent.prototype.method = function() {
@@ -52190,15 +44470,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],197:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],190:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],189:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],185:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationPrescription, MedicationPrescriptionDispenseComponent, MedicationPrescriptionDosageInstructionComponent, MedicationPrescriptionSubstitutionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -52725,13 +44997,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],198:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],191:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
     return MedicationPrescription;
 
   })(DomainResource);
@@ -52742,8 +45007,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],190:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],186:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationStatement, MedicationStatementDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -53076,15 +45340,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],199:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],192:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],191:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],187:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MessageDestinationComponent, MessageHeader, MessageHeaderResponseComponent, MessageSourceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -53497,7 +45753,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],192:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],188:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   module.exports = require('./core');
@@ -53682,7 +45938,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./alert":141,"./allergyintolerance":142,"./appointment":143,"./appointmentresponse":144,"./availability":145,"./basic":146,"./binary":147,"./bundle":148,"./careplan":149,"./claimresponse":150,"./communicationrequest":151,"./composition":152,"./conceptmap":153,"./condition":154,"./conformance":155,"./contract":156,"./contraindication":157,"./core":158,"./coverage":159,"./dataelement":160,"./device":161,"./devicecomponent":162,"./deviceuserequest":163,"./deviceusestatement":164,"./diagnosticorder":165,"./diagnosticreport":166,"./documentmanifest":167,"./documentreference":168,"./eligibility":169,"./eligibilityresponse":170,"./encounter":171,"./enrollment":172,"./enrollmentresponse":173,"./explanationofbenefit":174,"./extensiondefinition":175,"./familyhistory":176,"./group":177,"./healthcareservice":178,"./imagingobjectselection":179,"./imagingstudy":180,"./immunization":181,"./immunizationrecommendation":182,"./list":183,"./location":184,"./media":185,"./medication":186,"./medicationadministration":187,"./medicationdispense":188,"./medicationprescription":189,"./medicationstatement":190,"./messageheader":191,"./namingsystem":193,"./nutritionorder":194,"./observation":195,"./operationdefinition":196,"./operationoutcome":197,"./oralhealthclaim":198,"./order":199,"./orderresponse":200,"./organization":201,"./other":202,"./patient":203,"./paymentnotice":204,"./paymentreconciliation":205,"./pendedrequest":206,"./practitioner":207,"./procedure":208,"./procedurerequest":209,"./profile":210,"./provenance":211,"./query":212,"./questionnaire":213,"./questionnaireanswers":214,"./readjudicate":215,"./referralrequest":216,"./relatedperson":217,"./reversal":218,"./riskassessment":219,"./searchparameter":220,"./securityevent":221,"./slot":222,"./specimen":223,"./statusrequest":224,"./statusresponse":225,"./subscription":226,"./substance":227,"./supply":228,"./supportingdocumentation":229,"./valueset":230}],193:[function(require,module,exports){
+},{"./alert":137,"./allergyintolerance":138,"./appointment":139,"./appointmentresponse":140,"./availability":141,"./basic":142,"./binary":143,"./bundle":144,"./careplan":145,"./claimresponse":146,"./communicationrequest":147,"./composition":148,"./conceptmap":149,"./condition":150,"./conformance":151,"./contract":152,"./contraindication":153,"./core":154,"./coverage":155,"./dataelement":156,"./device":157,"./devicecomponent":158,"./deviceuserequest":159,"./deviceusestatement":160,"./diagnosticorder":161,"./diagnosticreport":162,"./documentmanifest":163,"./documentreference":164,"./eligibility":165,"./eligibilityresponse":166,"./encounter":167,"./enrollment":168,"./enrollmentresponse":169,"./explanationofbenefit":170,"./extensiondefinition":171,"./familyhistory":172,"./group":173,"./healthcareservice":174,"./imagingobjectselection":175,"./imagingstudy":176,"./immunization":177,"./immunizationrecommendation":178,"./list":179,"./location":180,"./media":181,"./medication":182,"./medicationadministration":183,"./medicationdispense":184,"./medicationprescription":185,"./medicationstatement":186,"./messageheader":187,"./namingsystem":189,"./nutritionorder":190,"./observation":191,"./operationdefinition":192,"./operationoutcome":193,"./oralhealthclaim":194,"./order":195,"./orderresponse":196,"./organization":197,"./other":198,"./patient":199,"./paymentnotice":200,"./paymentreconciliation":201,"./pendedrequest":202,"./practitioner":203,"./procedure":204,"./procedurerequest":205,"./profile":206,"./provenance":207,"./query":208,"./questionnaire":209,"./questionnaireanswers":210,"./readjudicate":211,"./referralrequest":212,"./relatedperson":213,"./reversal":214,"./riskassessment":215,"./searchparameter":216,"./securityevent":217,"./slot":218,"./specimen":219,"./statusrequest":220,"./statusresponse":221,"./subscription":222,"./substance":223,"./supply":224,"./supportingdocumentation":225,"./valueset":226}],189:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, NamingSystem, NamingSystemContactComponent, NamingSystemUniqueIdComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54002,7 +46258,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],194:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],190:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, NutritionOrder, NutritionOrderItemComponent, NutritionOrderItemEnteralFormulaComponent, NutritionOrderItemOralDietComponent, NutritionOrderItemOralDietNutrientsComponent, NutritionOrderItemOralDietTextureComponent, NutritionOrderItemSupplementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54389,37 +46645,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return OralHealthClaim;
-
-  })(DomainResource);
-
-  module.exports.OralHealthClaim = OralHealthClaim;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],200:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],193:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Order, OrderWhenComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-=======
->>>>>>> Add providers to patient
 
     /**
     ***CARD AND TYPE ARE PLACEHOLDERS TO COMPLETE BUILD.  Need to discuss***administration details including rate (ml per hour), route of adminstration, total volume.
@@ -54739,15 +46964,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],201:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],194:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],195:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],191:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Observation, ObservationReferenceRangeComponent, ObservationRelatedComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54939,19 +47156,6 @@ function numberIsNaN (obj) {
       Observation.__super__.constructor.call(this, this.json);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],202:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],195:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Organization, OrganizationContactComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
->>>>>>> Add providers to patient
 
     /**
     Describes what was observed. Sometimes this is called the observation "code".
@@ -55297,15 +47501,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],203:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],196:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],196:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],192:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OperationDefinition, OperationDefinitionParameterComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55429,43 +47625,6 @@ function numberIsNaN (obj) {
       return this.json['documentation'];
     };
 
-<<<<<<< HEAD
-    return Other;
-
-  })(DomainResource);
-
-  module.exports.Other = Other;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],204:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],197:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, AnimalComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Patient, PatientLinkComponent, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-=======
->>>>>>> Add providers to patient
 
     /**
     The type for this parameter.
@@ -55730,7 +47889,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],197:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],193:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OperationOutcome, OperationOutcomeIssueComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55894,15 +48053,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],205:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],198:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],198:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],194:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, CoverageComponent, DT, DetailComponent, DiagnosisComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ItemsComponent, MissingTeethComponent, Narrative, OralHealthClaim, OrthodonticPlanComponent, Parameters, PayeeComponent, Period, ProsthesisComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, SubDetailComponent, Timing,
@@ -56132,24 +48283,11 @@ function numberIsNaN (obj) {
     @returns {Coding}
      */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],206:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],199:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DetailsComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, NotesComponent, Parameters, PaymentReconciliation, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
     CoverageComponent.prototype.relationship = function() {
       if (this.json['relationship']) {
         return new Coding(this.json['relationship']);
       }
     };
->>>>>>> Add providers to patient
 
 
     /**
@@ -56600,50 +48738,7 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return PaymentReconciliation;
-
-  })(DomainResource);
-
-  module.exports.PaymentReconciliation = PaymentReconciliation;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],207:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],200:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PendedRequest, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-
-  Timing = CORE.Timing;
-
-  Period = CORE.Period;
-
-  Parameters = CORE.Parameters;
-
-  Coding = CORE.Coding;
-
-  Resource = CORE.Resource;
-
-  Range = CORE.Range;
-=======
     return DetailComponent;
->>>>>>> Add providers to patient
 
   })(BackboneElement);
 
@@ -56854,23 +48949,10 @@ function numberIsNaN (obj) {
     };
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],208:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],201:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Practitioner, PractitionerQualificationComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
     /**
     A region or surface of the site, eg. limb region or tooth surface(s).
     @returns {Array} an array of {@link Coding} objects
      */
->>>>>>> Add providers to patient
 
     ItemsComponent.prototype.subsite = function() {
       var i, item, len, ref, results;
@@ -57347,15 +49429,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],209:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],202:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],199:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],195:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Order, OrderWhenComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -57616,15 +49690,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],210:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],203:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],200:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],196:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OrderResponse, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -57826,15 +49892,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],211:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],204:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],201:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],197:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Organization, OrganizationContactComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -58141,7 +50199,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],202:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],198:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Other, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -58292,15 +50350,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],212:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],205:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],203:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],199:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AnimalComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Patient, PatientLinkComponent, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -58876,15 +50926,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],213:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],206:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],204:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],200:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PaymentNotice, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -59095,15 +51137,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],214:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],207:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],205:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],201:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DetailsComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, NotesComponent, Parameters, PaymentReconciliation, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -59535,15 +51569,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],215:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],208:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],206:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],202:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PendedRequest, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -59762,7 +51788,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],207:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],203:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Practitioner, PractitionerQualificationComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -60149,15 +52175,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],216:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],209:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],208:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],204:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Procedure, ProcedurePerformerComponent, ProcedureRelatedItemComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -60536,15 +52554,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],217:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],210:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],209:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],205:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, ProcedureRequest, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -60855,15 +52865,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],218:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],211:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],210:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],206:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConstraintComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Profile, ProfileMappingComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -61157,22 +53159,9 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link boolean} objects
      */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],219:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],212:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PayeeComponent, Period, Quantity, Range, Ratio, Reference, Resource, Reversal, ReversalCoverageComponent, SampledData, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-=======
     Profile.prototype.experimental = function() {
       return this.json['experimental'];
     };
->>>>>>> Add providers to patient
 
 
     /**
@@ -61279,7 +53268,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],211:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],207:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Provenance, ProvenanceAgentComponent, ProvenanceEntityComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -61624,15 +53613,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],220:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],213:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],212:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],208:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Query, QueryResponseComponent, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -61920,15 +53901,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],221:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],214:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],213:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],209:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, GroupComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, QuestionComponent, Questionnaire, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -62330,15 +54303,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],222:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],215:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],214:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],210:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, GroupComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, QuestionAnswerComponent, QuestionComponent, QuestionnaireAnswers, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -62859,15 +54824,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],223:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],216:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],215:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],211:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ItemsComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Readjudicate, Reference, Resource, SampledData, Timing,
@@ -63124,15 +55081,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],224:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],217:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],216:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],212:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, ReferralRequest, Resource, SampledData, Timing,
@@ -63420,7 +55369,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],217:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],213:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, RelatedPerson, Resource, SampledData, Timing,
@@ -63619,15 +55568,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],225:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],218:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],218:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],214:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PayeeComponent, Period, Quantity, Range, Ratio, Reference, Resource, Reversal, ReversalCoverageComponent, SampledData, Timing,
@@ -64000,15 +55941,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],226:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],219:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],219:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],215:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, RiskAssessment, RiskAssessmentPredictionComponent, SampledData, Timing,
@@ -64321,15 +56254,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],227:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],220:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],220:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],216:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SearchParameter, Timing,
@@ -64522,15 +56447,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],228:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],221:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],221:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],217:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SecurityEvent, SecurityEventEventComponent, SecurityEventObjectComponent, SecurityEventObjectDetailComponent, SecurityEventParticipantComponent, SecurityEventParticipantNetworkComponent, SecurityEventSourceComponent, Timing,
@@ -64754,37 +56671,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-    return Substance;
-
-  })(DomainResource);
-
-  module.exports.Substance = Substance;
-
-}).call(this);
-
-
-
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],229:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],222:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Supply, SupplyDispenseComponent, Timing,
-    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-    hasProp = {}.hasOwnProperty;
-
-  DT = require('../cql-datatypes');
-
-  CORE = require('./core');
-
-  Element = CORE.Element;
-
-  Resource = CORE.Resource;
-=======
->>>>>>> Add providers to patient
 
     /**
     Direct reference to a resource that identifies the participant.
@@ -65183,15 +57069,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],230:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],223:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],222:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],218:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Slot, Timing,
@@ -65384,15 +57262,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],231:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],224:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],223:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],219:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Specimen, SpecimenCollectionComponent, SpecimenContainerComponent, SpecimenSourceComponent, SpecimenTreatmentComponent, Timing,
@@ -65929,7 +57799,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],224:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],220:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, StatusRequest, Timing,
@@ -66128,7 +57998,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],225:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],221:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, StatusResponse, StatusResponseNotesComponent, Timing,
@@ -66428,15 +58298,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql-datatypes":105,"./core":159}],232:[function(require,module,exports){
-=======
-},{"../cql-datatypes":98,"./core":152}],225:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],226:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],222:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Subscription, SubscriptionChannelComponent, SubscriptionTagComponent, Timing,
@@ -66663,20 +58525,9 @@ function numberIsNaN (obj) {
     @returns {Array} an array of {@link String} objects
      */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/datatypes":109,"../datatypes/exception":111,"../elm/library":128,"../util/util":238,"util":362}],233:[function(require,module,exports){
-=======
-},{"../datatypes/datatypes":102,"../datatypes/exception":104,"../elm/library":121,"../util/util":231,"util":361}],226:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Executor, PatientContext, PopulationContext, Results, ref;
-=======
     Subscription.prototype.status = function() {
       return this.json['status'];
     };
->>>>>>> Add providers to patient
 
 
     /**
@@ -66741,15 +58592,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./context":232,"./results":235}],234:[function(require,module,exports){
-=======
-},{"./context":225,"./results":228}],227:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],227:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],223:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Substance, SubstanceIngredientComponent, SubstanceInstanceComponent, Timing,
@@ -66772,18 +58615,7 @@ function numberIsNaN (obj) {
 
   Coding = CORE.Coding;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cql":107}],235:[function(require,module,exports){
-=======
-},{"../cql":100}],228:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var Results;
-=======
   Resource = CORE.Resource;
->>>>>>> Add providers to patient
 
   Range = CORE.Range;
 
@@ -66801,18 +58633,7 @@ function numberIsNaN (obj) {
 
   Extension = CORE.Extension;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],236:[function(require,module,exports){
-=======
-},{}],229:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var DateTime, Uncertainty, areDateTimesOrQuantities, areNumbers, classesEqual, codesAreEquivalent, compareEveryItemInArrays, compareObjects, deepCompareKeysAndValues, equals, equivalent, getClassOfObjects, getKeysFromObject, isCode, isFunction, isUncertainty;
-=======
   HumanName = CORE.HumanName;
->>>>>>> Add providers to patient
 
   Address = CORE.Address;
 
@@ -67006,15 +58827,7 @@ function numberIsNaN (obj) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/datetime":110,"../datatypes/uncertainty":114}],237:[function(require,module,exports){
-=======
-},{"../datatypes/datetime":103,"../datatypes/uncertainty":107}],230:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{"../cql-datatypes":104,"./core":158}],228:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"../cql-datatypes":100,"./core":154}],224:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Supply, SupplyDispenseComponent, Timing,
@@ -67122,17 +58935,6 @@ function numberIsNaN (obj) {
       }
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../datatypes/datetime":110,"../datatypes/exception":111,"../datatypes/uncertainty":114}],238:[function(require,module,exports){
-=======
-},{"../datatypes/datetime":103,"../datatypes/exception":104,"../datatypes/uncertainty":107}],231:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-// Generated by CoffeeScript 1.12.7
-(function() {
-  var getTimezoneSeparatorFromString, normalizeMillisecondsField, normalizeMillisecondsFieldInString, typeIsArray;
-=======
->>>>>>> Add providers to patient
 
     /**
     The amount of supply that has been dispensed. Includes unit of measure.
@@ -67182,23 +58984,10 @@ function numberIsNaN (obj) {
     };
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],239:[function(require,module,exports){
-=======
-},{}],232:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-//! moment.js
-//! version : 2.20.1
-//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
-//! license : MIT
-//! momentjs.com
-=======
     /**
     The time the dispensed item was sent or handed to the patient (or agent).
     @returns {Period}
      */
->>>>>>> Add providers to patient
 
     SupplyDispenseComponent.prototype.whenHandedOver = function() {
       if (this.json['whenHandedOver']) {
@@ -67343,7 +59132,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],229:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],225:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SupportingDocumentation, SupportingDocumentationDetailComponent, Timing,
@@ -67650,7 +59439,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],230:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],226:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptDefinitionComponent, ConceptDefinitionDesignationComponent, ConceptReferenceComponent, ConceptSetComponent, ConceptSetFilterComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing, ValueSet, ValueSetComposeComponent, ValueSetDefineComponent, ValueSetExpansionComponent, ValueSetExpansionContainsComponent,
@@ -68540,7 +60329,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":104,"./core":158}],231:[function(require,module,exports){
+},{"../cql-datatypes":100,"./core":154}],227:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Context, Exception, Library, PatientContext, PopulationContext, dt, typeIsArray, util,
@@ -68980,7 +60769,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":108,"../datatypes/exception":110,"../elm/library":127,"../util/util":237,"util":361}],232:[function(require,module,exports){
+},{"../datatypes/datatypes":104,"../datatypes/exception":106,"../elm/library":123,"../util/util":233,"util":363}],228:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Executor, PatientContext, PopulationContext, Results, ref;
@@ -69062,7 +60851,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./context":231,"./results":234}],233:[function(require,module,exports){
+},{"./context":227,"./results":230}],229:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Repository, cql;
@@ -69104,7 +60893,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql":106}],234:[function(require,module,exports){
+},{"../cql":102}],230:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Results;
@@ -69139,7 +60928,7 @@ function numberIsNaN (obj) {
 
 
 
-},{}],235:[function(require,module,exports){
+},{}],231:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Uncertainty, areDateTimesOrQuantities, areNumbers, classesEqual, codesAreEquivalent, compareEveryItemInArrays, compareObjects, deepCompareKeysAndValues, equals, equivalent, getClassOfObjects, getKeysFromObject, isCode, isFunction, isUncertainty;
@@ -69388,7 +61177,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datetime":109,"../datatypes/uncertainty":113}],236:[function(require,module,exports){
+},{"../datatypes/datetime":105,"../datatypes/uncertainty":109}],232:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Exception, MAX_DATE_VALUE, MAX_FLOAT_VALUE, MAX_INT_VALUE, MAX_TIME_VALUE, MIN_DATE_VALUE, MIN_FLOAT_PRECISION_VALUE, MIN_FLOAT_VALUE, MIN_INT_VALUE, MIN_TIME_VALUE, OverFlowException, Uncertainty, isValidDecimal, isValidInteger, predecessor, successor,
@@ -69620,7 +61409,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datetime":109,"../datatypes/exception":110,"../datatypes/uncertainty":113}],237:[function(require,module,exports){
+},{"../datatypes/datetime":105,"../datatypes/exception":106,"../datatypes/uncertainty":109}],233:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var getTimezoneSeparatorFromString, normalizeMillisecondsField, normalizeMillisecondsFieldInString, typeIsArray;
@@ -69707,7 +61496,7 @@ function numberIsNaN (obj) {
 
 
 
-},{}],238:[function(require,module,exports){
+},{}],234:[function(require,module,exports){
 //! moment.js
 //! version : 2.20.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -71082,2702 +62871,6 @@ function parseIsoWeekday(input, locale) {
     return isNaN(input) ? null : input;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],240:[function(require,module,exports){
-=======
-},{}],233:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-module.exports={
-  "10*": {
-    "value": 10,
-    "ucum": "1"
-  },
-  "10^": {
-    "value": 10,
-    "ucum": "1"
-  },
-  "[pi]": {
-    "value": 3.141592653589793,
-    "ucum": "1"
-  },
-  "%": {
-    "value": 1,
-    "ucum": "10*-2"
-  },
-  "[ppth]": {
-    "value": 1,
-    "ucum": "10*-3"
-  },
-  "[ppm]": {
-    "value": 1,
-    "ucum": "10*-6"
-  },
-  "[ppb]": {
-    "value": 1,
-    "ucum": "10*-9"
-  },
-  "[pptr]": {
-    "value": 1,
-    "ucum": "10*-12"
-  },
-  "mol": {
-    "value": 6.0221367,
-    "ucum": "10*23"
-  },
-  "sr": {
-    "value": 1,
-    "ucum": "rad2"
-  },
-  "Hz": {
-    "value": 1,
-    "ucum": "s-1"
-  },
-  "N": {
-    "value": 1,
-    "ucum": "kg.m/s2"
-  },
-  "Pa": {
-    "value": 1,
-    "ucum": "N/m2"
-  },
-  "J": {
-    "value": 1,
-    "ucum": "N.m"
-  },
-  "W": {
-    "value": 1,
-    "ucum": "J/s"
-  },
-  "A": {
-    "value": 1,
-    "ucum": "C/s"
-  },
-  "V": {
-    "value": 1,
-    "ucum": "J/C"
-  },
-  "F": {
-    "value": 1,
-    "ucum": "C/V"
-  },
-  "Ohm": {
-    "value": 1,
-    "ucum": "V/A"
-  },
-  "S": {
-    "value": 1,
-    "ucum": "Ohm-1"
-  },
-  "Wb": {
-    "value": 1,
-    "ucum": "V.s"
-  },
-  "Cel": {
-    "value": null,
-    "ucum": "cel(1 K)"
-  },
-  "T": {
-    "value": 1,
-    "ucum": "Wb/m2"
-  },
-  "H": {
-    "value": 1,
-    "ucum": "Wb/A"
-  },
-  "lm": {
-    "value": 1,
-    "ucum": "cd.sr"
-  },
-  "lx": {
-    "value": 1,
-    "ucum": "lm/m2"
-  },
-  "Bq": {
-    "value": 1,
-    "ucum": "s-1"
-  },
-  "Gy": {
-    "value": 1,
-    "ucum": "J/kg"
-  },
-  "Sv": {
-    "value": 1,
-    "ucum": "J/kg"
-  },
-  "gon": {
-    "value": 0.9,
-    "ucum": "deg"
-  },
-  "deg": {
-    "value": 2,
-    "ucum": "[pi].rad/360"
-  },
-  "'": {
-    "value": 1,
-    "ucum": "deg/60"
-  },
-  "''": {
-    "value": 1,
-    "ucum": "'/60"
-  },
-  "l": {
-    "value": 1,
-    "ucum": "dm3"
-  },
-  "L": {
-    "value": 1,
-    "ucum": "l"
-  },
-  "ar": {
-    "value": 100,
-    "ucum": "m2"
-  },
-  "min": {
-    "value": 60,
-    "ucum": "s"
-  },
-  "h": {
-    "value": 60,
-    "ucum": "min"
-  },
-  "d": {
-    "value": 24,
-    "ucum": "h"
-  },
-  "a_t": {
-    "value": 365.24219,
-    "ucum": "d"
-  },
-  "a_j": {
-    "value": 365.25,
-    "ucum": "d"
-  },
-  "a_g": {
-    "value": 365.2425,
-    "ucum": "d"
-  },
-  "a": {
-    "value": 1,
-    "ucum": "a_j"
-  },
-  "wk": {
-    "value": 7,
-    "ucum": "d"
-  },
-  "mo_s": {
-    "value": 29.53059,
-    "ucum": "d"
-  },
-  "mo_j": {
-    "value": 1,
-    "ucum": "a_j/12"
-  },
-  "mo_g": {
-    "value": 1,
-    "ucum": "a_g/12"
-  },
-  "mo": {
-    "value": 1,
-    "ucum": "mo_j"
-  },
-  "t": {
-    "value": 1000,
-    "ucum": "kg"
-  },
-  "bar": {
-    "value": 100000,
-    "ucum": "Pa"
-  },
-  "u": {
-    "value": 1.6605402e-24,
-    "ucum": "g"
-  },
-  "eV": {
-    "value": 1,
-    "ucum": "[e].V"
-  },
-  "AU": {
-    "value": 149597.870691,
-    "ucum": "Mm"
-  },
-  "pc": {
-    "value": 30856780000000000,
-    "ucum": "m"
-  },
-  "[c]": {
-    "value": 299792458,
-    "ucum": "m/s"
-  },
-  "[h]": {
-    "value": 6.6260755e-24,
-    "ucum": "J.s"
-  },
-  "[k]": {
-    "value": 1.380658e-23,
-    "ucum": "J/K"
-  },
-  "[eps_0]": {
-    "value": 8.854187817e-12,
-    "ucum": "F/m"
-  },
-  "[mu_0]": {
-    "value": 1,
-    "ucum": "4.[pi].10*-7.N/A2"
-  },
-  "[e]": {
-    "value": 1.60217733e-19,
-    "ucum": "C"
-  },
-  "[m_e]": {
-    "value": 9.1093897e-28,
-    "ucum": "g"
-  },
-  "[m_p]": {
-    "value": 1.6726231e-24,
-    "ucum": "g"
-  },
-  "[G]": {
-    "value": 6.67259e-11,
-    "ucum": "m3.kg-1.s-2"
-  },
-  "[g]": {
-    "value": 9.80665,
-    "ucum": "m/s2"
-  },
-  "atm": {
-    "value": 101325,
-    "ucum": "Pa"
-  },
-  "[ly]": {
-    "value": 1,
-    "ucum": "[c].a_j"
-  },
-  "gf": {
-    "value": 1,
-    "ucum": "g.[g]"
-  },
-  "[lbf_av]": {
-    "value": 1,
-    "ucum": "[lb_av].[g]"
-  },
-  "Ky": {
-    "value": 1,
-    "ucum": "cm-1"
-  },
-  "Gal": {
-    "value": 1,
-    "ucum": "cm/s2"
-  },
-  "dyn": {
-    "value": 1,
-    "ucum": "g.cm/s2"
-  },
-  "erg": {
-    "value": 1,
-    "ucum": "dyn.cm"
-  },
-  "P": {
-    "value": 1,
-    "ucum": "dyn.s/cm2"
-  },
-  "Bi": {
-    "value": 10,
-    "ucum": "A"
-  },
-  "St": {
-    "value": 1,
-    "ucum": "cm2/s"
-  },
-  "Mx": {
-    "value": 1e-8,
-    "ucum": "Wb"
-  },
-  "G": {
-    "value": 0.0001,
-    "ucum": "T"
-  },
-  "Oe": {
-    "value": 250,
-    "ucum": "/[pi].A/m"
-  },
-  "Gb": {
-    "value": 1,
-    "ucum": "Oe.cm"
-  },
-  "sb": {
-    "value": 1,
-    "ucum": "cd/cm2"
-  },
-  "Lmb": {
-    "value": 1,
-    "ucum": "cd/cm2/[pi]"
-  },
-  "ph": {
-    "value": 0.0001,
-    "ucum": "lx"
-  },
-  "Ci": {
-    "value": 37000000000,
-    "ucum": "Bq"
-  },
-  "R": {
-    "value": 0.000258,
-    "ucum": "C/kg"
-  },
-  "RAD": {
-    "value": 100,
-    "ucum": "erg/g"
-  },
-  "REM": {
-    "value": 1,
-    "ucum": "RAD"
-  },
-  "[in_i]": {
-    "value": 2.54,
-    "ucum": "cm"
-  },
-  "[ft_i]": {
-    "value": 12,
-    "ucum": "[in_i]"
-  },
-  "[yd_i]": {
-    "value": 3,
-    "ucum": "[ft_i]"
-  },
-  "[mi_i]": {
-    "value": 5280,
-    "ucum": "[ft_i]"
-  },
-  "[fth_i]": {
-    "value": 6,
-    "ucum": "[ft_i]"
-  },
-  "[nmi_i]": {
-    "value": 1852,
-    "ucum": "m"
-  },
-  "[kn_i]": {
-    "value": 1,
-    "ucum": "[nmi_i]/h"
-  },
-  "[sin_i]": {
-    "value": 1,
-    "ucum": "[in_i]2"
-  },
-  "[sft_i]": {
-    "value": 1,
-    "ucum": "[ft_i]2"
-  },
-  "[syd_i]": {
-    "value": 1,
-    "ucum": "[yd_i]2"
-  },
-  "[cin_i]": {
-    "value": 1,
-    "ucum": "[in_i]3"
-  },
-  "[cft_i]": {
-    "value": 1,
-    "ucum": "[ft_i]3"
-  },
-  "[cyd_i]": {
-    "value": 1,
-    "ucum": "[yd_i]3"
-  },
-  "[bf_i]": {
-    "value": 144,
-    "ucum": "[in_i]3"
-  },
-  "[cr_i]": {
-    "value": 128,
-    "ucum": "[ft_i]3"
-  },
-  "[mil_i]": {
-    "value": 0.001,
-    "ucum": "[in_i]"
-  },
-  "[cml_i]": {
-    "value": 1,
-    "ucum": "[pi]/4.[mil_i]2"
-  },
-  "[hd_i]": {
-    "value": 4,
-    "ucum": "[in_i]"
-  },
-  "[ft_us]": {
-    "value": 1200,
-    "ucum": "m/3937"
-  },
-  "[yd_us]": {
-    "value": 3,
-    "ucum": "[ft_us]"
-  },
-  "[in_us]": {
-    "value": 1,
-    "ucum": "[ft_us]/12"
-  },
-  "[rd_us]": {
-    "value": 16.5,
-    "ucum": "[ft_us]"
-  },
-  "[ch_us]": {
-    "value": 4,
-    "ucum": "[rd_us]"
-  },
-  "[lk_us]": {
-    "value": 1,
-    "ucum": "[ch_us]/100"
-  },
-  "[rch_us]": {
-    "value": 100,
-    "ucum": "[ft_us]"
-  },
-  "[rlk_us]": {
-    "value": 1,
-    "ucum": "[rch_us]/100"
-  },
-  "[fth_us]": {
-    "value": 6,
-    "ucum": "[ft_us]"
-  },
-  "[fur_us]": {
-    "value": 40,
-    "ucum": "[rd_us]"
-  },
-  "[mi_us]": {
-    "value": 8,
-    "ucum": "[fur_us]"
-  },
-  "[acr_us]": {
-    "value": 160,
-    "ucum": "[rd_us]2"
-  },
-  "[srd_us]": {
-    "value": 1,
-    "ucum": "[rd_us]2"
-  },
-  "[smi_us]": {
-    "value": 1,
-    "ucum": "[mi_us]2"
-  },
-  "[sct]": {
-    "value": 1,
-    "ucum": "[mi_us]2"
-  },
-  "[twp]": {
-    "value": 36,
-    "ucum": "[sct]"
-  },
-  "[mil_us]": {
-    "value": 0.001,
-    "ucum": "[in_us]"
-  },
-  "[in_br]": {
-    "value": 2.539998,
-    "ucum": "cm"
-  },
-  "[ft_br]": {
-    "value": 12,
-    "ucum": "[in_br]"
-  },
-  "[rd_br]": {
-    "value": 16.5,
-    "ucum": "[ft_br]"
-  },
-  "[ch_br]": {
-    "value": 4,
-    "ucum": "[rd_br]"
-  },
-  "[lk_br]": {
-    "value": 1,
-    "ucum": "[ch_br]/100"
-  },
-  "[fth_br]": {
-    "value": 6,
-    "ucum": "[ft_br]"
-  },
-  "[pc_br]": {
-    "value": 2.5,
-    "ucum": "[ft_br]"
-  },
-  "[yd_br]": {
-    "value": 3,
-    "ucum": "[ft_br]"
-  },
-  "[mi_br]": {
-    "value": 5280,
-    "ucum": "[ft_br]"
-  },
-  "[nmi_br]": {
-    "value": 6080,
-    "ucum": "[ft_br]"
-  },
-  "[kn_br]": {
-    "value": 1,
-    "ucum": "[nmi_br]/h"
-  },
-  "[acr_br]": {
-    "value": 4840,
-    "ucum": "[yd_br]2"
-  },
-  "[gal_us]": {
-    "value": 231,
-    "ucum": "[in_i]3"
-  },
-  "[bbl_us]": {
-    "value": 42,
-    "ucum": "[gal_us]"
-  },
-  "[qt_us]": {
-    "value": 1,
-    "ucum": "[gal_us]/4"
-  },
-  "[pt_us]": {
-    "value": 1,
-    "ucum": "[qt_us]/2"
-  },
-  "[gil_us]": {
-    "value": 1,
-    "ucum": "[pt_us]/4"
-  },
-  "[foz_us]": {
-    "value": 1,
-    "ucum": "[gil_us]/4"
-  },
-  "[fdr_us]": {
-    "value": 1,
-    "ucum": "[foz_us]/8"
-  },
-  "[min_us]": {
-    "value": 1,
-    "ucum": "[fdr_us]/60"
-  },
-  "[crd_us]": {
-    "value": 128,
-    "ucum": "[ft_i]3"
-  },
-  "[bu_us]": {
-    "value": 2150.42,
-    "ucum": "[in_i]3"
-  },
-  "[gal_wi]": {
-    "value": 1,
-    "ucum": "[bu_us]/8"
-  },
-  "[pk_us]": {
-    "value": 1,
-    "ucum": "[bu_us]/4"
-  },
-  "[dqt_us]": {
-    "value": 1,
-    "ucum": "[pk_us]/8"
-  },
-  "[dpt_us]": {
-    "value": 1,
-    "ucum": "[dqt_us]/2"
-  },
-  "[tbs_us]": {
-    "value": 1,
-    "ucum": "[foz_us]/2"
-  },
-  "[tsp_us]": {
-    "value": 1,
-    "ucum": "[tbs_us]/3"
-  },
-  "[cup_us]": {
-    "value": 16,
-    "ucum": "[tbs_us]"
-  },
-  "[foz_m]": {
-    "value": 30,
-    "ucum": "mL"
-  },
-  "[cup_m]": {
-    "value": 240,
-    "ucum": "mL"
-  },
-  "[tsp_m]": {
-    "value": 5,
-    "ucum": "mL"
-  },
-  "[tbs_m]": {
-    "value": 15,
-    "ucum": "mL"
-  },
-  "[gal_br]": {
-    "value": 4.54609,
-    "ucum": "l"
-  },
-  "[pk_br]": {
-    "value": 2,
-    "ucum": "[gal_br]"
-  },
-  "[bu_br]": {
-    "value": 4,
-    "ucum": "[pk_br]"
-  },
-  "[qt_br]": {
-    "value": 1,
-    "ucum": "[gal_br]/4"
-  },
-  "[pt_br]": {
-    "value": 1,
-    "ucum": "[qt_br]/2"
-  },
-  "[gil_br]": {
-    "value": 1,
-    "ucum": "[pt_br]/4"
-  },
-  "[foz_br]": {
-    "value": 1,
-    "ucum": "[gil_br]/5"
-  },
-  "[fdr_br]": {
-    "value": 1,
-    "ucum": "[foz_br]/8"
-  },
-  "[min_br]": {
-    "value": 1,
-    "ucum": "[fdr_br]/60"
-  },
-  "[gr]": {
-    "value": 64.79891,
-    "ucum": "mg"
-  },
-  "[lb_av]": {
-    "value": 7000,
-    "ucum": "[gr]"
-  },
-  "[oz_av]": {
-    "value": 1,
-    "ucum": "[lb_av]/16"
-  },
-  "[dr_av]": {
-    "value": 1,
-    "ucum": "[oz_av]/16"
-  },
-  "[scwt_av]": {
-    "value": 100,
-    "ucum": "[lb_av]"
-  },
-  "[lcwt_av]": {
-    "value": 112,
-    "ucum": "[lb_av]"
-  },
-  "[ston_av]": {
-    "value": 20,
-    "ucum": "[scwt_av]"
-  },
-  "[lton_av]": {
-    "value": 20,
-    "ucum": "[lcwt_av]"
-  },
-  "[stone_av]": {
-    "value": 14,
-    "ucum": "[lb_av]"
-  },
-  "[pwt_tr]": {
-    "value": 24,
-    "ucum": "[gr]"
-  },
-  "[oz_tr]": {
-    "value": 20,
-    "ucum": "[pwt_tr]"
-  },
-  "[lb_tr]": {
-    "value": 12,
-    "ucum": "[oz_tr]"
-  },
-  "[sc_ap]": {
-    "value": 20,
-    "ucum": "[gr]"
-  },
-  "[dr_ap]": {
-    "value": 3,
-    "ucum": "[sc_ap]"
-  },
-  "[oz_ap]": {
-    "value": 8,
-    "ucum": "[dr_ap]"
-  },
-  "[lb_ap]": {
-    "value": 12,
-    "ucum": "[oz_ap]"
-  },
-  "[oz_m]": {
-    "value": 28,
-    "ucum": "g"
-  },
-  "[lne]": {
-    "value": 1,
-    "ucum": "[in_i]/12"
-  },
-  "[pnt]": {
-    "value": 1,
-    "ucum": "[lne]/6"
-  },
-  "[pca]": {
-    "value": 12,
-    "ucum": "[pnt]"
-  },
-  "[pnt_pr]": {
-    "value": 0.013837,
-    "ucum": "[in_i]"
-  },
-  "[pca_pr]": {
-    "value": 12,
-    "ucum": "[pnt_pr]"
-  },
-  "[pied]": {
-    "value": 32.48,
-    "ucum": "cm"
-  },
-  "[pouce]": {
-    "value": 1,
-    "ucum": "[pied]/12"
-  },
-  "[ligne]": {
-    "value": 1,
-    "ucum": "[pouce]/12"
-  },
-  "[didot]": {
-    "value": 1,
-    "ucum": "[ligne]/6"
-  },
-  "[cicero]": {
-    "value": 12,
-    "ucum": "[didot]"
-  },
-  "[degF]": {
-    "value": null,
-    "ucum": "degf(5 K/9)"
-  },
-  "[degR]": {
-    "value": 5,
-    "ucum": "K/9"
-  },
-  "cal_[15]": {
-    "value": 4.1858,
-    "ucum": "J"
-  },
-  "cal_[20]": {
-    "value": 4.1819,
-    "ucum": "J"
-  },
-  "cal_m": {
-    "value": 4.19002,
-    "ucum": "J"
-  },
-  "cal_IT": {
-    "value": 4.1868,
-    "ucum": "J"
-  },
-  "cal_th": {
-    "value": 4.184,
-    "ucum": "J"
-  },
-  "cal": {
-    "value": 1,
-    "ucum": "cal_th"
-  },
-  "[Cal]": {
-    "value": 1,
-    "ucum": "kcal_th"
-  },
-  "[Btu_39]": {
-    "value": 1.05967,
-    "ucum": "kJ"
-  },
-  "[Btu_59]": {
-    "value": 1.0548,
-    "ucum": "kJ"
-  },
-  "[Btu_60]": {
-    "value": 1.05468,
-    "ucum": "kJ"
-  },
-  "[Btu_m]": {
-    "value": 1.05587,
-    "ucum": "kJ"
-  },
-  "[Btu_IT]": {
-    "value": 1.05505585262,
-    "ucum": "kJ"
-  },
-  "[Btu_th]": {
-    "value": 1.05435,
-    "ucum": "kJ"
-  },
-  "[Btu]": {
-    "value": 1,
-    "ucum": "[Btu_th]"
-  },
-  "[HP]": {
-    "value": 550,
-    "ucum": "[ft_i].[lbf_av]/s"
-  },
-  "tex": {
-    "value": 1,
-    "ucum": "g/km"
-  },
-  "[den]": {
-    "value": 1,
-    "ucum": "g/9/km"
-  },
-  "m[H2O]": {
-    "value": 9.80665,
-    "ucum": "kPa"
-  },
-  "m[Hg]": {
-    "value": 133.322,
-    "ucum": "kPa"
-  },
-  "[in_i'H2O]": {
-    "value": 1,
-    "ucum": "m[H2O].[in_i]/m"
-  },
-  "[in_i'Hg]": {
-    "value": 1,
-    "ucum": "m[Hg].[in_i]/m"
-  },
-  "[PRU]": {
-    "value": 1,
-    "ucum": "mm[Hg].s/ml"
-  },
-  "[wood'U]": {
-    "value": 1,
-    "ucum": "mm[Hg].min/L"
-  },
-  "[diop]": {
-    "value": 1,
-    "ucum": "/m"
-  },
-  "[p'diop]": {
-    "value": null,
-    "ucum": "100tan(1 rad)"
-  },
-  "%[slope]": {
-    "value": null,
-    "ucum": "100tan(1 rad)"
-  },
-  "[mesh_i]": {
-    "value": 1,
-    "ucum": "/[in_i]"
-  },
-  "[Ch]": {
-    "value": 1,
-    "ucum": "mm/3"
-  },
-  "[drp]": {
-    "value": 1,
-    "ucum": "ml/20"
-  },
-  "[hnsf'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[MET]": {
-    "value": 3.5,
-    "ucum": "mL/min/kg"
-  },
-  "[hp'_X]": {
-    "value": null,
-    "ucum": "hpX(1 1)"
-  },
-  "[hp'_C]": {
-    "value": null,
-    "ucum": "hpC(1 1)"
-  },
-  "[hp'_M]": {
-    "value": null,
-    "ucum": "hpM(1 1)"
-  },
-  "[hp'_Q]": {
-    "value": null,
-    "ucum": "hpQ(1 1)"
-  },
-  "[hp_X]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[hp_C]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[hp_M]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[hp_Q]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[kp_X]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[kp_C]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[kp_M]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[kp_Q]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "eq": {
-    "value": 1,
-    "ucum": "mol"
-  },
-  "osm": {
-    "value": 1,
-    "ucum": "mol"
-  },
-  "[pH]": {
-    "value": null,
-    "ucum": "pH(1 mol/l)"
-  },
-  "g%": {
-    "value": 1,
-    "ucum": "g/dl"
-  },
-  "[S]": {
-    "value": 1,
-    "ucum": "10*-13.s"
-  },
-  "[HPF]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[LPF]": {
-    "value": 100,
-    "ucum": "1"
-  },
-  "kat": {
-    "value": 1,
-    "ucum": "mol/s"
-  },
-  "U": {
-    "value": 1,
-    "ucum": "umol/min"
-  },
-  "[iU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[IU]": {
-    "value": 1,
-    "ucum": "[iU]"
-  },
-  "[arb'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[USP'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[GPL'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[MPL'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[APL'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[beth'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[anti'Xa'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[todd'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[dye'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[smgy'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[bdsk'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[ka'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[knk'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[mclg'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[tb'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[CCID_50]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[TCID_50]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[EID_50]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[PFU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[FFU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[CFU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[BAU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[AU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[Amb'a'1'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[PNU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[Lf]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[D'ag'U]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[FEU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[ELU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "[EU]": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "Np": {
-    "value": null,
-    "ucum": "ln(1 1)"
-  },
-  "B": {
-    "value": null,
-    "ucum": "lg(1 1)"
-  },
-  "B[SPL]": {
-    "value": null,
-    "ucum": "2lg(2 10*-5.Pa)"
-  },
-  "B[V]": {
-    "value": null,
-    "ucum": "2lg(1 V)"
-  },
-  "B[mV]": {
-    "value": null,
-    "ucum": "2lg(1 mV)"
-  },
-  "B[uV]": {
-    "value": null,
-    "ucum": "2lg(1 uV)"
-  },
-  "B[10.nV]": {
-    "value": null,
-    "ucum": "2lg(10 nV)"
-  },
-  "B[W]": {
-    "value": null,
-    "ucum": "lg(1 W)"
-  },
-  "B[kW]": {
-    "value": null,
-    "ucum": "lg(1 kW)"
-  },
-  "st": {
-    "value": 1,
-    "ucum": "m3"
-  },
-  "Ao": {
-    "value": 0.1,
-    "ucum": "nm"
-  },
-  "b": {
-    "value": 100,
-    "ucum": "fm2"
-  },
-  "att": {
-    "value": 1,
-    "ucum": "kgf/cm2"
-  },
-  "mho": {
-    "value": 1,
-    "ucum": "S"
-  },
-  "[psi]": {
-    "value": 1,
-    "ucum": "[lbf_av]/[in_i]2"
-  },
-  "circ": {
-    "value": 2,
-    "ucum": "[pi].rad"
-  },
-  "sph": {
-    "value": 4,
-    "ucum": "[pi].sr"
-  },
-  "[car_m]": {
-    "value": 0.2,
-    "ucum": "g"
-  },
-  "[car_Au]": {
-    "value": 1,
-    "ucum": "/24"
-  },
-  "[smoot]": {
-    "value": 67,
-    "ucum": "[in_i]"
-  },
-  "bit_s": {
-    "value": null,
-    "ucum": "ld(1 1)"
-  },
-  "bit": {
-    "value": 1,
-    "ucum": "1"
-  },
-  "By": {
-    "value": 8,
-    "ucum": "bit"
-  },
-  "Bd": {
-    "value": 1,
-    "ucum": "/s"
-  }
-}
-
-<<<<<<< HEAD
-},{}],241:[function(require,module,exports){
-module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":true,"A":true,"V":true,"F":true,"Ohm":true,"S":true,"Wb":true,"Cel":true,"T":true,"H":true,"lm":true,"lx":true,"Bq":true,"Gy":true,"Sv":true,"l":true,"L":true,"ar":true,"t":true,"bar":true,"u":true,"eV":true,"pc":true,"[c]":true,"[h]":true,"[k]":true,"[eps_0]":true,"[mu_0]":true,"[e]":true,"[m_e]":true,"[m_p]":true,"[G]":true,"[g]":true,"[ly]":true,"gf":true,"Ky":true,"Gal":true,"dyn":true,"erg":true,"P":true,"Bi":true,"St":true,"Mx":true,"G":true,"Oe":true,"Gb":true,"sb":true,"Lmb":true,"ph":true,"Ci":true,"R":true,"RAD":true,"REM":true,"cal_[15]":true,"cal_[20]":true,"cal_m":true,"cal_IT":true,"cal_th":true,"cal":true,"tex":true,"m[H2O]":true,"m[Hg]":true,"eq":true,"osm":true,"g%":true,"kat":true,"U":true,"[iU]":true,"[IU]":true,"Np":true,"B":true,"B[SPL]":true,"B[V]":true,"B[mV]":true,"B[uV]":true,"B[10.nV]":true,"B[W]":true,"B[kW]":true,"st":true,"mho":true,"bit":true,"By":true,"Bd":true,"m":true,"s":true,"g":true,"rad":true,"K":true,"C":true,"cd":true}
-
-},{}],242:[function(require,module,exports){
-=======
-},{}],234:[function(require,module,exports){
-module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":true,"A":true,"V":true,"F":true,"Ohm":true,"S":true,"Wb":true,"Cel":true,"T":true,"H":true,"lm":true,"lx":true,"Bq":true,"Gy":true,"Sv":true,"l":true,"L":true,"ar":true,"t":true,"bar":true,"u":true,"eV":true,"pc":true,"[c]":true,"[h]":true,"[k]":true,"[eps_0]":true,"[mu_0]":true,"[e]":true,"[m_e]":true,"[m_p]":true,"[G]":true,"[g]":true,"[ly]":true,"gf":true,"Ky":true,"Gal":true,"dyn":true,"erg":true,"P":true,"Bi":true,"St":true,"Mx":true,"G":true,"Oe":true,"Gb":true,"sb":true,"Lmb":true,"ph":true,"Ci":true,"R":true,"RAD":true,"REM":true,"cal_[15]":true,"cal_[20]":true,"cal_m":true,"cal_IT":true,"cal_th":true,"cal":true,"tex":true,"m[H2O]":true,"m[Hg]":true,"eq":true,"osm":true,"g%":true,"kat":true,"U":true,"[iU]":true,"[IU]":true,"Np":true,"B":true,"B[SPL]":true,"B[V]":true,"B[mV]":true,"B[uV]":true,"B[10.nV]":true,"B[W]":true,"B[kW]":true,"st":true,"mho":true,"bit":true,"By":true,"Bd":true,"m":true,"s":true,"g":true,"rad":true,"K":true,"C":true,"cd":true}
-
-},{}],235:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-module.exports={
-  "Y": {
-    "CODE": "YA",
-    "names": [
-      "yotta"
-    ],
-    "printSymbols": [
-      "Y"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>24</sup>",
-        "numeric": 1e+24
-      }
-    ]
-  },
-  "Z": {
-    "CODE": "ZA",
-    "names": [
-      "zetta"
-    ],
-    "printSymbols": [
-      "Z"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>21</sup>",
-        "numeric": 1e+21
-      }
-    ]
-  },
-  "E": {
-    "CODE": "EX",
-    "names": [
-      "exa"
-    ],
-    "printSymbols": [
-      "E"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>18</sup>",
-        "numeric": 1000000000000000000
-      }
-    ]
-  },
-  "P": {
-    "CODE": "PT",
-    "names": [
-      "peta"
-    ],
-    "printSymbols": [
-      "P"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>15</sup>",
-        "numeric": 1000000000000000
-      }
-    ]
-  },
-  "T": {
-    "CODE": "TR",
-    "names": [
-      "tera"
-    ],
-    "printSymbols": [
-      "T"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>12</sup>",
-        "numeric": 1000000000000
-      }
-    ]
-  },
-  "G": {
-    "CODE": "GA",
-    "names": [
-      "giga"
-    ],
-    "printSymbols": [
-      "G"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>9</sup>",
-        "numeric": 1000000000
-      }
-    ]
-  },
-  "M": {
-    "CODE": "MA",
-    "names": [
-      "mega"
-    ],
-    "printSymbols": [
-      "M"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>6</sup>",
-        "numeric": 1000000
-      }
-    ]
-  },
-  "k": {
-    "CODE": "K",
-    "names": [
-      "kilo"
-    ],
-    "printSymbols": [
-      "k"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>3</sup>",
-        "numeric": 1000
-      }
-    ]
-  },
-  "h": {
-    "CODE": "H",
-    "names": [
-      "hecto"
-    ],
-    "printSymbols": [
-      "h"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>2</sup>",
-        "numeric": 100
-      }
-    ]
-  },
-  "da": {
-    "CODE": "DA",
-    "names": [
-      "deka"
-    ],
-    "printSymbols": [
-      "da"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>1</sup>",
-        "numeric": 10
-      }
-    ]
-  },
-  "d": {
-    "CODE": "D",
-    "names": [
-      "deci"
-    ],
-    "printSymbols": [
-      "d"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-1</sup>",
-        "numeric": 0.1
-      }
-    ]
-  },
-  "c": {
-    "CODE": "C",
-    "names": [
-      "centi"
-    ],
-    "printSymbols": [
-      "c"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-2</sup>",
-        "numeric": 0.01
-      }
-    ]
-  },
-  "m": {
-    "CODE": "M",
-    "names": [
-      "milli"
-    ],
-    "printSymbols": [
-      "m"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-3</sup>",
-        "numeric": 0.001
-      }
-    ]
-  },
-  "u": {
-    "CODE": "U",
-    "names": [
-      "micro"
-    ],
-    "printSymbols": [
-      "&#956;"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-6</sup>",
-        "numeric": 0.000001
-      }
-    ]
-  },
-  "n": {
-    "CODE": "N",
-    "names": [
-      "nano"
-    ],
-    "printSymbols": [
-      "n"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-9</sup>",
-        "numeric": 1e-9
-      }
-    ]
-  },
-  "p": {
-    "CODE": "P",
-    "names": [
-      "pico"
-    ],
-    "printSymbols": [
-      "p"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-12</sup>",
-        "numeric": 1e-12
-      }
-    ]
-  },
-  "f": {
-    "CODE": "F",
-    "names": [
-      "femto"
-    ],
-    "printSymbols": [
-      "f"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-15</sup>",
-        "numeric": 1e-15
-      }
-    ]
-  },
-  "a": {
-    "CODE": "A",
-    "names": [
-      "atto"
-    ],
-    "printSymbols": [
-      "a"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-18</sup>",
-        "numeric": 1e-18
-      }
-    ]
-  },
-  "z": {
-    "CODE": "ZO",
-    "names": [
-      "zepto"
-    ],
-    "printSymbols": [
-      "z"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-21</sup>",
-        "numeric": 1e-21
-      }
-    ]
-  },
-  "y": {
-    "CODE": "YO",
-    "names": [
-      "yocto"
-    ],
-    "printSymbols": [
-      "y"
-    ],
-    "values": [
-      {
-        "printable": "1 &#215; 10<sup>-24</sup>",
-        "numeric": 1e-24
-      }
-    ]
-  },
-  "Ki": {
-    "CODE": "KIB",
-    "names": [
-      "kibi"
-    ],
-    "printSymbols": [
-      "Ki"
-    ],
-    "values": [
-      {
-        "printable": "1024",
-        "numeric": 1024
-      }
-    ]
-  },
-  "Mi": {
-    "CODE": "MIB",
-    "names": [
-      "mebi"
-    ],
-    "printSymbols": [
-      "Mi"
-    ],
-    "values": [
-      {
-        "printable": "1048576",
-        "numeric": 1048576
-      }
-    ]
-  },
-  "Gi": {
-    "CODE": "GIB",
-    "names": [
-      "gibi"
-    ],
-    "printSymbols": [
-      "Gi"
-    ],
-    "values": [
-      {
-        "printable": "1073741824",
-        "numeric": 1073741824
-      }
-    ]
-  },
-  "Ti": {
-    "CODE": "TIB",
-    "names": [
-      "tebi"
-    ],
-    "printSymbols": [
-      "Ti"
-    ],
-    "values": [
-      {
-        "printable": "1099511627776",
-        "numeric": 1099511627776
-      }
-    ]
-  }
-}
-
-<<<<<<< HEAD
-},{}],243:[function(require,module,exports){
-=======
-},{}],236:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-module.exports={
-  "Y": 1e+24,
-  "Z": 1e+21,
-  "E": 1000000000000000000,
-  "P": 1000000000000000,
-  "T": 1000000000000,
-  "G": 1000000000,
-  "M": 1000000,
-  "k": 1000,
-  "h": 100,
-  "da": 10,
-  "d": 0.1,
-  "c": 0.01,
-  "m": 0.001,
-  "u": 0.000001,
-  "n": 1e-9,
-  "p": 1e-12,
-  "f": 1e-15,
-  "a": 1e-18,
-  "z": 1e-21,
-  "y": 1e-24,
-  "Ki": 1024,
-  "Mi": 1048576,
-  "Gi": 1073741824,
-  "Ti": 1099511627776
-}
-
-<<<<<<< HEAD
-},{}],244:[function(require,module,exports){
-=======
-},{}],237:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-module.exports = (function() {
-  /*
-   * Generated by PEG.js 0.8.0.
-   *
-   * http://pegjs.majda.cz/
-   */
-
-  function peg$subclass(child, parent) {
-    function ctor() { this.constructor = child; }
-    ctor.prototype = parent.prototype;
-    child.prototype = new ctor();
-  }
-
-  function SyntaxError(message, expected, found, offset, line, column) {
-    this.message  = message;
-    this.expected = expected;
-    this.found    = found;
-    this.offset   = offset;
-    this.line     = line;
-    this.column   = column;
-
-    this.name     = "SyntaxError";
-  }
-
-  peg$subclass(SyntaxError, Error);
-
-  function parse(input) {
-    var options = arguments.length > 1 ? arguments[1] : {},
-
-        peg$FAILED = {},
-
-        peg$startRuleIndices = { start: 0 },
-        peg$startRuleIndex   = 0,
-
-        peg$consts = [
-          function(e) {
-            return e ; // cleanup(e);
-          },
-          peg$FAILED,
-          "/",
-          { type: "literal", value: "/", description: "\"/\"" },
-          function(e) {return multiply({value:1, units:{}}, [["/", e]]);},
-          ".",
-          { type: "literal", value: ".", description: "\".\"" },
-          [],
-          function(t, ms) {
-            return multiply(t, ms);
-          },
-          null,
-          function(e, exp) {return e.ann && exp;},
-          void 0,
-          function(e, exp) {
-            return topower(e, exp);
-          },
-          function(d) {
-           var ret = {
-              value: d,
-              units: {}
-            };
-            return ret;
-          },
-          function(u) {return u;},
-          "(",
-          { type: "literal", value: "(", description: "\"(\"" },
-          ")",
-          { type: "literal", value: ")", description: "\")\"" },
-          function(e) {return e;},
-          /^[+\-]/,
-          { type: "class", value: "[+\\-]", description: "[+\\-]" },
-          function(s, d) {return (s=="-") ? (-1*d) : d},
-          function(p, a) {return(p && !ismetric(a));},
-          function(p, a) {
-            var ret = a;
-            var u = Object.keys(ret.units)[0];
-
-            // console.log("simpleUnit: p:", JSON.stringify(p, null, 2), "a: ", JSON.stringify(a, null, 2));
-
-            if (p){
-              ret.value = ret.value * prefixes[p];
-              ret.metadata = {};
-              if(prefixMetadata[p]){
-                // if this prefix has metadata, augment the return with it
-                Object.keys(prefixMetadata[p]).forEach(function(key){
-                  if(!ret.metadata[u]){
-                    ret.metadata[u] = { prefix: {} };
-                  }
-                  ret.metadata[u].prefix[key] = prefixMetadata[p][key];
-                });
-              }
-
-              // merge in the unit metadata
-              if(unitMetadata[u]){
-                //console.log("simpleUnit: ", JSON.stringify(unitMetadata[u], null ,2));
-                Object.keys(unitMetadata[u]).forEach(function(key){
-                  if(!ret.metadata[u]){
-                    ret.metadata[u] = {};
-                  }
-                  ret.metadata[u][key] = unitMetadata[u][key];
-                });
-              }
-            }
-
-            //console.log("simpleUnit: ret: ", JSON.stringify(ret, null ,2));
-            return ret;
-          },
-          /^[0-9]/,
-          { type: "class", value: "[0-9]", description: "[0-9]" },
-          "e",
-          { type: "literal", value: "e", description: "\"e\"" },
-          function(v, epresent, e) {return (!epresent && !!e);},
-          function(v, epresent, e) {
-            return parseInt(v.join(""))*Math.pow(10, e||0);
-          },
-          "{",
-          { type: "literal", value: "{", description: "\"{\"" },
-          /^[^}]/,
-          { type: "class", value: "[^}]", description: "[^}]" },
-          "}",
-          { type: "literal", value: "}", description: "\"}\"" },
-          function(m) {return /[^\x00-\x7F]/.test(m);},
-          function(m) { return {value: 1, units:{}, ann: m} },
-          "[anti'Xa'U]",
-          { type: "literal", value: "[anti'Xa'U]", description: "\"[anti'Xa'U]\"" },
-          function(u) {return {"value": 1, "units": {"[anti'Xa'U]": 1}, "metadata": {"[anti'Xa'U]":{"isBase":false,"CODE":"[ANTI'XA'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["anti factor Xa unit"],"properties":["biologic activity of factor Xa inhibitor (heparin)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[Amb'a'1'U]",
-          { type: "literal", value: "[Amb'a'1'U]", description: "\"[Amb'a'1'U]\"" },
-          function(u) {return {"value": 1, "units": {"[Amb'a'1'U]": 1}, "metadata": {"[Amb'a'1'U]":{"isBase":false,"CODE":"[AMB'A'1'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["allergen unit for Ambrosia artemisiifolia"],"printSymbols":["Amb a 1 U"],"properties":["procedure defined amount of the major allergen of ragweed."],"values":[{"printable":"1","numeric":1}]}}};},
-          "[stone_av]",
-          { type: "literal", value: "[stone_av]", description: "\"[stone_av]\"" },
-          function(u) {return {"value": 1, "units": {"[stone_av]": 1}, "metadata": {"[stone_av]":{"isBase":false,"CODE":"[STONE_AV]","isMetric":"no","class":"avoirdupois","names":["stone","British stone"],"properties":["mass"],"values":[{"printable":"14","numeric":14}]}}};},
-          "[in_i'H2O]",
-          { type: "literal", value: "[in_i'H2O]", description: "\"[in_i'H2O]\"" },
-          function(u) {return {"value": 1, "units": {"[in_i'H2O]": 1}, "metadata": {"[in_i'H2O]":{"isBase":false,"CODE":"[IN_I'H2O]","isMetric":"no","class":"clinical","names":["inch of water column"],"printSymbols":["in&#160;H<sub>\n            <r>2</r>\n         </sub>O"],"properties":["pressure"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[ston_av]",
-          { type: "literal", value: "[ston_av]", description: "\"[ston_av]\"" },
-          function(u) {return {"value": 1, "units": {"[ston_av]": 1}, "metadata": {"[ston_av]":{"isBase":false,"CODE":"[STON_AV]","isMetric":"no","class":"avoirdupois","names":["short ton","U.S. ton"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
-          "[TCID_50]",
-          { type: "literal", value: "[TCID_50]", description: "\"[TCID_50]\"" },
-          function(u) {return {"value": 1, "units": {"[TCID_50]": 1}, "metadata": {"[TCID_50]":{"isBase":false,"CODE":"[TCID_50]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["50% tissue culture infectious dose"],"printSymbols":["TCID<sub>50</sub>"],"properties":["biologic activity (infectivity) of an infectious agent preparation"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[CCID_50]",
-          { type: "literal", value: "[CCID_50]", description: "\"[CCID_50]\"" },
-          function(u) {return {"value": 1, "units": {"[CCID_50]": 1}, "metadata": {"[CCID_50]":{"isBase":false,"CODE":"[CCID_50]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["50% cell culture infectious dose"],"printSymbols":["CCID<sub>50</sub>"],"properties":["biologic activity (infectivity) of an infectious agent preparation"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[scwt_av]",
-          { type: "literal", value: "[scwt_av]", description: "\"[scwt_av]\"" },
-          function(u) {return {"value": 1, "units": {"[scwt_av]": 1}, "metadata": {"[scwt_av]":{"isBase":false,"CODE":"[SCWT_AV]","isMetric":"no","class":"avoirdupois","names":["short hundredweight","U.S. hundredweight"],"properties":["mass"],"values":[{"printable":"100","numeric":100}]}}};},
-          "[lcwt_av]",
-          { type: "literal", value: "[lcwt_av]", description: "\"[lcwt_av]\"" },
-          function(u) {return {"value": 1, "units": {"[lcwt_av]": 1}, "metadata": {"[lcwt_av]":{"isBase":false,"CODE":"[LCWT_AV]","isMetric":"no","class":"avoirdupois","names":["long hunderdweight","British hundredweight"],"properties":["mass"],"values":[{"printable":"112","numeric":112}]}}};},
-          "[lton_av]",
-          { type: "literal", value: "[lton_av]", description: "\"[lton_av]\"" },
-          function(u) {return {"value": 1, "units": {"[lton_av]": 1}, "metadata": {"[lton_av]":{"isBase":false,"CODE":"[LTON_AV]","isMetric":"no","class":"avoirdupois","names":["long ton","British ton"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
-          "[in_i'Hg]",
-          { type: "literal", value: "[in_i'Hg]", description: "\"[in_i'Hg]\"" },
-          function(u) {return {"value": 1, "units": {"[in_i'Hg]": 1}, "metadata": {"[in_i'Hg]":{"isBase":false,"CODE":"[IN_I'HG]","isMetric":"no","class":"clinical","names":["inch of mercury column"],"printSymbols":["in&#160;Hg"],"properties":["pressure"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[tbs_us]",
-          { type: "literal", value: "[tbs_us]", description: "\"[tbs_us]\"" },
-          function(u) {return {"value": 1, "units": {"[tbs_us]": 1}, "metadata": {"[tbs_us]":{"isBase":false,"CODE":"[TBS_US]","isMetric":"no","class":"us-volumes","names":["tablespoon"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[dpt_us]",
-          { type: "literal", value: "[dpt_us]", description: "\"[dpt_us]\"" },
-          function(u) {return {"value": 1, "units": {"[dpt_us]": 1}, "metadata": {"[dpt_us]":{"isBase":false,"CODE":"[DPT_US]","isMetric":"no","class":"us-volumes","names":["dry pint"],"properties":["dry volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[bdsk'U]",
-          { type: "literal", value: "[bdsk'U]", description: "\"[bdsk'U]\"" },
-          function(u) {return {"value": 1, "units": {"[bdsk'U]": 1}, "metadata": {"[bdsk'U]":{"isBase":false,"CODE":"[BDSK'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Bodansky unit"],"properties":["biologic activity of phosphatase"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[smgy'U]",
-          { type: "literal", value: "[smgy'U]", description: "\"[smgy'U]\"" },
-          function(u) {return {"value": 1, "units": {"[smgy'U]": 1}, "metadata": {"[smgy'U]":{"isBase":false,"CODE":"[SMGY'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Somogyi unit"],"properties":["biologic activity of amylase"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[dqt_us]",
-          { type: "literal", value: "[dqt_us]", description: "\"[dqt_us]\"" },
-          function(u) {return {"value": 1, "units": {"[dqt_us]": 1}, "metadata": {"[dqt_us]":{"isBase":false,"CODE":"[DQT_US]","isMetric":"no","class":"us-volumes","names":["dry quart"],"properties":["dry volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[todd'U]",
-          { type: "literal", value: "[todd'U]", description: "\"[todd'U]\"" },
-          function(u) {return {"value": 1, "units": {"[todd'U]": 1}, "metadata": {"[todd'U]":{"isBase":false,"CODE":"[TODD'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Todd unit"],"properties":["biologic activity antistreptolysin O"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[D'ag'U]",
-          { type: "literal", value: "[D'ag'U]", description: "\"[D'ag'U]\"" },
-          function(u) {return {"value": 1, "units": {"[D'ag'U]": 1}, "metadata": {"[D'ag'U]":{"isBase":false,"CODE":"[D'AG'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["D-antigen unit"],"printSymbols":[""],"properties":["procedure defined amount of a poliomyelitis d-antigen substance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[beth'U]",
-          { type: "literal", value: "[beth'U]", description: "\"[beth'U]\"" },
-          function(u) {return {"value": 1, "units": {"[beth'U]": 1}, "metadata": {"[beth'U]":{"isBase":false,"CODE":"[BETH'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Bethesda unit"],"properties":["biologic activity of factor VIII inhibitor"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[gal_wi]",
-          { type: "literal", value: "[gal_wi]", description: "\"[gal_wi]\"" },
-          function(u) {return {"value": 1, "units": {"[gal_wi]": 1}, "metadata": {"[gal_wi]":{"isBase":false,"CODE":"[GAL_WI]","isMetric":"no","class":"us-volumes","names":["historical winchester gallon"],"properties":["dry volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[crd_us]",
-          { type: "literal", value: "[crd_us]", description: "\"[crd_us]\"" },
-          function(u) {return {"value": 1, "units": {"[crd_us]": 1}, "metadata": {"[crd_us]":{"isBase":false,"CODE":"[CRD_US]","isMetric":"no","class":"us-volumes","names":["cord"],"properties":["fluid volume"],"values":[{"printable":"128","numeric":128}]}}};},
-          "[min_us]",
-          { type: "literal", value: "[min_us]", description: "\"[min_us]\"" },
-          function(u) {return {"value": 1, "units": {"[min_us]": 1}, "metadata": {"[min_us]":{"isBase":false,"CODE":"[MIN_US]","isMetric":"no","class":"us-volumes","names":["minim"],"properties":["fluid volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[fdr_us]",
-          { type: "literal", value: "[fdr_us]", description: "\"[fdr_us]\"" },
-          function(u) {return {"value": 1, "units": {"[fdr_us]": 1}, "metadata": {"[fdr_us]":{"isBase":false,"CODE":"[FDR_US]","isMetric":"no","class":"us-volumes","names":["fluid dram"],"properties":["fluid volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[foz_us]",
-          { type: "literal", value: "[foz_us]", description: "\"[foz_us]\"" },
-          function(u) {return {"value": 1, "units": {"[foz_us]": 1}, "metadata": {"[foz_us]":{"isBase":false,"CODE":"[FOZ_US]","isMetric":"no","class":"us-volumes","names":["fluid ounce"],"printSymbols":["oz fl"],"properties":["fluid volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[gil_us]",
-          { type: "literal", value: "[gil_us]", description: "\"[gil_us]\"" },
-          function(u) {return {"value": 1, "units": {"[gil_us]": 1}, "metadata": {"[gil_us]":{"isBase":false,"CODE":"[GIL_US]","isMetric":"no","class":"us-volumes","names":["gill"],"properties":["fluid volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[bbl_us]",
-          { type: "literal", value: "[bbl_us]", description: "\"[bbl_us]\"" },
-          function(u) {return {"value": 1, "units": {"[bbl_us]": 1}, "metadata": {"[bbl_us]":{"isBase":false,"CODE":"[BBL_US]","isMetric":"no","class":"us-volumes","names":["barrel"],"properties":["fluid volume"],"values":[{"printable":"42","numeric":42}]}}};},
-          "[gal_us]",
-          { type: "literal", value: "[gal_us]", description: "\"[gal_us]\"" },
-          function(u) {return {"value": 1, "units": {"[gal_us]": 1}, "metadata": {"[gal_us]":{"isBase":false,"CODE":"[GAL_US]","isMetric":"no","class":"us-volumes","names":["Queen Anne's wine gallon"],"properties":["fluid volume"],"values":[{"printable":"231","numeric":231}]}}};},
-          "[acr_br]",
-          { type: "literal", value: "[acr_br]", description: "\"[acr_br]\"" },
-          function(u) {return {"value": 1, "units": {"[acr_br]": 1}, "metadata": {"[acr_br]":{"isBase":false,"CODE":"[ACR_BR]","isMetric":"no","class":"brit-length","names":["acre"],"properties":["area"],"values":[{"printable":"4840","numeric":4840}]}}};},
-          "[nmi_br]",
-          { type: "literal", value: "[nmi_br]", description: "\"[nmi_br]\"" },
-          function(u) {return {"value": 1, "units": {"[nmi_br]": 1}, "metadata": {"[nmi_br]":{"isBase":false,"CODE":"[NMI_BR]","isMetric":"no","class":"brit-length","names":["nautical mile"],"properties":["length"],"values":[{"printable":"6080","numeric":6080}]}}};},
-          "[fth_br]",
-          { type: "literal", value: "[fth_br]", description: "\"[fth_br]\"" },
-          function(u) {return {"value": 1, "units": {"[fth_br]": 1}, "metadata": {"[fth_br]":{"isBase":false,"CODE":"[FTH_BR]","isMetric":"no","class":"brit-length","names":["fathom"],"properties":["length"],"values":[{"printable":"6","numeric":6}]}}};},
-          "[mil_us]",
-          { type: "literal", value: "[mil_us]", description: "\"[mil_us]\"" },
-          function(u) {return {"value": 1, "units": {"[mil_us]": 1}, "metadata": {"[mil_us]":{"isBase":false,"CODE":"[MIL_US]","isMetric":"no","class":"us-lengths","names":["mil"],"properties":["length"],"values":[{"printable":"1 &#215; 10<sup>-3</sup>","numeric":0.001}]}}};},
-          "[smi_us]",
-          { type: "literal", value: "[smi_us]", description: "\"[smi_us]\"" },
-          function(u) {return {"value": 1, "units": {"[smi_us]": 1}, "metadata": {"[smi_us]":{"isBase":false,"CODE":"[SMI_US]","isMetric":"no","class":"us-lengths","names":["square mile"],"properties":["area"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[acr_us]",
-          { type: "literal", value: "[acr_us]", description: "\"[acr_us]\"" },
-          function(u) {return {"value": 1, "units": {"[acr_us]": 1}, "metadata": {"[acr_us]":{"isBase":false,"CODE":"[ACR_US]","isMetric":"no","class":"us-lengths","names":["acre"],"properties":["area"],"values":[{"printable":"160","numeric":160}]}}};},
-          "[fur_us]",
-          { type: "literal", value: "[fur_us]", description: "\"[fur_us]\"" },
-          function(u) {return {"value": 1, "units": {"[fur_us]": 1}, "metadata": {"[fur_us]":{"isBase":false,"CODE":"[FUR_US]","isMetric":"no","class":"us-lengths","names":["furlong"],"properties":["length"],"values":[{"printable":"40","numeric":40}]}}};},
-          "[fth_us]",
-          { type: "literal", value: "[fth_us]", description: "\"[fth_us]\"" },
-          function(u) {return {"value": 1, "units": {"[fth_us]": 1}, "metadata": {"[fth_us]":{"isBase":false,"CODE":"[FTH_US]","isMetric":"no","class":"us-lengths","names":["fathom"],"properties":["length"],"values":[{"printable":"6","numeric":6}]}}};},
-          "[rlk_us]",
-          { type: "literal", value: "[rlk_us]", description: "\"[rlk_us]\"" },
-          function(u) {return {"value": 1, "units": {"[rlk_us]": 1}, "metadata": {"[rlk_us]":{"isBase":false,"CODE":"[RLK_US]","isMetric":"no","class":"us-lengths","names":["link for Ramden's chain"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[rch_us]",
-          { type: "literal", value: "[rch_us]", description: "\"[rch_us]\"" },
-          function(u) {return {"value": 1, "units": {"[rch_us]": 1}, "metadata": {"[rch_us]":{"isBase":false,"CODE":"[RCH_US]","isMetric":"no","class":"us-lengths","names":["Ramden's chain","Engineer's chain"],"properties":["length"],"values":[{"printable":"100","numeric":100}]}}};},
-          "[lbf_av]",
-          { type: "literal", value: "[lbf_av]", description: "\"[lbf_av]\"" },
-          function(u) {return {"value": 1, "units": {"[lbf_av]": 1}, "metadata": {"[lbf_av]":{"isBase":false,"CODE":"[LBF_AV]","isMetric":"no","class":"const","names":["pound force"],"printSymbols":["lbf"],"properties":["force"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[hnsf'U]",
-          { type: "literal", value: "[hnsf'U]", description: "\"[hnsf'U]\"" },
-          function(u) {return {"value": 1, "units": {"[hnsf'U]": 1}, "metadata": {"[hnsf'U]":{"isBase":false,"CODE":"[HNSF'U]","isMetric":"no","class":"clinical","names":["Hounsfield unit"],"printSymbols":["HF"],"properties":["x-ray attenuation"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[mesh_i]",
-          { type: "literal", value: "[mesh_i]", description: "\"[mesh_i]\"" },
-          function(u) {return {"value": 1, "units": {"[mesh_i]": 1}, "metadata": {"[mesh_i]":{"isBase":false,"CODE":"[MESH_I]","isMetric":"no","class":"clinical","names":["mesh"],"properties":["lineic number"],"values":[{"printable":"1","numeric":1}]}}};},
-          "%[slope]",
-          { type: "literal", value: "%[slope]", description: "\"%[slope]\"" },
-          function(u) {return {"value": 1, "units": {"%[slope]": 1}, "metadata": {"%[slope]":{"isBase":false,"CODE":"%[SLOPE]","isMetric":"no","isSpecial":"yes","class":"clinical","names":["percent of slope"],"printSymbols":["%"],"properties":["slope"],"values":[{"printable":"<function name=\"100tan\" value=\"1\" Unit=\"deg\"/>","numeric":null}]}}};},
-          "[p'diop]",
-          { type: "literal", value: "[p'diop]", description: "\"[p'diop]\"" },
-          function(u) {return {"value": 1, "units": {"[p'diop]": 1}, "metadata": {"[p'diop]":{"isBase":false,"CODE":"[P'DIOP]","isMetric":"no","isSpecial":"yes","class":"clinical","names":["prism diopter"],"printSymbols":["PD"],"properties":["refraction of a prism"],"values":[{"printable":"<function name=\"tanTimes100\" value=\"1\" Unit=\"deg\"/>","numeric":null}]}}};},
-          "[gil_br]",
-          { type: "literal", value: "[gil_br]", description: "\"[gil_br]\"" },
-          function(u) {return {"value": 1, "units": {"[gil_br]": 1}, "metadata": {"[gil_br]":{"isBase":false,"CODE":"[GIL_BR]","isMetric":"no","class":"brit-volumes","names":["gill"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[wood'U]",
-          { type: "literal", value: "[wood'U]", description: "\"[wood'U]\"" },
-          function(u) {return {"value": 1, "units": {"[wood'U]": 1}, "metadata": {"[wood'U]":{"isBase":false,"CODE":"[WOOD'U]","isMetric":"no","class":"clinical","names":["Wood unit"],"printSymbols":["Wood U."],"properties":["fluid resistance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "cal_[15]",
-          { type: "literal", value: "cal_[15]", description: "\"cal_[15]\"" },
-          function(u) {return {"value": 1, "units": {"cal_[15]": 1}, "metadata": {"cal_[15]":{"isBase":false,"CODE":"CAL_[15]","isMetric":"yes","class":"heat","names":["calorie at 15 °C"],"printSymbols":["cal<sub>15&#176;C</sub>"],"properties":["energy"],"values":[{"printable":"4.18580","numeric":4.1858}]}}};},
-          "cal_[20]",
-          { type: "literal", value: "cal_[20]", description: "\"cal_[20]\"" },
-          function(u) {return {"value": 1, "units": {"cal_[20]": 1}, "metadata": {"cal_[20]":{"isBase":false,"CODE":"CAL_[20]","isMetric":"yes","class":"heat","names":["calorie at 20 °C"],"printSymbols":["cal<sub>20&#176;C</sub>"],"properties":["energy"],"values":[{"printable":"4.18190","numeric":4.1819}]}}};},
-          "[foz_br]",
-          { type: "literal", value: "[foz_br]", description: "\"[foz_br]\"" },
-          function(u) {return {"value": 1, "units": {"[foz_br]": 1}, "metadata": {"[foz_br]":{"isBase":false,"CODE":"[FOZ_BR]","isMetric":"no","class":"brit-volumes","names":["fluid ounce"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[fdr_br]",
-          { type: "literal", value: "[fdr_br]", description: "\"[fdr_br]\"" },
-          function(u) {return {"value": 1, "units": {"[fdr_br]": 1}, "metadata": {"[fdr_br]":{"isBase":false,"CODE":"[FDR_BR]","isMetric":"no","class":"brit-volumes","names":["fluid dram"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[srd_us]",
-          { type: "literal", value: "[srd_us]", description: "\"[srd_us]\"" },
-          function(u) {return {"value": 1, "units": {"[srd_us]": 1}, "metadata": {"[srd_us]":{"isBase":false,"CODE":"[SRD_US]","isMetric":"no","class":"us-lengths","names":["square rod"],"properties":["area"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[min_br]",
-          { type: "literal", value: "[min_br]", description: "\"[min_br]\"" },
-          function(u) {return {"value": 1, "units": {"[min_br]": 1}, "metadata": {"[min_br]":{"isBase":false,"CODE":"[MIN_BR]","isMetric":"no","class":"brit-volumes","names":["minim"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[EID_50]",
-          { type: "literal", value: "[EID_50]", description: "\"[EID_50]\"" },
-          function(u) {return {"value": 1, "units": {"[EID_50]": 1}, "metadata": {"[EID_50]":{"isBase":false,"CODE":"[EID_50]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["50% embryo infectious dose"],"printSymbols":["EID<sub>50</sub>"],"properties":["biologic activity (infectivity) of an infectious agent preparation"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[Btu_th]",
-          { type: "literal", value: "[Btu_th]", description: "\"[Btu_th]\"" },
-          function(u) {return {"value": 1, "units": {"[Btu_th]": 1}, "metadata": {"[Btu_th]":{"isBase":false,"CODE":"[BTU_TH]","isMetric":"no","class":"heat","names":["thermochemical British thermal unit"],"printSymbols":["Btu<sub>th</sub>"],"properties":["energy"],"values":[{"printable":"1.054350","numeric":1.05435}]}}};},
-          "[Btu_IT]",
-          { type: "literal", value: "[Btu_IT]", description: "\"[Btu_IT]\"" },
-          function(u) {return {"value": 1, "units": {"[Btu_IT]": 1}, "metadata": {"[Btu_IT]":{"isBase":false,"CODE":"[BTU_IT]","isMetric":"no","class":"heat","names":["international table British thermal unit"],"printSymbols":["Btu<sub>IT</sub>"],"properties":["energy"],"values":[{"printable":"1.05505585262","numeric":1.05505585262}]}}};},
-          "[car_Au]",
-          { type: "literal", value: "[car_Au]", description: "\"[car_Au]\"" },
-          function(u) {return {"value": 1, "units": {"[car_Au]": 1}, "metadata": {"[car_Au]":{"isBase":false,"CODE":"[CAR_AU]","isMetric":"no","class":"misc","names":["carat of gold alloys"],"printSymbols":["ct<sub>\n            <r>Au</r>\n         </sub>"],"properties":["mass fraction"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[Btu_60]",
-          { type: "literal", value: "[Btu_60]", description: "\"[Btu_60]\"" },
-          function(u) {return {"value": 1, "units": {"[Btu_60]": 1}, "metadata": {"[Btu_60]":{"isBase":false,"CODE":"[BTU_60]","isMetric":"no","class":"heat","names":["British thermal unit at 60 °F"],"printSymbols":["Btu<sub>60&#176;F</sub>"],"properties":["energy"],"values":[{"printable":"1.05468","numeric":1.05468}]}}};},
-          "[Btu_59]",
-          { type: "literal", value: "[Btu_59]", description: "\"[Btu_59]\"" },
-          function(u) {return {"value": 1, "units": {"[Btu_59]": 1}, "metadata": {"[Btu_59]":{"isBase":false,"CODE":"[BTU_59]","isMetric":"no","class":"heat","names":["British thermal unit at 59 °F"],"printSymbols":["Btu<sub>59&#176;F</sub>"],"properties":["energy"],"values":[{"printable":"1.05480","numeric":1.0548}]}}};},
-          "[Btu_39]",
-          { type: "literal", value: "[Btu_39]", description: "\"[Btu_39]\"" },
-          function(u) {return {"value": 1, "units": {"[Btu_39]": 1}, "metadata": {"[Btu_39]":{"isBase":false,"CODE":"[BTU_39]","isMetric":"no","class":"heat","names":["British thermal unit at 39 °F"],"printSymbols":["Btu<sub>39&#176;F</sub>"],"properties":["energy"],"values":[{"printable":"1.05967","numeric":1.05967}]}}};},
-          "[cup_us]",
-          { type: "literal", value: "[cup_us]", description: "\"[cup_us]\"" },
-          function(u) {return {"value": 1, "units": {"[cup_us]": 1}, "metadata": {"[cup_us]":{"isBase":false,"CODE":"[CUP_US]","isMetric":"no","class":"us-volumes","names":["cup"],"properties":["volume"],"values":[{"printable":"16","numeric":16}]}}};},
-          "B[10.nV]",
-          { type: "literal", value: "B[10.nV]", description: "\"B[10.nV]\"" },
-          function(u) {return {"value": 1, "units": {"B[10.nV]": 1}, "metadata": {"B[10.nV]":{"isBase":false,"CODE":"B[10.NV]","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel 10 nanovolt"],"printSymbols":["B(10 nV)"],"properties":["electric potential level"],"values":[{"printable":"<function name=\"lgTimes2\" value=\"10\" Unit=\"nV\"/>","numeric":null}]}}};},
-          "[tsp_us]",
-          { type: "literal", value: "[tsp_us]", description: "\"[tsp_us]\"" },
-          function(u) {return {"value": 1, "units": {"[tsp_us]": 1}, "metadata": {"[tsp_us]":{"isBase":false,"CODE":"[TSP_US]","isMetric":"no","class":"us-volumes","names":["teaspoon"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[mclg'U]",
-          { type: "literal", value: "[mclg'U]", description: "\"[mclg'U]\"" },
-          function(u) {return {"value": 1, "units": {"[mclg'U]": 1}, "metadata": {"[mclg'U]":{"isBase":false,"CODE":"[MCLG'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Mac Lagan unit"],"properties":["arbitrary biologic activity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[cicero]",
-          { type: "literal", value: "[cicero]", description: "\"[cicero]\"" },
-          function(u) {return {"value": 1, "units": {"[cicero]": 1}, "metadata": {"[cicero]":{"isBase":false,"CODE":"[CICERO]","isMetric":"no","class":"typeset","names":["cicero","Didot's pica"],"properties":["length"],"values":[{"printable":"12","numeric":12}]}}};},
-          "[pwt_tr]",
-          { type: "literal", value: "[pwt_tr]", description: "\"[pwt_tr]\"" },
-          function(u) {return {"value": 1, "units": {"[pwt_tr]": 1}, "metadata": {"[pwt_tr]":{"isBase":false,"CODE":"[PWT_TR]","isMetric":"no","class":"troy","names":["pennyweight"],"printSymbols":["dwt"],"properties":["mass"],"values":[{"printable":"24","numeric":24}]}}};},
-          "[pnt_pr]",
-          { type: "literal", value: "[pnt_pr]", description: "\"[pnt_pr]\"" },
-          function(u) {return {"value": 1, "units": {"[pnt_pr]": 1}, "metadata": {"[pnt_pr]":{"isBase":false,"CODE":"[PNT_PR]","isMetric":"no","class":"typeset","names":["Printer's point"],"properties":["length"],"values":[{"printable":"0.013837","numeric":0.013837}]}}};},
-          "[pca_pr]",
-          { type: "literal", value: "[pca_pr]", description: "\"[pca_pr]\"" },
-          function(u) {return {"value": 1, "units": {"[pca_pr]": 1}, "metadata": {"[pca_pr]":{"isBase":false,"CODE":"[PCA_PR]","isMetric":"no","class":"typeset","names":["Printer's pica"],"properties":["length"],"values":[{"printable":"12","numeric":12}]}}};},
-          "[gal_br]",
-          { type: "literal", value: "[gal_br]", description: "\"[gal_br]\"" },
-          function(u) {return {"value": 1, "units": {"[gal_br]": 1}, "metadata": {"[gal_br]":{"isBase":false,"CODE":"[GAL_BR]","isMetric":"no","class":"brit-volumes","names":["gallon"],"properties":["volume"],"values":[{"printable":"4.54609","numeric":4.54609}]}}};},
-          "[yd_us]",
-          { type: "literal", value: "[yd_us]", description: "\"[yd_us]\"" },
-          function(u) {return {"value": 1, "units": {"[yd_us]": 1}, "metadata": {"[yd_us]":{"isBase":false,"CODE":"[YD_US]","isMetric":"no","class":"us-lengths","names":["yard"],"properties":["length"],"values":[{"printable":"3","numeric":3}]}}};},
-          "[ligne]",
-          { type: "literal", value: "[ligne]", description: "\"[ligne]\"" },
-          function(u) {return {"value": 1, "units": {"[ligne]": 1}, "metadata": {"[ligne]":{"isBase":false,"CODE":"[LIGNE]","isMetric":"no","class":"typeset","names":["ligne","French line"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[tbs_m]",
-          { type: "literal", value: "[tbs_m]", description: "\"[tbs_m]\"" },
-          function(u) {return {"value": 1, "units": {"[tbs_m]": 1}, "metadata": {"[tbs_m]":{"isBase":false,"CODE":"[TBS_M]","isMetric":"no","class":"us-volumes","names":["metric tablespoon"],"properties":["volume"],"values":[{"printable":"15","numeric":15}]}}};},
-          "[lb_ap]",
-          { type: "literal", value: "[lb_ap]", description: "\"[lb_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[lb_ap]": 1}, "metadata": {"[lb_ap]":{"isBase":false,"CODE":"[LB_AP]","isMetric":"no","class":"apoth","names":["pound"],"printSymbols":["<strike>lb</strike>"],"properties":["mass"],"values":[{"printable":"12","numeric":12}]}}};},
-          "[oz_ap]",
-          { type: "literal", value: "[oz_ap]", description: "\"[oz_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[oz_ap]": 1}, "metadata": {"[oz_ap]":{"isBase":false,"CODE":"[OZ_AP]","isMetric":"no","class":"apoth","names":["ounce"],"printSymbols":["&#8485;"],"properties":["mass"],"values":[{"printable":"8","numeric":8}]}}};},
-          "[dr_ap]",
-          { type: "literal", value: "[dr_ap]", description: "\"[dr_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[dr_ap]": 1}, "metadata": {"[dr_ap]":{"isBase":false,"CODE":"[DR_AP]","isMetric":"no","class":"apoth","names":["dram","drachm"],"printSymbols":["&#658;"],"properties":["mass"],"values":[{"printable":"3","numeric":3}]}}};},
-          "[sc_ap]",
-          { type: "literal", value: "[sc_ap]", description: "\"[sc_ap]\"" },
-          function(u) {return {"value": 1, "units": {"[sc_ap]": 1}, "metadata": {"[sc_ap]":{"isBase":false,"CODE":"[SC_AP]","isMetric":"no","class":"apoth","names":["scruple"],"printSymbols":["&#8456;"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
-          "[tsp_m]",
-          { type: "literal", value: "[tsp_m]", description: "\"[tsp_m]\"" },
-          function(u) {return {"value": 1, "units": {"[tsp_m]": 1}, "metadata": {"[tsp_m]":{"isBase":false,"CODE":"[TSP_M]","isMetric":"no","class":"us-volumes","names":["metric teaspoon"],"properties":["volume"],"values":[{"printable":"5","numeric":5}]}}};},
-          "[cup_m]",
-          { type: "literal", value: "[cup_m]", description: "\"[cup_m]\"" },
-          function(u) {return {"value": 1, "units": {"[cup_m]": 1}, "metadata": {"[cup_m]":{"isBase":false,"CODE":"[CUP_M]","isMetric":"no","class":"us-volumes","names":["metric cup"],"properties":["volume"],"values":[{"printable":"240","numeric":240}]}}};},
-          "[lb_tr]",
-          { type: "literal", value: "[lb_tr]", description: "\"[lb_tr]\"" },
-          function(u) {return {"value": 1, "units": {"[lb_tr]": 1}, "metadata": {"[lb_tr]":{"isBase":false,"CODE":"[LB_TR]","isMetric":"no","class":"troy","names":["troy pound"],"printSymbols":["lb t"],"properties":["mass"],"values":[{"printable":"12","numeric":12}]}}};},
-          "[oz_tr]",
-          { type: "literal", value: "[oz_tr]", description: "\"[oz_tr]\"" },
-          function(u) {return {"value": 1, "units": {"[oz_tr]": 1}, "metadata": {"[oz_tr]":{"isBase":false,"CODE":"[OZ_TR]","isMetric":"no","class":"troy","names":["troy ounce"],"printSymbols":["oz t"],"properties":["mass"],"values":[{"printable":"20","numeric":20}]}}};},
-          "[didot]",
-          { type: "literal", value: "[didot]", description: "\"[didot]\"" },
-          function(u) {return {"value": 1, "units": {"[didot]": 1}, "metadata": {"[didot]":{"isBase":false,"CODE":"[DIDOT]","isMetric":"no","class":"typeset","names":["didot","Didot's point"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[foz_m]",
-          { type: "literal", value: "[foz_m]", description: "\"[foz_m]\"" },
-          function(u) {return {"value": 1, "units": {"[foz_m]": 1}, "metadata": {"[foz_m]":{"isBase":false,"CODE":"[FOZ_M]","isMetric":"no","class":"us-volumes","names":["metric fluid ounce"],"printSymbols":["oz fl"],"properties":["fluid volume"],"values":[{"printable":"30","numeric":30}]}}};},
-          "[car_m]",
-          { type: "literal", value: "[car_m]", description: "\"[car_m]\"" },
-          function(u) {return {"value": 1, "units": {"[car_m]": 1}, "metadata": {"[car_m]":{"isBase":false,"CODE":"[CAR_M]","isMetric":"no","class":"misc","names":["metric carat"],"printSymbols":["ct<sub>m</sub>"],"properties":["mass"],"values":[{"printable":"0.2","numeric":0.2}]}}};},
-          "[smoot]",
-          { type: "literal", value: "[smoot]", description: "\"[smoot]\"" },
-          function(u) {return {"value": 1, "units": {"[smoot]": 1}, "metadata": {"[smoot]":{"isBase":false,"CODE":"[SMOOT]","isMetric":"no","class":"misc","names":["Smoot"],"printSymbols":[""],"properties":["length"],"values":[{"printable":"67","numeric":67}]}}};},
-          "[knk'U]",
-          { type: "literal", value: "[knk'U]", description: "\"[knk'U]\"" },
-          function(u) {return {"value": 1, "units": {"[knk'U]": 1}, "metadata": {"[knk'U]":{"isBase":false,"CODE":"[KNK'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Kunkel unit"],"properties":["arbitrary biologic activity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[Btu_m]",
-          { type: "literal", value: "[Btu_m]", description: "\"[Btu_m]\"" },
-          function(u) {return {"value": 1, "units": {"[Btu_m]": 1}, "metadata": {"[Btu_m]":{"isBase":false,"CODE":"[BTU_M]","isMetric":"no","class":"heat","names":["mean British thermal unit"],"printSymbols":["Btu<sub>m</sub>"],"properties":["energy"],"values":[{"printable":"1.05587","numeric":1.05587}]}}};},
-          "[dr_av]",
-          { type: "literal", value: "[dr_av]", description: "\"[dr_av]\"" },
-          function(u) {return {"value": 1, "units": {"[dr_av]": 1}, "metadata": {"[dr_av]":{"isBase":false,"CODE":"[DR_AV]","isMetric":"no","class":"avoirdupois","names":["dram"],"properties":["mass"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[oz_av]",
-          { type: "literal", value: "[oz_av]", description: "\"[oz_av]\"" },
-          function(u) {return {"value": 1, "units": {"[oz_av]": 1}, "metadata": {"[oz_av]":{"isBase":false,"CODE":"[OZ_AV]","isMetric":"no","class":"avoirdupois","names":["ounce"],"printSymbols":["oz"],"properties":["mass"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[lb_av]",
-          { type: "literal", value: "[lb_av]", description: "\"[lb_av]\"" },
-          function(u) {return {"value": 1, "units": {"[lb_av]": 1}, "metadata": {"[lb_av]":{"isBase":false,"CODE":"[LB_AV]","isMetric":"no","class":"avoirdupois","names":["pound"],"printSymbols":["lb"],"properties":["mass"],"values":[{"printable":"7000","numeric":7000}]}}};},
-          "[dye'U]",
-          { type: "literal", value: "[dye'U]", description: "\"[dye'U]\"" },
-          function(u) {return {"value": 1, "units": {"[dye'U]": 1}, "metadata": {"[dye'U]":{"isBase":false,"CODE":"[DYE'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Dye unit"],"properties":["biologic activity of amylase"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[pk_us]",
-          { type: "literal", value: "[pk_us]", description: "\"[pk_us]\"" },
-          function(u) {return {"value": 1, "units": {"[pk_us]": 1}, "metadata": {"[pk_us]":{"isBase":false,"CODE":"[PK_US]","isMetric":"no","class":"us-volumes","names":["peck"],"properties":["dry volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[APL'U]",
-          { type: "literal", value: "[APL'U]", description: "\"[APL'U]\"" },
-          function(u) {return {"value": 1, "units": {"[APL'U]": 1}, "metadata": {"[APL'U]":{"isBase":false,"CODE":"[APL'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["APL unit"],"properties":["biologic activity of anticardiolipin IgA"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[bu_us]",
-          { type: "literal", value: "[bu_us]", description: "\"[bu_us]\"" },
-          function(u) {return {"value": 1, "units": {"[bu_us]": 1}, "metadata": {"[bu_us]":{"isBase":false,"CODE":"[BU_US]","isMetric":"no","class":"us-volumes","names":["bushel"],"properties":["dry volume"],"values":[{"printable":"2150.42","numeric":2150.42}]}}};},
-          "[pt_br]",
-          { type: "literal", value: "[pt_br]", description: "\"[pt_br]\"" },
-          function(u) {return {"value": 1, "units": {"[pt_br]": 1}, "metadata": {"[pt_br]":{"isBase":false,"CODE":"[PT_BR]","isMetric":"no","class":"brit-volumes","names":["pint"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[qt_br]",
-          { type: "literal", value: "[qt_br]", description: "\"[qt_br]\"" },
-          function(u) {return {"value": 1, "units": {"[qt_br]": 1}, "metadata": {"[qt_br]":{"isBase":false,"CODE":"[QT_BR]","isMetric":"no","class":"brit-volumes","names":["quart"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[bu_br]",
-          { type: "literal", value: "[bu_br]", description: "\"[bu_br]\"" },
-          function(u) {return {"value": 1, "units": {"[bu_br]": 1}, "metadata": {"[bu_br]":{"isBase":false,"CODE":"[BU_BR]","isMetric":"no","class":"brit-volumes","names":["bushel"],"properties":["volume"],"values":[{"printable":"4","numeric":4}]}}};},
-          "[hp'_X]",
-          { type: "literal", value: "[hp'_X]", description: "\"[hp'_X]\"" },
-          function(u) {return {"value": 1, "units": {"[hp'_X]": 1}, "metadata": {"[hp'_X]":{"isBase":false,"CODE":"[HP'_X]","isMetric":"no","isSpecial":"yes","class":"clinical","names":["homeopathic potency of decimal series (retired)"],"printSymbols":["X"],"properties":["homeopathic potency (retired)"],"values":[{"printable":"<function name=\"hpX\" value=\"1\" Unit=\"1\"/>","numeric":null}]}}};},
-          "[MPL'U]",
-          { type: "literal", value: "[MPL'U]", description: "\"[MPL'U]\"" },
-          function(u) {return {"value": 1, "units": {"[MPL'U]": 1}, "metadata": {"[MPL'U]":{"isBase":false,"CODE":"[MPL'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["MPL unit"],"properties":["biologic activity of anticardiolipin IgM"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[GPL'U]",
-          { type: "literal", value: "[GPL'U]", description: "\"[GPL'U]\"" },
-          function(u) {return {"value": 1, "units": {"[GPL'U]": 1}, "metadata": {"[GPL'U]":{"isBase":false,"CODE":"[GPL'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["GPL unit"],"properties":["biologic activity of anticardiolipin IgG"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[USP'U]",
-          { type: "literal", value: "[USP'U]", description: "\"[USP'U]\"" },
-          function(u) {return {"value": 1, "units": {"[USP'U]": 1}, "metadata": {"[USP'U]":{"isBase":false,"CODE":"[USP'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["United States Pharmacopeia unit"],"printSymbols":["U.S.P."],"properties":["arbitrary"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[eps_0]",
-          { type: "literal", value: "[eps_0]", description: "\"[eps_0]\"" },
-          function(u) {return {"value": 1, "units": {"[eps_0]": 1}, "metadata": {"[eps_0]":{"isBase":false,"CODE":"[EPS_0]","isMetric":"yes","class":"const","names":["permittivity of vacuum"],"printSymbols":["<i>&#949;<sub>\n               <r>0</r>\n            </sub>\n         </i>"],"properties":["electric permittivity"],"values":[{"printable":"8.854187817 &#215; 10<sup>-12</sup>","numeric":8.854187817e-12}]}}};},
-          "[fth_i]",
-          { type: "literal", value: "[fth_i]", description: "\"[fth_i]\"" },
-          function(u) {return {"value": 1, "units": {"[fth_i]": 1}, "metadata": {"[fth_i]":{"isBase":false,"CODE":"[FTH_I]","isMetric":"no","class":"intcust","names":["fathom"],"printSymbols":["fth"],"properties":["depth of water"],"values":[{"printable":"6","numeric":6}]}}};},
-          "[nmi_i]",
-          { type: "literal", value: "[nmi_i]", description: "\"[nmi_i]\"" },
-          function(u) {return {"value": 1, "units": {"[nmi_i]": 1}, "metadata": {"[nmi_i]":{"isBase":false,"CODE":"[NMI_I]","isMetric":"no","class":"intcust","names":["nautical mile"],"printSymbols":["n.mi"],"properties":["length"],"values":[{"printable":"1852","numeric":1852}]}}};},
-          "[pt_us]",
-          { type: "literal", value: "[pt_us]", description: "\"[pt_us]\"" },
-          function(u) {return {"value": 1, "units": {"[pt_us]": 1}, "metadata": {"[pt_us]":{"isBase":false,"CODE":"[PT_US]","isMetric":"no","class":"us-volumes","names":["pint"],"properties":["fluid volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[sin_i]",
-          { type: "literal", value: "[sin_i]", description: "\"[sin_i]\"" },
-          function(u) {return {"value": 1, "units": {"[sin_i]": 1}, "metadata": {"[sin_i]":{"isBase":false,"CODE":"[SIN_I]","isMetric":"no","class":"intcust","names":["square inch"],"properties":["area"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[sft_i]",
-          { type: "literal", value: "[sft_i]", description: "\"[sft_i]\"" },
-          function(u) {return {"value": 1, "units": {"[sft_i]": 1}, "metadata": {"[sft_i]":{"isBase":false,"CODE":"[SFT_I]","isMetric":"no","class":"intcust","names":["square foot"],"properties":["area"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[syd_i]",
-          { type: "literal", value: "[syd_i]", description: "\"[syd_i]\"" },
-          function(u) {return {"value": 1, "units": {"[syd_i]": 1}, "metadata": {"[syd_i]":{"isBase":false,"CODE":"[SYD_I]","isMetric":"no","class":"intcust","names":["square yard"],"properties":["area"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[cin_i]",
-          { type: "literal", value: "[cin_i]", description: "\"[cin_i]\"" },
-          function(u) {return {"value": 1, "units": {"[cin_i]": 1}, "metadata": {"[cin_i]":{"isBase":false,"CODE":"[CIN_I]","isMetric":"no","class":"intcust","names":["cubic inch"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[cft_i]",
-          { type: "literal", value: "[cft_i]", description: "\"[cft_i]\"" },
-          function(u) {return {"value": 1, "units": {"[cft_i]": 1}, "metadata": {"[cft_i]":{"isBase":false,"CODE":"[CFT_I]","isMetric":"no","class":"intcust","names":["cubic foot"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[cyd_i]",
-          { type: "literal", value: "[cyd_i]", description: "\"[cyd_i]\"" },
-          function(u) {return {"value": 1, "units": {"[cyd_i]": 1}, "metadata": {"[cyd_i]":{"isBase":false,"CODE":"[CYD_I]","isMetric":"no","class":"intcust","names":["cubic yard"],"printSymbols":["cu.yd"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[qt_us]",
-          { type: "literal", value: "[qt_us]", description: "\"[qt_us]\"" },
-          function(u) {return {"value": 1, "units": {"[qt_us]": 1}, "metadata": {"[qt_us]":{"isBase":false,"CODE":"[QT_US]","isMetric":"no","class":"us-volumes","names":["quart"],"properties":["fluid volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[arb'U]",
-          { type: "literal", value: "[arb'U]", description: "\"[arb'U]\"" },
-          function(u) {return {"value": 1, "units": {"[arb'U]": 1}, "metadata": {"[arb'U]":{"isBase":false,"CODE":"[ARB'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["arbitary unit"],"printSymbols":["arb. U"],"properties":["arbitrary"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[mil_i]",
-          { type: "literal", value: "[mil_i]", description: "\"[mil_i]\"" },
-          function(u) {return {"value": 1, "units": {"[mil_i]": 1}, "metadata": {"[mil_i]":{"isBase":false,"CODE":"[MIL_I]","isMetric":"no","class":"intcust","names":["mil"],"printSymbols":["mil"],"properties":["length"],"values":[{"printable":"1 &#215; 10<sup>-3</sup>","numeric":0.001}]}}};},
-          "[cml_i]",
-          { type: "literal", value: "[cml_i]", description: "\"[cml_i]\"" },
-          function(u) {return {"value": 1, "units": {"[cml_i]": 1}, "metadata": {"[cml_i]":{"isBase":false,"CODE":"[CML_I]","isMetric":"no","class":"intcust","names":["circular mil"],"printSymbols":["circ.mil"],"properties":["area"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[kn_br]",
-          { type: "literal", value: "[kn_br]", description: "\"[kn_br]\"" },
-          function(u) {return {"value": 1, "units": {"[kn_br]": 1}, "metadata": {"[kn_br]":{"isBase":false,"CODE":"[KN_BR]","isMetric":"no","class":"brit-length","names":["knot"],"properties":["velocity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[ft_us]",
-          { type: "literal", value: "[ft_us]", description: "\"[ft_us]\"" },
-          function(u) {return {"value": 1, "units": {"[ft_us]": 1}, "metadata": {"[ft_us]":{"isBase":false,"CODE":"[FT_US]","isMetric":"no","class":"us-lengths","names":["foot"],"printSymbols":["ft<sub>us</sub>"],"properties":["length"],"values":[{"printable":"1200","numeric":1200}]}}};},
-          "[pouce]",
-          { type: "literal", value: "[pouce]", description: "\"[pouce]\"" },
-          function(u) {return {"value": 1, "units": {"[pouce]": 1}, "metadata": {"[pouce]":{"isBase":false,"CODE":"[POUCE]","isMetric":"no","class":"typeset","names":["pouce","French inch"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[in_us]",
-          { type: "literal", value: "[in_us]", description: "\"[in_us]\"" },
-          function(u) {return {"value": 1, "units": {"[in_us]": 1}, "metadata": {"[in_us]":{"isBase":false,"CODE":"[IN_US]","isMetric":"no","class":"us-lengths","names":["inch"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[rd_us]",
-          { type: "literal", value: "[rd_us]", description: "\"[rd_us]\"" },
-          function(u) {return {"value": 1, "units": {"[rd_us]": 1}, "metadata": {"[rd_us]":{"isBase":false,"CODE":"[RD_US]","isMetric":"no","class":"us-lengths","names":["rod"],"properties":["length"],"values":[{"printable":"16.5","numeric":16.5}]}}};},
-          "[ch_us]",
-          { type: "literal", value: "[ch_us]", description: "\"[ch_us]\"" },
-          function(u) {return {"value": 1, "units": {"[ch_us]": 1}, "metadata": {"[ch_us]":{"isBase":false,"CODE":"[CH_US]","isMetric":"no","class":"us-lengths","names":["Gunter's chain","Surveyor's chain"],"properties":["length"],"values":[{"printable":"4","numeric":4}]}}};},
-          "[lk_us]",
-          { type: "literal", value: "[lk_us]", description: "\"[lk_us]\"" },
-          function(u) {return {"value": 1, "units": {"[lk_us]": 1}, "metadata": {"[lk_us]":{"isBase":false,"CODE":"[LK_US]","isMetric":"no","class":"us-lengths","names":["link for Gunter's chain"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[hp'_C]",
-          { type: "literal", value: "[hp'_C]", description: "\"[hp'_C]\"" },
-          function(u) {return {"value": 1, "units": {"[hp'_C]": 1}, "metadata": {"[hp'_C]":{"isBase":false,"CODE":"[HP'_C]","isMetric":"no","isSpecial":"yes","class":"clinical","names":["homeopathic potency of centesimal series (retired)"],"printSymbols":["C"],"properties":["homeopathic potency (retired)"],"values":[{"printable":"<function name=\"hpC\" value=\"1\" Unit=\"1\"/>","numeric":null}]}}};},
-          "[hp'_M]",
-          { type: "literal", value: "[hp'_M]", description: "\"[hp'_M]\"" },
-          function(u) {return {"value": 1, "units": {"[hp'_M]": 1}, "metadata": {"[hp'_M]":{"isBase":false,"CODE":"[HP'_M]","isMetric":"no","isSpecial":"yes","class":"clinical","names":["homeopathic potency of millesimal series (retired)"],"printSymbols":["M"],"properties":["homeopathic potency (retired)"],"values":[{"printable":"<function name=\"hpM\" value=\"1\" Unit=\"1\"/>","numeric":null}]}}};},
-          "[hp'_Q]",
-          { type: "literal", value: "[hp'_Q]", description: "\"[hp'_Q]\"" },
-          function(u) {return {"value": 1, "units": {"[hp'_Q]": 1}, "metadata": {"[hp'_Q]":{"isBase":false,"CODE":"[HP'_Q]","isMetric":"no","isSpecial":"yes","class":"clinical","names":["homeopathic potency of quintamillesimal series (retired)"],"printSymbols":["Q"],"properties":["homeopathic potency (retired)"],"values":[{"printable":"<function name=\"hpQ\" value=\"1\" Unit=\"1\"/>","numeric":null}]}}};},
-          "[mi_br]",
-          { type: "literal", value: "[mi_br]", description: "\"[mi_br]\"" },
-          function(u) {return {"value": 1, "units": {"[mi_br]": 1}, "metadata": {"[mi_br]":{"isBase":false,"CODE":"[MI_BR]","isMetric":"no","class":"brit-length","names":["mile"],"properties":["length"],"values":[{"printable":"5280","numeric":5280}]}}};},
-          "[mi_us]",
-          { type: "literal", value: "[mi_us]", description: "\"[mi_us]\"" },
-          function(u) {return {"value": 1, "units": {"[mi_us]": 1}, "metadata": {"[mi_us]":{"isBase":false,"CODE":"[MI_US]","isMetric":"no","class":"us-lengths","names":["mile"],"properties":["length"],"values":[{"printable":"8","numeric":8}]}}};},
-          "[yd_br]",
-          { type: "literal", value: "[yd_br]", description: "\"[yd_br]\"" },
-          function(u) {return {"value": 1, "units": {"[yd_br]": 1}, "metadata": {"[yd_br]":{"isBase":false,"CODE":"[YD_BR]","isMetric":"no","class":"brit-length","names":["yard"],"properties":["length"],"values":[{"printable":"3","numeric":3}]}}};},
-          "[pk_br]",
-          { type: "literal", value: "[pk_br]", description: "\"[pk_br]\"" },
-          function(u) {return {"value": 1, "units": {"[pk_br]": 1}, "metadata": {"[pk_br]":{"isBase":false,"CODE":"[PK_BR]","isMetric":"no","class":"brit-volumes","names":["peck"],"properties":["volume"],"values":[{"printable":"2","numeric":2}]}}};},
-          "[pc_br]",
-          { type: "literal", value: "[pc_br]", description: "\"[pc_br]\"" },
-          function(u) {return {"value": 1, "units": {"[pc_br]": 1}, "metadata": {"[pc_br]":{"isBase":false,"CODE":"[PC_BR]","isMetric":"no","class":"brit-length","names":["pace"],"properties":["length"],"values":[{"printable":"2.5","numeric":2.5}]}}};},
-          "[lk_br]",
-          { type: "literal", value: "[lk_br]", description: "\"[lk_br]\"" },
-          function(u) {return {"value": 1, "units": {"[lk_br]": 1}, "metadata": {"[lk_br]":{"isBase":false,"CODE":"[LK_BR]","isMetric":"no","class":"brit-length","names":["link for Gunter's chain"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[in_br]",
-          { type: "literal", value: "[in_br]", description: "\"[in_br]\"" },
-          function(u) {return {"value": 1, "units": {"[in_br]": 1}, "metadata": {"[in_br]":{"isBase":false,"CODE":"[IN_BR]","isMetric":"no","class":"brit-length","names":["inch"],"properties":["length"],"values":[{"printable":"2.539998","numeric":2.539998}]}}};},
-          "[ft_br]",
-          { type: "literal", value: "[ft_br]", description: "\"[ft_br]\"" },
-          function(u) {return {"value": 1, "units": {"[ft_br]": 1}, "metadata": {"[ft_br]":{"isBase":false,"CODE":"[FT_BR]","isMetric":"no","class":"brit-length","names":["foot"],"properties":["length"],"values":[{"printable":"12","numeric":12}]}}};},
-          "[rd_br]",
-          { type: "literal", value: "[rd_br]", description: "\"[rd_br]\"" },
-          function(u) {return {"value": 1, "units": {"[rd_br]": 1}, "metadata": {"[rd_br]":{"isBase":false,"CODE":"[RD_BR]","isMetric":"no","class":"brit-length","names":["rod"],"properties":["length"],"values":[{"printable":"16.5","numeric":16.5}]}}};},
-          "[ch_br]",
-          { type: "literal", value: "[ch_br]", description: "\"[ch_br]\"" },
-          function(u) {return {"value": 1, "units": {"[ch_br]": 1}, "metadata": {"[ch_br]":{"isBase":false,"CODE":"[CH_BR]","isMetric":"no","class":"brit-length","names":["Gunter's chain"],"properties":["length"],"values":[{"printable":"4","numeric":4}]}}};},
-          "[ft_i]",
-          { type: "literal", value: "[ft_i]", description: "\"[ft_i]\"" },
-          function(u) {return {"value": 1, "units": {"[ft_i]": 1}, "metadata": {"[ft_i]":{"isBase":false,"CODE":"[FT_I]","isMetric":"no","class":"intcust","names":["foot"],"printSymbols":["ft"],"properties":["length"],"values":[{"printable":"12","numeric":12}]}}};},
-          "[hp_Q]",
-          { type: "literal", value: "[hp_Q]", description: "\"[hp_Q]\"" },
-          function(u) {return {"value": 1, "units": {"[hp_Q]": 1}, "metadata": {"[hp_Q]":{"isBase":false,"CODE":"[HP_Q]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of quintamillesimal hahnemannian series"],"printSymbols":["Q"],"properties":["homeopathic potency (Hahnemann)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[hp_M]",
-          { type: "literal", value: "[hp_M]", description: "\"[hp_M]\"" },
-          function(u) {return {"value": 1, "units": {"[hp_M]": 1}, "metadata": {"[hp_M]":{"isBase":false,"CODE":"[HP_M]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of millesimal hahnemannian series"],"printSymbols":["M"],"properties":["homeopathic potency (Hahnemann)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[hp_C]",
-          { type: "literal", value: "[hp_C]", description: "\"[hp_C]\"" },
-          function(u) {return {"value": 1, "units": {"[hp_C]": 1}, "metadata": {"[hp_C]":{"isBase":false,"CODE":"[HP_C]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of centesimal hahnemannian series"],"printSymbols":["C"],"properties":["homeopathic potency (Hahnemann)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[hp_X]",
-          { type: "literal", value: "[hp_X]", description: "\"[hp_X]\"" },
-          function(u) {return {"value": 1, "units": {"[hp_X]": 1}, "metadata": {"[hp_X]":{"isBase":false,"CODE":"[HP_X]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of decimal hahnemannian series"],"printSymbols":["X"],"properties":["homeopathic potency (Hahnemann)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[kp_C]",
-          { type: "literal", value: "[kp_C]", description: "\"[kp_C]\"" },
-          function(u) {return {"value": 1, "units": {"[kp_C]": 1}, "metadata": {"[kp_C]":{"isBase":false,"CODE":"[KP_C]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of centesimal korsakovian series"],"printSymbols":["C"],"properties":["homeopathic potency (Korsakov)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[hd_i]",
-          { type: "literal", value: "[hd_i]", description: "\"[hd_i]\"" },
-          function(u) {return {"value": 1, "units": {"[hd_i]": 1}, "metadata": {"[hd_i]":{"isBase":false,"CODE":"[HD_I]","isMetric":"no","class":"intcust","names":["hand"],"printSymbols":["hd"],"properties":["height of horses"],"values":[{"printable":"4","numeric":4}]}}};},
-          "[kp_M]",
-          { type: "literal", value: "[kp_M]", description: "\"[kp_M]\"" },
-          function(u) {return {"value": 1, "units": {"[kp_M]": 1}, "metadata": {"[kp_M]":{"isBase":false,"CODE":"[KP_M]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of millesimal korsakovian series"],"printSymbols":["M"],"properties":["homeopathic potency (Korsakov)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[kp_Q]",
-          { type: "literal", value: "[kp_Q]", description: "\"[kp_Q]\"" },
-          function(u) {return {"value": 1, "units": {"[kp_Q]": 1}, "metadata": {"[kp_Q]":{"isBase":false,"CODE":"[KP_Q]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of quintamillesimal korsakovian series"],"printSymbols":["Q"],"properties":["homeopathic potency (Korsakov)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[cr_i]",
-          { type: "literal", value: "[cr_i]", description: "\"[cr_i]\"" },
-          function(u) {return {"value": 1, "units": {"[cr_i]": 1}, "metadata": {"[cr_i]":{"isBase":false,"CODE":"[CR_I]","isMetric":"no","class":"intcust","names":["cord"],"properties":["volume"],"values":[{"printable":"128","numeric":128}]}}};},
-          "[bf_i]",
-          { type: "literal", value: "[bf_i]", description: "\"[bf_i]\"" },
-          function(u) {return {"value": 1, "units": {"[bf_i]": 1}, "metadata": {"[bf_i]":{"isBase":false,"CODE":"[BF_I]","isMetric":"no","class":"intcust","names":["board foot"],"properties":["volume"],"values":[{"printable":"144","numeric":144}]}}};},
-          "[kn_i]",
-          { type: "literal", value: "[kn_i]", description: "\"[kn_i]\"" },
-          function(u) {return {"value": 1, "units": {"[kn_i]": 1}, "metadata": {"[kn_i]":{"isBase":false,"CODE":"[KN_I]","isMetric":"no","class":"intcust","names":["knot"],"printSymbols":["knot"],"properties":["velocity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[mu_0]",
-          { type: "literal", value: "[mu_0]", description: "\"[mu_0]\"" },
-          function(u) {return {"value": 1, "units": {"[mu_0]": 1}, "metadata": {"[mu_0]":{"isBase":false,"CODE":"[MU_0]","isMetric":"yes","class":"const","names":["permeability of vacuum"],"printSymbols":["<i>&#956;<sub>\n               <r>0</r>\n            </sub>\n         </i>"],"properties":["magnetic permeability"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[mi_i]",
-          { type: "literal", value: "[mi_i]", description: "\"[mi_i]\"" },
-          function(u) {return {"value": 1, "units": {"[mi_i]": 1}, "metadata": {"[mi_i]":{"isBase":false,"CODE":"[MI_I]","isMetric":"no","class":"intcust","names":["statute mile"],"printSymbols":["mi"],"properties":["length"],"values":[{"printable":"5280","numeric":5280}]}}};},
-          "[yd_i]",
-          { type: "literal", value: "[yd_i]", description: "\"[yd_i]\"" },
-          function(u) {return {"value": 1, "units": {"[yd_i]": 1}, "metadata": {"[yd_i]":{"isBase":false,"CODE":"[YD_I]","isMetric":"no","class":"intcust","names":["yard"],"printSymbols":["yd"],"properties":["length"],"values":[{"printable":"3","numeric":3}]}}};},
-          "[kp_X]",
-          { type: "literal", value: "[kp_X]", description: "\"[kp_X]\"" },
-          function(u) {return {"value": 1, "units": {"[kp_X]": 1}, "metadata": {"[kp_X]":{"isBase":false,"CODE":"[KP_X]","isMetric":"no","isArbitrary":"yes","class":"clinical","names":["homeopathic potency of decimal korsakovian series"],"printSymbols":["X"],"properties":["homeopathic potency (Korsakov)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[in_i]",
-          { type: "literal", value: "[in_i]", description: "\"[in_i]\"" },
-          function(u) {return {"value": 1, "units": {"[in_i]": 1}, "metadata": {"[in_i]":{"isBase":false,"CODE":"[IN_I]","isMetric":"no","class":"intcust","names":["inch"],"printSymbols":["in"],"properties":["length"],"values":[{"printable":"2.54","numeric":2.54}]}}};},
-          "[diop]",
-          { type: "literal", value: "[diop]", description: "\"[diop]\"" },
-          function(u) {return {"value": 1, "units": {"[diop]": 1}, "metadata": {"[diop]":{"isBase":false,"CODE":"[DIOP]","isMetric":"no","class":"clinical","names":["diopter"],"printSymbols":["dpt"],"properties":["refraction of a lens"],"values":[{"printable":"1","numeric":1}]}}};},
-          "cal_IT",
-          { type: "literal", value: "cal_IT", description: "\"cal_IT\"" },
-          function(u) {return {"value": 1, "units": {"cal_IT": 1}, "metadata": {"cal_IT":{"isBase":false,"CODE":"CAL_IT","isMetric":"yes","class":"heat","names":["international table calorie"],"printSymbols":["cal<sub>IT</sub>"],"properties":["energy"],"values":[{"printable":"4.1868","numeric":4.1868}]}}};},
-          "cal_th",
-          { type: "literal", value: "cal_th", description: "\"cal_th\"" },
-          function(u) {return {"value": 1, "units": {"cal_th": 1}, "metadata": {"cal_th":{"isBase":false,"CODE":"CAL_TH","isMetric":"yes","class":"heat","names":["thermochemical calorie"],"printSymbols":["cal<sub>th</sub>"],"properties":["energy"],"values":[{"printable":"4.184","numeric":4.184}]}}};},
-          "m[H2O]",
-          { type: "literal", value: "m[H2O]", description: "\"m[H2O]\"" },
-          function(u) {return {"value": 1, "units": {"m[H2O]": 1}, "metadata": {"m[H2O]":{"isBase":false,"CODE":"M[H2O]","isMetric":"yes","class":"clinical","names":["meter of water column"],"printSymbols":["m&#160;H<sub>\n            <r>2</r>\n         </sub>O"],"properties":["pressure"],"values":[{"printable":"9.80665","numeric":9.80665}]}}};},
-          "[ka'U]",
-          { type: "literal", value: "[ka'U]", description: "\"[ka'U]\"" },
-          function(u) {return {"value": 1, "units": {"[ka'U]": 1}, "metadata": {"[ka'U]":{"isBase":false,"CODE":"[KA'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["King-Armstrong unit"],"properties":["biologic activity of phosphatase"],"values":[{"printable":"1","numeric":1}]}}};},
-          "B[SPL]",
-          { type: "literal", value: "B[SPL]", description: "\"B[SPL]\"" },
-          function(u) {return {"value": 1, "units": {"B[SPL]": 1}, "metadata": {"B[SPL]":{"isBase":false,"CODE":"B[SPL]","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel sound pressure"],"printSymbols":["B(SPL)"],"properties":["pressure level"],"values":[{"printable":"<function name=\"lgTimes2\" value=\"2\" Unit=\"10*-5.Pa\"/>","numeric":null}]}}};},
-          "[tb'U]",
-          { type: "literal", value: "[tb'U]", description: "\"[tb'U]\"" },
-          function(u) {return {"value": 1, "units": {"[tb'U]": 1}, "metadata": {"[tb'U]":{"isBase":false,"CODE":"[TB'U]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["tuberculin unit"],"properties":["biologic activity of tuberculin"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[degR]",
-          { type: "literal", value: "[degR]", description: "\"[degR]\"" },
-          function(u) {return {"value": 1, "units": {"[degR]": 1}, "metadata": {"[degR]":{"isBase":false,"CODE":"[degR]","isMetric":"no","class":"heat","names":["degree Rankine"],"printSymbols":["&#176;R"],"properties":["temperature"],"values":[{"printable":"5","numeric":5}]}}};},
-          "[degF]",
-          { type: "literal", value: "[degF]", description: "\"[degF]\"" },
-          function(u) {return {"value": 1, "units": {"[degF]": 1}, "metadata": {"[degF]":{"isBase":false,"CODE":"[DEGF]","isMetric":"no","isSpecial":"yes","class":"heat","names":["degree Fahrenheit"],"printSymbols":["&#176;F"],"properties":["temperature"],"values":[{"printable":"<function name=\"degF\" value=\"5\" Unit=\"K/9\"/>","numeric":null}]}}};},
-          "[pptr]",
-          { type: "literal", value: "[pptr]", description: "\"[pptr]\"" },
-          function(u) {return {"value": 1, "units": {"[pptr]": 1}, "metadata": {"[pptr]":{"isBase":false,"CODE":"[PPTR]","isMetric":"no","class":"dimless","names":["parts per trillion"],"printSymbols":["pptr"],"properties":["fraction"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[ppth]",
-          { type: "literal", value: "[ppth]", description: "\"[ppth]\"" },
-          function(u) {return {"value": 1, "units": {"[ppth]": 1}, "metadata": {"[ppth]":{"isBase":false,"CODE":"[PPTH]","isMetric":"no","class":"dimless","names":["parts per thousand"],"printSymbols":["ppth"],"properties":["fraction"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[oz_m]",
-          { type: "literal", value: "[oz_m]", description: "\"[oz_m]\"" },
-          function(u) {return {"value": 1, "units": {"[oz_m]": 1}, "metadata": {"[oz_m]":{"isBase":false,"CODE":"[OZ_M]","isMetric":"no","class":"apoth","names":["metric ounce"],"properties":["mass"],"values":[{"printable":"28","numeric":28}]}}};},
-          "[pied]",
-          { type: "literal", value: "[pied]", description: "\"[pied]\"" },
-          function(u) {return {"value": 1, "units": {"[pied]": 1}, "metadata": {"[pied]":{"isBase":false,"CODE":"[PIED]","isMetric":"no","class":"typeset","names":["pied","French foot"],"properties":["length"],"values":[{"printable":"32.48","numeric":32.48}]}}};},
-          "[ppm]",
-          { type: "literal", value: "[ppm]", description: "\"[ppm]\"" },
-          function(u) {return {"value": 1, "units": {"[ppm]": 1}, "metadata": {"[ppm]":{"isBase":false,"CODE":"[PPM]","isMetric":"no","class":"dimless","names":["parts per million"],"printSymbols":["ppm"],"properties":["fraction"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[ppb]",
-          { type: "literal", value: "[ppb]", description: "\"[ppb]\"" },
-          function(u) {return {"value": 1, "units": {"[ppb]": 1}, "metadata": {"[ppb]":{"isBase":false,"CODE":"[PPB]","isMetric":"no","class":"dimless","names":["parts per billion"],"printSymbols":["ppb"],"properties":["fraction"],"values":[{"printable":"1","numeric":1}]}}};},
-          "bit_s",
-          { type: "literal", value: "bit_s", description: "\"bit_s\"" },
-          function(u) {return {"value": 1, "units": {"bit_s": 1}, "metadata": {"bit_s":{"isBase":false,"CODE":"BIT_S","isMetric":"no","isSpecial":"yes","class":"infotech","names":["bit"],"printSymbols":["bit<sub>s</sub>"],"properties":["amount of information"],"values":[{"printable":"<function name=\"ld\" value=\"1\" Unit=\"1\"/>","numeric":null}]}}};},
-          "[PNU]",
-          { type: "literal", value: "[PNU]", description: "\"[PNU]\"" },
-          function(u) {return {"value": 1, "units": {"[PNU]": 1}, "metadata": {"[PNU]":{"isBase":false,"CODE":"[PNU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["protein nitrogen unit"],"printSymbols":["PNU"],"properties":["procedure defined amount of a protein substance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[psi]",
-          { type: "literal", value: "[psi]", description: "\"[psi]\"" },
-          function(u) {return {"value": 1, "units": {"[psi]": 1}, "metadata": {"[psi]":{"isBase":false,"CODE":"[PSI]","isMetric":"no","class":"misc","names":["pound per sqare inch"],"printSymbols":["psi"],"properties":["pressure"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[BAU]",
-          { type: "literal", value: "[BAU]", description: "\"[BAU]\"" },
-          function(u) {return {"value": 1, "units": {"[BAU]": 1}, "metadata": {"[BAU]":{"isBase":false,"CODE":"[BAU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["bioequivalent allergen unit"],"printSymbols":["BAU"],"properties":["amount of an allergen callibrated through in-vivo testing based on the ID50EAL method of (intradermal dilution for 50mm sum of erythema diameters"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[Cal]",
-          { type: "literal", value: "[Cal]", description: "\"[Cal]\"" },
-          function(u) {return {"value": 1, "units": {"[Cal]": 1}, "metadata": {"[Cal]":{"isBase":false,"CODE":"[CAL]","isMetric":"no","class":"heat","names":["nutrition label Calories"],"printSymbols":["Cal"],"properties":["energy"],"values":[{"printable":"1","numeric":1}]}}};},
-          "B[mV]",
-          { type: "literal", value: "B[mV]", description: "\"B[mV]\"" },
-          function(u) {return {"value": 1, "units": {"B[mV]": 1}, "metadata": {"B[mV]":{"isBase":false,"CODE":"B[MV]","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel millivolt"],"printSymbols":["B(mV)"],"properties":["electric potential level"],"values":[{"printable":"<function name=\"lgTimes2\" value=\"1\" Unit=\"mV\"/>","numeric":null}]}}};},
-          "B[uV]",
-          { type: "literal", value: "B[uV]", description: "\"B[uV]\"" },
-          function(u) {return {"value": 1, "units": {"B[uV]": 1}, "metadata": {"B[uV]":{"isBase":false,"CODE":"B[UV]","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel microvolt"],"printSymbols":["B(&#956;V)"],"properties":["electric potential level"],"values":[{"printable":"<function name=\"lgTimes2\" value=\"1\" Unit=\"uV\"/>","numeric":null}]}}};},
-          "[CFU]",
-          { type: "literal", value: "[CFU]", description: "\"[CFU]\"" },
-          function(u) {return {"value": 1, "units": {"[CFU]": 1}, "metadata": {"[CFU]":{"isBase":false,"CODE":"[CFU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["colony forming units"],"printSymbols":["CFU"],"properties":["amount of a proliferating organism"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[FFU]",
-          { type: "literal", value: "[FFU]", description: "\"[FFU]\"" },
-          function(u) {return {"value": 1, "units": {"[FFU]": 1}, "metadata": {"[FFU]":{"isBase":false,"CODE":"[FFU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["focus forming units"],"printSymbols":["FFU"],"properties":["amount of an infectious agent"],"values":[{"printable":"1","numeric":1}]}}};},
-          "B[kW]",
-          { type: "literal", value: "B[kW]", description: "\"B[kW]\"" },
-          function(u) {return {"value": 1, "units": {"B[kW]": 1}, "metadata": {"B[kW]":{"isBase":false,"CODE":"B[KW]","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel kilowatt"],"printSymbols":["B(kW)"],"properties":["power level"],"values":[{"printable":"<function name=\"lg\" value=\"1\" Unit=\"kW\"/>","numeric":null}]}}};},
-          "[PFU]",
-          { type: "literal", value: "[PFU]", description: "\"[PFU]\"" },
-          function(u) {return {"value": 1, "units": {"[PFU]": 1}, "metadata": {"[PFU]":{"isBase":false,"CODE":"[PFU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["plaque forming units"],"printSymbols":["PFU"],"properties":["amount of an infectious agent"],"values":[{"printable":"1","numeric":1}]}}};},
-          "cal_m",
-          { type: "literal", value: "cal_m", description: "\"cal_m\"" },
-          function(u) {return {"value": 1, "units": {"cal_m": 1}, "metadata": {"cal_m":{"isBase":false,"CODE":"CAL_M","isMetric":"yes","class":"heat","names":["mean calorie"],"printSymbols":["cal<sub>m</sub>"],"properties":["energy"],"values":[{"printable":"4.19002","numeric":4.19002}]}}};},
-          "[ELU]",
-          { type: "literal", value: "[ELU]", description: "\"[ELU]\"" },
-          function(u) {return {"value": 1, "units": {"[ELU]": 1}, "metadata": {"[ELU]":{"isBase":false,"CODE":"[ELU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["ELISA unit"],"printSymbols":[""],"properties":["arbitrary ELISA unit"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[FEU]",
-          { type: "literal", value: "[FEU]", description: "\"[FEU]\"" },
-          function(u) {return {"value": 1, "units": {"[FEU]": 1}, "metadata": {"[FEU]":{"isBase":false,"CODE":"[FEU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["fibrinogen equivalent unit"],"printSymbols":[""],"properties":["amount of fibrinogen broken down into the measured d-dimers"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[PRU]",
-          { type: "literal", value: "[PRU]", description: "\"[PRU]\"" },
-          function(u) {return {"value": 1, "units": {"[PRU]": 1}, "metadata": {"[PRU]":{"isBase":false,"CODE":"[PRU]","isMetric":"no","class":"clinical","names":["peripheral vascular resistance unit"],"printSymbols":["P.R.U."],"properties":["fluid resistance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[m_e]",
-          { type: "literal", value: "[m_e]", description: "\"[m_e]\"" },
-          function(u) {return {"value": 1, "units": {"[m_e]": 1}, "metadata": {"[m_e]":{"isBase":false,"CODE":"[M_E]","isMetric":"yes","class":"const","names":["electron mass"],"printSymbols":["<i>m<sub>\n               <r>e</r>\n            </sub>\n         </i>"],"properties":["mass"],"values":[{"printable":"9.1093897 &#215; 10<sup>-28</sup>","numeric":9.1093897e-28}]}}};},
-          "[m_p]",
-          { type: "literal", value: "[m_p]", description: "\"[m_p]\"" },
-          function(u) {return {"value": 1, "units": {"[m_p]": 1}, "metadata": {"[m_p]":{"isBase":false,"CODE":"[M_P]","isMetric":"yes","class":"const","names":["proton mass"],"printSymbols":["<i>m<sub>\n               <r>p</r>\n            </sub>\n         </i>"],"properties":["mass"],"values":[{"printable":"1.6726231 &#215; 10<sup>-24</sup>","numeric":1.6726231e-24}]}}};},
-          "m[Hg]",
-          { type: "literal", value: "m[Hg]", description: "\"m[Hg]\"" },
-          function(u) {return {"value": 1, "units": {"m[Hg]": 1}, "metadata": {"m[Hg]":{"isBase":false,"CODE":"M[HG]","isMetric":"yes","class":"clinical","names":["meter of mercury column"],"printSymbols":["m&#160;Hg"],"properties":["pressure"],"values":[{"printable":"133.3220","numeric":133.322}]}}};},
-          "[pca]",
-          { type: "literal", value: "[pca]", description: "\"[pca]\"" },
-          function(u) {return {"value": 1, "units": {"[pca]": 1}, "metadata": {"[pca]":{"isBase":false,"CODE":"[PCA]","isMetric":"no","class":"typeset","names":["pica"],"properties":["length"],"values":[{"printable":"12","numeric":12}]}}};},
-          "[pnt]",
-          { type: "literal", value: "[pnt]", description: "\"[pnt]\"" },
-          function(u) {return {"value": 1, "units": {"[pnt]": 1}, "metadata": {"[pnt]":{"isBase":false,"CODE":"[PNT]","isMetric":"no","class":"typeset","names":["point"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[lne]",
-          { type: "literal", value: "[lne]", description: "\"[lne]\"" },
-          function(u) {return {"value": 1, "units": {"[lne]": 1}, "metadata": {"[lne]":{"isBase":false,"CODE":"[LNE]","isMetric":"no","class":"typeset","names":["line"],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[LPF]",
-          { type: "literal", value: "[LPF]", description: "\"[LPF]\"" },
-          function(u) {return {"value": 1, "units": {"[LPF]": 1}, "metadata": {"[LPF]":{"isBase":false,"CODE":"[LPF]","isMetric":"no","class":"chemical","names":["low power field"],"printSymbols":["LPF"],"properties":["view area in microscope"],"values":[{"printable":"100","numeric":100}]}}};},
-          "[den]",
-          { type: "literal", value: "[den]", description: "\"[den]\"" },
-          function(u) {return {"value": 1, "units": {"[den]": 1}, "metadata": {"[den]":{"isBase":false,"CODE":"[DEN]","isMetric":"no","class":"heat","names":["Denier"],"printSymbols":["den"],"properties":["linear mass density (of textile thread)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[sct]",
-          { type: "literal", value: "[sct]", description: "\"[sct]\"" },
-          function(u) {return {"value": 1, "units": {"[sct]": 1}, "metadata": {"[sct]":{"isBase":false,"CODE":"[SCT]","isMetric":"no","class":"us-lengths","names":["section"],"properties":["area"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[twp]",
-          { type: "literal", value: "[twp]", description: "\"[twp]\"" },
-          function(u) {return {"value": 1, "units": {"[twp]": 1}, "metadata": {"[twp]":{"isBase":false,"CODE":"[TWP]","isMetric":"no","class":"us-lengths","names":["township"],"properties":["area"],"values":[{"printable":"36","numeric":36}]}}};},
-          "[Btu]",
-          { type: "literal", value: "[Btu]", description: "\"[Btu]\"" },
-          function(u) {return {"value": 1, "units": {"[Btu]": 1}, "metadata": {"[Btu]":{"isBase":false,"CODE":"[BTU]","isMetric":"no","class":"heat","names":["British thermal unit"],"printSymbols":["btu"],"properties":["energy"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[MET]",
-          { type: "literal", value: "[MET]", description: "\"[MET]\"" },
-          function(u) {return {"value": 1, "units": {"[MET]": 1}, "metadata": {"[MET]":{"isBase":false,"CODE":"[MET]","isMetric":"no","class":"clinical","names":["metabolic equivalent"],"printSymbols":["MET"],"properties":["metabolic cost of physical activity"],"values":[{"printable":"3.5","numeric":3.5}]}}};},
-          "[HPF]",
-          { type: "literal", value: "[HPF]", description: "\"[HPF]\"" },
-          function(u) {return {"value": 1, "units": {"[HPF]": 1}, "metadata": {"[HPF]":{"isBase":false,"CODE":"[HPF]","isMetric":"no","class":"chemical","names":["high power field"],"printSymbols":["HPF"],"properties":["view area in microscope"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[drp]",
-          { type: "literal", value: "[drp]", description: "\"[drp]\"" },
-          function(u) {return {"value": 1, "units": {"[drp]": 1}, "metadata": {"[drp]":{"isBase":false,"CODE":"[DRP]","isMetric":"no","class":"clinical","names":["drop"],"printSymbols":["drp"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[AU]",
-          { type: "literal", value: "[AU]", description: "\"[AU]\"" },
-          function(u) {return {"value": 1, "units": {"[AU]": 1}, "metadata": {"[AU]":{"isBase":false,"CODE":"[AU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["allergen unit"],"printSymbols":["AU"],"properties":["procedure defined amount of an allergen using some reference standard"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[IU]",
-          { type: "literal", value: "[IU]", description: "\"[IU]\"" },
-          function(u) {return {"value": 1, "units": {"[IU]": 1}, "metadata": {"[IU]":{"isBase":false,"CODE":"[IU]","isMetric":"yes","isArbitrary":"yes","class":"chemical","names":["international unit"],"printSymbols":["i.U."],"properties":["arbitrary"],"values":[{"printable":"1","numeric":1}]}}};},
-          "mo_s",
-          { type: "literal", value: "mo_s", description: "\"mo_s\"" },
-          function(u) {return {"value": 1, "units": {"mo_s": 1}, "metadata": {"mo_s":{"isBase":false,"CODE":"MO_S","isMetric":"no","class":"iso1000","names":["synodal month"],"printSymbols":["mo<sub>s</sub>"],"properties":["time"],"values":[{"printable":"29.53059","numeric":29.53059}]}}};},
-          "[gr]",
-          { type: "literal", value: "[gr]", description: "\"[gr]\"" },
-          function(u) {return {"value": 1, "units": {"[gr]": 1}, "metadata": {"[gr]":{"isBase":false,"CODE":"[GR]","isMetric":"no","class":"avoirdupois","names":["grain"],"properties":["mass"],"values":[{"printable":"64.79891","numeric":64.79891}]}}};},
-          "circ",
-          { type: "literal", value: "circ", description: "\"circ\"" },
-          function(u) {return {"value": 1, "units": {"circ": 1}, "metadata": {"circ":{"isBase":false,"CODE":"CIRC","isMetric":"no","class":"misc","names":["circle"],"printSymbols":["circ"],"properties":["plane angle"],"values":[{"printable":"2","numeric":2}]}}};},
-          "[pi]",
-          { type: "literal", value: "[pi]", description: "\"[pi]\"" },
-          function(u) {return {"value": 1, "units": {"[pi]": 1}, "metadata": {"[pi]":{"isBase":false,"CODE":"[PI]","isMetric":"no","class":"dimless","names":["the number pi"],"printSymbols":["&#960;"],"properties":["number"],"values":[{"printable":"&#960;","numeric":3.141592653589793}]}}};},
-          "[EU]",
-          { type: "literal", value: "[EU]", description: "\"[EU]\"" },
-          function(u) {return {"value": 1, "units": {"[EU]": 1}, "metadata": {"[EU]":{"isBase":false,"CODE":"[EU]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Ehrlich unit"],"printSymbols":[""],"properties":["Ehrlich unit"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[Lf]",
-          { type: "literal", value: "[Lf]", description: "\"[Lf]\"" },
-          function(u) {return {"value": 1, "units": {"[Lf]": 1}, "metadata": {"[Lf]":{"isBase":false,"CODE":"[LF]","isMetric":"no","isArbitrary":"yes","class":"chemical","names":["Limit of flocculation"],"printSymbols":["Lf"],"properties":["procedure defined amount of an antigen substance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "mo_j",
-          { type: "literal", value: "mo_j", description: "\"mo_j\"" },
-          function(u) {return {"value": 1, "units": {"mo_j": 1}, "metadata": {"mo_j":{"isBase":false,"CODE":"MO_J","isMetric":"no","class":"iso1000","names":["mean Julian month"],"printSymbols":["mo<sub>j</sub>"],"properties":["time"],"values":[{"printable":"1","numeric":1}]}}};},
-          "B[W]",
-          { type: "literal", value: "B[W]", description: "\"B[W]\"" },
-          function(u) {return {"value": 1, "units": {"B[W]": 1}, "metadata": {"B[W]":{"isBase":false,"CODE":"B[W]","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel watt"],"printSymbols":["B(W)"],"properties":["power level"],"values":[{"printable":"<function name=\"lg\" value=\"1\" Unit=\"W\"/>","numeric":null}]}}};},
-          "B[V]",
-          { type: "literal", value: "B[V]", description: "\"B[V]\"" },
-          function(u) {return {"value": 1, "units": {"B[V]": 1}, "metadata": {"B[V]":{"isBase":false,"CODE":"B[V]","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel volt"],"printSymbols":["B(V)"],"properties":["electric potential level"],"values":[{"printable":"<function name=\"lgTimes2\" value=\"1\" Unit=\"V\"/>","numeric":null}]}}};},
-          "mo_g",
-          { type: "literal", value: "mo_g", description: "\"mo_g\"" },
-          function(u) {return {"value": 1, "units": {"mo_g": 1}, "metadata": {"mo_g":{"isBase":false,"CODE":"MO_G","isMetric":"no","class":"iso1000","names":["mean Gregorian month"],"printSymbols":["mo<sub>g</sub>"],"properties":["time"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[iU]",
-          { type: "literal", value: "[iU]", description: "\"[iU]\"" },
-          function(u) {return {"value": 1, "units": {"[iU]": 1}, "metadata": {"[iU]":{"isBase":false,"CODE":"[IU]","isMetric":"yes","isArbitrary":"yes","class":"chemical","names":["international unit"],"printSymbols":["IU"],"properties":["arbitrary"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[HP]",
-          { type: "literal", value: "[HP]", description: "\"[HP]\"" },
-          function(u) {return {"value": 1, "units": {"[HP]": 1}, "metadata": {"[HP]":{"isBase":false,"CODE":"[HP]","isMetric":"no","class":"heat","names":["horsepower"],"properties":["power"],"values":[{"printable":"550","numeric":550}]}}};},
-          "[Ch]",
-          { type: "literal", value: "[Ch]", description: "\"[Ch]\"" },
-          function(u) {return {"value": 1, "units": {"[Ch]": 1}, "metadata": {"[Ch]":{"isBase":false,"CODE":"[CH]","isMetric":"no","class":"clinical","names":["Charrière","french"],"printSymbols":["Ch"],"properties":["gauge of catheters"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[ly]",
-          { type: "literal", value: "[ly]", description: "\"[ly]\"" },
-          function(u) {return {"value": 1, "units": {"[ly]": 1}, "metadata": {"[ly]":{"isBase":false,"CODE":"[LY]","isMetric":"yes","class":"const","names":["light-year"],"printSymbols":["l.y."],"properties":["length"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[pH]",
-          { type: "literal", value: "[pH]", description: "\"[pH]\"" },
-          function(u) {return {"value": 1, "units": {"[pH]": 1}, "metadata": {"[pH]":{"isBase":false,"CODE":"[PH]","isMetric":"no","isSpecial":"yes","class":"chemical","names":["pH"],"printSymbols":["pH"],"properties":["acidity"],"values":[{"printable":"<function name=\"pH\" value=\"1\" Unit=\"mol/l\"/>","numeric":null}]}}};},
-          "a_j",
-          { type: "literal", value: "a_j", description: "\"a_j\"" },
-          function(u) {return {"value": 1, "units": {"a_j": 1}, "metadata": {"a_j":{"isBase":false,"CODE":"ANN_J","isMetric":"no","class":"iso1000","names":["mean Julian year"],"printSymbols":["a<sub>j</sub>"],"properties":["time"],"values":[{"printable":"365.25","numeric":365.25}]}}};},
-          "rad",
-          { type: "literal", value: "rad", description: "\"rad\"" },
-          function(u) {return {"value": 1, "units": {"rad": 1}, "metadata": {"rad":{"isBase":true,"CODE":"RAD","dim":"A","names":["radian"],"printSymbols":["rad"],"properties":["plane angle"]}}};},
-          "a_t",
-          { type: "literal", value: "a_t", description: "\"a_t\"" },
-          function(u) {return {"value": 1, "units": {"a_t": 1}, "metadata": {"a_t":{"isBase":false,"CODE":"ANN_T","isMetric":"no","class":"iso1000","names":["tropical year"],"printSymbols":["a<sub>t</sub>"],"properties":["time"],"values":[{"printable":"365.24219","numeric":365.24219}]}}};},
-          "Ohm",
-          { type: "literal", value: "Ohm", description: "\"Ohm\"" },
-          function(u) {return {"value": 1, "units": {"Ohm": 1}, "metadata": {"Ohm":{"isBase":false,"CODE":"OHM","isMetric":"yes","class":"si","names":["Ohm"],"printSymbols":["&#937;"],"properties":["electric resistance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "sph",
-          { type: "literal", value: "sph", description: "\"sph\"" },
-          function(u) {return {"value": 1, "units": {"sph": 1}, "metadata": {"sph":{"isBase":false,"CODE":"SPH","isMetric":"no","class":"misc","names":["spere"],"printSymbols":["sph"],"properties":["solid angle"],"values":[{"printable":"4","numeric":4}]}}};},
-          "bit",
-          { type: "literal", value: "bit", description: "\"bit\"" },
-          function(u) {return {"value": 1, "units": {"bit": 1}, "metadata": {"bit":{"isBase":false,"CODE":"BIT","isMetric":"yes","class":"infotech","names":["bit"],"printSymbols":["bit"],"properties":["amount of information"],"values":[{"printable":"1","numeric":1}]}}};},
-          "mho",
-          { type: "literal", value: "mho", description: "\"mho\"" },
-          function(u) {return {"value": 1, "units": {"mho": 1}, "metadata": {"mho":{"isBase":false,"CODE":"MHO","isMetric":"yes","class":"misc","names":["mho"],"printSymbols":["mho"],"properties":["electric conductance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "min",
-          { type: "literal", value: "min", description: "\"min\"" },
-          function(u) {return {"value": 1, "units": {"min": 1}, "metadata": {"min":{"isBase":false,"CODE":"MIN","isMetric":"no","class":"iso1000","names":["minute"],"printSymbols":["min"],"properties":["time"],"values":[{"printable":"60","numeric":60}]}}};},
-          "mol",
-          { type: "literal", value: "mol", description: "\"mol\"" },
-          function(u) {return {"value": 1, "units": {"mol": 1}, "metadata": {"mol":{"isBase":false,"CODE":"MOL","isMetric":"yes","class":"si","names":["mole"],"printSymbols":["mol"],"properties":["amount of substance"],"values":[{"printable":"6.0221367","numeric":6.0221367}]}}};},
-          "deg",
-          { type: "literal", value: "deg", description: "\"deg\"" },
-          function(u) {return {"value": 1, "units": {"deg": 1}, "metadata": {"deg":{"isBase":false,"CODE":"DEG","isMetric":"no","class":"iso1000","names":["degree"],"printSymbols":["&#176;"],"properties":["plane angle"],"values":[{"printable":"2","numeric":2}]}}};},
-          "gon",
-          { type: "literal", value: "gon", description: "\"gon\"" },
-          function(u) {return {"value": 1, "units": {"gon": 1}, "metadata": {"gon":{"isBase":false,"CODE":"GON","isMetric":"no","class":"iso1000","names":["gon","grade"],"printSymbols":["&#9633;<sup>g</sup>"],"properties":["plane angle"],"values":[{"printable":"0.9","numeric":0.9}]}}};},
-          "Cel",
-          { type: "literal", value: "Cel", description: "\"Cel\"" },
-          function(u) {return {"value": 1, "units": {"Cel": 1}, "metadata": {"Cel":{"isBase":false,"CODE":"CEL","isMetric":"yes","isSpecial":"yes","class":"si","names":["degree Celsius"],"printSymbols":["&#176;C"],"properties":["temperature"],"values":[{"printable":"<function name=\"Cel\" value=\"1\" Unit=\"K\"/>","numeric":null}]}}};},
-          "kat",
-          { type: "literal", value: "kat", description: "\"kat\"" },
-          function(u) {return {"value": 1, "units": {"kat": 1}, "metadata": {"kat":{"isBase":false,"CODE":"KAT","isMetric":"yes","class":"chemical","names":["katal"],"printSymbols":["kat"],"properties":["catalytic activity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "att",
-          { type: "literal", value: "att", description: "\"att\"" },
-          function(u) {return {"value": 1, "units": {"att": 1}, "metadata": {"att":{"isBase":false,"CODE":"ATT","isMetric":"no","class":"misc","names":["technical atmosphere"],"printSymbols":["at"],"properties":["pressure"],"values":[{"printable":"1","numeric":1}]}}};},
-          "osm",
-          { type: "literal", value: "osm", description: "\"osm\"" },
-          function(u) {return {"value": 1, "units": {"osm": 1}, "metadata": {"osm":{"isBase":false,"CODE":"OSM","isMetric":"yes","class":"chemical","names":["osmole"],"printSymbols":["osm"],"properties":["amount of substance (dissolved particles)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "tex",
-          { type: "literal", value: "tex", description: "\"tex\"" },
-          function(u) {return {"value": 1, "units": {"tex": 1}, "metadata": {"tex":{"isBase":false,"CODE":"TEX","isMetric":"yes","class":"heat","names":["tex"],"printSymbols":["tex"],"properties":["linear mass density (of textile thread)"],"values":[{"printable":"1","numeric":1}]}}};},
-          "cal",
-          { type: "literal", value: "cal", description: "\"cal\"" },
-          function(u) {return {"value": 1, "units": {"cal": 1}, "metadata": {"cal":{"isBase":false,"CODE":"CAL","isMetric":"yes","class":"heat","names":["calorie"],"printSymbols":["cal"],"properties":["energy"],"values":[{"printable":"1","numeric":1}]}}};},
-          "REM",
-          { type: "literal", value: "REM", description: "\"REM\"" },
-          function(u) {return {"value": 1, "units": {"REM": 1}, "metadata": {"REM":{"isBase":false,"CODE":"[REM]","isMetric":"yes","class":"cgs","names":["radiation equivalent man"],"printSymbols":["REM"],"properties":["dose equivalent"],"values":[{"printable":"1","numeric":1}]}}};},
-          "RAD",
-          { type: "literal", value: "RAD", description: "\"RAD\"" },
-          function(u) {return {"value": 1, "units": {"RAD": 1}, "metadata": {"RAD":{"isBase":false,"CODE":"[RAD]","isMetric":"yes","class":"cgs","names":["radiation absorbed dose"],"printSymbols":["RAD"],"properties":["energy dose"],"values":[{"printable":"100","numeric":100}]}}};},
-          "a_g",
-          { type: "literal", value: "a_g", description: "\"a_g\"" },
-          function(u) {return {"value": 1, "units": {"a_g": 1}, "metadata": {"a_g":{"isBase":false,"CODE":"ANN_G","isMetric":"no","class":"iso1000","names":["mean Gregorian year"],"printSymbols":["a<sub>g</sub>"],"properties":["time"],"values":[{"printable":"365.2425","numeric":365.2425}]}}};},
-          "Lmb",
-          { type: "literal", value: "Lmb", description: "\"Lmb\"" },
-          function(u) {return {"value": 1, "units": {"Lmb": 1}, "metadata": {"Lmb":{"isBase":false,"CODE":"LMB","isMetric":"yes","class":"cgs","names":["Lambert"],"printSymbols":["L"],"properties":["brightness"],"values":[{"printable":"1","numeric":1}]}}};},
-          "atm",
-          { type: "literal", value: "atm", description: "\"atm\"" },
-          function(u) {return {"value": 1, "units": {"atm": 1}, "metadata": {"atm":{"isBase":false,"CODE":"ATM","isMetric":"no","class":"const","names":["standard atmosphere"],"printSymbols":["atm"],"properties":["pressure"],"values":[{"printable":"101325","numeric":101325}]}}};},
-          "erg",
-          { type: "literal", value: "erg", description: "\"erg\"" },
-          function(u) {return {"value": 1, "units": {"erg": 1}, "metadata": {"erg":{"isBase":false,"CODE":"ERG","isMetric":"yes","class":"cgs","names":["erg"],"printSymbols":["erg"],"properties":["energy"],"values":[{"printable":"1","numeric":1}]}}};},
-          "dyn",
-          { type: "literal", value: "dyn", description: "\"dyn\"" },
-          function(u) {return {"value": 1, "units": {"dyn": 1}, "metadata": {"dyn":{"isBase":false,"CODE":"DYN","isMetric":"yes","class":"cgs","names":["dyne"],"printSymbols":["dyn"],"properties":["force"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Gal",
-          { type: "literal", value: "Gal", description: "\"Gal\"" },
-          function(u) {return {"value": 1, "units": {"Gal": 1}, "metadata": {"Gal":{"isBase":false,"CODE":"GL","isMetric":"yes","class":"cgs","names":["Gal"],"printSymbols":["Gal"],"properties":["acceleration"],"values":[{"printable":"1","numeric":1}]}}};},
-          "10^",
-          { type: "literal", value: "10^", description: "\"10^\"" },
-          function(u) {return {"value": 1, "units": {"10^": 1}, "metadata": {"10^":{"isBase":false,"CODE":"10^","isMetric":"no","class":"dimless","names":["the number ten for arbitrary powers"],"printSymbols":["10"],"properties":["number"],"values":[{"printable":"10","numeric":10}]}}};},
-          "10*",
-          { type: "literal", value: "10*", description: "\"10*\"" },
-          function(u) {return {"value": 1, "units": {"10*": 1}, "metadata": {"10*":{"isBase":false,"CODE":"10*","isMetric":"no","class":"dimless","names":["the number ten for arbitrary powers"],"printSymbols":["10"],"properties":["number"],"values":[{"printable":"10","numeric":10}]}}};},
-          "[S]",
-          { type: "literal", value: "[S]", description: "\"[S]\"" },
-          function(u) {return {"value": 1, "units": {"[S]": 1}, "metadata": {"[S]":{"isBase":false,"CODE":"[S]","isMetric":"no","class":"chemical","names":["Svedberg unit"],"printSymbols":["S"],"properties":["sedimentation coefficient"],"values":[{"printable":"1","numeric":1}]}}};},
-          "[g]",
-          { type: "literal", value: "[g]", description: "\"[g]\"" },
-          function(u) {return {"value": 1, "units": {"[g]": 1}, "metadata": {"[g]":{"isBase":false,"CODE":"[G]","isMetric":"yes","class":"const","names":["standard acceleration of free fall"],"printSymbols":["<i>g<sub>n</sub>\n         </i>"],"properties":["acceleration"],"values":[{"printable":"9.80665","numeric":9.80665}]}}};},
-          "[G]",
-          { type: "literal", value: "[G]", description: "\"[G]\"" },
-          function(u) {return {"value": 1, "units": {"[G]": 1}, "metadata": {"[G]":{"isBase":false,"CODE":"[GC]","isMetric":"yes","class":"const","names":["Newtonian constant of gravitation"],"printSymbols":["<i>G</i>"],"properties":["(unclassified)"],"values":[{"printable":"6.67259 &#215; 10<sup>-11</sup>","numeric":6.67259e-11}]}}};},
-          "[e]",
-          { type: "literal", value: "[e]", description: "\"[e]\"" },
-          function(u) {return {"value": 1, "units": {"[e]": 1}, "metadata": {"[e]":{"isBase":false,"CODE":"[E]","isMetric":"yes","class":"const","names":["elementary charge"],"printSymbols":["<i>e</i>"],"properties":["electric charge"],"values":[{"printable":"1.60217733 &#215; 10<sup>-19</sup>","numeric":1.60217733e-19}]}}};},
-          "[k]",
-          { type: "literal", value: "[k]", description: "\"[k]\"" },
-          function(u) {return {"value": 1, "units": {"[k]": 1}, "metadata": {"[k]":{"isBase":false,"CODE":"[K]","isMetric":"yes","class":"const","names":["Boltzmann constant"],"printSymbols":["<i>k</i>"],"properties":["(unclassified)"],"values":[{"printable":"1.380658 &#215; 10<sup>-23</sup>","numeric":1.380658e-23}]}}};},
-          "[h]",
-          { type: "literal", value: "[h]", description: "\"[h]\"" },
-          function(u) {return {"value": 1, "units": {"[h]": 1}, "metadata": {"[h]":{"isBase":false,"CODE":"[H]","isMetric":"yes","class":"const","names":["Planck constant"],"printSymbols":["<i>h</i>"],"properties":["action"],"values":[{"printable":"6.6260755 &#215; 10<sup>-24</sup>","numeric":6.6260755e-24}]}}};},
-          "[c]",
-          { type: "literal", value: "[c]", description: "\"[c]\"" },
-          function(u) {return {"value": 1, "units": {"[c]": 1}, "metadata": {"[c]":{"isBase":false,"CODE":"[C]","isMetric":"yes","class":"const","names":["velocity of light"],"printSymbols":["<i>c</i>"],"properties":["velocity"],"values":[{"printable":"299792458","numeric":299792458}]}}};},
-          "bar",
-          { type: "literal", value: "bar", description: "\"bar\"" },
-          function(u) {return {"value": 1, "units": {"bar": 1}, "metadata": {"bar":{"isBase":false,"CODE":"BAR","isMetric":"yes","class":"iso1000","names":["bar"],"printSymbols":["bar"],"properties":["pressure"],"values":[{"printable":"1 &#215; 10<sup>5</sup>","numeric":100000}]}}};},
-          "lm",
-          { type: "literal", value: "lm", description: "\"lm\"" },
-          function(u) {return {"value": 1, "units": {"lm": 1}, "metadata": {"lm":{"isBase":false,"CODE":"LM","isMetric":"yes","class":"si","names":["lumen"],"printSymbols":["lm"],"properties":["luminous flux"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Ci",
-          { type: "literal", value: "Ci", description: "\"Ci\"" },
-          function(u) {return {"value": 1, "units": {"Ci": 1}, "metadata": {"Ci":{"isBase":false,"CODE":"CI","isMetric":"yes","class":"cgs","names":["Curie"],"printSymbols":["Ci"],"properties":["radioactivity"],"values":[{"printable":"3.7 &#215; 10<sup>10</sup>","numeric":37000000000}]}}};},
-          "ph",
-          { type: "literal", value: "ph", description: "\"ph\"" },
-          function(u) {return {"value": 1, "units": {"ph": 1}, "metadata": {"ph":{"isBase":false,"CODE":"PHT","isMetric":"yes","class":"cgs","names":["phot"],"printSymbols":["ph"],"properties":["illuminance"],"values":[{"printable":"1 &#215; 10<sup>-4</sup>","numeric":0.0001}]}}};},
-          "cd",
-          { type: "literal", value: "cd", description: "\"cd\"" },
-          function(u) {return {"value": 1, "units": {"cd": 1}, "metadata": {"cd":{"isBase":true,"CODE":"CD","dim":"F","names":["candela"],"printSymbols":["cd"],"properties":["luminous intensity"]}}};},
-          "Ao",
-          { type: "literal", value: "Ao", description: "\"Ao\"" },
-          function(u) {return {"value": 1, "units": {"Ao": 1}, "metadata": {"Ao":{"isBase":false,"CODE":"AO","isMetric":"no","class":"misc","names":["Ångström"],"printSymbols":["&#197;"],"properties":["length"],"values":[{"printable":"0.1","numeric":0.1}]}}};},
-          "Wb",
-          { type: "literal", value: "Wb", description: "\"Wb\"" },
-          function(u) {return {"value": 1, "units": {"Wb": 1}, "metadata": {"Wb":{"isBase":false,"CODE":"WB","isMetric":"yes","class":"si","names":["Weber"],"printSymbols":["Wb"],"properties":["magentic flux"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Gb",
-          { type: "literal", value: "Gb", description: "\"Gb\"" },
-          function(u) {return {"value": 1, "units": {"Gb": 1}, "metadata": {"Gb":{"isBase":false,"CODE":"GB","isMetric":"yes","class":"cgs","names":["Gilbert"],"printSymbols":["Gb"],"properties":["magnetic tension"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Oe",
-          { type: "literal", value: "Oe", description: "\"Oe\"" },
-          function(u) {return {"value": 1, "units": {"Oe": 1}, "metadata": {"Oe":{"isBase":false,"CODE":"OE","isMetric":"yes","class":"cgs","names":["Oersted"],"printSymbols":["Oe"],"properties":["magnetic field intensity"],"values":[{"printable":"250","numeric":250}]}}};},
-          "lx",
-          { type: "literal", value: "lx", description: "\"lx\"" },
-          function(u) {return {"value": 1, "units": {"lx": 1}, "metadata": {"lx":{"isBase":false,"CODE":"LX","isMetric":"yes","class":"si","names":["lux"],"printSymbols":["lx"],"properties":["illuminance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Mx",
-          { type: "literal", value: "Mx", description: "\"Mx\"" },
-          function(u) {return {"value": 1, "units": {"Mx": 1}, "metadata": {"Mx":{"isBase":false,"CODE":"MX","isMetric":"yes","class":"cgs","names":["Maxwell"],"printSymbols":["Mx"],"properties":["flux of magnetic induction"],"values":[{"printable":"1 &#215; 10<sup>-8</sup>","numeric":1e-8}]}}};},
-          "St",
-          { type: "literal", value: "St", description: "\"St\"" },
-          function(u) {return {"value": 1, "units": {"St": 1}, "metadata": {"St":{"isBase":false,"CODE":"ST","isMetric":"yes","class":"cgs","names":["Stokes"],"printSymbols":["St"],"properties":["kinematic viscosity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Bi",
-          { type: "literal", value: "Bi", description: "\"Bi\"" },
-          function(u) {return {"value": 1, "units": {"Bi": 1}, "metadata": {"Bi":{"isBase":false,"CODE":"BI","isMetric":"yes","class":"cgs","names":["Biot"],"printSymbols":["Bi"],"properties":["electric current"],"values":[{"printable":"10","numeric":10}]}}};},
-          "Bq",
-          { type: "literal", value: "Bq", description: "\"Bq\"" },
-          function(u) {return {"value": 1, "units": {"Bq": 1}, "metadata": {"Bq":{"isBase":false,"CODE":"BQ","isMetric":"yes","class":"si","names":["Becquerel"],"printSymbols":["Bq"],"properties":["radioactivity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Np",
-          { type: "literal", value: "Np", description: "\"Np\"" },
-          function(u) {return {"value": 1, "units": {"Np": 1}, "metadata": {"Np":{"isBase":false,"CODE":"NEP","isMetric":"yes","isSpecial":"yes","class":"levels","names":["neper"],"printSymbols":["Np"],"properties":["level"],"values":[{"printable":"<function name=\"ln\" value=\"1\" Unit=\"1\"/>","numeric":null}]}}};},
-          "AU",
-          { type: "literal", value: "AU", description: "\"AU\"" },
-          function(u) {return {"value": 1, "units": {"AU": 1}, "metadata": {"AU":{"isBase":false,"CODE":"ASU","isMetric":"no","class":"iso1000","names":["astronomic unit"],"printSymbols":["AU"],"properties":["length"],"values":[{"printable":"149597.870691","numeric":149597.870691}]}}};},
-          "mo",
-          { type: "literal", value: "mo", description: "\"mo\"" },
-          function(u) {return {"value": 1, "units": {"mo": 1}, "metadata": {"mo":{"isBase":false,"CODE":"MO","isMetric":"no","class":"iso1000","names":["month"],"printSymbols":["mo"],"properties":["time"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Ky",
-          { type: "literal", value: "Ky", description: "\"Ky\"" },
-          function(u) {return {"value": 1, "units": {"Ky": 1}, "metadata": {"Ky":{"isBase":false,"CODE":"KY","isMetric":"yes","class":"cgs","names":["Kayser"],"printSymbols":["K"],"properties":["lineic number"],"values":[{"printable":"1","numeric":1}]}}};},
-          "gf",
-          { type: "literal", value: "gf", description: "\"gf\"" },
-          function(u) {return {"value": 1, "units": {"gf": 1}, "metadata": {"gf":{"isBase":false,"CODE":"GF","isMetric":"yes","class":"const","names":["gram-force"],"printSymbols":["gf"],"properties":["force"],"values":[{"printable":"1","numeric":1}]}}};},
-          "wk",
-          { type: "literal", value: "wk", description: "\"wk\"" },
-          function(u) {return {"value": 1, "units": {"wk": 1}, "metadata": {"wk":{"isBase":false,"CODE":"WK","isMetric":"no","class":"iso1000","names":["week"],"printSymbols":["wk"],"properties":["time"],"values":[{"printable":"7","numeric":7}]}}};},
-          "Pa",
-          { type: "literal", value: "Pa", description: "\"Pa\"" },
-          function(u) {return {"value": 1, "units": {"Pa": 1}, "metadata": {"Pa":{"isBase":false,"CODE":"PAL","isMetric":"yes","class":"si","names":["Pascal"],"printSymbols":["Pa"],"properties":["pressure"],"values":[{"printable":"1","numeric":1}]}}};},
-          "g%",
-          { type: "literal", value: "g%", description: "\"g%\"" },
-          function(u) {return {"value": 1, "units": {"g%": 1}, "metadata": {"g%":{"isBase":false,"CODE":"G%","isMetric":"yes","class":"chemical","names":["gram percent"],"printSymbols":["g%"],"properties":["mass concentration"],"values":[{"printable":"1","numeric":1}]}}};},
-          "sr",
-          { type: "literal", value: "sr", description: "\"sr\"" },
-          function(u) {return {"value": 1, "units": {"sr": 1}, "metadata": {"sr":{"isBase":false,"CODE":"SR","isMetric":"yes","class":"si","names":["steradian"],"printSymbols":["sr"],"properties":["solid angle"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Bd",
-          { type: "literal", value: "Bd", description: "\"Bd\"" },
-          function(u) {return {"value": 1, "units": {"Bd": 1}, "metadata": {"Bd":{"isBase":false,"CODE":"BD","isMetric":"yes","class":"infotech","names":["baud"],"printSymbols":["Bd"],"properties":["signal transmission rate"],"values":[{"printable":"1","numeric":1}]}}};},
-          "eq",
-          { type: "literal", value: "eq", description: "\"eq\"" },
-          function(u) {return {"value": 1, "units": {"eq": 1}, "metadata": {"eq":{"isBase":false,"CODE":"EQ","isMetric":"yes","class":"chemical","names":["equivalents"],"printSymbols":["eq"],"properties":["amount of substance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "By",
-          { type: "literal", value: "By", description: "\"By\"" },
-          function(u) {return {"value": 1, "units": {"By": 1}, "metadata": {"By":{"isBase":false,"CODE":"BY","isMetric":"yes","class":"infotech","names":["byte"],"printSymbols":["B"],"properties":["amount of information"],"values":[{"printable":"8","numeric":8}]}}};},
-          "Hz",
-          { type: "literal", value: "Hz", description: "\"Hz\"" },
-          function(u) {return {"value": 1, "units": {"Hz": 1}, "metadata": {"Hz":{"isBase":false,"CODE":"HZ","isMetric":"yes","class":"si","names":["Hertz"],"printSymbols":["Hz"],"properties":["frequency"],"values":[{"printable":"1","numeric":1}]}}};},
-          "''",
-          { type: "literal", value: "''", description: "\"''\"" },
-          function(u) {return {"value": 1, "units": {"''": 1}, "metadata": {"''":{"isBase":false,"CODE":"''","isMetric":"no","class":"iso1000","names":["second"],"printSymbols":["''"],"properties":["plane angle"],"values":[{"printable":"1","numeric":1}]}}};},
-          "pc",
-          { type: "literal", value: "pc", description: "\"pc\"" },
-          function(u) {return {"value": 1, "units": {"pc": 1}, "metadata": {"pc":{"isBase":false,"CODE":"PRS","isMetric":"yes","class":"iso1000","names":["parsec"],"printSymbols":["pc"],"properties":["length"],"values":[{"printable":"3.085678 &#215; 10<sup>16</sup>","numeric":30856780000000000}]}}};},
-          "eV",
-          { type: "literal", value: "eV", description: "\"eV\"" },
-          function(u) {return {"value": 1, "units": {"eV": 1}, "metadata": {"eV":{"isBase":false,"CODE":"EV","isMetric":"yes","class":"iso1000","names":["electronvolt"],"printSymbols":["eV"],"properties":["energy"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Gy",
-          { type: "literal", value: "Gy", description: "\"Gy\"" },
-          function(u) {return {"value": 1, "units": {"Gy": 1}, "metadata": {"Gy":{"isBase":false,"CODE":"GY","isMetric":"yes","class":"si","names":["Gray"],"printSymbols":["Gy"],"properties":["energy dose"],"values":[{"printable":"1","numeric":1}]}}};},
-          "st",
-          { type: "literal", value: "st", description: "\"st\"" },
-          function(u) {return {"value": 1, "units": {"st": 1}, "metadata": {"st":{"isBase":false,"CODE":"STR","isMetric":"yes","class":"misc","names":["stere"],"printSymbols":["st"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "Sv",
-          { type: "literal", value: "Sv", description: "\"Sv\"" },
-          function(u) {return {"value": 1, "units": {"Sv": 1}, "metadata": {"Sv":{"isBase":false,"CODE":"SV","isMetric":"yes","class":"si","names":["Sievert"],"printSymbols":["Sv"],"properties":["dose equivalent"],"values":[{"printable":"1","numeric":1}]}}};},
-          "ar",
-          { type: "literal", value: "ar", description: "\"ar\"" },
-          function(u) {return {"value": 1, "units": {"ar": 1}, "metadata": {"ar":{"isBase":false,"CODE":"AR","isMetric":"yes","class":"iso1000","names":["are"],"printSymbols":["a"],"properties":["area"],"values":[{"printable":"100","numeric":100}]}}};},
-          "sb",
-          { type: "literal", value: "sb", description: "\"sb\"" },
-          function(u) {return {"value": 1, "units": {"sb": 1}, "metadata": {"sb":{"isBase":false,"CODE":"SB","isMetric":"yes","class":"cgs","names":["stilb"],"printSymbols":["sb"],"properties":["lum. intensity density"],"values":[{"printable":"1","numeric":1}]}}};},
-          "L",
-          { type: "literal", value: "L", description: "\"L\"" },
-          function(u) {return {"value": 1, "units": {"L": 1}, "metadata": {"L":{"isBase":false,"isMetric":"yes","class":"iso1000","names":["liter"],"printSymbols":["L"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "t",
-          { type: "literal", value: "t", description: "\"t\"" },
-          function(u) {return {"value": 1, "units": {"t": 1}, "metadata": {"t":{"isBase":false,"CODE":"TNE","isMetric":"yes","class":"iso1000","names":["tonne"],"printSymbols":["t"],"properties":["mass"],"values":[{"printable":"1 &#215; 10<sup>3</sup>","numeric":1000}]}}};},
-          "u",
-          { type: "literal", value: "u", description: "\"u\"" },
-          function(u) {return {"value": 1, "units": {"u": 1}, "metadata": {"u":{"isBase":false,"CODE":"AMU","isMetric":"yes","class":"iso1000","names":["unified atomic mass unit"],"printSymbols":["u"],"properties":["mass"],"values":[{"printable":"1.6605402 &#215; 10<sup>-24</sup>","numeric":1.6605402e-24}]}}};},
-          "P",
-          { type: "literal", value: "P", description: "\"P\"" },
-          function(u) {return {"value": 1, "units": {"P": 1}, "metadata": {"P":{"isBase":false,"CODE":"P","isMetric":"yes","class":"cgs","names":["Poise"],"printSymbols":["P"],"properties":["dynamic viscosity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "G",
-          { type: "literal", value: "G", description: "\"G\"" },
-          function(u) {return {"value": 1, "units": {"G": 1}, "metadata": {"G":{"isBase":false,"CODE":"GS","isMetric":"yes","class":"cgs","names":["Gauss"],"printSymbols":["Gs"],"properties":["magnetic flux density"],"values":[{"printable":"1 &#215; 10<sup>-4</sup>","numeric":0.0001}]}}};},
-          "R",
-          { type: "literal", value: "R", description: "\"R\"" },
-          function(u) {return {"value": 1, "units": {"R": 1}, "metadata": {"R":{"isBase":false,"CODE":"ROE","isMetric":"yes","class":"cgs","names":["Roentgen"],"printSymbols":["R"],"properties":["ion dose"],"values":[{"printable":"2.58 &#215; 10<sup>-4</sup>","numeric":0.000258}]}}};},
-          "H",
-          { type: "literal", value: "H", description: "\"H\"" },
-          function(u) {return {"value": 1, "units": {"H": 1}, "metadata": {"H":{"isBase":false,"CODE":"H","isMetric":"yes","class":"si","names":["Henry"],"printSymbols":["H"],"properties":["inductance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "T",
-          { type: "literal", value: "T", description: "\"T\"" },
-          function(u) {return {"value": 1, "units": {"T": 1}, "metadata": {"T":{"isBase":false,"CODE":"T","isMetric":"yes","class":"si","names":["Tesla"],"printSymbols":["T"],"properties":["magnetic flux density"],"values":[{"printable":"1","numeric":1}]}}};},
-          "U",
-          { type: "literal", value: "U", description: "\"U\"" },
-          function(u) {return {"value": 1, "units": {"U": 1}, "metadata": {"U":{"isBase":false,"CODE":"U","isMetric":"yes","class":"chemical","names":["Unit"],"printSymbols":["U"],"properties":["catalytic activity"],"values":[{"printable":"1","numeric":1}]}}};},
-          "B",
-          { type: "literal", value: "B", description: "\"B\"" },
-          function(u) {return {"value": 1, "units": {"B": 1}, "metadata": {"B":{"isBase":false,"CODE":"B","isMetric":"yes","isSpecial":"yes","class":"levels","names":["bel"],"printSymbols":["B"],"properties":["level"],"values":[{"printable":"<function name=\"lg\" value=\"1\" Unit=\"1\"/>","numeric":null}]}}};},
-          "S",
-          { type: "literal", value: "S", description: "\"S\"" },
-          function(u) {return {"value": 1, "units": {"S": 1}, "metadata": {"S":{"isBase":false,"CODE":"SIE","isMetric":"yes","class":"si","names":["Siemens"],"printSymbols":["S"],"properties":["electric conductance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "m",
-          { type: "literal", value: "m", description: "\"m\"" },
-          function(u) {return {"value": 1, "units": {"m": 1}, "metadata": {"m":{"isBase":true,"CODE":"M","dim":"L","names":["meter"],"printSymbols":["m"],"properties":["length"]}}};},
-          "s",
-          { type: "literal", value: "s", description: "\"s\"" },
-          function(u) {return {"value": 1, "units": {"s": 1}, "metadata": {"s":{"isBase":true,"CODE":"S","dim":"T","names":["second"],"printSymbols":["s"],"properties":["time"]}}};},
-          "F",
-          { type: "literal", value: "F", description: "\"F\"" },
-          function(u) {return {"value": 1, "units": {"F": 1}, "metadata": {"F":{"isBase":false,"CODE":"F","isMetric":"yes","class":"si","names":["Farad"],"printSymbols":["F"],"properties":["electric capacitance"],"values":[{"printable":"1","numeric":1}]}}};},
-          "l",
-          { type: "literal", value: "l", description: "\"l\"" },
-          function(u) {return {"value": 1, "units": {"l": 1}, "metadata": {"l":{"isBase":false,"CODE":"L","isMetric":"yes","class":"iso1000","names":["liter"],"printSymbols":["l"],"properties":["volume"],"values":[{"printable":"1","numeric":1}]}}};},
-          "V",
-          { type: "literal", value: "V", description: "\"V\"" },
-          function(u) {return {"value": 1, "units": {"V": 1}, "metadata": {"V":{"isBase":false,"CODE":"V","isMetric":"yes","class":"si","names":["Volt"],"printSymbols":["V"],"properties":["electric potential"],"values":[{"printable":"1","numeric":1}]}}};},
-          "A",
-          { type: "literal", value: "A", description: "\"A\"" },
-          function(u) {return {"value": 1, "units": {"A": 1}, "metadata": {"A":{"isBase":false,"CODE":"A","isMetric":"yes","class":"si","names":["Ampère"],"printSymbols":["A"],"properties":["electric current"],"values":[{"printable":"1","numeric":1}]}}};},
-          "W",
-          { type: "literal", value: "W", description: "\"W\"" },
-          function(u) {return {"value": 1, "units": {"W": 1}, "metadata": {"W":{"isBase":false,"CODE":"W","isMetric":"yes","class":"si","names":["Watt"],"printSymbols":["W"],"properties":["power"],"values":[{"printable":"1","numeric":1}]}}};},
-          "K",
-          { type: "literal", value: "K", description: "\"K\"" },
-          function(u) {return {"value": 1, "units": {"K": 1}, "metadata": {"K":{"isBase":true,"CODE":"K","dim":"C","names":["Kelvin"],"printSymbols":["K"],"properties":["temperature"]}}};},
-          "C",
-          { type: "literal", value: "C", description: "\"C\"" },
-          function(u) {return {"value": 1, "units": {"C": 1}, "metadata": {"C":{"isBase":true,"CODE":"C","dim":"Q","names":["Coulomb"],"printSymbols":["C"],"properties":["electric charge"]}}};},
-          "b",
-          { type: "literal", value: "b", description: "\"b\"" },
-          function(u) {return {"value": 1, "units": {"b": 1}, "metadata": {"b":{"isBase":false,"CODE":"BRN","isMetric":"no","class":"misc","names":["barn"],"printSymbols":["b"],"properties":["action area"],"values":[{"printable":"100","numeric":100}]}}};},
-          "%",
-          { type: "literal", value: "%", description: "\"%\"" },
-          function(u) {return {"value": 1, "units": {"%": 1}, "metadata": {"%":{"isBase":false,"CODE":"%","isMetric":"no","class":"dimless","names":["percent"],"printSymbols":["%"],"properties":["fraction"],"values":[{"printable":"1","numeric":1}]}}};},
-          "J",
-          { type: "literal", value: "J", description: "\"J\"" },
-          function(u) {return {"value": 1, "units": {"J": 1}, "metadata": {"J":{"isBase":false,"CODE":"J","isMetric":"yes","class":"si","names":["Joule"],"printSymbols":["J"],"properties":["energy"],"values":[{"printable":"1","numeric":1}]}}};},
-          "'",
-          { type: "literal", value: "'", description: "\"'\"" },
-          function(u) {return {"value": 1, "units": {"'": 1}, "metadata": {"'":{"isBase":false,"CODE":"'","isMetric":"no","class":"iso1000","names":["minute"],"printSymbols":["'"],"properties":["plane angle"],"values":[{"printable":"1","numeric":1}]}}};},
-          "h",
-          { type: "literal", value: "h", description: "\"h\"" },
-          function(u) {return {"value": 1, "units": {"h": 1}, "metadata": {"h":{"isBase":false,"CODE":"HR","isMetric":"no","class":"iso1000","names":["hour"],"printSymbols":["h"],"properties":["time"],"values":[{"printable":"60","numeric":60}]}}};},
-          "d",
-          { type: "literal", value: "d", description: "\"d\"" },
-          function(u) {return {"value": 1, "units": {"d": 1}, "metadata": {"d":{"isBase":false,"CODE":"D","isMetric":"no","class":"iso1000","names":["day"],"printSymbols":["d"],"properties":["time"],"values":[{"printable":"24","numeric":24}]}}};},
-          "N",
-          { type: "literal", value: "N", description: "\"N\"" },
-          function(u) {return {"value": 1, "units": {"N": 1}, "metadata": {"N":{"isBase":false,"CODE":"N","isMetric":"yes","class":"si","names":["Newton"],"printSymbols":["N"],"properties":["force"],"values":[{"printable":"1","numeric":1}]}}};},
-          "a",
-          { type: "literal", value: "a", description: "\"a\"" },
-          function(u) {return {"value": 1, "units": {"a": 1}, "metadata": {"a":{"isBase":false,"CODE":"ANN","isMetric":"no","class":"iso1000","names":["year"],"printSymbols":["a"],"properties":["time"],"values":[{"printable":"1","numeric":1}]}}};},
-          "g",
-          { type: "literal", value: "g", description: "\"g\"" },
-          function(u) {return {"value": 1, "units": {"g": 1}, "metadata": {"g":{"isBase":true,"CODE":"G","dim":"M","names":["gram"],"printSymbols":["g"],"properties":["mass"]}}};},
-          "Y",
-          { type: "literal", value: "Y", description: "\"Y\"" },
-          "Z",
-          { type: "literal", value: "Z", description: "\"Z\"" },
-          "E",
-          { type: "literal", value: "E", description: "\"E\"" },
-          "M",
-          { type: "literal", value: "M", description: "\"M\"" },
-          "k",
-          { type: "literal", value: "k", description: "\"k\"" },
-          "da",
-          { type: "literal", value: "da", description: "\"da\"" },
-          "c",
-          { type: "literal", value: "c", description: "\"c\"" },
-          "n",
-          { type: "literal", value: "n", description: "\"n\"" },
-          "p",
-          { type: "literal", value: "p", description: "\"p\"" },
-          "f",
-          { type: "literal", value: "f", description: "\"f\"" },
-          "z",
-          { type: "literal", value: "z", description: "\"z\"" },
-          "y",
-          { type: "literal", value: "y", description: "\"y\"" },
-          "Ki",
-          { type: "literal", value: "Ki", description: "\"Ki\"" },
-          "Mi",
-          { type: "literal", value: "Mi", description: "\"Mi\"" },
-          "Gi",
-          { type: "literal", value: "Gi", description: "\"Gi\"" },
-          "Ti",
-          { type: "literal", value: "Ti", description: "\"Ti\"" }
-        ],
-=======
 // LOCALES
 
 var defaultLocaleWeekdays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_');
@@ -75474,7 +64567,6 @@ function createDuration (input, key) {
 
 createDuration.fn = Duration.prototype;
 createDuration.invalid = createInvalid$1;
->>>>>>> Add providers to patient
 
 function parseIso (inp, sign) {
     // We'd normally use ~~inp for this, but unfortunately it also
@@ -76941,15 +66033,7 @@ return hooks;
 
 })));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../lib/helpers":246,"./metrics.json":241,"./prefixMetadata.json":242,"./prefixes.json":243,"./unitMetadata.json":245}],245:[function(require,module,exports){
-=======
-},{"../lib/helpers":239,"./metrics.json":234,"./prefixMetadata.json":235,"./prefixes.json":236,"./unitMetadata.json":238}],238:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
-},{}],239:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{}],235:[function(require,module,exports){
 module.exports={
   "10*": {
     "value": 10,
@@ -78153,10 +67237,10 @@ module.exports={
   }
 }
 
-},{}],240:[function(require,module,exports){
+},{}],236:[function(require,module,exports){
 module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":true,"A":true,"V":true,"F":true,"Ohm":true,"S":true,"Wb":true,"Cel":true,"T":true,"H":true,"lm":true,"lx":true,"Bq":true,"Gy":true,"Sv":true,"l":true,"L":true,"ar":true,"t":true,"bar":true,"u":true,"eV":true,"pc":true,"[c]":true,"[h]":true,"[k]":true,"[eps_0]":true,"[mu_0]":true,"[e]":true,"[m_e]":true,"[m_p]":true,"[G]":true,"[g]":true,"[ly]":true,"gf":true,"Ky":true,"Gal":true,"dyn":true,"erg":true,"P":true,"Bi":true,"St":true,"Mx":true,"G":true,"Oe":true,"Gb":true,"sb":true,"Lmb":true,"ph":true,"Ci":true,"R":true,"RAD":true,"REM":true,"cal_[15]":true,"cal_[20]":true,"cal_m":true,"cal_IT":true,"cal_th":true,"cal":true,"tex":true,"m[H2O]":true,"m[Hg]":true,"eq":true,"osm":true,"g%":true,"kat":true,"U":true,"[iU]":true,"[IU]":true,"Np":true,"B":true,"B[SPL]":true,"B[V]":true,"B[mV]":true,"B[uV]":true,"B[10.nV]":true,"B[W]":true,"B[kW]":true,"st":true,"mho":true,"bit":true,"By":true,"Bd":true,"m":true,"s":true,"g":true,"rad":true,"K":true,"C":true,"cd":true}
 
-},{}],241:[function(require,module,exports){
+},{}],237:[function(require,module,exports){
 module.exports={
   "Y": {
     "CODE": "YA",
@@ -78520,7 +67604,7 @@ module.exports={
   }
 }
 
-},{}],242:[function(require,module,exports){
+},{}],238:[function(require,module,exports){
 module.exports={
   "Y": 1e+24,
   "Z": 1e+21,
@@ -78548,7 +67632,7 @@ module.exports={
   "Ti": 1099511627776
 }
 
-},{}],243:[function(require,module,exports){
+},{}],239:[function(require,module,exports){
 module.exports = (function() {
   /*
    * Generated by PEG.js 0.8.0.
@@ -80096,7 +69180,7 @@ module.exports = (function() {
   };
 })();
 
-},{"../lib/helpers":245,"./metrics.json":240,"./prefixMetadata.json":241,"./prefixes.json":242,"./unitMetadata.json":244}],244:[function(require,module,exports){
+},{"../lib/helpers":241,"./metrics.json":236,"./prefixMetadata.json":237,"./prefixes.json":238,"./unitMetadata.json":240}],240:[function(require,module,exports){
 module.exports={
   "10*": {
     "isBase": false,
@@ -83774,82 +72858,12 @@ module.exports={
       "French foot"
     ],
     "properties": [
-<<<<<<< HEAD
-      "luminous intensity"
-    ]
-  }
-}
-
-<<<<<<< HEAD
-},{}],246:[function(require,module,exports){
-module.exports = {
-=======
-},{}],239:[function(require,module,exports){
-module.exports = {
-
-  multiply: function multiply(t, ms) {
-    //console.log("Multiply: ", JSON.stringify(t), JSON.stringify(ms));
-    if (ms.length == 0) return t;
-
-    var ret = t;
-    ms.forEach(function(mterm){
-
-      var sign = (mterm[0] == "." ? 1 : -1);
-      var b = mterm[1];
-
-      ret.value *= Math.pow(b.value, sign);
-      //console.log("b = ", JSON.stringify(b));
-      //console.log("ret = ", JSON.stringify(ret));
-      Object.keys(b.units).forEach(function(u){
-        ret.units[u] = ret.units[u] || 0;
-        ret.units[u] = ret.units[u] + sign*b.units[u];
-
-        if(!ret.metadata && b.metadata){
-          ret.metadata = {};
-          ret.metadata[u] = b.metadata[u];
-        }
-        else if(ret.metadata && b.metadata){
-          ret.metadata[u] = b.metadata[u];
-        }
-
-        if (ret.units[u] == 0){
-          delete ret.units[u];
-          if(ret.metadata) {
-            delete ret.metadata[u];
-          }
-        }
-      });
-
-    });
-
-    //console.log("Multiply ret: ", ret);
-    return ret;
-  },
-
-  topower: function topower(e, exp){
-    if (!exp) {exp = 1;}
-    var ret = e;
-    ret.value = Math.pow(ret.value, exp);
-    Object.keys(e.units).forEach(function(u){
-      ret.units[u] = e.units[u] * exp;
-    });
-
-    return ret;
-  },
-
-  cleanup: function cleanup(e) {
-    ["10^", "10*"].forEach(function(k){
-      if (e.units[k]) {
-        e.value *= Math.pow(10, e.units[k]);
-        delete e.units[k];
-=======
       "length"
     ],
     "values": [
       {
         "printable": "32.48",
         "numeric": 32.48
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -84471,468 +73485,6 @@ module.exports = {
         "printable": "1",
         "numeric": 1
       }
-<<<<<<< HEAD
-    }
-  }
-}
-},{"./error/strict":271,"./helpers/get":279,"./schema/index":306,"./schema/operators/text":315,"./utils":330,"util":361}],246:[function(require,module,exports){
-'use strict';
-
-const CastError = require('../error/cast');
->>>>>>> A provider has a list of ids
-
-/*!
- * Given a value, cast it to a boolean, or throw a `CastError` if the value
- * cannot be casted. `null` and `undefined` are considered valid.
- *
- * @param {Any} value
- * @param {String} [path] optional the path to set on the CastError
- * @return {Boolean|null|undefined}
- * @throws {CastError} if `value` is not one of the allowed values
- * @api private
- */
-
-module.exports = function castBoolean(value, path) {
-  if (value == null) {
-    return value;
-  }
-
-  if (module.exports.convertToTrue.has(value)) {
-    return true;
-  }
-  if (module.exports.convertToFalse.has(value)) {
-    return false;
-  }
-  throw new CastError('boolean', value, path);
-};
-
-module.exports.convertToTrue = new Set([true, 'true', 1, '1', 'yes']);
-module.exports.convertToFalse = new Set([false, 'false', 0, '0', 'no']);
-
-},{"../error/cast":260}],247:[function(require,module,exports){
-'use strict';
-
-const assert = require('assert');
-
-module.exports = function castDate(value) {
-  // Support empty string because of empty form values. Originally introduced
-  // in https://github.com/Automattic/mongoose/commit/efc72a1898fc3c33a319d915b8c5463a22938dfe
-  if (value == null || value === '') {
-    return null;
-  }
-
-  if (value instanceof Date) {
-    assert.ok(!isNaN(value.valueOf()));
-
-    return value;
-  }
-
-  let date;
-
-  assert.ok(typeof value !== 'boolean');
-
-  if (value instanceof Number || typeof value === 'number') {
-    date = new Date(value);
-  } else if (typeof value === 'string' && !isNaN(Number(value)) && (Number(value) >= 275761 || Number(value) < -271820)) {
-    // string representation of milliseconds take this path
-    date = new Date(Number(value));
-  } else if (typeof value.valueOf === 'function') {
-    // support for moment.js. This is also the path strings will take because
-    // strings have a `valueOf()`
-    date = new Date(value.valueOf());
-  } else {
-    // fallback
-    date = new Date(value);
-  }
-
-<<<<<<< HEAD
-},{}],247:[function(require,module,exports){
-parser = require('./generated/ucum-parser.js');
-equivalents = require('./generated/equivalents.json');
-helpers = require('./lib/helpers.js');
-unitMetadata = require('./generated/unitMetadata.json');
-=======
-  if (!isNaN(date.valueOf())) {
-    return date;
-  }
->>>>>>> A provider has a list of ids
-
-  assert.ok(false);
-};
-},{"assert":348}],248:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-
-const Decimal128Type = require('../types/decimal128');
-const assert = require('assert');
-
-module.exports = function castDecimal128(value) {
-  if (value == null) {
-    return value;
-  }
-
-  if (typeof value === 'object' && typeof value.$numberDecimal === 'string') {
-    return Decimal128Type.fromString(value.$numberDecimal);
-  }
-
-  if (value instanceof Decimal128Type) {
-    return value;
-  }
-
-  if (typeof value === 'string') {
-    return Decimal128Type.fromString(value);
-  }
-
-  if (Buffer.isBuffer(value)) {
-    return new Decimal128Type(value);
-  }
-
-  if (typeof value === 'number') {
-    return Decimal128Type.fromString(String(value));
-  }
-
-  if (typeof value.valueOf === 'function' && typeof value.valueOf() === 'string') {
-    return Decimal128Type.fromString(value.valueOf());
-  }
-
-  assert.ok(false);
-};
-}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
-},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../types/decimal128":323,"assert":348}],249:[function(require,module,exports){
-'use strict';
-
-const assert = require('assert');
-
-/*!
- * Given a value, cast it to a number, or throw a `CastError` if the value
- * cannot be casted. `null` and `undefined` are considered valid.
- *
- * @param {Any} value
- * @param {String} [path] optional the path to set on the CastError
- * @return {Boolean|null|undefined}
- * @throws {Error} if `value` is not one of the allowed values
- * @api private
- */
-
-module.exports = function castNumber(val) {
-  assert.ok(!isNaN(val));
-
-  if (val == null) {
-    return val;
-  }
-  if (val === '') {
-    return null;
-  }
-
-  if (typeof val === 'string' || typeof val === 'boolean') {
-    val = Number(val);
-  }
-
-  assert.ok(!isNaN(val));
-  if (val instanceof Number) {
-    return val;
-  }
-  if (typeof val === 'number') {
-    return val;
-  }
-  if (!Array.isArray(val) && typeof val.valueOf === 'function') {
-    return Number(val.valueOf());
-  }
-  if (val.toString && !Array.isArray(val) && val.toString() == Number(val)) {
-    return new Number(val);
-  }
-
-  assert.ok(false);
-};
-
-},{"assert":348}],250:[function(require,module,exports){
-'use strict';
-
-const ObjectId = require('../driver').get().ObjectId;
-const assert = require('assert');
-
-module.exports = function castObjectId(value) {
-  if (value == null) {
-    return value;
-  }
-
-  if (value instanceof ObjectId) {
-    return value;
-  }
-
-  if (value._id) {
-    if (value._id instanceof ObjectId) {
-      return value._id;
-    }
-    if (value._id.toString instanceof Function) {
-      return new ObjectId(value._id.toString());
-    }
-  }
-
-  if (value.toString instanceof Function) {
-    return new ObjectId(value.toString());
-  }
-
-  assert.ok(false);
-};
-},{"../driver":254,"assert":348}],251:[function(require,module,exports){
-'use strict';
-
-const CastError = require('../error/cast');
-
-/*!
- * Given a value, cast it to a string, or throw a `CastError` if the value
- * cannot be casted. `null` and `undefined` are considered valid.
- *
- * @param {Any} value
- * @param {String} [path] optional the path to set on the CastError
- * @return {string|null|undefined}
- * @throws {CastError}
- * @api private
- */
-
-module.exports = function castString(value, path) {
-  // If null or undefined
-  if (value == null) {
-    return value;
-  }
-
-  // handle documents being passed
-  if (value._id && typeof value._id === 'string') {
-    return value._id;
-  }
-
-  // Re: gh-647 and gh-3030, we're ok with casting using `toString()`
-  // **unless** its the default Object.toString, because "[object Object]"
-  // doesn't really qualify as useful data
-  if (value.toString && value.toString !== Object.prototype.toString) {
-    return value.toString();
-  }
-
-  throw new CastError('string', value, path);
-};
-
-<<<<<<< HEAD
-// searches the unit metadata for all unit metadata
-// criteria is an object like
-//   { properties: 'area', isMetric: 'yes' }
-// where the key/value pairs form a logical intersection, i.e. all criteria must be met
-// resultFields is an array to pre-reduce the result set fields
-function unitQuery(criteria, resultFields){
-  return Object.keys(unitMetadata).filter((unit) => {
-    var keys = Object.keys(criteria);
-    for(var ii = 0; ii < keys.length; ii++){
-      var key = keys[ii];
-      var val = unitMetadata[unit][key];
-      var value = criteria[key];
-      if(val && (typeof val === 'object')){
-        // it's a list of values, it's a match if the target value occurs in the list
-        if(val.indexOf(value) === -1){
-          return false;
-        }
-      }
-      else{
-        // it's a non-object, make a direct comparison
-        if(unitMetadata[unit][key] !== value){
-          return false;
-        }
-      }
-    }
-    return true;
-  }).map((key) => {
-    var obj = {};
-    if(resultFields){
-      if(resultFields.length) {
-        obj[key] = {};
-        resultFields.forEach((field) => {
-          if (unitMetadata[key][field] !== undefined) {
-            obj[key][field] = JSON.parse(JSON.stringify(unitMetadata[key][field]));
-          }
-        });
-      }
-      else{
-        // just return the keys if an empty array gets passed for resultSet
-        obj = key;
-      }
-    }
-    else{
-      obj[key] = JSON.parse(JSON.stringify(unitMetadata[key]));
-    }
-    return obj;
-  });
-}
-},{"./generated/equivalents.json":240,"./generated/ucum-parser.js":244,"./generated/unitMetadata.json":245,"./lib/helpers.js":246}],248:[function(require,module,exports){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-=======
-},{"../error/cast":260}],252:[function(require,module,exports){
-(function (Buffer,process){
-'use strict';
->>>>>>> A provider has a list of ids
-
-/*!
- * Module dependencies.
- */
-
-const EventEmitter = require('events').EventEmitter;
-const InternalCache = require('./internal');
-const MongooseError = require('./error');
-const MixedSchema = require('./schema/mixed');
-const ObjectExpectedError = require('./error/objectExpected');
-const ObjectParameterError = require('./error/objectParameter');
-const StrictModeError = require('./error/strict');
-const ValidatorError = require('./schematype').ValidatorError;
-const VirtualType = require('./virtualtype');
-const cleanModifiedSubpaths = require('./helpers/document/cleanModifiedSubpaths');
-const compile = require('./helpers/document/compile').compile;
-const defineKey = require('./helpers/document/compile').defineKey;
-const flatten = require('./helpers/common').flatten;
-const get = require('./helpers/get');
-const getEmbeddedDiscriminatorPath = require('./helpers/document/getEmbeddedDiscriminatorPath');
-const idGetter = require('./plugins/idGetter');
-const isDefiningProjection = require('./helpers/projection/isDefiningProjection');
-const isExclusive = require('./helpers/projection/isExclusive');
-const inspect = require('util').inspect;
-const internalToObjectOptions = require('./options').internalToObjectOptions;
-const mpath = require('mpath');
-const utils = require('./utils');
-
-const ValidationError = MongooseError.ValidationError;
-const clone = utils.clone;
-const deepEqual = utils.deepEqual;
-const isMongooseObject = utils.isMongooseObject;
-
-const documentArrayParent = require('./helpers/symbols').documentArrayParent;
-const getSymbol = require('./helpers/symbols').getSymbol;
-
-let DocumentArray;
-let MongooseArray;
-let Embedded;
-
-const specialProperties = utils.specialProperties;
-
-/**
- * The core Mongoose document constructor. You should not call this directly,
- * the Mongoose [Model constructor](./api.html#Model) calls this for you.
- *
- * @param {Object} obj the values to set
- * @param {Object} [fields] optional object containing the fields which were selected in the query returning this document and any populated paths data
- * @param {Boolean} [skipId] bool, should we auto create an ObjectId _id
- * @inherits NodeJS EventEmitter http://nodejs.org/api/events.html#events_class_events_eventemitter
- * @event `init`: Emitted on a document after it has was retreived from the db and fully hydrated by Mongoose.
- * @event `save`: Emitted when the document is successfully saved
- * @api private
- */
-
-function Document(obj, fields, skipId, options) {
-  if (typeof skipId === 'object' && skipId != null) {
-    options = skipId;
-    skipId = options.skipId;
-  }
-  options = options || {};
-
-  this.$__ = new InternalCache;
-  this.$__.emitter = new EventEmitter();
-  this.isNew = 'isNew' in options ? options.isNew : true;
-  this.errors = undefined;
-  this.$__.$options = options || {};
-
-  if (obj != null && typeof obj !== 'object') {
-    throw new ObjectParameterError(obj, 'obj', 'Document');
-  }
-
-  const schema = this.schema;
-
-  if (typeof fields === 'boolean') {
-    this.$__.strictMode = fields;
-    fields = undefined;
-  } else {
-    this.$__.strictMode = schema.options.strict;
-    this.$__.selected = fields;
-  }
-
-  const required = schema.requiredPaths(true);
-  for (let i = 0; i < required.length; ++i) {
-    this.$__.activePaths.require(required[i]);
-  }
-
-  this.$__.emitter.setMaxListeners(0);
-
-  let exclude = null;
-
-  // determine if this doc is a result of a query with
-  // excluded fields
-  if (utils.isPOJO(fields)) {
-    exclude = isExclusive(fields);
-  }
-
-  const hasIncludedChildren = exclude === false && fields ?
-    $__hasIncludedChildren(fields) :
-    {};
-
-  this.$__buildDoc(obj, fields, skipId, exclude, hasIncludedChildren, false);
-
-  // By default, defaults get applied **before** setting initial values
-  // Re: gh-6155
-  $__applyDefaults(this, fields, skipId, exclude, hasIncludedChildren, true, {
-    isNew: this.isNew
-  });
-
-  if (obj) {
-    if (obj instanceof Document) {
-      this.isNew = obj.isNew;
-    }
-    // Skip set hooks
-    if (this.$__original_set) {
-      this.$__original_set(obj, undefined, true);
-    } else {
-      this.$set(obj, undefined, true);
-    }
-  }
-
-  // Function defaults get applied **after** setting initial values so they
-  // see the full doc rather than an empty one, unless they opt out.
-  // Re: gh-3781, gh-6155
-  if (options.willInit) {
-    this.once('init', () => {
-      $__applyDefaults(this, fields, skipId, exclude, hasIncludedChildren, false, options.skipDefaults, {
-        isNew: this.isNew
-      });
-    });
-  } else {
-    $__applyDefaults(this, fields, skipId, exclude, hasIncludedChildren, false, options.skipDefaults, {
-      isNew: this.isNew
-    });
-  }
-
-  this.$__._id = this._id;
-
-  if (!schema.options.strict && obj) {
-    const _this = this;
-    const keys = Object.keys(this._doc);
-
-    keys.forEach(function(key) {
-      if (!(key in schema.tree)) {
-        defineKey(key, null, _this);
-=======
     ]
   },
   "[p'diop]": {
@@ -85016,7 +73568,6 @@ function Document(obj, fields, skipId, options) {
       {
         "printable": "1",
         "numeric": 1
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -85451,252 +74002,6 @@ function Document(obj, fields, skipId, options) {
         "printable": "1",
         "numeric": 1
       }
-<<<<<<< HEAD
-    }
-  }
-}
-
-/**
- * Sends an update command with this document `_id` as the query selector.
- *
- * ####Example:
- *
- *     weirdCar.update({$inc: {wheels:1}}, { w: 1 }, callback);
- *
- * ####Valid options:
- *
- *  - same as in [Model.update](#model_Model.update)
- *
- * @see Model.update #model_Model.update
- * @param {Object} doc
- * @param {Object} options
- * @param {Function} callback
- * @return {Query}
- * @api public
- * @memberOf Document
- * @instance
- */
-
-Document.prototype.update = function update() {
-  const args = utils.args(arguments);
-  args.unshift({_id: this._id});
-  const query = this.constructor.update.apply(this.constructor, args);
-
-  if (this.$session() != null) {
-    if (!('session' in query.options)) {
-      query.options.session = this.$session();
-    }
-  }
-
-  return query;
-};
-
-/**
- * Sends an updateOne command with this document `_id` as the query selector.
- *
- * ####Example:
- *
- *     weirdCar.updateOne({$inc: {wheels:1}}, { w: 1 }, callback);
- *
- * ####Valid options:
- *
- *  - same as in [Model.updateOne](#model_Model.updateOne)
- *
- * @see Model.updateOne #model_Model.updateOne
- * @param {Object} doc
- * @param {Object} options
- * @param {Function} callback
- * @return {Query}
- * @api public
- * @memberOf Document
- * @instance
- */
-
-Document.prototype.updateOne = function updateOne(doc, options, callback) {
-  const query = this.constructor.updateOne({_id: this._id}, doc, options);
-  query._pre(cb => {
-    this.constructor._middleware.execPre('updateOne', this, [], cb);
-  });
-  query._post(cb => {
-    this.constructor._middleware.execPost('updateOne', this, [], {}, cb);
-  });
-
-  if (this.$session() != null) {
-    if (!('session' in query.options)) {
-      query.options.session = this.$session();
-    }
-  }
-
-  if (callback != null) {
-    return query.exec(callback);
-  }
-
-<<<<<<< HEAD
-},{}],249:[function(require,module,exports){
-exports.read = function (buffer, offset, isLE, mLen, nBytes) {
-  var e, m
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var nBits = -7
-  var i = isLE ? (nBytes - 1) : 0
-  var d = isLE ? -1 : 1
-  var s = buffer[offset + i]
-=======
-  return query;
-};
->>>>>>> A provider has a list of ids
-
-/**
- * Sends a replaceOne command with this document `_id` as the query selector.
- *
- * ####Valid options:
- *
- *  - same as in [Model.replaceOne](#model_Model.replaceOne)
- *
- * @see Model.replaceOne #model_Model.replaceOne
- * @param {Object} doc
- * @param {Object} options
- * @param {Function} callback
- * @return {Query}
- * @api public
- * @memberOf Document
- * @instance
- */
-
-Document.prototype.replaceOne = function replaceOne() {
-  const args = utils.args(arguments);
-  args.unshift({ _id: this._id });
-  return this.constructor.replaceOne.apply(this.constructor, args);
-};
-
-/**
- * Getter/setter around the session associated with this document. Used to
- * automatically set `session` if you `save()` a doc that you got from a
- * query with an associated session.
- *
- * ####Example:
- *
- *     const session = MyModel.startSession();
- *     const doc = await MyModel.findOne().session(session);
- *     doc.$session() === session; // true
- *     doc.$session(null);
- *     doc.$session() === null; // true
- *
- * If this is a top-level document, setting the session propagates to all child
- * docs.
- *
- * @param {ClientSession} [session] overwrite the current session
- * @return {ClientSession}
- * @method $session
- * @api public
- * @memberOf Document
- */
-
-Document.prototype.$session = function $session(session) {
-  if (arguments.length === 0) {
-    return this.$__.session;
-  }
-  this.$__.session = session;
-
-  if (!this.ownerDocument) {
-    const subdocs = this.$__getAllSubdocs();
-    for (const child of subdocs) {
-      child.$session(session);
-    }
-  }
-
-  return session;
-};
-
-/**
- * Alias for `set()`, used internally to avoid conflicts
- *
- * @param {String|Object} path path or object of key/vals to set
- * @param {Any} val the value to set
- * @param {Schema|String|Number|Buffer|*} [type] optionally specify a type for "on-the-fly" attributes
- * @param {Object} [options] optionally specify options that modify the behavior of the set
- * @method $set
- * @name $set
- * @memberOf Document
- * @instance
- * @api public
- */
-
-Document.prototype.$set = function $set(path, val, type, options) {
-  if (utils.isPOJO(type)) {
-    options = type;
-    type = undefined;
-  }
-
-  options = options || {};
-  const merge = options.merge;
-  const adhoc = type && type !== true;
-  const constructing = type === true;
-  let adhocs;
-  let keys;
-  let i = 0;
-  let pathtype;
-  let key;
-  let prefix;
-
-  const strict = 'strict' in options
-    ? options.strict
-    : this.$__.strictMode;
-
-<<<<<<< HEAD
-},{}],250:[function(require,module,exports){
-arguments[4][78][0].apply(exports,arguments)
-},{"dup":78}],251:[function(require,module,exports){
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-=======
-  if (adhoc) {
-    adhocs = this.$__.adhocPaths || (this.$__.adhocPaths = {});
-    adhocs[path] = this.schema.interpretAsType(path, type, this.schema.options);
-  }
->>>>>>> A provider has a list of ids
-
-  if (typeof path !== 'string') {
-    // new Document({ key: val })
-    if (path === null || path === void 0) {
-      const _ = path;
-      path = val;
-      val = _;
-    } else {
-      prefix = val ? val + '.' : '';
-
-      if (path instanceof Document) {
-        if (path.$__isNested) {
-          path = path.toObject();
-        } else {
-          path = path._doc;
-        }
-      }
-
-      keys = Object.keys(path);
-      const len = keys.length;
-
-<<<<<<< HEAD
-},{}],252:[function(require,module,exports){
-(function (process){
-'use strict';
-=======
-      if (len === 0 && !this.schema.options.minimize) {
-        if (val) {
-          this.$set(val, {});
-        }
-        return this;
-      }
->>>>>>> A provider has a list of ids
-
-      while (i < len) {
-        _handleIndex.call(this, i++);
-=======
     ]
   },
   "[HPF]": {
@@ -85759,7 +74064,6 @@ arguments[4][78][0].apply(exports,arguments)
       {
         "printable": "1",
         "numeric": 1
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -86249,184 +74553,6 @@ arguments[4][78][0].apply(exports,arguments)
         "printable": "1",
         "numeric": 1
       }
-<<<<<<< HEAD
-      didPopulate = true;
-    }
-
-    // If this path is underneath a single nested schema, we'll call the setter
-    // later in `$__set()` because we don't take `_doc` when we iterate through
-    // a single nested doc. That's to make sure we get the correct context.
-    // Otherwise we would double-call the setter, see gh-7196.
-    if (this.schema.singleNestedPaths[path] == null) {
-      const setterContext = constructing && this.$__.$options.priorDoc ?
-        this.$__.$options.priorDoc :
-        this;
-      val = schema.applySetters(val, setterContext, false, priorVal);
-    }
-
-    if (!didPopulate && this.$__.populated) {
-      delete this.$__.populated[path];
-    }
-
-    this.$markValid(path);
-  } catch (e) {
-    this.invalidate(path,
-      new MongooseError.CastError(schema.instance, val, path, e));
-    shouldSet = false;
-  }
-
-  if (shouldSet) {
-    this.$__set(pathToMark, path, constructing, parts, schema, val, priorVal);
-  }
-
-  if (schema.$isSingleNested && (this.isDirectModified(path) || val == null)) {
-    cleanModifiedSubpaths(this, path);
-  }
-
-  return this;
-};
-
-/**
- * Sets the value of a path, or many paths.
- *
- * ####Example:
- *
- *     // path, value
- *     doc.set(path, value)
- *
- *     // object
- *     doc.set({
- *         path  : value
- *       , path2 : {
- *            path  : value
- *         }
- *     })
- *
- *     // on-the-fly cast to number
- *     doc.set(path, value, Number)
- *
- *     // on-the-fly cast to string
- *     doc.set(path, value, String)
- *
- *     // changing strict mode behavior
- *     doc.set(path, value, { strict: false });
- *
- * @param {String|Object} path path or object of key/vals to set
- * @param {Any} val the value to set
- * @param {Schema|String|Number|Buffer|*} [type] optionally specify a type for "on-the-fly" attributes
- * @param {Object} [options] optionally specify options that modify the behavior of the set
- * @api public
- * @method set
- * @memberOf Document
- * @instance
- */
-
-Document.prototype.set = Document.prototype.$set;
-
-/**
- * Determine if we should mark this change as modified.
- *
- * @return {Boolean}
- * @api private
- * @method $__shouldModify
- * @memberOf Document
- * @instance
- */
-
-Document.prototype.$__shouldModify = function(pathToMark, path, constructing, parts, schema, val, priorVal) {
-  if (this.isNew) {
-    return true;
-  }
-
-  // Re: the note about gh-7196, `val` is the raw value without casting or
-  // setters if the full path is under a single nested subdoc because we don't
-  // want to double run setters. So don't set it as modified. See gh-7264.
-  if (this.schema.singleNestedPaths[path] != null) {
-    return false;
-  }
-
-  if (val === void 0 && !this.isSelected(path)) {
-    // when a path is not selected in a query, its initial
-    // value will be undefined.
-    return true;
-  }
-
-  if (val === void 0 && path in this.$__.activePaths.states.default) {
-    // we're just unsetting the default value which was never saved
-    return false;
-  }
-
-  // gh-3992: if setting a populated field to a doc, don't mark modified
-  // if they have the same _id
-  if (this.populated(path) &&
-      val instanceof Document &&
-      deepEqual(val._id, priorVal)) {
-    return false;
-  }
-
-  if (!deepEqual(val, priorVal || this.get(path))) {
-    return true;
-  }
-
-  if (!constructing &&
-      val !== null &&
-      val !== undefined &&
-      path in this.$__.activePaths.states.default &&
-      deepEqual(val, schema.getDefault(this, constructing))) {
-    // a path with a default was $unset on the server
-    // and the user is setting it to the same value again
-    return true;
-  }
-  return false;
-};
-
-<<<<<<< HEAD
-}).call(this,require('_process'))
-},{"_process":356}],253:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
-/**
- * Handles the actual setting of the value and marking the path modified if appropriate.
- *
- * @api private
- * @method $__set
- * @memberOf Document
- * @instance
- */
-
-<<<<<<< HEAD
-'use strict';
-
-module.exports = require('./lib/browser');
-
-},{"./lib/browser":254}],254:[function(require,module,exports){
-(function (Buffer){
-/* eslint-env browser */
-
-'use strict';
-=======
-Document.prototype.$__set = function(pathToMark, path, constructing, parts, schema, val, priorVal) {
-  Embedded = Embedded || require('./types/embedded');
->>>>>>> A provider has a list of ids
-
-  const shouldModify = this.$__shouldModify(pathToMark, path, constructing, parts,
-    schema, val, priorVal);
-  const _this = this;
-
-  if (shouldModify) {
-    this.markModified(pathToMark);
-
-    // handle directly setting arrays (gh-1126)
-    MongooseArray || (MongooseArray = require('./types/array'));
-    if (val && val.isMongooseArray) {
-      val._registerAtomic('$set', val);
-
-      // Update embedded document parent references (gh-5189)
-      if (val.isMongooseDocumentArray) {
-        val.forEach(function(item) {
-          item && item.__parentArray && (item.__parentArray = val);
-        });
-=======
     ]
   },
   "[BAU]": {
@@ -86448,7 +74574,6 @@ Document.prototype.$__set = function(pathToMark, path, constructing, parts, sche
       {
         "printable": "1",
         "numeric": 1
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -86538,266 +74663,6 @@ Document.prototype.$__set = function(pathToMark, path, constructing, parts, sche
         "printable": "1",
         "numeric": 1
       }
-<<<<<<< HEAD
-    }
-  }
-};
-
-/**
- * Gets a raw value from a path (no getters)
- *
- * @param {String} path
- * @api private
- */
-
-Document.prototype.getValue = function(path) {
-  return utils.getValue(path, this._doc);
-};
-
-/**
- * Sets a raw value for a path (no casting, setters, transformations)
- *
- * @param {String} path
- * @param {Object} value
- * @api private
- */
-
-Document.prototype.setValue = function(path, val) {
-  utils.setValue(path, val, this._doc);
-  return this;
-};
-
-/**
- * Returns the value of a path.
- *
- * ####Example
- *
- *     // path
- *     doc.get('age') // 47
- *
- *     // dynamic casting to a string
- *     doc.get('age', String) // "47"
- *
- * @param {String} path
- * @param {Schema|String|Number|Buffer|*} [type] optionally specify a type for on-the-fly attributes
- * @api public
- */
-<<<<<<< HEAD
-exports.Document = DocumentProvider();
-
-/*!
- * Module exports.
- */
-
-if (typeof window !== 'undefined') {
-  window.mongoose = module.exports;
-  window.Buffer = Buffer;
-}
-
-}).call(this,require("buffer").Buffer)
-},{"./document_provider.js":264,"./driver":265,"./drivers/browser":269,"./error":273,"./promise_provider":307,"./schema":309,"./schematype.js":330,"./types":337,"./utils.js":341,"./virtualtype":342,"buffer":103}],255:[function(require,module,exports){
-/*!
- * Module dependencies.
- */
-
-'use strict';
-
-const NodeJSDocument = require('./document');
-const EventEmitter = require('events').EventEmitter;
-const MongooseError = require('./error');
-const Schema = require('./schema');
-const ObjectId = require('./types/objectid');
-const ValidationError = MongooseError.ValidationError;
-const applyHooks = require('./helpers/model/applyHooks');
-const utils = require('./utils');
-
-/**
- * Document constructor.
- *
- * @param {Object} obj the values to set
- * @param {Object} [fields] optional object containing the fields which were selected in the query returning this document and any populated paths data
- * @param {Boolean} [skipId] bool, should we auto create an ObjectId _id
- * @inherits NodeJS EventEmitter http://nodejs.org/api/events.html#events_class_events_eventemitter
- * @event `init`: Emitted on a document after it has was retrieved from the db and fully hydrated by Mongoose.
- * @event `save`: Emitted when the document is successfully saved
- * @api private
- */
-=======
->>>>>>> A provider has a list of ids
-
-Document.prototype.get = function(path, type, options) {
-  let adhoc;
-  options = options || {};
-  if (type) {
-    adhoc = this.schema.interpretAsType(path, type, this.schema.options);
-  }
-
-  const schema = this.$__path(path) || this.schema.virtualpath(path);
-  const pieces = path.split('.');
-  let obj = this._doc;
-
-  if (schema instanceof VirtualType) {
-    if (schema.getters.length === 0) {
-      return void 0;
-    }
-    return schema.applyGetters(null, this);
-  }
-
-  for (let i = 0, l = pieces.length; i < l; i++) {
-    if (obj && obj._doc) {
-      obj = obj._doc;
-    }
-
-    if (obj == null) {
-      obj = void 0;
-    } else if (obj instanceof Map) {
-      obj = obj.get(pieces[i]);
-    } else if (i === l - 1) {
-      obj = utils.getValue(pieces[i], obj);
-    } else {
-      obj = obj[pieces[i]];
-    }
-  }
-
-  if (adhoc) {
-    obj = adhoc.cast(obj);
-  }
-
-  if (schema != null) {
-    obj = schema.applyGetters(obj, this);
-  } else if (this.schema.nested[path] && options.virtuals) {
-    // Might need to apply virtuals if this is a nested path
-    return applyGetters(this, utils.clone(obj), 'virtuals', { path: path });
-  }
-
-  return obj;
-};
-
-/*!
- * ignore
- */
-
-Document.prototype[getSymbol] = Document.prototype.get;
-
-/**
- * Returns the schematype for the given `path`.
- *
- * @param {String} path
- * @api private
- * @method $__path
- * @memberOf Document
- * @instance
- */
-
-Document.prototype.$__path = function(path) {
-  const adhocs = this.$__.adhocPaths;
-  const adhocType = adhocs && adhocs.hasOwnProperty(path) ? adhocs[path] : null;
-
-  if (adhocType) {
-    return adhocType;
-  }
-  return this.schema.path(path);
-};
-
-/**
- * Marks the path as having pending changes to write to the db.
- *
- * _Very helpful when using [Mixed](./schematypes.html#mixed) types._
- *
- * ####Example:
- *
- *     doc.mixed.type = 'changed';
- *     doc.markModified('mixed.type');
- *     doc.save() // changes to mixed.type are now persisted
- *
- * @param {String} path the path to mark modified
- * @param {Document} [scope] the scope to run validators with
- * @api public
- */
-
-<<<<<<< HEAD
-Document.ValidationError = ValidationError;
-module.exports = exports = Document;
-
-},{"./document":263,"./error":273,"./helpers/model/applyHooks":292,"./schema":309,"./types/objectid":339,"./utils":341,"events":248}],256:[function(require,module,exports){
-'use strict';
-=======
-Document.prototype.markModified = function(path, scope) {
-  this.$__.activePaths.modify(path);
-  if (scope != null && !this.ownerDocument) {
-    this.$__.pathsToScopes[path] = scope;
-  }
-};
->>>>>>> A provider has a list of ids
-
-/**
- * Clears the modified state on the specified path.
- *
- * ####Example:
- *
- *     doc.foo = 'bar';
- *     doc.unmarkModified('foo');
- *     doc.save(); // changes to foo will not be persisted
- *
- * @param {String} path the path to unmark modified
- * @api public
- */
-
-Document.prototype.unmarkModified = function(path) {
-  this.$__.activePaths.init(path);
-  delete this.$__.pathsToScopes[path];
-};
-
-/**
- * Don't run validation on this path or persist changes to this path.
- *
- * ####Example:
- *
- *     doc.foo = null;
- *     doc.$ignore('foo');
- *     doc.save(); // changes to foo will not be persisted and validators won't be run
- *
- * @memberOf Document
- * @instance
- * @method $ignore
- * @param {String} path the path to ignore
- * @api public
- */
-
-Document.prototype.$ignore = function(path) {
-  this.$__.activePaths.ignore(path);
-};
-
-/**
- * Returns the list of paths that have been modified.
- *
- * @param {Object} [options]
- * @param {Boolean} [options.includeChildren=false] if true, returns children of modified paths as well. For example, if false, the list of modified paths for `doc.colors = { primary: 'blue' };` will **not** contain `colors.primary`. If true, `modifiedPaths()` will return an array that contains `colors.primary`.
- * @return {Array}
- * @api public
- */
-
-Document.prototype.modifiedPaths = function(options) {
-  options = options || {};
-  const directModifiedPaths = Object.keys(this.$__.activePaths.states.modify);
-  const _this = this;
-  return directModifiedPaths.reduce(function(list, path) {
-    const parts = path.split('.');
-    list = list.concat(parts.reduce(function(chains, part, i) {
-      return chains.concat(parts.slice(0, i).concat(part).join('.'));
-    }, []).filter(function(chain) {
-      return (list.indexOf(chain) === -1);
-    }));
-
-    if (!options.includeChildren) {
-      return list;
-    }
-
-    let cur = _this.get(path);
-    if (cur != null && typeof cur === 'object') {
-      if (cur._doc) {
-        cur = cur._doc;
-=======
     ]
   },
   "[D'ag'U]": {
@@ -86819,7 +74684,6 @@ Document.prototype.modifiedPaths = function(options) {
       {
         "printable": "1",
         "numeric": 1
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -86843,179 +74707,6 @@ Document.prototype.modifiedPaths = function(options) {
         "printable": "1",
         "numeric": 1
       }
-<<<<<<< HEAD
-    }
-
-    return list;
-  }, []);
-};
-
-/**
- * Returns true if this document was modified, else false.
- *
- * If `path` is given, checks if a path or any full path containing `path` as part of its path chain has been modified.
- *
- * ####Example
- *
- *     doc.set('documents.0.title', 'changed');
- *     doc.isModified()                      // true
- *     doc.isModified('documents')           // true
- *     doc.isModified('documents.0.title')   // true
- *     doc.isModified('documents otherProp') // true
- *     doc.isDirectModified('documents')     // false
- *
- * @param {String} [path] optional
- * @return {Boolean}
- * @api public
- */
-
-Document.prototype.isModified = function(paths, modifiedPaths) {
-  if (paths) {
-    if (!Array.isArray(paths)) {
-      paths = paths.split(' ');
-    }
-    const modified = modifiedPaths || this.modifiedPaths();
-    const directModifiedPaths = Object.keys(this.$__.activePaths.states.modify);
-    const isModifiedChild = paths.some(function(path) {
-      return !!~modified.indexOf(path);
-    });
-    return isModifiedChild || paths.some(function(path) {
-      return directModifiedPaths.some(function(mod) {
-        return mod === path || path.indexOf(mod + '.') === 0;
-      });
-    });
-  }
-  return this.$__.activePaths.some('modify');
-};
-
-/**
- * Checks if a path is set to its default.
- *
- * ####Example
- *
- *     MyModel = mongoose.model('test', { name: { type: String, default: 'Val '} });
- *     var m = new MyModel();
- *     m.$isDefault('name'); // true
- *
- * @memberOf Document
- * @instance
- * @method $isDefault
- * @param {String} [path]
- * @return {Boolean}
- * @api public
- */
-
-Document.prototype.$isDefault = function(path) {
-  return (path in this.$__.activePaths.states.default);
-};
-
-/**
- * Getter/setter, determines whether the document was removed or not.
- *
- * ####Example:
- *     product.remove(function (err, product) {
- *       product.$isDeleted(); // true
- *       product.remove(); // no-op, doesn't send anything to the db
- *
- *       product.$isDeleted(false);
- *       product.$isDeleted(); // false
- *       product.remove(); // will execute a remove against the db
- *     })
- *
- * @param {Boolean} [val] optional, overrides whether mongoose thinks the doc is deleted
- * @return {Boolean} whether mongoose thinks this doc is deleted.
- * @method $isDeleted
- * @memberOf Document
- * @instance
- * @api public
- */
-
-Document.prototype.$isDeleted = function(val) {
-  if (arguments.length === 0) {
-    return !!this.$__.isDeleted;
-  }
-<<<<<<< HEAD
-}
-},{"./error/strict":282,"./helpers/get":290,"./schema/index":317,"./schema/operators/text":326,"./utils":341,"util":362}],257:[function(require,module,exports){
-'use strict';
-=======
->>>>>>> A provider has a list of ids
-
-  this.$__.isDeleted = !!val;
-  return this;
-};
-
-/**
- * Returns true if `path` was directly set and modified, else false.
- *
- * ####Example
- *
- *     doc.set('documents.0.title', 'changed');
- *     doc.isDirectModified('documents.0.title') // true
- *     doc.isDirectModified('documents') // false
- *
- * @param {String} path
- * @return {Boolean}
- * @api public
- */
-
-Document.prototype.isDirectModified = function(path) {
-  return (path in this.$__.activePaths.states.modify);
-};
-
-/**
- * Checks if `path` was initialized.
- *
- * @param {String} path
- * @return {Boolean}
- * @api public
- */
-
-Document.prototype.isInit = function(path) {
-  return (path in this.$__.activePaths.states.init);
-};
-
-/**
- * Checks if `path` was selected in the source query which initialized this document.
- *
- * ####Example
- *
- *     Thing.findOne().select('name').exec(function (err, doc) {
- *        doc.isSelected('name') // true
- *        doc.isSelected('age')  // false
- *     })
- *
- * @param {String} path
- * @return {Boolean}
- * @api public
- */
-
-<<<<<<< HEAD
-},{"../error/cast":271}],258:[function(require,module,exports){
-'use strict';
-=======
-Document.prototype.isSelected = function isSelected(path) {
-  if (this.$__.selected) {
-    if (path === '_id') {
-      return this.$__.selected._id !== 0;
-    }
->>>>>>> A provider has a list of ids
-
-    const paths = Object.keys(this.$__.selected);
-    let i = paths.length;
-    let inclusive = null;
-    let cur;
-
-    if (i === 1 && paths[0] === '_id') {
-      // only _id was selected.
-      return this.$__.selected._id === 0;
-    }
-
-    while (i--) {
-      cur = paths[i];
-      if (cur === '_id') {
-        continue;
-=======
     ]
   },
   "[ELU]": {
@@ -87059,7 +74750,6 @@ Document.prototype.isSelected = function isSelected(path) {
       {
         "printable": "1",
         "numeric": 1
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -87149,59 +74839,6 @@ Document.prototype.isSelected = function isSelected(path) {
         "printable": "<function name=\"lgTimes2\" value=\"1\" Unit=\"V\"/>",
         "numeric": null
       }
-<<<<<<< HEAD
-    }
-
-    return !inclusive;
-  }
-
-  return true;
-};
-<<<<<<< HEAD
-},{"assert":77}],259:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
->>>>>>> A provider has a list of ids
-
-/**
- * Checks if `path` was explicitly selected. If no projection, always returns
- * true.
- *
- * ####Example
- *
- *     Thing.findOne().select('nested.name').exec(function (err, doc) {
- *        doc.isDirectSelected('nested.name') // true
- *        doc.isDirectSelected('nested.otherName') // false
- *        doc.isDirectSelected('nested')  // false
- *     })
- *
- * @param {String} path
- * @return {Boolean}
- * @api public
- */
-
-Document.prototype.isDirectSelected = function isDirectSelected(path) {
-  if (this.$__.selected) {
-    if (path === '_id') {
-      return this.$__.selected._id !== 0;
-    }
-
-    const paths = Object.keys(this.$__.selected);
-    let i = paths.length;
-    let inclusive = null;
-    let cur;
-
-    if (i === 1 && paths[0] === '_id') {
-      // only _id was selected.
-      return this.$__.selected._id === 0;
-    }
-
-    while (i--) {
-      cur = paths[i];
-      if (cur === '_id') {
-        continue;
-=======
     ]
   },
   "B[mV]": {
@@ -87223,7 +74860,6 @@ Document.prototype.isDirectSelected = function isDirectSelected(path) {
       {
         "printable": "<function name=\"lgTimes2\" value=\"1\" Unit=\"mV\"/>",
         "numeric": null
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -87247,125 +74883,6 @@ Document.prototype.isDirectSelected = function isDirectSelected(path) {
         "printable": "<function name=\"lgTimes2\" value=\"1\" Unit=\"uV\"/>",
         "numeric": null
       }
-<<<<<<< HEAD
-      inclusive = !!this.$__.selected[cur];
-      break;
-    }
-
-    if (inclusive === null) {
-      return true;
-    }
-
-    if (path in this.$__.selected) {
-      return inclusive;
-    }
-
-    return !inclusive;
-  }
-
-  return true;
-};
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../types/decimal128":334,"assert":77}],260:[function(require,module,exports){
-'use strict';
-=======
->>>>>>> A provider has a list of ids
-
-/**
- * Executes registered validation rules for this document.
- *
- * ####Note:
- *
- * This method is called `pre` save and if a validation rule is violated, [save](#model_Model-save) is aborted and the error is returned to your `callback`.
- *
- * ####Example:
- *
- *     doc.validate(function (err) {
- *       if (err) handleError(err);
- *       else // validation passed
- *     });
- *
- * @param {Object} optional options internal options
- * @param {Function} callback optional callback called after validation completes, passing an error if one occurred
- * @return {Promise} Promise
- * @api public
- */
-
-Document.prototype.validate = function(options, callback) {
-  if (typeof options === 'function') {
-    callback = options;
-    options = null;
-  }
-
-  return utils.promiseOrCallback(callback, cb => this.$__validate(function(error) {
-    cb(error);
-  }), this.constructor.events);
-};
-
-/*!
- * ignore
- */
-
-function _evaluateRequiredFunctions(doc) {
-  Object.keys(doc.$__.activePaths.states.require).forEach(path => {
-    const p = doc.schema.path(path);
-
-    if (p != null && typeof p.originalRequiredValue === 'function') {
-      doc.$__.cachedRequired[path] = p.originalRequiredValue.call(doc);
-    }
-  });
-}
-
-/*!
- * ignore
- */
-
-function _getPathsToValidate(doc) {
-  let i;
-  let len;
-  const skipSchemaValidators = {};
-
-  _evaluateRequiredFunctions(doc);
-
-<<<<<<< HEAD
-},{"assert":77}],261:[function(require,module,exports){
-'use strict';
-=======
-  // only validate required fields when necessary
-  let paths = Object.keys(doc.$__.activePaths.states.require).filter(function(path) {
-    if (!doc.isSelected(path) && !doc.isModified(path)) {
-      return false;
-    }
-    if (path in doc.$__.cachedRequired) {
-      return doc.$__.cachedRequired[path];
-    }
-    return true;
-  });
->>>>>>> A provider has a list of ids
-
-  paths = paths.concat(Object.keys(doc.$__.activePaths.states.init));
-  paths = paths.concat(Object.keys(doc.$__.activePaths.states.modify));
-  paths = paths.concat(Object.keys(doc.$__.activePaths.states.default));
-
-  if (!doc.ownerDocument) {
-    const subdocs = doc.$__getAllSubdocs();
-    let subdoc;
-    len = subdocs.length;
-    const modifiedPaths = doc.modifiedPaths();
-    for (i = 0; i < len; ++i) {
-      subdoc = subdocs[i];
-      if (doc.isModified(subdoc.$basePath, modifiedPaths) &&
-          !doc.isDirectModified(subdoc.$basePath) &&
-          !doc.$isDefault(subdoc.$basePath)) {
-        // Remove child paths for now, because we'll be validating the whole
-        // subdoc
-        paths = paths.filter(function(p) {
-          return p != null && p.indexOf(subdoc.$basePath + '.') !== 0;
-        });
-        paths.push(subdoc.$basePath);
-        skipSchemaValidators[subdoc.$basePath] = true;
-=======
     ]
   },
   "B[10.nV]": {
@@ -87387,7 +74904,6 @@ function _getPathsToValidate(doc) {
       {
         "printable": "<function name=\"lgTimes2\" value=\"10\" Unit=\"nV\"/>",
         "numeric": null
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -87433,61 +74949,6 @@ function _getPathsToValidate(doc) {
         "printable": "<function name=\"lg\" value=\"1\" Unit=\"kW\"/>",
         "numeric": null
       }
-<<<<<<< HEAD
-      const flat = flatten(_v, '', flattenOptions);
-      const _subpaths = Object.keys(flat).map(function(p) {
-        return pathToCheck + '.' + p;
-      });
-      paths = paths.concat(_subpaths);
-    }
-  }
-
-<<<<<<< HEAD
-  assert.ok(false);
-};
-},{"../driver":265,"assert":77}],262:[function(require,module,exports){
-'use strict';
-=======
-  len = paths.length;
-  for (i = 0; i < len; ++i) {
-    const path = paths[i];
-    const _pathType = doc.schema.path(path);
-    if (!_pathType || !_pathType.$isSchemaMap) {
-      continue;
-    }
->>>>>>> A provider has a list of ids
-
-    const val = doc.getValue(path);
-    if (val == null) {
-      continue;
-    }
-    for (const key of val.keys()) {
-      paths.push(path + '.' + key);
-    }
-  }
-
-  return [paths, skipSchemaValidators];
-}
-
-/*!
- * ignore
- */
-
-Document.prototype.$__validate = function(callback) {
-  const _this = this;
-  const _complete = () => {
-    const err = this.$__.validationError;
-    this.$__.validationError = undefined;
-    this.$__.cachedRequired = {};
-    this.emit('validate', _this);
-    this.constructor.emit('validate', _this);
-    if (err) {
-      for (const key in err.errors) {
-        // Make sure cast errors persist
-        if (!this[documentArrayParent] && err.errors[key] instanceof MongooseError.CastError) {
-          this.invalidate(key, err.errors[key]);
-        }
-=======
     ]
   },
   "st": {
@@ -87550,7 +75011,6 @@ Document.prototype.$__validate = function(callback) {
       {
         "printable": "100",
         "numeric": 100
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -87573,44 +75033,6 @@ Document.prototype.$__validate = function(callback) {
         "printable": "1",
         "numeric": 1
       }
-<<<<<<< HEAD
-      callback(null, _this);
-    });
-  }
-
-  const validated = {};
-  let total = 0;
-
-  const complete = function() {
-    const error = _complete();
-    if (error) {
-      return _this.schema.s.hooks.execPost('validate:error', _this, [ _this], { error: error }, function(error) {
-        callback(error);
-      });
-    }
-    callback(null, _this);
-  };
-
-  const validatePath = function(path) {
-    if (path == null || validated[path]) {
-      return;
-    }
-
-<<<<<<< HEAD
-},{"../error/cast":271}],263:[function(require,module,exports){
-(function (Buffer,process){
-'use strict';
-=======
-    validated[path] = true;
-    total++;
->>>>>>> A provider has a list of ids
-
-    process.nextTick(function() {
-      const p = _this.schema.path(path);
-
-      if (!p) {
-        return --total || complete();
-=======
     ]
   },
   "mho": {
@@ -87631,7 +75053,6 @@ Document.prototype.$__validate = function(callback) {
       {
         "printable": "1",
         "numeric": 1
->>>>>>> Add providers to patient
       }
     ]
   },
@@ -87946,7 +75367,7 @@ Document.prototype.$__validate = function(callback) {
   }
 }
 
-},{}],245:[function(require,module,exports){
+},{}],241:[function(require,module,exports){
 module.exports = {
 
   multiply: function multiply(t, ms) {
@@ -88016,7 +75437,7 @@ module.exports = {
   }
 }
 
-},{}],246:[function(require,module,exports){
+},{}],242:[function(require,module,exports){
 parser = require('./generated/ucum-parser.js');
 equivalents = require('./generated/equivalents.json');
 helpers = require('./lib/helpers.js');
@@ -88246,643 +75667,7 @@ function unitQuery(criteria, resultFields){
     return obj;
   });
 }
-},{"./generated/equivalents.json":239,"./generated/ucum-parser.js":243,"./generated/unitMetadata.json":244,"./lib/helpers.js":245}],247:[function(require,module,exports){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var objectCreate = Object.create || objectCreatePolyfill
-var objectKeys = Object.keys || objectKeysPolyfill
-var bind = Function.prototype.bind || functionBindPolyfill
-
-function EventEmitter() {
-  if (!this._events || !Object.prototype.hasOwnProperty.call(this, '_events')) {
-    this._events = objectCreate(null);
-    this._eventsCount = 0;
-  }
-
-  this._maxListeners = this._maxListeners || undefined;
-}
-module.exports = EventEmitter;
-
-// Backwards-compat with node 0.10.x
-EventEmitter.EventEmitter = EventEmitter;
-
-EventEmitter.prototype._events = undefined;
-EventEmitter.prototype._maxListeners = undefined;
-
-// By default EventEmitters will print a warning if more than 10 listeners are
-// added to it. This is a useful default which helps finding memory leaks.
-var defaultMaxListeners = 10;
-
-var hasDefineProperty;
-try {
-  var o = {};
-  if (Object.defineProperty) Object.defineProperty(o, 'x', { value: 0 });
-  hasDefineProperty = o.x === 0;
-} catch (err) { hasDefineProperty = false }
-if (hasDefineProperty) {
-  Object.defineProperty(EventEmitter, 'defaultMaxListeners', {
-    enumerable: true,
-    get: function() {
-      return defaultMaxListeners;
-    },
-    set: function(arg) {
-      // check whether the input is a positive number (whose value is zero or
-      // greater and not a NaN).
-      if (typeof arg !== 'number' || arg < 0 || arg !== arg)
-        throw new TypeError('"defaultMaxListeners" must be a positive number');
-      defaultMaxListeners = arg;
-    }
-  });
-} else {
-  EventEmitter.defaultMaxListeners = defaultMaxListeners;
-}
-
-// Obviously not all Emitters should be limited to 10. This function allows
-// that to be increased. Set to zero for unlimited.
-EventEmitter.prototype.setMaxListeners = function setMaxListeners(n) {
-  if (typeof n !== 'number' || n < 0 || isNaN(n))
-    throw new TypeError('"n" argument must be a positive number');
-  this._maxListeners = n;
-  return this;
-};
-
-function $getMaxListeners(that) {
-  if (that._maxListeners === undefined)
-    return EventEmitter.defaultMaxListeners;
-  return that._maxListeners;
-}
-
-EventEmitter.prototype.getMaxListeners = function getMaxListeners() {
-  return $getMaxListeners(this);
-};
-
-// These standalone emit* functions are used to optimize calling of event
-// handlers for fast cases because emit() itself often has a variable number of
-// arguments and can be deoptimized because of that. These functions always have
-// the same number of arguments and thus do not get deoptimized, so the code
-// inside them can execute faster.
-function emitNone(handler, isFn, self) {
-  if (isFn)
-    handler.call(self);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self);
-  }
-}
-function emitOne(handler, isFn, self, arg1) {
-  if (isFn)
-    handler.call(self, arg1);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self, arg1);
-  }
-}
-function emitTwo(handler, isFn, self, arg1, arg2) {
-  if (isFn)
-    handler.call(self, arg1, arg2);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self, arg1, arg2);
-  }
-}
-function emitThree(handler, isFn, self, arg1, arg2, arg3) {
-  if (isFn)
-    handler.call(self, arg1, arg2, arg3);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].call(self, arg1, arg2, arg3);
-  }
-}
-
-function emitMany(handler, isFn, self, args) {
-  if (isFn)
-    handler.apply(self, args);
-  else {
-    var len = handler.length;
-    var listeners = arrayClone(handler, len);
-    for (var i = 0; i < len; ++i)
-      listeners[i].apply(self, args);
-  }
-}
-
-EventEmitter.prototype.emit = function emit(type) {
-  var er, handler, len, args, i, events;
-  var doError = (type === 'error');
-
-  events = this._events;
-  if (events)
-    doError = (doError && events.error == null);
-  else if (!doError)
-    return false;
-
-  // If there is no 'error' event listener then throw.
-  if (doError) {
-    if (arguments.length > 1)
-      er = arguments[1];
-    if (er instanceof Error) {
-      throw er; // Unhandled 'error' event
-    } else {
-      // At least give some kind of context to the user
-      var err = new Error('Unhandled "error" event. (' + er + ')');
-      err.context = er;
-      throw err;
-    }
-    return false;
-  }
-
-  handler = events[type];
-
-  if (!handler)
-    return false;
-
-  var isFn = typeof handler === 'function';
-  len = arguments.length;
-  switch (len) {
-      // fast cases
-    case 1:
-      emitNone(handler, isFn, this);
-      break;
-    case 2:
-      emitOne(handler, isFn, this, arguments[1]);
-      break;
-    case 3:
-      emitTwo(handler, isFn, this, arguments[1], arguments[2]);
-      break;
-    case 4:
-      emitThree(handler, isFn, this, arguments[1], arguments[2], arguments[3]);
-      break;
-      // slower
-    default:
-      args = new Array(len - 1);
-      for (i = 1; i < len; i++)
-        args[i - 1] = arguments[i];
-      emitMany(handler, isFn, this, args);
-  }
-
-  return true;
-};
-
-function _addListener(target, type, listener, prepend) {
-  var m;
-  var events;
-  var existing;
-
-  if (typeof listener !== 'function')
-    throw new TypeError('"listener" argument must be a function');
-
-  events = target._events;
-  if (!events) {
-    events = target._events = objectCreate(null);
-    target._eventsCount = 0;
-  } else {
-    // To avoid recursion in the case that type === "newListener"! Before
-    // adding it to the listeners, first emit "newListener".
-    if (events.newListener) {
-      target.emit('newListener', type,
-          listener.listener ? listener.listener : listener);
-
-      // Re-assign `events` because a newListener handler could have caused the
-      // this._events to be assigned to a new object
-      events = target._events;
-    }
-    existing = events[type];
-  }
-
-  if (!existing) {
-    // Optimize the case of one listener. Don't need the extra array object.
-    existing = events[type] = listener;
-    ++target._eventsCount;
-  } else {
-    if (typeof existing === 'function') {
-      // Adding the second element, need to change to array.
-      existing = events[type] =
-          prepend ? [listener, existing] : [existing, listener];
-    } else {
-      // If we've already got an array, just append.
-      if (prepend) {
-        existing.unshift(listener);
-      } else {
-        existing.push(listener);
-      }
-    }
-
-    // Check for listener leak
-    if (!existing.warned) {
-      m = $getMaxListeners(target);
-      if (m && m > 0 && existing.length > m) {
-        existing.warned = true;
-        var w = new Error('Possible EventEmitter memory leak detected. ' +
-            existing.length + ' "' + String(type) + '" listeners ' +
-            'added. Use emitter.setMaxListeners() to ' +
-            'increase limit.');
-        w.name = 'MaxListenersExceededWarning';
-        w.emitter = target;
-        w.type = type;
-        w.count = existing.length;
-        if (typeof console === 'object' && console.warn) {
-          console.warn('%s: %s', w.name, w.message);
-        }
-      }
-    }
-  }
-
-  return target;
-}
-
-EventEmitter.prototype.addListener = function addListener(type, listener) {
-  return _addListener(this, type, listener, false);
-};
-
-EventEmitter.prototype.on = EventEmitter.prototype.addListener;
-
-EventEmitter.prototype.prependListener =
-    function prependListener(type, listener) {
-      return _addListener(this, type, listener, true);
-    };
-
-function onceWrapper() {
-  if (!this.fired) {
-    this.target.removeListener(this.type, this.wrapFn);
-    this.fired = true;
-    switch (arguments.length) {
-      case 0:
-        return this.listener.call(this.target);
-      case 1:
-        return this.listener.call(this.target, arguments[0]);
-      case 2:
-        return this.listener.call(this.target, arguments[0], arguments[1]);
-      case 3:
-        return this.listener.call(this.target, arguments[0], arguments[1],
-            arguments[2]);
-      default:
-        var args = new Array(arguments.length);
-        for (var i = 0; i < args.length; ++i)
-          args[i] = arguments[i];
-        this.listener.apply(this.target, args);
-    }
-  }
-}
-
-function _onceWrap(target, type, listener) {
-  var state = { fired: false, wrapFn: undefined, target: target, type: type, listener: listener };
-  var wrapped = bind.call(onceWrapper, state);
-  wrapped.listener = listener;
-  state.wrapFn = wrapped;
-  return wrapped;
-}
-
-EventEmitter.prototype.once = function once(type, listener) {
-  if (typeof listener !== 'function')
-    throw new TypeError('"listener" argument must be a function');
-  this.on(type, _onceWrap(this, type, listener));
-  return this;
-};
-
-EventEmitter.prototype.prependOnceListener =
-    function prependOnceListener(type, listener) {
-      if (typeof listener !== 'function')
-        throw new TypeError('"listener" argument must be a function');
-      this.prependListener(type, _onceWrap(this, type, listener));
-      return this;
-    };
-
-// Emits a 'removeListener' event if and only if the listener was removed.
-EventEmitter.prototype.removeListener =
-    function removeListener(type, listener) {
-      var list, events, position, i, originalListener;
-
-      if (typeof listener !== 'function')
-        throw new TypeError('"listener" argument must be a function');
-
-      events = this._events;
-      if (!events)
-        return this;
-
-      list = events[type];
-      if (!list)
-        return this;
-
-      if (list === listener || list.listener === listener) {
-        if (--this._eventsCount === 0)
-          this._events = objectCreate(null);
-        else {
-          delete events[type];
-          if (events.removeListener)
-            this.emit('removeListener', type, list.listener || listener);
-        }
-      } else if (typeof list !== 'function') {
-        position = -1;
-
-        for (i = list.length - 1; i >= 0; i--) {
-          if (list[i] === listener || list[i].listener === listener) {
-            originalListener = list[i].listener;
-            position = i;
-            break;
-          }
-        }
-
-        if (position < 0)
-          return this;
-
-        if (position === 0)
-          list.shift();
-        else
-          spliceOne(list, position);
-
-        if (list.length === 1)
-          events[type] = list[0];
-
-        if (events.removeListener)
-          this.emit('removeListener', type, originalListener || listener);
-      }
-
-      return this;
-    };
-
-EventEmitter.prototype.removeAllListeners =
-    function removeAllListeners(type) {
-      var listeners, events, i;
-
-      events = this._events;
-      if (!events)
-        return this;
-
-      // not listening for removeListener, no need to emit
-      if (!events.removeListener) {
-        if (arguments.length === 0) {
-          this._events = objectCreate(null);
-          this._eventsCount = 0;
-        } else if (events[type]) {
-          if (--this._eventsCount === 0)
-            this._events = objectCreate(null);
-          else
-            delete events[type];
-        }
-        return this;
-      }
-
-      // emit removeListener for all listeners on all events
-      if (arguments.length === 0) {
-        var keys = objectKeys(events);
-        var key;
-        for (i = 0; i < keys.length; ++i) {
-          key = keys[i];
-          if (key === 'removeListener') continue;
-          this.removeAllListeners(key);
-        }
-        this.removeAllListeners('removeListener');
-        this._events = objectCreate(null);
-        this._eventsCount = 0;
-        return this;
-      }
-
-      listeners = events[type];
-
-      if (typeof listeners === 'function') {
-        this.removeListener(type, listeners);
-      } else if (listeners) {
-        // LIFO order
-        for (i = listeners.length - 1; i >= 0; i--) {
-          this.removeListener(type, listeners[i]);
-        }
-      }
-
-      return this;
-    };
-
-function _listeners(target, type, unwrap) {
-  var events = target._events;
-
-  if (!events)
-    return [];
-
-  var evlistener = events[type];
-  if (!evlistener)
-    return [];
-
-  if (typeof evlistener === 'function')
-    return unwrap ? [evlistener.listener || evlistener] : [evlistener];
-
-  return unwrap ? unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
-}
-
-EventEmitter.prototype.listeners = function listeners(type) {
-  return _listeners(this, type, true);
-};
-
-EventEmitter.prototype.rawListeners = function rawListeners(type) {
-  return _listeners(this, type, false);
-};
-
-EventEmitter.listenerCount = function(emitter, type) {
-  if (typeof emitter.listenerCount === 'function') {
-    return emitter.listenerCount(type);
-  } else {
-    return listenerCount.call(emitter, type);
-  }
-};
-
-EventEmitter.prototype.listenerCount = listenerCount;
-function listenerCount(type) {
-  var events = this._events;
-
-  if (events) {
-    var evlistener = events[type];
-
-    if (typeof evlistener === 'function') {
-      return 1;
-    } else if (evlistener) {
-      return evlistener.length;
-    }
-  }
-
-  return 0;
-}
-
-EventEmitter.prototype.eventNames = function eventNames() {
-  return this._eventsCount > 0 ? Reflect.ownKeys(this._events) : [];
-};
-
-// About 1.5x faster than the two-arg version of Array#splice().
-function spliceOne(list, index) {
-  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1)
-    list[i] = list[k];
-  list.pop();
-}
-
-function arrayClone(arr, n) {
-  var copy = new Array(n);
-  for (var i = 0; i < n; ++i)
-    copy[i] = arr[i];
-  return copy;
-}
-
-function unwrapListeners(arr) {
-  var ret = new Array(arr.length);
-  for (var i = 0; i < ret.length; ++i) {
-    ret[i] = arr[i].listener || arr[i];
-  }
-  return ret;
-}
-
-function objectCreatePolyfill(proto) {
-  var F = function() {};
-  F.prototype = proto;
-  return new F;
-}
-function objectKeysPolyfill(obj) {
-  var keys = [];
-  for (var k in obj) if (Object.prototype.hasOwnProperty.call(obj, k)) {
-    keys.push(k);
-  }
-  return k;
-}
-function functionBindPolyfill(context) {
-  var fn = this;
-  return function () {
-    return fn.apply(context, arguments);
-  };
-}
-
-},{}],248:[function(require,module,exports){
-exports.read = function (buffer, offset, isLE, mLen, nBytes) {
-  var e, m
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var nBits = -7
-  var i = isLE ? (nBytes - 1) : 0
-  var d = isLE ? -1 : 1
-  var s = buffer[offset + i]
-
-  i += d
-
-  e = s & ((1 << (-nBits)) - 1)
-  s >>= (-nBits)
-  nBits += eLen
-  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
-
-  m = e & ((1 << (-nBits)) - 1)
-  e >>= (-nBits)
-  nBits += mLen
-  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
-
-  if (e === 0) {
-    e = 1 - eBias
-  } else if (e === eMax) {
-    return m ? NaN : ((s ? -1 : 1) * Infinity)
-  } else {
-    m = m + Math.pow(2, mLen)
-    e = e - eBias
-  }
-  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
-}
-
-exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
-  var e, m, c
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
-  var i = isLE ? 0 : (nBytes - 1)
-  var d = isLE ? 1 : -1
-  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
-
-  value = Math.abs(value)
-
-  if (isNaN(value) || value === Infinity) {
-    m = isNaN(value) ? 1 : 0
-    e = eMax
-  } else {
-    e = Math.floor(Math.log(value) / Math.LN2)
-    if (value * (c = Math.pow(2, -e)) < 1) {
-      e--
-      c *= 2
-    }
-    if (e + eBias >= 1) {
-      value += rt / c
-    } else {
-      value += rt * Math.pow(2, 1 - eBias)
-    }
-    if (value * c >= 2) {
-      e++
-      c /= 2
-    }
-
-    if (e + eBias >= eMax) {
-      m = 0
-      e = eMax
-    } else if (e + eBias >= 1) {
-      m = ((value * c) - 1) * Math.pow(2, mLen)
-      e = e + eBias
-    } else {
-      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
-      e = 0
-    }
-  }
-
-  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
-
-  e = (e << mLen) | m
-  eLen += mLen
-  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
-
-  buffer[offset + i - d] |= s * 128
-}
-
-},{}],249:[function(require,module,exports){
-arguments[4][77][0].apply(exports,arguments)
-},{"dup":77}],250:[function(require,module,exports){
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-// The _isBuffer check is for Safari 5-7 support, because it's missing
-// Object.prototype.constructor. Remove this eventually
-module.exports = function (obj) {
-  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
-}
-
-function isBuffer (obj) {
-  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
-}
-
-// For Node v0.10 support. Remove this eventually.
-function isSlowBuffer (obj) {
-  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
-}
-
-},{}],251:[function(require,module,exports){
+},{"./generated/equivalents.json":235,"./generated/ucum-parser.js":239,"./generated/unitMetadata.json":240,"./lib/helpers.js":241}],243:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -89389,7 +76174,7 @@ function decorateNextFn(fn) {
 module.exports = Kareem;
 
 }).call(this,require('_process'))
-},{"_process":355}],252:[function(require,module,exports){
+},{"_process":360}],244:[function(require,module,exports){
 /**
  * Export lib/mongoose
  *
@@ -89399,7 +76184,7 @@ module.exports = Kareem;
 
 module.exports = require('./lib/browser');
 
-},{"./lib/browser":253}],253:[function(require,module,exports){
+},{"./lib/browser":245}],245:[function(require,module,exports){
 (function (Buffer){
 /* eslint-env browser */
 
@@ -89536,7 +76321,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./document_provider.js":263,"./driver":264,"./drivers/browser":268,"./error":272,"./promise_provider":306,"./schema":308,"./schematype.js":329,"./types":336,"./utils.js":340,"./virtualtype":341,"buffer":102}],254:[function(require,module,exports){
+},{"./document_provider.js":255,"./driver":256,"./drivers/browser":260,"./error":264,"./promise_provider":298,"./schema":300,"./schematype.js":321,"./types":328,"./utils.js":332,"./virtualtype":333,"buffer":355}],246:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -89640,7 +76425,7 @@ utils.each(
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":262,"./error":272,"./helpers/model/applyHooks":291,"./schema":308,"./types/objectid":338,"./utils":340,"events":247}],255:[function(require,module,exports){
+},{"./document":254,"./error":264,"./helpers/model/applyHooks":283,"./schema":300,"./types/objectid":330,"./utils":332,"events":356}],247:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -89981,7 +76766,7 @@ function _cast(val, numbertype, context) {
     }
   }
 }
-},{"./error/strict":281,"./helpers/get":289,"./schema/index":316,"./schema/operators/text":325,"./utils":340,"util":361}],256:[function(require,module,exports){
+},{"./error/strict":273,"./helpers/get":281,"./schema/index":308,"./schema/operators/text":317,"./utils":332,"util":363}],248:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -90011,54 +76796,10 @@ module.exports = function castBoolean(value, path) {
   throw new CastError('boolean', value, path);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":251,"./error":273,"./error/objectExpected":278,"./error/objectParameter":279,"./error/strict":282,"./helpers/common":286,"./helpers/document/cleanModifiedSubpaths":287,"./helpers/document/compile":288,"./helpers/document/getEmbeddedDiscriminatorPath":289,"./helpers/get":290,"./helpers/projection/isDefiningProjection":295,"./helpers/projection/isExclusive":296,"./helpers/symbols":301,"./internal":304,"./options":305,"./plugins/idGetter":306,"./schema/mixed":319,"./schematype":330,"./types/array":332,"./types/documentarray":335,"./types/embedded":336,"./utils":341,"./virtualtype":342,"_process":356,"events":248,"mpath":344,"util":362}],264:[function(require,module,exports){
-=======
-}).call(this,require('_process'))
-},{"_process":358}],281:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-'use strict';
-
-const symbols = require('../../schema/symbols');
-const utils = require('../../utils');
-
-/*!
- * ignore
- */
-
-module.exports = applyHooks;
-
-/*!
- * ignore
- */
-
-<<<<<<< HEAD
-},{"./browserDocument.js":255,"./document.js":263}],265:[function(require,module,exports){
-'use strict';
-=======
-applyHooks.middlewareFunctions = [
-  'save',
-  'validate',
-  'remove',
-  'updateOne',
-  'init'
-];
->>>>>>> A provider has a list of ids
-
-/*!
- * Register hooks for this model
- *
- * @param {Model} model
- * @param {Schema} schema
- */
-=======
 module.exports.convertToTrue = new Set([true, 'true', 1, '1', 'yes']);
 module.exports.convertToFalse = new Set([false, 'false', 0, '0', 'no']);
->>>>>>> Add providers to patient
 
-},{"../error/cast":270}],257:[function(require,module,exports){
+},{"../error/cast":262}],249:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -90070,50 +76811,13 @@ module.exports = function castDate(value) {
     return null;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],266:[function(require,module,exports){
-/*!
- * ignore
- */
-=======
-  // Built-in hooks rely on hooking internal functions in order to support
-  // promises and make it so that `doc.save.toString()` provides meaningful
-  // information.
->>>>>>> A provider has a list of ids
-
-  const middleware = schema.s.hooks.
-    filter(hook => {
-      if (hook.name === 'updateOne') {
-        return !!hook['document'];
-      }
-      if (hook.name === 'remove') {
-        return hook['document'] == null || !!hook['document'];
-      }
-      return true;
-    }).
-    filter(hook => {
-      // If user has overwritten the method, don't apply built-in middleware
-      if (schema.methods[hook.name]) {
-        return !hook.fn[symbols.builtInMiddleware];
-      }
-=======
   if (value instanceof Date) {
     assert.ok(!isNaN(value.valueOf()));
->>>>>>> Add providers to patient
 
     return value;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],267:[function(require,module,exports){
-=======
-  model._middleware = middleware;
->>>>>>> A provider has a list of ids
-=======
   let date;
->>>>>>> Add providers to patient
 
   assert.ok(typeof value !== 'boolean');
 
@@ -90137,22 +76841,12 @@ module.exports = function castDate(value) {
 
   assert.ok(false);
 };
-},{"assert":76}],258:[function(require,module,exports){
+},{"assert":350}],250:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"bson":84}],268:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
-/*!
- * ignore
- */
-=======
 const Decimal128Type = require('../types/decimal128');
 const assert = require('assert');
->>>>>>> Add providers to patient
 
 module.exports = function castDecimal128(value) {
   if (value == null) {
@@ -90163,53 +76857,13 @@ module.exports = function castDecimal128(value) {
     return Decimal128Type.fromString(value.$numberDecimal);
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"bson":84}],269:[function(require,module,exports){
-/*!
- * Module exports.
- */
-=======
-  if (applyPlugins) {
-    const applyPluginsToDiscriminators = get(model.base,
-      'options.applyPluginsToDiscriminators', false);
-    // Even if `applyPluginsToDiscriminators` isn't set, we should still apply
-    // global plugins to schemas embedded in the discriminator schema (gh-7370)
-    model.base._applyPlugins(schema, {
-      skipTopLevel: !applyPluginsToDiscriminators
-    });
-=======
   if (value instanceof Decimal128Type) {
     return value;
->>>>>>> Add providers to patient
   }
->>>>>>> A provider has a list of ids
 
-<<<<<<< HEAD
-  const key = model.schema.options.discriminatorKey;
-
-  const baseSchemaAddition = {};
-  baseSchemaAddition[key] = {
-    default: void 0,
-    select: true,
-    $skipDiscriminatorCheck: true
-  };
-  baseSchemaAddition[key][model.schema.options.typeKey] = String;
-  model.schema.add(baseSchemaAddition);
-  defineKey(key, null, model.prototype, null, [key], model.schema.options);
-
-<<<<<<< HEAD
-},{"./ReadPreference":266,"./binary":267,"./decimal128":268,"./objectid":270}],270:[function(require,module,exports){
-=======
-  if (schema.path(key) && schema.path(key).options.$skipDiscriminatorCheck !== true) {
-    throw new Error('Discriminator "' + name +
-        '" cannot have field with name "' + key + '"');
-=======
   if (typeof value === 'string') {
     return Decimal128Type.fromString(value);
->>>>>>> Add providers to patient
   }
->>>>>>> A provider has a list of ids
 
   if (Buffer.isBuffer(value)) {
     return new Decimal128Type(value);
@@ -90223,23 +76877,11 @@ module.exports = function castDecimal128(value) {
     return Decimal128Type.fromString(value.valueOf());
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"bson":84}],271:[function(require,module,exports){
-'use strict';
-=======
-    const toJSON = schema.options.toJSON;
-    const toObject = schema.options.toObject;
-    const _id = schema.options._id;
-    const id = schema.options.id;
->>>>>>> A provider has a list of ids
-=======
   assert.ok(false);
 };
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../types/decimal128":333,"assert":76}],259:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../types/decimal128":325,"assert":350}],251:[function(require,module,exports){
 'use strict';
->>>>>>> Add providers to patient
 
 const assert = require('assert');
 
@@ -90285,7 +76927,7 @@ module.exports = function castNumber(val) {
   assert.ok(false);
 };
 
-},{"assert":76}],260:[function(require,module,exports){
+},{"assert":350}],252:[function(require,module,exports){
 'use strict';
 
 const ObjectId = require('../driver').get().ObjectId;
@@ -90300,26 +76942,6 @@ module.exports = function castObjectId(value) {
     return value;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./mongooseError":276,"util":362}],272:[function(require,module,exports){
-=======
-  throw new MongooseError('Invalid ref at path "' + path + '". Got ' +
-    util.inspect(ref, { depth: 0 }));
-}
-},{"../../error/mongooseError":265,"util":361}],284:[function(require,module,exports){
-'use strict';
->>>>>>> A provider has a list of ids
-
-/*!
- * ignore
- */
-
-module.exports = function isDefiningProjection(val) {
-  if (val == null) {
-    // `undefined` or `null` become exclusive projections
-    return true;
-=======
   if (value._id) {
     if (value._id instanceof ObjectId) {
       return value._id;
@@ -90327,7 +76949,6 @@ module.exports = function isDefiningProjection(val) {
     if (value._id.toString instanceof Function) {
       return new ObjectId(value._id.toString());
     }
->>>>>>> Add providers to patient
   }
 
   if (value.toString instanceof Function) {
@@ -90336,7 +76957,7 @@ module.exports = function isDefiningProjection(val) {
 
   assert.ok(false);
 };
-},{"../driver":264,"assert":76}],261:[function(require,module,exports){
+},{"../driver":256,"assert":350}],253:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -90373,7 +76994,7 @@ module.exports = function castString(value, path) {
   throw new CastError('string', value, path);
 };
 
-},{"../error/cast":270}],262:[function(require,module,exports){
+},{"../error/cast":262}],254:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
 
@@ -90381,18 +77002,6 @@ module.exports = function castString(value, path) {
  * Module dependencies.
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module.exports = DivergentArrayError;
-
-},{"./":273}],273:[function(require,module,exports){
-'use strict';
-
-const MongooseError = require('./mongooseError');
-=======
-module.exports = applyQueryMiddleware;
->>>>>>> A provider has a list of ids
-=======
 const EventEmitter = require('events').EventEmitter;
 const InternalCache = require('./internal');
 const MongooseError = require('./error');
@@ -90415,7 +77024,6 @@ const inspect = require('util').inspect;
 const internalToObjectOptions = require('./options').internalToObjectOptions;
 const mpath = require('mpath');
 const utils = require('./utils');
->>>>>>> Add providers to patient
 
 const ValidationError = MongooseError.ValidationError;
 const clone = utils.clone;
@@ -90541,15 +77149,6 @@ function Document(obj, fields, skipId, options) {
   applyQueue(this);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./cast":271,"./divergentArray":272,"./messages":274,"./missingSchema":275,"./mongooseError":276,"./notFound":277,"./overwriteModel":280,"./parallelSave":281,"./validation":283,"./validator":284,"./version":285}],274:[function(require,module,exports){
-=======
-        indexes.push([field, options]);
-      }
-    }
->>>>>>> A provider has a list of ids
-=======
 /*!
  * Document exposes the NodeJS event emitter API, so you can use
  * `on`, `once`, etc.
@@ -90562,7 +77161,6 @@ utils.each(
       return this.$__.emitter[emitterFn].apply(this.$__.emitter, arguments);
     };
   });
->>>>>>> Add providers to patient
 
 Document.prototype.constructor = Document;
 
@@ -90615,15 +77213,7 @@ Document.prototype.id;
  * @instance
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],275:[function(require,module,exports){
-=======
-module.exports = handleTimestampOption;
->>>>>>> A provider has a list of ids
-=======
 Document.prototype.errors;
->>>>>>> Add providers to patient
 
 /*!
  * ignore
@@ -90657,16 +77247,9 @@ function $__applyDefaults(doc, fields, skipId, exclude, hasIncludedChildren, isB
     let curPath = '';
     const p = paths[i];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./":273}],276:[function(require,module,exports){
-=======
-exports.modelSymbol = Symbol.for('mongoose#Model');
-=======
     if (p === '_id' && skipId) {
       continue;
     }
->>>>>>> Add providers to patient
 
     const type = doc.schema.paths[p];
     const path = p.split('.');
@@ -90674,17 +77257,10 @@ exports.modelSymbol = Symbol.for('mongoose#Model');
     let included = false;
     let doc_ = doc._doc;
 
-<<<<<<< HEAD
-exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
-},{}],291:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-'use strict';
-=======
     for (let j = 0; j < len; ++j) {
       if (doc_ == null) {
         break;
       }
->>>>>>> Add providers to patient
 
       const piece = path[j];
       curPath += (!curPath.length ? '' : '.') + piece;
@@ -90729,40 +77305,10 @@ exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
               continue;
             }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],277:[function(require,module,exports){
-'use strict';
-=======
-  if (hasDollarKey) {
-    if (update.$push) {
-      for (key in update.$push) {
-        const $path = schema.path(key);
-        if (update.$push[key] &&
-            $path &&
-            $path.$isMongooseDocumentArray &&
-            $path.schema.options.timestamps) {
-          timestamps = $path.schema.options.timestamps;
-          createdAt = handleTimestampOption(timestamps, 'createdAt');
-          updatedAt = handleTimestampOption(timestamps, 'updatedAt');
-          if (update.$push[key].$each) {
-            update.$push[key].$each.forEach(function(subdoc) {
-              if (updatedAt != null) {
-                subdoc[updatedAt] = now;
-              }
-              if (createdAt != null) {
-                subdoc[createdAt] = now;
-              }
-            });
-          } else {
-            if (updatedAt != null) {
-              update.$push[key][updatedAt] = now;
-=======
             def = type.getDefault(doc, false);
             if (typeof def !== 'undefined') {
               doc_[piece] = def;
               doc.$__.activePaths.default(p);
->>>>>>> Add providers to patient
             }
           } else if (included) {
             // selected field
@@ -90783,29 +77329,8 @@ exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
         doc_ = doc_[piece];
       }
     }
-<<<<<<< HEAD
-    if (update.$set != null) {
-      const keys = Object.keys(update.$set);
-      for (key of keys) {
-        // Replace positional operator `$` and array filters `$[]` and `$[.*]`
-        const keyToSearch = key.
-          replace(/\.\$(\[[^\]]*\])?\./g, '.0.').
-          replace(/\.(\[[^\]]*\])?\$$/, '.0');
-        path = schema.path(keyToSearch);
-        if (!path) {
-          continue;
-        }
-        if (Array.isArray(update.$set[key]) && path.$isMongooseDocumentArray) {
-          applyTimestampsToDocumentArray(update.$set[key], path, now);
-        } else if (update.$set[key] && path.$isSingleNested) {
-          applyTimestampsToSingleNested(update.$set[key], path, now);
-        } else if (path.$parentSchema !== schema && path.$parentSchema != null) {
-          const parentPath = path.$parentSchema.$schemaType;
->>>>>>> A provider has a list of ids
-=======
   }
 }
->>>>>>> Add providers to patient
 
 /**
  * Builds the default doc structure
@@ -90872,21 +77397,8 @@ Document.prototype.$__buildDoc = function(obj, fields, skipId, exclude, hasInclu
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./":273,"util":362}],278:[function(require,module,exports){
-/*!
- * Module dependencies.
- */
-=======
-  if (!timestamps) {
-    return;
-  }
->>>>>>> A provider has a list of ids
-=======
   this._doc = doc;
 };
->>>>>>> Add providers to patient
 
 /*!
  * Converts to POJO when you use the document for querying
@@ -90926,10 +77438,6 @@ Document.prototype.init = function(doc, opts, fn) {
   return this;
 };
 
-<<<<<<< HEAD
-},{"./":273}],279:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
 /*!
  * ignore
  */
@@ -90960,17 +77468,8 @@ Document.prototype.$__init = function(doc, opts) {
 
   this.$__._id = this._id;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./":273}],280:[function(require,module,exports){
-=======
-  return updates;
-}
->>>>>>> A provider has a list of ids
-=======
   return this;
 };
->>>>>>> Add providers to patient
 
 /*!
  * Init helper.
@@ -91070,20 +77569,11 @@ Document.prototype.update = function update() {
   args.unshift({_id: this._id});
   const query = this.constructor.update.apply(this.constructor, args);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./":273}],281:[function(require,module,exports){
-=======
-},{}],295:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-'use strict';
-=======
   if (this.$session() != null) {
     if (!('session' in query.options)) {
       query.options.session = this.$session();
     }
   }
->>>>>>> Add providers to patient
 
   return query;
 };
@@ -91154,20 +77644,11 @@ Document.prototype.replaceOne = function replaceOne() {
   return this.constructor.replaceOne.apply(this.constructor, args);
 };
 
-<<<<<<< HEAD
-},{"./":273}],282:[function(require,module,exports){
-/*!
- * Module dependencies.
-=======
 /**
  * Getter/setter around the session associated with this document. Used to
  * automatically set `session` if you `save()` a doc that you got from a
  * query with an associated session.
  *
-<<<<<<< HEAD
- * @api private
->>>>>>> A provider has a list of ids
-=======
  * ####Example:
  *
  *     const session = MyModel.startSession();
@@ -91184,7 +77665,6 @@ Document.prototype.replaceOne = function replaceOne() {
  * @method $session
  * @api public
  * @memberOf Document
->>>>>>> Add providers to patient
  */
 
 Document.prototype.$session = function $session(session) {
@@ -91252,15 +77732,6 @@ Document.prototype.$set = function $set(path, val, type, options) {
     } else {
       prefix = val ? val + '.' : '';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./":273}],283:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
-/*!
- * Module dependencies
- */
-=======
       if (path instanceof Document) {
         if (path.$__isNested) {
           path = path.toObject();
@@ -91268,7 +77739,6 @@ Document.prototype.$set = function $set(path, val, type, options) {
           path = path._doc;
         }
       }
->>>>>>> Add providers to patient
 
       keys = Object.keys(path);
       const len = keys.length;
@@ -91640,16 +78110,6 @@ Document.prototype.$__shouldModify = function(pathToMark, path, constructing, pa
     return false;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./":273,"util":362}],284:[function(require,module,exports){
-/*!
- * Module dependencies.
- */
-=======
-    if (typeof type.selected !== 'boolean') return;
->>>>>>> A provider has a list of ids
-=======
   // gh-3992: if setting a populated field to a doc, don't mark modified
   // if they have the same _id
   if (this.populated(path) &&
@@ -91657,7 +78117,6 @@ Document.prototype.$__shouldModify = function(pathToMark, path, constructing, pa
       deepEqual(val._id, priorVal)) {
     return false;
   }
->>>>>>> Add providers to patient
 
   if (!deepEqual(val, priorVal || this.get(path))) {
     return true;
@@ -91763,25 +78222,12 @@ Document.prototype.getValue = function(path) {
   return utils.getValue(path, this._doc);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./":273}],285:[function(require,module,exports){
-=======
-},{"./helpers/get":279,"./helpers/projection/isDefiningProjection":284,"./utils":330}],298:[function(require,module,exports){
-(function (Buffer){
->>>>>>> A provider has a list of ids
-'use strict';
-
-/*!
- * Module dependencies.
-=======
 /**
  * Sets a raw value for a path (no casting, setters, transformations)
  *
  * @param {String} path
  * @param {Object} value
  * @api private
->>>>>>> Add providers to patient
  */
 
 Document.prototype.setValue = function(path, val) {
@@ -91820,31 +78266,7 @@ Document.prototype.get = function(path, type, options) {
     if (schema.getters.length === 0) {
       return void 0;
     }
-<<<<<<< HEAD
-  } else if (obj) {
-    this.add(obj);
-  }
-
-<<<<<<< HEAD
-},{"./":273}],286:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-  // check if _id's value is a subdocument (gh-2276)
-  const _idSubDoc = obj && obj._id && utils.isObject(obj._id);
->>>>>>> A provider has a list of ids
-
-  // ensure the documents get an auto _id unless disabled
-  const auto_id = !this.paths['_id'] &&
-      (!this.options.noId && this.options._id) && !_idSubDoc;
-
-  if (auto_id) {
-    const _obj = {_id: {auto: true}};
-    _obj._id[this.options.typeKey] = Schema.ObjectId;
-    this.add(_obj);
-=======
     return schema.applyGetters(null, this);
->>>>>>> Add providers to patient
   }
 
   for (let i = 0, l = pieces.length; i < l; i++) {
@@ -91926,11 +78348,6 @@ Document.prototype.markModified = function(path, scope) {
   }
 };
 
-<<<<<<< HEAD
-}).call(this,require("buffer").Buffer)
-},{"../types/objectid":339,"../utils":341,"buffer":103}],287:[function(require,module,exports){
-'use strict';
-=======
 /**
  * Clears the modified state on the specified path.
  *
@@ -91943,7 +78360,6 @@ Document.prototype.markModified = function(path, scope) {
  * @param {String} path the path to unmark modified
  * @api public
  */
->>>>>>> A provider has a list of ids
 
 Document.prototype.unmarkModified = function(path) {
   this.$__.activePaths.init(path);
@@ -91979,29 +78395,6 @@ Document.prototype.$ignore = function(path) {
  * @api public
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],288:[function(require,module,exports){
-'use strict';
-=======
-Schema.prototype.clone = function() {
-  const s = new Schema({}, this._userProvidedOptions);
-  s.base = this.base;
-  s.obj = this.obj;
-  s.options = utils.clone(this.options);
-  s.callQueue = this.callQueue.map(function(f) { return f; });
-  s.methods = utils.clone(this.methods);
-  s.methodOptions = utils.clone(this.methodOptions);
-  s.statics = utils.clone(this.statics);
-  s.query = utils.clone(this.query);
-  s.plugins = Array.prototype.slice.call(this.plugins);
-  s._indexes = utils.clone(this._indexes);
-  s.s.hooks = this.s.hooks.clone();
-  s._originalSchema = this._originalSchema == null ?
-    this._originalSchema :
-    this._originalSchema.clone();
->>>>>>> A provider has a list of ids
-=======
 Document.prototype.modifiedPaths = function(options) {
   options = options || {};
   const directModifiedPaths = Object.keys(this.$__.activePaths.states.modify);
@@ -92013,7 +78406,6 @@ Document.prototype.modifiedPaths = function(options) {
     }, []).filter(function(chain) {
       return (list.indexOf(chain) === -1);
     }));
->>>>>>> Add providers to patient
 
     if (!options.includeChildren) {
       return list;
@@ -92305,10 +78697,6 @@ Document.prototype.isDirectSelected = function isDirectSelected(path) {
   return true;
 };
 
-<<<<<<< HEAD
-},{"../../document":263,"../../helpers/get":290,"../../helpers/symbols":301,"../../utils":341}],289:[function(require,module,exports){
-'use strict';
-=======
 /**
  * Executes registered validation rules for this document.
  *
@@ -92328,7 +78716,6 @@ Document.prototype.isDirectSelected = function isDirectSelected(path) {
  * @return {Promise} Promise
  * @api public
  */
->>>>>>> A provider has a list of ids
 
 Document.prototype.validate = function(options, callback) {
   if (typeof options === 'function') {
@@ -92408,14 +78795,6 @@ function _getPathsToValidate(doc) {
   for (i = 0; i < len; ++i) {
     const path = paths[i];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../get":290}],290:[function(require,module,exports){
-'use strict';
-=======
-  if (warnings[path]) {
-    console.log('WARN: ' + warnings[path]);
-=======
     const _pathType = doc.schema.path(path);
     if (!_pathType ||
         !_pathType.$isMongooseArray ||
@@ -92433,9 +78812,7 @@ function _getPathsToValidate(doc) {
         paths.push(path + '.' + j);
       }
     }
->>>>>>> Add providers to patient
   }
->>>>>>> A provider has a list of ids
 
   const flattenOptions = { skipArrays: true };
   len = paths.length;
@@ -92514,21 +78891,6 @@ Document.prototype.$__validate = function(callback) {
       callback(null, _this);
     });
   }
-<<<<<<< HEAD
-  return obj[prop];
-}
-},{}],291:[function(require,module,exports){
-(function (process){
-/*!
- * Centralize this so we can more easily work around issues with people
- * stubbing out `process.nextTick()` in tests using sinon:
- * https://github.com/sinonjs/lolex#automatically-incrementing-mocked-time
- * See gh-6074
- */
-
-'use strict';
-=======
->>>>>>> A provider has a list of ids
 
   const validated = {};
   let total = 0;
@@ -92548,23 +78910,8 @@ Document.prototype.$__validate = function(callback) {
       return;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,require('_process'))
-},{"_process":356}],292:[function(require,module,exports){
-'use strict';
-=======
-    Object.defineProperty(schemaType.schema, 'base', {
-      configurable: true,
-      enumerable: false,
-      writable: false,
-      value: this.base
-    });
->>>>>>> A provider has a list of ids
-=======
     validated[path] = true;
     total++;
->>>>>>> Add providers to patient
 
     process.nextTick(function() {
       const p = _this.schema.path(path);
@@ -92664,34 +79011,6 @@ Document.prototype.validateSync = function(pathsToValidate) {
       return;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../../schema/symbols":329,"../../utils":341}],293:[function(require,module,exports){
-'use strict';
-=======
-    if (typeof cast === 'string') {
-      cast = MongooseTypes[cast.charAt(0).toUpperCase() + cast.substring(1)];
-    } else if (cast && (!cast[options.typeKey] || (options.typeKey === 'type' && cast.type.type))
-        && utils.isPOJO(cast)) {
-      if (Object.keys(cast).length) {
-        // The `minimize` and `typeKey` options propagate to child schemas
-        // declared inline, like `{ arr: [{ val: { $type: String } }] }`.
-        // See gh-3560
-        const childSchemaOptions = {minimize: options.minimize};
-        if (options.typeKey) {
-          childSchemaOptions.typeKey = options.typeKey;
-        }
-        //propagate 'strict' option to child schema
-        if (options.hasOwnProperty('strict')) {
-          childSchemaOptions.strict = options.strict;
-        }
-        const childSchema = new Schema(cast, childSchemaOptions);
-        childSchema.$implicitlyCreated = true;
-        return new MongooseTypes.DocumentArray(path, childSchema, obj);
-      } else {
-        // Special case: empty object becomes mixed
-        return new MongooseTypes.Array(path, MongooseTypes.Mixed, obj);
-=======
     const val = _this.getValue(path);
     const err = p.doValidateSync(val, _this, {
       skipSchemaValidators: skipSchemaValidators[path]
@@ -92701,15 +79020,10 @@ Document.prototype.validateSync = function(pathsToValidate) {
           err.name === 'ValidationError' &&
           p.schema.options.storeSubdocValidationError === false) {
         return;
->>>>>>> Add providers to patient
       }
       _this.invalidate(path, err, undefined, true);
     }
-<<<<<<< HEAD
->>>>>>> A provider has a list of ids
-=======
   });
->>>>>>> Add providers to patient
 
   const err = _this.$__.validationError;
   _this.$__.validationError = undefined;
@@ -92990,10 +79304,6 @@ Document.prototype.$__dirty = function() {
   return minimal;
 };
 
-<<<<<<< HEAD
-},{"../../utils":341,"../document/compile":288,"../get":290}],294:[function(require,module,exports){
-'use strict';
-=======
 /**
  * Assigns/compiles `schema` into this documents prototype.
  *
@@ -93003,7 +79313,6 @@ Document.prototype.$__dirty = function() {
  * @memberOf Document
  * @instance
  */
->>>>>>> A provider has a list of ids
 
 Document.prototype.$__setSchema = function(schema) {
   schema.plugin(idGetter, { deduplicate: true });
@@ -93045,20 +79354,6 @@ Document.prototype.$__getArrayPathsToValidate = function() {
     });
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  throw new MongooseError('Invalid ref at path "' + path + '". Got ' +
-    util.inspect(ref, { depth: 0 }));
-}
-},{"../../error/mongooseError":276,"util":362}],295:[function(require,module,exports){
-'use strict';
-=======
-  const createdAt = handleTimestampOption(timestamps, 'createdAt');
-  const updatedAt = handleTimestampOption(timestamps, 'updatedAt');
-  const schemaAdditions = {};
->>>>>>> A provider has a list of ids
-=======
->>>>>>> Add providers to patient
 
 /**
  * Get all subdocs (by bfs)
@@ -93111,19 +79406,10 @@ Document.prototype.$__getAllSubdocs = function() {
     return seed;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],296:[function(require,module,exports){
-'use strict';
-=======
-  this.add(schemaAdditions);
->>>>>>> A provider has a list of ids
-=======
   const _this = this;
   const subDocs = Object.keys(this._doc).reduce(function(seed, path) {
     return docReducer(_this, seed, path);
   }, []);
->>>>>>> Add providers to patient
 
   return subDocs;
 };
@@ -93185,33 +79471,12 @@ Document.prototype.$toObject = function(options, json) {
   defaultOptions = utils.options(defaultOptions, clone(baseOptions));
   defaultOptions = utils.options(defaultOptions, clone(schemaOptions[path] || {}));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./isDefiningProjection":295}],297:[function(require,module,exports){
-'use strict';
-=======
-  this.pre('findOneAndUpdate', _setTimestampsOnUpdate);
-  this.pre('replaceOne', _setTimestampsOnUpdate);
-  this.pre('update', _setTimestampsOnUpdate);
-  this.pre('updateOne', _setTimestampsOnUpdate);
-  this.pre('updateMany', _setTimestampsOnUpdate);
-=======
   // If options do not exist or is not an object, set it to empty object
   options = utils.isPOJO(options) ? clone(options) : {};
->>>>>>> Add providers to patient
 
   if (!('flattenMaps' in options)) {
     options.flattenMaps = defaultOptions.flattenMaps;
   }
-<<<<<<< HEAD
-};
->>>>>>> A provider has a list of ids
-
-/*!
- * ignore
- */
-=======
->>>>>>> Add providers to patient
 
   let _minimize;
   if (options.minimize != null) {
@@ -93272,18 +79537,7 @@ Document.prototype.$toObject = function(options, json) {
     delete ret[this.schema.options.versionKey];
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],298:[function(require,module,exports){
-'use strict';
-
-const get = require('../get');
-const utils = require('../../utils');
-=======
->>>>>>> A provider has a list of ids
-=======
   let transform = options.transform;
->>>>>>> Add providers to patient
 
   // In the case where a subdocument has its own transform function, we need to
   // check and see if the parent has a transform (options.transform) and if the
@@ -93604,12 +79858,6 @@ Document.prototype.inspect = function(options) {
   return this.toObject(opts);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../../utils":341,"../get":290}],299:[function(require,module,exports){
-'use strict';
-=======
-=======
 if (inspect.custom) {
   /*!
   * Avoid Node deprecation warning DEP0079
@@ -93618,7 +79866,6 @@ if (inspect.custom) {
   Document.prototype[inspect.custom] = Document.prototype.inspect;
 }
 
->>>>>>> Add providers to patient
 /**
  * Helper for console.log
  *
@@ -93645,7 +79892,6 @@ Document.prototype.toString = function() {
  * @memberOf Document
  * @instance
  */
->>>>>>> A provider has a list of ids
 
 Document.prototype.equals = function(doc) {
   if (!doc) {
@@ -93719,16 +79965,6 @@ Document.prototype.populate = function populate() {
   if (typeof args[args.length - 1] === 'function') {
     fn = args.pop();
   }
-<<<<<<< HEAD
-  return arg[prop];
-}
-},{}],300:[function(require,module,exports){
-'use strict';
-
-module.exports = function merge(s1, s2) {
-  s1.add(s2.obj);
-=======
->>>>>>> A provider has a list of ids
 
   // allow `doc.populate(callback)`
   if (args.length) {
@@ -93766,26 +80002,11 @@ module.exports = function merge(s1, s2) {
       });
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  s1.s.hooks.merge(s2.s.hooks, false);
-};
-},{}],301:[function(require,module,exports){
-'use strict';
-=======
-const setSafe = util.deprecate(function setSafe(options, value) {
-  options.safe = value === false ?
-    {w: 0} :
-    value;
-}, safeDeprecationWarning);
->>>>>>> A provider has a list of ids
-=======
     topLevelModel.populate(this, paths, fn);
   }
 
   return this;
 };
->>>>>>> Add providers to patient
 
 /**
  * Explicitly executes population and returns a promise. Useful for ES2015
@@ -93854,22 +80075,6 @@ Document.prototype.populated = function(path, val, options) {
     return undefined;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
-},{}],302:[function(require,module,exports){
-'use strict';
-=======
-Object.defineProperty(Schema, 'indexTypes', {
-  get: function() {
-    return indexTypes;
-  },
-  set: function() {
-    throw new Error('Cannot overwrite Schema.indexTypes');
-  }
-});
->>>>>>> A provider has a list of ids
-=======
   // internal
 
   if (val === true) {
@@ -93883,7 +80088,6 @@ Object.defineProperty(Schema, 'indexTypes', {
   this.$__.populated[path] = {value: val, options: options};
   return val;
 };
->>>>>>> Add providers to patient
 
 /**
  * Takes a populated field and returns it to its unpopulated state.
@@ -93973,8 +80177,8 @@ Document.prototype.$__fullPath = function(path) {
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":250,"./error":272,"./error/objectExpected":277,"./error/objectParameter":278,"./error/strict":281,"./helpers/common":285,"./helpers/document/cleanModifiedSubpaths":286,"./helpers/document/compile":287,"./helpers/document/getEmbeddedDiscriminatorPath":288,"./helpers/get":289,"./helpers/projection/isDefiningProjection":294,"./helpers/projection/isExclusive":295,"./helpers/symbols":300,"./internal":303,"./options":304,"./plugins/idGetter":305,"./schema/mixed":318,"./schematype":329,"./types/array":331,"./types/documentarray":334,"./types/embedded":335,"./utils":340,"./virtualtype":341,"_process":355,"events":247,"mpath":343,"util":361}],263:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")},require('_process'))
+},{"../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"./error":264,"./error/objectExpected":269,"./error/objectParameter":270,"./error/strict":273,"./helpers/common":277,"./helpers/document/cleanModifiedSubpaths":278,"./helpers/document/compile":279,"./helpers/document/getEmbeddedDiscriminatorPath":280,"./helpers/get":281,"./helpers/projection/isDefiningProjection":286,"./helpers/projection/isExclusive":287,"./helpers/symbols":292,"./internal":295,"./options":296,"./plugins/idGetter":297,"./schema/mixed":310,"./schematype":321,"./types/array":323,"./types/documentarray":326,"./types/embedded":327,"./utils":332,"./virtualtype":333,"_process":360,"events":356,"mpath":335,"util":363}],255:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -94006,29 +80210,13 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":254,"./document.js":262}],264:[function(require,module,exports){
+},{"./browserDocument.js":246,"./document.js":254}],256:[function(require,module,exports){
 'use strict';
 
 /*!
  * ignore
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  const createdAt = handleTimestampOption(timestamps, 'createdAt');
-  const updatedAt = handleTimestampOption(timestamps, 'updatedAt');
-  if (updatedAt != null) {
-    subdoc[updatedAt] = now;
-  }
-  if (createdAt != null) {
-    subdoc[createdAt] = now;
-  }
-}
-},{"../schema/handleTimestampOption":299}],303:[function(require,module,exports){
-'use strict';
-=======
-  return this;
-=======
 let driver = null;
 
 module.exports.get = function() {
@@ -94037,11 +80225,9 @@ module.exports.get = function() {
 
 module.exports.set = function(v) {
   driver = v;
->>>>>>> Add providers to patient
 };
->>>>>>> A provider has a list of ids
 
-},{}],265:[function(require,module,exports){
+},{}],257:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -94050,7 +80236,7 @@ module.exports.set = function(v) {
 
 module.exports = function() {};
 
-},{}],266:[function(require,module,exports){
+},{}],258:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -94066,17 +80252,7 @@ const Binary = require('bson').Binary;
 
 module.exports = exports = Binary;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  return updates;
-}
-
-},{"../get":290}],304:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
-=======
-},{"bson":83}],267:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"bson":80}],259:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -94085,23 +80261,13 @@ module.exports = exports = Binary;
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":83}],268:[function(require,module,exports){
+},{"bson":80}],260:[function(require,module,exports){
 /*!
  * Module exports.
  */
 
 'use strict';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./statemachine":331}],305:[function(require,module,exports){
-'use strict';
-=======
-  // look for arrays
-  return search(path.split('.'), _this);
-};
->>>>>>> A provider has a list of ids
-=======
 exports.Binary = require('./binary');
 exports.Collection = function() {
   throw new Error('Cannot create a collection from browser library');
@@ -94110,8 +80276,7 @@ exports.Decimal128 = require('./decimal128');
 exports.ObjectId = require('./objectid');
 exports.ReadPreference = require('./ReadPreference');
 
-},{"./ReadPreference":265,"./binary":266,"./decimal128":267,"./objectid":269}],269:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./ReadPreference":257,"./binary":258,"./decimal128":259,"./objectid":261}],261:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -94119,30 +80284,9 @@ exports.ReadPreference = require('./ReadPreference');
  * @see ObjectId
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.internalToObjectOptions = {
-  transform: false,
-  virtuals: false,
-  getters: false,
-  _skipDepopulateTopLevel: true,
-  depopulate: true,
-  flattenDecimals: false
-};
-
-},{}],306:[function(require,module,exports){
-'use strict';
-=======
-function isArrayFilter(piece) {
-  return piece.indexOf('$[') === 0 &&
-    piece.lastIndexOf(']') === piece.length - 1;
-}
->>>>>>> A provider has a list of ids
-=======
 'use strict';
 
 const ObjectId = require('bson').ObjectID;
->>>>>>> Add providers to patient
 
 /*!
  * Getter for convenience with populate, see gh-6115
@@ -94162,7 +80306,7 @@ Object.defineProperty(ObjectId.prototype, '_id', {
 
 module.exports = exports = ObjectId;
 
-},{"bson":83}],270:[function(require,module,exports){
+},{"bson":80}],262:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -94209,11 +80353,6 @@ function CastError(type, value, path, reason) {
 CastError.prototype = Object.create(MongooseError.prototype);
 CastError.prototype.constructor = MongooseError;
 
-<<<<<<< HEAD
-},{}],307:[function(require,module,exports){
-(function (global){
-=======
->>>>>>> A provider has a list of ids
 /*!
  * ignore
  */
@@ -94231,7 +80370,7 @@ CastError.prototype.setModel = function(model) {
 
 module.exports = CastError;
 
-},{"./mongooseError":275,"util":361}],271:[function(require,module,exports){
+},{"./mongooseError":267,"util":363}],263:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -94274,18 +80413,6 @@ function DivergentArrayError(paths) {
 DivergentArrayError.prototype = Object.create(MongooseError.prototype);
 DivergentArrayError.prototype.constructor = MongooseError;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"assert":77,"mquery":350}],308:[function(require,module,exports){
-'use strict';
-=======
-    if (cast === Object) {
-      cast = Mixed;
-    }
->>>>>>> A provider has a list of ids
-=======
->>>>>>> Add providers to patient
 
 /*!
  * exports
@@ -94293,7 +80420,7 @@ DivergentArrayError.prototype.constructor = MongooseError;
 
 module.exports = DivergentArrayError;
 
-},{"./":272}],272:[function(require,module,exports){
+},{"./":264}],264:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('./mongooseError');
@@ -94401,7 +80528,7 @@ MongooseError.MissingSchemaError = require('./missingSchema');
 
 MongooseError.DivergentArrayError = require('./divergentArray');
 
-},{"./cast":270,"./divergentArray":271,"./messages":273,"./missingSchema":274,"./mongooseError":275,"./notFound":276,"./overwriteModel":279,"./parallelSave":280,"./validation":282,"./validator":283,"./version":284}],273:[function(require,module,exports){
+},{"./cast":262,"./divergentArray":263,"./messages":265,"./missingSchema":266,"./mongooseError":267,"./notFound":268,"./overwriteModel":271,"./parallelSave":272,"./validation":274,"./validator":275,"./version":276}],265:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -94449,7 +80576,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],274:[function(require,module,exports){
+},{}],266:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -94490,7 +80617,7 @@ MissingSchemaError.prototype.constructor = MongooseError;
 
 module.exports = MissingSchemaError;
 
-},{"./":272}],275:[function(require,module,exports){
+},{"./":264}],267:[function(require,module,exports){
 'use strict';
 
 /**
@@ -94547,7 +80674,7 @@ MongooseError.prototype.constructor = Error;
 
 module.exports = MongooseError;
 
-},{}],276:[function(require,module,exports){
+},{}],268:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -94601,7 +80728,7 @@ DocumentNotFoundError.prototype.constructor = MongooseError;
 
 module.exports = DocumentNotFoundError;
 
-},{"./":272,"util":361}],277:[function(require,module,exports){
+},{"./":264,"util":363}],269:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -94638,19 +80765,9 @@ function ObjectExpectedError(path, val) {
 ObjectExpectedError.prototype = Object.create(MongooseError.prototype);
 ObjectExpectedError.prototype.constructor = MongooseError;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./helpers/get":290,"./helpers/projection/isDefiningProjection":295,"./utils":341}],309:[function(require,module,exports){
-(function (Buffer){
-=======
-},{"../cast":245,"../error/mongooseError":265,"../helpers/get":279,"../queryhelpers":297,"../schematype":319,"../types":326,"../utils":330,"./boolean":300,"./buffer":301,"./date":302,"./map":307,"./mixed":308,"./number":309,"./objectid":310,"./operators/exists":312,"./operators/geospatial":313,"./operators/helpers":314,"./operators/type":316,"./string":317,"util":361}],300:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-'use strict';
-=======
 module.exports = ObjectExpectedError;
->>>>>>> Add providers to patient
 
-},{"./":272}],278:[function(require,module,exports){
+},{"./":264}],270:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -94690,7 +80807,7 @@ ObjectParameterError.prototype.constructor = MongooseError;
 
 module.exports = ObjectParameterError;
 
-},{"./":272}],279:[function(require,module,exports){
+},{"./":264}],271:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -94729,7 +80846,7 @@ OverwriteModelError.prototype.constructor = MongooseError;
 
 module.exports = OverwriteModelError;
 
-},{"./":272}],280:[function(require,module,exports){
+},{"./":264}],272:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -94764,7 +80881,7 @@ ParallelSaveError.prototype.constructor = MongooseError;
 
 module.exports = ParallelSaveError;
 
-},{"./":272}],281:[function(require,module,exports){
+},{"./":264}],273:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -94804,7 +80921,7 @@ StrictModeError.prototype.constructor = MongooseError;
 
 module.exports = StrictModeError;
 
-},{"./":272}],282:[function(require,module,exports){
+},{"./":264}],274:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -94918,7 +81035,7 @@ function _generateMessage(err) {
 
 module.exports = exports = ValidationError;
 
-},{"./":272,"util":361}],283:[function(require,module,exports){
+},{"./":264,"util":363}],275:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -95009,7 +81126,7 @@ ValidatorError.prototype.toString = function() {
 
 module.exports = ValidatorError;
 
-},{"./":272}],284:[function(require,module,exports){
+},{"./":264}],276:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -95047,7 +81164,7 @@ VersionError.prototype.constructor = MongooseError;
 
 module.exports = VersionError;
 
-},{"./":272}],285:[function(require,module,exports){
+},{"./":264}],277:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -95138,7 +81255,7 @@ function shouldFlatten(val) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"../types/objectid":338,"../utils":340,"buffer":102}],286:[function(require,module,exports){
+},{"../types/objectid":330,"../utils":332,"buffer":355}],278:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -95165,7 +81282,7 @@ module.exports = function cleanModifiedSubpaths(doc, path, options) {
   return deleted;
 };
 
-},{}],287:[function(require,module,exports){
+},{}],279:[function(require,module,exports){
 'use strict';
 
 const get = require('../../helpers/get');
@@ -95314,7 +81431,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":262,"../../helpers/get":289,"../../helpers/symbols":300,"../../utils":340}],288:[function(require,module,exports){
+},{"../../document":254,"../../helpers/get":281,"../../helpers/symbols":292,"../../utils":332}],280:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -95359,7 +81476,7 @@ module.exports = function getEmbeddedDiscriminatorPath(doc, path, options) {
   return typeOnly ? type : schema;
 };
 
-},{"../get":289}],289:[function(require,module,exports){
+},{"../get":281}],281:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -95399,7 +81516,7 @@ function getProperty(obj, prop) {
   }
   return obj[prop];
 }
-},{}],290:[function(require,module,exports){
+},{}],282:[function(require,module,exports){
 (function (process){
 /*!
  * Centralize this so we can more easily work around issues with people
@@ -95415,7 +81532,7 @@ module.exports = function immediate(cb) {
 };
 
 }).call(this,require('_process'))
-},{"_process":355}],291:[function(require,module,exports){
+},{"_process":360}],283:[function(require,module,exports){
 'use strict';
 
 const symbols = require('../../schema/symbols');
@@ -95539,7 +81656,7 @@ function applyHooks(model, schema, options) {
   }
 }
 
-},{"../../schema/symbols":328,"../../utils":340}],292:[function(require,module,exports){
+},{"../../schema/symbols":320,"../../utils":332}],284:[function(require,module,exports){
 'use strict';
 
 const defineKey = require('../document/compile').defineKey;
@@ -95713,7 +81830,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   return schema;
 };
 
-},{"../../utils":340,"../document/compile":287,"../get":289}],293:[function(require,module,exports){
+},{"../../utils":332,"../document/compile":279,"../get":281}],285:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('../../error/mongooseError');
@@ -95733,7 +81850,7 @@ function validateRef(ref, path) {
   throw new MongooseError('Invalid ref at path "' + path + '". Got ' +
     util.inspect(ref, { depth: 0 }));
 }
-},{"../../error/mongooseError":275,"util":361}],294:[function(require,module,exports){
+},{"../../error/mongooseError":267,"util":363}],286:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -95753,7 +81870,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],295:[function(require,module,exports){
+},{}],287:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -95783,7 +81900,7 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"./isDefiningProjection":294}],296:[function(require,module,exports){
+},{"./isDefiningProjection":286}],288:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -95851,7 +81968,7 @@ function applyQueryMiddleware(Query, model) {
     });
 }
 
-},{}],297:[function(require,module,exports){
+},{}],289:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -95977,7 +82094,7 @@ module.exports = function getIndexes(schema) {
   }
 };
 
-},{"../../utils":340,"../get":289}],298:[function(require,module,exports){
+},{"../../utils":332,"../get":281}],290:[function(require,module,exports){
 'use strict';
 
 module.exports = handleTimestampOption;
@@ -96002,7 +82119,7 @@ function handleTimestampOption(arg, prop) {
   }
   return arg[prop];
 }
-},{}],299:[function(require,module,exports){
+},{}],291:[function(require,module,exports){
 'use strict';
 
 module.exports = function merge(s1, s2) {
@@ -96022,7 +82139,7 @@ module.exports = function merge(s1, s2) {
 
   s1.s.hooks.merge(s2.s.hooks, false);
 };
-},{}],300:[function(require,module,exports){
+},{}],292:[function(require,module,exports){
 'use strict';
 
 exports.validatorErrorSymbol = Symbol.for('mongoose:validatorError');
@@ -96034,7 +82151,7 @@ exports.modelSymbol = Symbol.for('mongoose#Model');
 exports.getSymbol = Symbol.for('mongoose#Document#get');
 
 exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
-},{}],301:[function(require,module,exports){
+},{}],293:[function(require,module,exports){
 'use strict';
 
 const handleTimestampOption = require('../schema/handleTimestampOption');
@@ -96208,7 +82325,7 @@ function applyTimestampsToSingleNested(subdoc, schematype, now) {
     subdoc[createdAt] = now;
   }
 }
-},{"../schema/handleTimestampOption":298}],302:[function(require,module,exports){
+},{"../schema/handleTimestampOption":290}],294:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -96275,7 +82392,7 @@ function applyTimestampsToUpdate(now, createdAt, updatedAt, currentUpdate, optio
   return updates;
 }
 
-},{"../get":289}],303:[function(require,module,exports){
+},{"../get":281}],295:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -96314,7 +82431,7 @@ function InternalCache() {
   this.fullPath = undefined;
 }
 
-},{"./statemachine":330}],304:[function(require,module,exports){
+},{"./statemachine":322}],296:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -96330,7 +82447,7 @@ exports.internalToObjectOptions = {
   flattenDecimals: false
 };
 
-},{}],305:[function(require,module,exports){
+},{}],297:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -96360,7 +82477,7 @@ function idGetter() {
   return null;
 }
 
-},{}],306:[function(require,module,exports){
+},{}],298:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -96413,7 +82530,7 @@ store.set(global.Promise);
 module.exports = store;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"assert":76,"mquery":349}],307:[function(require,module,exports){
+},{"assert":350,"mquery":341}],299:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -96586,28 +82703,13 @@ exports.applyPaths = function applyPaths(fields, schema) {
   const excluded = [];
   const stack = [];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":251,"./driver":265,"./helpers/get":290,"./helpers/model/applyHooks":292,"./helpers/populate/validateRef":294,"./helpers/query/applyQueryMiddleware":297,"./helpers/schema/getIndexes":298,"./helpers/schema/handleTimestampOption":299,"./helpers/schema/merge":300,"./helpers/update/applyTimestampsToChildren":302,"./helpers/update/applyTimestampsToUpdate":303,"./schema/index":317,"./schema/symbols":329,"./schematype":330,"./utils":341,"./virtualtype":342,"events":248,"kareem":252,"mpath":344,"util":362}],310:[function(require,module,exports){
-'use strict';
-=======
-  if (init) {
-    subdoc = new Constructor(void 0, selected, doc);
-    subdoc.init(val);
-  } else {
-    if (Object.keys(val).length === 0) {
-      return new Constructor({}, selected, doc);
-=======
   const analyzePath = function(path, type) {
     const plusPath = '+' + path;
     const hasPlusPath = fields && plusPath in fields;
     if (hasPlusPath) {
       // forced inclusion
       delete fields[plusPath];
->>>>>>> Add providers to patient
     }
->>>>>>> A provider has a list of ids
 
     if (typeof type.selected !== 'boolean') return;
 
@@ -96737,7 +82839,7 @@ exports.handleDeleteWriteOpResult = function handleDeleteWriteOpResult(callback)
   };
 };
 
-},{"./helpers/get":289,"./helpers/projection/isDefiningProjection":294,"./utils":340}],308:[function(require,module,exports){
+},{"./helpers/get":281,"./helpers/projection/isDefiningProjection":286,"./utils":332}],300:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -96989,49 +83091,6 @@ Schema.prototype.paths;
 /**
  * Schema as a tree
  *
-<<<<<<< HEAD
- * @param {String} $cond
- * @param {any} [val]
- * @api private
- */
-
-Mixed.prototype.castForQuery = function($cond, val) {
-  if (arguments.length === 2) {
-    return val;
-  }
-  return $cond;
-};
-
-/*!
- * Module exports.
- */
-
-module.exports = Mixed;
-
-<<<<<<< HEAD
-},{"../cast":256,"../error/mongooseError":276,"../helpers/get":290,"../queryhelpers":308,"../schematype":330,"../types":337,"../utils":341,"./boolean":311,"./buffer":312,"./date":313,"./map":318,"./mixed":319,"./number":320,"./objectid":321,"./operators/exists":323,"./operators/geospatial":324,"./operators/helpers":325,"./operators/type":327,"./string":328,"util":362}],311:[function(require,module,exports){
-=======
-},{"../schematype":319,"../utils":330,"./symbols":318}],309:[function(require,module,exports){
-(function (Buffer){
->>>>>>> A provider has a list of ids
-'use strict';
-
-/*!
- * Module requirements.
- */
-
-const MongooseError = require('../error');
-const SchemaType = require('../schematype');
-const castNumber = require('../cast/number');
-const handleBitwiseOperator = require('./operators/bitwise');
-const utils = require('../utils');
-
-const CastError = SchemaType.CastError;
-let Document;
-
-/**
- * Number SchemaType constructor.
-=======
  * ####Example:
  *     {
  *         '_id'     : ObjectId
@@ -97039,7 +83098,6 @@ let Document;
  *             'key' : String
  *         }
  *     }
->>>>>>> Add providers to patient
  *
  * @api private
  * @property tree
@@ -97188,101 +83246,8 @@ Schema.prototype.add = function add(obj, prefix) {
   prefix = prefix || '';
   const keys = Object.keys(obj);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*!
- * Module exports.
- */
-
-module.exports = SchemaBoolean;
-
-},{"../cast/boolean":257,"../error/cast":271,"../schematype":330,"../utils":341}],312:[function(require,module,exports){
-(function (Buffer){
-/*!
- * Module dependencies.
- */
-
-'use strict';
-
-const handleBitwiseOperator = require('./operators/bitwise');
-const utils = require('../utils');
-
-const MongooseBuffer = require('../types/buffer');
-const SchemaType = require('../schematype');
-
-const Binary = MongooseBuffer.Binary;
-const CastError = SchemaType.CastError;
-let Document;
-
-/**
- * Buffer SchemaType constructor
- *
- * @param {String} key
- * @param {Object} options
- * @inherits SchemaType
- * @api public
- */
-
-function SchemaBuffer(key, options) {
-  SchemaType.call(this, key, options, 'Buffer');
-}
-
-/**
- * This schema type's name, to defend against minifiers that mangle
- * function names.
- *
- * @api public
- */
-SchemaBuffer.schemaName = 'Buffer';
-
-/*!
- * Inherits from SchemaType.
- */
-SchemaBuffer.prototype = Object.create(SchemaType.prototype);
-SchemaBuffer.prototype.constructor = SchemaBuffer;
-
-/*!
- * ignore
- */
-
-SchemaBuffer._checkRequired = v => !!(v && v.length);
-
-=======
->>>>>>> A provider has a list of ids
-/**
- * Sets a maximum number validator.
- *
- * ####Example:
- *
- *     var s = new Schema({ n: { type: Number, max: 10 })
- *     var M = db.model('M', s)
- *     var m = new M({ n: 11 })
- *     m.save(function (err) {
- *       console.error(err) // validator error
- *       m.n = 10;
- *       m.save() // success
- *     })
- *
- *     // custom error messages
- *     // We can also use the special {MAX} token which will be replaced with the invalid value
- *     var max = [10, 'The value of path `{PATH}` ({VALUE}) exceeds the limit ({MAX}).'];
- *     var schema = new Schema({ n: { type: Number, max: max })
- *     var M = mongoose.model('Measurement', schema);
- *     var s= new M({ n: 4 });
- *     s.validate(function (err) {
- *       console.log(String(err)) // ValidationError: The value of path `n` (4) exceeds the limit (10).
- *     })
- *
- * @param {Number} maximum number
- * @param {String} [message] optional custom error message
- * @return {SchemaType} this
- * @see Customized Error Messages #error_messages_MongooseError-messages
- * @api public
- */
-=======
   for (let i = 0; i < keys.length; ++i) {
     const key = keys[i];
->>>>>>> Add providers to patient
 
     if (obj[key] == null) {
       throw new TypeError('Invalid value for schema path `' + prefix + key + '`');
@@ -97470,26 +83435,12 @@ Schema.prototype.path = function(path, obj) {
         schemaType.schema.singleNestedPaths[key];
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../schematype":330,"../types/buffer":333,"../utils":341,"./../document":263,"./operators/bitwise":322}],313:[function(require,module,exports){
-=======
-}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
-},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":357,"../cast/number":249,"../error":262,"../schematype":319,"../utils":330,"./../document":252,"./operators/bitwise":311}],310:[function(require,module,exports){
-(function (Buffer){
->>>>>>> A provider has a list of ids
-/*!
- * Module dependencies.
- */
-=======
     Object.defineProperty(schemaType.schema, 'base', {
       configurable: true,
       enumerable: false,
       writable: false,
       value: this.base
     });
->>>>>>> Add providers to patient
 
     schemaType.caster.base = this.base;
     this.childSchemas.push({
@@ -98098,18 +84049,6 @@ Schema.prototype.post = function(name) {
   return this;
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../cast/date":258,"../error":273,"../schematype":330,"../utils":341}],314:[function(require,module,exports){
-=======
-},{}],317:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-(function (Buffer){
-'use strict';
-
-/*!
- * Module dependencies.
-=======
 /**
  * Registers a plugin for this schema.
  *
@@ -98123,7 +84062,6 @@ Schema.prototype.post = function(name) {
  * @param {Object} [opts]
  * @see plugins
  * @api public
->>>>>>> Add providers to patient
  */
 
 Schema.prototype.plugin = function(fn, opts) {
@@ -98390,44 +84328,6 @@ Schema.prototype.virtual = function(name, options) {
     if (!options.foreignField) {
       throw new Error('Reference virtuals require `foreignField` option');
     }
-<<<<<<< HEAD
-  }
-<<<<<<< HEAD
-};
-
-/*!
- * ignore
- */
-
-function handleSingle(val) {
-  return this.cast(val);
-}
-
-Decimal128.prototype.$conditionalHandlers =
-    utils.options(SchemaType.prototype.$conditionalHandlers, {
-      $gt: handleSingle,
-      $gte: handleSingle,
-      $lt: handleSingle,
-      $lte: handleSingle
-    });
-
-/*!
- * Module exports.
- */
-
-module.exports = Decimal128;
-
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/decimal128":259,"../schematype":330,"../types/decimal128":334,"../utils":341,"./../document":263}],315:[function(require,module,exports){
-'use strict';
-
-/*!
- * Module dependencies.
- */
-=======
->>>>>>> A provider has a list of ids
-=======
->>>>>>> Add providers to patient
 
     this.pre('init', function(obj) {
       if (mpath.has(name, obj)) {
@@ -98772,31 +84672,9 @@ Schema.prototype._getPathType = function(path) {
     return { schema: foundschema || schema, pathType: 'undefined' };
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  return hasKeys && selected || undefined;
-}
-
-/*!
- * Module exports.
- */
-
-module.exports = DocumentArray;
-
-},{"../error/cast":271,"../helpers/model/discriminator":293,"../queryhelpers":308,"../schematype":330,"../types/documentarray":335,"../types/embedded":336,"../utils":341,"./array":310,"events":248,"util":362}],316:[function(require,module,exports){
-'use strict';
-
-/*!
- * Module dependencies.
- */
-=======
-  return this._castForQuery(val);
-=======
   // look for arrays
   return search(path.split('.'), _this);
->>>>>>> Add providers to patient
 };
->>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -98850,8 +84728,8 @@ Schema.Types = MongooseTypes = require('./schema/index');
 
 exports.ObjectId = MongooseTypes.ObjectId;
 
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":250,"./driver":264,"./helpers/get":289,"./helpers/model/applyHooks":291,"./helpers/populate/validateRef":293,"./helpers/query/applyQueryMiddleware":296,"./helpers/schema/getIndexes":297,"./helpers/schema/handleTimestampOption":298,"./helpers/schema/merge":299,"./helpers/update/applyTimestampsToChildren":301,"./helpers/update/applyTimestampsToUpdate":302,"./schema/index":316,"./schema/symbols":328,"./schematype":329,"./utils":340,"./virtualtype":341,"events":247,"kareem":251,"mpath":343,"util":361}],309:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"./driver":256,"./helpers/get":281,"./helpers/model/applyHooks":283,"./helpers/populate/validateRef":285,"./helpers/query/applyQueryMiddleware":288,"./helpers/schema/getIndexes":289,"./helpers/schema/handleTimestampOption":290,"./helpers/schema/merge":291,"./helpers/update/applyTimestampsToChildren":293,"./helpers/update/applyTimestampsToUpdate":294,"./schema/index":308,"./schema/symbols":320,"./schematype":321,"./utils":332,"./virtualtype":333,"events":356,"kareem":243,"mpath":335,"util":363}],301:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -99279,7 +85157,7 @@ handle.$in = SchemaType.prototype.$conditionalHandlers.$in;
 
 module.exports = SchemaArray;
 
-},{"../cast":255,"../error/mongooseError":275,"../helpers/get":289,"../queryhelpers":307,"../schematype":329,"../types":336,"../utils":340,"./boolean":310,"./buffer":311,"./date":312,"./map":317,"./mixed":318,"./number":319,"./objectid":320,"./operators/exists":322,"./operators/geospatial":323,"./operators/helpers":324,"./operators/type":326,"./string":327,"util":361}],310:[function(require,module,exports){
+},{"../cast":247,"../error/mongooseError":267,"../helpers/get":281,"../queryhelpers":299,"../schematype":321,"../types":328,"../utils":332,"./boolean":302,"./buffer":303,"./date":304,"./map":309,"./mixed":310,"./number":311,"./objectid":312,"./operators/exists":314,"./operators/geospatial":315,"./operators/helpers":316,"./operators/type":318,"./string":319,"util":363}],302:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -99348,85 +85226,9 @@ SchemaBoolean._cast = castBoolean;
  * @api public
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Embedded.prototype.discriminator = function(name, schema) {
-  discriminator(this.caster, name, schema);
-
-  this.caster.discriminators[name] = _createConstructor(schema);
-
-  return this.caster.discriminators[name];
-};
-
-},{"../error/cast":271,"../error/objectExpected":278,"../helpers/get":290,"../helpers/model/discriminator":293,"../options":305,"../queryhelpers":308,"../schematype":330,"../types/subdocument":340,"./operators/exists":323,"./operators/geospatial":324,"./operators/helpers":325,"events":248}],317:[function(require,module,exports){
-
-/*!
- * Module exports.
- */
-
-'use strict';
-
-exports.String = require('./string');
-
-exports.Number = require('./number');
-
-exports.Boolean = require('./boolean');
-
-exports.DocumentArray = require('./documentarray');
-
-exports.Embedded = require('./embedded');
-
-exports.Array = require('./array');
-
-exports.Buffer = require('./buffer');
-
-exports.Date = require('./date');
-
-exports.ObjectId = require('./objectid');
-
-exports.Mixed = require('./mixed');
-
-exports.Decimal128 = exports.Decimal = require('./decimal128');
-
-exports.Map = require('./map');
-
-// alias
-
-exports.Oid = exports.ObjectId;
-exports.Object = exports.Mixed;
-exports.Bool = exports.Boolean;
-
-},{"./array":310,"./boolean":311,"./buffer":312,"./date":313,"./decimal128":314,"./documentarray":315,"./embedded":316,"./map":318,"./mixed":319,"./number":320,"./objectid":321,"./string":328}],318:[function(require,module,exports){
-'use strict';
-
-/*!
- * ignore
- */
-
-const MongooseMap = require('../types/map');
-const SchemaType = require('../schematype');
-
-/*!
- * ignore
- */
-
-class Map extends SchemaType {
-  constructor(key, options) {
-    super(key, options, 'Map');
-    this.$isSchemaMap = true;
-=======
-SchemaType.prototype.required = function(required, message) {
-  let customOptions = {};
-  if (typeof required === 'object') {
-    customOptions = required;
-    message = customOptions.message || message;
-    required = required.isRequired;
->>>>>>> A provider has a list of ids
-=======
 SchemaBoolean.cast = function cast(caster) {
   if (arguments.length === 0) {
     return this._cast;
->>>>>>> Add providers to patient
   }
   if (caster === false) {
     caster = v => {
@@ -99436,21 +85238,7 @@ SchemaBoolean.cast = function cast(caster) {
       return v;
     };
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
-module.exports = Map;
-
-},{"../schematype":330,"../types/map":338}],319:[function(require,module,exports){
-/*!
- * Module dependencies.
- */
-=======
->>>>>>> A provider has a list of ids
-=======
   this._cast = caster;
->>>>>>> Add providers to patient
 
   return this._cast;
 };
@@ -99558,30 +85346,10 @@ SchemaBoolean.$conditionalHandlers =
  * @api private
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module.exports = Mixed;
-
-},{"../schematype":330,"../utils":341,"./symbols":329}],320:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-SchemaType.prototype._applySetters = function(value, scope, init, priorVal) {
-  let v = value;
-  const setters = this.setters;
-  let len = setters.length;
-  const caster = this.caster;
->>>>>>> A provider has a list of ids
-
-  while (len--) {
-    v = setters[len].call(scope, v, this);
-  }
-=======
 SchemaBoolean.prototype.castForQuery = function($conditional, val) {
   let handler;
   if (arguments.length === 2) {
     handler = SchemaBoolean.$conditionalHandlers[$conditional];
->>>>>>> Add providers to patient
 
     if (handler) {
       return handler.call(this, val);
@@ -99599,7 +85367,7 @@ SchemaBoolean.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBoolean;
 
-},{"../cast/boolean":256,"../error/cast":270,"../schematype":329,"../utils":340}],311:[function(require,module,exports){
+},{"../cast/boolean":248,"../error/cast":262,"../schematype":321,"../utils":332}],303:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -99852,8 +85620,8 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBuffer;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../schematype":329,"../types/buffer":332,"../utils":340,"./../document":262,"./operators/bitwise":321}],312:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../schematype":321,"../types/buffer":324,"../utils":332,"./../document":254,"./operators/bitwise":313}],304:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -99983,26 +85751,7 @@ SchemaDate.prototype.expires = function(when) {
 };
 
 /*!
-<<<<<<< HEAD
-<<<<<<< HEAD
- * Module exports.
- */
-
-module.exports = SchemaNumber;
-
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/number":260,"../error":273,"../schematype":330,"../utils":341,"./../document":263,"./operators/bitwise":322}],321:[function(require,module,exports){
-(function (Buffer){
-/*!
- * Module dependencies.
-=======
- * Internal switch for runSetters
- *
- * @api private
->>>>>>> A provider has a list of ids
-=======
  * ignore
->>>>>>> Add providers to patient
  */
 
 SchemaDate._checkRequired = v => v instanceof Date;
@@ -100228,7 +85977,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaDate;
 
-},{"../cast/date":257,"../error":272,"../schematype":329,"../utils":340}],313:[function(require,module,exports){
+},{"../cast/date":249,"../error":264,"../schematype":321,"../utils":332}],305:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -100441,8 +86190,8 @@ Decimal128.prototype.$conditionalHandlers =
 
 module.exports = Decimal128;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../cast/decimal128":258,"../schematype":329,"../types/decimal128":333,"../utils":340,"./../document":262}],314:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../cast/decimal128":250,"../schematype":321,"../types/decimal128":325,"../utils":332,"./../document":254}],306:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -100471,32 +86220,9 @@ let Subdocument;
  * @api public
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/objectid":261,"../schematype":330,"../types/objectid":339,"../utils":341,"./../document":263}],322:[function(require,module,exports){
-(function (Buffer){
-/*!
- * Module requirements.
- */
-=======
-  /**
-   * Depopulates stored atomic operation values as necessary for direct insertion to MongoDB.
-   *
-   * If no atomics exist, we return all array values after conversion.
-   *
-   * @return {Array}
-   * @method $__getAtomics
-   * @memberOf MongooseArray
-   * @instance
-   * @api private
-   */
->>>>>>> A provider has a list of ids
-=======
 function DocumentArray(key, schema, options, schemaOptions) {
   const EmbeddedDocument = _createConstructor(schema, options);
   EmbeddedDocument.prototype.$basePath = key;
->>>>>>> Add providers to patient
 
   ArrayType.call(this, key, EmbeddedDocument, options);
 
@@ -100538,18 +86264,7 @@ DocumentArray.schemaName = 'DocumentArray';
  * @api public
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":251,"../../error/cast":271}],323:[function(require,module,exports){
-'use strict';
-=======
-    return ret;
-  },
->>>>>>> A provider has a list of ids
-=======
 DocumentArray.options = { castNonArrays: true };
->>>>>>> Add providers to patient
 
 /*!
  * Inherits from ArrayType.
@@ -100564,30 +86279,9 @@ DocumentArray.prototype.constructor = DocumentArray;
 function _createConstructor(schema, options) {
   Subdocument || (Subdocument = require('../types/embedded'));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../../cast/boolean":257}],324:[function(require,module,exports){
-/*!
- * Module requirements.
- */
-=======
-  /**
-   * Internal helper for .map()
-   *
-   * @api private
-   * @return {Number}
-   * @method _mapCast
-   * @memberOf MongooseArray
-   */
-  _mapCast: function(val, index) {
-    return this._cast(val, this.length + index);
-  },
->>>>>>> A provider has a list of ids
-=======
   // compile an embedded document for this schema
   function EmbeddedDocument() {
     Subdocument.apply(this, arguments);
->>>>>>> Add providers to patient
 
     this.$session(this.ownerDocument().$session());
   }
@@ -100727,31 +86421,12 @@ DocumentArray.prototype.doValidate = function(array, fn, scope, options) {
  * @api private
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../array":310,"./helpers":325}],325:[function(require,module,exports){
-'use strict';
-=======
-  /**
-   * Wraps [`Array#splice`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice) with proper change tracking and casting.
-   *
-   * ####Note:
-   *
-   * _marks the entire array as modified, which if saved, will store it as a `$set` operation, potentially overwritting any changes that happen between when you retrieved the object and when you save it._
-   *
-   * @api public
-   * @method splice
-   * @memberOf MongooseArray
-   */
->>>>>>> A provider has a list of ids
-=======
 DocumentArray.prototype.doValidateSync = function(array, scope) {
   const schemaTypeError = SchemaType.prototype.doValidateSync.call(this, array, scope);
   if (schemaTypeError != null) {
     schemaTypeError.$isArrayValidatorError = true;
     return schemaTypeError;
   }
->>>>>>> Add providers to patient
 
   const count = array && array.length;
   let resultError = null;
@@ -100788,28 +86463,9 @@ DocumentArray.prototype.doValidateSync = function(array, scope) {
   return resultError;
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../number":320}],326:[function(require,module,exports){
-'use strict';
-=======
-  /**
-   * Wraps [`Array#sort`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort) with proper change tracking.
-   *
-   * ####NOTE:
-   *
-   * _marks the entire array as modified, which if saved, will store it as a `$set` operation, potentially overwritting any changes that happen between when you retrieved the object and when you save it._
-   *
-   * @api public
-   * @method sort
-   * @memberOf MongooseArray
-   */
->>>>>>> A provider has a list of ids
-=======
 /*!
  * ignore
  */
->>>>>>> Add providers to patient
 
 DocumentArray.prototype.getDefault = function(scope) {
   let ret = typeof this.defaultValue === 'function'
@@ -100836,22 +86492,7 @@ DocumentArray.prototype.getDefault = function(scope) {
       undefined, i);
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../../cast/boolean":257,"../../cast/string":262,"../../error/cast":271}],327:[function(require,module,exports){
-'use strict';
-=======
-      if (!found) {
-        [].push.call(this, v);
-        this._registerAtomic('$addToSet', v);
-        this._markModified();
-        [].push.call(added, v);
-      }
-    }, this);
->>>>>>> A provider has a list of ids
-=======
   ret._parent = _parent;
->>>>>>> Add providers to patient
 
   return ret;
 };
@@ -100868,28 +86509,10 @@ DocumentArray.prototype.cast = function(value, doc, init, prev, options) {
   // lazy load
   MongooseDocumentArray || (MongooseDocumentArray = require('../types/documentarray'));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],328:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-  /**
-   * Returns a native js Array.
-   *
-   * @param {Object} options
-   * @return {Array}
-   * @api public
-   * @method toObject
-   * @memberOf MongooseArray
-   */
->>>>>>> A provider has a list of ids
-=======
   let selected;
   let subdoc;
   let i;
   const _opts = { transform: false, virtuals: false };
->>>>>>> Add providers to patient
 
   if (!Array.isArray(value)) {
     if (!init && !DocumentArray.options.castNonArrays) {
@@ -101048,7 +86671,7 @@ function scopePaths(array, fields, init) {
 
 module.exports = DocumentArray;
 
-},{"../error/cast":270,"../helpers/model/discriminator":292,"../queryhelpers":307,"../schematype":329,"../types/documentarray":334,"../types/embedded":335,"../utils":340,"./array":309,"events":247,"util":361}],315:[function(require,module,exports){
+},{"../error/cast":262,"../helpers/model/discriminator":284,"../queryhelpers":299,"../schematype":321,"../types/documentarray":326,"../types/embedded":327,"../utils":332,"./array":301,"events":356,"util":363}],307:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -101370,7 +86993,7 @@ Embedded.prototype.discriminator = function(name, schema) {
   return this.caster.discriminators[name];
 };
 
-},{"../error/cast":270,"../error/objectExpected":277,"../helpers/get":289,"../helpers/model/discriminator":292,"../options":304,"../queryhelpers":307,"../schematype":329,"../types/subdocument":339,"./operators/exists":322,"./operators/geospatial":323,"./operators/helpers":324,"events":247}],316:[function(require,module,exports){
+},{"../error/cast":262,"../error/objectExpected":269,"../helpers/get":281,"../helpers/model/discriminator":284,"../options":296,"../queryhelpers":299,"../schematype":321,"../types/subdocument":331,"./operators/exists":314,"./operators/geospatial":315,"./operators/helpers":316,"events":356}],308:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -101408,7 +87031,7 @@ exports.Oid = exports.ObjectId;
 exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 
-},{"./array":309,"./boolean":310,"./buffer":311,"./date":312,"./decimal128":313,"./documentarray":314,"./embedded":315,"./map":317,"./mixed":318,"./number":319,"./objectid":320,"./string":327}],317:[function(require,module,exports){
+},{"./array":301,"./boolean":302,"./buffer":303,"./date":304,"./decimal128":305,"./documentarray":306,"./embedded":307,"./map":309,"./mixed":310,"./number":311,"./objectid":312,"./string":319}],309:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -101449,7 +87072,7 @@ class Map extends SchemaType {
 
 module.exports = Map;
 
-},{"../schematype":329,"../types/map":337}],318:[function(require,module,exports){
+},{"../schematype":321,"../types/map":329}],310:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -101556,7 +87179,7 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../schematype":329,"../utils":340,"./symbols":328}],319:[function(require,module,exports){
+},{"../schematype":321,"../utils":332,"./symbols":320}],311:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -101606,33 +87229,12 @@ function SchemaNumber(key, options) {
 
 SchemaNumber.get = SchemaType.get;
 
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/string":262,"../error":273,"../schematype":330,"../utils":341,"./../document":263}],329:[function(require,module,exports){
-'use strict';
-=======
 /*!
  * ignore
  */
-<<<<<<< HEAD
-EmbeddedDocument.prototype = Object.create(Document.prototype);
-EmbeddedDocument.prototype.constructor = EmbeddedDocument;
->>>>>>> A provider has a list of ids
-=======
->>>>>>> Add providers to patient
 
 SchemaNumber._cast = castNumber;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
-},{}],330:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-EmbeddedDocument.prototype.toBSON = function() {
-  return this.toObject(internalToObjectOptions);
-=======
 /**
  * Get/set the function used to cast arbitrary values to numbers.
  *
@@ -101670,9 +87272,7 @@ SchemaNumber.cast = function cast(caster) {
   this._cast = caster;
 
   return this._cast;
->>>>>>> Add providers to patient
 };
->>>>>>> A provider has a list of ids
 
 /**
  * This schema type's name, to defend against minifiers that mangle
@@ -101953,8 +87553,8 @@ SchemaNumber.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaNumber;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../cast/number":259,"../error":272,"../schematype":329,"../utils":340,"./../document":262,"./operators/bitwise":321}],320:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../cast/number":251,"../error":264,"../schematype":321,"../utils":332,"./../document":254,"./operators/bitwise":313}],312:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -102249,8 +87849,8 @@ function resetId(v) {
 
 module.exports = ObjectId;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../cast/objectid":260,"../schematype":329,"../types/objectid":338,"../utils":340,"./../document":262}],321:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../cast/objectid":252,"../schematype":321,"../types/objectid":330,"../utils":332,"./../document":254}],313:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -102291,8 +87891,8 @@ function _castNumber(path, num) {
 
 module.exports = handleBitwiseOperator;
 
-}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":250,"../../error/cast":270}],322:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../../error/cast":262}],314:[function(require,module,exports){
 'use strict';
 
 const castBoolean = require('../../cast/boolean');
@@ -102306,7 +87906,7 @@ module.exports = function(val) {
   return castBoolean(val, path);
 };
 
-},{"../../cast/boolean":256}],323:[function(require,module,exports){
+},{"../../cast/boolean":248}],315:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -102410,7 +88010,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":309,"./helpers":324}],324:[function(require,module,exports){
+},{"../array":301,"./helpers":316}],316:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -102444,7 +88044,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":319}],325:[function(require,module,exports){
+},{"../number":311}],317:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -102485,7 +88085,7 @@ module.exports = function(val, path) {
   return val;
 };
 
-},{"../../cast/boolean":256,"../../cast/string":261,"../../error/cast":270}],326:[function(require,module,exports){
+},{"../../cast/boolean":248,"../../cast/string":253,"../../error/cast":262}],318:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -102500,7 +88100,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],327:[function(require,module,exports){
+},{}],319:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -103115,32 +88715,16 @@ SchemaString.prototype.castForQuery = function($conditional, val) {
  * Module exports.
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module.exports = exports = SchemaType;
-
-exports.CastError = CastError;
-
-exports.ValidatorError = ValidatorError;
-
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":251,"./error":273,"./helpers/get":290,"./helpers/immediate":291,"./helpers/symbols":301,"./schema/operators/exists":323,"./schema/operators/type":327,"./utils":341}],331:[function(require,module,exports){
-=======
-exports.merge = function merge(to, from, options, path) {
-  options = options || {};
->>>>>>> A provider has a list of ids
-=======
 module.exports = SchemaString;
->>>>>>> Add providers to patient
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../cast/string":261,"../error":272,"../schematype":329,"../utils":340,"./../document":262}],328:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../cast/string":253,"../error":264,"../schematype":321,"../utils":332,"./../document":254}],320:[function(require,module,exports){
 'use strict';
 
 exports.schemaMixedSymbol = Symbol.for('mongoose:schema_mixed');
 
 exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
-},{}],329:[function(require,module,exports){
+},{}],321:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -103350,39 +88934,10 @@ SchemaType.prototype.default = function(val) {
  * @api public
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-StateMachine.prototype.map = function map() {
-  this.map = this._iter('map');
-  return this.map.apply(this, arguments);
-};
-
-},{"./utils":341}],332:[function(require,module,exports){
-(function (Buffer){
-/*!
- * Module dependencies.
- */
-=======
-exports.isMongooseObject = function(v) {
-  Document || (Document = require('./document'));
-  MongooseArray || (MongooseArray = require('./types').Array);
-  MongooseBuffer || (MongooseBuffer = require('./types').Buffer);
->>>>>>> A provider has a list of ids
-
-  if (v == null) {
-    return false;
-  }
-
-  return v.$__ != null || // Document
-    v.isMongooseArray || // Array or Document Array
-    v.isMongooseBuffer || // Buffer
-    v.$isMongooseMap; // Map
-=======
 SchemaType.prototype.index = function(options) {
   this._index = options;
   utils.expires(this._index);
   return this;
->>>>>>> Add providers to patient
 };
 
 /**
@@ -104333,19 +89888,6 @@ function handleSingle(val) {
  * ignore
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../document":263,"../helpers/document/cleanModifiedSubpaths":287,"../helpers/get":290,"../options":305,"../utils":341,"./embedded":336,"./objectid":339,"util":362}],333:[function(require,module,exports){
-/*!
- * Module dependencies.
- */
-=======
-  if (!Array.isArray(parts)) {
-    throw new TypeError('Invalid `path`. Must be either string or array');
-  }
->>>>>>> A provider has a list of ids
-=======
 function handleArray(val) {
   const _this = this;
   if (!Array.isArray(val)) {
@@ -104355,7 +89897,6 @@ function handleArray(val) {
     return _this.castForQuery(m);
   });
 }
->>>>>>> Add providers to patient
 
 /*!
  * Just like handleArray, except also allows `[]` because surprisingly
@@ -104481,8 +90022,8 @@ exports.CastError = CastError;
 
 exports.ValidatorError = ValidatorError;
 
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":250,"./error":272,"./helpers/get":289,"./helpers/immediate":290,"./helpers/symbols":300,"./schema/operators/exists":322,"./schema/operators/type":326,"./utils":340}],330:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"./error":264,"./helpers/get":281,"./helpers/immediate":282,"./helpers/symbols":292,"./schema/operators/exists":314,"./schema/operators/type":318,"./utils":332}],322:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -104664,7 +90205,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":340}],331:[function(require,module,exports){
+},{"./utils":332}],323:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -104736,22 +90277,12 @@ MongooseArray.mixin = {
     return this.toObject(internalToObjectOptions);
   },
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../driver":265,"../utils":341,"safe-buffer":358}],334:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
-/**
- * Expose
- */
-=======
   /**
    * Stores a queue of atomic operations to perform
    *
    * @property _atomics
    * @api private
    */
->>>>>>> Add providers to patient
 
   _atomics: undefined,
 
@@ -104765,19 +90296,6 @@ MongooseArray.mixin = {
 
   _parent: undefined,
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../driver":265}],335:[function(require,module,exports){
-(function (Buffer){
-'use strict';
-=======
-exports.isMongo = !exports.isNode
-           && 'function' == typeof printjson
-           && 'function' == typeof ObjectId
-           && 'function' == typeof rs
-           && 'function' == typeof sh;
->>>>>>> A provider has a list of ids
-=======
   /**
    * Casts a member based on this arrays schema.
    *
@@ -104787,7 +90305,6 @@ exports.isMongo = !exports.isNode
    * @api private
    * @memberOf MongooseArray
    */
->>>>>>> Add providers to patient
 
   _cast: function(value) {
     let populated = false;
@@ -105243,27 +90760,7 @@ exports.isMongo = !exports.isNode
       this._registerAtomic('$pullAll', values);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":251,"../cast/objectid":261,"../document":263,"../helpers/get":290,"../helpers/symbols":301,"../options":305,"../queryhelpers":308,"../utils":341,"./array":332,"./objectid":339,"util":362}],336:[function(require,module,exports){
-/* eslint no-func-assign: 1 */
-=======
-/**
- * Specifies arguments for an `$or` condition.
- *
- * ####Example
- *
- *     query.or([{ color: 'red' }, { status: 'emergency' }])
- *
- * @param {Array} array array of conditions
- * @return {Query} this
- * @api public
- */
->>>>>>> A provider has a list of ids
-=======
     this._markModified();
->>>>>>> Add providers to patient
 
     // Might have modified child paths and then pulled, like
     // `doc.children[1].name = 'test';` followed by
@@ -105559,8 +91056,8 @@ function _checkManualPopulation(arr, docs) {
 
 module.exports = exports = MongooseArray;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../document":262,"../helpers/document/cleanModifiedSubpaths":286,"../helpers/get":289,"../options":304,"../utils":340,"./embedded":335,"./objectid":338,"util":361}],332:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../document":254,"../helpers/document/cleanModifiedSubpaths":278,"../helpers/get":281,"../options":296,"../utils":332,"./embedded":327,"./objectid":330,"util":363}],324:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -105847,33 +91344,10 @@ MongooseBuffer.mixin.equals = function(other) {
  * @receiver MongooseBuffer
  */
 
-<<<<<<< HEAD
-Query.prototype.geometry = function geometry() {
-  if (!('$within' == this._geoComparison ||
-        '$geoWithin' == this._geoComparison ||
-        '$near' == this._geoComparison ||
-        '$geoIntersects' == this._geoComparison)) {
-    throw new Error('geometry() must come after `within()`, `intersects()`, or `near()');
-  }
-
-  var val, path;
-
-<<<<<<< HEAD
-},{"../document_provider":264,"../helpers/get":290,"../helpers/immediate":291,"../helpers/symbols":301,"../options":305,"../utils":341,"events":248,"util":362}],337:[function(require,module,exports){
-=======
-  if (1 === arguments.length) {
-    this._ensurePath('geometry');
-    path = this._path;
-    val = arguments[0];
-  } else {
-    throw new TypeError('Invalid argument');
-=======
 MongooseBuffer.mixin.subtype = function(subtype) {
   if (typeof subtype !== 'number') {
     throw new TypeError('Invalid subtype. Expected a number');
->>>>>>> Add providers to patient
   }
->>>>>>> A provider has a list of ids
 
   if (this._subtype !== subtype) {
     this._markModified();
@@ -105890,7 +91364,7 @@ MongooseBuffer.Binary = Binary;
 
 module.exports = MongooseBuffer;
 
-},{"../driver":264,"../utils":340,"safe-buffer":357}],333:[function(require,module,exports){
+},{"../driver":256,"../utils":332,"safe-buffer":348}],325:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -105905,18 +91379,9 @@ module.exports = MongooseBuffer;
 
 module.exports = require('../driver').get().Decimal128;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./array":332,"./buffer":333,"./decimal128":334,"./documentarray":335,"./embedded":336,"./map":338,"./objectid":339,"./subdocument":340}],338:[function(require,module,exports){
-'use strict';
-=======
-  this._validate('select');
->>>>>>> A provider has a list of ids
-=======
-},{"../driver":264}],334:[function(require,module,exports){
+},{"../driver":256}],326:[function(require,module,exports){
 (function (Buffer){
 'use strict';
->>>>>>> Add providers to patient
 
 /*!
  * Module dependencies.
@@ -106275,104 +91740,11 @@ MongooseDocumentArray.mixin = {
  * Module exports.
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../helpers/get":290,"../schema/mixed":319,"util":362}],339:[function(require,module,exports){
-=======
-
->>>>>>> A provider has a list of ids
-/**
- * Specifies the limit option.
- *
- * ####Example
- *
- *     query.limit(20)
- *
- * ####Note
- *
- * Cannot be used with `distinct()`
- *
- * @method limit
- * @memberOf Query
- * @param {Number} val
- * @see mongodb http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries-%7B%7Blimit%28%29%7D%7D
- * @api public
- */
-/**
- * Specifies the skip option.
- *
- * ####Example
- *
- *     query.skip(100).limit(20)
- *
- * ####Note
- *
- * Cannot be used with `distinct()`
- *
- * @method skip
- * @memberOf Query
- * @param {Number} val
- * @see mongodb http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries-%7B%7Bskip%28%29%7D%7D
- * @api public
- */
-/**
- * Specifies the maxScan option.
- *
- * ####Example
- *
- *     query.maxScan(100)
- *
- * ####Note
- *
- * Cannot be used with `distinct()`
- *
- * @method maxScan
- * @memberOf Query
- * @param {Number} val
- * @see mongodb http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries-%24maxScan
- * @api public
- */
-/**
- * Specifies the batchSize option.
- *
- * ####Example
- *
- *     query.batchSize(100)
- *
- * ####Note
- *
- * Cannot be used with `distinct()`
- *
- * @method batchSize
- * @memberOf Query
- * @param {Number} val
- * @see mongodb http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries-%7B%7BbatchSize%28%29%7D%7D
- * @api public
- */
-/**
- * Specifies the `comment` option.
- *
- * ####Example
- *
- *     query.comment('login query')
- *
- * ####Note
- *
- * Cannot be used with `distinct()`
- *
- * @method comment
- * @memberOf Query
- * @param {Number} val
- * @see mongodb http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries-%24comment
- * @api public
- */
-=======
 module.exports = MongooseDocumentArray;
 
-}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":250,"../cast/objectid":260,"../document":262,"../helpers/get":289,"../helpers/symbols":300,"../options":304,"../queryhelpers":307,"../utils":340,"./array":331,"./objectid":338,"util":361}],335:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../../usr/local/lib/node_modules/browserify/node_modules/is-buffer/index.js":359,"../cast/objectid":252,"../document":254,"../helpers/get":281,"../helpers/symbols":292,"../options":296,"../queryhelpers":299,"../utils":332,"./array":323,"./objectid":330,"util":363}],327:[function(require,module,exports){
 /* eslint no-func-assign: 1 */
->>>>>>> Add providers to patient
 
 /*!
  * Module dependencies.
@@ -106380,41 +91752,6 @@ module.exports = MongooseDocumentArray;
 
 'use strict';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ObjectId.prototype[objectIdSymbol] = true;
-
-module.exports = ObjectId;
-
-},{"../driver":265,"../helpers/symbols":301}],340:[function(require,module,exports){
-'use strict';
-
-const Document = require('../document');
-const immediate = require('../helpers/immediate');
-const internalToObjectOptions = require('../options').internalToObjectOptions;
-const utils = require('../utils');
-
-const documentArrayParent = require('../helpers/symbols').documentArrayParent;
-
-module.exports = Subdocument;
-
-=======
->>>>>>> A provider has a list of ids
-/**
- * Specifies the maxTimeMS option.
- *
- * ####Example
- *
- *     query.maxTime(100)
- *     query.maxTimeMS(100)
- *
- * @method maxTime
- * @memberOf Query
- * @param {Number} ms
- * @see mongodb http://docs.mongodb.org/manual/reference/operator/meta/maxTimeMS/#op._S_maxTimeMS
- * @api public
- */
-=======
 const Document = require('../document_provider')();
 const EventEmitter = require('events').EventEmitter;
 const immediate = require('../helpers/immediate');
@@ -106422,7 +91759,6 @@ const internalToObjectOptions = require('../options').internalToObjectOptions;
 const get = require('../helpers/get');
 const utils = require('../utils');
 const util = require('util');
->>>>>>> Add providers to patient
 
 const documentArrayParent = require('../helpers/symbols').documentArrayParent;
 const validatorErrorSymbol = require('../helpers/symbols').validatorErrorSymbol;
@@ -106561,94 +91897,16 @@ EmbeddedDocument.prototype.save = function(options, fn) {
 };
 
 /**
-<<<<<<< HEAD
- * Sets the readConcern option for the query.
- *
-<<<<<<< HEAD
- * @param {EmbeddedDocument} sub
- * @api private
- */
-
-function registerRemoveListener(sub) {
-  let owner = sub.ownerDocument();
-
-  function emitRemove() {
-    owner.removeListener('save', emitRemove);
-    owner.removeListener('remove', emitRemove);
-    sub.emit('remove', sub);
-    sub.constructor.emit('remove', sub);
-    owner = sub = null;
-  }
-
-  owner.on('save', emitRemove);
-  owner.on('remove', emitRemove);
-}
-
-},{"../document":263,"../helpers/immediate":291,"../helpers/symbols":301,"../options":305,"../utils":341}],341:[function(require,module,exports){
-(function (process){
-'use strict';
-
-/*!
- * Module dependencies.
- */
-
-const Decimal = require('./types/decimal128');
-const ObjectId = require('./types/objectid');
-const PromiseProvider = require('./promise_provider');
-const cloneRegExp = require('regexp-clone');
-const get = require('./helpers/get');
-const sliced = require('sliced');
-const mpath = require('mpath');
-const ms = require('ms');
-const Buffer = require('safe-buffer').Buffer;
-
-const emittedSymbol = Symbol.for('mongoose:emitted');
-
-let MongooseBuffer;
-let MongooseArray;
-let Document;
-
-const specialProperties = new Set(['__proto__', 'constructor', 'prototype']);
-=======
- * ####Example:
- *
- *     new Query().readConcern('local')
- *     new Query().readConcern('l')  // same as local
- *
- *     new Query().readConcern('available')
- *     new Query().readConcern('a')  // same as available
- *
- *     new Query().readConcern('majority')
- *     new Query().readConcern('m')  // same as majority
- *
- *     new Query().readConcern('linearizable')
- *     new Query().readConcern('lz') // same as linearizable
- *
- *     new Query().readConcern('snapshot')
- *     new Query().readConcern('s')  // same as snapshot
- *
- *     new Query().r('s') // r is alias of readConcern
-=======
  * Used as a stub for middleware
->>>>>>> Add providers to patient
  *
  * ####NOTE:
  *
  * _This is a no-op. Does not actually save the doc to the db._
  *
-<<<<<<< HEAD
- *     local         MongoDB 3.2+ The query returns from the instance with no guarantee guarantee that the data has been written to a majority of the replica set members (i.e. may be rolled back).
- *     available     MongoDB 3.6+ The query returns from the instance with no guarantee guarantee that the data has been written to a majority of the replica set members (i.e. may be rolled back).
- *     majority      MongoDB 3.2+ The query returns the data that has been acknowledged by a majority of the replica set members. The documents returned by the read operation are durable, even in the event of failure.
- *     linearizable  MongoDB 3.4+ The query returns data that reflects all successful majority-acknowledged writes that completed prior to the start of the read operation. The query may wait for concurrently executing writes to propagate to a majority of replica set members before returning results.
- *     snapshot      MongoDB 4.0+ Only available for operations within multi-document transactions. Upon transaction commit with write concern "majority", the transaction operations are guaranteed to have read from a snapshot of majority-committed data.
->>>>>>> A provider has a list of ids
-=======
  * @param {Function} [fn]
  * @method $__save
  * @api private
  */
->>>>>>> Add providers to patient
 
 EmbeddedDocument.prototype.$__save = function(fn) {
   return immediate(() => fn(null, this));
@@ -106931,7 +92189,7 @@ EmbeddedDocument.prototype.parentArray = function() {
 
 module.exports = EmbeddedDocument;
 
-},{"../document_provider":263,"../helpers/get":289,"../helpers/immediate":290,"../helpers/symbols":300,"../options":304,"../utils":340,"events":247,"util":361}],336:[function(require,module,exports){
+},{"../document_provider":255,"../helpers/get":281,"../helpers/immediate":282,"../helpers/symbols":292,"../options":296,"../utils":332,"events":356,"util":363}],328:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -106953,7 +92211,7 @@ exports.Map = require('./map');
 
 exports.Subdocument = require('./subdocument');
 
-},{"./array":331,"./buffer":332,"./decimal128":333,"./documentarray":334,"./embedded":335,"./map":337,"./objectid":338,"./subdocument":339}],337:[function(require,module,exports){
+},{"./array":323,"./buffer":324,"./decimal128":325,"./documentarray":326,"./embedded":327,"./map":329,"./objectid":330,"./subdocument":331}],329:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../schema/mixed');
@@ -107147,7 +92405,7 @@ function checkValidKey(key) {
 
 module.exports = MongooseMap;
 
-},{"../helpers/get":289,"../schema/mixed":318,"util":361}],338:[function(require,module,exports){
+},{"../helpers/get":281,"../schema/mixed":310,"util":363}],330:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -107179,7 +92437,7 @@ ObjectId.prototype[objectIdSymbol] = true;
 
 module.exports = ObjectId;
 
-},{"../driver":264,"../helpers/symbols":300}],339:[function(require,module,exports){
+},{"../driver":256,"../helpers/symbols":292}],331:[function(require,module,exports){
 'use strict';
 
 const Document = require('../document');
@@ -107417,7 +92675,7 @@ function registerRemoveListener(sub) {
   owner.on('remove', emitRemove);
 }
 
-},{"../document":262,"../helpers/immediate":290,"../helpers/symbols":300,"../options":304,"../utils":340}],340:[function(require,module,exports){
+},{"../document":254,"../helpers/immediate":282,"../helpers/symbols":292,"../options":296,"../utils":332}],332:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -107682,17 +92940,6 @@ exports.promiseOrCallback = function promiseOrCallback(callback, fn, ee) {
 
   const Promise = PromiseProvider.get();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,require('_process'))
-},{"./document":263,"./helpers/get":290,"./promise_provider":307,"./types":337,"./types/decimal128":334,"./types/objectid":339,"_process":356,"mpath":344,"ms":343,"regexp-clone":357,"safe-buffer":358,"sliced":359}],342:[function(require,module,exports){
-'use strict';
-=======
-    return function wrapperCallback(err, result) {
-      if (traceCallback) {
-        var millis = new Date().getTime() - startTime;
-        traceCallback.call(null, err, result, millis);
-=======
   return new Promise((resolve, reject) => {
     fn(function(error, res) {
       if (error != null) {
@@ -107701,7 +92948,6 @@ exports.promiseOrCallback = function promiseOrCallback(callback, fn, ee) {
           ee.emit('error', error);
         }
         return reject(error);
->>>>>>> Add providers to patient
       }
       if (arguments.length > 2) {
         return resolve(Array.prototype.slice.call(arguments, 1));
@@ -107710,7 +92956,6 @@ exports.promiseOrCallback = function promiseOrCallback(callback, fn, ee) {
     });
   });
 };
->>>>>>> A provider has a list of ids
 
 /*!
  * ignore
@@ -107834,17 +93079,8 @@ exports.merge = function merge(to, from, options, path) {
   }
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],343:[function(require,module,exports){
-=======
->>>>>>> A provider has a list of ids
-/**
- * Determines if field selection has been made.
-=======
 /*!
  * Applies toObject recursively.
->>>>>>> Add providers to patient
  *
  * @param {Document|Array|Object} obj
  * @return {Object}
@@ -107945,28 +93181,6 @@ exports.args = sliced;
  * @api private
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-function plural(ms, msAbs, n, name) {
-  var isPlural = msAbs >= n * 1.5;
-  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
-}
-
-},{}],344:[function(require,module,exports){
-module.exports = exports = require('./lib');
-
-},{"./lib":345}],345:[function(require,module,exports){
-(function (global){
-// Make sure Map exists for old Node.js versions
-var Map = global.Map != null ? global.Map : function() {};
-
-// These properties are special and can open client libraries to security
-// issues
-var ignoreProperties = ['__proto__', 'constructor', 'prototype'];
-=======
-Query.prototype._fieldsForExec = function() {
-  return utils.clone(this._fields);
-=======
 exports.tick = function tick(callback) {
   if (typeof callback !== 'function') {
     return;
@@ -107982,9 +93196,7 @@ exports.tick = function tick(callback) {
       });
     }
   };
->>>>>>> Add providers to patient
 };
->>>>>>> A provider has a list of ids
 
 /*!
  * Returns if `v` is a mongoose object that has a `toObject()` method we can use.
@@ -108238,25 +93450,6 @@ exports.isNullOrUndefined = function(val) {
   return val === null || val === undefined;
 };
 
-<<<<<<< HEAD
-denied.count.slice =
-denied.count.batchSize =
-denied.count.comment =
-denied.count.maxScan =
-denied.count.snapshot =
-denied.count.tailable = true;
-
-<<<<<<< HEAD
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],346:[function(require,module,exports){
-=======
-},{}],341:[function(require,module,exports){
-(function (process,setImmediate){
->>>>>>> A provider has a list of ids
-'use strict';
-
-=======
->>>>>>> Add providers to patient
 /*!
  * ignore
  */
@@ -108274,33 +93467,8 @@ exports.array = {};
  * @private
  */
 
-<<<<<<< HEAD
-var clone = exports.clone = function clone(obj, options) {
-  if (obj === undefined || obj === null)
-    return obj;
-
-<<<<<<< HEAD
-},{}],347:[function(require,module,exports){
-'use strict';
-=======
-  if (Array.isArray(obj))
-    return exports.cloneArray(obj, options);
->>>>>>> A provider has a list of ids
-
-  if (obj.constructor) {
-    if (/ObjectI[dD]$/.test(obj.constructor.name)) {
-      return 'function' == typeof obj.clone
-        ? obj.clone()
-        : new obj.constructor(obj.id);
-    }
-
-    if (obj.constructor.name === 'ReadPreference') {
-      return new obj.constructor(obj.mode, clone(obj.tags, options));
-    }
-=======
 exports.array.flatten = function flatten(arr, filter, ret) {
   ret || (ret = []);
->>>>>>> Add providers to patient
 
   arr.forEach(function(item) {
     if (Array.isArray(item)) {
@@ -108315,15 +93483,6 @@ exports.array.flatten = function flatten(arr, filter, ret) {
   return ret;
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../env":349,"./collection":346,"./node":348}],348:[function(require,module,exports){
-'use strict';
-=======
-    if ('RegExp' === obj.constructor.name)
-      return RegExpClone(obj);
->>>>>>> A provider has a list of ids
-=======
 /*!
  * Removes duplicate values from an array
  *
@@ -108335,7 +93494,6 @@ exports.array.flatten = function flatten(arr, filter, ret) {
  * @return {Array}
  * @private
  */
->>>>>>> Add providers to patient
 
 exports.array.unique = function(arr) {
   const primitives = {};
@@ -108495,7 +93653,7 @@ exports.each = function(arr, fn) {
 exports.noop = function() {};
 
 }).call(this,require('_process'))
-},{"./document":262,"./helpers/get":289,"./promise_provider":306,"./types":336,"./types/decimal128":333,"./types/objectid":338,"_process":355,"mpath":343,"ms":342,"regexp-clone":356,"safe-buffer":357,"sliced":358}],341:[function(require,module,exports){
+},{"./document":254,"./helpers/get":281,"./promise_provider":298,"./types":328,"./types/decimal128":325,"./types/objectid":330,"_process":360,"mpath":335,"ms":334,"regexp-clone":347,"safe-buffer":348,"sliced":349}],333:[function(require,module,exports){
 'use strict';
 
 /**
@@ -108641,58 +93799,17 @@ VirtualType.prototype.applySetters = function(value, scope) {
 
 module.exports = VirtualType;
 
-},{}],342:[function(require,module,exports){
+},{}],334:[function(require,module,exports){
 /**
  * Helpers.
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module.exports = exports = NodeCollection;
-
-},{"../utils":352,"./collection":346}],349:[function(require,module,exports){
-(function (process,global,Buffer){
-'use strict';
-
-exports.isNode = 'undefined' != typeof process
-           && 'object' == typeof module
-           && 'object' == typeof global
-           && 'function' == typeof Buffer
-           && process.argv;
-
-exports.isMongo = !exports.isNode
-           && 'function' == typeof printjson
-           && 'function' == typeof ObjectId
-           && 'function' == typeof rs
-           && 'function' == typeof sh;
-
-exports.isBrowser = !exports.isNode
-                 && !exports.isMongo
-                 && 'undefined' != typeof window;
-
-exports.type = exports.isNode ? 'node'
-  : exports.isMongo ? 'mongo'
-    : exports.isBrowser ? 'browser'
-      : 'unknown';
-
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":356,"buffer":103}],350:[function(require,module,exports){
-'use strict';
-=======
-exports.cloneBuffer = function(buff) {
-  var dupe = Buffer.alloc(buff.length);
-  buff.copy(dupe, 0, 0, buff.length);
-  return dupe;
-};
->>>>>>> A provider has a list of ids
-=======
 var s = 1000;
 var m = s * 60;
 var h = m * 60;
 var d = h * 24;
 var w = d * 7;
 var y = d * 365.25;
->>>>>>> Add providers to patient
 
 /**
  * Parse or format the given `val`.
@@ -108846,10 +93963,10 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],343:[function(require,module,exports){
+},{}],335:[function(require,module,exports){
 module.exports = exports = require('./lib');
 
-},{"./lib":344}],344:[function(require,module,exports){
+},{"./lib":336}],336:[function(require,module,exports){
 (function (global){
 // Make sure Map exists for old Node.js versions
 var Map = global.Map != null ? global.Map : function() {};
@@ -109152,7 +94269,7 @@ function K (v) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],345:[function(require,module,exports){
+},{}],337:[function(require,module,exports){
 'use strict';
 
 /**
@@ -109200,7 +94317,7 @@ function notImplemented(method) {
   };
 }
 
-},{}],346:[function(require,module,exports){
+},{}],338:[function(require,module,exports){
 'use strict';
 
 var env = require('../env');
@@ -109215,7 +94332,7 @@ module.exports =
       require('./collection');
 
 
-},{"../env":348,"./collection":345,"./node":347}],347:[function(require,module,exports){
+},{"../env":340,"./collection":337,"./node":339}],339:[function(require,module,exports){
 'use strict';
 
 /**
@@ -109368,7 +94485,7 @@ NodeCollection.prototype.findCursor = function(match, findOptions) {
 
 module.exports = exports = NodeCollection;
 
-},{"../utils":351,"./collection":345}],348:[function(require,module,exports){
+},{"../utils":343,"./collection":337}],340:[function(require,module,exports){
 (function (process,global,Buffer){
 'use strict';
 
@@ -109394,7 +94511,7 @@ exports.type = exports.isNode ? 'node'
       : 'unknown';
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":355,"buffer":102}],349:[function(require,module,exports){
+},{"_process":360,"buffer":355}],341:[function(require,module,exports){
 'use strict';
 
 /**
@@ -112477,19 +97594,8 @@ Query.prototype.selectedExclusively = function selectedExclusively() {
     if (0 === this._fields[key]) return true;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"./collection":347,"./collection/collection":346,"./env":349,"./permissions":351,"./utils":352,"assert":77,"bluebird":82,"debug":353,"sliced":359,"util":362}],351:[function(require,module,exports){
-'use strict';
-=======
-Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
-  offset = offset >>> 0
-  if (!noAssert) checkOffset(offset, 4, this.length)
->>>>>>> A provider has a list of ids
-=======
   return false;
 };
->>>>>>> Add providers to patient
 
 /**
  * Merges `doc` with the current update object.
@@ -112606,26 +97712,7 @@ Query.prototype._validate = function(action) {
   var fail;
   var validator;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],352:[function(require,module,exports){
-(function (process,setImmediate){
-'use strict';
-=======
-Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset >>> 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  this[offset + 3] = (value >>> 24)
-  this[offset + 2] = (value >>> 16)
-  this[offset + 1] = (value >>> 8)
-  this[offset] = (value & 0xff)
-  return offset + 4
-}
->>>>>>> A provider has a list of ids
-=======
   if (undefined === action) {
->>>>>>> Add providers to patient
 
     validator = Query.permissions[this.op];
     if ('function' != typeof validator) return true;
@@ -112679,7 +97766,7 @@ module.exports = exports = Query;
 // TODO
 // test utils
 
-},{"./collection":346,"./collection/collection":345,"./env":348,"./permissions":350,"./utils":351,"assert":76,"bluebird":81,"debug":352,"sliced":358,"util":361}],350:[function(require,module,exports){
+},{"./collection":338,"./collection/collection":337,"./env":340,"./permissions":342,"./utils":343,"assert":350,"bluebird":78,"debug":344,"sliced":349,"util":363}],342:[function(require,module,exports){
 'use strict';
 
 var denied = exports;
@@ -112769,7 +97856,7 @@ denied.count.maxScan =
 denied.count.snapshot =
 denied.count.tailable = true;
 
-},{}],351:[function(require,module,exports){
+},{}],343:[function(require,module,exports){
 (function (process,setImmediate){
 'use strict';
 
@@ -113090,26 +98177,10 @@ function create(proto) {
  * inheritance
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}).call(this,require('_process'),require("timers").setImmediate)
-},{"_process":356,"regexp-clone":357,"safe-buffer":358,"timers":360}],353:[function(require,module,exports){
-(function (process){
-/**
- * This is the web browser implementation of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-=======
-EventEmitter.prototype._events = undefined;
-EventEmitter.prototype._maxListeners = undefined;
->>>>>>> A provider has a list of ids
-=======
 exports.inherits = function(ctor, superCtor) {
   ctor.prototype = exports.create(superCtor.prototype);
   ctor.prototype.constructor = ctor;
 };
->>>>>>> Add providers to patient
 
 /**
  * nextTick helper
@@ -113145,7 +98216,7 @@ exports.isArgumentsObject = function(v) {
 };
 
 }).call(this,require('_process'),require("timers").setImmediate)
-},{"_process":355,"regexp-clone":356,"safe-buffer":357,"timers":359}],352:[function(require,module,exports){
+},{"_process":360,"regexp-clone":347,"safe-buffer":348,"timers":361}],344:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -113343,42 +98414,8 @@ function localstorage() {
   } catch (e) {}
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 }).call(this,require('_process'))
-},{"./debug":354,"_process":356}],354:[function(require,module,exports){
-
-/**
- * This is the common logic for both the Node.js and web browser
- * implementations of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
-exports.coerce = coerce;
-exports.disable = disable;
-exports.enable = enable;
-exports.enabled = enabled;
-exports.humanize = require('ms');
-
-/**
- * Active `debug` instances.
- */
-exports.instances = [];
-=======
-function _onceWrap(target, type, listener) {
-  var state = { fired: false, wrapFn: undefined, target: target, type: type, listener: listener };
-  var wrapped = bind.call(onceWrapper, state);
-  wrapped.listener = listener;
-  state.wrapFn = wrapped;
-  return wrapped;
-}
->>>>>>> A provider has a list of ids
-=======
-}).call(this,require('_process'))
-},{"./debug":353,"_process":355}],353:[function(require,module,exports){
->>>>>>> Add providers to patient
+},{"./debug":345,"_process":360}],345:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -113592,43 +98629,6 @@ function enabled(name) {
   return false;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"ms":355}],355:[function(require,module,exports){
-/**
- * Helpers.
- */
-
-var s = 1000;
-var m = s * 60;
-var h = m * 60;
-var d = h * 24;
-var y = d * 365.25;
-=======
-},{}],355:[function(require,module,exports){
-exports.read = function (buffer, offset, isLE, mLen, nBytes) {
-  var e, m
-  var eLen = (nBytes * 8) - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var nBits = -7
-  var i = isLE ? (nBytes - 1) : 0
-  var d = isLE ? -1 : 1
-  var s = buffer[offset + i]
->>>>>>> A provider has a list of ids
-
-  i += d
-
-  e = s & ((1 << (-nBits)) - 1)
-  s >>= (-nBits)
-  nBits += eLen
-  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
-
-  m = e & ((1 << (-nBits)) - 1)
-  e >>= (-nBits)
-  nBits += mLen
-  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
-=======
 /**
  * Coerce `val`.
  *
@@ -113636,14 +98636,13 @@ exports.read = function (buffer, offset, isLE, mLen, nBytes) {
  * @return {Mixed}
  * @api private
  */
->>>>>>> Add providers to patient
 
 function coerce(val) {
   if (val instanceof Error) return val.stack || val.message;
   return val;
 }
 
-},{"ms":354}],354:[function(require,module,exports){
+},{"ms":346}],346:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -113797,15 +98796,3814 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],356:[function(require,module,exports){
-=======
-},{}],358:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-=======
+},{}],347:[function(require,module,exports){
+
+var toString = Object.prototype.toString;
+
+function isRegExp (o) {
+  return 'object' == typeof o
+      && '[object RegExp]' == toString.call(o);
+}
+
+module.exports = exports = function (regexp) {
+  if (!isRegExp(regexp)) {
+    throw new TypeError('Not a RegExp');
+  }
+
+  var flags = [];
+  if (regexp.global) flags.push('g');
+  if (regexp.multiline) flags.push('m');
+  if (regexp.ignoreCase) flags.push('i');
+  return new RegExp(regexp.source, flags.join(''));
+}
+
+
+},{}],348:[function(require,module,exports){
+/* eslint-disable node/no-deprecated-api */
+var buffer = require('buffer')
+var Buffer = buffer.Buffer
+
+// alternative to using Object.keys for old browsers
+function copyProps (src, dst) {
+  for (var key in src) {
+    dst[key] = src[key]
+  }
+}
+if (Buffer.from && Buffer.alloc && Buffer.allocUnsafe && Buffer.allocUnsafeSlow) {
+  module.exports = buffer
+} else {
+  // Copy properties from require('buffer')
+  copyProps(buffer, exports)
+  exports.Buffer = SafeBuffer
+}
+
+function SafeBuffer (arg, encodingOrOffset, length) {
+  return Buffer(arg, encodingOrOffset, length)
+}
+
+// Copy static methods from Buffer
+copyProps(Buffer, SafeBuffer)
+
+SafeBuffer.from = function (arg, encodingOrOffset, length) {
+  if (typeof arg === 'number') {
+    throw new TypeError('Argument must not be a number')
+  }
+  return Buffer(arg, encodingOrOffset, length)
+}
+
+SafeBuffer.alloc = function (size, fill, encoding) {
+  if (typeof size !== 'number') {
+    throw new TypeError('Argument must be a number')
+  }
+  var buf = Buffer(size)
+  if (fill !== undefined) {
+    if (typeof encoding === 'string') {
+      buf.fill(fill, encoding)
+    } else {
+      buf.fill(fill)
+    }
+  } else {
+    buf.fill(0)
+  }
+  return buf
+}
+
+SafeBuffer.allocUnsafe = function (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('Argument must be a number')
+  }
+  return Buffer(size)
+}
+
+SafeBuffer.allocUnsafeSlow = function (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('Argument must be a number')
+  }
+  return buffer.SlowBuffer(size)
+}
+
+},{"buffer":355}],349:[function(require,module,exports){
+
+/**
+ * An Array.prototype.slice.call(arguments) alternative
+ *
+ * @param {Object} args something with a length
+ * @param {Number} slice
+ * @param {Number} sliceEnd
+ * @api public
+ */
+
+module.exports = function (args, slice, sliceEnd) {
+  var ret = [];
+  var len = args.length;
+
+  if (0 === len) return ret;
+
+  var start = slice < 0
+    ? Math.max(0, slice + len)
+    : slice || 0;
+
+  if (sliceEnd !== undefined) {
+    len = sliceEnd < 0
+      ? sliceEnd + len
+      : sliceEnd
+  }
+
+  while (len-- > start) {
+    ret[len - start] = args[len];
+  }
+
+  return ret;
+}
+
+
+},{}],350:[function(require,module,exports){
+(function (global){
+'use strict';
+
+// compare and isBuffer taken from https://github.com/feross/buffer/blob/680e9e5e488f22aac27599a57dc844a6315928dd/index.js
+// original notice:
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+function compare(a, b) {
+  if (a === b) {
+    return 0;
+  }
+
+  var x = a.length;
+  var y = b.length;
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i];
+      y = b[i];
+      break;
+    }
+  }
+
+  if (x < y) {
+    return -1;
+  }
+  if (y < x) {
+    return 1;
+  }
+  return 0;
+}
+function isBuffer(b) {
+  if (global.Buffer && typeof global.Buffer.isBuffer === 'function') {
+    return global.Buffer.isBuffer(b);
+  }
+  return !!(b != null && b._isBuffer);
+}
+
+// based on node assert, original notice:
+
+// http://wiki.commonjs.org/wiki/Unit_Testing/1.0
+//
+// THIS IS NOT TESTED NOR LIKELY TO WORK OUTSIDE V8!
+//
+// Originally from narwhal.js (http://narwhaljs.org)
+// Copyright (c) 2009 Thomas Robinson <280north.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the 'Software'), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+// sell copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var util = require('util/');
+var hasOwn = Object.prototype.hasOwnProperty;
+var pSlice = Array.prototype.slice;
+var functionsHaveNames = (function () {
+  return function foo() {}.name === 'foo';
+}());
+function pToString (obj) {
+  return Object.prototype.toString.call(obj);
+}
+function isView(arrbuf) {
+  if (isBuffer(arrbuf)) {
+    return false;
+  }
+  if (typeof global.ArrayBuffer !== 'function') {
+    return false;
+  }
+  if (typeof ArrayBuffer.isView === 'function') {
+    return ArrayBuffer.isView(arrbuf);
+  }
+  if (!arrbuf) {
+    return false;
+  }
+  if (arrbuf instanceof DataView) {
+    return true;
+  }
+  if (arrbuf.buffer && arrbuf.buffer instanceof ArrayBuffer) {
+    return true;
+  }
+  return false;
+}
+// 1. The assert module provides functions that throw
+// AssertionError's when particular conditions are not met. The
+// assert module must conform to the following interface.
+
+var assert = module.exports = ok;
+
+// 2. The AssertionError is defined in assert.
+// new assert.AssertionError({ message: message,
+//                             actual: actual,
+//                             expected: expected })
+
+var regex = /\s*function\s+([^\(\s]*)\s*/;
+// based on https://github.com/ljharb/function.prototype.name/blob/adeeeec8bfcc6068b187d7d9fb3d5bb1d3a30899/implementation.js
+function getName(func) {
+  if (!util.isFunction(func)) {
+    return;
+  }
+  if (functionsHaveNames) {
+    return func.name;
+  }
+  var str = func.toString();
+  var match = str.match(regex);
+  return match && match[1];
+}
+assert.AssertionError = function AssertionError(options) {
+  this.name = 'AssertionError';
+  this.actual = options.actual;
+  this.expected = options.expected;
+  this.operator = options.operator;
+  if (options.message) {
+    this.message = options.message;
+    this.generatedMessage = false;
+  } else {
+    this.message = getMessage(this);
+    this.generatedMessage = true;
+  }
+  var stackStartFunction = options.stackStartFunction || fail;
+  if (Error.captureStackTrace) {
+    Error.captureStackTrace(this, stackStartFunction);
+  } else {
+    // non v8 browsers so we can have a stacktrace
+    var err = new Error();
+    if (err.stack) {
+      var out = err.stack;
+
+      // try to strip useless frames
+      var fn_name = getName(stackStartFunction);
+      var idx = out.indexOf('\n' + fn_name);
+      if (idx >= 0) {
+        // once we have located the function frame
+        // we need to strip out everything before it (and its line)
+        var next_line = out.indexOf('\n', idx + 1);
+        out = out.substring(next_line + 1);
+      }
+
+      this.stack = out;
+    }
+  }
+};
+
+// assert.AssertionError instanceof Error
+util.inherits(assert.AssertionError, Error);
+
+function truncate(s, n) {
+  if (typeof s === 'string') {
+    return s.length < n ? s : s.slice(0, n);
+  } else {
+    return s;
+  }
+}
+function inspect(something) {
+  if (functionsHaveNames || !util.isFunction(something)) {
+    return util.inspect(something);
+  }
+  var rawname = getName(something);
+  var name = rawname ? ': ' + rawname : '';
+  return '[Function' +  name + ']';
+}
+function getMessage(self) {
+  return truncate(inspect(self.actual), 128) + ' ' +
+         self.operator + ' ' +
+         truncate(inspect(self.expected), 128);
+}
+
+// At present only the three keys mentioned above are used and
+// understood by the spec. Implementations or sub modules can pass
+// other keys to the AssertionError's constructor - they will be
+// ignored.
+
+// 3. All of the following functions must throw an AssertionError
+// when a corresponding condition is not met, with a message that
+// may be undefined if not provided.  All assertion methods provide
+// both the actual and expected values to the assertion error for
+// display purposes.
+
+function fail(actual, expected, message, operator, stackStartFunction) {
+  throw new assert.AssertionError({
+    message: message,
+    actual: actual,
+    expected: expected,
+    operator: operator,
+    stackStartFunction: stackStartFunction
+  });
+}
+
+// EXTENSION! allows for well behaved errors defined elsewhere.
+assert.fail = fail;
+
+// 4. Pure assertion tests whether a value is truthy, as determined
+// by !!guard.
+// assert.ok(guard, message_opt);
+// This statement is equivalent to assert.equal(true, !!guard,
+// message_opt);. To test strictly for the value true, use
+// assert.strictEqual(true, guard, message_opt);.
+
+function ok(value, message) {
+  if (!value) fail(value, true, message, '==', assert.ok);
+}
+assert.ok = ok;
+
+// 5. The equality assertion tests shallow, coercive equality with
+// ==.
+// assert.equal(actual, expected, message_opt);
+
+assert.equal = function equal(actual, expected, message) {
+  if (actual != expected) fail(actual, expected, message, '==', assert.equal);
+};
+
+// 6. The non-equality assertion tests for whether two objects are not equal
+// with != assert.notEqual(actual, expected, message_opt);
+
+assert.notEqual = function notEqual(actual, expected, message) {
+  if (actual == expected) {
+    fail(actual, expected, message, '!=', assert.notEqual);
+  }
+};
+
+// 7. The equivalence assertion tests a deep equality relation.
+// assert.deepEqual(actual, expected, message_opt);
+
+assert.deepEqual = function deepEqual(actual, expected, message) {
+  if (!_deepEqual(actual, expected, false)) {
+    fail(actual, expected, message, 'deepEqual', assert.deepEqual);
+  }
+};
+
+assert.deepStrictEqual = function deepStrictEqual(actual, expected, message) {
+  if (!_deepEqual(actual, expected, true)) {
+    fail(actual, expected, message, 'deepStrictEqual', assert.deepStrictEqual);
+  }
+};
+
+function _deepEqual(actual, expected, strict, memos) {
+  // 7.1. All identical values are equivalent, as determined by ===.
+  if (actual === expected) {
+    return true;
+  } else if (isBuffer(actual) && isBuffer(expected)) {
+    return compare(actual, expected) === 0;
+
+  // 7.2. If the expected value is a Date object, the actual value is
+  // equivalent if it is also a Date object that refers to the same time.
+  } else if (util.isDate(actual) && util.isDate(expected)) {
+    return actual.getTime() === expected.getTime();
+
+  // 7.3 If the expected value is a RegExp object, the actual value is
+  // equivalent if it is also a RegExp object with the same source and
+  // properties (`global`, `multiline`, `lastIndex`, `ignoreCase`).
+  } else if (util.isRegExp(actual) && util.isRegExp(expected)) {
+    return actual.source === expected.source &&
+           actual.global === expected.global &&
+           actual.multiline === expected.multiline &&
+           actual.lastIndex === expected.lastIndex &&
+           actual.ignoreCase === expected.ignoreCase;
+
+  // 7.4. Other pairs that do not both pass typeof value == 'object',
+  // equivalence is determined by ==.
+  } else if ((actual === null || typeof actual !== 'object') &&
+             (expected === null || typeof expected !== 'object')) {
+    return strict ? actual === expected : actual == expected;
+
+  // If both values are instances of typed arrays, wrap their underlying
+  // ArrayBuffers in a Buffer each to increase performance
+  // This optimization requires the arrays to have the same type as checked by
+  // Object.prototype.toString (aka pToString). Never perform binary
+  // comparisons for Float*Arrays, though, since e.g. +0 === -0 but their
+  // bit patterns are not identical.
+  } else if (isView(actual) && isView(expected) &&
+             pToString(actual) === pToString(expected) &&
+             !(actual instanceof Float32Array ||
+               actual instanceof Float64Array)) {
+    return compare(new Uint8Array(actual.buffer),
+                   new Uint8Array(expected.buffer)) === 0;
+
+  // 7.5 For all other Object pairs, including Array objects, equivalence is
+  // determined by having the same number of owned properties (as verified
+  // with Object.prototype.hasOwnProperty.call), the same set of keys
+  // (although not necessarily the same order), equivalent values for every
+  // corresponding key, and an identical 'prototype' property. Note: this
+  // accounts for both named and indexed properties on Arrays.
+  } else if (isBuffer(actual) !== isBuffer(expected)) {
+    return false;
+  } else {
+    memos = memos || {actual: [], expected: []};
+
+    var actualIndex = memos.actual.indexOf(actual);
+    if (actualIndex !== -1) {
+      if (actualIndex === memos.expected.indexOf(expected)) {
+        return true;
+      }
+    }
+
+    memos.actual.push(actual);
+    memos.expected.push(expected);
+
+    return objEquiv(actual, expected, strict, memos);
+  }
+}
+
+function isArguments(object) {
+  return Object.prototype.toString.call(object) == '[object Arguments]';
+}
+
+function objEquiv(a, b, strict, actualVisitedObjects) {
+  if (a === null || a === undefined || b === null || b === undefined)
+    return false;
+  // if one is a primitive, the other must be same
+  if (util.isPrimitive(a) || util.isPrimitive(b))
+    return a === b;
+  if (strict && Object.getPrototypeOf(a) !== Object.getPrototypeOf(b))
+    return false;
+  var aIsArgs = isArguments(a);
+  var bIsArgs = isArguments(b);
+  if ((aIsArgs && !bIsArgs) || (!aIsArgs && bIsArgs))
+    return false;
+  if (aIsArgs) {
+    a = pSlice.call(a);
+    b = pSlice.call(b);
+    return _deepEqual(a, b, strict);
+  }
+  var ka = objectKeys(a);
+  var kb = objectKeys(b);
+  var key, i;
+  // having the same number of owned properties (keys incorporates
+  // hasOwnProperty)
+  if (ka.length !== kb.length)
+    return false;
+  //the same set of keys (although not necessarily the same order),
+  ka.sort();
+  kb.sort();
+  //~~~cheap key test
+  for (i = ka.length - 1; i >= 0; i--) {
+    if (ka[i] !== kb[i])
+      return false;
+  }
+  //equivalent values for every corresponding key, and
+  //~~~possibly expensive deep test
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!_deepEqual(a[key], b[key], strict, actualVisitedObjects))
+      return false;
+  }
+  return true;
+}
+
+// 8. The non-equivalence assertion tests for any deep inequality.
+// assert.notDeepEqual(actual, expected, message_opt);
+
+assert.notDeepEqual = function notDeepEqual(actual, expected, message) {
+  if (_deepEqual(actual, expected, false)) {
+    fail(actual, expected, message, 'notDeepEqual', assert.notDeepEqual);
+  }
+};
+
+assert.notDeepStrictEqual = notDeepStrictEqual;
+function notDeepStrictEqual(actual, expected, message) {
+  if (_deepEqual(actual, expected, true)) {
+    fail(actual, expected, message, 'notDeepStrictEqual', notDeepStrictEqual);
+  }
+}
+
+
+// 9. The strict equality assertion tests strict equality, as determined by ===.
+// assert.strictEqual(actual, expected, message_opt);
+
+assert.strictEqual = function strictEqual(actual, expected, message) {
+  if (actual !== expected) {
+    fail(actual, expected, message, '===', assert.strictEqual);
+  }
+};
+
+// 10. The strict non-equality assertion tests for strict inequality, as
+// determined by !==.  assert.notStrictEqual(actual, expected, message_opt);
+
+assert.notStrictEqual = function notStrictEqual(actual, expected, message) {
+  if (actual === expected) {
+    fail(actual, expected, message, '!==', assert.notStrictEqual);
+  }
+};
+
+function expectedException(actual, expected) {
+  if (!actual || !expected) {
+    return false;
+  }
+
+  if (Object.prototype.toString.call(expected) == '[object RegExp]') {
+    return expected.test(actual);
+  }
+
+  try {
+    if (actual instanceof expected) {
+      return true;
+    }
+  } catch (e) {
+    // Ignore.  The instanceof check doesn't work for arrow functions.
+  }
+
+  if (Error.isPrototypeOf(expected)) {
+    return false;
+  }
+
+  return expected.call({}, actual) === true;
+}
+
+function _tryBlock(block) {
+  var error;
+  try {
+    block();
+  } catch (e) {
+    error = e;
+  }
+  return error;
+}
+
+function _throws(shouldThrow, block, expected, message) {
+  var actual;
+
+  if (typeof block !== 'function') {
+    throw new TypeError('"block" argument must be a function');
+  }
+
+  if (typeof expected === 'string') {
+    message = expected;
+    expected = null;
+  }
+
+  actual = _tryBlock(block);
+
+  message = (expected && expected.name ? ' (' + expected.name + ').' : '.') +
+            (message ? ' ' + message : '.');
+
+  if (shouldThrow && !actual) {
+    fail(actual, expected, 'Missing expected exception' + message);
+  }
+
+  var userProvidedMessage = typeof message === 'string';
+  var isUnwantedException = !shouldThrow && util.isError(actual);
+  var isUnexpectedException = !shouldThrow && actual && !expected;
+
+  if ((isUnwantedException &&
+      userProvidedMessage &&
+      expectedException(actual, expected)) ||
+      isUnexpectedException) {
+    fail(actual, expected, 'Got unwanted exception' + message);
+  }
+
+  if ((shouldThrow && actual && expected &&
+      !expectedException(actual, expected)) || (!shouldThrow && actual)) {
+    throw actual;
+  }
+}
+
+// 11. Expected to throw an error:
+// assert.throws(block, Error_opt, message_opt);
+
+assert.throws = function(block, /*optional*/error, /*optional*/message) {
+  _throws(true, block, error, message);
+};
+
+// EXTENSION! This is annoying to write outside this module.
+assert.doesNotThrow = function(block, /*optional*/error, /*optional*/message) {
+  _throws(false, block, error, message);
+};
+
+assert.ifError = function(err) { if (err) throw err; };
+
+var objectKeys = Object.keys || function (obj) {
+  var keys = [];
+  for (var key in obj) {
+    if (hasOwn.call(obj, key)) keys.push(key);
+  }
+  return keys;
+};
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"util/":353}],351:[function(require,module,exports){
+if (typeof Object.create === 'function') {
+  // implementation from standard node.js 'util' module
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    ctor.prototype = Object.create(superCtor.prototype, {
+      constructor: {
+        value: ctor,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+  };
+} else {
+  // old school shim for old browsers
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    var TempCtor = function () {}
+    TempCtor.prototype = superCtor.prototype
+    ctor.prototype = new TempCtor()
+    ctor.prototype.constructor = ctor
+  }
+}
+
+},{}],352:[function(require,module,exports){
+module.exports = function isBuffer(arg) {
+  return arg && typeof arg === 'object'
+    && typeof arg.copy === 'function'
+    && typeof arg.fill === 'function'
+    && typeof arg.readUInt8 === 'function';
+}
+},{}],353:[function(require,module,exports){
+(function (process,global){
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var formatRegExp = /%[sdj%]/g;
+exports.format = function(f) {
+  if (!isString(f)) {
+    var objects = [];
+    for (var i = 0; i < arguments.length; i++) {
+      objects.push(inspect(arguments[i]));
+    }
+    return objects.join(' ');
+  }
+
+  var i = 1;
+  var args = arguments;
+  var len = args.length;
+  var str = String(f).replace(formatRegExp, function(x) {
+    if (x === '%%') return '%';
+    if (i >= len) return x;
+    switch (x) {
+      case '%s': return String(args[i++]);
+      case '%d': return Number(args[i++]);
+      case '%j':
+        try {
+          return JSON.stringify(args[i++]);
+        } catch (_) {
+          return '[Circular]';
+        }
+      default:
+        return x;
+    }
+  });
+  for (var x = args[i]; i < len; x = args[++i]) {
+    if (isNull(x) || !isObject(x)) {
+      str += ' ' + x;
+    } else {
+      str += ' ' + inspect(x);
+    }
+  }
+  return str;
+};
+
+
+// Mark that a method should not be used.
+// Returns a modified function which warns once by default.
+// If --no-deprecation is set, then it is a no-op.
+exports.deprecate = function(fn, msg) {
+  // Allow for deprecating things in the process of starting up.
+  if (isUndefined(global.process)) {
+    return function() {
+      return exports.deprecate(fn, msg).apply(this, arguments);
+    };
+  }
+
+  if (process.noDeprecation === true) {
+    return fn;
+  }
+
+  var warned = false;
+  function deprecated() {
+    if (!warned) {
+      if (process.throwDeprecation) {
+        throw new Error(msg);
+      } else if (process.traceDeprecation) {
+        console.trace(msg);
+      } else {
+        console.error(msg);
+      }
+      warned = true;
+    }
+    return fn.apply(this, arguments);
+  }
+
+  return deprecated;
+};
+
+
+var debugs = {};
+var debugEnviron;
+exports.debuglog = function(set) {
+  if (isUndefined(debugEnviron))
+    debugEnviron = process.env.NODE_DEBUG || '';
+  set = set.toUpperCase();
+  if (!debugs[set]) {
+    if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
+      var pid = process.pid;
+      debugs[set] = function() {
+        var msg = exports.format.apply(exports, arguments);
+        console.error('%s %d: %s', set, pid, msg);
+      };
+    } else {
+      debugs[set] = function() {};
+    }
+  }
+  return debugs[set];
+};
+
+
+/**
+ * Echos the value of a value. Trys to print the value out
+ * in the best way possible given the different types.
+ *
+ * @param {Object} obj The object to print out.
+ * @param {Object} opts Optional options object that alters the output.
+ */
+/* legacy: obj, showHidden, depth, colors*/
+function inspect(obj, opts) {
+  // default options
+  var ctx = {
+    seen: [],
+    stylize: stylizeNoColor
+  };
+  // legacy...
+  if (arguments.length >= 3) ctx.depth = arguments[2];
+  if (arguments.length >= 4) ctx.colors = arguments[3];
+  if (isBoolean(opts)) {
+    // legacy...
+    ctx.showHidden = opts;
+  } else if (opts) {
+    // got an "options" object
+    exports._extend(ctx, opts);
+  }
+  // set default options
+  if (isUndefined(ctx.showHidden)) ctx.showHidden = false;
+  if (isUndefined(ctx.depth)) ctx.depth = 2;
+  if (isUndefined(ctx.colors)) ctx.colors = false;
+  if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
+  if (ctx.colors) ctx.stylize = stylizeWithColor;
+  return formatValue(ctx, obj, ctx.depth);
+}
+exports.inspect = inspect;
+
+
+// http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
+inspect.colors = {
+  'bold' : [1, 22],
+  'italic' : [3, 23],
+  'underline' : [4, 24],
+  'inverse' : [7, 27],
+  'white' : [37, 39],
+  'grey' : [90, 39],
+  'black' : [30, 39],
+  'blue' : [34, 39],
+  'cyan' : [36, 39],
+  'green' : [32, 39],
+  'magenta' : [35, 39],
+  'red' : [31, 39],
+  'yellow' : [33, 39]
+};
+
+// Don't use 'blue' not visible on cmd.exe
+inspect.styles = {
+  'special': 'cyan',
+  'number': 'yellow',
+  'boolean': 'yellow',
+  'undefined': 'grey',
+  'null': 'bold',
+  'string': 'green',
+  'date': 'magenta',
+  // "name": intentionally not styling
+  'regexp': 'red'
+};
+
+
+function stylizeWithColor(str, styleType) {
+  var style = inspect.styles[styleType];
+
+  if (style) {
+    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
+           '\u001b[' + inspect.colors[style][1] + 'm';
+  } else {
+    return str;
+  }
+}
+
+
+function stylizeNoColor(str, styleType) {
+  return str;
+}
+
+
+function arrayToHash(array) {
+  var hash = {};
+
+  array.forEach(function(val, idx) {
+    hash[val] = true;
+  });
+
+  return hash;
+}
+
+
+function formatValue(ctx, value, recurseTimes) {
+  // Provide a hook for user-specified inspect functions.
+  // Check that value is an object with an inspect function on it
+  if (ctx.customInspect &&
+      value &&
+      isFunction(value.inspect) &&
+      // Filter out the util module, it's inspect function is special
+      value.inspect !== exports.inspect &&
+      // Also filter out any prototype objects using the circular check.
+      !(value.constructor && value.constructor.prototype === value)) {
+    var ret = value.inspect(recurseTimes, ctx);
+    if (!isString(ret)) {
+      ret = formatValue(ctx, ret, recurseTimes);
+    }
+    return ret;
+  }
+
+  // Primitive types cannot have properties
+  var primitive = formatPrimitive(ctx, value);
+  if (primitive) {
+    return primitive;
+  }
+
+  // Look up the keys of the object.
+  var keys = Object.keys(value);
+  var visibleKeys = arrayToHash(keys);
+
+  if (ctx.showHidden) {
+    keys = Object.getOwnPropertyNames(value);
+  }
+
+  // IE doesn't make error fields non-enumerable
+  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
+  if (isError(value)
+      && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
+    return formatError(value);
+  }
+
+  // Some type of object without properties can be shortcutted.
+  if (keys.length === 0) {
+    if (isFunction(value)) {
+      var name = value.name ? ': ' + value.name : '';
+      return ctx.stylize('[Function' + name + ']', 'special');
+    }
+    if (isRegExp(value)) {
+      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
+    }
+    if (isDate(value)) {
+      return ctx.stylize(Date.prototype.toString.call(value), 'date');
+    }
+    if (isError(value)) {
+      return formatError(value);
+    }
+  }
+
+  var base = '', array = false, braces = ['{', '}'];
+
+  // Make Array say that they are Array
+  if (isArray(value)) {
+    array = true;
+    braces = ['[', ']'];
+  }
+
+  // Make functions say that they are functions
+  if (isFunction(value)) {
+    var n = value.name ? ': ' + value.name : '';
+    base = ' [Function' + n + ']';
+  }
+
+  // Make RegExps say that they are RegExps
+  if (isRegExp(value)) {
+    base = ' ' + RegExp.prototype.toString.call(value);
+  }
+
+  // Make dates with properties first say the date
+  if (isDate(value)) {
+    base = ' ' + Date.prototype.toUTCString.call(value);
+  }
+
+  // Make error with message first say the error
+  if (isError(value)) {
+    base = ' ' + formatError(value);
+  }
+
+  if (keys.length === 0 && (!array || value.length == 0)) {
+    return braces[0] + base + braces[1];
+  }
+
+  if (recurseTimes < 0) {
+    if (isRegExp(value)) {
+      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
+    } else {
+      return ctx.stylize('[Object]', 'special');
+    }
+  }
+
+  ctx.seen.push(value);
+
+  var output;
+  if (array) {
+    output = formatArray(ctx, value, recurseTimes, visibleKeys, keys);
+  } else {
+    output = keys.map(function(key) {
+      return formatProperty(ctx, value, recurseTimes, visibleKeys, key, array);
+    });
+  }
+
+  ctx.seen.pop();
+
+  return reduceToSingleString(output, base, braces);
+}
+
+
+function formatPrimitive(ctx, value) {
+  if (isUndefined(value))
+    return ctx.stylize('undefined', 'undefined');
+  if (isString(value)) {
+    var simple = '\'' + JSON.stringify(value).replace(/^"|"$/g, '')
+                                             .replace(/'/g, "\\'")
+                                             .replace(/\\"/g, '"') + '\'';
+    return ctx.stylize(simple, 'string');
+  }
+  if (isNumber(value))
+    return ctx.stylize('' + value, 'number');
+  if (isBoolean(value))
+    return ctx.stylize('' + value, 'boolean');
+  // For some reason typeof null is "object", so special case here.
+  if (isNull(value))
+    return ctx.stylize('null', 'null');
+}
+
+
+function formatError(value) {
+  return '[' + Error.prototype.toString.call(value) + ']';
+}
+
+
+function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
+  var output = [];
+  for (var i = 0, l = value.length; i < l; ++i) {
+    if (hasOwnProperty(value, String(i))) {
+      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
+          String(i), true));
+    } else {
+      output.push('');
+    }
+  }
+  keys.forEach(function(key) {
+    if (!key.match(/^\d+$/)) {
+      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
+          key, true));
+    }
+  });
+  return output;
+}
+
+
+function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
+  var name, str, desc;
+  desc = Object.getOwnPropertyDescriptor(value, key) || { value: value[key] };
+  if (desc.get) {
+    if (desc.set) {
+      str = ctx.stylize('[Getter/Setter]', 'special');
+    } else {
+      str = ctx.stylize('[Getter]', 'special');
+    }
+  } else {
+    if (desc.set) {
+      str = ctx.stylize('[Setter]', 'special');
+    }
+  }
+  if (!hasOwnProperty(visibleKeys, key)) {
+    name = '[' + key + ']';
+  }
+  if (!str) {
+    if (ctx.seen.indexOf(desc.value) < 0) {
+      if (isNull(recurseTimes)) {
+        str = formatValue(ctx, desc.value, null);
+      } else {
+        str = formatValue(ctx, desc.value, recurseTimes - 1);
+      }
+      if (str.indexOf('\n') > -1) {
+        if (array) {
+          str = str.split('\n').map(function(line) {
+            return '  ' + line;
+          }).join('\n').substr(2);
+        } else {
+          str = '\n' + str.split('\n').map(function(line) {
+            return '   ' + line;
+          }).join('\n');
+        }
+      }
+    } else {
+      str = ctx.stylize('[Circular]', 'special');
+    }
+  }
+  if (isUndefined(name)) {
+    if (array && key.match(/^\d+$/)) {
+      return str;
+    }
+    name = JSON.stringify('' + key);
+    if (name.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)) {
+      name = name.substr(1, name.length - 2);
+      name = ctx.stylize(name, 'name');
+    } else {
+      name = name.replace(/'/g, "\\'")
+                 .replace(/\\"/g, '"')
+                 .replace(/(^"|"$)/g, "'");
+      name = ctx.stylize(name, 'string');
+    }
+  }
+
+  return name + ': ' + str;
+}
+
+
+function reduceToSingleString(output, base, braces) {
+  var numLinesEst = 0;
+  var length = output.reduce(function(prev, cur) {
+    numLinesEst++;
+    if (cur.indexOf('\n') >= 0) numLinesEst++;
+    return prev + cur.replace(/\u001b\[\d\d?m/g, '').length + 1;
+  }, 0);
+
+  if (length > 60) {
+    return braces[0] +
+           (base === '' ? '' : base + '\n ') +
+           ' ' +
+           output.join(',\n  ') +
+           ' ' +
+           braces[1];
+  }
+
+  return braces[0] + base + ' ' + output.join(', ') + ' ' + braces[1];
+}
+
+
+// NOTE: These type checking functions intentionally don't use `instanceof`
+// because it is fragile and can be easily faked with `Object.create()`.
+function isArray(ar) {
+  return Array.isArray(ar);
+}
+exports.isArray = isArray;
+
+function isBoolean(arg) {
+  return typeof arg === 'boolean';
+}
+exports.isBoolean = isBoolean;
+
+function isNull(arg) {
+  return arg === null;
+}
+exports.isNull = isNull;
+
+function isNullOrUndefined(arg) {
+  return arg == null;
+}
+exports.isNullOrUndefined = isNullOrUndefined;
+
+function isNumber(arg) {
+  return typeof arg === 'number';
+}
+exports.isNumber = isNumber;
+
+function isString(arg) {
+  return typeof arg === 'string';
+}
+exports.isString = isString;
+
+function isSymbol(arg) {
+  return typeof arg === 'symbol';
+}
+exports.isSymbol = isSymbol;
+
+function isUndefined(arg) {
+  return arg === void 0;
+}
+exports.isUndefined = isUndefined;
+
+function isRegExp(re) {
+  return isObject(re) && objectToString(re) === '[object RegExp]';
+}
+exports.isRegExp = isRegExp;
+
+function isObject(arg) {
+  return typeof arg === 'object' && arg !== null;
+}
+exports.isObject = isObject;
+
+function isDate(d) {
+  return isObject(d) && objectToString(d) === '[object Date]';
+}
+exports.isDate = isDate;
+
+function isError(e) {
+  return isObject(e) &&
+      (objectToString(e) === '[object Error]' || e instanceof Error);
+}
+exports.isError = isError;
+
+function isFunction(arg) {
+  return typeof arg === 'function';
+}
+exports.isFunction = isFunction;
+
+function isPrimitive(arg) {
+  return arg === null ||
+         typeof arg === 'boolean' ||
+         typeof arg === 'number' ||
+         typeof arg === 'string' ||
+         typeof arg === 'symbol' ||  // ES6 symbol
+         typeof arg === 'undefined';
+}
+exports.isPrimitive = isPrimitive;
+
+exports.isBuffer = require('./support/isBuffer');
+
+function objectToString(o) {
+  return Object.prototype.toString.call(o);
+}
+
+
+function pad(n) {
+  return n < 10 ? '0' + n.toString(10) : n.toString(10);
+}
+
+
+var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
+              'Oct', 'Nov', 'Dec'];
+
+// 26 Feb 16:19:34
+function timestamp() {
+  var d = new Date();
+  var time = [pad(d.getHours()),
+              pad(d.getMinutes()),
+              pad(d.getSeconds())].join(':');
+  return [d.getDate(), months[d.getMonth()], time].join(' ');
+}
+
+
+// log is just a thin wrapper to console.log that prepends a timestamp
+exports.log = function() {
+  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
+};
+
+
+/**
+ * Inherit the prototype methods from one constructor into another.
+ *
+ * The Function.prototype.inherits from lang.js rewritten as a standalone
+ * function (not on Function.prototype). NOTE: If this file is to be loaded
+ * during bootstrapping this function needs to be rewritten using some native
+ * functions as prototype setup using normal JavaScript does not work as
+ * expected during bootstrapping (see mirror.js in r114903).
+ *
+ * @param {function} ctor Constructor function which needs to inherit the
+ *     prototype.
+ * @param {function} superCtor Constructor function to inherit prototype from.
+ */
+exports.inherits = require('inherits');
+
+exports._extend = function(origin, add) {
+  // Don't do anything if add isn't an object
+  if (!add || !isObject(add)) return origin;
+
+  var keys = Object.keys(add);
+  var i = keys.length;
+  while (i--) {
+    origin[keys[i]] = add[keys[i]];
+  }
+  return origin;
+};
+
+function hasOwnProperty(obj, prop) {
+  return Object.prototype.hasOwnProperty.call(obj, prop);
+}
+
+}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./support/isBuffer":352,"_process":360,"inherits":351}],354:[function(require,module,exports){
+'use strict'
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+// Support decoding URL-safe base64 strings, as Node.js does.
+// See: https://en.wikipedia.org/wiki/Base64#URL_applications
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function getLens (b64) {
+  var len = b64.length
+
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // Trim off extra bytes after placeholder bytes are found
+  // See: https://github.com/beatgammit/base64-js/issues/42
+  var validLen = b64.indexOf('=')
+  if (validLen === -1) validLen = len
+
+  var placeHoldersLen = validLen === len
+    ? 0
+    : 4 - (validLen % 4)
+
+  return [validLen, placeHoldersLen]
+}
+
+// base64 is 4/3 + up to two characters of the original data
+function byteLength (b64) {
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function _byteLength (b64, validLen, placeHoldersLen) {
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function toByteArray (b64) {
+  var tmp
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+
+  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
+
+  var curByte = 0
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  var len = placeHoldersLen > 0
+    ? validLen - 4
+    : validLen
+
+  for (var i = 0; i < len; i += 4) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 18) |
+      (revLookup[b64.charCodeAt(i + 1)] << 12) |
+      (revLookup[b64.charCodeAt(i + 2)] << 6) |
+      revLookup[b64.charCodeAt(i + 3)]
+    arr[curByte++] = (tmp >> 16) & 0xFF
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 2) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 2) |
+      (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 1) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 10) |
+      (revLookup[b64.charCodeAt(i + 1)] << 4) |
+      (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] +
+    lookup[num >> 12 & 0x3F] +
+    lookup[num >> 6 & 0x3F] +
+    lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp =
+      ((uint8[i] << 16) & 0xFF0000) +
+      ((uint8[i + 1] << 8) & 0xFF00) +
+      (uint8[i + 2] & 0xFF)
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(
+      uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)
+    ))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 2] +
+      lookup[(tmp << 4) & 0x3F] +
+      '=='
+    )
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 10] +
+      lookup[(tmp >> 4) & 0x3F] +
+      lookup[(tmp << 2) & 0x3F] +
+      '='
+    )
+  }
+
+  return parts.join('')
+}
+
 },{}],355:[function(require,module,exports){
->>>>>>> Add providers to patient
+(function (Buffer){
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+'use strict'
+
+var base64 = require('base64-js')
+var ieee754 = require('ieee754')
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+var K_MAX_LENGTH = 0x7fffffff
+exports.kMaxLength = K_MAX_LENGTH
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Print warning and recommend using `buffer` v4.x which has an Object
+ *               implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * We report that the browser does not support typed arrays if the are not subclassable
+ * using __proto__. Firefox 4-29 lacks support for adding new properties to `Uint8Array`
+ * (See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438). IE 10 lacks support
+ * for __proto__ and has a buggy typed array implementation.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = typedArraySupport()
+
+if (!Buffer.TYPED_ARRAY_SUPPORT && typeof console !== 'undefined' &&
+    typeof console.error === 'function') {
+  console.error(
+    'This browser lacks typed array (Uint8Array) support which is required by ' +
+    '`buffer` v5.x. Use `buffer` v4.x if you require old browser support.'
+  )
+}
+
+function typedArraySupport () {
+  // Can typed array instances can be augmented?
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = { __proto__: Uint8Array.prototype, foo: function () { return 42 } }
+    return arr.foo() === 42
+  } catch (e) {
+    return false
+  }
+}
+
+Object.defineProperty(Buffer.prototype, 'parent', {
+  enumerable: true,
+  get: function () {
+    if (!Buffer.isBuffer(this)) return undefined
+    return this.buffer
+  }
+})
+
+Object.defineProperty(Buffer.prototype, 'offset', {
+  enumerable: true,
+  get: function () {
+    if (!Buffer.isBuffer(this)) return undefined
+    return this.byteOffset
+  }
+})
+
+function createBuffer (length) {
+  if (length > K_MAX_LENGTH) {
+    throw new RangeError('The value "' + length + '" is invalid for option "size"')
+  }
+  // Return an augmented `Uint8Array` instance
+  var buf = new Uint8Array(length)
+  buf.__proto__ = Buffer.prototype
+  return buf
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new TypeError(
+        'The "string" argument must be of type string. Received type number'
+      )
+    }
+    return allocUnsafe(arg)
+  }
+  return from(arg, encodingOrOffset, length)
+}
+
+// Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+if (typeof Symbol !== 'undefined' && Symbol.species != null &&
+    Buffer[Symbol.species] === Buffer) {
+  Object.defineProperty(Buffer, Symbol.species, {
+    value: null,
+    configurable: true,
+    enumerable: false,
+    writable: false
+  })
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+function from (value, encodingOrOffset, length) {
+  if (typeof value === 'string') {
+    return fromString(value, encodingOrOffset)
+  }
+
+  if (ArrayBuffer.isView(value)) {
+    return fromArrayLike(value)
+  }
+
+  if (value == null) {
+    throw TypeError(
+      'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
+      'or Array-like Object. Received type ' + (typeof value)
+    )
+  }
+
+  if (isInstance(value, ArrayBuffer) ||
+      (value && isInstance(value.buffer, ArrayBuffer))) {
+    return fromArrayBuffer(value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'number') {
+    throw new TypeError(
+      'The "value" argument must not be of type number. Received type number'
+    )
+  }
+
+  var valueOf = value.valueOf && value.valueOf()
+  if (valueOf != null && valueOf !== value) {
+    return Buffer.from(valueOf, encodingOrOffset, length)
+  }
+
+  var b = fromObject(value)
+  if (b) return b
+
+  if (typeof Symbol !== 'undefined' && Symbol.toPrimitive != null &&
+      typeof value[Symbol.toPrimitive] === 'function') {
+    return Buffer.from(
+      value[Symbol.toPrimitive]('string'), encodingOrOffset, length
+    )
+  }
+
+  throw new TypeError(
+    'The first argument must be one of type string, Buffer, ArrayBuffer, Array, ' +
+    'or Array-like Object. Received type ' + (typeof value)
+  )
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(value, encodingOrOffset, length)
+}
+
+// Note: Change prototype *after* Buffer.from is defined to workaround Chrome bug:
+// https://github.com/feross/buffer/pull/148
+Buffer.prototype.__proto__ = Uint8Array.prototype
+Buffer.__proto__ = Uint8Array
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be of type number')
+  } else if (size < 0) {
+    throw new RangeError('The value "' + size + '" is invalid for option "size"')
+  }
+}
+
+function alloc (size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(size).fill(fill, encoding)
+      : createBuffer(size).fill(fill)
+  }
+  return createBuffer(size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(size, fill, encoding)
+}
+
+function allocUnsafe (size) {
+  assertSize(size)
+  return createBuffer(size < 0 ? 0 : checked(size) | 0)
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(size)
+}
+
+function fromString (string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('Unknown encoding: ' + encoding)
+  }
+
+  var length = byteLength(string, encoding) | 0
+  var buf = createBuffer(length)
+
+  var actual = buf.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    buf = buf.slice(0, actual)
+  }
+
+  return buf
+}
+
+function fromArrayLike (array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  var buf = createBuffer(length)
+  for (var i = 0; i < length; i += 1) {
+    buf[i] = array[i] & 255
+  }
+  return buf
+}
+
+function fromArrayBuffer (array, byteOffset, length) {
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('"offset" is outside of buffer bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('"length" is outside of buffer bounds')
+  }
+
+  var buf
+  if (byteOffset === undefined && length === undefined) {
+    buf = new Uint8Array(array)
+  } else if (length === undefined) {
+    buf = new Uint8Array(array, byteOffset)
+  } else {
+    buf = new Uint8Array(array, byteOffset, length)
+  }
+
+  // Return an augmented `Uint8Array` instance
+  buf.__proto__ = Buffer.prototype
+  return buf
+}
+
+function fromObject (obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    var buf = createBuffer(len)
+
+    if (buf.length === 0) {
+      return buf
+    }
+
+    obj.copy(buf, 0, 0, len)
+    return buf
+  }
+
+  if (obj.length !== undefined) {
+    if (typeof obj.length !== 'number' || numberIsNaN(obj.length)) {
+      return createBuffer(0)
+    }
+    return fromArrayLike(obj)
+  }
+
+  if (obj.type === 'Buffer' && Array.isArray(obj.data)) {
+    return fromArrayLike(obj.data)
+  }
+}
+
+function checked (length) {
+  // Note: cannot use `length < K_MAX_LENGTH` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= K_MAX_LENGTH) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + K_MAX_LENGTH.toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return b != null && b._isBuffer === true &&
+    b !== Buffer.prototype // so Buffer.isBuffer(Buffer.prototype) will be false
+}
+
+Buffer.compare = function compare (a, b) {
+  if (isInstance(a, Uint8Array)) a = Buffer.from(a, a.offset, a.byteLength)
+  if (isInstance(b, Uint8Array)) b = Buffer.from(b, b.offset, b.byteLength)
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError(
+      'The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array'
+    )
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!Array.isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (isInstance(buf, Uint8Array)) {
+      buf = Buffer.from(buf)
+    }
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (ArrayBuffer.isView(string) || isInstance(string, ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    throw new TypeError(
+      'The "string" argument must be one of type string, Buffer, or ArrayBuffer. ' +
+      'Received type ' + typeof string
+    )
+  }
+
+  var len = string.length
+  var mustMatch = (arguments.length > 2 && arguments[2] === true)
+  if (!mustMatch && len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) {
+          return mustMatch ? -1 : utf8ToBytes(string).length // assume utf8
+        }
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// This property is used by `Buffer.isBuffer` (and the `is-buffer` npm package)
+// to detect a Buffer instance. It's not possible to use `instanceof Buffer`
+// reliably in a browserify context because there could be multiple different
+// copies of the 'buffer' package in use. This method works even for Buffer
+// instances that were created from another copy of the `buffer` package.
+// See: https://github.com/feross/buffer/issues/154
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.toLocaleString = Buffer.prototype.toString
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  str = this.toString('hex', 0, max).replace(/(.{2})/g, '$1 ').trim()
+  if (this.length > max) str += ' ... '
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (isInstance(target, Uint8Array)) {
+    target = Buffer.from(target, target.offset, target.byteLength)
+  }
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError(
+      'The "target" argument must be one of type Buffer or Uint8Array. ' +
+      'Received type ' + (typeof target)
+    )
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset // Coerce to Number.
+  if (numberIsNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  var strLen = string.length
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (numberIsNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset >>> 0
+    if (isFinite(length)) {
+      length = length >>> 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+        : (firstByte > 0xBF) ? 2
+          : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + (bytes[i + 1] * 256))
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf = this.subarray(start, end)
+  // Return an augmented `Uint8Array` instance
+  newBuf.__proto__ = Buffer.prototype
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  offset = offset >>> 0
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  byteLength = byteLength >>> 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  this[offset] = (value & 0xff)
+  this[offset + 1] = (value >>> 8)
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  this[offset] = (value >>> 8)
+  this[offset + 1] = (value & 0xff)
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  this[offset + 3] = (value >>> 24)
+  this[offset + 2] = (value >>> 16)
+  this[offset + 1] = (value >>> 8)
+  this[offset] = (value & 0xff)
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  this[offset] = (value >>> 24)
+  this[offset + 1] = (value >>> 16)
+  this[offset + 2] = (value >>> 8)
+  this[offset + 3] = (value & 0xff)
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    var limit = Math.pow(2, (8 * byteLength) - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    var limit = Math.pow(2, (8 * byteLength) - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  this[offset] = (value & 0xff)
+  this[offset + 1] = (value >>> 8)
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  this[offset] = (value >>> 8)
+  this[offset + 1] = (value & 0xff)
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  this[offset] = (value & 0xff)
+  this[offset + 1] = (value >>> 8)
+  this[offset + 2] = (value >>> 16)
+  this[offset + 3] = (value >>> 24)
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  this[offset] = (value >>> 24)
+  this[offset + 1] = (value >>> 16)
+  this[offset + 2] = (value >>> 8)
+  this[offset + 3] = (value & 0xff)
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  value = +value
+  offset = offset >>> 0
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!Buffer.isBuffer(target)) throw new TypeError('argument should be a Buffer')
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('Index out of range')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+
+  if (this === target && typeof Uint8Array.prototype.copyWithin === 'function') {
+    // Use built-in when available, missing from IE11
+    this.copyWithin(targetStart, start, end)
+  } else if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (var i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, end),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if ((encoding === 'utf8' && code < 128) ||
+          encoding === 'latin1') {
+        // Fast path: If `val` fits into a single byte, use that numeric value.
+        val = code
+      }
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : Buffer.from(val, encoding)
+    var len = bytes.length
+    if (len === 0) {
+      throw new TypeError('The value "' + val +
+        '" is invalid for argument "value"')
+    }
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node takes equal signs as end of the Base64 encoding
+  str = str.split('=')[0]
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = str.trim().replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+// ArrayBuffer or Uint8Array objects from other contexts (i.e. iframes) do not pass
+// the `instanceof` check but they should be treated as of that type.
+// See: https://github.com/feross/buffer/issues/166
+function isInstance (obj, type) {
+  return obj instanceof type ||
+    (obj != null && obj.constructor != null && obj.constructor.name != null &&
+      obj.constructor.name === type.name)
+}
+function numberIsNaN (obj) {
+  // For IE11 support
+  return obj !== obj // eslint-disable-line no-self-compare
+}
+
+}).call(this,require("buffer").Buffer)
+},{"base64-js":354,"buffer":355,"ieee754":357}],356:[function(require,module,exports){
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var objectCreate = Object.create || objectCreatePolyfill
+var objectKeys = Object.keys || objectKeysPolyfill
+var bind = Function.prototype.bind || functionBindPolyfill
+
+function EventEmitter() {
+  if (!this._events || !Object.prototype.hasOwnProperty.call(this, '_events')) {
+    this._events = objectCreate(null);
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}
+module.exports = EventEmitter;
+
+// Backwards-compat with node 0.10.x
+EventEmitter.EventEmitter = EventEmitter;
+
+EventEmitter.prototype._events = undefined;
+EventEmitter.prototype._maxListeners = undefined;
+
+// By default EventEmitters will print a warning if more than 10 listeners are
+// added to it. This is a useful default which helps finding memory leaks.
+var defaultMaxListeners = 10;
+
+var hasDefineProperty;
+try {
+  var o = {};
+  if (Object.defineProperty) Object.defineProperty(o, 'x', { value: 0 });
+  hasDefineProperty = o.x === 0;
+} catch (err) { hasDefineProperty = false }
+if (hasDefineProperty) {
+  Object.defineProperty(EventEmitter, 'defaultMaxListeners', {
+    enumerable: true,
+    get: function() {
+      return defaultMaxListeners;
+    },
+    set: function(arg) {
+      // check whether the input is a positive number (whose value is zero or
+      // greater and not a NaN).
+      if (typeof arg !== 'number' || arg < 0 || arg !== arg)
+        throw new TypeError('"defaultMaxListeners" must be a positive number');
+      defaultMaxListeners = arg;
+    }
+  });
+} else {
+  EventEmitter.defaultMaxListeners = defaultMaxListeners;
+}
+
+// Obviously not all Emitters should be limited to 10. This function allows
+// that to be increased. Set to zero for unlimited.
+EventEmitter.prototype.setMaxListeners = function setMaxListeners(n) {
+  if (typeof n !== 'number' || n < 0 || isNaN(n))
+    throw new TypeError('"n" argument must be a positive number');
+  this._maxListeners = n;
+  return this;
+};
+
+function $getMaxListeners(that) {
+  if (that._maxListeners === undefined)
+    return EventEmitter.defaultMaxListeners;
+  return that._maxListeners;
+}
+
+EventEmitter.prototype.getMaxListeners = function getMaxListeners() {
+  return $getMaxListeners(this);
+};
+
+// These standalone emit* functions are used to optimize calling of event
+// handlers for fast cases because emit() itself often has a variable number of
+// arguments and can be deoptimized because of that. These functions always have
+// the same number of arguments and thus do not get deoptimized, so the code
+// inside them can execute faster.
+function emitNone(handler, isFn, self) {
+  if (isFn)
+    handler.call(self);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self);
+  }
+}
+function emitOne(handler, isFn, self, arg1) {
+  if (isFn)
+    handler.call(self, arg1);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self, arg1);
+  }
+}
+function emitTwo(handler, isFn, self, arg1, arg2) {
+  if (isFn)
+    handler.call(self, arg1, arg2);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self, arg1, arg2);
+  }
+}
+function emitThree(handler, isFn, self, arg1, arg2, arg3) {
+  if (isFn)
+    handler.call(self, arg1, arg2, arg3);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].call(self, arg1, arg2, arg3);
+  }
+}
+
+function emitMany(handler, isFn, self, args) {
+  if (isFn)
+    handler.apply(self, args);
+  else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      listeners[i].apply(self, args);
+  }
+}
+
+EventEmitter.prototype.emit = function emit(type) {
+  var er, handler, len, args, i, events;
+  var doError = (type === 'error');
+
+  events = this._events;
+  if (events)
+    doError = (doError && events.error == null);
+  else if (!doError)
+    return false;
+
+  // If there is no 'error' event listener then throw.
+  if (doError) {
+    if (arguments.length > 1)
+      er = arguments[1];
+    if (er instanceof Error) {
+      throw er; // Unhandled 'error' event
+    } else {
+      // At least give some kind of context to the user
+      var err = new Error('Unhandled "error" event. (' + er + ')');
+      err.context = er;
+      throw err;
+    }
+    return false;
+  }
+
+  handler = events[type];
+
+  if (!handler)
+    return false;
+
+  var isFn = typeof handler === 'function';
+  len = arguments.length;
+  switch (len) {
+      // fast cases
+    case 1:
+      emitNone(handler, isFn, this);
+      break;
+    case 2:
+      emitOne(handler, isFn, this, arguments[1]);
+      break;
+    case 3:
+      emitTwo(handler, isFn, this, arguments[1], arguments[2]);
+      break;
+    case 4:
+      emitThree(handler, isFn, this, arguments[1], arguments[2], arguments[3]);
+      break;
+      // slower
+    default:
+      args = new Array(len - 1);
+      for (i = 1; i < len; i++)
+        args[i - 1] = arguments[i];
+      emitMany(handler, isFn, this, args);
+  }
+
+  return true;
+};
+
+function _addListener(target, type, listener, prepend) {
+  var m;
+  var events;
+  var existing;
+
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
+
+  events = target._events;
+  if (!events) {
+    events = target._events = objectCreate(null);
+    target._eventsCount = 0;
+  } else {
+    // To avoid recursion in the case that type === "newListener"! Before
+    // adding it to the listeners, first emit "newListener".
+    if (events.newListener) {
+      target.emit('newListener', type,
+          listener.listener ? listener.listener : listener);
+
+      // Re-assign `events` because a newListener handler could have caused the
+      // this._events to be assigned to a new object
+      events = target._events;
+    }
+    existing = events[type];
+  }
+
+  if (!existing) {
+    // Optimize the case of one listener. Don't need the extra array object.
+    existing = events[type] = listener;
+    ++target._eventsCount;
+  } else {
+    if (typeof existing === 'function') {
+      // Adding the second element, need to change to array.
+      existing = events[type] =
+          prepend ? [listener, existing] : [existing, listener];
+    } else {
+      // If we've already got an array, just append.
+      if (prepend) {
+        existing.unshift(listener);
+      } else {
+        existing.push(listener);
+      }
+    }
+
+    // Check for listener leak
+    if (!existing.warned) {
+      m = $getMaxListeners(target);
+      if (m && m > 0 && existing.length > m) {
+        existing.warned = true;
+        var w = new Error('Possible EventEmitter memory leak detected. ' +
+            existing.length + ' "' + String(type) + '" listeners ' +
+            'added. Use emitter.setMaxListeners() to ' +
+            'increase limit.');
+        w.name = 'MaxListenersExceededWarning';
+        w.emitter = target;
+        w.type = type;
+        w.count = existing.length;
+        if (typeof console === 'object' && console.warn) {
+          console.warn('%s: %s', w.name, w.message);
+        }
+      }
+    }
+  }
+
+  return target;
+}
+
+EventEmitter.prototype.addListener = function addListener(type, listener) {
+  return _addListener(this, type, listener, false);
+};
+
+EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+
+EventEmitter.prototype.prependListener =
+    function prependListener(type, listener) {
+      return _addListener(this, type, listener, true);
+    };
+
+function onceWrapper() {
+  if (!this.fired) {
+    this.target.removeListener(this.type, this.wrapFn);
+    this.fired = true;
+    switch (arguments.length) {
+      case 0:
+        return this.listener.call(this.target);
+      case 1:
+        return this.listener.call(this.target, arguments[0]);
+      case 2:
+        return this.listener.call(this.target, arguments[0], arguments[1]);
+      case 3:
+        return this.listener.call(this.target, arguments[0], arguments[1],
+            arguments[2]);
+      default:
+        var args = new Array(arguments.length);
+        for (var i = 0; i < args.length; ++i)
+          args[i] = arguments[i];
+        this.listener.apply(this.target, args);
+    }
+  }
+}
+
+function _onceWrap(target, type, listener) {
+  var state = { fired: false, wrapFn: undefined, target: target, type: type, listener: listener };
+  var wrapped = bind.call(onceWrapper, state);
+  wrapped.listener = listener;
+  state.wrapFn = wrapped;
+  return wrapped;
+}
+
+EventEmitter.prototype.once = function once(type, listener) {
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
+  this.on(type, _onceWrap(this, type, listener));
+  return this;
+};
+
+EventEmitter.prototype.prependOnceListener =
+    function prependOnceListener(type, listener) {
+      if (typeof listener !== 'function')
+        throw new TypeError('"listener" argument must be a function');
+      this.prependListener(type, _onceWrap(this, type, listener));
+      return this;
+    };
+
+// Emits a 'removeListener' event if and only if the listener was removed.
+EventEmitter.prototype.removeListener =
+    function removeListener(type, listener) {
+      var list, events, position, i, originalListener;
+
+      if (typeof listener !== 'function')
+        throw new TypeError('"listener" argument must be a function');
+
+      events = this._events;
+      if (!events)
+        return this;
+
+      list = events[type];
+      if (!list)
+        return this;
+
+      if (list === listener || list.listener === listener) {
+        if (--this._eventsCount === 0)
+          this._events = objectCreate(null);
+        else {
+          delete events[type];
+          if (events.removeListener)
+            this.emit('removeListener', type, list.listener || listener);
+        }
+      } else if (typeof list !== 'function') {
+        position = -1;
+
+        for (i = list.length - 1; i >= 0; i--) {
+          if (list[i] === listener || list[i].listener === listener) {
+            originalListener = list[i].listener;
+            position = i;
+            break;
+          }
+        }
+
+        if (position < 0)
+          return this;
+
+        if (position === 0)
+          list.shift();
+        else
+          spliceOne(list, position);
+
+        if (list.length === 1)
+          events[type] = list[0];
+
+        if (events.removeListener)
+          this.emit('removeListener', type, originalListener || listener);
+      }
+
+      return this;
+    };
+
+EventEmitter.prototype.removeAllListeners =
+    function removeAllListeners(type) {
+      var listeners, events, i;
+
+      events = this._events;
+      if (!events)
+        return this;
+
+      // not listening for removeListener, no need to emit
+      if (!events.removeListener) {
+        if (arguments.length === 0) {
+          this._events = objectCreate(null);
+          this._eventsCount = 0;
+        } else if (events[type]) {
+          if (--this._eventsCount === 0)
+            this._events = objectCreate(null);
+          else
+            delete events[type];
+        }
+        return this;
+      }
+
+      // emit removeListener for all listeners on all events
+      if (arguments.length === 0) {
+        var keys = objectKeys(events);
+        var key;
+        for (i = 0; i < keys.length; ++i) {
+          key = keys[i];
+          if (key === 'removeListener') continue;
+          this.removeAllListeners(key);
+        }
+        this.removeAllListeners('removeListener');
+        this._events = objectCreate(null);
+        this._eventsCount = 0;
+        return this;
+      }
+
+      listeners = events[type];
+
+      if (typeof listeners === 'function') {
+        this.removeListener(type, listeners);
+      } else if (listeners) {
+        // LIFO order
+        for (i = listeners.length - 1; i >= 0; i--) {
+          this.removeListener(type, listeners[i]);
+        }
+      }
+
+      return this;
+    };
+
+function _listeners(target, type, unwrap) {
+  var events = target._events;
+
+  if (!events)
+    return [];
+
+  var evlistener = events[type];
+  if (!evlistener)
+    return [];
+
+  if (typeof evlistener === 'function')
+    return unwrap ? [evlistener.listener || evlistener] : [evlistener];
+
+  return unwrap ? unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
+}
+
+EventEmitter.prototype.listeners = function listeners(type) {
+  return _listeners(this, type, true);
+};
+
+EventEmitter.prototype.rawListeners = function rawListeners(type) {
+  return _listeners(this, type, false);
+};
+
+EventEmitter.listenerCount = function(emitter, type) {
+  if (typeof emitter.listenerCount === 'function') {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+};
+
+EventEmitter.prototype.listenerCount = listenerCount;
+function listenerCount(type) {
+  var events = this._events;
+
+  if (events) {
+    var evlistener = events[type];
+
+    if (typeof evlistener === 'function') {
+      return 1;
+    } else if (evlistener) {
+      return evlistener.length;
+    }
+  }
+
+  return 0;
+}
+
+EventEmitter.prototype.eventNames = function eventNames() {
+  return this._eventsCount > 0 ? Reflect.ownKeys(this._events) : [];
+};
+
+// About 1.5x faster than the two-arg version of Array#splice().
+function spliceOne(list, index) {
+  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1)
+    list[i] = list[k];
+  list.pop();
+}
+
+function arrayClone(arr, n) {
+  var copy = new Array(n);
+  for (var i = 0; i < n; ++i)
+    copy[i] = arr[i];
+  return copy;
+}
+
+function unwrapListeners(arr) {
+  var ret = new Array(arr.length);
+  for (var i = 0; i < ret.length; ++i) {
+    ret[i] = arr[i].listener || arr[i];
+  }
+  return ret;
+}
+
+function objectCreatePolyfill(proto) {
+  var F = function() {};
+  F.prototype = proto;
+  return new F;
+}
+function objectKeysPolyfill(obj) {
+  var keys = [];
+  for (var k in obj) if (Object.prototype.hasOwnProperty.call(obj, k)) {
+    keys.push(k);
+  }
+  return k;
+}
+function functionBindPolyfill(context) {
+  var fn = this;
+  return function () {
+    return fn.apply(context, arguments);
+  };
+}
+
+},{}],357:[function(require,module,exports){
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+
+  i += d
+
+  e = s & ((1 << (-nBits)) - 1)
+  s >>= (-nBits)
+  nBits += eLen
+  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e & ((1 << (-nBits)) - 1)
+  e >>= (-nBits)
+  nBits += mLen
+  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) < 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias >= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c >= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias >= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias >= 1) {
+      m = ((value * c) - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e << mLen) | m
+  eLen += mLen
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
+},{}],358:[function(require,module,exports){
+arguments[4][351][0].apply(exports,arguments)
+},{"dup":351}],359:[function(require,module,exports){
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
+}
+
+function isBuffer (obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer (obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
+}
+
+},{}],360:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -113991,147 +102789,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{}],357:[function(require,module,exports){
-=======
-},{}],356:[function(require,module,exports){
->>>>>>> Add providers to patient
-
-var toString = Object.prototype.toString;
-
-function isRegExp (o) {
-  return 'object' == typeof o
-      && '[object RegExp]' == toString.call(o);
-}
-
-module.exports = exports = function (regexp) {
-  if (!isRegExp(regexp)) {
-    throw new TypeError('Not a RegExp');
-  }
-
-  var flags = [];
-  if (regexp.global) flags.push('g');
-  if (regexp.multiline) flags.push('m');
-  if (regexp.ignoreCase) flags.push('i');
-  return new RegExp(regexp.source, flags.join(''));
-}
-
-
-<<<<<<< HEAD
-},{}],358:[function(require,module,exports){
-=======
-},{}],357:[function(require,module,exports){
->>>>>>> Add providers to patient
-/* eslint-disable node/no-deprecated-api */
-var buffer = require('buffer')
-var Buffer = buffer.Buffer
-
-// alternative to using Object.keys for old browsers
-function copyProps (src, dst) {
-  for (var key in src) {
-    dst[key] = src[key]
-  }
-}
-if (Buffer.from && Buffer.alloc && Buffer.allocUnsafe && Buffer.allocUnsafeSlow) {
-  module.exports = buffer
-} else {
-  // Copy properties from require('buffer')
-  copyProps(buffer, exports)
-  exports.Buffer = SafeBuffer
-}
-
-function SafeBuffer (arg, encodingOrOffset, length) {
-  return Buffer(arg, encodingOrOffset, length)
-}
-
-// Copy static methods from Buffer
-copyProps(Buffer, SafeBuffer)
-
-SafeBuffer.from = function (arg, encodingOrOffset, length) {
-  if (typeof arg === 'number') {
-    throw new TypeError('Argument must not be a number')
-  }
-  return Buffer(arg, encodingOrOffset, length)
-}
-
-SafeBuffer.alloc = function (size, fill, encoding) {
-  if (typeof size !== 'number') {
-    throw new TypeError('Argument must be a number')
-  }
-  var buf = Buffer(size)
-  if (fill !== undefined) {
-    if (typeof encoding === 'string') {
-      buf.fill(fill, encoding)
-    } else {
-      buf.fill(fill)
-    }
-  } else {
-    buf.fill(0)
-  }
-  return buf
-}
-
-SafeBuffer.allocUnsafe = function (size) {
-  if (typeof size !== 'number') {
-    throw new TypeError('Argument must be a number')
-  }
-  return Buffer(size)
-}
-
-SafeBuffer.allocUnsafeSlow = function (size) {
-  if (typeof size !== 'number') {
-    throw new TypeError('Argument must be a number')
-  }
-  return buffer.SlowBuffer(size)
-}
-
-<<<<<<< HEAD
-},{"buffer":103}],359:[function(require,module,exports){
-=======
-},{"buffer":102}],358:[function(require,module,exports){
->>>>>>> Add providers to patient
-
-/**
- * An Array.prototype.slice.call(arguments) alternative
- *
- * @param {Object} args something with a length
- * @param {Number} slice
- * @param {Number} sliceEnd
- * @api public
- */
-
-module.exports = function (args, slice, sliceEnd) {
-  var ret = [];
-  var len = args.length;
-
-  if (0 === len) return ret;
-
-  var start = slice < 0
-    ? Math.max(0, slice + len)
-    : slice || 0;
-
-  if (sliceEnd !== undefined) {
-    len = sliceEnd < 0
-      ? sliceEnd + len
-      : sliceEnd
-  }
-
-  while (len-- > start) {
-    ret[len - start] = args[len];
-  }
-
-  return ret;
-}
-
-
-<<<<<<< HEAD
-},{}],360:[function(require,module,exports){
-=======
-=======
->>>>>>> Add providers to patient
-},{}],359:[function(require,module,exports){
->>>>>>> A provider has a list of ids
+},{}],361:[function(require,module,exports){
 (function (setImmediate,clearImmediate){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -114210,24 +102868,8 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"process/browser.js":356,"timers":360}],361:[function(require,module,exports){
-arguments[4][79][0].apply(exports,arguments)
-},{"dup":79}],362:[function(require,module,exports){
-arguments[4][80][0].apply(exports,arguments)
-},{"./support/isBuffer":361,"_process":356,"dup":80,"inherits":250}]},{},[76]);
-=======
-},{"process/browser.js":358,"timers":359}],360:[function(require,module,exports){
-arguments[4][350][0].apply(exports,arguments)
-},{"dup":350}],361:[function(require,module,exports){
-arguments[4][351][0].apply(exports,arguments)
-},{"./support/isBuffer":360,"_process":358,"dup":351,"inherits":356}]},{},[75]);
->>>>>>> A provider has a list of ids
-=======
-},{"process/browser.js":355,"timers":359}],360:[function(require,module,exports){
-arguments[4][78][0].apply(exports,arguments)
-},{"dup":78}],361:[function(require,module,exports){
-arguments[4][79][0].apply(exports,arguments)
-},{"./support/isBuffer":360,"_process":355,"dup":79,"inherits":249}]},{},[75]);
->>>>>>> Add providers to patient
+},{"process/browser.js":360,"timers":361}],362:[function(require,module,exports){
+arguments[4][352][0].apply(exports,arguments)
+},{"dup":352}],363:[function(require,module,exports){
+arguments[4][353][0].apply(exports,arguments)
+},{"./support/isBuffer":362,"_process":360,"dup":353,"inherits":358}]},{},[77]);
