@@ -27,9 +27,7 @@ require_relative 'cqm/concept'
 require_relative 'cqm/cql_statement_dependency'
 require_relative 'cqm/cql_library'
 require_relative 'cqm/population_set'
-require_relative 'cqm/provider'
 require_relative 'cqm/patient'
-require_relative 'qdm/tacoma/individual_result'
 
 # Make Patient Generation Available
 require_relative '../../lib/generate_patients'
