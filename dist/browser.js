@@ -3449,6 +3449,8 @@ module.exports.Patient = require('./cqm/Patient.js').Patient;
 module.exports.PatientSchema = require('./cqm/Patient.js').PatientSchema;
 module.exports.StatementDependency = require('./cqm/CQLStatementDependency.js').StatementDependency;
 module.exports.StatementDependencySchema = require('./cqm/CQLStatementDependency.js').StatementDependencySchema;
+module.exports.PopulationSet = require('./cqm/PopulationSet.js').PopulationSet;
+module.exports.PopulationSetSchema = require('./cqm/PopulationSet.js').PopulationSetSchema;
 module.exports.CQLLibrary = require('./cqm/CQLLibrary.js').CQLLibrary;
 module.exports.CQLLibrarySchema = require('./cqm/CQLLibrary.js').CQLLibrarySchema;
 module.exports.ValueSet = require('./cqm/ValueSet.js').ValueSet;
@@ -3458,7 +3460,7 @@ module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
 module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
 module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;
 
-},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":69,"./cqm/CQLStatementDependency.js":70,"./cqm/Concept.js":71,"./cqm/Measure.js":72,"./cqm/MeasurePackage.js":73,"./cqm/Patient.js":74,"./cqm/ValueSet.js":77,"cql-execution":109}],79:[function(require,module,exports){
+},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":69,"./cqm/CQLStatementDependency.js":70,"./cqm/Concept.js":71,"./cqm/Measure.js":72,"./cqm/MeasurePackage.js":73,"./cqm/Patient.js":74,"./cqm/PopulationSet.js":75,"./cqm/ValueSet.js":77,"cql-execution":109}],79:[function(require,module,exports){
 (function (global){
 'use strict';
 
