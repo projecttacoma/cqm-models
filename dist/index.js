@@ -3202,32 +3202,7 @@ class Measure extends mongoose.Document {
 }
 module.exports.Measure = Measure;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-},{"../basetypes/Code":63,"../basetypes/DataElement":64,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":253}],72:[function(require,module,exports){
-=======
-=======
->>>>>>> Add providers to patient
-<<<<<<< HEAD
-},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":253}],72:[function(require,module,exports){
-=======
-},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":73,"mongoose/browser":242}],72:[function(require,module,exports){
->>>>>>> A provider has a list of ids
-<<<<<<< HEAD
->>>>>>> A provider has a list of ids
-=======
-=======
-},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":73,"mongoose/browser":252}],72:[function(require,module,exports){
->>>>>>> Add providers to patient
->>>>>>> Add providers to patient
-=======
-},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":244}],72:[function(require,module,exports){
->>>>>>> add Provider to index_template.js
-=======
-},{"../basetypes/Code":63,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":254}],72:[function(require,module,exports){
->>>>>>> ran yarn run dist
+},{"../basetypes/Code":63,"../basetypes/DataElement":64,"../basetypes/Interval":66,"../basetypes/Quantity":67,"./CQLLibrary":68,"./PopulationSet":74,"mongoose/browser":254}],72:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
