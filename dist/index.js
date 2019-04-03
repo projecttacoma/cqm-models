@@ -3442,8 +3442,12 @@ module.exports.MeasurePackage = require('./cqm/MeasurePackage.js').MeasurePackag
 module.exports.MeasurePackageSchema = require('./cqm/MeasurePackage.js').MeasurePackageSchema;
 module.exports.Patient = require('./cqm/Patient.js').Patient;
 module.exports.PatientSchema = require('./cqm/Patient.js').PatientSchema;
+module.exports.Provider = require('./cqm/Provider.js').Provider;
+module.exports.ProviderSchema = require('./cqm/Provider.js').ProviderSchema;
 module.exports.StatementDependency = require('./cqm/CQLStatementDependency.js').StatementDependency;
 module.exports.StatementDependencySchema = require('./cqm/CQLStatementDependency.js').StatementDependencySchema;
+module.exports.PopulationSet = require('./cqm/PopulationSet.js').PopulationSet;
+module.exports.PopulationSetSchema = require('./cqm/PopulationSet.js').PopulationSetSchema;
 module.exports.CQLLibrary = require('./cqm/CQLLibrary.js').CQLLibrary;
 module.exports.CQLLibrarySchema = require('./cqm/CQLLibrary.js').CQLLibrarySchema;
 module.exports.ValueSet = require('./cqm/ValueSet.js').ValueSet;
@@ -3453,7 +3457,7 @@ module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
 module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
 module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;
 
-},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/Patient.js":73,"./cqm/ValueSet.js":76,"cql-execution":108}],78:[function(require,module,exports){
+},{"./AllDataElements.js":2,"./IndividualResult":23,"./Result.js":54,"./cqm/CQLLibrary.js":68,"./cqm/CQLStatementDependency.js":69,"./cqm/Concept.js":70,"./cqm/Measure.js":71,"./cqm/MeasurePackage.js":72,"./cqm/Patient.js":73,"./cqm/PopulationSet.js":74,"./cqm/Provider.js":75,"./cqm/ValueSet.js":76,"cql-execution":108}],78:[function(require,module,exports){
 (function (global){
 'use strict';
 
