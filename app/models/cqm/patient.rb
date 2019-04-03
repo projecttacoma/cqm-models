@@ -7,6 +7,7 @@ module CQM
     field :bundleId, type: String
     field :expectedValues, type: Array
     field :notes, type: String
+    has_and_belongs_to_many :providers, class_name: 'CQM::Provider'
     embeds_one :qdmPatient, class_name: 'QDM::Patient', autobuild: true
 
     # Include '_type' in any JSON output. This is necessary for deserialization.
