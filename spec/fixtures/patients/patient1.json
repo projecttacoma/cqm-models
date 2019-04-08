@@ -70,21 +70,21 @@
 			"data_element_codes": [
 				{
 					"code": "E08.311",
-					"code_system": "ICD-10-CM",
+					"code_system": "ICD10CM",
 					"descriptor": null,
 					"code_system_oid": null,
 					"version": null
 				},
 				{
 					"code": "362.01",
-					"code_system": "ICD-9-CM",
+					"code_system": "ICD9CM",
 					"descriptor": null,
 					"code_system_oid": null,
 					"version": null
 				},
 				{
 					"code": "4855003",
-					"code_system": "SNOMED-CT",
+					"code_system": "SNOMEDCT",
 					"descriptor": null,
 					"code_system_oid": null,
 					"version": null
@@ -105,7 +105,7 @@
 			"category": "encounter",
 			"data_element_codes": [
 				{
-					"code": "SNOMED-CT",
+					"code": "SNOMEDCT",
 					"code_system": "17436001",
 					"descriptor": null,
 					"code_system_oid": null,
@@ -126,7 +126,7 @@
 			"length_of_stay": null,
 			"negation_rationale": null,
 			"principal_diagnosis": {
-				"code": "SNOMED-CT",
+				"code": "SNOMEDCT",
 				"code_system": "419099009",
 				"descriptor": null,
 				"code_system_oid": null,
@@ -147,7 +147,7 @@
 			"category": "communication",
 			"data_element_codes": [
 				{
-					"code": "SNOMED-CT",
+					"code": "SNOMEDCT",
 					"code_system": "428341000124108",
 					"descriptor": null,
 					"code_system_oid": null,
