@@ -75,6 +75,8 @@ module QDM
       # There are certain fields that we want to populate manually
       if field_name == 'description'
         # Skip the setting of patient description for now
+      elsif field_name == 'codeListId'
+        # Skip the setting code list id. It is not used in a patient's data_element, only in the measure's
       elsif field_name == 'negationRationale'
         data_element[field_name] = QDM::BaseTypeGeneration.generate_code_field if negate_data_element
       elsif field_name == 'components'
