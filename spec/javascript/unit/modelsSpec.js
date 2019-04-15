@@ -388,12 +388,6 @@ describe('PopulationSet', () => {
   });
 });
 
-describe('ValueSet', () => {
-  it('can create a ValueSet', () => {
-    new ValueSet();
-  });
-});
-
 describe('DateTime', () => {
   it('can create a DateTime', () => {
     new cql.DateTime(new Date());
