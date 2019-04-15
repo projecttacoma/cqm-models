@@ -393,3 +393,10 @@ describe('ValueSet', () => {
     new ValueSet();
   });
 });
+
+describe('DateTime', () => {
+  it('can create a DateTime', () => {
+    new cql.DateTime(new Date());
+    new cql.DateTime(new cql.DateTime(new Date()));
+  });
+});

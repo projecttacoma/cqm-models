@@ -7,6 +7,11 @@ function DateTime(key, options) {
 DateTime.prototype = Object.create(mongoose.SchemaType.prototype);
 
 DateTime.prototype.cast = (dateTime) => {
+
+  if (dateTime.isDateTime){
+    return dateTime;
+  }
+
   if (!Date.parse(dateTime)) {
     throw new Error(`DateTime: ${dateTime} is not a valid DateTime`);
   }
