@@ -12,6 +12,7 @@ const CareGoal = require('./../../../app/assets/javascripts/CareGoal.js').CareGo
 const Concept = require('./../../../app/assets/javascripts/cqm/Concept.js').Concept;
 const Component = require('./../../../app/assets/javascripts/attributes/Component.js').Component;
 const CommunicationPerformed = require('./../../../app/assets/javascripts/CommunicationPerformed.js').CommunicationPerformed;
+const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
 const Diagnosis = require('./../../../app/assets/javascripts/Diagnosis.js').Diagnosis;
 const DeviceApplied = require('./../../../app/assets/javascripts/DeviceApplied.js').DeviceApplied;
 const DeviceOrder = require('./../../../app/assets/javascripts/DeviceOrder.js').DeviceOrder;
@@ -389,9 +390,14 @@ describe('PopulationSet', () => {
 });
 
 describe('DateTime', () => {
-  it('can create a DateTime', () => {
-    new cql.DateTime(new Date());
-    new cql.DateTime(new cql.DateTime(new Date()));
-    expect(() => {new DateTime('some invalid DateTime arg')}).toThrow();
+  it('can create a DateTime from JS Date', () => {
+    DateTime(new Date());
+  });
+
+  it('can create a DateTime from cql DateTime', () => {
+    DateTime(new cql.DateTime(new Date()));
+  });
+  it('throws if invalid DateTime passed to cast', () => {
+    expect(() => {DateTime.cast('some invalid DateTime arg')}).toThrow();
   });
 });
