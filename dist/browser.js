@@ -2955,8 +2955,7 @@ function DateTime(key, options) {
 DateTime.prototype = Object.create(mongoose.SchemaType.prototype);
 
 DateTime.prototype.cast = (dateTime) => {
-
-  if (dateTime.isDateTime){
+  if (dateTime.isDateTime) {
     return dateTime;
   }
 
