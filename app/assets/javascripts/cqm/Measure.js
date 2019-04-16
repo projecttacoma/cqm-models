@@ -3,6 +3,7 @@ const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
 const DataElementSchema = require('../basetypes/DataElement').DataElementSchema();
+const AllDataElements = require('../AllDataElements');
 const { CQLLibrarySchema } = require('./CQLLibrary');
 const { PopulationSetSchema } = require('./PopulationSet');
 
@@ -62,7 +63,7 @@ const MeasureSchema = new mongoose.Schema(
 
     // HQMF/Tacoma-specific Measure-logic related data
     population_criteria: Mixed,
-    source_data_criteria: [DataElementSchema],
+    source_data_criteria: [],
     measure_period: Interval,
     measure_attributes: [],
 
@@ -81,6 +82,18 @@ const MeasureSchema = new mongoose.Schema(
   }
 );
 
+// After initialization of a Measure model, initialize every individual data element
+// to its respective Mongoose Model
+MeasureSchema.methods.initializeDataElements = function initializeDataElements() {
+  let typeStripped;
+  const sourceDataCriteriaInit = [];
+  this.source_data_criteria.forEach((element) => {
+    typeStripped = element._type.replace(/QDM::/, '');
+    sourceDataCriteriaInit.push(new AllDataElements[typeStripped](element));
+  });
+  this.set('source_data_criteria', sourceDataCriteriaInit);
+};
+
 MeasureSchema.methods.all_stratifications = function all_stratifications() {
   return this.population_sets.flatMap(ps => ps.stratifications);
 };
@@ -89,6 +102,7 @@ module.exports.MeasureSchema = MeasureSchema;
 class Measure extends mongoose.Document {
   constructor(object) {
     super(object, MeasureSchema);
+    this.initializeDataElements();
   }
 }
 module.exports.Measure = Measure;
