@@ -20,7 +20,7 @@ module QDM
 
     def self.generate_code_field
       # TODO: use code with all parameters, possibly randomize parameter values and optional information
-      QDM::Code.new('1234', 'SNOMED-CT')
+      QDM::Code.new('1234', 'SNOMEDCT')
     end
 
     def self.generate_datetime
