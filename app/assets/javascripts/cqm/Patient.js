@@ -3,7 +3,7 @@ const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
-const { QDMPatientSchema } = require('../QDMPatient');
+const { QDMPatientSchema, QDMPatient } = require('../QDMPatient');
 const { ProviderSchema } = require('./Provider');
 
 const [Schema, Number, String, Mixed] = [
@@ -30,6 +30,9 @@ module.exports.PatientSchema = PatientSchema;
 class Patient extends mongoose.Document {
   constructor(object) {
     super(object, PatientSchema);
+    if (this.qdmPatient) {
+      this.qdmPatient = new QDMPatient(this.qdmPatient.toJSON());
+    }
   }
 }
 module.exports.Patient = Patient;
