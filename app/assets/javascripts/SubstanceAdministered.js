@@ -28,7 +28,7 @@ const SubstanceAdministeredSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'administered' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'SubstanceAdministered' },
+  _type: { type: String, default: 'QDM::SubstanceAdministered' },
 
 });
 

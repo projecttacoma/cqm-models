@@ -22,7 +22,7 @@ const PatientCareExperienceSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.52' },
   qdmCategory: { type: String, default: 'care_experience' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCareExperience' },
+  _type: { type: String, default: 'QDM::PatientCareExperience' },
 
 });
 

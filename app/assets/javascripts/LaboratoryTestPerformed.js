@@ -32,7 +32,7 @@ const LaboratoryTestPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'LaboratoryTestPerformed' },
+  _type: { type: String, default: 'QDM::LaboratoryTestPerformed' },
 
 });
 

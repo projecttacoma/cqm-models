@@ -26,7 +26,7 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PhysicalExamRecommended' },
+  _type: { type: String, default: 'QDM::PhysicalExamRecommended' },
 
 });
 

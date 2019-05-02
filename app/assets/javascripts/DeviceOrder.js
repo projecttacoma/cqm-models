@@ -25,7 +25,7 @@ const DeviceOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceOrder' },
+  _type: { type: String, default: 'QDM::DeviceOrder' },
 
 });
 

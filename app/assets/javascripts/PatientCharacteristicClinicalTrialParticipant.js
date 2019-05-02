@@ -25,7 +25,7 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'clinical_trial_participant' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicClinicalTrialParticipant' },
 
 });
 

@@ -25,7 +25,7 @@ const LaboratoryTestOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'LaboratoryTestOrder' },
+  _type: { type: String, default: 'QDM::LaboratoryTestOrder' },
 
 });
 

@@ -27,7 +27,7 @@ const ProcedureOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedureOrder' },
+  _type: { type: String, default: 'QDM::ProcedureOrder' },
 
 });
 

@@ -25,7 +25,7 @@ const AssessmentRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AssessmentRecommended' },
+  _type: { type: String, default: 'QDM::AssessmentRecommended' },
 
 });
 

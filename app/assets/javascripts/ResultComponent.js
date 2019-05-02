@@ -19,7 +19,7 @@ const [Number, String] = [
 const ResultComponentSchema = DataElementSchema({
   referenceRange: Interval,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ResultComponent' },
+  _type: { type: String, default: 'QDM::ResultComponent' },
 
 });
 

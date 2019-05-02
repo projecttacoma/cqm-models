@@ -26,7 +26,7 @@ const EncounterRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'EncounterRecommended' },
+  _type: { type: String, default: 'QDM::EncounterRecommended' },
 
 });
 

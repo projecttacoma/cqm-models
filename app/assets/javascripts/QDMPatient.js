@@ -15,7 +15,6 @@ const [Schema, Number, String, Mixed] = [
 const QDMPatientSchema = new Schema({
   birthDatetime: DateTime,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'QdmPatient' },
 
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
@@ -36,6 +35,7 @@ QDMPatientSchema.methods.initializeDataElements = function initializeDataElement
   const dataElementsInit = [];
   this.dataElements.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
+    delete element._type;
     dataElementsInit.push(new AllDataElements[typeStripped](element));
   });
   this.set({ dataElements: dataElementsInit });

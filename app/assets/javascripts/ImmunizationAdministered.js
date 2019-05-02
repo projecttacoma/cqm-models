@@ -28,7 +28,7 @@ const ImmunizationAdministeredSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'administered' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ImmunizationAdministered' },
+  _type: { type: String, default: 'QDM::ImmunizationAdministered' },
 
 });
 

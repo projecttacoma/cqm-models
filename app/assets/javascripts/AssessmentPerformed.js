@@ -29,7 +29,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AssessmentPerformed' },
+  _type: { type: String, default: 'QDM::AssessmentPerformed' },
 
 });
 

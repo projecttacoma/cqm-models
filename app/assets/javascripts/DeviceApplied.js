@@ -27,7 +27,7 @@ const DeviceAppliedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'applied' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceApplied' },
+  _type: { type: String, default: 'QDM::DeviceApplied' },
 
 });
 

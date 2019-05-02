@@ -26,7 +26,7 @@ const AllergyIntoleranceSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'allergy' },
   qdmStatus: { type: String, default: 'intolerance' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AllergyIntolerance' },
+  _type: { type: String, default: 'QDM::AllergyIntolerance' },
 
 });
 

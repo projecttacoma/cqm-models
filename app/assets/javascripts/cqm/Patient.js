@@ -14,7 +14,6 @@ const [Schema, Number, String, Mixed] = [
 ];
 
 const PatientSchema = new Schema({
-  _type: { type: String, default: 'Patient' },
 
   givenNames: [String],
   familyName: String,

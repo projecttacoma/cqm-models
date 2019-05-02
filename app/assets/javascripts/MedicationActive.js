@@ -26,7 +26,7 @@ const MedicationActiveSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'active' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationActive' },
+  _type: { type: String, default: 'QDM::MedicationActive' },
 
 });
 

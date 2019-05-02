@@ -16,7 +16,7 @@ const ComponentSchema = new mongoose.Schema({
   code: Code,
   result: Any,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Component' },
+  _type: { type: String, default: 'QDM::Component' },
 
 });
 

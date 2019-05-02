@@ -9,7 +9,6 @@ const IdSchema = mongoose.Schema({
   namingSystem: String,
   value: String,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Id' },
 
 }, { _id: false, id: false });
 

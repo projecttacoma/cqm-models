@@ -28,7 +28,7 @@ const InterventionPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'InterventionPerformed' },
+  _type: { type: String, default: 'QDM::InterventionPerformed' },
 
 });
 

@@ -25,7 +25,7 @@ const InterventionOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'InterventionOrder' },
+  _type: { type: String, default: 'QDM::InterventionOrder' },
 
 });
 

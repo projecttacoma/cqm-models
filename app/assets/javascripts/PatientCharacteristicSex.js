@@ -22,7 +22,7 @@ const PatientCharacteristicSexSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'gender' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicSex' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicSex' },
 
 });
 

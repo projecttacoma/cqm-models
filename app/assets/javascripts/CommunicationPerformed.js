@@ -30,7 +30,7 @@ const CommunicationPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'communication' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'CommunicationPerformed' },
+  _type: { type: String, default: 'QDM::CommunicationPerformed' },
 
 });
 

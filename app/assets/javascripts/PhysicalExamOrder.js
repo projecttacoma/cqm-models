@@ -26,7 +26,7 @@ const PhysicalExamOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PhysicalExamOrder' },
+  _type: { type: String, default: 'QDM::PhysicalExamOrder' },
 
 });
 

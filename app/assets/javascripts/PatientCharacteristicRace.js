@@ -22,7 +22,7 @@ const PatientCharacteristicRaceSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'race' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicRace' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicRace' },
 
 });
 

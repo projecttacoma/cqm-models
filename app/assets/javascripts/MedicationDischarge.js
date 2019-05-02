@@ -30,7 +30,7 @@ const MedicationDischargeSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'discharge' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationDischarge' },
+  _type: { type: String, default: 'QDM::MedicationDischarge' },
 
 });
 

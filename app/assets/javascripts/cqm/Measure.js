@@ -89,6 +89,7 @@ MeasureSchema.methods.initializeDataElements = function initializeDataElements()
   const sourceDataCriteriaInit = [];
   this.source_data_criteria.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
+    delete element._type;
     sourceDataCriteriaInit.push(new AllDataElements[typeStripped](element));
   });
   this.set('source_data_criteria', sourceDataCriteriaInit);

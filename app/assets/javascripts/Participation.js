@@ -22,7 +22,7 @@ const ParticipationSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.130' },
   qdmCategory: { type: String, default: 'participation' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Participation' },
+  _type: { type: String, default: 'QDM::Participation' },
 
 });
 

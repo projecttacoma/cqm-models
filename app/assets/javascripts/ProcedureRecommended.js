@@ -27,7 +27,7 @@ const ProcedureRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedureRecommended' },
+  _type: { type: String, default: 'QDM::ProcedureRecommended' },
 
 });
 
