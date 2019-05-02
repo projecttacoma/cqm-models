@@ -12,6 +12,7 @@ const CareGoal = require('./../../../app/assets/javascripts/CareGoal.js').CareGo
 const Concept = require('./../../../app/assets/javascripts/cqm/Concept.js').Concept;
 const Component = require('./../../../app/assets/javascripts/attributes/Component.js').Component;
 const CommunicationPerformed = require('./../../../app/assets/javascripts/CommunicationPerformed.js').CommunicationPerformed;
+const CQLLibrary = require('./../../../app/assets/javascripts/cqm/CQLLibrary.js').CQLLibrary;
 const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
 const Diagnosis = require('./../../../app/assets/javascripts/Diagnosis.js').Diagnosis;
 const DeviceApplied = require('./../../../app/assets/javascripts/DeviceApplied.js').DeviceApplied;
@@ -399,5 +400,17 @@ describe('DateTime', () => {
   });
   it('throws if invalid DateTime passed to cast', () => {
     expect(() => {DateTime.cast('some invalid DateTime arg')}).toThrow();
+  });
+});
+
+describe('CQLLibrary', () => {
+  it('defaults to be top level', () => {
+    library = new CQLLibrary();
+    expect(library.is_top_level).toBe(true);
+  });
+
+  it('can create a non top level CQLLibrary', () => {
+    library = new CQLLibrary({ is_top_level: false });
+    expect(library.is_top_level).toBe(false);
   });
 });
