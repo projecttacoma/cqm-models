@@ -13,6 +13,7 @@ matrix:
       script:
         - bundle exec rake
         - bundle exec rubocop
+        - bundle exec bundle-audit check --update
     - language: ruby
       cache: bundler
       rvm:
@@ -26,7 +27,11 @@ matrix:
       script:
         - bundle exec rake
         - bundle exec rubocop
+        - bundle exec bundle-audit check --update
     - language: node_js
+      before_install:
+        - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
+        - export PATH=$HOME/.yarn/bin:$PATH
       install:
         - npm install -g codecov
         - npm install -g istanbul
@@ -40,6 +45,7 @@ matrix:
         - yarn install
         - yarn run lint
         - yarn run test
+        - yarn audit
         - ./bin/validate_dist.sh
         - ./bin/validate_browser.sh
         - ./bin/validate_generator.sh
