@@ -3262,11 +3262,12 @@ const DateTime = require('../basetypes/DateTime');
 const { QDMPatientSchema, QDMPatient } = require('../QDMPatient');
 const { ProviderSchema } = require('./Provider');
 
-const [Schema, Number, String, Mixed] = [
+const [Schema, Number, String, Mixed, ObjectId] = [
   mongoose.Schema,
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Mixed,
+  mongoose.Schema.Types.ObjectId
 ];
 
 const PatientSchema = new Schema({
@@ -3279,6 +3280,7 @@ const PatientSchema = new Schema({
   notes: String,
   qdmPatient: QDMPatientSchema,
   providers: [ProviderSchema],
+  measures: [{ type: ObjectId, ref: 'Measure', index: true }],
 
 }, { id: false });
 
