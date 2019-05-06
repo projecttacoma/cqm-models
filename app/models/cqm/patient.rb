@@ -7,6 +7,8 @@ module CQM
     field :bundleId, type: String
     field :expectedValues, type: Array
     field :notes, type: String
+    field :measure_ids, type: Array
+
     has_and_belongs_to_many :providers, class_name: 'CQM::Provider'
     embeds_one :qdmPatient, class_name: 'QDM::Patient', autobuild: true
 
