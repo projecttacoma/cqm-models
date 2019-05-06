@@ -3045,6 +3045,7 @@ const CQLLibrarySchema = new mongoose.Schema(
     elm: Mixed,
     elm_annotations: Mixed,
     is_main_library: { type: Boolean, default: false },
+    is_top_level: { type: Boolean, default: true },
     statement_dependencies: [StatementDependencySchema],
   },
   // Options
