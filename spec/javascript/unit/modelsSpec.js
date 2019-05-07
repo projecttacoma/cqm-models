@@ -82,7 +82,19 @@ describe('QDMPatient', () => {
     });
     err = qdmPatient.validateSync();
     expect(err).toBeUndefined();
-    expect(qdmPatient.id()).toBeDefined();
+  });
+
+  it('can construct a patient with extendedData', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      extendedData: {
+        measure_ids: ['ID123']
+      }
+    });
+    err = qdmPatient.validateSync();
+    expect(err).toBeUndefined();
+    expect(qdmPatient.extendedData['measure_ids']).toEqual(['ID123']);
   });
 
   describe('InitializeDataElements', () => {
@@ -350,6 +362,26 @@ describe('CQMPatient', () => {
     expect(err).toBeUndefined();
     expect(patient.qdmPatient).toBeDefined();
   });
+  it('can contain a qdm patient that has extendedData', () => {
+    qdmData = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      extendedData: {
+        measure_ids: ['ID123']
+      }
+    });
+    patient = new Patient({
+      givenNames: ['name1', 'name2'],
+      familyName: 'foo',
+      bundleId: '012210',
+      expectedValues: [],
+      notes: 'Random note for testing',
+      qdmPatient: qdmData,
+    });
+    err = patient.validateSync();
+    expect(err).toBeUndefined();
+    expect(patient.qdmPatient.extendedData.measure_ids).toEqual(['ID123']);
+  });
 });
 
 describe('Concept', () => {
@@ -414,3 +446,4 @@ describe('CQLLibrary', () => {
     expect(library.is_top_level).toBe(false);
   });
 });
+
