@@ -362,12 +362,13 @@ describe('CQMPatient', () => {
     expect(err).toBeUndefined();
     expect(patient.qdmPatient).toBeDefined();
   });
+
   it('can contain a qdm patient that has extendedData', () => {
     qdmData = new QDMPatient({
       birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
       qdmVersion: '0.0',
       extendedData: {
-        measure_ids: ['ID123']
+        description: 'A Description'
       }
     });
     patient = new Patient({
@@ -377,10 +378,12 @@ describe('CQMPatient', () => {
       expectedValues: [],
       notes: 'Random note for testing',
       qdmPatient: qdmData,
+      measure_ids: ['ID123']
     });
     err = patient.validateSync();
     expect(err).toBeUndefined();
-    expect(patient.qdmPatient.extendedData.measure_ids).toEqual(['ID123']);
+    expect(patient.qdmPatient.extendedData.description).toEqual('A Description');
+    expect(patient.measure_ids[0]).toEqual('ID123');
   });
 });
 
