@@ -3275,6 +3275,7 @@ const PatientSchema = new Schema({
   notes: String,
   qdmPatient: QDMPatientSchema,
   providers: [ProviderSchema],
+  measure_ids: [String],
 
 }, { id: false });
 

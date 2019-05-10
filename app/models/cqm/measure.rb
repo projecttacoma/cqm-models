@@ -66,15 +66,12 @@ module CQM
     # Relations to other model classes
     # Note: bundle is removed, Cypress may create their own bundle object and inject the relationship
     has_one :package, class_name: 'CQM::MeasurePackage', inverse_of: :measure, dependent: :destroy # Bonnie-specific
-    has_and_belongs_to_many :patients, class_name: 'CQM::Patient'
 
     # Store this references as an Array on the Measure object,
     # but don't care about the inverse relationship (e.g. we never really care
     # about getting all the measures from a ValueSet object,
     # hence the 'inverse_of: nil')
     has_and_belongs_to_many :value_sets, inverse_of: nil
-
-    scope :by_measure_id, ->(id) { where(measure_id: id) }
 
     def all_stratifications
       population_sets.flat_map(&:stratifications)
