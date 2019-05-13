@@ -124,6 +124,18 @@ describe('QDMPatient', () => {
       });
       expect(qdmPatient.dataElements.length).toEqual(2);
     });
+
+    it('initializes qdmPatients and data element IDs without a _type field', () => {
+      qdmPatient = new QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [new MedicationOrder(), new MedicationOrder()]
+      });
+      expect(qdmPatient._type).toBeUndefined();
+      expect(qdmPatient.dataElements[0].id._type).toBeUndefined();
+      expect(qdmPatient.dataElements[0]._type).toEqual('QDM::MedicationOrder');
+    });
+
   });
   describe('getDataElements', () => {
     it('can return dataElements with and without qdmCategory', () => {
@@ -331,6 +343,11 @@ describe('QDMPatient', () => {
 describe('CQMPatient', () => {
   it('can create a blank patient', () => {
     expect(() => {new Patient()}).not.toThrow();
+  });
+
+  it('initializes cqmPatients without a _type field', () => {
+    patient = new Patient();
+    expect(patient._type).toBeUndefined();
   });
 
   it('can construct a patient with data', () => {

@@ -72,6 +72,18 @@ RSpec.describe QDM do
     system('rm -rf app/models/test')
   end
 
+  it 'patient elements have _type when expected' do
+    # These are the only three models where _type shouldn't exist
+    # Due to conversion to a mongoid document on the backend
+    expect(@patient_a.methods.include?(:_type)).to eq false
+    expect(@patient_a.qdmPatient.methods.include?(:_type)).to eq false
+    expect(@patient_a.qdmPatient.dataElements[0].id.methods.include?(:_type)).to eq false
+
+    expect(@patient_a.qdmPatient.dataElements[0]._type).to eq 'QDM::ProcedurePerformed'
+    expect(@patient_a.qdmPatient.dataElements[1]._type).to eq 'QDM::EncounterOrder'
+    expect(@patient_big.qdmPatient.dataElements[0]._type).to eq 'QDM::PatientCharacteristicBirthdate'
+  end
+
   it 'patients have patient characteristics' do
     expect(@patient_a.qdmPatient.birthDatetime).to be
     expect(@patient_b.givenNames).to be
