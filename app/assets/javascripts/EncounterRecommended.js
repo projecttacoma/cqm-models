@@ -34,6 +34,7 @@ module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
 class EncounterRecommended extends mongoose.Document {
   constructor(object) {
     super(object, EncounterRecommendedSchema);
+    this._type = 'QDM::EncounterRecommended';
   }
 }
 module.exports.EncounterRecommended = EncounterRecommended;

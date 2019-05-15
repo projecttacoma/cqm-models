@@ -30,6 +30,7 @@ module.exports.ParticipationSchema = ParticipationSchema;
 class Participation extends mongoose.Document {
   constructor(object) {
     super(object, ParticipationSchema);
+    this._type = 'QDM::Participation';
   }
 }
 module.exports.Participation = Participation;

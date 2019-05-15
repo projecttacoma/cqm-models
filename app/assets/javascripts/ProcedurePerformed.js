@@ -41,6 +41,7 @@ module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
 class ProcedurePerformed extends mongoose.Document {
   constructor(object) {
     super(object, ProcedurePerformedSchema);
+    this._type = 'QDM::ProcedurePerformed';
   }
 }
 module.exports.ProcedurePerformed = ProcedurePerformed;

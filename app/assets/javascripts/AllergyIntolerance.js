@@ -34,6 +34,7 @@ module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
 class AllergyIntolerance extends mongoose.Document {
   constructor(object) {
     super(object, AllergyIntoleranceSchema);
+    this._type = 'QDM::AllergyIntolerance';
   }
 }
 module.exports.AllergyIntolerance = AllergyIntolerance;

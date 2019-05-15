@@ -34,6 +34,7 @@ module.exports.MedicationActiveSchema = MedicationActiveSchema;
 class MedicationActive extends mongoose.Document {
   constructor(object) {
     super(object, MedicationActiveSchema);
+    this._type = 'QDM::MedicationActive';
   }
 }
 module.exports.MedicationActive = MedicationActive;

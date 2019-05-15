@@ -32,13 +32,10 @@ const QDMPatientSchema = new Schema({
 // to its respective Mongoose Model
 QDMPatientSchema.methods.initializeDataElements = function initializeDataElements() {
   let typeStripped;
-  let elementTypeRemoved;
   const dataElementsInit = [];
   this.dataElements.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
-    elementTypeRemoved = JSON.parse(JSON.stringify(element));
-    delete elementTypeRemoved._type;
-    dataElementsInit.push(new AllDataElements[typeStripped](elementTypeRemoved));
+    dataElementsInit.push(new AllDataElements[typeStripped](element));
   });
   this.set({ dataElements: dataElementsInit });
 };

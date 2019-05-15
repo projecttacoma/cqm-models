@@ -34,6 +34,7 @@ module.exports.EncounterOrderSchema = EncounterOrderSchema;
 class EncounterOrder extends mongoose.Document {
   constructor(object) {
     super(object, EncounterOrderSchema);
+    this._type = 'QDM::EncounterOrder';
   }
 }
 module.exports.EncounterOrder = EncounterOrder;

@@ -32,6 +32,7 @@ module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpired
 class PatientCharacteristicExpired extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicExpiredSchema);
+    this._type = 'QDM::PatientCharacteristicExpired';
   }
 }
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;

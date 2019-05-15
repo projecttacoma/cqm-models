@@ -33,6 +33,7 @@ module.exports.DiagnosticStudyOrderSchema = DiagnosticStudyOrderSchema;
 class DiagnosticStudyOrder extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosticStudyOrderSchema);
+    this._type = 'QDM::DiagnosticStudyOrder';
   }
 }
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;

@@ -37,6 +37,7 @@ module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
 class AssessmentPerformed extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentPerformedSchema);
+    this._type = 'QDM::AssessmentPerformed';
   }
 }
 module.exports.AssessmentPerformed = AssessmentPerformed;

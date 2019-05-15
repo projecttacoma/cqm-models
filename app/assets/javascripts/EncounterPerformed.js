@@ -39,6 +39,7 @@ module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
 class EncounterPerformed extends mongoose.Document {
   constructor(object) {
     super(object, EncounterPerformedSchema);
+    this._type = 'QDM::EncounterPerformed';
   }
 }
 module.exports.EncounterPerformed = EncounterPerformed;

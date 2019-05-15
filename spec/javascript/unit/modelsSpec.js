@@ -116,6 +116,19 @@ describe('QDMPatient', () => {
       expect(qdmPatient.dataElements.length).toEqual(1);
     });
 
+    it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {
+      qdmPatient = new QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [{
+          _type: "MedicationOrder"
+        }]
+      });
+      expect(qdmPatient.dataElements.length).toEqual(1);
+      expect(qdmPatient.dataElements[0]._type).toEqual('QDM::MedicationOrder');
+      expect(qdmPatient.dataElements[0] instanceof MedicationOrder).toBe(true);
+    });
+
     it('can initialize a data elements array with a multiple entries', () => {
       qdmPatient = new QDMPatient({
         birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),

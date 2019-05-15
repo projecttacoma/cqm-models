@@ -32,6 +32,7 @@ module.exports.FamilyHistorySchema = FamilyHistorySchema;
 class FamilyHistory extends mongoose.Document {
   constructor(object) {
     super(object, FamilyHistorySchema);
+    this._type = 'QDM::FamilyHistory';
   }
 }
 module.exports.FamilyHistory = FamilyHistory;

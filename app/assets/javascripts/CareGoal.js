@@ -32,6 +32,7 @@ module.exports.CareGoalSchema = CareGoalSchema;
 class CareGoal extends mongoose.Document {
   constructor(object) {
     super(object, CareGoalSchema);
+    this._type = 'QDM::CareGoal';
   }
 }
 module.exports.CareGoal = CareGoal;

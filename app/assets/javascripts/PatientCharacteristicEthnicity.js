@@ -30,6 +30,7 @@ module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthni
 class PatientCharacteristicEthnicity extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicEthnicitySchema);
+    this._type = 'QDM::PatientCharacteristicEthnicity';
   }
 }
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;

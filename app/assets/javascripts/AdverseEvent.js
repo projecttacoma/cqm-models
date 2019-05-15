@@ -34,6 +34,7 @@ module.exports.AdverseEventSchema = AdverseEventSchema;
 class AdverseEvent extends mongoose.Document {
   constructor(object) {
     super(object, AdverseEventSchema);
+    this._type = 'QDM::AdverseEvent';
   }
 }
 module.exports.AdverseEvent = AdverseEvent;

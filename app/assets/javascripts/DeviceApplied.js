@@ -35,6 +35,7 @@ module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
 class DeviceApplied extends mongoose.Document {
   constructor(object) {
     super(object, DeviceAppliedSchema);
+    this._type = 'QDM::DeviceApplied';
   }
 }
 module.exports.DeviceApplied = DeviceApplied;

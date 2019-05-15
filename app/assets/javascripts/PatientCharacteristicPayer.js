@@ -31,6 +31,7 @@ module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSche
 class PatientCharacteristicPayer extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicPayerSchema);
+    this._type = 'QDM::PatientCharacteristicPayer';
   }
 }
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;

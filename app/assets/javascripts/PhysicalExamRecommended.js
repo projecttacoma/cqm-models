@@ -34,6 +34,7 @@ module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
 class PhysicalExamRecommended extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamRecommendedSchema);
+    this._type = 'QDM::PhysicalExamRecommended';
   }
 }
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;

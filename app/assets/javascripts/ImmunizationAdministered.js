@@ -36,6 +36,7 @@ module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
 class ImmunizationAdministered extends mongoose.Document {
   constructor(object) {
     super(object, ImmunizationAdministeredSchema);
+    this._type = 'QDM::ImmunizationAdministered';
   }
 }
 module.exports.ImmunizationAdministered = ImmunizationAdministered;

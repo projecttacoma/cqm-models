@@ -36,6 +36,7 @@ module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
 class InterventionPerformed extends mongoose.Document {
   constructor(object) {
     super(object, InterventionPerformedSchema);
+    this._type = 'QDM::InterventionPerformed';
   }
 }
 module.exports.InterventionPerformed = InterventionPerformed;

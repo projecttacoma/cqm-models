@@ -30,6 +30,7 @@ module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
 class ProviderCharacteristic extends mongoose.Document {
   constructor(object) {
     super(object, ProviderCharacteristicSchema);
+    this._type = 'QDM::ProviderCharacteristic';
   }
 }
 module.exports.ProviderCharacteristic = ProviderCharacteristic;

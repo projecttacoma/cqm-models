@@ -27,6 +27,7 @@ module.exports.ResultComponentSchema = ResultComponentSchema;
 class ResultComponent extends mongoose.Document {
   constructor(object) {
     super(object, ResultComponentSchema);
+    this._type = 'QDM::ResultComponent';
   }
 }
 module.exports.ResultComponent = ResultComponent;

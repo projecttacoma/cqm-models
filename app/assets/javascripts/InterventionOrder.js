@@ -33,6 +33,7 @@ module.exports.InterventionOrderSchema = InterventionOrderSchema;
 class InterventionOrder extends mongoose.Document {
   constructor(object) {
     super(object, InterventionOrderSchema);
+    this._type = 'QDM::InterventionOrder';
   }
 }
 module.exports.InterventionOrder = InterventionOrder;

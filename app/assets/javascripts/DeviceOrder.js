@@ -33,6 +33,7 @@ module.exports.DeviceOrderSchema = DeviceOrderSchema;
 class DeviceOrder extends mongoose.Document {
   constructor(object) {
     super(object, DeviceOrderSchema);
+    this._type = 'QDM::DeviceOrder';
   }
 }
 module.exports.DeviceOrder = DeviceOrder;

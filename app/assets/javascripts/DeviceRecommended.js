@@ -33,6 +33,7 @@ module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
 class DeviceRecommended extends mongoose.Document {
   constructor(object) {
     super(object, DeviceRecommendedSchema);
+    this._type = 'QDM::DeviceRecommended';
   }
 }
 module.exports.DeviceRecommended = DeviceRecommended;

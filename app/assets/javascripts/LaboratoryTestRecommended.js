@@ -33,6 +33,7 @@ module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema
 class LaboratoryTestRecommended extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestRecommendedSchema);
+    this._type = 'QDM::LaboratoryTestRecommended';
   }
 }
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;

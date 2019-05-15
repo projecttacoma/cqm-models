@@ -36,6 +36,7 @@ module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
 class SubstanceAdministered extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceAdministeredSchema);
+    this._type = 'QDM::SubstanceAdministered';
   }
 }
 module.exports.SubstanceAdministered = SubstanceAdministered;

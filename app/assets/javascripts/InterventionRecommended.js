@@ -33,6 +33,7 @@ module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
 class InterventionRecommended extends mongoose.Document {
   constructor(object) {
     super(object, InterventionRecommendedSchema);
+    this._type = 'QDM::InterventionRecommended';
   }
 }
 module.exports.InterventionRecommended = InterventionRecommended;

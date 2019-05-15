@@ -37,6 +37,7 @@ module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
 class ImmunizationOrder extends mongoose.Document {
   constructor(object) {
     super(object, ImmunizationOrderSchema);
+    this._type = 'QDM::ImmunizationOrder';
   }
 }
 module.exports.ImmunizationOrder = ImmunizationOrder;

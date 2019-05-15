@@ -38,6 +38,7 @@ module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
 class CommunicationPerformed extends mongoose.Document {
   constructor(object) {
     super(object, CommunicationPerformedSchema);
+    this._type = 'QDM::CommunicationPerformed';
   }
 }
 module.exports.CommunicationPerformed = CommunicationPerformed;

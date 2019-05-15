@@ -35,6 +35,7 @@ module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 class ProcedureOrder extends mongoose.Document {
   constructor(object) {
     super(object, ProcedureOrderSchema);
+    this._type = 'QDM::ProcedureOrder';
   }
 }
 module.exports.ProcedureOrder = ProcedureOrder;

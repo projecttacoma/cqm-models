@@ -38,6 +38,7 @@ module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
 class SubstanceOrder extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceOrderSchema);
+    this._type = 'QDM::SubstanceOrder';
   }
 }
 module.exports.SubstanceOrder = SubstanceOrder;

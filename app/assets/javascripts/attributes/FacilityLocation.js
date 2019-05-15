@@ -24,6 +24,7 @@ module.exports.FacilityLocationSchema = FacilityLocationSchema;
 class FacilityLocation extends mongoose.Document {
   constructor(object) {
     super(object, FacilityLocationSchema);
+    this._type = 'QDM::FacilityLocation';
   }
 }
 module.exports.FacilityLocation = FacilityLocation;

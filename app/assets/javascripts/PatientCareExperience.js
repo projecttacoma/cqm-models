@@ -30,6 +30,7 @@ module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
 class PatientCareExperience extends mongoose.Document {
   constructor(object) {
     super(object, PatientCareExperienceSchema);
+    this._type = 'QDM::PatientCareExperience';
   }
 }
 module.exports.PatientCareExperience = PatientCareExperience;

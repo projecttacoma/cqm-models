@@ -86,13 +86,10 @@ const MeasureSchema = new mongoose.Schema(
 // to its respective Mongoose Model
 MeasureSchema.methods.initializeDataElements = function initializeDataElements() {
   let typeStripped;
-  let elementTypeRemoved;
   const sourceDataCriteriaInit = [];
   this.source_data_criteria.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
-    elementTypeRemoved = JSON.parse(JSON.stringify(element));
-    delete elementTypeRemoved._type;
-    sourceDataCriteriaInit.push(new AllDataElements[typeStripped](elementTypeRemoved));
+    sourceDataCriteriaInit.push(new AllDataElements[typeStripped](element));
   });
   this.set('source_data_criteria', sourceDataCriteriaInit);
 };

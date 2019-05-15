@@ -37,6 +37,7 @@ module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
 class SubstanceRecommended extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceRecommendedSchema);
+    this._type = 'QDM::SubstanceRecommended';
   }
 }
 module.exports.SubstanceRecommended = SubstanceRecommended;

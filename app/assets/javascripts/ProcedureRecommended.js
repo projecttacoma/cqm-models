@@ -35,6 +35,7 @@ module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
 class ProcedureRecommended extends mongoose.Document {
   constructor(object) {
     super(object, ProcedureRecommendedSchema);
+    this._type = 'QDM::ProcedureRecommended';
   }
 }
 module.exports.ProcedureRecommended = ProcedureRecommended;

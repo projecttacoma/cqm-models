@@ -33,6 +33,7 @@ module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
 class AssessmentOrder extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentOrderSchema);
+    this._type = 'QDM::AssessmentOrder';
   }
 }
 module.exports.AssessmentOrder = AssessmentOrder;

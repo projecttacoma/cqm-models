@@ -35,6 +35,7 @@ module.exports.AdverseEventSchema = AdverseEventSchema;
 class AdverseEvent extends mongoose.Document {
   constructor(object) {
     super(object, AdverseEventSchema);
+    this._type = 'QDM::AdverseEvent';
   }
 }
 module.exports.AdverseEvent = AdverseEvent;
@@ -194,6 +195,7 @@ module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
 class AllergyIntolerance extends mongoose.Document {
   constructor(object) {
     super(object, AllergyIntoleranceSchema);
+    this._type = 'QDM::AllergyIntolerance';
   }
 }
 module.exports.AllergyIntolerance = AllergyIntolerance;
@@ -234,6 +236,7 @@ module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
 class AssessmentOrder extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentOrderSchema);
+    this._type = 'QDM::AssessmentOrder';
   }
 }
 module.exports.AssessmentOrder = AssessmentOrder;
@@ -278,6 +281,7 @@ module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
 class AssessmentPerformed extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentPerformedSchema);
+    this._type = 'QDM::AssessmentPerformed';
   }
 }
 module.exports.AssessmentPerformed = AssessmentPerformed;
@@ -318,6 +322,7 @@ module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
 class AssessmentRecommended extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentRecommendedSchema);
+    this._type = 'QDM::AssessmentRecommended';
   }
 }
 module.exports.AssessmentRecommended = AssessmentRecommended;
@@ -357,6 +362,7 @@ module.exports.CareGoalSchema = CareGoalSchema;
 class CareGoal extends mongoose.Document {
   constructor(object) {
     super(object, CareGoalSchema);
+    this._type = 'QDM::CareGoal';
   }
 }
 module.exports.CareGoal = CareGoal;
@@ -402,6 +408,7 @@ module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
 class CommunicationPerformed extends mongoose.Document {
   constructor(object) {
     super(object, CommunicationPerformedSchema);
+    this._type = 'QDM::CommunicationPerformed';
   }
 }
 module.exports.CommunicationPerformed = CommunicationPerformed;
@@ -444,6 +451,7 @@ module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
 class DeviceApplied extends mongoose.Document {
   constructor(object) {
     super(object, DeviceAppliedSchema);
+    this._type = 'QDM::DeviceApplied';
   }
 }
 module.exports.DeviceApplied = DeviceApplied;
@@ -484,6 +492,7 @@ module.exports.DeviceOrderSchema = DeviceOrderSchema;
 class DeviceOrder extends mongoose.Document {
   constructor(object) {
     super(object, DeviceOrderSchema);
+    this._type = 'QDM::DeviceOrder';
   }
 }
 module.exports.DeviceOrder = DeviceOrder;
@@ -524,6 +533,7 @@ module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
 class DeviceRecommended extends mongoose.Document {
   constructor(object) {
     super(object, DeviceRecommendedSchema);
+    this._type = 'QDM::DeviceRecommended';
   }
 }
 module.exports.DeviceRecommended = DeviceRecommended;
@@ -565,6 +575,7 @@ module.exports.DiagnosisSchema = DiagnosisSchema;
 class Diagnosis extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosisSchema);
+    this._type = 'QDM::Diagnosis';
   }
 }
 module.exports.Diagnosis = Diagnosis;
@@ -605,6 +616,7 @@ module.exports.DiagnosticStudyOrderSchema = DiagnosticStudyOrderSchema;
 class DiagnosticStudyOrder extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosticStudyOrderSchema);
+    this._type = 'QDM::DiagnosticStudyOrder';
   }
 }
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
@@ -652,6 +664,7 @@ module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
 class DiagnosticStudyPerformed extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosticStudyPerformedSchema);
+    this._type = 'QDM::DiagnosticStudyPerformed';
   }
 }
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
@@ -692,6 +705,7 @@ module.exports.DiagnosticStudyRecommendedSchema = DiagnosticStudyRecommendedSche
 class DiagnosticStudyRecommended extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosticStudyRecommendedSchema);
+    this._type = 'QDM::DiagnosticStudyRecommended';
   }
 }
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
@@ -733,6 +747,7 @@ module.exports.EncounterOrderSchema = EncounterOrderSchema;
 class EncounterOrder extends mongoose.Document {
   constructor(object) {
     super(object, EncounterOrderSchema);
+    this._type = 'QDM::EncounterOrder';
   }
 }
 module.exports.EncounterOrder = EncounterOrder;
@@ -779,6 +794,7 @@ module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
 class EncounterPerformed extends mongoose.Document {
   constructor(object) {
     super(object, EncounterPerformedSchema);
+    this._type = 'QDM::EncounterPerformed';
   }
 }
 module.exports.EncounterPerformed = EncounterPerformed;
@@ -820,6 +836,7 @@ module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
 class EncounterRecommended extends mongoose.Document {
   constructor(object) {
     super(object, EncounterRecommendedSchema);
+    this._type = 'QDM::EncounterRecommended';
   }
 }
 module.exports.EncounterRecommended = EncounterRecommended;
@@ -859,6 +876,7 @@ module.exports.FamilyHistorySchema = FamilyHistorySchema;
 class FamilyHistory extends mongoose.Document {
   constructor(object) {
     super(object, FamilyHistorySchema);
+    this._type = 'QDM::FamilyHistory';
   }
 }
 module.exports.FamilyHistory = FamilyHistory;
@@ -925,6 +943,7 @@ module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
 class ImmunizationAdministered extends mongoose.Document {
   constructor(object) {
     super(object, ImmunizationAdministeredSchema);
+    this._type = 'QDM::ImmunizationAdministered';
   }
 }
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
@@ -969,6 +988,7 @@ module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
 class ImmunizationOrder extends mongoose.Document {
   constructor(object) {
     super(object, ImmunizationOrderSchema);
+    this._type = 'QDM::ImmunizationOrder';
   }
 }
 module.exports.ImmunizationOrder = ImmunizationOrder;
@@ -1073,6 +1093,7 @@ module.exports.InterventionOrderSchema = InterventionOrderSchema;
 class InterventionOrder extends mongoose.Document {
   constructor(object) {
     super(object, InterventionOrderSchema);
+    this._type = 'QDM::InterventionOrder';
   }
 }
 module.exports.InterventionOrder = InterventionOrder;
@@ -1116,6 +1137,7 @@ module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
 class InterventionPerformed extends mongoose.Document {
   constructor(object) {
     super(object, InterventionPerformedSchema);
+    this._type = 'QDM::InterventionPerformed';
   }
 }
 module.exports.InterventionPerformed = InterventionPerformed;
@@ -1156,6 +1178,7 @@ module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
 class InterventionRecommended extends mongoose.Document {
   constructor(object) {
     super(object, InterventionRecommendedSchema);
+    this._type = 'QDM::InterventionRecommended';
   }
 }
 module.exports.InterventionRecommended = InterventionRecommended;
@@ -1196,6 +1219,7 @@ module.exports.LaboratoryTestOrderSchema = LaboratoryTestOrderSchema;
 class LaboratoryTestOrder extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestOrderSchema);
+    this._type = 'QDM::LaboratoryTestOrder';
   }
 }
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
@@ -1243,6 +1267,7 @@ module.exports.LaboratoryTestPerformedSchema = LaboratoryTestPerformedSchema;
 class LaboratoryTestPerformed extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestPerformedSchema);
+    this._type = 'QDM::LaboratoryTestPerformed';
   }
 }
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
@@ -1283,6 +1308,7 @@ module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema
 class LaboratoryTestRecommended extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestRecommendedSchema);
+    this._type = 'QDM::LaboratoryTestRecommended';
   }
 }
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
@@ -1324,6 +1350,7 @@ module.exports.MedicationActiveSchema = MedicationActiveSchema;
 class MedicationActive extends mongoose.Document {
   constructor(object) {
     super(object, MedicationActiveSchema);
+    this._type = 'QDM::MedicationActive';
   }
 }
 module.exports.MedicationActive = MedicationActive;
@@ -1368,6 +1395,7 @@ module.exports.MedicationAdministeredSchema = MedicationAdministeredSchema;
 class MedicationAdministered extends mongoose.Document {
   constructor(object) {
     super(object, MedicationAdministeredSchema);
+    this._type = 'QDM::MedicationAdministered';
   }
 }
 module.exports.MedicationAdministered = MedicationAdministered;
@@ -1413,6 +1441,7 @@ module.exports.MedicationDischargeSchema = MedicationDischargeSchema;
 class MedicationDischarge extends mongoose.Document {
   constructor(object) {
     super(object, MedicationDischargeSchema);
+    this._type = 'QDM::MedicationDischarge';
   }
 }
 module.exports.MedicationDischarge = MedicationDischarge;
@@ -1461,6 +1490,7 @@ module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
 class MedicationDispensed extends mongoose.Document {
   constructor(object) {
     super(object, MedicationDispensedSchema);
+    this._type = 'QDM::MedicationDispensed';
   }
 }
 module.exports.MedicationDispensed = MedicationDispensed;
@@ -1510,6 +1540,7 @@ module.exports.MedicationOrderSchema = MedicationOrderSchema;
 class MedicationOrder extends mongoose.Document {
   constructor(object) {
     super(object, MedicationOrderSchema);
+    this._type = 'QDM::MedicationOrder';
   }
 }
 module.exports.MedicationOrder = MedicationOrder;
@@ -1547,6 +1578,7 @@ module.exports.ParticipationSchema = ParticipationSchema;
 class Participation extends mongoose.Document {
   constructor(object) {
     super(object, ParticipationSchema);
+    this._type = 'QDM::Participation';
   }
 }
 module.exports.Participation = Participation;
@@ -1584,6 +1616,7 @@ module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
 class PatientCareExperience extends mongoose.Document {
   constructor(object) {
     super(object, PatientCareExperienceSchema);
+    this._type = 'QDM::PatientCareExperience';
   }
 }
 module.exports.PatientCareExperience = PatientCareExperience;
@@ -1621,6 +1654,7 @@ module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
 class PatientCharacteristic extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicSchema);
+    this._type = 'QDM::PatientCharacteristic';
   }
 }
 module.exports.PatientCharacteristic = PatientCharacteristic;
@@ -1659,6 +1693,7 @@ module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirth
 class PatientCharacteristicBirthdate extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicBirthdateSchema);
+    this._type = 'QDM::PatientCharacteristicBirthdate';
   }
 }
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
@@ -1699,6 +1734,7 @@ module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientChar
 class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicClinicalTrialParticipantSchema);
+    this._type = 'QDM::PatientCharacteristicClinicalTrialParticipant';
   }
 }
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
@@ -1736,6 +1772,7 @@ module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthni
 class PatientCharacteristicEthnicity extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicEthnicitySchema);
+    this._type = 'QDM::PatientCharacteristicEthnicity';
   }
 }
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
@@ -1775,6 +1812,7 @@ module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpired
 class PatientCharacteristicExpired extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicExpiredSchema);
+    this._type = 'QDM::PatientCharacteristicExpired';
   }
 }
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
@@ -1813,6 +1851,7 @@ module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSche
 class PatientCharacteristicPayer extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicPayerSchema);
+    this._type = 'QDM::PatientCharacteristicPayer';
   }
 }
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
@@ -1850,6 +1889,7 @@ module.exports.PatientCharacteristicRaceSchema = PatientCharacteristicRaceSchema
 class PatientCharacteristicRace extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicRaceSchema);
+    this._type = 'QDM::PatientCharacteristicRace';
   }
 }
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
@@ -1887,6 +1927,7 @@ module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
 class PatientCharacteristicSex extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicSexSchema);
+    this._type = 'QDM::PatientCharacteristicSex';
   }
 }
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
@@ -1928,6 +1969,7 @@ module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
 class PhysicalExamOrder extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamOrderSchema);
+    this._type = 'QDM::PhysicalExamOrder';
   }
 }
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
@@ -1973,6 +2015,7 @@ module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
 class PhysicalExamPerformed extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamPerformedSchema);
+    this._type = 'QDM::PhysicalExamPerformed';
   }
 }
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
@@ -2014,6 +2057,7 @@ module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
 class PhysicalExamRecommended extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamRecommendedSchema);
+    this._type = 'QDM::PhysicalExamRecommended';
   }
 }
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
@@ -2056,6 +2100,7 @@ module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 class ProcedureOrder extends mongoose.Document {
   constructor(object) {
     super(object, ProcedureOrderSchema);
+    this._type = 'QDM::ProcedureOrder';
   }
 }
 module.exports.ProcedureOrder = ProcedureOrder;
@@ -2104,6 +2149,7 @@ module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
 class ProcedurePerformed extends mongoose.Document {
   constructor(object) {
     super(object, ProcedurePerformedSchema);
+    this._type = 'QDM::ProcedurePerformed';
   }
 }
 module.exports.ProcedurePerformed = ProcedurePerformed;
@@ -2146,6 +2192,7 @@ module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
 class ProcedureRecommended extends mongoose.Document {
   constructor(object) {
     super(object, ProcedureRecommendedSchema);
+    this._type = 'QDM::ProcedureRecommended';
   }
 }
 module.exports.ProcedureRecommended = ProcedureRecommended;
@@ -2183,6 +2230,7 @@ module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
 class ProviderCareExperience extends mongoose.Document {
   constructor(object) {
     super(object, ProviderCareExperienceSchema);
+    this._type = 'QDM::ProviderCareExperience';
   }
 }
 module.exports.ProviderCareExperience = ProviderCareExperience;
@@ -2220,6 +2268,7 @@ module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
 class ProviderCharacteristic extends mongoose.Document {
   constructor(object) {
     super(object, ProviderCharacteristicSchema);
+    this._type = 'QDM::ProviderCharacteristic';
   }
 }
 module.exports.ProviderCharacteristic = ProviderCharacteristic;
@@ -2259,13 +2308,10 @@ const QDMPatientSchema = new Schema({
 // to its respective Mongoose Model
 QDMPatientSchema.methods.initializeDataElements = function initializeDataElements() {
   let typeStripped;
-  let elementTypeRemoved;
   const dataElementsInit = [];
   this.dataElements.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
-    elementTypeRemoved = JSON.parse(JSON.stringify(element));
-    delete elementTypeRemoved._type;
-    dataElementsInit.push(new AllDataElements[typeStripped](elementTypeRemoved));
+    dataElementsInit.push(new AllDataElements[typeStripped](element));
   });
   this.set({ dataElements: dataElementsInit });
 };
@@ -2556,6 +2602,7 @@ module.exports.ResultComponentSchema = ResultComponentSchema;
 class ResultComponent extends mongoose.Document {
   constructor(object) {
     super(object, ResultComponentSchema);
+    this._type = 'QDM::ResultComponent';
   }
 }
 module.exports.ResultComponent = ResultComponent;
@@ -2599,6 +2646,7 @@ module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
 class SubstanceAdministered extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceAdministeredSchema);
+    this._type = 'QDM::SubstanceAdministered';
   }
 }
 module.exports.SubstanceAdministered = SubstanceAdministered;
@@ -2644,6 +2692,7 @@ module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
 class SubstanceOrder extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceOrderSchema);
+    this._type = 'QDM::SubstanceOrder';
   }
 }
 module.exports.SubstanceOrder = SubstanceOrder;
@@ -2688,6 +2737,7 @@ module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
 class SubstanceRecommended extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceRecommendedSchema);
+    this._type = 'QDM::SubstanceRecommended';
   }
 }
 module.exports.SubstanceRecommended = SubstanceRecommended;
@@ -2727,6 +2777,7 @@ module.exports.SymptomSchema = SymptomSchema;
 class Symptom extends mongoose.Document {
   constructor(object) {
     super(object, SymptomSchema);
+    this._type = 'QDM::Symptom';
   }
 }
 module.exports.Symptom = Symptom;
@@ -2758,6 +2809,7 @@ module.exports.ComponentSchema = ComponentSchema;
 class Component extends mongoose.Document {
   constructor(object) {
     super(object, ComponentSchema);
+    this._type = 'QDM::Component';
   }
 }
 module.exports.Component = Component;
@@ -2789,6 +2841,7 @@ module.exports.FacilityLocationSchema = FacilityLocationSchema;
 class FacilityLocation extends mongoose.Document {
   constructor(object) {
     super(object, FacilityLocationSchema);
+    this._type = 'QDM::FacilityLocation';
   }
 }
 module.exports.FacilityLocation = FacilityLocation;
@@ -3206,13 +3259,10 @@ const MeasureSchema = new mongoose.Schema(
 // to its respective Mongoose Model
 MeasureSchema.methods.initializeDataElements = function initializeDataElements() {
   let typeStripped;
-  let elementTypeRemoved;
   const sourceDataCriteriaInit = [];
   this.source_data_criteria.forEach((element) => {
     typeStripped = element._type.replace(/QDM::/, '');
-    elementTypeRemoved = JSON.parse(JSON.stringify(element));
-    delete elementTypeRemoved._type;
-    sourceDataCriteriaInit.push(new AllDataElements[typeStripped](elementTypeRemoved));
+    sourceDataCriteriaInit.push(new AllDataElements[typeStripped](element));
   });
   this.set('source_data_criteria', sourceDataCriteriaInit);
 };
