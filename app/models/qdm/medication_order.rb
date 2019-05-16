@@ -13,7 +13,7 @@ module QDM
     field :route, type: QDM::Code
     field :setting, type: QDM::Code
     field :reason, type: QDM::Code
-    field :prescriberQDM::Id, type: QDM::Id
+    field :prescriberId, type: QDM::Id
     field :negationRationale, type: QDM::Code
     field :qdmTitle, type: String, default: 'Medication, Order'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.51'

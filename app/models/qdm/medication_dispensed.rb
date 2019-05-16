@@ -11,8 +11,8 @@ module QDM
     field :frequency, type: QDM::Code
     field :daysSupplied, type: Integer
     field :route, type: QDM::Code
-    field :prescriberQDM::Id, type: QDM::Id
-    field :dispenserQDM::Id, type: QDM::Id
+    field :prescriberId, type: QDM::Id
+    field :dispenserId, type: QDM::Id
     field :negationRationale, type: QDM::Code
     field :qdmTitle, type: String, default: 'Medication, Dispensed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.49'
