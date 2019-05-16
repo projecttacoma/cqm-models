@@ -26,7 +26,7 @@ const DiagnosisSchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
   qdmCategory: { type: String, default: 'condition' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Diagnosis' },
+  _type: { type: String, default: 'QDM::Diagnosis' },
 
 });
 
@@ -34,6 +34,7 @@ module.exports.DiagnosisSchema = DiagnosisSchema;
 class Diagnosis extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosisSchema);
+    this._type = 'QDM::Diagnosis';
   }
 }
 module.exports.Diagnosis = Diagnosis;

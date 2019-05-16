@@ -25,7 +25,7 @@ const AssessmentOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AssessmentOrder' },
+  _type: { type: String, default: 'QDM::AssessmentOrder' },
 
 });
 
@@ -33,6 +33,7 @@ module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
 class AssessmentOrder extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentOrderSchema);
+    this._type = 'QDM::AssessmentOrder';
   }
 }
 module.exports.AssessmentOrder = AssessmentOrder;

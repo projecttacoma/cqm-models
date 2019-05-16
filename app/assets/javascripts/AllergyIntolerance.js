@@ -26,7 +26,7 @@ const AllergyIntoleranceSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'allergy' },
   qdmStatus: { type: String, default: 'intolerance' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AllergyIntolerance' },
+  _type: { type: String, default: 'QDM::AllergyIntolerance' },
 
 });
 
@@ -34,6 +34,7 @@ module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
 class AllergyIntolerance extends mongoose.Document {
   constructor(object) {
     super(object, AllergyIntoleranceSchema);
+    this._type = 'QDM::AllergyIntolerance';
   }
 }
 module.exports.AllergyIntolerance = AllergyIntolerance;

@@ -33,7 +33,7 @@ const MedicationDispensedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'dispensed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationDispensed' },
+  _type: { type: String, default: 'QDM::MedicationDispensed' },
 
 });
 
@@ -41,6 +41,7 @@ module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
 class MedicationDispensed extends mongoose.Document {
   constructor(object) {
     super(object, MedicationDispensedSchema);
+    this._type = 'QDM::MedicationDispensed';
   }
 }
 module.exports.MedicationDispensed = MedicationDispensed;

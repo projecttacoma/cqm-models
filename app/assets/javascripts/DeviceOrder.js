@@ -25,7 +25,7 @@ const DeviceOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceOrder' },
+  _type: { type: String, default: 'QDM::DeviceOrder' },
 
 });
 
@@ -33,6 +33,7 @@ module.exports.DeviceOrderSchema = DeviceOrderSchema;
 class DeviceOrder extends mongoose.Document {
   constructor(object) {
     super(object, DeviceOrderSchema);
+    this._type = 'QDM::DeviceOrder';
   }
 }
 module.exports.DeviceOrder = DeviceOrder;

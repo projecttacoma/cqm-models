@@ -25,7 +25,7 @@ const LaboratoryTestRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'LaboratoryTestRecommended' },
+  _type: { type: String, default: 'QDM::LaboratoryTestRecommended' },
 
 });
 
@@ -33,6 +33,7 @@ module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema
 class LaboratoryTestRecommended extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestRecommendedSchema);
+    this._type = 'QDM::LaboratoryTestRecommended';
   }
 }
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;

@@ -23,7 +23,7 @@ const PatientCharacteristicBirthdateSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'birthdate' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicBirthdate' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicBirthdate' },
 
 });
 
@@ -31,6 +31,7 @@ module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirth
 class PatientCharacteristicBirthdate extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicBirthdateSchema);
+    this._type = 'QDM::PatientCharacteristicBirthdate';
   }
 }
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;

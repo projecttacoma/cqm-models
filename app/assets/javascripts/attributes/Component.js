@@ -16,7 +16,7 @@ const ComponentSchema = new mongoose.Schema({
   code: Code,
   result: Any,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Component' },
+  _type: { type: String, default: 'QDM::Component' },
 
 });
 
@@ -24,6 +24,7 @@ module.exports.ComponentSchema = ComponentSchema;
 class Component extends mongoose.Document {
   constructor(object) {
     super(object, ComponentSchema);
+    this._type = 'QDM::Component';
   }
 }
 module.exports.Component = Component;

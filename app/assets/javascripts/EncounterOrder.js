@@ -26,7 +26,7 @@ const EncounterOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'EncounterOrder' },
+  _type: { type: String, default: 'QDM::EncounterOrder' },
 
 });
 
@@ -34,6 +34,7 @@ module.exports.EncounterOrderSchema = EncounterOrderSchema;
 class EncounterOrder extends mongoose.Document {
   constructor(object) {
     super(object, EncounterOrderSchema);
+    this._type = 'QDM::EncounterOrder';
   }
 }
 module.exports.EncounterOrder = EncounterOrder;

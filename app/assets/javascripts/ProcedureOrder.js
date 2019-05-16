@@ -27,7 +27,7 @@ const ProcedureOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedureOrder' },
+  _type: { type: String, default: 'QDM::ProcedureOrder' },
 
 });
 
@@ -35,6 +35,7 @@ module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 class ProcedureOrder extends mongoose.Document {
   constructor(object) {
     super(object, ProcedureOrderSchema);
+    this._type = 'QDM::ProcedureOrder';
   }
 }
 module.exports.ProcedureOrder = ProcedureOrder;

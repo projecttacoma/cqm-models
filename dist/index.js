@@ -27,7 +27,7 @@ const AdverseEventSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.120' },
   qdmCategory: { type: String, default: 'adverse_event' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AdverseEvent' },
+  _type: { type: String, default: 'QDM::AdverseEvent' },
 
 });
 
@@ -35,6 +35,7 @@ module.exports.AdverseEventSchema = AdverseEventSchema;
 class AdverseEvent extends mongoose.Document {
   constructor(object) {
     super(object, AdverseEventSchema);
+    this._type = 'QDM::AdverseEvent';
   }
 }
 module.exports.AdverseEvent = AdverseEvent;
@@ -186,7 +187,7 @@ const AllergyIntoleranceSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'allergy' },
   qdmStatus: { type: String, default: 'intolerance' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AllergyIntolerance' },
+  _type: { type: String, default: 'QDM::AllergyIntolerance' },
 
 });
 
@@ -194,6 +195,7 @@ module.exports.AllergyIntoleranceSchema = AllergyIntoleranceSchema;
 class AllergyIntolerance extends mongoose.Document {
   constructor(object) {
     super(object, AllergyIntoleranceSchema);
+    this._type = 'QDM::AllergyIntolerance';
   }
 }
 module.exports.AllergyIntolerance = AllergyIntolerance;
@@ -226,7 +228,7 @@ const AssessmentOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AssessmentOrder' },
+  _type: { type: String, default: 'QDM::AssessmentOrder' },
 
 });
 
@@ -234,6 +236,7 @@ module.exports.AssessmentOrderSchema = AssessmentOrderSchema;
 class AssessmentOrder extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentOrderSchema);
+    this._type = 'QDM::AssessmentOrder';
   }
 }
 module.exports.AssessmentOrder = AssessmentOrder;
@@ -270,7 +273,7 @@ const AssessmentPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AssessmentPerformed' },
+  _type: { type: String, default: 'QDM::AssessmentPerformed' },
 
 });
 
@@ -278,6 +281,7 @@ module.exports.AssessmentPerformedSchema = AssessmentPerformedSchema;
 class AssessmentPerformed extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentPerformedSchema);
+    this._type = 'QDM::AssessmentPerformed';
   }
 }
 module.exports.AssessmentPerformed = AssessmentPerformed;
@@ -310,7 +314,7 @@ const AssessmentRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'AssessmentRecommended' },
+  _type: { type: String, default: 'QDM::AssessmentRecommended' },
 
 });
 
@@ -318,6 +322,7 @@ module.exports.AssessmentRecommendedSchema = AssessmentRecommendedSchema;
 class AssessmentRecommended extends mongoose.Document {
   constructor(object) {
     super(object, AssessmentRecommendedSchema);
+    this._type = 'QDM::AssessmentRecommended';
   }
 }
 module.exports.AssessmentRecommended = AssessmentRecommended;
@@ -349,7 +354,7 @@ const CareGoalSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.7' },
   qdmCategory: { type: String, default: 'care_goal' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'CareGoal' },
+  _type: { type: String, default: 'QDM::CareGoal' },
 
 });
 
@@ -357,6 +362,7 @@ module.exports.CareGoalSchema = CareGoalSchema;
 class CareGoal extends mongoose.Document {
   constructor(object) {
     super(object, CareGoalSchema);
+    this._type = 'QDM::CareGoal';
   }
 }
 module.exports.CareGoal = CareGoal;
@@ -394,7 +400,7 @@ const CommunicationPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'communication' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'CommunicationPerformed' },
+  _type: { type: String, default: 'QDM::CommunicationPerformed' },
 
 });
 
@@ -402,6 +408,7 @@ module.exports.CommunicationPerformedSchema = CommunicationPerformedSchema;
 class CommunicationPerformed extends mongoose.Document {
   constructor(object) {
     super(object, CommunicationPerformedSchema);
+    this._type = 'QDM::CommunicationPerformed';
   }
 }
 module.exports.CommunicationPerformed = CommunicationPerformed;
@@ -436,7 +443,7 @@ const DeviceAppliedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'applied' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceApplied' },
+  _type: { type: String, default: 'QDM::DeviceApplied' },
 
 });
 
@@ -444,6 +451,7 @@ module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
 class DeviceApplied extends mongoose.Document {
   constructor(object) {
     super(object, DeviceAppliedSchema);
+    this._type = 'QDM::DeviceApplied';
   }
 }
 module.exports.DeviceApplied = DeviceApplied;
@@ -476,7 +484,7 @@ const DeviceOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceOrder' },
+  _type: { type: String, default: 'QDM::DeviceOrder' },
 
 });
 
@@ -484,6 +492,7 @@ module.exports.DeviceOrderSchema = DeviceOrderSchema;
 class DeviceOrder extends mongoose.Document {
   constructor(object) {
     super(object, DeviceOrderSchema);
+    this._type = 'QDM::DeviceOrder';
   }
 }
 module.exports.DeviceOrder = DeviceOrder;
@@ -516,7 +525,7 @@ const DeviceRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceRecommended' },
+  _type: { type: String, default: 'QDM::DeviceRecommended' },
 
 });
 
@@ -524,6 +533,7 @@ module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
 class DeviceRecommended extends mongoose.Document {
   constructor(object) {
     super(object, DeviceRecommendedSchema);
+    this._type = 'QDM::DeviceRecommended';
   }
 }
 module.exports.DeviceRecommended = DeviceRecommended;
@@ -557,7 +567,7 @@ const DiagnosisSchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
   qdmCategory: { type: String, default: 'condition' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Diagnosis' },
+  _type: { type: String, default: 'QDM::Diagnosis' },
 
 });
 
@@ -565,6 +575,7 @@ module.exports.DiagnosisSchema = DiagnosisSchema;
 class Diagnosis extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosisSchema);
+    this._type = 'QDM::Diagnosis';
   }
 }
 module.exports.Diagnosis = Diagnosis;
@@ -597,7 +608,7 @@ const DiagnosticStudyOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DiagnosticStudyOrder' },
+  _type: { type: String, default: 'QDM::DiagnosticStudyOrder' },
 
 });
 
@@ -605,6 +616,7 @@ module.exports.DiagnosticStudyOrderSchema = DiagnosticStudyOrderSchema;
 class DiagnosticStudyOrder extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosticStudyOrderSchema);
+    this._type = 'QDM::DiagnosticStudyOrder';
   }
 }
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
@@ -644,7 +656,7 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DiagnosticStudyPerformed' },
+  _type: { type: String, default: 'QDM::DiagnosticStudyPerformed' },
 
 });
 
@@ -652,6 +664,7 @@ module.exports.DiagnosticStudyPerformedSchema = DiagnosticStudyPerformedSchema;
 class DiagnosticStudyPerformed extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosticStudyPerformedSchema);
+    this._type = 'QDM::DiagnosticStudyPerformed';
   }
 }
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
@@ -684,7 +697,7 @@ const DiagnosticStudyRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'diagnostic_study' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DiagnosticStudyRecommended' },
+  _type: { type: String, default: 'QDM::DiagnosticStudyRecommended' },
 
 });
 
@@ -692,6 +705,7 @@ module.exports.DiagnosticStudyRecommendedSchema = DiagnosticStudyRecommendedSche
 class DiagnosticStudyRecommended extends mongoose.Document {
   constructor(object) {
     super(object, DiagnosticStudyRecommendedSchema);
+    this._type = 'QDM::DiagnosticStudyRecommended';
   }
 }
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
@@ -725,7 +739,7 @@ const EncounterOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'EncounterOrder' },
+  _type: { type: String, default: 'QDM::EncounterOrder' },
 
 });
 
@@ -733,6 +747,7 @@ module.exports.EncounterOrderSchema = EncounterOrderSchema;
 class EncounterOrder extends mongoose.Document {
   constructor(object) {
     super(object, EncounterOrderSchema);
+    this._type = 'QDM::EncounterOrder';
   }
 }
 module.exports.EncounterOrder = EncounterOrder;
@@ -771,7 +786,7 @@ const EncounterPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'EncounterPerformed' },
+  _type: { type: String, default: 'QDM::EncounterPerformed' },
 
 });
 
@@ -779,6 +794,7 @@ module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
 class EncounterPerformed extends mongoose.Document {
   constructor(object) {
     super(object, EncounterPerformedSchema);
+    this._type = 'QDM::EncounterPerformed';
   }
 }
 module.exports.EncounterPerformed = EncounterPerformed;
@@ -812,7 +828,7 @@ const EncounterRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'EncounterRecommended' },
+  _type: { type: String, default: 'QDM::EncounterRecommended' },
 
 });
 
@@ -820,6 +836,7 @@ module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
 class EncounterRecommended extends mongoose.Document {
   constructor(object) {
     super(object, EncounterRecommendedSchema);
+    this._type = 'QDM::EncounterRecommended';
   }
 }
 module.exports.EncounterRecommended = EncounterRecommended;
@@ -851,7 +868,7 @@ const FamilyHistorySchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
   qdmCategory: { type: String, default: 'family_history' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'FamilyHistory' },
+  _type: { type: String, default: 'QDM::FamilyHistory' },
 
 });
 
@@ -859,6 +876,7 @@ module.exports.FamilyHistorySchema = FamilyHistorySchema;
 class FamilyHistory extends mongoose.Document {
   constructor(object) {
     super(object, FamilyHistorySchema);
+    this._type = 'QDM::FamilyHistory';
   }
 }
 module.exports.FamilyHistory = FamilyHistory;
@@ -875,7 +893,6 @@ const IdSchema = mongoose.Schema({
   namingSystem: String,
   value: String,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Id' },
 
 }, { _id: false, id: false });
 
@@ -918,7 +935,7 @@ const ImmunizationAdministeredSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'administered' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ImmunizationAdministered' },
+  _type: { type: String, default: 'QDM::ImmunizationAdministered' },
 
 });
 
@@ -926,6 +943,7 @@ module.exports.ImmunizationAdministeredSchema = ImmunizationAdministeredSchema;
 class ImmunizationAdministered extends mongoose.Document {
   constructor(object) {
     super(object, ImmunizationAdministeredSchema);
+    this._type = 'QDM::ImmunizationAdministered';
   }
 }
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
@@ -962,7 +980,7 @@ const ImmunizationOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'immunization' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ImmunizationOrder' },
+  _type: { type: String, default: 'QDM::ImmunizationOrder' },
 
 });
 
@@ -970,6 +988,7 @@ module.exports.ImmunizationOrderSchema = ImmunizationOrderSchema;
 class ImmunizationOrder extends mongoose.Document {
   constructor(object) {
     super(object, ImmunizationOrderSchema);
+    this._type = 'QDM::ImmunizationOrder';
   }
 }
 module.exports.ImmunizationOrder = ImmunizationOrder;
@@ -1066,7 +1085,7 @@ const InterventionOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'InterventionOrder' },
+  _type: { type: String, default: 'QDM::InterventionOrder' },
 
 });
 
@@ -1074,6 +1093,7 @@ module.exports.InterventionOrderSchema = InterventionOrderSchema;
 class InterventionOrder extends mongoose.Document {
   constructor(object) {
     super(object, InterventionOrderSchema);
+    this._type = 'QDM::InterventionOrder';
   }
 }
 module.exports.InterventionOrder = InterventionOrder;
@@ -1109,7 +1129,7 @@ const InterventionPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'InterventionPerformed' },
+  _type: { type: String, default: 'QDM::InterventionPerformed' },
 
 });
 
@@ -1117,6 +1137,7 @@ module.exports.InterventionPerformedSchema = InterventionPerformedSchema;
 class InterventionPerformed extends mongoose.Document {
   constructor(object) {
     super(object, InterventionPerformedSchema);
+    this._type = 'QDM::InterventionPerformed';
   }
 }
 module.exports.InterventionPerformed = InterventionPerformed;
@@ -1149,7 +1170,7 @@ const InterventionRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'InterventionRecommended' },
+  _type: { type: String, default: 'QDM::InterventionRecommended' },
 
 });
 
@@ -1157,6 +1178,7 @@ module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
 class InterventionRecommended extends mongoose.Document {
   constructor(object) {
     super(object, InterventionRecommendedSchema);
+    this._type = 'QDM::InterventionRecommended';
   }
 }
 module.exports.InterventionRecommended = InterventionRecommended;
@@ -1189,7 +1211,7 @@ const LaboratoryTestOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'LaboratoryTestOrder' },
+  _type: { type: String, default: 'QDM::LaboratoryTestOrder' },
 
 });
 
@@ -1197,6 +1219,7 @@ module.exports.LaboratoryTestOrderSchema = LaboratoryTestOrderSchema;
 class LaboratoryTestOrder extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestOrderSchema);
+    this._type = 'QDM::LaboratoryTestOrder';
   }
 }
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
@@ -1236,7 +1259,7 @@ const LaboratoryTestPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'LaboratoryTestPerformed' },
+  _type: { type: String, default: 'QDM::LaboratoryTestPerformed' },
 
 });
 
@@ -1244,6 +1267,7 @@ module.exports.LaboratoryTestPerformedSchema = LaboratoryTestPerformedSchema;
 class LaboratoryTestPerformed extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestPerformedSchema);
+    this._type = 'QDM::LaboratoryTestPerformed';
   }
 }
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
@@ -1276,7 +1300,7 @@ const LaboratoryTestRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'laboratory_test' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'LaboratoryTestRecommended' },
+  _type: { type: String, default: 'QDM::LaboratoryTestRecommended' },
 
 });
 
@@ -1284,6 +1308,7 @@ module.exports.LaboratoryTestRecommendedSchema = LaboratoryTestRecommendedSchema
 class LaboratoryTestRecommended extends mongoose.Document {
   constructor(object) {
     super(object, LaboratoryTestRecommendedSchema);
+    this._type = 'QDM::LaboratoryTestRecommended';
   }
 }
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
@@ -1317,7 +1342,7 @@ const MedicationActiveSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'active' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationActive' },
+  _type: { type: String, default: 'QDM::MedicationActive' },
 
 });
 
@@ -1325,6 +1350,7 @@ module.exports.MedicationActiveSchema = MedicationActiveSchema;
 class MedicationActive extends mongoose.Document {
   constructor(object) {
     super(object, MedicationActiveSchema);
+    this._type = 'QDM::MedicationActive';
   }
 }
 module.exports.MedicationActive = MedicationActive;
@@ -1361,7 +1387,7 @@ const MedicationAdministeredSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'administered' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationAdministered' },
+  _type: { type: String, default: 'QDM::MedicationAdministered' },
 
 });
 
@@ -1369,6 +1395,7 @@ module.exports.MedicationAdministeredSchema = MedicationAdministeredSchema;
 class MedicationAdministered extends mongoose.Document {
   constructor(object) {
     super(object, MedicationAdministeredSchema);
+    this._type = 'QDM::MedicationAdministered';
   }
 }
 module.exports.MedicationAdministered = MedicationAdministered;
@@ -1406,7 +1433,7 @@ const MedicationDischargeSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'discharge' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationDischarge' },
+  _type: { type: String, default: 'QDM::MedicationDischarge' },
 
 });
 
@@ -1414,6 +1441,7 @@ module.exports.MedicationDischargeSchema = MedicationDischargeSchema;
 class MedicationDischarge extends mongoose.Document {
   constructor(object) {
     super(object, MedicationDischargeSchema);
+    this._type = 'QDM::MedicationDischarge';
   }
 }
 module.exports.MedicationDischarge = MedicationDischarge;
@@ -1454,7 +1482,7 @@ const MedicationDispensedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'dispensed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationDispensed' },
+  _type: { type: String, default: 'QDM::MedicationDispensed' },
 
 });
 
@@ -1462,6 +1490,7 @@ module.exports.MedicationDispensedSchema = MedicationDispensedSchema;
 class MedicationDispensed extends mongoose.Document {
   constructor(object) {
     super(object, MedicationDispensedSchema);
+    this._type = 'QDM::MedicationDispensed';
   }
 }
 module.exports.MedicationDispensed = MedicationDispensed;
@@ -1503,7 +1532,7 @@ const MedicationOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'MedicationOrder' },
+  _type: { type: String, default: 'QDM::MedicationOrder' },
 
 });
 
@@ -1511,6 +1540,7 @@ module.exports.MedicationOrderSchema = MedicationOrderSchema;
 class MedicationOrder extends mongoose.Document {
   constructor(object) {
     super(object, MedicationOrderSchema);
+    this._type = 'QDM::MedicationOrder';
   }
 }
 module.exports.MedicationOrder = MedicationOrder;
@@ -1540,7 +1570,7 @@ const ParticipationSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.130' },
   qdmCategory: { type: String, default: 'participation' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Participation' },
+  _type: { type: String, default: 'QDM::Participation' },
 
 });
 
@@ -1548,6 +1578,7 @@ module.exports.ParticipationSchema = ParticipationSchema;
 class Participation extends mongoose.Document {
   constructor(object) {
     super(object, ParticipationSchema);
+    this._type = 'QDM::Participation';
   }
 }
 module.exports.Participation = Participation;
@@ -1577,7 +1608,7 @@ const PatientCareExperienceSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.52' },
   qdmCategory: { type: String, default: 'care_experience' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCareExperience' },
+  _type: { type: String, default: 'QDM::PatientCareExperience' },
 
 });
 
@@ -1585,6 +1616,7 @@ module.exports.PatientCareExperienceSchema = PatientCareExperienceSchema;
 class PatientCareExperience extends mongoose.Document {
   constructor(object) {
     super(object, PatientCareExperienceSchema);
+    this._type = 'QDM::PatientCareExperience';
   }
 }
 module.exports.PatientCareExperience = PatientCareExperience;
@@ -1614,7 +1646,7 @@ const PatientCharacteristicSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.53' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristic' },
+  _type: { type: String, default: 'QDM::PatientCharacteristic' },
 
 });
 
@@ -1622,6 +1654,7 @@ module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
 class PatientCharacteristic extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicSchema);
+    this._type = 'QDM::PatientCharacteristic';
   }
 }
 module.exports.PatientCharacteristic = PatientCharacteristic;
@@ -1652,7 +1685,7 @@ const PatientCharacteristicBirthdateSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'birthdate' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicBirthdate' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicBirthdate' },
 
 });
 
@@ -1660,6 +1693,7 @@ module.exports.PatientCharacteristicBirthdateSchema = PatientCharacteristicBirth
 class PatientCharacteristicBirthdate extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicBirthdateSchema);
+    this._type = 'QDM::PatientCharacteristicBirthdate';
   }
 }
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
@@ -1692,7 +1726,7 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'clinical_trial_participant' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicClinicalTrialParticipant' },
 
 });
 
@@ -1700,6 +1734,7 @@ module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientChar
 class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicClinicalTrialParticipantSchema);
+    this._type = 'QDM::PatientCharacteristicClinicalTrialParticipant';
   }
 }
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
@@ -1729,7 +1764,7 @@ const PatientCharacteristicEthnicitySchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'ethnicity' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicEthnicity' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicEthnicity' },
 
 });
 
@@ -1737,6 +1772,7 @@ module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthni
 class PatientCharacteristicEthnicity extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicEthnicitySchema);
+    this._type = 'QDM::PatientCharacteristicEthnicity';
   }
 }
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
@@ -1768,7 +1804,7 @@ const PatientCharacteristicExpiredSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'expired' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicExpired' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicExpired' },
 
 });
 
@@ -1776,6 +1812,7 @@ module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpired
 class PatientCharacteristicExpired extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicExpiredSchema);
+    this._type = 'QDM::PatientCharacteristicExpired';
   }
 }
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
@@ -1806,7 +1843,7 @@ const PatientCharacteristicPayerSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'payer' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicPayer' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicPayer' },
 
 });
 
@@ -1814,6 +1851,7 @@ module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSche
 class PatientCharacteristicPayer extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicPayerSchema);
+    this._type = 'QDM::PatientCharacteristicPayer';
   }
 }
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
@@ -1843,7 +1881,7 @@ const PatientCharacteristicRaceSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'race' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicRace' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicRace' },
 
 });
 
@@ -1851,6 +1889,7 @@ module.exports.PatientCharacteristicRaceSchema = PatientCharacteristicRaceSchema
 class PatientCharacteristicRace extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicRaceSchema);
+    this._type = 'QDM::PatientCharacteristicRace';
   }
 }
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
@@ -1880,7 +1919,7 @@ const PatientCharacteristicSexSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'gender' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicSex' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicSex' },
 
 });
 
@@ -1888,6 +1927,7 @@ module.exports.PatientCharacteristicSexSchema = PatientCharacteristicSexSchema;
 class PatientCharacteristicSex extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicSexSchema);
+    this._type = 'QDM::PatientCharacteristicSex';
   }
 }
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
@@ -1921,7 +1961,7 @@ const PhysicalExamOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PhysicalExamOrder' },
+  _type: { type: String, default: 'QDM::PhysicalExamOrder' },
 
 });
 
@@ -1929,6 +1969,7 @@ module.exports.PhysicalExamOrderSchema = PhysicalExamOrderSchema;
 class PhysicalExamOrder extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamOrderSchema);
+    this._type = 'QDM::PhysicalExamOrder';
   }
 }
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
@@ -1966,7 +2007,7 @@ const PhysicalExamPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PhysicalExamPerformed' },
+  _type: { type: String, default: 'QDM::PhysicalExamPerformed' },
 
 });
 
@@ -1974,6 +2015,7 @@ module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
 class PhysicalExamPerformed extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamPerformedSchema);
+    this._type = 'QDM::PhysicalExamPerformed';
   }
 }
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
@@ -2007,7 +2049,7 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PhysicalExamRecommended' },
+  _type: { type: String, default: 'QDM::PhysicalExamRecommended' },
 
 });
 
@@ -2015,6 +2057,7 @@ module.exports.PhysicalExamRecommendedSchema = PhysicalExamRecommendedSchema;
 class PhysicalExamRecommended extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamRecommendedSchema);
+    this._type = 'QDM::PhysicalExamRecommended';
   }
 }
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
@@ -2049,7 +2092,7 @@ const ProcedureOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedureOrder' },
+  _type: { type: String, default: 'QDM::ProcedureOrder' },
 
 });
 
@@ -2057,6 +2100,7 @@ module.exports.ProcedureOrderSchema = ProcedureOrderSchema;
 class ProcedureOrder extends mongoose.Document {
   constructor(object) {
     super(object, ProcedureOrderSchema);
+    this._type = 'QDM::ProcedureOrder';
   }
 }
 module.exports.ProcedureOrder = ProcedureOrder;
@@ -2097,7 +2141,7 @@ const ProcedurePerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedurePerformed' },
+  _type: { type: String, default: 'QDM::ProcedurePerformed' },
 
 });
 
@@ -2105,6 +2149,7 @@ module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
 class ProcedurePerformed extends mongoose.Document {
   constructor(object) {
     super(object, ProcedurePerformedSchema);
+    this._type = 'QDM::ProcedurePerformed';
   }
 }
 module.exports.ProcedurePerformed = ProcedurePerformed;
@@ -2139,7 +2184,7 @@ const ProcedureRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedureRecommended' },
+  _type: { type: String, default: 'QDM::ProcedureRecommended' },
 
 });
 
@@ -2147,6 +2192,7 @@ module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
 class ProcedureRecommended extends mongoose.Document {
   constructor(object) {
     super(object, ProcedureRecommendedSchema);
+    this._type = 'QDM::ProcedureRecommended';
   }
 }
 module.exports.ProcedureRecommended = ProcedureRecommended;
@@ -2176,7 +2222,7 @@ const ProviderCareExperienceSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.70' },
   qdmCategory: { type: String, default: 'care_experience' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProviderCareExperience' },
+  _type: { type: String, default: 'QDM::ProviderCareExperience' },
 
 });
 
@@ -2184,6 +2230,7 @@ module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
 class ProviderCareExperience extends mongoose.Document {
   constructor(object) {
     super(object, ProviderCareExperienceSchema);
+    this._type = 'QDM::ProviderCareExperience';
   }
 }
 module.exports.ProviderCareExperience = ProviderCareExperience;
@@ -2213,7 +2260,7 @@ const ProviderCharacteristicSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.71' },
   qdmCategory: { type: String, default: 'provider_characteristic' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProviderCharacteristic' },
+  _type: { type: String, default: 'QDM::ProviderCharacteristic' },
 
 });
 
@@ -2221,6 +2268,7 @@ module.exports.ProviderCharacteristicSchema = ProviderCharacteristicSchema;
 class ProviderCharacteristic extends mongoose.Document {
   constructor(object) {
     super(object, ProviderCharacteristicSchema);
+    this._type = 'QDM::ProviderCharacteristic';
   }
 }
 module.exports.ProviderCharacteristic = ProviderCharacteristic;
@@ -2243,7 +2291,6 @@ const [Schema, Number, String, Mixed] = [
 const QDMPatientSchema = new Schema({
   birthDatetime: DateTime,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'QdmPatient' },
 
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
@@ -2547,7 +2594,7 @@ const [Number, String] = [
 const ResultComponentSchema = DataElementSchema({
   referenceRange: Interval,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ResultComponent' },
+  _type: { type: String, default: 'QDM::ResultComponent' },
 
 });
 
@@ -2555,6 +2602,7 @@ module.exports.ResultComponentSchema = ResultComponentSchema;
 class ResultComponent extends mongoose.Document {
   constructor(object) {
     super(object, ResultComponentSchema);
+    this._type = 'QDM::ResultComponent';
   }
 }
 module.exports.ResultComponent = ResultComponent;
@@ -2590,7 +2638,7 @@ const SubstanceAdministeredSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'administered' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'SubstanceAdministered' },
+  _type: { type: String, default: 'QDM::SubstanceAdministered' },
 
 });
 
@@ -2598,6 +2646,7 @@ module.exports.SubstanceAdministeredSchema = SubstanceAdministeredSchema;
 class SubstanceAdministered extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceAdministeredSchema);
+    this._type = 'QDM::SubstanceAdministered';
   }
 }
 module.exports.SubstanceAdministered = SubstanceAdministered;
@@ -2635,7 +2684,7 @@ const SubstanceOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'SubstanceOrder' },
+  _type: { type: String, default: 'QDM::SubstanceOrder' },
 
 });
 
@@ -2643,6 +2692,7 @@ module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
 class SubstanceOrder extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceOrderSchema);
+    this._type = 'QDM::SubstanceOrder';
   }
 }
 module.exports.SubstanceOrder = SubstanceOrder;
@@ -2679,7 +2729,7 @@ const SubstanceRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'SubstanceRecommended' },
+  _type: { type: String, default: 'QDM::SubstanceRecommended' },
 
 });
 
@@ -2687,6 +2737,7 @@ module.exports.SubstanceRecommendedSchema = SubstanceRecommendedSchema;
 class SubstanceRecommended extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceRecommendedSchema);
+    this._type = 'QDM::SubstanceRecommended';
   }
 }
 module.exports.SubstanceRecommended = SubstanceRecommended;
@@ -2718,7 +2769,7 @@ const SymptomSchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.136' },
   qdmCategory: { type: String, default: 'symptom' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Symptom' },
+  _type: { type: String, default: 'QDM::Symptom' },
 
 });
 
@@ -2726,6 +2777,7 @@ module.exports.SymptomSchema = SymptomSchema;
 class Symptom extends mongoose.Document {
   constructor(object) {
     super(object, SymptomSchema);
+    this._type = 'QDM::Symptom';
   }
 }
 module.exports.Symptom = Symptom;
@@ -2749,7 +2801,7 @@ const ComponentSchema = new mongoose.Schema({
   code: Code,
   result: Any,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'Component' },
+  _type: { type: String, default: 'QDM::Component' },
 
 });
 
@@ -2757,6 +2809,7 @@ module.exports.ComponentSchema = ComponentSchema;
 class Component extends mongoose.Document {
   constructor(object) {
     super(object, ComponentSchema);
+    this._type = 'QDM::Component';
   }
 }
 module.exports.Component = Component;
@@ -2780,7 +2833,7 @@ const FacilityLocationSchema = new mongoose.Schema({
   code: Code,
   locationPeriod: Interval,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'FacilityLocation' },
+  _type: { type: String, default: 'QDM::FacilityLocation' },
 
 });
 
@@ -2788,6 +2841,7 @@ module.exports.FacilityLocationSchema = FacilityLocationSchema;
 class FacilityLocation extends mongoose.Document {
   constructor(object) {
     super(object, FacilityLocationSchema);
+    this._type = 'QDM::FacilityLocation';
   }
 }
 module.exports.FacilityLocation = FacilityLocation;
@@ -3266,7 +3320,6 @@ const [Schema, Number, String, Mixed] = [
 ];
 
 const PatientSchema = new Schema({
-  _type: { type: String, default: 'Patient' },
 
   givenNames: [String],
   familyName: String,

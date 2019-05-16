@@ -25,7 +25,7 @@ const InterventionRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'intervention' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'InterventionRecommended' },
+  _type: { type: String, default: 'QDM::InterventionRecommended' },
 
 });
 
@@ -33,6 +33,7 @@ module.exports.InterventionRecommendedSchema = InterventionRecommendedSchema;
 class InterventionRecommended extends mongoose.Document {
   constructor(object) {
     super(object, InterventionRecommendedSchema);
+    this._type = 'QDM::InterventionRecommended';
   }
 }
 module.exports.InterventionRecommended = InterventionRecommended;

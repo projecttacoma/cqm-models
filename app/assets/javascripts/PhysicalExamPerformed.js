@@ -30,7 +30,7 @@ const PhysicalExamPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PhysicalExamPerformed' },
+  _type: { type: String, default: 'QDM::PhysicalExamPerformed' },
 
 });
 
@@ -38,6 +38,7 @@ module.exports.PhysicalExamPerformedSchema = PhysicalExamPerformedSchema;
 class PhysicalExamPerformed extends mongoose.Document {
   constructor(object) {
     super(object, PhysicalExamPerformedSchema);
+    this._type = 'QDM::PhysicalExamPerformed';
   }
 }
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;

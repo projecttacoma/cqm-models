@@ -27,7 +27,7 @@ const DeviceAppliedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'applied' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceApplied' },
+  _type: { type: String, default: 'QDM::DeviceApplied' },
 
 });
 
@@ -35,6 +35,7 @@ module.exports.DeviceAppliedSchema = DeviceAppliedSchema;
 class DeviceApplied extends mongoose.Document {
   constructor(object) {
     super(object, DeviceAppliedSchema);
+    this._type = 'QDM::DeviceApplied';
   }
 }
 module.exports.DeviceApplied = DeviceApplied;

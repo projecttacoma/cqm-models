@@ -33,7 +33,7 @@ const ProcedurePerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'procedure' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProcedurePerformed' },
+  _type: { type: String, default: 'QDM::ProcedurePerformed' },
 
 });
 
@@ -41,6 +41,7 @@ module.exports.ProcedurePerformedSchema = ProcedurePerformedSchema;
 class ProcedurePerformed extends mongoose.Document {
   constructor(object) {
     super(object, ProcedurePerformedSchema);
+    this._type = 'QDM::ProcedurePerformed';
   }
 }
 module.exports.ProcedurePerformed = ProcedurePerformed;

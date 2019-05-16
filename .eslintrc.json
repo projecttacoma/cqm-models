@@ -17,7 +17,13 @@
           "_id", "_type", "_doc"
         ]
       }
-    ]
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+        }
+      ]
   },
   "env": {
     "jasmine": true,

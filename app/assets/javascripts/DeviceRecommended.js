@@ -25,7 +25,7 @@ const DeviceRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'device' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'DeviceRecommended' },
+  _type: { type: String, default: 'QDM::DeviceRecommended' },
 
 });
 
@@ -33,6 +33,7 @@ module.exports.DeviceRecommendedSchema = DeviceRecommendedSchema;
 class DeviceRecommended extends mongoose.Document {
   constructor(object) {
     super(object, DeviceRecommendedSchema);
+    this._type = 'QDM::DeviceRecommended';
   }
 }
 module.exports.DeviceRecommended = DeviceRecommended;

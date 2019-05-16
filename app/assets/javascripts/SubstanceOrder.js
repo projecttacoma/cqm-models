@@ -30,7 +30,7 @@ const SubstanceOrderSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'substance' },
   qdmStatus: { type: String, default: 'order' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'SubstanceOrder' },
+  _type: { type: String, default: 'QDM::SubstanceOrder' },
 
 });
 
@@ -38,6 +38,7 @@ module.exports.SubstanceOrderSchema = SubstanceOrderSchema;
 class SubstanceOrder extends mongoose.Document {
   constructor(object) {
     super(object, SubstanceOrderSchema);
+    this._type = 'QDM::SubstanceOrder';
   }
 }
 module.exports.SubstanceOrder = SubstanceOrder;

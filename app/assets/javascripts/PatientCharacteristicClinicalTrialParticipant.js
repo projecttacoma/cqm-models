@@ -25,7 +25,7 @@ const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'clinical_trial_participant' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicClinicalTrialParticipant' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicClinicalTrialParticipant' },
 
 });
 
@@ -33,6 +33,7 @@ module.exports.PatientCharacteristicClinicalTrialParticipantSchema = PatientChar
 class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicClinicalTrialParticipantSchema);
+    this._type = 'QDM::PatientCharacteristicClinicalTrialParticipant';
   }
 }
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;

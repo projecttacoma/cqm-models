@@ -22,7 +22,7 @@ const PatientCharacteristicSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.53' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristic' },
+  _type: { type: String, default: 'QDM::PatientCharacteristic' },
 
 });
 
@@ -30,6 +30,7 @@ module.exports.PatientCharacteristicSchema = PatientCharacteristicSchema;
 class PatientCharacteristic extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicSchema);
+    this._type = 'QDM::PatientCharacteristic';
   }
 }
 module.exports.PatientCharacteristic = PatientCharacteristic;

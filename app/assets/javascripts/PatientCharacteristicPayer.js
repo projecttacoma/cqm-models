@@ -23,7 +23,7 @@ const PatientCharacteristicPayerSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'payer' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicPayer' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicPayer' },
 
 });
 
@@ -31,6 +31,7 @@ module.exports.PatientCharacteristicPayerSchema = PatientCharacteristicPayerSche
 class PatientCharacteristicPayer extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicPayerSchema);
+    this._type = 'QDM::PatientCharacteristicPayer';
   }
 }
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;

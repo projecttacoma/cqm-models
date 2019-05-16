@@ -22,7 +22,7 @@ const ProviderCareExperienceSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.70' },
   qdmCategory: { type: String, default: 'care_experience' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'ProviderCareExperience' },
+  _type: { type: String, default: 'QDM::ProviderCareExperience' },
 
 });
 
@@ -30,6 +30,7 @@ module.exports.ProviderCareExperienceSchema = ProviderCareExperienceSchema;
 class ProviderCareExperience extends mongoose.Document {
   constructor(object) {
     super(object, ProviderCareExperienceSchema);
+    this._type = 'QDM::ProviderCareExperience';
   }
 }
 module.exports.ProviderCareExperience = ProviderCareExperience;

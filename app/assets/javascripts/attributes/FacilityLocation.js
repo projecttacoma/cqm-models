@@ -16,7 +16,7 @@ const FacilityLocationSchema = new mongoose.Schema({
   code: Code,
   locationPeriod: Interval,
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'FacilityLocation' },
+  _type: { type: String, default: 'QDM::FacilityLocation' },
 
 });
 
@@ -24,6 +24,7 @@ module.exports.FacilityLocationSchema = FacilityLocationSchema;
 class FacilityLocation extends mongoose.Document {
   constructor(object) {
     super(object, FacilityLocationSchema);
+    this._type = 'QDM::FacilityLocation';
   }
 }
 module.exports.FacilityLocation = FacilityLocation;

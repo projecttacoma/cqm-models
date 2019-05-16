@@ -24,7 +24,7 @@ const PatientCharacteristicExpiredSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'expired' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicExpired' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicExpired' },
 
 });
 
@@ -32,6 +32,7 @@ module.exports.PatientCharacteristicExpiredSchema = PatientCharacteristicExpired
 class PatientCharacteristicExpired extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicExpiredSchema);
+    this._type = 'QDM::PatientCharacteristicExpired';
   }
 }
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;

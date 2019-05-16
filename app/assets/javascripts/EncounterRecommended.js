@@ -26,7 +26,7 @@ const EncounterRecommendedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'EncounterRecommended' },
+  _type: { type: String, default: 'QDM::EncounterRecommended' },
 
 });
 
@@ -34,6 +34,7 @@ module.exports.EncounterRecommendedSchema = EncounterRecommendedSchema;
 class EncounterRecommended extends mongoose.Document {
   constructor(object) {
     super(object, EncounterRecommendedSchema);
+    this._type = 'QDM::EncounterRecommended';
   }
 }
 module.exports.EncounterRecommended = EncounterRecommended;

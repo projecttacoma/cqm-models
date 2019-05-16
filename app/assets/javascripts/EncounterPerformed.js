@@ -31,7 +31,7 @@ const EncounterPerformedSchema = DataElementSchema({
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'performed' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'EncounterPerformed' },
+  _type: { type: String, default: 'QDM::EncounterPerformed' },
 
 });
 
@@ -39,6 +39,7 @@ module.exports.EncounterPerformedSchema = EncounterPerformedSchema;
 class EncounterPerformed extends mongoose.Document {
   constructor(object) {
     super(object, EncounterPerformedSchema);
+    this._type = 'QDM::EncounterPerformed';
   }
 }
 module.exports.EncounterPerformed = EncounterPerformed;

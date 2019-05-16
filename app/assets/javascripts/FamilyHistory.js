@@ -24,7 +24,7 @@ const FamilyHistorySchema = DataElementSchema({
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
   qdmCategory: { type: String, default: 'family_history' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'FamilyHistory' },
+  _type: { type: String, default: 'QDM::FamilyHistory' },
 
 });
 
@@ -32,6 +32,7 @@ module.exports.FamilyHistorySchema = FamilyHistorySchema;
 class FamilyHistory extends mongoose.Document {
   constructor(object) {
     super(object, FamilyHistorySchema);
+    this._type = 'QDM::FamilyHistory';
   }
 }
 module.exports.FamilyHistory = FamilyHistory;

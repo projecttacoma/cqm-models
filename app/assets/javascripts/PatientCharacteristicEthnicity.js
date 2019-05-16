@@ -22,7 +22,7 @@ const PatientCharacteristicEthnicitySchema = DataElementSchema({
   qdmCategory: { type: String, default: 'patient_characteristic' },
   qdmStatus: { type: String, default: 'ethnicity' },
   qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'PatientCharacteristicEthnicity' },
+  _type: { type: String, default: 'QDM::PatientCharacteristicEthnicity' },
 
 });
 
@@ -30,6 +30,7 @@ module.exports.PatientCharacteristicEthnicitySchema = PatientCharacteristicEthni
 class PatientCharacteristicEthnicity extends mongoose.Document {
   constructor(object) {
     super(object, PatientCharacteristicEthnicitySchema);
+    this._type = 'QDM::PatientCharacteristicEthnicity';
   }
 }
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
