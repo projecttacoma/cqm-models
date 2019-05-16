@@ -244,7 +244,7 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents.gsub!(/field :facilityLocation, type: Code/, 'field :facilityLocation, type: QDM::FacilityLocation')
 
   # Make relatedTo embeds_many instead of field
-  contents.gsub!(/  field :relatedTo, type: Array\n/, "  embeds_many :relatedTo, class_name: 'QDM::Id'\n")
+  contents.gsub!(/  field :relatedTo, type: Array\n/, "  embeds_many :relatedTo, class_name: 'Id'\n")
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -282,6 +282,7 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   contents.gsub!('Qdm', 'QDM')
   contents.gsub!('Code', 'QDM::Code')
+  contents.gsub!('Id', 'QDM::Id')
   contents.gsub!('Interval', 'QDM::Interval')
   contents.gsub!('Quantity', 'QDM::Quantity')
   File.open(file_name, 'w') { |file| file.puts contents }
