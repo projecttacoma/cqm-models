@@ -246,6 +246,12 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   # Make relatedTo embeds_many instead of field
   contents.gsub!(/  field :relatedTo, type: Array\n/, "  embeds_many :relatedTo, class_name: 'QDM::Id'\n")
 
+  # Make prescriberId embeds_many instead of field
+  contents.gsub!(/  field :prescriberId, type: Id\n/, "  embeds_one :prescriberId, class_name: 'QDM::Id'\n")
+
+  # Make dispenserId embeds_many instead of field
+  contents.gsub!(/  field :dispenserId, type: Id\n/, "  embeds_one :dispenserId, class_name: 'QDM::Id'\n")
+
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
