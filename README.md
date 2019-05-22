@@ -61,7 +61,17 @@ bundle exec rake
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see [tags on this repository](https://github.com/projecttacoma/cqm-models/tags). 
+Starting with version **1.1.1.0** released on 5/22/2019, cqm-models versioning has the format **W.X.Y.Z**, where:
+
+* **W** maps to a version of QDM. See the table below to see the existing mapping to QDM versions.
+
+  | W | QDM version |
+  | --- | --- |
+  | 1 | 5.4 |
+
+* **X.Y.Z** uses [SemVer](http://semver.org/) for versioning. **X.Y.Z** starts at 0.0.0 when **W** is incremented.
+
+For the versions available, see [tags on this repository](https://github.com/projecttacoma/cqm-models/tags).
 
 
 ## License
