@@ -61,7 +61,7 @@ bundle exec rake
 
 ## Versioning
 
-Starting with version **1.1.0.2** released on !!date!!, cqm-models versioning has the format **W.X.Y.Z**, where:
+Starting with version **1.1.1.0** released on 5/22/2019, cqm-models versioning has the format **W.X.Y.Z**, where:
 
 * **W** maps to a version of QDM. See the table below to see the existing mapping to QDM versions.
 
