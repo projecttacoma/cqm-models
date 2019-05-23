@@ -1,4 +1,4 @@
-module QDM
+module CQM
   # IndividualResult stores the patient-level (population/clause) results for a patient/measure combination
   class IndividualResult
     include Mongoid::Document
