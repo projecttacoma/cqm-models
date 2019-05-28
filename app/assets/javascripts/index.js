@@ -20,5 +20,5 @@ module.exports.ValueSet = require('./cqm/ValueSet.js').ValueSet;
 module.exports.ValueSetSchema = require('./cqm/ValueSet.js').ValueSetSchema;
 module.exports.Concept = require('./cqm/Concept.js').Concept;
 module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
-module.exports.IndividualResult = require('./IndividualResult').IndividualResult;
-module.exports.IndividualResultSchema = require('./IndividualResult').IndividualResultSchema;
+module.exports.IndividualResult = require('./cqm/IndividualResult').IndividualResult;
+module.exports.IndividualResultSchema = require('./cqm/IndividualResult').IndividualResultSchema;

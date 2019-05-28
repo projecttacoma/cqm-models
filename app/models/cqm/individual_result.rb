@@ -20,9 +20,9 @@ module CQM
     field :MSRPOPLEX, type: Integer
 
     # Result Attributes
-    field :clause_results, type: Hash
+    field :clause_results, type: Array
+    field :statement_results, type: Array
     field :episode_results, type: Hash
-    field :statement_results, type: Hash
 
     # This field is for application specific information only. If both Bonnie and
     # Cypress use a common field, it should be made a field on this model,
@@ -35,5 +35,28 @@ module CQM
     # Relations to other model classes
     belongs_to :measure
     belongs_to :patient
+
+    # Convert the stored array into a hash between clause and result
+    def clause_results_by_clause
+      clause_results_hash = {}
+      clause_results.each do |result|
+        if(!clause_results_hash[result['libraryName']])
+          clause_results_hash[result['libraryName']] = {}
+        end
+        clause_results_hash[result['libraryName']][result['localId']] = result
+      end
+      return clause_results_hash
+    end
+    
+    def statement_results_by_statement
+      statement_results_hash = {}
+      statement_results.each do |result|
+        if(!statement_results_hash[result['libraryName']])
+          statement_results_hash[result['libraryName']] = {}
+        end
+        statement_results_hash[result['libraryName']][result['statementName']] = result
+      end
+      return statement_results_hash
+    end
   end
 end
