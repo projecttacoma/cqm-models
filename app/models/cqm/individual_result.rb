@@ -40,18 +40,18 @@ module CQM
     def clause_results_by_clause
       clause_results_hash = {}
       clause_results.each do |result|
-        if(!clause_results_hash[result['libraryName']])
+        unless clause_results_hash[result['libraryName']]
           clause_results_hash[result['libraryName']] = {}
         end
         clause_results_hash[result['libraryName']][result['localId']] = result
       end
       return clause_results_hash
     end
-    
+
     def statement_results_by_statement
       statement_results_hash = {}
       statement_results.each do |result|
-        if(!statement_results_hash[result['libraryName']])
+        unless statement_results_hash[result['libraryName']]
           statement_results_hash[result['libraryName']] = {}
         end
         statement_results_hash[result['libraryName']][result['statementName']] = result
