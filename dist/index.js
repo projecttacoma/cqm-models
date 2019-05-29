@@ -3160,24 +3160,24 @@ const IndividualResultSchema = mongoose.Schema(
   }
 );
 
-IndividualResultSchema.methods.clause_results_by_clause = function clause_results_by_clause(){
-  clause_results_hash = {}
-  this.clause_results.forEach(function (result) {
-    if(!clause_results_hash[result.libraryName]) {
-      clause_results_hash[result.libraryName] = {}
+IndividualResultSchema.methods.clause_results_by_clause = function clause_results_by_clause() {
+  const clause_results_hash = {};
+  this.clause_results.forEach((result) => {
+    if (!clause_results_hash[result.libraryName]) {
+      clause_results_hash[result.libraryName] = {};
     }
-    clause_results_hash[result.libraryName][result.localId] = result
+    clause_results_hash[result.libraryName][result.localId] = result;
   });
   return clause_results_hash;
 };
 
-IndividualResultSchema.methods.statement_results_by_statement = function clause_results_by_clause(){
-  statement_results_hash = {}
-  this.statement_results.forEach(function (result) {
-    if(!statement_results_hash[result.libraryName]) {
-      statement_results_hash[result.libraryName] = {}
+IndividualResultSchema.methods.statement_results_by_statement = function statement_results_by_statement() {
+  const statement_results_hash = {};
+  this.statement_results.forEach((result) => {
+    if (!statement_results_hash[result.libraryName]) {
+      statement_results_hash[result.libraryName] = {};
     }
-    statement_results_hash[result.libraryName][result.statementName] = result
+    statement_results_hash[result.libraryName][result.statementName] = result;
   });
   return statement_results_hash;
 };
