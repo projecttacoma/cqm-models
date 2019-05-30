@@ -3163,10 +3163,10 @@ const IndividualResultSchema = mongoose.Schema(
 IndividualResultSchema.methods.clause_results_by_clause = function clause_results_by_clause() {
   const clause_results_hash = {};
   this.clause_results.forEach((result) => {
-    if (!clause_results_hash[result.libraryName]) {
-      clause_results_hash[result.libraryName] = {};
+    if (!clause_results_hash[result.library_name]) {
+      clause_results_hash[result.library_name] = {};
     }
-    clause_results_hash[result.libraryName][result.localId] = result;
+    clause_results_hash[result.library_name][result.localId] = result;
   });
   return clause_results_hash;
 };
@@ -3174,10 +3174,10 @@ IndividualResultSchema.methods.clause_results_by_clause = function clause_result
 IndividualResultSchema.methods.statement_results_by_statement = function statement_results_by_statement() {
   const statement_results_hash = {};
   this.statement_results.forEach((result) => {
-    if (!statement_results_hash[result.libraryName]) {
-      statement_results_hash[result.libraryName] = {};
+    if (!statement_results_hash[result.library_name]) {
+      statement_results_hash[result.library_name] = {};
     }
-    statement_results_hash[result.libraryName][result.statementName] = result;
+    statement_results_hash[result.library_name][result.statement_name] = result;
   });
   return statement_results_hash;
 };
