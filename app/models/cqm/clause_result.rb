@@ -1,4 +1,5 @@
 module CQM
+  # ClauseResult is used to store clause result information in IndividualResult
   class ClauseResult
     include Mongoid::Document
     include Mongoid::Timestamps
@@ -18,4 +19,3 @@ module CQM
     belongs_to :individual_result
   end
 end
-  

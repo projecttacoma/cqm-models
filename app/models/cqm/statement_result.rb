@@ -1,4 +1,5 @@
 module CQM
+  # StatementResult is used to store statement result information in IndividualResult
   class StatementResult
     include Mongoid::Document
     include Mongoid::Timestamps
@@ -24,4 +25,3 @@ module CQM
     belongs_to :individual_result
   end
 end
-    

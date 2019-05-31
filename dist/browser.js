@@ -3092,27 +3092,23 @@ module.exports.StatementDependency = StatementDependency;
 },{"mongoose/browser":249}],70:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
-const [Number, String, Mixed, ObjectId] = [
-  mongoose.Schema.Types.Number,
+const [String, Mixed] = [
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Mixed,
-  mongoose.Schema.Types.ObjectId,
 ];
 
-const ClauseResultSchema = mongoose.Schema(
-  {
-    // Library the clause this result is for is in
-    library_name: String,
-    // Statment the clause this result is for is in
-    statement_name: String,
-    // LocalId of the clause this result is for
-    localId: String,
-    // Final, processed result of raw calculation
-    final: String,
-    // Raw result of clause calculation
-    raw: Mixed
-  }
-);
+const ClauseResultSchema = mongoose.Schema({
+  // Library the clause this result is for is in
+  library_name: String,
+  // Statment the clause this result is for is in
+  statement_name: String,
+  // LocalId of the clause this result is for
+  localId: String,
+  // Final, processed result of raw calculation
+  final: String,
+  // Raw result of clause calculation
+  raw: Mixed,
+});
 
 
 module.exports.ClauseResultSchema = ClauseResultSchema;
@@ -3549,26 +3545,23 @@ module.exports.Provider = Provider;
 },{"../Id":20,"mongoose/browser":249}],78:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
-const [Number, String, Mixed, ObjectId] = [
-  mongoose.Schema.Types.Number,
+const [String, Mixed] = [
   mongoose.Schema.Types.String,
   mongoose.Schema.Types.Mixed,
-  mongoose.Schema.Types.ObjectId,
 ];
 
-const StatementResultSchema = mongoose.Schema(
-  {
-    // Library the statement this result is for is in
-    library_name: String,
-    // Statment this result is for is in
-    statement_name: String,
-    // Result, processed for display, of the statement this result is for
-    pretty: String,
-    // Final, processed result of raw calculation
-    final: String,
-    // Raw result of clause calculation
-    raw: Mixed,
-    /*
+const StatementResultSchema = mongoose.Schema({
+  // Library the statement this result is for is in
+  library_name: String,
+  // Statment this result is for is in
+  statement_name: String,
+  // Result, processed for display, of the statement this result is for
+  pretty: String,
+  // Final, processed result of raw calculation
+  final: String,
+  // Raw result of clause calculation
+  raw: Mixed,
+  /*
    * 'NA' - Not applicable. This statement is not relevant to any population calculation in this population_set. Common
    *   for unused library statements or statements only used for other population sets.
    *
@@ -3576,13 +3569,12 @@ const StatementResultSchema = mongoose.Schema(
    *
    * 'TRUE' - This statement is relevant for one or more of the population inclusion calculations.
     */
-   relevance: {
-        type: String,
-        enum: ['NA', 'TRUE', 'FALSE'],
-        default: 'NA',
-        }
-  }
-);
+  relevance: {
+    type: String,
+    enum: ['NA', 'TRUE', 'FALSE'],
+    default: 'NA',
+  },
+});
 
 
 module.exports.StatementResultSchema = StatementResultSchema;
