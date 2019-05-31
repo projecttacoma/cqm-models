@@ -1,4 +1,6 @@
 const mongoose = require('mongoose/browser');
+const { ClauseResultSchema } = require('./ClauseResult');
+const { StatementResultSchema } = require('./StatementResult');
 
 const [Number, String, Mixed, ObjectId] = [
   mongoose.Schema.Types.Number,
@@ -22,8 +24,9 @@ const IndividualResultSchema = mongoose.Schema(
     MSRPOPLEX: Number,
 
     // Result Attributes
-    clause_results: [],
-    statement_results: [],
+    clause_results: [ClauseResultSchema],
+    statement_results: [StatementResultSchema],
+    population_relevance: Mixed,
     episode_results: Mixed,
     observation_values: [Number],
 

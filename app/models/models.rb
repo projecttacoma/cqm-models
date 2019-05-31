@@ -30,6 +30,8 @@ require_relative 'cqm/population_set'
 require_relative 'cqm/patient'
 require_relative 'cqm/provider'
 require_relative 'cqm/individual_result'
+require_relative 'cqm/statement_result'
+require_relative 'cqm/clause_result'
 
 # Make Patient Generation Available
 require_relative '../../lib/generate_patients'
