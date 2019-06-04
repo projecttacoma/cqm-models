@@ -16,6 +16,6 @@ module CQM
     field :raw
 
     # Relations to other model classes
-    belongs_to :individual_result
+    embedded_in :individual_result
   end
 end

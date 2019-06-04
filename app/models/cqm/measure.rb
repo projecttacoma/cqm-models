@@ -73,6 +73,8 @@ module CQM
     # hence the 'inverse_of: nil')
     has_and_belongs_to_many :value_sets, inverse_of: nil
 
+    has_many :calculation_results, class_name: 'CQM::IndividualResult'
+
     def all_stratifications
       population_sets.flat_map(&:stratifications)
     end

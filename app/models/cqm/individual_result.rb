@@ -20,8 +20,8 @@ module CQM
     field :MSRPOPLEX, type: Integer
 
     # Result Attributes
-    field :clause_results, type: Array
-    field :statement_results, type: Array
+    embeds_many :clause_results
+    embeds_many :statement_results
     field :episode_results, type: Hash
     field :observation_values, type: Array, default: []
 

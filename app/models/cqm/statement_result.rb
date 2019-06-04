@@ -22,6 +22,6 @@ module CQM
     field :relevance, type: String
 
     # Relations to other model classes
-    belongs_to :individual_result
+    embedded_in :individual_result
   end
 end
