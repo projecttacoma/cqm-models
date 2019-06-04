@@ -8,7 +8,7 @@ const [String, Mixed] = [
 const StatementResultSchema = mongoose.Schema({
   // Library the statement this result is for is in
   library_name: String,
-  // Statment this result is for is in
+  // Statement this result is for is in
   statement_name: String,
   // Result, processed for display, of the statement this result is for
   pretty: String,
