@@ -28,6 +28,7 @@ const FacilityLocation = require('./../../../app/assets/javascripts/attributes/F
 const FamilyHistory = require('./../../../app/assets/javascripts/FamilyHistory.js').FamilyHistory;
 const ImmunizationAdministered = require('./../../../app/assets/javascripts/ImmunizationAdministered.js').ImmunizationAdministered;
 const ImmunizationOrder = require('./../../../app/assets/javascripts/ImmunizationOrder.js').ImmunizationOrder;
+const IndividualResult = require('./../../../app/assets/javascripts/IndividualResult.js').IndividualResult;
 const InterventionOrder = require('./../../../app/assets/javascripts/InterventionOrder.js').InterventionOrder;
 const InterventionPerformed = require('./../../../app/assets/javascripts/InterventionPerformed.js').InterventionPerformed;
 const InterventionRecommended = require('./../../../app/assets/javascripts/InterventionRecommended.js').InterventionRecommended;
@@ -480,3 +481,9 @@ describe('CQLLibrary', () => {
   });
 });
 
+describe('IndividualResult', () => {
+  it('has empty observation_values by default', () => {
+    result = new IndividualResult();
+    expect(result.observation_values.length).toBe(0);
+  });
+});
