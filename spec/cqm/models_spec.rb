@@ -66,7 +66,7 @@ RSpec.describe QDM do
     @patient_de2.qdmPatient.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: DateTime.new(2010, 1, 3, 4, 0, 0), relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')], facilityLocation: facility_location2)
 
     # An individual Result
-    @individualResult = QDM::IndividualResult.new()
+    @individualResult = QDM::IndividualResult.new
   end
 
   after(:all) do
