@@ -24,6 +24,7 @@ module CQM
     embeds_many :statement_results
     field :episode_results, type: Hash
     field :observation_values, type: Array, default: []
+    field :population_relevance, type: Hash
 
     # This field is for application specific information only. If both Bonnie and
     # Cypress use a common field, it should be made a field on this model,
@@ -35,7 +36,7 @@ module CQM
 
     # Relations to other model classes
     belongs_to :measure
-    belongs_to :patient
+    belongs_to :patient, optional: true
 
     # Convert the stored array into a hash between clause and result
     def clause_results_by_clause
