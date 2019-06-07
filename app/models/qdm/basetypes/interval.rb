@@ -32,6 +32,25 @@ module QDM
       self
     end
 
+    def shift_years(year)
+      if (@low.is_a? DateTime) || (@low.is_a? Time)
+        if @low.month == 2 && @low.day == 29 && !Date.leap?(year.to_i)
+          @low.change(year: year.to_i, day: 28)
+        else
+          @low = @low.change(year: year.to_i)
+        end
+      end
+      if (@high.is_a? DateTime) || (@high.is_a? Time)
+        if @high.month == 2 && @high.day == 29 && !Date.leap?(year.to_i)
+          @high.change(year: year.to_i, day: 28)
+        else
+          @high = @high.change(year: year.to_i)
+        end
+        @high = @high.year > 9999 ? @high.change(year: 9999) : @high
+      end
+      self
+    end
+
     class << self
       # Get the object as it was stored in the database, and instantiate
       # this custom class from it.
