@@ -25,6 +25,7 @@ const IndividualResultSchema = mongoose.Schema(
     clause_results: Mixed,
     episode_results: Mixed,
     statement_results: Mixed,
+    observation_values: [Number],
 
     // This field is for application specific information only. If both Bonnie and
     // Cypress use a common field, it should be made a field on this model,
