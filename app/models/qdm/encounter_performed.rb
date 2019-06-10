@@ -17,5 +17,12 @@ module QDM
     field :qdmCategory, type: String, default: 'encounter'
     field :qdmStatus, type: String, default: 'performed'
     field :qdmVersion, type: String, default: '5.4'
+
+    def shift_years(year_shift)
+      super
+      facilityLocations.each do |facility_location|
+        facility_location.shift_years(year_shift)
+      end
+    end
   end
 end

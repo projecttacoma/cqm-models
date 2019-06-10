@@ -92,47 +92,19 @@ module QDM
     # The necessary reason for this function is to avoid a problem when shifting
     # past a year that is a leap year. February 29th dates are handled by moving
     # back to the 28th in non leap years
-    def shift_years(year) 
-      # Iterate over fields
+    def shift_years(year_shift)
       fields.keys.each do |field|
-        # Check if field is a DateTime
         if send(field).is_a? DateTime
-          if send(field).month == 2 && send(field).day == 29 && !Date.leap?(year.to_i)
-            send(field + '=', send(field).change(year: year.to_i, day: 28))
+          if send(field).month == 2 && send(field).day == 29 && !Date.leap?(year_shift + send(field).year)
+            send(field + '=', send(field).change(year: year_shift + send(field).year, day: 28))
           else
-            send(field + '=', send(field).change(year: year.to_i))
+            send(field + '=', send(field).change(year: year_shift + send(field).year))
           end
-        end
-        # Check if field is an Interval
-        if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
-          send(field + '=', send(field).shift_years(year))
         end
 
-        # Special case for facility locations
-        if field == 'facilityLocations'
-          send(field).each do |facility_location|
-            shift_facility_location_years(facility_location, year)
-          end
-        elsif field == 'facilityLocation'
-          facility_location = send(field)
-          unless facility_location.nil?
-            shift_facility_location_years(facility_location, year)
-            send(field + '=', facility_location)
-          end
+        if (send(field).is_a? Interval) || (send(field).is_a? DataElement) || (send(field).is_a? FacilityLocation)
+          send(field + '=', send(field).shift_years(year_shift))
         end
-      end
-    end
-
-    def shift_facility_location_years(facility_location, year)
-      if facility_location['locationPeriod'][:low].month == 2 && facility_location['locationPeriod'][:low].day == 29 && !Date.leap?(year.to_i)
-        facility_location['locationPeriod'][:low] = facility_location['locationPeriod'][:low].change(year: year.to_i, day: 28)
-      else 
-        facility_location['locationPeriod'][:low] = facility_location['locationPeriod'][:low].change(year: year.to_i)
-      end
-      if facility_location['locationPeriod'][:high].month == 2 && facility_location['locationPeriod'][:high].day == 29 && !Date.leap?(year.to_i)
-        facility_location['locationPeriod'][:high] = facility_location['locationPeriod'][:high].change(year: year.to_i, day: 28)
-      else
-        facility_location['locationPeriod'][:high] = facility_location['locationPeriod'][:high].change(year: year.to_i)
       end
     end
 
