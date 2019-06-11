@@ -3245,7 +3245,7 @@ const MeasureSchema = new mongoose.Schema(
     // HQMF/Tacoma-specific Measure-logic related data
     population_criteria: Mixed,
     source_data_criteria: [],
-    measure_period: Interval,
+    measure_period: Mixed,
     measure_attributes: [],
 
     population_sets: [PopulationSetSchema],
