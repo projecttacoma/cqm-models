@@ -456,19 +456,6 @@ describe('PopulationSet', () => {
   });
 });
 
-describe('DateTime', () => {
-  it('can create a DateTime from JS Date', () => {
-    DateTime(new Date());
-  });
-
-  it('can create a DateTime from cql DateTime', () => {
-    DateTime(new cql.DateTime(new Date()));
-  });
-  it('throws if invalid DateTime passed to cast', () => {
-    expect(() => {DateTime.cast('some invalid DateTime arg')}).toThrow();
-  });
-});
-
 describe('CQLLibrary', () => {
   it('defaults to be top level', () => {
     library = new CQLLibrary();
