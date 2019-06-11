@@ -36,7 +36,7 @@ module QDM
       if (@low.is_a? DateTime) || (@low.is_a? Time)
         low_shift = @low.year + year_shift
         if @low.month == 2 && @low.day == 29 && !Date.leap?(low_shift)
-          @low.change(year: low_shift, day: 28)
+          @low = @low.change(year: low_shift, day: 28)
         else
           @low = @low.change(year: low_shift)
         end
@@ -44,7 +44,7 @@ module QDM
       if (@high.is_a? DateTime) || (@high.is_a? Time)
         high_shift = @high.year + year_shift
         if @high.month == 2 && @high.day == 29 && !Date.leap?(high_shift)
-          @high.change(year: high_shift, day: 28)
+          @high = @high.change(year: high_shift, day: 28)
         else
           @high = @high.change(year: high_shift)
         end
