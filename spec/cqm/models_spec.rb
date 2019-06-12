@@ -274,4 +274,30 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('2012-02-29')
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2012-02-29')
   end
+
+  it 'interval low and high get shifted out of range' do
+    patient1 = CQM::Patient.new(givenNames: %w['First Middle'], familyName: 'Family', bundleId: '1')
+    patient1.qdmPatient.dataElements << QDM::CareGoal.new(relevantPeriod: QDM::Interval.new(DateTime.new(0002, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
+
+    year_shift = -5
+    begin
+      patient1.qdmPatient.dataElements.each do |data_element|
+        data_element.shift_years(year_shift)
+      end
+    rescue RangeError => e
+      expect(e.message).to eq 'Year was shifted after 9999 or before 0001'
+    end
+
+    patient2 = CQM::Patient.new(givenNames: %w['First Middle'], familyName: 'Family', bundleId: '1')
+    patient2.qdmPatient.dataElements << QDM::CareGoal.new(relevantPeriod: QDM::Interval.new(DateTime.new(2001, 1, 3, 4, 0, 0), DateTime.new(9998, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
+
+    year_shift = 5
+    begin
+      patient2.qdmPatient.dataElements.each do |data_element|
+        data_element.shift_years(year_shift)
+      end
+    rescue RangeError => e
+      expect(e.message).to eq 'Year was shifted after 9999 or before 0001'
+    end
+  end
 end
