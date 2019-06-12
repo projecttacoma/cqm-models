@@ -92,6 +92,9 @@ module QDM
     def shift_years(year_shift)
       fields.keys.each do |field|
         if send(field).is_a? DateTime
+          if send(field).year + year_shift > 9999 || send(field).year + year_shift < 1
+            raise RangeError.new('Year was shifted after 9999 or before 0001')
+          end
           if send(field).month == 2 && send(field).day == 29 && !Date.leap?(year_shift + send(field).year)
             send(field + '=', send(field).change(year: year_shift + send(field).year, day: 28))
           else

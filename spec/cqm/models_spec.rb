@@ -235,4 +235,43 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('2010-02-28')
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2010-02-28')
   end
+
+  it 'shift years too far backward' do
+    year_shift = -3000
+    begin
+      @patient_big.qdmPatient.dataElements.each do |data_element|
+        data_element.shift_years(year_shift)
+      end
+    rescue RangeError => e
+      expect(e.message).to eq 'Year was shifted after 9999 or before 0001'
+    end
+    # Make sure nothing was changed
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('authorDatetime').utc.to_s).to include(3.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').low.utc.to_s).to include(3.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').high.utc.to_s).to include(3.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:low].utc.to_s).to include('2012-02-29')
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:high].utc.to_s).to include('2012-02-29')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('2012-02-29')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2012-02-29')
+  end
+
+  it 'shift years too far forward' do
+    year_shift = 10000
+    begin
+      @patient_big.qdmPatient.dataElements.each do |data_element|
+        data_element.shift_years(year_shift)
+      end
+    rescue RangeError => e
+      expect(e.message).to eq 'Year was shifted after 9999 or before 0001'
+    end
+
+    # Make sure nothing was changed
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('authorDatetime').utc.to_s).to include(3.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').low.utc.to_s).to include(3.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').high.utc.to_s).to include(3.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:low].utc.to_s).to include('2012-02-29')
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:high].utc.to_s).to include('2012-02-29')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('2012-02-29')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2012-02-29')
+  end
 end
