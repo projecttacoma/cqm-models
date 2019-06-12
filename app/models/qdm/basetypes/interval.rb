@@ -35,7 +35,7 @@ module QDM
     def shift_years(year_shift)
       if (@low.is_a? DateTime) || (@low.is_a? Time)
         if @low.year + year_shift < 1 || @low.year + year_shift > 9999
-          raise RangeError.new('Year was shifted after 9999 or before 0001')
+          raise RangeError, 'Year was shifted after 9999 or before 0001'
         end
         low_shift = @low.year + year_shift
         @low = if @low.month == 2 && @low.day == 29 && !Date.leap?(low_shift)
@@ -46,7 +46,7 @@ module QDM
       end
       if (@high.is_a? DateTime) || (@high.is_a? Time)
         if @high.year + year_shift < 1 || @high.year + year_shift > 9999
-          raise RangeError.new('Year was shifted after 9999 or before 0001')
+          raise RangeError, 'Year was shifted after 9999 or before 0001'
         end
         high_shift = @high.year + year_shift
         @high = if @high.month == 2 && @high.day == 29 && !Date.leap?(high_shift)

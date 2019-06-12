@@ -256,7 +256,7 @@ RSpec.describe QDM do
   end
 
   it 'shift years too far forward' do
-    year_shift = 10000
+    year_shift = 10_000
     begin
       @patient_big.qdmPatient.dataElements.each do |data_element|
         data_element.shift_years(year_shift)
