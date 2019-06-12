@@ -202,7 +202,6 @@ RSpec.describe QDM do
     @patient_de1.save
   end
 
-
   it 'individualResult has empty observation_values by default' do
     expect(@individualResult.observation_values).to eq []
   end
