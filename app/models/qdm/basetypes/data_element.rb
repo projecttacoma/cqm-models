@@ -102,10 +102,35 @@ module QDM
           end
         end
 
-        if (send(field).is_a? Interval) || (send(field).is_a? DataElement) || (send(field).is_a? FacilityLocation)
+        if send(field).is_a? FacilityLocation
+          facility_location = send(field)
+          unless facility_location.nil?
+            shift_facility_location_years(facility_location, year_shift)
+            send(field + '=', facility_location)
+          end
+        end
+
+        if field == 'facilityLocations'
+          facilityLocations = send(field)
+          shiftedFacilityLocations = []
+          facilityLocations.each do |location|
+            # Need to convert to a QDM::FacilityLocation because it is being passed in as a Hash
+            facilityLocation = QDM::FacilityLocation.new(location)
+            shift_facility_location_years(facilityLocation, year_shift)
+            shiftedFacilityLocations << facilityLocation
+          end
+          facilityLocations = shiftedFacilityLocations
+          send(field + '=', facilityLocations)
+        end
+
+        if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
           send(field + '=', send(field).shift_years(year_shift))
         end
       end
+    end
+
+    def shift_facility_location_years(facility_location, year_shift)
+      facility_location.locationPeriod = facility_location.locationPeriod.shift_years(year_shift)
     end
 
     class << self

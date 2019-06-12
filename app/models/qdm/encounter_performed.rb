@@ -17,16 +17,5 @@ module QDM
     field :qdmCategory, type: String, default: 'encounter'
     field :qdmStatus, type: String, default: 'performed'
     field :qdmVersion, type: String, default: '5.4'
-
-    def shift_years(year_shift)
-      super
-      # This will be used to replaced the current facilityLocations upon shift
-      shiftedFacilityLocations = []
-      facilityLocations.each do |facility_location|
-        # Need to convert to a QDM::FacilityLocation because it is being passed in as a Hash
-        shiftedFacilityLocations << QDM::FacilityLocation.new(facility_location).shift_years(year_shift)
-      end
-      self.facilityLocations = shiftedFacilityLocations
-    end
   end
 end

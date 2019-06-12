@@ -277,7 +277,7 @@ RSpec.describe QDM do
 
   it 'interval low and high get shifted out of range' do
     patient1 = CQM::Patient.new(givenNames: %w['First Middle'], familyName: 'Family', bundleId: '1')
-    patient1.qdmPatient.dataElements << QDM::CareGoal.new(relevantPeriod: QDM::Interval.new(DateTime.new(0002, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
+    patient1.qdmPatient.dataElements << QDM::CareGoal.new(relevantPeriod: QDM::Interval.new(DateTime.new(2, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')])
 
     year_shift = -5
     begin
