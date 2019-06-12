@@ -33,7 +33,8 @@ RSpec.describe QDM do
 
     # Create more detailed (and realistic) patient; more useful for testing calculation with
     bd = 75.years.ago
-    facility_location1 = QDM::FacilityLocation.new(locationPeriod: QDM::Interval.new(DateTime.new(2010, 1, 2, 4, 0, 0), DateTime.new(2010, 1, 2, 5, 0, 0)))
+    facility_location1 = QDM::FacilityLocation.new(locationPeriod: QDM::Interval.new(DateTime.new(2012, 2, 29, 4, 0, 0), DateTime.new(2012, 2, 29, 5, 0, 0)))
+    facility_location2 = QDM::FacilityLocation.new(locationPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)))
     @patient_big = CQM::Patient.new(givenNames: %w['First Middle'], familyName: 'Family', bundleId: '1')
     @patient_big.qdmPatient.birthDatetime = bd
     @patient_big.qdmPatient.dataElements << QDM::PatientCharacteristicBirthdate.new(birthDatetime: bd)
@@ -41,7 +42,7 @@ RSpec.describe QDM do
     @patient_big.qdmPatient.dataElements << QDM::PatientCharacteristicRace.new(dataElementCodes: [QDM::Code.new('2106-3', 'Race & Ethnicity - CDC', 'White', '2.16.840.1.113883.6.238')])
     @patient_big.qdmPatient.dataElements << QDM::PatientCharacteristicSex.new(dataElementCodes: [QDM::Code.new('M', 'Administrative sex (HL7)', 'Male', '2.16.840.1.113883.12.1')])
     @patient_big.qdmPatient.dataElements << QDM::Diagnosis.new(authorDatetime: 3.years.ago, dataElementCodes: [QDM::Code.new('E08.311', 'ICD10CM'), QDM::Code.new('362.01', 'ICD9CM'), QDM::Code.new('4855003', 'SNOMEDCT')])
-    @patient_big.qdmPatient.dataElements << QDM::EncounterPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), principalDiagnosis: QDM::Code.new('SNOMEDCT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMEDCT', '17436001'), QDM::Code.new('99241', 'CPT')])
+    @patient_big.qdmPatient.dataElements << QDM::EncounterPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), principalDiagnosis: QDM::Code.new('SNOMEDCT', '419099009'), dataElementCodes: [QDM::Code.new('SNOMEDCT', '17436001'), QDM::Code.new('99241', 'CPT')], facilityLocations: [facility_location1, facility_location2])
     @patient_big.qdmPatient.dataElements << QDM::CommunicationPerformed.new(authorDatetime: 3.years.ago, dataElementCodes: [QDM::Code.new('SNOMEDCT', '428341000124108')])
     @patient_big.qdmPatient.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')], facilityLocation: facility_location1)
 
@@ -206,7 +207,7 @@ RSpec.describe QDM do
     expect(@individualResult.observation_values).to eq []
   end
 
-  it 'shift years' do
+  it 'shift years forward' do
     year_shift = 2
     @patient_big.qdmPatient.dataElements.each do |data_element|
       data_element.shift_years(year_shift)
@@ -215,7 +216,24 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('authorDatetime').utc.to_s).to include(1.years.ago.to_s[0..3])
     expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').low.utc.to_s).to include(1.years.ago.to_s[0..3])
     expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').high.utc.to_s).to include(1.years.ago.to_s[0..3])
-    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('2012')
-    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2012')
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:low].utc.to_s).to include('2014-02-28')
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:high].utc.to_s).to include('2014-02-28')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('2014-02-28')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2014-02-28')
+  end
+
+  it 'shift years backward' do
+    year_shift = -2
+    @patient_big.qdmPatient.dataElements.each do |data_element|
+      data_element.shift_years(year_shift)
+    end
+
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('authorDatetime').utc.to_s).to include(5.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').low.utc.to_s).to include(5.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('relevantPeriod').high.utc.to_s).to include(5.years.ago.to_s[0..3])
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:low].utc.to_s).to include('2010-02-28')
+    expect(@patient_big.qdmPatient.get_data_elements('encounter').first.get('facilityLocations').first['locationPeriod'][:high].utc.to_s).to include('2010-02-28')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('2010-02-28')
+    expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2010-02-28')
   end
 end
