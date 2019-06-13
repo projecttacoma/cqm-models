@@ -119,8 +119,7 @@ module QDM
             shift_facility_location_years(facilityLocation, year_shift)
             shiftedFacilityLocations << facilityLocation
           end
-          facilityLocations = shiftedFacilityLocations
-          send(field + '=', facilityLocations)
+          send(field + '=', shiftedFacilityLocations)
         end
 
         if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
