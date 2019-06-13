@@ -22,5 +22,5 @@ module.exports.Patient = require('./Patient.js').Patient;
 module.exports.PatientSchema = require('./Patient.js').PatientSchema;
 module.exports.Provider = require('./Provider.js').Provider;
 module.exports.ProviderSchema = require('./Provider.js').ProviderSchema;
-module.exports.IndividualResult = require('./IndividualResult.js').IndividualResult
-module.exports.IndividualResultSchema = require('./IndividualResult.js').IndividualResultSchema
+module.exports.IndividualResult = require('./IndividualResult.js').IndividualResult;
+module.exports.IndividualResultSchema = require('./IndividualResult.js').IndividualResultSchema;
