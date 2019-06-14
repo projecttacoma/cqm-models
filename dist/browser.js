@@ -3027,7 +3027,7 @@ module.exports = DateTime;
 },{"cql-execution":109,"mongoose/browser":247}],66:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
-const DateTime = require('./DateTime')
+const DateTime = require('./DateTime');
 
 function Interval(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Interval');
