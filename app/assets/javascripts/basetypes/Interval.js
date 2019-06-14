@@ -1,5 +1,6 @@
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
+const DateTime = require('./DateTime')
 
 function Interval(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Interval');
@@ -23,17 +24,11 @@ Interval.prototype.cast = (interval) => {
 
   // Cast to DateTime if it is a string representing a DateTime
   if (casted.low) {
-    if (!Date.parse(casted.low)) {
-      throw new Error(`DateTime: ${casted.low} is not a valid DateTime`);
-    }
-    casted.low = cql.DateTime.fromJSDate(new Date(casted.low), 0);
+    casted.low = DateTime.prototype.cast(casted.low);
   }
 
   if (casted.high) {
-    if (!Date.parse(casted.high)) {
-      throw new Error(`DateTime: ${casted.high} is not a valid DateTime`);
-    }
-    casted.high = cql.DateTime.fromJSDate(new Date(casted.high), 0);
+    casted.high = DateTime.prototype.cast(casted.high);
   }
   return casted;
 };
