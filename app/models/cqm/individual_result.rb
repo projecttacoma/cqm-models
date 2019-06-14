@@ -36,7 +36,7 @@ module CQM
 
     # Relations to other model classes
     belongs_to :measure
-    belongs_to :patient, optional: true
+    belongs_to :patient
 
     # Convert the stored array into a hash between clause and result
     def clause_results_by_clause
