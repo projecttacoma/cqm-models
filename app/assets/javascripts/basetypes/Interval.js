@@ -1,5 +1,6 @@
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
+const DateTime = require('./DateTime');
 
 function Interval(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Interval');
@@ -7,8 +8,8 @@ function Interval(key, options) {
 Interval.prototype = Object.create(mongoose.SchemaType.prototype);
 
 Interval.prototype.cast = (interval) => {
-  if (typeof interval.low === 'undefined' || interval.low === null) {
-    throw new Error(`Interval: ${interval} does not have a low value`);
+  if (interval.isInterval) {
+    return interval;
   }
   const casted = new cql.Interval(interval.low, interval.high, interval.lowClosed, interval.highClosed);
 
@@ -22,11 +23,12 @@ Interval.prototype.cast = (interval) => {
   }
 
   // Cast to DateTime if it is a string representing a DateTime
-  if (casted.low && Date.parse(casted.low)) {
-    casted.low = cql.DateTime.fromJSDate(new Date(casted.low), 0);
+  if (casted.low) {
+    casted.low = DateTime.prototype.cast(casted.low);
   }
-  if (casted.high && Date.parse(casted.high)) {
-    casted.high = cql.DateTime.fromJSDate(new Date(casted.high), 0);
+
+  if (casted.high) {
+    casted.high = DateTime.prototype.cast(casted.high);
   }
   return casted;
 };
