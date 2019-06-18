@@ -4,7 +4,7 @@ module QDM
     include Mongoid::Document
     field :birthDatetime, type: DateTime
     field :qdmVersion, type: String, default: '5.4'
-    embedded_in :tacomaPatient, class_name: 'CQM::Patient'
+    embedded_in :cqmPatient, class_name: 'CQM::Patient'
 
     # These are the "data criteria", or QDM datatype elements that exist on a
     # patient.

@@ -11,6 +11,7 @@ module CQM
 
     has_and_belongs_to_many :providers, class_name: 'CQM::Provider'
     embeds_one :qdmPatient, class_name: 'QDM::Patient', autobuild: true
+    has_many :calculation_results, class_name: 'CQM::IndividualResult'
 
     # Include '_type' in any JSON output. This is necessary for deserialization.
     def to_json(options = nil)
