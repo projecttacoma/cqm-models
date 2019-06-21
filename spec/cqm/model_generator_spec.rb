@@ -75,6 +75,10 @@ RSpec.describe QDM do
     system 'rm -rf app/models/test'
   end
 
+  it 'generates each QDM 5.5 datatype model with all attributes' do
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.5.xml', 'data/oids_qdm_5.4.json')
+  end
+
   it 'generates each QDM 5.4 datatype model with all attributes' do
     check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.4.xml', 'data/oids_qdm_5.4.json')
   end

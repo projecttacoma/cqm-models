@@ -1,4 +1,4 @@
-# Base QDM module (generated from lib/generate_models.rb) for QDM 5.3
+# Base QDM module (generated from lib/generate_models.rb) for QDM 5.5
 module QDM
 end
 require 'mongoid'
@@ -7,7 +7,7 @@ require 'mongoid'
 require_relative 'model_finder'
 
 # Generated models that are dependencies for base types
-require_relative 'qdm/id'
+require_relative 'qdm/identifier'
 
 # base types
 require_relative 'qdm/basetypes/code'
@@ -18,6 +18,13 @@ require_relative 'qdm/basetypes/ratio'
 require_relative 'qdm/attributes/attribute'
 require_relative 'qdm/attributes/facility_location'
 require_relative 'qdm/attributes/component'
+require_relative 'qdm/attributes/entity'
+require_relative 'qdm/attributes/care_partner'
+require_relative 'qdm/attributes/diagnosis_component'
+require_relative 'qdm/attributes/organization'
+require_relative 'qdm/attributes/patient_entity'
+require_relative 'qdm/attributes/practitioner'
+require_relative 'qdm/attributes/result_component'
 
 # Tacoma-specific models
 require_relative 'cqm/measure'
@@ -38,8 +45,15 @@ require_relative '../../lib/generate_patients'
 
 # Generated models
 <%- datatypes.each_key do |datatype| -%>
-<%- next if datatype.underscore == 'id' -%>
+<%- next if datatype.underscore == 'identifier' -%>
 <%- next if datatype.underscore == 'facility_location' -%>
 <%- next if datatype.underscore == 'component' -%>
+<%- next if datatype.underscore == 'entity' -%>
+<%- next if datatype.underscore == 'care_partner' -%>
+<%- next if datatype.underscore == 'diagnosis_component' -%>
+<%- next if datatype.underscore == 'organization' -%>
+<%- next if datatype.underscore == 'patient_entity' -%>
+<%- next if datatype.underscore == 'practitioner' -%>
+<%- next if datatype.underscore == 'result_component' -%>
 require_relative 'qdm/<%= datatype.underscore %>'
 <%- end -%>

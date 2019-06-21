@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yes | ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids_qdm_5.4.json
+yes | ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.5.xml data/oids_qdm_5.5.json
 
 if git diff-index --quiet HEAD --; then
   echo "Generator script produces no differences."

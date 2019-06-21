@@ -1,33 +1,37 @@
 const mongoose = require('mongoose/browser');
 
-const { IdSchema } = require('./Id');
+const { IdentifierSchema } = require('./Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const Date = require('./basetypes/Date');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
 
-const ResultComponentSchema = DataElementSchema({
-  referenceRange: Interval,
-  qdmVersion: { type: String, default: '5.4' },
-  _type: { type: String, default: 'QDM::ResultComponent' },
+const RelatedPersonSchema = DataElementSchema({
+  identifier: IdentifierSchema,
+  linkedPatientId: String,
+  qdmTitle: { type: String, default: 'Related Person' },
+  qdmVersion: { type: String, default: '5.5' },
+  _type: { type: String, default: 'QDM::RelatedPerson' },
 
 });
 
-module.exports.ResultComponentSchema = ResultComponentSchema;
-class ResultComponent extends mongoose.Document {
+module.exports.RelatedPersonSchema = RelatedPersonSchema;
+class RelatedPerson extends mongoose.Document {
   constructor(object) {
-    super(object, ResultComponentSchema);
-    this._type = 'QDM::ResultComponent';
+    super(object, RelatedPersonSchema);
+    this._type = 'QDM::RelatedPerson';
   }
 }
-module.exports.ResultComponent = ResultComponent;
+
+module.exports.RelatedPerson = RelatedPerson;
+

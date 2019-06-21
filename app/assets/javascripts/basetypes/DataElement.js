@@ -1,7 +1,7 @@
 const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
-const Id = require('../Id');
+const Identifier = require('../Identifier');
 
 const [Schema] = [mongoose.Schema];
 
@@ -11,9 +11,9 @@ function DataElementSchema(add, options) {
     description: { type: String },
     codeListId: { type: String },
     id: {
-      type: Id.IdSchema,
+      type: Identifier.IdentifierSchema,
       default() {
-        return new Id.Id({ value: (this._id ? this._id.toString() : mongoose.Types.ObjectId().toString()), namingSystem: null });
+        return new Identifier.Identifier({ value: (this._id ? this._id.toString() : mongoose.Types.ObjectId().toString()), namingSystem: null });
       },
     },
   }, options);

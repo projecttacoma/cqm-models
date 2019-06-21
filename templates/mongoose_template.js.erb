@@ -1,33 +1,79 @@
 const mongoose = require('mongoose/browser');
-<% unless datatype.downcase == 'component' || datatype.downcase == 'facilitylocation' %>
-<% unless datatype.downcase == 'id' %>const { IdSchema } = require('./Id');<% end %>
+<% if datatype.downcase == 'component' || datatype.downcase == 'facilitylocation' || datatype.downcase == 'diagnosiscomponent'%>
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Date = require('../basetypes/Date');
+const Any = require('../basetypes/Any');
+<%if datatype.downcase == 'component'%>const [Schema] = [mongoose.Schema];<% end %>
+<% elsif datatype.downcase == 'resultcomponent'%>
+const { ComponentSchemaFunction } = require('./Component')
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Date = require('../basetypes/Date');
+const Any = require('../basetypes/Any');
+<% elsif datatype.downcase == 'entity'%>
+<% unless datatype.downcase == 'identifier' %>const { IdentifierSchema } = require('../Identifier');<% end %>
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Date = require('../basetypes/Date');
+const Any = require('../basetypes/Any');
+const [Schema] = [mongoose.Schema];
+<% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity'%>
+<% unless datatype.downcase == 'identifier' %>const { IdentifierSchema } = require('../Identifier');<% end %>
+const { EntitySchemaFunction } = require('./Entity')
+const Code = require('../basetypes/Code');
+const Interval = require('../basetypes/Interval');
+const Quantity = require('../basetypes/Quantity');
+const DateTime = require('../basetypes/DateTime');
+const Date = require('../basetypes/Date');
+const Any = require('../basetypes/Any');
+<% else %>
+<% unless datatype.downcase == 'identifier' %>const { IdentifierSchema } = require('./Identifier');<% end %>
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const Date = require('./basetypes/Date');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-<% else %>
-const Code = require('../basetypes/Code');
-const Interval = require('../basetypes/Interval');
-const Quantity = require('../basetypes/Quantity');
-const DateTime = require('../basetypes/DateTime');
-const Any = require('../basetypes/Any');
 <% end %>
-
 const [Number, String] = [
   mongoose.Schema.Types.Number,
   mongoose.Schema.Types.String,
 ];
-
-const <%= datatype -%>Schema = <% unless datatype == 'Component' || datatype == 'FacilityLocation' %>DataElementSchema<% else %>new mongoose.Schema<%- end %>({
+<% if datatype.downcase == 'component' || datatype.downcase == 'facilitylocation' || datatype.downcase == 'entity' || datatype.downcase == 'diagnosiscomponent'%>
+const <%= datatype -%>Schema = new mongoose.Schema({
   <%- for attribute in attrs_with_extras -%>
   <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
   <%- end %>
 });
-
+<% elsif datatype.downcase == 'resultcomponent'%>
+const <%= datatype -%>Schema = ComponentSchemaFunction({
+  <%- for attribute in attrs_with_extras -%>
+  <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
+  <%- end %>
+});
+<% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity'%>
+const <%= datatype -%>Schema = EntitySchemaFunction({
+  <%- for attribute in attrs_with_extras -%>
+  <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
+  <%- end %>
+});
+<% else %>
+const <%= datatype -%>Schema = DataElementSchema({
+  <%- for attribute in attrs_with_extras -%>
+  <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
+  <%- end %>
+});
+<% end %>
 module.exports.<%= datatype %>Schema = <%= datatype %>Schema;
 class <%= datatype %> extends mongoose.Document {
   constructor(object) {
@@ -35,4 +81,20 @@ class <%= datatype %> extends mongoose.Document {
     this._type = 'QDM::<%= datatype %>';
   }
 }
+<% if datatype.downcase == 'entity' || datatype.downcase == 'component'%>
+function <%= datatype %>SchemaFunction(add, options) {
+  const extended = new Schema({
+    <%- for attribute in attrs_with_extras -%>
+    <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
+    <%- end %>
+  }, options);
+
+  if (add) {
+    extended.add(add);
+  }
+
+  return extended;
+}
+<% end %>
 module.exports.<%= datatype %> = <%= datatype %>;
+<% if datatype.downcase == 'entity' || datatype.downcase == 'component'%>module.exports.<%= datatype %>SchemaFunction = <%= datatype %>SchemaFunction;<% end %>

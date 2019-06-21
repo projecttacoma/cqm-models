@@ -62,7 +62,7 @@ const ProcedureOrder = require('./../../../app/assets/javascripts/ProcedureOrder
 const ProcedurePerformed = require('./../../../app/assets/javascripts/ProcedurePerformed.js').ProcedurePerformed;
 const ProcedureRecommended = require('./../../../app/assets/javascripts/ProcedureRecommended.js').ProcedureRecommended;
 const QDMPatient = require('./../../../app/assets/javascripts/QDMPatient.js').QDMPatient;
-const ResultComponent = require('./../../../app/assets/javascripts/ResultComponent.js').ResultComponent;
+const ResultComponent = require('./../../../app/assets/javascripts/attributes/ResultComponent.js').ResultComponent;
 const Stratification = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').Stratification;
 const SubstanceAdministered = require('./../../../app/assets/javascripts/SubstanceAdministered.js').SubstanceAdministered;
 const SubstanceOrder = require('./../../../app/assets/javascripts/SubstanceOrder.js').SubstanceOrder;
@@ -259,7 +259,6 @@ describe('QDMPatient', () => {
           new PhysicalExamOrder(),
           new PhysicalExamPerformed(),
           new PhysicalExamRecommended(),
-          new ProviderCharacteristic(),
           new ProcedureOrder(),
           new ProcedurePerformed(),
           new ProcedureRecommended(),
@@ -270,7 +269,7 @@ describe('QDMPatient', () => {
           new Symptom(),
         ]
       });
-      expect(qdmPatient.getDataElements().length).toEqual(53);
+      expect(qdmPatient.getDataElements().length).toEqual(52);
       expect(qdmPatient.adverse_events().length).toEqual(1);
       expect(qdmPatient.allergies().length).toEqual(1);
       expect(qdmPatient.assessments().length).toEqual(3);
@@ -291,7 +290,6 @@ describe('QDMPatient', () => {
       expect(qdmPatient.physical_exams().length).toEqual(3);
       expect(qdmPatient.preferences().length).toEqual(0);
       expect(qdmPatient.patient_characteristics().length).toEqual(8);
-      expect(qdmPatient.provider_characteristics().length).toEqual(1);
       expect(qdmPatient.procedures().length).toEqual(3);
       expect(qdmPatient.results().length).toEqual(0);
       expect(qdmPatient.risk_category_assessments().length).toEqual(0);

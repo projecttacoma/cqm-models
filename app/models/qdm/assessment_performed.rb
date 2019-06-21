@@ -4,16 +4,19 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
+    field :relevantDatetime, type: DateTime
+    field :relevantPeriod, type: QDM::Interval
     field :negationRationale, type: QDM::Code
     field :reason, type: QDM::Code
     field :method, type: QDM::Code
     field :result
     field :components, type: Array
-    embeds_many :relatedTo, class_name: 'QDM::Id'
+    field :relatedTo, type: Array
+    field :performer
     field :qdmTitle, type: String, default: 'Assessment, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.117'
     field :qdmCategory, type: String, default: 'assessment'
     field :qdmStatus, type: String, default: 'performed'
-    field :qdmVersion, type: String, default: '5.4'
+    field :qdmVersion, type: String, default: '5.5'
   end
 end
