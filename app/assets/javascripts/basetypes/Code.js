@@ -18,10 +18,10 @@ Code.prototype.cast = (code) => {
 
       const val = { code: code.code, system: code.system };
 
-      val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
+      val.display = (typeof code.display !== 'undefined') ? code.display : null;
       val.version = (typeof code.version !== 'undefined') ? code.version : null;
 
-      return new cql.Code(val.code, val.system, val.version, val.descriptor);
+      return new cql.Code(val.code, val.system, val.version, val.display);
     }
     throw new Error(`Expected a code. Received ${code}.`);
   } else {

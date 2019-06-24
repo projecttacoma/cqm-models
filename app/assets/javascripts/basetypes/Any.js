@@ -18,10 +18,10 @@ function RecursiveCast(any) {
     }
 
     const val = { code: any.code, system: any.system };
-    val.descriptor = (typeof any.descriptor !== 'undefined') ? any.descriptor : null;
+    val.display = (typeof any.display !== 'undefined') ? any.display : null;
     val.version = (typeof any.version !== 'undefined') ? any.version : null;
 
-    return new cql.Code(val.code, val.system, val.version, val.descriptor);
+    return new cql.Code(val.code, val.system, val.version, val.display);
   }
   if (any && any.low) {
     const casted = new cql.Interval(any.low, any.high, any.lowClosed, any.highClosed);

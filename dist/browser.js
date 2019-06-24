@@ -2803,10 +2803,10 @@ function RecursiveCast(any) {
     }
 
     const val = { code: any.code, system: any.system };
-    val.descriptor = (typeof any.descriptor !== 'undefined') ? any.descriptor : null;
+    val.display = (typeof any.display !== 'undefined') ? any.display : null;
     val.version = (typeof any.version !== 'undefined') ? any.version : null;
 
-    return new cql.Code(val.code, val.system, val.version, val.descriptor);
+    return new cql.Code(val.code, val.system, val.version, val.display);
   }
   if (any && any.low) {
     const casted = new cql.Interval(any.low, any.high, any.lowClosed, any.highClosed);
@@ -2871,10 +2871,10 @@ Code.prototype.cast = (code) => {
 
       const val = { code: code.code, system: code.system };
 
-      val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
+      val.display = (typeof code.display !== 'undefined') ? code.display : null;
       val.version = (typeof code.version !== 'undefined') ? code.version : null;
 
-      return new cql.Code(val.code, val.system, val.version, val.descriptor);
+      return new cql.Code(val.code, val.system, val.version, val.display);
     }
     throw new Error(`Expected a code. Received ${code}.`);
   } else {
@@ -2914,7 +2914,7 @@ function DataElementSchema(add, options) {
   // Returns all of the codes on this data element in a format usable by
   // the cql-execution framework.
   extended.methods.getCode = function getCode() {
-    return this.dataElementCodes.map(code => new cql.Code(code.code, code.system, code.version, code.descriptor));
+    return this.dataElementCodes.map(code => new cql.Code(code.code, code.system, code.version, code.display));
   };
 
   // Return the first code on this data element in a format usable by
@@ -2922,7 +2922,7 @@ function DataElementSchema(add, options) {
   extended.methods.code = function code() {
     if (this.dataElementCodes && this.dataElementCodes[0]) {
       const qdmCode = this.dataElementCodes[0];
-      return new cql.Code(qdmCode.code, qdmCode.system, qdmCode.version, qdmCode.descriptor);
+      return new cql.Code(qdmCode.code, qdmCode.system, qdmCode.version, qdmCode.display);
     }
     return null;
   };

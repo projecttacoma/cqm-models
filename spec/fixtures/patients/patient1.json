@@ -36,7 +36,7 @@
 				{
 					"code": "2106-3",
 					"code_system": "Race u0026 Ethnicity - CDC",
-					"descriptor": "White",
+					"display": "White",
 					"code_system_oid": "2.16.840.1.113883.6.238",
 					"version": null
 				}
@@ -53,7 +53,7 @@
 				{
 					"code": "M",
 					"code_system": "Administrative sex (HL7)",
-					"descriptor": "Male",
+					"display": "Male",
 					"code_system_oid": "2.16.840.1.113883.12.1",
 					"version": null
 				}
@@ -71,21 +71,21 @@
 				{
 					"code": "E08.311",
 					"code_system": "ICD10CM",
-					"descriptor": null,
+					"display": null,
 					"code_system_oid": null,
 					"version": null
 				},
 				{
 					"code": "362.01",
 					"code_system": "ICD9CM",
-					"descriptor": null,
+					"display": null,
 					"code_system_oid": null,
 					"version": null
 				},
 				{
 					"code": "4855003",
 					"code_system": "SNOMEDCT",
-					"descriptor": null,
+					"display": null,
 					"code_system_oid": null,
 					"version": null
 				}
@@ -107,14 +107,14 @@
 				{
 					"code": "SNOMEDCT",
 					"code_system": "17436001",
-					"descriptor": null,
+					"display": null,
 					"code_system_oid": null,
 					"version": null
 				},
 				{
 					"code": "99241",
 					"code_system": "CPT",
-					"descriptor": null,
+					"display": null,
 					"code_system_oid": null,
 					"version": null
 				}
@@ -128,7 +128,7 @@
 			"principal_diagnosis": {
 				"code": "SNOMEDCT",
 				"code_system": "419099009",
-				"descriptor": null,
+				"display": null,
 				"code_system_oid": null,
 				"version": null
 			},
@@ -149,7 +149,7 @@
 				{
 					"code": "SNOMEDCT",
 					"code_system": "428341000124108",
-					"descriptor": null,
+					"display": null,
 					"code_system_oid": null,
 					"version": null
 				}
@@ -171,7 +171,7 @@
 				{
 					"code": "LOINC",
 					"code_system": "32451-7",
-					"descriptor": null,
+					"display": null,
 					"code_system_oid": null,
 					"version": null
 				}
