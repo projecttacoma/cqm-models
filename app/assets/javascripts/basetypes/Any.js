@@ -17,12 +17,12 @@ function RecursiveCast(any) {
       throw new Error(`Code: ${any} does not have a code system oid`);
     }
 
-    const val = { code: code.code, codeSystemOid: code.codeSystemOid || code.system };
+    const val = { code: any.code, codeSystemOid: any.codeSystemOid || any.system };
 
-    val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
-    val.version = (typeof code.version !== 'undefined') ? code.version : null;
-    val.codeSystem = (typeof code.codeSystem !== 'undefined') ? code.codeSystem : null;
-    
+    val.descriptor = (typeof any.descriptor !== 'undefined') ? any.descriptor : null;
+    val.version = (typeof any.version !== 'undefined') ? any.version : null;
+    val.codeSystem = (typeof any.codeSystem !== 'undefined') ? any.codeSystem : null;
+
     return val;
   }
   if (any && any.low) {

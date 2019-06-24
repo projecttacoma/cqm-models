@@ -1,5 +1,4 @@
 const mongoose = require('mongoose/browser');
-const cql = require('cql-execution');
 
 function Code(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Code');
@@ -21,7 +20,7 @@ Code.prototype.cast = (code) => {
       val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
       val.version = (typeof code.version !== 'undefined') ? code.version : null;
       val.codeSystem = (typeof code.codeSystem !== 'undefined') ? code.codeSystem : null;
-      
+
       return val;
     }
     throw new Error(`Expected a code. Received ${code}.`);

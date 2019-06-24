@@ -2802,12 +2802,12 @@ function RecursiveCast(any) {
       throw new Error(`Code: ${any} does not have a code system oid`);
     }
 
-    const val = { code: code.code, codeSystemOid: code.codeSystemOid || code.system };
+    const val = { code: any.code, codeSystemOid: any.codeSystemOid || any.system };
 
-    val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
-    val.version = (typeof code.version !== 'undefined') ? code.version : null;
-    val.codeSystem = (typeof code.codeSystem !== 'undefined') ? code.codeSystem : null;
-    
+    val.descriptor = (typeof any.descriptor !== 'undefined') ? any.descriptor : null;
+    val.version = (typeof any.version !== 'undefined') ? any.version : null;
+    val.codeSystem = (typeof any.codeSystem !== 'undefined') ? any.codeSystem : null;
+
     return val;
   }
   if (any && any.low) {
@@ -2854,7 +2854,6 @@ module.exports = Any;
 
 },{"cql-execution":110,"mongoose/browser":247}],62:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
-const cql = require('cql-execution');
 
 function Code(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Code');
@@ -2876,7 +2875,7 @@ Code.prototype.cast = (code) => {
       val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
       val.version = (typeof code.version !== 'undefined') ? code.version : null;
       val.codeSystem = (typeof code.codeSystem !== 'undefined') ? code.codeSystem : null;
-      
+
       return val;
     }
     throw new Error(`Expected a code. Received ${code}.`);
@@ -2889,7 +2888,7 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
-},{"cql-execution":110,"mongoose/browser":247}],63:[function(require,module,exports){
+},{"mongoose/browser":247}],63:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
