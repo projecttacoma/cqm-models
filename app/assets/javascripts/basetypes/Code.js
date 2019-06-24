@@ -20,8 +20,9 @@ Code.prototype.cast = (code) => {
 
       val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
       val.version = (typeof code.version !== 'undefined') ? code.version : null;
-
-      return new cql.Code(val.code, val.codeSystemOid, val.version, val.descriptor);
+      val.codeSystem = (typeof code.codeSystem !== 'undefined') ? code.codeSystem : null;
+      
+      return val;
     }
     throw new Error(`Expected a code. Received ${code}.`);
   } else {
