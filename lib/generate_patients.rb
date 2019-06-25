@@ -49,7 +49,7 @@ module QDM
       modelinfo.xpath('//ns4:typeInfo').each do |type|
         # Grab the name of this QDM datatype
         datatype_name = type.attributes['name'].value.split('.').last
-        exclusion_array = %w[Component Id Patient ResultComponent FacilityLocation]
+        exclusion_array = %w[Component Identifier Patient ResultComponent FacilityLocation]
         # Store datatype and its attributes (reject irrelevant datatypes)
         next if datatype_name.include?('Negative') || datatype_name.include?('Positive') ||
                 datatype_name.include?('QDMBaseType') || (exclusion_array.include? datatype_name)

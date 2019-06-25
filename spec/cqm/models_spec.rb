@@ -96,10 +96,12 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.patient_characteristics.length).to eq 4
   end
 
-  it 'patient dataElements have an Id' do
+  it 'patient dataElements have an Id string' do
     expect(@patient_a.qdmPatient.dataElements[0].id).to be
-    expect(@patient_a.qdmPatient.dataElements[0].id.value).to eq @patient_a.qdmPatient.dataElements[0]._id.to_s
+    expect(@patient_a.qdmPatient.dataElements[0].id).to eq @patient_a.qdmPatient.dataElements[0]._id
   end
+
+  # TODO Add a test for new identifier on an entity type
 
   it 'patient dataElements can have codeListId' do
     expect(@patient_a.qdmPatient.dataElements[1].codeListId).to eq '123.456'
@@ -198,8 +200,8 @@ RSpec.describe QDM do
     expect(@patient_de1.qdmPatient.dataElements.first.id).to be
     care_goal.relatedTo = []
     care_goal.relatedTo << @patient_de1.qdmPatient.dataElements.first.id
-    id = QDM::Identifier.new(value: @patient_de1.qdmPatient.dataElements.first.id.value)
-    expect(care_goal.relatedTo.first.value).to eq id.value
+    id = @patient_de1.qdmPatient.dataElements.first.id
+    expect(care_goal.relatedTo.first).to eq id
     @patient_de1.save
   end
 

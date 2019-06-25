@@ -36,6 +36,7 @@ function ComponentSchemaFunction(add, options) {
     qdmVersion: { type: String, default: '5.5' },
     _type: { type: String, default: 'QDM::Component' },
 
+
   }, options);
 
   if (add) {

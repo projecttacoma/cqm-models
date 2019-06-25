@@ -1,4 +1,10 @@
 #TODO: Confirm all changes are QDM based (Principal diagnosis)
+#TODO: May need to add Entity casting to Any if entities need to be handled
+#TODO: Confirm Date class is built correctly
+#TODO: HQMF OIDS - Specifically RelatedPerson
+
+#TODO: Fix existing tests / add new tests for entity / components
+
 
 #! /usr/bin/env ruby
 require 'nokogiri'
@@ -270,11 +276,12 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
   # Replace 'Any' type placeholder (these attributes could point to anything).
   contents.gsub!(/: Any/, ': Any')
 
-  # Component, Facility, and Id types
+  # Component, Facility, DiangosisComponent
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
   contents.gsub!(/facilityLocation: Code/, 'facilityLocation: FacilityLocationSchema')
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
   contents.gsub!(/component: Code/, 'component: ComponentSchema')
+  contents.gsub!(/diagnoses: \[\]/, 'diagnoses: [DiagnosisComponentSchema]')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -299,7 +306,7 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
-types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/diagnosis_component.rb', '/result_component']
+types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/diagnosis_component.rb', '/result_component.rb']
 types_inherited_by_attribute = ['/component', '/facility_location', '/entity', '/diagnosis_component']
 types_inherited_by_entity = ['/patient_entity', '/care_partner', '/practitioner', '/organization']
 types_inherited_by_component = ['/result_component']
@@ -307,8 +314,15 @@ types_inherited_by_component = ['/result_component']
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
+  # Set the initialize for entity
+  if File.basename(file_name) == 'entity.rb'
+    contents.gsub!('end', "\n\tdef initialize(options = {})
+    super(options)
+    # default id to the mongo ObjectId for this DataElement if it isnt already defined
+    self.id = _id.to_s unless id?
+  end\nend")
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
-  if File.basename(file_name) == 'identifier.rb'
+  elsif File.basename(file_name) == 'identifier.rb'
     contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
   else
     not_embedded_in_patient_files = types_not_inherited_by_data_element - ['/identifier.rb']

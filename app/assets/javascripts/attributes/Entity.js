@@ -37,6 +37,14 @@ function EntitySchemaFunction(add, options) {
     qdmVersion: { type: String, default: '5.5' },
     _type: { type: String, default: 'QDM::Entity' },
 
+
+    id: {
+      type: String,
+      default() {
+        return this._id ? this._id.toString() : mongoose.Types.ObjectId().toString();
+      },
+    }
+
   }, options);
 
   if (add) {
