@@ -4,9 +4,9 @@ module QDM
     attr_accessor :code, :display, :system, :version
 
     # Code and code system are required (at minimum).
-    def initialize(code, system, display = nil, version = nil)
+    def initialize(code, sys, display = nil, version = nil)
       @code = code
-      @system = system
+      @system = sys
       @display = display
       @version = version
     end
@@ -35,6 +35,7 @@ module QDM
         when nil then nil
         when QDM::Code then object.mongoize
         when Hash
+          object = object.symbolize_keys
           QDM::Code.new(object[:code], object[:system], object[:display], object[:version]).mongoize
         else object
         end
