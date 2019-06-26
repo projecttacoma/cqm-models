@@ -1,10 +1,5 @@
-#TODO: Confirm all changes are QDM based (Principal diagnosis)
 #TODO: May need to add Entity casting to Any if entities need to be handled
-#TODO: Confirm Date class is built correctly
 #TODO: HQMF OIDS - Specifically RelatedPerson
-
-#TODO: Fix existing tests / add new tests for entity / components
-
 
 #! /usr/bin/env ruby
 require 'nokogiri'

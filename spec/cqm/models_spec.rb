@@ -30,6 +30,10 @@ RSpec.describe QDM do
     @patient_c.qdmPatient.dataElements << QDM::ProcedurePerformed.new(patient: @patient_c, authorDatetime: 1.day.ago, dataElementCodes: [QDM::Code.new('bogus code', 'bogus code system'), QDM::Code.new('bogus code', 'bogus code system')])
     @patient_c.qdmPatient.dataElements << QDM::EncounterOrder.new(patient: @patient_c, reason: QDM::Code.new('bogus code', 'bogus code system'))
     @patient_c.qdmPatient.dataElements << QDM::MedicationDispensed.new(patient: @patient_c, relevantPeriod: QDM::Interval.new(1.year.ago, 1.month.ago), dosage: QDM::Quantity.new('1', 'mg'))
+    @patient_c.qdmPatient.dataElements << QDM::EncounterPerformed.new(patient: @patient_c, admissionSource: QDM::Code.new('bogus code', 'bogus code system'))
+    practitioner = QDM::Practitioner.new(role: QDM::Code.new('foo code', 'foo code system'), specialty: QDM::Code.new('foo code 2', 'foo code system 2'), qualification: QDM::Code.new('foo code 3', 'foo code systems 3'))
+    practitioner.identifier = QDM::Identifier.new(namingSystem: 'foo', value: 'foo value')
+    @patient_c.qdmPatient.dataElements[3].participant = practitioner
 
     # Create more detailed (and realistic) patient; more useful for testing calculation with
     bd = 75.years.ago
@@ -100,8 +104,6 @@ RSpec.describe QDM do
     expect(@patient_a.qdmPatient.dataElements[0].id).to be
     expect(@patient_a.qdmPatient.dataElements[0].id).to eq @patient_a.qdmPatient.dataElements[0]._id
   end
-
-  # TODO Add a test for new identifier on an entity type
 
   it 'patient dataElements can have codeListId' do
     expect(@patient_a.qdmPatient.dataElements[1].codeListId).to eq '123.456'
@@ -203,6 +205,13 @@ RSpec.describe QDM do
     id = @patient_de1.qdmPatient.dataElements.first.id
     expect(care_goal.relatedTo.first).to eq id
     @patient_de1.save
+  end
+
+  it 'entity datatype can be saved correctly' do
+    puts @patient_c.qdmPatient.dataElements[3].participant['identifier']
+    @patient_c.save
+    expect(@patient_c.qdmPatient.dataElements[3].participant['specialty'][:code]).to eq 'foo code 2'
+    expect(@patient_c.qdmPatient.dataElements[3].participant['identifier']['value']).to eq 'foo value'
   end
 
   it 'individualResult has empty observation_values by default' do

@@ -12,10 +12,10 @@ Date.prototype.cast = (date) => {
   }
 
   if (!Date.parse(date)) {
-    throw new Error(`DateTime: ${dateTime} is not a valid Date`);
+    throw new Error(`Date: ${date} is not a valid Date`);
   }
 
-  return cql.Date.fromJSDate(new Date(date), 0);
+  return cql.Date.fromJSDate(new Date(date));
 };
 
 mongoose.Schema.Types.Date = Date;

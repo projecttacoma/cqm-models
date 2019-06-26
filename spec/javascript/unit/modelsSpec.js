@@ -9,12 +9,15 @@ const AssessmentPerformed = require('./../../../app/assets/javascripts/Assessmen
 const AssessmentRecommended = require('./../../../app/assets/javascripts/AssessmentRecommended.js').AssessmentRecommended;
 const ProviderCareExperience = require('./../../../app/assets/javascripts/ProviderCareExperience.js').ProviderCareExperience;
 const CareGoal = require('./../../../app/assets/javascripts/CareGoal.js').CareGoal;
+const CarePartner = require('./../../../app/assets/javascripts/attributes/CarePartner.js').CarePartner;
 const Concept = require('./../../../app/assets/javascripts/cqm/Concept.js').Concept;
 const Component = require('./../../../app/assets/javascripts/attributes/Component.js').Component;
 const CommunicationPerformed = require('./../../../app/assets/javascripts/CommunicationPerformed.js').CommunicationPerformed;
 const CQLLibrary = require('./../../../app/assets/javascripts/cqm/CQLLibrary.js').CQLLibrary;
 const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
+const LocalDate = require('../../../app/assets/javascripts/basetypes/Date.js');
 const Diagnosis = require('./../../../app/assets/javascripts/Diagnosis.js').Diagnosis;
+const DiagnosisComponent = require('./../../../app/assets/javascripts/attributes/DiagnosisComponent.js').DiagnosisComponent;
 const DeviceApplied = require('./../../../app/assets/javascripts/DeviceApplied.js').DeviceApplied;
 const DeviceOrder = require('./../../../app/assets/javascripts/DeviceOrder.js').DeviceOrder;
 const DeviceRecommended = require('./../../../app/assets/javascripts/DeviceRecommended.js').DeviceRecommended;
@@ -26,6 +29,7 @@ const EncounterPerformed = require('./../../../app/assets/javascripts/EncounterP
 const EncounterRecommended = require('./../../../app/assets/javascripts/EncounterRecommended.js').EncounterRecommended;
 const FacilityLocation = require('./../../../app/assets/javascripts/attributes/FacilityLocation.js').FacilityLocation;
 const FamilyHistory = require('./../../../app/assets/javascripts/FamilyHistory.js').FamilyHistory;
+const Identifier = require('./../../../app/assets/javascripts/Identifier.js').Identifier;
 const ImmunizationAdministered = require('./../../../app/assets/javascripts/ImmunizationAdministered.js').ImmunizationAdministered;
 const ImmunizationOrder = require('./../../../app/assets/javascripts/ImmunizationOrder.js').ImmunizationOrder;
 const IndividualResult = require('./../../../app/assets/javascripts/cqm/IndividualResult.js').IndividualResult;
@@ -133,6 +137,32 @@ describe('QDMPatient', () => {
       expect(dataElement.getCode().length).toEqual(2);
       expect(dataElement.getCode()[0].code).toEqual('12345');
       expect(dataElement.getCode()[0].system).toEqual('1.2.3');
+    });
+    
+    it('can initialize a data element array with an entity', () => {
+      qdmPatient = new QDMPatient({
+        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+        qdmVersion: '0.0',
+        dataElements: [
+          new EncounterPerformed({
+            diagnoses: [new DiagnosisComponent({
+              code: new cql.Code('do', 're', 'mi'),
+              presentOnAdmissionIndicator: new cql.Code('present', 'on', 'admission'),
+              rank: 2
+            })],
+            participant: new CarePartner({
+              relationship: new cql.Code('fake', 'code', 'foo'),
+              identifier: new Identifier({
+                namingSystem: "fake naming system",
+                value: "fake value"
+              })
+            })
+          }),
+        ]
+      });
+      expect(qdmPatient.dataElements.length).toEqual(1);
+      expect(qdmPatient.dataElements[0].diagnoses[0].rank).toEqual(2);
+      expect(qdmPatient.dataElements[0].participant.identifier.value).toEqual('fake value');
     });
 
     it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {
