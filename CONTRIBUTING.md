@@ -18,7 +18,7 @@ git pull
 git checkout -b <new branch name>
 ```
 
-### Committing Code
+### Committing and Pushing Code
 
 There are a few key principles to committing code to the remote repository:
 
@@ -34,12 +34,19 @@ git diff
 git add <appropriate files>
 git status
 git commit -m <commit message>
+```
+
+and if you want to push to the remote repository
+
+```
 git push
 ```
 
 Use the `git diff` command to ensure you are committing what you expect and are not committing debug code or whitespace code.
 
-#### Cleaning 
+#### Cleaning Up Your Local Commit History Before Pushing
+
+
 
 ### Pull Requests
 
