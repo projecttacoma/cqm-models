@@ -8,7 +8,7 @@ QDMDate.prototype = Object.create(mongoose.SchemaType.prototype);
 
 QDMDate.prototype.cast = (date) => {
   if (!Date.parse(date)) {
-    throw new Error(`Date: ${date} is not a valid DateTime`);
+    throw new Error(`Date: ${date} is not a valid Date`);
   }
   return cql.Date.fromJSDate(new Date(date));
 };

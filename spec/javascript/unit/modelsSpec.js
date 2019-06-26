@@ -61,7 +61,6 @@ const PhysicalExamPerformed = require('./../../../app/assets/javascripts/Physica
 const PhysicalExamRecommended = require('./../../../app/assets/javascripts/PhysicalExamRecommended.js').PhysicalExamRecommended;
 const PopulationMap = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').PopulationMap;
 const PopulationSet = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').PopulationSet;
-const ProviderCharacteristic = require('./../../../app/assets/javascripts/ProviderCharacteristic.js').ProviderCharacteristic;
 const ProcedureOrder = require('./../../../app/assets/javascripts/ProcedureOrder.js').ProcedureOrder;
 const ProcedurePerformed = require('./../../../app/assets/javascripts/ProcedurePerformed.js').ProcedurePerformed;
 const ProcedureRecommended = require('./../../../app/assets/javascripts/ProcedureRecommended.js').ProcedureRecommended;
