@@ -16,7 +16,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "cql-execution": "^1.3.3",
+    "cql-execution": "https://github.com/cqframework/cql-execution#standards-updates-2019",
     "mongoose": "^5.4.14"
   },
   "devDependencies": {
