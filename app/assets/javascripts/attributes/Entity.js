@@ -7,6 +7,7 @@ const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
+
 const [Schema] = [mongoose.Schema];
 
 const [Number, String] = [
@@ -32,7 +33,6 @@ class Entity extends mongoose.Document {
 
 function EntitySchemaFunction(add, options) {
   const extended = new Schema({
-    id: String,
     identifier: IdentifierSchema,
     qdmVersion: { type: String, default: '5.5' },
     _type: { type: String, default: 'QDM::Entity' },
@@ -43,7 +43,7 @@ function EntitySchemaFunction(add, options) {
       default() {
         return this._id ? this._id.toString() : mongoose.Types.ObjectId().toString();
       },
-    }
+    },
 
   }, options);
 

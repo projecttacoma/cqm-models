@@ -212,10 +212,6 @@ QDMPatientSchema.methods.preferences = function preferences() {
   return this.getDataElements({ qdmCategory: 'preference' });
 };
 
-QDMPatientSchema.methods.provider_characteristics = function provider_characteristics() {
-  return this.getDataElements({ qdmCategory: 'provider_characteristic' });
-};
-
 QDMPatientSchema.methods.procedures = function procedures() {
   return this.getDataElements({ qdmCategory: 'procedure' });
 };

@@ -2890,7 +2890,7 @@ module.exports.Symptom = Symptom;
 },{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
-const { EntitySchemaFunction } = require('./Entity')
+const { EntitySchemaFunction } = require('./Entity');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -2930,6 +2930,7 @@ const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
+
 const [Schema] = [mongoose.Schema];
 
 const [Number, String] = [
@@ -3019,6 +3020,7 @@ const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
+
 const [Schema] = [mongoose.Schema];
 
 const [Number, String] = [
@@ -3044,7 +3046,6 @@ class Entity extends mongoose.Document {
 
 function EntitySchemaFunction(add, options) {
   const extended = new Schema({
-    id: String,
     identifier: IdentifierSchema,
     qdmVersion: { type: String, default: '5.5' },
     _type: { type: String, default: 'QDM::Entity' },
@@ -3055,7 +3056,7 @@ function EntitySchemaFunction(add, options) {
       default() {
         return this._id ? this._id.toString() : mongoose.Types.ObjectId().toString();
       },
-    }
+    },
 
   }, options);
 
@@ -3130,7 +3131,7 @@ module.exports.Identifier = Identifier;
 },{"mongoose/browser":264}],63:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
-const { EntitySchemaFunction } = require('./Entity')
+const { EntitySchemaFunction } = require('./Entity');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -3164,7 +3165,7 @@ module.exports.Organization = Organization;
 },{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":264}],64:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
-const { EntitySchemaFunction } = require('./Entity')
+const { EntitySchemaFunction } = require('./Entity');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -3197,7 +3198,7 @@ module.exports.PatientEntity = PatientEntity;
 },{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":264}],65:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
-const { EntitySchemaFunction } = require('./Entity')
+const { EntitySchemaFunction } = require('./Entity');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -3233,7 +3234,7 @@ module.exports.Practitioner = Practitioner;
 },{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":264}],66:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
-const { ComponentSchemaFunction } = require('./Component')
+const { ComponentSchemaFunction } = require('./Component');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -3267,8 +3268,6 @@ module.exports.ResultComponent = ResultComponent;
 },{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Component":58,"mongoose/browser":264}],67:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
-
-//TODO: Do something here with casting of Entity types?
 
 function Any(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Any');

@@ -6,6 +6,7 @@ const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
+
 const [Schema] = [mongoose.Schema];
 
 const [Number, String] = [

@@ -6,9 +6,10 @@ const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
-<%if datatype.downcase == 'component'%>const [Schema] = [mongoose.Schema];<% end %>
+<%if datatype.downcase == 'component'%>
+const [Schema] = [mongoose.Schema];<% end %>
 <% elsif datatype.downcase == 'resultcomponent'%>
-const { ComponentSchemaFunction } = require('./Component')
+const { ComponentSchemaFunction } = require('./Component');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -23,9 +24,10 @@ const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
+
 const [Schema] = [mongoose.Schema];
 <% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity'%>
-const { EntitySchemaFunction } = require('./Entity')
+const { EntitySchemaFunction } = require('./Entity');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
@@ -84,7 +86,7 @@ class <%= datatype %> extends mongoose.Document {
 <% if datatype.downcase == 'entity' || datatype.downcase == 'component'%>
 function <%= datatype %>SchemaFunction(add, options) {
   const extended = new Schema({
-    <%- for attribute in attrs_with_extras -%>
+  <%- for attribute in attrs_with_extras.select{|a| a[:name] != 'id'} -%>
     <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
     <%- end %>
     <%- if datatype.downcase == 'entity'%>
@@ -93,7 +95,7 @@ function <%= datatype %>SchemaFunction(add, options) {
       default() {
         return this._id ? this._id.toString() : mongoose.Types.ObjectId().toString();
       },
-    }
+    },
     <%- end %>
   }, options);
 

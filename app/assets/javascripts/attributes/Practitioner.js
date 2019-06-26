@@ -1,6 +1,6 @@
 const mongoose = require('mongoose/browser');
 
-const { EntitySchemaFunction } = require('./Entity')
+const { EntitySchemaFunction } = require('./Entity');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');

@@ -1,8 +1,6 @@
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
-//TODO: Do something here with casting of Entity types?
-
 function Any(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Any');
 }
