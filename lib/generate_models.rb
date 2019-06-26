@@ -1,7 +1,7 @@
-#TODO: May need to add Entity casting to Any if entities need to be handled
-#TODO: HQMF OIDS - Specifically RelatedPerson
+# TODO: May need to add Entity casting to Any if entities need to be handled
+# TODO: HQMF OIDS - Specifically RelatedPerson
 
-#! /usr/bin/env ruby
+# ! /usr/bin/env ruby
 require 'nokogiri'
 require 'active_support/all'
 require 'rails/generators'
