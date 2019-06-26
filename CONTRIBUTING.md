@@ -1,5 +1,11 @@
 # Contribution Guidance
 
+## Contents
+
+* [Git](#git)
+* [Testing](#testing)
+* [Code](#code)
+
 ## Git
 
 ### Branches
@@ -42,33 +48,31 @@ and if you want to push to the remote repository
 git push
 ```
 
+You may need to do a force push (`git push -f`) if you rebased your branch. **Make sure you are pushing what you expect when you do a force push!!!** These are dangerous as they modify the remote history. Also ensure that anyone who may be using this branch is aware you are doing a force push because this can mess up their local instance of the repository.
+
 Use the `git diff` command to ensure you are committing what you expect and are not committing debug code or whitespace code.
 
 #### Cleaning Up Your Local Commit History Before Pushing
 
+Each commit that gets pushed remotely needs to follow the rules above. If you did some messy commits locally and need to clean them up before pushing to the remote repository, do the following steps.
 
+* Make sure that your latest commit works, has no debug statements, and no junk (e.g., whitespace only changes)
+* Squash any commits that have debug statements / extra whitespace / broken code into commits that do not have these.
+* Push
+
+This may look like the following:
+
+```
+git diff origin/<branch name>
+git rebase -i HEAD~<number of commits you have added on top of the remote branch>
+git push
+```
+
+`git diff origin/<branch name>` performs a diff against the remote version of the branch.
+
+`git rebase -i` opens up an editor (VI if you haven't configured anything else) to allow you to modify the commits. **Only modify local commits**. Follow the instructions in the editor to fixup or squash the commits as appropriate.
 
 ### Pull Requests
-
-#### Creating a pull request
-1. Make sure that you're branch is up to date with master (or whatever branch it is being merged into). There are two ways to do this:
-    * Merge the parent branch in (minor features and commits into "major feature" branches)
-    
-      This is appropriate if you will later do a "squash merge" when integrating this branch into the parent branch. This should be the case for minor features and for commits into "major feature" branches.
-      ```
-      git fetch
-      git merge origin/<parent branch>
-      ```
-    * Rebase onto the top of the parent branch ("major feature" branches)
-
-      This is appropriate if you want to retain your commit history in a logical sequence. This puts all of the branch's commits on top of the parent branch's commits.
-      ```
-      git fetch
-      git rebase origin/<parent branch>
-      ```
-
-#### Merging a pull request
-
 
 #### Pull Requests into master
 
@@ -94,5 +98,56 @@ If your pull request is dependent on another pull request in a separate reposito
 * When you have addressed review comments, ping your reviewers for their re-review.
 * If you have a PR dependent on another PR, create a new checkbox in your PR that says waiting on the other PR to be merged.
 
+#### Creating a pull request
+
+1. Make sure that you're branch is up to date with master (or whatever branch it is being merged into). There are two ways to do this:
+    * Merge the parent branch in (minor features and commits into "major feature" branches)
+    
+      This is appropriate if you will later do a "squash merge" when integrating this branch into the parent branch. This should be the case for minor features and for commits into "major feature" branches.
+      ```
+      git fetch
+      git merge origin/<parent branch>
+      ```
+    * Rebase onto the top of the parent branch ("major feature" branches)
+
+      This is appropriate if you want to retain your commit history in a logical sequence. This puts all of the branch's commits on top of the parent branch's commits.
+      ```
+      git fetch
+      git rebase origin/<parent branch>
+      ```
+
+1. Run all tests.
+
+1. Confirm test coverage has not gone down (and has hopefully gone up).
+
+1. Commit and push the code following the instructions in [Committing and Pushing Code](#committing-and-pushing-code).
+
+1. [Create the pull request on github](https://help.github.com/en/articles/creating-a-pull-request).
+
+1. Fill out the pull request checklist.
+
+1. Assign your reviewers and let them know that they are a reviewer for your pull request.
+
+1. Be responsive to any comments.
+
+1. After your pull request has been approved, ping the team lead to merge the request in. There are two ways to do this:
+
+    * Squash merge
+
+      This is for minor features into the master branch or for pull requests into a major feature branch.
+
+    * Merge
+    
+      This is for major feature branches where the commit history should be preserved.
+
+## Testing
+
+All new or modified code should be covered by a test when possible. However, being covered is not sufficient. The author and reviewers are expected to ensure that the new or modified code is **actually being tested**, meaning expected and edge cases are being checked.
+
+When the code is overly difficult to create an automated test for (which should ideally only be the case for older code not written to be easily tested), then a manual test can be created. The manual test should be in a traceable and repeatable formate (e.g., if JIRA is being used, using JIRA tests).
+
 ## Code
 
+### Indenting
+
+Indentations should be done using two spaces. This can be configured in your editor so when you press "TAB", two spaces are entered.
