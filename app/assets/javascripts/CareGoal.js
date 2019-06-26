@@ -1,12 +1,12 @@
 const mongoose = require('mongoose/browser');
 
-const { IdentifierSchema } = require('./Identifier');
+const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
-const Date = require('./basetypes/Date');
+const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
@@ -18,7 +18,7 @@ const [Number, String] = [
 ];
 
 const CareGoalSchema = DataElementSchema({
-  statusDate: Date,
+  statusDate: QDMDate,
   relevantPeriod: Interval,
   relatedTo: [],
   targetOutcome: Any,

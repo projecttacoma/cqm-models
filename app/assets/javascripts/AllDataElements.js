@@ -1,5 +1,5 @@
-module.exports.Identifier = require('./Identifier.js').Identifier;
-module.exports.IdentifierSchema = require('./Identifier.js').IdentifierSchema;
+module.exports.Identifier = require('./attributes/Identifier.js').Identifier;
+module.exports.IdentifierSchema = require('./attributes/Identifier.js').IdentifierSchema;
 module.exports.Entity = require('./attributes/Entity.js').Entity;
 module.exports.EntitySchema = require('./attributes/Entity.js').EntitySchema;
 module.exports.PatientEntity = require('./attributes/PatientEntity.js').PatientEntity;

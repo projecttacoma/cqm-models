@@ -7,7 +7,8 @@ require 'mongoid'
 require_relative 'model_finder'
 
 # Generated models that are dependencies for base types
-require_relative 'qdm/identifier'
+require_relative 'qdm/attributes/attribute'
+require_relative 'qdm/attributes/identifier'
 
 # base types
 require_relative 'qdm/basetypes/code'
@@ -15,7 +16,6 @@ require_relative 'qdm/basetypes/data_element'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/ratio'
-require_relative 'qdm/attributes/attribute'
 require_relative 'qdm/attributes/facility_location'
 require_relative 'qdm/attributes/component'
 require_relative 'qdm/attributes/entity'

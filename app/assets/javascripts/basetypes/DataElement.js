@@ -1,7 +1,7 @@
 const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
-const Identifier = require('../Identifier');
+const Identifier = require('../attributes/Identifier');
 
 const [Schema] = [mongoose.Schema];
 

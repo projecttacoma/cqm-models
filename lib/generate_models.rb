@@ -8,6 +8,7 @@ require 'rails/generators'
 require 'erb'
 require 'json'
 require_relative './generators/custom_mongo/model_generator'
+require_relative './generator_helpers'
 
 ###############################################################################
 # Helpers
@@ -40,7 +41,7 @@ TYPE_LOOKUP_RB = {
 # Lookups for modelinfo 'element types' to JavaScript+Mongoose types.
 TYPE_LOOKUP_JS = {
   'System.DateTime': 'DateTime',
-  'System.Date': 'Date',
+  'System.Date': 'QDMDate',
   'System.Integer': 'Number',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
@@ -235,6 +236,7 @@ unless IS_TEST
   contents.gsub!(%r{\/PatientEntity.js}, '/attributes/PatientEntity.js')
   contents.gsub!(%r{\/Practitioner.js}, '/attributes/Practitioner.js')
   contents.gsub!(%r{\/ResultComponent.js}, '/attributes/ResultComponent.js')
+  contents.gsub!(%r{\/Identifier.js}, '/attributes/Identifier.js')
   File.open(file_path, 'w') { |file| file.puts contents }
 end
 
@@ -265,13 +267,13 @@ end
 # JavaScript post processing
 js_models_path = 'app/assets/javascripts/'
 js_models_path = 'tmp/' if IS_TEST
-files = Dir.glob(js_models_path + '*.js').each do |file_name|
+Dir.glob(js_models_path + '*.js').each do |file_name|
   contents = File.read(file_name)
 
   # Replace 'Any' type placeholder (these attributes could point to anything).
   contents.gsub!(/: Any/, ': Any')
 
-  # Component, Facility, DiangosisComponent
+  # Component, Facility, Diagnose
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
   contents.gsub!(/facilityLocation: Code/, 'facilityLocation: FacilityLocationSchema')
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
@@ -282,11 +284,11 @@ files = Dir.glob(js_models_path + '*.js').each do |file_name|
 end
 
 # Inject Ruby Patient model extensions
-template = File.read('templates/patient_extension.rb.erb')
-renderer = ERB.new(template, nil, '-')
-rb_patient = File.read(ruby_models_path + 'patient.rb')
-rb_patient.gsub!(/end/, renderer.result(binding))
-File.open(ruby_models_path + 'patient.rb', 'w') { |file| file.write(rb_patient) }
+GeneratorHelpers.inject_extension('templates/patient_extension.rb.erb', ruby_models_path + 'patient.rb')
+# Inject Ruby Entity model extensions
+if datatypes['Entity']
+  GeneratorHelpers.inject_extension('templates/entity_extension.rb.erb', ruby_models_path + 'entity.rb')
+end
 
 # Make sure Ruby models are in the correct module
 ruby_models_path = 'app/models/qdm/'
@@ -302,28 +304,17 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
 end
 
 types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/diagnosis_component.rb', '/result_component.rb']
-types_inherited_by_attribute = ['/component', '/facility_location', '/entity', '/diagnosis_component']
+types_inherited_by_attribute = ['/component', '/facility_location', '/entity', '/diagnosis_component', '/identifier']
 types_inherited_by_entity = ['/patient_entity', '/care_partner', '/practitioner', '/organization']
 types_inherited_by_component = ['/result_component']
 
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
-  # Set the initialize for entity
-  if File.basename(file_name) == 'entity.rb'
-    contents.gsub!('end', "\n\tdef initialize(options = {})
-    super(options)
-    # default id to the mongo ObjectId for this DataElement if it isnt already defined
-    self.id = _id.to_s unless id?
-  end\nend")
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
-  elsif File.basename(file_name) == 'identifier.rb'
-    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
-  else
-    not_embedded_in_patient_files = types_not_inherited_by_data_element - ['/identifier.rb']
-    next if not_embedded_in_patient_files.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
-    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
-  end
+  not_embedded_in_patient_files = types_not_inherited_by_data_element #- ['/identifier.rb']
+  next if not_embedded_in_patient_files.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+  contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
