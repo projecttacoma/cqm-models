@@ -261,6 +261,16 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   # Make facilityLocation of type QDM::FacilityLocation
   contents.gsub!(/field :facilityLocation, type: Code/, 'field :facilityLocation, type: QDM::FacilityLocation')
 
+  # Make Entity subclasses of type QDM::Entity
+  contents.gsub!(/field :participant/, 'field :participant, type: QDM::Entity')
+  contents.gsub!(/field :sender/, 'field :sender, type: QDM::Entity')
+  contents.gsub!(/field :recipient/, 'field :recipient, type: QDM::Entity')
+  contents.gsub!(/field :recorder/, 'field :recorder, type: QDM::Entity')
+  contents.gsub!(/field :performer/, 'field :performer, type: QDM::Entity')
+  contents.gsub!(/field :requester/, 'field :requester, type: QDM::Entity')
+  contents.gsub!(/field :prescriber/, 'field :prescriber, type: QDM::Entity')
+  contents.gsub!(/field :dispenser/, 'field :dispenser, type: QDM::Entity')
+
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
@@ -321,8 +331,7 @@ types_inherited_by_component = ['/result_component']
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
-  not_embedded_in_patient_files = types_not_inherited_by_data_element #- ['/identifier.rb']
-  next if not_embedded_in_patient_files.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+  next if types_not_inherited_by_data_element.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
   contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
   File.open(file_name, 'w') { |file| file.puts contents }
 end

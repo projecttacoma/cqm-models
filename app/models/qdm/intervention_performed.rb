@@ -10,7 +10,7 @@ module QDM
     field :result
     field :status, type: QDM::Code
     field :negationRationale, type: QDM::Code
-    field :performer
+    field :performer, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Intervention, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.36'
     field :qdmCategory, type: String, default: 'intervention'

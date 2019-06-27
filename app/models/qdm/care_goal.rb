@@ -7,7 +7,7 @@ module QDM
     field :relevantPeriod, type: QDM::Interval
     field :relatedTo, type: Array
     field :targetOutcome
-    field :performer
+    field :performer, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Care Goal'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.7'
     field :qdmCategory, type: String, default: 'care_goal'

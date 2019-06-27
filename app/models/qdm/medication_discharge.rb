@@ -11,8 +11,8 @@ module QDM
     field :daysSupplied, type: Integer
     field :route, type: QDM::Code
     field :negationRationale, type: QDM::Code
-    field :prescriber
-    field :recorder
+    field :prescriber, type: QDM::Entity
+    field :recorder, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Medication, Discharge'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.48'
     field :qdmCategory, type: String, default: 'medication'

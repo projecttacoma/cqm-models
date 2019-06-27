@@ -5,7 +5,7 @@ module QDM
     embedded_in :patient
     field :prevalencePeriod, type: QDM::Interval
     field :severity, type: QDM::Code
-    field :recorder
+    field :recorder, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Symptom'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.116'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.136'

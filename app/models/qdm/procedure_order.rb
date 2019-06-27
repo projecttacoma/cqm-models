@@ -9,7 +9,7 @@ module QDM
     field :rank, type: Integer
     field :priority, type: QDM::Code
     field :negationRationale, type: QDM::Code
-    field :requester
+    field :requester, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Procedure, Order'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.66'
     field :qdmCategory, type: String, default: 'procedure'

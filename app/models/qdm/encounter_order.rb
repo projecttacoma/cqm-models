@@ -7,7 +7,7 @@ module QDM
     field :reason, type: QDM::Code
     field :facilityLocation, type: QDM::FacilityLocation
     field :negationRationale, type: QDM::Code
-    field :requester
+    field :requester, type: QDM::Entity
     field :priority, type: QDM::Code
     field :qdmTitle, type: String, default: 'Encounter, Order'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.27'

@@ -4,7 +4,7 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :participationPeriod, type: QDM::Interval
-    field :recorder
+    field :recorder, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Participation'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.130'
     field :qdmCategory, type: String, default: 'participation'

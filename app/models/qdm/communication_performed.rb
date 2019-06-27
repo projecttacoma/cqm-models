@@ -6,8 +6,8 @@ module QDM
     field :authorDatetime, type: DateTime
     field :category, type: QDM::Code
     field :medium, type: QDM::Code
-    field :sender
-    field :recipient
+    field :sender, type: QDM::Entity
+    field :recipient, type: QDM::Entity
     field :relatedTo, type: Array
     field :sentDatetime, type: DateTime
     field :receivedDatetime, type: DateTime

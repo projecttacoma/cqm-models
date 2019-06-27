@@ -14,7 +14,7 @@ module QDM
     field :facilityLocation, type: QDM::FacilityLocation
     field :negationRationale, type: QDM::Code
     field :components, type: Array
-    field :performer
+    field :performer, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Diagnostic Study, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.23'
     field :qdmCategory, type: String, default: 'diagnostic_study'

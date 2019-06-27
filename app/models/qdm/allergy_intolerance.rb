@@ -7,7 +7,7 @@ module QDM
     field :prevalencePeriod, type: QDM::Interval
     field :type, type: QDM::Code
     field :severity, type: QDM::Code
-    field :recorder
+    field :recorder, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Allergy/Intolerance'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.119'
     field :qdmCategory, type: String, default: 'allergy'
