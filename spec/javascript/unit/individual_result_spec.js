@@ -1,7 +1,7 @@
 const CQM = require('./../../../app/assets/javascripts/cqm/AllCQMModels')
 const results_file = require('../../fixtures/results/example_results.json')
 
-describe('CQMa', () => {
+describe('CQM', () => {
   describe('IndividualResult', () => {
     it ('preserves all statement results in array hash conversion', () => {
         result = results_file['5b479b890a97b16d73ba4740']['PopulationCriteria1']
