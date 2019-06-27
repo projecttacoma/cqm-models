@@ -118,7 +118,7 @@ If your pull request is dependent on another pull request in a separate reposito
 
 1. Run all tests.
 
-1. Confirm test coverage has not gone down (and has hopefully gone up).
+1. Confirm test coverage has not gone down (and has hopefully gone up), and that all new or modified code is covered by tests.
 
 1. Commit and push the code following the instructions in [Committing and Pushing Code](#committing-and-pushing-code).
 
@@ -147,6 +147,18 @@ All new or modified code should be covered by a test when possible. However, bei
 When the code is overly difficult to create an automated test for (which should ideally only be the case for older code not written to be easily tested), then a manual test can be created. The manual test should be in a traceable and repeatable formate (e.g., if JIRA is being used, using JIRA tests).
 
 ## Code
+
+### JavaScript
+
+We follow the [ESLint](https://eslint.org/) [AirBnB base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) with a few exceptions, which are noted in the .eslintrc.json file.
+
+### CoffeeScript
+
+We follow [CoffeeLint](https://github.com/clutchski/coffeelint) with the configurations in the coffeelint.json file.
+
+### Ruby
+
+We follow [RuboCop](https://rubocop.readthedocs.io/en/latest/) with the configurations in the .rubocop.yml file.
 
 ### Indenting
 
