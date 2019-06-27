@@ -31,7 +31,7 @@ module QDM
     # to the CQL execution engine.
     def code_system_pairs
       codes.collect do |code|
-        { code: code.code, system: code.codeSystemOid }
+        { code: code.code, system: code.system }
       end
     end
 

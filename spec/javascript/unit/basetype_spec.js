@@ -1,5 +1,5 @@
 const cql = require('cql-execution');
-
+const Code = require('./../../../app/assets/javascripts/basetypes/Code.js');
 const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
 const Interval = require('./../../../app/assets/javascripts/basetypes/Interval.js');
 
@@ -65,5 +65,32 @@ describe('basetype Interval', () => {
 
   it('throws error if quantity in object has invalid unit', () => {
     expect(() => { (new Interval()).cast({ low: { value: '30', unit: 'mcg' }, high: { value: '60', unit: 'mg' } }); }).toThrow();
+  });
+});
+
+describe('basetype Code', () => {
+  it('can create a Code from valid hash', () => {
+    const code = (new Code()).cast({code: '12345', system: '1.2.3.4.5.6'});
+    expect(code.isCode).toBe(true);
+  });
+
+  it('can create a Code from valid hash with version and display', () => {
+    const code = (new Code()).cast({code: '12345', system: '1.2.3.4.5.6', version: '1', display: 'test'});
+    expect(code.isCode).toBe(true);
+  });
+
+  it('throws if invalid Code passed to cast', () => {
+    expect(() => { (new Code()).cast({bad_code_key: '12345', system: '1.2.3.4.5.6'}); }).toThrow();
+  });
+
+  it('casts null code to null', () => {
+    const code = (new Code()).cast(null);
+    expect(code).toBeNull()
+  });
+
+  it('cast returns code that is already a code', () => {
+    const code = new cql.Code('12345', '1.2.3.4.5.6');
+    const castedCode = (new Code()).cast(code);
+    expect(castedCode).toBe(code);
   });
 });

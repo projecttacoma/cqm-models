@@ -2795,19 +2795,17 @@ function RecursiveCast(any) {
   if (any && any.value && any.unit) {
     return new cql.Quantity(any);
   }
-  if (any && any.code && (any.codeSystemOid || any.system)) {
-    if (typeof any.code === 'undefined') {
-      throw new Error(`Code: ${any} does not have a code`);
-    } else if (typeof any.codeSystemOid === 'undefined' && typeof any.system === 'undefined') {
-      throw new Error(`Code: ${any} does not have a code system oid`);
-    }
 
-    const val = { code: any.code, codeSystemOid: any.codeSystemOid || any.system };
+  if (any.isCode) {
+    return any;
+  }
 
-    val.descriptor = (typeof any.descriptor !== 'undefined') ? any.descriptor : null;
+  if (any && any.code && any.system) {
+    const val = { code: any.code, system: any.system };
+    val.display = (typeof any.display !== 'undefined') ? any.display : null;
     val.version = (typeof any.version !== 'undefined') ? any.version : null;
 
-    return new cql.Code(val.code, val.codeSystemOid, val.version, val.descriptor);
+    return new cql.Code(val.code, val.system, val.version, val.display);
   }
   if (any && any.low) {
     const casted = new cql.Interval(any.low, any.high, any.lowClosed, any.highClosed);
@@ -2862,20 +2860,17 @@ Code.prototype = Object.create(mongoose.SchemaType.prototype);
 
 Code.prototype.cast = (code) => {
   if (code != null) {
+    // return code if it doesn't even need casting
+    if (code.isCode) {
+      return code;
+    }
     // handles codes that have not yet been cast to a code and those that have already been cast to a code
-    if (code.code && (code.codeSystemOid || code.system)) {
-      if (typeof code.code === 'undefined') {
-        throw new Error(`Code: ${code} does not have a code`);
-      } else if (typeof code.codeSystemOid === 'undefined' && typeof code.system === 'undefined') {
-        throw new Error(`Code: ${code} does not have a system oid`);
-      }
-
-      const val = { code: code.code, codeSystemOid: code.codeSystemOid || code.system };
-
-      val.descriptor = (typeof code.descriptor !== 'undefined') ? code.descriptor : null;
+    if (code.code && code.system) {
+      const val = { code: code.code, system: code.system };
+      val.display = (typeof code.display !== 'undefined') ? code.display : null;
       val.version = (typeof code.version !== 'undefined') ? code.version : null;
 
-      return new cql.Code(val.code, val.codeSystemOid, val.version, val.descriptor);
+      return new cql.Code(val.code, val.system, val.version, val.display);
     }
     throw new Error(`Expected a code. Received ${code}.`);
   } else {
@@ -2915,7 +2910,12 @@ function DataElementSchema(add, options) {
   // Returns all of the codes on this data element in a format usable by
   // the cql-execution framework.
   extended.methods.getCode = function getCode() {
-    return this.dataElementCodes.map(code => new cql.Code(code.code, code.codeSystemOid, code.version, code.descriptor));
+    return this.dataElementCodes.map((code) => {
+      if (code.isCode) {
+        return code;
+      }
+      return new cql.Code(code.code, code.system, code.version, code.display);
+    });
   };
 
   // Return the first code on this data element in a format usable by
@@ -2923,7 +2923,10 @@ function DataElementSchema(add, options) {
   extended.methods.code = function code() {
     if (this.dataElementCodes && this.dataElementCodes[0]) {
       const qdmCode = this.dataElementCodes[0];
-      return new cql.Code(qdmCode.code, qdmCode.codeSystemOid, qdmCode.version, qdmCode.descriptor);
+      if (qdmCode.isCode) {
+        return qdmCode;
+      }
+      return new cql.Code(qdmCode.code, qdmCode.system, qdmCode.version, qdmCode.display);
     }
     return null;
   };

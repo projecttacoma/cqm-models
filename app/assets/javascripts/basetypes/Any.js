@@ -10,19 +10,17 @@ function RecursiveCast(any) {
   if (any && any.value && any.unit) {
     return new cql.Quantity(any);
   }
-  if (any && any.code && (any.codeSystemOid || any.system)) {
-    if (typeof any.code === 'undefined') {
-      throw new Error(`Code: ${any} does not have a code`);
-    } else if (typeof any.codeSystemOid === 'undefined' && typeof any.system === 'undefined') {
-      throw new Error(`Code: ${any} does not have a code system oid`);
-    }
 
-    const val = { code: any.code, codeSystemOid: any.codeSystemOid || any.system };
+  if (any.isCode) {
+    return any;
+  }
 
-    val.descriptor = (typeof any.descriptor !== 'undefined') ? any.descriptor : null;
+  if (any && any.code && any.system) {
+    const val = { code: any.code, system: any.system };
+    val.display = (typeof any.display !== 'undefined') ? any.display : null;
     val.version = (typeof any.version !== 'undefined') ? any.version : null;
 
-    return new cql.Code(val.code, val.codeSystemOid, val.version, val.descriptor);
+    return new cql.Code(val.code, val.system, val.version, val.display);
   }
   if (any && any.low) {
     const casted = new cql.Interval(any.low, any.high, any.lowClosed, any.highClosed);

@@ -117,6 +117,24 @@ describe('QDMPatient', () => {
       expect(qdmPatient.dataElements.length).toEqual(1);
     });
 
+    it('can get codes from a data element', () => {
+      dataElement = new MedicationOrder();
+      // dataElement Codes with mixed hash and cql.Codes
+      dataElement.dataElementCodes = [{code: '12345', system: '1.2.3'}, new cql.Code('1', '2.3.4')]
+      expect(dataElement.code().code).toEqual('12345');
+      expect(dataElement.code().system).toEqual('1.2.3');
+      expect(dataElement.getCode().length).toEqual(2);
+      expect(dataElement.getCode()[0].code).toEqual('12345');
+      expect(dataElement.getCode()[0].system).toEqual('1.2.3');
+      // dataElement Codes with just cql.Codes
+      dataElement.dataElementCodes = [new cql.Code('12345', '1.2.3'), new cql.Code('1', '2.3.4')]
+      expect(dataElement.code().code).toEqual('12345');
+      expect(dataElement.code().system).toEqual('1.2.3');
+      expect(dataElement.getCode().length).toEqual(2);
+      expect(dataElement.getCode()[0].code).toEqual('12345');
+      expect(dataElement.getCode()[0].system).toEqual('1.2.3');
+    });
+
     it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {
       qdmPatient = new QDMPatient({
         birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
