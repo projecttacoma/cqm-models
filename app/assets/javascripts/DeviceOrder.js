@@ -10,7 +10,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -21,7 +22,7 @@ const DeviceOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Device, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.15' },
   qdmCategory: { type: String, default: 'device' },

@@ -10,7 +10,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -21,9 +22,9 @@ const CommunicationPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   category: Code,
   medium: Code,
-  sender: Any,
-  recipient: Any,
-  relatedTo: [],
+  sender: EntitySchema,
+  recipient: EntitySchema,
+  relatedTo: [String],
   sentDatetime: DateTime,
   receivedDatetime: DateTime,
   negationRationale: Code,

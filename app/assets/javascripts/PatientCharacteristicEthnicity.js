@@ -10,7 +10,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,

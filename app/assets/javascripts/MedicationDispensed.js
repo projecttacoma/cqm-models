@@ -10,7 +10,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -27,8 +28,8 @@ const MedicationDispensedSchema = DataElementSchema({
   frequency: Code,
   daysSupplied: Number,
   route: Code,
-  prescriber: Any,
-  dispenser: Any,
+  prescriber: EntitySchema,
+  dispenser: EntitySchema,
   negationRationale: Code,
   qdmTitle: { type: String, default: 'Medication, Dispensed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.49' },

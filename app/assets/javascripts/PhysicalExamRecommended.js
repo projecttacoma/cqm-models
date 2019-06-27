@@ -10,7 +10,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -22,7 +23,7 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
   reason: Code,
   anatomicalLocationSite: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Physical Exam, Recommended' },
   hqmfOid: { type: String, default: '22.16.840.1.113883.10.20.28.4.63' },
   qdmCategory: { type: String, default: 'physical_exam' },

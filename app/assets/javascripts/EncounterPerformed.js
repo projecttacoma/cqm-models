@@ -10,6 +10,7 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+const { EntitySchema } = require('./attributes/Entity');
 const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
 
 const [Number, String] = [
@@ -27,7 +28,7 @@ const EncounterPerformedSchema = DataElementSchema({
   negationRationale: Code,
   lengthOfStay: Quantity,
   priority: Code,
-  participant: Any,
+  participant: EntitySchema,
   qdmTitle: { type: String, default: 'Encounter, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.5' },
   qdmCategory: { type: String, default: 'encounter' },

@@ -10,7 +10,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -24,7 +25,7 @@ const ImmunizationAdministeredSchema = DataElementSchema({
   dosage: Quantity,
   route: Code,
   negationRationale: Code,
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Immunization, Administered' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.112' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },

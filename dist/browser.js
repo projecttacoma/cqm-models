@@ -11,7 +11,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -24,7 +25,7 @@ const AdverseEventSchema = DataElementSchema({
   severity: Code,
   facilityLocation: FacilityLocationSchema,
   type: Code,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Adverse Event' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.120' },
   qdmCategory: { type: String, default: 'adverse_event' },
@@ -44,7 +45,7 @@ class AdverseEvent extends mongoose.Document {
 module.exports.AdverseEvent = AdverseEvent;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],2:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],2:[function(require,module,exports){
 module.exports.Identifier = require('./attributes/Identifier.js').Identifier;
 module.exports.IdentifierSchema = require('./attributes/Identifier.js').IdentifierSchema;
 module.exports.Entity = require('./attributes/Entity.js').Entity;
@@ -187,7 +188,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -199,7 +201,7 @@ const AllergyIntoleranceSchema = DataElementSchema({
   prevalencePeriod: Interval,
   type: Code,
   severity: Code,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Allergy/Intolerance' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.119' },
   qdmCategory: { type: String, default: 'allergy' },
@@ -220,7 +222,7 @@ class AllergyIntolerance extends mongoose.Document {
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],4:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],4:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -233,7 +235,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -244,7 +247,7 @@ const AssessmentOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Assessment, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.131' },
   qdmCategory: { type: String, default: 'assessment' },
@@ -265,7 +268,7 @@ class AssessmentOrder extends mongoose.Document {
 module.exports.AssessmentOrder = AssessmentOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],5:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],5:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -278,7 +281,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -294,8 +298,8 @@ const AssessmentPerformedSchema = DataElementSchema({
   method: Code,
   result: Any,
   components: [ComponentSchema],
-  relatedTo: [],
-  performer: Any,
+  relatedTo: [String],
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Assessment, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.117' },
   qdmCategory: { type: String, default: 'assessment' },
@@ -316,7 +320,7 @@ class AssessmentPerformed extends mongoose.Document {
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],6:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],6:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -329,7 +333,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -340,7 +345,7 @@ const AssessmentRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Assessment, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.118' },
   qdmCategory: { type: String, default: 'assessment' },
@@ -361,7 +366,7 @@ class AssessmentRecommended extends mongoose.Document {
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],7:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],7:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -374,7 +379,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -384,9 +390,9 @@ const [Number, String] = [
 const CareGoalSchema = DataElementSchema({
   statusDate: QDMDate,
   relevantPeriod: Interval,
-  relatedTo: [],
+  relatedTo: [String],
   targetOutcome: Any,
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Care Goal' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.7' },
   qdmCategory: { type: String, default: 'care_goal' },
@@ -406,7 +412,7 @@ class CareGoal extends mongoose.Document {
 module.exports.CareGoal = CareGoal;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],8:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],8:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -419,7 +425,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -430,9 +437,9 @@ const CommunicationPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   category: Code,
   medium: Code,
-  sender: Any,
-  recipient: Any,
-  relatedTo: [],
+  sender: EntitySchema,
+  recipient: EntitySchema,
+  relatedTo: [String],
   sentDatetime: DateTime,
   receivedDatetime: DateTime,
   negationRationale: Code,
@@ -456,7 +463,7 @@ class CommunicationPerformed extends mongoose.Document {
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],9:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],9:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -469,7 +476,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -483,7 +491,7 @@ const DeviceAppliedSchema = DataElementSchema({
   negationRationale: Code,
   reason: Code,
   anatomicalLocationSite: Code,
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Device, Applied' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.13' },
   qdmCategory: { type: String, default: 'device' },
@@ -504,7 +512,7 @@ class DeviceApplied extends mongoose.Document {
 module.exports.DeviceApplied = DeviceApplied;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],10:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],10:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -517,7 +525,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -528,7 +537,7 @@ const DeviceOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Device, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.15' },
   qdmCategory: { type: String, default: 'device' },
@@ -549,7 +558,7 @@ class DeviceOrder extends mongoose.Document {
 module.exports.DeviceOrder = DeviceOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],11:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],11:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -562,7 +571,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -573,7 +583,7 @@ const DeviceRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Device, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.16' },
   qdmCategory: { type: String, default: 'device' },
@@ -594,7 +604,7 @@ class DeviceRecommended extends mongoose.Document {
 module.exports.DeviceRecommended = DeviceRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],12:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],12:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -607,7 +617,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -619,7 +630,7 @@ const DiagnosisSchema = DataElementSchema({
   prevalencePeriod: Interval,
   anatomicalLocationSite: Code,
   severity: Code,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Diagnosis' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.110' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
@@ -640,7 +651,7 @@ class Diagnosis extends mongoose.Document {
 module.exports.Diagnosis = Diagnosis;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],13:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],13:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -653,7 +664,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -664,7 +676,7 @@ const DiagnosticStudyOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Diagnostic Study, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.22' },
   qdmCategory: { type: String, default: 'diagnostic_study' },
@@ -685,7 +697,7 @@ class DiagnosticStudyOrder extends mongoose.Document {
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],14:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],14:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -698,7 +710,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -717,7 +730,7 @@ const DiagnosticStudyPerformedSchema = DataElementSchema({
   facilityLocation: FacilityLocationSchema,
   negationRationale: Code,
   components: [ComponentSchema],
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Diagnostic Study, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.23' },
   qdmCategory: { type: String, default: 'diagnostic_study' },
@@ -738,7 +751,7 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],15:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],15:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -751,7 +764,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -761,7 +775,7 @@ const [Number, String] = [
 const DiagnosticStudyRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Diagnostic Study, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.24' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.19' },
@@ -783,7 +797,7 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],16:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],16:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -796,7 +810,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -808,7 +823,7 @@ const EncounterOrderSchema = DataElementSchema({
   reason: Code,
   facilityLocation: FacilityLocationSchema,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   priority: Code,
   qdmTitle: { type: String, default: 'Encounter, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.27' },
@@ -830,7 +845,7 @@ class EncounterOrder extends mongoose.Document {
 module.exports.EncounterOrder = EncounterOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],17:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],17:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -843,6 +858,7 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+const { EntitySchema } = require('./attributes/Entity');
 const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
 
 const [Number, String] = [
@@ -860,7 +876,7 @@ const EncounterPerformedSchema = DataElementSchema({
   negationRationale: Code,
   lengthOfStay: Quantity,
   priority: Code,
-  participant: Any,
+  participant: EntitySchema,
   qdmTitle: { type: String, default: 'Encounter, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.5' },
   qdmCategory: { type: String, default: 'encounter' },
@@ -881,7 +897,7 @@ class EncounterPerformed extends mongoose.Document {
 module.exports.EncounterPerformed = EncounterPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],18:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],18:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -894,7 +910,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -906,7 +923,7 @@ const EncounterRecommendedSchema = DataElementSchema({
   reason: Code,
   facilityLocation: FacilityLocationSchema,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Encounter, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.28' },
   qdmCategory: { type: String, default: 'encounter' },
@@ -927,7 +944,7 @@ class EncounterRecommended extends mongoose.Document {
 module.exports.EncounterRecommended = EncounterRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],19:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],19:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -940,7 +957,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -950,7 +968,7 @@ const [Number, String] = [
 const FamilyHistorySchema = DataElementSchema({
   authorDatetime: DateTime,
   relationship: Code,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Family History' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.111' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.12' },
@@ -971,7 +989,7 @@ class FamilyHistory extends mongoose.Document {
 module.exports.FamilyHistory = FamilyHistory;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],20:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],20:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -984,7 +1002,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -998,7 +1017,7 @@ const ImmunizationAdministeredSchema = DataElementSchema({
   dosage: Quantity,
   route: Code,
   negationRationale: Code,
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Immunization, Administered' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.112' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.140' },
@@ -1020,7 +1039,7 @@ class ImmunizationAdministered extends mongoose.Document {
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],21:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],21:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1033,7 +1052,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1048,7 +1068,7 @@ const ImmunizationOrderSchema = DataElementSchema({
   reason: Code,
   route: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Immunization, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.113' },
   qdmCategory: { type: String, default: 'immunization' },
@@ -1069,7 +1089,7 @@ class ImmunizationOrder extends mongoose.Document {
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],22:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],22:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1082,7 +1102,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1093,7 +1114,7 @@ const InterventionOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Intervention, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.35' },
   qdmCategory: { type: String, default: 'intervention' },
@@ -1114,7 +1135,7 @@ class InterventionOrder extends mongoose.Document {
 module.exports.InterventionOrder = InterventionOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],23:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],23:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1127,7 +1148,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1142,7 +1164,7 @@ const InterventionPerformedSchema = DataElementSchema({
   result: Any,
   status: Code,
   negationRationale: Code,
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Intervention, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.36' },
   qdmCategory: { type: String, default: 'intervention' },
@@ -1163,7 +1185,7 @@ class InterventionPerformed extends mongoose.Document {
 module.exports.InterventionPerformed = InterventionPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],24:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],24:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1176,7 +1198,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1187,7 +1210,7 @@ const InterventionRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Intervention, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.37' },
   qdmCategory: { type: String, default: 'intervention' },
@@ -1208,7 +1231,7 @@ class InterventionRecommended extends mongoose.Document {
 module.exports.InterventionRecommended = InterventionRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],25:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],25:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1221,7 +1244,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1232,7 +1256,7 @@ const LaboratoryTestOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Laboratory Test, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.41' },
   qdmCategory: { type: String, default: 'laboratory_test' },
@@ -1253,7 +1277,7 @@ class LaboratoryTestOrder extends mongoose.Document {
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],26:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],26:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1266,7 +1290,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1285,7 +1310,7 @@ const LaboratoryTestPerformedSchema = DataElementSchema({
   referenceRange: Interval,
   negationRationale: Code,
   components: [ComponentSchema],
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Laboratory Test, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.42' },
   qdmCategory: { type: String, default: 'laboratory_test' },
@@ -1306,7 +1331,7 @@ class LaboratoryTestPerformed extends mongoose.Document {
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],27:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],27:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1319,7 +1344,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1330,7 +1356,7 @@ const LaboratoryTestRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   reason: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Laboratory Test, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.43' },
   qdmCategory: { type: String, default: 'laboratory_test' },
@@ -1351,7 +1377,7 @@ class LaboratoryTestRecommended extends mongoose.Document {
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],28:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],28:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1364,7 +1390,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1377,7 +1404,7 @@ const MedicationActiveSchema = DataElementSchema({
   dosage: Quantity,
   frequency: Code,
   route: Code,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Medication, Active' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.44' },
   qdmCategory: { type: String, default: 'medication' },
@@ -1398,7 +1425,7 @@ class MedicationActive extends mongoose.Document {
 module.exports.MedicationActive = MedicationActive;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],29:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],29:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1411,7 +1438,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1427,7 +1455,7 @@ const MedicationAdministeredSchema = DataElementSchema({
   route: Code,
   reason: Code,
   negationRationale: Code,
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Medication, Administered' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.45' },
   qdmCategory: { type: String, default: 'medication' },
@@ -1448,7 +1476,7 @@ class MedicationAdministered extends mongoose.Document {
 module.exports.MedicationAdministered = MedicationAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],30:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],30:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1461,7 +1489,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1477,8 +1506,8 @@ const MedicationDischargeSchema = DataElementSchema({
   daysSupplied: Number,
   route: Code,
   negationRationale: Code,
-  prescriber: Any,
-  recorder: Any,
+  prescriber: EntitySchema,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Medication, Discharge' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.48' },
   qdmCategory: { type: String, default: 'medication' },
@@ -1499,7 +1528,7 @@ class MedicationDischarge extends mongoose.Document {
 module.exports.MedicationDischarge = MedicationDischarge;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],31:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],31:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1512,7 +1541,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1529,8 +1559,8 @@ const MedicationDispensedSchema = DataElementSchema({
   frequency: Code,
   daysSupplied: Number,
   route: Code,
-  prescriber: Any,
-  dispenser: Any,
+  prescriber: EntitySchema,
+  dispenser: EntitySchema,
   negationRationale: Code,
   qdmTitle: { type: String, default: 'Medication, Dispensed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.49' },
@@ -1552,7 +1582,7 @@ class MedicationDispensed extends mongoose.Document {
 module.exports.MedicationDispensed = MedicationDispensed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],32:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],32:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1565,7 +1595,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1584,7 +1615,7 @@ const MedicationOrderSchema = DataElementSchema({
   setting: Code,
   reason: Code,
   negationRationale: Code,
-  prescriber: Any,
+  prescriber: EntitySchema,
   qdmTitle: { type: String, default: 'Medication, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.51' },
   qdmCategory: { type: String, default: 'medication' },
@@ -1605,7 +1636,7 @@ class MedicationOrder extends mongoose.Document {
 module.exports.MedicationOrder = MedicationOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],33:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],33:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1618,7 +1649,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1627,7 +1659,7 @@ const [Number, String] = [
 
 const ParticipationSchema = DataElementSchema({
   participationPeriod: Interval,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Participation' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.130' },
   qdmCategory: { type: String, default: 'participation' },
@@ -1647,7 +1679,7 @@ class Participation extends mongoose.Document {
 module.exports.Participation = Participation;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],34:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],34:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1660,7 +1692,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1669,7 +1702,7 @@ const [Number, String] = [
 
 const PatientCareExperienceSchema = DataElementSchema({
   authorDatetime: DateTime,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Patient Care Experience' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.52' },
   qdmCategory: { type: String, default: 'care_experience' },
@@ -1689,7 +1722,7 @@ class PatientCareExperience extends mongoose.Document {
 module.exports.PatientCareExperience = PatientCareExperience;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],35:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],35:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1702,7 +1735,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1730,7 +1764,7 @@ class PatientCharacteristic extends mongoose.Document {
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],36:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],36:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1743,7 +1777,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1772,7 +1807,7 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],37:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],37:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1785,7 +1820,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1816,7 +1852,7 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],38:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],38:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1829,7 +1865,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1857,7 +1894,7 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],39:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],39:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1870,7 +1907,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1900,7 +1938,7 @@ class PatientCharacteristicExpired extends mongoose.Document {
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],40:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],40:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1913,7 +1951,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1942,7 +1981,7 @@ class PatientCharacteristicPayer extends mongoose.Document {
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],41:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],41:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1955,7 +1994,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -1983,7 +2023,7 @@ class PatientCharacteristicRace extends mongoose.Document {
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],42:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],42:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1996,7 +2036,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2024,7 +2065,7 @@ class PatientCharacteristicSex extends mongoose.Document {
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],43:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],43:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2037,7 +2078,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2049,7 +2091,7 @@ const PhysicalExamOrderSchema = DataElementSchema({
   reason: Code,
   anatomicalLocationSite: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Physical Exam, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.61' },
   qdmCategory: { type: String, default: 'physical_exam' },
@@ -2070,7 +2112,7 @@ class PhysicalExamOrder extends mongoose.Document {
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],44:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],44:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2083,7 +2125,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2100,7 +2143,7 @@ const PhysicalExamPerformedSchema = DataElementSchema({
   anatomicalLocationSite: Code,
   negationRationale: Code,
   components: [ComponentSchema],
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Physical Exam, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.62' },
   qdmCategory: { type: String, default: 'physical_exam' },
@@ -2121,7 +2164,7 @@ class PhysicalExamPerformed extends mongoose.Document {
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],45:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],45:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2134,7 +2177,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2146,7 +2190,7 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
   reason: Code,
   anatomicalLocationSite: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Physical Exam, Recommended' },
   hqmfOid: { type: String, default: '22.16.840.1.113883.10.20.28.4.63' },
   qdmCategory: { type: String, default: 'physical_exam' },
@@ -2167,7 +2211,7 @@ class PhysicalExamRecommended extends mongoose.Document {
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],46:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],46:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2180,7 +2224,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2194,7 +2239,7 @@ const ProcedureOrderSchema = DataElementSchema({
   rank: Number,
   priority: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Procedure, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.66' },
   qdmCategory: { type: String, default: 'procedure' },
@@ -2215,7 +2260,7 @@ class ProcedureOrder extends mongoose.Document {
 module.exports.ProcedureOrder = ProcedureOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],47:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],47:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2228,7 +2273,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2249,7 +2295,7 @@ const ProcedurePerformedSchema = DataElementSchema({
   incisionDatetime: DateTime,
   negationRationale: Code,
   components: [ComponentSchema],
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Procedure, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.67' },
   qdmCategory: { type: String, default: 'procedure' },
@@ -2270,7 +2316,7 @@ class ProcedurePerformed extends mongoose.Document {
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],48:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],48:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2283,7 +2329,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2295,7 +2342,7 @@ const ProcedureRecommendedSchema = DataElementSchema({
   reason: Code,
   anatomicalLocationSite: Code,
   rank: Number,
-  requester: Any,
+  requester: EntitySchema,
   negationRationale: Code,
   qdmTitle: { type: String, default: 'Procedure, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.68' },
@@ -2317,7 +2364,7 @@ class ProcedureRecommended extends mongoose.Document {
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],49:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],49:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2330,7 +2377,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2339,7 +2387,7 @@ const [Number, String] = [
 
 const ProviderCareExperienceSchema = DataElementSchema({
   authorDatetime: DateTime,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Provider Care Experience' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.70' },
   qdmCategory: { type: String, default: 'care_experience' },
@@ -2359,7 +2407,7 @@ class ProviderCareExperience extends mongoose.Document {
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],50:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],50:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2632,7 +2680,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2659,7 +2708,7 @@ class RelatedPerson extends mongoose.Document {
 module.exports.RelatedPerson = RelatedPerson;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],52:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],52:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2707,7 +2756,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2722,7 +2772,7 @@ const SubstanceAdministeredSchema = DataElementSchema({
   frequency: Code,
   route: Code,
   negationRationale: Code,
-  performer: Any,
+  performer: EntitySchema,
   qdmTitle: { type: String, default: 'Substance, Administered' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.73' },
   qdmCategory: { type: String, default: 'substance' },
@@ -2743,7 +2793,7 @@ class SubstanceAdministered extends mongoose.Document {
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],54:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],54:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2756,7 +2806,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2773,7 +2824,7 @@ const SubstanceOrderSchema = DataElementSchema({
   refills: Number,
   route: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Substance, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.77' },
   qdmCategory: { type: String, default: 'substance' },
@@ -2794,7 +2845,7 @@ class SubstanceOrder extends mongoose.Document {
 module.exports.SubstanceOrder = SubstanceOrder;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],55:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],55:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2807,7 +2858,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2822,7 +2874,7 @@ const SubstanceRecommendedSchema = DataElementSchema({
   refills: Number,
   route: Code,
   negationRationale: Code,
-  requester: Any,
+  requester: EntitySchema,
   qdmTitle: { type: String, default: 'Substance, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.78' },
   qdmCategory: { type: String, default: 'substance' },
@@ -2843,7 +2895,7 @@ class SubstanceRecommended extends mongoose.Document {
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],56:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],56:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2856,7 +2908,8 @@ const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
-const { DiagnosisComponentSchema } = require('./attributes/DiagnosisComponent');
+const { EntitySchema } = require('./attributes/Entity');
+
 
 const [Number, String] = [
   mongoose.Schema.Types.Number,
@@ -2866,7 +2919,7 @@ const [Number, String] = [
 const SymptomSchema = DataElementSchema({
   prevalencePeriod: Interval,
   severity: Code,
-  recorder: Any,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Symptom' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.116' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.136' },
@@ -2887,7 +2940,7 @@ class Symptom extends mongoose.Document {
 module.exports.Symptom = Symptom;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],57:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
