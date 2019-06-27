@@ -283,7 +283,7 @@ Dir.glob(js_models_path + '*.js').each do |file_name|
   # Replace 'Any' type placeholder (these attributes could point to anything).
   contents.gsub!(/: Any/, ': Any')
 
-  # Component, Facility, Diagnose
+  # Component, Facility, Diagnoses
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
   contents.gsub!(/facilityLocation: Code/, 'facilityLocation: FacilityLocationSchema')
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
