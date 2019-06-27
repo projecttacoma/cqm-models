@@ -12,9 +12,7 @@
 
 All work should be done on a [feature branch](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). Feature branch names should be descriptive.
 
-For minor features, the pull request can be made directly from the feature branch into master branch.
-
-For major features (e.g., changes that will take several weeks, have several components, and involve multiple developers), there should be a "master feature" branch for that change, and contributions to the "master feature" branch should be done through pull requests into the "master feature" branch.
+Branches get merged into a parent branch through a GitHub [pull request](https://help.github.com/en/articles/about-pull-requests). For minor features, the pull request can be made directly from the feature branch into the master branch. For major features (e.g., changes that will take several weeks, have several components, and involve multiple developers), there should be a "master feature" branch for that change, and contributions to the "master feature" branch should be done through pull requests into the "master feature" branch. When the major feature is complete, the "master feature" branch will be pulled into the master branch.
 
 To create a branch:
 
@@ -50,7 +48,7 @@ If you want to push to the remote repository, do the following:
 git push
 ```
 
-You may need to do a force push (`git push -f`) if you rebased your branch (see [Creating a Pull Request](#creating-a-pull-request)). **Make sure you are pushing what you expect when you do a force push!!!** These are dangerous as they modify the remote history. Also ensure that anyone who may be using this branch is aware you are doing a force push because this can mess up their local instance of the repository.
+You may need to do a force push (`git push -f`) if you rebased your branch (see [Creating a Pull Request](#creating-a-pull-request)). **Make sure you are pushing what you expect when you do a force push!!!** You should do this regardless, but need to be especially especially careful when doing a force push. These are dangerous as they modify the remote history. Also ensure that anyone who may be using this branch is aware you are doing a force push because this can mess up their local instance of the repository.
 
 Use the `git diff` command to ensure you are committing what you expect and are not committing debug code or whitespace code.
 
@@ -78,7 +76,7 @@ git push
 
 #### Pull Requests into Master
 
-Pull requests into **master** should have at least one reviewer from each organization funded by CMS to manage the repository, and should have at least two reviewers total. The reviewers from the funded organizations are expected to submit a review in a timely manner within three business days of the pull request being submitted. If a review needs to be expedited (e.g., a bug fix necessary to meet a CMS deadline), the submitter should communicate directly with the reviewers to ensure that they are aware of the expedited timeline and document this requirement within the pull request. Pull requests that don’t require an expedited review should remain open at least three business days to allow community members to perform a review.
+Pull requests into master should have at least one reviewer from each organization funded by CMS to manage the repository, and should have at least two reviewers total. The reviewers from the funded organizations are expected to submit a review in a timely manner within three business days of the pull request being submitted. If a review needs to be expedited (e.g., a bug fix necessary to meet a CMS deadline), the submitter should communicate directly with the reviewers to ensure that they are aware of the expedited timeline and document this requirement within the pull request. Pull requests that don’t require an expedited review should remain open at least three business days to allow community members to perform a review.
 
 Community members are expected to review pull requests of interest and provide comments regarding their questions or concerns. Both the pull request submitter and the commenter are expected to be responsive to one another, preferably replying within one business day to a comment or response. A reply should at a minimum signal any actions that may be taken.
 
@@ -146,7 +144,7 @@ If your pull request is dependent on another pull request in a separate reposito
 
 All new or modified code should be covered by a test when possible. However, being covered is not sufficient. The author and reviewers are expected to ensure that the new or modified code is **actually being tested**, meaning expected and edge cases are being checked.
 
-When the code is overly difficult to create an automated test for (which should ideally only be the case for older code not written to be easily tested), then a manual test can be created. The manual test should be in a traceable and repeatable formate (e.g., if JIRA is being used, using JIRA tests).
+When the code is overly difficult to create an automated test for (which should ideally only be the case for older code that was not written to be easily tested), then a manual test can be created. The manual test should be in a traceable and repeatable formate (e.g., if JIRA is being used, using JIRA tests).
 
 ## Code
 
