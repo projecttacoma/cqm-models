@@ -1,5 +1,7 @@
 # CQM-Models Governance Model
 
+<sup>*CQM-Models is a shared library used by the [Cypress](https://cypress.healthit.gov) and [Bonnie](https://bonnie.healthit.gov/) tools.*</sup>
+
 This governance model is based on [OSS Watch's Meritocratic Governance Model](http://oss-watch.ac.uk/resources/meritocraticgovernancemodel) and the [CQFramework Clinical Quality Language Change Management document](https://github.com/cqframework/clinical_quality_language/blob/master/CHANGE_MANAGEMENT.md). It has been heavily modified to meet the needs of a government funded open source project managed by multiple organizations.
 
 ## Overview
@@ -91,7 +93,7 @@ After reviewing the available contribution documentation, the developer mailing 
 
 The project uses a stable-trunk methodology, meaning that the master branch must be kept in a releasable state at all times. This is ensured through regression tests and continuous integration is used to check pull requests to the master branch.
 
-Changes to the content of the GitHub repository must go through a pull request process. Pull requests should have at least one reviewer from each organization funded by CMS to manage the repository. The reviewers from the funded organizations are expected to submit a review in a timely manner within 10 days of the pull request being submitted. If a review needs to be expedited (e.g., a bug fix necessary to meet a CMS deadline), the submitter should communicate directly with the reviewers to ensure that they are aware of the expedited timeline and document this requirement within the pull request. Pull requests that don’t require an expedited review should remain open at least three business days to allow community members to perform a review.
+Changes to the content of the GitHub repository must go through a pull request process. Pull requests should have at least one reviewer from each organization funded by CMS to manage the repository. The reviewers from the funded organizations are expected to submit a review in a timely manner within 3 business days of the pull request being submitted. If a review needs to be expedited (e.g., a bug fix necessary to meet a CMS deadline), the submitter should communicate directly with the reviewers to ensure that they are aware of the expedited timeline and document this requirement within the pull request. Pull requests that don’t require an expedited review should remain open at least three business days to allow community members to perform a review.
 
 Community members are expected to review pull requests of interest and provide comments regarding their questions or concerns. Both the pull request submitter and the commenter are expected to be responsive to one another, preferably replying within one business day to a comment or response. A reply should, at a minimum, signal any actions that may be taken.
 
