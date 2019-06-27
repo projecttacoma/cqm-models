@@ -1,4 +1,5 @@
 const Any = require('./../../../app/assets/javascripts/basetypes/Any');
+const Code = require('./../../../app/assets/javascripts/basetypes/Code');
 const Cql = require('cql-execution');
 
 describe('The Any class', () => {
@@ -67,6 +68,14 @@ describe('The Any class', () => {
 
       expect(decimalValue).toEqual(returnedDecimalObject);
       expect(integerValue).toEqual(returnedIntegerObject);
+    });
+
+    it('Should cast any to a code from either a code or a hash', () => {
+      const codeHash =  {code: '12345', system: '1.2.3.4.5.6'};
+      const returnedCodeObject = Any.prototype.cast(codeHash);
+      expect(returnedCodeObject.isCode).toBe(true);
+      expect(returnedCodeObject.code).toEqual('12345');
+      expect(returnedCodeObject.system).toEqual('1.2.3.4.5.6');
     });
   });
 });
