@@ -35,6 +35,8 @@ There are a few key principles to committing code to the remote repository:
 
 These rules do not apply to local commits **as long as you squash/fixup those commits before pushing to the remote repository**.
 
+To commit code locally, do the following:
+
 ```
 git diff
 git add <appropriate files>
@@ -42,13 +44,13 @@ git status
 git commit -m <commit message>
 ```
 
-and if you want to push to the remote repository
+If you want to push to the remote repository, do the following:
 
 ```
 git push
 ```
 
-You may need to do a force push (`git push -f`) if you rebased your branch. **Make sure you are pushing what you expect when you do a force push!!!** These are dangerous as they modify the remote history. Also ensure that anyone who may be using this branch is aware you are doing a force push because this can mess up their local instance of the repository.
+You may need to do a force push (`git push -f`) if you rebased your branch (see [Creating a Pull Request](#creating-a-pull-request)). **Make sure you are pushing what you expect when you do a force push!!!** These are dangerous as they modify the remote history. Also ensure that anyone who may be using this branch is aware you are doing a force push because this can mess up their local instance of the repository.
 
 Use the `git diff` command to ensure you are committing what you expect and are not committing debug code or whitespace code.
 
@@ -74,7 +76,7 @@ git push
 
 ### Pull Requests
 
-#### Pull Requests into master
+#### Pull Requests into Master
 
 Pull requests into **master** should have at least one reviewer from each organization funded by CMS to manage the repository, and should have at least two reviewers total. The reviewers from the funded organizations are expected to submit a review in a timely manner within three business days of the pull request being submitted. If a review needs to be expedited (e.g., a bug fix necessary to meet a CMS deadline), the submitter should communicate directly with the reviewers to ensure that they are aware of the expedited timeline and document this requirement within the pull request. Pull requests that don’t require an expedited review should remain open at least three business days to allow community members to perform a review.
 
@@ -82,7 +84,7 @@ Community members are expected to review pull requests of interest and provide c
 
 Exceptions include gemfile updates and config file updates for in incrementing the version numbers. These only require a single reviewer and can be considered a "sanity check" review.
 
-#### Pull Requests into a feature branch
+#### Pull Requests into a Feature Branch
 
 The organization responsible for a major feature is responsible for determining how new content will be incorporated into the "master feature" branch. However, we recommend that pull requests into feature branches include at least one reviewer and that the checklist is still completely filled out (see below).
 
@@ -98,7 +100,7 @@ If your pull request is dependent on another pull request in a separate reposito
 * When you have addressed review comments, ping your reviewers for their re-review.
 * If you have a PR dependent on another PR, create a new checkbox in your PR that says waiting on the other PR to be merged.
 
-#### Creating a pull request
+#### Creating a Pull Request
 
 1. Make sure that you're branch is up to date with master (or whatever branch it is being merged into). There are two ways to do this:
     * Merge the parent branch in (minor features and commits into "major feature" branches)
