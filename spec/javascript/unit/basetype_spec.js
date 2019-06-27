@@ -89,8 +89,8 @@ describe('basetype Code', () => {
   });
 
   it('cast returns code that is already a code', () => {
-    const code = (new Code()).cast({code: '12345', system: '1.2.3.4.5.6'});
+    const code = new cql.Code('12345', '1.2.3.4.5.6');
     const castedCode = (new Code()).cast(code);
-    expect(castedCode.isCode).toBe(true);
+    expect(castedCode).toBe(code);
   });
 });

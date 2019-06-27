@@ -10,13 +10,12 @@ function RecursiveCast(any) {
   if (any && any.value && any.unit) {
     return new cql.Quantity(any);
   }
-  if (any && any.code && any.system) {
-    if (typeof any.code === 'undefined') {
-      throw new Error(`Code: ${any} does not have a code`);
-    } else if (typeof any.system === 'undefined') {
-      throw new Error(`Code: ${any} does not have a code system oid`);
-    }
 
+  if (any.isCode) {
+    return any;
+  }
+
+  if (any && any.code && any.system) {
     const val = { code: any.code, system: any.system };
     val.display = (typeof any.display !== 'undefined') ? any.display : null;
     val.version = (typeof any.version !== 'undefined') ? any.version : null;

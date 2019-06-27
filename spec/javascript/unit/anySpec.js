@@ -73,9 +73,13 @@ describe('The Any class', () => {
     it('Should cast any to a code from either a code or a hash', () => {
       const codeHash =  {code: '12345', system: '1.2.3.4.5.6'};
       const returnedCodeObject = Any.prototype.cast(codeHash);
+      const returnedCodeCode = Any.prototype.cast(new Cql.Code('12345','1.2.3.4.5.6'));
       expect(returnedCodeObject.isCode).toBe(true);
       expect(returnedCodeObject.code).toEqual('12345');
       expect(returnedCodeObject.system).toEqual('1.2.3.4.5.6');
+      expect(returnedCodeCode.isCode).toBe(true);
+      expect(returnedCodeCode.code).toEqual('12345');
+      expect(returnedCodeCode.system).toEqual('1.2.3.4.5.6');
     });
   });
 });
