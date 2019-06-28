@@ -4,6 +4,7 @@ const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
 const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
+const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
 
 
@@ -15,7 +16,7 @@ const [Number, String] = [
 const FacilityLocationSchema = new mongoose.Schema({
   code: Code,
   locationPeriod: Interval,
-  qdmVersion: { type: String, default: '5.4' },
+  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::FacilityLocation' },
 
 });
@@ -27,4 +28,6 @@ class FacilityLocation extends mongoose.Document {
     this._type = 'QDM::FacilityLocation';
   }
 }
+
 module.exports.FacilityLocation = FacilityLocation;
+

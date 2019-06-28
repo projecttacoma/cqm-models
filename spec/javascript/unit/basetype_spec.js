@@ -1,6 +1,7 @@
 const cql = require('cql-execution');
 const Code = require('./../../../app/assets/javascripts/basetypes/Code.js');
 const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
+const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
 const Interval = require('./../../../app/assets/javascripts/basetypes/Interval.js');
 
 describe('basetype DateTime', () => {
@@ -15,6 +16,20 @@ describe('basetype DateTime', () => {
   });
   it('throws if invalid DateTime passed to cast', () => {
     expect(() => { (new DateTime()).cast('some invalid DateTime arg'); }).toThrow();
+  });
+});
+
+describe('basetype Date', () => {
+  it('can create a Date from JS Date', () => {
+    const date = (new QDMDate()).cast(new Date());
+    expect(date.isDate).toBe(true);
+  });
+  it('can create a Date from cql Date', () => {
+    const date = (new QDMDate()).cast(new cql.Date.fromJSDate(new Date()));
+    expect(date.isDate).toBe(true);
+  });
+  it('throws if invalid DateTime passed to cast', () => {
+    expect(() => { (new QDMDate()).cast('some invalid Date arg'); }).toThrow();
   });
 });
 

@@ -4,9 +4,10 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
+    field :recorder, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Patient Care Experience'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.52'
     field :qdmCategory, type: String, default: 'care_experience'
-    field :qdmVersion, type: String, default: '5.4'
+    field :qdmVersion, type: String, default: '5.5'
   end
 end

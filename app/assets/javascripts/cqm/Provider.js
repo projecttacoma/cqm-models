@@ -1,5 +1,4 @@
 const mongoose = require('mongoose/browser');
-const Id = require('../Id');
 
 const [Schema, String, Boolean] = [
   mongoose.Schema,
@@ -31,7 +30,6 @@ const ProviderSchema = new Schema({
   title: String,
   addresses: [AddressSchema],
   telecoms: [TelecomSchema],
-  ids: [Id.IdSchema],
 
 }, { id: false });
 

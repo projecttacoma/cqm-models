@@ -10,10 +10,11 @@ module QDM
     field :refills, type: Integer
     field :route, type: QDM::Code
     field :negationRationale, type: QDM::Code
+    field :requester, type: QDM::Entity
     field :qdmTitle, type: String, default: 'Substance, Recommended'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.78'
     field :qdmCategory, type: String, default: 'substance'
     field :qdmStatus, type: String, default: 'recommended'
-    field :qdmVersion, type: String, default: '5.4'
+    field :qdmVersion, type: String, default: '5.5'
   end
 end

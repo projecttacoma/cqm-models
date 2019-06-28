@@ -1,4 +1,4 @@
-# Base QDM module (generated from lib/generate_models.rb) for QDM 5.3
+# Base QDM module (generated from lib/generate_models.rb) for QDM 5.5
 module QDM
 end
 require 'mongoid'
@@ -7,7 +7,8 @@ require 'mongoid'
 require_relative 'model_finder'
 
 # Generated models that are dependencies for base types
-require_relative 'qdm/id'
+require_relative 'qdm/attributes/attribute'
+require_relative 'qdm/attributes/identifier'
 
 # base types
 require_relative 'qdm/basetypes/code'
@@ -15,9 +16,15 @@ require_relative 'qdm/basetypes/data_element'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/ratio'
-require_relative 'qdm/attributes/attribute'
 require_relative 'qdm/attributes/facility_location'
 require_relative 'qdm/attributes/component'
+require_relative 'qdm/attributes/entity'
+require_relative 'qdm/attributes/care_partner'
+require_relative 'qdm/attributes/diagnosis_component'
+require_relative 'qdm/attributes/organization'
+require_relative 'qdm/attributes/patient_entity'
+require_relative 'qdm/attributes/practitioner'
+require_relative 'qdm/attributes/result_component'
 
 # Tacoma-specific models
 require_relative 'cqm/measure'
@@ -38,6 +45,7 @@ require_relative '../../lib/generate_patients'
 
 # Generated models
 require_relative 'qdm/patient'
+require_relative 'qdm/related_person'
 require_relative 'qdm/physical_exam_order'
 require_relative 'qdm/participation'
 require_relative 'qdm/patient_characteristic_sex'
@@ -58,7 +66,6 @@ require_relative 'qdm/device_order'
 require_relative 'qdm/diagnostic_study_performed'
 require_relative 'qdm/intervention_order'
 require_relative 'qdm/family_history'
-require_relative 'qdm/result_component'
 require_relative 'qdm/medication_active'
 require_relative 'qdm/laboratory_test_order'
 require_relative 'qdm/diagnostic_study_order'
@@ -73,7 +80,6 @@ require_relative 'qdm/encounter_order'
 require_relative 'qdm/encounter_recommended'
 require_relative 'qdm/procedure_performed'
 require_relative 'qdm/allergy_intolerance'
-require_relative 'qdm/provider_characteristic'
 require_relative 'qdm/physical_exam_recommended'
 require_relative 'qdm/patient_characteristic_birthdate'
 require_relative 'qdm/adverse_event'

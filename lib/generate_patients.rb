@@ -8,7 +8,7 @@ module QDM
   module PatientGeneration
     # Generates patient(s) with fully-loaded dataElements if new_patient_for_each_type is false then a
     # single patient will be returned that has every data element on it
-    def self.generate_exhastive_data_element_patients(new_patient_for_each_type = true, model_info_file = 'qdm-modelinfo-5.4.xml')
+    def self.generate_exhastive_data_element_patients(new_patient_for_each_type = true, model_info_file = 'qdm-modelinfo-5.5.xml')
       datatypes = get_datatypes(File.join(File.dirname(__FILE__), "../modelinfo/#{model_info_file}"))
       patients = []
       cqm_patient = nil
@@ -49,7 +49,7 @@ module QDM
       modelinfo.xpath('//ns4:typeInfo').each do |type|
         # Grab the name of this QDM datatype
         datatype_name = type.attributes['name'].value.split('.').last
-        exclusion_array = %w[Component Id Patient ResultComponent FacilityLocation]
+        exclusion_array = %w[Component Identifier Patient ResultComponent FacilityLocation]
         # Store datatype and its attributes (reject irrelevant datatypes)
         next if datatype_name.include?('Negative') || datatype_name.include?('Positive') ||
                 datatype_name.include?('QDMBaseType') || (exclusion_array.include? datatype_name)
@@ -112,7 +112,7 @@ module QDM
         data_element[field_name] = QDM::BaseTypeGeneration.generate_date_interval_field
       elsif field_type == QDM::Quantity
         data_element[field_name] = QDM::BaseTypeGeneration.generate_quantity
-      elsif field_type == QDM::Id
+      elsif field_type == QDM::Identifier
         data_element[field_name] = QDM::BaseTypeGeneration.generate_qdm_id
       elsif field_type == Integer
         # TODO: randomize value
