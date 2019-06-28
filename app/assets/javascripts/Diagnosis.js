@@ -1,14 +1,16 @@
 const mongoose = require('mongoose/browser');
 
-const { IdSchema } = require('./Id');
+const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
+const { EntitySchema } = require('./attributes/Entity');
 
 
 const [Number, String] = [
@@ -21,11 +23,12 @@ const DiagnosisSchema = DataElementSchema({
   prevalencePeriod: Interval,
   anatomicalLocationSite: Code,
   severity: Code,
+  recorder: EntitySchema,
   qdmTitle: { type: String, default: 'Diagnosis' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.110' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.135' },
   qdmCategory: { type: String, default: 'condition' },
-  qdmVersion: { type: String, default: '5.4' },
+  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::Diagnosis' },
 
 });
@@ -37,4 +40,6 @@ class Diagnosis extends mongoose.Document {
     this._type = 'QDM::Diagnosis';
   }
 }
+
 module.exports.Diagnosis = Diagnosis;
+

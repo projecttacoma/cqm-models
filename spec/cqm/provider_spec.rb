@@ -22,7 +22,7 @@ RSpec.describe CQM::Provider do
         value: 'value',
         use: 'use'
       )
-      id = QDM::Id.new(namingSystem: CQM::Provider::NPI_OID, value: '111')
+      id = QDM::Identifier.new(namingSystem: CQM::Provider::NPI_OID, value: '111')
       provider.ids << id
       provider.addresses << address
       provider.telecoms << telecom

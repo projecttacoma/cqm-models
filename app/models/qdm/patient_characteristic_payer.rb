@@ -8,6 +8,6 @@ module QDM
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.58'
     field :qdmCategory, type: String, default: 'patient_characteristic'
     field :qdmStatus, type: String, default: 'payer'
-    field :qdmVersion, type: String, default: '5.4'
+    field :qdmVersion, type: String, default: '5.5'
   end
 end

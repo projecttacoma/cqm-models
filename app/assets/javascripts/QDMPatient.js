@@ -14,7 +14,7 @@ const [Schema, Number, String, Mixed] = [
 
 const QDMPatientSchema = new Schema({
   birthDatetime: DateTime,
-  qdmVersion: { type: String, default: '5.4' },
+  qdmVersion: { type: String, default: '5.5' },
 
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.
@@ -210,10 +210,6 @@ QDMPatientSchema.methods.physical_exams = function physical_exams() {
 
 QDMPatientSchema.methods.preferences = function preferences() {
   return this.getDataElements({ qdmCategory: 'preference' });
-};
-
-QDMPatientSchema.methods.provider_characteristics = function provider_characteristics() {
-  return this.getDataElements({ qdmCategory: 'provider_characteristic' });
 };
 
 QDMPatientSchema.methods.procedures = function procedures() {

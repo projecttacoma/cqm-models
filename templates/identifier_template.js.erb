@@ -5,16 +5,16 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const IdSchema = mongoose.Schema({
+const IdentifierSchema = mongoose.Schema({
   <%- for attribute in attrs_with_extras -%>
   <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
   <%- end %>
 }, { _id: false, id: false });
 
-module.exports.IdSchema = IdSchema;
-class Id extends mongoose.Document {
+module.exports.IdentifierSchema = IdentifierSchema;
+class Identifier extends mongoose.Document {
   constructor(object) {
-    super(object, IdSchema);
+    super(object, IdentifierSchema);
   }
 }
-module.exports.Id = Id;
+module.exports.Identifier = Identifier;
