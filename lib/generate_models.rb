@@ -1,10 +1,14 @@
-#! /usr/bin/env ruby
+# TODO: May need to add Entity casting to Any if entities need to be handled
+# TODO: HQMF OIDS - Specifically RelatedPerson
+
+# ! /usr/bin/env ruby
 require 'nokogiri'
 require 'active_support/all'
 require 'rails/generators'
 require 'erb'
 require 'json'
 require_relative './generators/custom_mongo/model_generator'
+require_relative './generator_helpers'
 
 ###############################################################################
 # Helpers
@@ -13,10 +17,11 @@ require_relative './generators/custom_mongo/model_generator'
 # Lookups for modelinfo 'element types' to Ruby+Mongoid types.
 TYPE_LOOKUP_RB = {
   'System.DateTime': 'DateTime',
+  'System.Date': 'Date',
   'System.Integer': 'Integer',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
-  'QDM.Id': 'Id',
+  'QDM.Identifier': 'Identifier',
   'System.Any': 'Any',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
@@ -25,6 +30,8 @@ TYPE_LOOKUP_RB = {
   'list<QDM.Id>': 'Array',
   'list<QDM.ResultComponent>': 'Array',
   'list<QDM.FacilityLocation>': 'Array',
+  'list<QDM.DiagnosisComponent>': 'Array',
+  'list<System.String>': 'Array',
   'list<System.Code>': 'Array',
   'System.Decimal': 'Float',
   'System.Time': 'Time',
@@ -34,11 +41,12 @@ TYPE_LOOKUP_RB = {
 # Lookups for modelinfo 'element types' to JavaScript+Mongoose types.
 TYPE_LOOKUP_JS = {
   'System.DateTime': 'DateTime',
+  'System.Date': 'QDMDate',
   'System.Integer': 'Number',
   'System.Quantity': 'Quantity',
   'System.Code': 'Code',
   'System.Any': 'Any',
-  'QDM.Id': 'IdSchema',
+  'QDM.Identifier': 'IdentifierSchema',
   'interval<System.DateTime>': 'Interval',
   'interval<System.Quantity>': 'Interval',
   'list<QDM.Component>': '[]',
@@ -46,6 +54,8 @@ TYPE_LOOKUP_JS = {
   'list<QDM.Id>': '[]',
   'list<QDM.ResultComponent>': '[]',
   'list<QDM.FacilityLocation>': '[]',
+  'list<QDM.DiagnosisComponent>': '[]',
+  'list<System.String>': '[]',
   'list<System.Code>': '[Code]',
   'System.Decimal': 'Number',
   'System.Time': 'DateTime',
@@ -185,7 +195,7 @@ file_path = 'app/assets/javascripts/'
 file_path = 'tmp/' if IS_TEST
 datatype_custom_templates = {
   QDMPatient: 'templates/patient_template.js.erb',
-  Id: 'templates/id_template.js.erb'
+  Identifier: 'templates/identifier_template.js.erb'
 }
 
 datatypes.each do |datatype, info|
@@ -219,6 +229,14 @@ unless IS_TEST
   contents = File.read(file_path)
   contents.gsub!(%r{\/FacilityLocation.js}, '/attributes/FacilityLocation.js')
   contents.gsub!(%r{\/Component.js}, '/attributes/Component.js')
+  contents.gsub!(%r{\/CarePartner.js}, '/attributes/CarePartner.js')
+  contents.gsub!(%r{\/DiagnosisComponent.js}, '/attributes/DiagnosisComponent.js')
+  contents.gsub!(%r{\/Entity.js}, '/attributes/Entity.js')
+  contents.gsub!(%r{\/Organization.js}, '/attributes/Organization.js')
+  contents.gsub!(%r{\/PatientEntity.js}, '/attributes/PatientEntity.js')
+  contents.gsub!(%r{\/Practitioner.js}, '/attributes/Practitioner.js')
+  contents.gsub!(%r{\/ResultComponent.js}, '/attributes/ResultComponent.js')
+  contents.gsub!(%r{\/Identifier.js}, '/attributes/Identifier.js')
   File.open(file_path, 'w') { |file| file.puts contents }
 end
 
@@ -243,14 +261,15 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   # Make facilityLocation of type QDM::FacilityLocation
   contents.gsub!(/field :facilityLocation, type: Code/, 'field :facilityLocation, type: QDM::FacilityLocation')
 
-  # Make relatedTo embeds_many instead of field
-  contents.gsub!(/  field :relatedTo, type: Array\n/, "  embeds_many :relatedTo, class_name: 'QDM::Id'\n")
-
-  # Make prescriberId embeds_many instead of field
-  contents.gsub!(/  field :prescriberId, type: Id\n/, "  embeds_one :prescriberId, class_name: 'QDM::Id'\n")
-
-  # Make dispenserId embeds_many instead of field
-  contents.gsub!(/  field :dispenserId, type: Id\n/, "  embeds_one :dispenserId, class_name: 'QDM::Id'\n")
+  # Make Entity subclasses of type QDM::Entity
+  contents.gsub!(/field :participant/, 'field :participant, type: QDM::Entity')
+  contents.gsub!(/field :sender/, 'field :sender, type: QDM::Entity')
+  contents.gsub!(/field :recipient/, 'field :recipient, type: QDM::Entity')
+  contents.gsub!(/field :recorder/, 'field :recorder, type: QDM::Entity')
+  contents.gsub!(/field :performer/, 'field :performer, type: QDM::Entity')
+  contents.gsub!(/field :requester/, 'field :requester, type: QDM::Entity')
+  contents.gsub!(/field :prescriber/, 'field :prescriber, type: QDM::Entity')
+  contents.gsub!(/field :dispenser/, 'field :dispenser, type: QDM::Entity')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -258,28 +277,37 @@ end
 # JavaScript post processing
 js_models_path = 'app/assets/javascripts/'
 js_models_path = 'tmp/' if IS_TEST
-files = Dir.glob(js_models_path + '*.js').each do |file_name|
+Dir.glob(js_models_path + '*.js').each do |file_name|
   contents = File.read(file_name)
 
   # Replace 'Any' type placeholder (these attributes could point to anything).
   contents.gsub!(/: Any/, ': Any')
 
-  # Component, Facility, and Id types
+  # Component, Facility, Diagnoses
   contents.gsub!(/facilityLocations: \[\]/, 'facilityLocations: [FacilityLocationSchema]')
   contents.gsub!(/facilityLocation: Code/, 'facilityLocation: FacilityLocationSchema')
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
   contents.gsub!(/component: Code/, 'component: ComponentSchema')
-  contents.gsub!(/relatedTo: \[\]/, 'relatedTo: [IdSchema]')
+  contents.gsub!(/diagnoses: \[\]/, 'diagnoses: [DiagnosisComponentSchema]')
+  contents.gsub!(/sender: Any/, 'sender: EntitySchema')
+  contents.gsub!(/recipient: Any/, 'recipient: EntitySchema')
+  contents.gsub!(/participant: Any/, 'participant: EntitySchema')
+  contents.gsub!(/recorder: Any/, 'recorder: EntitySchema')
+  contents.gsub!(/performer: Any/, 'performer: EntitySchema')
+  contents.gsub!(/requester: Any/, 'requester: EntitySchema')
+  contents.gsub!(/prescriber: Any/, 'prescriber: EntitySchema')
+  contents.gsub!(/dispenser: Any/, 'dispenser: EntitySchema')
+  contents.gsub!(/relatedTo: \[\]/, 'relatedTo: [String]')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
 # Inject Ruby Patient model extensions
-template = File.read('templates/patient_extension.rb.erb')
-renderer = ERB.new(template, nil, '-')
-rb_patient = File.read(ruby_models_path + 'patient.rb')
-rb_patient.gsub!(/end/, renderer.result(binding))
-File.open(ruby_models_path + 'patient.rb', 'w') { |file| file.write(rb_patient) }
+GeneratorHelpers.inject_extension('templates/patient_extension.rb.erb', ruby_models_path + 'patient.rb')
+# Inject Ruby Entity model extensions
+if datatypes['Entity']
+  GeneratorHelpers.inject_extension('templates/entity_extension.rb.erb', ruby_models_path + 'entity.rb')
+end
 
 # Make sure Ruby models are in the correct module
 ruby_models_path = 'app/models/qdm/'
@@ -288,23 +316,23 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   contents.gsub!('Qdm', 'QDM')
   contents.gsub!('Code', 'QDM::Code')
-  contents.gsub!(' Id', ' QDM::Id')
+  contents.gsub!(' Identifier', ' QDM::Identifier')
   contents.gsub!('Interval', 'QDM::Interval')
   contents.gsub!('Quantity', 'QDM::Quantity')
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
+types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/diagnosis_component.rb', '/result_component.rb']
+types_inherited_by_attribute = ['/component', '/facility_location', '/entity', '/diagnosis_component', '/identifier']
+types_inherited_by_entity = ['/patient_entity', '/care_partner', '/practitioner', '/organization']
+types_inherited_by_component = ['/result_component']
+
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
-  if File.basename(file_name) == 'id.rb'
-    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
-  else
-    not_embedded_in_patient_files = ['patient.rb', 'component.rb', 'facility_location.rb']
-    next if not_embedded_in_patient_files.include?(File.basename(file_name))
-    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
-  end
+  next if types_not_inherited_by_data_element.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+  contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
@@ -312,8 +340,10 @@ end
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = ''
   File.open(file_name).each_line.with_index do |line, index|
-    line.gsub!("\n", " < DataElement\n") if index.zero? && !file_name.include?('/patient.rb') && !file_name.include?('/id.rb') && !file_name.include?('/component.rb') && !file_name.include?('/facility_location.rb')
-    line.gsub!("\n", " < Attribute\n") if index.zero? && (file_name.include?('/component.rb') || file_name.include?('/facility_location.rb'))
+    line.gsub!("\n", " < DataElement\n") if index.zero? && types_not_inherited_by_data_element.none? { |sub_string| file_name.include?(sub_string) }
+    line.gsub!("\n", " < Attribute\n") if index.zero? && types_inherited_by_attribute.any? { |sub_string| file_name.include?(sub_string) }
+    line.gsub!("\n", " < Entity\n") if index.zero? && types_inherited_by_entity.any? { |sub_string| file_name.include?(sub_string) }
+    line.gsub!("\n", " < Component\n") if index.zero? && types_inherited_by_component.any? { |sub_string| file_name.include?(sub_string) }
     contents += "module QDM\n  # #{file_name}\n  #{line.gsub('QDM::', '')}" if index.zero?
     contents += '  ' unless index.zero? || line.blank?
     contents += line unless index.zero?
@@ -328,13 +358,13 @@ if IS_TEST
   Dir.mkdir(ruby_models_path + 'attributes')
   Dir.mkdir(js_models_path + 'attributes')
 end
-if File.exist?(ruby_models_path + 'facility_location.rb')
-  File.rename ruby_models_path + 'facility_location.rb', ruby_models_path + 'attributes/facility_location.rb'
-  File.rename js_models_path + 'FacilityLocation.js', js_models_path + 'attributes/FacilityLocation.js'
-end
-if File.exist?(ruby_models_path + 'component.rb')
-  File.rename ruby_models_path + 'component.rb', ruby_models_path + 'attributes/component.rb'
-  File.rename js_models_path + 'Component.js', js_models_path + 'attributes/Component.js'
+
+attribute_list = types_inherited_by_attribute + types_inherited_by_component + types_inherited_by_entity
+existing_types_moving_to_attributes = attribute_list.select { |sub_string| File.exist?(ruby_models_path + sub_string + '.rb') }
+existing_types_moving_to_attributes.each do |type|
+  modified_name = type[1..-1]
+  File.rename ruby_models_path + modified_name + '.rb', ruby_models_path + 'attributes/' + modified_name + '.rb'
+  File.rename js_models_path + modified_name.camelize + '.js', js_models_path + 'attributes/' + modified_name.camelize + '.js'
 end
 
 puts 'Create hqmfOid to datatype map as json file'

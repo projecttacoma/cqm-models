@@ -14,12 +14,12 @@ module QDM
     # Valueset oid of the specific type.
     field :codeListId, type: String
 
-    embeds_one :id, class_name: 'QDM::Id'
+    field :id, type: String
 
     def initialize(options = {})
       super(options)
       # default id to the mongo ObjectId for this DataElement if it isnt already defined
-      self.id = QDM::Id.new(value: _id.to_s) unless id?
+      self.id = _id.to_s unless id?
     end
 
     # Returns the attribute requested on the datatype.

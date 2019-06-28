@@ -4,6 +4,7 @@ module QDM
     include Mongoid::Document
     embedded_in :patient
     field :authorDatetime, type: DateTime
+    field :relevantDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
     field :refills, type: Integer
     field :dosage, type: QDM::Quantity
@@ -11,13 +12,13 @@ module QDM
     field :frequency, type: QDM::Code
     field :daysSupplied, type: Integer
     field :route, type: QDM::Code
-    embeds_one :prescriberId, class_name: 'QDM::Id'
-    embeds_one :dispenserId, class_name: 'QDM::Id'
+    field :prescriber, type: QDM::Entity
+    field :dispenser, type: QDM::Entity
     field :negationRationale, type: QDM::Code
     field :qdmTitle, type: String, default: 'Medication, Dispensed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.49'
     field :qdmCategory, type: String, default: 'medication'
     field :qdmStatus, type: String, default: 'dispensed'
-    field :qdmVersion, type: String, default: '5.4'
+    field :qdmVersion, type: String, default: '5.5'
   end
 end
