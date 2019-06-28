@@ -60,11 +60,29 @@ QDMPatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
 // takes a qdmCategory, which returns all elements of that QDM qdmCategory.
 // Example: patient.getDataElements({qdmCategory: 'encounters'}) will return
 // all Encounter QDM data types active on the patient.
-QDMPatientSchema.methods.getDataElements = function getDataElements(params) {
+QDMPatientSchema.methods.getDataElements = function getDataElements(params = {}) {
+  if (this.dataElementsCache === undefined) {
+    this.dataElementsCache = {};
+  }
+
+  const qdmCategory = params.qdmCategory !== undefined ? params.qdmCategory : null;
+  const qdmStatus = params.qdmStatus !== undefined ? params.qdmStatus : null;
+
   if (params !== undefined && params.qdmCategory !== undefined && params.qdmStatus !== undefined) {
-    return this.dataElements.filter(element => (element.qdmCategory === params.qdmCategory) && (element.qdmStatus === params.qdmStatus));
+    if (this.dataElementsCache[qdmCategory] !== undefined && this.dataElementsCache[qdmCategory][qdmStatus] !== undefined) {
+      return this.dataElementsCache[qdmCategory][qdmStatus];
+    }
+    if (this.dataElementsCache[qdmCategory] === undefined) {
+      this.dataElementsCache[qdmCategory] = {};
+    }
+    this.dataElementsCache[qdmCategory][qdmStatus] = this.dataElements.filter(element => (element.qdmCategory === params.qdmCategory) && (element.qdmStatus === params.qdmStatus));
+    return this.dataElementsCache[qdmCategory][qdmStatus];
   } else if (params !== undefined && params.qdmCategory !== undefined) {
-    return this.dataElements.filter(element => element.qdmCategory === params.qdmCategory);
+    if (this.dataElementsCache[qdmCategory] !== undefined) {
+      return this.dataElementsCache[qdmCategory];
+    }
+    this.dataElementsCache[qdmCategory] = this.dataElements.filter(element => element.qdmCategory === params.qdmCategory);
+    return this.dataElementsCache[qdmCategory];
   }
   return this.dataElements;
 };
@@ -131,6 +149,7 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
   }
   return [];
 };
+
 
 QDMPatientSchema.methods.adverse_events = function adverse_events() {
   return this.getDataElements({ qdmCategory: 'adverse_event' });
