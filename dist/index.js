@@ -19713,7 +19713,7 @@ function numberIsNaN (obj) {
 
   module.exports.PatientContext = context.PatientContext;
 
-  module.exports.UnfilteredContext = context.UnfilteredContext;
+  module.exports.PopulationContext = context.PopulationContext;
 
   module.exports.Results = results.Results;
 
@@ -22368,17 +22368,12 @@ function numberIsNaN (obj) {
     }
 
     Sum.prototype.exec = function(ctx) {
-      var e, items, sum, values;
+      var items, sum, values;
       items = this.source.execute(ctx);
       if (!typeIsArray(items)) {
         return null;
       }
-      try {
-        items = processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
+      items = processQuantities(items);
       if (!(items.length > 0)) {
         return null;
       }
@@ -22407,18 +22402,12 @@ function numberIsNaN (obj) {
     }
 
     Min.prototype.exec = function(ctx) {
-      var e, element, i, len, list, listWithoutNulls, minimum;
+      var element, i, len, list, listWithoutNulls, minimum;
       list = this.source.execute(ctx);
       if (list == null) {
         return null;
       }
       listWithoutNulls = removeNulls(list);
-      try {
-        processQuantities(list);
-      } catch (error) {
-        e = error;
-        return null;
-      }
       if (!(listWithoutNulls.length > 0)) {
         return null;
       }
@@ -22444,18 +22433,12 @@ function numberIsNaN (obj) {
     }
 
     Max.prototype.exec = function(ctx) {
-      var e, element, i, items, len, listWithoutNulls, maximum;
+      var element, i, items, len, listWithoutNulls, maximum;
       items = this.source.execute(ctx);
       if (items == null) {
         return null;
       }
       listWithoutNulls = removeNulls(items);
-      try {
-        processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
       if (!(listWithoutNulls.length > 0)) {
         return null;
       }
@@ -22481,17 +22464,12 @@ function numberIsNaN (obj) {
     }
 
     Avg.prototype.exec = function(ctx) {
-      var e, items, sum, values;
+      var items, sum, values;
       items = this.source.execute(ctx);
       if (!typeIsArray(items)) {
         return null;
       }
-      try {
-        items = processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
+      items = processQuantities(items);
       if (items.length === 0) {
         return null;
       }
@@ -22521,7 +22499,7 @@ function numberIsNaN (obj) {
     }
 
     Median.prototype.exec = function(ctx) {
-      var e, items, median, values;
+      var items, median, values;
       items = this.source.execute(ctx);
       if (!typeIsArray(items)) {
         return null;
@@ -22529,12 +22507,7 @@ function numberIsNaN (obj) {
       if (!(items.length > 0)) {
         return null;
       }
-      try {
-        items = processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
+      items = processQuantities(items);
       if (!hasOnlyQuantities(items)) {
         return medianOfNumbers(items);
       }
@@ -22555,7 +22528,7 @@ function numberIsNaN (obj) {
     }
 
     Mode.prototype.exec = function(ctx) {
-      var e, filtered, items, mode, values;
+      var filtered, items, mode, values;
       items = this.source.execute(ctx);
       if (!typeIsArray(items)) {
         return null;
@@ -22563,12 +22536,7 @@ function numberIsNaN (obj) {
       if (!(items.length > 0)) {
         return null;
       }
-      try {
-        filtered = processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
+      filtered = processQuantities(items);
       if (hasOnlyQuantities(filtered)) {
         values = getValuesFromQuantities(filtered);
         mode = this.mode(values);
@@ -22617,17 +22585,12 @@ function numberIsNaN (obj) {
     }
 
     StdDev.prototype.exec = function(ctx) {
-      var e, items, stdDev, values;
+      var items, stdDev, values;
       items = this.source.execute(ctx);
       if (!typeIsArray(items)) {
         return null;
       }
-      try {
-        items = processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
+      items = processQuantities(items);
       if (!(items.length > 0)) {
         return null;
       }
@@ -22683,17 +22646,12 @@ function numberIsNaN (obj) {
     }
 
     Product.prototype.exec = function(ctx) {
-      var e, items, product, values;
+      var items, product, values;
       items = this.source.execute(ctx);
       if (!typeIsArray(items)) {
         return null;
       }
-      try {
-        items = processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
+      items = processQuantities(items);
       if (!(items.length > 0)) {
         return null;
       }
@@ -22722,17 +22680,12 @@ function numberIsNaN (obj) {
     }
 
     GeometricMean.prototype.exec = function(ctx) {
-      var e, geoMean, items, product, values;
+      var geoMean, items, product, values;
       items = this.source.execute(ctx);
       if (!typeIsArray(items)) {
         return null;
       }
-      try {
-        items = processQuantities(items);
-      } catch (error) {
-        e = error;
-        return null;
-      }
+      items = processQuantities(items);
       if (!(items.length > 0)) {
         return null;
       }
@@ -22902,28 +22855,21 @@ function numberIsNaN (obj) {
     }
 
     Add.prototype.exec = function(ctx) {
-      var args, sum;
+      var args;
       args = this.execArgs(ctx);
-      sum = null;
       if ((args == null) || args.some(function(x) {
         return x == null;
       })) {
-        null;
-      } else {
-        if (args != null) {
-          args.reduce(function(x, y) {
-            if (x.isQuantity || x.isDateTime || x.isDate || x.isTime) {
-              return sum = doAddition(x, y);
-            } else {
-              return sum = x + y;
-            }
-          });
-        }
-      }
-      if (MathUtil.overflowsOrUnderflows(sum)) {
         return null;
+      } else {
+        return args != null ? args.reduce(function(x, y) {
+          if (x.isQuantity || x.isDateTime || x.isDate) {
+            return doAddition(x, y);
+          } else {
+            return x + y;
+          }
+        }) : void 0;
       }
-      return sum;
     };
 
     return Add;
@@ -22938,26 +22884,21 @@ function numberIsNaN (obj) {
     }
 
     Subtract.prototype.exec = function(ctx) {
-      var args, difference;
+      var args;
       args = this.execArgs(ctx);
-      difference = null;
       if ((args == null) || args.some(function(x) {
         return x == null;
       })) {
-        null;
+        return null;
       } else {
-        args.reduce(function(x, y) {
+        return args.reduce(function(x, y) {
           if (x.isQuantity || x.isDateTime || x.isDate) {
-            return difference = doSubtraction(x, y);
+            return doSubtraction(x, y);
           } else {
-            return difference = x - y;
+            return x - y;
           }
         });
       }
-      if (MathUtil.overflowsOrUnderflows(difference)) {
-        return null;
-      }
-      return difference;
     };
 
     return Subtract;
@@ -22972,28 +22913,21 @@ function numberIsNaN (obj) {
     }
 
     Multiply.prototype.exec = function(ctx) {
-      var args, product;
+      var args;
       args = this.execArgs(ctx);
-      product = null;
       if ((args == null) || args.some(function(x) {
         return x == null;
       })) {
-        null;
-      } else {
-        if (args != null) {
-          args.reduce(function(x, y) {
-            if (x.isQuantity || y.isQuantity) {
-              return product = doMultiplication(x, y);
-            } else {
-              return product = x * y;
-            }
-          });
-        }
-      }
-      if (MathUtil.overflowsOrUnderflows(product)) {
         return null;
+      } else {
+        return args != null ? args.reduce(function(x, y) {
+          if (x.isQuantity || y.isQuantity) {
+            return doMultiplication(x, y);
+          } else {
+            return x * y;
+          }
+        }) : void 0;
       }
-      return product;
     };
 
     return Multiply;
@@ -23008,28 +22942,21 @@ function numberIsNaN (obj) {
     }
 
     Divide.prototype.exec = function(ctx) {
-      var args, quotient;
+      var args;
       args = this.execArgs(ctx);
-      quotient = null;
       if ((args == null) || args.some(function(x) {
         return x == null;
       })) {
-        null;
-      } else {
-        if (args != null) {
-          args.reduce(function(x, y) {
-            if (x.isQuantity) {
-              return quotient = doDivision(x, y);
-            } else {
-              return quotient = x / y;
-            }
-          });
-        }
-      }
-      if (MathUtil.overflowsOrUnderflows(quotient)) {
         return null;
+      } else {
+        return args != null ? args.reduce(function(x, y) {
+          if (x.isQuantity) {
+            return doDivision(x, y);
+          } else {
+            return x / y;
+          }
+        }) : void 0;
       }
-      return quotient;
     };
 
     return Divide;
@@ -23044,21 +22971,17 @@ function numberIsNaN (obj) {
     }
 
     TruncatedDivide.prototype.exec = function(ctx) {
-      var args, quotient;
+      var args;
       args = this.execArgs(ctx);
       if ((args == null) || args.some(function(x) {
         return x == null;
       })) {
-        null;
+        return null;
       } else {
-        quotient = Math.floor(args.reduce(function(x, y) {
+        return Math.floor(args.reduce(function(x, y) {
           return x / y;
         }));
       }
-      if (MathUtil.overflowsOrUnderflows(quotient)) {
-        return null;
-      }
-      return quotient;
     };
 
     return TruncatedDivide;
@@ -23241,17 +23164,13 @@ function numberIsNaN (obj) {
     }
 
     Exp.prototype.exec = function(ctx) {
-      var arg, power;
+      var arg;
       arg = this.execArgs(ctx);
       if (arg == null) {
-        null;
-      } else {
-        power = Math.exp(arg);
-      }
-      if (MathUtil.overflowsOrUnderflows(power)) {
         return null;
+      } else {
+        return Math.exp(arg);
       }
-      return power;
     };
 
     return Exp;
@@ -23291,22 +23210,17 @@ function numberIsNaN (obj) {
     }
 
     Power.prototype.exec = function(ctx) {
-      var args, power;
+      var args;
       args = this.execArgs(ctx);
-      power = null;
       if ((args == null) || args.some(function(x) {
         return x == null;
       })) {
-        null;
+        return null;
       } else {
-        power = args.reduce(function(x, y) {
+        return args.reduce(function(x, y) {
           return Math.pow(x, y);
         });
       }
-      if (MathUtil.overflowsOrUnderflows(power)) {
-        return null;
-      }
-      return power;
     };
 
     return Power;
@@ -23324,9 +23238,7 @@ function numberIsNaN (obj) {
 
     MIN_VALUES['{urn:hl7-org:elm-types:r1}Decimal'] = MathUtil.MIN_FLOAT_VALUE;
 
-    MIN_VALUES['{urn:hl7-org:elm-types:r1}DateTime'] = MathUtil.MIN_DATETIME_VALUE;
-
-    MIN_VALUES['{urn:hl7-org:elm-types:r1}Date'] = MathUtil.MIN_DATE_VALUE;
+    MIN_VALUES['{urn:hl7-org:elm-types:r1}DateTime'] = MathUtil.MIN_DATE_VALUE;
 
     MIN_VALUES['{urn:hl7-org:elm-types:r1}Time'] = MathUtil.MIN_TIME_VALUE;
 
@@ -23365,9 +23277,7 @@ function numberIsNaN (obj) {
 
     MAX_VALUES['{urn:hl7-org:elm-types:r1}Decimal'] = MathUtil.MAX_FLOAT_VALUE;
 
-    MAX_VALUES['{urn:hl7-org:elm-types:r1}DateTime'] = MathUtil.MAX_DATETIME_VALUE;
-
-    MAX_VALUES['{urn:hl7-org:elm-types:r1}Date'] = MathUtil.MAX_DATE_VALUE;
+    MAX_VALUES['{urn:hl7-org:elm-types:r1}DateTime'] = MathUtil.MAX_DATE_VALUE;
 
     MAX_VALUES['{urn:hl7-org:elm-types:r1}Time'] = MathUtil.MAX_TIME_VALUE;
 
@@ -23403,25 +23313,13 @@ function numberIsNaN (obj) {
     }
 
     Successor.prototype.exec = function(ctx) {
-      var arg, e, successor;
+      var arg;
       arg = this.execArgs(ctx);
-      successor = null;
       if (arg == null) {
-        null;
-      } else {
-        try {
-          successor = MathUtil.successor(arg);
-        } catch (error) {
-          e = error;
-          if (e instanceof MathUtil.OverFlowException) {
-            return null;
-          }
-        }
-      }
-      if (MathUtil.overflowsOrUnderflows(successor)) {
         return null;
+      } else {
+        return MathUtil.successor(arg);
       }
-      return successor;
     };
 
     return Successor;
@@ -23436,25 +23334,13 @@ function numberIsNaN (obj) {
     }
 
     Predecessor.prototype.exec = function(ctx) {
-      var arg, e, predecessor;
+      var arg;
       arg = this.execArgs(ctx);
-      predecessor = null;
       if (arg == null) {
-        null;
-      } else {
-        try {
-          predecessor = MathUtil.predecessor(arg);
-        } catch (error) {
-          e = error;
-          if (e instanceof MathUtil.OverFlowException) {
-            return null;
-          }
-        }
-      }
-      if (MathUtil.overflowsOrUnderflows(predecessor)) {
         return null;
+      } else {
+        return MathUtil.predecessor(arg);
       }
-      return predecessor;
     };
 
     return Predecessor;
@@ -24806,7 +24692,7 @@ function numberIsNaN (obj) {
 },{"../datatypes/datatypes":119,"../datatypes/quantity":124,"./builder":129,"./expression":135}],139:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Collapse, End, Ends, Expand, Expression, Interval, MAX_DATETIME_VALUE, MIN_DATETIME_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Size, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, doSubtraction, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor, truncateDecimal,
+  var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Size, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty,
     indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
@@ -24817,9 +24703,9 @@ function numberIsNaN (obj) {
 
   build = require('./builder').build;
 
-  ref1 = require('../datatypes/quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, doSubtraction = ref1.doSubtraction, compare_units = ref1.compare_units, convert_value = ref1.convert_value;
+  ref1 = require('../datatypes/quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, compare_units = ref1.compare_units, convert_value = ref1.convert_value;
 
-  ref2 = require('../util/math'), successor = ref2.successor, predecessor = ref2.predecessor, MAX_DATETIME_VALUE = ref2.MAX_DATETIME_VALUE, MIN_DATETIME_VALUE = ref2.MIN_DATETIME_VALUE;
+  ref2 = require('../util/math'), successor = ref2.successor, predecessor = ref2.predecessor, MIN_FLOAT_PRECISION_VALUE = ref2.MIN_FLOAT_PRECISION_VALUE;
 
   dtivl = require('../datatypes/interval');
 
@@ -25074,16 +24960,12 @@ function numberIsNaN (obj) {
     }
 
     Start.prototype.exec = function(ctx) {
-      var interval, start;
+      var interval;
       interval = this.arg.execute(ctx);
       if (interval == null) {
         return null;
       }
-      start = interval.start();
-      if ((start != null ? start.isDateTime : void 0) && start.equals(MIN_DATETIME_VALUE)) {
-        start.timezoneOffset = ctx.getTimezoneOffset();
-      }
-      return start;
+      return interval.start();
     };
 
     return Start;
@@ -25098,16 +24980,12 @@ function numberIsNaN (obj) {
     }
 
     End.prototype.exec = function(ctx) {
-      var end, interval;
+      var interval;
       interval = this.arg.execute(ctx);
       if (interval == null) {
         return null;
       }
-      end = interval.end();
-      if ((end != null ? end.isDateTime : void 0) && end.equals(MAX_DATETIME_VALUE)) {
-        end.timezoneOffset = ctx.getTimezoneOffset();
-      }
-      return end;
+      return interval.end();
     };
 
     return End;
@@ -25161,10 +25039,10 @@ function numberIsNaN (obj) {
   })(Expression);
 
   intervalListType = function(intervals) {
-    var high, i, itvl, len, low, ref3, ref4, type;
+    var high, itvl, j, len, low, ref3, ref4, type;
     type = null;
-    for (i = 0, len = intervals.length; i < len; i++) {
-      itvl = intervals[i];
+    for (j = 0, len = intervals.length; j < len; j++) {
+      itvl = intervals[j];
       if (itvl == null) {
         continue;
       }
@@ -25236,7 +25114,7 @@ function numberIsNaN (obj) {
     }
 
     Expand.prototype.exec = function(ctx) {
-      var defaultPer, expandFunction, i, interval, intervals, items, len, per, ref3, results, type;
+      var defaultPer, expandFunction, interval, intervals, items, j, len, per, ref3, results, type;
       ref3 = this.execArgs(ctx), intervals = ref3[0], per = ref3[1];
       type = intervalListType(intervals);
       if (type === 'mismatch') {
@@ -25268,8 +25146,8 @@ function numberIsNaN (obj) {
         throw new Error("Interval list type not yet supported.");
       }
       results = [];
-      for (i = 0, len = intervals.length; i < len; i++) {
-        interval = intervals[i];
+      for (j = 0, len = intervals.length; j < len; j++) {
+        interval = intervals[j];
         if (interval == null) {
           continue;
         }
@@ -25291,7 +25169,7 @@ function numberIsNaN (obj) {
     };
 
     Expand.prototype.expandDTishInterval = function(interval, per) {
-      var current_high, current_low, high, intervalToAdd, low, ref3, ref4, results;
+      var count, current_high, current_low, high, i, j, k, low, point_intervals, ref3, ref4, ref5, ref6, results;
       if ((ref3 = per.unit) === 'week' || ref3 === 'weeks') {
         per.value *= 7;
         per.unit = 'day';
@@ -25299,7 +25177,7 @@ function numberIsNaN (obj) {
       if (ref4 = per.unit, indexOf.call(interval.low.constructor.FIELDS, ref4) < 0) {
         return null;
       }
-      if (!((interval.low != null) && (interval.high != null))) {
+      if (interval.low.isLessPrecise(per.unit)) {
         return null;
       }
       low = interval.lowClosed ? interval.low : interval.low.successor();
@@ -25307,42 +25185,34 @@ function numberIsNaN (obj) {
       if (low.after(high)) {
         return [];
       }
-      if (interval.low.isLessPrecise(per.unit) || interval.high.isLessPrecise(per.unit)) {
-        return [];
-      }
       current_low = low;
       results = [];
-      low = this.truncateToPrecision(low, per.unit);
-      high = this.truncateToPrecision(high, per.unit);
-      current_high = current_low.add(per.value, per.unit).predecessor();
-      intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
-      while (intervalToAdd.high.sameOrBefore(high)) {
-        results.push(intervalToAdd);
-        current_low = current_low.add(per.value, per.unit);
-        current_high = current_low.add(per.value, per.unit).predecessor();
-        intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
+      point_intervals = current_low.add(per.value, per.unit).predecessor().equals(current_low);
+      if (per.unit === low.getPrecision()) {
+        count = Math.floor((low.durationBetween(high, per.unit).high + 1) / per.value);
+      } else {
+        count = Math.floor((low.durationBetween(high, per.unit).low + 1) / per.value);
+      }
+      if (point_intervals) {
+        for (i = j = 1, ref5 = count + 1; 1 <= ref5 ? j <= ref5 : j >= ref5; i = 1 <= ref5 ? ++j : --j) {
+          results.push(new dtivl.Interval(current_low, current_low.copy(), true, true));
+          current_low = current_low.add(per.value, per.unit);
+        }
+      } else {
+        for (i = k = 1, ref6 = count; 1 <= ref6 ? k <= ref6 : k >= ref6; i = 1 <= ref6 ? ++k : --k) {
+          current_high = current_low.add(per.value, per.unit).predecessor();
+          results.push(new dtivl.Interval(current_low, current_high, true, true));
+          current_low = current_low.add(per.value, per.unit);
+        }
+      }
+      if (results.length > 0 && !results[results.length - 1].high.sameOrBefore(high)) {
+        results.pop();
       }
       return results;
     };
 
-    Expand.prototype.truncateToPrecision = function(value, unit) {
-      var field, i, len, ref3, shouldTruncate;
-      shouldTruncate = false;
-      ref3 = value.constructor.FIELDS;
-      for (i = 0, len = ref3.length; i < len; i++) {
-        field = ref3[i];
-        if (shouldTruncate) {
-          value[field] = null;
-        }
-        if (field === unit) {
-          shouldTruncate = true;
-        }
-      }
-      return value;
-    };
-
     Expand.prototype.expandQuantityInterval = function(interval, per) {
-      var high_value, i, itvl, len, low_value, per_value, result_units, results;
+      var high_value, itvl, j, len, low_value, per_value, result_units, results;
       if (compare_units(interval.low.unit, per.unit) > 0) {
         result_units = per.unit;
       } else {
@@ -25355,8 +25225,8 @@ function numberIsNaN (obj) {
         return null;
       }
       results = this.makeNumericIntervalList(low_value, high_value, interval.lowClosed, interval.highClosed, per_value);
-      for (i = 0, len = results.length; i < len; i++) {
-        itvl = results[i];
+      for (j = 0, len = results.length; j < len; j++) {
+        itvl = results[j];
         itvl.low = new Quantity(itvl.low, result_units);
         itvl.high = new Quantity(itvl.high, result_units);
       }
@@ -25364,43 +25234,34 @@ function numberIsNaN (obj) {
     };
 
     Expand.prototype.expandNumericInterval = function(interval, per) {
-      if (!(per.unit === '1' || per.unit === '')) {
+      if (per.unit !== '1') {
         return null;
       }
       return this.makeNumericIntervalList(interval.low, interval.high, interval.lowClosed, interval.highClosed, per.value);
     };
 
-    Expand.prototype.makeNumericIntervalList = function(low, high, lowClosed, highClosed, perValue) {
-      var current_high, current_low, decimalPrecision, intervalToAdd, perIsDecimal, perUnitSize, results;
-      perIsDecimal = perValue.toString().includes('.');
-      decimalPrecision = perIsDecimal ? 8 : 0;
-      low = lowClosed ? low : successor(low);
-      high = highClosed ? high : predecessor(high);
-      low = truncateDecimal(low, decimalPrecision);
-      high = truncateDecimal(high, decimalPrecision);
+    Expand.prototype.makeNumericIntervalList = function(low, high, lowClosed, highClosed, per) {
+      var gap, point_intervals, results, width, x;
+      point_intervals = Number.isInteger(low) && Number.isInteger(high) && Number.isInteger(per);
+      gap = point_intervals ? 1 : MIN_FLOAT_PRECISION_VALUE;
+      if (!lowClosed) {
+        low = low + gap;
+      }
+      if (!highClosed) {
+        high = high - gap;
+      }
+      width = per - gap;
       if (low > high) {
         return [];
       }
-      if (!((low != null) && (high != null))) {
-        return [];
-      }
-      perUnitSize = perIsDecimal ? 0.00000001 : 1;
-      if (low === high && Number.isInteger(low) && Number.isInteger(high) && !Number.isInteger(perValue)) {
-        high = parseFloat((high + 1).toFixed(decimalPrecision));
-      }
-      current_low = low;
-      results = [];
-      if (perValue > (high - low + perUnitSize)) {
-        return [];
-      }
-      current_high = parseFloat((current_low + perValue - perUnitSize).toFixed(decimalPrecision));
-      intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
-      while (intervalToAdd.high <= high) {
-        results.push(intervalToAdd);
-        current_low = parseFloat((current_low + perValue).toFixed(decimalPrecision));
-        current_high = parseFloat((current_low + perValue - perUnitSize).toFixed(decimalPrecision));
-        intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
-      }
+      results = (function() {
+        var j, ref3, ref4, ref5, results1;
+        results1 = [];
+        for (x = j = ref3 = low, ref4 = high - width, ref5 = per; ref5 > 0 ? j <= ref4 : j >= ref4; x = j += ref5) {
+          results1.push(new dtivl.Interval(x, x + width, true, true));
+        }
+        return results1;
+      })();
       return results;
     };
 
@@ -25426,10 +25287,10 @@ function numberIsNaN (obj) {
   })(Expression);
 
   collapseIntervals = function(intervals, perWidth) {
-    var a, b, collapsedIntervals, i, interval, intervalsClone, len, ref3, ref4, ref5, ref6;
+    var a, b, collapsedIntervals, interval, intervalsClone, j, len, ref3, ref4, ref5, ref6;
     intervalsClone = [];
-    for (i = 0, len = intervals.length; i < len; i++) {
-      interval = intervals[i];
+    for (j = 0, len = intervals.length; j < len; j++) {
+      interval = intervals[j];
       if (interval != null) {
         intervalsClone.push(interval.copy());
       }
@@ -25523,12 +25384,6 @@ function numberIsNaN (obj) {
       collapsedIntervals.push(a);
       return collapsedIntervals;
     }
-  };
-
-  truncateDecimal = function(decimal, decimalPlaces) {
-    var re;
-    re = new RegExp('^-?\\d+(?:\.\\d{0,' + (decimalPlaces || -1) + '})?');
-    return parseFloat(decimal.toString().match(re)[0]);
   };
 
 }).call(this);
@@ -25640,7 +25495,7 @@ function numberIsNaN (obj) {
 },{"../runtime/results":247,"./expressions":136}],141:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Current, Distinct, Exists, Expression, Filter, First, Flatten, ForEach, IndexOf, Last, List, SingletonFrom, Times, ToList, UnimplementedExpression, ValueSet, build, doContains, doDistinct, doIncludes, equals, ref, removeDuplicateNulls, typeIsArray,
+  var Current, Distinct, Exists, Expression, Filter, First, Flatten, ForEach, IndexOf, Last, List, SingletonFrom, Times, ToList, UnimplementedExpression, ValueSet, build, doContains, doDistinct, doIncludes, equals, ref, typeIsArray,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
@@ -25712,15 +25567,12 @@ function numberIsNaN (obj) {
   })(Expression);
 
   module.exports.doUnion = function(a, b) {
-    var distinct;
-    distinct = doDistinct(a.concat(b));
-    return removeDuplicateNulls(distinct);
+    return doDistinct(a.concat(b));
   };
 
   module.exports.doExcept = function(a, b) {
-    var distinct, itm, j, len, results, setList;
-    distinct = doDistinct(a);
-    setList = removeDuplicateNulls(distinct);
+    var itm, j, len, results, setList;
+    setList = doDistinct(a);
     results = [];
     for (j = 0, len = setList.length; j < len; j++) {
       itm = setList[j];
@@ -25732,9 +25584,8 @@ function numberIsNaN (obj) {
   };
 
   module.exports.doIntersect = function(a, b) {
-    var distinct, itm, j, len, results, setList;
-    distinct = doDistinct(a);
-    setList = removeDuplicateNulls(distinct);
+    var itm, j, len, results, setList;
+    setList = doDistinct(a);
     results = [];
     for (j = 0, len = setList.length; j < len; j++) {
       itm = setList[j];
@@ -25923,27 +25774,22 @@ function numberIsNaN (obj) {
   })(Expression);
 
   doDistinct = function(list) {
-    var distinct;
-    distinct = [];
+    var firstNullFound, item, j, len, seen, setList;
+    seen = [];
     list.filter(function(item) {
       var isNew;
-      isNew = distinct.every(function(seenItem) {
+      isNew = seen.every(function(seenItem) {
         return !equals(item, seenItem);
       });
       if (isNew) {
-        distinct.push(item);
+        seen.push(item);
       }
       return isNew;
     });
-    return distinct;
-  };
-
-  removeDuplicateNulls = function(list) {
-    var firstNullFound, item, j, len, setList;
     firstNullFound = false;
     setList = [];
-    for (j = 0, len = list.length; j < len; j++) {
-      item = list[j];
+    for (j = 0, len = seen.length; j < len; j++) {
+      item = seen[j];
       if (item !== null) {
         setList.push(item);
       }
@@ -27562,20 +27408,15 @@ function numberIsNaN (obj) {
     }
 
     Combine.prototype.exec = function(ctx) {
-      var filteredArray, separator, source;
+      var separator, source;
       source = this.source.execute(ctx);
       separator = this.separator != null ? this.separator.execute(ctx) : '';
-      if (source == null) {
+      if ((source == null) || source.some(function(x) {
+        return x == null;
+      })) {
         return null;
       } else {
-        filteredArray = source.filter(function(x) {
-          return x !== null && x !== void 0;
-        });
-        if (filteredArray.length < 1) {
-          return null;
-        } else {
-          return filteredArray.join(separator);
-        }
+        return source.join(separator);
       }
     };
 
@@ -64690,7 +64531,7 @@ function numberIsNaN (obj) {
 },{"../cql-datatypes":115,"./core":171}],244:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Context, Exception, Library, PatientContext, UnfilteredContext, dt, typeIsArray, util,
+  var Context, Exception, Library, PatientContext, PopulationContext, dt, typeIsArray, util,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
@@ -65084,34 +64925,34 @@ function numberIsNaN (obj) {
 
   })(Context);
 
-  module.exports.UnfilteredContext = UnfilteredContext = (function(superClass) {
-    extend(UnfilteredContext, superClass);
+  module.exports.PopulationContext = PopulationContext = (function(superClass) {
+    extend(PopulationContext, superClass);
 
-    function UnfilteredContext(library1, results, codeService, parameters, executionDateTime) {
+    function PopulationContext(library1, results, codeService, parameters, executionDateTime) {
       this.library = library1;
       this.results = results;
       this.executionDateTime = executionDateTime != null ? executionDateTime : dt.DateTime.fromJSDate(new Date());
-      UnfilteredContext.__super__.constructor.call(this, this.library, codeService, parameters);
+      PopulationContext.__super__.constructor.call(this, this.library, codeService, parameters);
     }
 
-    UnfilteredContext.prototype.rootContext = function() {
+    PopulationContext.prototype.rootContext = function() {
       return this;
     };
 
-    UnfilteredContext.prototype.findRecords = function(template) {
-      throw new Exception("Retreives are not currently supported in Unfiltered Context");
+    PopulationContext.prototype.findRecords = function(template) {
+      throw new Exception("Retreives are not currently supported in Population Context");
     };
 
-    UnfilteredContext.prototype.getLibraryContext = function(library) {
-      throw new Exception("Library expressions are not currently supported in Unfiltered Context");
+    PopulationContext.prototype.getLibraryContext = function(library) {
+      throw new Exception("Library expressions are not currently supported in Population Context");
     };
 
-    UnfilteredContext.prototype.get = function(identifier) {
+    PopulationContext.prototype.get = function(identifier) {
       var pid, ref, ref1, res, results;
       if (this.context_values[identifier]) {
         return this.context_values[identifier];
       }
-      if (((ref = this.library[identifier]) != null ? ref.context : void 0) === "Unfiltered") {
+      if (((ref = this.library[identifier]) != null ? ref.context : void 0) === "Population") {
         return this.library.expressions[identifier];
       }
       ref1 = this.results.patientResults;
@@ -65123,7 +64964,7 @@ function numberIsNaN (obj) {
       return results;
     };
 
-    return UnfilteredContext;
+    return PopulationContext;
 
   })(Context);
 
@@ -65134,7 +64975,7 @@ function numberIsNaN (obj) {
 },{"../datatypes/datatypes":119,"../datatypes/exception":121,"../elm/library":140,"../util/util":250,"util":374}],245:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Executor, PatientContext, Results, UnfilteredContext, ref;
+  var Executor, PatientContext, PopulationContext, Results, ref;
 
   module.exports.Executor = Executor = (function() {
     function Executor(library, codeService, parameters) {
@@ -65171,14 +65012,14 @@ function numberIsNaN (obj) {
     };
 
     Executor.prototype.exec = function(patientSource, executionDateTime) {
-      var expr, key, r, ref, unfilteredContext;
+      var expr, key, popContext, r, ref;
       Results(r = this.exec_patient_context(patientSource, executionDateTime));
-      unfilteredContext = new UnfilteredContext(this.library, r, this.codeService, this.parameters);
+      popContext = new PopulationContext(this.library, r, this.codeService, this.parameters);
       ref = this.library.expressions;
       for (key in ref) {
         expr = ref[key];
-        if (expr.context === "Unfiltered") {
-          r.recordUnfilteredResult(key, expr.exec(unfilteredContext));
+        if (expr.context === "Population") {
+          r.recordPopulationResult(key, expr.exec(popContext));
         }
       }
       return r;
@@ -65207,7 +65048,7 @@ function numberIsNaN (obj) {
 
   Results = require('./results').Results;
 
-  ref = require('./context'), UnfilteredContext = ref.UnfilteredContext, PatientContext = ref.PatientContext;
+  ref = require('./context'), PopulationContext = ref.PopulationContext, PatientContext = ref.PatientContext;
 
 }).call(this);
 
@@ -65263,7 +65104,7 @@ function numberIsNaN (obj) {
   module.exports.Results = Results = (function() {
     function Results() {
       this.patientResults = {};
-      this.unfilteredResults = {};
+      this.populationResults = {};
       this.localIdPatientResultsMap = {};
     }
 
@@ -65278,8 +65119,8 @@ function numberIsNaN (obj) {
       return this.localIdPatientResultsMap[patientId] = patient_ctx.getAllLocalIds();
     };
 
-    Results.prototype.recordUnfilteredResult = function(resultName, result) {
-      return this.unfilteredResults[resultName] = result;
+    Results.prototype.recordPopulationResult = function(resultName, result) {
+      return this.populationResults[resultName] = result;
     };
 
     return Results;
@@ -65544,13 +65385,13 @@ function numberIsNaN (obj) {
 },{"../datatypes/datetime":120,"../datatypes/uncertainty":126}],249:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Date, DateTime, Exception, MAX_DATETIME_VALUE, MAX_DATE_VALUE, MAX_FLOAT_VALUE, MAX_INT_VALUE, MAX_TIME_VALUE, MIN_DATETIME_VALUE, MIN_DATE_VALUE, MIN_FLOAT_PRECISION_VALUE, MIN_FLOAT_VALUE, MIN_INT_VALUE, MIN_TIME_VALUE, OverFlowException, Uncertainty, isValidDecimal, isValidInteger, predecessor, ref, successor,
+  var DateTime, Exception, MAX_DATE_VALUE, MAX_FLOAT_VALUE, MAX_INT_VALUE, MAX_TIME_VALUE, MIN_DATE_VALUE, MIN_FLOAT_PRECISION_VALUE, MIN_FLOAT_VALUE, MIN_INT_VALUE, MIN_TIME_VALUE, OverFlowException, Uncertainty, isValidDecimal, isValidInteger, predecessor, successor,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
   Exception = require('../datatypes/exception').Exception;
 
-  ref = require('../datatypes/datetime'), DateTime = ref.DateTime, Date = ref.Date;
+  DateTime = require('../datatypes/datetime').DateTime;
 
   Uncertainty = require('../datatypes/uncertainty').Uncertainty;
 
@@ -65564,58 +65405,13 @@ function numberIsNaN (obj) {
 
   module.exports.MIN_FLOAT_PRECISION_VALUE = MIN_FLOAT_PRECISION_VALUE = Math.pow(10, -8);
 
-  module.exports.MIN_DATETIME_VALUE = MIN_DATETIME_VALUE = DateTime.parse("0001-01-01T00:00:00.000");
+  module.exports.MIN_DATE_VALUE = MIN_DATE_VALUE = DateTime.parse("0001-01-01T00:00:00.000");
 
-  module.exports.MAX_DATETIME_VALUE = MAX_DATETIME_VALUE = DateTime.parse("9999-12-31T23:59:59.999");
-
-  module.exports.MIN_DATE_VALUE = MIN_DATE_VALUE = Date.parse("0001-01-01");
-
-  module.exports.MAX_DATE_VALUE = MAX_DATE_VALUE = Date.parse("9999-12-31");
+  module.exports.MAX_DATE_VALUE = MAX_DATE_VALUE = DateTime.parse("9999-12-31T23:59:59.999");
 
   module.exports.MIN_TIME_VALUE = MIN_TIME_VALUE = DateTime.parse("0000-01-01T00:00:00.000");
 
   module.exports.MAX_TIME_VALUE = MAX_TIME_VALUE = DateTime.parse("0000-01-01T23:59:59.999");
-
-  module.exports.overflowsOrUnderflows = function(value) {
-    if (value == null) {
-      return false;
-    }
-    if (value.isQuantity) {
-      if (!isValidDecimal(value.value)) {
-        return true;
-      }
-    } else if (value.isDateTime) {
-      if (value.after(MAX_DATETIME_VALUE)) {
-        return true;
-      }
-      if (value.before(MIN_DATETIME_VALUE)) {
-        return true;
-      }
-    } else if (value.isDate) {
-      if (value.after(MAX_DATE_VALUE)) {
-        return true;
-      }
-      if (value.before(MIN_DATE_VALUE)) {
-        return true;
-      }
-    } else if (value.isTime) {
-      if (value.after(MAX_TIME_VALUE)) {
-        return true;
-      }
-      if (value.before(MIN_TIME_VALUE)) {
-        return true;
-      }
-    } else if (Number.isInteger(value)) {
-      if (!isValidInteger(value)) {
-        return true;
-      }
-    } else {
-      if (!isValidDecimal(value)) {
-        return true;
-      }
-    }
-    return false;
-  };
 
   module.exports.isValidInteger = isValidInteger = function(integer) {
     if (isNaN(integer)) {
@@ -65681,19 +65477,13 @@ function numberIsNaN (obj) {
         return val + MIN_FLOAT_PRECISION_VALUE;
       }
     } else if (val instanceof DateTime) {
-      if (val.sameAs(MAX_DATETIME_VALUE)) {
-        throw new OverFlowException();
-      } else {
-        return val.successor();
-      }
-    } else if (val != null ? val.isDate : void 0) {
       if (val.sameAs(MAX_DATE_VALUE)) {
         throw new OverFlowException();
       } else {
         return val.successor();
       }
-    } else if (val != null ? val.isTime : void 0) {
-      if (val.sameAs(MAX_TIME_VALUE)) {
+    } else if (val != null ? val.isDate : void 0) {
+      if (val.sameAs(MAX_DATE_VALUE.getDate())) {
         throw new OverFlowException();
       } else {
         return val.successor();
@@ -65730,19 +65520,13 @@ function numberIsNaN (obj) {
         return val - MIN_FLOAT_PRECISION_VALUE;
       }
     } else if (val instanceof DateTime) {
-      if (val.sameAs(MIN_DATETIME_VALUE)) {
-        throw new OverFlowException();
-      } else {
-        return val.predecessor();
-      }
-    } else if (val != null ? val.isDate : void 0) {
       if (val.sameAs(MIN_DATE_VALUE)) {
         throw new OverFlowException();
       } else {
         return val.predecessor();
       }
-    } else if (val != null ? val.isTime : void 0) {
-      if (val.sameAs(MIN_TIME_VALUE)) {
+    } else if (val != null ? val.isDate : void 0) {
+      if (val.sameAs(MIN_DATE_VALUE.getDate())) {
         throw new OverFlowException();
       } else {
         return val.predecessor();
@@ -65775,11 +65559,9 @@ function numberIsNaN (obj) {
         return MAX_FLOAT_VALUE;
       }
     } else if (val instanceof DateTime) {
-      return MAX_DATETIME_VALUE.copy();
+      return MAX_DATE_VALUE;
     } else if (val != null ? val.isDate : void 0) {
-      return MAX_DATE_VALUE.copy();
-    } else if (val != null ? val.isTime : void 0) {
-      return MAX_TIME_VALUE.copy();
+      return MAX_DATE_VALUE.getDate();
     } else if (val != null ? val.isQuantity : void 0) {
       val2 = val.clone();
       val2.value = maxValueForInstance(val2.value);
@@ -65798,11 +65580,9 @@ function numberIsNaN (obj) {
         return MIN_FLOAT_VALUE;
       }
     } else if (val instanceof DateTime) {
-      return MIN_DATETIME_VALUE.copy();
+      return MIN_DATE_VALUE;
     } else if (val != null ? val.isDate : void 0) {
-      return MIN_DATE_VALUE.copy();
-    } else if (val != null ? val.isTime : void 0) {
-      return MIN_TIME_VALUE.copy();
+      return MIN_DATE_VALUE.getDate();
     } else if (val != null ? val.isQuantity : void 0) {
       val2 = val.clone();
       val2.value = minValueForInstance(val2.value);
