@@ -1,8 +1,10 @@
-const cql = require('cql-execution');
 const Code = require('./../../../app/assets/javascripts/basetypes/Code.js');
 const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
-const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
 const Interval = require('./../../../app/assets/javascripts/basetypes/Interval.js');
+const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
+const Quantity = require('./../../../app/assets/javascripts/basetypes/Quantity.js');
+const Ratio = require('./../../../app/assets/javascripts/basetypes/Ratio.js');
+const cql = require('cql-execution');
 
 describe('basetype DateTime', () => {
   it('can create a DateTime from JS Date', () => {
@@ -107,5 +109,43 @@ describe('basetype Code', () => {
     const code = new cql.Code('12345', '1.2.3.4.5.6');
     const castedCode = (new Code()).cast(code);
     expect(castedCode).toBe(code);
+  });
+});
+
+describe('basetype Ratio', () => {
+  it('can create a Ratio from cql Quantities', () => {
+    const ratio = (new Ratio()).cast({numerator: new cql.Quantity(2, 'mg'), denominator: new cql.Quantity(1, 'mg')});
+    expect(ratio.numerator.value).toEqual(2);
+    expect(ratio.numerator.unit).toEqual('mg');
+    expect(ratio.denominator.value).toEqual(1);
+    expect(ratio.denominator.unit).toEqual('mg');
+  });
+
+  it('does not allow creation of Ratio with missing numerator', () => {
+    expect(() => {(new Ratio()).cast({denominator: new cql.Quantity(1, 'mg')});}).toThrow();
+  });
+
+  it('does not allow creation of Ratio with missing denominator', () => {
+    expect(() => {(new Ratio()).cast({numerator: new cql.Quantity(1, 'mg')});}).toThrow();
+  });
+});
+
+describe('basetype Quantity', () => {
+  it('can create a Quantity from a hash', () => {
+    const quantity = (new Quantity()).cast({value: 1, unit: 'mg'});
+    expect(quantity.value).toEqual(1);
+    expect(quantity.unit).toEqual('mg');
+  });
+
+  it('does not allow creation of Quantity with missing value', () => {
+    expect(() => {(new Quantity()).cast({unit: 'mg'});}).toThrow();
+  });
+
+  it('does not allow creation of Quantity with missing unit', () => {
+    expect(() => {(new Quantity()).cast({value: 1});}).toThrow();
+  });
+
+  it('does not allow creation of Quantity with invalid ucum unit', () => {
+    expect(() => {(new Quantity()).cast({value: 1, unit: 'cc'});}).toThrow();
   });
 });

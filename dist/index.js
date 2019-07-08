@@ -45,7 +45,7 @@ class AdverseEvent extends mongoose.Document {
 module.exports.AdverseEvent = AdverseEvent;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],2:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],2:[function(require,module,exports){
 module.exports.Identifier = require('./attributes/Identifier.js').Identifier;
 module.exports.IdentifierSchema = require('./attributes/Identifier.js').IdentifierSchema;
 module.exports.Entity = require('./attributes/Entity.js').Entity;
@@ -222,7 +222,7 @@ class AllergyIntolerance extends mongoose.Document {
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],4:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],4:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -268,7 +268,7 @@ class AssessmentOrder extends mongoose.Document {
 module.exports.AssessmentOrder = AssessmentOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],5:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],5:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -320,7 +320,7 @@ class AssessmentPerformed extends mongoose.Document {
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],6:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],6:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -366,7 +366,7 @@ class AssessmentRecommended extends mongoose.Document {
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],7:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],7:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -412,7 +412,7 @@ class CareGoal extends mongoose.Document {
 module.exports.CareGoal = CareGoal;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],8:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],8:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -463,7 +463,7 @@ class CommunicationPerformed extends mongoose.Document {
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],9:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],9:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -512,7 +512,7 @@ class DeviceApplied extends mongoose.Document {
 module.exports.DeviceApplied = DeviceApplied;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],10:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],10:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -558,7 +558,7 @@ class DeviceOrder extends mongoose.Document {
 module.exports.DeviceOrder = DeviceOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],11:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],11:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -604,7 +604,7 @@ class DeviceRecommended extends mongoose.Document {
 module.exports.DeviceRecommended = DeviceRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],12:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],12:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -651,7 +651,7 @@ class Diagnosis extends mongoose.Document {
 module.exports.Diagnosis = Diagnosis;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],13:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],13:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -697,7 +697,7 @@ class DiagnosticStudyOrder extends mongoose.Document {
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],14:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],14:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -751,7 +751,7 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],15:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],15:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -797,7 +797,7 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],16:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],16:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -845,7 +845,7 @@ class EncounterOrder extends mongoose.Document {
 module.exports.EncounterOrder = EncounterOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],17:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],17:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -897,7 +897,7 @@ class EncounterPerformed extends mongoose.Document {
 module.exports.EncounterPerformed = EncounterPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],18:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],18:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -944,7 +944,7 @@ class EncounterRecommended extends mongoose.Document {
 module.exports.EncounterRecommended = EncounterRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],19:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],19:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -989,7 +989,7 @@ class FamilyHistory extends mongoose.Document {
 module.exports.FamilyHistory = FamilyHistory;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],20:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],20:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1039,7 +1039,7 @@ class ImmunizationAdministered extends mongoose.Document {
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],21:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],21:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1089,7 +1089,7 @@ class ImmunizationOrder extends mongoose.Document {
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],22:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],22:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1135,7 +1135,7 @@ class InterventionOrder extends mongoose.Document {
 module.exports.InterventionOrder = InterventionOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],23:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],23:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1185,7 +1185,7 @@ class InterventionPerformed extends mongoose.Document {
 module.exports.InterventionPerformed = InterventionPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],24:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],24:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1231,7 +1231,7 @@ class InterventionRecommended extends mongoose.Document {
 module.exports.InterventionRecommended = InterventionRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],25:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],25:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1277,7 +1277,7 @@ class LaboratoryTestOrder extends mongoose.Document {
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],26:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],26:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1331,7 +1331,7 @@ class LaboratoryTestPerformed extends mongoose.Document {
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],27:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],27:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1377,7 +1377,7 @@ class LaboratoryTestRecommended extends mongoose.Document {
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],28:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],28:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1425,7 +1425,7 @@ class MedicationActive extends mongoose.Document {
 module.exports.MedicationActive = MedicationActive;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],29:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],29:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1476,7 +1476,7 @@ class MedicationAdministered extends mongoose.Document {
 module.exports.MedicationAdministered = MedicationAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],30:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],30:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1528,7 +1528,7 @@ class MedicationDischarge extends mongoose.Document {
 module.exports.MedicationDischarge = MedicationDischarge;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],31:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],31:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1582,7 +1582,7 @@ class MedicationDispensed extends mongoose.Document {
 module.exports.MedicationDispensed = MedicationDispensed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],32:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],32:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1636,7 +1636,7 @@ class MedicationOrder extends mongoose.Document {
 module.exports.MedicationOrder = MedicationOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],33:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],33:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1679,7 +1679,7 @@ class Participation extends mongoose.Document {
 module.exports.Participation = Participation;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],34:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],34:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1722,7 +1722,7 @@ class PatientCareExperience extends mongoose.Document {
 module.exports.PatientCareExperience = PatientCareExperience;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],35:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],35:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1764,7 +1764,7 @@ class PatientCharacteristic extends mongoose.Document {
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],36:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],36:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1807,7 +1807,7 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],37:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],37:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1852,7 +1852,7 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],38:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],38:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1894,7 +1894,7 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],39:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],39:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1938,7 +1938,7 @@ class PatientCharacteristicExpired extends mongoose.Document {
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],40:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],40:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1981,7 +1981,7 @@ class PatientCharacteristicPayer extends mongoose.Document {
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],41:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],41:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2023,7 +2023,7 @@ class PatientCharacteristicRace extends mongoose.Document {
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],42:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],42:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2065,7 +2065,7 @@ class PatientCharacteristicSex extends mongoose.Document {
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],43:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],43:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2112,7 +2112,7 @@ class PhysicalExamOrder extends mongoose.Document {
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],44:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],44:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2164,7 +2164,7 @@ class PhysicalExamPerformed extends mongoose.Document {
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],45:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],45:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2211,7 +2211,7 @@ class PhysicalExamRecommended extends mongoose.Document {
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],46:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],46:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2260,7 +2260,7 @@ class ProcedureOrder extends mongoose.Document {
 module.exports.ProcedureOrder = ProcedureOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],47:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],47:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2316,7 +2316,7 @@ class ProcedurePerformed extends mongoose.Document {
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],48:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],48:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2364,7 +2364,7 @@ class ProcedureRecommended extends mongoose.Document {
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],49:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],49:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2407,7 +2407,7 @@ class ProviderCareExperience extends mongoose.Document {
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],50:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],50:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2667,7 +2667,7 @@ class QDMPatient extends mongoose.Document {
 }
 module.exports.QDMPatient = QDMPatient;
 
-},{"./AllDataElements":2,"./basetypes/Code":68,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/Quantity":73,"mongoose/browser":264}],51:[function(require,module,exports){
+},{"./AllDataElements":2,"./basetypes/Code":68,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/Quantity":73,"mongoose/browser":265}],51:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2710,7 +2710,7 @@ class RelatedPerson extends mongoose.Document {
 module.exports.RelatedPerson = RelatedPerson;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],52:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],52:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2745,7 +2745,7 @@ class PlaceholderResult extends mongoose.Document {
 }
 module.exports.PlaceholderResult = PlaceholderResult;
 
-},{"mongoose/browser":264}],53:[function(require,module,exports){
+},{"mongoose/browser":265}],53:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2795,7 +2795,7 @@ class SubstanceAdministered extends mongoose.Document {
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],54:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],54:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2847,7 +2847,7 @@ class SubstanceOrder extends mongoose.Document {
 module.exports.SubstanceOrder = SubstanceOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],55:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],55:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2897,7 +2897,7 @@ class SubstanceRecommended extends mongoose.Document {
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],56:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],56:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2942,7 +2942,7 @@ class Symptom extends mongoose.Document {
 module.exports.Symptom = Symptom;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":264}],57:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/Code":68,"./basetypes/DataElement":69,"./basetypes/DateTime":70,"./basetypes/Interval":71,"./basetypes/QDMDate":72,"./basetypes/Quantity":73,"mongoose/browser":265}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -2976,7 +2976,7 @@ class CarePartner extends mongoose.Document {
 module.exports.CarePartner = CarePartner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":264}],58:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":265}],58:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3029,7 +3029,7 @@ function ComponentSchemaFunction(add, options) {
 module.exports.Component = Component;
 module.exports.ComponentSchemaFunction = ComponentSchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"mongoose/browser":264}],59:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"mongoose/browser":265}],59:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3065,7 +3065,7 @@ class DiagnosisComponent extends mongoose.Document {
 module.exports.DiagnosisComponent = DiagnosisComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"mongoose/browser":264}],60:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"mongoose/browser":265}],60:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./Identifier');
@@ -3125,7 +3125,7 @@ function EntitySchemaFunction(add, options) {
 module.exports.Entity = Entity;
 module.exports.EntitySchemaFunction = EntitySchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Identifier":62,"mongoose/browser":264}],61:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Identifier":62,"mongoose/browser":265}],61:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3160,7 +3160,7 @@ class FacilityLocation extends mongoose.Document {
 module.exports.FacilityLocation = FacilityLocation;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"mongoose/browser":264}],62:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"mongoose/browser":265}],62:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
@@ -3183,7 +3183,7 @@ class Identifier extends mongoose.Document {
 }
 module.exports.Identifier = Identifier;
 
-},{"mongoose/browser":264}],63:[function(require,module,exports){
+},{"mongoose/browser":265}],63:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3217,7 +3217,7 @@ class Organization extends mongoose.Document {
 module.exports.Organization = Organization;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":264}],64:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":265}],64:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3250,7 +3250,7 @@ class PatientEntity extends mongoose.Document {
 module.exports.PatientEntity = PatientEntity;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":264}],65:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":265}],65:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3286,7 +3286,7 @@ class Practitioner extends mongoose.Document {
 module.exports.Practitioner = Practitioner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":264}],66:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Entity":60,"mongoose/browser":265}],66:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { ComponentSchemaFunction } = require('./Component');
@@ -3320,7 +3320,7 @@ class ResultComponent extends mongoose.Document {
 module.exports.ResultComponent = ResultComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Component":58,"mongoose/browser":264}],67:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/QDMDate":72,"../basetypes/Quantity":73,"./Component":58,"mongoose/browser":265}],67:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3399,7 +3399,7 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
-},{"cql-execution":117,"mongoose/browser":264}],68:[function(require,module,exports){
+},{"cql-execution":117,"mongoose/browser":265}],68:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3432,7 +3432,7 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
-},{"cql-execution":117,"mongoose/browser":264}],69:[function(require,module,exports){
+},{"cql-execution":117,"mongoose/browser":265}],69:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
@@ -3486,7 +3486,7 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-},{"../attributes/Identifier":62,"./Code.js":68,"cql-execution":117,"mongoose/browser":264}],70:[function(require,module,exports){
+},{"../attributes/Identifier":62,"./Code.js":68,"cql-execution":117,"mongoose/browser":265}],70:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3510,7 +3510,7 @@ DateTime.prototype.cast = (dateTime) => {
 mongoose.Schema.Types.DateTime = DateTime;
 module.exports = DateTime;
 
-},{"cql-execution":117,"mongoose/browser":264}],71:[function(require,module,exports){
+},{"cql-execution":117,"mongoose/browser":265}],71:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const DateTime = require('./DateTime');
@@ -3549,7 +3549,7 @@ Interval.prototype.cast = (interval) => {
 mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
 
-},{"./DateTime":70,"cql-execution":117,"mongoose/browser":264}],72:[function(require,module,exports){
+},{"./DateTime":70,"cql-execution":117,"mongoose/browser":265}],72:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3568,7 +3568,7 @@ QDMDate.prototype.cast = (date) => {
 mongoose.Schema.Types.QDMDate = QDMDate;
 module.exports = QDMDate;
 
-},{"cql-execution":117,"mongoose/browser":264}],73:[function(require,module,exports){
+},{"cql-execution":117,"mongoose/browser":265}],73:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3590,7 +3590,7 @@ Quantity.prototype.cast = (quantity) => {
 mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;
 
-},{"cql-execution":117,"mongoose/browser":264}],74:[function(require,module,exports){
+},{"cql-execution":117,"mongoose/browser":265}],74:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { StatementDependencySchema } = require('./CQLStatementDependency');
 
@@ -3624,7 +3624,7 @@ class CQLLibrary extends mongoose.Document {
 }
 module.exports.CQLLibrary = CQLLibrary;
 
-},{"./CQLStatementDependency":75,"mongoose/browser":264}],75:[function(require,module,exports){
+},{"./CQLStatementDependency":75,"mongoose/browser":265}],75:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
@@ -3654,7 +3654,7 @@ class StatementDependency extends mongoose.Document {
 }
 module.exports.StatementDependency = StatementDependency;
 
-},{"mongoose/browser":264}],76:[function(require,module,exports){
+},{"mongoose/browser":265}],76:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -3684,7 +3684,7 @@ class ClauseResult extends mongoose.Document {
 }
 module.exports.ClauseResult = ClauseResult;
 
-},{"mongoose/browser":264}],77:[function(require,module,exports){
+},{"mongoose/browser":265}],77:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
@@ -3703,7 +3703,7 @@ class Concept extends mongoose.Document {
 }
 module.exports.Concept = Concept;
 
-},{"mongoose/browser":264}],78:[function(require,module,exports){
+},{"mongoose/browser":265}],78:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { ClauseResultSchema } = require('./ClauseResult');
 const { StatementResultSchema } = require('./StatementResult');
@@ -3793,7 +3793,7 @@ class IndividualResult extends mongoose.Document {
 }
 module.exports.IndividualResult = IndividualResult;
 
-},{"./ClauseResult":76,"./StatementResult":84,"mongoose/browser":264}],79:[function(require,module,exports){
+},{"./ClauseResult":76,"./StatementResult":84,"mongoose/browser":265}],79:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -3903,7 +3903,7 @@ class Measure extends mongoose.Document {
 }
 module.exports.Measure = Measure;
 
-},{"../AllDataElements":2,"../basetypes/Code":68,"../basetypes/DataElement":69,"../basetypes/Interval":71,"../basetypes/Quantity":73,"./CQLLibrary":74,"./PopulationSet":82,"mongoose/browser":264}],80:[function(require,module,exports){
+},{"../AllDataElements":2,"../basetypes/Code":68,"../basetypes/DataElement":69,"../basetypes/Interval":71,"../basetypes/Quantity":73,"./CQLLibrary":74,"./PopulationSet":82,"mongoose/browser":265}],80:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
@@ -3931,7 +3931,7 @@ class MeasurePackage extends mongoose.Document {
 }
 module.exports.MeasurePackage = MeasurePackage;
 
-},{"mongoose/browser":264}],81:[function(require,module,exports){
+},{"mongoose/browser":265}],81:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -3971,7 +3971,7 @@ class Patient extends mongoose.Document {
 }
 module.exports.Patient = Patient;
 
-},{"../QDMPatient":50,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/Quantity":73,"./Provider":83,"mongoose/browser":264}],82:[function(require,module,exports){
+},{"../QDMPatient":50,"../basetypes/Code":68,"../basetypes/DateTime":70,"../basetypes/Interval":71,"../basetypes/Quantity":73,"./Provider":83,"mongoose/browser":265}],82:[function(require,module,exports){
 /* eslint-disable no-unused-vars, no-param-reassign */
 const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
@@ -4061,7 +4061,7 @@ class PopulationSet extends mongoose.Document {
 }
 module.exports.PopulationSet = PopulationSet;
 
-},{"./CQLStatementDependency":75,"mongoose/browser":264}],83:[function(require,module,exports){
+},{"./CQLStatementDependency":75,"mongoose/browser":265}],83:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Schema, String, Boolean] = [
@@ -4105,7 +4105,7 @@ class Provider extends mongoose.Document {
 }
 module.exports.Provider = Provider;
 
-},{"mongoose/browser":264}],84:[function(require,module,exports){
+},{"mongoose/browser":265}],84:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -4148,7 +4148,7 @@ class StatementResult extends mongoose.Document {
 }
 module.exports.StatementResult = StatementResult;
 
-},{"mongoose/browser":264}],85:[function(require,module,exports){
+},{"mongoose/browser":265}],85:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
@@ -4176,7 +4176,7 @@ class ValueSet extends mongoose.Document {
 }
 module.exports.ValueSet = ValueSet;
 
-},{"./Concept.js":77,"mongoose/browser":264}],86:[function(require,module,exports){
+},{"./Concept.js":77,"mongoose/browser":265}],86:[function(require,module,exports){
 module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;
@@ -5322,7 +5322,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":89,"_process":367,"inherits":88}],91:[function(require,module,exports){
+},{"./support/isBuffer":89,"_process":368,"inherits":88}],91:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -11101,7 +11101,7 @@ module.exports = ret;
 },{"./es5":13}]},{},[4])(4)
 });                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"_process":367,"timers":371}],93:[function(require,module,exports){
+},{"_process":368,"timers":372}],93:[function(require,module,exports){
 (function (global){
 /**
  * Module dependencies.
@@ -14362,7 +14362,7 @@ module.exports.ObjectID = ObjectID;
 module.exports.ObjectId = ObjectID;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":367,"buffer":113,"util":373}],106:[function(require,module,exports){
+},{"_process":368,"buffer":113,"util":374}],106:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -16592,7 +16592,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = serializeInto;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":262,"../binary":93,"../float_parser":99,"../long":101,"../map":102,"../min_key":104,"./utils":109}],109:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":263,"../binary":93,"../float_parser":99,"../long":101,"../map":102,"../min_key":104,"./utils":109}],109:[function(require,module,exports){
 'use strict';
 
 /**
@@ -16697,7 +16697,7 @@ module.exports = Symbol;
 module.exports.Symbol = Symbol;
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":113,"util":373}],112:[function(require,module,exports){
+},{"buffer":113,"util":374}],112:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -19332,7 +19332,7 @@ function numberIsNaN (obj) {
   return obj !== obj // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":91,"ieee754":260}],114:[function(require,module,exports){
+},{"base64-js":91,"ieee754":261}],114:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, CodeService, ValueSet, ref;
@@ -19676,16 +19676,14 @@ function numberIsNaN (obj) {
 
 
 
-},{"./datatypes/datatypes":119,"./fhir/models":204,"./util/util":249}],117:[function(require,module,exports){
+},{"./datatypes/datatypes":119,"./fhir/models":205,"./util/util":250}],117:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var codeservice, context, datatypes, exec, expression, library, patient, quantity, ratio, repository, results;
+  var codeservice, context, datatypes, exec, expression, library, patient, quantity, repository, results;
 
   library = require('./elm/library');
 
   quantity = require('./elm/quantity');
-
-  ratio = require('./elm/ratio');
 
   expression = require('./elm/expression');
 
@@ -19739,7 +19737,7 @@ function numberIsNaN (obj) {
 
   module.exports.Quantity = datatypes.Quantity;
 
-  module.exports.Ratio = ratio.Ratio;
+  module.exports.Ratio = datatypes.Ratio;
 
   module.exports.ValueSet = datatypes.ValueSet;
 
@@ -19747,7 +19745,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./cql-code-service":114,"./cql-patient":116,"./datatypes/datatypes":119,"./elm/expression":134,"./elm/library":139,"./elm/quantity":146,"./elm/ratio":148,"./runtime/context":243,"./runtime/executor":244,"./runtime/repository":245,"./runtime/results":246}],118:[function(require,module,exports){
+},{"./cql-code-service":114,"./cql-patient":116,"./datatypes/datatypes":119,"./elm/expression":135,"./elm/library":140,"./elm/quantity":147,"./runtime/context":244,"./runtime/executor":245,"./runtime/repository":246,"./runtime/results":247}],118:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, CodeSystem, Concept, ValueSet, codesInList, codesMatch, toCodeList, typeIsArray;
@@ -19896,10 +19894,10 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":249}],119:[function(require,module,exports){
+},{"../util/util":250}],119:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var clinical, datetime, element, i, interval, j, len, len1, lib, libs, logic, quantity, ref, uncertainty;
+  var clinical, datetime, element, i, interval, j, len, len1, lib, libs, logic, quantity, ratio, ref, uncertainty;
 
   logic = require('./logic');
 
@@ -19913,7 +19911,9 @@ function numberIsNaN (obj) {
 
   quantity = require('./quantity');
 
-  libs = [logic, clinical, uncertainty, datetime, interval, quantity];
+  ratio = require('./ratio');
+
+  libs = [logic, clinical, uncertainty, datetime, interval, quantity, ratio];
 
   for (i = 0, len = libs.length; i < len; i++) {
     lib = libs[i];
@@ -19928,7 +19928,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./clinical":118,"./datetime":120,"./interval":122,"./logic":123,"./quantity":124,"./uncertainty":125}],120:[function(require,module,exports){
+},{"./clinical":118,"./datetime":120,"./interval":122,"./logic":123,"./quantity":124,"./ratio":125,"./uncertainty":126}],120:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Date, DateTime, Uncertainty, compareWithDefaultResult, cqlFormatStringToMomentFormatString, daysInMonth, getTimezoneSeparatorFromString, isValidDateStringFormat, isValidDateTimeStringFormat, jsDate, moment, normalizeMillisecondsField, normalizeMillisecondsFieldInString, ref,
@@ -21104,7 +21104,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":249,"./uncertainty":125,"moment":250}],121:[function(require,module,exports){
+},{"../util/util":250,"./uncertainty":126,"moment":251}],121:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Exception;
@@ -21126,17 +21126,17 @@ function numberIsNaN (obj) {
 },{}],122:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var DateTime, Interval, Quantity, ThreeValuedLogic, Uncertainty, cmp, maxValueForInstance, minValueForInstance, predecessor, ref, successor;
+  var DateTime, Interval, Quantity, ThreeValuedLogic, Uncertainty, cmp, doSubtraction, maxValueForInstance, minValueForInstance, predecessor, ref, ref1, successor;
 
   DateTime = require('./datetime').DateTime;
 
   Uncertainty = require('./uncertainty').Uncertainty;
 
-  Quantity = require('../datatypes/quantity').Quantity;
+  ref = require('../datatypes/quantity'), Quantity = ref.Quantity, doSubtraction = ref.doSubtraction;
 
   ThreeValuedLogic = require('./logic').ThreeValuedLogic;
 
-  ref = require('../util/math'), successor = ref.successor, predecessor = ref.predecessor, maxValueForInstance = ref.maxValueForInstance, minValueForInstance = ref.minValueForInstance;
+  ref1 = require('../util/math'), successor = ref1.successor, predecessor = ref1.predecessor, maxValueForInstance = ref1.maxValueForInstance, minValueForInstance = ref1.minValueForInstance;
 
   cmp = require('../util/comparison');
 
@@ -21206,9 +21206,9 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.overlaps = function(item, precision) {
-      var closed, high, itemClosed, low, ref1;
+      var closed, high, itemClosed, low, ref2;
       closed = this.toClosed();
-      ref1 = item instanceof Interval ? (itemClosed = item.toClosed(), [itemClosed.low, itemClosed.high]) : [item, item], low = ref1[0], high = ref1[1];
+      ref2 = item instanceof Interval ? (itemClosed = item.toClosed(), [itemClosed.low, itemClosed.high]) : [item, item], low = ref2[0], high = ref2[1];
       return ThreeValuedLogic.and(cmp.lessThanOrEquals(closed.low, high, precision), cmp.greaterThanOrEquals(closed.high, low, precision));
     };
 
@@ -21273,13 +21273,13 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.union = function(other) {
-      var a, b, h, hc, l, lc, ref1, ref2, ref3;
+      var a, b, h, hc, l, lc, ref2, ref3, ref4;
       if (!(other instanceof Interval)) {
         throw new Error("Argument to union must be an interval");
       }
       if (this.overlaps(other) || this.meets(other)) {
-        ref1 = [this.toClosed(), other.toClosed()], a = ref1[0], b = ref1[1];
-        ref2 = (function() {
+        ref2 = [this.toClosed(), other.toClosed()], a = ref2[0], b = ref2[1];
+        ref3 = (function() {
           switch (false) {
             case !cmp.lessThanOrEquals(a.low, b.low):
               return [this.low, this.lowClosed];
@@ -21292,8 +21292,8 @@ function numberIsNaN (obj) {
             default:
               return [this.low, this.lowClosed];
           }
-        }).call(this), l = ref2[0], lc = ref2[1];
-        ref3 = (function() {
+        }).call(this), l = ref3[0], lc = ref3[1];
+        ref4 = (function() {
           switch (false) {
             case !cmp.greaterThanOrEquals(a.high, b.high):
               return [this.high, this.highClosed];
@@ -21306,7 +21306,7 @@ function numberIsNaN (obj) {
             default:
               return [this.high, this.highClosed];
           }
-        }).call(this), h = ref3[0], hc = ref3[1];
+        }).call(this), h = ref4[0], hc = ref4[1];
         return new Interval(l, h, lc, hc);
       } else {
         return null;
@@ -21314,13 +21314,13 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.intersect = function(other) {
-      var a, b, h, hc, l, lc, ref1, ref2, ref3;
+      var a, b, h, hc, l, lc, ref2, ref3, ref4;
       if (!(other instanceof Interval)) {
         throw new Error("Argument to union must be an interval");
       }
       if (this.overlaps(other)) {
-        ref1 = [this.toClosed(), other.toClosed()], a = ref1[0], b = ref1[1];
-        ref2 = (function() {
+        ref2 = [this.toClosed(), other.toClosed()], a = ref2[0], b = ref2[1];
+        ref3 = (function() {
           switch (false) {
             case !cmp.greaterThanOrEquals(a.low, b.low):
               return [this.low, this.lowClosed];
@@ -21333,8 +21333,8 @@ function numberIsNaN (obj) {
             default:
               return [this.low, this.lowClosed];
           }
-        }).call(this), l = ref2[0], lc = ref2[1];
-        ref3 = (function() {
+        }).call(this), l = ref3[0], lc = ref3[1];
+        ref4 = (function() {
           switch (false) {
             case !cmp.lessThanOrEquals(a.high, b.high):
               return [this.high, this.highClosed];
@@ -21347,7 +21347,7 @@ function numberIsNaN (obj) {
             default:
               return [this.high, this.highClosed];
           }
-        }).call(this), h = ref3[0], hc = ref3[1];
+        }).call(this), h = ref4[0], hc = ref4[1];
         return new Interval(l, h, lc, hc);
       } else {
         return null;
@@ -21419,9 +21419,9 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.equals = function(other) {
-      var a, b, ref1;
+      var a, b, ref2;
       if (other instanceof Interval) {
-        ref1 = [this.toClosed(), other.toClosed()], a = ref1[0], b = ref1[1];
+        ref2 = [this.toClosed(), other.toClosed()], a = ref2[0], b = ref2[1];
         return ThreeValuedLogic.and(cmp.equals(a.low, b.low), cmp.equals(a.high, b.high));
       } else {
         return false;
@@ -21453,10 +21453,10 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.meetsAfter = function(other, precision) {
-      var ref1;
+      var ref2;
       try {
         if ((precision != null) && this.low instanceof DateTime) {
-          return this.toClosed().low.sameAs((ref1 = other.toClosed().high) != null ? ref1.add(1, precision) : void 0, precision);
+          return this.toClosed().low.sameAs((ref2 = other.toClosed().high) != null ? ref2.add(1, precision) : void 0, precision);
         } else {
           return cmp.equals(this.toClosed().low, successor(other.toClosed().high));
         }
@@ -21466,10 +21466,10 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.meetsBefore = function(other, precision) {
-      var ref1;
+      var ref2;
       try {
         if ((precision != null) && this.high instanceof DateTime) {
-          return this.toClosed().high.sameAs((ref1 = other.toClosed().low) != null ? ref1.add(-1, precision) : void 0, precision);
+          return this.toClosed().high.sameAs((ref2 = other.toClosed().low) != null ? ref2.add(-1, precision) : void 0, precision);
         } else {
           return cmp.equals(this.toClosed().high, predecessor(other.toClosed().low));
         }
@@ -21538,18 +21538,16 @@ function numberIsNaN (obj) {
         highValue = closed.high.value;
         diff = Math.abs(highValue - lowValue);
         Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
-        return new Quantity({
-          value: diff,
-          unit: closed.low.unit
-        });
+        return new Quantity(diff, closed.low.unit);
       } else {
         diff = Math.abs(closed.high - closed.low);
         return Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
       }
     };
 
-    Interval.prototype.size = function(pointSize) {
-      var closed, diff, highValue, lowValue;
+    Interval.prototype.size = function() {
+      var closed, diff, highValue, lowValue, pointSize;
+      pointSize = this.getPointSize();
       if (((this.low != null) && (this.low.isDateTime || this.low.isDate || this.low.isTime)) || ((this.high != null) && (this.high.isDateTime || this.high.isDate || this.high.isTime))) {
         throw new Error("Size of Date, DateTime, and Time intervals is not supported");
       }
@@ -21564,19 +21562,45 @@ function numberIsNaN (obj) {
         highValue = closed.high.value;
         diff = Math.abs(highValue - lowValue) + pointSize.value;
         Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
-        return new Quantity({
-          value: diff,
-          unit: closed.low.unit
-        });
+        return new Quantity(diff, closed.low.unit);
       } else {
         diff = Math.abs(closed.high - closed.low) + pointSize.value;
         return Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
       }
     };
 
+    Interval.prototype.getPointSize = function() {
+      var pointSize, precisionUnits;
+      if (this.low != null) {
+        if (this.low.isDateTime) {
+          precisionUnits = this.low.getPrecision();
+          pointSize = new Quantity(1, precisionUnits);
+        } else if (this.low.isQuantity) {
+          pointSize = doSubtraction(successor(this.low), this.low);
+        } else {
+          pointSize = successor(this.low) - this.low;
+        }
+      } else if (this.high != null) {
+        if (this.high.isDateTime) {
+          precisionUnits = this.high.getPrecision();
+          pointSize = new Quantity(1, precisionUnits);
+        } else if (this.high.isQuantity) {
+          pointSize = doSubtraction(successor(this.high), this.high);
+        } else {
+          pointSize = successor(this.high) - this.high;
+        }
+      } else {
+        throw new Error("Point type of intervals cannot be determined.");
+      }
+      if (typeof pointSize === 'number') {
+        pointSize = new Quantity(pointSize, '1');
+      }
+      return pointSize;
+    };
+
     Interval.prototype.toClosed = function() {
-      var high, low, point, ref1;
-      point = (ref1 = this.low) != null ? ref1 : this.high;
+      var high, low, point, ref2;
+      point = (ref2 = this.low) != null ? ref2 : this.high;
       if (typeof point === 'number' || point instanceof DateTime || (point != null ? point.isQuantity : void 0) || (point != null ? point.isDate : void 0)) {
         low = (function() {
           switch (false) {
@@ -21625,7 +21649,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/quantity":124,"../util/comparison":247,"../util/math":248,"./datetime":120,"./logic":123,"./uncertainty":125}],123:[function(require,module,exports){
+},{"../datatypes/quantity":124,"../util/comparison":248,"../util/math":249,"./datetime":120,"./logic":123,"./uncertainty":126}],123:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var ThreeValuedLogic,
@@ -21690,7 +21714,7 @@ function numberIsNaN (obj) {
 },{}],124:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Quantity, clean_unit, coalesceToOne, convert_value, createQuantity, decimalAdjust, doScaledAddition, isValidDecimal, is_valid_ucum_unit, ref, ucum, ucum_multiply, ucum_time_units, ucum_to_cql_units, ucum_unit, unitValidityCache, units_to_string;
+  var Quantity, clean_unit, coalesceToOne, convert_value, decimalAdjust, doScaledAddition, isValidDecimal, is_valid_ucum_unit, ref, ucum, ucum_multiply, ucum_time_units, ucum_to_cql_units, ucum_unit, unitValidityCache, units_to_string;
 
   ref = require('../util/math'), decimalAdjust = ref.decimalAdjust, isValidDecimal = ref.isValidDecimal;
 
@@ -21705,12 +21729,12 @@ function numberIsNaN (obj) {
       }
     });
 
-    function Quantity(json) {
-      this.unit = json.unit;
-      if (json.value == null) {
+    function Quantity(value1, unit1) {
+      this.value = value1;
+      this.unit = unit1;
+      if ((this.value == null) || isNaN(this.value)) {
         throw new Error("Cannot create a quantity with an undefined value");
       } else {
-        this.value = parseFloat(json.value);
         if (!isValidDecimal(this.value)) {
           throw new Error("Cannot create a quantity with an invalid decimal value");
         }
@@ -21721,10 +21745,7 @@ function numberIsNaN (obj) {
     }
 
     Quantity.prototype.clone = function() {
-      return new Quantity({
-        value: this.value,
-        unit: this.unit
-      });
+      return new Quantity(this.value, this.unit);
     };
 
     Quantity.prototype.toString = function() {
@@ -21797,8 +21818,11 @@ function numberIsNaN (obj) {
       }
     };
 
-    Quantity.prototype.convertUnits = function(to_units) {
-      return convert_value(this.value, this.unit, to_units);
+    Quantity.prototype.convertUnit = function(to_unit) {
+      var unit, value;
+      value = convert_value(this.value, this.unit, to_unit);
+      unit = to_unit;
+      return new Quantity(value, unit);
     };
 
     Quantity.prototype.dividedBy = function(other) {
@@ -21812,26 +21836,22 @@ function numberIsNaN (obj) {
     Quantity.prototype.multiplyDivide = function(other, operator) {
       var a, b, can_val, other_can_value, ucum_value, value;
       if (other instanceof Quantity) {
-        a = this.unit != null ? this : new Quantity({
-          value: this.value,
-          unit: "1"
-        });
-        b = other.unit != null ? other : new Quantity({
-          value: other.value,
-          unit: "1"
+        a = this.unit != null ? this : new Quantity(this.value, '1');
+        b = other.unit != null ? other : new Quantity(other.value, {
+          unit: '1'
         });
         can_val = a.to_ucum();
         other_can_value = b.to_ucum();
         ucum_value = ucum_multiply(can_val, [[operator, other_can_value]]);
         try {
-          return createQuantity(ucum_value.value, units_to_string(ucum_value.units));
+          return new Quantity(ucum_value.value, units_to_string(ucum_value.units));
         } catch (error) {
           return null;
         }
       } else {
         value = operator === "/" ? this.value / other : this.value * other;
         try {
-          return createQuantity(decimalAdjust("round", value, -8), coalesceToOne(this.unit));
+          return new Quantity(decimalAdjust("round", value, -8), coalesceToOne(this.unit));
         } catch (error) {
           return null;
         }
@@ -22008,13 +22028,6 @@ function numberIsNaN (obj) {
     return ret;
   };
 
-  module.exports.createQuantity = createQuantity = function(value, unit) {
-    return new Quantity({
-      value: value,
-      unit: unit
-    });
-  };
-
   module.exports.parseQuantity = function(str) {
     var components, unit, value;
     components = /([+|-]?\d+\.?\d*)\s*('(.+)')?/.exec(str);
@@ -22028,10 +22041,7 @@ function numberIsNaN (obj) {
       } else {
         unit = "";
       }
-      return new Quantity({
-        value: value,
-        unit: unit
-      });
+      return new Quantity(value, unit);
     } else {
       return null;
     }
@@ -22045,10 +22055,7 @@ function numberIsNaN (obj) {
       if (val == null) {
         return null;
       }
-      return new Quantity({
-        unit: a_unit,
-        value: a.value + val
-      });
+      return new Quantity(a.value + val, a_unit);
     } else if (a.copy && a.add) {
       b_unit = b instanceof Quantity ? coalesceToOne(b.unit) : b.unit;
       return a.copy().add(b.value * scaleForB, clean_unit(b_unit));
@@ -22108,7 +22115,68 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/math":248,"ucum":258}],125:[function(require,module,exports){
+},{"../util/math":249,"ucum":259}],125:[function(require,module,exports){
+// Generated by CoffeeScript 1.12.7
+(function() {
+  var Ratio;
+
+  module.exports.Ratio = Ratio = (function() {
+    function Ratio(numerator, denominator) {
+      this.numerator = numerator;
+      this.denominator = denominator;
+      if (this.numerator == null) {
+        throw new Error("Cannot create a ratio with an undefined numerator");
+      }
+      if (this.denominator == null) {
+        throw new Error("Cannot create a ratio with an undefined denominator");
+      }
+    }
+
+    Object.defineProperties(Ratio.prototype, {
+      isRatio: {
+        get: function() {
+          return true;
+        }
+      }
+    });
+
+    Ratio.prototype.clone = function() {
+      return new Ratio(this.numerator.clone(), this.denominator.clone());
+    };
+
+    Ratio.prototype.toString = function() {
+      return (this.numerator.toString()) + " : " + (this.denominator.toString());
+    };
+
+    Ratio.prototype.equals = function(other) {
+      var divided_other, divided_this;
+      if (other instanceof Ratio) {
+        divided_this = this.numerator.dividedBy(this.denominator);
+        divided_other = other.numerator.dividedBy(other.denominator);
+        return divided_this.equals(divided_other);
+      } else {
+        return false;
+      }
+    };
+
+    Ratio.prototype.equivalent = function(other) {
+      var equal;
+      equal = this.equals(other);
+      if (equal == null) {
+        return false;
+      }
+      return equal;
+    };
+
+    return Ratio;
+
+  })();
+
+}).call(this);
+
+
+
+},{}],126:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var ThreeValuedLogic, Uncertainty;
@@ -22240,10 +22308,10 @@ function numberIsNaN (obj) {
 
 
 
-},{"./logic":123}],126:[function(require,module,exports){
+},{"./logic":123}],127:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var AggregateExpression, AllTrue, AnyTrue, Avg, Count, Exception, Expression, GeometricMean, Max, Median, Min, Mode, PopulationStdDev, PopulationVariance, Product, Quantity, StdDev, Sum, Variance, allTrue, anyTrue, build, createQuantity, doMultiplication, greaterThan, lessThan, numerical_sort, productValue, quantitiesOrArg, quantityOrValue, ref, ref1, ref2, removeNulls, typeIsArray,
+  var AggregateExpression, AllTrue, AnyTrue, Avg, Count, Exception, Expression, GeometricMean, Max, Median, Min, Mode, PopulationStdDev, PopulationVariance, Product, Quantity, StdDev, Sum, Variance, allTrue, anyTrue, build, convertAllUnits, doAddition, doMultiplication, getValuesFromQuantities, greaterThan, hasOnlyQuantities, hasSomeQuantities, lessThan, medianOfNumbers, numerical_sort, processQuantities, ref, ref1, ref2, removeNulls, typeIsArray,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty,
     indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
@@ -22258,43 +22326,7 @@ function numberIsNaN (obj) {
 
   ref1 = require('../util/comparison'), greaterThan = ref1.greaterThan, lessThan = ref1.lessThan;
 
-  ref2 = require('../datatypes/quantity'), Quantity = ref2.Quantity, createQuantity = ref2.createQuantity, doMultiplication = ref2.doMultiplication;
-
-  quantitiesOrArg = function(arr) {
-    var allQs, i, j, len, someQs, unit, values;
-    arr = removeNulls(arr);
-    if (arr.length === 0) {
-      return arr;
-    }
-    allQs = arr.every(function(x) {
-      return x.isQuantity;
-    });
-    someQs = arr.some(function(x) {
-      return x.isQuantity;
-    });
-    if (allQs) {
-      unit = arr[0].unit;
-      values = [];
-      for (j = 0, len = arr.length; j < len; j++) {
-        i = arr[j];
-        values.push(i.convertUnits(unit));
-      }
-      return values;
-    } else if (someQs) {
-      throw new Exception("Cannot perform aggregate operations on mixed values of Quantities and non Quantities");
-    } else {
-      return arr;
-    }
-  };
-
-  quantityOrValue = function(value, arr) {
-    var ref3;
-    if (arr != null ? (ref3 = arr[0]) != null ? ref3.unit : void 0 : void 0) {
-      return createQuantity(value, arr[0].unit);
-    } else {
-      return value;
-    }
-  };
+  ref2 = require('../datatypes/quantity'), Quantity = ref2.Quantity, doAddition = ref2.doAddition, doMultiplication = ref2.doMultiplication;
 
   AggregateExpression = (function(superClass) {
     extend(AggregateExpression, superClass);
@@ -22316,11 +22348,12 @@ function numberIsNaN (obj) {
     }
 
     Count.prototype.exec = function(ctx) {
-      var arg;
-      arg = this.source.execute(ctx);
-      if (typeIsArray(arg)) {
-        return removeNulls(arg).length;
+      var items;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
+        return null;
       }
+      return removeNulls(items).length;
     };
 
     return Count;
@@ -22335,14 +22368,25 @@ function numberIsNaN (obj) {
     }
 
     Sum.prototype.exec = function(ctx) {
-      var arg, filtered, val;
-      arg = this.source.execute(ctx);
-      if (typeIsArray(arg)) {
-        filtered = quantitiesOrArg(arg);
-        val = filtered.length === 0 ? null : filtered.reduce(function(x, y) {
+      var items, sum, values;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
+        return null;
+      }
+      items = processQuantities(items);
+      if (!(items.length > 0)) {
+        return null;
+      }
+      if (hasOnlyQuantities(items)) {
+        values = getValuesFromQuantities(items);
+        sum = values.reduce(function(x, y) {
           return x + y;
         });
-        return quantityOrValue(val, arg);
+        return new Quantity(sum, items[0].unit);
+      } else {
+        return items.reduce(function(x, y) {
+          return x + y;
+        });
       }
     };
 
@@ -22358,7 +22402,7 @@ function numberIsNaN (obj) {
     }
 
     Min.prototype.exec = function(ctx) {
-      var element, j, len, list, listWithoutNulls, minimum;
+      var element, i, len, list, listWithoutNulls, minimum;
       list = this.source.execute(ctx);
       if (list == null) {
         return null;
@@ -22368,8 +22412,8 @@ function numberIsNaN (obj) {
         return null;
       }
       minimum = listWithoutNulls[0];
-      for (j = 0, len = listWithoutNulls.length; j < len; j++) {
-        element = listWithoutNulls[j];
+      for (i = 0, len = listWithoutNulls.length; i < len; i++) {
+        element = listWithoutNulls[i];
         if (lessThan(element, minimum)) {
           minimum = element;
         }
@@ -22389,18 +22433,18 @@ function numberIsNaN (obj) {
     }
 
     Max.prototype.exec = function(ctx) {
-      var element, j, len, list, listWithoutNulls, maximum;
-      list = this.source.execute(ctx);
-      if (list == null) {
+      var element, i, items, len, listWithoutNulls, maximum;
+      items = this.source.execute(ctx);
+      if (items == null) {
         return null;
       }
-      listWithoutNulls = removeNulls(list);
+      listWithoutNulls = removeNulls(items);
       if (!(listWithoutNulls.length > 0)) {
         return null;
       }
       maximum = listWithoutNulls[0];
-      for (j = 0, len = listWithoutNulls.length; j < len; j++) {
-        element = listWithoutNulls[j];
+      for (i = 0, len = listWithoutNulls.length; i < len; i++) {
+        element = listWithoutNulls[i];
         if (greaterThan(element, maximum)) {
           maximum = element;
         }
@@ -22420,17 +22464,26 @@ function numberIsNaN (obj) {
     }
 
     Avg.prototype.exec = function(ctx) {
-      var arg, filtered, sum;
-      arg = this.source.execute(ctx);
-      if (typeIsArray(arg)) {
-        filtered = quantitiesOrArg(arg);
-        if (filtered.length === 0) {
-          return null;
-        }
-        sum = filtered.reduce(function(x, y) {
+      var items, sum, values;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
+        return null;
+      }
+      items = processQuantities(items);
+      if (items.length === 0) {
+        return null;
+      }
+      if (hasOnlyQuantities(items)) {
+        values = getValuesFromQuantities(items);
+        sum = values.reduce(function(x, y) {
           return x + y;
         });
-        return quantityOrValue(sum / filtered.length, arg);
+        return new Quantity(sum / values.length, items[0].unit);
+      } else {
+        sum = items.reduce(function(x, y) {
+          return x + y;
+        });
+        return sum / items.length;
       }
     };
 
@@ -22446,19 +22499,21 @@ function numberIsNaN (obj) {
     }
 
     Median.prototype.exec = function(ctx) {
-      var arg, filtered, v;
-      arg = this.source.execute(ctx);
-      if (typeIsArray(arg)) {
-        filtered = numerical_sort(quantitiesOrArg(arg), "asc");
-        if (filtered.length === 0) {
-          return null;
-        } else if (filtered.length % 2 === 1) {
-          return quantityOrValue(filtered[(filtered.length - 1) / 2], arg);
-        } else {
-          v = (filtered[(filtered.length / 2) - 1] + filtered[filtered.length / 2]) / 2;
-          return quantityOrValue(v, arg);
-        }
+      var items, median, values;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
+        return null;
       }
+      if (!(items.length > 0)) {
+        return null;
+      }
+      items = processQuantities(items);
+      if (!hasOnlyQuantities(items)) {
+        return medianOfNumbers(items);
+      }
+      values = getValuesFromQuantities(items);
+      median = medianOfNumbers(values);
+      return new Quantity(median, items[0].unit);
     };
 
     return Median;
@@ -22473,10 +22528,23 @@ function numberIsNaN (obj) {
     }
 
     Mode.prototype.exec = function(ctx) {
-      var arg, filtered, mode;
-      arg = this.source.execute(ctx);
-      if (typeIsArray(arg)) {
-        filtered = removeNulls(arg);
+      var filtered, items, mode, values;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
+        return null;
+      }
+      if (!(items.length > 0)) {
+        return null;
+      }
+      filtered = processQuantities(items);
+      if (hasOnlyQuantities(filtered)) {
+        values = getValuesFromQuantities(filtered);
+        mode = this.mode(values);
+        if (mode.length === 1) {
+          mode = mode[0];
+        }
+        return new Quantity(mode, items[0].unit);
+      } else {
         mode = this.mode(filtered);
         if (mode.length === 1) {
           return mode[0];
@@ -22487,12 +22555,12 @@ function numberIsNaN (obj) {
     };
 
     Mode.prototype.mode = function(arr) {
-      var cnt, counts, elem, j, len, max, ref3, results;
+      var cnt, counts, elem, i, len, max, ref3, results;
       max = 0;
       counts = {};
       results = [];
-      for (j = 0, len = arr.length; j < len; j++) {
-        elem = arr[j];
+      for (i = 0, len = arr.length; i < len; i++) {
+        elem = arr[i];
         cnt = counts[elem] = ((ref3 = counts[elem]) != null ? ref3 : 0) + 1;
         if (cnt === max && indexOf.call(results, elem) < 0) {
           results.push(elem);
@@ -22517,19 +22585,25 @@ function numberIsNaN (obj) {
     }
 
     StdDev.prototype.exec = function(ctx) {
-      var args, val;
-      args = this.source.execute(ctx);
-      if (typeIsArray(args)) {
-        val = quantitiesOrArg(args);
-        if (val.length > 0) {
-          return quantityOrValue(this.calculate(val), args);
-        } else {
-          return null;
-        }
+      var items, stdDev, values;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
+        return null;
+      }
+      items = processQuantities(items);
+      if (!(items.length > 0)) {
+        return null;
+      }
+      if (hasOnlyQuantities(items)) {
+        values = getValuesFromQuantities(items);
+        stdDev = this.standardDeviation(values);
+        return new Quantity(stdDev, items[0].unit);
+      } else {
+        return this.standardDeviation(items);
       }
     };
 
-    StdDev.prototype.calculate = function(list) {
+    StdDev.prototype.standardDeviation = function(list) {
       var val;
       val = this.stats(list);
       if (val) {
@@ -22538,14 +22612,14 @@ function numberIsNaN (obj) {
     };
 
     StdDev.prototype.stats = function(list) {
-      var j, len, mean, pop_dev, pop_var, sq, std_dev, std_var, sum, sumOfSquares;
+      var i, len, mean, pop_dev, pop_var, sq, std_dev, std_var, sum, sumOfSquares;
       sum = list.reduce(function(x, y) {
         return x + y;
       });
       mean = sum / list.length;
       sumOfSquares = 0;
-      for (j = 0, len = list.length; j < len; j++) {
-        sq = list[j];
+      for (i = 0, len = list.length; i < len; i++) {
+        sq = list[i];
         sumOfSquares += Math.pow(sq - mean, 2);
       }
       std_var = (1 / list.length) * sumOfSquares;
@@ -22572,16 +22646,26 @@ function numberIsNaN (obj) {
     }
 
     Product.prototype.exec = function(ctx) {
-      var filtered, listOfValues, product, ref3;
-      listOfValues = this.source.execute(ctx);
-      if (listOfValues === null) {
+      var items, product, values;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
         return null;
       }
-      ref3 = productValue(listOfValues), product = ref3[0], filtered = ref3[1];
-      if (product === null) {
+      items = processQuantities(items);
+      if (!(items.length > 0)) {
         return null;
       }
-      return quantityOrValue(product, listOfValues);
+      if (hasOnlyQuantities(items)) {
+        values = getValuesFromQuantities(items);
+        product = values.reduce(function(x, y) {
+          return x * y;
+        });
+        return new Quantity(product, items[0].unit);
+      } else {
+        return items.reduce(function(x, y) {
+          return x * y;
+        });
+      }
     };
 
     return Product;
@@ -22596,44 +22680,33 @@ function numberIsNaN (obj) {
     }
 
     GeometricMean.prototype.exec = function(ctx) {
-      var filtered, geoMean, listOfValues, product, ref3;
-      listOfValues = this.source.execute(ctx);
-      if (listOfValues === null) {
+      var geoMean, items, product, values;
+      items = this.source.execute(ctx);
+      if (!typeIsArray(items)) {
         return null;
       }
-      ref3 = productValue(listOfValues), product = ref3[0], filtered = ref3[1];
-      if (product === null) {
+      items = processQuantities(items);
+      if (!(items.length > 0)) {
         return null;
       }
-      geoMean = Math.pow(product, 1.0 / filtered.length);
-      return geoMean;
+      if (hasOnlyQuantities(items)) {
+        values = getValuesFromQuantities(items);
+        product = values.reduce(function(x, y) {
+          return x * y;
+        });
+        geoMean = Math.pow(product, 1.0 / items.length);
+        return new Quantity(geoMean, items[0].unit);
+      } else {
+        product = items.reduce(function(x, y) {
+          return x * y;
+        });
+        return Math.pow(product, 1.0 / items.length);
+      }
     };
 
     return GeometricMean;
 
   })(AggregateExpression);
-
-  productValue = function(list) {
-    var filtered, item, j, len, product;
-    product = 1;
-    if (typeIsArray(list)) {
-      filtered = removeNulls(list);
-      if (filtered.length === 0) {
-        return [null, null];
-      }
-      for (j = 0, len = filtered.length; j < len; j++) {
-        item = filtered[j];
-        if (item.isQuantity) {
-          product = doMultiplication(product, item);
-        } else {
-          product = product * item;
-        }
-      }
-      return [product, filtered];
-    } else {
-      return [null, null];
-    }
-  };
 
   module.exports.PopulationStdDev = PopulationStdDev = (function(superClass) {
     extend(PopulationStdDev, superClass);
@@ -22679,9 +22752,9 @@ function numberIsNaN (obj) {
     }
 
     AllTrue.prototype.exec = function(ctx) {
-      var args;
-      args = this.source.execute(ctx);
-      return allTrue(args);
+      var items;
+      items = this.source.execute(ctx);
+      return allTrue(items);
     };
 
     return AllTrue;
@@ -22696,23 +22769,71 @@ function numberIsNaN (obj) {
     }
 
     AnyTrue.prototype.exec = function(ctx) {
-      var args;
-      args = this.source.execute(ctx);
-      return anyTrue(args);
+      var items;
+      items = this.source.execute(ctx);
+      return anyTrue(items);
     };
 
     return AnyTrue;
 
   })(AggregateExpression);
 
+  processQuantities = function(values) {
+    values = removeNulls(values);
+    if (hasOnlyQuantities(values)) {
+      return values = convertAllUnits(values);
+    } else if (hasSomeQuantities(values)) {
+      throw new Exception("Cannot perform aggregate operations on mixed values of Quantities and non Quantities");
+    } else {
+      return values;
+    }
+  };
+
+  getValuesFromQuantities = function(quantities) {
+    return quantities.map(function(quantity) {
+      return quantity.value;
+    });
+  };
+
+  hasOnlyQuantities = function(arr) {
+    return arr.every(function(x) {
+      return x.isQuantity;
+    });
+  };
+
+  hasSomeQuantities = function(arr) {
+    return arr.some(function(x) {
+      return x.isQuantity;
+    });
+  };
+
+  convertAllUnits = function(arr) {
+    var converted, i, len, quantity;
+    converted = [];
+    for (i = 0, len = arr.length; i < len; i++) {
+      quantity = arr[i];
+      converted.push(quantity.convertUnit(arr[0].unit));
+    }
+    return converted;
+  };
+
+  medianOfNumbers = function(numbers) {
+    numbers = numerical_sort(numbers, "asc");
+    if (numbers.length % 2 === 1) {
+      return numbers[(numbers.length - 1) / 2];
+    } else {
+      return (numbers[(numbers.length / 2) - 1] + numbers[numbers.length / 2]) / 2;
+    }
+  };
+
 }).call(this);
 
 
 
-},{"../datatypes/exception":121,"../datatypes/quantity":124,"../util/comparison":247,"../util/util":249,"./builder":128,"./expression":134}],127:[function(require,module,exports){
+},{"../datatypes/exception":121,"../datatypes/quantity":124,"../util/comparison":248,"../util/util":250,"./builder":129,"./expression":135}],128:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Abs, Add, Ceiling, Divide, Exp, Expression, Floor, Ln, Log, MathUtil, MaxValue, MinValue, Modulo, Multiply, Negate, Power, Predecessor, Quantity, Round, Subtract, Successor, Truncate, TruncatedDivide, allTrue, anyTrue, build, createQuantity, doAddition, doDivision, doMultiplication, doSubtraction, ref, ref1, typeIsArray,
+  var Abs, Add, Ceiling, Divide, Exp, Expression, Floor, Ln, Log, MathUtil, MaxValue, MinValue, Modulo, Multiply, Negate, Power, Predecessor, Quantity, Round, Subtract, Successor, Truncate, TruncatedDivide, allTrue, anyTrue, build, doAddition, doDivision, doMultiplication, doSubtraction, ref, ref1, typeIsArray,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
@@ -22724,7 +22845,7 @@ function numberIsNaN (obj) {
 
   MathUtil = require('../util/math');
 
-  ref1 = require('../datatypes/quantity'), Quantity = ref1.Quantity, createQuantity = ref1.createQuantity, doAddition = ref1.doAddition, doSubtraction = ref1.doSubtraction, doMultiplication = ref1.doMultiplication, doDivision = ref1.doDivision;
+  ref1 = require('../datatypes/quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, doSubtraction = ref1.doSubtraction, doMultiplication = ref1.doMultiplication, doDivision = ref1.doDivision;
 
   module.exports.Add = Add = (function(superClass) {
     extend(Add, superClass);
@@ -22958,7 +23079,7 @@ function numberIsNaN (obj) {
       if (arg == null) {
         return null;
       } else if (arg.isQuantity) {
-        return createQuantity(Math.abs(arg.value), arg.unit);
+        return new Quantity(Math.abs(arg.value), arg.unit);
       } else {
         return Math.abs(arg);
       }
@@ -22981,7 +23102,7 @@ function numberIsNaN (obj) {
       if (arg == null) {
         return null;
       } else if (arg.isQuantity) {
-        return createQuantity(arg.value * -1, arg.unit);
+        return new Quantity(arg.value * -1, arg.unit);
       } else {
         return arg * -1;
       }
@@ -23230,7 +23351,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/quantity":124,"../util/math":248,"../util/util":249,"./builder":128,"./expression":134}],128:[function(require,module,exports){
+},{"../datatypes/quantity":124,"../util/math":249,"../util/util":250,"./builder":129,"./expression":135}],129:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var E, build, constructByName, functionExists, typeIsArray;
@@ -23278,7 +23399,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":249,"./expressions":135}],129:[function(require,module,exports){
+},{"../util/util":250,"./expressions":136}],130:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AnyInValueSet, CalculateAge, CalculateAgeAt, Code, CodeDef, CodeRef, CodeSystemDef, Concept, ConceptDef, ConceptRef, Expression, InValueSet, ValueSetDef, ValueSetRef, build, dt,
@@ -23627,7 +23748,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"./builder":128,"./expression":134}],130:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"./builder":129,"./expression":135}],131:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Greater, GreaterOrEqual, Less, LessOrEqual, Uncertainty,
@@ -23730,7 +23851,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"./expression":134}],131:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"./expression":135}],132:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Case, CaseItem, Expression, If, build, equals,
@@ -23836,7 +23957,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/comparison":247,"./builder":128,"./expression":134}],132:[function(require,module,exports){
+},{"../util/comparison":248,"./builder":129,"./expression":135}],133:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DT, Date, DateFrom, DateTime, DateTimeComponentFrom, DifferenceBetween, DurationBetween, Expression, Literal, Now, SameOrAfter, SameOrBefore, Time, TimeFrom, TimeOfDay, TimezoneOffsetFrom, Today, build,
@@ -24216,7 +24337,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"./builder":128,"./expression":134,"./literal":141}],133:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"./builder":129,"./expression":135,"./literal":142}],134:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, IncludeDef, UnimplementedExpression, UsingDef, VersionedIdentifier, ref,
@@ -24262,7 +24383,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":134}],134:[function(require,module,exports){
+},{"./expression":135}],135:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, UnimplementedExpression, build, typeIsArray,
@@ -24346,7 +24467,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":249,"./builder":128}],135:[function(require,module,exports){
+},{"../util/util":250,"./builder":129}],136:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var aggregate, arithmetic, clinical, comparison, conditional, datetime, declaration, element, expression, external, i, instance, interval, j, len, len1, lib, libs, list, literal, logical, nullological, overloaded, parameters, quantity, query, ratio, ref, reusable, string, structured, type;
@@ -24414,7 +24535,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./aggregate":126,"./arithmetic":127,"./clinical":129,"./comparison":130,"./conditional":131,"./datetime":132,"./declaration":133,"./expression":134,"./external":136,"./instance":137,"./interval":138,"./list":140,"./literal":141,"./logical":142,"./nullological":143,"./overloaded":144,"./parameters":145,"./quantity":146,"./query":147,"./ratio":148,"./reusable":149,"./string":150,"./structured":151,"./type":152}],136:[function(require,module,exports){
+},{"./aggregate":127,"./arithmetic":128,"./clinical":130,"./comparison":131,"./conditional":132,"./datetime":133,"./declaration":134,"./expression":135,"./external":137,"./instance":138,"./interval":139,"./list":141,"./literal":142,"./logical":143,"./nullological":144,"./overloaded":145,"./parameters":146,"./quantity":147,"./query":148,"./ratio":149,"./reusable":150,"./string":151,"./structured":152,"./type":153}],137:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Retrieve, build, typeIsArray,
@@ -24491,7 +24612,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":249,"./builder":128,"./expression":134}],137:[function(require,module,exports){
+},{"../util/util":250,"./builder":129,"./expression":135}],138:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, Concept, Element, Expression, Instance, Quantity, build, ref,
@@ -24550,7 +24671,7 @@ function numberIsNaN (obj) {
       }
       switch (this.classType) {
         case "{urn:hl7-org:elm-types:r1}Quantity":
-          return new Quantity(obj);
+          return new Quantity(obj.value, obj.unit);
         case "{urn:hl7-org:elm-types:r1}Code":
           return new Code(obj.code, obj.system, obj.version, obj.display);
         case "{urn:hl7-org:elm-types:r1}Concept":
@@ -24568,10 +24689,10 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"../datatypes/quantity":124,"./builder":128,"./expression":134}],138:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"../datatypes/quantity":124,"./builder":129,"./expression":135}],139:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Size, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, doSubtraction, dtivl, getpointSize, intervalListType, predecessor, ref, ref1, ref2, successor,
+  var Collapse, End, Ends, Expand, Expression, Interval, MIN_FLOAT_PRECISION_VALUE, Meets, MeetsAfter, MeetsBefore, Overlaps, OverlapsAfter, OverlapsBefore, Quantity, Size, Start, Starts, ThreeValuedLogic, UnimplementedExpression, Width, build, cmp, collapseIntervals, compare_units, convert_value, doAddition, doIncludes, dtivl, intervalListType, predecessor, ref, ref1, ref2, successor,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty,
     indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
@@ -24582,7 +24703,7 @@ function numberIsNaN (obj) {
 
   build = require('./builder').build;
 
-  ref1 = require('../datatypes/quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, doSubtraction = ref1.doSubtraction, compare_units = ref1.compare_units, convert_value = ref1.convert_value;
+  ref1 = require('../datatypes/quantity'), Quantity = ref1.Quantity, doAddition = ref1.doAddition, compare_units = ref1.compare_units, convert_value = ref1.convert_value;
 
   ref2 = require('../util/math'), successor = ref2.successor, predecessor = ref2.predecessor, MIN_FLOAT_PRECISION_VALUE = ref2.MIN_FLOAT_PRECISION_VALUE;
 
@@ -24819,13 +24940,12 @@ function numberIsNaN (obj) {
     }
 
     Size.prototype.exec = function(ctx) {
-      var interval, pointSize;
+      var interval;
       interval = this.arg.execute(ctx);
       if (interval == null) {
         return null;
       }
-      pointSize = getpointSize(interval);
-      return interval.size(pointSize);
+      return interval.size();
     };
 
     return Size;
@@ -25010,26 +25130,17 @@ function numberIsNaN (obj) {
       if (type === "time" || type === "date" || type === "datetime") {
         expandFunction = this.expandDTishInterval;
         defaultPer = function(interval) {
-          return new Quantity({
-            value: 1,
-            unit: interval.low.getPrecision()
-          });
+          return new Quantity(1, interval.low.getPrecision());
         };
       } else if (type === "quantity") {
         expandFunction = this.expandQuantityInterval;
         defaultPer = function(interval) {
-          return new Quantity({
-            value: 1,
-            unit: interval.low.unit
-          });
+          return new Quantity(1, interval.low.unit);
         };
       } else if (type === "integer" || type === "decimal") {
         expandFunction = this.expandNumericInterval;
         defaultPer = function(interval) {
-          return new Quantity({
-            value: 1,
-            unit: '1'
-          });
+          return new Quantity(1, '1');
         };
       } else {
         throw new Error("Interval list type not yet supported.");
@@ -25116,14 +25227,8 @@ function numberIsNaN (obj) {
       results = this.makeNumericIntervalList(low_value, high_value, interval.lowClosed, interval.highClosed, per_value);
       for (j = 0, len = results.length; j < len; j++) {
         itvl = results[j];
-        itvl.low = new Quantity({
-          value: itvl.low,
-          unit: result_units
-        });
-        itvl.high = new Quantity({
-          value: itvl.high,
-          unit: result_units
-        });
+        itvl.low = new Quantity(itvl.low, result_units);
+        itvl.high = new Quantity(itvl.high, result_units);
       }
       return results;
     };
@@ -25196,7 +25301,7 @@ function numberIsNaN (obj) {
       return intervalsClone;
     } else {
       if (perWidth == null) {
-        perWidth = getpointSize(intervalsClone[0]);
+        perWidth = intervalsClone[0].getPointSize();
       }
       intervalsClone.sort(function(a, b) {
         var ref3, ref4;
@@ -25281,49 +25386,11 @@ function numberIsNaN (obj) {
     }
   };
 
-  getpointSize = function(interval) {
-    var pointSize, precisionUnits;
-    if (interval.low != null) {
-      if (interval.low.isDateTime) {
-        precisionUnits = interval.low.getPrecision();
-        pointSize = new Quantity({
-          value: 1,
-          unit: precisionUnits
-        });
-      } else if (interval.low.isQuantity) {
-        pointSize = doSubtraction(successor(interval.low), interval.low);
-      } else {
-        pointSize = successor(interval.low) - interval.low;
-      }
-    } else if (interval.high != null) {
-      if (interval.high.isDateTime) {
-        precisionUnits = interval.high.getPrecision();
-        pointSize = new Quantity({
-          value: 1,
-          unit: precisionUnits
-        });
-      } else if (interval.high.isQuantity) {
-        pointSize = doSubtraction(successor(interval.high), interval.high);
-      } else {
-        pointSize = successor(interval.high) - interval.high;
-      }
-    } else {
-      throw new Error("Point type of intervals cannot be determined.");
-    }
-    if (typeof pointSize === 'number') {
-      pointSize = new Quantity({
-        value: pointSize,
-        unit: '1'
-      });
-    }
-    return pointSize;
-  };
-
 }).call(this);
 
 
 
-},{"../datatypes/interval":122,"../datatypes/logic":123,"../datatypes/quantity":124,"../util/comparison":247,"../util/math":248,"./builder":128,"./expression":134}],139:[function(require,module,exports){
+},{"../datatypes/interval":122,"../datatypes/logic":123,"../datatypes/quantity":124,"../util/comparison":248,"../util/math":249,"./builder":129,"./expression":135}],140:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var CodeDef, CodeSystemDef, ConceptDef, ExpressionDef, FunctionDef, Library, ParameterDef, Results, ValueSetDef, ref;
@@ -25425,7 +25492,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../runtime/results":246,"./expressions":135}],140:[function(require,module,exports){
+},{"../runtime/results":247,"./expressions":136}],141:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Current, Distinct, Exists, Expression, Filter, First, Flatten, ForEach, IndexOf, Last, List, SingletonFrom, Times, ToList, UnimplementedExpression, ValueSet, build, doContains, doDistinct, doIncludes, equals, ref, typeIsArray,
@@ -25793,7 +25860,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"../util/comparison":247,"../util/util":249,"./builder":128,"./expression":134}],141:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"../util/comparison":248,"../util/util":250,"./builder":129,"./expression":135}],142:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var BooleanLiteral, DecimalLiteral, Expression, IntegerLiteral, Literal, StringLiteral,
@@ -25933,7 +26000,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":134}],142:[function(require,module,exports){
+},{"./expression":135}],143:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var And, Expression, IsFalse, IsTrue, Not, Or, ThreeValuedLogic, Xor,
@@ -26038,7 +26105,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"./expression":134}],143:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"./expression":135}],144:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Coalesce, Expression, IsNull, Null,
@@ -26114,7 +26181,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./expression":134}],144:[function(require,module,exports){
+},{"./expression":135}],145:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var After, Contains, DT, DateTime, Equal, Equivalent, Except, Exception, Expression, IVL, In, IncludedIn, Includes, Indexer, Intersect, LIST, Length, NotEqual, ProperIncludedIn, ProperIncludes, STRING, SameAs, ThreeValuedLogic, Union, build, equals, equivalent, ref, typeIsArray,
@@ -26600,7 +26667,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datetime":120,"../datatypes/exception":121,"../datatypes/logic":123,"../util/comparison":247,"../util/util":249,"./builder":128,"./datetime":132,"./expression":134,"./interval":138,"./list":140,"./string":150}],145:[function(require,module,exports){
+},{"../datatypes/datetime":120,"../datatypes/exception":121,"../datatypes/logic":123,"../util/comparison":248,"../util/util":250,"./builder":129,"./datetime":133,"./expression":135,"./interval":139,"./list":141,"./string":151}],146:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, ParameterDef, ParameterRef, build,
@@ -26659,7 +26726,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":128,"./expression":134}],146:[function(require,module,exports){
+},{"./builder":129,"./expression":135}],147:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, DT, Exception, Expression, FunctionRef, Quantity, ValueSet, build, ref,
@@ -26682,12 +26749,13 @@ function numberIsNaN (obj) {
     extend(Quantity, superClass);
 
     function Quantity(json) {
-      this.json = json;
       Quantity.__super__.constructor.apply(this, arguments);
+      this.value = parseFloat(json.value);
+      this.unit = json.unit;
     }
 
     Quantity.prototype.exec = function(ctx) {
-      return new DT.Quantity(this.json);
+      return new DT.Quantity(this.value, this.unit);
     };
 
     return Quantity;
@@ -26698,7 +26766,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"../datatypes/exception":121,"./builder":128,"./expression":134,"./reusable":149}],147:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"../datatypes/exception":121,"./builder":129,"./expression":135,"./reusable":150}],148:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AliasRef, AliasedQuerySource, ByColumn, ByDirection, ByExpression, Context, Expression, LetClause, MultiSource, Query, QueryLetRef, ReturnClause, Sort, SortClause, UnimplementedExpression, With, Without, allTrue, build, equals, ref, ref1, toDistinctList, typeIsArray,
@@ -27091,10 +27159,10 @@ function numberIsNaN (obj) {
 
 
 
-},{"../runtime/context":243,"../util/comparison":247,"../util/util":249,"./builder":128,"./expression":134}],148:[function(require,module,exports){
+},{"../runtime/context":244,"../util/comparison":248,"../util/util":250,"./builder":129,"./expression":135}],149:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
-  var Exception, Expression, Quantity, Ratio, createRatio,
+  var DT, Exception, Expression, Quantity, Ratio,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
@@ -27104,6 +27172,8 @@ function numberIsNaN (obj) {
 
   Quantity = require('../datatypes/quantity').Quantity;
 
+  DT = require('../datatypes/datatypes');
+
   module.exports.Ratio = Ratio = (function(superClass) {
     extend(Ratio, superClass);
 
@@ -27112,74 +27182,28 @@ function numberIsNaN (obj) {
       if (json.numerator == null) {
         throw new Error("Cannot create a ratio with an undefined numerator value");
       } else {
-        this.numerator = new Quantity(json.numerator);
+        this.numerator = new Quantity(json.numerator.value, json.numerator.unit);
       }
       if (json.denominator == null) {
         throw new Error("Cannot create a ratio with an undefined denominator value");
       } else {
-        this.denominator = new Quantity(json.denominator);
+        this.denominator = new Quantity(json.denominator.value, json.denominator.unit);
       }
     }
 
-    Object.defineProperties(Ratio.prototype, {
-      isRatio: {
-        get: function() {
-          return true;
-        }
-      }
-    });
-
-    Ratio.prototype.clone = function() {
-      return new Ratio({
-        numerator: this.numerator.clone(),
-        denominator: this.denominator.clone()
-      });
-    };
-
     Ratio.prototype.exec = function(ctx) {
-      return this;
-    };
-
-    Ratio.prototype.toString = function() {
-      return (this.numerator.toString()) + " : " + (this.denominator.toString());
-    };
-
-    Ratio.prototype.equals = function(other) {
-      var divided_other, divided_this;
-      if (other instanceof Ratio) {
-        divided_this = this.numerator.dividedBy(this.denominator);
-        divided_other = other.numerator.dividedBy(other.denominator);
-        return divided_this.equals(divided_other);
-      } else {
-        return false;
-      }
-    };
-
-    Ratio.prototype.equivalent = function(other) {
-      var equal;
-      equal = this.equals(other);
-      if (equal == null) {
-        return false;
-      }
-      return equal;
+      return new DT.Ratio(this.numerator, this.denominator);
     };
 
     return Ratio;
 
   })(Expression);
 
-  module.exports.createRatio = createRatio = function(numerator, denominator) {
-    return new Ratio({
-      numerator: numerator,
-      denominator: denominator
-    });
-  };
-
 }).call(this);
 
 
 
-},{"../datatypes/exception":121,"../datatypes/quantity":124,"./expression":134}],149:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"../datatypes/exception":121,"../datatypes/quantity":124,"./expression":135}],150:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, ExpressionDef, ExpressionRef, FunctionDef, FunctionRef, IdentifierRef, OperandRef, build,
@@ -27338,7 +27362,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":128,"./expression":134}],150:[function(require,module,exports){
+},{"./builder":129,"./expression":135}],151:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Combine, Concatenate, EndsWith, Expression, Lower, Matches, PositionOf, Split, SplitOnMatches, StartsWith, Substring, UnimplementedExpression, Upper, build, ref,
@@ -27616,7 +27640,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":128,"./expression":134}],151:[function(require,module,exports){
+},{"./builder":129,"./expression":135}],152:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Expression, Property, Tuple, TupleElement, TupleElementDefinition, UnimplementedExpression, build, ref,
@@ -27736,7 +27760,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./builder":128,"./expression":134}],152:[function(require,module,exports){
+},{"./builder":129,"./expression":135}],153:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var As, CanConvertQuantity, Concept, Convert, ConvertQuantity, ConvertsToBoolean, ConvertsToDate, ConvertsToDateTime, ConvertsToDecimal, ConvertsToInteger, ConvertsToQuantity, ConvertsToRatio, ConvertsToString, ConvertsToTime, Date, DateTime, Expression, FunctionRef, IntervalTypeSpecifier, Is, ListTypeSpecifier, NamedTypeSpecifier, Quantity, Ratio, ToBoolean, ToConcept, ToDate, ToDateTime, ToDecimal, ToInteger, ToQuantity, ToRatio, ToString, ToTime, TupleTypeSpecifier, UnimplementedExpression, canConvertToType, isValidDecimal, isValidInteger, limitDecimalPrecision, normalizeMillisecondsField, parseQuantity, ref, ref1, ref2, ref3,
@@ -27757,7 +27781,7 @@ function numberIsNaN (obj) {
 
   normalizeMillisecondsField = require('../util/util').normalizeMillisecondsField;
 
-  Ratio = require('./ratio').Ratio;
+  Ratio = require('../datatypes/ratio').Ratio;
 
   module.exports.As = As = (function(superClass) {
     extend(As, superClass);
@@ -27966,10 +27990,7 @@ function numberIsNaN (obj) {
         if (!((numerator != null) && (denominator != null))) {
           return null;
         }
-        return new Ratio({
-          numerator: numerator,
-          denominator: denominator
-        });
+        return new Ratio(numerator, denominator);
       } else {
         return null;
       }
@@ -28339,18 +28360,15 @@ function numberIsNaN (obj) {
     }
 
     ConvertQuantity.prototype.exec = function(ctx) {
-      var newUnit, newValue, quantity, ref4;
+      var newUnit, quantity, ref4;
       ref4 = this.execArgs(ctx), quantity = ref4[0], newUnit = ref4[1];
       if ((quantity != null) && (newUnit != null)) {
-        newValue = quantity.convertUnits(newUnit);
-        if (newValue != null) {
-          return new Quantity({
-            value: newValue,
-            unit: newUnit
-          });
+        try {
+          return quantity.convertUnit(newUnit);
+        } catch (error) {
+          return null;
         }
       }
-      return null;
     };
 
     return ConvertQuantity;
@@ -28368,9 +28386,10 @@ function numberIsNaN (obj) {
       var newUnit, quantity, ref4;
       ref4 = this.execArgs(ctx), quantity = ref4[0], newUnit = ref4[1];
       if ((quantity != null) && (newUnit != null)) {
-        if (quantity.convertUnits(newUnit) != null) {
+        try {
+          quantity.convertUnit(newUnit);
           return true;
-        } else {
+        } catch (error) {
           return false;
         }
       }
@@ -28440,7 +28459,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/clinical":118,"../datatypes/datetime":120,"../datatypes/quantity":124,"../util/math":248,"../util/util":249,"./expression":134,"./ratio":148,"./reusable":149}],153:[function(require,module,exports){
+},{"../datatypes/clinical":118,"../datatypes/datetime":120,"../datatypes/quantity":124,"../datatypes/ratio":125,"../util/math":249,"../util/util":250,"./expression":135,"./reusable":150}],154:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Alert, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28599,7 +28618,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],154:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],155:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AllergyIntolerance, AllergyIntoleranceEventComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -28957,7 +28976,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],155:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],156:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Appointment, AppointmentParticipantComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29304,7 +29323,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],156:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],157:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AppointmentResponse, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29525,7 +29544,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],157:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],158:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, Availability, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29693,7 +29712,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],158:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],159:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Basic, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29844,7 +29863,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],159:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],160:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Binary, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -29948,7 +29967,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],160:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],161:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Bundle, BundleEntryComponent, BundleEntryDeletedComponent, BundleLinkComponent, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -30296,7 +30315,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],161:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],162:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CarePlan, CarePlanActivityComponent, CarePlanActivitySimpleComponent, CarePlanGoalComponent, CarePlanParticipantComponent, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -30896,7 +30915,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],162:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],163:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var AddedItemAdjudicationComponent, AddedItemComponent, AddedItemDetailAdjudicationComponent, AddedItemsDetailComponent, Address, Attachment, BackboneElement, CORE, ClaimResponse, CodeableConcept, Coding, ContactPoint, DT, DetailAdjudicationComponent, DomainResource, Element, ElementDefinition, ErrorsComponent, Extension, HumanName, Identifier, ItemAdjudicationComponent, ItemDetailComponent, ItemSubdetailComponent, ItemsComponent, Narrative, NotesComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SubdetailAdjudicationComponent, Timing,
@@ -32043,7 +32062,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],163:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],164:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, CommunicationRequest, CommunicationRequestMessagePartComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -32391,7 +32410,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],164:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],165:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Composition, CompositionAttesterComponent, CompositionEventComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SectionComponent, Timing,
@@ -32861,7 +32880,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],165:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],166:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptMap, ConceptMapElementComponent, ConceptMapElementMapComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OtherElementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -33323,7 +33342,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],166:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],167:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Condition, ConditionDueToComponent, ConditionEvidenceComponent, ConditionLocationComponent, ConditionOccurredFollowingComponent, ConditionStageComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -33899,7 +33918,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],167:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],168:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, Conformance, ConformanceDocumentComponent, ConformanceImplementationComponent, ConformanceMessagingComponent, ConformanceMessagingEventComponent, ConformanceRestComponent, ConformanceRestOperationComponent, ConformanceRestResourceComponent, ConformanceRestResourceSearchParamComponent, ConformanceRestSecurityCertificateComponent, ConformanceRestSecurityComponent, ConformanceSoftwareComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, ResourceInteractionComponent, SampledData, SystemInteractionComponent, Timing,
@@ -35088,7 +35107,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],168:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],169:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contract, ContractSignerComponent, ContractTermComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -35627,7 +35646,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],169:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],170:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Contraindication, ContraindicationMitigationComponent, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -35894,7 +35913,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],170:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],171:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, Base, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ElementDefinitionBindingComponent, ElementDefinitionConstraintComponent, ElementDefinitionMappingComponent, ElementDefinitionSlicingComponent, Extension, HumanName, Identifier, Narrative, Parameters, ParametersParameterComponent, Period, Quantity, Range, Ratio, Reference, Resource, ResourceMetaComponent, SampledData, Timing, TimingRepeatComponent, TypeRefComponent,
@@ -38081,7 +38100,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115}],171:[function(require,module,exports){
+},{"../cql-datatypes":115}],172:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, Coverage, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -38313,7 +38332,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],172:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],173:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DataElement, DataElementBindingComponent, DataElementMappingComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -38771,7 +38790,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],173:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],174:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, Device, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39013,7 +39032,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],174:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],175:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceComponent, DeviceComponentProductionSpecificationComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39282,7 +39301,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],175:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],176:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceUseRequest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39578,7 +39597,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],176:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],177:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DeviceUseStatement, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -39813,7 +39832,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],177:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],178:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticOrder, DiagnosticOrderEventComponent, DiagnosticOrderItemComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40214,7 +40233,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],178:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],179:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DiagnosticReport, DiagnosticReportImageComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40588,7 +40607,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],179:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],180:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentManifest, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -40857,7 +40876,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],180:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],181:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DocumentReference, DocumentReferenceContextComponent, DocumentReferenceRelatesToComponent, DocumentReferenceServiceComponent, DocumentReferenceServiceParameterComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41441,7 +41460,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],181:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],182:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Eligibility, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41616,7 +41635,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],182:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],183:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EligibilityResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -41823,7 +41842,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],183:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],184:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Encounter, EncounterHospitalizationAccomodationComponent, EncounterHospitalizationComponent, EncounterLocationComponent, EncounterParticipantComponent, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42441,7 +42460,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],184:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],185:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Enrollment, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42652,7 +42671,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],185:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],186:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, EnrollmentResponse, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -42859,7 +42878,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],186:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],187:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, ExplanationOfBenefit, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -43066,7 +43085,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],187:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],188:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, ExtensionDefinition, ExtensionDefinitionMappingComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -43416,7 +43435,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],188:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],189:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, FamilyHistory, FamilyHistoryRelationComponent, FamilyHistoryRelationConditionComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -43829,7 +43848,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],189:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],190:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, Group, GroupCharacteristicComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -44102,7 +44121,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],190:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],191:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HealthcareService, HealthcareServiceAvailableTimeComponent, HealthcareServiceNotAvailableTimeComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, ServiceTypeComponent, Timing,
@@ -44729,7 +44748,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],191:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],192:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImagingObjectSelection, InstanceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SeriesComponent, StudyComponent, Timing,
@@ -45107,7 +45126,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],192:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],193:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImagingStudy, ImagingStudySeriesComponent, ImagingStudySeriesInstanceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -45638,7 +45657,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],193:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],194:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Immunization, ImmunizationExplanationComponent, ImmunizationReactionComponent, ImmunizationVaccinationProtocolComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46170,7 +46189,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],194:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],195:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ImmunizationRecommendation, ImmunizationRecommendationRecommendationComponent, ImmunizationRecommendationRecommendationDateCriterionComponent, ImmunizationRecommendationRecommendationProtocolComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46542,7 +46561,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],195:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],196:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, List, ListEntryComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -46816,7 +46835,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],196:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],197:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Location, LocationPositionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -47099,7 +47118,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],197:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],198:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Media, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -47334,7 +47353,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],198:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],199:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Medication, MedicationPackageComponent, MedicationPackageContentComponent, MedicationProductComponent, MedicationProductIngredientComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -47682,7 +47701,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],199:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],200:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationAdministration, MedicationAdministrationDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -48087,7 +48106,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],200:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],201:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationDispense, MedicationDispenseDispenseComponent, MedicationDispenseDispenseDosageComponent, MedicationDispenseSubstitutionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -48650,7 +48669,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],201:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],202:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationPrescription, MedicationPrescriptionDispenseComponent, MedicationPrescriptionDosageInstructionComponent, MedicationPrescriptionSubstitutionComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -49187,7 +49206,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],202:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],203:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MedicationStatement, MedicationStatementDosageComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -49520,7 +49539,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],203:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],204:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, MessageDestinationComponent, MessageHeader, MessageHeaderResponseComponent, MessageSourceComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -49933,7 +49952,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],204:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],205:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   module.exports = require('./core');
@@ -50118,7 +50137,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./alert":153,"./allergyintolerance":154,"./appointment":155,"./appointmentresponse":156,"./availability":157,"./basic":158,"./binary":159,"./bundle":160,"./careplan":161,"./claimresponse":162,"./communicationrequest":163,"./composition":164,"./conceptmap":165,"./condition":166,"./conformance":167,"./contract":168,"./contraindication":169,"./core":170,"./coverage":171,"./dataelement":172,"./device":173,"./devicecomponent":174,"./deviceuserequest":175,"./deviceusestatement":176,"./diagnosticorder":177,"./diagnosticreport":178,"./documentmanifest":179,"./documentreference":180,"./eligibility":181,"./eligibilityresponse":182,"./encounter":183,"./enrollment":184,"./enrollmentresponse":185,"./explanationofbenefit":186,"./extensiondefinition":187,"./familyhistory":188,"./group":189,"./healthcareservice":190,"./imagingobjectselection":191,"./imagingstudy":192,"./immunization":193,"./immunizationrecommendation":194,"./list":195,"./location":196,"./media":197,"./medication":198,"./medicationadministration":199,"./medicationdispense":200,"./medicationprescription":201,"./medicationstatement":202,"./messageheader":203,"./namingsystem":205,"./nutritionorder":206,"./observation":207,"./operationdefinition":208,"./operationoutcome":209,"./oralhealthclaim":210,"./order":211,"./orderresponse":212,"./organization":213,"./other":214,"./patient":215,"./paymentnotice":216,"./paymentreconciliation":217,"./pendedrequest":218,"./practitioner":219,"./procedure":220,"./procedurerequest":221,"./profile":222,"./provenance":223,"./query":224,"./questionnaire":225,"./questionnaireanswers":226,"./readjudicate":227,"./referralrequest":228,"./relatedperson":229,"./reversal":230,"./riskassessment":231,"./searchparameter":232,"./securityevent":233,"./slot":234,"./specimen":235,"./statusrequest":236,"./statusresponse":237,"./subscription":238,"./substance":239,"./supply":240,"./supportingdocumentation":241,"./valueset":242}],205:[function(require,module,exports){
+},{"./alert":154,"./allergyintolerance":155,"./appointment":156,"./appointmentresponse":157,"./availability":158,"./basic":159,"./binary":160,"./bundle":161,"./careplan":162,"./claimresponse":163,"./communicationrequest":164,"./composition":165,"./conceptmap":166,"./condition":167,"./conformance":168,"./contract":169,"./contraindication":170,"./core":171,"./coverage":172,"./dataelement":173,"./device":174,"./devicecomponent":175,"./deviceuserequest":176,"./deviceusestatement":177,"./diagnosticorder":178,"./diagnosticreport":179,"./documentmanifest":180,"./documentreference":181,"./eligibility":182,"./eligibilityresponse":183,"./encounter":184,"./enrollment":185,"./enrollmentresponse":186,"./explanationofbenefit":187,"./extensiondefinition":188,"./familyhistory":189,"./group":190,"./healthcareservice":191,"./imagingobjectselection":192,"./imagingstudy":193,"./immunization":194,"./immunizationrecommendation":195,"./list":196,"./location":197,"./media":198,"./medication":199,"./medicationadministration":200,"./medicationdispense":201,"./medicationprescription":202,"./medicationstatement":203,"./messageheader":204,"./namingsystem":206,"./nutritionorder":207,"./observation":208,"./operationdefinition":209,"./operationoutcome":210,"./oralhealthclaim":211,"./order":212,"./orderresponse":213,"./organization":214,"./other":215,"./patient":216,"./paymentnotice":217,"./paymentreconciliation":218,"./pendedrequest":219,"./practitioner":220,"./procedure":221,"./procedurerequest":222,"./profile":223,"./provenance":224,"./query":225,"./questionnaire":226,"./questionnaireanswers":227,"./readjudicate":228,"./referralrequest":229,"./relatedperson":230,"./reversal":231,"./riskassessment":232,"./searchparameter":233,"./securityevent":234,"./slot":235,"./specimen":236,"./statusrequest":237,"./statusresponse":238,"./subscription":239,"./substance":240,"./supply":241,"./supportingdocumentation":242,"./valueset":243}],206:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, NamingSystem, NamingSystemContactComponent, NamingSystemUniqueIdComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -50438,7 +50457,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],206:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],207:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, NutritionOrder, NutritionOrderItemComponent, NutritionOrderItemEnteralFormulaComponent, NutritionOrderItemOralDietComponent, NutritionOrderItemOralDietNutrientsComponent, NutritionOrderItemOralDietTextureComponent, NutritionOrderItemSupplementComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -51144,7 +51163,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],207:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],208:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Observation, ObservationReferenceRangeComponent, ObservationRelatedComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -51681,7 +51700,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],208:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],209:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OperationDefinition, OperationDefinitionParameterComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -52069,7 +52088,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],209:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],210:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OperationOutcome, OperationOutcomeIssueComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -52233,7 +52252,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],210:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],211:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, CoverageComponent, DT, DetailComponent, DiagnosisComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ItemsComponent, MissingTeethComponent, Narrative, OralHealthClaim, OrthodonticPlanComponent, Parameters, PayeeComponent, Period, ProsthesisComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, SubDetailComponent, Timing,
@@ -53609,7 +53628,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],211:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],212:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Order, OrderWhenComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -53870,7 +53889,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],212:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],213:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, OrderResponse, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54072,7 +54091,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],213:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],214:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Organization, OrganizationContactComponent, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54379,7 +54398,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],214:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],215:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Other, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -54530,7 +54549,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],215:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],216:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, AnimalComponent, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Patient, PatientLinkComponent, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55106,7 +55125,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],216:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],217:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PaymentNotice, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55317,7 +55336,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],217:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],218:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DetailsComponent, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, NotesComponent, Parameters, PaymentReconciliation, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55749,7 +55768,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],218:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],219:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PendedRequest, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -55968,7 +55987,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],219:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],220:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Practitioner, PractitionerQualificationComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -56355,7 +56374,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],220:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],221:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Procedure, ProcedurePerformerComponent, ProcedureRelatedItemComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -56734,7 +56753,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],221:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],222:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, ProcedureRequest, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -57045,7 +57064,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],222:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],223:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConstraintComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Profile, ProfileMappingComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -57448,7 +57467,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],223:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],224:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Provenance, ProvenanceAgentComponent, ProvenanceEntityComponent, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -57793,7 +57812,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],224:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],225:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Query, QueryResponseComponent, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -58081,7 +58100,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],225:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],226:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, GroupComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, QuestionComponent, Questionnaire, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -58483,7 +58502,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],226:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],227:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, GroupComponent, HumanName, Identifier, Narrative, Parameters, Period, Quantity, QuestionAnswerComponent, QuestionComponent, QuestionnaireAnswers, Range, Ratio, Reference, Resource, SampledData, Timing,
@@ -59004,7 +59023,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],227:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],228:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, ItemsComponent, Narrative, Parameters, Period, Quantity, Range, Ratio, Readjudicate, Reference, Resource, SampledData, Timing,
@@ -59261,7 +59280,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],228:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],229:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, ReferralRequest, Resource, SampledData, Timing,
@@ -59549,7 +59568,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],229:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],230:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, RelatedPerson, Resource, SampledData, Timing,
@@ -59748,7 +59767,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],230:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],231:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, PayeeComponent, Period, Quantity, Range, Ratio, Reference, Resource, Reversal, ReversalCoverageComponent, SampledData, Timing,
@@ -60121,7 +60140,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],231:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],232:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, RiskAssessment, RiskAssessmentPredictionComponent, SampledData, Timing,
@@ -60434,7 +60453,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],232:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],233:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SearchParameter, Timing,
@@ -60627,7 +60646,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],233:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],234:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SecurityEvent, SecurityEventEventComponent, SecurityEventObjectComponent, SecurityEventObjectDetailComponent, SecurityEventParticipantComponent, SecurityEventParticipantNetworkComponent, SecurityEventSourceComponent, Timing,
@@ -61249,7 +61268,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],234:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],235:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Slot, Timing,
@@ -61442,7 +61461,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],235:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],236:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Specimen, SpecimenCollectionComponent, SpecimenContainerComponent, SpecimenSourceComponent, SpecimenTreatmentComponent, Timing,
@@ -61979,7 +61998,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],236:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],237:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, StatusRequest, Timing,
@@ -62178,7 +62197,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],237:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],238:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, StatusResponse, StatusResponseNotesComponent, Timing,
@@ -62478,7 +62497,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],238:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],239:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Subscription, SubscriptionChannelComponent, SubscriptionTagComponent, Timing,
@@ -62772,7 +62791,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],239:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],240:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Substance, SubstanceIngredientComponent, SubstanceInstanceComponent, Timing,
@@ -63007,7 +63026,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],240:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],241:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Supply, SupplyDispenseComponent, Timing,
@@ -63312,7 +63331,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],241:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],242:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, SupportingDocumentation, SupportingDocumentationDetailComponent, Timing,
@@ -63619,7 +63638,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],242:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],243:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Address, Attachment, BackboneElement, CORE, CodeableConcept, Coding, ConceptDefinitionComponent, ConceptDefinitionDesignationComponent, ConceptReferenceComponent, ConceptSetComponent, ConceptSetFilterComponent, ContactPoint, DT, DomainResource, Element, ElementDefinition, Extension, HumanName, Identifier, Narrative, Parameters, Period, Quantity, Range, Ratio, Reference, Resource, SampledData, Timing, ValueSet, ValueSetComposeComponent, ValueSetDefineComponent, ValueSetExpansionComponent, ValueSetExpansionContainsComponent,
@@ -64509,7 +64528,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql-datatypes":115,"./core":170}],243:[function(require,module,exports){
+},{"../cql-datatypes":115,"./core":171}],244:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Context, Exception, Library, PatientContext, PopulationContext, dt, typeIsArray, util,
@@ -64953,7 +64972,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":119,"../datatypes/exception":121,"../elm/library":139,"../util/util":249,"util":373}],244:[function(require,module,exports){
+},{"../datatypes/datatypes":119,"../datatypes/exception":121,"../elm/library":140,"../util/util":250,"util":374}],245:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Executor, PatientContext, PopulationContext, Results, ref;
@@ -65035,7 +65054,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"./context":243,"./results":246}],245:[function(require,module,exports){
+},{"./context":244,"./results":247}],246:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Repository, cql;
@@ -65077,7 +65096,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../cql":117}],246:[function(require,module,exports){
+},{"../cql":117}],247:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Results;
@@ -65112,7 +65131,7 @@ function numberIsNaN (obj) {
 
 
 
-},{}],247:[function(require,module,exports){
+},{}],248:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Uncertainty, areDateTimesOrQuantities, areNumbers, classesEqual, codesAreEquivalent, compareEveryItemInArrays, compareObjects, deepCompareKeysAndValues, equals, equivalent, getClassOfObjects, getKeysFromObject, isCode, isFunction, isUncertainty;
@@ -65215,6 +65234,8 @@ function numberIsNaN (obj) {
         return compareObjects(a, b, equivalent);
       case '[object String]':
         if (bClass === '[object String]') {
+          a = a.replace(/\s/g, ' ');
+          b = b.replace(/\s/g, ' ');
           return (a.localeCompare(b, 'en', {
             sensitivity: 'base'
           })) === 0;
@@ -65361,7 +65382,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datetime":120,"../datatypes/uncertainty":125}],248:[function(require,module,exports){
+},{"../datatypes/datetime":120,"../datatypes/uncertainty":126}],249:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var DateTime, Exception, MAX_DATE_VALUE, MAX_FLOAT_VALUE, MAX_INT_VALUE, MAX_TIME_VALUE, MIN_DATE_VALUE, MIN_FLOAT_PRECISION_VALUE, MIN_FLOAT_VALUE, MIN_INT_VALUE, MIN_TIME_VALUE, OverFlowException, Uncertainty, isValidDecimal, isValidInteger, predecessor, successor,
@@ -65593,7 +65614,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datetime":120,"../datatypes/exception":121,"../datatypes/uncertainty":125}],249:[function(require,module,exports){
+},{"../datatypes/datetime":120,"../datatypes/exception":121,"../datatypes/uncertainty":126}],250:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var getTimezoneSeparatorFromString, normalizeMillisecondsField, normalizeMillisecondsFieldInString, typeIsArray;
@@ -65680,7 +65701,7 @@ function numberIsNaN (obj) {
 
 
 
-},{}],250:[function(require,module,exports){
+},{}],251:[function(require,module,exports){
 //! moment.js
 //! version : 2.20.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -70217,7 +70238,7 @@ return hooks;
 
 })));
 
-},{}],251:[function(require,module,exports){
+},{}],252:[function(require,module,exports){
 module.exports={
   "10*": {
     "value": 10,
@@ -71421,10 +71442,10 @@ module.exports={
   }
 }
 
-},{}],252:[function(require,module,exports){
+},{}],253:[function(require,module,exports){
 module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":true,"A":true,"V":true,"F":true,"Ohm":true,"S":true,"Wb":true,"Cel":true,"T":true,"H":true,"lm":true,"lx":true,"Bq":true,"Gy":true,"Sv":true,"l":true,"L":true,"ar":true,"t":true,"bar":true,"u":true,"eV":true,"pc":true,"[c]":true,"[h]":true,"[k]":true,"[eps_0]":true,"[mu_0]":true,"[e]":true,"[m_e]":true,"[m_p]":true,"[G]":true,"[g]":true,"[ly]":true,"gf":true,"Ky":true,"Gal":true,"dyn":true,"erg":true,"P":true,"Bi":true,"St":true,"Mx":true,"G":true,"Oe":true,"Gb":true,"sb":true,"Lmb":true,"ph":true,"Ci":true,"R":true,"RAD":true,"REM":true,"cal_[15]":true,"cal_[20]":true,"cal_m":true,"cal_IT":true,"cal_th":true,"cal":true,"tex":true,"m[H2O]":true,"m[Hg]":true,"eq":true,"osm":true,"g%":true,"kat":true,"U":true,"[iU]":true,"[IU]":true,"Np":true,"B":true,"B[SPL]":true,"B[V]":true,"B[mV]":true,"B[uV]":true,"B[10.nV]":true,"B[W]":true,"B[kW]":true,"st":true,"mho":true,"bit":true,"By":true,"Bd":true,"m":true,"s":true,"g":true,"rad":true,"K":true,"C":true,"cd":true}
 
-},{}],253:[function(require,module,exports){
+},{}],254:[function(require,module,exports){
 module.exports={
   "Y": {
     "CODE": "YA",
@@ -71788,7 +71809,7 @@ module.exports={
   }
 }
 
-},{}],254:[function(require,module,exports){
+},{}],255:[function(require,module,exports){
 module.exports={
   "Y": 1e+24,
   "Z": 1e+21,
@@ -71816,7 +71837,7 @@ module.exports={
   "Ti": 1099511627776
 }
 
-},{}],255:[function(require,module,exports){
+},{}],256:[function(require,module,exports){
 module.exports = (function() {
   /*
    * Generated by PEG.js 0.8.0.
@@ -73364,7 +73385,7 @@ module.exports = (function() {
   };
 })();
 
-},{"../lib/helpers":257,"./metrics.json":252,"./prefixMetadata.json":253,"./prefixes.json":254,"./unitMetadata.json":256}],256:[function(require,module,exports){
+},{"../lib/helpers":258,"./metrics.json":253,"./prefixMetadata.json":254,"./prefixes.json":255,"./unitMetadata.json":257}],257:[function(require,module,exports){
 module.exports={
   "10*": {
     "isBase": false,
@@ -79551,7 +79572,7 @@ module.exports={
   }
 }
 
-},{}],257:[function(require,module,exports){
+},{}],258:[function(require,module,exports){
 module.exports = {
 
   multiply: function multiply(t, ms) {
@@ -79621,7 +79642,7 @@ module.exports = {
   }
 }
 
-},{}],258:[function(require,module,exports){
+},{}],259:[function(require,module,exports){
 parser = require('./generated/ucum-parser.js');
 equivalents = require('./generated/equivalents.json');
 helpers = require('./lib/helpers.js');
@@ -79851,7 +79872,7 @@ function unitQuery(criteria, resultFields){
     return obj;
   });
 }
-},{"./generated/equivalents.json":251,"./generated/ucum-parser.js":255,"./generated/unitMetadata.json":256,"./lib/helpers.js":257}],259:[function(require,module,exports){
+},{"./generated/equivalents.json":252,"./generated/ucum-parser.js":256,"./generated/unitMetadata.json":257,"./lib/helpers.js":258}],260:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -80376,7 +80397,7 @@ function functionBindPolyfill(context) {
   };
 }
 
-},{}],260:[function(require,module,exports){
+},{}],261:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -80462,9 +80483,9 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],261:[function(require,module,exports){
+},{}],262:[function(require,module,exports){
 arguments[4][88][0].apply(exports,arguments)
-},{"dup":88}],262:[function(require,module,exports){
+},{"dup":88}],263:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -80487,7 +80508,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],263:[function(require,module,exports){
+},{}],264:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -80994,7 +81015,7 @@ function decorateNextFn(fn) {
 module.exports = Kareem;
 
 }).call(this,require('_process'))
-},{"_process":367}],264:[function(require,module,exports){
+},{"_process":368}],265:[function(require,module,exports){
 /**
  * Export lib/mongoose
  *
@@ -81004,7 +81025,7 @@ module.exports = Kareem;
 
 module.exports = require('./lib/browser');
 
-},{"./lib/browser":265}],265:[function(require,module,exports){
+},{"./lib/browser":266}],266:[function(require,module,exports){
 (function (Buffer){
 /* eslint-env browser */
 
@@ -81141,7 +81162,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./document_provider.js":275,"./driver":276,"./drivers/browser":280,"./error":284,"./promise_provider":318,"./schema":320,"./schematype.js":341,"./types":348,"./utils.js":352,"./virtualtype":353,"buffer":113}],266:[function(require,module,exports){
+},{"./document_provider.js":276,"./driver":277,"./drivers/browser":281,"./error":285,"./promise_provider":319,"./schema":321,"./schematype.js":342,"./types":349,"./utils.js":353,"./virtualtype":354,"buffer":113}],267:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -81245,7 +81266,7 @@ utils.each(
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":274,"./error":284,"./helpers/model/applyHooks":303,"./schema":320,"./types/objectid":350,"./utils":352,"events":259}],267:[function(require,module,exports){
+},{"./document":275,"./error":285,"./helpers/model/applyHooks":304,"./schema":321,"./types/objectid":351,"./utils":353,"events":260}],268:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -81586,7 +81607,7 @@ function _cast(val, numbertype, context) {
     }
   }
 }
-},{"./error/strict":293,"./helpers/get":301,"./schema/index":328,"./schema/operators/text":337,"./utils":352,"util":373}],268:[function(require,module,exports){
+},{"./error/strict":294,"./helpers/get":302,"./schema/index":329,"./schema/operators/text":338,"./utils":353,"util":374}],269:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -81619,7 +81640,7 @@ module.exports = function castBoolean(value, path) {
 module.exports.convertToTrue = new Set([true, 'true', 1, '1', 'yes']);
 module.exports.convertToFalse = new Set([false, 'false', 0, '0', 'no']);
 
-},{"../error/cast":282}],269:[function(require,module,exports){
+},{"../error/cast":283}],270:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -81661,7 +81682,7 @@ module.exports = function castDate(value) {
 
   assert.ok(false);
 };
-},{"assert":87}],270:[function(require,module,exports){
+},{"assert":87}],271:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -81700,7 +81721,7 @@ module.exports = function castDecimal128(value) {
   assert.ok(false);
 };
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../types/decimal128":345,"assert":87}],271:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../types/decimal128":346,"assert":87}],272:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -81747,7 +81768,7 @@ module.exports = function castNumber(val) {
   assert.ok(false);
 };
 
-},{"assert":87}],272:[function(require,module,exports){
+},{"assert":87}],273:[function(require,module,exports){
 'use strict';
 
 const ObjectId = require('../driver').get().ObjectId;
@@ -81777,7 +81798,7 @@ module.exports = function castObjectId(value) {
 
   assert.ok(false);
 };
-},{"../driver":276,"assert":87}],273:[function(require,module,exports){
+},{"../driver":277,"assert":87}],274:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -81814,7 +81835,7 @@ module.exports = function castString(value, path) {
   throw new CastError('string', value, path);
 };
 
-},{"../error/cast":282}],274:[function(require,module,exports){
+},{"../error/cast":283}],275:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
 
@@ -84998,7 +85019,7 @@ Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":262,"./error":284,"./error/objectExpected":289,"./error/objectParameter":290,"./error/strict":293,"./helpers/common":297,"./helpers/document/cleanModifiedSubpaths":298,"./helpers/document/compile":299,"./helpers/document/getEmbeddedDiscriminatorPath":300,"./helpers/get":301,"./helpers/projection/isDefiningProjection":306,"./helpers/projection/isExclusive":307,"./helpers/symbols":312,"./internal":315,"./options":316,"./plugins/idGetter":317,"./schema/mixed":330,"./schematype":341,"./types/array":343,"./types/documentarray":346,"./types/embedded":347,"./utils":352,"./virtualtype":353,"_process":367,"events":259,"mpath":355,"util":373}],275:[function(require,module,exports){
+},{"../../is-buffer/index.js":263,"./error":285,"./error/objectExpected":290,"./error/objectParameter":291,"./error/strict":294,"./helpers/common":298,"./helpers/document/cleanModifiedSubpaths":299,"./helpers/document/compile":300,"./helpers/document/getEmbeddedDiscriminatorPath":301,"./helpers/get":302,"./helpers/projection/isDefiningProjection":307,"./helpers/projection/isExclusive":308,"./helpers/symbols":313,"./internal":316,"./options":317,"./plugins/idGetter":318,"./schema/mixed":331,"./schematype":342,"./types/array":344,"./types/documentarray":347,"./types/embedded":348,"./utils":353,"./virtualtype":354,"_process":368,"events":260,"mpath":356,"util":374}],276:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -85030,7 +85051,7 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":266,"./document.js":274}],276:[function(require,module,exports){
+},{"./browserDocument.js":267,"./document.js":275}],277:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85047,7 +85068,7 @@ module.exports.set = function(v) {
   driver = v;
 };
 
-},{}],277:[function(require,module,exports){
+},{}],278:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -85056,7 +85077,7 @@ module.exports.set = function(v) {
 
 module.exports = function() {};
 
-},{}],278:[function(require,module,exports){
+},{}],279:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -85072,7 +85093,7 @@ const Binary = require('bson').Binary;
 
 module.exports = exports = Binary;
 
-},{"bson":94}],279:[function(require,module,exports){
+},{"bson":94}],280:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -85081,7 +85102,7 @@ module.exports = exports = Binary;
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":94}],280:[function(require,module,exports){
+},{"bson":94}],281:[function(require,module,exports){
 /*!
  * Module exports.
  */
@@ -85096,7 +85117,7 @@ exports.Decimal128 = require('./decimal128');
 exports.ObjectId = require('./objectid');
 exports.ReadPreference = require('./ReadPreference');
 
-},{"./ReadPreference":277,"./binary":278,"./decimal128":279,"./objectid":281}],281:[function(require,module,exports){
+},{"./ReadPreference":278,"./binary":279,"./decimal128":280,"./objectid":282}],282:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -85126,7 +85147,7 @@ Object.defineProperty(ObjectId.prototype, '_id', {
 
 module.exports = exports = ObjectId;
 
-},{"bson":94}],282:[function(require,module,exports){
+},{"bson":94}],283:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85190,7 +85211,7 @@ CastError.prototype.setModel = function(model) {
 
 module.exports = CastError;
 
-},{"./mongooseError":287,"util":373}],283:[function(require,module,exports){
+},{"./mongooseError":288,"util":374}],284:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -85240,7 +85261,7 @@ DivergentArrayError.prototype.constructor = MongooseError;
 
 module.exports = DivergentArrayError;
 
-},{"./":284}],284:[function(require,module,exports){
+},{"./":285}],285:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('./mongooseError');
@@ -85348,7 +85369,7 @@ MongooseError.MissingSchemaError = require('./missingSchema');
 
 MongooseError.DivergentArrayError = require('./divergentArray');
 
-},{"./cast":282,"./divergentArray":283,"./messages":285,"./missingSchema":286,"./mongooseError":287,"./notFound":288,"./overwriteModel":291,"./parallelSave":292,"./validation":294,"./validator":295,"./version":296}],285:[function(require,module,exports){
+},{"./cast":283,"./divergentArray":284,"./messages":286,"./missingSchema":287,"./mongooseError":288,"./notFound":289,"./overwriteModel":292,"./parallelSave":293,"./validation":295,"./validator":296,"./version":297}],286:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -85396,7 +85417,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],286:[function(require,module,exports){
+},{}],287:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -85437,7 +85458,7 @@ MissingSchemaError.prototype.constructor = MongooseError;
 
 module.exports = MissingSchemaError;
 
-},{"./":284}],287:[function(require,module,exports){
+},{"./":285}],288:[function(require,module,exports){
 'use strict';
 
 /**
@@ -85494,7 +85515,7 @@ MongooseError.prototype.constructor = Error;
 
 module.exports = MongooseError;
 
-},{}],288:[function(require,module,exports){
+},{}],289:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85548,7 +85569,7 @@ DocumentNotFoundError.prototype.constructor = MongooseError;
 
 module.exports = DocumentNotFoundError;
 
-},{"./":284,"util":373}],289:[function(require,module,exports){
+},{"./":285,"util":374}],290:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -85587,7 +85608,7 @@ ObjectExpectedError.prototype.constructor = MongooseError;
 
 module.exports = ObjectExpectedError;
 
-},{"./":284}],290:[function(require,module,exports){
+},{"./":285}],291:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -85627,7 +85648,7 @@ ObjectParameterError.prototype.constructor = MongooseError;
 
 module.exports = ObjectParameterError;
 
-},{"./":284}],291:[function(require,module,exports){
+},{"./":285}],292:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -85666,7 +85687,7 @@ OverwriteModelError.prototype.constructor = MongooseError;
 
 module.exports = OverwriteModelError;
 
-},{"./":284}],292:[function(require,module,exports){
+},{"./":285}],293:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85701,7 +85722,7 @@ ParallelSaveError.prototype.constructor = MongooseError;
 
 module.exports = ParallelSaveError;
 
-},{"./":284}],293:[function(require,module,exports){
+},{"./":285}],294:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -85741,7 +85762,7 @@ StrictModeError.prototype.constructor = MongooseError;
 
 module.exports = StrictModeError;
 
-},{"./":284}],294:[function(require,module,exports){
+},{"./":285}],295:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -85855,7 +85876,7 @@ function _generateMessage(err) {
 
 module.exports = exports = ValidationError;
 
-},{"./":284,"util":373}],295:[function(require,module,exports){
+},{"./":285,"util":374}],296:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -85946,7 +85967,7 @@ ValidatorError.prototype.toString = function() {
 
 module.exports = ValidatorError;
 
-},{"./":284}],296:[function(require,module,exports){
+},{"./":285}],297:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85984,7 +86005,7 @@ VersionError.prototype.constructor = MongooseError;
 
 module.exports = VersionError;
 
-},{"./":284}],297:[function(require,module,exports){
+},{"./":285}],298:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -86075,7 +86096,7 @@ function shouldFlatten(val) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"../types/objectid":350,"../utils":352,"buffer":113}],298:[function(require,module,exports){
+},{"../types/objectid":351,"../utils":353,"buffer":113}],299:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -86102,7 +86123,7 @@ module.exports = function cleanModifiedSubpaths(doc, path, options) {
   return deleted;
 };
 
-},{}],299:[function(require,module,exports){
+},{}],300:[function(require,module,exports){
 'use strict';
 
 const get = require('../../helpers/get');
@@ -86251,7 +86272,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":274,"../../helpers/get":301,"../../helpers/symbols":312,"../../utils":352}],300:[function(require,module,exports){
+},{"../../document":275,"../../helpers/get":302,"../../helpers/symbols":313,"../../utils":353}],301:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -86296,7 +86317,7 @@ module.exports = function getEmbeddedDiscriminatorPath(doc, path, options) {
   return typeOnly ? type : schema;
 };
 
-},{"../get":301}],301:[function(require,module,exports){
+},{"../get":302}],302:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -86336,7 +86357,7 @@ function getProperty(obj, prop) {
   }
   return obj[prop];
 }
-},{}],302:[function(require,module,exports){
+},{}],303:[function(require,module,exports){
 (function (process){
 /*!
  * Centralize this so we can more easily work around issues with people
@@ -86352,7 +86373,7 @@ module.exports = function immediate(cb) {
 };
 
 }).call(this,require('_process'))
-},{"_process":367}],303:[function(require,module,exports){
+},{"_process":368}],304:[function(require,module,exports){
 'use strict';
 
 const symbols = require('../../schema/symbols');
@@ -86476,7 +86497,7 @@ function applyHooks(model, schema, options) {
   }
 }
 
-},{"../../schema/symbols":340,"../../utils":352}],304:[function(require,module,exports){
+},{"../../schema/symbols":341,"../../utils":353}],305:[function(require,module,exports){
 'use strict';
 
 const defineKey = require('../document/compile').defineKey;
@@ -86650,7 +86671,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   return schema;
 };
 
-},{"../../utils":352,"../document/compile":299,"../get":301}],305:[function(require,module,exports){
+},{"../../utils":353,"../document/compile":300,"../get":302}],306:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('../../error/mongooseError');
@@ -86670,7 +86691,7 @@ function validateRef(ref, path) {
   throw new MongooseError('Invalid ref at path "' + path + '". Got ' +
     util.inspect(ref, { depth: 0 }));
 }
-},{"../../error/mongooseError":287,"util":373}],306:[function(require,module,exports){
+},{"../../error/mongooseError":288,"util":374}],307:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -86690,7 +86711,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],307:[function(require,module,exports){
+},{}],308:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -86720,7 +86741,7 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"./isDefiningProjection":306}],308:[function(require,module,exports){
+},{"./isDefiningProjection":307}],309:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -86788,7 +86809,7 @@ function applyQueryMiddleware(Query, model) {
     });
 }
 
-},{}],309:[function(require,module,exports){
+},{}],310:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -86914,7 +86935,7 @@ module.exports = function getIndexes(schema) {
   }
 };
 
-},{"../../utils":352,"../get":301}],310:[function(require,module,exports){
+},{"../../utils":353,"../get":302}],311:[function(require,module,exports){
 'use strict';
 
 module.exports = handleTimestampOption;
@@ -86939,7 +86960,7 @@ function handleTimestampOption(arg, prop) {
   }
   return arg[prop];
 }
-},{}],311:[function(require,module,exports){
+},{}],312:[function(require,module,exports){
 'use strict';
 
 module.exports = function merge(s1, s2) {
@@ -86959,7 +86980,7 @@ module.exports = function merge(s1, s2) {
 
   s1.s.hooks.merge(s2.s.hooks, false);
 };
-},{}],312:[function(require,module,exports){
+},{}],313:[function(require,module,exports){
 'use strict';
 
 exports.validatorErrorSymbol = Symbol.for('mongoose:validatorError');
@@ -86971,7 +86992,7 @@ exports.modelSymbol = Symbol.for('mongoose#Model');
 exports.getSymbol = Symbol.for('mongoose#Document#get');
 
 exports.objectIdSymbol = Symbol.for('mongoose#ObjectId');
-},{}],313:[function(require,module,exports){
+},{}],314:[function(require,module,exports){
 'use strict';
 
 const handleTimestampOption = require('../schema/handleTimestampOption');
@@ -87145,7 +87166,7 @@ function applyTimestampsToSingleNested(subdoc, schematype, now) {
     subdoc[createdAt] = now;
   }
 }
-},{"../schema/handleTimestampOption":310}],314:[function(require,module,exports){
+},{"../schema/handleTimestampOption":311}],315:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -87212,7 +87233,7 @@ function applyTimestampsToUpdate(now, createdAt, updatedAt, currentUpdate, optio
   return updates;
 }
 
-},{"../get":301}],315:[function(require,module,exports){
+},{"../get":302}],316:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -87251,7 +87272,7 @@ function InternalCache() {
   this.fullPath = undefined;
 }
 
-},{"./statemachine":342}],316:[function(require,module,exports){
+},{"./statemachine":343}],317:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -87267,7 +87288,7 @@ exports.internalToObjectOptions = {
   flattenDecimals: false
 };
 
-},{}],317:[function(require,module,exports){
+},{}],318:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -87297,7 +87318,7 @@ function idGetter() {
   return null;
 }
 
-},{}],318:[function(require,module,exports){
+},{}],319:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -87350,7 +87371,7 @@ store.set(global.Promise);
 module.exports = store;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"assert":87,"mquery":361}],319:[function(require,module,exports){
+},{"assert":87,"mquery":362}],320:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -87659,7 +87680,7 @@ exports.handleDeleteWriteOpResult = function handleDeleteWriteOpResult(callback)
   };
 };
 
-},{"./helpers/get":301,"./helpers/projection/isDefiningProjection":306,"./utils":352}],320:[function(require,module,exports){
+},{"./helpers/get":302,"./helpers/projection/isDefiningProjection":307,"./utils":353}],321:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -89549,7 +89570,7 @@ Schema.Types = MongooseTypes = require('./schema/index');
 exports.ObjectId = MongooseTypes.ObjectId;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":262,"./driver":276,"./helpers/get":301,"./helpers/model/applyHooks":303,"./helpers/populate/validateRef":305,"./helpers/query/applyQueryMiddleware":308,"./helpers/schema/getIndexes":309,"./helpers/schema/handleTimestampOption":310,"./helpers/schema/merge":311,"./helpers/update/applyTimestampsToChildren":313,"./helpers/update/applyTimestampsToUpdate":314,"./schema/index":328,"./schema/symbols":340,"./schematype":341,"./utils":352,"./virtualtype":353,"events":259,"kareem":263,"mpath":355,"util":373}],321:[function(require,module,exports){
+},{"../../is-buffer/index.js":263,"./driver":277,"./helpers/get":302,"./helpers/model/applyHooks":304,"./helpers/populate/validateRef":306,"./helpers/query/applyQueryMiddleware":309,"./helpers/schema/getIndexes":310,"./helpers/schema/handleTimestampOption":311,"./helpers/schema/merge":312,"./helpers/update/applyTimestampsToChildren":314,"./helpers/update/applyTimestampsToUpdate":315,"./schema/index":329,"./schema/symbols":341,"./schematype":342,"./utils":353,"./virtualtype":354,"events":260,"kareem":264,"mpath":356,"util":374}],322:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -89977,7 +89998,7 @@ handle.$in = SchemaType.prototype.$conditionalHandlers.$in;
 
 module.exports = SchemaArray;
 
-},{"../cast":267,"../error/mongooseError":287,"../helpers/get":301,"../queryhelpers":319,"../schematype":341,"../types":348,"../utils":352,"./boolean":322,"./buffer":323,"./date":324,"./map":329,"./mixed":330,"./number":331,"./objectid":332,"./operators/exists":334,"./operators/geospatial":335,"./operators/helpers":336,"./operators/type":338,"./string":339,"util":373}],322:[function(require,module,exports){
+},{"../cast":268,"../error/mongooseError":288,"../helpers/get":302,"../queryhelpers":320,"../schematype":342,"../types":349,"../utils":353,"./boolean":323,"./buffer":324,"./date":325,"./map":330,"./mixed":331,"./number":332,"./objectid":333,"./operators/exists":335,"./operators/geospatial":336,"./operators/helpers":337,"./operators/type":339,"./string":340,"util":374}],323:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -90187,7 +90208,7 @@ SchemaBoolean.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBoolean;
 
-},{"../cast/boolean":268,"../error/cast":282,"../schematype":341,"../utils":352}],323:[function(require,module,exports){
+},{"../cast/boolean":269,"../error/cast":283,"../schematype":342,"../utils":353}],324:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -90441,7 +90462,7 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaBuffer;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../schematype":341,"../types/buffer":344,"../utils":352,"./../document":274,"./operators/bitwise":333}],324:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../schematype":342,"../types/buffer":345,"../utils":353,"./../document":275,"./operators/bitwise":334}],325:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -90797,7 +90818,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaDate;
 
-},{"../cast/date":269,"../error":284,"../schematype":341,"../utils":352}],325:[function(require,module,exports){
+},{"../cast/date":270,"../error":285,"../schematype":342,"../utils":353}],326:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -91011,7 +91032,7 @@ Decimal128.prototype.$conditionalHandlers =
 module.exports = Decimal128;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../cast/decimal128":270,"../schematype":341,"../types/decimal128":345,"../utils":352,"./../document":274}],326:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../cast/decimal128":271,"../schematype":342,"../types/decimal128":346,"../utils":353,"./../document":275}],327:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -91491,7 +91512,7 @@ function scopePaths(array, fields, init) {
 
 module.exports = DocumentArray;
 
-},{"../error/cast":282,"../helpers/model/discriminator":304,"../queryhelpers":319,"../schematype":341,"../types/documentarray":346,"../types/embedded":347,"../utils":352,"./array":321,"events":259,"util":373}],327:[function(require,module,exports){
+},{"../error/cast":283,"../helpers/model/discriminator":305,"../queryhelpers":320,"../schematype":342,"../types/documentarray":347,"../types/embedded":348,"../utils":353,"./array":322,"events":260,"util":374}],328:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -91813,7 +91834,7 @@ Embedded.prototype.discriminator = function(name, schema) {
   return this.caster.discriminators[name];
 };
 
-},{"../error/cast":282,"../error/objectExpected":289,"../helpers/get":301,"../helpers/model/discriminator":304,"../options":316,"../queryhelpers":319,"../schematype":341,"../types/subdocument":351,"./operators/exists":334,"./operators/geospatial":335,"./operators/helpers":336,"events":259}],328:[function(require,module,exports){
+},{"../error/cast":283,"../error/objectExpected":290,"../helpers/get":302,"../helpers/model/discriminator":305,"../options":317,"../queryhelpers":320,"../schematype":342,"../types/subdocument":352,"./operators/exists":335,"./operators/geospatial":336,"./operators/helpers":337,"events":260}],329:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -91851,7 +91872,7 @@ exports.Oid = exports.ObjectId;
 exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 
-},{"./array":321,"./boolean":322,"./buffer":323,"./date":324,"./decimal128":325,"./documentarray":326,"./embedded":327,"./map":329,"./mixed":330,"./number":331,"./objectid":332,"./string":339}],329:[function(require,module,exports){
+},{"./array":322,"./boolean":323,"./buffer":324,"./date":325,"./decimal128":326,"./documentarray":327,"./embedded":328,"./map":330,"./mixed":331,"./number":332,"./objectid":333,"./string":340}],330:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -91892,7 +91913,7 @@ class Map extends SchemaType {
 
 module.exports = Map;
 
-},{"../schematype":341,"../types/map":349}],330:[function(require,module,exports){
+},{"../schematype":342,"../types/map":350}],331:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -91999,7 +92020,7 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../schematype":341,"../utils":352,"./symbols":340}],331:[function(require,module,exports){
+},{"../schematype":342,"../utils":353,"./symbols":341}],332:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -92374,7 +92395,7 @@ SchemaNumber.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaNumber;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../cast/number":271,"../error":284,"../schematype":341,"../utils":352,"./../document":274,"./operators/bitwise":333}],332:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../cast/number":272,"../error":285,"../schematype":342,"../utils":353,"./../document":275,"./operators/bitwise":334}],333:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -92670,7 +92691,7 @@ function resetId(v) {
 module.exports = ObjectId;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../cast/objectid":272,"../schematype":341,"../types/objectid":350,"../utils":352,"./../document":274}],333:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../cast/objectid":273,"../schematype":342,"../types/objectid":351,"../utils":353,"./../document":275}],334:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -92712,7 +92733,7 @@ function _castNumber(path, num) {
 module.exports = handleBitwiseOperator;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":262,"../../error/cast":282}],334:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":263,"../../error/cast":283}],335:[function(require,module,exports){
 'use strict';
 
 const castBoolean = require('../../cast/boolean');
@@ -92726,7 +92747,7 @@ module.exports = function(val) {
   return castBoolean(val, path);
 };
 
-},{"../../cast/boolean":268}],335:[function(require,module,exports){
+},{"../../cast/boolean":269}],336:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -92830,7 +92851,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":321,"./helpers":336}],336:[function(require,module,exports){
+},{"../array":322,"./helpers":337}],337:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -92864,7 +92885,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":331}],337:[function(require,module,exports){
+},{"../number":332}],338:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -92905,7 +92926,7 @@ module.exports = function(val, path) {
   return val;
 };
 
-},{"../../cast/boolean":268,"../../cast/string":273,"../../error/cast":282}],338:[function(require,module,exports){
+},{"../../cast/boolean":269,"../../cast/string":274,"../../error/cast":283}],339:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -92920,7 +92941,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],339:[function(require,module,exports){
+},{}],340:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -93538,13 +93559,13 @@ SchemaString.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaString;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../cast/string":273,"../error":284,"../schematype":341,"../utils":352,"./../document":274}],340:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../cast/string":274,"../error":285,"../schematype":342,"../utils":353,"./../document":275}],341:[function(require,module,exports){
 'use strict';
 
 exports.schemaMixedSymbol = Symbol.for('mongoose:schema_mixed');
 
 exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
-},{}],341:[function(require,module,exports){
+},{}],342:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -94843,7 +94864,7 @@ exports.CastError = CastError;
 exports.ValidatorError = ValidatorError;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":262,"./error":284,"./helpers/get":301,"./helpers/immediate":302,"./helpers/symbols":312,"./schema/operators/exists":334,"./schema/operators/type":338,"./utils":352}],342:[function(require,module,exports){
+},{"../../is-buffer/index.js":263,"./error":285,"./helpers/get":302,"./helpers/immediate":303,"./helpers/symbols":313,"./schema/operators/exists":335,"./schema/operators/type":339,"./utils":353}],343:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -95025,7 +95046,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":352}],343:[function(require,module,exports){
+},{"./utils":353}],344:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -95877,7 +95898,7 @@ function _checkManualPopulation(arr, docs) {
 module.exports = exports = MongooseArray;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../document":274,"../helpers/document/cleanModifiedSubpaths":298,"../helpers/get":301,"../options":316,"../utils":352,"./embedded":347,"./objectid":350,"util":373}],344:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../document":275,"../helpers/document/cleanModifiedSubpaths":299,"../helpers/get":302,"../options":317,"../utils":353,"./embedded":348,"./objectid":351,"util":374}],345:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -96184,7 +96205,7 @@ MongooseBuffer.Binary = Binary;
 
 module.exports = MongooseBuffer;
 
-},{"../driver":276,"../utils":352,"safe-buffer":369}],345:[function(require,module,exports){
+},{"../driver":277,"../utils":353,"safe-buffer":370}],346:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -96199,7 +96220,7 @@ module.exports = MongooseBuffer;
 
 module.exports = require('../driver').get().Decimal128;
 
-},{"../driver":276}],346:[function(require,module,exports){
+},{"../driver":277}],347:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -96563,7 +96584,7 @@ MongooseDocumentArray.mixin = {
 module.exports = MongooseDocumentArray;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":262,"../cast/objectid":272,"../document":274,"../helpers/get":301,"../helpers/symbols":312,"../options":316,"../queryhelpers":319,"../utils":352,"./array":343,"./objectid":350,"util":373}],347:[function(require,module,exports){
+},{"../../../is-buffer/index.js":263,"../cast/objectid":273,"../document":275,"../helpers/get":302,"../helpers/symbols":313,"../options":317,"../queryhelpers":320,"../utils":353,"./array":344,"./objectid":351,"util":374}],348:[function(require,module,exports){
 /* eslint no-func-assign: 1 */
 
 /*!
@@ -97009,7 +97030,7 @@ EmbeddedDocument.prototype.parentArray = function() {
 
 module.exports = EmbeddedDocument;
 
-},{"../document_provider":275,"../helpers/get":301,"../helpers/immediate":302,"../helpers/symbols":312,"../options":316,"../utils":352,"events":259,"util":373}],348:[function(require,module,exports){
+},{"../document_provider":276,"../helpers/get":302,"../helpers/immediate":303,"../helpers/symbols":313,"../options":317,"../utils":353,"events":260,"util":374}],349:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -97031,7 +97052,7 @@ exports.Map = require('./map');
 
 exports.Subdocument = require('./subdocument');
 
-},{"./array":343,"./buffer":344,"./decimal128":345,"./documentarray":346,"./embedded":347,"./map":349,"./objectid":350,"./subdocument":351}],349:[function(require,module,exports){
+},{"./array":344,"./buffer":345,"./decimal128":346,"./documentarray":347,"./embedded":348,"./map":350,"./objectid":351,"./subdocument":352}],350:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../schema/mixed');
@@ -97225,7 +97246,7 @@ function checkValidKey(key) {
 
 module.exports = MongooseMap;
 
-},{"../helpers/get":301,"../schema/mixed":330,"util":373}],350:[function(require,module,exports){
+},{"../helpers/get":302,"../schema/mixed":331,"util":374}],351:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -97257,7 +97278,7 @@ ObjectId.prototype[objectIdSymbol] = true;
 
 module.exports = ObjectId;
 
-},{"../driver":276,"../helpers/symbols":312}],351:[function(require,module,exports){
+},{"../driver":277,"../helpers/symbols":313}],352:[function(require,module,exports){
 'use strict';
 
 const Document = require('../document');
@@ -97495,7 +97516,7 @@ function registerRemoveListener(sub) {
   owner.on('remove', emitRemove);
 }
 
-},{"../document":274,"../helpers/immediate":302,"../helpers/symbols":312,"../options":316,"../utils":352}],352:[function(require,module,exports){
+},{"../document":275,"../helpers/immediate":303,"../helpers/symbols":313,"../options":317,"../utils":353}],353:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -98473,7 +98494,7 @@ exports.each = function(arr, fn) {
 exports.noop = function() {};
 
 }).call(this,require('_process'))
-},{"./document":274,"./helpers/get":301,"./promise_provider":318,"./types":348,"./types/decimal128":345,"./types/objectid":350,"_process":367,"mpath":355,"ms":354,"regexp-clone":368,"safe-buffer":369,"sliced":370}],353:[function(require,module,exports){
+},{"./document":275,"./helpers/get":302,"./promise_provider":319,"./types":349,"./types/decimal128":346,"./types/objectid":351,"_process":368,"mpath":356,"ms":355,"regexp-clone":369,"safe-buffer":370,"sliced":371}],354:[function(require,module,exports){
 'use strict';
 
 /**
@@ -98619,7 +98640,7 @@ VirtualType.prototype.applySetters = function(value, scope) {
 
 module.exports = VirtualType;
 
-},{}],354:[function(require,module,exports){
+},{}],355:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -98783,10 +98804,10 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],355:[function(require,module,exports){
+},{}],356:[function(require,module,exports){
 module.exports = exports = require('./lib');
 
-},{"./lib":356}],356:[function(require,module,exports){
+},{"./lib":357}],357:[function(require,module,exports){
 (function (global){
 // Make sure Map exists for old Node.js versions
 var Map = global.Map != null ? global.Map : function() {};
@@ -99089,7 +99110,7 @@ function K (v) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],357:[function(require,module,exports){
+},{}],358:[function(require,module,exports){
 'use strict';
 
 /**
@@ -99137,7 +99158,7 @@ function notImplemented(method) {
   };
 }
 
-},{}],358:[function(require,module,exports){
+},{}],359:[function(require,module,exports){
 'use strict';
 
 var env = require('../env');
@@ -99152,7 +99173,7 @@ module.exports =
       require('./collection');
 
 
-},{"../env":360,"./collection":357,"./node":359}],359:[function(require,module,exports){
+},{"../env":361,"./collection":358,"./node":360}],360:[function(require,module,exports){
 'use strict';
 
 /**
@@ -99305,7 +99326,7 @@ NodeCollection.prototype.findCursor = function(match, findOptions) {
 
 module.exports = exports = NodeCollection;
 
-},{"../utils":363,"./collection":357}],360:[function(require,module,exports){
+},{"../utils":364,"./collection":358}],361:[function(require,module,exports){
 (function (process,global,Buffer){
 'use strict';
 
@@ -99331,7 +99352,7 @@ exports.type = exports.isNode ? 'node'
       : 'unknown';
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":367,"buffer":113}],361:[function(require,module,exports){
+},{"_process":368,"buffer":113}],362:[function(require,module,exports){
 'use strict';
 
 /**
@@ -102586,7 +102607,7 @@ module.exports = exports = Query;
 // TODO
 // test utils
 
-},{"./collection":358,"./collection/collection":357,"./env":360,"./permissions":362,"./utils":363,"assert":87,"bluebird":92,"debug":364,"sliced":370,"util":373}],362:[function(require,module,exports){
+},{"./collection":359,"./collection/collection":358,"./env":361,"./permissions":363,"./utils":364,"assert":87,"bluebird":92,"debug":365,"sliced":371,"util":374}],363:[function(require,module,exports){
 'use strict';
 
 var denied = exports;
@@ -102676,7 +102697,7 @@ denied.count.maxScan =
 denied.count.snapshot =
 denied.count.tailable = true;
 
-},{}],363:[function(require,module,exports){
+},{}],364:[function(require,module,exports){
 (function (process,setImmediate){
 'use strict';
 
@@ -103036,7 +103057,7 @@ exports.isArgumentsObject = function(v) {
 };
 
 }).call(this,require('_process'),require("timers").setImmediate)
-},{"_process":367,"regexp-clone":368,"safe-buffer":369,"timers":371}],364:[function(require,module,exports){
+},{"_process":368,"regexp-clone":369,"safe-buffer":370,"timers":372}],365:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -103235,7 +103256,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":365,"_process":367}],365:[function(require,module,exports){
+},{"./debug":366,"_process":368}],366:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -103462,7 +103483,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":366}],366:[function(require,module,exports){
+},{"ms":367}],367:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -103616,7 +103637,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],367:[function(require,module,exports){
+},{}],368:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -103802,7 +103823,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],368:[function(require,module,exports){
+},{}],369:[function(require,module,exports){
 
 var toString = Object.prototype.toString;
 
@@ -103824,7 +103845,7 @@ module.exports = exports = function (regexp) {
 }
 
 
-},{}],369:[function(require,module,exports){
+},{}],370:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -103888,7 +103909,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":113}],370:[function(require,module,exports){
+},{"buffer":113}],371:[function(require,module,exports){
 
 /**
  * An Array.prototype.slice.call(arguments) alternative
@@ -103923,7 +103944,7 @@ module.exports = function (args, slice, sliceEnd) {
 }
 
 
-},{}],371:[function(require,module,exports){
+},{}],372:[function(require,module,exports){
 (function (setImmediate,clearImmediate){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -104002,8 +104023,8 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-},{"process/browser.js":367,"timers":371}],372:[function(require,module,exports){
+},{"process/browser.js":368,"timers":372}],373:[function(require,module,exports){
 arguments[4][89][0].apply(exports,arguments)
-},{"dup":89}],373:[function(require,module,exports){
+},{"dup":89}],374:[function(require,module,exports){
 arguments[4][90][0].apply(exports,arguments)
-},{"./support/isBuffer":372,"_process":367,"dup":90,"inherits":261}]},{},[86]);
+},{"./support/isBuffer":373,"_process":368,"dup":90,"inherits":262}]},{},[86]);
