@@ -13,7 +13,7 @@ Quantity.prototype.cast = (quantity) => {
     throw new Error(`Quantity: ${quantity} does not have a unit`);
   }
 
-  return new cql.Quantity(quantity);
+  return new cql.Quantity(quantity.value, quantity.unit);
 };
 
 mongoose.Schema.Types.Quantity = Quantity;
