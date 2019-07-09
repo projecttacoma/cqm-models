@@ -8,6 +8,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
+const AnyEntity = require('./basetypes/AnyEntity');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
 const { EntitySchema } = require('./attributes/Entity');
@@ -22,8 +23,8 @@ const CommunicationPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   category: Code,
   medium: Code,
-  sender: EntitySchema,
-  recipient: EntitySchema,
+  sender: AnyEntity,
+  recipient: AnyEntity,
   relatedTo: [String],
   sentDatetime: DateTime,
   receivedDatetime: DateTime,
