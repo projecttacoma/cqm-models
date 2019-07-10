@@ -16,7 +16,7 @@ module QDM
     field :incisionDatetime, type: DateTime
     field :negationRationale, type: QDM::Code
     field :components, type: Array
-    field :performer, type: QDM::Entity
+    embeds_one :performer, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Procedure, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.67'
     field :qdmCategory, type: String, default: 'procedure'

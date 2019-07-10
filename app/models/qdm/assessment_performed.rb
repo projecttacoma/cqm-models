@@ -12,7 +12,7 @@ module QDM
     field :result
     field :components, type: Array
     field :relatedTo, type: Array
-    field :performer, type: QDM::Entity
+    embeds_one :performer, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Assessment, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.117'
     field :qdmCategory, type: String, default: 'assessment'

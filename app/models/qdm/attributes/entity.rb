@@ -2,6 +2,7 @@ module QDM
   # app/models/qdm/entity.rb
   class Entity < Attribute
     include Mongoid::Document
+    embedded_in :patient
     field :id, type: String
     field :identifier, type: QDM::Identifier
     field :qdmVersion, type: String, default: '5.5'

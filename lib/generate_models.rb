@@ -262,14 +262,14 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents.gsub!(/field :facilityLocation, type: Code/, 'field :facilityLocation, type: QDM::FacilityLocation')
 
   # Make Entity subclasses of type QDM::Entity
-  contents.gsub!(/field :participant/, 'field :participant, type: QDM::Entity')
-  contents.gsub!(/field :sender/, 'field :sender, type: QDM::Entity')
-  contents.gsub!(/field :recipient/, 'field :recipient, type: QDM::Entity')
-  contents.gsub!(/field :recorder/, 'field :recorder, type: QDM::Entity')
-  contents.gsub!(/field :performer/, 'field :performer, type: QDM::Entity')
-  contents.gsub!(/field :requester/, 'field :requester, type: QDM::Entity')
-  contents.gsub!(/field :prescriber/, 'field :prescriber, type: QDM::Entity')
-  contents.gsub!(/field :dispenser/, 'field :dispenser, type: QDM::Entity')
+  contents.gsub!(/field :participant/, "embeds_one :participant, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :sender/, "embeds_one :sender, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :recipient/, "embeds_one :recipient, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :recorder/, "embeds_one :recorder, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :performer/, "embeds_one :performer, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :requester/, "embeds_one :requester, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :prescriber/, "embeds_one :prescriber, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :dispenser/, "embeds_one :dispenser, class_name: 'QDM::Entity'")
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -330,6 +330,10 @@ types_inherited_by_component = ['/result_component']
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
+  if ['entity.rb', 'organization.rb', 'patient_entity.rb', 'practitioner.rb', 'care_partner.rb'].any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
+    File.open(file_name, 'w') { |file| file.puts contents }
+  end
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
   next if types_not_inherited_by_data_element.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
   contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")

@@ -12,7 +12,7 @@ module QDM
     field :negationRationale, type: QDM::Code
     field :lengthOfStay, type: QDM::Quantity
     field :priority, type: QDM::Code
-    field :participant, type: QDM::Entity
+    embeds_one :participant, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Encounter, Performed'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.5'
     field :qdmCategory, type: String, default: 'encounter'
