@@ -331,7 +331,7 @@ types_inherited_by_component = ['/result_component']
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   if ['entity.rb', 'organization.rb', 'patient_entity.rb', 'practitioner.rb', 'care_partner.rb'].any? { |sub_string| sub_string.include?(File.basename(file_name)) }
-    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
+    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
     File.open(file_name, 'w') { |file| file.puts contents }
   end
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
