@@ -26,11 +26,25 @@ describe('The Any class', () => {
       expect(returned_obj.low instanceof Cql.DateTime).toEqual(true);
     });
 
-    it('Should convert a DateTime JS Object to its type', () => {
-      const datetime_obj = '2012-05-21T11:30:00.000-04:00';
+    it('Should convert a DateTime JS String to its type', () => {
+      const date_str = '2012-05-21T11:30:00.000+00:00';
 
-      const returned_obj = Any.prototype.cast(datetime_obj);
+      const returned_obj = Any.prototype.cast(date_str);
       expect(returned_obj instanceof Cql.DateTime).toBe(true);
+    });
+
+    it('Should convert a Time JS String to its type', () => {
+      const time_str = '10:03:05.123';
+
+      const returned_obj = Any.prototype.cast(time_str);
+      expect(returned_obj.isTime()).toBe(true);
+    });
+
+    it('Should convert a Date JS String to its type', () => {
+      const datetime_str = '2012-05-21';
+
+      const returned_obj = Any.prototype.cast(datetime_str);
+      expect(returned_obj instanceof Cql.Date).toBe(true);
     });
 
     it('Should convert a non-special JS Object to its type', () => {
