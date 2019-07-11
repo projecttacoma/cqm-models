@@ -2796,7 +2796,10 @@ function RecursiveCast(any) {
     return new cql.Quantity(any.value, any.unit);
   }
 
-  if (any.isCode) {
+  if (any.isCode || any.isConcept || any.isValueSet || any.isList ||
+      any.isDateTime || any.isDate || any.isRatio || any.isQuantiy ||
+      any.isInterval || any.isBooleanLiteral || any.isIntegerLiteral ||
+      any.isDecimalLiteral || any.isStringLiteral || any.isTuple) {
     return any;
   }
 
