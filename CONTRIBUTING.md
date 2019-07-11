@@ -42,6 +42,8 @@ git status
 git commit -m <commit message>
 ```
 
+Use the `git diff` command to ensure you are committing what you expect and are not committing debug code or whitespace code.
+
 If you want to push to the remote repository, do the following:
 
 ```
@@ -50,7 +52,6 @@ git push
 
 You may need to do a force push (`git push -f`) if you rebased your branch (see [Creating a Pull Request](#creating-a-pull-request)). **Make sure you are pushing what you expect when you do a force push!!!** You should do this regardless, but need to be especially especially careful when doing a force push. These are dangerous as they modify the remote history. Also ensure that anyone who may be using this branch is aware you are doing a force push because this can mess up their local instance of the repository.
 
-Use the `git diff` command to ensure you are committing what you expect and are not committing debug code or whitespace code.
 
 #### Cleaning Up Your Local Commit History Before Pushing
 
