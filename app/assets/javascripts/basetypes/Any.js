@@ -8,31 +8,28 @@ Any.prototype = Object.create(mongoose.SchemaType.prototype);
 
 function RecursiveCast(any) {
   if (any && any.value && any.unit) {
-    return new cql.Quantity(any);
+    return new cql.Quantity(any.value, any.unit);
   }
-  if (any && any.code && any.codeSystem) {
-    if (typeof any.code === 'undefined') {
-      throw new Error(`Code: ${any} does not have a code`);
-    } else if (typeof any.codeSystem === 'undefined') {
-      throw new Error(`Code: ${any} does not have a codeSystem`);
-    }
 
-    const val = { code: any.code, codeSystem: any.codeSystem };
+  if (any.isCode) {
+    return any;
+  }
 
-    val.descriptor = (typeof any.descriptor !== 'undefined') ? any.descriptor : null;
-    val.codeSystemOid = (typeof any.codeSystemOid !== 'undefined') ? any.codeSystemOid : null;
+  if (any && any.code && any.system) {
+    const val = { code: any.code, system: any.system };
+    val.display = (typeof any.display !== 'undefined') ? any.display : null;
     val.version = (typeof any.version !== 'undefined') ? any.version : null;
 
-    return new cql.Code(val.code, val.codeSystem, val.version, val.descriptor);
+    return new cql.Code(val.code, val.system, val.version, val.display);
   }
   if (any && any.low) {
     const casted = new cql.Interval(any.low, any.high, any.lowClosed, any.highClosed);
 
     // Cast Low and High values to Quantities if it is a quantity
     if (casted.low && casted.low.unit && casted.low.value) {
-      casted.low = new cql.Quantity(casted.low);
+      casted.low = new cql.Quantity(casted.low.value, casted.low.unit);
       if (casted.high && casted.high.unit && casted.high.value) {
-        casted.high = new cql.Quantity(casted.high);
+        casted.high = new cql.Quantity(casted.high.value, casted.high.unit);
       }
       return casted;
     }

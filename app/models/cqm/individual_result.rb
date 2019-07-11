@@ -1,4 +1,4 @@
-module QDM
+module CQM
   # IndividualResult stores the patient-level (population/clause) results for a patient/measure combination
   class IndividualResult
     include Mongoid::Document
@@ -20,10 +20,11 @@ module QDM
     field :MSRPOPLEX, type: Integer
 
     # Result Attributes
-    field :clause_results, type: Hash
+    embeds_many :clause_results
+    embeds_many :statement_results
     field :episode_results, type: Hash
-    field :statement_results, type: Hash
     field :observation_values, type: Array, default: []
+    field :population_relevance, type: Hash
 
     # This field is for application specific information only. If both Bonnie and
     # Cypress use a common field, it should be made a field on this model,
@@ -36,5 +37,28 @@ module QDM
     # Relations to other model classes
     belongs_to :measure
     belongs_to :patient
+
+    # Convert the stored array into a hash between clause and result
+    def clause_results_by_clause
+      clause_results_hash = {}
+      clause_results.each do |result|
+        unless clause_results_hash[result['library_name']]
+          clause_results_hash[result['library_name']] = {}
+        end
+        clause_results_hash[result['library_name']][result['localId']] = result
+      end
+      return clause_results_hash
+    end
+
+    def statement_results_by_statement
+      statement_results_hash = {}
+      statement_results.each do |result|
+        unless statement_results_hash[result['library_name']]
+          statement_results_hash[result['library_name']] = {}
+        end
+        statement_results_hash[result['library_name']][result['statement_name']] = result
+      end
+      return statement_results_hash
+    end
   end
 end

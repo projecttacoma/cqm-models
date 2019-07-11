@@ -13,7 +13,7 @@ Ratio.prototype.cast = (ratio) => {
     throw new Error(`Ratio: ${ratio} does not have a denominator`);
   }
 
-  return new cql.Ratio(ratio);
+  return new cql.Ratio(ratio.numerator, ratio.denominator);
 };
 
 mongoose.Schema.Types.Ratio = Ratio;

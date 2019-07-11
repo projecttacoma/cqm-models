@@ -28,7 +28,7 @@ const FacilityLocation = require('./../../../app/assets/javascripts/attributes/F
 const FamilyHistory = require('./../../../app/assets/javascripts/FamilyHistory.js').FamilyHistory;
 const ImmunizationAdministered = require('./../../../app/assets/javascripts/ImmunizationAdministered.js').ImmunizationAdministered;
 const ImmunizationOrder = require('./../../../app/assets/javascripts/ImmunizationOrder.js').ImmunizationOrder;
-const IndividualResult = require('./../../../app/assets/javascripts/IndividualResult.js').IndividualResult;
+const IndividualResult = require('./../../../app/assets/javascripts/cqm/IndividualResult.js').IndividualResult;
 const InterventionOrder = require('./../../../app/assets/javascripts/InterventionOrder.js').InterventionOrder;
 const InterventionPerformed = require('./../../../app/assets/javascripts/InterventionPerformed.js').InterventionPerformed;
 const InterventionRecommended = require('./../../../app/assets/javascripts/InterventionRecommended.js').InterventionRecommended;
@@ -115,6 +115,24 @@ describe('QDMPatient', () => {
         dataElements: [new MedicationOrder()]
       });
       expect(qdmPatient.dataElements.length).toEqual(1);
+    });
+
+    it('can get codes from a data element', () => {
+      dataElement = new MedicationOrder();
+      // dataElement Codes with mixed hash and cql.Codes
+      dataElement.dataElementCodes = [{code: '12345', system: '1.2.3'}, new cql.Code('1', '2.3.4')]
+      expect(dataElement.code().code).toEqual('12345');
+      expect(dataElement.code().system).toEqual('1.2.3');
+      expect(dataElement.getCode().length).toEqual(2);
+      expect(dataElement.getCode()[0].code).toEqual('12345');
+      expect(dataElement.getCode()[0].system).toEqual('1.2.3');
+      // dataElement Codes with just cql.Codes
+      dataElement.dataElementCodes = [new cql.Code('12345', '1.2.3'), new cql.Code('1', '2.3.4')]
+      expect(dataElement.code().code).toEqual('12345');
+      expect(dataElement.code().system).toEqual('1.2.3');
+      expect(dataElement.getCode().length).toEqual(2);
+      expect(dataElement.getCode()[0].code).toEqual('12345');
+      expect(dataElement.getCode()[0].system).toEqual('1.2.3');
     });
 
     it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {
@@ -453,19 +471,6 @@ describe('PopulationSet', () => {
 
   it('can create a Stratification', () => {
     new Stratification();
-  });
-});
-
-describe('DateTime', () => {
-  it('can create a DateTime from JS Date', () => {
-    DateTime(new Date());
-  });
-
-  it('can create a DateTime from cql DateTime', () => {
-    DateTime(new cql.DateTime(new Date()));
-  });
-  it('throws if invalid DateTime passed to cast', () => {
-    expect(() => {DateTime.cast('some invalid DateTime arg')}).toThrow();
   });
 });
 

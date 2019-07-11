@@ -31,7 +31,7 @@ module QDM
     # to the CQL execution engine.
     def code_system_pairs
       codes.collect do |code|
-        { code: code.code, system: code.codeSystem }
+        { code: code.code, system: code.system }
       end
     end
 
@@ -58,13 +58,10 @@ module QDM
     # Given value should be in seconds. Positive values shift forward, negative
     # values shift backwards.
     def shift_dates(seconds)
-      # Iterate over fields
       fields.keys.each do |field|
-        # Check if field is a DateTime
         if send(field).is_a? DateTime
           send(field + '=', (send(field).to_time + seconds.seconds).to_datetime)
         end
-        # Check if field is an Interval
         if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
           send(field + '=', send(field).shift_dates(seconds))
         end
@@ -87,6 +84,54 @@ module QDM
     def shift_facility_location_dates(facility_location, seconds)
       facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
       facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+    end
+
+    # The necessary reason for this function is to avoid a problem when shifting
+    # past a year that is a leap year. February 29th dates are handled by moving
+    # back to the 28th in non leap years
+    def shift_years(year_shift)
+      fields.keys.each do |field|
+        if send(field).is_a? DateTime
+          if send(field).year + year_shift > 9999 || send(field).year + year_shift < 1
+            raise RangeError, 'Year was shifted after 9999 or before 0001'
+          end
+          if send(field).month == 2 && send(field).day == 29 && !Date.leap?(year_shift + send(field).year)
+            send(field + '=', send(field).change(year: year_shift + send(field).year, day: 28))
+          else
+            send(field + '=', send(field).change(year: year_shift + send(field).year))
+          end
+        end
+
+        if send(field).is_a? FacilityLocation
+          facility_location = send(field)
+          unless facility_location.nil?
+            shift_facility_location_years(facility_location, year_shift)
+            send(field + '=', facility_location)
+          end
+        end
+
+        if field == 'facilityLocations'
+          facilityLocations = send(field)
+          unless facilityLocations.nil?
+            shiftedFacilityLocations = []
+            facilityLocations.each do |location|
+              # Need to convert to a QDM::FacilityLocation because it is being passed in as a Hash
+              facilityLocation = QDM::FacilityLocation.new(location)
+              shift_facility_location_years(facilityLocation, year_shift)
+              shiftedFacilityLocations << facilityLocation
+            end
+            send(field + '=', shiftedFacilityLocations)
+          end
+        end
+
+        if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
+          send(field + '=', send(field).shift_years(year_shift))
+        end
+      end
+    end
+
+    def shift_facility_location_years(facility_location, year_shift)
+      facility_location.locationPeriod = facility_location.locationPeriod.shift_years(year_shift)
     end
 
     class << self

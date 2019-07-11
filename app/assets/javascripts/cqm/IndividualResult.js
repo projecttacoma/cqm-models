@@ -1,4 +1,6 @@
 const mongoose = require('mongoose/browser');
+const { ClauseResultSchema } = require('./ClauseResult');
+const { StatementResultSchema } = require('./StatementResult');
 
 const [Number, String, Mixed, ObjectId] = [
   mongoose.Schema.Types.Number,
@@ -22,9 +24,10 @@ const IndividualResultSchema = mongoose.Schema(
     MSRPOPLEX: Number,
 
     // Result Attributes
-    clause_results: Mixed,
+    clause_results: [ClauseResultSchema],
+    statement_results: [StatementResultSchema],
+    population_relevance: Mixed,
     episode_results: Mixed,
-    statement_results: Mixed,
     observation_values: [Number],
 
     // This field is for application specific information only. If both Bonnie and
@@ -53,6 +56,28 @@ const IndividualResultSchema = mongoose.Schema(
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }, // These are the Mongoid conventions for timestamps
   }
 );
+
+IndividualResultSchema.methods.clause_results_by_clause = function clause_results_by_clause() {
+  const clause_results_hash = {};
+  this.clause_results.forEach((result) => {
+    if (!clause_results_hash[result.library_name]) {
+      clause_results_hash[result.library_name] = {};
+    }
+    clause_results_hash[result.library_name][result.localId] = result;
+  });
+  return clause_results_hash;
+};
+
+IndividualResultSchema.methods.statement_results_by_statement = function statement_results_by_statement() {
+  const statement_results_hash = {};
+  this.statement_results.forEach((result) => {
+    if (!statement_results_hash[result.library_name]) {
+      statement_results_hash[result.library_name] = {};
+    }
+    statement_results_hash[result.library_name][result.statement_name] = result;
+  });
+  return statement_results_hash;
+};
 
 module.exports.IndividualResultSchema = IndividualResultSchema;
 class IndividualResult extends mongoose.Document {
