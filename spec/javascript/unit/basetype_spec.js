@@ -53,13 +53,13 @@ describe('basetype Interval', () => {
 
   it('can create an interval of quantities in object form', () => {
     const interval = (new Interval()).cast({ low: { value: '30', unit: 'mg' }, high: { value: '60', unit: 'mg' } });
-    expect(interval.low).toEqual(new cql.Quantity({ value: '30', unit: 'mg' }));
-    expect(interval.high).toEqual(new cql.Quantity({ value: '60', unit: 'mg' }));
+    expect(interval.low).toEqual(new cql.Quantity('30', 'mg'));
+    expect(interval.high).toEqual(new cql.Quantity('60', 'mg'));
   });
 
   it('can create an interval of quantities in object form with no high value', () => {
     const interval = (new Interval()).cast({ low: { value: '30', unit: 'mg' }, high: null });
-    expect(interval.low).toEqual(new cql.Quantity({ value: '30', unit: 'mg' }));
+    expect(interval.low).toEqual(new cql.Quantity('30', 'mg'));
     expect(interval.high).toEqual(null);
   });
 
