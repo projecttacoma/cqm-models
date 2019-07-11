@@ -19885,9 +19885,16 @@ function numberIsNaN (obj) {
     };
 
     function Date(year1, month1, day) {
+      var date;
       this.year = year1 != null ? year1 : null;
       this.month = month1 != null ? month1 : null;
       this.day = day != null ? day : null;
+      if ((this.year != null) && this.year.isDate) {
+        date = this.year;
+        this.year = date.year;
+        this.month = date.month;
+        this.day = date.day;
+      }
       return;
     }
 
