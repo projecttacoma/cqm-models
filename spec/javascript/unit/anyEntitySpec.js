@@ -56,6 +56,24 @@ describe('The AnyEntity class', () => {
       expect(returnedObj.identifier.value).toEqual('testValue');
     });
 
+    it('Should copy _id to id if it does not have id', () => {
+      const entityObj = {
+        _id: 'test',
+        identifier: {
+          namingSystem: 'testSystem',
+          value:'testValue'
+        },
+        _type: 'QDM::PatientEntity'
+      };
+
+      const returnedObj = AnyEntity.prototype.cast(entityObj);
+      expect(returnedObj instanceof PatientEntity).toBe(true);
+      expect(returnedObj.id).toEqual('test');
+      expect(returnedObj.identifier.namingSystem).toEqual('testSystem');
+      expect(returnedObj.identifier.value).toEqual('testValue');
+    });
+
+
     it('Should convert a Practitioner JS Object to its type', () => {
       const entityObj = {
         id: 'test',

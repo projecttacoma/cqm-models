@@ -4,7 +4,7 @@ module QDM
     include Mongoid::Document
     embedded_in :data_element
     field :id, type: String
-    field :identifier, type: QDM::Identifier
+    embeds_one :identifier, class_name: 'QDM::Identifier'
     field :qdmVersion, type: String, default: '5.5'
     def initialize(options = {})
       super(options)

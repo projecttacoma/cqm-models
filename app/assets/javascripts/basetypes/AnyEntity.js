@@ -19,6 +19,10 @@ AnyEntity.prototype.cast = (entity) => {
   }
 
   if (entity._type != null) {
+    // copy _id to id if it isn't defined
+    if (entity.id == null && entity._id != null) {
+      entity.id = entity._id;
+    }
     switch (entity._type) {
       case 'QDM::PatientEntity':
         return new PatientEntity(entity);
