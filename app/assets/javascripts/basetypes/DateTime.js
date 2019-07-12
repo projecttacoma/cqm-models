@@ -19,4 +19,4 @@ DateTime.prototype.cast = (dateTime) => {
 };
 
 mongoose.Schema.Types.DateTime = DateTime;
-module.exports = DateTime;
+module.exports.DateTime = DateTime;

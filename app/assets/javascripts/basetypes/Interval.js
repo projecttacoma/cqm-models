@@ -1,6 +1,6 @@
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
-const DateTime = require('./DateTime');
+const { DateTime } = require('./DateTime');
 
 function Interval(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Interval');
@@ -34,4 +34,4 @@ Interval.prototype.cast = (interval) => {
 };
 
 mongoose.Schema.Types.Interval = Interval;
-module.exports = Interval;
+module.exports.Interval = Interval;

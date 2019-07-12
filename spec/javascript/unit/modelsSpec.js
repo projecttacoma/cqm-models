@@ -14,8 +14,8 @@ const Concept = require('./../../../app/assets/javascripts/cqm/Concept.js').Conc
 const Component = require('./../../../app/assets/javascripts/attributes/Component.js').Component;
 const CommunicationPerformed = require('./../../../app/assets/javascripts/CommunicationPerformed.js').CommunicationPerformed;
 const CQLLibrary = require('./../../../app/assets/javascripts/cqm/CQLLibrary.js').CQLLibrary;
-const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
-const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
+const Code = require('./../../../app/assets/javascripts/basetypes/Code.js').Code;
+const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js').QDMDate;
 const Diagnosis = require('./../../../app/assets/javascripts/Diagnosis.js').Diagnosis;
 const DiagnosisComponent = require('./../../../app/assets/javascripts/attributes/DiagnosisComponent.js').DiagnosisComponent;
 const DeviceApplied = require('./../../../app/assets/javascripts/DeviceApplied.js').DeviceApplied;
@@ -374,7 +374,7 @@ describe('QDMPatient', () => {
           new EncounterPerformed(),
           new EncounterPerformed(),
           new EncounterPerformed({
-            negationRationale: new cql.Code('do', 're', 'mi')
+            negationRationale: new Code().cast(new cql.Code('do', 're', 'mi'))
           }),
         ]
       });

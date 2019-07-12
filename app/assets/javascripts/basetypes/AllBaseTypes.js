@@ -5,3 +5,4 @@ module.exports.DateTime = require('./DateTime.js').DateTime;
 module.exports.Interval = require('./Interval.js').Interval;
 module.exports.QDMDate = require('./QDMDate.js').QDMDate;
 module.exports.Quantity = require('./Quantity.js').Quantity;
+module.exports.Time = require('./Time.js').Time;

@@ -1,28 +1,11 @@
-module.exports = require('./AllDataElements.js');
-module.exports.CQL = require('cql-execution');
-module.exports.Result = require('./Result.js').Result;
-module.exports.ResultSchema = require('./Result.js').ResultSchema;
-module.exports.Measure = require('./cqm/Measure.js').Measure;
-module.exports.MeasureSchema = require('./cqm/Measure.js').MeasureSchema;
-module.exports.MeasurePackage = require('./cqm/MeasurePackage.js').MeasurePackage;
-module.exports.MeasurePackageSchema = require('./cqm/MeasurePackage.js').MeasurePackageSchema;
-module.exports.Patient = require('./cqm/Patient.js').Patient;
-module.exports.PatientSchema = require('./cqm/Patient.js').PatientSchema;
-module.exports.Provider = require('./cqm/Provider.js').Provider;
-module.exports.ProviderSchema = require('./cqm/Provider.js').ProviderSchema;
-module.exports.StatementDependency = require('./cqm/CQLStatementDependency.js').StatementDependency;
-module.exports.StatementDependencySchema = require('./cqm/CQLStatementDependency.js').StatementDependencySchema;
-module.exports.PopulationSet = require('./cqm/PopulationSet.js').PopulationSet;
-module.exports.PopulationSetSchema = require('./cqm/PopulationSet.js').PopulationSetSchema;
-module.exports.CQLLibrary = require('./cqm/CQLLibrary.js').CQLLibrary;
-module.exports.CQLLibrarySchema = require('./cqm/CQLLibrary.js').CQLLibrarySchema;
-module.exports.ValueSet = require('./cqm/ValueSet.js').ValueSet;
-module.exports.ValueSetSchema = require('./cqm/ValueSet.js').ValueSetSchema;
-module.exports.Concept = require('./cqm/Concept.js').Concept;
-module.exports.ConceptSchema = require('./cqm/Concept.js').ConceptSchema;
-module.exports.IndividualResult = require('./cqm/IndividualResult.js').IndividualResult;
-module.exports.IndividualResultSchema = require('./cqm/IndividualResult.js').IndividualResultSchema;
-module.exports.ClauseResult = require('./cqm/ClauseResult.js').ClauseResult;
-module.exports.ClauseResultSchema = require('./cqm/ClauseResult.js').ClauseResultSchema;
-module.exports.StatementResult = require('./cqm/StatementResult.js').StatementResult;
-module.exports.StatementResultSchema = require('./cqm/StatementResult.js').StatementResultchema;
+const AllDataElements = require('./AllDataElements.js');
+const AllBaseTypes = require('./basetypes/AllBaseTypes.js');
+const AllCQMModels = require('./cqm/AllCQMModels.js');
+const CQL = require('cql-execution');
+
+module.exports = {
+  ...AllDataElements,
+  ...AllBaseTypes,
+  ...AllCQMModels,
+  CQL,
+};

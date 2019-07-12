@@ -14,4 +14,4 @@ QDMDate.prototype.cast = (date) => {
 };
 
 mongoose.Schema.Types.QDMDate = QDMDate;
-module.exports = QDMDate;
+module.exports.QDMDate = QDMDate;

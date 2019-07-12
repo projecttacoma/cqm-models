@@ -17,4 +17,4 @@ Quantity.prototype.cast = (quantity) => {
 };
 
 mongoose.Schema.Types.Quantity = Quantity;
-module.exports = Quantity;
+module.exports.Quantity = Quantity;

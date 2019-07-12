@@ -1,6 +1,13 @@
-const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
-const QDMDate = require('./QDMDate');
+const mongoose = require('mongoose/browser');
+const {
+  Code,
+  DateTime,
+  Interval,
+  QDMDate,
+  Quantity,
+  Time,
+} = require('./AllBaseTypes');
 
 function Any(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Any');
@@ -9,7 +16,7 @@ Any.prototype = Object.create(mongoose.SchemaType.prototype);
 
 function RecursiveCast(any) {
   if (any && any.value && any.unit) {
-    return new cql.Quantity(any.value, any.unit);
+    return new Quantity().cast(new cql.Quantity(any.value, any.unit));
   }
 
   if (any.isCode || any.isConcept || any.isValueSet || any.isList ||
@@ -24,26 +31,26 @@ function RecursiveCast(any) {
     val.display = (typeof any.display !== 'undefined') ? any.display : null;
     val.version = (typeof any.version !== 'undefined') ? any.version : null;
 
-    return new cql.Code(val.code, val.system, val.version, val.display);
+    return new Code().cast(new cql.Code(val.code, val.system, val.version, val.display));
   }
   if (any && any.low) {
-    const casted = new cql.Interval(any.low, any.high, any.lowClosed, any.highClosed);
+    const casted = new Interval().cast(new cql.Interval(any.low, any.high, any.lowClosed, any.highClosed));
 
     // Cast Low and High values to Quantities if it is a quantity
     if (casted.low && casted.low.unit && casted.low.value) {
-      casted.low = new cql.Quantity(casted.low.value, casted.low.unit);
+      casted.low = new Quantity().cast(new cql.Quantity(casted.low.value, casted.low.unit));
       if (casted.high && casted.high.unit && casted.high.value) {
-        casted.high = new cql.Quantity(casted.high.value, casted.high.unit);
+        casted.high = new Quantity().cast(new cql.Quantity(casted.high.value, casted.high.unit));
       }
       return casted;
     }
 
     // Cast to DateTime if it is a string representing a DateTime
     if (casted.low && Date.parse(casted.low)) {
-      casted.low = cql.DateTime.fromJSDate(new Date(casted.low), 0);
+      casted.low = new DateTime().cast(cql.DateTime.fromJSDate(new Date(casted.low), 0));
     }
     if (casted.high && Date.parse(casted.high)) {
-      casted.high = cql.DateTime.fromJSDate(new Date(casted.high), 0);
+      casted.high = new DateTime().cast(cql.DateTime.fromJSDate(new Date(casted.high), 0));
     }
     return casted;
   }
@@ -60,14 +67,14 @@ function RecursiveCast(any) {
   if (Date.parse(any) || Date.parse(`1984-01-01T${any}`)) {
     if (any.match(/T/) || any.match(/\+/)) {
       // If it has a T or a timezoneoffset, it must be a DateTime
-      return cql.DateTime.fromJSDate(new Date(any), 0);
+      return new DateTime().cast(cql.DateTime.fromJSDate(new Date(any), 0));
     }
     if (any.match(/:/)) {
       // If it has a : but no T or timezoneoffset, it must be a Time
-      return cql.DateTime.fromJSDate(new Date(`1984-01-01T${any}`), 0).getTime();
+      return new Time().cast(cql.DateTime.fromJSDate(new Date(`1984-01-01T${any}`), 0));
     }
     // Must be a Date
-    return new QDMDate(any);
+    return new QDMDate().cast(cql.Date.fromJSDate(new Date(any), 0));
   }
   return any;
 }
@@ -75,4 +82,4 @@ function RecursiveCast(any) {
 Any.prototype.cast = any => RecursiveCast(any);
 
 mongoose.Schema.Types.Any = Any;
-module.exports = Any;
+module.exports.Any = Any;

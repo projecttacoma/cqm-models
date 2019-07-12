@@ -17,4 +17,4 @@ Ratio.prototype.cast = (ratio) => {
 };
 
 mongoose.Schema.Types.Ratio = Ratio;
-module.exports = Ratio;
+module.exports.Ratio = Ratio;

@@ -10,20 +10,20 @@ const Any = require('../basetypes/Any');
 const [Schema] = [mongoose.Schema];<% end %>
 <% elsif datatype.downcase == 'resultcomponent'%>
 const { ComponentSchemaFunction } = require('./Component');
-const Code = require('../basetypes/Code');
-const Interval = require('../basetypes/Interval');
-const Quantity = require('../basetypes/Quantity');
-const DateTime = require('../basetypes/DateTime');
-const QDMDate = require('../basetypes/QDMDate');
-const Any = require('../basetypes/Any');
+const { Code } = require('../basetypes/Code');
+const { Interval } = require('../basetypes/Interval');
+const { Quantity } = require('../basetypes/Quantity');
+const { DateTime } = require('../basetypes/DateTime');
+const { QDMDate } = require('../basetypes/QDMDate');
+const { Any } = require('../basetypes/Any');
 <% elsif datatype.downcase == 'entity'%>
 const { IdentifierSchema } = require('./Identifier');
-const Code = require('../basetypes/Code');
-const Interval = require('../basetypes/Interval');
-const Quantity = require('../basetypes/Quantity');
-const DateTime = require('../basetypes/DateTime');
-const QDMDate = require('../basetypes/QDMDate');
-const Any = require('../basetypes/Any');
+const { Code } = require('../basetypes/Code');
+const { Interval } = require('../basetypes/Interval');
+const { Quantity } = require('../basetypes/Quantity');
+const { DateTime } = require('../basetypes/DateTime');
+const { QDMDate } = require('../basetypes/QDMDate');
+const { Any } = require('../basetypes/Any');
 
 const [Schema] = [mongoose.Schema];
 <% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity'%>
@@ -37,12 +37,12 @@ const Any = require('../basetypes/Any');
 <% else %>
 <% unless datatype.downcase == 'identifier' %>const { IdentifierSchema } = require('./attributes/Identifier');<% end %>
 const { DataElementSchema } = require('./basetypes/DataElement');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-const DateTime = require('./basetypes/DateTime');
-const QDMDate = require('./basetypes/QDMDate');
-const Any = require('./basetypes/Any');
+const { Code } = require('./basetypes/Code');
+const { Interval } = require('./basetypes/Interval');
+const { Quantity } = require('./basetypes/Quantity');
+const { DateTime } = require('./basetypes/DateTime');
+const { QDMDate } = require('./basetypes/QDMDate');
+const { Any } = require('./basetypes/Any');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
 const { EntitySchema } = require('./attributes/Entity');

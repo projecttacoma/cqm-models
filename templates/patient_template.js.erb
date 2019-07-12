@@ -1,8 +1,8 @@
 const mongoose = require('mongoose/browser');
-const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
-const Quantity = require('./basetypes/Quantity');
-const DateTime = require('./basetypes/DateTime');
+const { Code } = require('./basetypes/Code');
+const { Interval } = require('./basetypes/Interval');
+const { Quantity } = require('./basetypes/Quantity');
+const { DateTime } = require('./basetypes/DateTime');
 const AllDataElements = require('./AllDataElements');
 
 const [Schema, Number, String, Mixed] = [

@@ -28,4 +28,4 @@ Code.prototype.cast = (code) => {
 };
 
 mongoose.Schema.Types.Code = Code;
-module.exports = Code;
+module.exports.Code = Code;

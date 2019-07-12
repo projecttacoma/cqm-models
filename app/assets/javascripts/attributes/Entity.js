@@ -1,12 +1,12 @@
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./Identifier');
-const Code = require('../basetypes/Code');
-const Interval = require('../basetypes/Interval');
-const Quantity = require('../basetypes/Quantity');
-const DateTime = require('../basetypes/DateTime');
-const QDMDate = require('../basetypes/QDMDate');
-const Any = require('../basetypes/Any');
+const { Code } = require('../basetypes/Code');
+const { Interval } = require('../basetypes/Interval');
+const { Quantity } = require('../basetypes/Quantity');
+const { DateTime } = require('../basetypes/DateTime');
+const { QDMDate } = require('../basetypes/QDMDate');
+const { Any } = require('../basetypes/Any');
 
 const [Schema] = [mongoose.Schema];
 
