@@ -1,6 +1,7 @@
 const Any = require('./../../../app/assets/javascripts/basetypes/Any');
 const Code = require('./../../../app/assets/javascripts/basetypes/Code');
 const Cql = require('cql-execution');
+const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate');
 
 describe('The Any class', () => {
   describe('Type casting', () => {
@@ -44,7 +45,7 @@ describe('The Any class', () => {
       const datetime_str = '2012-05-21';
 
       const returned_obj = Any.prototype.cast(datetime_str);
-      expect(returned_obj instanceof Cql.Date).toBe(true);
+      expect(returned_obj instanceof QDMDate).toBe(true);
     });
 
     it('Should convert a non-special JS Object to its type', () => {

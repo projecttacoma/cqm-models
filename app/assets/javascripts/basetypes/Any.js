@@ -1,5 +1,6 @@
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
+const QDMDate = require('./QDMDate');
 
 function Any(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Any');
@@ -66,7 +67,7 @@ function RecursiveCast(any) {
       return cql.DateTime.fromJSDate(new Date(`1984-01-01T${any}`), 0).getTime();
     }
     // Must be a Date
-    return cql.DateTime.fromJSDate(new Date(any), 0).getDate();
+    return new QDMDate(any);
   }
   return any;
 }
