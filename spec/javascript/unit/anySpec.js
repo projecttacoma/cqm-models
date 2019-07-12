@@ -1,5 +1,4 @@
 const Any = require('./../../../app/assets/javascripts/basetypes/Any');
-const Code = require('./../../../app/assets/javascripts/basetypes/Code');
 const Cql = require('cql-execution');
 const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate');
 
