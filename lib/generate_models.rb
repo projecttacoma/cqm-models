@@ -139,7 +139,10 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
     hqmfOid_to_datatype_map[extra_info['hqmf_oid']] = datatype_name if extra_info['hqmf_oid'].present?
   end
 
-  attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
+  # Add the qdmVersion attribute unless the base type is one that will provide it
+  unless ['QDM.Entity', 'QDM.Component'].include? type['baseType']
+    attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
+  end
 
   datatypes[datatype_name] = { attributes: attributes }
 end

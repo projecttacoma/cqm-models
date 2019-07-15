@@ -4,6 +4,5 @@ module QDM
     include Mongoid::Document
     embedded_in :data_element
     field :relationship, type: QDM::Code
-    field :qdmVersion, type: String, default: '5.5'
   end
 end

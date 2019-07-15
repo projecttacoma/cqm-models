@@ -15,7 +15,6 @@ const [Number, String] = [
 
 const OrganizationSchema = EntitySchemaFunction({
   type: Code,
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::Organization' },
 
 });

@@ -3013,7 +3013,6 @@ const [Number, String] = [
 
 const CarePartnerSchema = EntitySchemaFunction({
   relationship: Code,
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::CarePartner' },
 
 });
@@ -3254,7 +3253,6 @@ const [Number, String] = [
 
 const OrganizationSchema = EntitySchemaFunction({
   type: Code,
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::Organization' },
 
 });
@@ -3287,7 +3285,6 @@ const [Number, String] = [
 ];
 
 const PatientEntitySchema = EntitySchemaFunction({
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::PatientEntity' },
 
 });
@@ -3323,7 +3320,6 @@ const PractitionerSchema = EntitySchemaFunction({
   role: Code,
   specialty: Code,
   qualification: Code,
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::Practitioner' },
 
 });
@@ -3357,7 +3353,6 @@ const [Number, String] = [
 
 const ResultComponentSchema = ComponentSchemaFunction({
   referenceRange: Interval,
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::ResultComponent' },
 
 });

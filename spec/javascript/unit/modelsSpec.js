@@ -162,6 +162,7 @@ describe('QDMPatient', () => {
       expect(qdmPatient.dataElements.length).toEqual(1);
       expect(qdmPatient.dataElements[0].diagnoses[0].rank).toEqual(2);
       expect(qdmPatient.dataElements[0].participant.identifier.value).toEqual('fake value');
+      expect(qdmPatient.dataElements[0].participant.qdmVersion).toEqual('5.5');
     });
 
     it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {

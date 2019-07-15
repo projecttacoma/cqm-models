@@ -6,6 +6,5 @@ module QDM
     field :role, type: QDM::Code
     field :specialty, type: QDM::Code
     field :qualification, type: QDM::Code
-    field :qdmVersion, type: String, default: '5.5'
   end
 end
