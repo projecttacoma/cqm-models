@@ -2796,7 +2796,10 @@ function RecursiveCast(any) {
     return new cql.Quantity(any.value, any.unit);
   }
 
-  if (any.isCode) {
+  if (any.isCode || any.isConcept || any.isValueSet || any.isList ||
+      any.isDateTime || any.isDate || any.isRatio || any.isQuantiy ||
+      any.isInterval || any.isBooleanLiteral || any.isIntegerLiteral ||
+      any.isDecimalLiteral || any.isStringLiteral || any.isTuple) {
     return any;
   }
 
@@ -2838,8 +2841,17 @@ function RecursiveCast(any) {
   if (Number.isFinite(any)) {
     return any;
   }
-  if (Date.parse(any)) {
-    return cql.DateTime.fromJSDate(new Date(any), 0);
+  if (Date.parse(any) || Date.parse(`1984-01-01T${any}`)) {
+    if (any.match(/T/) || any.match(/\+/)) {
+      // If it has a T or a timezoneoffset, it must be a DateTime
+      return cql.DateTime.fromJSDate(new Date(any), 0);
+    }
+    if (any.match(/:/)) {
+      // If it has a : but no T or timezoneoffset, it must be a Time
+      return cql.DateTime.fromJSDate(new Date(`1984-01-01T${any}`), 0).getTime();
+    }
+    // Must be a Date
+    return cql.DateTime.fromJSDate(new Date(any), 0).getDate();
   }
   return any;
 }
