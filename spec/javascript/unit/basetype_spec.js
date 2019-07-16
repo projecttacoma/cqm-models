@@ -22,12 +22,17 @@ describe('basetype DateTime', () => {
 });
 
 describe('basetype Date', () => {
-  it('can create a Date from JS Date', () => {
-    const date = (new QDMDate()).cast(new Date());
+  it('can create a Date from Date String', () => {
+    const date = (new QDMDate()).cast('1984-02-03');
     expect(date.isDate).toBe(true);
   });
   it('can create a Date from cql Date', () => {
     const date = (new QDMDate()).cast(new cql.Date.fromJSDate(new Date()));
+    expect(date.isDate).toBe(true);
+  });
+
+  it('can create a Date from Date object', () => {
+    const date = (new QDMDate()).cast({year: 1984, month: 2, day: 3});
     expect(date.isDate).toBe(true);
   });
   it('throws if invalid DateTime passed to cast', () => {

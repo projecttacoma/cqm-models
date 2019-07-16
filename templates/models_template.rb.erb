@@ -13,6 +13,7 @@ require_relative 'qdm/attributes/identifier'
 # base types
 require_relative 'qdm/basetypes/code'
 require_relative 'qdm/basetypes/data_element'
+require_relative 'qdm/basetypes/date'
 require_relative 'qdm/basetypes/interval'
 require_relative 'qdm/basetypes/quantity'
 require_relative 'qdm/basetypes/ratio'
