@@ -6,7 +6,7 @@ module QDM
     field :authorDatetime, type: DateTime
     field :reason, type: QDM::Code
     field :negationRationale, type: QDM::Code
-    field :requester, type: QDM::Entity
+    embeds_one :requester, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Laboratory Test, Recommended'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.43'
     field :qdmCategory, type: String, default: 'laboratory_test'

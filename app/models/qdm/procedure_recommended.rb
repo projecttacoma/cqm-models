@@ -7,7 +7,7 @@ module QDM
     field :reason, type: QDM::Code
     field :anatomicalLocationSite, type: QDM::Code
     field :rank, type: Integer
-    field :requester, type: QDM::Entity
+    embeds_one :requester, class_name: 'QDM::Entity'
     field :negationRationale, type: QDM::Code
     field :qdmTitle, type: String, default: 'Procedure, Recommended'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.68'

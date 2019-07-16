@@ -17,7 +17,6 @@ const PractitionerSchema = EntitySchemaFunction({
   role: Code,
   specialty: Code,
   qualification: Code,
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::Practitioner' },
 
 });

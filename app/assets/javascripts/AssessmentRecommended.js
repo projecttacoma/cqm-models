@@ -8,6 +8,7 @@ const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
 const Any = require('./basetypes/Any');
+const AnyEntity = require('./basetypes/AnyEntity');
 const { ComponentSchema } = require('./attributes/Component');
 const { FacilityLocationSchema } = require('./attributes/FacilityLocation');
 const { EntitySchema } = require('./attributes/Entity');
@@ -22,7 +23,7 @@ const AssessmentRecommendedSchema = DataElementSchema({
   authorDatetime: DateTime,
   negationRationale: Code,
   reason: Code,
-  requester: EntitySchema,
+  requester: AnyEntity,
   qdmTitle: { type: String, default: 'Assessment, Recommended' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.118' },
   qdmCategory: { type: String, default: 'assessment' },

@@ -3,6 +3,5 @@ module QDM
   class ResultComponent < Component
     include Mongoid::Document
     field :referenceRange, type: QDM::Interval
-    field :qdmVersion, type: String, default: '5.5'
   end
 end

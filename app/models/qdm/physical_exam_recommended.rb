@@ -7,7 +7,7 @@ module QDM
     field :reason, type: QDM::Code
     field :anatomicalLocationSite, type: QDM::Code
     field :negationRationale, type: QDM::Code
-    field :requester, type: QDM::Entity
+    embeds_one :requester, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Physical Exam, Recommended'
     field :hqmfOid, type: String, default: '22.16.840.1.113883.10.20.28.4.63'
     field :qdmCategory, type: String, default: 'physical_exam'
