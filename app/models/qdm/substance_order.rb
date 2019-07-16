@@ -12,7 +12,7 @@ module QDM
     field :refills, type: Integer
     field :route, type: QDM::Code
     field :negationRationale, type: QDM::Code
-    field :requester, type: QDM::Entity
+    embeds_one :requester, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Substance, Order'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.77'
     field :qdmCategory, type: String, default: 'substance'

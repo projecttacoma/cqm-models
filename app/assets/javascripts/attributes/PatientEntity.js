@@ -14,7 +14,6 @@ const [Number, String] = [
 ];
 
 const PatientEntitySchema = EntitySchemaFunction({
-  qdmVersion: { type: String, default: '5.5' },
   _type: { type: String, default: 'QDM::PatientEntity' },
 
 });

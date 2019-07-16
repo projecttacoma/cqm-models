@@ -139,7 +139,10 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
     hqmfOid_to_datatype_map[extra_info['hqmf_oid']] = datatype_name if extra_info['hqmf_oid'].present?
   end
 
-  attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
+  # Add the qdmVersion attribute unless the base type is one that will provide it
+  unless ['QDM.Entity', 'QDM.Component'].include? type['baseType']
+    attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
+  end
 
   datatypes[datatype_name] = { attributes: attributes }
 end
@@ -262,14 +265,15 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents.gsub!(/field :facilityLocation, type: Code/, 'field :facilityLocation, type: QDM::FacilityLocation')
 
   # Make Entity subclasses of type QDM::Entity
-  contents.gsub!(/field :participant/, 'field :participant, type: QDM::Entity')
-  contents.gsub!(/field :sender/, 'field :sender, type: QDM::Entity')
-  contents.gsub!(/field :recipient/, 'field :recipient, type: QDM::Entity')
-  contents.gsub!(/field :recorder/, 'field :recorder, type: QDM::Entity')
-  contents.gsub!(/field :performer/, 'field :performer, type: QDM::Entity')
-  contents.gsub!(/field :requester/, 'field :requester, type: QDM::Entity')
-  contents.gsub!(/field :prescriber/, 'field :prescriber, type: QDM::Entity')
-  contents.gsub!(/field :dispenser/, 'field :dispenser, type: QDM::Entity')
+  contents.gsub!(/field :participant/, "embeds_one :participant, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :sender/, "embeds_one :sender, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :recipient/, "embeds_one :recipient, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :recorder/, "embeds_one :recorder, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :performer/, "embeds_one :performer, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :requester/, "embeds_one :requester, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :prescriber/, "embeds_one :prescriber, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :dispenser/, "embeds_one :dispenser, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :identifier, type: Identifier/, "embeds_one :identifier, class_name: 'QDM::Identifier'")
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -289,14 +293,14 @@ Dir.glob(js_models_path + '*.js').each do |file_name|
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
   contents.gsub!(/component: Code/, 'component: ComponentSchema')
   contents.gsub!(/diagnoses: \[\]/, 'diagnoses: [DiagnosisComponentSchema]')
-  contents.gsub!(/sender: Any/, 'sender: EntitySchema')
-  contents.gsub!(/recipient: Any/, 'recipient: EntitySchema')
-  contents.gsub!(/participant: Any/, 'participant: EntitySchema')
-  contents.gsub!(/recorder: Any/, 'recorder: EntitySchema')
-  contents.gsub!(/performer: Any/, 'performer: EntitySchema')
-  contents.gsub!(/requester: Any/, 'requester: EntitySchema')
-  contents.gsub!(/prescriber: Any/, 'prescriber: EntitySchema')
-  contents.gsub!(/dispenser: Any/, 'dispenser: EntitySchema')
+  contents.gsub!(/sender: Any/, 'sender: AnyEntity')
+  contents.gsub!(/recipient: Any/, 'recipient: AnyEntity')
+  contents.gsub!(/participant: Any/, 'participant: AnyEntity')
+  contents.gsub!(/recorder: Any/, 'recorder: AnyEntity')
+  contents.gsub!(/performer: Any/, 'performer: AnyEntity')
+  contents.gsub!(/requester: Any/, 'requester: AnyEntity')
+  contents.gsub!(/prescriber: Any/, 'prescriber: AnyEntity')
+  contents.gsub!(/dispenser: Any/, 'dispenser: AnyEntity')
   contents.gsub!(/relatedTo: \[\]/, 'relatedTo: [String]')
 
   File.open(file_name, 'w') { |file| file.puts contents }
@@ -330,6 +334,10 @@ types_inherited_by_component = ['/result_component']
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
+  if ['entity.rb', 'organization.rb', 'patient_entity.rb', 'practitioner.rb', 'care_partner.rb'].any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+    contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
+    File.open(file_name, 'w') { |file| file.puts contents }
+  end
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
   next if types_not_inherited_by_data_element.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
   contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")

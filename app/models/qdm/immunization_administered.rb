@@ -9,7 +9,7 @@ module QDM
     field :dosage, type: QDM::Quantity
     field :route, type: QDM::Code
     field :negationRationale, type: QDM::Code
-    field :performer, type: QDM::Entity
+    embeds_one :performer, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Immunization, Administered'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.112'
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.140'
