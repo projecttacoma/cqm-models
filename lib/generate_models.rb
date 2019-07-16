@@ -320,6 +320,7 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
   contents.gsub!('Qdm', 'QDM')
   contents.gsub!('Code', 'QDM::Code')
+  contents.gsub!('Date\n', 'QDM::Date\n') # \n so DateTime does not get overwritten
   contents.gsub!(' Identifier', ' QDM::Identifier')
   contents.gsub!('Interval', 'QDM::Interval')
   contents.gsub!('Quantity', 'QDM::Quantity')
