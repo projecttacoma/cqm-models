@@ -93,7 +93,7 @@ module QDM
       fields.keys.each do |field|
         if send(field).is_a? DateTime
           # Do not shift Time values. They are stored as DateTimes with year 0.
-          next if send(field).year == 0
+          next if send(field).year.zero?
           if send(field).year + year_shift > 9999 || send(field).year + year_shift < 1
             raise RangeError, 'Year was shifted after 9999 or before 0001'
           end

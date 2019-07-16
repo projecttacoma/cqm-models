@@ -49,7 +49,7 @@ RSpec.describe QDM do
     @patient_big.qdmPatient.dataElements << QDM::EncounterPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('SNOMEDCT', '17436001'), QDM::Code.new('99241', 'CPT')], facilityLocations: [facility_location1, facility_location2])
     @patient_big.qdmPatient.dataElements << QDM::CommunicationPerformed.new(authorDatetime: 3.years.ago, dataElementCodes: [QDM::Code.new('SNOMEDCT', '428341000124108')])
     @patient_big.qdmPatient.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')], facilityLocation: facility_location1)
-    @patient_big.qdmPatient.dataElements << QDM::LaboratoryTestPerformed.new(patient: @patient_big, authorDatetime: 3.years.ago, result: DateTime.new(0,1,1,2,2,1), relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('LOINC', '34714-6')])
+    @patient_big.qdmPatient.dataElements << QDM::LaboratoryTestPerformed.new(patient: @patient_big, authorDatetime: 3.years.ago, result: DateTime.new(0, 1, 1, 2, 2, 1), relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('LOINC', '34714-6')])
 
     # Patient with some data elements
     bd = 70.years.ago
