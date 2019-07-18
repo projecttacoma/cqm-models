@@ -153,10 +153,6 @@ When the code is overly difficult to create an automated test for (which should 
 
 We follow the [ESLint](https://eslint.org/) [AirBnB base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) with a few exceptions, which are noted in the .eslintrc.json file.
 
-### CoffeeScript
-
-We follow [CoffeeLint](https://github.com/clutchski/coffeelint) with the configurations in the coffeelint.json file.
-
 ### Ruby
 
 We follow [RuboCop](https://rubocop.readthedocs.io/en/latest/) with the configurations in the .rubocop.yml file.
