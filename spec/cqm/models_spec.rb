@@ -51,6 +51,7 @@ RSpec.describe QDM do
     @patient_big.qdmPatient.dataElements << QDM::DiagnosticStudyPerformed.new(authorDatetime: 3.years.ago, relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')], facilityLocation: facility_location1)
     @patient_big.qdmPatient.dataElements << QDM::LaboratoryTestPerformed.new(patient: @patient_big, authorDatetime: 3.years.ago, result: DateTime.new(0, 1, 1, 2, 2, 1), relevantPeriod: QDM::Interval.new(3.years.ago, 3.years.ago + 1.hour), dataElementCodes: [QDM::Code.new('LOINC', '34714-6')])
     @patient_big.qdmPatient.dataElements << QDM::CareGoal.new(relevantPeriod: QDM::Interval.new(DateTime.new(2010, 1, 3, 4, 0, 0), DateTime.new(2010, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')], statusDate: QDM::Date.new(2010, 1, 12))
+    @patient_big.qdmPatient.dataElements << QDM::CareGoal.new(relevantPeriod: QDM::Interval.new(DateTime.new(2004, 1, 3, 4, 0, 0), DateTime.new(2004, 1, 3, 5, 0, 0)), dataElementCodes: [QDM::Code.new('LOINC', '32451-7')], statusDate: QDM::Date.new(2004, 2, 29))
 
     # Patient with some data elements
     bd = 70.years.ago
@@ -235,6 +236,8 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2014-02-28')
     expect(@patient_big.qdmPatient.get_data_elements('laboratory_test').first.get('result').utc.to_s).to include('0000-01-01')
     expect(@patient_big.qdmPatient.get_data_elements('care_goal').first.get('statusDate').year).to eq(2012)
+    expect(@patient_big.qdmPatient.get_data_elements('care_goal')[1].get('statusDate').year).to eq(2006)
+    expect(@patient_big.qdmPatient.get_data_elements('care_goal')[1].get('statusDate').day).to eq(28)
   end
 
   it 'shift years backward' do
@@ -252,6 +255,7 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2010-02-28')
     expect(@patient_big.qdmPatient.get_data_elements('laboratory_test').first.get('result').utc.to_s).to include('0000-01-01')
     expect(@patient_big.qdmPatient.get_data_elements('care_goal').first.get('statusDate').year).to eq(2008)
+    expect(@patient_big.qdmPatient.get_data_elements('care_goal')[1].get('statusDate').year).to eq(2002)
   end
 
   it 'shift years too far backward' do
@@ -273,6 +277,7 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2012-02-29')
     expect(@patient_big.qdmPatient.get_data_elements('laboratory_test').first.get('result').utc.to_s).to include('0000-01-01')
     expect(@patient_big.qdmPatient.get_data_elements('care_goal').first.get('statusDate').year).to eq(2010)
+    expect(@patient_big.qdmPatient.get_data_elements('care_goal')[1].get('statusDate').year).to eq(2004)
   end
 
   it 'shift years too far forward' do
@@ -295,6 +300,7 @@ RSpec.describe QDM do
     expect(@patient_big.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('2012-02-29')
     expect(@patient_big.qdmPatient.get_data_elements('laboratory_test').first.get('result').utc.to_s).to include('0000-01-01')
     expect(@patient_big.qdmPatient.get_data_elements('care_goal').first.get('statusDate').year).to eq(2010)
+    expect(@patient_big.qdmPatient.get_data_elements('care_goal')[1].get('statusDate').year).to eq(2004)
   end
 
   it 'interval low and high get shifted out of range' do
