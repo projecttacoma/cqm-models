@@ -16,7 +16,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "cql-execution": "https://github.com/cqframework/cql-execution#aggregate-incompatible-units",
+    "cql-execution": "https://github.com/cqframework/cql-execution#master",
     "mongoose": "^5.4.14"
   },
   "devDependencies": {
