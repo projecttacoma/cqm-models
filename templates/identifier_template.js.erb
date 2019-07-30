@@ -15,6 +15,7 @@ module.exports.IdentifierSchema = IdentifierSchema;
 class Identifier extends mongoose.Document {
   constructor(object) {
     super(object, IdentifierSchema);
+    this._type = 'QDM::<%= datatype %>';
   }
 }
 module.exports.Identifier = Identifier;
