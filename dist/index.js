@@ -2559,10 +2559,8 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
     || QDMPatientSchema._dataElementCachePatientId != this._id.toString()) {
     QDMPatientSchema._dataElementCache = {};
     QDMPatientSchema._dataElementCachePatientId = this._id.toString();
-    console.log('cache reset');
   }
   if (QDMPatientSchema._dataElementCache.hasOwnProperty(profile)) {
-    console.log('Cache hit');
     return QDMPatientSchema._dataElementCache[profile];
   }
   let profileStripped;
@@ -2570,13 +2568,11 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
     // Requested generic patient info
     const info = { birthDatetime: this.birthDatetime };
     QDMPatientSchema._dataElementCache[profile] = [info];
-    console.log('Cache miss');
     return [info];
   } else if (/PatientCharacteristic/.test(profile)) {
     // Requested a patient characteristic
     profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
     QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped);
-    console.log('Cache miss');
     return QDMPatientSchema._dataElementCache[profile];
   } else if (profile != null) {
     // Requested something else (probably a QDM data type).
@@ -2593,18 +2589,15 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
       profileStripped = profileStripped.replace(/Positive/, '');
       // Since the data criteria is 'Positive', it is not negated.
       QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped, false);
-      console.log('Cache miss');
       return QDMPatientSchema._dataElementCache[profile];
     } else if (/Negative/.test(profileStripped)) {
       profileStripped = profileStripped.replace(/Negative/, '');
       // Since the data criteria is 'Negative', it is negated.
       QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped, true);
-      console.log('Cache miss');
       return QDMPatientSchema._dataElementCache[profile];
     }
     // No negation status, proceed normally
     QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped);
-    console.log('Cache miss');
     return QDMPatientSchema._dataElementCache[profile];
   }
   return [];
