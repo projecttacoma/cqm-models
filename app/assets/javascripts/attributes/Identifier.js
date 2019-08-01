@@ -9,6 +9,7 @@ const IdentifierSchema = mongoose.Schema({
   namingSystem: String,
   value: String,
   qdmVersion: { type: String, default: '5.5' },
+  _type: { type: String, default: 'QDM::Identifier' },
 
 }, { _id: false, id: false });
 
@@ -16,6 +17,7 @@ module.exports.IdentifierSchema = IdentifierSchema;
 class Identifier extends mongoose.Document {
   constructor(object) {
     super(object, IdentifierSchema);
+    this._type = 'QDM::Identifier';
   }
 }
 module.exports.Identifier = Identifier;
