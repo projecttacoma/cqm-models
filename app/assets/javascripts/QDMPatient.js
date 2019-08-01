@@ -97,15 +97,29 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
 // @param {String} profile - the data criteria requested by the execution engine
 // @returns {Object}
 QDMPatientSchema.methods.findRecords = function findRecords(profile) {
+  if (QDMPatientSchema._dataElementCache == null
+    || QDMPatientSchema._dataElementCachePatientId != this._id.toString()) {
+    QDMPatientSchema._dataElementCache = {};
+    QDMPatientSchema._dataElementCachePatientId = this._id.toString();
+    console.log('cache reset');
+  }
+  if (QDMPatientSchema._dataElementCache.hasOwnProperty(profile)) {
+    console.log('Cache hit');
+    return QDMPatientSchema._dataElementCache[profile];
+  }
   let profileStripped;
   if (profile === 'Patient') {
     // Requested generic patient info
     const info = { birthDatetime: this.birthDatetime };
+    QDMPatientSchema._dataElementCache[profile] = [info];
+    console.log('Cache miss');
     return [info];
   } else if (/PatientCharacteristic/.test(profile)) {
     // Requested a patient characteristic
     profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
-    return this.getByProfile(profileStripped);
+    QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped);
+    console.log('Cache miss');
+    return QDMPatientSchema._dataElementCache[profile];
   } else if (profile != null) {
     // Requested something else (probably a QDM data type).
 
@@ -120,14 +134,20 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
     if (/Positive/.test(profileStripped)) {
       profileStripped = profileStripped.replace(/Positive/, '');
       // Since the data criteria is 'Positive', it is not negated.
-      return this.getByProfile(profileStripped, false);
+      QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped, false);
+      console.log('Cache miss');
+      return QDMPatientSchema._dataElementCache[profile];
     } else if (/Negative/.test(profileStripped)) {
       profileStripped = profileStripped.replace(/Negative/, '');
       // Since the data criteria is 'Negative', it is negated.
-      return this.getByProfile(profileStripped, true);
+      QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped, true);
+      console.log('Cache miss');
+      return QDMPatientSchema._dataElementCache[profile];
     }
     // No negation status, proceed normally
-    return this.getByProfile(profileStripped);
+    QDMPatientSchema._dataElementCache[profile] = this.getByProfile(profileStripped);
+    console.log('Cache miss');
+    return QDMPatientSchema._dataElementCache[profile];
   }
   return [];
 };
