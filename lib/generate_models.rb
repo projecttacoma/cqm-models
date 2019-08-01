@@ -208,8 +208,8 @@ datatypes.each do |datatype, info|
     renderer = ERB.new(File.read(datatype_custom_templates[datatype.to_sym]), nil, '-')
   end
   attrs_with_extras = info[:attributes] # this field gets used in the template
-  # Custom datatypes don't need _type
-  unless datatype_custom_templates.key?(datatype.to_sym)
+  # QDMPatients don't need _type
+  unless datatype.to_s == 'QDMPatient'
     attrs_with_extras << { name: '_type', type: 'System.String', default: "QDM::#{datatype.underscore.camelize}" } # Add Class
   end
   puts '  ' + file_path + datatype + '.js'

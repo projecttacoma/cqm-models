@@ -7,7 +7,7 @@ const [Schema] = [mongoose.Schema];
 
 function DataElementSchema(add, options) {
   const extended = new Schema({
-    dataElementCodes: { type: [] },
+    dataElementCodes: { type: [Code] },
     description: { type: String },
     codeListId: { type: String },
     id: {
