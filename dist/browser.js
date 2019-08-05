@@ -2555,11 +2555,13 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
 // @param {String} profile - the data criteria requested by the execution engine
 // @returns {Object}
 QDMPatientSchema.methods.findRecords = function findRecords(profile) {
+  // Clear profile cache for this patient if there is no cache or the patient has changed
   if (QDMPatientSchema._dataElementCache == null
-    || QDMPatientSchema._dataElementCachePatientId != this._id.toString()) {
+    || QDMPatientSchema._dataElementCachePatientId != this._id) {
     QDMPatientSchema._dataElementCache = {};
-    QDMPatientSchema._dataElementCachePatientId = this._id.toString();
+    QDMPatientSchema._dataElementCachePatientId = this._id;
   }
+  // If there is a cache 'hit', return it
   if (QDMPatientSchema._dataElementCache.hasOwnProperty(profile)) {
     return QDMPatientSchema._dataElementCache[profile];
   }
