@@ -65,6 +65,7 @@ const ProcedureOrder = require('./../../../app/assets/javascripts/ProcedureOrder
 const ProcedurePerformed = require('./../../../app/assets/javascripts/ProcedurePerformed.js').ProcedurePerformed;
 const ProcedureRecommended = require('./../../../app/assets/javascripts/ProcedureRecommended.js').ProcedureRecommended;
 const QDMPatient = require('./../../../app/assets/javascripts/QDMPatient.js').QDMPatient;
+const QDMPatientSchema = require('./../../../app/assets/javascripts/QDMPatient.js').QDMPatientSchema;
 const ResultComponent = require('./../../../app/assets/javascripts/attributes/ResultComponent.js').ResultComponent;
 const Stratification = require('./../../../app/assets/javascripts/cqm/PopulationSet.js').Stratification;
 const SubstanceAdministered = require('./../../../app/assets/javascripts/SubstanceAdministered.js').SubstanceAdministered;
@@ -397,6 +398,19 @@ describe('QDMPatient', () => {
       expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
       expect(qdmPatient.findRecords('PositiveEncounterPerformed').length).toEqual(2);
       expect(qdmPatient.findRecords('NegativeEncounterPerformed').length).toEqual(1);
+    });
+
+    it('can clear dataElementCache on request', () => {
+      // run a findRecords call so cache is made
+      expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
+      expect(QDMPatientSchema.dataElementCache).toBeDefined()
+      expect(Object.keys(QDMPatientSchema.dataElementCache).length).toBe(1);
+      expect(QDMPatientSchema.dataElementCachePatientId).toBeDefined()
+
+      // clear cache
+      QDMPatientSchema.clearDataElementCache();
+      expect(QDMPatientSchema.dataElementCache).toBeNull();
+      expect(QDMPatientSchema.dataElementCachePatientId).toBeNull();
     });
   });
 
