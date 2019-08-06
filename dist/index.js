@@ -2555,15 +2555,27 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
 // @param {String} profile - the data criteria requested by the execution engine
 // @returns {Object}
 QDMPatientSchema.methods.findRecords = function findRecords(profile) {
+  // Clear profile cache for this patient if there is no cache or the patient has changed
+  if (QDMPatientSchema.dataElementCache == null
+    || QDMPatientSchema.dataElementCachePatientId !== this._id) {
+    QDMPatientSchema.dataElementCache = {};
+    QDMPatientSchema.dataElementCachePatientId = this._id;
+  }
+  // If there is a cache 'hit', return it
+  if (Object.prototype.hasOwnProperty.call(QDMPatientSchema.dataElementCache, profile)) {
+    return QDMPatientSchema.dataElementCache[profile];
+  }
   let profileStripped;
   if (profile === 'Patient') {
     // Requested generic patient info
     const info = { birthDatetime: this.birthDatetime };
+    QDMPatientSchema.dataElementCache[profile] = [info];
     return [info];
   } else if (/PatientCharacteristic/.test(profile)) {
     // Requested a patient characteristic
     profileStripped = profile.replace(/ *\{[^)]*\} */g, '');
-    return this.getByProfile(profileStripped);
+    QDMPatientSchema.dataElementCache[profile] = this.getByProfile(profileStripped);
+    return QDMPatientSchema.dataElementCache[profile];
   } else if (profile != null) {
     // Requested something else (probably a QDM data type).
 
@@ -2578,14 +2590,17 @@ QDMPatientSchema.methods.findRecords = function findRecords(profile) {
     if (/Positive/.test(profileStripped)) {
       profileStripped = profileStripped.replace(/Positive/, '');
       // Since the data criteria is 'Positive', it is not negated.
-      return this.getByProfile(profileStripped, false);
+      QDMPatientSchema.dataElementCache[profile] = this.getByProfile(profileStripped, false);
+      return QDMPatientSchema.dataElementCache[profile];
     } else if (/Negative/.test(profileStripped)) {
       profileStripped = profileStripped.replace(/Negative/, '');
       // Since the data criteria is 'Negative', it is negated.
-      return this.getByProfile(profileStripped, true);
+      QDMPatientSchema.dataElementCache[profile] = this.getByProfile(profileStripped, true);
+      return QDMPatientSchema.dataElementCache[profile];
     }
     // No negation status, proceed normally
-    return this.getByProfile(profileStripped);
+    QDMPatientSchema.dataElementCache[profile] = this.getByProfile(profileStripped);
+    return QDMPatientSchema.dataElementCache[profile];
   }
   return [];
 };
@@ -2704,6 +2719,11 @@ QDMPatientSchema.methods.transfers = function transfers() {
 
 QDMPatientSchema.methods.vital_signs = function vital_signs() {
   return this.getDataElements({ qdmCategory: 'vital_sign' });
+};
+
+QDMPatientSchema.clearDataElementCache = function clearDataElementCache() {
+  QDMPatientSchema.dataElementCachePatientId = null;
+  QDMPatientSchema.dataElementCache = null;
 };
 
 module.exports.QDMPatientSchema = QDMPatientSchema;
