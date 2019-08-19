@@ -26,3 +26,5 @@ module.exports.ClauseResult = require('./cqm/ClauseResult.js').ClauseResult;
 module.exports.ClauseResultSchema = require('./cqm/ClauseResult.js').ClauseResultSchema;
 module.exports.StatementResult = require('./cqm/StatementResult.js').StatementResult;
 module.exports.StatementResultSchema = require('./cqm/StatementResult.js').StatementResultchema;
+
+module.exports.QDMurl = 'urn:healthit-gov:qdm:v5_5';

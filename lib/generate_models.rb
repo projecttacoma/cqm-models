@@ -86,8 +86,9 @@ oids = JSON.parse(File.read(oids_file))
 # not standard location. This helps with testing.
 IS_TEST = (ARGV[2] == 'TEST')
 
-# Grab QDM version as defined in the modelinfo file
+# Grab QDM version and url as defined in the modelinfo file
 qdm_version = modelinfo.xpath('//ns4:modelInfo').first.attributes['version'].value
+url = modelinfo.xpath('//ns4:modelInfo').first.attributes['url'].value
 
 # Datatypes (keys are the datatype name, values are the datatype attributes)
 datatypes = {}
