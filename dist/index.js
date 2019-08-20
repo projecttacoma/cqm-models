@@ -21572,7 +21572,7 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.sameOrBefore = function(other, precision) {
-      if ((this.end() == null) || (other.start() == null)) {
+      if ((this.end() == null) || ((other != null ? other.start() : void 0) == null)) {
         return null;
       } else {
         return this.end().sameOrBefore(other.start(), precision);
@@ -21580,7 +21580,7 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.sameOrAfter = function(other, precision) {
-      if ((this.start() == null) || (other.end() == null)) {
+      if ((this.start() == null) || ((other != null ? other.end() : void 0) == null)) {
         return null;
       } else {
         return this.start().sameOrAfter(other.end(), precision);
