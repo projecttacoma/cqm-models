@@ -49,7 +49,8 @@ RSpec.describe QDM do
     expect(system("ruby lib/generate_models.rb #{modelinfo_file} #{hqmf_oid_file} TEST")).to be true
     datatypes = get_datatypes_attributes(modelinfo_file)
     datatypes.each do |datatype, attributes|
-      if datatype != 'Component' && datatype != 'FacilityLocation'
+      if datatype != 'Identifier' && datatype != 'Component' && datatype != 'FacilityLocation' && datatype != 'Entity' && datatype != 'ResultComponent' && datatype != 'DiagnosisComponent' && datatype != 'CarePartner' && datatype != 'Organization' && datatype != 'PatientEntity' && datatype != 'Practitioner'
+        puts datatype
         expect(File.file?('app/models/test/qdm/' + datatype.underscore + '.rb')).to be true
         ruby_model_has_attributes(File.read('app/models/test/qdm/' + datatype.underscore + '.rb'), attributes)
         # Javascript PatientSchema was renamed to QDMPatient since it just contains the QDM data
@@ -75,31 +76,7 @@ RSpec.describe QDM do
     system 'rm -rf app/models/test'
   end
 
-  it 'generates each QDM 5.4 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.4.xml', 'data/oids_qdm_5.4.json')
-  end
-
-  it 'generates each QDM 5.3 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.3.xml', 'data/oids_qdm_5.4.json')
-  end
-
-  it 'generates each QDM 5.0.2 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.2.xml', 'data/oids_qdm_5.4.json')
-  end
-
-  it 'generates each QDM 5.0.1 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.1.xml', 'data/oids_qdm_5.4.json')
-  end
-
-  it 'generates each QDM 5.0 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.0.xml', 'data/oids_qdm_5.4.json')
-  end
-
-  it 'generates each QDM 4.3 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.3.xml', 'data/oids_qdm_5.4.json')
-  end
-
-  it 'generates each QDM 4.2 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-4.2.xml', 'data/oids_qdm_5.4.json')
+  it 'generates each QDM 5.5 datatype model with all attributes' do
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.5.xml', 'data/oids_qdm_5.4.json')
   end
 end

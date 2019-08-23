@@ -16,7 +16,7 @@ module CQM
 
     embeds_many :addresses
     embeds_many :telecoms
-    embeds_many :ids, class_name: 'QDM::Id'
+    embeds_many :ids, class_name: 'QDM::Identifier'
 
     def npi=(an_npi)
       cda_id_npi = ids.where(namingSystem: NPI_OID).first
@@ -24,7 +24,7 @@ module CQM
         cda_id_npi.value = an_npi
         cda_id_npi.save!
       else
-        ids << QDM::Id.new(namingSystem: NPI_OID, value: an_npi)
+        ids << QDM::Identifier.new(namingSystem: NPI_OID, value: an_npi)
       end
     end
 
@@ -34,7 +34,7 @@ module CQM
     end
 
     def tin=(a_tin)
-      ids << QDM::Id.new(namingSystem: TAX_ID_OID, value: a_tin)
+      ids << QDM::Identifier.new(namingSystem: TAX_ID_OID, value: a_tin)
     end
 
     def tin
@@ -48,7 +48,7 @@ module CQM
         cda_id_ccn.value = a_ccn
         cda_id_ccn.save!
       else
-        ids << QDM::Id.new(namingSystem: CCN_OID, value: a_ccn)
+        ids << QDM::Identifier.new(namingSystem: CCN_OID, value: a_ccn)
       end
     end
 

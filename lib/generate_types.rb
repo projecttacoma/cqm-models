@@ -55,7 +55,7 @@ module QDM
 
     def self.generate_qdm_id
       # TODO: randomize values
-      qdm_id = QDM::Id.new
+      qdm_id = QDM::Identifier.new
       qdm_id.value = 'TestValue'
       qdm_id.namingSystem = 'TestNamingSystem'
       qdm_id
