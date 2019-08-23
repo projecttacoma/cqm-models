@@ -510,9 +510,10 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-"cql-execution@https://github.com/cqframework/cql-execution#master":
-  version "1.3.4"
-  resolved "https://github.com/cqframework/cql-execution#b30335163482b982dfc15dc504a7340a7161b790"
+cql-execution@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/cql-execution/-/cql-execution-1.4.0.tgz#610d3b63d50c7cba9ec3f35f145b3def4c15caa4"
+  integrity sha512-4d5VTeUWjG/oXKSfI1scJKGSeZ5afhIeHqWUav+V9jyZL1KOFhLoUm9VDa1Fu1IGKQDDMyACxAuInBVdlfd5XA==
   dependencies:
     moment "^2.20.1"
     ucum "0.0.7"
