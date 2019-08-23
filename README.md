@@ -17,7 +17,7 @@ See the top of the `lib/generate_models.rb` script for RubyGem requirements.
 
 To use, execute the following:
 ```
-ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.4.xml data/oids_qdm_5.4.json
+ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.5.xml data/oids_qdm_5.5.json
 ```
 
 The first parameter is the file path to the modelinfo file you wish to generate from. The second parameter is the OID map file. You must include both.
@@ -68,6 +68,7 @@ Starting with version **2.0.0** released on 6/20/2019, cqm-models versioning has
   | X | QDM version |
   | --- | --- |
   | 2 | 5.4 |
+  | 3 | 5.5 |
 
 * **Y** indicates major changes (incompatible API changes)
 
