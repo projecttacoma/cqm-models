@@ -15,6 +15,8 @@ const [Number, String] = [
 
 const CarePartnerSchema = EntitySchemaFunction({
   relationship: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.134' },
+  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.160' },
   _type: { type: String, default: 'QDM::CarePartner' },
 
 });

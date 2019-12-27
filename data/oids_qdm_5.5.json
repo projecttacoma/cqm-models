@@ -35,6 +35,10 @@
     "qdm_category": "care_goal",
     "qdm_status": ""
   },
+  "care_partner": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.134",
+    "qrda_oid": "2.16.840.1.113883.10.20.24.3.160"
+  },
   "communication_performed": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.4.132",
     "qrda_oid": "",
@@ -185,6 +189,10 @@
     "qdm_category": "medication",
     "qdm_status": "order"
   },
+  "organization": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.135",
+    "qrda_oid": "2.16.840.1.113883.10.20.24.3.163"
+  },
   "participation": {
     "hqmf_title": "Program Participation",
     "hqmf_oid": "2.16.840.1.113883.10.20.28.4.130",
@@ -246,6 +254,10 @@
     "qdm_category": "patient_characteristic",
     "qdm_status": "gender"
   },
+  "patient_entity": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.136",
+    "qrda_oid": "2.16.840.1.113883.10.20.24.3.161"
+  },
   "physical_exam_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.4.61",
     "qrda_oid": "",
@@ -263,6 +275,10 @@
     "qrda_oid": "",
     "qdm_category": "physical_exam",
     "qdm_status": "recommended"
+  },
+  "practitioner": {
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.137",
+    "qrda_oid": "2.16.840.1.113883.10.20.24.3.162"
   },
   "procedure_order": {
     "hqmf_oid": "2.16.840.1.113883.10.20.28.4.66",

@@ -68,7 +68,35 @@ module QDM
           populate_fields(field_name, data_element, negate_data_element)
         end
       end
+      generate_entities(data_element)
       data_element
+    end
+
+    def self.generate_entities(data_element)
+      if data_element.respond_to? 'performer'
+        data_element.performer = QDM::BaseTypeGeneration.generate_entity
+      end
+      if data_element.respond_to? 'recorder'
+        data_element.recorder = QDM::BaseTypeGeneration.generate_entity
+      end
+      if data_element.respond_to? 'requester'
+        data_element.requester = QDM::BaseTypeGeneration.generate_entity
+      end
+      if data_element.respond_to? 'sender'
+        data_element.sender = QDM::BaseTypeGeneration.generate_entity
+      end
+      if data_element.respond_to? 'recipient'
+        data_element.recipient = QDM::BaseTypeGeneration.generate_entity
+      end
+      if data_element.respond_to? 'participant'
+        data_element.participant = QDM::BaseTypeGeneration.generate_entity
+      end
+      if data_element.respond_to? 'prescriber'
+        data_element.prescriber = QDM::BaseTypeGeneration.generate_entity
+      end
+      if data_element.respond_to? 'dispenser'
+        data_element.dispenser = QDM::BaseTypeGeneration.generate_entity
+      end
     end
 
     def self.populate_fields(field_name, data_element, negate_data_element)
@@ -81,12 +109,14 @@ module QDM
         data_element[field_name] = QDM::BaseTypeGeneration.generate_code_field if negate_data_element
       elsif field_name == 'components'
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_component]
+      elsif field_name == 'dataElementCodes'
+        # TODO: Populate dataElementCodes with codes specifically for data element type
+        data_element[field_name] = [QDM::BaseTypeGeneration.generate_code_field]
+      elsif field_name == 'diagnoses'
+        data_element[field_name] = [QDM::BaseTypeGeneration.generate_diagnosis]
       elsif field_name == 'result'
         # TODO: Result can be MANY Integer, Decimal, Code, Quantity or Ratio randomize this
         data_element[field_name] = QDM::BaseTypeGeneration.generate_code_field
-      elsif %w[diagnoses dataElementCodes].include? field_name
-        # TODO: Populate dataElementCodes with codes specifically for data element type
-        data_element[field_name] = [QDM::BaseTypeGeneration.generate_code_field]
       elsif field_name == 'facilityLocations'
         # TODO: Randomize number of facility locations added
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_facility_location]

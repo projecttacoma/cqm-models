@@ -17,6 +17,8 @@ const PractitionerSchema = EntitySchemaFunction({
   role: Code,
   specialty: Code,
   qualification: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.137' },
+  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.162' },
   _type: { type: String, default: 'QDM::Practitioner' },
 
 });
