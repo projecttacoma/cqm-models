@@ -15,6 +15,7 @@ module QDM
       qdm_patient = nil
       datatypes.each do |type|
         next if type.include? 'PatientCharacteristic'
+
         # 1 Patient Per data element type containing negated and non-negated type (if negatable)
         if cqm_patient.nil? || qdm_patient.nil? || new_patient_for_each_type
           cqm_patient = QDM::BaseTypeGeneration.generate_cqm_patient(type)
@@ -53,6 +54,7 @@ module QDM
         # Store datatype and its attributes (reject irrelevant datatypes)
         next if datatype_name.include?('Negative') || datatype_name.include?('Positive') ||
                 datatype_name.include?('QDMBaseType') || (exclusion_array.include? datatype_name)
+
         datatypes.push(datatype_name)
       end
       datatypes
@@ -64,39 +66,11 @@ module QDM
       fields.each do |field_name|
         # Ignore these fields, they are used by mongo
         next if %w[_id _type].include? field_name
-        if !data_element[field_name] || data_element[field_name] == []
-          populate_fields(field_name, data_element, negate_data_element)
-        end
-      end
-      generate_entities(data_element)
-      data_element
-    end
 
-    def self.generate_entities(data_element)
-      if data_element.respond_to? 'performer'
-        data_element.performer = QDM::BaseTypeGeneration.generate_entity
+        populate_fields(field_name, data_element, negate_data_element) if !data_element[field_name] || data_element[field_name] == []
       end
-      if data_element.respond_to? 'recorder'
-        data_element.recorder = QDM::BaseTypeGeneration.generate_entity
-      end
-      if data_element.respond_to? 'requester'
-        data_element.requester = QDM::BaseTypeGeneration.generate_entity
-      end
-      if data_element.respond_to? 'sender'
-        data_element.sender = QDM::BaseTypeGeneration.generate_entity
-      end
-      if data_element.respond_to? 'recipient'
-        data_element.recipient = QDM::BaseTypeGeneration.generate_entity
-      end
-      if data_element.respond_to? 'participant'
-        data_element.participant = QDM::BaseTypeGeneration.generate_entity
-      end
-      if data_element.respond_to? 'prescriber'
-        data_element.prescriber = QDM::BaseTypeGeneration.generate_entity
-      end
-      if data_element.respond_to? 'dispenser'
-        data_element.dispenser = QDM::BaseTypeGeneration.generate_entity
-      end
+      QDM::BaseTypeGeneration.generate_entities(data_element)
+      data_element
     end
 
     def self.populate_fields(field_name, data_element, negate_data_element)
