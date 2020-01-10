@@ -46,7 +46,7 @@ class AdverseEvent extends mongoose.Document {
 module.exports.AdverseEvent = AdverseEvent;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],2:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],2:[function(require,module,exports){
 module.exports.Identifier = require('./attributes/Identifier.js').Identifier;
 module.exports.IdentifierSchema = require('./attributes/Identifier.js').IdentifierSchema;
 module.exports.Entity = require('./attributes/Entity.js').Entity;
@@ -224,7 +224,7 @@ class AllergyIntolerance extends mongoose.Document {
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],4:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],4:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -271,7 +271,7 @@ class AssessmentOrder extends mongoose.Document {
 module.exports.AssessmentOrder = AssessmentOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],5:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],5:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -324,7 +324,7 @@ class AssessmentPerformed extends mongoose.Document {
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],6:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],6:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -371,7 +371,7 @@ class AssessmentRecommended extends mongoose.Document {
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],7:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],7:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -418,7 +418,7 @@ class CareGoal extends mongoose.Document {
 module.exports.CareGoal = CareGoal;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],8:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],8:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -470,7 +470,7 @@ class CommunicationPerformed extends mongoose.Document {
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],9:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],9:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -520,7 +520,7 @@ class DeviceApplied extends mongoose.Document {
 module.exports.DeviceApplied = DeviceApplied;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],10:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],10:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -567,7 +567,7 @@ class DeviceOrder extends mongoose.Document {
 module.exports.DeviceOrder = DeviceOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],11:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],11:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -614,7 +614,7 @@ class DeviceRecommended extends mongoose.Document {
 module.exports.DeviceRecommended = DeviceRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],12:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],12:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -662,7 +662,7 @@ class Diagnosis extends mongoose.Document {
 module.exports.Diagnosis = Diagnosis;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],13:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],13:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -709,7 +709,7 @@ class DiagnosticStudyOrder extends mongoose.Document {
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],14:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],14:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -764,7 +764,7 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],15:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],15:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -811,7 +811,7 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],16:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],16:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -860,7 +860,7 @@ class EncounterOrder extends mongoose.Document {
 module.exports.EncounterOrder = EncounterOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],17:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],17:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -913,7 +913,7 @@ class EncounterPerformed extends mongoose.Document {
 module.exports.EncounterPerformed = EncounterPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],18:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/DiagnosisComponent":59,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],18:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -961,7 +961,7 @@ class EncounterRecommended extends mongoose.Document {
 module.exports.EncounterRecommended = EncounterRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],19:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],19:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1007,7 +1007,7 @@ class FamilyHistory extends mongoose.Document {
 module.exports.FamilyHistory = FamilyHistory;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],20:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],20:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1058,7 +1058,7 @@ class ImmunizationAdministered extends mongoose.Document {
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],21:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],21:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1109,7 +1109,7 @@ class ImmunizationOrder extends mongoose.Document {
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],22:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],22:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1156,7 +1156,7 @@ class InterventionOrder extends mongoose.Document {
 module.exports.InterventionOrder = InterventionOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],23:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],23:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1207,7 +1207,7 @@ class InterventionPerformed extends mongoose.Document {
 module.exports.InterventionPerformed = InterventionPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],24:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],24:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1254,7 +1254,7 @@ class InterventionRecommended extends mongoose.Document {
 module.exports.InterventionRecommended = InterventionRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],25:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],25:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1301,7 +1301,7 @@ class LaboratoryTestOrder extends mongoose.Document {
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],26:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],26:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1356,7 +1356,7 @@ class LaboratoryTestPerformed extends mongoose.Document {
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],27:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],27:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1403,7 +1403,7 @@ class LaboratoryTestRecommended extends mongoose.Document {
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],28:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],28:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1452,7 +1452,7 @@ class MedicationActive extends mongoose.Document {
 module.exports.MedicationActive = MedicationActive;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],29:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],29:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1504,7 +1504,7 @@ class MedicationAdministered extends mongoose.Document {
 module.exports.MedicationAdministered = MedicationAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],30:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],30:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1557,7 +1557,7 @@ class MedicationDischarge extends mongoose.Document {
 module.exports.MedicationDischarge = MedicationDischarge;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],31:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],31:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1612,7 +1612,7 @@ class MedicationDispensed extends mongoose.Document {
 module.exports.MedicationDispensed = MedicationDispensed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],32:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],32:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1667,7 +1667,7 @@ class MedicationOrder extends mongoose.Document {
 module.exports.MedicationOrder = MedicationOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],33:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],33:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1711,7 +1711,7 @@ class Participation extends mongoose.Document {
 module.exports.Participation = Participation;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],34:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],34:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1755,7 +1755,7 @@ class PatientCareExperience extends mongoose.Document {
 module.exports.PatientCareExperience = PatientCareExperience;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],35:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],35:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1798,7 +1798,7 @@ class PatientCharacteristic extends mongoose.Document {
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],36:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],36:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1842,7 +1842,7 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],37:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],37:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1888,7 +1888,7 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],38:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],38:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1931,7 +1931,7 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],39:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],39:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1976,7 +1976,7 @@ class PatientCharacteristicExpired extends mongoose.Document {
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],40:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],40:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2020,7 +2020,7 @@ class PatientCharacteristicPayer extends mongoose.Document {
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],41:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],41:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2063,7 +2063,7 @@ class PatientCharacteristicRace extends mongoose.Document {
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],42:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],42:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2106,7 +2106,7 @@ class PatientCharacteristicSex extends mongoose.Document {
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],43:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],43:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2154,7 +2154,7 @@ class PhysicalExamOrder extends mongoose.Document {
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],44:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],44:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2207,7 +2207,7 @@ class PhysicalExamPerformed extends mongoose.Document {
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],45:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],45:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2255,7 +2255,7 @@ class PhysicalExamRecommended extends mongoose.Document {
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],46:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],46:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2305,7 +2305,7 @@ class ProcedureOrder extends mongoose.Document {
 module.exports.ProcedureOrder = ProcedureOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],47:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],47:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2362,7 +2362,7 @@ class ProcedurePerformed extends mongoose.Document {
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],48:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],48:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2411,7 +2411,7 @@ class ProcedureRecommended extends mongoose.Document {
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],49:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],49:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2455,7 +2455,7 @@ class ProviderCareExperience extends mongoose.Document {
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],50:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],50:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2735,7 +2735,7 @@ class QDMPatient extends mongoose.Document {
 }
 module.exports.QDMPatient = QDMPatient;
 
-},{"./AllDataElements":2,"./basetypes/Code":69,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/Quantity":74,"mongoose/browser":258}],51:[function(require,module,exports){
+},{"./AllDataElements":2,"./basetypes/Code":69,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/Quantity":74,"mongoose/browser":257}],51:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2779,7 +2779,7 @@ class RelatedPerson extends mongoose.Document {
 module.exports.RelatedPerson = RelatedPerson;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],52:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],52:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2814,7 +2814,7 @@ class PlaceholderResult extends mongoose.Document {
 }
 module.exports.PlaceholderResult = PlaceholderResult;
 
-},{"mongoose/browser":258}],53:[function(require,module,exports){
+},{"mongoose/browser":257}],53:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2865,7 +2865,7 @@ class SubstanceAdministered extends mongoose.Document {
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],54:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],54:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2918,7 +2918,7 @@ class SubstanceOrder extends mongoose.Document {
 module.exports.SubstanceOrder = SubstanceOrder;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],55:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],55:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2969,7 +2969,7 @@ class SubstanceRecommended extends mongoose.Document {
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],56:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],56:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -3015,7 +3015,7 @@ class Symptom extends mongoose.Document {
 module.exports.Symptom = Symptom;
 
 
-},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":258}],57:[function(require,module,exports){
+},{"./attributes/Component":58,"./attributes/Entity":60,"./attributes/FacilityLocation":61,"./attributes/Identifier":62,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":257}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3033,6 +3033,8 @@ const [Number, String] = [
 
 const CarePartnerSchema = EntitySchemaFunction({
   relationship: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.134' },
+  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.160' },
   _type: { type: String, default: 'QDM::CarePartner' },
 
 });
@@ -3048,7 +3050,7 @@ class CarePartner extends mongoose.Document {
 module.exports.CarePartner = CarePartner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":258}],58:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":257}],58:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3101,7 +3103,7 @@ function ComponentSchemaFunction(add, options) {
 module.exports.Component = Component;
 module.exports.ComponentSchemaFunction = ComponentSchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":258}],59:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":257}],59:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3137,7 +3139,7 @@ class DiagnosisComponent extends mongoose.Document {
 module.exports.DiagnosisComponent = DiagnosisComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":258}],60:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":257}],60:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./Identifier');
@@ -3197,7 +3199,7 @@ function EntitySchemaFunction(add, options) {
 module.exports.Entity = Entity;
 module.exports.EntitySchemaFunction = EntitySchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Identifier":62,"mongoose/browser":258}],61:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Identifier":62,"mongoose/browser":257}],61:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3232,7 +3234,7 @@ class FacilityLocation extends mongoose.Document {
 module.exports.FacilityLocation = FacilityLocation;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":258}],62:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":257}],62:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
@@ -3257,7 +3259,7 @@ class Identifier extends mongoose.Document {
 }
 module.exports.Identifier = Identifier;
 
-},{"mongoose/browser":258}],63:[function(require,module,exports){
+},{"mongoose/browser":257}],63:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3275,6 +3277,8 @@ const [Number, String] = [
 
 const OrganizationSchema = EntitySchemaFunction({
   type: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.135' },
+  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.163' },
   _type: { type: String, default: 'QDM::Organization' },
 
 });
@@ -3290,7 +3294,7 @@ class Organization extends mongoose.Document {
 module.exports.Organization = Organization;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":258}],64:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":257}],64:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3307,6 +3311,8 @@ const [Number, String] = [
 ];
 
 const PatientEntitySchema = EntitySchemaFunction({
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.136' },
+  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.161' },
   _type: { type: String, default: 'QDM::PatientEntity' },
 
 });
@@ -3322,7 +3328,7 @@ class PatientEntity extends mongoose.Document {
 module.exports.PatientEntity = PatientEntity;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":258}],65:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":257}],65:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3342,6 +3348,8 @@ const PractitionerSchema = EntitySchemaFunction({
   role: Code,
   specialty: Code,
   qualification: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.137' },
+  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.162' },
   _type: { type: String, default: 'QDM::Practitioner' },
 
 });
@@ -3357,7 +3365,7 @@ class Practitioner extends mongoose.Document {
 module.exports.Practitioner = Practitioner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":258}],66:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":60,"mongoose/browser":257}],66:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { ComponentSchemaFunction } = require('./Component');
@@ -3390,7 +3398,7 @@ class ResultComponent extends mongoose.Document {
 module.exports.ResultComponent = ResultComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Component":58,"mongoose/browser":258}],67:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Component":58,"mongoose/browser":257}],67:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3469,7 +3477,7 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
-},{"cql-execution":118,"mongoose/browser":258}],68:[function(require,module,exports){
+},{"cql-execution":118,"mongoose/browser":257}],68:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { PatientEntity } = require('../attributes/PatientEntity');
 const { Practitioner } = require('../attributes/Practitioner');
@@ -3515,7 +3523,7 @@ AnyEntity.prototype.cast = (entity) => {
 mongoose.Schema.Types.AnyEntity = AnyEntity;
 module.exports = AnyEntity;
 
-},{"../attributes/CarePartner":57,"../attributes/Organization":63,"../attributes/PatientEntity":64,"../attributes/Practitioner":65,"mongoose/browser":258}],69:[function(require,module,exports){
+},{"../attributes/CarePartner":57,"../attributes/Organization":63,"../attributes/PatientEntity":64,"../attributes/Practitioner":65,"mongoose/browser":257}],69:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3548,7 +3556,7 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
-},{"cql-execution":118,"mongoose/browser":258}],70:[function(require,module,exports){
+},{"cql-execution":118,"mongoose/browser":257}],70:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./Code.js');
 const cql = require('cql-execution');
@@ -3602,7 +3610,7 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-},{"../attributes/Identifier":62,"./Code.js":69,"cql-execution":118,"mongoose/browser":258}],71:[function(require,module,exports){
+},{"../attributes/Identifier":62,"./Code.js":69,"cql-execution":118,"mongoose/browser":257}],71:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3626,7 +3634,7 @@ DateTime.prototype.cast = (dateTime) => {
 mongoose.Schema.Types.DateTime = DateTime;
 module.exports = DateTime;
 
-},{"cql-execution":118,"mongoose/browser":258}],72:[function(require,module,exports){
+},{"cql-execution":118,"mongoose/browser":257}],72:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const DateTime = require('./DateTime');
@@ -3665,7 +3673,7 @@ Interval.prototype.cast = (interval) => {
 mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
 
-},{"./DateTime":71,"cql-execution":118,"mongoose/browser":258}],73:[function(require,module,exports){
+},{"./DateTime":71,"cql-execution":118,"mongoose/browser":257}],73:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3703,7 +3711,7 @@ QDMDate.prototype.cast = (date) => {
 mongoose.Schema.Types.QDMDate = QDMDate;
 module.exports = QDMDate;
 
-},{"cql-execution":118,"mongoose/browser":258}],74:[function(require,module,exports){
+},{"cql-execution":118,"mongoose/browser":257}],74:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3725,7 +3733,7 @@ Quantity.prototype.cast = (quantity) => {
 mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;
 
-},{"cql-execution":118,"mongoose/browser":258}],75:[function(require,module,exports){
+},{"cql-execution":118,"mongoose/browser":257}],75:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { StatementDependencySchema } = require('./CQLStatementDependency');
 
@@ -3759,7 +3767,7 @@ class CQLLibrary extends mongoose.Document {
 }
 module.exports.CQLLibrary = CQLLibrary;
 
-},{"./CQLStatementDependency":76,"mongoose/browser":258}],76:[function(require,module,exports){
+},{"./CQLStatementDependency":76,"mongoose/browser":257}],76:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
@@ -3789,7 +3797,7 @@ class StatementDependency extends mongoose.Document {
 }
 module.exports.StatementDependency = StatementDependency;
 
-},{"mongoose/browser":258}],77:[function(require,module,exports){
+},{"mongoose/browser":257}],77:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -3819,7 +3827,7 @@ class ClauseResult extends mongoose.Document {
 }
 module.exports.ClauseResult = ClauseResult;
 
-},{"mongoose/browser":258}],78:[function(require,module,exports){
+},{"mongoose/browser":257}],78:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
@@ -3838,7 +3846,7 @@ class Concept extends mongoose.Document {
 }
 module.exports.Concept = Concept;
 
-},{"mongoose/browser":258}],79:[function(require,module,exports){
+},{"mongoose/browser":257}],79:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { ClauseResultSchema } = require('./ClauseResult');
 const { StatementResultSchema } = require('./StatementResult');
@@ -3928,7 +3936,7 @@ class IndividualResult extends mongoose.Document {
 }
 module.exports.IndividualResult = IndividualResult;
 
-},{"./ClauseResult":77,"./StatementResult":85,"mongoose/browser":258}],80:[function(require,module,exports){
+},{"./ClauseResult":77,"./StatementResult":85,"mongoose/browser":257}],80:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -4038,7 +4046,7 @@ class Measure extends mongoose.Document {
 }
 module.exports.Measure = Measure;
 
-},{"../AllDataElements":2,"../basetypes/Code":69,"../basetypes/DataElement":70,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./CQLLibrary":75,"./PopulationSet":83,"mongoose/browser":258}],81:[function(require,module,exports){
+},{"../AllDataElements":2,"../basetypes/Code":69,"../basetypes/DataElement":70,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./CQLLibrary":75,"./PopulationSet":83,"mongoose/browser":257}],81:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
@@ -4066,7 +4074,7 @@ class MeasurePackage extends mongoose.Document {
 }
 module.exports.MeasurePackage = MeasurePackage;
 
-},{"mongoose/browser":258}],82:[function(require,module,exports){
+},{"mongoose/browser":257}],82:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -4106,7 +4114,7 @@ class Patient extends mongoose.Document {
 }
 module.exports.Patient = Patient;
 
-},{"../QDMPatient":50,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./Provider":84,"mongoose/browser":258}],83:[function(require,module,exports){
+},{"../QDMPatient":50,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./Provider":84,"mongoose/browser":257}],83:[function(require,module,exports){
 /* eslint-disable no-unused-vars, no-param-reassign */
 const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
@@ -4196,7 +4204,7 @@ class PopulationSet extends mongoose.Document {
 }
 module.exports.PopulationSet = PopulationSet;
 
-},{"./CQLStatementDependency":76,"mongoose/browser":258}],84:[function(require,module,exports){
+},{"./CQLStatementDependency":76,"mongoose/browser":257}],84:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Schema, String, Boolean] = [
@@ -4240,7 +4248,7 @@ class Provider extends mongoose.Document {
 }
 module.exports.Provider = Provider;
 
-},{"mongoose/browser":258}],85:[function(require,module,exports){
+},{"mongoose/browser":257}],85:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -4283,7 +4291,7 @@ class StatementResult extends mongoose.Document {
 }
 module.exports.StatementResult = StatementResult;
 
-},{"mongoose/browser":258}],86:[function(require,module,exports){
+},{"mongoose/browser":257}],86:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
@@ -4311,7 +4319,7 @@ class ValueSet extends mongoose.Document {
 }
 module.exports.ValueSet = ValueSet;
 
-},{"./Concept.js":78,"mongoose/browser":258}],87:[function(require,module,exports){
+},{"./Concept.js":78,"mongoose/browser":257}],87:[function(require,module,exports){
 module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.Result = require('./Result.js').Result;
@@ -4344,6 +4352,8 @@ module.exports.StatementResultSchema = require('./cqm/StatementResult.js').State
 },{"./AllDataElements.js":2,"./Result.js":52,"./cqm/CQLLibrary.js":75,"./cqm/CQLStatementDependency.js":76,"./cqm/ClauseResult.js":77,"./cqm/Concept.js":78,"./cqm/IndividualResult.js":79,"./cqm/Measure.js":80,"./cqm/MeasurePackage.js":81,"./cqm/Patient.js":82,"./cqm/PopulationSet.js":83,"./cqm/Provider.js":84,"./cqm/StatementResult.js":85,"./cqm/ValueSet.js":86,"cql-execution":118}],88:[function(require,module,exports){
 (function (global){
 'use strict';
+
+var objectAssign = require('object-assign');
 
 // compare and isBuffer taken from https://github.com/feross/buffer/blob/680e9e5e488f22aac27599a57dc844a6315928dd/index.js
 // original notice:
@@ -4386,6 +4396,8 @@ function isBuffer(b) {
 }
 
 // based on node assert, original notice:
+// NB: The URL to the CommonJS spec is kept just for tradition.
+//     node-assert has evolved a lot since then, both in API and behavior.
 
 // http://wiki.commonjs.org/wiki/Unit_Testing/1.0
 //
@@ -4826,6 +4838,18 @@ assert.doesNotThrow = function(block, /*optional*/error, /*optional*/message) {
 
 assert.ifError = function(err) { if (err) throw err; };
 
+// Expose a strict only variant of assert
+function strict(value, message) {
+  if (!value) fail(value, true, message, '==', strict);
+}
+assert.strict = objectAssign(strict, assert, {
+  equal: assert.strictEqual,
+  deepEqual: assert.deepStrictEqual,
+  notEqual: assert.notStrictEqual,
+  notDeepEqual: assert.notDeepStrictEqual
+});
+assert.strict.strict = assert.strict;
+
 var objectKeys = Object.keys || function (obj) {
   var keys = [];
   for (var key in obj) {
@@ -4835,7 +4859,7 @@ var objectKeys = Object.keys || function (obj) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":91}],89:[function(require,module,exports){
+},{"object-assign":392,"util/":91}],89:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -5457,7 +5481,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":90,"_process":391,"inherits":89}],92:[function(require,module,exports){
+},{"./support/isBuffer":90,"_process":393,"inherits":89}],92:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -5525,7 +5549,8 @@ function toByteArray (b64) {
     ? validLen - 4
     : validLen
 
-  for (var i = 0; i < len; i += 4) {
+  var i
+  for (i = 0; i < len; i += 4) {
     tmp =
       (revLookup[b64.charCodeAt(i)] << 18) |
       (revLookup[b64.charCodeAt(i + 1)] << 12) |
@@ -11236,7 +11261,7 @@ module.exports = ret;
 },{"./es5":13}]},{},[4])(4)
 });                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"_process":391,"timers":394}],94:[function(require,module,exports){
+},{"_process":393,"timers":396}],94:[function(require,module,exports){
 (function (global){
 /**
  * Module dependencies.
@@ -14500,7 +14525,7 @@ module.exports.ObjectID = ObjectID;
 module.exports.ObjectId = ObjectID;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"./parser/utils":110,"_process":391,"buffer":114,"util":404}],107:[function(require,module,exports){
+},{"./parser/utils":110,"_process":393,"buffer":114,"util":407}],107:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -16324,6 +16349,8 @@ var serializeInto = function serializeInto(
         index = serializeInt32(buffer, key, value, index, true);
       } else if (value['_bsontype'] === 'MinKey' || value['_bsontype'] === 'MaxKey') {
         index = serializeMinMax(buffer, key, value, index, true);
+      } else if (typeof value['_bsontype'] !== 'undefined') {
+        throw new TypeError('Unrecognized or invalid _bsontype: ' + value['_bsontype']);
       }
     }
   } else if (object instanceof Map) {
@@ -16422,6 +16449,8 @@ var serializeInto = function serializeInto(
         index = serializeInt32(buffer, key, value, index);
       } else if (value['_bsontype'] === 'MinKey' || value['_bsontype'] === 'MaxKey') {
         index = serializeMinMax(buffer, key, value, index);
+      } else if (typeof value['_bsontype'] !== 'undefined') {
+        throw new TypeError('Unrecognized or invalid _bsontype: ' + value['_bsontype']);
       }
     }
   } else {
@@ -16524,6 +16553,8 @@ var serializeInto = function serializeInto(
         index = serializeInt32(buffer, key, value, index);
       } else if (value['_bsontype'] === 'MinKey' || value['_bsontype'] === 'MaxKey') {
         index = serializeMinMax(buffer, key, value, index);
+      } else if (typeof value['_bsontype'] !== 'undefined') {
+        throw new TypeError('Unrecognized or invalid _bsontype: ' + value['_bsontype']);
       }
     }
   }
@@ -16729,7 +16760,7 @@ BSON.JS_INT_MIN = -0x20000000000000; // Any integer down to -2^53 can be precise
 module.exports = serializeInto;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":255,"../binary":94,"../float_parser":100,"../long":102,"../map":103,"./utils":110}],110:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":254,"../binary":94,"../float_parser":100,"../long":102,"../map":103,"./utils":110}],110:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -16850,7 +16881,7 @@ module.exports = Symbol;
 module.exports.Symbol = Symbol;
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":114,"util":404}],113:[function(require,module,exports){
+},{"buffer":114,"util":407}],113:[function(require,module,exports){
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -17707,6 +17738,7 @@ module.exports = Timestamp;
 module.exports.Timestamp = Timestamp;
 
 },{}],114:[function(require,module,exports){
+(function (Buffer){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -19485,7 +19517,8 @@ function numberIsNaN (obj) {
   return obj !== obj // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":92,"ieee754":253}],115:[function(require,module,exports){
+}).call(this,require("buffer").Buffer)
+},{"base64-js":92,"buffer":114,"ieee754":253}],115:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Code, CodeService, ValueSet, ref;
@@ -21257,7 +21290,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/util":251,"./uncertainty":127,"moment":257}],122:[function(require,module,exports){
+},{"../util/util":251,"./uncertainty":127,"moment":256}],122:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Exception;
@@ -22284,7 +22317,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../util/math":250,"ucum":402}],126:[function(require,module,exports){
+},{"../util/math":250,"ucum":404}],126:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Ratio;
@@ -65303,7 +65336,7 @@ function numberIsNaN (obj) {
 
 
 
-},{"../datatypes/datatypes":120,"../datatypes/exception":122,"../elm/library":141,"../util/util":251,"util":404}],246:[function(require,module,exports){
+},{"../datatypes/datatypes":120,"../datatypes/exception":122,"../elm/library":141,"../util/util":251,"util":407}],246:[function(require,module,exports){
 // Generated by CoffeeScript 1.12.7
 (function() {
   var Executor, PatientContext, Results, UnfilteredContext, ref;
@@ -66705,8 +66738,6 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 }
 
 },{}],254:[function(require,module,exports){
-arguments[4][89][0].apply(exports,arguments)
-},{"dup":89}],255:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -66729,7 +66760,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],256:[function(require,module,exports){
+},{}],255:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -67244,7 +67275,7 @@ function decorateNextFn(fn) {
 module.exports = Kareem;
 
 }).call(this,require('_process'))
-},{"_process":391}],257:[function(require,module,exports){
+},{"_process":393}],256:[function(require,module,exports){
 //! moment.js
 
 ;(function (global, factory) {
@@ -71848,7 +71879,7 @@ module.exports = Kareem;
 
 })));
 
-},{}],258:[function(require,module,exports){
+},{}],257:[function(require,module,exports){
 /**
  * Export lib/mongoose
  *
@@ -71858,7 +71889,7 @@ module.exports = Kareem;
 
 module.exports = require('./lib/browser');
 
-},{"./lib/browser":259}],259:[function(require,module,exports){
+},{"./lib/browser":258}],258:[function(require,module,exports){
 (function (Buffer){
 /* eslint-env browser */
 
@@ -71986,14 +72017,25 @@ exports.utils = require('./utils.js');
 exports.Document = DocumentProvider();
 
 /**
- * function stub for model
+ * Return a new browser model. In the browser, a model is just
+ * a simplified document with a schema - it does **not** have
+ * functions like `findOne()`, etc.
  *
  * @method model
  * @api public
- * @return null
+ * @param {String} name
+ * @param {Schema} schema
+ * @return Class
  */
-exports.model = function() {
-  return null;
+exports.model = function(name, schema) {
+  class Model extends exports.Document {
+    constructor(obj, fields) {
+      super(obj, schema, fields);
+    }
+  }
+  Model.modelName = name;
+
+  return Model;
 };
 
 /*!
@@ -72006,7 +72048,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./document_provider.js":269,"./driver":270,"./drivers/browser":274,"./error/index":278,"./promise_provider":340,"./schema":341,"./schematype.js":362,"./types":370,"./utils.js":374,"./virtualtype":375,"buffer":114}],260:[function(require,module,exports){
+},{"./document_provider.js":268,"./driver":269,"./drivers/browser":273,"./error/index":277,"./promise_provider":341,"./schema":342,"./schematype.js":363,"./types":371,"./utils.js":375,"./virtualtype":376,"buffer":114}],259:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -72108,7 +72150,7 @@ Document.$emitter = new EventEmitter();
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":268,"./error/index":278,"./helpers/isObject":304,"./helpers/model/applyHooks":305,"./schema":341,"./types/objectid":372,"events":252}],261:[function(require,module,exports){
+},{"./document":267,"./error/index":277,"./helpers/isObject":305,"./helpers/model/applyHooks":306,"./schema":342,"./types/objectid":373,"events":252}],260:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -72457,7 +72499,7 @@ function _cast(val, numbertype, context) {
     }
   }
 }
-},{"./error/strict":288,"./helpers/get":299,"./helpers/isMongooseObject":303,"./helpers/isObject":304,"./helpers/query/isOperator":312,"./schema/index":349,"./schema/operators/text":358,"util":404}],262:[function(require,module,exports){
+},{"./error/strict":287,"./helpers/get":300,"./helpers/isMongooseObject":304,"./helpers/isObject":305,"./helpers/query/isOperator":313,"./schema/index":350,"./schema/operators/text":359,"util":407}],261:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -72490,7 +72532,7 @@ module.exports = function castBoolean(value, path) {
 module.exports.convertToTrue = new Set([true, 'true', 1, '1', 'yes']);
 module.exports.convertToFalse = new Set([false, 'false', 0, '0', 'no']);
 
-},{"../error/cast":276}],263:[function(require,module,exports){
+},{"../error/cast":275}],262:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -72532,7 +72574,7 @@ module.exports = function castDate(value) {
 
   assert.ok(false);
 };
-},{"assert":88}],264:[function(require,module,exports){
+},{"assert":88}],263:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -72571,7 +72613,7 @@ module.exports = function castDecimal128(value) {
   assert.ok(false);
 };
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../types/decimal128":367,"assert":88}],265:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../types/decimal128":368,"assert":88}],264:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -72588,8 +72630,6 @@ const assert = require('assert');
  */
 
 module.exports = function castNumber(val) {
-  assert.ok(!isNaN(val));
-
   if (val == null) {
     return val;
   }
@@ -72618,7 +72658,7 @@ module.exports = function castNumber(val) {
   assert.ok(false);
 };
 
-},{"assert":88}],266:[function(require,module,exports){
+},{"assert":88}],265:[function(require,module,exports){
 'use strict';
 
 const ObjectId = require('../driver').get().ObjectId;
@@ -72648,7 +72688,7 @@ module.exports = function castObjectId(value) {
 
   assert.ok(false);
 };
-},{"../driver":270,"assert":88}],267:[function(require,module,exports){
+},{"../driver":269,"assert":88}],266:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -72687,7 +72727,7 @@ module.exports = function castString(value, path) {
   throw new CastError('string', value, path);
 };
 
-},{"../error/cast":276}],268:[function(require,module,exports){
+},{"../error/cast":275}],267:[function(require,module,exports){
 (function (Buffer,process){
 'use strict';
 
@@ -72714,6 +72754,7 @@ const defineKey = require('./helpers/document/compile').defineKey;
 const flatten = require('./helpers/common').flatten;
 const get = require('./helpers/get');
 const getEmbeddedDiscriminatorPath = require('./helpers/document/getEmbeddedDiscriminatorPath');
+const handleSpreadDoc = require('./helpers/document/handleSpreadDoc');
 const idGetter = require('./plugins/idGetter');
 const isDefiningProjection = require('./helpers/projection/isDefiningProjection');
 const isExclusive = require('./helpers/projection/isExclusive');
@@ -72746,7 +72787,7 @@ const specialProperties = utils.specialProperties;
  * @param {Object} [fields] optional object containing the fields which were selected in the query returning this document and any populated paths data
  * @param {Boolean} [skipId] bool, should we auto create an ObjectId _id
  * @inherits NodeJS EventEmitter http://nodejs.org/api/events.html#events_class_events_eventemitter
- * @event `init`: Emitted on a document after it has was retreived from the db and fully hydrated by Mongoose.
+ * @event `init`: Emitted on a document after it has been retrieved from the db and fully hydrated by Mongoose.
  * @event `save`: Emitted when the document is successfully saved
  * @api private
  */
@@ -72819,14 +72860,15 @@ function Document(obj, fields, skipId, options) {
   }
 
   if (obj) {
-    if (obj instanceof Document) {
-      this.isNew = obj.isNew;
-    }
     // Skip set hooks
     if (this.$__original_set) {
       this.$__original_set(obj, undefined, true);
     } else {
       this.$set(obj, undefined, true);
+    }
+
+    if (obj instanceof Document) {
+      this.isNew = obj.isNew;
     }
   }
 
@@ -73377,7 +73419,7 @@ function init(self, obj, doc, opts, prefix) {
 
 Document.prototype.update = function update() {
   const args = utils.args(arguments);
-  args.unshift({_id: this._id});
+  args.unshift({ _id: this._id });
   const query = this.constructor.update.apply(this.constructor, args);
 
   if (this.$session() != null) {
@@ -73402,7 +73444,11 @@ Document.prototype.update = function update() {
  *
  * @see Model.updateOne #model_Model.updateOne
  * @param {Object} doc
- * @param {Object} options
+ * @param {Object} [options] optional see [`Query.prototype.setOptions()`](http://mongoosejs.com/docs/api.html#query_Query-setOptions)
+ * @param {Object} [options.lean] if truthy, mongoose will return the document as a plain JavaScript object rather than a mongoose document. See [`Query.lean()`](/docs/api.html#query_Query-lean) and the [Mongoose lean tutorial](/docs/tutorials/lean.html).
+ * @param {Boolean|String} [options.strict] overwrites the schema's [strict mode option](http://mongoosejs.com/docs/guide.html#strict)
+ * @param {Boolean} [options.omitUndefined=false] If true, delete any properties whose value is `undefined` when casting an update. In other words, if this is set, Mongoose will delete `baz` from the update in `Model.updateOne({}, { foo: 'bar', baz: undefined })` before sending the update to the server.
+ * @param {Boolean} [options.timestamps=null] If set to `false` and [schema-level timestamps](/docs/guide.html#timestamps) are enabled, skip timestamps for this update. Note that this allows you to overwrite timestamps. Does nothing if schema-level timestamps are not set.
  * @param {Function} callback
  * @return {Query}
  * @api public
@@ -73411,7 +73457,7 @@ Document.prototype.update = function update() {
  */
 
 Document.prototype.updateOne = function updateOne(doc, options, callback) {
-  const query = this.constructor.updateOne({_id: this._id}, doc, options);
+  const query = this.constructor.updateOne({ _id: this._id }, doc, options);
   query._pre(cb => {
     this.constructor._middleware.execPre('updateOne', this, [this], cb);
   });
@@ -73566,25 +73612,29 @@ Document.prototype.$set = function $set(path, val, type, options) {
 
   if (typeof path !== 'string') {
     // new Document({ key: val })
-    if (path === null || path === void 0) {
+    if (path instanceof Document) {
+      if (path.$__isNested) {
+        path = path.toObject();
+      } else {
+        path = path._doc;
+      }
+    }
+
+    if (path == null) {
       const _ = path;
       path = val;
       val = _;
     } else {
       prefix = val ? val + '.' : '';
 
-      if (path instanceof Document) {
-        if (path.$__isNested) {
-          path = path.toObject();
-        } else {
-          path = path._doc;
-        }
-      }
-
       keys = Object.keys(path);
       const len = keys.length;
 
-      if (len === 0 && !this.schema.options.minimize) {
+      // `_skipMinimizeTopLevel` is because we may have deleted the top-level
+      // nested key to ensure key order.
+      const _skipMinimizeTopLevel = get(options, '_skipMinimizeTopLevel', false);
+      if (len === 0 && (!this.schema.options.minimize || _skipMinimizeTopLevel)) {
+        delete options._skipMinimizeTopLevel;
         if (val) {
           this.$set(val, {});
         }
@@ -73615,6 +73665,8 @@ Document.prototype.$set = function $set(path, val, type, options) {
         this._doc[key] != null &&
         Object.keys(this._doc[key]).length === 0) {
       delete this._doc[key];
+      // Make sure we set `{}` back even if we minimize re: gh-8565
+      options = Object.assign({}, options, { _skipMinimizeTopLevel: true });
     }
 
     if (typeof path[key] === 'object' &&
@@ -73651,7 +73703,7 @@ Document.prototype.$set = function $set(path, val, type, options) {
         this.$set(prefix + key, p, constructing, options);
       } else if (pathtype === 'nested' && path[key] instanceof Document) {
         this.$set(prefix + key,
-          path[key].toObject({transform: false}), constructing, options);
+          path[key].toObject({ transform: false }), constructing, options);
       } else if (strict === 'throw') {
         if (pathtype === 'nested') {
           throw new ObjectExpectedError(key, path[key]);
@@ -73671,9 +73723,7 @@ Document.prototype.$set = function $set(path, val, type, options) {
 
   // Assume this is a Mongoose document that was copied into a POJO using
   // `Object.assign()` or `{...doc}`
-  if (utils.isPOJO(val) && val.$__ != null && val._doc != null) {
-    val = val._doc;
-  }
+  val = handleSpreadDoc(val);
 
   if (pathType === 'nested' && val) {
     if (typeof val === 'object' && val != null) {
@@ -73843,10 +73893,7 @@ Document.prototype.$set = function $set(path, val, type, options) {
         return false;
       }
       const modelName = val.get(refPath);
-      if (modelName === model.modelName || modelName === model.baseModelName) {
-        return true;
-      }
-      return false;
+      return modelName === model.modelName || modelName === model.baseModelName;
     })();
 
     let didPopulate = false;
@@ -74754,7 +74801,7 @@ Document.prototype.validate = function(pathsToValidate, options, callback) {
       conflictStack: this.$__.validating.stack
     });
   } else {
-    this.$__.validating = new ParallelValidateError(this, {parentStack: options && options.parentStack});
+    this.$__.validating = new ParallelValidateError(this, { parentStack: options && options.parentStack });
   }
 
   if (typeof pathsToValidate === 'function') {
@@ -74773,7 +74820,6 @@ Document.prototype.validate = function(pathsToValidate, options, callback) {
     }
 
     this.$__validate(pathsToValidate, options, (error) => {
-      this.$__.validating = null;
       this.$op = null;
       cb(error);
     });
@@ -74959,6 +75005,8 @@ Document.prototype.$__validate = function(pathsToValidate, options, callback) {
     this.$__.cachedRequired = {};
     this.emit('validate', _this);
     this.constructor.emit('validate', _this);
+
+    this.$__.validating = null;
     if (validationError) {
       for (const key in validationError.errors) {
         // Make sure cast errors persist
@@ -74980,15 +75028,14 @@ Document.prototype.$__validate = function(pathsToValidate, options, callback) {
   const skipSchemaValidators = pathDetails[1];
 
   if (Array.isArray(pathsToValidate)) {
-    const _pathsToValidate = new Set(pathsToValidate);
-    paths = paths.filter(p => _pathsToValidate.has(p));
+    paths = _handlePathsToValidate(paths, pathsToValidate);
   }
 
   if (paths.length === 0) {
     return process.nextTick(function() {
       const error = _complete();
       if (error) {
-        return _this.schema.s.hooks.execPost('validate:error', _this, [ _this], { error: error }, function(error) {
+        return _this.schema.s.hooks.execPost('validate:error', _this, [_this], { error: error }, function(error) {
           callback(error);
         });
       }
@@ -75002,7 +75049,7 @@ Document.prototype.$__validate = function(pathsToValidate, options, callback) {
   const complete = function() {
     const error = _complete();
     if (error) {
-      return _this.schema.s.hooks.execPost('validate:error', _this, [ _this], { error: error }, function(error) {
+      return _this.schema.s.hooks.execPost('validate:error', _this, [_this], { error: error }, function(error) {
         callback(error);
       });
     }
@@ -75067,6 +75114,39 @@ Document.prototype.$__validate = function(pathsToValidate, options, callback) {
   }
 };
 
+/*!
+ * ignore
+ */
+
+function _handlePathsToValidate(paths, pathsToValidate) {
+  const _pathsToValidate = new Set(pathsToValidate);
+  const parentPaths = new Map([]);
+  for (const path of pathsToValidate) {
+    if (path.indexOf('.') === -1) {
+      continue;
+    }
+    const pieces = path.split('.');
+    let cur = pieces[0];
+    for (let i = 1; i < pieces.length; ++i) {
+      // Since we skip subpaths under single nested subdocs to
+      // avoid double validation, we need to add back the
+      // single nested subpath if the user asked for it (gh-8626)
+      parentPaths.set(cur, path);
+      cur = cur + '.' + pieces[i];
+    }
+  }
+
+  const ret = [];
+  for (const path of paths) {
+    if (_pathsToValidate.has(path)) {
+      ret.push(path);
+    } else if (parentPaths.has(path)) {
+      ret.push(parentPaths.get(path));
+    }
+  }
+  return ret;
+}
+
 /**
  * Executes registered validation rules (skipping asynchronous validators) for this document.
  *
@@ -75113,14 +75193,8 @@ Document.prototype.validateSync = function(pathsToValidate, options) {
     pathDetails[0];
   const skipSchemaValidators = pathDetails[1];
 
-  if (pathsToValidate && pathsToValidate.length) {
-    const tmp = [];
-    for (let i = 0; i < paths.length; ++i) {
-      if (pathsToValidate.indexOf(paths[i]) !== -1) {
-        tmp.push(paths[i]);
-      }
-    }
-    paths = tmp;
+  if (Array.isArray(pathsToValidate)) {
+    paths = _handlePathsToValidate(paths, pathsToValidate);
   }
 
   const validating = {};
@@ -76321,7 +76395,7 @@ Document.prototype.populated = function(path, val, options) {
   }
 
   this.$__.populated || (this.$__.populated = {});
-  this.$__.populated[path] = {value: val, options: options};
+  this.$__.populated[path] = { value: val, options: options };
 
   // If this was a nested populate, make sure each populated doc knows
   // about its populated children (gh-7685)
@@ -76430,7 +76504,7 @@ Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")},require('_process'))
-},{"../../is-buffer/index.js":255,"./error/index":278,"./error/objectExpected":283,"./error/objectParameter":284,"./error/parallelValidate":287,"./error/strict":288,"./error/validation":289,"./error/validator":290,"./helpers/common":293,"./helpers/document/cleanModifiedSubpaths":296,"./helpers/document/compile":297,"./helpers/document/getEmbeddedDiscriminatorPath":298,"./helpers/get":299,"./helpers/projection/isDefiningProjection":308,"./helpers/projection/isExclusive":309,"./helpers/promiseOrCallback":310,"./helpers/symbols":321,"./internal":324,"./options":325,"./plugins/idGetter":339,"./schema":341,"./schema/mixed":351,"./types/array":364,"./types/documentarray":368,"./types/embedded":369,"./utils":374,"./virtualtype":375,"_process":391,"events":252,"mpath":378,"util":404}],269:[function(require,module,exports){
+},{"../../is-buffer/index.js":254,"./error/index":277,"./error/objectExpected":282,"./error/objectParameter":283,"./error/parallelValidate":286,"./error/strict":287,"./error/validation":288,"./error/validator":289,"./helpers/common":293,"./helpers/document/cleanModifiedSubpaths":296,"./helpers/document/compile":297,"./helpers/document/getEmbeddedDiscriminatorPath":298,"./helpers/document/handleSpreadDoc":299,"./helpers/get":300,"./helpers/projection/isDefiningProjection":309,"./helpers/projection/isExclusive":310,"./helpers/promiseOrCallback":311,"./helpers/symbols":322,"./internal":325,"./options":326,"./plugins/idGetter":340,"./schema":342,"./schema/mixed":352,"./types/array":365,"./types/documentarray":369,"./types/embedded":370,"./utils":375,"./virtualtype":376,"_process":393,"events":252,"mpath":379,"util":407}],268:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -76462,7 +76536,7 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":260,"./document.js":268}],270:[function(require,module,exports){
+},{"./browserDocument.js":259,"./document.js":267}],269:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -76479,7 +76553,7 @@ module.exports.set = function(v) {
   driver = v;
 };
 
-},{}],271:[function(require,module,exports){
+},{}],270:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -76488,7 +76562,7 @@ module.exports.set = function(v) {
 
 module.exports = function() {};
 
-},{}],272:[function(require,module,exports){
+},{}],271:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -76504,7 +76578,7 @@ const Binary = require('bson').Binary;
 
 module.exports = exports = Binary;
 
-},{"bson":95}],273:[function(require,module,exports){
+},{"bson":95}],272:[function(require,module,exports){
 /*!
  * ignore
  */
@@ -76513,7 +76587,7 @@ module.exports = exports = Binary;
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":95}],274:[function(require,module,exports){
+},{"bson":95}],273:[function(require,module,exports){
 /*!
  * Module exports.
  */
@@ -76528,7 +76602,7 @@ exports.Decimal128 = require('./decimal128');
 exports.ObjectId = require('./objectid');
 exports.ReadPreference = require('./ReadPreference');
 
-},{"./ReadPreference":271,"./binary":272,"./decimal128":273,"./objectid":275}],275:[function(require,module,exports){
+},{"./ReadPreference":270,"./binary":271,"./decimal128":272,"./objectid":274}],274:[function(require,module,exports){
 
 /*!
  * [node-mongodb-native](https://github.com/mongodb/node-mongodb-native) ObjectId
@@ -76558,7 +76632,7 @@ Object.defineProperty(ObjectId.prototype, '_id', {
 
 module.exports = exports = ObjectId;
 
-},{"bson":95}],276:[function(require,module,exports){
+},{"bson":95}],275:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -76579,21 +76653,11 @@ const util = require('util');
  */
 
 function CastError(type, value, path, reason, schemaType) {
-  let stringValue = util.inspect(value);
-  stringValue = stringValue.replace(/^'/, '"').replace(/'$/, '"');
-  if (!stringValue.startsWith('"')) {
-    stringValue = '"' + stringValue + '"';
+  // If no args, assume we'll `init()` later.
+  if (arguments.length > 0) {
+    this.init(type, value, path, reason, schemaType);
   }
 
-  const messageFormat = get(schemaType, 'options.cast', null);
-  if (typeof messageFormat === 'string') {
-    this.messageFormat = schemaType.options.cast;
-  }
-  this.stringValue = stringValue;
-  this.kind = type;
-  this.value = value;
-  this.path = path;
-  this.reason = reason;
   MongooseError.call(this, this.formatMessage());
   this.name = 'CastError';
   if (Error.captureStackTrace) {
@@ -76609,6 +76673,42 @@ function CastError(type, value, path, reason, schemaType) {
 
 CastError.prototype = Object.create(MongooseError.prototype);
 CastError.prototype.constructor = MongooseError;
+
+/*!
+ * ignore
+ */
+
+CastError.prototype.init = function init(type, value, path, reason, schemaType) {
+  let stringValue = util.inspect(value);
+  stringValue = stringValue.replace(/^'/, '"').replace(/'$/, '"');
+  if (!stringValue.startsWith('"')) {
+    stringValue = '"' + stringValue + '"';
+  }
+
+  const messageFormat = get(schemaType, 'options.cast', null);
+  if (typeof messageFormat === 'string') {
+    this.messageFormat = schemaType.options.cast;
+  }
+  this.stringValue = stringValue;
+  this.kind = type;
+  this.value = value;
+  this.path = path;
+  this.reason = reason;
+};
+
+/*!
+ * ignore
+ */
+
+CastError.prototype.copy = function copy(other) {
+  this.messageFormat = other.messageFormat;
+  this.stringValue = other.stringValue;
+  this.kind = other.type;
+  this.value = other.value;
+  this.path = other.path;
+  this.reason = other.reason;
+  this.message = other.message;
+};
 
 /*!
  * ignore
@@ -76651,7 +76751,7 @@ CastError.prototype.formatMessage = function(model) {
 
 module.exports = CastError;
 
-},{"../helpers/get":299,"./mongooseError":281,"util":404}],277:[function(require,module,exports){
+},{"../helpers/get":300,"./mongooseError":280,"util":407}],276:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -76701,7 +76801,7 @@ DivergentArrayError.prototype.constructor = MongooseError;
 
 module.exports = DivergentArrayError;
 
-},{"./":278}],278:[function(require,module,exports){
+},{"./":277}],277:[function(require,module,exports){
 'use strict';
 
 /**
@@ -76908,7 +77008,7 @@ MongooseError.DivergentArrayError = require('./divergentArray');
 
 MongooseError.StrictModeError = require('./strict');
 
-},{"./cast":276,"./divergentArray":277,"./messages":279,"./missingSchema":280,"./mongooseError":281,"./notFound":282,"./overwriteModel":285,"./parallelSave":286,"./strict":288,"./validation":289,"./validator":290,"./version":291}],279:[function(require,module,exports){
+},{"./cast":275,"./divergentArray":276,"./messages":278,"./missingSchema":279,"./mongooseError":280,"./notFound":281,"./overwriteModel":284,"./parallelSave":285,"./strict":287,"./validation":288,"./validator":289,"./version":290}],278:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -76957,7 +77057,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],280:[function(require,module,exports){
+},{}],279:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -76998,7 +77098,7 @@ MissingSchemaError.prototype.constructor = MongooseError;
 
 module.exports = MissingSchemaError;
 
-},{"./":278}],281:[function(require,module,exports){
+},{"./":277}],280:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77024,7 +77124,7 @@ MongooseError.prototype = Object.create(Error.prototype);
 MongooseError.prototype.constructor = Error;
 
 module.exports = MongooseError;
-},{}],282:[function(require,module,exports){
+},{}],281:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77081,7 +77181,7 @@ DocumentNotFoundError.prototype.constructor = MongooseError;
 
 module.exports = DocumentNotFoundError;
 
-},{"./":278,"util":404}],283:[function(require,module,exports){
+},{"./":277,"util":407}],282:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -77121,7 +77221,7 @@ ObjectExpectedError.prototype.constructor = MongooseError;
 
 module.exports = ObjectExpectedError;
 
-},{"./":278}],284:[function(require,module,exports){
+},{"./":277}],283:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -77161,7 +77261,7 @@ ObjectParameterError.prototype.constructor = MongooseError;
 
 module.exports = ObjectParameterError;
 
-},{"./":278}],285:[function(require,module,exports){
+},{"./":277}],284:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -77200,7 +77300,7 @@ OverwriteModelError.prototype.constructor = MongooseError;
 
 module.exports = OverwriteModelError;
 
-},{"./":278}],286:[function(require,module,exports){
+},{"./":277}],285:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77235,7 +77335,7 @@ ParallelSaveError.prototype.constructor = MongooseError;
 
 module.exports = ParallelSaveError;
 
-},{"./":278}],287:[function(require,module,exports){
+},{"./":277}],286:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77269,7 +77369,7 @@ ParallelValidateError.prototype.constructor = MongooseError;
  */
 
 module.exports = ParallelValidateError;
-},{"./mongooseError":281}],288:[function(require,module,exports){
+},{"./mongooseError":280}],287:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -77310,7 +77410,7 @@ StrictModeError.prototype.constructor = MongooseError;
 
 module.exports = StrictModeError;
 
-},{"./":278}],289:[function(require,module,exports){
+},{"./":277}],288:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -77332,12 +77432,12 @@ function ValidationError(instance) {
   this.errors = {};
   this._message = '';
 
-  MongooseError.call(this, this._message);
   if (instance && instance.constructor.name === 'model') {
     this._message = instance.constructor.modelName + ' validation failed';
   } else {
     this._message = 'Validation failed';
   }
+  MongooseError.call(this, this._message);
   this.name = 'ValidationError';
 
   if (Error.captureStackTrace) {
@@ -77426,7 +77526,7 @@ function _generateMessage(err) {
 
 module.exports = exports = ValidationError;
 
-},{"./":278,"util":404}],290:[function(require,module,exports){
+},{"./":277,"util":407}],289:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -77517,7 +77617,7 @@ ValidatorError.prototype.toString = function() {
 
 module.exports = ValidatorError;
 
-},{"./":278}],291:[function(require,module,exports){
+},{"./":277}],290:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77555,7 +77655,36 @@ VersionError.prototype.constructor = MongooseError;
 
 module.exports = VersionError;
 
-},{"./":278}],292:[function(require,module,exports){
+},{"./":277}],291:[function(require,module,exports){
+'use strict';
+
+module.exports = arrayDepth;
+
+function arrayDepth(arr) {
+  if (!Array.isArray(arr)) {
+    return { min: 0, max: 0 };
+  }
+  if (arr.length === 0) {
+    return { min: 1, max: 1 };
+  }
+
+  const res = arrayDepth(arr[0]);
+  for (let i = 1; i < arr.length; ++i) {
+    const _res = arrayDepth(arr[i]);
+    if (_res.min < res.min) {
+      res.min = _res.min;
+    }
+    if (_res.max > res.max) {
+      res.max = _res.max;
+    }
+  }
+
+  res.min = res.min + 1;
+  res.max = res.max + 1;
+
+  return res;
+}
+},{}],292:[function(require,module,exports){
 'use strict';
 
 
@@ -77691,7 +77820,7 @@ function cloneArray(arr, options) {
   }
   return ret;
 }
-},{"../types/decimal128":367,"../types/objectid":372,"./getFunctionName":300,"./isBsonType":302,"./isMongooseObject":303,"./isObject":304,"./specialProperties":320,"./symbols":321,"regexp-clone":392}],293:[function(require,module,exports){
+},{"../types/decimal128":368,"../types/objectid":373,"./getFunctionName":301,"./isBsonType":303,"./isMongooseObject":304,"./isObject":305,"./specialProperties":321,"./symbols":322,"regexp-clone":394}],293:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -77699,6 +77828,7 @@ function cloneArray(arr, options) {
  * Module dependencies.
  */
 
+const Binary = require('../driver').get().Binary;
 const Decimal128 = require('../types/decimal128');
 const ObjectId = require('../types/objectid');
 const isMongooseObject = require('./isMongooseObject');
@@ -77795,11 +77925,12 @@ function shouldFlatten(val) {
     !(val instanceof ObjectId) &&
     (!Array.isArray(val) || val.length > 0) &&
     !(val instanceof Buffer) &&
-    !(val instanceof Decimal128);
+    !(val instanceof Decimal128) &&
+    !(val instanceof Binary);
 }
 
 }).call(this,require("buffer").Buffer)
-},{"../types/decimal128":367,"../types/objectid":372,"./isMongooseObject":303,"buffer":114}],294:[function(require,module,exports){
+},{"../driver":269,"../types/decimal128":368,"../types/objectid":373,"./isMongooseObject":304,"buffer":114}],294:[function(require,module,exports){
 'use strict';
 
 const getDiscriminatorByValue = require('./getDiscriminatorByValue');
@@ -78055,7 +78186,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":268,"../../helpers/get":299,"../../helpers/symbols":321,"../../utils":374}],298:[function(require,module,exports){
+},{"../../document":267,"../../helpers/get":300,"../../helpers/symbols":322,"../../utils":375}],298:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -78100,7 +78231,25 @@ module.exports = function getEmbeddedDiscriminatorPath(doc, path, options) {
   return typeOnly ? type : schema;
 };
 
-},{"../get":299}],299:[function(require,module,exports){
+},{"../get":300}],299:[function(require,module,exports){
+'use strict';
+
+const utils = require('../../utils');
+
+/**
+ * Using spread operator on a Mongoose document gives you a
+ * POJO that has a tendency to cause infinite recursion. So
+ * we use this function on `set()` to prevent that.
+ */
+
+module.exports = function handleSpreadDoc(v) {
+  if (utils.isPOJO(v) && v.$__ != null && v._doc != null) {
+    return v._doc;
+  }
+
+  return v;
+};
+},{"../../utils":375}],300:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -78140,7 +78289,7 @@ function getProperty(obj, prop) {
   }
   return obj[prop];
 }
-},{}],300:[function(require,module,exports){
+},{}],301:[function(require,module,exports){
 'use strict';
 
 module.exports = function(fn) {
@@ -78150,7 +78299,7 @@ module.exports = function(fn) {
   return (fn.toString().trim().match(/^function\s*([^\s(]+)/) || [])[1];
 };
 
-},{}],301:[function(require,module,exports){
+},{}],302:[function(require,module,exports){
 (function (process){
 /*!
  * Centralize this so we can more easily work around issues with people
@@ -78166,7 +78315,7 @@ module.exports = function immediate(cb) {
 };
 
 }).call(this,require('_process'))
-},{"_process":391}],302:[function(require,module,exports){
+},{"_process":393}],303:[function(require,module,exports){
 'use strict';
 
 const get = require('./get');
@@ -78181,7 +78330,7 @@ function isBsonType(obj, typename) {
 
 module.exports = isBsonType;
 
-},{"./get":299}],303:[function(require,module,exports){
+},{"./get":300}],304:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -78203,7 +78352,7 @@ module.exports = function(v) {
     v.isMongooseBuffer || // Buffer
     v.$isMongooseMap; // Map
 };
-},{}],304:[function(require,module,exports){
+},{}],305:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -78222,7 +78371,7 @@ module.exports = function(arg) {
   return Object.prototype.toString.call(arg) === '[object Object]';
 };
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255}],305:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254}],306:[function(require,module,exports){
 'use strict';
 
 const symbols = require('../../schema/symbols');
@@ -78358,7 +78507,7 @@ function applyHooks(model, schema, options) {
       createWrapper(method, originalMethod, null, customMethodOptions);
   }
 }
-},{"../../schema/symbols":361,"../promiseOrCallback":310}],306:[function(require,module,exports){
+},{"../../schema/symbols":362,"../promiseOrCallback":311}],307:[function(require,module,exports){
 'use strict';
 
 const defineKey = require('../document/compile').defineKey;
@@ -78481,7 +78630,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
       existingPath.instance :
       String;
     schema.add(obj);
-    schema.discriminatorMapping = {key: key, value: value, isRoot: false};
+    schema.discriminatorMapping = { key: key, value: value, isRoot: false };
 
     if (baseSchema.options.collection) {
       schema.options.collection = baseSchema.options.collection;
@@ -78529,7 +78678,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   }
 
   if (!model.schema.discriminatorMapping) {
-    model.schema.discriminatorMapping = {key: key, value: null, isRoot: true};
+    model.schema.discriminatorMapping = { key: key, value: null, isRoot: true };
   }
   if (!model.schema.discriminators) {
     model.schema.discriminators = {};
@@ -78544,7 +78693,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   return schema;
 };
 
-},{"../../utils":374,"../document/compile":297,"../get":299}],307:[function(require,module,exports){
+},{"../../utils":375,"../document/compile":297,"../get":300}],308:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('../../error/mongooseError');
@@ -78564,7 +78713,7 @@ function validateRef(ref, path) {
   throw new MongooseError('Invalid ref at path "' + path + '". Got ' +
     util.inspect(ref, { depth: 0 }));
 }
-},{"../../error/mongooseError":281,"util":404}],308:[function(require,module,exports){
+},{"../../error/mongooseError":280,"util":407}],309:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -78584,7 +78733,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],309:[function(require,module,exports){
+},{}],310:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -78614,7 +78763,7 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"./isDefiningProjection":308}],310:[function(require,module,exports){
+},{"./isDefiningProjection":309}],311:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -78662,7 +78811,7 @@ module.exports = function promiseOrCallback(callback, fn, ee) {
   });
 };
 }).call(this,require('_process'))
-},{"../promise_provider":340,"_process":391}],311:[function(require,module,exports){
+},{"../promise_provider":341,"_process":393}],312:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -78711,14 +78860,15 @@ function applyQueryMiddleware(Query, model) {
   };
 
   const middleware = model.hooks.filter(hook => {
-    if (hook.name === 'updateOne' || hook.name === 'deleteOne') {
-      return hook.query == null || !!hook.query;
+    const contexts = _getContexts(hook);
+    if (hook.name === 'updateOne') {
+      return contexts.query == null || !!contexts.query;
     }
-    if (hook.name === 'remove') {
-      return !!hook.query;
+    if (hook.name === 'deleteOne') {
+      return !!contexts.query || Object.keys(contexts).length === 0;
     }
-    if (hook.name === 'validate') {
-      return !!hook.query;
+    if (hook.name === 'validate' || hook.name === 'remove') {
+      return !!contexts.query;
     }
     return true;
   });
@@ -78742,7 +78892,17 @@ function applyQueryMiddleware(Query, model) {
     });
 }
 
-},{}],312:[function(require,module,exports){
+function _getContexts(hook) {
+  const ret = {};
+  if (hook.hasOwnProperty('query')) {
+    ret.query = hook.query;
+  }
+  if (hook.hasOwnProperty('document')) {
+    ret.document = hook.document;
+  }
+  return ret;
+}
+},{}],313:[function(require,module,exports){
 'use strict';
 
 const specialKeys = new Set([
@@ -78754,15 +78914,15 @@ const specialKeys = new Set([
 module.exports = function isOperator(path) {
   return path.startsWith('$') && !specialKeys.has(path);
 };
-},{}],313:[function(require,module,exports){
+},{}],314:[function(require,module,exports){
 'use strict';
 
 module.exports = function addAutoId(schema) {
-  const _obj = {_id: {auto: true}};
+  const _obj = { _id: { auto: true } };
   _obj._id[schema.options.typeKey] = 'ObjectId';
   schema.add(_obj);
 };
-},{}],314:[function(require,module,exports){
+},{}],315:[function(require,module,exports){
 'use strict';
 
 /**
@@ -78775,7 +78935,7 @@ module.exports = function cleanPositionalOperators(path) {
     replace(/\.\$(\[[^\]]*\])?\./g, '.0.').
     replace(/\.(\[[^\]]*\])?\$$/g, '.0');
 };
-},{}],315:[function(require,module,exports){
+},{}],316:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -78919,7 +79079,7 @@ module.exports = function getIndexes(schema) {
   }
 };
 
-},{"../get":299,"../isObject":304}],316:[function(require,module,exports){
+},{"../get":300,"../isObject":305}],317:[function(require,module,exports){
 'use strict';
 
 const addAutoId = require('./addAutoId');
@@ -78940,7 +79100,7 @@ module.exports = function handleIdOption(schema, options) {
 
   return schema;
 };
-},{"./addAutoId":313}],317:[function(require,module,exports){
+},{"./addAutoId":314}],318:[function(require,module,exports){
 'use strict';
 
 module.exports = handleTimestampOption;
@@ -78965,7 +79125,7 @@ function handleTimestampOption(arg, prop) {
   }
   return arg[prop];
 }
-},{}],318:[function(require,module,exports){
+},{}],319:[function(require,module,exports){
 'use strict';
 
 module.exports = function merge(s1, s2) {
@@ -78986,7 +79146,7 @@ module.exports = function merge(s1, s2) {
   s1.s.hooks.merge(s2.s.hooks, false);
 };
 
-},{}],319:[function(require,module,exports){
+},{}],320:[function(require,module,exports){
 'use strict';
 
 const StrictModeError = require('../../error/strict');
@@ -79031,11 +79191,11 @@ function createImmutableSetter(path, immutable) {
   };
 }
 
-},{"../../error/strict":288}],320:[function(require,module,exports){
+},{"../../error/strict":287}],321:[function(require,module,exports){
 'use strict';
 
 module.exports = new Set(['__proto__', 'constructor', 'prototype']);
-},{}],321:[function(require,module,exports){
+},{}],322:[function(require,module,exports){
 'use strict';
 
 exports.arrayAtomicsSymbol = Symbol('mongoose#Array#_atomics');
@@ -79050,7 +79210,7 @@ exports.objectIdSymbol = Symbol('mongoose#ObjectId');
 exports.populateModelSymbol = Symbol('mongoose.PopulateOptions#Model');
 exports.schemaTypeSymbol = Symbol('mongoose#schemaType');
 exports.validatorErrorSymbol = Symbol('mongoose:validatorError');
-},{}],322:[function(require,module,exports){
+},{}],323:[function(require,module,exports){
 'use strict';
 
 const cleanPositionalOperators = require('../schema/cleanPositionalOperators');
@@ -79231,7 +79391,7 @@ function applyTimestampsToSingleNested(subdoc, schematype, now) {
     subdoc[createdAt] = now;
   }
 }
-},{"../schema/cleanPositionalOperators":314,"../schema/handleTimestampOption":317}],323:[function(require,module,exports){
+},{"../schema/cleanPositionalOperators":315,"../schema/handleTimestampOption":318}],324:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -79311,7 +79471,7 @@ function applyTimestampsToUpdate(now, createdAt, updatedAt, currentUpdate, optio
   return updates;
 }
 
-},{"../get":299}],324:[function(require,module,exports){
+},{"../get":300}],325:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -79351,7 +79511,7 @@ function InternalCache() {
   this.fullPath = undefined;
 }
 
-},{"./statemachine":363}],325:[function(require,module,exports){
+},{"./statemachine":364}],326:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -79367,7 +79527,7 @@ exports.internalToObjectOptions = {
   flattenDecimals: false
 };
 
-},{}],326:[function(require,module,exports){
+},{}],327:[function(require,module,exports){
 'use strict';
 
 const clone = require('../helpers/clone');
@@ -79384,6 +79544,11 @@ class PopulateOptions {
     if (typeof obj.subPopulate === 'object') {
       this.populate = obj.subPopulate;
     }
+
+
+    if (obj.perDocumentLimit != null && obj.limit != null) {
+      throw new Error('Can not use `limit` and `perDocumentLimit` at the same time. Path: `' + obj.path + '`.' );
+    }
   }
 }
 
@@ -79398,7 +79563,7 @@ class PopulateOptions {
  */
 
 module.exports = PopulateOptions;
-},{"../helpers/clone":292}],327:[function(require,module,exports){
+},{"../helpers/clone":292}],328:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79438,7 +79603,7 @@ Object.defineProperty(SchemaArrayOptions.prototype, 'enum', opts);
  */
 
 module.exports = SchemaArrayOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],328:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],329:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79477,7 +79642,7 @@ Object.defineProperty(SchemaBufferOptions.prototype, 'subtype', opts);
  */
 
 module.exports = SchemaBufferOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],329:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],330:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79542,7 +79707,7 @@ Object.defineProperty(SchemaDateOptions.prototype, 'expires', opts);
  */
 
 module.exports = SchemaDateOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],330:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],331:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79611,7 +79776,7 @@ Object.defineProperty(SchemaDocumentArrayOptions.prototype, '_id', opts);
  */
 
 module.exports = SchemaDocumentArrayOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],331:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],332:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79655,7 +79820,7 @@ const opts = require('./propertyOptions');
 Object.defineProperty(SchemaMapOptions.prototype, 'of', opts);
 
 module.exports = SchemaMapOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],332:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],333:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79730,7 +79895,7 @@ Object.defineProperty(SchemaNumberOptions.prototype, 'enum', opts);
  */
 
 module.exports = SchemaNumberOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],333:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],334:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79769,7 +79934,7 @@ Object.defineProperty(SchemaObjectIdOptions.prototype, 'auto', opts);
  */
 
 module.exports = SchemaObjectIdOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],334:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],335:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79812,7 +79977,7 @@ const opts = require('./propertyOptions');
 Object.defineProperty(SchemaSingleNestedOptions.prototype, '_id', opts);
 
 module.exports = SchemaSingleNestedOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],335:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],336:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -79929,7 +80094,7 @@ Object.defineProperty(SchemaStringOptions.prototype, 'maxlength', opts);
  */
 
 module.exports = SchemaStringOptions;
-},{"./SchemaTypeOptions":336,"./propertyOptions":338}],336:[function(require,module,exports){
+},{"./SchemaTypeOptions":337,"./propertyOptions":339}],337:[function(require,module,exports){
 'use strict';
 
 const clone = require('../helpers/clone');
@@ -80162,7 +80327,7 @@ Object.defineProperty(SchemaTypeOptions.prototype, 'text', opts);
 Object.defineProperty(SchemaTypeOptions.prototype, 'transform', opts);
 
 module.exports = SchemaTypeOptions;
-},{"../helpers/clone":292,"./propertyOptions":338}],337:[function(require,module,exports){
+},{"../helpers/clone":292,"./propertyOptions":339}],338:[function(require,module,exports){
 'use strict';
 
 const opts = require('./propertyOptions');
@@ -80327,7 +80492,7 @@ Object.defineProperty(VirtualOptions.prototype, 'limit', opts);
 Object.defineProperty(VirtualOptions.prototype, 'perDocumentLimit', opts);
 
 module.exports = VirtualOptions;
-},{"./propertyOptions":338}],338:[function(require,module,exports){
+},{"./propertyOptions":339}],339:[function(require,module,exports){
 'use strict';
 
 module.exports = Object.freeze({
@@ -80336,7 +80501,7 @@ module.exports = Object.freeze({
   writable: true,
   value: void 0
 });
-},{}],339:[function(require,module,exports){
+},{}],340:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -80366,7 +80531,7 @@ function idGetter() {
   return null;
 }
 
-},{}],340:[function(require,module,exports){
+},{}],341:[function(require,module,exports){
 (function (global){
 /*!
  * ignore
@@ -80419,7 +80584,7 @@ store.set(global.Promise);
 module.exports = store;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"assert":88,"mquery":384}],341:[function(require,module,exports){
+},{"assert":88,"mquery":385}],342:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -80810,7 +80975,7 @@ Schema.prototype.pick = function(paths, options) {
 
 Schema.prototype.defaultOptions = function(options) {
   if (options && options.safe === false) {
-    options.safe = {w: 0};
+    options.safe = { w: 0 };
   }
 
   if (options && options.safe && options.safe.w === 0) {
@@ -80930,7 +81095,10 @@ Schema.prototype.add = function add(obj, prefix) {
         if (prefix) {
           this.nested[prefix.substr(0, prefix.length - 1)] = true;
         }
-        const schemaWrappedPath = Object.assign({}, obj[key], { type: new Schema(obj[key][this.options.typeKey]) });
+        // Propage `typePojoToMixed` to implicitly created schemas
+        const opts = { typePojoToMixed: false };
+        const _schema = new Schema(obj[key][this.options.typeKey], opts);
+        const schemaWrappedPath = Object.assign({}, obj[key], { type: _schema });
         this.path(prefix + key, schemaWrappedPath);
       } else {
         // Either the type is non-POJO or we interpret it as Mixed anyway
@@ -81343,13 +81511,16 @@ Schema.prototype.interpretAsType = function(path, obj, options) {
         // The `minimize` and `typeKey` options propagate to child schemas
         // declared inline, like `{ arr: [{ val: { $type: String } }] }`.
         // See gh-3560
-        const childSchemaOptions = {minimize: options.minimize};
+        const childSchemaOptions = { minimize: options.minimize };
         if (options.typeKey) {
           childSchemaOptions.typeKey = options.typeKey;
         }
         //propagate 'strict' option to child schema
         if (options.hasOwnProperty('strict')) {
           childSchemaOptions.strict = options.strict;
+        }
+        if (options.hasOwnProperty('typePojoToMixed')) {
+          childSchemaOptions.typePojoToMixed = options.typePojoToMixed;
         }
         const childSchema = new Schema(cast, childSchemaOptions);
         childSchema.$implicitlyCreated = true;
@@ -81788,9 +81959,17 @@ Schema.prototype.queue = function(name, args) {
  *       console.log(this.getFilter());
  *     });
  *
+ *     toySchema.pre('deleteOne', function() {
+ *       // Runs when you call `Toy.deleteOne()`
+ *     });
+ *
+ *     toySchema.pre('deleteOne', { document: true }, function() {
+ *       // Runs when you call `doc.deleteOne()`
+ *     });
+ *
  * @param {String|RegExp} The method name or regular expression to match method name
  * @param {Object} [options]
- * @param {Boolean} [options.document] If `name` is a hook for both document and query middleware, set to `true` to run on document middleware.
+ * @param {Boolean} [options.document] If `name` is a hook for both document and query middleware, set to `true` to run on document middleware. For example, set `options.document` to `true` to apply this hook to `Document#deleteOne()` rather than `Query#deleteOne()`.
  * @param {Boolean} [options.query] If `name` is a hook for both document and query middleware, set to `true` to run on query middleware.
  * @param {Function} callback
  * @api public
@@ -82068,7 +82247,7 @@ const safeDeprecationWarning = 'Mongoose: The `safe` option for schemas is ' +
 
 const setSafe = util.deprecate(function setSafe(options, value) {
   options.safe = value === false ?
-    {w: 0} :
+    { w: 0 } :
     value;
 }, safeDeprecationWarning);
 
@@ -82602,7 +82781,7 @@ Schema.Types = MongooseTypes = require('./schema/index');
 exports.ObjectId = MongooseTypes.ObjectId;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":255,"./driver":270,"./error/mongooseError":281,"./helpers/get":299,"./helpers/model/applyHooks":305,"./helpers/populate/validateRef":307,"./helpers/query/applyQueryMiddleware":311,"./helpers/schema/addAutoId":313,"./helpers/schema/getIndexes":315,"./helpers/schema/handleTimestampOption":317,"./helpers/schema/merge":318,"./helpers/symbols":321,"./helpers/update/applyTimestampsToChildren":322,"./helpers/update/applyTimestampsToUpdate":323,"./options/SchemaTypeOptions":336,"./options/VirtualOptions":337,"./schema/index":349,"./schema/symbols":361,"./schematype":362,"./utils":374,"./virtualtype":375,"events":252,"kareem":256,"mpath":378,"util":404}],342:[function(require,module,exports){
+},{"../../is-buffer/index.js":254,"./driver":269,"./error/mongooseError":280,"./helpers/get":300,"./helpers/model/applyHooks":306,"./helpers/populate/validateRef":308,"./helpers/query/applyQueryMiddleware":312,"./helpers/schema/addAutoId":314,"./helpers/schema/getIndexes":316,"./helpers/schema/handleTimestampOption":318,"./helpers/schema/merge":319,"./helpers/symbols":322,"./helpers/update/applyTimestampsToChildren":323,"./helpers/update/applyTimestampsToUpdate":324,"./options/SchemaTypeOptions":337,"./options/VirtualOptions":338,"./schema/index":350,"./schema/symbols":362,"./schematype":363,"./utils":375,"./virtualtype":376,"events":252,"kareem":255,"mpath":379,"util":407}],343:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -82914,7 +83093,7 @@ SingleNestedPath.prototype.clone = function() {
   return schematype;
 };
 
-},{"../error/cast":276,"../error/objectExpected":283,"../helpers/discriminator/getConstructor":294,"../helpers/get":299,"../helpers/model/discriminator":306,"../helpers/schema/handleIdOption":316,"../options":325,"../options/SchemaSingleNestedOptions":334,"../schematype":362,"../types/subdocument":373,"./operators/exists":355,"./operators/geospatial":356,"./operators/helpers":357,"events":252}],343:[function(require,module,exports){
+},{"../error/cast":275,"../error/objectExpected":282,"../helpers/discriminator/getConstructor":294,"../helpers/get":300,"../helpers/model/discriminator":307,"../helpers/schema/handleIdOption":317,"../options":326,"../options/SchemaSingleNestedOptions":335,"../schematype":363,"../types/subdocument":374,"./operators/exists":356,"./operators/geospatial":357,"./operators/helpers":358,"events":252}],344:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -82928,6 +83107,7 @@ const SchemaArrayOptions = require('../options/SchemaArrayOptions');
 const SchemaType = require('../schematype');
 const CastError = SchemaType.CastError;
 const Mixed = require('./mixed');
+const arrayDepth = require('../helpers/arrayDepth');
 const cast = require('../cast');
 const get = require('../helpers/get');
 const isOperator = require('../helpers/query/isOperator');
@@ -82939,6 +83119,8 @@ const getDiscriminatorByValue = require('../helpers/discriminator/getDiscriminat
 
 let MongooseArray;
 let EmbeddedDoc;
+
+const isNestedArraySymbol = Symbol('mongoose#isNestedArray');
 
 /**
  * Array SchemaType constructor
@@ -82987,6 +83169,10 @@ function SchemaArray(key, cast, options, schemaOptions) {
     const caster = Types.hasOwnProperty(name) ? Types[name] : cast;
 
     this.casterConstructor = caster;
+
+    if (this.casterConstructor instanceof SchemaArray) {
+      this.casterConstructor[isNestedArraySymbol] = true;
+    }
 
     if (typeof caster === 'function' &&
         !caster.$isArraySubdocument &&
@@ -83173,6 +83359,34 @@ SchemaArray.prototype.applyGetters = function(value, scope) {
   return SchemaType.prototype.applyGetters.call(this, value, scope);
 };
 
+SchemaArray.prototype._applySetters = function(value, scope, init, priorVal) {
+  if (this.casterConstructor instanceof SchemaArray &&
+      SchemaArray.options.castNonArrays &&
+      !this[isNestedArraySymbol]) {
+    // Check nesting levels and wrap in array if necessary
+    let depth = 0;
+    let arr = this;
+    while (arr != null &&
+      arr instanceof SchemaArray &&
+      !arr.$isMongooseDocumentArray) {
+      ++depth;
+      arr = arr.casterConstructor;
+    }
+
+    // No need to wrap empty arrays
+    if (value != null && value.length > 0) {
+      const valueDepth = arrayDepth(value);
+      if (valueDepth.min === valueDepth.max && valueDepth.max < depth) {
+        for (let i = valueDepth.max; i < depth; ++i) {
+          value = [value];
+        }
+      }
+    }
+  }
+
+  return SchemaType.prototype._applySetters.call(this, value, scope, init, priorVal);
+};
+
 /**
  * Casts values for set().
  *
@@ -83231,6 +83445,12 @@ SchemaArray.prototype.cast = function(value, doc, init) {
     if (this.caster && this.casterConstructor !== Mixed) {
       try {
         for (i = 0, l = value.length; i < l; i++) {
+          // Special case: number arrays disallow undefined.
+          // Re: gh-840
+          // See commit 1298fe92d2c790a90594bd08199e45a4a09162a6
+          if (this.caster.instance === 'Number' && value[i] === void 0) {
+            throw new MongooseError('Mongoose number arrays disallow storing undefined');
+          }
           value[i] = this.caster.cast(value[i], doc, init);
         }
       } catch (e) {
@@ -83449,7 +83669,7 @@ handle.$in = SchemaType.prototype.$conditionalHandlers.$in;
 
 module.exports = SchemaArray;
 
-},{"../cast":261,"../error/mongooseError":281,"../helpers/discriminator/getDiscriminatorByValue":295,"../helpers/get":299,"../helpers/query/isOperator":312,"../options/SchemaArrayOptions":327,"../schematype":362,"../types":370,"../utils":374,"./index.js":349,"./mixed":351,"./operators/exists":355,"./operators/geospatial":356,"./operators/helpers":357,"./operators/type":359,"util":404}],344:[function(require,module,exports){
+},{"../cast":260,"../error/mongooseError":280,"../helpers/arrayDepth":291,"../helpers/discriminator/getDiscriminatorByValue":295,"../helpers/get":300,"../helpers/query/isOperator":313,"../options/SchemaArrayOptions":328,"../schematype":363,"../types":371,"../utils":375,"./index.js":350,"./mixed":352,"./operators/exists":356,"./operators/geospatial":357,"./operators/helpers":358,"./operators/type":360,"util":407}],345:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -83682,7 +83902,7 @@ SchemaBoolean.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaBoolean;
 
-},{"../cast/boolean":262,"../error/cast":276,"../schematype":362,"../utils":374}],345:[function(require,module,exports){
+},{"../cast/boolean":261,"../error/cast":275,"../schematype":363,"../utils":375}],346:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -83962,7 +84182,7 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaBuffer;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../helpers/symbols":321,"../options/SchemaBufferOptions":328,"../schematype":362,"../types/buffer":365,"../utils":374,"./../document":268,"./operators/bitwise":354}],346:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../helpers/symbols":322,"../options/SchemaBufferOptions":329,"../schematype":363,"../types/buffer":366,"../utils":375,"./../document":267,"./operators/bitwise":355}],347:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -84354,7 +84574,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val) {
 
 module.exports = SchemaDate;
 
-},{"../cast/date":263,"../error/index":278,"../options/SchemaDateOptions":329,"../schematype":362,"../utils":374}],347:[function(require,module,exports){
+},{"../cast/date":262,"../error/index":277,"../options/SchemaDateOptions":330,"../schematype":363,"../utils":375}],348:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -84593,7 +84813,7 @@ Decimal128.prototype.$conditionalHandlers =
 module.exports = Decimal128;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../cast/decimal128":264,"../helpers/symbols":321,"../schematype":362,"../types/decimal128":367,"../utils":374,"./../document":268}],348:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../cast/decimal128":263,"../helpers/symbols":322,"../schematype":363,"../types/decimal128":368,"../utils":375,"./../document":267}],349:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85107,7 +85327,7 @@ function scopePaths(array, fields, init) {
 
 module.exports = DocumentArrayPath;
 
-},{"../error/cast":276,"../error/validation":289,"../helpers/discriminator/getConstructor":294,"../helpers/get":299,"../helpers/model/discriminator":306,"../helpers/schema/handleIdOption":316,"../helpers/symbols":321,"../options/SchemaDocumentArrayOptions":330,"../schematype":362,"../types/documentarray":368,"../types/embedded":369,"../utils":374,"./array":343,"events":252,"util":404}],349:[function(require,module,exports){
+},{"../error/cast":275,"../error/validation":288,"../helpers/discriminator/getConstructor":294,"../helpers/get":300,"../helpers/model/discriminator":307,"../helpers/schema/handleIdOption":317,"../helpers/symbols":322,"../options/SchemaDocumentArrayOptions":331,"../schematype":363,"../types/documentarray":369,"../types/embedded":370,"../utils":375,"./array":344,"events":252,"util":407}],350:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -85146,7 +85366,7 @@ exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 exports.ObjectID = exports.ObjectId;
 
-},{"./SingleNestedPath":342,"./array":343,"./boolean":344,"./buffer":345,"./date":346,"./decimal128":347,"./documentarray":348,"./map":350,"./mixed":351,"./number":352,"./objectid":353,"./string":360}],350:[function(require,module,exports){
+},{"./SingleNestedPath":343,"./array":344,"./boolean":345,"./buffer":346,"./date":347,"./decimal128":348,"./documentarray":349,"./map":351,"./mixed":352,"./number":353,"./objectid":354,"./string":361}],351:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -85167,8 +85387,8 @@ class Map extends SchemaType {
     this.$isSchemaMap = true;
   }
 
-  set(option,value) {
-    return SchemaType.set(option,value);
+  set(option, value) {
+    return SchemaType.set(option, value);
   }
 
   cast(val, doc, init) {
@@ -85212,7 +85432,7 @@ Map.defaultOptions = {};
 module.exports = Map;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../options/SchemaMapOptions":331,"../schematype":362,"../types/map":371}],351:[function(require,module,exports){
+},{"../options/SchemaMapOptions":332,"../schematype":363,"../types/map":372}],352:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -85342,7 +85562,7 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../helpers/isObject":304,"../schematype":362,"./symbols":361}],352:[function(require,module,exports){
+},{"../helpers/isObject":305,"../schematype":363,"./symbols":362}],353:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -85790,7 +86010,7 @@ SchemaNumber.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaNumber;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../cast/number":265,"../error/index":278,"../helpers/symbols":321,"../options/SchemaNumberOptions":332,"../schematype":362,"../utils":374,"./../document":268,"./operators/bitwise":354}],353:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../cast/number":264,"../error/index":277,"../helpers/symbols":322,"../options/SchemaNumberOptions":333,"../schematype":363,"../utils":375,"./../document":267,"./operators/bitwise":355}],354:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module dependencies.
@@ -86113,7 +86333,7 @@ function resetId(v) {
 module.exports = ObjectId;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../cast/objectid":266,"../helpers/symbols":321,"../options/SchemaObjectIdOptions":333,"../schematype":362,"../types/objectid":372,"../utils":374,"./../document":268}],354:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../cast/objectid":265,"../helpers/symbols":322,"../options/SchemaObjectIdOptions":334,"../schematype":363,"../types/objectid":373,"../utils":375,"./../document":267}],355:[function(require,module,exports){
 (function (Buffer){
 /*!
  * Module requirements.
@@ -86155,7 +86375,7 @@ function _castNumber(path, num) {
 module.exports = handleBitwiseOperator;
 
 }).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":255,"../../error/cast":276}],355:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":254,"../../error/cast":275}],356:[function(require,module,exports){
 'use strict';
 
 const castBoolean = require('../../cast/boolean');
@@ -86169,7 +86389,7 @@ module.exports = function(val) {
   return castBoolean(val, path);
 };
 
-},{"../../cast/boolean":262}],356:[function(require,module,exports){
+},{"../../cast/boolean":261}],357:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -86273,7 +86493,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":343,"./helpers":357}],357:[function(require,module,exports){
+},{"../array":344,"./helpers":358}],358:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -86307,7 +86527,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":352}],358:[function(require,module,exports){
+},{"../number":353}],359:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -86348,7 +86568,7 @@ module.exports = function(val, path) {
   return val;
 };
 
-},{"../../cast/boolean":262,"../../cast/string":267,"../../error/cast":276}],359:[function(require,module,exports){
+},{"../../cast/boolean":261,"../../cast/string":266,"../../error/cast":275}],360:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -86363,7 +86583,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],360:[function(require,module,exports){
+},{}],361:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -87042,13 +87262,13 @@ SchemaString.prototype.castForQuery = function($conditional, val) {
 module.exports = SchemaString;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../cast/string":267,"../error/index":278,"../helpers/symbols":321,"../options/SchemaStringOptions":335,"../schematype":362,"../utils":374,"./../document":268}],361:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../cast/string":266,"../error/index":277,"../helpers/symbols":322,"../options/SchemaStringOptions":336,"../schematype":363,"../utils":375,"./../document":267}],362:[function(require,module,exports){
 'use strict';
 
 exports.schemaMixedSymbol = Symbol.for('mongoose:schema_mixed');
 
 exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
-},{}],362:[function(require,module,exports){
+},{}],363:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -87362,7 +87582,7 @@ SchemaType.prototype.unique = function(bool) {
   if (this._index == null || this._index === true) {
     this._index = {};
   } else if (typeof this._index === 'string') {
-    this._index = {type: this._index};
+    this._index = { type: this._index };
   }
 
   this._index.unique = bool;
@@ -87394,7 +87614,7 @@ SchemaType.prototype.text = function(bool) {
     typeof this._index === 'boolean') {
     this._index = {};
   } else if (typeof this._index === 'string') {
-    this._index = {type: this._index};
+    this._index = { type: this._index };
   }
 
   this._index.text = bool;
@@ -87426,7 +87646,7 @@ SchemaType.prototype.sparse = function(bool) {
   if (this._index == null || typeof this._index === 'boolean') {
     this._index = {};
   } else if (typeof this._index === 'string') {
-    this._index = {type: this._index};
+    this._index = { type: this._index };
   }
 
   this._index.sparse = bool;
@@ -88547,7 +88767,7 @@ exports.CastError = CastError;
 exports.ValidatorError = ValidatorError;
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":255,"./error/index":278,"./helpers/get":299,"./helpers/immediate":301,"./helpers/schematype/handleImmutable":319,"./helpers/symbols":321,"./options/SchemaTypeOptions":336,"./schema/operators/exists":355,"./schema/operators/type":359,"./utils":374,"util":404}],363:[function(require,module,exports){
+},{"../../is-buffer/index.js":254,"./error/index":277,"./helpers/get":300,"./helpers/immediate":302,"./helpers/schematype/handleImmutable":320,"./helpers/symbols":322,"./options/SchemaTypeOptions":337,"./schema/operators/exists":356,"./schema/operators/type":360,"./utils":375,"util":407}],364:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -88729,7 +88949,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":374}],364:[function(require,module,exports){
+},{"./utils":375}],365:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -88797,7 +89017,7 @@ function MongooseArray(values, path, doc) {
 
 module.exports = exports = MongooseArray;
 
-},{"../document":268,"../helpers/symbols":321,"./core_array":366}],365:[function(require,module,exports){
+},{"../document":267,"../helpers/symbols":322,"./core_array":367}],366:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -89078,7 +89298,7 @@ MongooseBuffer.Binary = Binary;
 
 module.exports = MongooseBuffer;
 
-},{"../driver":270,"../utils":374,"safe-buffer":377}],366:[function(require,module,exports){
+},{"../driver":269,"../utils":375,"safe-buffer":378}],367:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -89161,7 +89381,7 @@ class CoreMongooseArray extends Array {
       }
 
       if (op === '$addToSet') {
-        val = {$each: val};
+        val = { $each: val };
       }
 
       ret.push([op, val]);
@@ -89324,7 +89544,7 @@ class CoreMongooseArray extends Array {
       // non-objects are to be interpreted as _id
       if (Buffer.isBuffer(value) ||
           value instanceof ObjectId || !utils.isObject(value)) {
-        value = {_id: value};
+        value = { _id: value };
       }
 
       // gh-2399
@@ -89382,6 +89602,10 @@ class CoreMongooseArray extends Array {
         }
       }
 
+      if (dirtyPath != null && dirtyPath.endsWith('.$')) {
+        return this;
+      }
+
       parent.markModified(dirtyPath, arguments.length > 0 ? elem : parent);
     }
 
@@ -89402,7 +89626,7 @@ class CoreMongooseArray extends Array {
     if (op === '$set') {
       // $set takes precedence over all other ops.
       // mark entire array modified.
-      this[arrayAtomicsSymbol] = {$set: val};
+      this[arrayAtomicsSymbol] = { $set: val };
       cleanModifiedSubpaths(this[arrayParentSymbol], this[arrayPathSymbol]);
       this._markModified();
       return this;
@@ -89420,11 +89644,10 @@ class CoreMongooseArray extends Array {
 
     // check for impossible $atomic combos (Mongo denies more than one
     // $atomic op on a single path
-    if (this[arrayAtomicsSymbol].$set ||
-        Object.keys(atomics).length && !(op in atomics)) {
+    if (this[arrayAtomicsSymbol].$set || Object.keys(atomics).length && !(op in atomics)) {
       // a different op was previously registered.
       // save the entire thing.
-      this[arrayAtomicsSymbol] = {$set: this};
+      this[arrayAtomicsSymbol] = { $set: this };
       return this;
     }
 
@@ -89438,10 +89661,10 @@ class CoreMongooseArray extends Array {
       if (val[0] instanceof EmbeddedDocument) {
         selector = pullOp['$or'] || (pullOp['$or'] = []);
         Array.prototype.push.apply(selector, val.map(function(v) {
-          return v.toObject({transform: false, virtuals: false});
+          return v.toObject({ transform: false, virtuals: false });
         }));
       } else {
-        selector = pullOp['_id'] || (pullOp['_id'] = {$in: []});
+        selector = pullOp['_id'] || (pullOp['_id'] = { $in: [] });
         selector['$in'] = selector['$in'].concat(val);
       }
     } else if (op === '$push') {
@@ -89913,6 +90136,18 @@ class CoreMongooseArray extends Array {
    * ignore
    */
 
+  slice() {
+    const ret = super.slice.apply(this, arguments);
+    ret[arrayParentSymbol] = this[arrayParentSymbol];
+    ret[arraySchemaSymbol] = this[arraySchemaSymbol];
+    ret[arrayAtomicsSymbol] = this[arrayAtomicsSymbol];
+    return ret;
+  }
+
+  /*!
+   * ignore
+   */
+
   toBSON() {
     return this.toObject(internalToObjectOptions);
   }
@@ -90013,7 +90248,7 @@ function _checkManualPopulation(arr, docs) {
 
 module.exports = CoreMongooseArray;
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../document":268,"../error/mongooseError":281,"../helpers/document/cleanModifiedSubpaths":296,"../helpers/get":299,"../helpers/symbols":321,"../options":325,"../utils":374,"./embedded":369,"./objectid":372,"util":404}],367:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../document":267,"../error/mongooseError":280,"../helpers/document/cleanModifiedSubpaths":296,"../helpers/get":300,"../helpers/symbols":322,"../options":326,"../utils":375,"./embedded":370,"./objectid":373,"util":407}],368:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -90028,7 +90263,7 @@ module.exports = CoreMongooseArray;
 
 module.exports = require('../driver').get().Decimal128;
 
-},{"../driver":270}],368:[function(require,module,exports){
+},{"../driver":269}],369:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -90116,7 +90351,7 @@ class CoreDocumentArray extends CoreMongooseArray {
     // non-objects are to be interpreted as _id
     if (Buffer.isBuffer(value) ||
         value instanceof ObjectId || !utils.isObject(value)) {
-      value = {_id: value};
+      value = { _id: value };
     }
 
     if (value &&
@@ -90452,7 +90687,7 @@ function MongooseDocumentArray(values, path, doc) {
 module.exports = MongooseDocumentArray;
 
 }).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":255,"../cast/objectid":266,"../document":268,"../helpers/discriminator/getDiscriminatorByValue":295,"../helpers/symbols":321,"../options":325,"../utils":374,"./core_array":366,"./objectid":372,"util":404}],369:[function(require,module,exports){
+},{"../../../is-buffer/index.js":254,"../cast/objectid":265,"../document":267,"../helpers/discriminator/getDiscriminatorByValue":295,"../helpers/symbols":322,"../options":326,"../utils":375,"./core_array":367,"./objectid":373,"util":407}],370:[function(require,module,exports){
 /* eslint no-func-assign: 1 */
 
 /*!
@@ -90678,7 +90913,7 @@ EmbeddedDocument.prototype.remove = function(options, fn) {
       throw new Error('For your own good, Mongoose does not know ' +
           'how to remove an EmbeddedDocument that has no _id');
     }
-    this.__parentArray.pull({_id: _id});
+    this.__parentArray.pull({ _id: _id });
     this.willRemove = true;
     registerRemoveListener(this);
   }
@@ -90899,7 +91134,7 @@ EmbeddedDocument.prototype.parentArray = function() {
 
 module.exports = EmbeddedDocument;
 
-},{"../document_provider":269,"../error/validation":289,"../helpers/get":299,"../helpers/immediate":301,"../helpers/promiseOrCallback":310,"../helpers/symbols":321,"../options":325,"events":252,"util":404}],370:[function(require,module,exports){
+},{"../document_provider":268,"../error/validation":288,"../helpers/get":300,"../helpers/immediate":302,"../helpers/promiseOrCallback":311,"../helpers/symbols":322,"../options":326,"events":252,"util":407}],371:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -90921,11 +91156,13 @@ exports.Map = require('./map');
 
 exports.Subdocument = require('./subdocument');
 
-},{"./array":364,"./buffer":365,"./decimal128":367,"./documentarray":368,"./embedded":369,"./map":371,"./objectid":372,"./subdocument":373}],371:[function(require,module,exports){
+},{"./array":365,"./buffer":366,"./decimal128":368,"./documentarray":369,"./embedded":370,"./map":372,"./objectid":373,"./subdocument":374}],372:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../schema/mixed');
+const deepEqual = require('../utils').deepEqual;
 const get = require('../helpers/get');
+const handleSpreadDoc = require('../helpers/document/handleSpreadDoc');
 const util = require('util');
 const specialProperties = require('../helpers/specialProperties');
 
@@ -90965,6 +91202,7 @@ class MongooseMap extends Map {
 
   set(key, value) {
     checkValidKey(key);
+    value = handleSpreadDoc(value);
 
     // Weird, but because you can't assign to `this` before calling `super()`
     // you can't get access to `$__schemaType` to cast in the initial call to
@@ -90980,6 +91218,7 @@ class MongooseMap extends Map {
     const populated = this.$__parent != null && this.$__parent.$__ ?
       this.$__parent.populated(fullPath) || this.$__parent.populated(this.$__path) :
       null;
+    const priorVal = this.get(key);
 
     if (populated != null) {
       if (value.$__ == null) {
@@ -91005,8 +91244,9 @@ class MongooseMap extends Map {
       value.$basePath = this.$__path + '.' + key;
     }
 
-    if (this.$__parent != null && this.$__parent.$__) {
-      this.$__parent.markModified(this.$__path + '.' + key);
+    const parent = this.$__parent;
+    if (parent != null && parent.$__ != null && !deepEqual(value, priorVal)) {
+      parent.markModified(this.$__path + '.' + key);
     }
   }
 
@@ -91126,7 +91366,7 @@ function checkValidKey(key) {
 
 module.exports = MongooseMap;
 
-},{"../helpers/get":299,"../helpers/specialProperties":320,"../helpers/symbols":321,"../schema/mixed":351,"util":404}],372:[function(require,module,exports){
+},{"../helpers/document/handleSpreadDoc":299,"../helpers/get":300,"../helpers/specialProperties":321,"../helpers/symbols":322,"../schema/mixed":352,"../utils":375,"util":407}],373:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -91158,7 +91398,7 @@ ObjectId.prototype[objectIdSymbol] = true;
 
 module.exports = ObjectId;
 
-},{"../driver":270,"../helpers/symbols":321}],373:[function(require,module,exports){
+},{"../driver":269,"../helpers/symbols":322}],374:[function(require,module,exports){
 'use strict';
 
 const Document = require('../document');
@@ -91199,7 +91439,14 @@ function Subdocument(value, fields, parent, skipId, options) {
       if (!this.$__.activePaths.states.modify[key] &&
           !this.$__.activePaths.states.default[key] &&
           !this.$__.$setCalled.has(key)) {
-        delete this._doc[key];
+        const schematype = this.schema.path(key);
+        const def = schematype == null ? void 0 : schematype.getDefault(this);
+        if (def === void 0) {
+          delete this._doc[key];
+        } else {
+          this._doc[key] = def;
+          this.$__.activePaths.default(key);
+        }
       }
     }
   }
@@ -91435,7 +91682,7 @@ function registerRemoveListener(sub) {
   owner.on('remove', emitRemove);
 }
 
-},{"../document":268,"../helpers/immediate":301,"../helpers/promiseOrCallback":310,"../helpers/symbols":321,"../options":325}],374:[function(require,module,exports){
+},{"../document":267,"../helpers/immediate":302,"../helpers/promiseOrCallback":311,"../helpers/symbols":322,"../options":326}],375:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -92340,7 +92587,7 @@ exports.getOption = function(name) {
 exports.noop = function() {};
 
 }).call(this,require('_process'))
-},{"./document":268,"./helpers/clone":292,"./helpers/getFunctionName":300,"./helpers/isBsonType":302,"./helpers/isMongooseObject":303,"./helpers/isObject":304,"./helpers/promiseOrCallback":310,"./helpers/specialProperties":320,"./options/PopulateOptions":326,"./types/decimal128":367,"./types/objectid":372,"_process":391,"mpath":378,"ms":376,"safe-buffer":377,"sliced":393}],375:[function(require,module,exports){
+},{"./document":267,"./helpers/clone":292,"./helpers/getFunctionName":301,"./helpers/isBsonType":303,"./helpers/isMongooseObject":304,"./helpers/isObject":305,"./helpers/promiseOrCallback":311,"./helpers/specialProperties":321,"./options/PopulateOptions":327,"./types/decimal128":368,"./types/objectid":373,"_process":393,"mpath":379,"ms":377,"safe-buffer":378,"sliced":395}],376:[function(require,module,exports){
 'use strict';
 
 /**
@@ -92360,6 +92607,11 @@ exports.noop = function() {};
  * @param {boolean} [options.justOne=false] by default, a populated virtual is an array. If you set `justOne`, the populated virtual will be a single doc or `null`.
  * @param {boolean} [options.getters=false] if you set this to `true`, Mongoose will call any custom getters you defined on this virtual
  * @param {boolean} [options.count=false] if you set this to `true`, `populate()` will set this virtual to the number of populated documents, as opposed to the documents themselves, using [`Query#countDocuments()`](./api.html#query_Query-countDocuments)
+ * @param {Object|Function} [options.match=null] add an extra match condition to `populate()`
+ * @param {Number} [options.limit=null] add a default `limit` to the `populate()` query
+ * @param {Number} [options.skip=null] add a default `skip` to the `populate()` query
+ * @param {Number} [options.perDocumentLimit=null] For legacy reasons, `limit` with `populate()` may give incorrect results because it only executes a single query for every document being populated. If you set `perDocumentLimit`, Mongoose will ensure correct `limit` per document by executing a separate query for each document to `populate()`. For example, `.find().populate({ path: 'test', perDocumentLimit: 2 })` will execute 2 additional queries if `.find()` returns 2 documents.
+ * @param {Object} [options.options=null] Additional options like `limit` and `lean`.
  * @api public
  */
 
@@ -92398,7 +92650,7 @@ VirtualType.prototype._applyDefaultGetters = function() {
  */
 
 VirtualType.prototype.clone = function() {
-  const clone = new VirtualType(this.name, this.options);
+  const clone = new VirtualType(this.options, this.path);
   clone.getters = [].concat(this.getters);
   clone.setters = [].concat(this.setters);
   return clone;
@@ -92505,7 +92757,7 @@ VirtualType.prototype.applySetters = function(value, doc) {
 
 module.exports = VirtualType;
 
-},{}],376:[function(require,module,exports){
+},{}],377:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -92669,7 +92921,7 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],377:[function(require,module,exports){
+},{}],378:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -92733,10 +92985,10 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":114}],378:[function(require,module,exports){
+},{"buffer":114}],379:[function(require,module,exports){
 module.exports = exports = require('./lib');
 
-},{"./lib":379}],379:[function(require,module,exports){
+},{"./lib":380}],380:[function(require,module,exports){
 // These properties are special and can open client libraries to security
 // issues
 var ignoreProperties = ['__proto__', 'constructor', 'prototype'];
@@ -93046,7 +93298,7 @@ function K (v) {
   return v;
 }
 
-},{}],380:[function(require,module,exports){
+},{}],381:[function(require,module,exports){
 'use strict';
 
 /**
@@ -93094,7 +93346,7 @@ function notImplemented(method) {
   };
 }
 
-},{}],381:[function(require,module,exports){
+},{}],382:[function(require,module,exports){
 'use strict';
 
 var env = require('../env');
@@ -93109,7 +93361,7 @@ module.exports =
       require('./collection');
 
 
-},{"../env":383,"./collection":380,"./node":382}],382:[function(require,module,exports){
+},{"../env":384,"./collection":381,"./node":383}],383:[function(require,module,exports){
 'use strict';
 
 /**
@@ -93262,7 +93514,7 @@ NodeCollection.prototype.findCursor = function(match, findOptions) {
 
 module.exports = exports = NodeCollection;
 
-},{"../utils":386,"./collection":380}],383:[function(require,module,exports){
+},{"../utils":387,"./collection":381}],384:[function(require,module,exports){
 (function (process,global,Buffer){
 'use strict';
 
@@ -93288,7 +93540,7 @@ exports.type = exports.isNode ? 'node'
       : 'unknown';
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":391,"buffer":114}],384:[function(require,module,exports){
+},{"_process":393,"buffer":114}],385:[function(require,module,exports){
 'use strict';
 
 /**
@@ -96542,7 +96794,7 @@ module.exports = exports = Query;
 // TODO
 // test utils
 
-},{"./collection":381,"./collection/collection":380,"./env":383,"./permissions":385,"./utils":386,"assert":88,"bluebird":93,"debug":387,"sliced":393,"util":404}],385:[function(require,module,exports){
+},{"./collection":382,"./collection/collection":381,"./env":384,"./permissions":386,"./utils":387,"assert":88,"bluebird":93,"debug":388,"sliced":395,"util":407}],386:[function(require,module,exports){
 'use strict';
 
 var denied = exports;
@@ -96632,7 +96884,7 @@ denied.count.maxScan =
 denied.count.snapshot =
 denied.count.tailable = true;
 
-},{}],386:[function(require,module,exports){
+},{}],387:[function(require,module,exports){
 (function (process,setImmediate){
 'use strict';
 
@@ -96992,7 +97244,7 @@ exports.isArgumentsObject = function(v) {
 };
 
 }).call(this,require('_process'),require("timers").setImmediate)
-},{"_process":391,"regexp-clone":392,"safe-buffer":389,"timers":394}],387:[function(require,module,exports){
+},{"_process":393,"regexp-clone":394,"safe-buffer":390,"timers":396}],388:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -97191,7 +97443,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":388,"_process":391}],388:[function(require,module,exports){
+},{"./debug":389,"_process":393}],389:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -97418,9 +97670,9 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":390}],389:[function(require,module,exports){
-arguments[4][377][0].apply(exports,arguments)
-},{"buffer":114,"dup":377}],390:[function(require,module,exports){
+},{"ms":391}],390:[function(require,module,exports){
+arguments[4][378][0].apply(exports,arguments)
+},{"buffer":114,"dup":378}],391:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -97574,7 +97826,99 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],391:[function(require,module,exports){
+},{}],392:[function(require,module,exports){
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+'use strict';
+/* eslint-disable no-unused-vars */
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !==
+				'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
+},{}],393:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -97760,7 +98104,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],392:[function(require,module,exports){
+},{}],394:[function(require,module,exports){
 
 const toString = Object.prototype.toString;
 
@@ -97789,7 +98133,7 @@ module.exports = exports = function (regexp) {
 }
 
 
-},{}],393:[function(require,module,exports){
+},{}],395:[function(require,module,exports){
 
 /**
  * An Array.prototype.slice.call(arguments) alternative
@@ -97824,7 +98168,7 @@ module.exports = function (args, slice, sliceEnd) {
 }
 
 
-},{}],394:[function(require,module,exports){
+},{}],396:[function(require,module,exports){
 (function (setImmediate,clearImmediate){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -97903,7 +98247,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-},{"process/browser.js":391,"timers":394}],395:[function(require,module,exports){
+},{"process/browser.js":393,"timers":396}],397:[function(require,module,exports){
 module.exports={
   "10*": {
     "value": 10,
@@ -99107,10 +99451,10 @@ module.exports={
   }
 }
 
-},{}],396:[function(require,module,exports){
+},{}],398:[function(require,module,exports){
 module.exports={"mol":true,"sr":true,"Hz":true,"N":true,"Pa":true,"J":true,"W":true,"A":true,"V":true,"F":true,"Ohm":true,"S":true,"Wb":true,"Cel":true,"T":true,"H":true,"lm":true,"lx":true,"Bq":true,"Gy":true,"Sv":true,"l":true,"L":true,"ar":true,"t":true,"bar":true,"u":true,"eV":true,"pc":true,"[c]":true,"[h]":true,"[k]":true,"[eps_0]":true,"[mu_0]":true,"[e]":true,"[m_e]":true,"[m_p]":true,"[G]":true,"[g]":true,"[ly]":true,"gf":true,"Ky":true,"Gal":true,"dyn":true,"erg":true,"P":true,"Bi":true,"St":true,"Mx":true,"G":true,"Oe":true,"Gb":true,"sb":true,"Lmb":true,"ph":true,"Ci":true,"R":true,"RAD":true,"REM":true,"cal_[15]":true,"cal_[20]":true,"cal_m":true,"cal_IT":true,"cal_th":true,"cal":true,"tex":true,"m[H2O]":true,"m[Hg]":true,"eq":true,"osm":true,"g%":true,"kat":true,"U":true,"[iU]":true,"[IU]":true,"Np":true,"B":true,"B[SPL]":true,"B[V]":true,"B[mV]":true,"B[uV]":true,"B[10.nV]":true,"B[W]":true,"B[kW]":true,"st":true,"mho":true,"bit":true,"By":true,"Bd":true,"m":true,"s":true,"g":true,"rad":true,"K":true,"C":true,"cd":true}
 
-},{}],397:[function(require,module,exports){
+},{}],399:[function(require,module,exports){
 module.exports={
   "Y": {
     "CODE": "YA",
@@ -99474,7 +99818,7 @@ module.exports={
   }
 }
 
-},{}],398:[function(require,module,exports){
+},{}],400:[function(require,module,exports){
 module.exports={
   "Y": 1e+24,
   "Z": 1e+21,
@@ -99502,7 +99846,7 @@ module.exports={
   "Ti": 1099511627776
 }
 
-},{}],399:[function(require,module,exports){
+},{}],401:[function(require,module,exports){
 module.exports = (function() {
   /*
    * Generated by PEG.js 0.8.0.
@@ -101050,7 +101394,7 @@ module.exports = (function() {
   };
 })();
 
-},{"../lib/helpers":401,"./metrics.json":396,"./prefixMetadata.json":397,"./prefixes.json":398,"./unitMetadata.json":400}],400:[function(require,module,exports){
+},{"../lib/helpers":403,"./metrics.json":398,"./prefixMetadata.json":399,"./prefixes.json":400,"./unitMetadata.json":402}],402:[function(require,module,exports){
 module.exports={
   "10*": {
     "isBase": false,
@@ -107237,7 +107581,7 @@ module.exports={
   }
 }
 
-},{}],401:[function(require,module,exports){
+},{}],403:[function(require,module,exports){
 module.exports = {
 
   multiply: function multiply(t, ms) {
@@ -107307,7 +107651,7 @@ module.exports = {
   }
 }
 
-},{}],402:[function(require,module,exports){
+},{}],404:[function(require,module,exports){
 parser = require('./generated/ucum-parser.js');
 equivalents = require('./generated/equivalents.json');
 helpers = require('./lib/helpers.js');
@@ -107537,8 +107881,10 @@ function unitQuery(criteria, resultFields){
     return obj;
   });
 }
-},{"./generated/equivalents.json":395,"./generated/ucum-parser.js":399,"./generated/unitMetadata.json":400,"./lib/helpers.js":401}],403:[function(require,module,exports){
+},{"./generated/equivalents.json":397,"./generated/ucum-parser.js":401,"./generated/unitMetadata.json":402,"./lib/helpers.js":403}],405:[function(require,module,exports){
+arguments[4][89][0].apply(exports,arguments)
+},{"dup":89}],406:[function(require,module,exports){
 arguments[4][90][0].apply(exports,arguments)
-},{"dup":90}],404:[function(require,module,exports){
+},{"dup":90}],407:[function(require,module,exports){
 arguments[4][91][0].apply(exports,arguments)
-},{"./support/isBuffer":403,"_process":391,"dup":91,"inherits":254}]},{},[87]);
+},{"./support/isBuffer":406,"_process":393,"dup":91,"inherits":405}]},{},[87]);
