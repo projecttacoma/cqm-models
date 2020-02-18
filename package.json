@@ -17,7 +17,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cql-execution": "1.4.0",
-    "mongoose": "^5.4.14"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "browserify": "^16.1.0",
