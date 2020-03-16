@@ -70,6 +70,7 @@ module QDM
         populate_fields(field_name, data_element, negate_data_element) if !data_element[field_name] || data_element[field_name] == []
       end
       QDM::BaseTypeGeneration.generate_entities(data_element)
+      data_element.identifier = QDM::BaseTypeGeneration.generate_qdm_id if data_element.respond_to? 'identifier'
       data_element
     end
 
