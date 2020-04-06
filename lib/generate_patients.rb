@@ -15,6 +15,7 @@ module QDM
       qdm_patient = nil
       datatypes.each do |type|
         next if type.include? 'PatientCharacteristic'
+
         # 1 Patient Per data element type containing negated and non-negated type (if negatable)
         if cqm_patient.nil? || qdm_patient.nil? || new_patient_for_each_type
           cqm_patient = QDM::BaseTypeGeneration.generate_cqm_patient(type)
@@ -53,6 +54,7 @@ module QDM
         # Store datatype and its attributes (reject irrelevant datatypes)
         next if datatype_name.include?('Negative') || datatype_name.include?('Positive') ||
                 datatype_name.include?('QDMBaseType') || (exclusion_array.include? datatype_name)
+
         datatypes.push(datatype_name)
       end
       datatypes
@@ -64,10 +66,11 @@ module QDM
       fields.each do |field_name|
         # Ignore these fields, they are used by mongo
         next if %w[_id _type].include? field_name
-        if !data_element[field_name] || data_element[field_name] == []
-          populate_fields(field_name, data_element, negate_data_element)
-        end
+
+        populate_fields(field_name, data_element, negate_data_element) if !data_element[field_name] || data_element[field_name] == []
       end
+      QDM::BaseTypeGeneration.generate_entities(data_element)
+      data_element.identifier = QDM::BaseTypeGeneration.generate_qdm_id if data_element.respond_to? 'identifier'
       data_element
     end
 
@@ -81,12 +84,14 @@ module QDM
         data_element[field_name] = QDM::BaseTypeGeneration.generate_code_field if negate_data_element
       elsif field_name == 'components'
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_component]
+      elsif field_name == 'dataElementCodes'
+        # TODO: Populate dataElementCodes with codes specifically for data element type
+        data_element[field_name] = [QDM::BaseTypeGeneration.generate_code_field]
+      elsif field_name == 'diagnoses'
+        data_element[field_name] = [QDM::BaseTypeGeneration.generate_diagnosis]
       elsif field_name == 'result'
         # TODO: Result can be MANY Integer, Decimal, Code, Quantity or Ratio randomize this
         data_element[field_name] = QDM::BaseTypeGeneration.generate_code_field
-      elsif %w[diagnoses dataElementCodes].include? field_name
-        # TODO: Populate dataElementCodes with codes specifically for data element type
-        data_element[field_name] = [QDM::BaseTypeGeneration.generate_code_field]
       elsif field_name == 'facilityLocations'
         # TODO: Randomize number of facility locations added
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_facility_location]
