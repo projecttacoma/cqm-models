@@ -89,7 +89,7 @@ module QDM
     def self.generate_result
       # minimum allowed set Integer, Decimal, Code, Quantity, Ratio
       # sometimes allowed to be DateTime, Time, or Date in certain contexts (from modelinfo file)
-      case Random.rand(4)
+      case Random.rand(5)
       when 0 then return rand(10_000)
       when 1 then return rand(0.0..10_000.0)
       when 2 then return generate_code_field
