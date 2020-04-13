@@ -86,17 +86,17 @@ module QDM
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_component]
       elsif field_name == 'dataElementCodes'
         # TODO: Populate dataElementCodes with codes specifically for data element type
+        # might need to build a large map of data element type to relevent codes
+        # should also be done for <data element type>.attribute -> relevant code for the coded attributes
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_code_field]
       elsif field_name == 'diagnoses'
         data_element[field_name] = [QDM::BaseTypeGeneration.generate_diagnosis]
       elsif field_name == 'result'
-        # TODO: Result can be MANY Integer, Decimal, Code, Quantity or Ratio randomize this
-        data_element[field_name] = QDM::BaseTypeGeneration.generate_code_field
+        data_element[field_name] = QDM::BaseTypeGeneration.generate_result
       elsif field_name == 'facilityLocations'
-        # TODO: Randomize number of facility locations added
-        data_element[field_name] = [QDM::BaseTypeGeneration.generate_facility_location]
+        # create up to 5 facility locations
+        data_element[field_name] = (0..rand(5)).map { QDM::BaseTypeGeneration.generate_facility_location }
       elsif field_name == 'facilityLocation'
-        # TODO: Randomize number of facility locations added
         data_element[field_name] = QDM::BaseTypeGeneration.generate_facility_location
       elsif field_name == 'targetOutcome'
         # TODO: Randomize type of targetOutcome, use code for now
