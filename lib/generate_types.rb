@@ -99,10 +99,7 @@ module QDM
     end
 
     def self.generate_ratio
-      ratio = QDM::Ratio.new
-      ratio.numerator = rand(10_000)
-      ratio.denominator = rand(10_000)
-      ratio
+      QDM::Ratio.new(rand(10_000), rand(10_000))
     end
 
     def self.random_string(length)
