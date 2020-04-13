@@ -30,6 +30,7 @@ module QDM
       # this custom class from it.
       def demongoize(object)
         return nil unless object
+
         object = object.symbolize_keys
         if object.is_a?(Hash)
           # This will turn the object into the concrete type eg: facilityLocation

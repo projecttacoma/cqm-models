@@ -21,6 +21,7 @@ RSpec.describe QDM do
       end
       # Store datatype and its attributes (reject irrelevant datatypes)
       next if datatype_name.include?('Negative') || datatype_name.include?('Positive') || datatype_name.include?('QDMBaseType')
+
       datatypes[datatype_name] = attributes
     end
     datatypes

@@ -6,6 +6,7 @@ module QDM
     def self.by_hqmf_oid(hqmfOid)
       datatype = @hqmfOidToDatatypeMap[hqmfOid]
       return nil if datatype.nil?
+
       return QDM.const_get(datatype)
     end
   end

@@ -1,6 +1,7 @@
 require('nokogiri')
 require_relative '../app/models/models'
 require('generate_types')
+require('generate_entities')
 
 module QDM
   # PatientGeneration module can be used to generate patients with dataElements that are populated
@@ -8,7 +9,7 @@ module QDM
   module PatientGeneration
     # Generates patient(s) with fully-loaded dataElements if new_patient_for_each_type is false then a
     # single patient will be returned that has every data element on it
-    def self.generate_exhastive_data_element_patients(new_patient_for_each_type = true, model_info_file = 'qdm-modelinfo-5.5.xml')
+    def self.generate_exhaustive_data_element_patients(new_patient_for_each_type = true, model_info_file = 'qdm-modelinfo-5.5.xml')
       datatypes = get_datatypes(File.join(File.dirname(__FILE__), "../modelinfo/#{model_info_file}"))
       patients = []
       cqm_patient = nil
@@ -34,7 +35,7 @@ module QDM
         data_element = generate_loaded_datatype(type)
         qdm_patient.dataElements.push(data_element)
         # if type is negatable, add a negated version to the patient
-        if data_element.fields.keys.include? 'negationRationale'
+        if data_element.fields.key?('negationRationale')
           negated_data_element = generate_loaded_datatype(type, true)
           qdm_patient.dataElements.push(negated_data_element)
         end
@@ -69,7 +70,7 @@ module QDM
 
         populate_fields(field_name, data_element, negate_data_element) if !data_element[field_name] || data_element[field_name] == []
       end
-      QDM::BaseTypeGeneration.generate_entities(data_element)
+      QDM::EntityGeneration.generate_entities(data_element)
       data_element.identifier = QDM::BaseTypeGeneration.generate_qdm_id if data_element.respond_to? 'identifier'
       data_element
     end

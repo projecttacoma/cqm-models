@@ -19,6 +19,7 @@ module QDM
       # this custom class from it.
       def demongoize(date_str)
         return nil unless date_str
+
         year = date_str[0..3].to_i
         month = date_str[5..6].to_i
         day = date_str[8..10].to_i

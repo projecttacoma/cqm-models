@@ -22,6 +22,7 @@ module QDM
       # [ numerator, denominator ].
       def demongoize(object)
         return nil unless object
+
         object = object.symbolize_keys
         QDM::Ratio.new(object[:numerator], object[:denominator]) if object.is_a?(Hash)
       end

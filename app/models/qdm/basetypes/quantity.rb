@@ -22,6 +22,7 @@ module QDM
       # [ value, unit ].
       def demongoize(object)
         return nil unless object
+
         object = object.symbolize_keys
         QDM::Quantity.new(object[:value], object[:unit]) if object.is_a?(Hash)
       end

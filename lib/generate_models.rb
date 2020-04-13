@@ -75,11 +75,13 @@ puts Dir.entries('.')
 # Open specified modelinfo file
 modelinfo_file = ARGV[0]
 raise 'Please provide a valid modelinfo file path and name.' if modelinfo_file.blank? || !File.file?(modelinfo_file)
+
 modelinfo = File.open(modelinfo_file) { |f| Nokogiri::XML(f) }
 
 # Open specified HQMF oid file
 oids_file = ARGV[1]
 raise 'Please provide a valid HQMF oid file path and name.' if oids_file.blank? || !File.file?(oids_file)
+
 oids = JSON.parse(File.read(oids_file))
 
 # If this script was run with a third parameter of 'TEST', then generate the models in a
@@ -140,9 +142,7 @@ modelinfo.xpath('//ns4:typeInfo').each do |type|
   end
 
   # Add the qdmVersion attribute unless the base type is one that will provide it
-  unless ['QDM.Entity', 'QDM.Component'].include? type['baseType']
-    attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version }
-  end
+  attributes << { name: 'qdmVersion', type: 'System.String', default: qdm_version } unless ['QDM.Entity', 'QDM.Component'].include? type['baseType']
 
   datatypes[datatype_name] = { attributes: attributes }
 end
@@ -309,9 +309,7 @@ end
 # Inject Ruby Patient model extensions
 GeneratorHelpers.inject_extension('templates/patient_extension.rb.erb', ruby_models_path + 'patient.rb')
 # Inject Ruby Entity model extensions
-if datatypes['Entity']
-  GeneratorHelpers.inject_extension('templates/entity_extension.rb.erb', ruby_models_path + 'entity.rb')
-end
+GeneratorHelpers.inject_extension('templates/entity_extension.rb.erb', ruby_models_path + 'entity.rb') if datatypes['Entity']
 
 # Make sure Ruby models are in the correct module
 ruby_models_path = 'app/models/qdm/'
@@ -341,6 +339,7 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   end
   # TODO: Might be able to make this list by finding baseType="System.Any" in model info file instead of hard-coding.
   next if types_not_inherited_by_data_element.any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+
   contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :patient\n")
   File.open(file_name, 'w') { |file| file.puts contents }
 end
