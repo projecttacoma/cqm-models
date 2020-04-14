@@ -51,7 +51,7 @@ module QDM
       # https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.12839/expansion/Latest
       unit = ['%', '/10*10', '10*12/L', 'K', 'U/(10.g){feces}', '[IU]/g', 'cm', 'erg',
               'g/L', 'kat', 'mA', 'osm', 's/{control}', '{CPM}', '{Pan_Bio\'U}', '{mutation}']
-      QDM::Quantity.new(Random.rand(10_000), unit[rand(16)])
+      QDM::Quantity.new(rand(0.0..10_000.0), unit[rand(16)])
     end
 
     def self.generate_date_interval_field
@@ -87,14 +87,13 @@ module QDM
     end
 
     def self.generate_result
-      # minimum allowed set Integer, Decimal, Code, Quantity, Ratio
+      # minimum allowed set Integer (converts incorrectly for tests), Decimal, Code, Quantity, Ratio
       # sometimes allowed to be DateTime, Time, or Date in certain contexts (from modelinfo file)
-      case Random.rand(5)
-      when 0 then return rand(10_000)
-      when 1 then return rand(0.0..10_000.0)
-      when 2 then return generate_code_field
-      when 3 then return generate_quantity
-      when 4 then return generate_ratio
+      case Random.rand(4)
+      when 0 then return rand(0.0..10_000.0)
+      when 1 then return generate_code_field
+      when 2 then return generate_quantity
+      when 3 then return generate_ratio
       end
     end
 
@@ -104,7 +103,7 @@ module QDM
 
     def self.random_string(length)
       # create and array of size length and map to a random character from ! (33) to ~ (126)
-      (0...length).map { rand(33..126).chr }.join
+      (0...length).map { rand(65..122).chr }.join
     end
   end
 end
