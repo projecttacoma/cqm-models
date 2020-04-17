@@ -103,7 +103,7 @@ module QDM
 
     def self.random_string(length)
       # create and array of size length and map to a random character from ! (33) to ~ (126)
-      (0...length).map { rand(65..122).chr }.join
+      [*'a'..'z', *'A'..'Z'].sample(length).join
     end
   end
 end
