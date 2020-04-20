@@ -20274,7 +20274,7 @@ function numberIsNaN (obj) {
     DateTime.prototype.differenceBetween = function(other, unitField) {
       var a, aHighMoment, aJS, aLowMoment, aUncertainty, b, bHighMoment, bJS, bLowMoment, bUncertainty, tzDiff;
       other = this._implicitlyConvert(other);
-      if (!(other instanceof DateTime)) {
+      if (!(other != null ? other.isDateTime : void 0)) {
         return null;
       }
       a = this.copy();
@@ -20346,7 +20346,7 @@ function numberIsNaN (obj) {
     DateTime.prototype.durationBetween = function(other, unitField) {
       var a, b;
       other = this._implicitlyConvert(other);
-      if (!(other instanceof DateTime)) {
+      if (!(other != null ? other.isDateTime : void 0)) {
         return null;
       }
       a = this.toUncertainty();
@@ -20555,7 +20555,7 @@ function numberIsNaN (obj) {
     };
 
     DateTime.prototype._implicitlyConvert = function(other) {
-      if (other instanceof Date) {
+      if ((other != null ? other.isDate : void 0)) {
         return other.getDateTime();
       }
       return other;
@@ -20665,10 +20665,10 @@ function numberIsNaN (obj) {
 
     Date.prototype.differenceBetween = function(other, unitField) {
       var a, b;
-      if (other instanceof DateTime) {
+      if ((other != null ? other.isDateTime : void 0)) {
         return this.getDateTime().differenceBetween(other, unitField);
       }
-      if (!(other instanceof Date)) {
+      if (!(other != null ? other.isDate : void 0)) {
         return null;
       }
       a = this;
@@ -20700,10 +20700,10 @@ function numberIsNaN (obj) {
 
     Date.prototype.durationBetween = function(other, unitField) {
       var a, b;
-      if (other instanceof DateTime) {
+      if ((other != null ? other.isDateTime : void 0)) {
         return this.getDateTime().durationBetween(other, unitField);
       }
-      if (!(other instanceof Date)) {
+      if (!(other != null ? other.isDate : void 0)) {
         return null;
       }
       a = this.toUncertainty();
@@ -21358,16 +21358,45 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.contains = function(item, precision) {
-      var closed;
-      if (item instanceof Interval) {
+      var highFn, lowFn;
+      if (this.lowClosed && (this.low != null) && cmp.equals(this.low, item)) {
+        return true;
+      }
+      if (this.highClosed && (this.high != null) && cmp.equals(this.high, item)) {
+        return true;
+      }
+      if (item != null ? item.isInterval : void 0) {
         throw new Error("Argument to contains must be a point");
       }
-      closed = this.toClosed();
-      return ThreeValuedLogic.and(cmp.lessThanOrEquals(closed.low, item, precision), cmp.greaterThanOrEquals(closed.high, item, precision));
+      lowFn = (function() {
+        switch (false) {
+          case !(this.lowClosed && (this.low == null)):
+            return function() {
+              return true;
+            };
+          case !this.lowClosed:
+            return cmp.lessThanOrEquals;
+          default:
+            return cmp.lessThan;
+        }
+      }).call(this);
+      highFn = (function() {
+        switch (false) {
+          case !(this.highClosed && (this.high == null)):
+            return function() {
+              return true;
+            };
+          case !this.highClosed:
+            return cmp.greaterThanOrEquals;
+          default:
+            return cmp.greaterThan;
+        }
+      }).call(this);
+      return ThreeValuedLogic.and(lowFn(this.low, item, precision), highFn(this.high, item, precision));
     };
 
     Interval.prototype.properlyIncludes = function(other, precision) {
-      if (!(other instanceof Interval)) {
+      if (!(other != null ? other.isInterval : void 0)) {
         throw new Error("Argument to properlyIncludes must be an interval");
       }
       return ThreeValuedLogic.and(this.includes(other, precision), ThreeValuedLogic.not(other.includes(this, precision)));
@@ -21375,7 +21404,7 @@ function numberIsNaN (obj) {
 
     Interval.prototype.includes = function(other, precision) {
       var a, b;
-      if (!(other instanceof Interval)) {
+      if (!(other != null ? other.isInterval : void 0)) {
         return this.contains(other, precision);
       }
       a = this.toClosed();
@@ -21384,7 +21413,7 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.includedIn = function(other, precision) {
-      if (!(other instanceof Interval)) {
+      if (!(other != null ? other.isInterval : void 0)) {
         return this.contains(other, precision);
       } else {
         return other.includes(this);
@@ -21394,42 +21423,42 @@ function numberIsNaN (obj) {
     Interval.prototype.overlaps = function(item, precision) {
       var closed, high, itemClosed, low, ref2;
       closed = this.toClosed();
-      ref2 = item instanceof Interval ? (itemClosed = item.toClosed(), [itemClosed.low, itemClosed.high]) : [item, item], low = ref2[0], high = ref2[1];
+      ref2 = (item != null ? item.isInterval : void 0) ? (itemClosed = item.toClosed(), [itemClosed.low, itemClosed.high]) : [item, item], low = ref2[0], high = ref2[1];
       return ThreeValuedLogic.and(cmp.lessThanOrEquals(closed.low, high, precision), cmp.greaterThanOrEquals(closed.high, low, precision));
     };
 
     Interval.prototype.overlapsAfter = function(item, precision) {
       var closed, high;
       closed = this.toClosed();
-      high = item instanceof Interval ? item.toClosed().high : item;
+      high = (item != null ? item.isInterval : void 0) ? item.toClosed().high : item;
       return ThreeValuedLogic.and(cmp.lessThanOrEquals(closed.low, high, precision), cmp.greaterThan(closed.high, high, precision));
     };
 
     Interval.prototype.overlapsBefore = function(item, precision) {
       var closed, low;
       closed = this.toClosed();
-      low = item instanceof Interval ? item.toClosed().low : item;
+      low = (item != null ? item.isInterval : void 0) ? item.toClosed().low : item;
       return ThreeValuedLogic.and(cmp.lessThan(closed.low, low, precision), cmp.greaterThanOrEquals(closed.high, low, precision));
     };
 
     areDateTimes = function(x, y) {
       return [x, y].every(function(z) {
-        return z instanceof DateTime;
+        return z != null ? z.isDateTime : void 0;
       });
     };
 
     areNumeric = function(x, y) {
       return [x, y].every(function(z) {
-        return typeof z === 'number' || (z instanceof Uncertainty && typeof z.low === 'number');
+        return typeof z === 'number' || ((z != null ? z.isUncertainty : void 0) && typeof z.low === 'number');
       });
     };
 
     lowestNumericUncertainty = function(x, y) {
       var high, low;
-      if (!(x instanceof Uncertainty)) {
+      if (!(x != null ? x.isUncertainty : void 0)) {
         x = new Uncertainty(x);
       }
-      if (!(y instanceof Uncertainty)) {
+      if (!(y != null ? y.isUncertainty : void 0)) {
         y = new Uncertainty(y);
       }
       low = x.low < y.low ? x.low : y.low;
@@ -21443,10 +21472,10 @@ function numberIsNaN (obj) {
 
     highestNumericUncertainty = function(x, y) {
       var high, low;
-      if (!(x instanceof Uncertainty)) {
+      if (!(x != null ? x.isUncertainty : void 0)) {
         x = new Uncertainty(x);
       }
-      if (!(y instanceof Uncertainty)) {
+      if (!(y != null ? y.isUncertainty : void 0)) {
         y = new Uncertainty(y);
       }
       low = x.low > y.low ? x.low : y.low;
@@ -21460,7 +21489,7 @@ function numberIsNaN (obj) {
 
     Interval.prototype.union = function(other) {
       var a, b, h, hc, l, lc, ref2, ref3, ref4;
-      if (!(other instanceof Interval)) {
+      if (!(other != null ? other.isInterval : void 0)) {
         throw new Error("Argument to union must be an interval");
       }
       if (this.overlaps(other) || this.meets(other)) {
@@ -21501,7 +21530,7 @@ function numberIsNaN (obj) {
 
     Interval.prototype.intersect = function(other) {
       var a, b, h, hc, l, lc, ref2, ref3, ref4;
-      if (!(other instanceof Interval)) {
+      if (!(other != null ? other.isInterval : void 0)) {
         throw new Error("Argument to union must be an interval");
       }
       if (this.overlaps(other)) {
@@ -21545,7 +21574,7 @@ function numberIsNaN (obj) {
       if (other === null) {
         return null;
       }
-      if (!(other instanceof Interval)) {
+      if (!(other != null ? other.isInterval : void 0)) {
         throw new Error("Argument to except must be an interval");
       }
       ol = this.overlaps(other);
@@ -21622,7 +21651,7 @@ function numberIsNaN (obj) {
 
     Interval.prototype.equals = function(other) {
       var a, b, ref2;
-      if (other instanceof Interval) {
+      if (other != null ? other.isInterval : void 0) {
         ref2 = [this.toClosed(), other.toClosed()], a = ref2[0], b = ref2[1];
         return ThreeValuedLogic.and(cmp.equals(a.low, b.low), cmp.equals(a.high, b.high));
       } else {
@@ -21655,10 +21684,10 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.meetsAfter = function(other, precision) {
-      var ref2;
+      var ref2, ref3;
       try {
-        if ((precision != null) && this.low instanceof DateTime) {
-          return this.toClosed().low.sameAs((ref2 = other.toClosed().high) != null ? ref2.add(1, precision) : void 0, precision);
+        if ((precision != null) && ((ref2 = this.low) != null ? ref2.isDateTime : void 0)) {
+          return this.toClosed().low.sameAs((ref3 = other.toClosed().high) != null ? ref3.add(1, precision) : void 0, precision);
         } else {
           return cmp.equals(this.toClosed().low, successor(other.toClosed().high));
         }
@@ -21668,10 +21697,10 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.meetsBefore = function(other, precision) {
-      var ref2;
+      var ref2, ref3;
       try {
-        if ((precision != null) && this.high instanceof DateTime) {
-          return this.toClosed().high.sameAs((ref2 = other.toClosed().low) != null ? ref2.add(-1, precision) : void 0, precision);
+        if ((precision != null) && ((ref2 = this.high) != null ? ref2.isDateTime : void 0)) {
+          return this.toClosed().high.sameAs((ref3 = other.toClosed().low) != null ? ref3.add(-1, precision) : void 0, precision);
         } else {
           return cmp.equals(this.toClosed().high, predecessor(other.toClosed().low));
         }
@@ -21703,8 +21732,8 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.starts = function(other, precision) {
-      var endLessThanOrEqual, startEqual;
-      if ((precision != null) && this.low instanceof DateTime) {
+      var endLessThanOrEqual, ref2, startEqual;
+      if ((precision != null) && ((ref2 = this.low) != null ? ref2.isDateTime : void 0)) {
         startEqual = this.low.sameAs(other.low, precision);
       } else {
         startEqual = cmp.equals(this.low, other.low);
@@ -21714,9 +21743,9 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.ends = function(other, precision) {
-      var endEqual, startGreaterThanOrEqual;
+      var endEqual, ref2, startGreaterThanOrEqual;
       startGreaterThanOrEqual = cmp.greaterThanOrEquals(this.low, other.low, precision);
-      if ((precision != null) && this.low instanceof DateTime) {
+      if ((precision != null) && ((ref2 = this.low) != null ? ref2.isDateTime : void 0)) {
         endEqual = this.high.sameAs(other.high, precision);
       } else {
         endEqual = cmp.equals(this.high, other.high);
@@ -21725,12 +21754,12 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.width = function() {
-      var closed, diff, highValue, lowValue;
+      var closed, diff, highValue, lowValue, ref2, ref3;
       if (((this.low != null) && (this.low.isDateTime || this.low.isDate || this.low.isTime)) || ((this.high != null) && (this.high.isDateTime || this.high.isDate || this.high.isTime))) {
         throw new Error("Width of Date, DateTime, and Time intervals is not supported");
       }
       closed = this.toClosed();
-      if (closed.low instanceof Uncertainty || closed.high instanceof Uncertainty) {
+      if (((ref2 = closed.low) != null ? ref2.isUncertainty : void 0) || ((ref3 = closed.high) != null ? ref3.isUncertainty : void 0)) {
         return null;
       } else if (closed.low.isQuantity) {
         if (closed.low.unit !== closed.high.unit) {
@@ -21748,13 +21777,13 @@ function numberIsNaN (obj) {
     };
 
     Interval.prototype.size = function() {
-      var closed, diff, highValue, lowValue, pointSize;
+      var closed, diff, highValue, lowValue, pointSize, ref2, ref3;
       pointSize = this.getPointSize();
       if (((this.low != null) && (this.low.isDateTime || this.low.isDate || this.low.isTime)) || ((this.high != null) && (this.high.isDateTime || this.high.isDate || this.high.isTime))) {
         throw new Error("Size of Date, DateTime, and Time intervals is not supported");
       }
       closed = this.toClosed();
-      if (closed.low instanceof Uncertainty || closed.high instanceof Uncertainty) {
+      if (((ref2 = closed.low) != null ? ref2.isUncertainty : void 0) || ((ref3 = closed.high) != null ? ref3.isUncertainty : void 0)) {
         return null;
       } else if (closed.low.isQuantity) {
         if (closed.low.unit !== closed.high.unit) {
@@ -21803,7 +21832,7 @@ function numberIsNaN (obj) {
     Interval.prototype.toClosed = function() {
       var high, low, point, ref2;
       point = (ref2 = this.low) != null ? ref2 : this.high;
-      if (typeof point === 'number' || point instanceof DateTime || (point != null ? point.isQuantity : void 0) || (point != null ? point.isDate : void 0)) {
+      if (typeof point === 'number' || (point != null ? point.isDateTime : void 0) || (point != null ? point.isQuantity : void 0) || (point != null ? point.isDate : void 0)) {
         low = (function() {
           switch (false) {
             case !(this.lowClosed && (this.low == null)):
@@ -21956,7 +21985,7 @@ function numberIsNaN (obj) {
 
     Quantity.prototype.sameOrBefore = function(other) {
       var other_v;
-      if (other instanceof Quantity) {
+      if (other != null ? other.isQuantity : void 0) {
         other_v = convert_value(other.value, ucum_unit(other.unit), ucum_unit(this.unit));
         if (other_v == null) {
           return null;
@@ -21968,7 +21997,7 @@ function numberIsNaN (obj) {
 
     Quantity.prototype.sameOrAfter = function(other) {
       var other_v;
-      if (other instanceof Quantity) {
+      if (other != null ? other.isQuantity : void 0) {
         other_v = convert_value(other.value, ucum_unit(other.unit), ucum_unit(this.unit));
         if (other_v == null) {
           return null;
@@ -21980,7 +22009,7 @@ function numberIsNaN (obj) {
 
     Quantity.prototype.after = function(other) {
       var other_v;
-      if (other instanceof Quantity) {
+      if (other != null ? other.isQuantity : void 0) {
         other_v = convert_value(other.value, ucum_unit(other.unit), ucum_unit(this.unit));
         if (other_v == null) {
           return null;
@@ -21992,7 +22021,7 @@ function numberIsNaN (obj) {
 
     Quantity.prototype.before = function(other) {
       var other_v;
-      if (other instanceof Quantity) {
+      if (other != null ? other.isQuantity : void 0) {
         other_v = convert_value(other.value, ucum_unit(other.unit), ucum_unit(this.unit));
         if (other_v == null) {
           return null;
@@ -22004,7 +22033,7 @@ function numberIsNaN (obj) {
 
     Quantity.prototype.equals = function(other) {
       var other_v;
-      if (other instanceof Quantity) {
+      if (other != null ? other.isQuantity : void 0) {
         if ((!this.unit && other.unit) || (this.unit && !other.unit)) {
           return false;
         } else if (!this.unit && !other.unit) {
@@ -22037,7 +22066,7 @@ function numberIsNaN (obj) {
 
     Quantity.prototype.multiplyDivide = function(other, operator) {
       var a, b, can_val, other_can_value, ucum_value, value;
-      if (other instanceof Quantity) {
+      if (other != null ? other.isQuantity : void 0) {
         a = this.unit != null ? this : new Quantity(this.value, '1');
         b = other.unit != null ? other : new Quantity(other.value, {
           unit: '1'
@@ -22251,7 +22280,7 @@ function numberIsNaN (obj) {
 
   doScaledAddition = function(a, b, scaleForB) {
     var a_unit, b_unit, ref1, val;
-    if (a instanceof Quantity && b instanceof Quantity) {
+    if ((a != null ? a.isQuantity : void 0) && (b != null ? b.isQuantity : void 0)) {
       ref1 = [coalesceToOne(a.unit), coalesceToOne(b.unit)], a_unit = ref1[0], b_unit = ref1[1];
       val = convert_value(b.value * scaleForB, b_unit, a_unit);
       if (val == null) {
@@ -22259,7 +22288,7 @@ function numberIsNaN (obj) {
       }
       return new Quantity(a.value + val, a_unit);
     } else if (a.copy && a.add) {
-      b_unit = b instanceof Quantity ? coalesceToOne(b.unit) : b.unit;
+      b_unit = (b != null ? b.isQuantity : void 0) ? coalesceToOne(b.unit) : b.unit;
       return a.copy().add(b.value * scaleForB, clean_unit(b_unit));
     } else {
       throw new Error("Unsupported argument types.");
@@ -22275,13 +22304,13 @@ function numberIsNaN (obj) {
   };
 
   module.exports.doDivision = function(a, b) {
-    if (a instanceof Quantity) {
+    if (a != null ? a.isQuantity : void 0) {
       return a.dividedBy(b);
     }
   };
 
   module.exports.doMultiplication = function(a, b) {
-    if (a instanceof Quantity) {
+    if (a != null ? a.isQuantity : void 0) {
       return a.multiplyBy(b);
     } else {
       return b.multiplyBy(a);
@@ -22352,7 +22381,7 @@ function numberIsNaN (obj) {
 
     Ratio.prototype.equals = function(other) {
       var divided_other, divided_this;
-      if (other instanceof Ratio) {
+      if (other != null ? other.isRatio : void 0) {
         divided_this = this.numerator.dividedBy(this.denominator);
         divided_other = other.numerator.dividedBy(other.denominator);
         return divided_this.equals(divided_other);
@@ -22387,7 +22416,7 @@ function numberIsNaN (obj) {
 
   module.exports.Uncertainty = Uncertainty = (function() {
     Uncertainty.from = function(obj) {
-      if (obj instanceof Uncertainty) {
+      if (obj != null ? obj.isUncertainty : void 0) {
         return obj;
       } else {
         return new Uncertainty(obj);
@@ -22421,6 +22450,14 @@ function numberIsNaN (obj) {
         ref = [this.high, this.low], this.low = ref[0], this.high = ref[1];
       }
     }
+
+    Object.defineProperties(Uncertainty.prototype, {
+      isUncertainty: {
+        get: function() {
+          return true;
+        }
+      }
+    });
 
     Uncertainty.prototype.copy = function() {
       var newHigh, newLow;
@@ -23755,11 +23792,12 @@ function numberIsNaN (obj) {
     function ValueSetRef(json) {
       ValueSetRef.__super__.constructor.apply(this, arguments);
       this.name = json.name;
+      this.libraryName = json.libraryName;
     }
 
     ValueSetRef.prototype.exec = function(ctx) {
       var valueset;
-      valueset = ctx.getValueSet(this.name);
+      valueset = ctx.getValueSet(this.name, this.libraryName);
       if (valueset instanceof Expression) {
         valueset = valueset.execute(ctx);
       }
@@ -24842,6 +24880,9 @@ function numberIsNaN (obj) {
       codes = this.codes;
       if (this.codes && typeof this.codes.exec === 'function') {
         codes = this.codes.execute(ctx);
+        if (codes == null) {
+          return [];
+        }
       }
       if (codes) {
         records = records.filter((function(_this) {
@@ -25766,8 +25807,12 @@ function numberIsNaN (obj) {
       return this.expressions[identifier] || this.includes[identifier];
     };
 
-    Library.prototype.getValueSet = function(identifier) {
-      return this.valuesets[identifier];
+    Library.prototype.getValueSet = function(identifier, libraryName) {
+      var ref;
+      if (this.valuesets[identifier] != null) {
+        return this.valuesets[identifier];
+      }
+      return (ref = this.includes[libraryName]) != null ? ref.valuesets[identifier] : void 0;
     };
 
     Library.prototype.getCodeSystem = function(identifier) {
@@ -65027,9 +65072,9 @@ function numberIsNaN (obj) {
       }
     };
 
-    Context.prototype.getValueSet = function(name) {
+    Context.prototype.getValueSet = function(name, library) {
       var ref;
-      return (ref = this.parent) != null ? ref.getValueSet(name) : void 0;
+      return (ref = this.parent) != null ? ref.getValueSet(name, library) : void 0;
     };
 
     Context.prototype.getCodeSystem = function(name) {
@@ -65051,6 +65096,8 @@ function numberIsNaN (obj) {
       var ref;
       if (typeof this.context_values[identifier] !== 'undefined') {
         return this.context_values[identifier];
+      } else if (identifier === "$this") {
+        return this.context_values;
       } else {
         return (ref = this.parent) != null ? ref.get(identifier) : void 0;
       }
@@ -65885,7 +65932,7 @@ function numberIsNaN (obj) {
       } else {
         return val + MIN_FLOAT_PRECISION_VALUE;
       }
-    } else if (val instanceof DateTime) {
+    } else if (val != null ? val.isDateTime : void 0) {
       if (val.sameAs(MAX_DATETIME_VALUE)) {
         throw new OverFlowException();
       } else {
@@ -65903,7 +65950,7 @@ function numberIsNaN (obj) {
       } else {
         return val.successor();
       }
-    } else if (val instanceof Uncertainty) {
+    } else if (val != null ? val.isUncertainty : void 0) {
       high = (function() {
         try {
           return successor(val.high);
@@ -65934,7 +65981,7 @@ function numberIsNaN (obj) {
       } else {
         return val - MIN_FLOAT_PRECISION_VALUE;
       }
-    } else if (val instanceof DateTime) {
+    } else if (val != null ? val.isDateTime : void 0) {
       if (val.sameAs(MIN_DATETIME_VALUE)) {
         throw new OverFlowException();
       } else {
@@ -65952,7 +65999,7 @@ function numberIsNaN (obj) {
       } else {
         return val.predecessor();
       }
-    } else if (val instanceof Uncertainty) {
+    } else if (val != null ? val.isUncertainty : void 0) {
       low = (function() {
         try {
           return predecessor(val.low);
@@ -65979,7 +66026,7 @@ function numberIsNaN (obj) {
       } else {
         return MAX_FLOAT_VALUE;
       }
-    } else if (val instanceof DateTime) {
+    } else if (val != null ? val.isDateTime : void 0) {
       return MAX_DATETIME_VALUE.copy();
     } else if (val != null ? val.isDate : void 0) {
       return MAX_DATE_VALUE.copy();
@@ -66002,7 +66049,7 @@ function numberIsNaN (obj) {
       } else {
         return MIN_FLOAT_VALUE;
       }
-    } else if (val instanceof DateTime) {
+    } else if (val != null ? val.isDateTime : void 0) {
       return MIN_DATETIME_VALUE.copy();
     } else if (val != null ? val.isDate : void 0) {
       return MIN_DATE_VALUE.copy();
