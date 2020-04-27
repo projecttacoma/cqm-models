@@ -72869,7 +72869,7 @@ function Document(obj, fields, skipId, options) {
 
   const schema = this.schema;
 
-  if (typeof fields === 'boolean') {
+  if (typeof fields === 'boolean' || fields === 'throw') {
     this.$__.strictMode = fields;
     fields = undefined;
   } else {
@@ -72938,7 +72938,7 @@ function Document(obj, fields, skipId, options) {
   this.$locals = {};
   this.$op = null;
 
-  if (!schema.options.strict && obj) {
+  if (!this.$__.strictMode && obj) {
     const _this = this;
     const keys = Object.keys(this._doc);
 
@@ -73611,6 +73611,9 @@ Document.prototype.overwrite = function overwrite(obj) {
     if (this.schema.options.versionKey && key === this.schema.options.versionKey) {
       continue;
     }
+    if (this.schema.options.discriminatorKey && key === this.schema.options.discriminatorKey) {
+      continue;
+    }
     this.$set(key, obj[key]);
   }
 
@@ -73722,6 +73725,7 @@ Document.prototype.$set = function $set(path, val, type, options) {
         path[key] != null &&
         pathtype !== 'virtual' &&
         pathtype !== 'real' &&
+        pathtype !== 'adhocOrUndefined' &&
         !(this.$__path(pathName) instanceof MixedSchema) &&
         !(this.schema.paths[pathName] &&
         this.schema.paths[pathName].options &&
@@ -74306,7 +74310,7 @@ Document.prototype.get = function(path, type, options) {
     if (obj == null) {
       obj = void 0;
     } else if (obj instanceof Map) {
-      obj = obj.get(pieces[i]);
+      obj = obj.get(pieces[i], { getters: false });
     } else if (i === l - 1) {
       obj = utils.getValue(pieces[i], obj);
     } else {
@@ -78227,7 +78231,17 @@ function getOwnPropertyDescriptors(object) {
       delete result[key];
       return;
     }
-    result[key].enumerable = ['isNew', '$__', 'errors', '_doc', '$locals', '$op'].indexOf(key) === -1;
+    result[key].enumerable = [
+      'isNew',
+      '$__',
+      'errors',
+      '_doc',
+      '$locals',
+      '$op',
+      '__parentArray',
+      '__index',
+      '$isDocumentArrayElement'
+    ].indexOf(key) === -1;
   });
 
   return result;
@@ -79324,14 +79338,13 @@ function applyTimestampsToChildren(now, update, schema) {
           continue;
         }
 
-        let parentSchemaType = null;
+        const parentSchemaTypes = [];
         const pieces = keyToSearch.split('.');
         for (let i = pieces.length - 1; i > 0; --i) {
           const s = schema.path(pieces.slice(0, i).join('.'));
           if (s != null &&
-              (s.$isMongooseDocumentArray || s.$isSingleNested)) {
-            parentSchemaType = s;
-            break;
+            (s.$isMongooseDocumentArray || s.$isSingleNested)) {
+            parentSchemaTypes.push({ parentPath: key.split('.').slice(0, i).join('.'), parentSchemaType: s });
           }
         }
 
@@ -79339,32 +79352,38 @@ function applyTimestampsToChildren(now, update, schema) {
           applyTimestampsToDocumentArray(update.$set[key], path, now);
         } else if (update.$set[key] && path.$isSingleNested) {
           applyTimestampsToSingleNested(update.$set[key], path, now);
-        } else if (parentSchemaType != null) {
-          timestamps = parentSchemaType.schema.options.timestamps;
-          createdAt = handleTimestampOption(timestamps, 'createdAt');
-          updatedAt = handleTimestampOption(timestamps, 'updatedAt');
+        } else if (parentSchemaTypes.length > 0) {
+          for (const item of parentSchemaTypes) {
+            const parentPath = item.parentPath;
+            const parentSchemaType = item.parentSchemaType;
+            timestamps = parentSchemaType.schema.options.timestamps;
+            createdAt = handleTimestampOption(timestamps, 'createdAt');
+            updatedAt = handleTimestampOption(timestamps, 'updatedAt');
 
-          if (!timestamps || updatedAt == null) {
-            continue;
+            if (!timestamps || updatedAt == null) {
+              continue;
+            }
+
+            if (parentSchemaType.$isSingleNested) {
+              // Single nested is easy
+              update.$set[parentPath + '.' + updatedAt] = now;
+              continue;
+            }
+
+            if (parentSchemaType.$isMongooseDocumentArray) {
+              let childPath = key.substr(parentPath.length + 1);
+
+              if (/^\d+$/.test(childPath)) {
+                update.$set[parentPath + '.' + childPath][updatedAt] = now;
+                continue;
+              }
+
+              const firstDot = childPath.indexOf('.');
+              childPath = firstDot !== -1 ? childPath.substr(0, firstDot) : childPath;
+
+              update.$set[parentPath + '.' + childPath + '.' + updatedAt] = now;
+            }
           }
-
-          if (parentSchemaType.$isSingleNested) {
-            // Single nested is easy
-            update.$set[parentSchemaType.path + '.' + updatedAt] = now;
-            continue;
-          }
-
-          let childPath = key.substr(parentSchemaType.path.length + 1);
-
-          if (/^\d+$/.test(childPath)) {
-            update.$set[parentSchemaType.path + '.' + childPath][updatedAt] = now;
-            continue;
-          }
-
-          const firstDot = childPath.indexOf('.');
-          childPath = firstDot !== -1 ? childPath.substr(0, firstDot) : childPath;
-
-          update.$set[parentSchemaType.path + '.' + childPath + '.' + updatedAt] = now;
         } else if (path.schema != null && path.schema != schema && update.$set[key]) {
           timestamps = path.schema.options.timestamps;
           createdAt = handleTimestampOption(timestamps, 'createdAt');
@@ -79438,6 +79457,7 @@ function applyTimestampsToSingleNested(subdoc, schematype, now) {
     subdoc[createdAt] = now;
   }
 }
+
 },{"../schema/cleanPositionalOperators":315,"../schema/handleTimestampOption":318}],324:[function(require,module,exports){
 'use strict';
 
@@ -79594,7 +79614,7 @@ class PopulateOptions {
 
 
     if (obj.perDocumentLimit != null && obj.limit != null) {
-      throw new Error('Can not use `limit` and `perDocumentLimit` at the same time. Path: `' + obj.path + '`.' );
+      throw new Error('Can not use `limit` and `perDocumentLimit` at the same time. Path: `' + obj.path + '`.');
     }
   }
 }
@@ -81219,7 +81239,6 @@ reserved.init =
 reserved.isModified =
 reserved.isNew =
 reserved.get =
-reserved.modelName =
 reserved.save =
 reserved.schema =
 reserved.toObject =
@@ -81562,7 +81581,7 @@ Schema.prototype.interpretAsType = function(path, obj, options) {
         if (options.typeKey) {
           childSchemaOptions.typeKey = options.typeKey;
         }
-        //propagate 'strict' option to child schema
+        // propagate 'strict' option to child schema
         if (options.hasOwnProperty('strict')) {
           childSchemaOptions.strict = options.strict;
         }
@@ -82411,14 +82430,13 @@ Schema.prototype.virtual = function(name, options) {
     const virtual = this.virtual(name);
     virtual.options = options;
     return virtual.
-      get(function() {
-        if (!this.$$populatedVirtuals) {
-          this.$$populatedVirtuals = {};
-        }
-        if (this.$$populatedVirtuals.hasOwnProperty(name)) {
+      get(function(_v) {
+        if (this.$$populatedVirtuals &&
+          this.$$populatedVirtuals.hasOwnProperty(name)) {
           return this.$$populatedVirtuals[name];
         }
-        return void 0;
+        if (_v == null) return undefined;
+        return _v;
       }).
       set(function(_v) {
         if (!this.$$populatedVirtuals) {
@@ -83023,7 +83041,7 @@ SingleNestedPath.prototype.cast = function(val, doc, init, priorVal) {
  * @api private
  */
 
-SingleNestedPath.prototype.castForQuery = function($conditional, val) {
+SingleNestedPath.prototype.castForQuery = function($conditional, val, options) {
   let handler;
   if (arguments.length === 2) {
     handler = this.$conditionalHandlers[$conditional];
@@ -83042,9 +83060,12 @@ SingleNestedPath.prototype.castForQuery = function($conditional, val) {
   }
 
   const Constructor = getConstructor(this.caster, val);
+  const overrideStrict = options != null && options.strict != null ?
+    options.strict :
+    void 0;
 
   try {
-    val = new Constructor(val);
+    val = new Constructor(val, overrideStrict);
   } catch (error) {
     // Make sure we always wrap in a CastError (gh-6803)
     if (!(error instanceof CastError)) {
@@ -86214,7 +86235,7 @@ ObjectId.cast = function cast(caster) {
   if (caster === false) {
     caster = v => {
       if (!(v instanceof oid)) {
-        throw new Error();
+        throw new Error(v + ' is not an instance of ObjectId');
       }
       return v;
     };
@@ -87563,6 +87584,12 @@ SchemaType.prototype.default = function(val) {
       this.defaultValue = void 0;
       return void 0;
     }
+
+    if (val != null && val.instanceOfSchema) {
+      throw new MongooseError('Cannot set default value of path `' + this.path +
+        '` to a mongoose Schema instance.');
+    }
+
     this.defaultValue = val;
     return this.defaultValue;
   } else if (arguments.length > 1) {
@@ -90944,7 +90971,7 @@ EmbeddedDocument.prototype.$__remove = function(cb) {
  */
 
 EmbeddedDocument.prototype.remove = function(options, fn) {
-  if ( typeof options === 'function' && !fn ) {
+  if (typeof options === 'function' && !fn) {
     fn = options;
     options = undefined;
   }
@@ -91245,6 +91272,14 @@ class MongooseMap extends Map {
 
   $__set(key, value) {
     super.set(key, value);
+  }
+
+  get(key, options) {
+    options = options || {};
+    if (options.getters === false) {
+      return super.get(key);
+    }
+    return this.$__schemaType.applyGetters(super.get(key), this.$__parent);
   }
 
   set(key, value) {
