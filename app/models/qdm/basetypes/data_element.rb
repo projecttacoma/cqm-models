@@ -59,12 +59,8 @@ module QDM
     # values shift backwards.
     def shift_dates(seconds)
       fields.keys.each do |field|
-        if send(field).is_a? DateTime
-          send(field + '=', (send(field).to_time + seconds.seconds).to_datetime)
-        end
-        if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
-          send(field + '=', send(field).shift_dates(seconds))
-        end
+        send(field + '=', (send(field).to_time + seconds.seconds).to_datetime) if send(field).is_a? DateTime
+        send(field + '=', send(field).shift_dates(seconds)) if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
 
         # Special case for facility locations
         if field == 'facilityLocations'
@@ -94,9 +90,8 @@ module QDM
         if send(field).is_a?(QDM::Date) || send(field).is_a?(DateTime)
           # Do not shift Time values. They are stored as DateTimes with year 0.
           next if send(field).year.zero?
-          if send(field).year + year_shift > 9999 || send(field).year + year_shift < 1
-            raise RangeError, 'Year was shifted after 9999 or before 0001'
-          end
+          raise RangeError, 'Year was shifted after 9999 or before 0001' if send(field).year + year_shift > 9999 || send(field).year + year_shift < 1
+
           if send(field).month == 2 && send(field).day == 29 && !::Date.leap?(year_shift + send(field).year)
             if send(field).is_a?(QDM::Date)
               shifted_date = send(field)
@@ -137,9 +132,7 @@ module QDM
           end
         end
 
-        if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
-          send(field + '=', send(field).shift_years(year_shift))
-        end
+        send(field + '=', send(field).shift_years(year_shift)) if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
       end
     end
 
@@ -153,6 +146,7 @@ module QDM
       #
       def demongoize(object)
         return nil unless object
+
         object = object.symbolize_keys
         if object.is_a?(Hash)
           data_element = QDM.const_get(object[:_type])

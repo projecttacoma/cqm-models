@@ -36,17 +36,17 @@ The QDM patient generator script can be used to create CQMPatients that have a Q
 
 To generate a set of patients using the most recent model-info file, each of which has a single data element in addition to the 5 PatientCharactaristic types execute the following:
 ```
-QDM::PatientGeneration.generate_exhastive_data_element_patients()
+QDM::PatientGeneration.generate_exhaustive_data_element_patients()
 ```
 
 To generate a single patient that has every data element from a specific model-info file execute the following:
 ```
-QDM::PatientGeneration.generate_exhastive_data_element_patients(false, 'qdm-modelinfo-5.3.xml')
+QDM::PatientGeneration.generate_exhaustive_data_element_patients(false, 'qdm-modelinfo-5.3.xml')
 ```
 
 ## Running the tests
 
-### To run frontend Jasmine tests 
+### To run frontend Jasmine tests
 
 ```
 yarn test

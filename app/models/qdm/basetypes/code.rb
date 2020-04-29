@@ -24,6 +24,7 @@ module QDM
       # [ code, system, display, version ].
       def demongoize(object)
         return nil unless object
+
         object = object.symbolize_keys
         QDM::Code.new(object[:code], object[:system], object[:display], object[:version])
       end

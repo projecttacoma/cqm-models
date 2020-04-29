@@ -22,9 +22,7 @@ module QDM
     #
     # NOTE: This will only shift if @high and @low are DateTimes.
     def shift_dates(seconds)
-      if (@low.is_a? DateTime) || (@low.is_a? Time)
-        @low = (@low.utc.to_time + seconds.seconds).to_datetime.new_offset(0)
-      end
+      @low = (@low.utc.to_time + seconds.seconds).to_datetime.new_offset(0) if (@low.is_a? DateTime) || (@low.is_a? Time)
       if (@high.is_a? DateTime) || (@high.is_a? Time)
         @high = (@high.utc.to_time + seconds.seconds).to_datetime.new_offset(0)
         @high = @high.year > 9999 ? @high.change(year: 9999) : @high
@@ -34,9 +32,8 @@ module QDM
 
     def shift_years(year_shift)
       if (@low.is_a? DateTime) || (@low.is_a? Time)
-        if @low.year + year_shift < 1 || @low.year + year_shift > 9999
-          raise RangeError, 'Year was shifted after 9999 or before 0001'
-        end
+        raise RangeError, 'Year was shifted after 9999 or before 0001' if @low.year + year_shift < 1 || @low.year + year_shift > 9999
+
         low_shift = @low.year + year_shift
         @low = if @low.month == 2 && @low.day == 29 && !::Date.leap?(low_shift)
                  @low.change(year: low_shift, day: 28)
@@ -45,9 +42,8 @@ module QDM
                end
       end
       if (@high.is_a? DateTime) || (@high.is_a? Time)
-        if @high.year + year_shift < 1 || @high.year + year_shift > 9999
-          raise RangeError, 'Year was shifted after 9999 or before 0001'
-        end
+        raise RangeError, 'Year was shifted after 9999 or before 0001' if @high.year + year_shift < 1 || @high.year + year_shift > 9999
+
         high_shift = @high.year + year_shift
         @high = if @high.month == 2 && @high.day == 29 && !::Date.leap?(high_shift)
                   @high.change(year: high_shift, day: 28)
@@ -66,6 +62,7 @@ module QDM
       # [ low, high ].
       def demongoize(object)
         return nil unless object
+
         object = object.symbolize_keys
         fix_datetime(object)
         QDM::Interval.new(object[:low], object[:high], object[:lowClosed], object[:highClosed]) if object.is_a?(Hash)
