@@ -2557,7 +2557,7 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
 QDMPatientSchema.methods.findRecords = function findRecords(profile) {
   // Clear profile cache for this patient if there is no cache or the patient has changed
   if (QDMPatientSchema.dataElementCache == null
-      || QDMPatientSchema.dataElementCachePatientId !== this._id) {
+    || QDMPatientSchema.dataElementCachePatientId !== this._id) {
     QDMPatientSchema.dataElementCache = {};
     QDMPatientSchema.dataElementCachePatientId = this._id;
   }
