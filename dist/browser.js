@@ -3584,12 +3584,15 @@ function DataElementSchema(add, options) {
   // Returns all of the codes on this data element in a format usable by
   // the cql-execution framework.
   extended.methods.getCode = function getCode() {
-    return this.dataElementCodes.map((code) => {
-      if (code.isCode) {
-        return code;
-      }
-      return new cql.Code(code.code, code.system, code.version, code.display);
-    });
+    if (this.dataElementCodes) {
+      return this.dataElementCodes.map((code) => {
+        if (code.isCode) {
+          return code;
+        }
+        return new cql.Code(code.code, code.system, code.version, code.display);
+      });
+    }
+    return null;
   };
 
   // Return the first code on this data element in a format usable by
