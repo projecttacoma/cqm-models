@@ -9,7 +9,7 @@ matrix:
       before_install:
         - "find /home/travis/.rvm/rubies -wholename '*default/bundler-*.gemspec' -delete"
         - rvm @global do gem uninstall bundler -a -x -I || true
-        - gem install bundler -v "< 2.0"
+        - gem install bundler -v "2.1.4"
       script:
         - bundle exec rake
         - bundle exec rubocop
