@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'cqm-models'
-  spec.version       = '3.0.2'
+  spec.version       = '3.0.3'
   spec.authors       = ['aholmes@mitre.org', 'mokeefe@mitre.org', 'lades@mitre.org']
 
   spec.summary       = 'Mongo models that correspond to the QDM specification.'
