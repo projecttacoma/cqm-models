@@ -16,7 +16,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "cql-execution": "adongare/cql-execution#bonniemat-629_623",
+    "cql-execution": "~1.4.5",
     "mongoose": "^5.7.5"
   },
   "devDependencies": {

@@ -505,9 +505,10 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-cql-execution@adongare/cql-execution#bonniemat-629_623:
-  version "1.4.4"
-  resolved "https://codeload.github.com/adongare/cql-execution/tar.gz/86f1e923cbb814ce80caddf22425b1e386e1e8ec"
+cql-execution@~1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/cql-execution/-/cql-execution-1.4.5.tgz#e17364d916cbc78a37994aa4033a95802bd4ab8f"
+  integrity sha512-ulji08Pl5MzlvTJOUXd0OYlKRfgdOFApdAilvN4FpkcXhk9gwjy4M08jydyqJ8EIH+peSpGuZ3ubRhBUrNEFBQ==
   dependencies:
     moment "^2.20.1"
     ucum "0.0.7"
