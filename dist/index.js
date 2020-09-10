@@ -26033,8 +26033,8 @@ function numberIsNaN (obj) {
 
     IndexOf.prototype.exec = function(ctx) {
       var el, i, index, itm, j, len, src;
-      src = this.source.exec(ctx);
-      el = this.element.exec(ctx);
+      src = this.source.execute(ctx);
+      el = this.element.execute(ctx);
       if ((src == null) || (el == null)) {
         return null;
       }
@@ -28120,14 +28120,14 @@ function numberIsNaN (obj) {
     extend(Tuple, superClass);
 
     function Tuple(json) {
-      var el;
+      var el, elements;
       Tuple.__super__.constructor.apply(this, arguments);
+      elements = json.element != null ? json.element : [];
       this.elements = (function() {
-        var i, len, ref1, results;
-        ref1 = json.element;
+        var i, len, results;
         results = [];
-        for (i = 0, len = ref1.length; i < len; i++) {
-          el = ref1[i];
+        for (i = 0, len = elements.length; i < len; i++) {
+          el = elements[i];
           results.push({
             name: el.name,
             value: build(el.value)
