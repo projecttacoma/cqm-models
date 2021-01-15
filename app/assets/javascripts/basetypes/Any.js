@@ -11,6 +11,12 @@ function RecursiveCast(any) {
     return new cql.Quantity(any.value, any.unit);
   }
 
+  if (any && any.numerator && any.denominator) {
+    const numerator = new cql.Quantity(any.numerator.value, any.numerator.unit);
+    const denominator = new cql.Quantity(any.denominator.value, any.denominator.unit);
+    return new cql.Ratio(numerator, denominator);
+  }
+
   if (any.isCode || any.isConcept || any.isValueSet || any.isList ||
       any.isDateTime || any.isDate || any.isRatio || any.isQuantiy ||
       any.isInterval || any.isBooleanLiteral || any.isIntegerLiteral ||
