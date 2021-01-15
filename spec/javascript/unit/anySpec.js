@@ -16,6 +16,28 @@ describe('The Any class', () => {
       expect(returned_obj.unit).toEqual('m');
     });
 
+    it('Should convert a Ratio JS Object to its type', () => {
+      const ratio_obj = {
+        numerator: {
+          value: 2,
+          unit: 'm',
+        },
+        denominator: {
+          value: 5,
+          unit: 'km',
+        },
+      };
+
+      const returned_obj = Any.prototype.cast(ratio_obj);
+      expect(returned_obj instanceof Cql.Ratio).toBe(true);
+      expect(returned_obj.numerator instanceof Cql.Quantity).toBe(true);
+      expect(returned_obj.denominator instanceof Cql.Quantity).toBe(true);
+      expect(returned_obj.numerator.value).toEqual(2);
+      expect(returned_obj.numerator.unit).toEqual('m');
+      expect(returned_obj.denominator.value).toEqual(5);
+      expect(returned_obj.denominator.unit).toEqual('km');
+    });
+
     it('Should convert a Interval JS Object to its type', () => {
       const interval_obj = {
         low: '2012-05-21T11:30:00.000-04:00',
