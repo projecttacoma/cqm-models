@@ -38,7 +38,7 @@
   "2.16.840.1.113883.10.20.28.4.28": "EncounterRecommended",
   "2.16.840.1.113883.10.20.28.4.67": "ProcedurePerformed",
   "2.16.840.1.113883.10.20.28.4.119": "AllergyIntolerance",
-  "22.16.840.1.113883.10.20.28.4.63": "PhysicalExamRecommended",
+  "2.16.840.1.113883.10.20.28.4.63": "PhysicalExamRecommended",
   "2.16.840.1.113883.10.20.28.4.54": "PatientCharacteristicBirthdate",
   "2.16.840.1.113883.10.20.28.4.120": "AdverseEvent",
   "2.16.840.1.113883.10.20.28.4.16": "DeviceRecommended",
