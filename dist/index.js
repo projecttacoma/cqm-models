@@ -3413,8 +3413,8 @@ function RecursiveCast(any) {
   }
 
   if (any && any.numerator && any.denominator) {
-    numerator = new cql.Quantity(any.numerator.value, any.numerator.unit);
-    denominator = new cql.Quantity(any.denominator.value, any.denominator.unit);
+    const numerator = new cql.Quantity(any.numerator.value, any.numerator.unit);
+    const denominator = new cql.Quantity(any.denominator.value, any.denominator.unit);
     return new cql.Ratio(numerator, denominator);
   }
 
