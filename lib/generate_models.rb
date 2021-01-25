@@ -68,7 +68,7 @@ TYPE_LOOKUP_JS = {
 
 puts 'Parsing modelinfo file...'
 
-Dir.chdir ENV['TRAVIS_BUILD_DIR'] if ENV['CI']
+Dir.chdir ENV['GITHUB_WORKSPACE'] if ENV['CI']
 puts Dir.pwd
 puts Dir.entries('.')
 

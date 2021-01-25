@@ -1,0 +1,55 @@
+name: Continuous Integration
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        ruby-version: [2.5]
+        mongodb-version: [4.0.18, 4.4]
+        node-version: [12.x, 14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Ruby ${{ matrix.ruby-version }}
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler: 2.1.4
+    - name: Install dependencies
+      run: bundle install
+    - name: Start MongoDB
+      uses: supercharge/mongodb-github-action@1.3.0
+      with:
+        mongodb-version: ${{ matrix.mongodb-version }}
+    - name: Run audit
+      run: |
+        bundle exec bundle-audit check --update
+        bundle exec bundle-audit check
+    - name: Run rake
+      run: bundle exec rake
+    - name: Run rubocop
+      run: bundle exec rubocop
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Yarn
+      run: npm install -g yarn
+    - name: Run yarn
+      run: |
+        yarn install
+        yarn run lint
+        yarn run test
+        yarn audit
+    - name: Run validation
+      run: |
+        ./bin/validate_dist.sh
+        ./bin/validate_browser.sh
+        ./bin/validate_generator.sh
