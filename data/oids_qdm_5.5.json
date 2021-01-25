@@ -271,7 +271,7 @@
     "qdm_status": "performed"
   },
   "physical_exam_recommended": {
-    "hqmf_oid": "22.16.840.1.113883.10.20.28.4.63",
+    "hqmf_oid": "2.16.840.1.113883.10.20.28.4.63",
     "qrda_oid": "",
     "qdm_category": "physical_exam",
     "qdm_status": "recommended"

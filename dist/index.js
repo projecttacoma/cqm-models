@@ -2236,7 +2236,7 @@ const PhysicalExamRecommendedSchema = DataElementSchema({
   negationRationale: Code,
   requester: AnyEntity,
   qdmTitle: { type: String, default: 'Physical Exam, Recommended' },
-  hqmfOid: { type: String, default: '22.16.840.1.113883.10.20.28.4.63' },
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.63' },
   qdmCategory: { type: String, default: 'physical_exam' },
   qdmStatus: { type: String, default: 'recommended' },
   qdmVersion: { type: String, default: '5.5' },
@@ -3413,8 +3413,8 @@ function RecursiveCast(any) {
   }
 
   if (any && any.numerator && any.denominator) {
-    numerator = new cql.Quantity(any.numerator.value, any.numerator.unit);
-    denominator = new cql.Quantity(any.denominator.value, any.denominator.unit);
+    const numerator = new cql.Quantity(any.numerator.value, any.numerator.unit);
+    const denominator = new cql.Quantity(any.denominator.value, any.denominator.unit);
     return new cql.Ratio(numerator, denominator);
   }
 
