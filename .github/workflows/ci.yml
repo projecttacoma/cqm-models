@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: [2.5]
+        ruby-version: [2.3.8]
         mongodb-version: [4.0.18, 4.4]
         node-version: [12.x, 14.x]
 
@@ -45,11 +45,6 @@ jobs:
     - name: Run yarn
       run: |
         yarn install
-        yarn run lint
-        yarn run test
-        yarn audit
     - name: Run validation
       run: |
-        ./bin/validate_dist.sh
-        ./bin/validate_browser.sh
         ./bin/validate_generator.sh
