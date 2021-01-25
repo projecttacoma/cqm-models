@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundle-audit'
-  spec.add_development_dependency 'bundler', '~> 2.1.4'
+  spec.add_development_dependency 'bundler', '>= 1.17.3', '< 2.2.0'
   spec.add_development_dependency 'byebug', '~> 11.0.1'
   spec.add_development_dependency 'codecov'
   spec.add_development_dependency 'mongoid', '~> 6.4'
