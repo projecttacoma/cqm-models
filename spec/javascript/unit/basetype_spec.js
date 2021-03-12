@@ -86,7 +86,7 @@ describe('basetype Interval', () => {
   });
 
   it('throws error if quantity in object has invalid unit', () => {
-    expect(() => { (new Interval()).cast({ low: { value: '30', unit: 'mcg' }, high: { value: '60', unit: 'mg' } }); }).toThrow();
+    expect(() => { (new Interval()).cast({ low: { value: '30', unit: 'mcgc' }, high: { value: '60', unit: 'mg' } }); }).toThrow();
   });
 });
 
