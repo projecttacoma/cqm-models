@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rm -r tmp/dist/
 mkdir -p tmp/dist/
 
 # dist_test browserifies index.js to tmp/dist
