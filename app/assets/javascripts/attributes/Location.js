@@ -19,29 +19,20 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const ProcedureRecommendedSchema = DataElementSchema({
-  authorDatetime: DateTime,
-  reason: Code,
-  anatomicalLocationSite: Code,
-  rank: Number,
-  requester: [AnyEntity],
-  negationRationale: Code,
-  qdmTitle: { type: String, default: 'Procedure, Recommended' },
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.68' },
-  qdmCategory: { type: String, default: 'procedure' },
-  qdmStatus: { type: String, default: 'recommended' },
-  qdmVersion: { type: String, default: '5.6' },
-  _type: { type: String, default: 'QDM::ProcedureRecommended' },
+const LocationSchema = DataElementSchema({
+  locationType: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.142' },
+  _type: { type: String, default: 'QDM::Location' },
 
 });
 
-module.exports.ProcedureRecommendedSchema = ProcedureRecommendedSchema;
-class ProcedureRecommended extends mongoose.Document {
+module.exports.LocationSchema = LocationSchema;
+class Location extends mongoose.Document {
   constructor(object) {
-    super(object, ProcedureRecommendedSchema);
-    this._type = 'QDM::ProcedureRecommended';
+    super(object, LocationSchema);
+    this._type = 'QDM::Location';
   }
 }
 
-module.exports.ProcedureRecommended = ProcedureRecommended;
+module.exports.Location = Location;
 

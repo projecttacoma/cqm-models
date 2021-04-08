@@ -24,11 +24,11 @@ const CareGoalSchema = DataElementSchema({
   relevantPeriod: Interval,
   relatedTo: [String],
   targetOutcome: Any,
-  performer: AnyEntity,
+  performer: [AnyEntity],
   qdmTitle: { type: String, default: 'Care Goal' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.7' },
   qdmCategory: { type: String, default: 'care_goal' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::CareGoal' },
 
 });

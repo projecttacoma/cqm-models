@@ -3,6 +3,7 @@ const { PatientEntity } = require('../attributes/PatientEntity');
 const { Practitioner } = require('../attributes/Practitioner');
 const { CarePartner } = require('../attributes/CarePartner');
 const { Organization } = require('../attributes/Organization');
+const { Location } = require('../attributes/Location');
 
 function AnyEntity(key, options) {
   mongoose.SchemaType.call(this, key, options, 'AnyEntity');
@@ -32,6 +33,8 @@ AnyEntity.prototype.cast = (entity) => {
         return new CarePartner(entity);
       case 'QDM::Organization':
         return new Organization(entity);
+      case 'QDM::Location':
+        return new Location(entity);
       default:
         throw new Error(`Could not find entity type "${entity._type}".`);
     }

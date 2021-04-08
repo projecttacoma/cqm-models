@@ -17,7 +17,7 @@ const DiagnosisComponentSchema = new mongoose.Schema({
   code: Code,
   presentOnAdmissionIndicator: Code,
   rank: Number,
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::DiagnosisComponent' },
 
 });

@@ -18,7 +18,7 @@ const [Number, String] = [
 const EntitySchema = new mongoose.Schema({
   id: String,
   identifier: IdentifierSchema,
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::Entity' },
 
 });
@@ -34,7 +34,7 @@ class Entity extends mongoose.Document {
 function EntitySchemaFunction(add, options) {
   const extended = new Schema({
     identifier: IdentifierSchema,
-    qdmVersion: { type: String, default: '5.5' },
+    qdmVersion: { type: String, default: '5.6' },
     _type: { type: String, default: 'QDM::Entity' },
 
 

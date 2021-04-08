@@ -31,12 +31,13 @@ const MedicationOrderSchema = DataElementSchema({
   setting: Code,
   reason: Code,
   negationRationale: Code,
-  prescriber: AnyEntity,
+  prescriber: [AnyEntity],
+  relatedTo: [String],
   qdmTitle: { type: String, default: 'Medication, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.51' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'order' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::MedicationOrder' },
 
 });

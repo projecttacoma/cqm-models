@@ -14,7 +14,7 @@ const [Schema, Number, String, Mixed] = [
 
 const QDMPatientSchema = new Schema({
   birthDatetime: DateTime,
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
 
   // These are the "data criteria", or QDM datatype elements that exist on a
   // patient.

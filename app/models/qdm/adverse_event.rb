@@ -3,15 +3,16 @@ module QDM
   class AdverseEvent < DataElement
     include Mongoid::Document
     embedded_in :patient
+    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :relevantDatetime, type: DateTime
     field :severity, type: QDM::Code
     field :facilityLocation, type: QDM::FacilityLocation
     field :type, type: QDM::Code
-    embeds_one :recorder, class_name: 'QDM::Entity'
+    embeds_many :recorder, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Adverse Event'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.120'
     field :qdmCategory, type: String, default: 'adverse_event'
-    field :qdmVersion, type: String, default: '5.5'
+    field :qdmVersion, type: String, default: '5.6'
   end
 end

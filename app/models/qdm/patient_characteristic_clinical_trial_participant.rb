@@ -3,6 +3,7 @@ module QDM
   class PatientCharacteristicClinicalTrialParticipant < DataElement
     include Mongoid::Document
     embedded_in :patient
+    include Mongoid::Timestamps
     field :reason, type: QDM::Code
     field :relevantPeriod, type: QDM::Interval
     field :qdmTitle, type: String, default: 'Patient Characteristic Clinical Trial Participant'
@@ -10,6 +11,6 @@ module QDM
     field :qrdaOid, type: String, default: '2.16.840.1.113883.10.20.24.3.51'
     field :qdmCategory, type: String, default: 'patient_characteristic'
     field :qdmStatus, type: String, default: 'clinical_trial_participant'
-    field :qdmVersion, type: String, default: '5.5'
+    field :qdmVersion, type: String, default: '5.6'
   end
 end

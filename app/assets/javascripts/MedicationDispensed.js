@@ -29,14 +29,15 @@ const MedicationDispensedSchema = DataElementSchema({
   frequency: Code,
   daysSupplied: Number,
   route: Code,
-  prescriber: AnyEntity,
-  dispenser: AnyEntity,
+  prescriber: [AnyEntity],
+  dispenser: [AnyEntity],
   negationRationale: Code,
+  relatedTo: [String],
   qdmTitle: { type: String, default: 'Medication, Dispensed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.49' },
   qdmCategory: { type: String, default: 'medication' },
   qdmStatus: { type: String, default: 'dispensed' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::MedicationDispensed' },
 
 });

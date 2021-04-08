@@ -3,11 +3,12 @@ module QDM
   class PatientCharacteristicBirthdate < DataElement
     include Mongoid::Document
     embedded_in :patient
+    include Mongoid::Timestamps
     field :birthDatetime, type: DateTime
     field :qdmTitle, type: String, default: 'Patient Characteristic Birthdate'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.54'
     field :qdmCategory, type: String, default: 'patient_characteristic'
     field :qdmStatus, type: String, default: 'birthdate'
-    field :qdmVersion, type: String, default: '5.5'
+    field :qdmVersion, type: String, default: '5.6'
   end
 end

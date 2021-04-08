@@ -23,8 +23,8 @@ const CommunicationPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   category: Code,
   medium: Code,
-  sender: AnyEntity,
-  recipient: AnyEntity,
+  sender: [AnyEntity],
+  recipient: [AnyEntity],
   relatedTo: [String],
   sentDatetime: DateTime,
   receivedDatetime: DateTime,
@@ -33,7 +33,7 @@ const CommunicationPerformedSchema = DataElementSchema({
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.132' },
   qdmCategory: { type: String, default: 'communication' },
   qdmStatus: { type: String, default: 'performed' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::CommunicationPerformed' },
 
 });

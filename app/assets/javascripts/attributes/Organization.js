@@ -14,7 +14,7 @@ const [Number, String] = [
 ];
 
 const OrganizationSchema = EntitySchemaFunction({
-  type: Code,
+  organizationType: Code,
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.135' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.163' },
   _type: { type: String, default: 'QDM::Organization' },
