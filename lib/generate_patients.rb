@@ -9,7 +9,7 @@ module QDM
   module PatientGeneration
     # Generates patient(s) with fully-loaded dataElements if new_patient_for_each_type is false then a
     # single patient will be returned that has every data element on it
-    def self.generate_exhaustive_data_element_patients(new_patient_for_each_type = true, model_info_file = 'qdm-modelinfo-5.5.xml')
+    def self.generate_exhaustive_data_element_patients(new_patient_for_each_type = true, model_info_file = 'qdm-modelinfo-5.6.xml')
       datatypes = get_datatypes(File.join(File.dirname(__FILE__), "../modelinfo/#{model_info_file}"))
       patients = []
       cqm_patient = nil

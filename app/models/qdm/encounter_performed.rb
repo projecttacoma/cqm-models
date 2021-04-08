@@ -6,7 +6,7 @@ module QDM
     include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :admissionSource, type: QDM::Code
-    field :class, type: QDM::Code
+    field :clazz, type: QDM::Code
     field :relevantPeriod, type: QDM::Interval
     field :dischargeDisposition, type: QDM::Code
     field :facilityLocations, type: Array, default: []

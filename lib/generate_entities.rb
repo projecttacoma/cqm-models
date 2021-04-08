@@ -5,22 +5,23 @@ module QDM
   # BaseTypeGeneration contains functions to randomly generate basetypes used by PatientGeneration
   module EntityGeneration
     def self.generate_entities(data_element)
-      data_element.performer = generate_entity if data_element.respond_to? 'performer'
-      data_element.recorder = generate_entity if data_element.respond_to? 'recorder'
-      data_element.requester = generate_entity if data_element.respond_to? 'requester'
-      data_element.sender = generate_entity if data_element.respond_to? 'sender'
-      data_element.recipient = generate_entity if data_element.respond_to? 'recipient'
-      data_element.participant = generate_entity if data_element.respond_to? 'participant'
-      data_element.prescriber = generate_entity if data_element.respond_to? 'prescriber'
-      data_element.dispenser = generate_entity if data_element.respond_to? 'dispenser'
+      data_element.performer = [generate_entity] if data_element.respond_to? 'performer'
+      data_element.recorder = [generate_entity] if data_element.respond_to? 'recorder'
+      data_element.requester = [generate_entity] if data_element.respond_to? 'requester'
+      data_element.sender = [generate_entity] if data_element.respond_to? 'sender'
+      data_element.recipient = [generate_entity] if data_element.respond_to? 'recipient'
+      data_element.participant = [generate_entity] if data_element.respond_to? 'participant'
+      data_element.prescriber = [generate_entity] if data_element.respond_to? 'prescriber'
+      data_element.dispenser = [generate_entity] if data_element.respond_to? 'dispenser'
     end
 
     def self.generate_entity
-      case Random.rand(4)
+      case Random.rand(5)
       when 0 then return generate_patient_entity
       when 1 then return generate_care_partner_entity
       when 2 then return generate_organization_entity
       when 3 then return generate_practitioner_entity
+      when 4 then return generate_location_entity
       end
     end
 
@@ -40,7 +41,7 @@ module QDM
     def self.generate_organization_entity
       organization_entity = QDM::Organization.new
       organization_entity.identifier = QDM::BaseTypeGeneration.generate_qdm_id
-      organization_entity.type = QDM::BaseTypeGeneration.generate_code_field
+      organization_entity.organizationType = QDM::BaseTypeGeneration.generate_code_field
       organization_entity
     end
 
@@ -51,6 +52,13 @@ module QDM
       practitioner_entity.specialty = QDM::BaseTypeGeneration.generate_code_field
       practitioner_entity.qualification = QDM::BaseTypeGeneration.generate_code_field
       practitioner_entity
+    end
+
+    def self.generate_location_entity
+      location_entity = QDM::Location.new
+      location_entity.identifier = QDM::BaseTypeGeneration.generate_qdm_id
+      location_entity.locationType = QDM::BaseTypeGeneration.generate_code_field
+      location_entity
     end
   end
 end

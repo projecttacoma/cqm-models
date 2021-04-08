@@ -276,6 +276,9 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents.gsub!(/field :dispenser/, "embeds_many :dispenser, class_name: 'QDM::Entity'")
   contents.gsub!(/field :identifier, type: Identifier/, "embeds_one :identifier, class_name: 'QDM::Identifier'")
 
+  # EncounterPerformed
+  contents.gsub!(/field :class/, 'field :clazz')
+
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
