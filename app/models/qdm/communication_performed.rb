@@ -3,7 +3,6 @@ module QDM
   class CommunicationPerformed < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :category, type: QDM::Code
     field :medium, type: QDM::Code

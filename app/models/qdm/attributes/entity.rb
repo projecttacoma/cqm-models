@@ -3,7 +3,6 @@ module QDM
   class Entity < Attribute
     include Mongoid::Document
     embedded_in :data_element
-    include Mongoid::Timestamps
     field :id, type: String
     embeds_one :identifier, class_name: 'QDM::Identifier'
     field :qdmVersion, type: String, default: '5.6'

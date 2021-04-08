@@ -3,7 +3,6 @@ module QDM
   class Diagnosis < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :prevalencePeriod, type: QDM::Interval
     field :anatomicalLocationSite, type: QDM::Code

@@ -2,7 +2,6 @@ module QDM
   # app/models/qdm/facility_location.rb
   class FacilityLocation < Attribute
     include Mongoid::Document
-    include Mongoid::Timestamps
     field :code, type: QDM::Code
     field :locationPeriod, type: QDM::Interval
     field :qdmVersion, type: String, default: '5.6'

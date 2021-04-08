@@ -3,7 +3,6 @@ module QDM
   class CareGoal < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :statusDate, type: Date
     field :relevantPeriod, type: QDM::Interval
     field :relatedTo, type: Array

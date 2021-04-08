@@ -3,7 +3,6 @@ module QDM
   class MedicationDischarge < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :refills, type: Integer
     field :dosage, type: QDM::Quantity

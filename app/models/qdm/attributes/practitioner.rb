@@ -3,7 +3,6 @@ module QDM
   class Practitioner < Entity
     include Mongoid::Document
     embedded_in :data_element
-    include Mongoid::Timestamps
     field :role, type: QDM::Code
     field :specialty, type: QDM::Code
     field :qualification, type: QDM::Code

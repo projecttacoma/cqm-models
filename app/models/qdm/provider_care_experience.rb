@@ -3,7 +3,6 @@ module QDM
   class ProviderCareExperience < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     embeds_many :recorder, class_name: 'QDM::Entity'
     field :qdmTitle, type: String, default: 'Provider Care Experience'

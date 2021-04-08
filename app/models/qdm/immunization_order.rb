@@ -3,7 +3,6 @@ module QDM
   class ImmunizationOrder < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :activeDatetime, type: DateTime
     field :authorDatetime, type: DateTime
     field :dosage, type: QDM::Quantity

@@ -3,7 +3,6 @@ module QDM
   class DeviceRecommended < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :negationRationale, type: QDM::Code
     field :reason, type: QDM::Code

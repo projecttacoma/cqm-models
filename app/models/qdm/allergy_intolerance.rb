@@ -3,7 +3,6 @@ module QDM
   class AllergyIntolerance < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :prevalencePeriod, type: QDM::Interval
     field :type, type: QDM::Code

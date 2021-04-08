@@ -3,7 +3,6 @@ module QDM
   class FamilyHistory < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :relationship, type: QDM::Code
     embeds_many :recorder, class_name: 'QDM::Entity'

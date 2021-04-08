@@ -3,7 +3,6 @@ module QDM
   class MedicationActive < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :relevantDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
     field :dosage, type: QDM::Quantity

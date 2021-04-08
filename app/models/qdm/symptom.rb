@@ -3,7 +3,6 @@ module QDM
   class Symptom < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :prevalencePeriod, type: QDM::Interval
     field :severity, type: QDM::Code
     embeds_many :recorder, class_name: 'QDM::Entity'

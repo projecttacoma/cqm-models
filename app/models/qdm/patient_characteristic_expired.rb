@@ -3,7 +3,6 @@ module QDM
   class PatientCharacteristicExpired < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :expiredDatetime, type: DateTime
     field :cause, type: QDM::Code
     field :qdmTitle, type: String, default: 'Patient Characteristic Expired'

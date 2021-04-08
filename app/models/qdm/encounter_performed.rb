@@ -3,7 +3,6 @@ module QDM
   class EncounterPerformed < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :admissionSource, type: QDM::Code
     field :clazz, type: QDM::Code

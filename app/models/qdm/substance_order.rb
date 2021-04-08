@@ -3,7 +3,6 @@ module QDM
   class SubstanceOrder < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
     field :reason, type: QDM::Code

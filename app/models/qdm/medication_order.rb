@@ -3,7 +3,6 @@ module QDM
   class MedicationOrder < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :relevantPeriod, type: QDM::Interval
     field :refills, type: Integer

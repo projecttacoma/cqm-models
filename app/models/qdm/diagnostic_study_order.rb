@@ -3,7 +3,6 @@ module QDM
   class DiagnosticStudyOrder < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :authorDatetime, type: DateTime
     field :reason, type: QDM::Code
     field :negationRationale, type: QDM::Code

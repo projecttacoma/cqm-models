@@ -3,7 +3,6 @@ module QDM
   class PatientCharacteristicPayer < DataElement
     include Mongoid::Document
     embedded_in :patient
-    include Mongoid::Timestamps
     field :relevantPeriod, type: QDM::Interval
     field :qdmTitle, type: String, default: 'Patient Characteristic Payer'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.58'

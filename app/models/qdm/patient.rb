@@ -2,7 +2,6 @@ module QDM
   # app/models/qdm/patient.rb
   class Patient
     include Mongoid::Document
-    include Mongoid::Timestamps
     field :birthDatetime, type: DateTime
     field :qdmVersion, type: String, default: '5.6'
     embedded_in :cqmPatient, class_name: 'CQM::Patient'
