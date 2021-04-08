@@ -8,7 +8,7 @@ const Organization = require('./../../../app/assets/javascripts/attributes/Organ
 
 describe('The AnyEntity class', () => {
   describe('Type casting', () => {
-    
+
     it('Should throw a error trying to convert entity with no identifying _type', () => {
       const entityObj = {
         id: 'test',
@@ -120,14 +120,14 @@ describe('The AnyEntity class', () => {
       expect(returnedObj.relationship).toEqual(new cql.Code('R123', '1.2.3.4', null, 'Test Relationship Code'));
     });
 
-    it('Should convert a Organization JS Object to its type', () => {
+    it('Should convert an Organization JS Object to its type', () => {
       const entityObj = {
         id: 'test',
         identifier: {
           namingSystem: 'testSystem',
           value:'testValue'
         },
-        type: { code: 'T123', system: '1.2.3.4', display: 'Test Type Code' },
+        organizationType: { code: 'T123', system: '1.2.3.4', display: 'Test Type Code' },
         _type: 'QDM::Organization'
       };
 
@@ -136,8 +136,8 @@ describe('The AnyEntity class', () => {
       expect(returnedObj.id).toEqual('test');
       expect(returnedObj.identifier.namingSystem).toEqual('testSystem');
       expect(returnedObj.identifier.value).toEqual('testValue');
-      expect(returnedObj.type instanceof cql.Code).toBe(true);
-      expect(returnedObj.type).toEqual(new cql.Code('T123', '1.2.3.4', null, 'Test Type Code'));
+      expect(returnedObj.organizationType instanceof cql.Code).toBe(true);
+      expect(returnedObj.organizationType).toEqual(new cql.Code('T123', '1.2.3.4', null, 'Test Type Code'));
     });
 
     it('Should pass through the exact PatientEntity if it is already an entity', () => {

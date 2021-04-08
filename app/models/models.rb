@@ -1,4 +1,4 @@
-# Base QDM module (generated from lib/generate_models.rb) for QDM 5.5
+# Base QDM module (generated from lib/generate_models.rb) for QDM 5.6
 module QDM
 end
 require 'mongoid'
@@ -25,6 +25,7 @@ require_relative 'qdm/attributes/diagnosis_component'
 require_relative 'qdm/attributes/organization'
 require_relative 'qdm/attributes/patient_entity'
 require_relative 'qdm/attributes/practitioner'
+require_relative 'qdm/attributes/location'
 require_relative 'qdm/attributes/result_component'
 
 # Tacoma-specific models
@@ -47,7 +48,6 @@ require_relative '../../lib/generate_patients'
 # Generated models
 require_relative 'qdm/patient'
 require_relative 'qdm/related_person'
-require_relative 'qdm/location'
 require_relative 'qdm/physical_exam_order'
 require_relative 'qdm/participation'
 require_relative 'qdm/patient_characteristic_sex'

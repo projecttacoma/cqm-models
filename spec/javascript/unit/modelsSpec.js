@@ -10,6 +10,7 @@ const AssessmentRecommended = require('./../../../app/assets/javascripts/Assessm
 const ProviderCareExperience = require('./../../../app/assets/javascripts/ProviderCareExperience.js').ProviderCareExperience;
 const CareGoal = require('./../../../app/assets/javascripts/CareGoal.js').CareGoal;
 const CarePartner = require('./../../../app/assets/javascripts/attributes/CarePartner.js').CarePartner;
+const Location = require('./../../../app/assets/javascripts/attributes/Location.js').Location;
 const Concept = require('./../../../app/assets/javascripts/cqm/Concept.js').Concept;
 const Component = require('./../../../app/assets/javascripts/attributes/Component.js').Component;
 const CommunicationPerformed = require('./../../../app/assets/javascripts/CommunicationPerformed.js').CommunicationPerformed;
@@ -18,7 +19,6 @@ const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.j
 const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
 const Diagnosis = require('./../../../app/assets/javascripts/Diagnosis.js').Diagnosis;
 const DiagnosisComponent = require('./../../../app/assets/javascripts/attributes/DiagnosisComponent.js').DiagnosisComponent;
-const DeviceApplied = require('./../../../app/assets/javascripts/DeviceApplied.js').DeviceApplied;
 const DeviceOrder = require('./../../../app/assets/javascripts/DeviceOrder.js').DeviceOrder;
 const DeviceRecommended = require('./../../../app/assets/javascripts/DeviceRecommended.js').DeviceRecommended;
 const DiagnosticStudyOrder = require('./../../../app/assets/javascripts/DiagnosticStudyOrder.js').DiagnosticStudyOrder;
@@ -138,7 +138,7 @@ describe('QDMPatient', () => {
       expect(dataElement.getCode()[0].code).toEqual('12345');
       expect(dataElement.getCode()[0].system).toEqual('1.2.3');
     });
-    
+
     it('can initialize a data element array with an entity', () => {
       qdmPatient = new QDMPatient({
         birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
@@ -150,20 +150,32 @@ describe('QDMPatient', () => {
               presentOnAdmissionIndicator: new cql.Code('present', 'on', 'admission'),
               rank: 2
             })],
-            participant: new CarePartner({
+            participant: [
+              new CarePartner({
               relationship: new cql.Code('fake', 'code', 'foo'),
               identifier: new Identifier({
                 namingSystem: "fake naming system",
                 value: "fake value"
+                })
+              }),
+              new Location({
+                locationType: new cql.Code('fake', 'code', 'bar'),
+                identifier: new Identifier({
+                  namingSystem: "some other fake naming system",
+                  value: "some other fake value"
+                })
               })
-            })
+            ]
           }),
         ]
       });
       expect(qdmPatient.dataElements.length).toEqual(1);
       expect(qdmPatient.dataElements[0].diagnoses[0].rank).toEqual(2);
-      expect(qdmPatient.dataElements[0].participant.identifier.value).toEqual('fake value');
-      expect(qdmPatient.dataElements[0].participant.qdmVersion).toEqual('5.5');
+      expect(qdmPatient.dataElements[0].participant.length).toEqual(2);
+      expect(qdmPatient.dataElements[0].participant[0].identifier.value).toEqual('fake value');
+      expect(qdmPatient.dataElements[0].participant[0].qdmVersion).toEqual('5.6');
+      expect(qdmPatient.dataElements[0].participant[1] instanceof Location).toBe(true);
+      expect(qdmPatient.dataElements[0].participant[1].locationType).toEqual(new cql.Code('fake', 'code', 'bar'));
     });
 
     it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {
@@ -225,16 +237,13 @@ describe('QDMPatient', () => {
         birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
         qdmVersion: '0.0',
         dataElements: [
-          new DeviceApplied(),
-          new DeviceApplied(),
           new DeviceOrder(),
           new DeviceRecommended(),
           new DeviceRecommended(),
           new DeviceRecommended(),
         ]
       });
-      expect(qdmPatient.getDataElements({qdmCategory: 'device'}).length).toEqual(6);
-      expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'applied'}).length).toEqual(2);
+      expect(qdmPatient.getDataElements({qdmCategory: 'device'}).length).toEqual(4);
       expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'recommended'}).length).toEqual(3);
       expect(qdmPatient.getDataElements({qdmCategory: 'device', qdmStatus: 'order'}).length).toEqual(1);
     });
@@ -256,7 +265,6 @@ describe('QDMPatient', () => {
           new CommunicationPerformed(),
           new Component(),
           new Diagnosis(),
-          new DeviceApplied(),
           new DiagnosticStudyOrder(),
           new DiagnosticStudyPerformed(),
           new DiagnosticStudyRecommended(),
@@ -300,7 +308,7 @@ describe('QDMPatient', () => {
           new Symptom(),
         ]
       });
-      expect(qdmPatient.getDataElements().length).toEqual(52);
+      expect(qdmPatient.getDataElements().length).toEqual(51);
       expect(qdmPatient.adverse_events().length).toEqual(1);
       expect(qdmPatient.allergies().length).toEqual(1);
       expect(qdmPatient.assessments().length).toEqual(3);
@@ -308,7 +316,6 @@ describe('QDMPatient', () => {
       expect(qdmPatient.care_goals().length).toEqual(1);
       expect(qdmPatient.communications().length).toEqual(1);
       expect(qdmPatient.conditions().length).toEqual(1);
-      expect(qdmPatient.devices().length).toEqual(1);
       expect(qdmPatient.diagnostic_studies().length).toEqual(3);
       expect(qdmPatient.encounters().length).toEqual(3);
       expect(qdmPatient.family_history().length).toEqual(1);
@@ -375,9 +382,7 @@ describe('QDMPatient', () => {
           new CareGoal(),
           new EncounterPerformed(),
           new EncounterPerformed(),
-          new EncounterPerformed({
-            negationRationale: new cql.Code('do', 're', 'mi')
-          }),
+          new EncounterPerformed(),
         ]
       });
     });
@@ -396,8 +401,7 @@ describe('QDMPatient', () => {
     });
     it('can return all dataElements of a specific category', () => {
       expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
-      expect(qdmPatient.findRecords('PositiveEncounterPerformed').length).toEqual(2);
-      expect(qdmPatient.findRecords('NegativeEncounterPerformed').length).toEqual(1);
+      expect(qdmPatient.findRecords('PositiveEncounterPerformed').length).toEqual(3);
     });
 
     it('can clear dataElementCache on request', () => {

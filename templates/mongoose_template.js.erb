@@ -26,7 +26,7 @@ const QDMDate = require('../basetypes/QDMDate');
 const Any = require('../basetypes/Any');
 
 const [Schema] = [mongoose.Schema];
-<% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity'%>
+<% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity' || datatype.downcase == 'location'%>
 const { EntitySchemaFunction } = require('./Entity');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -65,7 +65,7 @@ const <%= datatype -%>Schema = ComponentSchemaFunction({
   <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>
   <%- end %>
 });
-<% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity'%>
+<% elsif datatype.downcase == 'carepartner' || datatype.downcase == 'organization' || datatype.downcase == 'practitioner' || datatype.downcase == 'patiententity' || datatype.downcase == 'location'%>
 const <%= datatype -%>Schema = EntitySchemaFunction({
   <%- for attribute in attrs_with_extras -%>
   <% if attribute[:default] %><%= attribute[:name] %>: { type: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>, default: '<%= attribute[:default] %>' },<% else %><%= attribute[:name] %>: <%= TYPE_LOOKUP_JS[attribute[:type]] -%>,<%- end %>

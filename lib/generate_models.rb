@@ -240,6 +240,7 @@ unless IS_TEST
   contents.gsub!(%r{\/Practitioner.js}, '/attributes/Practitioner.js')
   contents.gsub!(%r{\/ResultComponent.js}, '/attributes/ResultComponent.js')
   contents.gsub!(%r{\/Identifier.js}, '/attributes/Identifier.js')
+  contents.gsub!(%r{\/Location.js}, '/attributes/Location.js')
   File.open(file_path, 'w') { |file| file.puts contents }
 end
 
@@ -325,7 +326,7 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
-types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/diagnosis_component.rb', '/result_component.rb']
+types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/location.rb', '/diagnosis_component.rb', '/result_component.rb']
 types_inherited_by_attribute = ['/component', '/facility_location', '/entity', '/diagnosis_component', '/identifier']
 types_inherited_by_entity = ['/patient_entity', '/care_partner', '/practitioner', '/organization', '/location']
 types_inherited_by_component = ['/result_component']
@@ -333,7 +334,7 @@ types_inherited_by_component = ['/result_component']
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
-  if ['entity.rb', 'organization.rb', 'patient_entity.rb', 'practitioner.rb', 'care_partner.rb'].any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+  if ['entity.rb', 'organization.rb', 'patient_entity.rb', 'practitioner.rb', 'care_partner.rb', 'location.rb'].any? { |sub_string| sub_string.include?(File.basename(file_name)) }
     contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
     File.open(file_name, 'w') { |file| file.puts contents }
   end
