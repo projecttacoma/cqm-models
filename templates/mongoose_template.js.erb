@@ -83,6 +83,13 @@ class <%= datatype %> extends mongoose.Document {
   constructor(object) {
     super(object, <%= datatype %>Schema);
     this._type = 'QDM::<%= datatype %>';
+    <%- for attribute in attrs_with_extras -%>
+    <%- if RESERVED_WORDS[attribute[:name].to_s] -%>
+    if (object && object.<%= RESERVED_WORDS[attribute[:name].to_s] %>) {
+      this.<%= attribute[:name] %> = object.<%= RESERVED_WORDS[attribute[:name].to_s] %>;
+    }
+    <%- end -%>
+    <%- end -%>
   }
 }
 <% if datatype.downcase == 'entity' || datatype.downcase == 'component'%>

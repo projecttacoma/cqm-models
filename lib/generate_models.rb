@@ -62,6 +62,10 @@ TYPE_LOOKUP_JS = {
   'System.Concept': '{}'
 }.stringify_keys!
 
+RESERVED_WORDS = {
+  'class': 'clazz'
+}.stringify_keys!
+
 ###############################################################################
 # Start of modelinfo file parsing
 ###############################################################################

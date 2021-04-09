@@ -444,6 +444,21 @@ describe('CQMPatient', () => {
     qdmData = new QDMPatient({
       birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
       qdmVersion: '0.0',
+      dataElements: [
+        new EncounterPerformed({
+          diagnoses: [new DiagnosisComponent({
+            code: new cql.Code('do', 're', 'mi'),
+            presentOnAdmissionIndicator: new cql.Code('present', 'on', 'admission'),
+            rank: 2
+          })],
+          clazz: {
+            code: 'fake',
+            system: 'foo',
+            version: 'bar',
+            display: undefined
+          }
+        }),
+      ]
     });
     patient = new Patient({
       givenNames: ['name1', 'name2'],
@@ -456,6 +471,9 @@ describe('CQMPatient', () => {
     err = patient.validateSync();
     expect(err).toBeUndefined();
     expect(patient.qdmPatient).toBeDefined();
+    expect(patient.qdmPatient.dataElements[0].class.code).toEqual('fake');
+    expect(patient.qdmPatient.dataElements[0].class.system).toEqual('foo');
+    expect(patient.qdmPatient.dataElements[0].class.version).toEqual('bar');
   });
 
   it('can contain a qdm patient that has extendedData', () => {

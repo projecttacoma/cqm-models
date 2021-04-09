@@ -861,6 +861,9 @@ class EncounterPerformed extends mongoose.Document {
   constructor(object) {
     super(object, EncounterPerformedSchema);
     this._type = 'QDM::EncounterPerformed';
+    if (object && object.clazz) {
+      this.class = object.clazz;
+    }
   }
 }
 
