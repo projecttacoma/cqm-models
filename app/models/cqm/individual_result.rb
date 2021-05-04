@@ -35,8 +35,8 @@ module CQM
     field :state, type: String, default: 'queued'
 
     # Relations to other model classes
-    belongs_to :measure
-    belongs_to :patient
+    belongs_to :measure, class_name: 'CQM::Measure', inverse_of: :calculation_result
+    belongs_to :patient, class_name: 'CQM::Patient', inverse_of: :calculation_result
 
     # Convert the stored array into a hash between clause and result
     def clause_results_by_clause
