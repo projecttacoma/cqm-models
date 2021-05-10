@@ -4,6 +4,6 @@ module QDM
     include Mongoid::Document
     field :code, type: QDM::Code
     field :result
-    field :qdmVersion, type: String, default: '5.5'
+    field :qdmVersion, type: String, default: '5.6'
   end
 end

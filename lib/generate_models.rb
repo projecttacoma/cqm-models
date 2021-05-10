@@ -62,6 +62,10 @@ TYPE_LOOKUP_JS = {
   'System.Concept': '{}'
 }.stringify_keys!
 
+RESERVED_WORDS = {
+  'class': 'clazz'
+}.stringify_keys!
+
 ###############################################################################
 # Start of modelinfo file parsing
 ###############################################################################
@@ -240,6 +244,7 @@ unless IS_TEST
   contents.gsub!(%r{\/Practitioner.js}, '/attributes/Practitioner.js')
   contents.gsub!(%r{\/ResultComponent.js}, '/attributes/ResultComponent.js')
   contents.gsub!(%r{\/Identifier.js}, '/attributes/Identifier.js')
+  contents.gsub!(%r{\/Location.js}, '/attributes/Location.js')
   File.open(file_path, 'w') { |file| file.puts contents }
 end
 
@@ -265,15 +270,18 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents.gsub!(/field :facilityLocation, type: Code/, 'field :facilityLocation, type: QDM::FacilityLocation')
 
   # Make Entity subclasses of type QDM::Entity
-  contents.gsub!(/field :participant/, "embeds_one :participant, class_name: 'QDM::Entity'")
-  contents.gsub!(/field :sender/, "embeds_one :sender, class_name: 'QDM::Entity'")
-  contents.gsub!(/field :recipient/, "embeds_one :recipient, class_name: 'QDM::Entity'")
-  contents.gsub!(/field :recorder/, "embeds_one :recorder, class_name: 'QDM::Entity'")
-  contents.gsub!(/field :performer/, "embeds_one :performer, class_name: 'QDM::Entity'")
-  contents.gsub!(/field :requester/, "embeds_one :requester, class_name: 'QDM::Entity'")
-  contents.gsub!(/field :prescriber/, "embeds_one :prescriber, class_name: 'QDM::Entity'")
-  contents.gsub!(/field :dispenser/, "embeds_one :dispenser, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :participant/, "embeds_many :participant, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :sender/, "embeds_many :sender, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :recipient/, "embeds_many :recipient, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :recorder/, "embeds_many :recorder, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :performer/, "embeds_many :performer, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :requester/, "embeds_many :requester, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :prescriber/, "embeds_many :prescriber, class_name: 'QDM::Entity'")
+  contents.gsub!(/field :dispenser/, "embeds_many :dispenser, class_name: 'QDM::Entity'")
   contents.gsub!(/field :identifier, type: Identifier/, "embeds_one :identifier, class_name: 'QDM::Identifier'")
+
+  # EncounterPerformed
+  contents.gsub!(/field :class/, 'field :clazz')
 
   File.open(file_name, 'w') { |file| file.puts contents }
 end
@@ -293,14 +301,14 @@ Dir.glob(js_models_path + '*.js').each do |file_name|
   contents.gsub!(/components: \[\]/, 'components: [ComponentSchema]')
   contents.gsub!(/component: Code/, 'component: ComponentSchema')
   contents.gsub!(/diagnoses: \[\]/, 'diagnoses: [DiagnosisComponentSchema]')
-  contents.gsub!(/sender: Any/, 'sender: AnyEntity')
-  contents.gsub!(/recipient: Any/, 'recipient: AnyEntity')
-  contents.gsub!(/participant: Any/, 'participant: AnyEntity')
-  contents.gsub!(/recorder: Any/, 'recorder: AnyEntity')
-  contents.gsub!(/performer: Any/, 'performer: AnyEntity')
-  contents.gsub!(/requester: Any/, 'requester: AnyEntity')
-  contents.gsub!(/prescriber: Any/, 'prescriber: AnyEntity')
-  contents.gsub!(/dispenser: Any/, 'dispenser: AnyEntity')
+  contents.gsub!(/sender: Any/, 'sender: [AnyEntity]')
+  contents.gsub!(/recipient: Any/, 'recipient: [AnyEntity]')
+  contents.gsub!(/participant: Any/, 'participant: [AnyEntity]')
+  contents.gsub!(/recorder: Any/, 'recorder: [AnyEntity]')
+  contents.gsub!(/performer: Any/, 'performer: [AnyEntity]')
+  contents.gsub!(/requester: Any/, 'requester: [AnyEntity]')
+  contents.gsub!(/prescriber: Any/, 'prescriber: [AnyEntity]')
+  contents.gsub!(/dispenser: Any/, 'dispenser: [AnyEntity]')
   contents.gsub!(/relatedTo: \[\]/, 'relatedTo: [String]')
 
   File.open(file_name, 'w') { |file| file.puts contents }
@@ -325,15 +333,15 @@ Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   File.open(file_name, 'w') { |file| file.puts contents }
 end
 
-types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/diagnosis_component.rb', '/result_component.rb']
+types_not_inherited_by_data_element = ['/patient.rb', '/identifier.rb', '/component.rb', '/facility_location.rb', '/entity.rb', '/organization.rb', '/patient_entity.rb', '/practitioner.rb', '/care_partner.rb', '/location.rb', '/diagnosis_component.rb', '/result_component.rb']
 types_inherited_by_attribute = ['/component', '/facility_location', '/entity', '/diagnosis_component', '/identifier']
-types_inherited_by_entity = ['/patient_entity', '/care_partner', '/practitioner', '/organization']
+types_inherited_by_entity = ['/patient_entity', '/care_partner', '/practitioner', '/organization', '/location']
 types_inherited_by_component = ['/result_component']
 
 # Set embedded in for datatypes
 Dir.glob(ruby_models_path + '*.rb').each do |file_name|
   contents = File.read(file_name)
-  if ['entity.rb', 'organization.rb', 'patient_entity.rb', 'practitioner.rb', 'care_partner.rb'].any? { |sub_string| sub_string.include?(File.basename(file_name)) }
+  if ['entity.rb', 'organization.rb', 'patient_entity.rb', 'practitioner.rb', 'care_partner.rb', 'location.rb'].any? { |sub_string| sub_string.include?(File.basename(file_name)) }
     contents.gsub!(/  include Mongoid::Document\n/, "  include Mongoid::Document\n  embedded_in :data_element\n")
     File.open(file_name, 'w') { |file| file.puts contents }
   end

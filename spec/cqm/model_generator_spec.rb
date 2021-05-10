@@ -50,7 +50,7 @@ RSpec.describe QDM do
     expect(system("ruby lib/generate_models.rb #{modelinfo_file} #{hqmf_oid_file} TEST")).to be true
     datatypes = get_datatypes_attributes(modelinfo_file)
     datatypes.each do |datatype, attributes|
-      if datatype != 'Identifier' && datatype != 'Component' && datatype != 'FacilityLocation' && datatype != 'Entity' && datatype != 'ResultComponent' && datatype != 'DiagnosisComponent' && datatype != 'CarePartner' && datatype != 'Organization' && datatype != 'PatientEntity' && datatype != 'Practitioner'
+      if datatype != 'Identifier' && datatype != 'Component' && datatype != 'FacilityLocation' && datatype != 'Entity' && datatype != 'ResultComponent' && datatype != 'DiagnosisComponent' && datatype != 'CarePartner' && datatype != 'Organization' && datatype != 'PatientEntity' && datatype != 'Practitioner' && datatype != 'Location'
         puts datatype
         expect(File.file?('app/models/test/qdm/' + datatype.underscore + '.rb')).to be true
         ruby_model_has_attributes(File.read('app/models/test/qdm/' + datatype.underscore + '.rb'), attributes)
@@ -77,7 +77,7 @@ RSpec.describe QDM do
     system 'rm -rf app/models/test'
   end
 
-  it 'generates each QDM 5.5 datatype model with all attributes' do
-    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.5.xml', 'data/oids_qdm_5.4.json')
+  it 'generates each QDM 5.6 datatype model with all attributes' do
+    check_generator_datatypes_attributes('modelinfo/qdm-modelinfo-5.6.xml', 'data/oids_qdm_5.6.json')
   end
 end

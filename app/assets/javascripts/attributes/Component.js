@@ -17,7 +17,7 @@ const [Number, String] = [
 const ComponentSchema = new mongoose.Schema({
   code: Code,
   result: Any,
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::Component' },
 
 });
@@ -34,7 +34,7 @@ function ComponentSchemaFunction(add, options) {
   const extended = new Schema({
     code: Code,
     result: Any,
-    qdmVersion: { type: String, default: '5.5' },
+    qdmVersion: { type: String, default: '5.6' },
     _type: { type: String, default: 'QDM::Component' },
 
 

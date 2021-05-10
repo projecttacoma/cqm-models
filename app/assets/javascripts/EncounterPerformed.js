@@ -22,19 +22,20 @@ const [Number, String] = [
 const EncounterPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   admissionSource: Code,
+  class: Code,
   relevantPeriod: Interval,
   dischargeDisposition: Code,
   facilityLocations: [FacilityLocationSchema],
   diagnoses: [DiagnosisComponentSchema],
-  negationRationale: Code,
   lengthOfStay: Quantity,
   priority: Code,
-  participant: AnyEntity,
+  participant: [AnyEntity],
+  relatedTo: [String],
   qdmTitle: { type: String, default: 'Encounter, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.5' },
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'performed' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::EncounterPerformed' },
 
 });
@@ -44,6 +45,9 @@ class EncounterPerformed extends mongoose.Document {
   constructor(object) {
     super(object, EncounterPerformedSchema);
     this._type = 'QDM::EncounterPerformed';
+    if (object && object.clazz) {
+      this.class = object.clazz;
+    }
   }
 }
 

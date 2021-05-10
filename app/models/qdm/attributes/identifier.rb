@@ -4,6 +4,6 @@ module QDM
     include Mongoid::Document
     field :namingSystem, type: String
     field :value, type: String
-    field :qdmVersion, type: String, default: '5.5'
+    field :qdmVersion, type: String, default: '5.6'
   end
 end

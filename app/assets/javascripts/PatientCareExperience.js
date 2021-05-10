@@ -21,11 +21,11 @@ const [Number, String] = [
 
 const PatientCareExperienceSchema = DataElementSchema({
   authorDatetime: DateTime,
-  recorder: AnyEntity,
+  recorder: [AnyEntity],
   qdmTitle: { type: String, default: 'Patient Care Experience' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.52' },
   qdmCategory: { type: String, default: 'care_experience' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::PatientCareExperience' },
 
 });

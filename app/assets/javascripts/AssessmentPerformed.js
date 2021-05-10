@@ -27,14 +27,15 @@ const AssessmentPerformedSchema = DataElementSchema({
   reason: Code,
   method: Code,
   result: Any,
+  interpretation: Code,
   components: [ComponentSchema],
   relatedTo: [String],
-  performer: AnyEntity,
+  performer: [AnyEntity],
   qdmTitle: { type: String, default: 'Assessment, Performed' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.117' },
   qdmCategory: { type: String, default: 'assessment' },
   qdmStatus: { type: String, default: 'performed' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::AssessmentPerformed' },
 
 });

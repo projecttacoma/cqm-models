@@ -8,6 +8,6 @@ module QDM
     field :qdmTitle, type: String, default: 'Related Person'
     field :hqmfOid, type: String, default: '2.16.840.1.113883.10.20.28.4.141'
     field :qdmCategory, type: String, default: 'related_person'
-    field :qdmVersion, type: String, default: '5.5'
+    field :qdmVersion, type: String, default: '5.6'
   end
 end

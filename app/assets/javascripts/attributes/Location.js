@@ -13,21 +13,20 @@ const [Number, String] = [
   mongoose.Schema.Types.String,
 ];
 
-const OrganizationSchema = EntitySchemaFunction({
-  organizationType: Code,
-  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.135' },
-  qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.163' },
-  _type: { type: String, default: 'QDM::Organization' },
+const LocationSchema = EntitySchemaFunction({
+  locationType: Code,
+  hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.142' },
+  _type: { type: String, default: 'QDM::Location' },
 
 });
 
-module.exports.OrganizationSchema = OrganizationSchema;
-class Organization extends mongoose.Document {
+module.exports.LocationSchema = LocationSchema;
+class Location extends mongoose.Document {
   constructor(object) {
-    super(object, OrganizationSchema);
-    this._type = 'QDM::Organization';
+    super(object, LocationSchema);
+    this._type = 'QDM::Location';
   }
 }
 
-module.exports.Organization = Organization;
+module.exports.Location = Location;
 

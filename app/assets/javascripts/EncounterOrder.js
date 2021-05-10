@@ -24,13 +24,13 @@ const EncounterOrderSchema = DataElementSchema({
   reason: Code,
   facilityLocation: FacilityLocationSchema,
   negationRationale: Code,
-  requester: AnyEntity,
+  requester: [AnyEntity],
   priority: Code,
   qdmTitle: { type: String, default: 'Encounter, Order' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.27' },
   qdmCategory: { type: String, default: 'encounter' },
   qdmStatus: { type: String, default: 'order' },
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::EncounterOrder' },
 
 });

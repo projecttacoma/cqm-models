@@ -5,7 +5,7 @@ RSpec.describe QDM do
     # Clear old test models (if they are still there for some reason)
     system('rm tmp/*.js')
     system('rm -rf app/models/test')
-    system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.5.xml data/oids_qdm_5.5.json TEST')
+    system('ruby lib/generate_models.rb modelinfo/qdm-modelinfo-5.6.xml data/oids_qdm_5.6.json TEST')
   end
 
   before(:each) do
@@ -33,7 +33,7 @@ RSpec.describe QDM do
     @patient_c.qdmPatient.dataElements << QDM::EncounterPerformed.new(patient: @patient_c, admissionSource: QDM::Code.new('bogus code', 'bogus code system'))
     practitioner = QDM::Practitioner.new(role: QDM::Code.new('foo code', 'foo code system'), specialty: QDM::Code.new('foo code 2', 'foo code system 2'), qualification: QDM::Code.new('foo code 3', 'foo code systems 3'))
     practitioner.identifier = QDM::Identifier.new(namingSystem: 'foo', value: 'foo value')
-    @patient_c.qdmPatient.dataElements[3].participant = practitioner
+    @patient_c.qdmPatient.dataElements[3].participant = [practitioner]
 
     # Create more detailed (and realistic) patient; more useful for testing calculation with
     bd = 75.years.ago
@@ -211,10 +211,10 @@ RSpec.describe QDM do
   end
 
   it 'entity datatype can be saved correctly' do
-    puts @patient_c.qdmPatient.dataElements[3].participant['identifier']
+    puts @patient_c.qdmPatient.dataElements[3].participant.first['identifier']
     @patient_c.save
-    expect(@patient_c.qdmPatient.dataElements[3].participant['specialty'][:code]).to eq 'foo code 2'
-    expect(@patient_c.qdmPatient.dataElements[3].participant['identifier']['value']).to eq 'foo value'
+    expect(@patient_c.qdmPatient.dataElements[3].participant.first['specialty'][:code]).to eq 'foo code 2'
+    expect(@patient_c.qdmPatient.dataElements[3].participant.first['identifier']['value']).to eq 'foo value'
   end
 
   it 'individualResult has empty observation_values by default' do

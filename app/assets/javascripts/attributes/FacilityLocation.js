@@ -16,7 +16,7 @@ const [Number, String] = [
 const FacilityLocationSchema = new mongoose.Schema({
   code: Code,
   locationPeriod: Interval,
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::FacilityLocation' },
 
 });

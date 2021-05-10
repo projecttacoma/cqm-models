@@ -8,7 +8,7 @@ const [Number, String] = [
 const IdentifierSchema = mongoose.Schema({
   namingSystem: String,
   value: String,
-  qdmVersion: { type: String, default: '5.5' },
+  qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::Identifier' },
 
 }, { _id: false, id: false });
