@@ -18,9 +18,9 @@ module QDM
 
     def initialize(options = {})
       # class is reserved word. changed to clazz
-      if options[:class]
-        options[:clazz] = options[:class]
-        options.delete(:class)
+      if options['class']
+        options['clazz'] = options['class']
+        options.delete('class')
       end
       super(options)
       # default id to the mongo ObjectId for this DataElement if it isnt already defined

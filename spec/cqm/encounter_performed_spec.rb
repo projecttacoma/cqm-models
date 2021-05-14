@@ -6,21 +6,21 @@ RSpec.describe QDM::EncounterPerformed do
       @patient = CQM::Patient.new(givenNames: %w['Example Patient'], familyName: 'C-cee', bundleId: 'C')
       @patient.qdmPatient.birthDatetime = 15.years.ago
       encounter_performed = QDM::EncounterPerformed.new(
-        authorDatetime: '2012-08-21T08:00:00.000+00:00',
-        class: {
-          code: '111297003',
-          system: 'SNOMED-CT'
+        'authorDatetime' => '2012-08-21T08:00:00.000+00:00',
+        'class' => {
+          'code' => '111297003',
+          'system' => 'SNOMED-CT'
         },
-        relevantPeriod: {
-          low: '2012-08-21T08:00:00.000+00:00',
-          high: '2012-12-19T08:15:00.000+00:00',
-          lowClosed: true,
-          highClosed: true
+        'relevantPeriod' => {
+          'low' => '2012-08-21T08:00:00.000+00:00',
+          'high' => '2012-12-19T08:15:00.000+00:00',
+          'lowClosed' => true,
+          'highClosed' => true
         },
-        diagnoses: [
+        'diagnoses' => [
           {
-            code: '111297002',
-            system: 'SNOMED-CT'
+            'code' => '111297002',
+            'system' => 'SNOMED-CT'
           }
         ]
       )
