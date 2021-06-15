@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - master
+      - cqm_models_3_x
 
 jobs:
   build:
