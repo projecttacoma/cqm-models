@@ -42,6 +42,7 @@
   "2.16.840.1.113883.10.20.28.4.63": "PhysicalExamRecommended",
   "2.16.840.1.113883.10.20.28.4.54": "PatientCharacteristicBirthdate",
   "2.16.840.1.113883.10.20.28.4.120": "AdverseEvent",
+  "2.16.840.1.113883.10.20.28.4.13": "DeviceApplied",
   "2.16.840.1.113883.10.20.28.4.16": "DeviceRecommended",
   "2.16.840.1.113883.10.20.28.4.48": "MedicationDischarge",
   "2.16.840.1.113883.10.20.28.4.36": "InterventionPerformed",
