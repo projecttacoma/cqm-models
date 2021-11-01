@@ -1,5 +1,5 @@
 const CQM = require('./../../../app/assets/javascripts/cqm/AllCQMModels')
-const AdverseEvent = require('./../../../app/assets/javascripts/AdverseEvent.js').AdverseEvent;
+const AdverseEvent = require('./../../../app/assets/javascripts/AdverseEvent').AdverseEvent;
 const Buffer = require('mongoose/browser').Schema.Types.Buffer;
 
 describe('CQM', () => {

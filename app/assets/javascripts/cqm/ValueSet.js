@@ -1,5 +1,5 @@
 const mongoose = require('mongoose/browser');
-const Concept = require('./Concept.js');
+const Concept = require('./Concept');
 
 const [String] = [mongoose.Schema.Types.String];
 

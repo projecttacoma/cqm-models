@@ -1,9 +1,9 @@
-const Code = require('./../../../app/assets/javascripts/basetypes/Code.js');
-const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
-const Interval = require('./../../../app/assets/javascripts/basetypes/Interval.js');
-const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
-const Quantity = require('./../../../app/assets/javascripts/basetypes/Quantity.js');
-const Ratio = require('./../../../app/assets/javascripts/basetypes/Ratio.js');
+const Code = require('./../../../app/assets/javascripts/basetypes/Code');
+const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime');
+const Interval = require('./../../../app/assets/javascripts/basetypes/Interval');
+const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate');
+const Quantity = require('./../../../app/assets/javascripts/basetypes/Quantity');
+const Ratio = require('./../../../app/assets/javascripts/basetypes/Ratio');
 const cql = require('cql-execution');
 
 describe('basetype DateTime', () => {

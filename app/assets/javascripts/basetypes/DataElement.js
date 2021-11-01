@@ -1,5 +1,5 @@
 const mongoose = require('mongoose/browser');
-const Code = require('./Code.js');
+const Code = require('./Code');
 const cql = require('cql-execution');
 const Identifier = require('../attributes/Identifier');
 
