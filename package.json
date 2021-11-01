@@ -27,6 +27,9 @@
     "istanbul": "^0.4.5",
     "jasmine": "^2.9.0"
   },
+  "resolutions": {
+    "ansi-regex": "^5.0.1"
+  },
   "scripts": {
     "prepublish": "./bin/build_cql_execution.sh",
     "test": "istanbul cover jasmine -x 'spec/**/*'",
