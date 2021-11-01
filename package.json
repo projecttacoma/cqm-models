@@ -16,7 +16,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "cql-execution": "~2.2.0",
+    "cql-execution": "~2.3.3",
     "mongoose": "^5.11.10"
   },
   "devDependencies": {
