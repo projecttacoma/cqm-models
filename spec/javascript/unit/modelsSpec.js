@@ -175,6 +175,7 @@ describe('QDMPatient', () => {
     it('supports _typeHierarchy in data elements', () => {
       dataElement = new MedicationOrder();
       expect(dataElement._typeHierarchy()).toEqual([
+        { name: '{urn:healthit-gov:qdm:v5_6}PositiveMedicationOrder', type: 'NamedTypeSpecifier' },
         { name: '{urn:healthit-gov:qdm:v5_6}MedicationOrder', type: 'NamedTypeSpecifier' },
         { name: '{https://github.com/cqframework/cql-execution/simple}Record', type: 'NamedTypeSpecifier' },
         { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' }

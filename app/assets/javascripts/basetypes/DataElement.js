@@ -59,8 +59,13 @@ function DataElementSchema(add, options) {
   /* eslint no-underscore-dangle: 0 */
   extended.methods._typeHierarchy = function _typeHierarchy() {
     const typeName = this._type.replace(/QDM::/, '');
+    const prefix = !!this.negationRationale ? 'Negative': 'Positive';
     const ver = this.qdmVersion.replace('.', '_');
     return [
+      {
+        name: `{urn:healthit-gov:qdm:v${ver}}${prefix}${typeName}`,
+        type: 'NamedTypeSpecifier',
+      },
       {
         name: `{urn:healthit-gov:qdm:v${ver}}${typeName}`,
         type: 'NamedTypeSpecifier',
