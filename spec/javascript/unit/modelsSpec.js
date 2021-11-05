@@ -80,6 +80,39 @@ describe('QDMPatient', () => {
   });
 });
 
+  it('_typeHierarchy', () => {
+    qdmPatient = new QDMPatient();
+    expect(qdmPatient._typeHierarchy()).toEqual([
+        { name: '{urn:healthit-gov:qdm:v5_6}Patient', type: 'NamedTypeSpecifier' },
+        { name: '{https://github.com/cqframework/cql-execution/simple}Record', type: 'NamedTypeSpecifier' },
+        { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' }
+    ]);
+  });
+
+  it('_is Patient', () => {
+    qdmPatient = new QDMPatient();
+    typeSpecifier = {
+      name: `{urn:healthit-gov:qdm:v5_6}Patient`,
+      type: 'NamedTypeSpecifier'
+    };
+    expect(qdmPatient._is(typeSpecifier)).toBe(true);
+  });
+
+  it('_is Record', () => {
+    qdmPatient = new QDMPatient();
+    typeSpecifier = {
+      name: '{https://github.com/cqframework/cql-execution/simple}Record',
+      type: 'NamedTypeSpecifier'
+    };
+    expect(qdmPatient._is(typeSpecifier)).toBe(true);
+  });
+
+  it('_is Any', () => {
+    qdmPatient = new QDMPatient();
+    typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
+    expect(qdmPatient._is(typeSpecifier)).toBe(true);
+  });
+
   it('can construct a patient with data', () => {
     qdmPatient = new QDMPatient({
       birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
@@ -137,6 +170,39 @@ describe('QDMPatient', () => {
       expect(dataElement.getCode().length).toEqual(2);
       expect(dataElement.getCode()[0].code).toEqual('12345');
       expect(dataElement.getCode()[0].system).toEqual('1.2.3');
+    });
+
+    it('supports _typeHierarchy in data elements', () => {
+      dataElement = new MedicationOrder();
+      expect(dataElement._typeHierarchy()).toEqual([
+        { name: '{urn:healthit-gov:qdm:v5_6}MedicationOrder', type: 'NamedTypeSpecifier' },
+        { name: '{https://github.com/cqframework/cql-execution/simple}Record', type: 'NamedTypeSpecifier' },
+        { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' }
+      ]);
+    });
+
+    it('_is MedicationOrder', () => {
+      dataElement = new MedicationOrder();
+      typeSpecifier = {
+        name: `{urn:healthit-gov:qdm:v5_6}MedicationOrder`,
+        type: 'NamedTypeSpecifier'
+      };
+      expect(dataElement._is(typeSpecifier)).toBe(true);
+    });
+
+    it('_is Record', () => {
+      dataElement = new MedicationOrder();
+      typeSpecifier = {
+        name: '{https://github.com/cqframework/cql-execution/simple}Record',
+        type: 'NamedTypeSpecifier'
+      };
+      expect(dataElement._is(typeSpecifier)).toBe(true);
+    });
+
+    it('_is Any', () => {
+      dataElement = new MedicationOrder();
+      typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
+      expect(dataElement._is(typeSpecifier)).toBe(true);
     });
 
     it('can initialize a data element array with an entity', () => {

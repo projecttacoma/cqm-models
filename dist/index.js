@@ -2464,6 +2464,34 @@ QDMPatientSchema.methods.id = function id() {
   return this._id;
 };
 
+// cql-execution prefers getId() over id() because some data models may have an id property
+QDMPatientSchema.methods.getId = function getId() {
+  return this._id;
+};
+
+/* eslint no-underscore-dangle: 0 */
+QDMPatientSchema.methods._is = function _is(typeSpecifier) {
+  return this._typeHierarchy().some(
+    t => t.type === typeSpecifier.type && t.name === typeSpecifier.name
+  );
+};
+
+/* eslint no-underscore-dangle: 0 */
+QDMPatientSchema.methods._typeHierarchy = function _typeHierarchy() {
+  const ver = this.qdmVersion.replace('.', '_');
+  return [
+    {
+      name: `{urn:healthit-gov:qdm:v${ver}}Patient`,
+      type: 'NamedTypeSpecifier',
+    },
+    {
+      name: '{https://github.com/cqframework/cql-execution/simple}Record',
+      type: 'NamedTypeSpecifier',
+    },
+    { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
+  ];
+};
+
 // Returns an array of elements that exist on this patient, that
 // match the given HQMF data criteria OID.
 QDMPatientSchema.methods.getByHqmfOid = function getByHqmfOid(hqmfOid) {
@@ -3613,6 +3641,29 @@ function DataElementSchema(add, options) {
     return null;
   };
 
+  /* eslint no-underscore-dangle: 0 */
+  extended.methods._is = function _is(typeSpecifier) {
+    return this._typeHierarchy().some(
+      t => t.type === typeSpecifier.type && t.name === typeSpecifier.name
+    );
+  };
+
+  /* eslint no-underscore-dangle: 0 */
+  extended.methods._typeHierarchy = function _typeHierarchy() {
+    const typeName = this._type.replace(/QDM::/, '');
+    const ver = this.qdmVersion.replace('.', '_');
+    return [
+      {
+        name: `{urn:healthit-gov:qdm:v${ver}}${typeName}`,
+        type: 'NamedTypeSpecifier',
+      },
+      {
+        name: '{https://github.com/cqframework/cql-execution/simple}Record',
+        type: 'NamedTypeSpecifier',
+      },
+      { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
+    ];
+  };
   return extended;
 }
 

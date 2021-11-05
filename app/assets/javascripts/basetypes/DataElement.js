@@ -49,6 +49,29 @@ function DataElementSchema(add, options) {
     return null;
   };
 
+  /* eslint no-underscore-dangle: 0 */
+  extended.methods._is = function _is(typeSpecifier) {
+    return this._typeHierarchy().some(
+      t => t.type === typeSpecifier.type && t.name === typeSpecifier.name
+    );
+  };
+
+  /* eslint no-underscore-dangle: 0 */
+  extended.methods._typeHierarchy = function _typeHierarchy() {
+    const typeName = this._type.replace(/QDM::/, '');
+    const ver = this.qdmVersion.replace('.', '_');
+    return [
+      {
+        name: `{urn:healthit-gov:qdm:v${ver}}${typeName}`,
+        type: 'NamedTypeSpecifier',
+      },
+      {
+        name: '{https://github.com/cqframework/cql-execution/simple}Record',
+        type: 'NamedTypeSpecifier',
+      },
+      { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
+    ];
+  };
   return extended;
 }
 
