@@ -56,6 +56,30 @@ QDMPatientSchema.methods.getByQrdaOid = function getByQrdaOid(qrdaOid) {
   return this.dataElements.filter(element => element.qrdaOid === qrdaOid);
 };
 
+// cql-execution prefers getId() over id() because some data models may have an id property
+QDMPatientSchema.methods.getId = function getId() {
+  return this._id;
+};
+
+/* eslint no-underscore-dangle: 0 */
+QDMPatientSchema.methods._is = function _is(typeSpecifier) {
+  return this._typeHierarchy().some(
+    t => t.type === typeSpecifier.type && t.name === typeSpecifier.name
+  );
+};
+
+/* eslint no-underscore-dangle: 0 */
+QDMPatientSchema.methods._typeHierarchy = function _typeHierarchy() {
+  const ver = this.qdmVersion.replace('.', '_');
+  return [
+    {
+      name: `{urn:healthit-gov:qdm:v${ver}}Patient`,
+      type: 'NamedTypeSpecifier',
+    },
+    { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
+  ];
+};
+
 // Returns an array of elements that exist on this patient. Optionally
 // takes a qdmCategory, which returns all elements of that QDM qdmCategory.
 // Example: patient.getDataElements({qdmCategory: 'encounters'}) will return
