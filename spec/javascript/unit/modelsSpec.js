@@ -81,34 +81,34 @@ describe('QDMPatient', () => {
 });
 
   it('_typeHierarchy', () => {
-    qdmPatient = new QDMPatient();
+    const qdmPatient = new QDMPatient();
     expect(qdmPatient._typeHierarchy()).toEqual([
-        { name: '{urn:healthit-gov:qdm:v5_6}Patient', type: 'NamedTypeSpecifier' },
-        { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' }
+      { name: '{urn:healthit-gov:qdm:v5_6}Patient', type: 'NamedTypeSpecifier' },
+      { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' }
     ]);
   });
 
   it('_is Patient', () => {
-    qdmPatient = new QDMPatient();
-    typeSpecifier = {
-      name: `{urn:healthit-gov:qdm:v5_6}Patient`,
+    const qdmPatient = new QDMPatient();
+    const typeSpecifier = {
+      name: '{urn:healthit-gov:qdm:v5_6}Patient',
       type: 'NamedTypeSpecifier'
     };
     expect(qdmPatient._is(typeSpecifier)).toBe(true);
   });
 
   it('_is Any', () => {
-    qdmPatient = new QDMPatient();
-    typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
+    const qdmPatient = new QDMPatient();
+    const typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
     expect(qdmPatient._is(typeSpecifier)).toBe(true);
   });
 
   it('can construct a patient with data', () => {
-    qdmPatient = new QDMPatient({
+    const qdmPatient = new QDMPatient({
       birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
       qdmVersion: '0.0',
     });
-    err = qdmPatient.validateSync();
+    const err = qdmPatient.validateSync();
     expect(err).toBeUndefined();
   });
 
@@ -172,35 +172,35 @@ describe('QDMPatient', () => {
     });
 
     it('_is MedicationOrder', () => {
-      dataElement = new MedicationOrder();
-      typeSpecifier = {
+      const dataElement = new MedicationOrder();
+      const typeSpecifier = {
         name: `{urn:healthit-gov:qdm:v5_6}MedicationOrder`,
-        type: 'NamedTypeSpecifier'
+        type: 'NamedTypeSpecifier',
       };
       expect(dataElement._is(typeSpecifier)).toBe(true);
     });
 
     it('_is PositiveMedicationOrder', () => {
-      dataElement = new MedicationOrder();
-      typeSpecifier = {
+      const dataElement = new MedicationOrder();
+      const typeSpecifier = {
         name: `{urn:healthit-gov:qdm:v5_6}PositiveMedicationOrder`,
-        type: 'NamedTypeSpecifier'
+        type: 'NamedTypeSpecifier',
       };
       expect(dataElement._is(typeSpecifier)).toBe(true);
     });
 
     it('_is NegativeMedicationOrder', () => {
-      dataElement = new MedicationOrder({negationRationale: new cql.Code('present', 'on', 'admission')});
-      typeSpecifier = {
+      const dataElement = new MedicationOrder({negationRationale: new cql.Code('present', 'on', 'admission')});
+      const typeSpecifier = {
         name: `{urn:healthit-gov:qdm:v5_6}NegativeMedicationOrder`,
-        type: 'NamedTypeSpecifier'
+        type: 'NamedTypeSpecifier',
       };
       expect(dataElement._is(typeSpecifier)).toBe(true);
     });
 
     it('_is Any', () => {
-      dataElement = new MedicationOrder();
-      typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
+      const dataElement = new MedicationOrder();
+      const typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
       expect(dataElement._is(typeSpecifier)).toBe(true);
     });
 
