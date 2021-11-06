@@ -59,7 +59,7 @@ function DataElementSchema(add, options) {
   /* eslint no-underscore-dangle: 0 */
   extended.methods._typeHierarchy = function _typeHierarchy() {
     const typeName = this._type.replace(/QDM::/, '');
-    const prefix = !!this.negationRationale ? 'Negative': 'Positive';
+    const prefix = this.negationRationale ? 'Negative' : 'Positive';
     const ver = this.qdmVersion.replace('.', '_');
     return [
       {
@@ -68,10 +68,6 @@ function DataElementSchema(add, options) {
       },
       {
         name: `{urn:healthit-gov:qdm:v${ver}}${typeName}`,
-        type: 'NamedTypeSpecifier',
-      },
-      {
-        name: '{https://github.com/cqframework/cql-execution/simple}Record',
         type: 'NamedTypeSpecifier',
       },
       { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
