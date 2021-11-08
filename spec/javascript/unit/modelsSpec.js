@@ -99,6 +99,28 @@ describe('QDMPatient', () => {
     const typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
     expect(qdmPatient._is(typeSpecifier)).toBe(true);
   });
+
+  it('can construct a patient with data', () => {
+    const qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+    });
+    const err = qdmPatient.validateSync();
+    expect(err).toBeUndefined();
+  });
+
+  it('can construct a patient with extendedData', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      extendedData: {
+        measure_ids: ['ID123']
+      }
+    });
+    err = qdmPatient.validateSync();
+    expect(err).toBeUndefined();
+    expect(qdmPatient.extendedData['measure_ids']).toEqual(['ID123']);
+  });
 });
 
 describe('is and typeHierarchy', () => {
@@ -135,28 +157,6 @@ describe('is and typeHierarchy', () => {
     expect(dataElement._is(typeSpecifier)).toBe(true);
   });
 });
-
-  it('can construct a patient with data', () => {
-    const qdmPatient = new QDMPatient({
-      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-      qdmVersion: '0.0',
-    });
-    const err = qdmPatient.validateSync();
-    expect(err).toBeUndefined();
-  });
-
-  it('can construct a patient with extendedData', () => {
-    qdmPatient = new QDMPatient({
-      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-      qdmVersion: '0.0',
-      extendedData: {
-        measure_ids: ['ID123']
-      }
-    });
-    err = qdmPatient.validateSync();
-    expect(err).toBeUndefined();
-    expect(qdmPatient.extendedData['measure_ids']).toEqual(['ID123']);
-  });
 
 describe('InitializeDataElements', () => {
   it('can handle an empty data elements array', () => {
@@ -208,18 +208,13 @@ describe('InitializeDataElements', () => {
           })],
           participant: [
             new CarePartner({
-            relationship: new cql.Code('fake', 'code', 'foo'),
-            identifier: new Identifier({
-              namingSystem: "fake naming system",
-              value: "fake value"
-              })
+              relationship: new cql.Code('fake', 'code', 'foo'),
+              identifier: new Identifier({ namingSystem: "fake naming system", value: "fake value" })
             }),
             new Location({
               locationType: new cql.Code('fake', 'code', 'bar'),
-              identifier: new Identifier({
-                namingSystem: "some other fake naming system",
-                value: "some other fake value"
-              })
+              identifier: new Identifier({ namingSystem: "some other fake naming system", value: "some other fake value" })
+              identifier: new Identifier({ namingSystem: "some other fake naming system", value: "some other fake value" })
             })
           ]
         }),
