@@ -214,7 +214,6 @@ describe('InitializeDataElements', () => {
             new Location({
               locationType: new cql.Code('fake', 'code', 'bar'),
               identifier: new Identifier({ namingSystem: "some other fake naming system", value: "some other fake value" })
-              identifier: new Identifier({ namingSystem: "some other fake naming system", value: "some other fake value" })
             })
           ]
         }),
