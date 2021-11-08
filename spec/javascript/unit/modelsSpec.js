@@ -101,12 +101,13 @@ describe('QDMPatient', () => {
   });
 });
 
+describe('is and typeHierarchy', () => {
   it('supports _typeHierarchy in data elements', () => {
-    dataElement = new MedicationOrder();
+    const dataElement = new MedicationOrder();
     expect(dataElement._typeHierarchy()).toEqual([
       { name: '{urn:healthit-gov:qdm:v5_6}PositiveMedicationOrder', type: 'NamedTypeSpecifier' },
       { name: '{urn:healthit-gov:qdm:v5_6}MedicationOrder', type: 'NamedTypeSpecifier' },
-      { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' }
+      { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
     ]);
   });
 
@@ -133,6 +134,7 @@ describe('QDMPatient', () => {
     const typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
     expect(dataElement._is(typeSpecifier)).toBe(true);
   });
+});
 
   it('can construct a patient with data', () => {
     const qdmPatient = new QDMPatient({
