@@ -74,18 +74,38 @@ const SubstanceRecommended = require('./../../../app/assets/javascripts/Substanc
 const Symptom = require('./../../../app/assets/javascripts/Symptom.js').Symptom;
 const ValueSet = require('./../../../app/assets/javascripts/cqm/ValueSet.js').ValueSet;
 
+/* eslint no-underscore-dangle: 0 */
 describe('QDMPatient', () => {
   it('can create a blank patient', () => {
     new QDMPatient();
   });
-});
+
+  it('_typeHierarchy', () => {
+    const qdmPatient = new QDMPatient();
+    expect(qdmPatient._typeHierarchy()).toEqual([
+      { name: '{urn:healthit-gov:qdm:v5_6}Patient', type: 'NamedTypeSpecifier' },
+      { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
+    ]);
+  });
+
+  it('_is Patient', () => {
+    const qdmPatient = new QDMPatient();
+    const typeSpecifier = { name: '{urn:healthit-gov:qdm:v5_6}Patient', type: 'NamedTypeSpecifier' };
+    expect(qdmPatient._is(typeSpecifier)).toBe(true);
+  });
+
+  it('_is Any', () => {
+    const qdmPatient = new QDMPatient();
+    const typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
+    expect(qdmPatient._is(typeSpecifier)).toBe(true);
+  });
 
   it('can construct a patient with data', () => {
-    qdmPatient = new QDMPatient({
+    const qdmPatient = new QDMPatient({
       birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
       qdmVersion: '0.0',
     });
-    err = qdmPatient.validateSync();
+    const err = qdmPatient.validateSync();
     expect(err).toBeUndefined();
   });
 
@@ -101,117 +121,148 @@ describe('QDMPatient', () => {
     expect(err).toBeUndefined();
     expect(qdmPatient.extendedData['measure_ids']).toEqual(['ID123']);
   });
+});
 
-  describe('InitializeDataElements', () => {
-    it('can handle an empty data elements array', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-      });
-      qdmPatient.initializeDataElements();
-      expect(qdmPatient.dataElements.length).toEqual(0);
-    });
-
-    it('can initialize a data elements array with a single entry', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [new MedicationOrder()]
-      });
-      expect(qdmPatient.dataElements.length).toEqual(1);
-    });
-
-    it('can get codes from a data element', () => {
-      dataElement = new MedicationOrder();
-      // dataElement Codes with mixed hash and cql.Codes
-      dataElement.dataElementCodes = [{code: '12345', system: '1.2.3'}, new cql.Code('1', '2.3.4')]
-      expect(dataElement.code().code).toEqual('12345');
-      expect(dataElement.code().system).toEqual('1.2.3');
-      expect(dataElement.getCode().length).toEqual(2);
-      expect(dataElement.getCode()[0].code).toEqual('12345');
-      expect(dataElement.getCode()[0].system).toEqual('1.2.3');
-      // dataElement Codes with just cql.Codes
-      dataElement.dataElementCodes = [new cql.Code('12345', '1.2.3'), new cql.Code('1', '2.3.4')]
-      expect(dataElement.code().code).toEqual('12345');
-      expect(dataElement.code().system).toEqual('1.2.3');
-      expect(dataElement.getCode().length).toEqual(2);
-      expect(dataElement.getCode()[0].code).toEqual('12345');
-      expect(dataElement.getCode()[0].system).toEqual('1.2.3');
-    });
-
-    it('can initialize a data element array with an entity', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [
-          new EncounterPerformed({
-            diagnoses: [new DiagnosisComponent({
-              code: new cql.Code('do', 're', 'mi'),
-              presentOnAdmissionIndicator: new cql.Code('present', 'on', 'admission'),
-              rank: 2
-            })],
-            participant: [
-              new CarePartner({
-              relationship: new cql.Code('fake', 'code', 'foo'),
-              identifier: new Identifier({
-                namingSystem: "fake naming system",
-                value: "fake value"
-                })
-              }),
-              new Location({
-                locationType: new cql.Code('fake', 'code', 'bar'),
-                identifier: new Identifier({
-                  namingSystem: "some other fake naming system",
-                  value: "some other fake value"
-                })
-              })
-            ]
-          }),
-        ]
-      });
-      expect(qdmPatient.dataElements.length).toEqual(1);
-      expect(qdmPatient.dataElements[0].diagnoses[0].rank).toEqual(2);
-      expect(qdmPatient.dataElements[0].participant.length).toEqual(2);
-      expect(qdmPatient.dataElements[0].participant[0].identifier.value).toEqual('fake value');
-      expect(qdmPatient.dataElements[0].participant[0].qdmVersion).toEqual('5.6');
-      expect(qdmPatient.dataElements[0].participant[1] instanceof Location).toBe(true);
-      expect(qdmPatient.dataElements[0].participant[1].locationType).toEqual(new cql.Code('fake', 'code', 'bar'));
-    });
-
-    it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [{
-          _type: "MedicationOrder"
-        }]
-      });
-      expect(qdmPatient.dataElements.length).toEqual(1);
-      expect(qdmPatient.dataElements[0]._type).toEqual('QDM::MedicationOrder');
-      expect(qdmPatient.dataElements[0] instanceof MedicationOrder).toBe(true);
-    });
-
-    it('can initialize a data elements array with a multiple entries', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [new MedicationOrder(), new MedicationOrder()]
-      });
-      expect(qdmPatient.dataElements.length).toEqual(2);
-    });
-
-    it('initializes qdmPatients and data element IDs without a _type field', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [new MedicationOrder(), new MedicationOrder()]
-      });
-      expect(qdmPatient._type).toBeUndefined();
-      expect(qdmPatient.dataElements[0].id._type).toBeUndefined();
-      expect(qdmPatient.dataElements[0]._type).toEqual('QDM::MedicationOrder');
-    });
-
+describe('is and typeHierarchy', () => {
+  it('supports _typeHierarchy in data elements', () => {
+    const dataElement = new MedicationOrder();
+    expect(dataElement._typeHierarchy()).toEqual([
+      { name: '{urn:healthit-gov:qdm:v5_6}PositiveMedicationOrder', type: 'NamedTypeSpecifier' },
+      { name: '{urn:healthit-gov:qdm:v5_6}MedicationOrder', type: 'NamedTypeSpecifier' },
+      { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
+    ]);
   });
+
+  it('_is MedicationOrder', () => {
+    const dataElement = new MedicationOrder();
+    const typeSpecifier = { name: '{urn:healthit-gov:qdm:v5_6}MedicationOrder', type: 'NamedTypeSpecifier' };
+    expect(dataElement._is(typeSpecifier)).toBe(true);
+  });
+
+  it('_is PositiveMedicationOrder', () => {
+    const dataElement = new MedicationOrder();
+    const typeSpecifier = { name: '{urn:healthit-gov:qdm:v5_6}PositiveMedicationOrder', type: 'NamedTypeSpecifier' };
+    expect(dataElement._is(typeSpecifier)).toBe(true);
+  });
+
+  it('_is NegativeMedicationOrder', () => {
+    const dataElement = new MedicationOrder({ negationRationale: new cql.Code('present', 'on', 'admission') });
+    const typeSpecifier = { name: '{urn:healthit-gov:qdm:v5_6}NegativeMedicationOrder', type: 'NamedTypeSpecifier' };
+    expect(dataElement._is(typeSpecifier)).toBe(true);
+  });
+
+  it('_is Any', () => {
+    const dataElement = new MedicationOrder();
+    const typeSpecifier = { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' };
+    expect(dataElement._is(typeSpecifier)).toBe(true);
+  });
+});
+
+describe('InitializeDataElements', () => {
+  it('can handle an empty data elements array', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+    });
+    qdmPatient.initializeDataElements();
+    expect(qdmPatient.dataElements.length).toEqual(0);
+  });
+
+  it('can initialize a data elements array with a single entry', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [new MedicationOrder()]
+    });
+    expect(qdmPatient.dataElements.length).toEqual(1);
+  });
+
+  it('can get codes from a data element', () => {
+    dataElement = new MedicationOrder();
+    // dataElement Codes with mixed hash and cql.Codes
+    dataElement.dataElementCodes = [{code: '12345', system: '1.2.3'}, new cql.Code('1', '2.3.4')]
+    expect(dataElement.code().code).toEqual('12345');
+    expect(dataElement.code().system).toEqual('1.2.3');
+    expect(dataElement.getCode().length).toEqual(2);
+    expect(dataElement.getCode()[0].code).toEqual('12345');
+    expect(dataElement.getCode()[0].system).toEqual('1.2.3');
+    // dataElement Codes with just cql.Codes
+    dataElement.dataElementCodes = [new cql.Code('12345', '1.2.3'), new cql.Code('1', '2.3.4')]
+    expect(dataElement.code().code).toEqual('12345');
+    expect(dataElement.code().system).toEqual('1.2.3');
+    expect(dataElement.getCode().length).toEqual(2);
+    expect(dataElement.getCode()[0].code).toEqual('12345');
+    expect(dataElement.getCode()[0].system).toEqual('1.2.3');
+  });
+
+  it('can initialize a data element array with an entity', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [
+        new EncounterPerformed({
+          diagnoses: [new DiagnosisComponent({
+            code: new cql.Code('do', 're', 'mi'),
+            presentOnAdmissionIndicator: new cql.Code('present', 'on', 'admission'),
+            rank: 2
+          })],
+          participant: [
+            new CarePartner({
+              relationship: new cql.Code('fake', 'code', 'foo'),
+              identifier: new Identifier({ namingSystem: "fake naming system", value: "fake value" })
+            }),
+            new Location({
+              locationType: new cql.Code('fake', 'code', 'bar'),
+              identifier: new Identifier({ namingSystem: "some other fake naming system", value: "some other fake value" })
+            })
+          ]
+        }),
+      ]
+    });
+    expect(qdmPatient.dataElements.length).toEqual(1);
+    expect(qdmPatient.dataElements[0].diagnoses[0].rank).toEqual(2);
+    expect(qdmPatient.dataElements[0].participant.length).toEqual(2);
+    expect(qdmPatient.dataElements[0].participant[0].identifier.value).toEqual('fake value');
+    expect(qdmPatient.dataElements[0].participant[0].qdmVersion).toEqual('5.6');
+    expect(qdmPatient.dataElements[0].participant[1] instanceof Location).toBe(true);
+    expect(qdmPatient.dataElements[0].participant[1].locationType).toEqual(new cql.Code('fake', 'code', 'bar'));
+  });
+
+  it('can initialize a data elements array JSON with a single entry without QDM:: in _type', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [{
+        _type: "MedicationOrder"
+      }]
+    });
+    expect(qdmPatient.dataElements.length).toEqual(1);
+    expect(qdmPatient.dataElements[0]._type).toEqual('QDM::MedicationOrder');
+    expect(qdmPatient.dataElements[0] instanceof MedicationOrder).toBe(true);
+  });
+
+  it('can initialize a data elements array with a multiple entries', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [new MedicationOrder(), new MedicationOrder()]
+    });
+    expect(qdmPatient.dataElements.length).toEqual(2);
+  });
+
+  it('initializes qdmPatients and data element IDs without a _type field', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [new MedicationOrder(), new MedicationOrder()]
+    });
+    expect(qdmPatient._type).toBeUndefined();
+    expect(qdmPatient.dataElements[0].id._type).toBeUndefined();
+    expect(qdmPatient.dataElements[0]._type).toEqual('QDM::MedicationOrder');
+  });
+
+});
+
   describe('getDataElements', () => {
     it('can return dataElements with and without qdmCategory', () => {
       qdmPatient = new QDMPatient({
@@ -339,84 +390,83 @@ describe('QDMPatient', () => {
       expect(qdmPatient.vital_signs().length).toEqual(0);
     });
   });
-  describe('getByHqmfOid', () => {
-    it('can return dataElements given an hqmf oid', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [
-          new AdverseEvent(),
-          new CareGoal(),
-          new CareGoal(),
-        ]
-      });
-      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.4.120').length).toEqual(1);
-      expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.4.7').length).toEqual(2);
+describe('getByHqmfOid', () => {
+  it('can return dataElements given an hqmf oid', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [
+        new AdverseEvent(),
+        new CareGoal(),
+        new CareGoal(),
+      ]
+    });
+    expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.4.120').length).toEqual(1);
+    expect(qdmPatient.getByHqmfOid('2.16.840.1.113883.10.20.28.4.7').length).toEqual(2);
+  });
+});
+describe('getByQrdaOid', () => {
+  it('can return dataElements given an qrda oid', () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [
+        new Diagnosis(),
+        new FamilyHistory(),
+        new FamilyHistory(),
+      ]
+    });
+    expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.135').length).toEqual(1);
+    expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.12').length).toEqual(2);
+  });
+});
+
+describe('findRecords', () => {
+  beforeEach( () => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [
+        new AdverseEvent(),
+        new CareGoal(),
+        new CareGoal(),
+        new EncounterPerformed(),
+        new EncounterPerformed(),
+        new EncounterPerformed(),
+      ]
     });
   });
 
-  describe('getByQrdaOid', () => {
-    it('can return dataElements given an qrda oid', () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [
-          new Diagnosis(),
-          new FamilyHistory(),
-          new FamilyHistory(),
-        ]
-      });
-      expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.135').length).toEqual(1);
-      expect(qdmPatient.getByQrdaOid('2.16.840.1.113883.10.20.24.3.12').length).toEqual(2);
-    });
+  it('can return empty array when no parameters are given', () => {
+    expect(qdmPatient.findRecords()).toEqual([]);
   });
 
-  describe('findRecords', () => {
-    beforeEach( () => {
-      qdmPatient = new QDMPatient({
-        birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
-        qdmVersion: '0.0',
-        dataElements: [
-          new AdverseEvent(),
-          new CareGoal(),
-          new CareGoal(),
-          new EncounterPerformed(),
-          new EncounterPerformed(),
-          new EncounterPerformed(),
-        ]
-      });
-    });
-
-    it('can return empty array when no parameters are given', () => {
-      expect(qdmPatient.findRecords()).toEqual([]);
-    });
-
-    it('can return generic patient info', () => {
-      expect(qdmPatient.findRecords('Patient')[0].birthDatetime).toBeDefined();
-    });
-
-    it('can return all patient characteristics of a specific caregory', () => {
-      // If possible, set the patient to have an ethnicity so this function returns a non-empty array
-      expect(qdmPatient.findRecords('PatientCharacteristicEthnicity').length).toEqual(0);
-    });
-    it('can return all dataElements of a specific category', () => {
-      expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
-      expect(qdmPatient.findRecords('PositiveEncounterPerformed').length).toEqual(3);
-    });
-
-    it('can clear dataElementCache on request', () => {
-      // run a findRecords call so cache is made
-      expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
-      expect(QDMPatientSchema.dataElementCache).toBeDefined()
-      expect(Object.keys(QDMPatientSchema.dataElementCache).length).toBe(1);
-      expect(QDMPatientSchema.dataElementCachePatientId).toBeDefined()
-
-      // clear cache
-      QDMPatientSchema.clearDataElementCache();
-      expect(QDMPatientSchema.dataElementCache).toBeNull();
-      expect(QDMPatientSchema.dataElementCachePatientId).toBeNull();
-    });
+  it('can return generic patient info', () => {
+    expect(qdmPatient.findRecords('Patient')[0].birthDatetime).toBeDefined();
   });
+
+  it('can return all patient characteristics of a specific caregory', () => {
+    // If possible, set the patient to have an ethnicity so this function returns a non-empty array
+    expect(qdmPatient.findRecords('PatientCharacteristicEthnicity').length).toEqual(0);
+  });
+  it('can return all dataElements of a specific category', () => {
+    expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
+    expect(qdmPatient.findRecords('PositiveEncounterPerformed').length).toEqual(3);
+  });
+
+  it('can clear dataElementCache on request', () => {
+    // run a findRecords call so cache is made
+    expect(qdmPatient.findRecords('EncounterPerformed').length).toEqual(3);
+    expect(QDMPatientSchema.dataElementCache).toBeDefined()
+    expect(Object.keys(QDMPatientSchema.dataElementCache).length).toBe(1);
+    expect(QDMPatientSchema.dataElementCachePatientId).toBeDefined()
+
+    // clear cache
+    QDMPatientSchema.clearDataElementCache();
+    expect(QDMPatientSchema.dataElementCache).toBeNull();
+    expect(QDMPatientSchema.dataElementCachePatientId).toBeNull();
+  });
+});
 
 describe('CQMPatient', () => {
   it('can create a blank patient', () => {

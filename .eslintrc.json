@@ -2,8 +2,14 @@
   "extends": "airbnb-base",
   "rules": {
     "max-len": ["error", {"code": 200, "ignoreComments": true}],
+    "no-multiple-empty-lines": "off",
+    "import/extensions": "off",
+    "max-classes-per-file": "off",
+    "operator-linebreak": "off",
+    "no-else-return": "off",
     "no-unused-vars": ["error", { "varsIgnorePattern": "EntitySchema|Identifier|IdentifierSchema|DataElementSchema|ComponentSchema|FacilityLocationSchema|Code|Quantity|Interval|Integer|Array|Float|Time|Number|Date|Mixed|Any" }],
     "camelcase": "off",
+    "arrow-parens": "off",
     "comma-dangle": ["error", {
       "arrays": "always-multiline",
       "objects": "always-multiline",
