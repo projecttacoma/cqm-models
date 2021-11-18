@@ -70,6 +70,7 @@ function DataElementSchema(add, options) {
         name: `{urn:healthit-gov:qdm:v${ver}}${typeName}`,
         type: 'NamedTypeSpecifier',
       },
+      { name: '{urn:hl7-org:elm-types:r1}Tuple', type: 'NamedTypeSpecifier' },
       { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
     ];
   };
