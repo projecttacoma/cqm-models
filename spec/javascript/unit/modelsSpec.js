@@ -84,6 +84,7 @@ describe('QDMPatient', () => {
     const qdmPatient = new QDMPatient();
     expect(qdmPatient._typeHierarchy()).toEqual([
       { name: '{urn:healthit-gov:qdm:v5_6}Patient', type: 'NamedTypeSpecifier' },
+      { name: '{urn:hl7-org:elm-types:r1}Tuple', type: 'NamedTypeSpecifier' },
       { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
     ]);
   });
@@ -129,6 +130,7 @@ describe('is and typeHierarchy', () => {
     expect(dataElement._typeHierarchy()).toEqual([
       { name: '{urn:healthit-gov:qdm:v5_6}PositiveMedicationOrder', type: 'NamedTypeSpecifier' },
       { name: '{urn:healthit-gov:qdm:v5_6}MedicationOrder', type: 'NamedTypeSpecifier' },
+      { name: '{urn:hl7-org:elm-types:r1}Tuple', type: 'NamedTypeSpecifier' },
       { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' },
     ]);
   });
