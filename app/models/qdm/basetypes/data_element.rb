@@ -67,8 +67,13 @@ module QDM
         send(field + '=', (send(field).to_time + seconds.seconds).to_datetime) if send(field).is_a? DateTime
         send(field + '=', send(field).shift_dates(seconds)) if (send(field).is_a? Interval) || (send(field).is_a? DataElement)
 
+        if field == 'result'
+          result = send(field)
+          unless result.nil? || (!result.is_a? Time)
+            send(field + '=', (result.to_time + seconds.seconds).to_datetime)
+          end
         # Special case for facility locations
-        if field == 'facilityLocations'
+        elsif field == 'facilityLocations'
           send(field).each do |facility_location|
             shift_facility_location_dates(facility_location, seconds)
           end
