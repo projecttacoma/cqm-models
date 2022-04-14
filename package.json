@@ -24,11 +24,13 @@
     "eslint": "^7.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.8.0",
-    "jasmine": "^2.9.0"
+    "jasmine": "^2.9.0",
+    "nyc": "^15.1.0"
   },
   "scripts": {
     "prepublish": "./bin/build_cql_execution.sh",
     "test": "jasmine",
+    "coverage": "nyc npm run test",
     "lint": "eslint 'app/assets/javascripts/**/*.js'",
     "dist": "yarn && browserify app/assets/javascripts/index.js > dist/index.js",
     "browser": "browserify app/assets/javascripts/browser.js > dist/browser.js",
