@@ -3408,7 +3408,7 @@ function Any(key, options) {
 Any.prototype = Object.create(mongoose.SchemaType.prototype);
 
 function RecursiveCast(any) {
-  if (any && any.value && any.unit) {
+  if (any && any.value !== undefined && any.unit) {
     return new cql.Quantity(any.value, any.unit);
   }
 
