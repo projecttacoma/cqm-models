@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "browserify": "^16.1.0",
-    "eslint": "^4.17.19",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.8.0",
     "istanbul": "^0.4.5",
     "jasmine": "^2.9.0"
