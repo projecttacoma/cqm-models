@@ -7081,8 +7081,8 @@ class Unit {
    * concatenated string.   Basically it checks to see if the string
    * needs to be enclosed either in parentheses or square brackets.
    *
-   * The string is enclosed if it is not a number, does not start with
-   * a parenthesis or square bracket, and includes a period, and asterisk,
+   * The string is enclosed if it is not a number, is not already enclosed in a pair of
+   * parentheses or square brackets, and includes a period, and asterisk,
    * a slash or a blank space.
    *
    * @param str the string
@@ -7098,7 +7098,7 @@ class Unit {
     if (intUtils_.isNumericString(str)) {
       ret = str;
     } else {
-      if (str.charAt(0) === '(' || str.charAt(0) === '[') {
+      if (str.charAt(0) === '(' && str.endsWith(')') || str.charAt(0) === '[' && str.endsWith(']')) {
         ret = str;
       } else if (/[./* ]/.test(str)) {
         ret = startChar + str + endChar;
@@ -54194,6 +54194,10 @@ Schema.prototype.add = function add(obj, prefix) {
   const keys = Object.keys(obj);
 
   for (const key of keys) {
+    if (utils.specialProperties.has(key)) {
+      continue;
+    }
+
     const fullPath = prefix + key;
 
     if (obj[key] == null) {
@@ -54379,6 +54383,9 @@ Schema.prototype.path = function(path, obj) {
   let fullPath = '';
 
   for (const sub of subpaths) {
+    if (utils.specialProperties.has(sub)) {
+      throw new Error('Cannot set special property `' + sub + '` on a schema');
+    }
     fullPath = fullPath += (fullPath.length > 0 ? '.' : '') + sub;
     if (!branch[sub]) {
       this.nested[fullPath] = true;
