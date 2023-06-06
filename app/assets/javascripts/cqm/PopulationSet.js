@@ -11,6 +11,7 @@ const [Mixed] = [
 const PopulationMapSchema = new mongoose.Schema({
   _type: String,
   IPP: StatementReferenceSchema,
+  IPP_1: StatementReferenceSchema,
   DENOM: StatementReferenceSchema,
   NUMER: StatementReferenceSchema,
   NUMEX: StatementReferenceSchema,

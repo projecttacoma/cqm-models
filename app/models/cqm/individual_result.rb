@@ -10,6 +10,7 @@ module CQM
     # Population Attributes
     field :STRAT, type: Integer
     field :IPP, type: Integer
+    field :IPP_1, type: Integer
     field :DENOM, type: Integer
     field :NUMER, type: Integer
     field :NUMEX, type: Integer

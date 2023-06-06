@@ -11,6 +11,7 @@ module CQM
     validates_inclusion_of :calculation_method, in: %w[PATIENT EPISODE_OF_CARE]
 
     IPP = 'IPP'.freeze
+    IPP_1 = 'IPP_1'.freeze
     DENOM = 'DENOM'.freeze
     NUMER = 'NUMER'.freeze
     NUMEX = 'NUMEX'.freeze
@@ -22,7 +23,7 @@ module CQM
 
     STRAT = 'STRAT'.freeze
 
-    ALL_POPULATION_CODES = [STRAT, IPP, DENOM, DENEX, NUMER, NUMEX, DENEXCEP, MSRPOPL, OBSERV, MSRPOPLEX].freeze
+    ALL_POPULATION_CODES = [STRAT, IPP, IPP_1, DENOM, DENEX, NUMER, NUMEX, DENEXCEP, MSRPOPL, OBSERV, MSRPOPLEX].freeze
 
     CQL_SKIP_STATEMENTS = ['SDE Ethnicity', 'SDE Payer', 'SDE Race', 'SDE Sex'].freeze
 

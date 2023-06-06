@@ -20,5 +20,6 @@ module CQM
     field :library_name, type: String
     field :statement_name, type: String
     field :hqmf_id, type: String
+    field :subject_id, type: String
   end
 end

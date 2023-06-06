@@ -62,6 +62,7 @@ module CQM
     include Mongoid::Document
 
     embeds_one :IPP, class_name: 'CQM::StatementReference'
+    embeds_one :IPP_1, class_name: 'CQM::StatementReference'
     embeds_one :DENOM, class_name: 'CQM::StatementReference'
     embeds_one :NUMER, class_name: 'CQM::StatementReference'
     embeds_one :NUMEX, class_name: 'CQM::StatementReference'

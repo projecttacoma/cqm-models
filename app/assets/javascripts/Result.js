@@ -13,6 +13,7 @@ const PlaceholderResultSchema = mongoose.Schema({
   population_ids: Object,
   STRAT: Number,
   IPP: Number,
+  IPP_1: Number,
   DENOM: Number,
   NUMER: Number,
   NUMEX: Number,

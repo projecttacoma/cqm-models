@@ -14,6 +14,7 @@ const IndividualResultSchema = mongoose.Schema(
     // Population Attributes
     STRAT: Number,
     IPP: Number,
+    IPP_1: Number,
     DENOM: Number,
     NUMER: Number,
     NUMEX: Number,

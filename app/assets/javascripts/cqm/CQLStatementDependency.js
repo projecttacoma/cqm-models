@@ -4,6 +4,7 @@ const StatementReferenceSchema = new mongoose.Schema({
   library_name: String,
   statement_name: String,
   hqmf_id: String,
+  subject_id: String
 });
 
 const StatementDependencySchema = new mongoose.Schema({
