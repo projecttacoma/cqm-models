@@ -51,6 +51,23 @@ function EntitySchemaFunction(add, options) {
     extended.add(add);
   }
 
+  /* eslint no-underscore-dangle: 0 */
+  extended.methods._is = function _is(typeSpecifier) {
+    return this._typeHierarchy().some(
+      t => t.type === typeSpecifier.type && t.name === typeSpecifier.name
+    );
+  };
+
+  extended.methods._typeHierarchy = function _typeHierarchy() {
+    const typeName = this._type.replace(/QDM::/, '');
+    const ver = this.qdmVersion.replace('.', '_');
+    return [
+      {
+        name: `{urn:healthit-gov:qdm:v${ver}}${typeName}`,
+        type: 'NamedTypeSpecifier',
+      },
+    ];
+  };
   return extended;
 }
 
