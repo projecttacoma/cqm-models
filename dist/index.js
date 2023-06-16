@@ -2523,15 +2523,7 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
   // If isNegated == true, only return data elements with a negationRationale that is not null.
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
-  const results = this.dataElements.filter(element => (element._type === `QDM::${profile}` || element._type === profile) && (isNegated === null || !!element.negationRationale === isNegated));
-  return results.map((result) => {
-    const removedMongooseItems = new AllDataElements[profile](result).toObject({ virtuals: true });
-    // toObject() will remove all mongoose functions but also remove the schema methods, so we add them back
-    Object.entries(result.schema.methods).forEach(([method_name, method]) => {
-      removedMongooseItems[method_name] = method;
-    });
-    return removedMongooseItems;
-  });
+  return this.dataElements.filter(element => (element._type === `QDM::${profile}` || element._type === profile) && (isNegated === null || !!element.negationRationale === isNegated));
 };
 
 // This method is called by the CQL execution engine on a CQLPatient when
