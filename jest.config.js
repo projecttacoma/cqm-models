@@ -12,7 +12,5 @@ module.exports = {
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
   collectCoverageFrom: [
     'app/assets/**/*.js',
-    '!dist/*.js',
-    '!**/node_modules/**',
   ],
 };
