@@ -39647,7 +39647,7 @@ function extractRFC2822(match) {
 
 function preprocessRFC2822(s) {
   // Remove comments and folding whitespace and replace multiple-spaces with a single space
-  return s.replace(/\([^)]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").trim();
+  return s.replace(/\([^()]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").trim();
 } // http date
 
 
@@ -45001,7 +45001,7 @@ function friendlyDateTime(dateTimeish) {
   }
 }
 
-var VERSION = "1.28.0";
+var VERSION = "1.28.1";
 
 exports.DateTime = DateTime;
 exports.Duration = Duration;

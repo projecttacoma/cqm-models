@@ -20,11 +20,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundle-audit'
-  spec.add_development_dependency 'bundler', '~> 2.1.4'
   spec.add_development_dependency 'byebug', '~> 11.0.1'
   spec.add_development_dependency 'codecov'
-  spec.add_development_dependency 'mongoid', '~> 6.4'
-  spec.add_development_dependency 'rails', '~> 5.2'
+  spec.add_development_dependency 'mongoid', '~> 7.5'
+  spec.add_development_dependency 'rails', '~> 6.1'
   spec.add_development_dependency 'rake', '~> 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.54.0'
