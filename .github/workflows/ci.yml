@@ -22,7 +22,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby-version }}
-        bundler: 2.4.14
+        bundler: 2.3.17
     - name: Install dependencies
       run: bundle install
     - name: Start MongoDB
