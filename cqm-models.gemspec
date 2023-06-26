@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'cqm-models'
-  spec.version       = '4.1.1'
+  spec.version       = '4.1.2'
   spec.authors       = ['aholmes@mitre.org', 'mokeefe@mitre.org', 'lades@mitre.org']
 
   spec.summary       = 'Mongo models that correspond to the QDM specification.'
@@ -20,7 +20,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundle-audit'
-  spec.add_development_dependency 'bundler', '~> 2.1.4'
   spec.add_development_dependency 'byebug', '~> 11.0.1'
   spec.add_development_dependency 'codecov'
   spec.add_development_dependency 'mongoid', '~> 6.4'
