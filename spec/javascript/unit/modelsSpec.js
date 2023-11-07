@@ -608,3 +608,43 @@ describe('IndividualResult', () => {
     expect(result.observation_values.length).toBe(0);
   });
 });
+
+describe('getByProfile', () => {
+  let qdmPatient;
+  beforeEach(() => {
+    qdmPatient = new QDMPatient({
+      birthDatetime: cql.DateTime.fromJSDate(new Date(), 0),
+      qdmVersion: '0.0',
+      dataElements: [
+        new MedicationAdministered({
+          authorDatetime: new DateTime(),
+          dosage: new cql.Quantity('300', 'mg'),
+          performer: [
+            new CarePartner({
+              relationship: new cql.Code('fake', 'code', 'foo'),
+              identifier: new Identifier({ namingSystem: 'fake system', value: 'fake value' }),
+            }),
+            new Location({
+              locationType: new cql.Code('fake', 'code', 'bar'),
+              identifier: new Identifier({ namingSystem: 'some other system', value: 'some other fake value' }),
+            }),
+          ],
+        }),
+      ],
+    });
+  });
+
+  it('can return the data elements by profile with schema methods added', () => {
+    const dataElements = qdmPatient.getByProfile('MedicationAdministered', false);
+    expect(dataElements.length).toEqual(1);
+    const dataElement = dataElements[0];
+    expect(dataElement._type).toEqual('QDM::MedicationAdministered');
+    expect(Object.keys(dataElement)).toEqual(expect.arrayContaining(
+      ['getCode', 'code', '_is', '_typeHierarchy']
+    ));
+    const performers = dataElement.performer;
+    expect(Object.keys(performers[0])).toEqual(expect.arrayContaining(
+      ['_is', '_typeHierarchy']
+    ));
+  });
+});
