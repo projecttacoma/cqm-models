@@ -3,6 +3,7 @@ const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
+const AnyEntity = require('./basetypes/AnyEntity');
 const AllDataElements = require('./AllDataElements');
 
 const [Schema, Number, String, Mixed] = [
@@ -94,6 +95,12 @@ QDMPatientSchema.methods.getDataElements = function getDataElements(params) {
   return this.dataElements;
 };
 
+QDMPatientSchema.methods.addMethodsTo = function addMethodsTo(obj, methods) {
+  Object.entries(methods).forEach(([method_name, method]) => {
+    obj[method_name] = method;
+  });
+};
+
 // Returns an array of dataElements that exist on the patient, queried by
 // QDM profile
 // @param {string} profile - the data criteria requested by the execution engine
@@ -103,7 +110,31 @@ QDMPatientSchema.methods.getByProfile = function getByProfile(profile, isNegated
   // If isNegated == true, only return data elements with a negationRationale that is not null.
   // If isNegated == false, only return data elements with a null negationRationale.
   // If isNegated == null, return all matching data elements by type, regardless of negationRationale.
-  return this.dataElements.filter(element => (element._type === `QDM::${profile}` || element._type === profile) && (isNegated === null || !!element.negationRationale === isNegated));
+  const results = this.dataElements.filter(element => (element._type === `QDM::${profile}` || element._type === profile) && (isNegated === null || !!element.negationRationale === isNegated));
+  return results.map((result) => {
+    // we need to convert mongoose document to an object.
+    // This is required for comparing the two objects(in cql-execution) as we can't compare two mongoose documents.
+    const removedMongooseItems = new AllDataElements[profile](result).toObject({ virtuals: true });
+    // toObject() will remove all mongoose functions but also remove the schema methods, so we add them back
+    this.addMethodsTo(removedMongooseItems, result.schema.methods);
+    // add methods to entities
+    Object.entries(result).forEach(([key, values]) => {
+      // entities are always an array
+      if (Array.isArray(values)) {
+        try {
+          // check if the attribute is of Entity
+          if (AnyEntity.prototype.cast(values[0])) {
+            values.forEach((value, index) => {
+              const entity = removedMongooseItems[key][index];
+              this.addMethodsTo(entity, value.schema.methods);
+            });
+          }
+          // eslint-disable-next-line no-empty
+        } catch (e) {}
+      }
+    });
+    return removedMongooseItems;
+  });
 };
 
 // This method is called by the CQL execution engine on a CQLPatient when
