@@ -5,6 +5,7 @@ const PatientEntity = require('./../../../app/assets/javascripts/attributes/Pati
 const Practitioner = require('./../../../app/assets/javascripts/attributes/Practitioner').Practitioner;
 const CarePartner = require('./../../../app/assets/javascripts/attributes/CarePartner').CarePartner;
 const Organization = require('./../../../app/assets/javascripts/attributes/Organization').Organization;
+const Location = require('./../../../app/assets/javascripts/attributes/Location').Location;
 
 describe('The AnyEntity class', () => {
   describe('Type casting', () => {
@@ -191,6 +192,37 @@ describe('The AnyEntity class', () => {
           value:'testValue'
         },
         type: new cql.Code('T123', '1.2.3.4', null, 'Test Type Code')
+      });
+
+      const returnedObj = AnyEntity.prototype.cast(entity);
+      expect(returnedObj).toBe(entity);
+    });
+
+    it('Should convert a Location entity JS Object to its type', () => {
+      const entityObj = {
+        id: 'test',
+        identifier: {
+          namingSystem: 'testSystem',
+          value: 'testValue',
+        },
+        locationType: { code: 'T123', system: '1.2.3.4', display: 'Test Code' },
+        _type: 'QDM::Location',
+      };
+
+      const returnedObj = AnyEntity.prototype.cast(entityObj);
+      expect(returnedObj instanceof Location).toBe(true);
+      expect(returnedObj.id).toEqual('test');
+      expect(returnedObj.identifier.namingSystem).toEqual('testSystem');
+      expect(returnedObj.identifier.value).toEqual('testValue');
+    });
+
+    it('Should return same instance of Location if it is already a Location entity', () => {
+      const entity = new Location({
+        id: 'test',
+        identifier: {
+          namingSystem: 'testSystem',
+          value:'testValue'
+        },
       });
 
       const returnedObj = AnyEntity.prototype.cast(entity);
