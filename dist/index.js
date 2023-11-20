@@ -3579,7 +3579,7 @@ AnyEntity.prototype.cast = (entity) => {
     return null;
   }
 
-  if (entity instanceof PatientEntity || entity instanceof Practitioner || entity instanceof CarePartner || entity instanceof Organization) {
+  if (entity instanceof PatientEntity || entity instanceof Practitioner || entity instanceof CarePartner || entity instanceof Organization || entity instanceof Location) {
     return entity;
   }
 
