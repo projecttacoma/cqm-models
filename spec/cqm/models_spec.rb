@@ -216,7 +216,7 @@ RSpec.describe QDM do
   it 'entity datatype can be saved correctly' do
     puts @patient_c.qdmPatient.dataElements[3].participant.first['identifier']
     @patient_c.save
-    expect(@patient_c.qdmPatient.dataElements[3].participant.first['specialty'][:code]).to eq 'foo code 2'
+    expect(@patient_c.qdmPatient.dataElements[3].participant.first['specialty'].code).to eq 'foo code 2'
     expect(@patient_c.qdmPatient.dataElements[3].participant.first['identifier']['value']).to eq 'foo value'
   end
 
