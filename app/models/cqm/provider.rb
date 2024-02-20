@@ -12,8 +12,6 @@ module CQM
     field :specialty, type: String
     field :title, type: String
 
-    validates_uniqueness_of :npi, allow_blank: true
-
     embeds_many :addresses
     embeds_many :telecoms
     embeds_many :ids, class_name: 'QDM::Identifier'
