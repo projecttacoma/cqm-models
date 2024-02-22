@@ -6,6 +6,9 @@ require 'byebug'
 
 Mongoid.load!('config/mongoid.yml', :test)
 
+# Seems new version of mongoid (and/or Mongo) doesn't default to UTC.
+Time.zone = 'UTC'
+
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = '.rspec_status'
