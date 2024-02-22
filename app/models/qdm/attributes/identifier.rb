@@ -6,7 +6,6 @@ module QDM
     field :value, type: String
     field :qdmVersion, type: String, default: '5.6'
 
-    validates_uniqueness_of :value, conditions: -> {where(namingSystem: CQM::Provider::NPI_OID)}
-
+    validates_uniqueness_of :value, conditions: -> { where(namingSystem: CQM::Provider::NPI_OID) }
   end
 end
