@@ -168,8 +168,8 @@ RSpec.describe QDM do
     expect(@patient_de1.qdmPatient.diagnostic_studies.first.relevantPeriod.high.utc.to_s).to include('07:00:00')
 
     # DiatnosticStudyPerformed facilityLocation high and low should be two hours ahead
-    expect(@patient_de1.qdmPatient.diagnostic_studies.first.facilityLocation['locationPeriod'][:low].utc.to_s).to include('06:00:00')
-    expect(@patient_de1.qdmPatient.diagnostic_studies.first.facilityLocation['locationPeriod'][:high].utc.to_s).to include('07:00:00')
+    expect(@patient_de1.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('06:00:00')
+    expect(@patient_de1.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('07:00:00')
   end
 
   it 'shift patient data elements backwards in time' do
@@ -198,8 +198,8 @@ RSpec.describe QDM do
     expect(@patient_de2.qdmPatient.diagnostic_studies.first.relevantPeriod.high.utc.to_s).to include('03:00:00')
 
     # DiatnosticStudyPerformed facilityLocation high and low should be two hours behind
-    expect(@patient_de2.qdmPatient.diagnostic_studies.first.facilityLocation['locationPeriod'][:low].utc.to_s).to include('02:00:00')
-    expect(@patient_de2.qdmPatient.diagnostic_studies.first.facilityLocation['locationPeriod'][:high].utc.to_s).to include('03:00:00')
+    expect(@patient_de2.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.low.utc.to_s).to include('02:00:00')
+    expect(@patient_de2.qdmPatient.diagnostic_studies.first.facilityLocation.locationPeriod.high.utc.to_s).to include('03:00:00')
   end
 
   it 'relatedTo properly links data elements' do
@@ -216,7 +216,7 @@ RSpec.describe QDM do
   it 'entity datatype can be saved correctly' do
     puts @patient_c.qdmPatient.dataElements[3].participant.first['identifier']
     @patient_c.save
-    expect(@patient_c.qdmPatient.dataElements[3].participant.first['specialty'][:code]).to eq 'foo code 2'
+    expect(@patient_c.qdmPatient.dataElements[3].participant.first['specialty'].code).to eq 'foo code 2'
     expect(@patient_c.qdmPatient.dataElements[3].participant.first['identifier']['value']).to eq 'foo value'
   end
 

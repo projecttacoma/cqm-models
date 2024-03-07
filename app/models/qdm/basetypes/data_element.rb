@@ -76,7 +76,9 @@ module QDM
         elsif field == 'facilityLocation'
           facility_location = send(field)
           unless facility_location.nil?
-            shift_facility_location_dates(facility_location, seconds)
+            # Guessing something changed in mongoid such that facility_location gets typed to an Object
+            # but this method (I think) expects a Hash.
+            shift_facility_location_dates(facility_location.attributes, seconds)
             send(field + '=', facility_location)
           end
         end

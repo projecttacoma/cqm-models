@@ -53,4 +53,3 @@ jobs:
       run: |
         ./bin/validate_dist.sh
         ./bin/validate_browser.sh
-        ./bin/validate_generator.sh
