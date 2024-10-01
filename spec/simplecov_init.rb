@@ -1,8 +1,10 @@
 require 'simplecov'
-require 'codecov'
 
 SimpleCov.start do
   add_filter 'spec/'
 end
 
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
+if ENV['CODECOV_TOKEN']
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end

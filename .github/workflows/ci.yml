@@ -35,6 +35,8 @@ jobs:
         bundle exec bundle-audit check
     - name: Run rake
       run: bundle exec rake
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     - name: Run rubocop
       run: bundle exec rubocop
     - name: Use Node.js ${{ matrix.node-version }}
