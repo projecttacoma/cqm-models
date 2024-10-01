@@ -1,4 +1,4 @@
-#require_relative './simplecov_init'
+# require_relative './simplecov_init'
 require 'bundler/setup'
 require 'cqm/models'
 require 'nokogiri'
