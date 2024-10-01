@@ -21,7 +21,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundle-audit'
   spec.add_development_dependency 'byebug', '~> 11.0.1'
-  spec.add_development_dependency 'codecov'
   spec.add_development_dependency 'mongoid', '~> 8'
   spec.add_development_dependency 'nokogiri', '>= 1.16.2'
   spec.add_development_dependency 'rails', '~> 7.1'
