@@ -20,3 +20,4 @@ yarn-error.log
 
 # Editor-specific files
 .vscode/
+.idea/
