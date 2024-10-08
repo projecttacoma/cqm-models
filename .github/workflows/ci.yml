@@ -35,6 +35,13 @@ jobs:
         bundle exec bundle-audit check
     - name: Run rake
       run: bundle exec rake
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        file: coverage/.resultset.json
+        fail_ci_if_error: true
+        token: ${{ secrets.CODECOV_TOKEN }}
+
     - name: Run rubocop
       run: bundle exec rubocop
     - name: Use Node.js ${{ matrix.node-version }}

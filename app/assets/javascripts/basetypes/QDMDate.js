@@ -1,6 +1,8 @@
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
+// cql.Date constructor name overlaps with Mongoose Date, so a custom class (CqlDate) is added
+class CqlDate extends cql.Date {}
 function QDMDate(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Date');
 }
@@ -20,15 +22,16 @@ QDMDate.prototype.cast = (date) => {
   if (typeof date === 'object') {
     const keys = Object.keys(date);
     if (keys.includes('year') && keys.includes('month') && keys.includes('day')) {
-      return new cql.Date(date.year, date.month, date.day);
+      return new CqlDate(date.year, date.month, date.day);
     }
   }
 
   // Date String
-  if (!cql.Date.parse(date)) {
+  const parsedDate = cql.Date.parse(date);
+  if (!parsedDate) {
     throw new Error(`Date: ${date} is not a valid Date`);
   } else {
-    return cql.Date.parse(date);
+    return new CqlDate(parsedDate.year, parsedDate.month, parsedDate.day);
   }
 };
 
