@@ -77,6 +77,8 @@ Starting with version **2.0.0** released on 6/20/2019, cqm-models versioning has
 
 For the versions available, see [tags on this repository](https://github.com/projecttacoma/cqm-models/tags).
 
+## Publish a New Version
+Create a PR for merge to master branch with a Title of "Release x.y.z" where x.y.z is the npm version number and the npm-publish github workflow will be executed.
 
 ## License
 
