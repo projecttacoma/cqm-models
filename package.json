@@ -6,7 +6,10 @@
   "browser": {
     "index.js": "dist/index.js"
   },
-  "repository": "https://github.com/projecttacoma/cqm-models.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projecttacoma/cqm-models.git"
+  },
   "homepage": "https://github.com/projecttacoma/cqm-models#readme",
   "contributors": [
     "Louis Ades <lades@mitre.org>",
