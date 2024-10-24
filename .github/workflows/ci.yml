@@ -50,12 +50,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Yarn
       run: npm install -g yarn
-    - name: Run yarn
+    - name: Run yarn 
       run: |
         yarn install
         yarn run lint
         yarn run test
-        yarn audit
+        yarn npm audit --severity moderate
     - name: Run validation
       run: |
         ./bin/validate_dist.sh
