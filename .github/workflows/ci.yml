@@ -55,7 +55,7 @@ jobs:
         yarn install
         yarn run lint
         yarn run test
-        npm audit --severity moderate
+        npm audit --audit-level=moderate
     - name: Run validation
       run: |
         ./bin/validate_dist.sh
