@@ -3479,6 +3479,7 @@ module.exports.ResultComponent = ResultComponent;
 },{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Component":57,"mongoose/browser":210}],67:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
+const QDMDate = require('./QDMDate');
 
 function Any(key, options) {
   mongoose.SchemaType.call(this, key, options, 'Any');
@@ -3551,7 +3552,7 @@ function RecursiveCast(any) {
       return cql.DateTime.fromJSDate(new Date(`1984-01-01T${any}`), 0).getTime();
     }
     // Must be a Date
-    return cql.DateTime.fromJSDate(new Date(any), 0).getDate();
+    return new QDMDate().cast(any);
   }
   return any;
 }
@@ -3561,7 +3562,7 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
-},{"cql-execution":134,"mongoose/browser":210}],68:[function(require,module,exports){
+},{"./QDMDate":73,"cql-execution":134,"mongoose/browser":210}],68:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { PatientEntity } = require('../attributes/PatientEntity');
 const { Practitioner } = require('../attributes/Practitioner');
