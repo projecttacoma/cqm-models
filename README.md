@@ -44,6 +44,15 @@ To generate a single patient that has every data element from a specific model-i
 QDM::PatientGeneration.generate_exhaustive_data_element_patients(false, 'qdm-modelinfo-5.6.xml')
 ```
 
+## Preparing distribution
+
+```
+yarn install
+yarn run dist
+yarn run browser
+yarn link
+``` 
+
 ## Running the tests
 
 ### To run frontend Jasmine tests
