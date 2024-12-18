@@ -50,7 +50,6 @@ QDM::PatientGeneration.generate_exhaustive_data_element_patients(false, 'qdm-mod
 yarn install
 yarn run dist
 yarn run browser
-yarn link
 ``` 
 
 ## Running the tests
