@@ -69,7 +69,7 @@ describe('CQM', () => {
         title: 'PS2',
         stratifications: [new CQM.Stratification({ title: "PS2 S1" }), new CQM.Stratification({ title: "PS2 S2" })]
       }))
-      expect(measure.all_stratifications().map(s => s.title).toObject()).toEqual(["PS1 S1", "PS1 S2", "PS2 S1", "PS2 S2"])
+      expect(measure.all_stratifications().map(s => s.title)).toEqual(["PS1 S1", "PS1 S2", "PS2 S1", "PS2 S2"])
     })
 
     it('can construct and save a measure with a package', () => {
