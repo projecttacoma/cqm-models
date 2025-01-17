@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "cql-execution": "2.4.1",
-    "mongoose": "^7.8.3"
+    "mongoose": "^8.9.5"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
