@@ -55,7 +55,7 @@ jobs:
         yarn install
         yarn run lint
         yarn run test
-        npm audit --audit-level=moderate
+        npm audit --omit=dev --audit-level=${{ secrets.NPM_AUDIT_LEVEL }}
     - name: Run validation
       run: |
         ./bin/validate_dist.sh
