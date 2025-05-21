@@ -4293,6 +4293,7 @@ const PopulationSetSchema = new mongoose.Schema({
   populations: PopulationMapSchema,
   stratifications: [StratificationSchema],
   supplemental_data_elements: [StatementReferenceSchema],
+  risk_adjustment_variables: [StatementReferenceSchema],
   observations: [ObservationSchema],
 });
 
