@@ -86,8 +86,10 @@ module QDM
     end
 
     def shift_facility_location_dates(facility_location, seconds)
-      facility_location['locationPeriod'][:low] = (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime
-      facility_location['locationPeriod'][:high] = (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime
+      new_low = facility_location['locationPeriod'][:low] ? (facility_location['locationPeriod'][:low].to_time + seconds).to_datetime : nil
+      new_high = facility_location['locationPeriod'][:high] ? (facility_location['locationPeriod'][:high].to_time + seconds).to_datetime : nil
+      facility_location['locationPeriod'][:low] = new_low
+      facility_location['locationPeriod'][:high] = new_high
     end
 
     # The necessary reason for this function is to avoid a problem when shifting
