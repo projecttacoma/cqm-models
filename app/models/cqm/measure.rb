@@ -48,6 +48,7 @@ module CQM
     field :measure_scoring, type: String, default: 'PROPORTION'
     field :calculation_method, type: String, default: 'PATIENT'
     field :calculate_sdes, type: Boolean
+    field :calculate_ravs, type: Boolean
 
     # ELM/CQL Measure-logic related data
     # Field name changed from 'cql' to 'cql_libraries' because the semantics of
