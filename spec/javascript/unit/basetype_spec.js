@@ -16,6 +16,7 @@ describe('basetype DateTime', () => {
     const date = (new DateTime()).cast(new cql.DateTime(new Date()));
     expect(date.isDateTime).toBe(true);
   });
+    
   it('throws if invalid DateTime passed to cast', () => {
     expect(() => { (new DateTime()).cast('some invalid DateTime arg'); }).toThrow();
   });
