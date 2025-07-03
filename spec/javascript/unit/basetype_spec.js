@@ -27,7 +27,7 @@ describe('basetype Date', () => {
     expect(date.isDate).toBe(true);
   });
   it('can create a Date from cql Date', () => {
-    const date = (new QDMDate()).cast(new cql.Date.fromJSDate(new Date()));
+    const date = (new QDMDate()).cast(cql.Date.fromJSDate(new Date()));
     expect(date.isDate).toBe(true);
   });
 
