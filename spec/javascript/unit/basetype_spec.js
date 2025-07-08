@@ -16,6 +16,7 @@ describe('basetype DateTime', () => {
     const date = (new DateTime()).cast(new cql.DateTime(new Date()));
     expect(date.isDateTime).toBe(true);
   });
+
   it('throws if invalid DateTime passed to cast', () => {
     expect(() => { (new DateTime()).cast('some invalid DateTime arg'); }).toThrow();
   });
@@ -27,7 +28,7 @@ describe('basetype Date', () => {
     expect(date.isDate).toBe(true);
   });
   it('can create a Date from cql Date', () => {
-    const date = (new QDMDate()).cast(new cql.Date.fromJSDate(new Date()));
+    const date = (new QDMDate()).cast(cql.Date.fromJSDate(new Date()));
     expect(date.isDate).toBe(true);
   });
 
