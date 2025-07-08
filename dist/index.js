@@ -46,7 +46,7 @@ class AdverseEvent extends mongoose.Document {
 module.exports.AdverseEvent = AdverseEvent;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],2:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],2:[function(require,module,exports){
 module.exports.Identifier = require('./attributes/Identifier.js').Identifier;
 module.exports.IdentifierSchema = require('./attributes/Identifier.js').IdentifierSchema;
 module.exports.Entity = require('./attributes/Entity.js').Entity;
@@ -224,7 +224,7 @@ class AllergyIntolerance extends mongoose.Document {
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],4:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],4:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -271,7 +271,7 @@ class AssessmentOrder extends mongoose.Document {
 module.exports.AssessmentOrder = AssessmentOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],5:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],5:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -325,7 +325,7 @@ class AssessmentPerformed extends mongoose.Document {
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],6:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],6:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -372,7 +372,7 @@ class AssessmentRecommended extends mongoose.Document {
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],7:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],7:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -419,7 +419,7 @@ class CareGoal extends mongoose.Document {
 module.exports.CareGoal = CareGoal;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],8:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],8:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -471,7 +471,7 @@ class CommunicationPerformed extends mongoose.Document {
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],9:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],9:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -518,7 +518,7 @@ class DeviceOrder extends mongoose.Document {
 module.exports.DeviceOrder = DeviceOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],10:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],10:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -565,7 +565,7 @@ class DeviceRecommended extends mongoose.Document {
 module.exports.DeviceRecommended = DeviceRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],11:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],11:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -613,7 +613,7 @@ class Diagnosis extends mongoose.Document {
 module.exports.Diagnosis = Diagnosis;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],12:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],12:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -660,7 +660,7 @@ class DiagnosticStudyOrder extends mongoose.Document {
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],13:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],13:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -717,7 +717,7 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],14:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],14:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -764,7 +764,7 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],15:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],15:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -813,7 +813,7 @@ class EncounterOrder extends mongoose.Document {
 module.exports.EncounterOrder = EncounterOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],16:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],16:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -870,7 +870,7 @@ class EncounterPerformed extends mongoose.Document {
 module.exports.EncounterPerformed = EncounterPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/DiagnosisComponent":58,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],17:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/DiagnosisComponent":58,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],17:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -918,7 +918,7 @@ class EncounterRecommended extends mongoose.Document {
 module.exports.EncounterRecommended = EncounterRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],18:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],18:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -964,7 +964,7 @@ class FamilyHistory extends mongoose.Document {
 module.exports.FamilyHistory = FamilyHistory;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],19:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],19:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1015,7 +1015,7 @@ class ImmunizationAdministered extends mongoose.Document {
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],20:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],20:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1066,7 +1066,7 @@ class ImmunizationOrder extends mongoose.Document {
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],21:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],21:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1113,7 +1113,7 @@ class InterventionOrder extends mongoose.Document {
 module.exports.InterventionOrder = InterventionOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],22:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],22:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1165,7 +1165,7 @@ class InterventionPerformed extends mongoose.Document {
 module.exports.InterventionPerformed = InterventionPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],23:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],23:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1212,7 +1212,7 @@ class InterventionRecommended extends mongoose.Document {
 module.exports.InterventionRecommended = InterventionRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],24:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],24:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1259,7 +1259,7 @@ class LaboratoryTestOrder extends mongoose.Document {
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],25:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],25:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1316,7 +1316,7 @@ class LaboratoryTestPerformed extends mongoose.Document {
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],26:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],26:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1363,7 +1363,7 @@ class LaboratoryTestRecommended extends mongoose.Document {
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],27:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],27:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1412,7 +1412,7 @@ class MedicationActive extends mongoose.Document {
 module.exports.MedicationActive = MedicationActive;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],28:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],28:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1464,7 +1464,7 @@ class MedicationAdministered extends mongoose.Document {
 module.exports.MedicationAdministered = MedicationAdministered;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],29:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],29:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1517,7 +1517,7 @@ class MedicationDischarge extends mongoose.Document {
 module.exports.MedicationDischarge = MedicationDischarge;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],30:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],30:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1573,7 +1573,7 @@ class MedicationDispensed extends mongoose.Document {
 module.exports.MedicationDispensed = MedicationDispensed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],31:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],31:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1629,7 +1629,7 @@ class MedicationOrder extends mongoose.Document {
 module.exports.MedicationOrder = MedicationOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],32:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],32:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1672,7 +1672,7 @@ class Participation extends mongoose.Document {
 module.exports.Participation = Participation;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],33:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],33:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1716,7 +1716,7 @@ class PatientCareExperience extends mongoose.Document {
 module.exports.PatientCareExperience = PatientCareExperience;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],34:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],34:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1759,7 +1759,7 @@ class PatientCharacteristic extends mongoose.Document {
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],35:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],35:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1803,7 +1803,7 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],36:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],36:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1849,7 +1849,7 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],37:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],37:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1892,7 +1892,7 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],38:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],38:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1937,7 +1937,7 @@ class PatientCharacteristicExpired extends mongoose.Document {
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],39:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],39:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1981,7 +1981,7 @@ class PatientCharacteristicPayer extends mongoose.Document {
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],40:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],40:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2024,7 +2024,7 @@ class PatientCharacteristicRace extends mongoose.Document {
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],41:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],41:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2067,7 +2067,7 @@ class PatientCharacteristicSex extends mongoose.Document {
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],42:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],42:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2115,7 +2115,7 @@ class PhysicalExamOrder extends mongoose.Document {
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],43:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],43:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2169,7 +2169,7 @@ class PhysicalExamPerformed extends mongoose.Document {
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],44:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],44:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2217,7 +2217,7 @@ class PhysicalExamRecommended extends mongoose.Document {
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],45:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],45:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2267,7 +2267,7 @@ class ProcedureOrder extends mongoose.Document {
 module.exports.ProcedureOrder = ProcedureOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],46:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],46:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2324,7 +2324,7 @@ class ProcedurePerformed extends mongoose.Document {
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],47:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],47:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2373,7 +2373,7 @@ class ProcedureRecommended extends mongoose.Document {
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],48:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],48:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2417,7 +2417,7 @@ class ProviderCareExperience extends mongoose.Document {
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],49:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],49:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2745,7 +2745,7 @@ class QDMPatient extends mongoose.Document {
 }
 module.exports.QDMPatient = QDMPatient;
 
-},{"./AllDataElements":2,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/Quantity":74,"mongoose/browser":331}],50:[function(require,module,exports){
+},{"./AllDataElements":2,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/Quantity":74,"mongoose/browser":328}],50:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2789,7 +2789,7 @@ class RelatedPerson extends mongoose.Document {
 module.exports.RelatedPerson = RelatedPerson;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],51:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],51:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2824,7 +2824,7 @@ class PlaceholderResult extends mongoose.Document {
 }
 module.exports.PlaceholderResult = PlaceholderResult;
 
-},{"mongoose/browser":331}],52:[function(require,module,exports){
+},{"mongoose/browser":328}],52:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2875,7 +2875,7 @@ class SubstanceAdministered extends mongoose.Document {
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],53:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],53:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2928,7 +2928,7 @@ class SubstanceOrder extends mongoose.Document {
 module.exports.SubstanceOrder = SubstanceOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],54:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],54:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2979,7 +2979,7 @@ class SubstanceRecommended extends mongoose.Document {
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],55:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],55:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -3025,7 +3025,7 @@ class Symptom extends mongoose.Document {
 module.exports.Symptom = Symptom;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":331}],56:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":328}],56:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3060,7 +3060,7 @@ class CarePartner extends mongoose.Document {
 module.exports.CarePartner = CarePartner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":331}],57:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":328}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3130,7 +3130,7 @@ function ComponentSchemaFunction(add, options) {
 module.exports.Component = Component;
 module.exports.ComponentSchemaFunction = ComponentSchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":331}],58:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":328}],58:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3166,7 +3166,7 @@ class DiagnosisComponent extends mongoose.Document {
 module.exports.DiagnosisComponent = DiagnosisComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":331}],59:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":328}],59:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./Identifier');
@@ -3243,7 +3243,7 @@ function EntitySchemaFunction(add, options) {
 module.exports.Entity = Entity;
 module.exports.EntitySchemaFunction = EntitySchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Identifier":61,"mongoose/browser":331}],60:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Identifier":61,"mongoose/browser":328}],60:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3278,7 +3278,7 @@ class FacilityLocation extends mongoose.Document {
 module.exports.FacilityLocation = FacilityLocation;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":331}],61:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":328}],61:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
@@ -3303,7 +3303,7 @@ class Identifier extends mongoose.Document {
 }
 module.exports.Identifier = Identifier;
 
-},{"mongoose/browser":331}],62:[function(require,module,exports){
+},{"mongoose/browser":328}],62:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3337,7 +3337,7 @@ class Location extends mongoose.Document {
 module.exports.Location = Location;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":331}],63:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":328}],63:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3372,7 +3372,7 @@ class Organization extends mongoose.Document {
 module.exports.Organization = Organization;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":331}],64:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":328}],64:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3406,7 +3406,7 @@ class PatientEntity extends mongoose.Document {
 module.exports.PatientEntity = PatientEntity;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":331}],65:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":328}],65:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3443,7 +3443,7 @@ class Practitioner extends mongoose.Document {
 module.exports.Practitioner = Practitioner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":331}],66:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":328}],66:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { ComponentSchemaFunction } = require('./Component');
@@ -3476,7 +3476,7 @@ class ResultComponent extends mongoose.Document {
 module.exports.ResultComponent = ResultComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Component":57,"mongoose/browser":331}],67:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Component":57,"mongoose/browser":328}],67:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const QDMDate = require('./QDMDate');
@@ -3562,7 +3562,7 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
-},{"./QDMDate":73,"cql-execution":170,"mongoose/browser":331}],68:[function(require,module,exports){
+},{"./QDMDate":73,"cql-execution":170,"mongoose/browser":328}],68:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { PatientEntity } = require('../attributes/PatientEntity');
 const { Practitioner } = require('../attributes/Practitioner');
@@ -3611,7 +3611,7 @@ AnyEntity.prototype.cast = (entity) => {
 mongoose.Schema.Types.AnyEntity = AnyEntity;
 module.exports = AnyEntity;
 
-},{"../attributes/CarePartner":56,"../attributes/Location":62,"../attributes/Organization":63,"../attributes/PatientEntity":64,"../attributes/Practitioner":65,"mongoose/browser":331}],69:[function(require,module,exports){
+},{"../attributes/CarePartner":56,"../attributes/Location":62,"../attributes/Organization":63,"../attributes/PatientEntity":64,"../attributes/Practitioner":65,"mongoose/browser":328}],69:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3644,7 +3644,7 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
-},{"cql-execution":170,"mongoose/browser":331}],70:[function(require,module,exports){
+},{"cql-execution":170,"mongoose/browser":328}],70:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const Code = require('./Code.js');
@@ -3726,7 +3726,7 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-},{"../attributes/Identifier":61,"./Code.js":69,"cql-execution":170,"mongoose/browser":331}],71:[function(require,module,exports){
+},{"../attributes/Identifier":61,"./Code.js":69,"cql-execution":170,"mongoose/browser":328}],71:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3750,7 +3750,7 @@ DateTime.prototype.cast = (dateTime) => {
 mongoose.Schema.Types.DateTime = DateTime;
 module.exports = DateTime;
 
-},{"cql-execution":170,"mongoose/browser":331}],72:[function(require,module,exports){
+},{"cql-execution":170,"mongoose/browser":328}],72:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const DateTime = require('./DateTime');
@@ -3789,7 +3789,7 @@ Interval.prototype.cast = (interval) => {
 mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
 
-},{"./DateTime":71,"cql-execution":170,"mongoose/browser":331}],73:[function(require,module,exports){
+},{"./DateTime":71,"cql-execution":170,"mongoose/browser":328}],73:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3830,7 +3830,7 @@ QDMDate.prototype.cast = (date) => {
 mongoose.Schema.Types.QDMDate = QDMDate;
 module.exports = QDMDate;
 
-},{"cql-execution":170,"mongoose/browser":331}],74:[function(require,module,exports){
+},{"cql-execution":170,"mongoose/browser":328}],74:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3852,7 +3852,7 @@ Quantity.prototype.cast = (quantity) => {
 mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;
 
-},{"cql-execution":170,"mongoose/browser":331}],75:[function(require,module,exports){
+},{"cql-execution":170,"mongoose/browser":328}],75:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { StatementDependencySchema } = require('./CQLStatementDependency');
 
@@ -3886,7 +3886,7 @@ class CQLLibrary extends mongoose.Document {
 }
 module.exports.CQLLibrary = CQLLibrary;
 
-},{"./CQLStatementDependency":76,"mongoose/browser":331}],76:[function(require,module,exports){
+},{"./CQLStatementDependency":76,"mongoose/browser":328}],76:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
@@ -3916,7 +3916,7 @@ class StatementDependency extends mongoose.Document {
 }
 module.exports.StatementDependency = StatementDependency;
 
-},{"mongoose/browser":331}],77:[function(require,module,exports){
+},{"mongoose/browser":328}],77:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -3946,7 +3946,7 @@ class ClauseResult extends mongoose.Document {
 }
 module.exports.ClauseResult = ClauseResult;
 
-},{"mongoose/browser":331}],78:[function(require,module,exports){
+},{"mongoose/browser":328}],78:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
@@ -3965,7 +3965,7 @@ class Concept extends mongoose.Document {
 }
 module.exports.Concept = Concept;
 
-},{"mongoose/browser":331}],79:[function(require,module,exports){
+},{"mongoose/browser":328}],79:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { ClauseResultSchema } = require('./ClauseResult');
 const { StatementResultSchema } = require('./StatementResult');
@@ -4055,7 +4055,7 @@ class IndividualResult extends mongoose.Document {
 }
 module.exports.IndividualResult = IndividualResult;
 
-},{"./ClauseResult":77,"./StatementResult":85,"mongoose/browser":331}],80:[function(require,module,exports){
+},{"./ClauseResult":77,"./StatementResult":85,"mongoose/browser":328}],80:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -4166,7 +4166,7 @@ class Measure extends mongoose.Document {
 }
 module.exports.Measure = Measure;
 
-},{"../AllDataElements":2,"../basetypes/Code":69,"../basetypes/DataElement":70,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./CQLLibrary":75,"./PopulationSet":83,"mongoose/browser":331}],81:[function(require,module,exports){
+},{"../AllDataElements":2,"../basetypes/Code":69,"../basetypes/DataElement":70,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./CQLLibrary":75,"./PopulationSet":83,"mongoose/browser":328}],81:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
@@ -4194,7 +4194,7 @@ class MeasurePackage extends mongoose.Document {
 }
 module.exports.MeasurePackage = MeasurePackage;
 
-},{"mongoose/browser":331}],82:[function(require,module,exports){
+},{"mongoose/browser":328}],82:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -4234,7 +4234,7 @@ class Patient extends mongoose.Document {
 }
 module.exports.Patient = Patient;
 
-},{"../QDMPatient":49,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./Provider":84,"mongoose/browser":331}],83:[function(require,module,exports){
+},{"../QDMPatient":49,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./Provider":84,"mongoose/browser":328}],83:[function(require,module,exports){
 /* eslint-disable no-unused-vars, no-param-reassign */
 const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
@@ -4325,7 +4325,7 @@ class PopulationSet extends mongoose.Document {
 }
 module.exports.PopulationSet = PopulationSet;
 
-},{"./CQLStatementDependency":76,"mongoose/browser":331}],84:[function(require,module,exports){
+},{"./CQLStatementDependency":76,"mongoose/browser":328}],84:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Schema, String, Boolean] = [
@@ -4369,7 +4369,7 @@ class Provider extends mongoose.Document {
 }
 module.exports.Provider = Provider;
 
-},{"mongoose/browser":331}],85:[function(require,module,exports){
+},{"mongoose/browser":328}],85:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -4412,7 +4412,7 @@ class StatementResult extends mongoose.Document {
 }
 module.exports.StatementResult = StatementResult;
 
-},{"mongoose/browser":331}],86:[function(require,module,exports){
+},{"mongoose/browser":328}],86:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
@@ -4440,7 +4440,7 @@ class ValueSet extends mongoose.Document {
 }
 module.exports.ValueSet = ValueSet;
 
-},{"./Concept.js":78,"mongoose/browser":331}],87:[function(require,module,exports){
+},{"./Concept.js":78,"mongoose/browser":328}],87:[function(require,module,exports){
 module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.QDMDate = require('./basetypes/QDMDate');
@@ -4954,7 +4954,7 @@ class Dimension {
 exports.Dimension = Dimension;
 
 
-},{"./config.js":89,"is-integer":301}],91:[function(require,module,exports){
+},{"./config.js":89,"is-integer":298}],91:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7377,7 +7377,7 @@ class Unit {
 exports.Unit = Unit;
 
 
-},{"./config.js":89,"./dimension.js":90,"./ucumFunctions.js":94,"./ucumInternalUtils.js":95,"./unitTables.js":101,"is-integer":301}],100:[function(require,module,exports){
+},{"./config.js":89,"./dimension.js":90,"./ucumFunctions.js":94,"./ucumInternalUtils.js":95,"./unitTables.js":101,"is-integer":298}],100:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9721,7 +9721,7 @@ Entity.prototype.encode = function encode(data, enc, /* internal */ reporter) {
   return this._getEncoder(enc).encode(data, reporter);
 };
 
-},{"../asn1":102,"inherits":295,"vm":592}],104:[function(require,module,exports){
+},{"../asn1":102,"inherits":292,"vm":589}],104:[function(require,module,exports){
 var inherits = require('inherits');
 var Reporter = require('../base').Reporter;
 var Buffer = require('buffer').Buffer;
@@ -9839,7 +9839,7 @@ EncoderBuffer.prototype.join = function join(out, offset) {
   return out;
 };
 
-},{"../base":105,"buffer":156,"inherits":295}],105:[function(require,module,exports){
+},{"../base":105,"buffer":156,"inherits":292}],105:[function(require,module,exports){
 var base = exports;
 
 base.Reporter = require('./reporter').Reporter;
@@ -10483,7 +10483,7 @@ Node.prototype._isPrintstr = function isPrintstr(str) {
   return /^[A-Za-z0-9 '\(\)\+,\-\.\/:=\?]*$/.test(str);
 };
 
-},{"../base":105,"minimalistic-assert":329}],107:[function(require,module,exports){
+},{"../base":105,"minimalistic-assert":326}],107:[function(require,module,exports){
 var inherits = require('inherits');
 
 function Reporter(options) {
@@ -10606,7 +10606,7 @@ ReporterError.prototype.rethrow = function rethrow(msg) {
   return this;
 };
 
-},{"inherits":295}],108:[function(require,module,exports){
+},{"inherits":292}],108:[function(require,module,exports){
 var constants = require('../constants');
 
 exports.tagClass = {
@@ -10997,7 +10997,7 @@ function derDecodeLen(buf, primitive, fail) {
   return len;
 }
 
-},{"../../asn1":102,"inherits":295}],111:[function(require,module,exports){
+},{"../../asn1":102,"inherits":292}],111:[function(require,module,exports){
 var decoders = exports;
 
 decoders.der = require('./der');
@@ -11054,7 +11054,7 @@ PEMDecoder.prototype.decode = function decode(data, options) {
   return DERDecoder.prototype.decode.call(this, input, options);
 };
 
-},{"./der":110,"buffer":156,"inherits":295}],113:[function(require,module,exports){
+},{"./der":110,"buffer":156,"inherits":292}],113:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -11351,7 +11351,7 @@ function encodeTag(tag, primitive, cls, reporter) {
   return res;
 }
 
-},{"../../asn1":102,"buffer":156,"inherits":295}],114:[function(require,module,exports){
+},{"../../asn1":102,"buffer":156,"inherits":292}],114:[function(require,module,exports){
 var encoders = exports;
 
 encoders.der = require('./der');
@@ -11380,7 +11380,7 @@ PEMEncoder.prototype.encode = function encode(data, options) {
   return out.join('\n');
 };
 
-},{"./der":113,"inherits":295}],116:[function(require,module,exports){
+},{"./der":113,"inherits":292}],116:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -11890,7 +11890,7 @@ var objectKeys = Object.keys || function (obj) {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"object.assign/polyfill":503,"util/":119}],117:[function(require,module,exports){
+},{"object.assign/polyfill":500,"util/":119}],117:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -12512,7 +12512,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":118,"_process":521,"inherits":117}],120:[function(require,module,exports){
+},{"./support/isBuffer":118,"_process":518,"inherits":117}],120:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -12533,7 +12533,7 @@ module.exports = function availableTypedArrays() {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"possible-typed-array-names":519}],121:[function(require,module,exports){
+},{"possible-typed-array-names":516}],121:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -16432,7 +16432,7 @@ AES.prototype.scrub = function () {
 
 module.exports.AES = AES
 
-},{"safe-buffer":559}],126:[function(require,module,exports){
+},{"safe-buffer":556}],126:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -16551,7 +16551,7 @@ StreamCipher.prototype.setAAD = function setAAD (buf) {
 
 module.exports = StreamCipher
 
-},{"./aes":125,"./ghash":130,"./incr32":131,"buffer-xor":155,"cipher-base":166,"inherits":295,"safe-buffer":559}],127:[function(require,module,exports){
+},{"./aes":125,"./ghash":130,"./incr32":131,"buffer-xor":155,"cipher-base":166,"inherits":292,"safe-buffer":556}],127:[function(require,module,exports){
 var ciphers = require('./encrypter')
 var deciphers = require('./decrypter')
 var modes = require('./modes/list.json')
@@ -16692,7 +16692,7 @@ function createDecipher (suite, password) {
 exports.createDecipher = createDecipher
 exports.createDecipheriv = createDecipheriv
 
-},{"./aes":125,"./authCipher":126,"./modes":138,"./streamCipher":141,"cipher-base":166,"evp_bytestokey":268,"inherits":295,"safe-buffer":559}],129:[function(require,module,exports){
+},{"./aes":125,"./authCipher":126,"./modes":138,"./streamCipher":141,"cipher-base":166,"evp_bytestokey":266,"inherits":292,"safe-buffer":556}],129:[function(require,module,exports){
 var MODES = require('./modes')
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
@@ -16808,7 +16808,7 @@ function createCipher (suite, password) {
 exports.createCipheriv = createCipheriv
 exports.createCipher = createCipher
 
-},{"./aes":125,"./authCipher":126,"./modes":138,"./streamCipher":141,"cipher-base":166,"evp_bytestokey":268,"inherits":295,"safe-buffer":559}],130:[function(require,module,exports){
+},{"./aes":125,"./authCipher":126,"./modes":138,"./streamCipher":141,"cipher-base":166,"evp_bytestokey":266,"inherits":292,"safe-buffer":556}],130:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var ZEROES = Buffer.alloc(16, 0)
 
@@ -16899,7 +16899,7 @@ GHASH.prototype.final = function (abl, bl) {
 
 module.exports = GHASH
 
-},{"safe-buffer":559}],131:[function(require,module,exports){
+},{"safe-buffer":556}],131:[function(require,module,exports){
 function incr32 (iv) {
   var len = iv.length
   var item
@@ -16970,7 +16970,7 @@ exports.encrypt = function (self, data, decrypt) {
   return out
 }
 
-},{"buffer-xor":155,"safe-buffer":559}],134:[function(require,module,exports){
+},{"buffer-xor":155,"safe-buffer":556}],134:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -17014,7 +17014,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":559}],135:[function(require,module,exports){
+},{"safe-buffer":556}],135:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -17041,7 +17041,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":559}],136:[function(require,module,exports){
+},{"safe-buffer":556}],136:[function(require,module,exports){
 var xor = require('buffer-xor')
 var Buffer = require('safe-buffer').Buffer
 var incr32 = require('../incr32')
@@ -17073,7 +17073,7 @@ exports.encrypt = function (self, chunk) {
   return xor(chunk, pad)
 }
 
-},{"../incr32":131,"buffer-xor":155,"safe-buffer":559}],137:[function(require,module,exports){
+},{"../incr32":131,"buffer-xor":155,"safe-buffer":556}],137:[function(require,module,exports){
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 }
@@ -17344,7 +17344,7 @@ StreamCipher.prototype._final = function () {
 
 module.exports = StreamCipher
 
-},{"./aes":125,"cipher-base":166,"inherits":295,"safe-buffer":559}],142:[function(require,module,exports){
+},{"./aes":125,"cipher-base":166,"inherits":292,"safe-buffer":556}],142:[function(require,module,exports){
 var DES = require('browserify-des')
 var aes = require('browserify-aes/browser')
 var aesModes = require('browserify-aes/modes')
@@ -17413,7 +17413,7 @@ exports.createDecipher = exports.Decipher = createDecipher
 exports.createDecipheriv = exports.Decipheriv = createDecipheriv
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"browserify-aes/browser":127,"browserify-aes/modes":138,"browserify-des":143,"browserify-des/modes":144,"evp_bytestokey":268}],143:[function(require,module,exports){
+},{"browserify-aes/browser":127,"browserify-aes/modes":138,"browserify-des":143,"browserify-des/modes":144,"evp_bytestokey":266}],143:[function(require,module,exports){
 var CipherBase = require('cipher-base')
 var des = require('des.js')
 var inherits = require('inherits')
@@ -17465,7 +17465,7 @@ DES.prototype._final = function () {
   return Buffer.from(this._des.final())
 }
 
-},{"cipher-base":166,"des.js":231,"inherits":295,"safe-buffer":559}],144:[function(require,module,exports){
+},{"cipher-base":166,"des.js":229,"inherits":292,"safe-buffer":556}],144:[function(require,module,exports){
 exports['des-ecb'] = {
   key: 8,
   iv: 0
@@ -17531,7 +17531,7 @@ crt.getr = getr;
 
 module.exports = crt;
 
-},{"bn.js":146,"randombytes":528,"safe-buffer":559}],146:[function(require,module,exports){
+},{"bn.js":146,"randombytes":525,"safe-buffer":556}],146:[function(require,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -21343,7 +21343,7 @@ module.exports = {
   createVerify: createVerify
 };
 
-},{"./algorithms.json":148,"./sign":151,"./verify":152,"create-hash":225,"inherits":295,"readable-stream":541,"safe-buffer":559}],151:[function(require,module,exports){
+},{"./algorithms.json":148,"./sign":151,"./verify":152,"create-hash":223,"inherits":292,"readable-stream":538,"safe-buffer":556}],151:[function(require,module,exports){
 'use strict';
 
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
@@ -21495,7 +21495,7 @@ module.exports = sign;
 module.exports.getKey = getKey;
 module.exports.makeKey = makeKey;
 
-},{"./curves.json":149,"bn.js":153,"browserify-rsa":145,"create-hmac":227,"elliptic":242,"parse-asn1":508,"safe-buffer":559}],152:[function(require,module,exports){
+},{"./curves.json":149,"bn.js":153,"browserify-rsa":145,"create-hmac":225,"elliptic":240,"parse-asn1":505,"safe-buffer":556}],152:[function(require,module,exports){
 'use strict';
 
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
@@ -21583,7 +21583,7 @@ function checkValue(b, q) {
 
 module.exports = verify;
 
-},{"./curves.json":149,"bn.js":153,"elliptic":242,"parse-asn1":508,"safe-buffer":559}],153:[function(require,module,exports){
+},{"./curves.json":149,"bn.js":153,"elliptic":240,"parse-asn1":505,"safe-buffer":556}],153:[function(require,module,exports){
 arguments[4][146][0].apply(exports,arguments)
 },{"buffer":124,"dup":146}],154:[function(require,module,exports){
 (function (Buffer){(function (){
@@ -25733,7 +25733,7 @@ exports.setInternalBufferSize = setInternalBufferSize;
 
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":156,"crypto":229}],155:[function(require,module,exports){
+},{"buffer":156,"crypto":227}],155:[function(require,module,exports){
 (function (Buffer){(function (){
 module.exports = function xor (a, b) {
   var length = Math.min(a.length, b.length)
@@ -27528,7 +27528,7 @@ function numberIsNaN (obj) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"base64-js":121,"buffer":156,"ieee754":293}],157:[function(require,module,exports){
+},{"base64-js":121,"buffer":156,"ieee754":291}],157:[function(require,module,exports){
 'use strict';
 
 var bind = require('function-bind');
@@ -27540,7 +27540,7 @@ var $reflectApply = require('./reflectApply');
 /** @type {import('./actualApply')} */
 module.exports = $reflectApply || bind.call($call, $apply);
 
-},{"./functionApply":159,"./functionCall":160,"./reflectApply":162,"function-bind":271}],158:[function(require,module,exports){
+},{"./functionApply":159,"./functionCall":160,"./reflectApply":162,"function-bind":269}],158:[function(require,module,exports){
 'use strict';
 
 var bind = require('function-bind');
@@ -27552,7 +27552,7 @@ module.exports = function applyBind() {
 	return actualApply(bind, $apply, arguments);
 };
 
-},{"./actualApply":157,"./functionApply":159,"function-bind":271}],159:[function(require,module,exports){
+},{"./actualApply":157,"./functionApply":159,"function-bind":269}],159:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./functionApply')} */
@@ -27581,7 +27581,7 @@ module.exports = function callBindBasic(args) {
 	return $actualApply(bind, $call, args);
 };
 
-},{"./actualApply":157,"./functionCall":160,"es-errors/type":264,"function-bind":271}],162:[function(require,module,exports){
+},{"./actualApply":157,"./functionCall":160,"es-errors/type":262,"function-bind":269}],162:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./reflectApply')} */
@@ -27604,7 +27604,7 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	return intrinsic;
 };
 
-},{"./":164,"get-intrinsic":272}],164:[function(require,module,exports){
+},{"./":164,"get-intrinsic":270}],164:[function(require,module,exports){
 'use strict';
 
 var setFunctionLength = require('set-function-length');
@@ -27630,7 +27630,7 @@ if ($defineProperty) {
 	module.exports.apply = applyBind;
 }
 
-},{"call-bind-apply-helpers":161,"call-bind-apply-helpers/applyBind":158,"es-define-property":258,"set-function-length":560}],165:[function(require,module,exports){
+},{"call-bind-apply-helpers":161,"call-bind-apply-helpers/applyBind":158,"es-define-property":256,"set-function-length":557}],165:[function(require,module,exports){
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
@@ -27650,7 +27650,7 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	return intrinsic;
 };
 
-},{"call-bind-apply-helpers":161,"get-intrinsic":272}],166:[function(require,module,exports){
+},{"call-bind-apply-helpers":161,"get-intrinsic":270}],166:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -27819,7 +27819,7 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 
 module.exports = CipherBase;
 
-},{"inherits":295,"safe-buffer":559,"stream":569,"string_decoder":584}],167:[function(require,module,exports){
+},{"inherits":292,"safe-buffer":556,"stream":566,"string_decoder":581}],167:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -27932,32 +27932,33 @@ function objectToString(o) {
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CodeService = void 0;
-const datatypes_1 = require("./datatypes/datatypes");
-class CodeService {
-    constructor(valueSetsJson = {}) {
+var datatypes_1 = require("./datatypes/datatypes");
+var CodeService = /** @class */ (function () {
+    function CodeService(valueSetsJson) {
+        if (valueSetsJson === void 0) { valueSetsJson = {}; }
         this.valueSets = {};
-        for (const oid in valueSetsJson) {
+        for (var oid in valueSetsJson) {
             this.valueSets[oid] = {};
-            for (const version in valueSetsJson[oid]) {
-                const codes = valueSetsJson[oid][version].map((code) => new datatypes_1.Code(code.code, code.system, code.version));
+            for (var version in valueSetsJson[oid]) {
+                var codes = valueSetsJson[oid][version].map(function (code) { return new datatypes_1.Code(code.code, code.system, code.version); });
                 this.valueSets[oid][version] = new datatypes_1.ValueSet(oid, version, codes);
             }
         }
     }
-    findValueSetsByOid(oid) {
+    CodeService.prototype.findValueSetsByOid = function (oid) {
         return this.valueSets[oid] ? Object.values(this.valueSets[oid]) : [];
-    }
-    findValueSet(oid, version) {
+    };
+    CodeService.prototype.findValueSet = function (oid, version) {
         if (version != null) {
             return this.valueSets[oid] != null ? this.valueSets[oid][version] : null;
         }
         else {
-            const results = this.findValueSetsByOid(oid);
+            var results = this.findValueSetsByOid(oid);
             if (results.length === 0) {
                 return null;
             }
             else {
-                return results.reduce((a, b) => {
+                return results.reduce(function (a, b) {
                     if (a.version > b.version) {
                         return a;
                     }
@@ -27967,12 +27968,28 @@ class CodeService {
                 });
             }
         }
-    }
-}
+    };
+    return CodeService;
+}());
 exports.CodeService = CodeService;
 
 },{"./datatypes/datatypes":172}],169:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -27994,19 +28011,19 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PatientSource = exports.Patient = exports.Record = void 0;
-const DT = __importStar(require("./datatypes/datatypes"));
-class Record {
-    constructor(json) {
+var DT = __importStar(require("./datatypes/datatypes"));
+var Record = /** @class */ (function () {
+    function Record(json) {
         this.json = json;
         this.id = this.json.id;
     }
-    _is(typeSpecifier) {
-        return this._typeHierarchy().some(t => t.type === typeSpecifier.type && t.name == typeSpecifier.name);
-    }
-    _typeHierarchy() {
+    Record.prototype._is = function (typeSpecifier) {
+        return this._typeHierarchy().some(function (t) { return t.type === typeSpecifier.type && t.name == typeSpecifier.name; });
+    };
+    Record.prototype._typeHierarchy = function () {
         return [
             {
-                name: `{https://github.com/cqframework/cql-execution/simple}${this.json.recordType}`,
+                name: "{https://github.com/cqframework/cql-execution/simple}".concat(this.json.recordType),
                 type: 'NamedTypeSpecifier'
             },
             {
@@ -28015,19 +28032,19 @@ class Record {
             },
             { name: '{urn:hl7-org:elm-types:r1}Any', type: 'NamedTypeSpecifier' }
         ];
-    }
-    _recursiveGet(field) {
+    };
+    Record.prototype._recursiveGet = function (field) {
         if (field != null && field.indexOf('.') >= 0) {
-            const [root, rest] = field.split('.', 2);
+            var _a = field.split('.', 2), root = _a[0], rest = _a[1];
             return new Record(this._recursiveGet(root))._recursiveGet(rest);
         }
         return this.json[field];
-    }
-    get(field) {
+    };
+    Record.prototype.get = function (field) {
         // the model should return the correct type for the field. For this simple model example,
         // we just cheat and use the shape of the value to determine it. Real implementations should
         // have a more sophisticated approach
-        const value = this._recursiveGet(field);
+        var value = this._recursiveGet(field);
         if (typeof value === 'string' && /\d{4}-\d{2}-\d{2}(T[\d\-.]+)?/.test(value)) {
             return this.getDate(field);
         }
@@ -28038,90 +28055,94 @@ class Record {
             return this.getInterval(field);
         }
         return value;
-    }
-    getId() {
+    };
+    Record.prototype.getId = function () {
         return this.id;
-    }
-    getDate(field) {
-        const val = this._recursiveGet(field);
+    };
+    Record.prototype.getDate = function (field) {
+        var val = this._recursiveGet(field);
         if (val != null) {
             return DT.DateTime.parse(val);
         }
         else {
             return null;
         }
-    }
-    getInterval(field) {
-        const val = this._recursiveGet(field);
+    };
+    Record.prototype.getInterval = function (field) {
+        var val = this._recursiveGet(field);
         if (val != null && typeof val === 'object') {
-            const low = val.low != null ? DT.DateTime.parse(val.low) : null;
-            const high = val.high != null ? DT.DateTime.parse(val.high) : null;
+            var low = val.low != null ? DT.DateTime.parse(val.low) : null;
+            var high = val.high != null ? DT.DateTime.parse(val.high) : null;
             return new DT.Interval(low, high);
         }
-    }
-    getDateOrInterval(field) {
-        const val = this._recursiveGet(field);
+    };
+    Record.prototype.getDateOrInterval = function (field) {
+        var val = this._recursiveGet(field);
         if (val != null && typeof val === 'object') {
             return this.getInterval(field);
         }
         else {
             return this.getDate(field);
         }
-    }
-    getCode(field) {
-        const val = this._recursiveGet(field);
+    };
+    Record.prototype.getCode = function (field) {
+        var val = this._recursiveGet(field);
         if (val != null && typeof val === 'object') {
             return new DT.Code(val.code, val.system, val.version);
         }
-    }
-}
+    };
+    return Record;
+}());
 exports.Record = Record;
-class Patient extends Record {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.gender = json.gender;
-        this.birthDate = json.birthDate != null ? DT.DateTime.parse(json.birthDate) : undefined;
-        this.records = {};
-        (json.records || []).forEach((r) => {
-            if (this.records[r.recordType] == null) {
-                this.records[r.recordType] = [];
+var Patient = /** @class */ (function (_super) {
+    __extends(Patient, _super);
+    function Patient(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.gender = json.gender;
+        _this.birthDate = json.birthDate != null ? DT.DateTime.parse(json.birthDate) : undefined;
+        _this.records = {};
+        (json.records || []).forEach(function (r) {
+            if (_this.records[r.recordType] == null) {
+                _this.records[r.recordType] = [];
             }
-            this.records[r.recordType].push(new Record(r));
+            _this.records[r.recordType].push(new Record(r));
         });
+        return _this;
     }
-    findRecords(profile) {
+    Patient.prototype.findRecords = function (profile) {
         if (profile == null) {
             return [];
         }
-        const match = profile.match(/(\{https:\/\/github\.com\/cqframework\/cql-execution\/simple\})?(.*)/);
-        if (match == null) {
+        var match = profile.match(/(\{https:\/\/github\.com\/cqframework\/cql-execution\/simple\})?(.*)/);
+        if (match == null)
             return [];
-        }
-        const recordType = match[2];
+        var recordType = match[2];
         if (recordType === 'Patient') {
             return [this];
         }
         else {
             return this.records[recordType] || [];
         }
-    }
-}
+    };
+    return Patient;
+}(Record));
 exports.Patient = Patient;
-class PatientSource {
-    constructor(patients) {
+var PatientSource = /** @class */ (function () {
+    function PatientSource(patients) {
         this.patients = patients;
         this.nextPatient();
     }
-    currentPatient() {
+    PatientSource.prototype.currentPatient = function () {
         return this.current;
-    }
-    nextPatient() {
-        const currentJSON = this.patients.shift();
+    };
+    PatientSource.prototype.nextPatient = function () {
+        var currentJSON = this.patients.shift();
         this.current = currentJSON ? new Patient(currentJSON) : undefined;
         return this.current;
-    }
-}
+    };
+    return PatientSource;
+}());
 exports.PatientSource = PatientSource;
 
 },{"./datatypes/datatypes":172}],170:[function(require,module,exports){
@@ -28137,35 +28158,35 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ValueSet = exports.Ratio = exports.Quantity = exports.Interval = exports.DateTime = exports.Date = exports.Concept = exports.CodeSystem = exports.Code = exports.CodeService = exports.PatientSource = exports.Patient = exports.NullMessageListener = exports.ConsoleMessageListener = exports.Results = exports.Executor = exports.UnfilteredContext = exports.PatientContext = exports.Context = exports.Expression = exports.Repository = exports.Library = exports.AnnotatedError = void 0;
+exports.ValueSet = exports.Ratio = exports.Quantity = exports.Interval = exports.DateTime = exports.Date = exports.Concept = exports.CodeSystem = exports.Code = exports.CodeService = exports.PatientSource = exports.Patient = exports.NullMessageListener = exports.ConsoleMessageListener = exports.Results = exports.Executor = exports.UnfilteredContext = exports.PatientContext = exports.Context = exports.Expression = exports.Repository = exports.Library = void 0;
 // Library-related classes
-const library_1 = require("./elm/library");
+var library_1 = require("./elm/library");
 Object.defineProperty(exports, "Library", { enumerable: true, get: function () { return library_1.Library; } });
-const repository_1 = require("./runtime/repository");
+var repository_1 = require("./runtime/repository");
 Object.defineProperty(exports, "Repository", { enumerable: true, get: function () { return repository_1.Repository; } });
-const expression_1 = require("./elm/expression");
+var expression_1 = require("./elm/expression");
 Object.defineProperty(exports, "Expression", { enumerable: true, get: function () { return expression_1.Expression; } });
 // Execution-related classes
-const context_1 = require("./runtime/context");
+var context_1 = require("./runtime/context");
 Object.defineProperty(exports, "Context", { enumerable: true, get: function () { return context_1.Context; } });
 Object.defineProperty(exports, "PatientContext", { enumerable: true, get: function () { return context_1.PatientContext; } });
 Object.defineProperty(exports, "UnfilteredContext", { enumerable: true, get: function () { return context_1.UnfilteredContext; } });
-const executor_1 = require("./runtime/executor");
+var executor_1 = require("./runtime/executor");
 Object.defineProperty(exports, "Executor", { enumerable: true, get: function () { return executor_1.Executor; } });
-const results_1 = require("./runtime/results");
+var results_1 = require("./runtime/results");
 Object.defineProperty(exports, "Results", { enumerable: true, get: function () { return results_1.Results; } });
-const messageListeners_1 = require("./runtime/messageListeners");
+var messageListeners_1 = require("./runtime/messageListeners");
 Object.defineProperty(exports, "ConsoleMessageListener", { enumerable: true, get: function () { return messageListeners_1.ConsoleMessageListener; } });
 Object.defineProperty(exports, "NullMessageListener", { enumerable: true, get: function () { return messageListeners_1.NullMessageListener; } });
 // PatientSource-related classes
-const cql_patient_1 = require("./cql-patient");
+var cql_patient_1 = require("./cql-patient");
 Object.defineProperty(exports, "Patient", { enumerable: true, get: function () { return cql_patient_1.Patient; } });
 Object.defineProperty(exports, "PatientSource", { enumerable: true, get: function () { return cql_patient_1.PatientSource; } });
 // TerminologyService-related classes
-const cql_code_service_1 = require("./cql-code-service");
+var cql_code_service_1 = require("./cql-code-service");
 Object.defineProperty(exports, "CodeService", { enumerable: true, get: function () { return cql_code_service_1.CodeService; } });
 // DataType classes
-const datatypes_1 = require("./datatypes/datatypes");
+var datatypes_1 = require("./datatypes/datatypes");
 Object.defineProperty(exports, "Code", { enumerable: true, get: function () { return datatypes_1.Code; } });
 Object.defineProperty(exports, "CodeSystem", { enumerable: true, get: function () { return datatypes_1.CodeSystem; } });
 Object.defineProperty(exports, "Concept", { enumerable: true, get: function () { return datatypes_1.Concept; } });
@@ -28175,12 +28196,9 @@ Object.defineProperty(exports, "Interval", { enumerable: true, get: function () 
 Object.defineProperty(exports, "Quantity", { enumerable: true, get: function () { return datatypes_1.Quantity; } });
 Object.defineProperty(exports, "Ratio", { enumerable: true, get: function () { return datatypes_1.Ratio; } });
 Object.defineProperty(exports, "ValueSet", { enumerable: true, get: function () { return datatypes_1.ValueSet; } });
-const customErrors_1 = require("./util/customErrors");
-Object.defineProperty(exports, "AnnotatedError", { enumerable: true, get: function () { return customErrors_1.AnnotatedError; } });
 // Custom Types
 __exportStar(require("./types"), exports);
 exports.default = {
-    AnnotatedError: customErrors_1.AnnotatedError,
     Library: library_1.Library,
     Repository: repository_1.Repository,
     Expression: expression_1.Expression,
@@ -28205,22 +28223,26 @@ exports.default = {
     ValueSet: datatypes_1.ValueSet
 };
 
-},{"./cql-code-service":168,"./cql-patient":169,"./datatypes/datatypes":172,"./elm/expression":188,"./elm/library":193,"./runtime/context":208,"./runtime/executor":209,"./runtime/messageListeners":210,"./runtime/repository":211,"./runtime/results":212,"./types":215,"./util/customErrors":219}],171:[function(require,module,exports){
+},{"./cql-code-service":168,"./cql-patient":169,"./datatypes/datatypes":172,"./elm/expression":188,"./elm/library":193,"./runtime/context":208,"./runtime/executor":209,"./runtime/messageListeners":210,"./runtime/repository":211,"./runtime/results":212,"./types":215}],171:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CodeSystem = exports.ValueSet = exports.Concept = exports.Code = void 0;
-const util_1 = require("../util/util");
-class Code {
-    constructor(code, system, version, display) {
+var util_1 = require("../util/util");
+var Code = /** @class */ (function () {
+    function Code(code, system, version, display) {
         this.code = code;
         this.system = system;
         this.version = version;
         this.display = display;
     }
-    get isCode() {
-        return true;
-    }
-    hasMatch(code) {
+    Object.defineProperty(Code.prototype, "isCode", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Code.prototype.hasMatch = function (code) {
         if (typeof code === 'string') {
             // the specific behavior for this is not in the specification. Matching codesystem behavior.
             return code === this.code;
@@ -28228,53 +28250,52 @@ class Code {
         else {
             return codesInList(toCodeList(code), [this]);
         }
-    }
-}
+    };
+    return Code;
+}());
 exports.Code = Code;
-class Concept {
-    constructor(codes, display) {
+var Concept = /** @class */ (function () {
+    function Concept(codes, display) {
         this.codes = codes;
         this.display = display;
         this.codes || (this.codes = []);
     }
-    get isConcept() {
-        return true;
-    }
-    hasMatch(code) {
+    Object.defineProperty(Concept.prototype, "isConcept", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Concept.prototype.hasMatch = function (code) {
         return codesInList(toCodeList(code), this.codes);
-    }
-}
+    };
+    return Concept;
+}());
 exports.Concept = Concept;
-class ValueSet {
-    constructor(oid, version, codes = []) {
+var ValueSet = /** @class */ (function () {
+    function ValueSet(oid, version, codes) {
+        if (codes === void 0) { codes = []; }
         this.oid = oid;
         this.version = version;
         this.codes = codes;
         this.codes || (this.codes = []);
     }
-    get isValueSet() {
-        return true;
-    }
-    /**
-     * Determines if the provided code matches any code in the current set.
-     * If the input is a single string, it checks for a direct match with the
-     * codes in the set, ensuring all code systems are consistent. Throws an
-     * error if multiple code systems exist and a match is found, indicating
-     * ambiguity. For other inputs, it checks for any matching codes using
-     * the `codesInList` function. Used for the `code in valueset` operation.
-     *
-     * @param code - The code to be checked for a match, which can be a string
-     *               or an object containing codes.
-     * @returns {boolean} True if a match is found, otherwise false.
-     * @throws {Error} If a match is found with multiple code systems present.
-     */
-    hasMatch(code) {
-        const codesList = toCodeList(code);
+    Object.defineProperty(ValueSet.prototype, "isValueSet", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    ValueSet.prototype.hasMatch = function (code) {
+        var codesList = toCodeList(code);
         // InValueSet String Overload
         if (codesList.length === 1 && typeof codesList[0] === 'string') {
-            let matchFound = false;
-            let multipleCodeSystemsExist = false;
-            for (const codeItem of this.codes) {
+            var matchFound = false;
+            var multipleCodeSystemsExist = false;
+            for (var _i = 0, _a = this.codes; _i < _a.length; _i++) {
+                var codeItem = _a[_i];
                 // Confirm all code systems match
                 if (codeItem.system !== this.codes[0].system) {
                     multipleCodeSystemsExist = true;
@@ -28291,41 +28312,18 @@ class ValueSet {
         else {
             return codesInList(codesList, this.codes);
         }
-    }
-    /**
-     * Expands the current set of codes by returning a list of unique `Code` objects.
-     * This method filters out duplicate codes from the `codes` array, ensuring each
-     * code appears only once in the returned list. Use for the ExpandValueset operator
-     *
-     * @returns {Code[]} An array of unique `Code` objects.
-     */
-    expand() {
-        const expanded = [];
-        this.codes.forEach(code => {
-            const foundUniqueCode = expanded.find(uniqueCode => {
-                if (uniqueCode == null || code == null) {
-                    return true;
-                }
-                return (uniqueCode.code === code.code &&
-                    uniqueCode.system == code.system &&
-                    uniqueCode.version == code.version &&
-                    uniqueCode.display == code.display);
-            });
-            if (!foundUniqueCode) {
-                expanded.push(code);
-            }
-        });
-        return expanded;
-    }
-}
+    };
+    return ValueSet;
+}());
 exports.ValueSet = ValueSet;
 function toCodeList(c) {
     if (c == null) {
         return [];
     }
     else if ((0, util_1.typeIsArray)(c)) {
-        let list = [];
-        for (const c2 of c) {
+        var list = [];
+        for (var _i = 0, c_1 = c; _i < c_1.length; _i++) {
+            var c2 = c_1[_i];
             list = list.concat(toCodeList(c2));
         }
         return list;
@@ -28339,30 +28337,33 @@ function toCodeList(c) {
 }
 function codesInList(cl1, cl2) {
     // test each code in c1 against each code in c2 looking for a match
-    return cl1.some((c1) => cl2.some((c2) => {
-        // only the left argument (cl1) can contain strings. cl2 will only contain codes.
-        if (typeof c1 === 'string') {
-            // for "string in codesystem" this should compare the string to
-            // the code's "code" field according to the specification.
-            return c1 === c2.code;
-        }
-        else {
-            return codesMatch(c1, c2);
-        }
-    }));
+    return cl1.some(function (c1) {
+        return cl2.some(function (c2) {
+            // only the left argument (cl1) can contain strings. cl2 will only contain codes.
+            if (typeof c1 === 'string') {
+                // for "string in codesystem" this should compare the string to
+                // the code's "code" field according to the specification.
+                return c1 === c2.code;
+            }
+            else {
+                return codesMatch(c1, c2);
+            }
+        });
+    });
 }
 function codesMatch(code1, code2) {
     return code1.code === code2.code && code1.system === code2.system;
 }
-class CodeSystem {
-    constructor(id, version) {
+var CodeSystem = /** @class */ (function () {
+    function CodeSystem(id, version) {
         this.id = id;
         this.version = version;
     }
-}
+    return CodeSystem;
+}());
 exports.CodeSystem = CodeSystem;
 
-},{"../util/util":223}],172:[function(require,module,exports){
+},{"../util/util":221}],172:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -28385,25 +28386,49 @@ __exportStar(require("./ratio"), exports);
 
 },{"./clinical":171,"./datetime":173,"./interval":175,"./logic":176,"./quantity":177,"./ratio":178,"./uncertainty":179}],173:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 var _a, _b;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MAX_TIME_VALUE = exports.MIN_TIME_VALUE = exports.MAX_DATE_VALUE = exports.MIN_DATE_VALUE = exports.MAX_DATETIME_VALUE = exports.MIN_DATETIME_VALUE = exports.Date = exports.DateTime = void 0;
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-const uncertainty_1 = require("./uncertainty");
-const util_1 = require("../util/util");
-const luxon_1 = require("luxon");
+var uncertainty_1 = require("./uncertainty");
+var util_1 = require("../util/util");
+var luxon_1 = require("luxon");
 // It's easiest and most performant to organize formats by length of the supported strings.
 // This way we can test strings only against the formats that have a chance of working.
 // NOTE: Formats use Luxon formats, documented here: https://moment.github.io/luxon/docs/manual/parsing.html#table-of-tokens
-const LENGTH_TO_DATE_FORMAT_MAP = (() => {
-    const ltdfMap = new Map();
+var LENGTH_TO_DATE_FORMAT_MAP = (function () {
+    var ltdfMap = new Map();
     ltdfMap.set(4, 'yyyy');
     ltdfMap.set(7, 'yyyy-MM');
     ltdfMap.set(10, 'yyyy-MM-dd');
     return ltdfMap;
 })();
-const LENGTH_TO_DATETIME_FORMATS_MAP = (() => {
-    const formats = {
+var LENGTH_TO_DATETIME_FORMATS_MAP = (function () {
+    var formats = {
         yyyy: '2012',
         'yyyy-MM': '2012-01',
         'yyyy-MM-dd': '2012-01-31',
@@ -28422,9 +28447,9 @@ const LENGTH_TO_DATETIME_FORMATS_MAP = (() => {
         "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'": '2012-01-31T12:30:59.000Z',
         "yyyy-MM-dd'T'HH:mm:ss.SSSZZ": '2012-01-31T12:30:59.000-04:00'
     };
-    const ltdtfMap = new Map();
-    Object.keys(formats).forEach(k => {
-        const example = formats[k];
+    var ltdtfMap = new Map();
+    Object.keys(formats).forEach(function (k) {
+        var example = formats[k];
         if (!ltdtfMap.has(example.length)) {
             ltdtfMap.set(example.length, [k]);
         }
@@ -28435,7 +28460,7 @@ const LENGTH_TO_DATETIME_FORMATS_MAP = (() => {
     return ltdtfMap;
 })();
 function wholeLuxonDuration(duration, unit) {
-    const value = duration.get(unit);
+    var value = duration.get(unit);
     return value >= 0 ? Math.floor(value) : Math.ceil(value);
 }
 function truncateLuxonDateTime(luxonDT, unit) {
@@ -28455,21 +28480,25 @@ function truncateLuxonDateTime(luxonDT, unit) {
  * TODO: we can probably iterate on this more to improve the accessing of "FIELDS" and the overall structure
  * TODO: we can also investigate if it's reasonable for DateTime to extend Date directly instead
  */
-class AbstractDate {
-    constructor(year = null, month = null, day = null) {
+var AbstractDate = /** @class */ (function () {
+    function AbstractDate(year, month, day) {
+        if (year === void 0) { year = null; }
+        if (month === void 0) { month = null; }
+        if (day === void 0) { day = null; }
         this.year = year;
         this.month = month;
         this.day = day;
     }
     // Shared functions
-    isPrecise() {
+    AbstractDate.prototype.isPrecise = function () {
+        var _this = this;
         // @ts-ignore
-        return this.constructor.FIELDS.every(field => this[field] != null);
-    }
-    isImprecise() {
+        return this.constructor.FIELDS.every(function (field) { return _this[field] != null; });
+    };
+    AbstractDate.prototype.isImprecise = function () {
         return !this.isPrecise();
-    }
-    isMorePrecise(other) {
+    };
+    AbstractDate.prototype.isMorePrecise = function (other) {
         // @ts-ignore
         if (typeof other === 'string' && this.constructor.FIELDS.includes(other)) {
             // @ts-ignore
@@ -28479,7 +28508,8 @@ class AbstractDate {
         }
         else {
             // @ts-ignore
-            for (const field of this.constructor.FIELDS) {
+            for (var _i = 0, _a = this.constructor.FIELDS; _i < _a.length; _i++) {
+                var field = _a[_i];
                 // @ts-ignore
                 if (other[field] != null && this[field] == null) {
                     return false;
@@ -28487,19 +28517,20 @@ class AbstractDate {
             }
         }
         return !this.isSamePrecision(other);
-    }
+    };
     // This function can take another Date-ish object, or a precision string (e.g. 'month')
-    isLessPrecise(other) {
+    AbstractDate.prototype.isLessPrecise = function (other) {
         return !this.isSamePrecision(other) && !this.isMorePrecise(other);
-    }
+    };
     // This function can take another Date-ish object, or a precision string (e.g. 'month')
-    isSamePrecision(other) {
+    AbstractDate.prototype.isSamePrecision = function (other) {
         // @ts-ignore
         if (typeof other === 'string' && this.constructor.FIELDS.includes(other)) {
             return other === this.getPrecision();
         }
         // @ts-ignore
-        for (const field of this.constructor.FIELDS) {
+        for (var _i = 0, _a = this.constructor.FIELDS; _i < _a.length; _i++) {
+            var field = _a[_i];
             // @ts-ignore
             if (this[field] != null && other[field] == null) {
                 return false;
@@ -28510,14 +28541,14 @@ class AbstractDate {
             }
         }
         return true;
-    }
-    equals(other) {
+    };
+    AbstractDate.prototype.equals = function (other) {
         return compareWithDefaultResult(this, other, null);
-    }
-    equivalent(other) {
+    };
+    AbstractDate.prototype.equivalent = function (other) {
         return compareWithDefaultResult(this, other, false);
-    }
-    sameAs(other, precision) {
+    };
+    AbstractDate.prototype.sameAs = function (other, precision) {
         if (!(other.isDate || other.isDateTime)) {
             return null;
         }
@@ -28529,7 +28560,7 @@ class AbstractDate {
         }
         // @ts-ignore
         if (precision != null && this.constructor.FIELDS.indexOf(precision) < 0) {
-            throw new Error(`Invalid precision: ${precision}`);
+            throw new Error("Invalid precision: ".concat(precision));
         }
         // make a copy of other in the correct timezone offset if they don't match.
         // When comparing DateTime values with different timezone offsets, implementations
@@ -28541,7 +28572,8 @@ class AbstractDate {
             }
         }
         // @ts-ignore
-        for (const field of this.constructor.FIELDS) {
+        for (var _i = 0, _a = this.constructor.FIELDS; _i < _a.length; _i++) {
+            var field = _a[_i];
             // if both have this precision defined
             // @ts-ignore
             if (this[field] != null && other[field] != null) {
@@ -28573,8 +28605,8 @@ class AbstractDate {
         }
         // if we made it here, then all fields matched.
         return true;
-    }
-    sameOrBefore(other, precision) {
+    };
+    AbstractDate.prototype.sameOrBefore = function (other, precision) {
         if (!(other.isDate || other.isDateTime)) {
             return null;
         }
@@ -28586,7 +28618,7 @@ class AbstractDate {
         }
         // @ts-ignore
         if (precision != null && this.constructor.FIELDS.indexOf(precision) < 0) {
-            throw new Error(`Invalid precision: ${precision}`);
+            throw new Error("Invalid precision: ".concat(precision));
         }
         // make a copy of other in the correct timezone offset if they don't match.
         // When comparing DateTime values with different timezone offsets, implementations
@@ -28598,7 +28630,8 @@ class AbstractDate {
             }
         }
         // @ts-ignore
-        for (const field of this.constructor.FIELDS) {
+        for (var _i = 0, _a = this.constructor.FIELDS; _i < _a.length; _i++) {
+            var field = _a[_i];
             // if both have this precision defined
             // @ts-ignore
             if (this[field] != null && other[field] != null) {
@@ -28636,8 +28669,8 @@ class AbstractDate {
         }
         // if we made it here, then all fields matched and they are same
         return true;
-    }
-    sameOrAfter(other, precision) {
+    };
+    AbstractDate.prototype.sameOrAfter = function (other, precision) {
         if (!(other.isDate || other.isDateTime)) {
             return null;
         }
@@ -28649,7 +28682,7 @@ class AbstractDate {
         }
         // @ts-ignore
         if (precision != null && this.constructor.FIELDS.indexOf(precision) < 0) {
-            throw new Error(`Invalid precision: ${precision}`);
+            throw new Error("Invalid precision: ".concat(precision));
         }
         // make a copy of other in the correct timezone offset if they don't match.
         // When comparing DateTime values with different timezone offsets, implementations
@@ -28661,7 +28694,8 @@ class AbstractDate {
             }
         }
         // @ts-ignore
-        for (const field of this.constructor.FIELDS) {
+        for (var _i = 0, _a = this.constructor.FIELDS; _i < _a.length; _i++) {
+            var field = _a[_i];
             // if both have this precision defined
             // @ts-ignore
             if (this[field] != null && other[field] != null) {
@@ -28699,8 +28733,8 @@ class AbstractDate {
         }
         // if we made it here, then all fields matched and they are same
         return true;
-    }
-    before(other, precision) {
+    };
+    AbstractDate.prototype.before = function (other, precision) {
         if (!(other.isDate || other.isDateTime)) {
             return null;
         }
@@ -28712,7 +28746,7 @@ class AbstractDate {
         }
         // @ts-ignore
         if (precision != null && this.constructor.FIELDS.indexOf(precision) < 0) {
-            throw new Error(`Invalid precision: ${precision}`);
+            throw new Error("Invalid precision: ".concat(precision));
         }
         // make a copy of other in the correct timezone offset if they don't match.
         // When comparing DateTime values with different timezone offsets, implementations
@@ -28724,7 +28758,8 @@ class AbstractDate {
             }
         }
         // @ts-ignore
-        for (const field of this.constructor.FIELDS) {
+        for (var _i = 0, _a = this.constructor.FIELDS; _i < _a.length; _i++) {
+            var field = _a[_i];
             // if both have this precision defined
             // @ts-ignore
             if (this[field] != null && other[field] != null) {
@@ -28762,8 +28797,8 @@ class AbstractDate {
         }
         // if we made it here, then all fields matched and they are same
         return false;
-    }
-    after(other, precision) {
+    };
+    AbstractDate.prototype.after = function (other, precision) {
         if (!(other.isDate || other.isDateTime)) {
             return null;
         }
@@ -28775,7 +28810,7 @@ class AbstractDate {
         }
         // @ts-ignore
         if (precision != null && this.constructor.FIELDS.indexOf(precision) < 0) {
-            throw new Error(`Invalid precision: ${precision}`);
+            throw new Error("Invalid precision: ".concat(precision));
         }
         // make a copy of other in the correct timezone offset if they don't match.
         // When comparing DateTime values with different timezone offsets, implementations
@@ -28787,7 +28822,8 @@ class AbstractDate {
             }
         }
         // @ts-ignore
-        for (const field of this.constructor.FIELDS) {
+        for (var _i = 0, _a = this.constructor.FIELDS; _i < _a.length; _i++) {
+            var field = _a[_i];
             // if both have this precision defined
             // @ts-ignore
             if (this[field] != null && other[field] != null) {
@@ -28825,14 +28861,15 @@ class AbstractDate {
         }
         // if we made it here, then all fields matched and they are same
         return false;
-    }
-    add(offset, field) {
+    };
+    AbstractDate.prototype.add = function (offset, field) {
+        var _a;
         if (offset === 0 || this.year == null) {
             return this.copy();
         }
         // Use luxon to do the date math because it honors DST and it has the leap-year/end-of-month semantics we want.
         // NOTE: The luxonDateTime will contain default values where this[unit] is null, but we'll account for that.
-        let luxonDateTime = this.toLuxonDateTime();
+        var luxonDateTime = this.toLuxonDateTime();
         // From the spec: "The operation is performed by converting the time-based quantity to the most precise value
         // specified in the date/time (truncating any resulting decimal portion) and then adding it to the date/time value."
         // However, since you can't really convert days to months,  if "this" is less precise than the field being added, we can
@@ -28840,13 +28877,13 @@ class AbstractDate {
         // sign of the offset), and then null out the imprecise fields again after doing the calculation.  Due to the way
         // luxonDateTime is constructed above, it is already at the earliest value, so only adjust if the offset is negative.
         // @ts-ignore
-        const offsetIsMorePrecise = this[field] == null; //whether the quantity we are adding is more precise than "this".
+        var offsetIsMorePrecise = this[field] == null; //whether the quantity we are adding is more precise than "this".
         if (offsetIsMorePrecise && offset < 0) {
             luxonDateTime = luxonDateTime.endOf(this.getPrecision());
         }
         // Now do the actual math and convert it back to a Date/DateTime w/ originally null fields nulled out again
-        const luxonResult = luxonDateTime.plus({ [field]: offset });
-        const result = this.constructor
+        var luxonResult = luxonDateTime.plus((_a = {}, _a[field] = offset, _a));
+        var result = this.constructor
             .fromLuxonDateTime(luxonResult)
             .reducedPrecision(this.getPrecision());
         // Luxon never has a null offset, but sometimes "this" does, so reset to null if applicable
@@ -28860,8 +28897,8 @@ class AbstractDate {
         else {
             return result;
         }
-    }
-    getFieldFloor(field) {
+    };
+    AbstractDate.prototype.getFieldFloor = function (field) {
         switch (field) {
             case 'month':
                 return 1;
@@ -28878,8 +28915,8 @@ class AbstractDate {
             default:
                 throw new Error('Tried to floor a field that has no floor value: ' + field);
         }
-    }
-    getFieldCieling(field) {
+    };
+    AbstractDate.prototype.getFieldCieling = function (field) {
         switch (field) {
             case 'month':
                 return 12;
@@ -28896,40 +28933,51 @@ class AbstractDate {
             default:
                 throw new Error('Tried to clieling a field that has no cieling value: ' + field);
         }
-    }
-}
-class DateTime extends AbstractDate {
-    constructor(year = null, month = null, day = null, hour = null, minute = null, second = null, millisecond = null, timezoneOffset) {
+    };
+    return AbstractDate;
+}());
+var DateTime = /** @class */ (function (_super) {
+    __extends(DateTime, _super);
+    function DateTime(year, month, day, hour, minute, second, millisecond, timezoneOffset) {
+        if (year === void 0) { year = null; }
+        if (month === void 0) { month = null; }
+        if (day === void 0) { day = null; }
+        if (hour === void 0) { hour = null; }
+        if (minute === void 0) { minute = null; }
+        if (second === void 0) { second = null; }
+        if (millisecond === void 0) { millisecond = null; }
+        var _this = 
         // from the spec: If no timezone is specified, the timezone of the evaluation request timestamp is used.
         // NOTE: timezoneOffset will be explicitly null for the Time overload, whereas
         // it will be undefined if simply unspecified
-        super(year, month, day);
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
-        this.millisecond = millisecond;
+        _super.call(this, year, month, day) || this;
+        _this.hour = hour;
+        _this.minute = minute;
+        _this.second = second;
+        _this.millisecond = millisecond;
         if (timezoneOffset === undefined) {
-            this.timezoneOffset = (new util_1.jsDate().getTimezoneOffset() / 60) * -1;
+            _this.timezoneOffset = (new util_1.jsDate().getTimezoneOffset() / 60) * -1;
         }
         else {
-            this.timezoneOffset = timezoneOffset;
+            _this.timezoneOffset = timezoneOffset;
         }
+        return _this;
     }
-    static parse(string) {
+    DateTime.parse = function (string) {
         if (string === null) {
             return null;
         }
-        const matches = /(\d{4})(-(\d{2}))?(-(\d{2}))?(T((\d{2})(:(\d{2})(:(\d{2})(\.(\d+))?)?)?)?(Z|(([+-])(\d{2})(:?(\d{2}))?))?)?/.exec(string);
+        var matches = /(\d{4})(-(\d{2}))?(-(\d{2}))?(T((\d{2})(:(\d{2})(:(\d{2})(\.(\d+))?)?)?)?(Z|(([+-])(\d{2})(:?(\d{2}))?))?)?/.exec(string);
         if (matches == null) {
             return null;
         }
-        const years = matches[1];
-        const months = matches[3];
-        const days = matches[5];
-        const hours = matches[8];
-        const minutes = matches[10];
-        const seconds = matches[12];
-        let milliseconds = matches[14];
+        var years = matches[1];
+        var months = matches[3];
+        var days = matches[5];
+        var hours = matches[8];
+        var minutes = matches[10];
+        var seconds = matches[12];
+        var milliseconds = matches[14];
         if (milliseconds != null) {
             milliseconds = (0, util_1.normalizeMillisecondsField)(milliseconds);
         }
@@ -28940,22 +28988,22 @@ class DateTime extends AbstractDate {
             return null;
         }
         // convert the args to integers
-        const args = [years, months, days, hours, minutes, seconds, milliseconds].map(arg => {
+        var args = [years, months, days, hours, minutes, seconds, milliseconds].map(function (arg) {
             return arg != null ? parseInt(arg) : arg;
         });
         // convert timezone offset to decimal and add it to arguments
         if (matches[18] != null) {
-            const num = parseInt(matches[18]) + (matches[20] != null ? parseInt(matches[20]) / 60 : 0);
+            var num = parseInt(matches[18]) + (matches[20] != null ? parseInt(matches[20]) / 60 : 0);
             args.push(matches[17] === '+' ? num : num * -1);
         }
         else if (matches[15] === 'Z') {
             args.push(0);
         }
         // @ts-ignore
-        return new DateTime(...args);
-    }
+        return new (DateTime.bind.apply(DateTime, __spreadArray([void 0], args, false)))();
+    };
     // TODO: Note: using the jsDate type causes issues, fix later
-    static fromJSDate(date, timezoneOffset) {
+    DateTime.fromJSDate = function (date, timezoneOffset) {
         //This is from a JS Date, not a CQL Date
         if (date instanceof DateTime) {
             return date;
@@ -28967,23 +29015,31 @@ class DateTime extends AbstractDate {
         else {
             return new DateTime(date.getFullYear(), date.getMonth() + 1, date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds(), date.getMilliseconds());
         }
-    }
-    static fromLuxonDateTime(luxonDT) {
+    };
+    DateTime.fromLuxonDateTime = function (luxonDT) {
         if (luxonDT instanceof DateTime) {
             return luxonDT;
         }
         return new DateTime(luxonDT.year, luxonDT.month, luxonDT.day, luxonDT.hour, luxonDT.minute, luxonDT.second, luxonDT.millisecond, luxonDT.offset / 60);
-    }
-    get isDateTime() {
-        return true;
-    }
-    get isDate() {
-        return false;
-    }
-    copy() {
+    };
+    Object.defineProperty(DateTime.prototype, "isDateTime", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(DateTime.prototype, "isDate", {
+        get: function () {
+            return false;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    DateTime.prototype.copy = function () {
         return new DateTime(this.year, this.month, this.day, this.hour, this.minute, this.second, this.millisecond, this.timezoneOffset);
-    }
-    successor() {
+    };
+    DateTime.prototype.successor = function () {
         if (this.millisecond != null) {
             return this.add(1, DateTime.Unit.MILLISECOND);
         }
@@ -29005,8 +29061,8 @@ class DateTime extends AbstractDate {
         else if (this.year != null) {
             return this.add(1, DateTime.Unit.YEAR);
         }
-    }
-    predecessor() {
+    };
+    DateTime.prototype.predecessor = function () {
         if (this.millisecond != null) {
             return this.add(-1, DateTime.Unit.MILLISECOND);
         }
@@ -29028,13 +29084,14 @@ class DateTime extends AbstractDate {
         else if (this.year != null) {
             return this.add(-1, DateTime.Unit.YEAR);
         }
-    }
-    convertToTimezoneOffset(timezoneOffset = 0) {
-        const shiftedLuxonDT = this.toLuxonDateTime().setZone(luxon_1.FixedOffsetZone.instance(timezoneOffset * 60));
-        const shiftedDT = DateTime.fromLuxonDateTime(shiftedLuxonDT);
+    };
+    DateTime.prototype.convertToTimezoneOffset = function (timezoneOffset) {
+        if (timezoneOffset === void 0) { timezoneOffset = 0; }
+        var shiftedLuxonDT = this.toLuxonDateTime().setZone(luxon_1.FixedOffsetZone.instance(timezoneOffset * 60));
+        var shiftedDT = DateTime.fromLuxonDateTime(shiftedLuxonDT);
         return shiftedDT.reducedPrecision(this.getPrecision());
-    }
-    differenceBetween(other, unitField) {
+    };
+    DateTime.prototype.differenceBetween = function (other, unitField) {
         other = this._implicitlyConvert(other);
         if (other == null || !other.isDateTime) {
             return null;
@@ -29046,8 +29103,8 @@ class DateTime extends AbstractDate {
         //   prior to truncation to correctly consider real (actual elapsed) time. When difference is calculated
         //   for days or coarser units, however, the time components (including timezone offset) should be truncated
         //   without normalization to correctly reflect the difference in calendar days, months, and years."
-        const a = this.toLuxonUncertainty();
-        const b = other.toLuxonUncertainty();
+        var a = this.toLuxonUncertainty();
+        var b = other.toLuxonUncertainty();
         // If unit is days or above, reset all the DateTimes to UTC since TZ offset should not be considered;
         // Otherwise, we don't actually have to "normalize" to a common TZ because Luxon takes TZ into account.
         if ([DateTime.Unit.YEAR, DateTime.Unit.MONTH, DateTime.Unit.WEEK, DateTime.Unit.DAY].includes(unitField)) {
@@ -29063,41 +29120,22 @@ class DateTime extends AbstractDate {
         b.high = truncateLuxonDateTime(b.high, unitField);
         // Return the duration based on the normalize and truncated values
         return new uncertainty_1.Uncertainty(wholeLuxonDuration(b.low.diff(a.high, unitField), unitField), wholeLuxonDuration(b.high.diff(a.low, unitField), unitField));
-    }
-    durationBetween(other, unitField) {
+    };
+    DateTime.prototype.durationBetween = function (other, unitField) {
         other = this._implicitlyConvert(other);
         if (other == null || !other.isDateTime) {
             return null;
         }
-        // According to the CQL specification, just like date and time comparison calculations,
-        // consider seconds and milliseconds as a single combined precision with decimal semantics
-        // this means that if milliseconds are not specified, then we treat it as though their
-        // millisecond value is "0" so that no Uncertainty will be produced
-        /* eslint-disable @typescript-eslint/no-this-alias */
-        let aDateTime = this;
-        let bDateTime = other;
-        if (this.second !== null &&
-            this.millisecond == null &&
-            unitField !== DateTime.Unit.MILLISECOND) {
-            aDateTime = this.copy();
-            aDateTime.millisecond = 0;
-        }
-        if (other.second != null &&
-            other.millisecond == null &&
-            unitField !== DateTime.Unit.MILLISECOND) {
-            bDateTime = other.copy();
-            bDateTime.millisecond = 0;
-        }
-        const a = aDateTime.toLuxonUncertainty();
-        const b = bDateTime.toLuxonUncertainty();
+        var a = this.toLuxonUncertainty();
+        var b = other.toLuxonUncertainty();
         return new uncertainty_1.Uncertainty(wholeLuxonDuration(b.low.diff(a.high, unitField), unitField), wholeLuxonDuration(b.high.diff(a.low, unitField), unitField));
-    }
-    isUTC() {
+    };
+    DateTime.prototype.isUTC = function () {
         // A timezoneOffset of 0 indicates UTC time.
         return !this.timezoneOffset;
-    }
-    getPrecision() {
-        let result = null;
+    };
+    DateTime.prototype.getPrecision = function () {
+        var result = null;
         if (this.year != null) {
             result = DateTime.Unit.YEAR;
         }
@@ -29138,15 +29176,15 @@ class DateTime extends AbstractDate {
             result = DateTime.Unit.MILLISECOND;
         }
         return result;
-    }
-    getPrecisionValue() {
+    };
+    DateTime.prototype.getPrecisionValue = function () {
         return this.isTime()
             ? TIME_PRECISION_VALUE_MAP.get(this.getPrecision())
             : DATETIME_PRECISION_VALUE_MAP.get(this.getPrecision());
-    }
-    toLuxonDateTime() {
+    };
+    DateTime.prototype.toLuxonDateTime = function () {
         var _a, _b, _c, _d, _e, _f, _g;
-        const offsetMins = this.timezoneOffset != null
+        var offsetMins = this.timezoneOffset != null
             ? this.timezoneOffset * 60
             : new util_1.jsDate().getTimezoneOffset() * -1;
         return luxon_1.DateTime.fromObject({
@@ -29159,37 +29197,38 @@ class DateTime extends AbstractDate {
             millisecond: (_g = this.millisecond) !== null && _g !== void 0 ? _g : undefined,
             zone: luxon_1.FixedOffsetZone.instance(offsetMins)
         });
-    }
-    toLuxonUncertainty() {
-        const low = this.toLuxonDateTime();
-        const high = low.endOf(this.getPrecision());
+    };
+    DateTime.prototype.toLuxonUncertainty = function () {
+        var low = this.toLuxonDateTime();
+        var high = low.endOf(this.getPrecision());
         return new uncertainty_1.Uncertainty(low, high);
-    }
-    toJSDate(ignoreTimezone = false) {
-        let luxonDT = this.toLuxonDateTime();
+    };
+    DateTime.prototype.toJSDate = function (ignoreTimezone) {
+        if (ignoreTimezone === void 0) { ignoreTimezone = false; }
+        var luxonDT = this.toLuxonDateTime();
         // I don't know if anyone is using "ignoreTimezone" anymore (we aren't), but just in case
         if (ignoreTimezone) {
-            const offset = new util_1.jsDate().getTimezoneOffset() * -1;
+            var offset = new util_1.jsDate().getTimezoneOffset() * -1;
             luxonDT = luxonDT.setZone(luxon_1.FixedOffsetZone.instance(offset), { keepLocalTime: true });
         }
         return luxonDT.toJSDate();
-    }
-    toJSON() {
+    };
+    DateTime.prototype.toJSON = function () {
         return this.toString();
-    }
-    _pad(num) {
+    };
+    DateTime.prototype._pad = function (num) {
         return String('0' + num).slice(-2);
-    }
-    toString() {
+    };
+    DateTime.prototype.toString = function () {
         if (this.isTime()) {
             return this.toStringTime();
         }
         else {
             return this.toStringDateTime();
         }
-    }
-    toStringTime() {
-        let str = '';
+    };
+    DateTime.prototype.toStringTime = function () {
+        var str = '';
         if (this.hour != null) {
             str += this._pad(this.hour);
             if (this.minute != null) {
@@ -29203,9 +29242,9 @@ class DateTime extends AbstractDate {
             }
         }
         return str;
-    }
-    toStringDateTime() {
-        let str = '';
+    };
+    DateTime.prototype.toStringDateTime = function () {
+        var str = '';
         if (this.year != null) {
             str += this.year;
             if (this.month != null) {
@@ -29229,98 +29268,113 @@ class DateTime extends AbstractDate {
         }
         if (str.indexOf('T') !== -1 && this.timezoneOffset != null) {
             str += this.timezoneOffset < 0 ? '-' : '+';
-            const offsetHours = Math.floor(Math.abs(this.timezoneOffset));
+            var offsetHours = Math.floor(Math.abs(this.timezoneOffset));
             str += this._pad(offsetHours);
-            const offsetMin = (Math.abs(this.timezoneOffset) - offsetHours) * 60;
+            var offsetMin = (Math.abs(this.timezoneOffset) - offsetHours) * 60;
             str += ':' + this._pad(offsetMin);
         }
         return str;
-    }
-    getDateTime() {
+    };
+    DateTime.prototype.getDateTime = function () {
         return this;
-    }
-    getDate() {
+    };
+    DateTime.prototype.getDate = function () {
         return new Date(this.year, this.month, this.day);
-    }
-    getTime() {
+    };
+    DateTime.prototype.getTime = function () {
         // Times no longer have timezoneOffets, so we must explicitly set it to null
         return new DateTime(0, 1, 1, this.hour, this.minute, this.second, this.millisecond, null);
-    }
-    isTime() {
+    };
+    DateTime.prototype.isTime = function () {
         return this.year === 0 && this.month === 1 && this.day === 1;
-    }
-    _implicitlyConvert(other) {
+    };
+    DateTime.prototype._implicitlyConvert = function (other) {
         if (other != null && other.isDate) {
             return other.getDateTime();
         }
         return other;
-    }
-    reducedPrecision(unitField = DateTime.Unit.MILLISECOND) {
-        const reduced = this.copy();
+    };
+    DateTime.prototype.reducedPrecision = function (unitField) {
+        if (unitField === void 0) { unitField = DateTime.Unit.MILLISECOND; }
+        var reduced = this.copy();
         if (unitField != null && unitField !== DateTime.Unit.MILLISECOND) {
-            const fieldIndex = DateTime.FIELDS.indexOf(unitField);
-            const fieldsToRemove = DateTime.FIELDS.slice(fieldIndex + 1);
-            for (const field of fieldsToRemove) {
+            var fieldIndex = DateTime.FIELDS.indexOf(unitField);
+            var fieldsToRemove = DateTime.FIELDS.slice(fieldIndex + 1);
+            for (var _i = 0, fieldsToRemove_1 = fieldsToRemove; _i < fieldsToRemove_1.length; _i++) {
+                var field = fieldsToRemove_1[_i];
                 // @ts-ignore
                 reduced[field] = null;
             }
         }
         return reduced;
-    }
-}
+    };
+    DateTime.Unit = {
+        YEAR: 'year',
+        MONTH: 'month',
+        WEEK: 'week',
+        DAY: 'day',
+        HOUR: 'hour',
+        MINUTE: 'minute',
+        SECOND: 'second',
+        MILLISECOND: 'millisecond'
+    };
+    DateTime.FIELDS = [
+        DateTime.Unit.YEAR,
+        DateTime.Unit.MONTH,
+        DateTime.Unit.DAY,
+        DateTime.Unit.HOUR,
+        DateTime.Unit.MINUTE,
+        DateTime.Unit.SECOND,
+        DateTime.Unit.MILLISECOND
+    ];
+    return DateTime;
+}(AbstractDate));
 exports.DateTime = DateTime;
-DateTime.Unit = {
-    YEAR: 'year',
-    MONTH: 'month',
-    WEEK: 'week',
-    DAY: 'day',
-    HOUR: 'hour',
-    MINUTE: 'minute',
-    SECOND: 'second',
-    MILLISECOND: 'millisecond'
-};
-DateTime.FIELDS = [
-    DateTime.Unit.YEAR,
-    DateTime.Unit.MONTH,
-    DateTime.Unit.DAY,
-    DateTime.Unit.HOUR,
-    DateTime.Unit.MINUTE,
-    DateTime.Unit.SECOND,
-    DateTime.Unit.MILLISECOND
-];
-class Date extends AbstractDate {
-    constructor(year = null, month = null, day = null) {
-        super(year, month, day);
+var Date = /** @class */ (function (_super) {
+    __extends(Date, _super);
+    function Date(year, month, day) {
+        if (year === void 0) { year = null; }
+        if (month === void 0) { month = null; }
+        if (day === void 0) { day = null; }
+        return _super.call(this, year, month, day) || this;
     }
-    static parse(string) {
+    Date.parse = function (string) {
         if (string === null) {
             return null;
         }
-        const matches = /(\d{4})(-(\d{2}))?(-(\d{2}))?/.exec(string);
+        var matches = /(\d{4})(-(\d{2}))?(-(\d{2}))?/.exec(string);
         if (matches == null) {
             return null;
         }
-        const years = matches[1];
-        const months = matches[3];
-        const days = matches[5];
+        var years = matches[1];
+        var months = matches[3];
+        var days = matches[5];
         if (!isValidDateStringFormat(string)) {
             return null;
         }
         // convert args to integers
-        const args = [years, months, days].map(arg => (arg != null ? parseInt(arg) : arg));
+        var args = [years, months, days].map(function (arg) { return (arg != null ? parseInt(arg) : arg); });
         // @ts-ignore
-        return new Date(...args);
-    }
-    get isDate() {
-        return true;
-    }
-    get isDateTime() {
-        return false;
-    }
-    copy() {
+        return new (Date.bind.apply(Date, __spreadArray([void 0], args, false)))();
+    };
+    Object.defineProperty(Date.prototype, "isDate", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Date.prototype, "isDateTime", {
+        get: function () {
+            return false;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Date.prototype.copy = function () {
         return new Date(this.year, this.month, this.day);
-    }
-    successor() {
+    };
+    Date.prototype.successor = function () {
         if (this.day != null) {
             return this.add(1, Date.Unit.DAY);
         }
@@ -29330,8 +29384,8 @@ class Date extends AbstractDate {
         else if (this.year != null) {
             return this.add(1, Date.Unit.YEAR);
         }
-    }
-    predecessor() {
+    };
+    Date.prototype.predecessor = function () {
         if (this.day != null) {
             return this.add(-1, Date.Unit.DAY);
         }
@@ -29341,8 +29395,8 @@ class Date extends AbstractDate {
         else if (this.year != null) {
             return this.add(-1, Date.Unit.YEAR);
         }
-    }
-    differenceBetween(other, unitField) {
+    };
+    Date.prototype.differenceBetween = function (other, unitField) {
         if (other != null && other.isDateTime) {
             return this.getDateTime().differenceBetween(other, unitField);
         }
@@ -29352,8 +29406,8 @@ class Date extends AbstractDate {
         // According to CQL spec:
         // * "Difference calculations are performed by truncating the datetime values at the next precision,
         //   and then performing the corresponding duration calculation on the truncated values."
-        const a = this.toLuxonUncertainty();
-        const b = other.toLuxonUncertainty();
+        var a = this.toLuxonUncertainty();
+        var b = other.toLuxonUncertainty();
         // Truncate all dates at precision below specified unit
         a.low = truncateLuxonDateTime(a.low, unitField);
         a.high = truncateLuxonDateTime(a.high, unitField);
@@ -29361,20 +29415,20 @@ class Date extends AbstractDate {
         b.high = truncateLuxonDateTime(b.high, unitField);
         // Return the duration based on the normalize and truncated values
         return new uncertainty_1.Uncertainty(wholeLuxonDuration(b.low.diff(a.high, unitField), unitField), wholeLuxonDuration(b.high.diff(a.low, unitField), unitField));
-    }
-    durationBetween(other, unitField) {
+    };
+    Date.prototype.durationBetween = function (other, unitField) {
         if (other != null && other.isDateTime) {
             return this.getDateTime().durationBetween(other, unitField);
         }
         if (other == null || !other.isDate) {
             return null;
         }
-        const a = this.toLuxonUncertainty();
-        const b = other.toLuxonUncertainty();
+        var a = this.toLuxonUncertainty();
+        var b = other.toLuxonUncertainty();
         return new uncertainty_1.Uncertainty(wholeLuxonDuration(b.low.diff(a.high, unitField), unitField), wholeLuxonDuration(b.high.diff(a.low, unitField), unitField));
-    }
-    getPrecision() {
-        let result = null;
+    };
+    Date.prototype.getPrecision = function () {
+        var result = null;
         if (this.year != null) {
             result = Date.Unit.YEAR;
         }
@@ -29394,11 +29448,11 @@ class Date extends AbstractDate {
             return result;
         }
         return result;
-    }
-    getPrecisionValue() {
+    };
+    Date.prototype.getPrecisionValue = function () {
         return DATETIME_PRECISION_VALUE_MAP.get(this.getPrecision());
-    }
-    toLuxonDateTime() {
+    };
+    Date.prototype.toLuxonDateTime = function () {
         var _a, _b, _c;
         return luxon_1.DateTime.fromObject({
             year: (_a = this.year) !== null && _a !== void 0 ? _a : undefined,
@@ -29406,37 +29460,37 @@ class Date extends AbstractDate {
             day: (_c = this.day) !== null && _c !== void 0 ? _c : undefined,
             zone: luxon_1.FixedOffsetZone.utcInstance
         });
-    }
-    toLuxonUncertainty() {
-        const low = this.toLuxonDateTime();
-        const high = low.endOf(this.getPrecision()).startOf('day'); // Date type is always at T00:00:00.0
+    };
+    Date.prototype.toLuxonUncertainty = function () {
+        var low = this.toLuxonDateTime();
+        var high = low.endOf(this.getPrecision()).startOf('day'); // Date type is always at T00:00:00.0
         return new uncertainty_1.Uncertainty(low, high);
-    }
-    toJSDate() {
-        const [y, mo, d] = [
+    };
+    Date.prototype.toJSDate = function () {
+        var _a = [
             this.year,
             this.month != null ? this.month - 1 : 0,
             this.day != null ? this.day : 1
-        ];
+        ], y = _a[0], mo = _a[1], d = _a[2];
         return new util_1.jsDate(y, mo, d);
-    }
-    static fromJSDate(date) {
+    };
+    Date.fromJSDate = function (date) {
         if (date instanceof Date) {
             return date;
         }
         return new Date(date.getFullYear(), date.getMonth() + 1, date.getDate());
-    }
-    static fromLuxonDateTime(luxonDT) {
+    };
+    Date.fromLuxonDateTime = function (luxonDT) {
         if (luxonDT instanceof Date) {
             return luxonDT;
         }
         return new Date(luxonDT.year, luxonDT.month, luxonDT.day);
-    }
-    toJSON() {
+    };
+    Date.prototype.toJSON = function () {
         return this.toString();
-    }
-    toString() {
-        let str = '';
+    };
+    Date.prototype.toString = function () {
+        var str = '';
         if (this.year != null) {
             str += this.year.toString();
             if (this.month != null) {
@@ -29447,36 +29501,39 @@ class Date extends AbstractDate {
             }
         }
         return str;
-    }
-    getDateTime(timeZoneOffset) {
+    };
+    Date.prototype.getDateTime = function () {
         // from the spec: the result will be a DateTime with the time components unspecified,
         // except for the timezone offset, which will be set to the timezone offset of the evaluation
-        // request timestamp. (this last part is achieved by passing in the timeZoneOffset from the context)
+        // request timestamp. (this last part is achieved by just not passing in timezone offset)
         if (this.year != null && this.month != null && this.day != null) {
-            return new DateTime(this.year, this.month, this.day, null, null, null, null, timeZoneOffset);
+            return new DateTime(this.year, this.month, this.day, null, null, null, null);
             // from spec: no component may be specified at a precision below an unspecified precision.
             // For example, hour may be null, but if it is, minute, second, and millisecond must all be null as well.
         }
         else {
             return new DateTime(this.year, this.month, this.day);
         }
-    }
-    reducedPrecision(unitField = Date.Unit.DAY) {
-        const reduced = this.copy();
+    };
+    Date.prototype.reducedPrecision = function (unitField) {
+        if (unitField === void 0) { unitField = Date.Unit.DAY; }
+        var reduced = this.copy();
         if (unitField !== Date.Unit.DAY) {
-            const fieldIndex = Date.FIELDS.indexOf(unitField);
-            const fieldsToRemove = Date.FIELDS.slice(fieldIndex + 1);
-            for (const field of fieldsToRemove) {
+            var fieldIndex = Date.FIELDS.indexOf(unitField);
+            var fieldsToRemove = Date.FIELDS.slice(fieldIndex + 1);
+            for (var _i = 0, fieldsToRemove_2 = fieldsToRemove; _i < fieldsToRemove_2.length; _i++) {
+                var field = fieldsToRemove_2[_i];
                 // @ts-ignore
                 reduced[field] = null;
             }
         }
         return reduced;
-    }
-}
+    };
+    Date.Unit = { YEAR: 'year', MONTH: 'month', WEEK: 'week', DAY: 'day' };
+    Date.FIELDS = [Date.Unit.YEAR, Date.Unit.MONTH, Date.Unit.DAY];
+    return Date;
+}(AbstractDate));
 exports.Date = Date;
-Date.Unit = { YEAR: 'year', MONTH: 'month', WEEK: 'week', DAY: 'day' };
-Date.FIELDS = [Date.Unit.YEAR, Date.Unit.MONTH, Date.Unit.DAY];
 // Require MIN/MAX here because math.js requires this file, and when we make this file require
 // math.js before it exports DateTime and Date, it errors due to the circular dependency...
 // const { MAX_DATETIME_VALUE, MIN_DATETIME_VALUE } = require('../util/math');
@@ -29486,8 +29543,8 @@ exports.MIN_DATE_VALUE = Date.parse('0001-01-01');
 exports.MAX_DATE_VALUE = Date.parse('9999-12-31');
 exports.MIN_TIME_VALUE = (_a = DateTime.parse('0000-01-01T00:00:00.000')) === null || _a === void 0 ? void 0 : _a.getTime();
 exports.MAX_TIME_VALUE = (_b = DateTime.parse('0000-01-01T23:59:59.999')) === null || _b === void 0 ? void 0 : _b.getTime();
-const DATETIME_PRECISION_VALUE_MAP = (() => {
-    const dtpvMap = new Map();
+var DATETIME_PRECISION_VALUE_MAP = (function () {
+    var dtpvMap = new Map();
     dtpvMap.set(DateTime.Unit.YEAR, 4);
     dtpvMap.set(DateTime.Unit.MONTH, 6);
     dtpvMap.set(DateTime.Unit.DAY, 8);
@@ -29497,8 +29554,8 @@ const DATETIME_PRECISION_VALUE_MAP = (() => {
     dtpvMap.set(DateTime.Unit.MILLISECOND, 17);
     return dtpvMap;
 })();
-const TIME_PRECISION_VALUE_MAP = (() => {
-    const tpvMap = new Map();
+var TIME_PRECISION_VALUE_MAP = (function () {
+    var tpvMap = new Map();
     tpvMap.set(DateTime.Unit.HOUR, 2);
     tpvMap.set(DateTime.Unit.MINUTE, 4);
     tpvMap.set(DateTime.Unit.SECOND, 6);
@@ -29514,18 +29571,19 @@ function compareWithDefaultResult(a, b, defaultResult) {
     if (a.timezoneOffset !== b.timezoneOffset) {
         b = b.convertToTimezoneOffset(a.timezoneOffset);
     }
-    for (const field of a.constructor.FIELDS) {
+    for (var _i = 0, _a = a.constructor.FIELDS; _i < _a.length; _i++) {
+        var field = _a[_i];
         // if both have this precision defined
         if (a[field] != null && b[field] != null) {
             // For the purposes of comparison, seconds and milliseconds are combined
             // as a single precision using a decimal, with decimal equality semantics
             if (field === 'second') {
-                // NOTE: if millisecond is null it will calculate like this anyway, but
+                // NOTE: if millisecond is null it will calcualte like this anyway, but
                 // if millisecond is undefined, using it will result in NaN calculations
-                const aMillisecond = a['millisecond'] != null ? a['millisecond'] : 0;
-                const aSecondAndMillisecond = a[field] + aMillisecond / 1000;
-                const bMillisecond = b['millisecond'] != null ? b['millisecond'] : 0;
-                const bSecondAndMillisecond = b[field] + bMillisecond / 1000;
+                var aMillisecond = a['millisecond'] != null ? a['millisecond'] : 0;
+                var aSecondAndMillisecond = a[field] + aMillisecond / 1000;
+                var bMillisecond = b['millisecond'] != null ? b['millisecond'] : 0;
+                var bSecondAndMillisecond = b[field] + bMillisecond / 1000;
                 // second/millisecond is the most precise comparison, so we can directly return
                 return aSecondAndMillisecond === bSecondAndMillisecond;
             }
@@ -29557,7 +29615,7 @@ function isValidDateStringFormat(string) {
     if (typeof string !== 'string') {
         return false;
     }
-    const format = LENGTH_TO_DATE_FORMAT_MAP.get(string.length);
+    var format = LENGTH_TO_DATE_FORMAT_MAP.get(string.length);
     if (format == null) {
         return false;
     }
@@ -29571,11 +29629,11 @@ function isValidDateTimeStringFormat(string) {
     if (/T[\d:.]*[+-]\d{2}$/.test(string)) {
         string += ':00';
     }
-    const formats = LENGTH_TO_DATETIME_FORMATS_MAP.get(string.length);
+    var formats = LENGTH_TO_DATETIME_FORMATS_MAP.get(string.length);
     if (formats == null) {
         return false;
     }
-    return formats.some((fmt) => luxon_1.DateTime.fromFormat(string, fmt).isValid);
+    return formats.some(function (fmt) { return luxon_1.DateTime.fromFormat(string, fmt).isValid; });
 }
 // Will return true if provided precision is unspecified or if
 // precision is hours, minutes, seconds, or milliseconds
@@ -29583,16 +29641,17 @@ function isPrecisionUnspecifiedOrGreaterThanDay(precision) {
     return precision == null || /^h|mi|s/.test(precision);
 }
 
-},{"../util/util":223,"./uncertainty":179,"luxon":305}],174:[function(require,module,exports){
+},{"../util/util":221,"./uncertainty":179,"luxon":302}],174:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Exception = void 0;
-class Exception {
-    constructor(message, wrapped) {
+var Exception = /** @class */ (function () {
+    function Exception(message, wrapped) {
         this.message = message;
         this.wrapped = wrapped;
     }
-}
+    return Exception;
+}());
 exports.Exception = Exception;
 
 },{}],175:[function(require,module,exports){
@@ -29618,13 +29677,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Interval = void 0;
-const uncertainty_1 = require("./uncertainty");
-const quantity_1 = require("./quantity");
-const logic_1 = require("./logic");
-const math_1 = require("../util/math");
-const cmp = __importStar(require("../util/comparison"));
-class Interval {
-    constructor(low, high, lowClosed, highClosed, defaultPointType // defaultPointType is used in the case that both endpoints are null
+var uncertainty_1 = require("./uncertainty");
+var quantity_1 = require("./quantity");
+var logic_1 = require("./logic");
+var math_1 = require("../util/math");
+var cmp = __importStar(require("../util/comparison"));
+var Interval = /** @class */ (function () {
+    function Interval(low, high, lowClosed, highClosed, defaultPointType // defaultPointType is used in the case that both endpoints are null
     ) {
         this.low = low;
         this.high = high;
@@ -29634,39 +29693,47 @@ class Interval {
         this.lowClosed = lowClosed != null ? lowClosed : true;
         this.highClosed = highClosed != null ? highClosed : true;
     }
-    get isInterval() {
-        return true;
-    }
-    get pointType() {
-        let pointType = null;
-        const point = this.low != null ? this.low : this.high;
-        if (point != null) {
-            if (typeof point === 'number') {
-                pointType = Number.isInteger(point)
-                    ? '{urn:hl7-org:elm-types:r1}Integer'
-                    : '{urn:hl7-org:elm-types:r1}Decimal';
+    Object.defineProperty(Interval.prototype, "isInterval", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Interval.prototype, "pointType", {
+        get: function () {
+            var pointType = null;
+            var point = this.low != null ? this.low : this.high;
+            if (point != null) {
+                if (typeof point === 'number') {
+                    pointType = Number.isInteger(point)
+                        ? '{urn:hl7-org:elm-types:r1}Integer'
+                        : '{urn:hl7-org:elm-types:r1}Decimal';
+                }
+                else if (point.isTime && point.isTime()) {
+                    pointType = '{urn:hl7-org:elm-types:r1}Time';
+                }
+                else if (point.isDate) {
+                    pointType = '{urn:hl7-org:elm-types:r1}Date';
+                }
+                else if (point.isDateTime) {
+                    pointType = '{urn:hl7-org:elm-types:r1}DateTime';
+                }
+                else if (point.isQuantity) {
+                    pointType = '{urn:hl7-org:elm-types:r1}Quantity';
+                }
             }
-            else if (point.isTime && point.isTime()) {
-                pointType = '{urn:hl7-org:elm-types:r1}Time';
+            if (pointType == null && this.defaultPointType != null) {
+                pointType = this.defaultPointType;
             }
-            else if (point.isDate) {
-                pointType = '{urn:hl7-org:elm-types:r1}Date';
-            }
-            else if (point.isDateTime) {
-                pointType = '{urn:hl7-org:elm-types:r1}DateTime';
-            }
-            else if (point.isQuantity) {
-                pointType = '{urn:hl7-org:elm-types:r1}Quantity';
-            }
-        }
-        if (pointType == null && this.defaultPointType != null) {
-            pointType = this.defaultPointType;
-        }
-        return pointType;
-    }
-    copy() {
-        let newLow = this.low;
-        let newHigh = this.high;
+            return pointType;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Interval.prototype.copy = function () {
+        var newLow = this.low;
+        var newHigh = this.high;
         if (this.low != null && typeof this.low.copy === 'function') {
             newLow = this.low.copy();
         }
@@ -29674,8 +29741,8 @@ class Interval {
             newHigh = this.high.copy();
         }
         return new Interval(newLow, newHigh, this.lowClosed, this.highClosed);
-    }
-    contains(item, precision) {
+    };
+    Interval.prototype.contains = function (item, precision) {
         // These first two checks ensure correct handling of edge case where an item equals the closed boundary
         if (this.lowClosed && this.low != null && cmp.equals(this.low, item)) {
             return true;
@@ -29686,9 +29753,9 @@ class Interval {
         if (item != null && item.isInterval) {
             throw new Error('Argument to contains must be a point');
         }
-        let lowFn;
+        var lowFn;
         if (this.lowClosed && this.low == null) {
-            lowFn = () => true;
+            lowFn = function () { return true; };
         }
         else if (this.lowClosed) {
             lowFn = cmp.lessThanOrEquals;
@@ -29696,9 +29763,9 @@ class Interval {
         else {
             lowFn = cmp.lessThan;
         }
-        let highFn;
+        var highFn;
         if (this.highClosed && this.high == null) {
-            highFn = () => true;
+            highFn = function () { return true; };
         }
         else if (this.highClosed) {
             highFn = cmp.greaterThanOrEquals;
@@ -29707,22 +29774,22 @@ class Interval {
             highFn = cmp.greaterThan;
         }
         return logic_1.ThreeValuedLogic.and(lowFn(this.low, item, precision), highFn(this.high, item, precision));
-    }
-    properlyIncludes(other, precision) {
+    };
+    Interval.prototype.properlyIncludes = function (other, precision) {
         if (other == null || !other.isInterval) {
             throw new Error('Argument to properlyIncludes must be an interval');
         }
         return logic_1.ThreeValuedLogic.and(this.includes(other, precision), logic_1.ThreeValuedLogic.not(other.includes(this, precision)));
-    }
-    includes(other, precision) {
+    };
+    Interval.prototype.includes = function (other, precision) {
         if (other == null || !other.isInterval) {
             return this.contains(other, precision);
         }
-        const a = this.toClosed();
-        const b = other.toClosed();
+        var a = this.toClosed();
+        var b = other.toClosed();
         return logic_1.ThreeValuedLogic.and(cmp.lessThanOrEquals(a.low, b.low, precision), cmp.greaterThanOrEquals(a.high, b.high, precision));
-    }
-    includedIn(other, precision) {
+    };
+    Interval.prototype.includedIn = function (other, precision) {
         // For the point overload, this operator is a synonym for the in operator
         if (other == null || !other.isInterval) {
             return this.contains(other, precision);
@@ -29730,135 +29797,137 @@ class Interval {
         else {
             return other.includes(this);
         }
-    }
-    overlaps(item, precision) {
-        const closed = this.toClosed();
-        const [low, high] = (() => {
+    };
+    Interval.prototype.overlaps = function (item, precision) {
+        var closed = this.toClosed();
+        var _a = (function () {
             if (item != null && item.isInterval) {
-                const itemClosed = item.toClosed();
+                var itemClosed = item.toClosed();
                 return [itemClosed.low, itemClosed.high];
             }
             else {
                 return [item, item];
             }
-        })();
+        })(), low = _a[0], high = _a[1];
         return logic_1.ThreeValuedLogic.and(cmp.lessThanOrEquals(closed.low, high, precision), cmp.greaterThanOrEquals(closed.high, low, precision));
-    }
-    overlapsAfter(item, precision) {
-        const closed = this.toClosed();
-        const high = item != null && item.isInterval ? item.toClosed().high : item;
+    };
+    Interval.prototype.overlapsAfter = function (item, precision) {
+        var closed = this.toClosed();
+        var high = item != null && item.isInterval ? item.toClosed().high : item;
         return logic_1.ThreeValuedLogic.and(cmp.lessThanOrEquals(closed.low, high, precision), cmp.greaterThan(closed.high, high, precision));
-    }
-    overlapsBefore(item, precision) {
-        const closed = this.toClosed();
-        const low = item != null && item.isInterval ? item.toClosed().low : item;
+    };
+    Interval.prototype.overlapsBefore = function (item, precision) {
+        var closed = this.toClosed();
+        var low = item != null && item.isInterval ? item.toClosed().low : item;
         return logic_1.ThreeValuedLogic.and(cmp.lessThan(closed.low, low, precision), cmp.greaterThanOrEquals(closed.high, low, precision));
-    }
-    union(other) {
+    };
+    Interval.prototype.union = function (other) {
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
         if (other == null || !other.isInterval) {
             throw new Error('Argument to union must be an interval');
         }
         // Note that interval union is only defined if the arguments overlap or meet.
         if (this.overlaps(other) || this.meets(other)) {
-            const [a, b] = [this.toClosed(), other.toClosed()];
-            let l, lc;
+            var _l = [this.toClosed(), other.toClosed()], a = _l[0], b = _l[1];
+            var l = void 0, lc = void 0;
             if (cmp.lessThanOrEquals(a.low, b.low)) {
-                [l, lc] = [this.low, this.lowClosed];
+                _a = [this.low, this.lowClosed], l = _a[0], lc = _a[1];
             }
             else if (cmp.greaterThanOrEquals(a.low, b.low)) {
-                [l, lc] = [other.low, other.lowClosed];
+                _b = [other.low, other.lowClosed], l = _b[0], lc = _b[1];
             }
             else if (areNumeric(a.low, b.low)) {
-                [l, lc] = [lowestNumericUncertainty(a.low, b.low), true];
+                _c = [lowestNumericUncertainty(a.low, b.low), true], l = _c[0], lc = _c[1];
                 // TODO: Do we need to support quantities here?
             }
             else if (areDateTimes(a.low, b.low) && a.low.isMorePrecise(b.low)) {
-                [l, lc] = [other.low, other.lowClosed];
+                _d = [other.low, other.lowClosed], l = _d[0], lc = _d[1];
             }
             else {
-                [l, lc] = [this.low, this.lowClosed];
+                _e = [this.low, this.lowClosed], l = _e[0], lc = _e[1];
             }
-            let h, hc;
+            var h = void 0, hc = void 0;
             if (cmp.greaterThanOrEquals(a.high, b.high)) {
-                [h, hc] = [this.high, this.highClosed];
+                _f = [this.high, this.highClosed], h = _f[0], hc = _f[1];
             }
             else if (cmp.lessThanOrEquals(a.high, b.high)) {
-                [h, hc] = [other.high, other.highClosed];
+                _g = [other.high, other.highClosed], h = _g[0], hc = _g[1];
             }
             else if (areNumeric(a.high, b.high)) {
-                [h, hc] = [highestNumericUncertainty(a.high, b.high), true];
+                _h = [highestNumericUncertainty(a.high, b.high), true], h = _h[0], hc = _h[1];
                 // TODO: Do we need to support quantities here?
             }
             else if (areDateTimes(a.high, b.high) && a.high.isMorePrecise(b.high)) {
-                [h, hc] = [other.high, other.highClosed];
+                _j = [other.high, other.highClosed], h = _j[0], hc = _j[1];
             }
             else {
-                [h, hc] = [this.high, this.highClosed];
+                _k = [this.high, this.highClosed], h = _k[0], hc = _k[1];
             }
             return new Interval(l, h, lc, hc);
         }
         else {
             return null;
         }
-    }
-    intersect(other) {
+    };
+    Interval.prototype.intersect = function (other) {
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
         if (other == null || !other.isInterval) {
             throw new Error('Argument to union must be an interval');
         }
         // Note that interval union is only defined if the arguments overlap.
         if (this.overlaps(other)) {
-            const [a, b] = [this.toClosed(), other.toClosed()];
-            let l, lc;
+            var _l = [this.toClosed(), other.toClosed()], a = _l[0], b = _l[1];
+            var l = void 0, lc = void 0;
             if (cmp.greaterThanOrEquals(a.low, b.low)) {
-                [l, lc] = [this.low, this.lowClosed];
+                _a = [this.low, this.lowClosed], l = _a[0], lc = _a[1];
             }
             else if (cmp.lessThanOrEquals(a.low, b.low)) {
-                [l, lc] = [other.low, other.lowClosed];
+                _b = [other.low, other.lowClosed], l = _b[0], lc = _b[1];
             }
             else if (areNumeric(a.low, b.low)) {
-                [l, lc] = [highestNumericUncertainty(a.low, b.low), true];
+                _c = [highestNumericUncertainty(a.low, b.low), true], l = _c[0], lc = _c[1];
                 // TODO: Do we need to support quantities here?
             }
             else if (areDateTimes(a.low, b.low) && b.low.isMorePrecise(a.low)) {
-                [l, lc] = [other.low, other.lowClosed];
+                _d = [other.low, other.lowClosed], l = _d[0], lc = _d[1];
             }
             else {
-                [l, lc] = [this.low, this.lowClosed];
+                _e = [this.low, this.lowClosed], l = _e[0], lc = _e[1];
             }
-            let h, hc;
+            var h = void 0, hc = void 0;
             if (cmp.lessThanOrEquals(a.high, b.high)) {
-                [h, hc] = [this.high, this.highClosed];
+                _f = [this.high, this.highClosed], h = _f[0], hc = _f[1];
             }
             else if (cmp.greaterThanOrEquals(a.high, b.high)) {
-                [h, hc] = [other.high, other.highClosed];
+                _g = [other.high, other.highClosed], h = _g[0], hc = _g[1];
             }
             else if (areNumeric(a.high, b.high)) {
-                [h, hc] = [lowestNumericUncertainty(a.high, b.high), true];
+                _h = [lowestNumericUncertainty(a.high, b.high), true], h = _h[0], hc = _h[1];
                 // TODO: Do we need to support quantities here?
             }
             else if (areDateTimes(a.high, b.high) && b.high.isMorePrecise(a.high)) {
-                [h, hc] = [other.high, other.highClosed];
+                _j = [other.high, other.highClosed], h = _j[0], hc = _j[1];
             }
             else {
-                [h, hc] = [this.high, this.highClosed];
+                _k = [this.high, this.highClosed], h = _k[0], hc = _k[1];
             }
             return new Interval(l, h, lc, hc);
         }
         else {
             return null;
         }
-    }
-    except(other) {
+    };
+    Interval.prototype.except = function (other) {
         if (other === null) {
             return null;
         }
         if (other == null || !other.isInterval) {
             throw new Error('Argument to except must be an interval');
         }
-        const ol = this.overlaps(other);
+        var ol = this.overlaps(other);
         if (ol === true) {
-            const olb = this.overlapsBefore(other);
-            const ola = this.overlapsAfter(other);
+            var olb = this.overlapsBefore(other);
+            var ola = this.overlapsAfter(other);
             if (olb === true && ola === false) {
                 return new Interval(this.low, other.low, this.lowClosed, !other.lowClosed);
             }
@@ -29876,8 +29945,8 @@ class Interval {
             // ol is null
             return null;
         }
-    }
-    sameAs(other, precision) {
+    };
+    Interval.prototype.sameAs = function (other, precision) {
         // This large if and else if block handles the scenarios where there is an open ended null
         // If both lows or highs exists, it can be determined that intervals are not Same As
         if ((this.low != null &&
@@ -29946,34 +30015,34 @@ class Interval {
         else {
             return (this.start().sameAs(other.start(), precision) && this.end().sameAs(other.end(), precision));
         }
-    }
-    sameOrBefore(other, precision) {
+    };
+    Interval.prototype.sameOrBefore = function (other, precision) {
         if (this.end() == null || other == null || other.start() == null) {
             return null;
         }
         else {
             return cmp.lessThanOrEquals(this.end(), other.start(), precision);
         }
-    }
-    sameOrAfter(other, precision) {
+    };
+    Interval.prototype.sameOrAfter = function (other, precision) {
         if (this.start() == null || other == null || other.end() == null) {
             return null;
         }
         else {
             return cmp.greaterThanOrEquals(this.start(), other.end(), precision);
         }
-    }
-    equals(other) {
+    };
+    Interval.prototype.equals = function (other) {
         if (other != null && other.isInterval) {
-            const [a, b] = [this.toClosed(), other.toClosed()];
+            var _a = [this.toClosed(), other.toClosed()], a = _a[0], b = _a[1];
             return logic_1.ThreeValuedLogic.and(cmp.equals(a.low, b.low), cmp.equals(a.high, b.high));
         }
         else {
             return false;
         }
-    }
-    after(other, precision) {
-        const closed = this.toClosed();
+    };
+    Interval.prototype.after = function (other, precision) {
+        var closed = this.toClosed();
         // Meets spec, but not 100% correct (e.g., (null, 5] after [6, 10] --> null)
         // Simple way to fix it: and w/ not overlaps
         if (other.toClosed) {
@@ -29982,9 +30051,9 @@ class Interval {
         else {
             return cmp.greaterThan(closed.low, other, precision);
         }
-    }
-    before(other, precision) {
-        const closed = this.toClosed();
+    };
+    Interval.prototype.before = function (other, precision) {
+        var closed = this.toClosed();
         // Meets spec, but not 100% correct (e.g., (null, 5] after [6, 10] --> null)
         // Simple way to fix it: and w/ not overlaps
         if (other.toClosed) {
@@ -29993,11 +30062,11 @@ class Interval {
         else {
             return cmp.lessThan(closed.high, other, precision);
         }
-    }
-    meets(other, precision) {
+    };
+    Interval.prototype.meets = function (other, precision) {
         return logic_1.ThreeValuedLogic.or(this.meetsBefore(other, precision), this.meetsAfter(other, precision));
-    }
-    meetsAfter(other, precision) {
+    };
+    Interval.prototype.meetsAfter = function (other, precision) {
         try {
             if (precision != null && this.low != null && this.low.isDateTime) {
                 return this.toClosed().low.sameAs(other.toClosed().high != null ? other.toClosed().high.add(1, precision) : null, precision);
@@ -30009,8 +30078,8 @@ class Interval {
         catch (error) {
             return false;
         }
-    }
-    meetsBefore(other, precision) {
+    };
+    Interval.prototype.meetsBefore = function (other, precision) {
         try {
             if (precision != null && this.high != null && this.high.isDateTime) {
                 return this.toClosed().high.sameAs(other.toClosed().low != null ? other.toClosed().low.add(-1, precision) : null, precision);
@@ -30022,8 +30091,8 @@ class Interval {
         catch (error) {
             return false;
         }
-    }
-    start() {
+    };
+    Interval.prototype.start = function () {
         if (this.low == null) {
             if (this.lowClosed) {
                 return (0, math_1.minValueForInstance)(this.high);
@@ -30033,8 +30102,8 @@ class Interval {
             }
         }
         return this.toClosed().low;
-    }
-    end() {
+    };
+    Interval.prototype.end = function () {
         if (this.high == null) {
             if (this.highClosed) {
                 return (0, math_1.maxValueForInstance)(this.low);
@@ -30044,21 +30113,21 @@ class Interval {
             }
         }
         return this.toClosed().high;
-    }
-    starts(other, precision) {
-        let startEqual;
+    };
+    Interval.prototype.starts = function (other, precision) {
+        var startEqual;
         if (precision != null && this.low != null && this.low.isDateTime) {
             startEqual = this.low.sameAs(other.low, precision);
         }
         else {
             startEqual = cmp.equals(this.low, other.low);
         }
-        const endLessThanOrEqual = cmp.lessThanOrEquals(this.high, other.high, precision);
+        var endLessThanOrEqual = cmp.lessThanOrEquals(this.high, other.high, precision);
         return startEqual && endLessThanOrEqual;
-    }
-    ends(other, precision) {
-        let endEqual;
-        const startGreaterThanOrEqual = cmp.greaterThanOrEquals(this.low, other.low, precision);
+    };
+    Interval.prototype.ends = function (other, precision) {
+        var endEqual;
+        var startGreaterThanOrEqual = cmp.greaterThanOrEquals(this.low, other.low, precision);
         if (precision != null && (this.low != null ? this.low.isDateTime : undefined)) {
             endEqual = this.high.sameAs(other.high, precision);
         }
@@ -30066,13 +30135,13 @@ class Interval {
             endEqual = cmp.equals(this.high, other.high);
         }
         return startGreaterThanOrEqual && endEqual;
-    }
-    width() {
+    };
+    Interval.prototype.width = function () {
         if ((this.low != null && (this.low.isDateTime || this.low.isDate)) ||
             (this.high != null && (this.high.isDateTime || this.high.isDate))) {
             throw new Error('Width of Date, DateTime, and Time intervals is not supported');
         }
-        const closed = this.toClosed();
+        var closed = this.toClosed();
         if ((closed.low != null && closed.low.isUncertainty) ||
             (closed.high != null && closed.high.isUncertainty)) {
             return null;
@@ -30081,25 +30150,25 @@ class Interval {
             if (closed.low.unit !== closed.high.unit) {
                 throw new Error('Cannot calculate width of Quantity Interval with different units');
             }
-            const lowValue = closed.low.value;
-            const highValue = closed.high.value;
-            let diff = Math.abs(highValue - lowValue);
+            var lowValue = closed.low.value;
+            var highValue = closed.high.value;
+            var diff = Math.abs(highValue - lowValue);
             diff = Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
             return new quantity_1.Quantity(diff, closed.low.unit);
         }
         else {
             // TODO: Fix precision to 8 decimals in other places that return numbers
-            const diff = Math.abs(closed.high - closed.low);
+            var diff = Math.abs(closed.high - closed.low);
             return Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
         }
-    }
-    size() {
-        const pointSize = this.getPointSize();
+    };
+    Interval.prototype.size = function () {
+        var pointSize = this.getPointSize();
         if ((this.low != null && (this.low.isDateTime || this.low.isDate)) ||
             (this.high != null && (this.high.isDateTime || this.high.isDate))) {
             throw new Error('Size of Date, DateTime, and Time intervals is not supported');
         }
-        const closed = this.toClosed();
+        var closed = this.toClosed();
         if ((closed.low != null && closed.low.isUncertainty) ||
             (closed.high != null && closed.high.isUncertainty)) {
             return null;
@@ -30108,19 +30177,19 @@ class Interval {
             if (closed.low.unit !== closed.high.unit) {
                 throw new Error('Cannot calculate size of Quantity Interval with different units');
             }
-            const lowValue = closed.low.value;
-            const highValue = closed.high.value;
-            const diff = Math.abs(highValue - lowValue) + pointSize.value;
+            var lowValue = closed.low.value;
+            var highValue = closed.high.value;
+            var diff = Math.abs(highValue - lowValue) + pointSize.value;
             Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
             return new quantity_1.Quantity(diff, closed.low.unit);
         }
         else {
-            const diff = Math.abs(closed.high - closed.low) + pointSize.value;
+            var diff = Math.abs(closed.high - closed.low) + pointSize.value;
             return Math.round(diff * Math.pow(10, 8)) / Math.pow(10, 8);
         }
-    }
-    getPointSize() {
-        let pointSize;
+    };
+    Interval.prototype.getPointSize = function () {
+        var pointSize;
         if (this.low != null) {
             if (this.low.isDateTime || this.low.isDate || this.low.isTime) {
                 pointSize = new quantity_1.Quantity(1, this.low.getPrecision());
@@ -30150,14 +30219,14 @@ class Interval {
             pointSize = new quantity_1.Quantity(pointSize, '1');
         }
         return pointSize;
-    }
-    toClosed() {
+    };
+    Interval.prototype.toClosed = function () {
         // Calculate the closed flags. Despite the name of this function, if a boundary is null open,
         // we cannot close the boundary because that changes its meaning from "unknown" to "max/min value"
-        const lowClosed = this.lowClosed || this.low != null;
-        const highClosed = this.highClosed || this.high != null;
+        var lowClosed = this.lowClosed || this.low != null;
+        var highClosed = this.highClosed || this.high != null;
         if (this.pointType != null) {
-            let low;
+            var low = void 0;
             if (this.lowClosed && this.low == null) {
                 low = (0, math_1.minValueForType)(this.pointType);
             }
@@ -30167,7 +30236,7 @@ class Interval {
             else {
                 low = this.low;
             }
-            let high;
+            var high = void 0;
             if (this.highClosed && this.high == null) {
                 high = (0, math_1.maxValueForType)(this.pointType);
             }
@@ -30188,19 +30257,20 @@ class Interval {
         else {
             return new Interval(this.low, this.high, lowClosed, highClosed);
         }
-    }
-    toString() {
-        const start = this.lowClosed ? '[' : '(';
-        const end = this.highClosed ? ']' : ')';
+    };
+    Interval.prototype.toString = function () {
+        var start = this.lowClosed ? '[' : '(';
+        var end = this.highClosed ? ']' : ')';
         return start + this.low.toString() + ', ' + this.high.toString() + end;
-    }
-}
+    };
+    return Interval;
+}());
 exports.Interval = Interval;
 function areDateTimes(x, y) {
-    return [x, y].every(z => z != null && z.isDateTime);
+    return [x, y].every(function (z) { return z != null && z.isDateTime; });
 }
 function areNumeric(x, y) {
-    return [x, y].every(z => {
+    return [x, y].every(function (z) {
         return typeof z === 'number' || (z != null && z.isUncertainty && typeof z.low === 'number');
     });
 }
@@ -30211,8 +30281,8 @@ function lowestNumericUncertainty(x, y) {
     if (y == null || !y.isUncertainty) {
         y = new uncertainty_1.Uncertainty(y);
     }
-    const low = x.low < y.low ? x.low : y.low;
-    const high = x.high < y.high ? x.high : y.high;
+    var low = x.low < y.low ? x.low : y.low;
+    var high = x.high < y.high ? x.high : y.high;
     if (low !== high) {
         return new uncertainty_1.Uncertainty(low, high);
     }
@@ -30227,8 +30297,8 @@ function highestNumericUncertainty(x, y) {
     if (y == null || !y.isUncertainty) {
         y = new uncertainty_1.Uncertainty(y);
     }
-    const low = x.low > y.low ? x.low : y.low;
-    const high = x.high > y.high ? x.high : y.high;
+    var low = x.low > y.low ? x.low : y.low;
+    var high = x.high > y.high ? x.high : y.high;
     if (low !== high) {
         return new uncertainty_1.Uncertainty(low, high);
     }
@@ -30237,12 +30307,18 @@ function highestNumericUncertainty(x, y) {
     }
 }
 
-},{"../util/comparison":218,"../util/math":221,"./logic":176,"./quantity":177,"./uncertainty":179}],176:[function(require,module,exports){
+},{"../util/comparison":218,"../util/math":219,"./logic":176,"./quantity":177,"./uncertainty":179}],176:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ThreeValuedLogic = void 0;
-class ThreeValuedLogic {
-    static and(...val) {
+var ThreeValuedLogic = /** @class */ (function () {
+    function ThreeValuedLogic() {
+    }
+    ThreeValuedLogic.and = function () {
+        var val = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            val[_i] = arguments[_i];
+        }
         if (val.includes(false)) {
             return false;
         }
@@ -30252,8 +30328,12 @@ class ThreeValuedLogic {
         else {
             return true;
         }
-    }
-    static or(...val) {
+    };
+    ThreeValuedLogic.or = function () {
+        var val = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            val[_i] = arguments[_i];
+        }
         if (val.includes(true)) {
             return true;
         }
@@ -30263,47 +30343,41 @@ class ThreeValuedLogic {
         else {
             return false;
         }
-    }
-    static xor(...val) {
+    };
+    ThreeValuedLogic.xor = function () {
+        var val = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            val[_i] = arguments[_i];
+        }
         if (val.includes(null)) {
             return null;
         }
         else {
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
-            return val.reduce((a, b) => (!a ^ !b) === 1);
+            return val.reduce(function (a, b) { return (!a ^ !b) === 1; });
         }
-    }
-    static not(val) {
+    };
+    ThreeValuedLogic.not = function (val) {
         if (val != null) {
             return !val;
         }
         else {
             return null;
         }
-    }
-    static implies(left, right) {
-        if (left === true) {
-            return right;
-        }
-        else if (left === false) {
-            return true;
-        }
-        else {
-            return right === true ? true : null;
-        }
-    }
-}
+    };
+    return ThreeValuedLogic;
+}());
 exports.ThreeValuedLogic = ThreeValuedLogic;
 
 },{}],177:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.doMultiplication = exports.doDivision = exports.doSubtraction = exports.doAddition = exports.parseQuantity = exports.Quantity = void 0;
-const math_1 = require("../util/math");
-const units_1 = require("../util/units");
-class Quantity {
-    constructor(value, unit) {
+var math_1 = require("../util/math");
+var units_1 = require("../util/units");
+var Quantity = /** @class */ (function () {
+    function Quantity(value, unit) {
         this.value = value;
         this.unit = unit;
         if (this.value == null || isNaN(this.value)) {
@@ -30314,24 +30388,28 @@ class Quantity {
         }
         // Attempt to parse the unit with UCUM. If it fails, throw a friendly error.
         if (this.unit != null) {
-            const validation = (0, units_1.checkUnit)(this.unit);
+            var validation = (0, units_1.checkUnit)(this.unit);
             if (!validation.valid) {
                 throw new Error(validation.message);
             }
         }
     }
-    get isQuantity() {
-        return true;
-    }
-    clone() {
+    Object.defineProperty(Quantity.prototype, "isQuantity", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Quantity.prototype.clone = function () {
         return new Quantity(this.value, this.unit);
-    }
-    toString() {
-        return `${this.value} '${this.unit}'`;
-    }
-    sameOrBefore(other) {
+    };
+    Quantity.prototype.toString = function () {
+        return "".concat(this.value, " '").concat(this.unit, "'");
+    };
+    Quantity.prototype.sameOrBefore = function (other) {
         if (other != null && other.isQuantity) {
-            const otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
+            var otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
             if (otherVal == null) {
                 return null;
             }
@@ -30339,10 +30417,10 @@ class Quantity {
                 return this.value <= otherVal;
             }
         }
-    }
-    sameOrAfter(other) {
+    };
+    Quantity.prototype.sameOrAfter = function (other) {
         if (other != null && other.isQuantity) {
-            const otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
+            var otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
             if (otherVal == null) {
                 return null;
             }
@@ -30350,10 +30428,10 @@ class Quantity {
                 return this.value >= otherVal;
             }
         }
-    }
-    after(other) {
+    };
+    Quantity.prototype.after = function (other) {
         if (other != null && other.isQuantity) {
-            const otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
+            var otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
             if (otherVal == null) {
                 return null;
             }
@@ -30361,10 +30439,10 @@ class Quantity {
                 return this.value > otherVal;
             }
         }
-    }
-    before(other) {
+    };
+    Quantity.prototype.before = function (other) {
         if (other != null && other.isQuantity) {
-            const otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
+            var otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
             if (otherVal == null) {
                 return null;
             }
@@ -30372,8 +30450,8 @@ class Quantity {
                 return this.value < otherVal;
             }
         }
-    }
-    equals(other) {
+    };
+    Quantity.prototype.equals = function (other) {
         if (other != null && other.isQuantity) {
             if ((!this.unit && other.unit) || (this.unit && !other.unit)) {
                 return false;
@@ -30382,7 +30460,7 @@ class Quantity {
                 return this.value === other.value;
             }
             else {
-                const otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
+                var otherVal = (0, units_1.convertUnit)(other.value, other.unit, this.unit);
                 if (otherVal == null) {
                     return null;
                 }
@@ -30391,13 +30469,13 @@ class Quantity {
                 }
             }
         }
-    }
-    convertUnit(toUnit) {
-        const value = (0, units_1.convertUnit)(this.value, this.unit, toUnit);
+    };
+    Quantity.prototype.convertUnit = function (toUnit) {
+        var value = (0, units_1.convertUnit)(this.value, this.unit, toUnit);
         // Need to pass through constructor again to catch invalid units
         return new Quantity(value, toUnit);
-    }
-    dividedBy(other) {
+    };
+    Quantity.prototype.dividedBy = function (other) {
         if (other == null || other === 0 || other.value === 0) {
             return null;
         }
@@ -30405,16 +30483,16 @@ class Quantity {
             // convert it to a quantity w/ unit 1
             other = new Quantity(other, '1');
         }
-        const [val1, unit1, val2, unit2] = (0, units_1.normalizeUnitsWhenPossible)(this.value, this.unit, other.value, other.unit);
-        const resultValue = val1 / val2;
-        const resultUnit = (0, units_1.getQuotientOfUnits)(unit1, unit2);
+        var _a = (0, units_1.normalizeUnitsWhenPossible)(this.value, this.unit, other.value, other.unit), val1 = _a[0], unit1 = _a[1], val2 = _a[2], unit2 = _a[3];
+        var resultValue = val1 / val2;
+        var resultUnit = (0, units_1.getQuotientOfUnits)(unit1, unit2);
         // Check for invalid unit or value
         if (resultUnit == null || (0, math_1.overflowsOrUnderflows)(resultValue)) {
             return null;
         }
         return new Quantity((0, math_1.decimalAdjust)('round', resultValue, -8), resultUnit);
-    }
-    multiplyBy(other) {
+    };
+    Quantity.prototype.multiplyBy = function (other) {
         if (other == null) {
             return null;
         }
@@ -30422,25 +30500,26 @@ class Quantity {
             // convert it to a quantity w/ unit 1
             other = new Quantity(other, '1');
         }
-        const [val1, unit1, val2, unit2] = (0, units_1.normalizeUnitsWhenPossible)(this.value, this.unit, other.value, other.unit);
-        const resultValue = val1 * val2;
-        const resultUnit = (0, units_1.getProductOfUnits)(unit1, unit2);
+        var _a = (0, units_1.normalizeUnitsWhenPossible)(this.value, this.unit, other.value, other.unit), val1 = _a[0], unit1 = _a[1], val2 = _a[2], unit2 = _a[3];
+        var resultValue = val1 * val2;
+        var resultUnit = (0, units_1.getProductOfUnits)(unit1, unit2);
         // Check for invalid unit or value
         if (resultUnit == null || (0, math_1.overflowsOrUnderflows)(resultValue)) {
             return null;
         }
         return new Quantity((0, math_1.decimalAdjust)('round', resultValue, -8), resultUnit);
-    }
-}
+    };
+    return Quantity;
+}());
 exports.Quantity = Quantity;
 function parseQuantity(str) {
-    const components = /([+|-]?\d+\.?\d*)\s*('(.+)')?/.exec(str);
+    var components = /([+|-]?\d+\.?\d*)\s*('(.+)')?/.exec(str);
     if (components != null && components[1] != null) {
-        const value = parseFloat(components[1]);
+        var value = parseFloat(components[1]);
         if (!(0, math_1.isValidDecimal)(value)) {
             return null;
         }
-        let unit;
+        var unit = void 0;
         if (components[3] != null) {
             unit = components[3].trim();
         }
@@ -30456,12 +30535,12 @@ function parseQuantity(str) {
 exports.parseQuantity = parseQuantity;
 function doScaledAddition(a, b, scaleForB) {
     if (a != null && a.isQuantity && b != null && b.isQuantity) {
-        const [val1, unit1, val2, unit2] = (0, units_1.normalizeUnitsWhenPossible)(a.value, a.unit, b.value * scaleForB, b.unit);
+        var _a = (0, units_1.normalizeUnitsWhenPossible)(a.value, a.unit, b.value * scaleForB, b.unit), val1 = _a[0], unit1 = _a[1], val2 = _a[2], unit2 = _a[3];
         if (unit1 !== unit2) {
             // not compatible units, so we can't do addition
             return null;
         }
-        const sum = val1 + val2;
+        var sum = val1 + val2;
         if ((0, math_1.overflowsOrUnderflows)(sum)) {
             return null;
         }
@@ -30469,7 +30548,7 @@ function doScaledAddition(a, b, scaleForB) {
     }
     else if (a.copy && a.add) {
         // Date / DateTime require a CQL time unit
-        const cqlUnitB = (0, units_1.convertToCQLDateUnit)(b.unit) || b.unit;
+        var cqlUnitB = (0, units_1.convertToCQLDateUnit)(b.unit) || b.unit;
         return a.copy().add(b.value * scaleForB, cqlUnitB);
     }
     else {
@@ -30500,12 +30579,12 @@ function doMultiplication(a, b) {
 }
 exports.doMultiplication = doMultiplication;
 
-},{"../util/math":221,"../util/units":222}],178:[function(require,module,exports){
+},{"../util/math":219,"../util/units":220}],178:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Ratio = void 0;
-class Ratio {
-    constructor(numerator, denominator) {
+var Ratio = /** @class */ (function () {
+    function Ratio(numerator, denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
         if (numerator == null) {
@@ -30515,44 +30594,50 @@ class Ratio {
             throw new Error('Cannot create a ratio with an undefined denominator');
         }
     }
-    get isRatio() {
-        return true;
-    }
-    clone() {
+    Object.defineProperty(Ratio.prototype, "isRatio", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Ratio.prototype.clone = function () {
         return new Ratio(this.numerator.clone(), this.denominator.clone());
-    }
-    toString() {
-        return `${this.numerator.toString()} : ${this.denominator.toString()}`;
-    }
-    equals(other) {
+    };
+    Ratio.prototype.toString = function () {
+        return "".concat(this.numerator.toString(), " : ").concat(this.denominator.toString());
+    };
+    Ratio.prototype.equals = function (other) {
         if (other != null && other.isRatio) {
-            const divided_this = this.numerator.dividedBy(this.denominator);
-            const divided_other = other.numerator.dividedBy(other.denominator);
+            var divided_this = this.numerator.dividedBy(this.denominator);
+            var divided_other = other.numerator.dividedBy(other.denominator);
             return divided_this === null || divided_this === void 0 ? void 0 : divided_this.equals(divided_other);
         }
         else {
             return false;
         }
-    }
-    equivalent(other) {
-        const equal = this.equals(other);
+    };
+    Ratio.prototype.equivalent = function (other) {
+        var equal = this.equals(other);
         return equal != null ? equal : false;
-    }
-}
+    };
+    return Ratio;
+}());
 exports.Ratio = Ratio;
 
 },{}],179:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Uncertainty = void 0;
-const comparison_1 = require("../util/comparison");
-const logic_1 = require("./logic");
-class Uncertainty {
-    constructor(low = null, high) {
+var logic_1 = require("./logic");
+var Uncertainty = /** @class */ (function () {
+    function Uncertainty(low, high) {
+        var _a;
+        if (low === void 0) { low = null; }
         this.low = low;
         this.high = high;
-        const gt = (a, b) => {
-            if (typeof a !== typeof b || (a === null || a === void 0 ? void 0 : a.constructor) !== (b === null || b === void 0 ? void 0 : b.constructor)) {
+        var gt = function (a, b) {
+            if (typeof a !== typeof b) {
                 // TODO: This should probably throw rather than return false.
                 // Uncertainties with different types probably shouldn't be supported.
                 return false;
@@ -30564,7 +30649,9 @@ class Uncertainty {
                 return a > b;
             }
         };
-        const isNonEnumerable = (val) => val != null && (val.isCode || val.isConcept || val.isValueSet);
+        var isNonEnumerable = function (val) {
+            return val != null && (val.isCode || val.isConcept || val.isValueSet);
+        };
         if (typeof this.high === 'undefined') {
             this.high = this.low;
         }
@@ -30572,23 +30659,27 @@ class Uncertainty {
             this.low = this.high = null;
         }
         if (this.low != null && this.high != null && gt(this.low, this.high)) {
-            [this.low, this.high] = [this.high, this.low];
+            _a = [this.high, this.low], this.low = _a[0], this.high = _a[1];
         }
     }
-    static from(obj) {
+    Uncertainty.from = function (obj) {
         if (obj != null && obj.isUncertainty) {
             return obj;
         }
         else {
             return new Uncertainty(obj);
         }
-    }
-    get isUncertainty() {
-        return true;
-    }
-    copy() {
-        let newLow = this.low;
-        let newHigh = this.high;
+    };
+    Object.defineProperty(Uncertainty.prototype, "isUncertainty", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Uncertainty.prototype.copy = function () {
+        var newLow = this.low;
+        var newHigh = this.high;
         if (typeof this.low.copy === 'function') {
             newLow = this.low.copy();
         }
@@ -30596,14 +30687,13 @@ class Uncertainty {
             newHigh = this.high.copy();
         }
         return new Uncertainty(newLow, newHigh);
-    }
-    isPoint() {
-        var _a, _b;
+    };
+    Uncertainty.prototype.isPoint = function () {
         // Note: Can't use normal equality, as that fails for Javascript dates
         // TODO: Fix after we don't need to support Javascript date uncertainties anymore
-        const lte = (a, b) => {
-            if (typeof a !== typeof b || (a === null || a === void 0 ? void 0 : a.constructor) !== (b === null || b === void 0 ? void 0 : b.constructor)) {
-                return null;
+        var lte = function (a, b) {
+            if (typeof a !== typeof b) {
+                return false;
             }
             if (typeof a.sameOrBefore === 'function') {
                 return a.sameOrBefore(b);
@@ -30612,9 +30702,9 @@ class Uncertainty {
                 return a <= b;
             }
         };
-        const gte = (a, b) => {
-            if (typeof a !== typeof b || (a === null || a === void 0 ? void 0 : a.constructor) !== (b === null || b === void 0 ? void 0 : b.constructor)) {
-                return null;
+        var gte = function (a, b) {
+            if (typeof a !== typeof b) {
+                return false;
             }
             if (typeof a.sameOrBefore === 'function') {
                 return a.sameOrAfter(b);
@@ -30623,28 +30713,16 @@ class Uncertainty {
                 return a >= b;
             }
         };
-        return (this.low != null &&
-            this.high != null &&
-            ((_a = lte(this.low, this.high)) !== null && _a !== void 0 ? _a : false) &&
-            ((_b = gte(this.low, this.high)) !== null && _b !== void 0 ? _b : false));
-    }
-    equals(other) {
-        // if this is a point, and other is not an uncertainty or a point, then we can compare directly
-        if (this.isPoint()) {
-            if (!(other instanceof Uncertainty)) {
-                return (0, comparison_1.equals)(this.low, other);
-            }
-            if (other.isPoint()) {
-                return (0, comparison_1.equals)(this.low, other.low);
-            }
-        }
+        return (this.low != null && this.high != null && lte(this.low, this.high) && gte(this.low, this.high));
+    };
+    Uncertainty.prototype.equals = function (other) {
         other = Uncertainty.from(other);
         return logic_1.ThreeValuedLogic.not(logic_1.ThreeValuedLogic.or(this.lessThan(other), this.greaterThan(other)));
-    }
-    lessThan(other) {
-        const lt = (a, b) => {
-            if (typeof a !== typeof b || (a === null || a === void 0 ? void 0 : a.constructor) !== (b === null || b === void 0 ? void 0 : b.constructor)) {
-                return null;
+    };
+    Uncertainty.prototype.lessThan = function (other) {
+        var lt = function (a, b) {
+            if (typeof a !== typeof b) {
+                return false;
             }
             if (typeof a.before === 'function') {
                 return a.before(b);
@@ -30654,62 +30732,84 @@ class Uncertainty {
             }
         };
         other = Uncertainty.from(other);
-        const bestCase = this.low == null || other.high == null || lt(this.low, other.high);
-        const worstCase = this.high != null && other.low != null && lt(this.high, other.low);
+        var bestCase = this.low == null || other.high == null || lt(this.low, other.high);
+        var worstCase = this.high != null && other.low != null && lt(this.high, other.low);
         if (bestCase === worstCase) {
             return bestCase;
         }
         else {
             return null;
         }
-    }
-    greaterThan(other) {
+    };
+    Uncertainty.prototype.greaterThan = function (other) {
         return Uncertainty.from(other).lessThan(this);
-    }
-    lessThanOrEquals(other) {
+    };
+    Uncertainty.prototype.lessThanOrEquals = function (other) {
         return logic_1.ThreeValuedLogic.not(this.greaterThan(Uncertainty.from(other)));
-    }
-    greaterThanOrEquals(other) {
+    };
+    Uncertainty.prototype.greaterThanOrEquals = function (other) {
         return logic_1.ThreeValuedLogic.not(this.lessThan(Uncertainty.from(other)));
-    }
-}
+    };
+    return Uncertainty;
+}());
 exports.Uncertainty = Uncertainty;
 
-},{"../util/comparison":218,"./logic":176}],180:[function(require,module,exports){
+},{"./logic":176}],180:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AnyTrue = exports.AllTrue = exports.PopulationVariance = exports.Variance = exports.PopulationStdDev = exports.GeometricMean = exports.Product = exports.StdDev = exports.Mode = exports.Median = exports.Avg = exports.Max = exports.Min = exports.Sum = exports.Count = void 0;
-const expression_1 = require("./expression");
-const util_1 = require("../util/util");
-const datatypes_1 = require("../datatypes/datatypes");
-const exception_1 = require("../datatypes/exception");
-const comparison_1 = require("../util/comparison");
-const builder_1 = require("./builder");
-class AggregateExpression extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.source = (0, builder_1.build)(json.source);
+var expression_1 = require("./expression");
+var util_1 = require("../util/util");
+var datatypes_1 = require("../datatypes/datatypes");
+var exception_1 = require("../datatypes/exception");
+var comparison_1 = require("../util/comparison");
+var builder_1 = require("./builder");
+var AggregateExpression = /** @class */ (function (_super) {
+    __extends(AggregateExpression, _super);
+    function AggregateExpression(json) {
+        var _this = _super.call(this, json) || this;
+        _this.source = (0, builder_1.build)(json.source);
+        return _this;
     }
-}
-class Count extends AggregateExpression {
-    constructor(json) {
-        super(json);
+    return AggregateExpression;
+}(expression_1.Expression));
+var Count = /** @class */ (function (_super) {
+    __extends(Count, _super);
+    function Count(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const items = await this.source.execute(ctx);
+    Count.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if ((0, util_1.typeIsArray)(items)) {
             return (0, util_1.removeNulls)(items).length;
         }
         return 0;
-    }
-}
+    };
+    return Count;
+}(AggregateExpression));
 exports.Count = Count;
-class Sum extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var Sum = /** @class */ (function (_super) {
+    __extends(Sum, _super);
+    function Sum(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        let items = await this.source.execute(ctx);
+    Sum.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (!(0, util_1.typeIsArray)(items)) {
             return null;
         }
@@ -30723,26 +30823,28 @@ class Sum extends AggregateExpression {
             return null;
         }
         if (hasOnlyQuantities(items)) {
-            const values = getValuesFromQuantities(items);
-            const sum = values.reduce((x, y) => x + y);
+            var values = getValuesFromQuantities(items);
+            var sum = values.reduce(function (x, y) { return x + y; });
             return new datatypes_1.Quantity(sum, items[0].unit);
         }
         else {
-            return items.reduce((x, y) => x + y);
+            return items.reduce(function (x, y) { return x + y; });
         }
-    }
-}
+    };
+    return Sum;
+}(AggregateExpression));
 exports.Sum = Sum;
-class Min extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var Min = /** @class */ (function (_super) {
+    __extends(Min, _super);
+    function Min(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const list = await this.source.execute(ctx);
+    Min.prototype.exec = function (ctx) {
+        var list = this.source.execute(ctx);
         if (list == null) {
             return null;
         }
-        const listWithoutNulls = (0, util_1.removeNulls)(list);
+        var listWithoutNulls = (0, util_1.removeNulls)(list);
         // Check for incompatible units and return null. We don't want to convert
         // the units for Min/Max, so we throw away the converted array if it succeeds
         try {
@@ -30755,26 +30857,29 @@ class Min extends AggregateExpression {
             return null;
         }
         // We assume the list is an array of all the same type.
-        let minimum = listWithoutNulls[0];
-        for (const element of listWithoutNulls) {
+        var minimum = listWithoutNulls[0];
+        for (var _i = 0, listWithoutNulls_1 = listWithoutNulls; _i < listWithoutNulls_1.length; _i++) {
+            var element = listWithoutNulls_1[_i];
             if ((0, comparison_1.lessThan)(element, minimum)) {
                 minimum = element;
             }
         }
         return minimum;
-    }
-}
+    };
+    return Min;
+}(AggregateExpression));
 exports.Min = Min;
-class Max extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var Max = /** @class */ (function (_super) {
+    __extends(Max, _super);
+    function Max(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const items = await this.source.execute(ctx);
+    Max.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (items == null) {
             return null;
         }
-        const listWithoutNulls = (0, util_1.removeNulls)(items);
+        var listWithoutNulls = (0, util_1.removeNulls)(items);
         // Check for incompatible units and return null. We don't want to convert
         // the units for Min/Max, so we throw away the converted array if it succeeds
         try {
@@ -30787,22 +30892,25 @@ class Max extends AggregateExpression {
             return null;
         }
         // We assume the list is an array of all the same type.
-        let maximum = listWithoutNulls[0];
-        for (const element of listWithoutNulls) {
+        var maximum = listWithoutNulls[0];
+        for (var _i = 0, listWithoutNulls_2 = listWithoutNulls; _i < listWithoutNulls_2.length; _i++) {
+            var element = listWithoutNulls_2[_i];
             if ((0, comparison_1.greaterThan)(element, maximum)) {
                 maximum = element;
             }
         }
         return maximum;
-    }
-}
+    };
+    return Max;
+}(AggregateExpression));
 exports.Max = Max;
-class Avg extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var Avg = /** @class */ (function (_super) {
+    __extends(Avg, _super);
+    function Avg(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        let items = await this.source.execute(ctx);
+    Avg.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (!(0, util_1.typeIsArray)(items)) {
             return null;
         }
@@ -30816,23 +30924,25 @@ class Avg extends AggregateExpression {
             return null;
         }
         if (hasOnlyQuantities(items)) {
-            const values = getValuesFromQuantities(items);
-            const sum = values.reduce((x, y) => x + y);
+            var values = getValuesFromQuantities(items);
+            var sum = values.reduce(function (x, y) { return x + y; });
             return new datatypes_1.Quantity(sum / values.length, items[0].unit);
         }
         else {
-            const sum = items.reduce((x, y) => x + y);
+            var sum = items.reduce(function (x, y) { return x + y; });
             return sum / items.length;
         }
-    }
-}
+    };
+    return Avg;
+}(AggregateExpression));
 exports.Avg = Avg;
-class Median extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var Median = /** @class */ (function (_super) {
+    __extends(Median, _super);
+    function Median(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        let items = await this.source.execute(ctx);
+    Median.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (!(0, util_1.typeIsArray)(items)) {
             return null;
         }
@@ -30848,25 +30958,27 @@ class Median extends AggregateExpression {
         if (!hasOnlyQuantities(items)) {
             return medianOfNumbers(items);
         }
-        const values = getValuesFromQuantities(items);
-        const median = medianOfNumbers(values);
+        var values = getValuesFromQuantities(items);
+        var median = medianOfNumbers(values);
         return new datatypes_1.Quantity(median, items[0].unit);
-    }
-}
+    };
+    return Median;
+}(AggregateExpression));
 exports.Median = Median;
-class Mode extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var Mode = /** @class */ (function (_super) {
+    __extends(Mode, _super);
+    function Mode(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const items = await this.source.execute(ctx);
+    Mode.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (!(0, util_1.typeIsArray)(items)) {
             return null;
         }
         if (items.length === 0) {
             return null;
         }
-        let filtered;
+        var filtered;
         try {
             filtered = processQuantities(items);
         }
@@ -30874,15 +30986,15 @@ class Mode extends AggregateExpression {
             return null;
         }
         if (hasOnlyQuantities(filtered)) {
-            const values = getValuesFromQuantities(filtered);
-            let mode = this.mode(values);
+            var values = getValuesFromQuantities(filtered);
+            var mode = this.mode(values);
             if (mode.length === 1) {
                 mode = mode[0];
             }
             return new datatypes_1.Quantity(mode, items[0].unit);
         }
         else {
-            const mode = this.mode(filtered);
+            var mode = this.mode(filtered);
             if (mode.length === 1) {
                 return mode[0];
             }
@@ -30890,13 +31002,14 @@ class Mode extends AggregateExpression {
                 return mode;
             }
         }
-    }
-    mode(arr) {
-        let max = 0;
-        const counts = {};
-        let results = [];
-        for (const elem of arr) {
-            const cnt = (counts[elem] = (counts[elem] != null ? counts[elem] : 0) + 1);
+    };
+    Mode.prototype.mode = function (arr) {
+        var max = 0;
+        var counts = {};
+        var results = [];
+        for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
+            var elem = arr_1[_i];
+            var cnt = (counts[elem] = (counts[elem] != null ? counts[elem] : 0) + 1);
             if (cnt === max && !results.includes(elem)) {
                 results.push(elem);
             }
@@ -30906,16 +31019,19 @@ class Mode extends AggregateExpression {
             }
         }
         return results;
-    }
-}
+    };
+    return Mode;
+}(AggregateExpression));
 exports.Mode = Mode;
-class StdDev extends AggregateExpression {
-    constructor(json) {
-        super(json);
-        this.type = 'standard_deviation';
+var StdDev = /** @class */ (function (_super) {
+    __extends(StdDev, _super);
+    function StdDev(json) {
+        var _this = _super.call(this, json) || this;
+        _this.type = 'standard_deviation';
+        return _this;
     }
-    async exec(ctx) {
-        let items = await this.source.execute(ctx);
+    StdDev.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (!(0, util_1.typeIsArray)(items)) {
             return null;
         }
@@ -30929,46 +31045,49 @@ class StdDev extends AggregateExpression {
             return null;
         }
         if (hasOnlyQuantities(items)) {
-            const values = getValuesFromQuantities(items);
-            const stdDev = this.standardDeviation(values);
+            var values = getValuesFromQuantities(items);
+            var stdDev = this.standardDeviation(values);
             return new datatypes_1.Quantity(stdDev, items[0].unit);
         }
         else {
             return this.standardDeviation(items);
         }
-    }
-    standardDeviation(list) {
-        const val = this.stats(list);
+    };
+    StdDev.prototype.standardDeviation = function (list) {
+        var val = this.stats(list);
         if (val) {
             return val[this.type];
         }
-    }
-    stats(list) {
-        const sum = list.reduce((x, y) => x + y);
-        const mean = sum / list.length;
-        let sumOfSquares = 0;
-        for (const sq of list) {
+    };
+    StdDev.prototype.stats = function (list) {
+        var sum = list.reduce(function (x, y) { return x + y; });
+        var mean = sum / list.length;
+        var sumOfSquares = 0;
+        for (var _i = 0, list_1 = list; _i < list_1.length; _i++) {
+            var sq = list_1[_i];
             sumOfSquares += Math.pow(sq - mean, 2);
         }
-        const std_var = (1 / (list.length - 1)) * sumOfSquares;
-        const pop_var = (1 / list.length) * sumOfSquares;
-        const std_dev = Math.sqrt(std_var);
-        const pop_dev = Math.sqrt(pop_var);
+        var std_var = (1 / (list.length - 1)) * sumOfSquares;
+        var pop_var = (1 / list.length) * sumOfSquares;
+        var std_dev = Math.sqrt(std_var);
+        var pop_dev = Math.sqrt(pop_var);
         return {
             standard_variance: std_var,
             population_variance: pop_var,
             standard_deviation: std_dev,
             population_deviation: pop_dev
         };
-    }
-}
+    };
+    return StdDev;
+}(AggregateExpression));
 exports.StdDev = StdDev;
-class Product extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var Product = /** @class */ (function (_super) {
+    __extends(Product, _super);
+    function Product(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        let items = await this.source.execute(ctx);
+    Product.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (!(0, util_1.typeIsArray)(items)) {
             return null;
         }
@@ -30982,23 +31101,25 @@ class Product extends AggregateExpression {
             return null;
         }
         if (hasOnlyQuantities(items)) {
-            const values = getValuesFromQuantities(items);
-            const product = values.reduce((x, y) => x * y);
+            var values = getValuesFromQuantities(items);
+            var product = values.reduce(function (x, y) { return x * y; });
             // Units are not multiplied for the geometric product
             return new datatypes_1.Quantity(product, items[0].unit);
         }
         else {
-            return items.reduce((x, y) => x * y);
+            return items.reduce(function (x, y) { return x * y; });
         }
-    }
-}
+    };
+    return Product;
+}(AggregateExpression));
 exports.Product = Product;
-class GeometricMean extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var GeometricMean = /** @class */ (function (_super) {
+    __extends(GeometricMean, _super);
+    function GeometricMean(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        let items = await this.source.execute(ctx);
+    GeometricMean.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         if (!(0, util_1.typeIsArray)(items)) {
             return null;
         }
@@ -31012,61 +31133,75 @@ class GeometricMean extends AggregateExpression {
             return null;
         }
         if (hasOnlyQuantities(items)) {
-            const values = getValuesFromQuantities(items);
-            const product = values.reduce((x, y) => x * y);
-            const geoMean = Math.pow(product, 1.0 / items.length);
+            var values = getValuesFromQuantities(items);
+            var product = values.reduce(function (x, y) { return x * y; });
+            var geoMean = Math.pow(product, 1.0 / items.length);
             return new datatypes_1.Quantity(geoMean, items[0].unit);
         }
         else {
-            const product = items.reduce((x, y) => x * y);
+            var product = items.reduce(function (x, y) { return x * y; });
             return Math.pow(product, 1.0 / items.length);
         }
-    }
-}
+    };
+    return GeometricMean;
+}(AggregateExpression));
 exports.GeometricMean = GeometricMean;
-class PopulationStdDev extends StdDev {
-    constructor(json) {
-        super(json);
-        this.type = 'population_deviation';
+var PopulationStdDev = /** @class */ (function (_super) {
+    __extends(PopulationStdDev, _super);
+    function PopulationStdDev(json) {
+        var _this = _super.call(this, json) || this;
+        _this.type = 'population_deviation';
+        return _this;
     }
-}
+    return PopulationStdDev;
+}(StdDev));
 exports.PopulationStdDev = PopulationStdDev;
-class Variance extends StdDev {
-    constructor(json) {
-        super(json);
-        this.type = 'standard_variance';
+var Variance = /** @class */ (function (_super) {
+    __extends(Variance, _super);
+    function Variance(json) {
+        var _this = _super.call(this, json) || this;
+        _this.type = 'standard_variance';
+        return _this;
     }
-}
+    return Variance;
+}(StdDev));
 exports.Variance = Variance;
-class PopulationVariance extends StdDev {
-    constructor(json) {
-        super(json);
-        this.type = 'population_variance';
+var PopulationVariance = /** @class */ (function (_super) {
+    __extends(PopulationVariance, _super);
+    function PopulationVariance(json) {
+        var _this = _super.call(this, json) || this;
+        _this.type = 'population_variance';
+        return _this;
     }
-}
+    return PopulationVariance;
+}(StdDev));
 exports.PopulationVariance = PopulationVariance;
-class AllTrue extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var AllTrue = /** @class */ (function (_super) {
+    __extends(AllTrue, _super);
+    function AllTrue(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const items = await this.source.execute(ctx);
+    AllTrue.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         return (0, util_1.allTrue)((0, util_1.removeNulls)(items));
-    }
-}
+    };
+    return AllTrue;
+}(AggregateExpression));
 exports.AllTrue = AllTrue;
-class AnyTrue extends AggregateExpression {
-    constructor(json) {
-        super(json);
+var AnyTrue = /** @class */ (function (_super) {
+    __extends(AnyTrue, _super);
+    function AnyTrue(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const items = await this.source.execute(ctx);
+    AnyTrue.prototype.exec = function (ctx) {
+        var items = this.source.execute(ctx);
         return (0, util_1.anyTrue)(items);
-    }
-}
+    };
+    return AnyTrue;
+}(AggregateExpression));
 exports.AnyTrue = AnyTrue;
 function processQuantities(values) {
-    const items = (0, util_1.removeNulls)(values);
+    var items = (0, util_1.removeNulls)(values);
     if (hasOnlyQuantities(items)) {
         return convertAllUnits(items);
     }
@@ -31078,20 +31213,20 @@ function processQuantities(values) {
     }
 }
 function getValuesFromQuantities(quantities) {
-    return quantities.map(quantity => quantity.value);
+    return quantities.map(function (quantity) { return quantity.value; });
 }
 function hasOnlyQuantities(arr) {
-    return arr.every(x => x.isQuantity);
+    return arr.every(function (x) { return x.isQuantity; });
 }
 function hasSomeQuantities(arr) {
-    return arr.some(x => x.isQuantity);
+    return arr.some(function (x) { return x.isQuantity; });
 }
 function convertAllUnits(arr) {
     // convert all quantities in array to match the unit of the first item
-    return arr.map(q => q.convertUnit(arr[0].unit));
+    return arr.map(function (q) { return q.convertUnit(arr[0].unit); });
 }
 function medianOfNumbers(numbers) {
-    const items = (0, util_1.numerical_sort)(numbers, 'asc');
+    var items = (0, util_1.numerical_sort)(numbers, 'asc');
     if (items.length % 2 === 1) {
         // Odd number of items
         return items[(items.length - 1) / 2];
@@ -31102,8 +31237,23 @@ function medianOfNumbers(numbers) {
     }
 }
 
-},{"../datatypes/datatypes":172,"../datatypes/exception":174,"../util/comparison":218,"../util/util":223,"./builder":182,"./expression":188}],181:[function(require,module,exports){
+},{"../datatypes/datatypes":172,"../datatypes/exception":174,"../util/comparison":218,"../util/util":221,"./builder":182,"./expression":188}],181:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -31125,21 +31275,22 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Predecessor = exports.Successor = exports.MaxValue = exports.MinValue = exports.Power = exports.Log = exports.Exp = exports.Ln = exports.Round = exports.Negate = exports.Abs = exports.Truncate = exports.Floor = exports.Ceiling = exports.Modulo = exports.TruncatedDivide = exports.Divide = exports.Multiply = exports.Subtract = exports.Add = void 0;
-const expression_1 = require("./expression");
-const MathUtil = __importStar(require("../util/math"));
-const quantity_1 = require("../datatypes/quantity");
-const uncertainty_1 = require("../datatypes/uncertainty");
-const builder_1 = require("./builder");
-class Add extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var expression_1 = require("./expression");
+var MathUtil = __importStar(require("../util/math"));
+var quantity_1 = require("../datatypes/quantity");
+var uncertainty_1 = require("../datatypes/uncertainty");
+var builder_1 = require("./builder");
+var Add = /** @class */ (function (_super) {
+    __extends(Add, _super);
+    function Add(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    Add.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const sum = args.reduce((x, y) => {
+        var sum = args.reduce(function (x, y) {
             if (x.isUncertainty && !y.isUncertainty) {
                 y = new uncertainty_1.Uncertainty(y, y);
             }
@@ -31168,19 +31319,21 @@ class Add extends expression_1.Expression {
             return null;
         }
         return sum;
-    }
-}
+    };
+    return Add;
+}(expression_1.Expression));
 exports.Add = Add;
-class Subtract extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Subtract = /** @class */ (function (_super) {
+    __extends(Subtract, _super);
+    function Subtract(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    Subtract.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const difference = args.reduce((x, y) => {
+        var difference = args.reduce(function (x, y) {
             if (x.isUncertainty && !y.isUncertainty) {
                 y = new uncertainty_1.Uncertainty(y, y);
             }
@@ -31206,19 +31359,21 @@ class Subtract extends expression_1.Expression {
             return null;
         }
         return difference;
-    }
-}
+    };
+    return Subtract;
+}(expression_1.Expression));
 exports.Subtract = Subtract;
-class Multiply extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Multiply = /** @class */ (function (_super) {
+    __extends(Multiply, _super);
+    function Multiply(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    Multiply.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const product = args.reduce((x, y) => {
+        var product = args.reduce(function (x, y) {
             if (x.isUncertainty && !y.isUncertainty) {
                 y = new uncertainty_1.Uncertainty(y, y);
             }
@@ -31244,19 +31399,21 @@ class Multiply extends expression_1.Expression {
             return null;
         }
         return product;
-    }
-}
+    };
+    return Multiply;
+}(expression_1.Expression));
 exports.Multiply = Multiply;
-class Divide extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Divide = /** @class */ (function (_super) {
+    __extends(Divide, _super);
+    function Divide(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    Divide.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const quotient = args.reduce((x, y) => {
+        var quotient = args.reduce(function (x, y) {
             if (x.isUncertainty && !y.isUncertainty) {
                 y = new uncertainty_1.Uncertainty(y, y);
             }
@@ -31284,86 +31441,98 @@ class Divide extends expression_1.Expression {
             return null;
         }
         return quotient;
-    }
-}
+    };
+    return Divide;
+}(expression_1.Expression));
 exports.Divide = Divide;
-class TruncatedDivide extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var TruncatedDivide = /** @class */ (function (_super) {
+    __extends(TruncatedDivide, _super);
+    function TruncatedDivide(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    TruncatedDivide.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const quotient = args.reduce((x, y) => x / y);
-        const truncatedQuotient = quotient >= 0 ? Math.floor(quotient) : Math.ceil(quotient);
+        var quotient = args.reduce(function (x, y) { return x / y; });
+        var truncatedQuotient = quotient >= 0 ? Math.floor(quotient) : Math.ceil(quotient);
         if (MathUtil.overflowsOrUnderflows(truncatedQuotient)) {
             return null;
         }
         return truncatedQuotient;
-    }
-}
+    };
+    return TruncatedDivide;
+}(expression_1.Expression));
 exports.TruncatedDivide = TruncatedDivide;
-class Modulo extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Modulo = /** @class */ (function (_super) {
+    __extends(Modulo, _super);
+    function Modulo(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    Modulo.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const modulo = args.reduce((x, y) => x % y);
+        var modulo = args.reduce(function (x, y) { return x % y; });
         return MathUtil.decimalOrNull(modulo);
-    }
-}
+    };
+    return Modulo;
+}(expression_1.Expression));
 exports.Modulo = Modulo;
-class Ceiling extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Ceiling = /** @class */ (function (_super) {
+    __extends(Ceiling, _super);
+    function Ceiling(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Ceiling.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
         return Math.ceil(arg);
-    }
-}
+    };
+    return Ceiling;
+}(expression_1.Expression));
 exports.Ceiling = Ceiling;
-class Floor extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Floor = /** @class */ (function (_super) {
+    __extends(Floor, _super);
+    function Floor(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Floor.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
         return Math.floor(arg);
-    }
-}
+    };
+    return Floor;
+}(expression_1.Expression));
 exports.Floor = Floor;
-class Truncate extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Truncate = /** @class */ (function (_super) {
+    __extends(Truncate, _super);
+    function Truncate(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Truncate.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
         return arg >= 0 ? Math.floor(arg) : Math.ceil(arg);
-    }
-}
+    };
+    return Truncate;
+}(expression_1.Expression));
 exports.Truncate = Truncate;
-class Abs extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Abs = /** @class */ (function (_super) {
+    __extends(Abs, _super);
+    function Abs(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Abs.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
@@ -31373,15 +31542,17 @@ class Abs extends expression_1.Expression {
         else {
             return Math.abs(arg);
         }
-    }
-}
+    };
+    return Abs;
+}(expression_1.Expression));
 exports.Abs = Abs;
-class Negate extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Negate = /** @class */ (function (_super) {
+    __extends(Negate, _super);
+    function Negate(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Negate.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
@@ -31391,95 +31562,109 @@ class Negate extends expression_1.Expression {
         else {
             return arg * -1;
         }
-    }
-}
+    };
+    return Negate;
+}(expression_1.Expression));
 exports.Negate = Negate;
-class Round extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = (0, builder_1.build)(json.precision);
+var Round = /** @class */ (function (_super) {
+    __extends(Round, _super);
+    function Round(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = (0, builder_1.build)(json.precision);
+        return _this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Round.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
-        const dec = this.precision != null ? await this.precision.execute(ctx) : 0;
+        var dec = this.precision != null ? this.precision.execute(ctx) : 0;
         return Math.round(arg * Math.pow(10, dec)) / Math.pow(10, dec);
-    }
-}
+    };
+    return Round;
+}(expression_1.Expression));
 exports.Round = Round;
-class Ln extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Ln = /** @class */ (function (_super) {
+    __extends(Ln, _super);
+    function Ln(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Ln.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
-        const ln = Math.log(arg);
+        var ln = Math.log(arg);
         return MathUtil.decimalOrNull(ln);
-    }
-}
+    };
+    return Ln;
+}(expression_1.Expression));
 exports.Ln = Ln;
-class Exp extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Exp = /** @class */ (function (_super) {
+    __extends(Exp, _super);
+    function Exp(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Exp.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
-        const power = Math.exp(arg);
+        var power = Math.exp(arg);
         if (MathUtil.overflowsOrUnderflows(power)) {
             return null;
         }
         return power;
-    }
-}
+    };
+    return Exp;
+}(expression_1.Expression));
 exports.Exp = Exp;
-class Log extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Log = /** @class */ (function (_super) {
+    __extends(Log, _super);
+    function Log(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    Log.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const log = args.reduce((x, y) => Math.log(x) / Math.log(y));
+        var log = args.reduce(function (x, y) { return Math.log(x) / Math.log(y); });
         return MathUtil.decimalOrNull(log);
-    }
-}
+    };
+    return Log;
+}(expression_1.Expression));
 exports.Log = Log;
-class Power extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Power = /** @class */ (function (_super) {
+    __extends(Power, _super);
+    function Power(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args == null || args.some((x) => x == null)) {
+    Power.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args == null || args.some(function (x) { return x == null; })) {
             return null;
         }
-        const power = args.reduce((x, y) => Math.pow(x, y));
+        var power = args.reduce(function (x, y) { return Math.pow(x, y); });
         if (MathUtil.overflowsOrUnderflows(power)) {
             return null;
         }
         return power;
-    }
-}
+    };
+    return Power;
+}(expression_1.Expression));
 exports.Power = Power;
-class MinValue extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.valueType = json.valueType;
+var MinValue = /** @class */ (function (_super) {
+    __extends(MinValue, _super);
+    function MinValue(json) {
+        var _this = _super.call(this, json) || this;
+        _this.valueType = json.valueType;
+        return _this;
     }
-    async exec(ctx) {
+    MinValue.prototype.exec = function (ctx) {
         if (MinValue.MIN_VALUES[this.valueType]) {
             if (this.valueType === '{urn:hl7-org:elm-types:r1}DateTime') {
-                const minDateTime = MinValue.MIN_VALUES[this.valueType].copy();
+                var minDateTime = MinValue.MIN_VALUES[this.valueType].copy();
                 minDateTime.timezoneOffset = ctx.getTimezoneOffset();
                 return minDateTime;
             }
@@ -31488,27 +31673,30 @@ class MinValue extends expression_1.Expression {
             }
         }
         else {
-            throw new Error(`Minimum not supported for ${this.valueType}`);
+            throw new Error("Minimum not supported for ".concat(this.valueType));
         }
-    }
-}
+    };
+    MinValue.MIN_VALUES = {
+        '{urn:hl7-org:elm-types:r1}Integer': MathUtil.MIN_INT_VALUE,
+        '{urn:hl7-org:elm-types:r1}Decimal': MathUtil.MIN_FLOAT_VALUE,
+        '{urn:hl7-org:elm-types:r1}DateTime': MathUtil.MIN_DATETIME_VALUE,
+        '{urn:hl7-org:elm-types:r1}Date': MathUtil.MIN_DATE_VALUE,
+        '{urn:hl7-org:elm-types:r1}Time': MathUtil.MIN_TIME_VALUE
+    };
+    return MinValue;
+}(expression_1.Expression));
 exports.MinValue = MinValue;
-MinValue.MIN_VALUES = {
-    '{urn:hl7-org:elm-types:r1}Integer': MathUtil.MIN_INT_VALUE,
-    '{urn:hl7-org:elm-types:r1}Decimal': MathUtil.MIN_FLOAT_VALUE,
-    '{urn:hl7-org:elm-types:r1}DateTime': MathUtil.MIN_DATETIME_VALUE,
-    '{urn:hl7-org:elm-types:r1}Date': MathUtil.MIN_DATE_VALUE,
-    '{urn:hl7-org:elm-types:r1}Time': MathUtil.MIN_TIME_VALUE
-};
-class MaxValue extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.valueType = json.valueType;
+var MaxValue = /** @class */ (function (_super) {
+    __extends(MaxValue, _super);
+    function MaxValue(json) {
+        var _this = _super.call(this, json) || this;
+        _this.valueType = json.valueType;
+        return _this;
     }
-    async exec(ctx) {
+    MaxValue.prototype.exec = function (ctx) {
         if (MaxValue.MAX_VALUES[this.valueType] != null) {
             if (this.valueType === '{urn:hl7-org:elm-types:r1}DateTime') {
-                const maxDateTime = MaxValue.MAX_VALUES[this.valueType].copy();
+                var maxDateTime = MaxValue.MAX_VALUES[this.valueType].copy();
                 maxDateTime.timezoneOffset = ctx.getTimezoneOffset();
                 return maxDateTime;
             }
@@ -31517,28 +31705,30 @@ class MaxValue extends expression_1.Expression {
             }
         }
         else {
-            throw new Error(`Maximum not supported for ${this.valueType}`);
+            throw new Error("Maximum not supported for ".concat(this.valueType));
         }
-    }
-}
+    };
+    MaxValue.MAX_VALUES = {
+        '{urn:hl7-org:elm-types:r1}Integer': MathUtil.MAX_INT_VALUE,
+        '{urn:hl7-org:elm-types:r1}Decimal': MathUtil.MAX_FLOAT_VALUE,
+        '{urn:hl7-org:elm-types:r1}DateTime': MathUtil.MAX_DATETIME_VALUE,
+        '{urn:hl7-org:elm-types:r1}Date': MathUtil.MAX_DATE_VALUE,
+        '{urn:hl7-org:elm-types:r1}Time': MathUtil.MAX_TIME_VALUE
+    };
+    return MaxValue;
+}(expression_1.Expression));
 exports.MaxValue = MaxValue;
-MaxValue.MAX_VALUES = {
-    '{urn:hl7-org:elm-types:r1}Integer': MathUtil.MAX_INT_VALUE,
-    '{urn:hl7-org:elm-types:r1}Decimal': MathUtil.MAX_FLOAT_VALUE,
-    '{urn:hl7-org:elm-types:r1}DateTime': MathUtil.MAX_DATETIME_VALUE,
-    '{urn:hl7-org:elm-types:r1}Date': MathUtil.MAX_DATE_VALUE,
-    '{urn:hl7-org:elm-types:r1}Time': MathUtil.MAX_TIME_VALUE
-};
-class Successor extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Successor = /** @class */ (function (_super) {
+    __extends(Successor, _super);
+    function Successor(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Successor.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
-        let successor = null;
+        var successor = null;
         try {
             // MathUtil.successor throws on overflow, and the exception is used in
             // the logic for evaluating `meets`, so it can't be changed to just return null
@@ -31553,19 +31743,21 @@ class Successor extends expression_1.Expression {
             return null;
         }
         return successor;
-    }
-}
+    };
+    return Successor;
+}(expression_1.Expression));
 exports.Successor = Successor;
-class Predecessor extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Predecessor = /** @class */ (function (_super) {
+    __extends(Predecessor, _super);
+    function Predecessor(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Predecessor.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
-        let predecessor = null;
+        var predecessor = null;
         try {
             // MathUtil.predecessor throws on underflow, and the exception is used in
             // the logic for evaluating `meets`, so it can't be changed to just return null
@@ -31580,11 +31772,12 @@ class Predecessor extends expression_1.Expression {
             return null;
         }
         return predecessor;
-    }
-}
+    };
+    return Predecessor;
+}(expression_1.Expression));
 exports.Predecessor = Predecessor;
 
-},{"../datatypes/quantity":177,"../datatypes/uncertainty":179,"../util/math":221,"./builder":182,"./expression":188}],182:[function(require,module,exports){
+},{"../datatypes/quantity":177,"../datatypes/uncertainty":179,"../util/math":219,"./builder":182,"./expression":188}],182:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -31608,14 +31801,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.build = void 0;
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-const E = __importStar(require("./expressions"));
-const util_1 = require("../util/util");
+var E = __importStar(require("./expressions"));
+var util_1 = require("../util/util");
 function build(json) {
     if (json == null) {
         return json;
     }
     if ((0, util_1.typeIsArray)(json)) {
-        return json.map(child => build(child));
+        return json.map(function (child) { return build(child); });
     }
     if (json.type === 'FunctionRef') {
         return new E.FunctionRef(json);
@@ -31640,8 +31833,23 @@ function constructByName(name, json) {
     return new E[name](json);
 }
 
-},{"../util/util":223,"./expressions":189}],183:[function(require,module,exports){
+},{"../util/util":221,"./expressions":189}],183:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -31662,408 +31870,476 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CalculateAgeAt = exports.CalculateAge = exports.Concept = exports.ConceptRef = exports.ConceptDef = exports.Code = exports.CodeRef = exports.CodeDef = exports.CodeSystemDef = exports.ExpandValueSet = exports.InValueSet = exports.AnyInValueSet = exports.ValueSetRef = exports.ValueSetDef = void 0;
-const expression_1 = require("./expression");
-const dt = __importStar(require("../datatypes/datatypes"));
-const builder_1 = require("./builder");
-class ValueSetDef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.id = json.id;
-        this.version = json.version;
+exports.CalculateAgeAt = exports.CalculateAge = exports.Concept = exports.ConceptRef = exports.ConceptDef = exports.Code = exports.CodeRef = exports.CodeDef = exports.CodeSystemDef = exports.InValueSet = exports.AnyInValueSet = exports.ValueSetRef = exports.ValueSetDef = void 0;
+var expression_1 = require("./expression");
+var dt = __importStar(require("../datatypes/datatypes"));
+var builder_1 = require("./builder");
+var ValueSetDef = /** @class */ (function (_super) {
+    __extends(ValueSetDef, _super);
+    function ValueSetDef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.id = json.id;
+        _this.version = json.version;
+        return _this;
     }
     //todo: code systems and versions
-    async exec(ctx) {
-        const valueset = (await ctx.codeService.findValueSet(this.id, this.version)) ||
-            new dt.ValueSet(this.id, this.version);
+    ValueSetDef.prototype.exec = function (ctx) {
+        var valueset = ctx.codeService.findValueSet(this.id, this.version) || new dt.ValueSet(this.id, this.version);
         ctx.rootContext().set(this.name, valueset);
         return valueset;
-    }
-}
+    };
+    return ValueSetDef;
+}(expression_1.Expression));
 exports.ValueSetDef = ValueSetDef;
-class ValueSetRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.libraryName = json.libraryName;
+var ValueSetRef = /** @class */ (function (_super) {
+    __extends(ValueSetRef, _super);
+    function ValueSetRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.libraryName = json.libraryName;
+        return _this;
     }
-    async exec(ctx) {
+    ValueSetRef.prototype.exec = function (ctx) {
         // TODO: This calls the code service every time-- should be optimized
-        let valueset = ctx.getValueSet(this.name, this.libraryName);
+        var valueset = ctx.getValueSet(this.name, this.libraryName);
         if (valueset instanceof expression_1.Expression) {
-            valueset = await valueset.execute(ctx);
+            valueset = valueset.execute(ctx);
         }
         return valueset;
-    }
-}
+    };
+    return ValueSetRef;
+}(expression_1.Expression));
 exports.ValueSetRef = ValueSetRef;
-class AnyInValueSet extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.codes = (0, builder_1.build)(json.codes);
-        this.valueset = json.valueset
-            ? new ValueSetRef(json.valueset)
-            : (0, builder_1.build)(json.valuesetExpression);
+var AnyInValueSet = /** @class */ (function (_super) {
+    __extends(AnyInValueSet, _super);
+    function AnyInValueSet(json) {
+        var _this = _super.call(this, json) || this;
+        _this.codes = (0, builder_1.build)(json.codes);
+        _this.valueset = new ValueSetRef(json.valueset);
+        return _this;
     }
-    async exec(ctx) {
-        const codes = await this.codes.execute(ctx);
-        // spec indicates to return false if code is null, throw error if value set cannot be resolved
-        if (codes == null) {
+    AnyInValueSet.prototype.exec = function (ctx) {
+        var valueset = this.valueset.execute(ctx);
+        // If the value set reference cannot be resolved, a run-time error is thrown.
+        if (valueset == null || !valueset.isValueSet) {
+            throw new Error('ValueSet must be provided to InValueSet function');
+        }
+        var codes = this.codes.exec(ctx);
+        return codes != null && codes.some(function (code) { return valueset.hasMatch(code); });
+    };
+    return AnyInValueSet;
+}(expression_1.Expression));
+exports.AnyInValueSet = AnyInValueSet;
+var InValueSet = /** @class */ (function (_super) {
+    __extends(InValueSet, _super);
+    function InValueSet(json) {
+        var _this = _super.call(this, json) || this;
+        _this.code = (0, builder_1.build)(json.code);
+        _this.valueset = new ValueSetRef(json.valueset);
+        return _this;
+    }
+    InValueSet.prototype.exec = function (ctx) {
+        // If the code argument is null, the result is false
+        if (this.code == null) {
             return false;
         }
-        const valueset = await this.valueset.execute(ctx);
-        if (valueset == null || !valueset.isValueSet) {
-            throw new Error('ValueSet must be provided to AnyInValueSet expression');
+        if (this.valueset == null) {
+            throw new Error('ValueSet must be provided to InValueSet function');
         }
-        return codes.some((code) => valueset.hasMatch(code));
-    }
-}
-exports.AnyInValueSet = AnyInValueSet;
-class InValueSet extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.code = (0, builder_1.build)(json.code);
-        this.valueset = json.valueset
-            ? new ValueSetRef(json.valueset)
-            : (0, builder_1.build)(json.valuesetExpression);
-    }
-    async exec(ctx) {
-        const code = await this.code.execute(ctx);
+        var code = this.code.execute(ctx);
         // spec indicates to return false if code is null, throw error if value set cannot be resolved
         if (code == null) {
             return false;
         }
-        const valueset = await this.valueset.execute(ctx);
+        var valueset = this.valueset.execute(ctx);
         if (valueset == null || !valueset.isValueSet) {
-            throw new Error('ValueSet must be provided to InValueSet expression');
+            throw new Error('ValueSet must be provided to InValueSet function');
         }
         // If there is a code and valueset return whether or not the valueset has the code
         return valueset.hasMatch(code);
-    }
-}
+    };
+    return InValueSet;
+}(expression_1.Expression));
 exports.InValueSet = InValueSet;
-class ExpandValueSet extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.valueset = (0, builder_1.build)(json.operand);
+var CodeSystemDef = /** @class */ (function (_super) {
+    __extends(CodeSystemDef, _super);
+    function CodeSystemDef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.id = json.id;
+        _this.version = json.version;
+        return _this;
     }
-    async exec(ctx) {
-        const valueset = await this.valueset.execute(ctx);
-        if (valueset == null) {
-            return null;
-        }
-        else if (!valueset.isValueSet) {
-            throw new Error('ExpandValueSet function invoked on object that is not a ValueSet');
-        }
-        return valueset.expand();
-    }
-}
-exports.ExpandValueSet = ExpandValueSet;
-class CodeSystemDef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.id = json.id;
-        this.version = json.version;
-    }
-    async exec(_ctx) {
+    CodeSystemDef.prototype.exec = function (_ctx) {
         return new dt.CodeSystem(this.id, this.version);
-    }
-}
+    };
+    return CodeSystemDef;
+}(expression_1.Expression));
 exports.CodeSystemDef = CodeSystemDef;
-class CodeDef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.id = json.id;
-        this.systemName = json.codeSystem.name;
-        this.display = json.display;
+var CodeDef = /** @class */ (function (_super) {
+    __extends(CodeDef, _super);
+    function CodeDef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.id = json.id;
+        _this.systemName = json.codeSystem.name;
+        _this.display = json.display;
+        return _this;
     }
-    async exec(ctx) {
-        const system = await ctx.getCodeSystem(this.systemName).execute(ctx);
+    CodeDef.prototype.exec = function (ctx) {
+        var system = ctx.getCodeSystem(this.systemName).execute(ctx);
         return new dt.Code(this.id, system.id, system.version, this.display);
-    }
-}
+    };
+    return CodeDef;
+}(expression_1.Expression));
 exports.CodeDef = CodeDef;
-class CodeRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.library = json.libraryName;
+var CodeRef = /** @class */ (function (_super) {
+    __extends(CodeRef, _super);
+    function CodeRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.library = json.libraryName;
+        return _this;
     }
-    async exec(ctx) {
+    CodeRef.prototype.exec = function (ctx) {
         ctx = this.library ? ctx.getLibraryContext(this.library) : ctx;
-        const codeDef = ctx.getCode(this.name);
+        var codeDef = ctx.getCode(this.name);
         return codeDef ? codeDef.execute(ctx) : undefined;
-    }
-}
+    };
+    return CodeRef;
+}(expression_1.Expression));
 exports.CodeRef = CodeRef;
-class Code extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.code = json.code;
-        this.systemName = json.system.name;
-        this.version = json.version;
-        this.display = json.display;
+var Code = /** @class */ (function (_super) {
+    __extends(Code, _super);
+    function Code(json) {
+        var _this = _super.call(this, json) || this;
+        _this.code = json.code;
+        _this.systemName = json.system.name;
+        _this.version = json.version;
+        _this.display = json.display;
+        return _this;
     }
-    // Define a simple getter to allow type-checking of this class without instanceof
-    // and in a way that survives minification (as opposed to checking constructor.name)
-    get isCode() {
-        return true;
-    }
-    async exec(ctx) {
-        const system = ctx.getCodeSystem(this.systemName) || {};
+    Object.defineProperty(Code.prototype, "isCode", {
+        // Define a simple getter to allow type-checking of this class without instanceof
+        // and in a way that survives minification (as opposed to checking constructor.name)
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Code.prototype.exec = function (ctx) {
+        var system = ctx.getCodeSystem(this.systemName) || {};
         return new dt.Code(this.code, system.id, this.version, this.display);
-    }
-}
+    };
+    return Code;
+}(expression_1.Expression));
 exports.Code = Code;
-class ConceptDef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.display = json.display;
-        this.codes = json.code;
+var ConceptDef = /** @class */ (function (_super) {
+    __extends(ConceptDef, _super);
+    function ConceptDef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.display = json.display;
+        _this.codes = json.code;
+        return _this;
     }
-    async exec(ctx) {
-        const codes = await Promise.all(this.codes.map(async (code) => {
-            const codeDef = ctx.getCode(code.name);
+    ConceptDef.prototype.exec = function (ctx) {
+        var codes = this.codes.map(function (code) {
+            var codeDef = ctx.getCode(code.name);
             return codeDef ? codeDef.execute(ctx) : undefined;
-        }));
+        });
         return new dt.Concept(codes, this.display);
-    }
-}
+    };
+    return ConceptDef;
+}(expression_1.Expression));
 exports.ConceptDef = ConceptDef;
-class ConceptRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
+var ConceptRef = /** @class */ (function (_super) {
+    __extends(ConceptRef, _super);
+    function ConceptRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        return _this;
     }
-    async exec(ctx) {
-        const conceptDef = ctx.getConcept(this.name);
+    ConceptRef.prototype.exec = function (ctx) {
+        var conceptDef = ctx.getConcept(this.name);
         return conceptDef ? conceptDef.execute(ctx) : undefined;
-    }
-}
+    };
+    return ConceptRef;
+}(expression_1.Expression));
 exports.ConceptRef = ConceptRef;
-class Concept extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.codes = json.code;
-        this.display = json.display;
+var Concept = /** @class */ (function (_super) {
+    __extends(Concept, _super);
+    function Concept(json) {
+        var _this = _super.call(this, json) || this;
+        _this.codes = json.code;
+        _this.display = json.display;
+        return _this;
     }
-    // Define a simple getter to allow type-checking of this class without instanceof
-    // and in a way that survives minification (as opposed to checking constructor.name)
-    get isConcept() {
-        return true;
-    }
-    toCode(ctx, code) {
-        const system = ctx.getCodeSystem(code.system.name) || {};
+    Object.defineProperty(Concept.prototype, "isConcept", {
+        // Define a simple getter to allow type-checking of this class without instanceof
+        // and in a way that survives minification (as opposed to checking constructor.name)
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Concept.prototype.toCode = function (ctx, code) {
+        var system = ctx.getCodeSystem(code.system.name) || {};
         return new dt.Code(code.code, system.id, code.version, code.display);
-    }
-    async exec(ctx) {
-        const codes = this.codes.map((code) => this.toCode(ctx, code));
+    };
+    Concept.prototype.exec = function (ctx) {
+        var _this = this;
+        var codes = this.codes.map(function (code) { return _this.toCode(ctx, code); });
         return new dt.Concept(codes, this.display);
-    }
-}
+    };
+    return Concept;
+}(expression_1.Expression));
 exports.Concept = Concept;
-class CalculateAge extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
+var CalculateAge = /** @class */ (function (_super) {
+    __extends(CalculateAge, _super);
+    function CalculateAge(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    async exec(ctx) {
-        const birthDate = await this.execArgs(ctx);
-        // From the spec: "Note that for AgeInYears and AgeInMonths, the birthDate is specified as a
-        // Date and Today() is used to obtain the current date; whereas with the other precisions,
-        // birthDate is specified as a DateTime, and Now() is used to obtain the current DateTime."
-        // See: https://cql.hl7.org/09-b-cqlreference.html#age
-        let asOf;
-        if (this.precision.toLowerCase() === dt.DateTime.Unit.YEAR ||
-            this.precision.toLowerCase() === dt.DateTime.Unit.MONTH) {
-            asOf = dt.DateTime.fromJSDate(ctx.getExecutionDateTime()).getDate();
-        }
-        else {
-            asOf = dt.DateTime.fromJSDate(ctx.getExecutionDateTime());
-        }
-        return calculateAge(this.precision, birthDate, asOf);
-    }
-}
-exports.CalculateAge = CalculateAge;
-class CalculateAgeAt extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
-    }
-    async exec(ctx) {
-        const [birthDate, asOf] = await this.execArgs(ctx);
-        const timeZoneOffset = ctx.getExecutionDateTime().timezoneOffset;
-        return calculateAge(this.precision, birthDate, asOf, timeZoneOffset);
-    }
-}
-exports.CalculateAgeAt = CalculateAgeAt;
-/**
- * Calculates the age as of a certain date based on the passed in birth date. If the asOf date is
- * a Date, then birth date will be converted to a Date (if necessary) before calculation is
- * performed. If the asOf is a DateTime, then the birth date will be converted to a DateTime (if
- * necessary) before calculation is performed. The result is an integer or uncertainty specifying
- * the age in the requested precision units.
- * @param precision - the precision as specified in the ELM (e.g., Year, Month, Week, etc.)
- * @param birthDate - the birth date to use for age calculations (may be Date or DateTime)
- * @param asOf - the date on which the age should be calculated (may be Date or DateTime)
- * @param timeZoneOffset - the passed in timeZoneOffset (if it exists) to be used when
- * converting birthDate from a Date to a DateTime
- * @returns the age as an integer or uncertainty in the requested precision units
- */
-function calculateAge(precision, birthDate, asOf, timeZoneOffset) {
-    if (birthDate != null && asOf != null) {
-        // Ensure we use like types (Date or DateTime) based on asOf type
-        if (asOf.isDate && birthDate.isDateTime) {
-            birthDate = birthDate.getDate();
-        }
-        else if (asOf.isDateTime && birthDate.isDate) {
-            birthDate = birthDate.getDateTime(timeZoneOffset);
-        }
-        const result = birthDate.durationBetween(asOf, precision.toLowerCase());
-        if (result === null || result === void 0 ? void 0 : result.isPoint()) {
+    CalculateAge.prototype.exec = function (ctx) {
+        var date1 = this.execArgs(ctx);
+        var date2 = dt.DateTime.fromJSDate(ctx.getExecutionDateTime());
+        var result = date1 != null ? date1.durationBetween(date2, this.precision.toLowerCase()) : undefined;
+        if (result != null && result.isPoint()) {
             return result.low;
         }
         else {
             return result;
         }
+    };
+    return CalculateAge;
+}(expression_1.Expression));
+exports.CalculateAge = CalculateAge;
+var CalculateAgeAt = /** @class */ (function (_super) {
+    __extends(CalculateAgeAt, _super);
+    function CalculateAgeAt(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    return null;
-}
+    CalculateAgeAt.prototype.exec = function (ctx) {
+        // eslint-disable-next-line prefer-const
+        var _a = this.execArgs(ctx), date1 = _a[0], date2 = _a[1];
+        if (date1 != null && date2 != null) {
+            // date1 is the birthdate, convert it to date if date2 is a date (to support ignoring time)
+            if (date2.isDate && date1.isDateTime) {
+                date1 = date1.getDate();
+            }
+            var result = date1.durationBetween(date2, this.precision.toLowerCase());
+            if (result != null && result.isPoint()) {
+                return result.low;
+            }
+            else {
+                return result;
+            }
+        }
+        return null;
+    };
+    return CalculateAgeAt;
+}(expression_1.Expression));
+exports.CalculateAgeAt = CalculateAgeAt;
 
 },{"../datatypes/datatypes":172,"./builder":182,"./expression":188}],184:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GreaterOrEqual = exports.Greater = exports.LessOrEqual = exports.Less = void 0;
-const expression_1 = require("./expression");
-const datatypes_1 = require("../datatypes/datatypes");
+var expression_1 = require("./expression");
+var datatypes_1 = require("../datatypes/datatypes");
 // Equal is completely handled by overloaded#Equal
 // NotEqual is completely handled by overloaded#Equal
-class Less extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Less = /** @class */ (function (_super) {
+    __extends(Less, _super);
+    function Less(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = (await this.execArgs(ctx)).map((x) => datatypes_1.Uncertainty.from(x));
+    Less.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx).map(function (x) { return datatypes_1.Uncertainty.from(x); });
         if (args[0] == null || args[1] == null) {
             return null;
         }
         return args[0].lessThan(args[1]);
-    }
-}
+    };
+    return Less;
+}(expression_1.Expression));
 exports.Less = Less;
-class LessOrEqual extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var LessOrEqual = /** @class */ (function (_super) {
+    __extends(LessOrEqual, _super);
+    function LessOrEqual(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = (await this.execArgs(ctx)).map((x) => datatypes_1.Uncertainty.from(x));
+    LessOrEqual.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx).map(function (x) { return datatypes_1.Uncertainty.from(x); });
         if (args[0] == null || args[1] == null) {
             return null;
         }
         return args[0].lessThanOrEquals(args[1]);
-    }
-}
+    };
+    return LessOrEqual;
+}(expression_1.Expression));
 exports.LessOrEqual = LessOrEqual;
-class Greater extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Greater = /** @class */ (function (_super) {
+    __extends(Greater, _super);
+    function Greater(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = (await this.execArgs(ctx)).map((x) => datatypes_1.Uncertainty.from(x));
+    Greater.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx).map(function (x) { return datatypes_1.Uncertainty.from(x); });
         if (args[0] == null || args[1] == null) {
             return null;
         }
         return args[0].greaterThan(args[1]);
-    }
-}
+    };
+    return Greater;
+}(expression_1.Expression));
 exports.Greater = Greater;
-class GreaterOrEqual extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var GreaterOrEqual = /** @class */ (function (_super) {
+    __extends(GreaterOrEqual, _super);
+    function GreaterOrEqual(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = (await this.execArgs(ctx)).map((x) => datatypes_1.Uncertainty.from(x));
+    GreaterOrEqual.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx).map(function (x) { return datatypes_1.Uncertainty.from(x); });
         if (args[0] == null || args[1] == null) {
             return null;
         }
         return args[0].greaterThanOrEquals(args[1]);
-    }
-}
+    };
+    return GreaterOrEqual;
+}(expression_1.Expression));
 exports.GreaterOrEqual = GreaterOrEqual;
 
 },{"../datatypes/datatypes":172,"./expression":188}],185:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Case = exports.CaseItem = exports.If = void 0;
-const expression_1 = require("./expression");
-const builder_1 = require("./builder");
-const comparison_1 = require("../util/comparison");
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var comparison_1 = require("../util/comparison");
 // TODO: Spec lists "Conditional", but it's "If" in the XSD
-class If extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.condition = (0, builder_1.build)(json.condition);
-        this.th = (0, builder_1.build)(json.then);
-        this.els = (0, builder_1.build)(json.else);
+var If = /** @class */ (function (_super) {
+    __extends(If, _super);
+    function If(json) {
+        var _this = _super.call(this, json) || this;
+        _this.condition = (0, builder_1.build)(json.condition);
+        _this.th = (0, builder_1.build)(json.then);
+        _this.els = (0, builder_1.build)(json.else);
+        return _this;
     }
-    async exec(ctx) {
-        if (await this.condition.execute(ctx)) {
+    If.prototype.exec = function (ctx) {
+        if (this.condition.execute(ctx)) {
             return this.th.execute(ctx);
         }
         else {
             return this.els.execute(ctx);
         }
-    }
-}
+    };
+    return If;
+}(expression_1.Expression));
 exports.If = If;
-class CaseItem {
-    constructor(json) {
+var CaseItem = /** @class */ (function () {
+    function CaseItem(json) {
         this.when = (0, builder_1.build)(json.when);
         this.then = (0, builder_1.build)(json.then);
     }
-}
+    return CaseItem;
+}());
 exports.CaseItem = CaseItem;
-class Case extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.comparand = (0, builder_1.build)(json.comparand);
-        this.caseItems = json.caseItem.map((ci) => new CaseItem(ci));
-        this.els = (0, builder_1.build)(json.else);
+var Case = /** @class */ (function (_super) {
+    __extends(Case, _super);
+    function Case(json) {
+        var _this = _super.call(this, json) || this;
+        _this.comparand = (0, builder_1.build)(json.comparand);
+        _this.caseItems = json.caseItem.map(function (ci) { return new CaseItem(ci); });
+        _this.els = (0, builder_1.build)(json.else);
+        return _this;
     }
-    async exec(ctx) {
+    Case.prototype.exec = function (ctx) {
         if (this.comparand) {
             return this.exec_selected(ctx);
         }
         else {
             return this.exec_standard(ctx);
         }
-    }
-    async exec_selected(ctx) {
-        const val = await this.comparand.execute(ctx);
-        for (const ci of this.caseItems) {
-            if ((0, comparison_1.equals)(await ci.when.execute(ctx), val)) {
+    };
+    Case.prototype.exec_selected = function (ctx) {
+        var val = this.comparand.execute(ctx);
+        for (var _i = 0, _a = this.caseItems; _i < _a.length; _i++) {
+            var ci = _a[_i];
+            if ((0, comparison_1.equals)(ci.when.execute(ctx), val)) {
                 return ci.then.execute(ctx);
             }
         }
         return this.els.execute(ctx);
-    }
-    async exec_standard(ctx) {
-        for (const ci of this.caseItems) {
-            if (await ci.when.execute(ctx)) {
+    };
+    Case.prototype.exec_standard = function (ctx) {
+        for (var _i = 0, _a = this.caseItems; _i < _a.length; _i++) {
+            var ci = _a[_i];
+            if (ci.when.execute(ctx)) {
                 return ci.then.execute(ctx);
             }
         }
         return this.els.execute(ctx);
-    }
-}
+    };
+    return Case;
+}(expression_1.Expression));
 exports.Case = Case;
 
 },{"../util/comparison":218,"./builder":182,"./expression":188}],186:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -32083,20 +32359,34 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DurationBetween = exports.DifferenceBetween = exports.doBefore = exports.doAfter = exports.TimezoneOffsetFrom = exports.TimeFrom = exports.DateFrom = exports.DateTimeComponentFrom = exports.TimeOfDay = exports.Now = exports.Today = exports.Time = exports.Date = exports.DateTime = void 0;
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-const expression_1 = require("./expression");
-const builder_1 = require("./builder");
-const literal_1 = require("./literal");
-const DT = __importStar(require("../datatypes/datatypes"));
-class DateTime extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.json = json;
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var literal_1 = require("./literal");
+var DT = __importStar(require("../datatypes/datatypes"));
+var DateTime = /** @class */ (function (_super) {
+    __extends(DateTime, _super);
+    function DateTime(json) {
+        var _this = _super.call(this, json) || this;
+        _this.json = json;
+        return _this;
     }
-    async exec(ctx) {
-        for (const property of DateTime.PROPERTIES) {
+    DateTime.prototype.exec = function (ctx) {
+        var _a;
+        var _this = this;
+        for (var _i = 0, _b = DateTime.PROPERTIES; _i < _b.length; _i++) {
+            var property = _b[_i];
             // if json does not contain 'timezoneOffset' set it to the executionDateTime from the context
             if (this.json[property] != null) {
                 // @ts-ignore
@@ -32111,149 +32401,174 @@ class DateTime extends expression_1.Expression {
                 });
             }
         }
-        const args = await Promise.all(
         // @ts-ignore
-        DateTime.PROPERTIES.map(async (p) => (this[p] != null ? this[p].execute(ctx) : undefined)));
-        return new DT.DateTime(...args);
-    }
-}
+        var args = DateTime.PROPERTIES.map(function (p) { return (_this[p] != null ? _this[p].execute(ctx) : undefined); });
+        return new ((_a = DT.DateTime).bind.apply(_a, __spreadArray([void 0], args, false)))();
+    };
+    DateTime.PROPERTIES = [
+        'year',
+        'month',
+        'day',
+        'hour',
+        'minute',
+        'second',
+        'millisecond',
+        'timezoneOffset'
+    ];
+    return DateTime;
+}(expression_1.Expression));
 exports.DateTime = DateTime;
-DateTime.PROPERTIES = [
-    'year',
-    'month',
-    'day',
-    'hour',
-    'minute',
-    'second',
-    'millisecond',
-    'timezoneOffset'
-];
-class Date extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.json = json;
+var Date = /** @class */ (function (_super) {
+    __extends(Date, _super);
+    function Date(json) {
+        var _this = _super.call(this, json) || this;
+        _this.json = json;
+        return _this;
     }
-    async exec(ctx) {
-        for (const property of Date.PROPERTIES) {
+    Date.prototype.exec = function (ctx) {
+        var _a;
+        var _this = this;
+        for (var _i = 0, _b = Date.PROPERTIES; _i < _b.length; _i++) {
+            var property = _b[_i];
             if (this.json[property] != null) {
                 // @ts-ignore
                 this[property] = (0, builder_1.build)(this.json[property]);
             }
         }
-        const args = await Promise.all(
         // @ts-ignore
-        Date.PROPERTIES.map(async (p) => (this[p] != null ? this[p].execute(ctx) : undefined)));
-        return new DT.Date(...args);
-    }
-}
+        var args = Date.PROPERTIES.map(function (p) { return (_this[p] != null ? _this[p].execute(ctx) : undefined); });
+        return new ((_a = DT.Date).bind.apply(_a, __spreadArray([void 0], args, false)))();
+    };
+    Date.PROPERTIES = ['year', 'month', 'day'];
+    return Date;
+}(expression_1.Expression));
 exports.Date = Date;
-Date.PROPERTIES = ['year', 'month', 'day'];
-class Time extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        for (const property of Time.PROPERTIES) {
+var Time = /** @class */ (function (_super) {
+    __extends(Time, _super);
+    function Time(json) {
+        var _this = _super.call(this, json) || this;
+        for (var _i = 0, _a = Time.PROPERTIES; _i < _a.length; _i++) {
+            var property = _a[_i];
             if (json[property] != null) {
                 // @ts-ignore
-                this[property] = (0, builder_1.build)(json[property]);
+                _this[property] = (0, builder_1.build)(json[property]);
             }
         }
+        return _this;
     }
-    async exec(ctx) {
-        const args = await Promise.all(
+    Time.prototype.exec = function (ctx) {
+        var _a;
+        var _this = this;
         // @ts-ignore
-        Time.PROPERTIES.map(async (p) => (this[p] != null ? this[p].execute(ctx) : undefined)));
-        return new DT.DateTime(0, 1, 1, ...args).getTime();
-    }
-}
+        var args = Time.PROPERTIES.map(function (p) { return (_this[p] != null ? _this[p].execute(ctx) : undefined); });
+        return new ((_a = DT.DateTime).bind.apply(_a, __spreadArray([void 0, 0, 1, 1], args, false)))().getTime();
+    };
+    Time.PROPERTIES = ['hour', 'minute', 'second', 'millisecond'];
+    return Time;
+}(expression_1.Expression));
 exports.Time = Time;
-Time.PROPERTIES = ['hour', 'minute', 'second', 'millisecond'];
-class Today extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Today = /** @class */ (function (_super) {
+    __extends(Today, _super);
+    function Today(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
+    Today.prototype.exec = function (ctx) {
         return ctx.getExecutionDateTime().getDate();
-    }
-}
+    };
+    return Today;
+}(expression_1.Expression));
 exports.Today = Today;
-class Now extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Now = /** @class */ (function (_super) {
+    __extends(Now, _super);
+    function Now(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
+    Now.prototype.exec = function (ctx) {
         return ctx.getExecutionDateTime();
-    }
-}
+    };
+    return Now;
+}(expression_1.Expression));
 exports.Now = Now;
-class TimeOfDay extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var TimeOfDay = /** @class */ (function (_super) {
+    __extends(TimeOfDay, _super);
+    function TimeOfDay(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
+    TimeOfDay.prototype.exec = function (ctx) {
         return ctx.getExecutionDateTime().getTime();
-    }
-}
+    };
+    return TimeOfDay;
+}(expression_1.Expression));
 exports.TimeOfDay = TimeOfDay;
-class DateTimeComponentFrom extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
+var DateTimeComponentFrom = /** @class */ (function (_super) {
+    __extends(DateTimeComponentFrom, _super);
+    function DateTimeComponentFrom(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    DateTimeComponentFrom.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             return arg[this.precision.toLowerCase()];
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return DateTimeComponentFrom;
+}(expression_1.Expression));
 exports.DateTimeComponentFrom = DateTimeComponentFrom;
-class DateFrom extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var DateFrom = /** @class */ (function (_super) {
+    __extends(DateFrom, _super);
+    function DateFrom(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const date = await this.execArgs(ctx);
+    DateFrom.prototype.exec = function (ctx) {
+        var date = this.execArgs(ctx);
         if (date != null) {
             return date.getDate();
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return DateFrom;
+}(expression_1.Expression));
 exports.DateFrom = DateFrom;
-class TimeFrom extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var TimeFrom = /** @class */ (function (_super) {
+    __extends(TimeFrom, _super);
+    function TimeFrom(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const date = await this.execArgs(ctx);
+    TimeFrom.prototype.exec = function (ctx) {
+        var date = this.execArgs(ctx);
         if (date != null) {
             return date.getTime();
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return TimeFrom;
+}(expression_1.Expression));
 exports.TimeFrom = TimeFrom;
-class TimezoneOffsetFrom extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var TimezoneOffsetFrom = /** @class */ (function (_super) {
+    __extends(TimezoneOffsetFrom, _super);
+    function TimezoneOffsetFrom(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const date = await this.execArgs(ctx);
+    TimezoneOffsetFrom.prototype.exec = function (ctx) {
+        var date = this.execArgs(ctx);
         if (date != null) {
             return date.timezoneOffset;
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return TimezoneOffsetFrom;
+}(expression_1.Expression));
 exports.TimezoneOffsetFrom = TimezoneOffsetFrom;
 // Delegated to by overloaded#After
 function doAfter(a, b, precision) {
@@ -32265,13 +32580,15 @@ function doBefore(a, b, precision) {
     return a.before(b, precision);
 }
 exports.doBefore = doBefore;
-class DifferenceBetween extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
+var DifferenceBetween = /** @class */ (function (_super) {
+    __extends(DifferenceBetween, _super);
+    function DifferenceBetween(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
+    DifferenceBetween.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
         // Check to make sure args exist and that they have differenceBetween functions so that they can be compared to one another
         if (args[0] == null ||
             args[1] == null ||
@@ -32279,23 +32596,26 @@ class DifferenceBetween extends expression_1.Expression {
             typeof args[1].differenceBetween !== 'function') {
             return null;
         }
-        const result = args[0].differenceBetween(args[1], this.precision != null ? this.precision.toLowerCase() : undefined);
+        var result = args[0].differenceBetween(args[1], this.precision != null ? this.precision.toLowerCase() : undefined);
         if (result != null && result.isPoint()) {
             return result.low;
         }
         else {
             return result;
         }
-    }
-}
+    };
+    return DifferenceBetween;
+}(expression_1.Expression));
 exports.DifferenceBetween = DifferenceBetween;
-class DurationBetween extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
+var DurationBetween = /** @class */ (function (_super) {
+    __extends(DurationBetween, _super);
+    function DurationBetween(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
+    DurationBetween.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
         // Check to make sure args exist and that they have durationBetween functions so that they can be compared to one another
         if (args[0] == null ||
             args[1] == null ||
@@ -32303,43 +32623,88 @@ class DurationBetween extends expression_1.Expression {
             typeof args[1].durationBetween !== 'function') {
             return null;
         }
-        const result = args[0].durationBetween(args[1], this.precision != null ? this.precision.toLowerCase() : undefined);
+        var result = args[0].durationBetween(args[1], this.precision != null ? this.precision.toLowerCase() : undefined);
         if (result != null && result.isPoint()) {
             return result.low;
         }
         else {
             return result;
         }
-    }
-}
+    };
+    return DurationBetween;
+}(expression_1.Expression));
 exports.DurationBetween = DurationBetween;
 
 },{"../datatypes/datatypes":172,"./builder":182,"./expression":188,"./literal":195}],187:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VersionedIdentifier = exports.IncludeDef = exports.UsingDef = void 0;
-const expression_1 = require("./expression");
-class UsingDef extends expression_1.UnimplementedExpression {
-}
+var expression_1 = require("./expression");
+var UsingDef = /** @class */ (function (_super) {
+    __extends(UsingDef, _super);
+    function UsingDef() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return UsingDef;
+}(expression_1.UnimplementedExpression));
 exports.UsingDef = UsingDef;
-class IncludeDef extends expression_1.UnimplementedExpression {
-}
+var IncludeDef = /** @class */ (function (_super) {
+    __extends(IncludeDef, _super);
+    function IncludeDef() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return IncludeDef;
+}(expression_1.UnimplementedExpression));
 exports.IncludeDef = IncludeDef;
-class VersionedIdentifier extends expression_1.UnimplementedExpression {
-}
+var VersionedIdentifier = /** @class */ (function (_super) {
+    __extends(VersionedIdentifier, _super);
+    function VersionedIdentifier() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return VersionedIdentifier;
+}(expression_1.UnimplementedExpression));
 exports.VersionedIdentifier = VersionedIdentifier;
 
 },{"./expression":188}],188:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UnimplementedExpression = exports.Expression = void 0;
-const util_1 = require("../util/util");
-const customErrors_1 = require("../util/customErrors");
-const builder_1 = require("./builder");
-class Expression {
-    constructor(json) {
+var util_1 = require("../util/util");
+var builder_1 = require("./builder");
+var Expression = /** @class */ (function () {
+    function Expression(json) {
         if (json.operand != null) {
-            const op = (0, builder_1.build)(json.operand);
+            var op = (0, builder_1.build)(json.operand);
             if ((0, util_1.typeIsArray)(json.operand)) {
                 this.args = op;
             }
@@ -32350,43 +32715,24 @@ class Expression {
         if (json.localId != null) {
             this.localId = json.localId;
         }
-        if (json.locator != null) {
-            this.locator = json.locator;
-        }
     }
-    async execute(ctx) {
-        try {
-            if (this.localId != null) {
-                // Store the localId and result on the root context of this library
-                const execValue = await this.exec(ctx);
-                ctx.rootContext().setLocalIdWithResult(this.localId, execValue);
-                return execValue;
-            }
-            else {
-                // Ensure we await this.exec before returning so AnnotatedError logic gets hit
-                const execValue = await this.exec(ctx);
-                return execValue;
-            }
+    Expression.prototype.execute = function (ctx) {
+        if (this.localId != null) {
+            // Store the localId and result on the root context of this library
+            var execValue = this.exec(ctx);
+            ctx.rootContext().setLocalIdWithResult(this.localId, execValue);
+            return execValue;
         }
-        catch (e) {
-            if (e instanceof customErrors_1.AnnotatedError) {
-                throw e;
-            }
-            const libraryIdentifier = this.getRecursiveLibraryIdentifier(ctx);
-            throw new customErrors_1.AnnotatedError(e, this.constructor.name, libraryIdentifier, this.localId, this.locator);
+        else {
+            return this.exec(ctx);
         }
-    }
-    async exec(_ctx) {
+    };
+    Expression.prototype.exec = function (_ctx) {
         return this;
-    }
-    async execArgs(ctx) {
+    };
+    Expression.prototype.execArgs = function (ctx) {
         if (this.args != null) {
-            const retVals = [];
-            for (let index = 0; index < this.args.length; index++) {
-                const arg = this.args[index];
-                retVals.push(await arg.execute(ctx));
-            }
-            return retVals;
+            return this.args.map(function (arg) { return arg.execute(ctx); });
         }
         else if (this.arg != null) {
             return this.arg.execute(ctx);
@@ -32394,36 +32740,25 @@ class Expression {
         else {
             return null;
         }
-    }
-    /**
-     * Function used in error reporting during execution. Retrieves the source library from
-     * the context if it exists, or recursively traverses the context's parents until a source
-     * library identifier and version are found.
-     */
-    getRecursiveLibraryIdentifier(ctx) {
-        var _a, _b, _c;
-        const identifier = (_c = (_b = (_a = ctx.library) === null || _a === void 0 ? void 0 : _a.source) === null || _b === void 0 ? void 0 : _b.library) === null || _c === void 0 ? void 0 : _c.identifier;
-        if (identifier) {
-            return `${identifier.id}${identifier.version ? `|${identifier.version}` : ''}`;
-        }
-        else {
-            return ctx.parent ? this.getRecursiveLibraryIdentifier(ctx.parent) : '(unknown)';
-        }
-    }
-}
+    };
+    return Expression;
+}());
 exports.Expression = Expression;
-class UnimplementedExpression extends Expression {
-    constructor(json) {
-        super(json);
-        this.json = json;
+var UnimplementedExpression = /** @class */ (function (_super) {
+    __extends(UnimplementedExpression, _super);
+    function UnimplementedExpression(json) {
+        var _this = _super.call(this, json) || this;
+        _this.json = json;
+        return _this;
     }
-    async exec(_ctx) {
-        throw new Error(`Unimplemented Expression: ${this.json.type}`);
-    }
-}
+    UnimplementedExpression.prototype.exec = function (_ctx) {
+        throw new Error("Unimplemented Expression: ".concat(this.json.type));
+    };
+    return UnimplementedExpression;
+}(Expression));
 exports.UnimplementedExpression = UnimplementedExpression;
 
-},{"../util/customErrors":219,"../util/util":223,"./builder":182}],189:[function(require,module,exports){
+},{"../util/util":221,"./builder":182}],189:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -32466,7 +32801,7 @@ __exportStar(require("./overloaded"), exports);
 // https://stackoverflow.com/questions/41293108/how-to-do-re-export-with-overrides
 // TODO: we should improve this by perhaps renaming and reworking these functions
 // it's a bit confusing right now giving the interval exports precedence over the others
-const interval_1 = require("./interval");
+var interval_1 = require("./interval");
 Object.defineProperty(exports, "doBefore", { enumerable: true, get: function () { return interval_1.doBefore; } });
 Object.defineProperty(exports, "doUnion", { enumerable: true, get: function () { return interval_1.doUnion; } });
 Object.defineProperty(exports, "doAfter", { enumerable: true, get: function () { return interval_1.doAfter; } });
@@ -32478,91 +32813,142 @@ Object.defineProperty(exports, "doContains", { enumerable: true, get: function (
 
 },{"./aggregate":180,"./arithmetic":181,"./clinical":183,"./comparison":184,"./conditional":185,"./datetime":186,"./declaration":187,"./expression":188,"./external":190,"./instance":191,"./interval":192,"./list":194,"./literal":195,"./logical":196,"./message":197,"./nullological":198,"./overloaded":199,"./parameters":200,"./quantity":201,"./query":202,"./ratio":203,"./reusable":204,"./string":205,"./structured":206,"./type":207}],190:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Retrieve = void 0;
-const expression_1 = require("./expression");
-const util_1 = require("../util/util");
-const builder_1 = require("./builder");
-class Retrieve extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.datatype = json.dataType;
-        this.templateId = json.templateId;
-        this.codeProperty = json.codeProperty;
-        this.codes = (0, builder_1.build)(json.codes);
-        this.dateProperty = json.dateProperty;
-        this.dateRange = (0, builder_1.build)(json.dateRange);
+var expression_1 = require("./expression");
+var util_1 = require("../util/util");
+var builder_1 = require("./builder");
+var Retrieve = /** @class */ (function (_super) {
+    __extends(Retrieve, _super);
+    function Retrieve(json) {
+        var _this = _super.call(this, json) || this;
+        _this.datatype = json.dataType;
+        _this.templateId = json.templateId;
+        _this.codeProperty = json.codeProperty;
+        _this.codes = (0, builder_1.build)(json.codes);
+        _this.dateProperty = json.dateProperty;
+        _this.dateRange = (0, builder_1.build)(json.dateRange);
+        return _this;
     }
-    async exec(ctx) {
+    Retrieve.prototype.exec = function (ctx) {
+        var _a;
+        var _this = this;
         // Object with retrieve information to pass back to patient source
         // Always assign datatype. Assign codeProperty and dateProperty if present
-        const retrieveDetails = Object.assign(Object.assign({ datatype: this.datatype }, (this.codeProperty ? { codeProperty: this.codeProperty } : {})), (this.dateProperty ? { dateProperty: this.dateProperty } : {}));
+        var retrieveDetails = __assign(__assign({ datatype: this.datatype }, (this.codeProperty ? { codeProperty: this.codeProperty } : {})), (this.dateProperty ? { dateProperty: this.dateProperty } : {}));
         if (this.codes) {
-            const resolvedCodes = await this.codes.execute(ctx);
+            var resolvedCodes = this.codes.execute(ctx);
             if (resolvedCodes == null) {
                 return [];
             }
             retrieveDetails.codes = resolvedCodes;
         }
         if (this.dateRange) {
-            retrieveDetails.dateRange = await this.dateRange.execute(ctx);
+            retrieveDetails.dateRange = this.dateRange.execute(ctx);
         }
         if (this.templateId) {
             retrieveDetails.templateId = this.templateId;
         }
-        let records = await ctx.findRecords(this.templateId != null ? this.templateId : this.datatype, retrieveDetails);
+        var records = ctx.findRecords(this.templateId != null ? this.templateId : this.datatype, retrieveDetails);
         if (retrieveDetails.codes) {
-            records = records.filter((r) => this.recordMatchesCodesOrVS(r, retrieveDetails.codes));
+            records = records.filter(function (r) { return _this.recordMatchesCodesOrVS(r, retrieveDetails.codes); });
         }
         if (retrieveDetails.dateRange && this.dateProperty) {
-            records = records.filter((r) => { var _a; return (_a = retrieveDetails.dateRange) === null || _a === void 0 ? void 0 : _a.includes(r.getDateOrInterval(this.dateProperty)); });
+            records = records.filter(function (r) { var _a; return (_a = retrieveDetails.dateRange) === null || _a === void 0 ? void 0 : _a.includes(r.getDateOrInterval(_this.dateProperty)); });
         }
         if (Array.isArray(records)) {
-            ctx.evaluatedRecords.push(...records);
+            (_a = ctx.evaluatedRecords).push.apply(_a, records);
         }
         else {
             ctx.evaluatedRecords.push(records);
         }
         return records;
-    }
-    recordMatchesCodesOrVS(record, codes) {
+    };
+    Retrieve.prototype.recordMatchesCodesOrVS = function (record, codes) {
+        var _this = this;
         if ((0, util_1.typeIsArray)(codes)) {
-            return codes.some(c => c.hasMatch(record.getCode(this.codeProperty)));
+            return codes.some(function (c) { return c.hasMatch(record.getCode(_this.codeProperty)); });
         }
         else {
             return codes.hasMatch(record.getCode(this.codeProperty));
         }
-    }
-}
+    };
+    return Retrieve;
+}(expression_1.Expression));
 exports.Retrieve = Retrieve;
 
-},{"../util/util":223,"./builder":182,"./expression":188}],191:[function(require,module,exports){
+},{"../util/util":221,"./builder":182,"./expression":188}],191:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Instance = void 0;
-const expression_1 = require("./expression");
-const quantity_1 = require("../datatypes/quantity");
-const datatypes_1 = require("../datatypes/datatypes");
-const builder_1 = require("./builder");
-class Element {
-    constructor(json) {
+var expression_1 = require("./expression");
+var quantity_1 = require("../datatypes/quantity");
+var datatypes_1 = require("../datatypes/datatypes");
+var builder_1 = require("./builder");
+var Element = /** @class */ (function () {
+    function Element(json) {
         this.name = json.name;
         this.value = (0, builder_1.build)(json.value);
     }
-    async exec(ctx) {
+    Element.prototype.exec = function (ctx) {
         return this.value != null ? this.value.execute(ctx) : undefined;
+    };
+    return Element;
+}());
+var Instance = /** @class */ (function (_super) {
+    __extends(Instance, _super);
+    function Instance(json) {
+        var _this = _super.call(this, json) || this;
+        _this.classType = json.classType;
+        _this.element = json.element.map(function (child) { return new Element(child); });
+        return _this;
     }
-}
-class Instance extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.classType = json.classType;
-        this.element = json.element.map((child) => new Element(child));
-    }
-    async exec(ctx) {
-        const obj = {};
-        for (const el of this.element) {
-            obj[el.name] = await el.exec(ctx);
+    Instance.prototype.exec = function (ctx) {
+        var obj = {};
+        for (var _i = 0, _a = this.element; _i < _a.length; _i++) {
+            var el = _a[_i];
+            obj[el.name] = el.exec(ctx);
         }
         switch (this.classType) {
             case '{urn:hl7-org:elm-types:r1}Quantity':
@@ -32574,12 +32960,28 @@ class Instance extends expression_1.Expression {
             default:
                 return obj;
         }
-    }
-}
+    };
+    return Instance;
+}(expression_1.Expression));
 exports.Instance = Instance;
 
 },{"../datatypes/datatypes":172,"../datatypes/quantity":177,"./builder":182,"./expression":188}],192:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -32601,37 +33003,43 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Collapse = exports.Expand = exports.Ends = exports.Starts = exports.End = exports.Start = exports.Size = exports.Width = exports.doIntersect = exports.doExcept = exports.doUnion = exports.OverlapsBefore = exports.OverlapsAfter = exports.Overlaps = exports.MeetsBefore = exports.MeetsAfter = exports.Meets = exports.doBefore = exports.doAfter = exports.doProperIncludes = exports.doIncludes = exports.doContains = exports.Interval = void 0;
-const expression_1 = require("./expression");
-const quantity_1 = require("../datatypes/quantity");
-const math_1 = require("../util/math");
-const units_1 = require("../util/units");
-const dtivl = __importStar(require("../datatypes/interval"));
-const builder_1 = require("./builder");
-class Interval extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.lowClosed = json.lowClosed;
-        this.lowClosedExpression = (0, builder_1.build)(json.lowClosedExpression);
-        this.highClosed = json.highClosed;
-        this.highClosedExpression = (0, builder_1.build)(json.highClosedExpression);
-        this.low = (0, builder_1.build)(json.low);
-        this.high = (0, builder_1.build)(json.high);
+var expression_1 = require("./expression");
+var quantity_1 = require("../datatypes/quantity");
+var math_1 = require("../util/math");
+var units_1 = require("../util/units");
+var dtivl = __importStar(require("../datatypes/interval"));
+var builder_1 = require("./builder");
+var Interval = /** @class */ (function (_super) {
+    __extends(Interval, _super);
+    function Interval(json) {
+        var _this = _super.call(this, json) || this;
+        _this.lowClosed = json.lowClosed;
+        _this.lowClosedExpression = (0, builder_1.build)(json.lowClosedExpression);
+        _this.highClosed = json.highClosed;
+        _this.highClosedExpression = (0, builder_1.build)(json.highClosedExpression);
+        _this.low = (0, builder_1.build)(json.low);
+        _this.high = (0, builder_1.build)(json.high);
+        return _this;
     }
-    // Define a simple getter to allow type-checking of this class without instanceof
-    // and in a way that survives minification (as opposed to checking constructor.name)
-    get isInterval() {
-        return true;
-    }
-    async exec(ctx) {
-        const lowValue = await this.low.execute(ctx);
-        const highValue = await this.high.execute(ctx);
-        const lowClosed = this.lowClosed != null
+    Object.defineProperty(Interval.prototype, "isInterval", {
+        // Define a simple getter to allow type-checking of this class without instanceof
+        // and in a way that survives minification (as opposed to checking constructor.name)
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Interval.prototype.exec = function (ctx) {
+        var lowValue = this.low.execute(ctx);
+        var highValue = this.high.execute(ctx);
+        var lowClosed = this.lowClosed != null
             ? this.lowClosed
-            : this.lowClosedExpression && (await this.lowClosedExpression.execute(ctx));
-        const highClosed = this.highClosed != null
+            : this.lowClosedExpression && this.lowClosedExpression.execute(ctx);
+        var highClosed = this.highClosed != null
             ? this.highClosed
-            : this.highClosedExpression && (await this.highClosedExpression.execute(ctx));
-        let defaultPointType;
+            : this.highClosedExpression && this.highClosedExpression.execute(ctx);
+        var defaultPointType;
         if (lowValue == null && highValue == null) {
             // try to get the default point type from a cast
             if (this.low.asTypeSpecifier && this.low.asTypeSpecifier.type === 'NamedTypeSpecifier') {
@@ -32643,8 +33051,9 @@ class Interval extends expression_1.Expression {
             }
         }
         return new dtivl.Interval(lowValue, highValue, lowClosed, highClosed, defaultPointType);
-    }
-}
+    };
+    return Interval;
+}(expression_1.Expression));
 exports.Interval = Interval;
 // Equal is completely handled by overloaded#Equal
 // NotEqual is completely handled by overloaded#Equal
@@ -32673,101 +33082,119 @@ function doBefore(a, b, precision) {
     return a.before(b, precision);
 }
 exports.doBefore = doBefore;
-class Meets extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var Meets = /** @class */ (function (_super) {
+    __extends(Meets, _super);
+    function Meets(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Meets.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.meets(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return Meets;
+}(expression_1.Expression));
 exports.Meets = Meets;
-class MeetsAfter extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var MeetsAfter = /** @class */ (function (_super) {
+    __extends(MeetsAfter, _super);
+    function MeetsAfter(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    MeetsAfter.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.meetsAfter(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return MeetsAfter;
+}(expression_1.Expression));
 exports.MeetsAfter = MeetsAfter;
-class MeetsBefore extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var MeetsBefore = /** @class */ (function (_super) {
+    __extends(MeetsBefore, _super);
+    function MeetsBefore(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    MeetsBefore.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.meetsBefore(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return MeetsBefore;
+}(expression_1.Expression));
 exports.MeetsBefore = MeetsBefore;
-class Overlaps extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var Overlaps = /** @class */ (function (_super) {
+    __extends(Overlaps, _super);
+    function Overlaps(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Overlaps.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.overlaps(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return Overlaps;
+}(expression_1.Expression));
 exports.Overlaps = Overlaps;
-class OverlapsAfter extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var OverlapsAfter = /** @class */ (function (_super) {
+    __extends(OverlapsAfter, _super);
+    function OverlapsAfter(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    OverlapsAfter.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.overlapsAfter(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return OverlapsAfter;
+}(expression_1.Expression));
 exports.OverlapsAfter = OverlapsAfter;
-class OverlapsBefore extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var OverlapsBefore = /** @class */ (function (_super) {
+    __extends(OverlapsBefore, _super);
+    function OverlapsBefore(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    OverlapsBefore.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.overlapsBefore(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return OverlapsBefore;
+}(expression_1.Expression));
 exports.OverlapsBefore = OverlapsBefore;
 // Delegated to by overloaded#Union
 function doUnion(a, b) {
@@ -32794,108 +33221,119 @@ function doIntersect(a, b) {
     }
 }
 exports.doIntersect = doIntersect;
-class Width extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Width = /** @class */ (function (_super) {
+    __extends(Width, _super);
+    function Width(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        var _a;
-        const interval = await ((_a = this.arg) === null || _a === void 0 ? void 0 : _a.execute(ctx));
+    Width.prototype.exec = function (ctx) {
+        var interval = this.arg.execute(ctx);
         if (interval == null) {
             return null;
         }
         return interval.width();
-    }
-}
+    };
+    return Width;
+}(expression_1.Expression));
 exports.Width = Width;
-class Size extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Size = /** @class */ (function (_super) {
+    __extends(Size, _super);
+    function Size(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        var _a;
-        const interval = await ((_a = this.arg) === null || _a === void 0 ? void 0 : _a.execute(ctx));
+    Size.prototype.exec = function (ctx) {
+        var interval = this.arg.execute(ctx);
         if (interval == null) {
             return null;
         }
         return interval.size();
-    }
-}
+    };
+    return Size;
+}(expression_1.Expression));
 exports.Size = Size;
-class Start extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Start = /** @class */ (function (_super) {
+    __extends(Start, _super);
+    function Start(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        var _a;
-        const interval = await ((_a = this.arg) === null || _a === void 0 ? void 0 : _a.execute(ctx));
+    Start.prototype.exec = function (ctx) {
+        var interval = this.arg.execute(ctx);
         if (interval == null) {
             return null;
         }
-        const start = interval.start();
+        var start = interval.start();
         // fix the timezoneOffset of minimum Datetime to match context offset
         if (start && start.isDateTime && start.equals(math_1.MIN_DATETIME_VALUE)) {
             start.timezoneOffset = ctx.getTimezoneOffset();
         }
         return start;
-    }
-}
+    };
+    return Start;
+}(expression_1.Expression));
 exports.Start = Start;
-class End extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var End = /** @class */ (function (_super) {
+    __extends(End, _super);
+    function End(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        var _a;
-        const interval = await ((_a = this.arg) === null || _a === void 0 ? void 0 : _a.execute(ctx));
+    End.prototype.exec = function (ctx) {
+        var interval = this.arg.execute(ctx);
         if (interval == null) {
             return null;
         }
-        const end = interval.end();
+        var end = interval.end();
         // fix the timezoneOffset of maximum Datetime to match context offset
         if (end && end.isDateTime && end.equals(math_1.MAX_DATETIME_VALUE)) {
             end.timezoneOffset = ctx.getTimezoneOffset();
         }
         return end;
-    }
-}
+    };
+    return End;
+}(expression_1.Expression));
 exports.End = End;
-class Starts extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var Starts = /** @class */ (function (_super) {
+    __extends(Starts, _super);
+    function Starts(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Starts.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.starts(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return Starts;
+}(expression_1.Expression));
 exports.Starts = Starts;
-class Ends extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var Ends = /** @class */ (function (_super) {
+    __extends(Ends, _super);
+    function Ends(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Ends.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.ends(b, this.precision);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return Ends;
+}(expression_1.Expression));
 exports.Ends = Ends;
 function intervalListType(intervals) {
     // Returns one of null, 'time', 'date', 'datetime', 'quantity', 'integer', 'decimal' or 'mismatch'
-    let type = null;
-    for (const itvl of intervals) {
+    var type = null;
+    for (var _i = 0, intervals_1 = intervals; _i < intervals_1.length; _i++) {
+        var itvl = intervals_1[_i];
         if (itvl == null) {
             continue;
         }
@@ -32904,8 +33342,8 @@ function intervalListType(intervals) {
             continue;
         }
         // if one end is null (but not both), the type can be determined from the other end
-        const low = itvl.low != null ? itvl.low : itvl.high;
-        const high = itvl.high != null ? itvl.high : itvl.low;
+        var low = itvl.low != null ? itvl.low : itvl.high;
+        var high = itvl.high != null ? itvl.high : itvl.low;
         if (low.isTime && low.isTime() && high.isTime && high.isTime()) {
             if (type == null) {
                 type = 'time';
@@ -32982,19 +33420,20 @@ function intervalListType(intervals) {
     }
     return type;
 }
-class Expand extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Expand = /** @class */ (function (_super) {
+    __extends(Expand, _super);
+    function Expand(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
+    Expand.prototype.exec = function (ctx) {
         // expand(argument List<Interval<T>>, per Quantity) List<Interval<T>>
-        let defaultPer, expandFunction;
-        let [intervals, per] = await this.execArgs(ctx);
+        var defaultPer, expandFunction;
+        var _a = this.execArgs(ctx), intervals = _a[0], per = _a[1];
         // CQL 1.5 introduced an overload to allow singular intervals; make it a list so we can use the same logic for either overload
         if (!Array.isArray(intervals)) {
             intervals = [intervals];
         }
-        const type = intervalListType(intervals);
+        var type = intervalListType(intervals);
         if (type === 'mismatch') {
             throw new Error('List of intervals contains mismatched types.');
         }
@@ -33008,21 +33447,22 @@ class Expand extends expression_1.Expression {
         }
         if (['time', 'date', 'datetime'].includes(type)) {
             expandFunction = this.expandDTishInterval;
-            defaultPer = (interval) => new quantity_1.Quantity(1, interval.low.getPrecision());
+            defaultPer = function (interval) { return new quantity_1.Quantity(1, interval.low.getPrecision()); };
         }
         else if (['quantity'].includes(type)) {
             expandFunction = this.expandQuantityInterval;
-            defaultPer = (interval) => new quantity_1.Quantity(1, interval.low.unit);
+            defaultPer = function (interval) { return new quantity_1.Quantity(1, interval.low.unit); };
         }
         else if (['integer', 'decimal'].includes(type)) {
             expandFunction = this.expandNumericInterval;
-            defaultPer = (_interval) => new quantity_1.Quantity(1, '1');
+            defaultPer = function (_interval) { return new quantity_1.Quantity(1, '1'); };
         }
         else {
             throw new Error('Interval list type not yet supported.');
         }
-        const results = [];
-        for (const interval of intervals) {
+        var results = [];
+        for (var _i = 0, intervals_2 = intervals; _i < intervals_2.length; _i++) {
+            var interval = intervals_2[_i];
             if (interval == null) {
                 continue;
             }
@@ -33036,15 +33476,15 @@ class Expand extends expression_1.Expression {
                 interval.high = interval.high.getDateTime();
             }
             per = per != null ? per : defaultPer(interval);
-            const items = expandFunction.call(this, interval, per);
+            var items = expandFunction.call(this, interval, per);
             if (items === null) {
                 return null;
             }
-            results.push(...(items || []));
+            results.push.apply(results, (items || []));
         }
         return results;
-    }
-    expandDTishInterval(interval, per) {
+    };
+    Expand.prototype.expandDTishInterval = function (interval, per) {
         per.unit = (0, units_1.convertToCQLDateUnit)(per.unit);
         if (per.unit === 'week') {
             per.value *= 7;
@@ -33060,20 +33500,20 @@ class Expand extends expression_1.Expression {
         if (interval.low == null || interval.high == null) {
             return null;
         }
-        let low = interval.lowClosed ? interval.low : interval.low.successor();
-        let high = interval.highClosed ? interval.high : interval.high.predecessor();
+        var low = interval.lowClosed ? interval.low : interval.low.successor();
+        var high = interval.highClosed ? interval.high : interval.high.predecessor();
         if (low.after(high)) {
             return [];
         }
         if (interval.low.isLessPrecise(per.unit) || interval.high.isLessPrecise(per.unit)) {
             return [];
         }
-        let current_low = low;
-        const results = [];
+        var current_low = low;
+        var results = [];
         low = this.truncateToPrecision(low, per.unit);
         high = this.truncateToPrecision(high, per.unit);
-        let current_high = current_low.add(per.value, per.unit).predecessor();
-        let intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
+        var current_high = current_low.add(per.value, per.unit).predecessor();
+        var intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
         while (intervalToAdd.high.sameOrBefore(high)) {
             results.push(intervalToAdd);
             current_low = current_low.add(per.value, per.unit);
@@ -33081,12 +33521,13 @@ class Expand extends expression_1.Expression {
             intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
         }
         return results;
-    }
-    truncateToPrecision(value, unit) {
+    };
+    Expand.prototype.truncateToPrecision = function (value, unit) {
         // If interval boundaries are more precise than per quantity, truncate to
         // the precision specified by the per
-        let shouldTruncate = false;
-        for (const field of value.constructor.FIELDS) {
+        var shouldTruncate = false;
+        for (var _i = 0, _a = value.constructor.FIELDS; _i < _a.length; _i++) {
+            var field = _a[_i];
             if (shouldTruncate) {
                 value[field] = null;
             }
@@ -33096,11 +33537,11 @@ class Expand extends expression_1.Expression {
             }
         }
         return value;
-    }
-    expandQuantityInterval(interval, per) {
+    };
+    Expand.prototype.expandQuantityInterval = function (interval, per) {
         // we want to convert everything to the more precise of the interval.low or per
-        let result_units;
-        const res = (0, units_1.compareUnits)(interval.low.unit, per.unit);
+        var result_units;
+        var res = (0, units_1.compareUnits)(interval.low.unit, per.unit);
         if (res != null && res > 0) {
             //interval.low.unit is 'bigger' aka les precise
             result_units = per.unit;
@@ -33108,31 +33549,32 @@ class Expand extends expression_1.Expression {
         else {
             result_units = interval.low.unit;
         }
-        const low_value = (0, units_1.convertUnit)(interval.low.value, interval.low.unit, result_units);
-        const high_value = (0, units_1.convertUnit)(interval.high.value, interval.high.unit, result_units);
-        const per_value = (0, units_1.convertUnit)(per.value, per.unit, result_units);
+        var low_value = (0, units_1.convertUnit)(interval.low.value, interval.low.unit, result_units);
+        var high_value = (0, units_1.convertUnit)(interval.high.value, interval.high.unit, result_units);
+        var per_value = (0, units_1.convertUnit)(per.value, per.unit, result_units);
         // return null if unit conversion failed, must have mismatched units
         if (!(low_value != null && high_value != null && per_value != null)) {
             return null;
         }
-        const results = this.makeNumericIntervalList(low_value, high_value, interval.lowClosed, interval.highClosed, per_value);
-        for (const itvl of results) {
+        var results = this.makeNumericIntervalList(low_value, high_value, interval.lowClosed, interval.highClosed, per_value);
+        for (var _i = 0, results_1 = results; _i < results_1.length; _i++) {
+            var itvl = results_1[_i];
             itvl.low = new quantity_1.Quantity(itvl.low, result_units);
             itvl.high = new quantity_1.Quantity(itvl.high, result_units);
         }
         return results;
-    }
-    expandNumericInterval(interval, per) {
+    };
+    Expand.prototype.expandNumericInterval = function (interval, per) {
         if (per.unit !== '1' && per.unit !== '') {
             return null;
         }
         return this.makeNumericIntervalList(interval.low, interval.high, interval.lowClosed, interval.highClosed, per.value);
-    }
-    makeNumericIntervalList(low, high, lowClosed, highClosed, perValue) {
+    };
+    Expand.prototype.makeNumericIntervalList = function (low, high, lowClosed, highClosed, perValue) {
         // If the per value is a Decimal (has a .), 8 decimal places are appropriate
         // Integers should have 0 Decimal places
-        const perIsDecimal = perValue.toString().includes('.');
-        const decimalPrecision = perIsDecimal ? 8 : 0;
+        var perIsDecimal = perValue.toString().includes('.');
+        var decimalPrecision = perIsDecimal ? 8 : 0;
         low = lowClosed ? low : (0, math_1.successor)(low);
         high = highClosed ? high : (0, math_1.predecessor)(high);
         // If the interval boundaries are more precise than the per quantity, the
@@ -33146,20 +33588,20 @@ class Expand extends expression_1.Expression {
         if (low == null || high == null) {
             return [];
         }
-        const perUnitSize = perIsDecimal ? 0.00000001 : 1;
+        var perUnitSize = perIsDecimal ? 0.00000001 : 1;
         if (low === high &&
             Number.isInteger(low) &&
             Number.isInteger(high) &&
             !Number.isInteger(perValue)) {
             high = parseFloat((high + 1).toFixed(decimalPrecision));
         }
-        let current_low = low;
-        const results = [];
+        var current_low = low;
+        var results = [];
         if (perValue > high - low + perUnitSize) {
             return [];
         }
-        let current_high = parseFloat((current_low + perValue - perUnitSize).toFixed(decimalPrecision));
-        let intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
+        var current_high = parseFloat((current_low + perValue - perUnitSize).toFixed(decimalPrecision));
+        var intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
         while (intervalToAdd.high <= high) {
             results.push(intervalToAdd);
             current_low = parseFloat((current_low + perValue).toFixed(decimalPrecision));
@@ -33167,34 +33609,38 @@ class Expand extends expression_1.Expression {
             intervalToAdd = new dtivl.Interval(current_low, current_high, true, true);
         }
         return results;
-    }
-}
+    };
+    return Expand;
+}(expression_1.Expression));
 exports.Expand = Expand;
-class Collapse extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Collapse = /** @class */ (function (_super) {
+    __extends(Collapse, _super);
+    function Collapse(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
+    Collapse.prototype.exec = function (ctx) {
         // collapse(argument List<Interval<T>>, per Quantity) List<Interval<T>>
-        const [intervals, perWidth] = await this.execArgs(ctx);
+        var _a = this.execArgs(ctx), intervals = _a[0], perWidth = _a[1];
         return collapseIntervals(intervals, perWidth);
-    }
-}
+    };
+    return Collapse;
+}(expression_1.Expression));
 exports.Collapse = Collapse;
 function collapseIntervals(intervals, perWidth) {
     // Clone intervals so this function remains idempotent
-    const intervalsClone = [];
-    // If the list is null, return null
-    if (intervals == null) {
-        return null;
-    }
-    for (const interval of intervals) {
+    var intervalsClone = [];
+    for (var _i = 0, intervals_3 = intervals; _i < intervals_3.length; _i++) {
+        var interval = intervals_3[_i];
         // The spec says to ignore null intervals
         if (interval != null) {
             intervalsClone.push(interval.copy());
         }
     }
-    if (intervalsClone.length <= 1) {
+    // If the list is null, return null
+    if (intervals == null) {
+        return null;
+    }
+    else if (intervalsClone.length <= 1) {
         return intervalsClone;
     }
     else {
@@ -33254,9 +33700,9 @@ function collapseIntervals(intervals, perWidth) {
             return 0;
         });
         // collapse intervals as necessary
-        const collapsedIntervals = [];
-        let a = intervalsClone.shift();
-        let b = intervalsClone.shift();
+        var collapsedIntervals = [];
+        var a = intervalsClone.shift();
+        var b = intervalsClone.shift();
         while (b) {
             if (b.low && typeof b.low.durationBetween === 'function') {
                 // handle DateTimes using durationBetween
@@ -33306,60 +33752,66 @@ function collapseIntervals(intervals, perWidth) {
 function truncateDecimal(decimal, decimalPlaces) {
     // like parseFloat().toFixed() but floor rather than round
     // Needed for when per precision is less than the interval input precision
-    const re = new RegExp('^-?\\d+(?:.\\d{0,' + (decimalPlaces || -1) + '})?');
+    var re = new RegExp('^-?\\d+(?:.\\d{0,' + (decimalPlaces || -1) + '})?');
     return parseFloat(decimal.toString().match(re)[0]);
 }
 
-},{"../datatypes/interval":175,"../datatypes/quantity":177,"../util/math":221,"../util/units":222,"./builder":182,"./expression":188}],193:[function(require,module,exports){
+},{"../datatypes/interval":175,"../datatypes/quantity":177,"../util/math":219,"../util/units":220,"./builder":182,"./expression":188}],193:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Library = void 0;
-const expressions_1 = require("./expressions");
-class Library {
-    constructor(json, libraryManager) {
+var expressions_1 = require("./expressions");
+var Library = /** @class */ (function () {
+    function Library(json, libraryManager) {
         this.source = json;
         // usings
-        const usingDefs = (json.library.usings && json.library.usings.def) || [];
+        var usingDefs = (json.library.usings && json.library.usings.def) || [];
         this.usings = usingDefs
-            .filter((u) => u.localIdentifier !== 'System')
-            .map((u) => {
+            .filter(function (u) { return u.localIdentifier !== 'System'; })
+            .map(function (u) {
             return { name: u.localIdentifier, version: u.version };
         });
         // parameters
-        const paramDefs = (json.library.parameters && json.library.parameters.def) || [];
+        var paramDefs = (json.library.parameters && json.library.parameters.def) || [];
         this.parameters = {};
-        for (const param of paramDefs) {
+        for (var _i = 0, paramDefs_1 = paramDefs; _i < paramDefs_1.length; _i++) {
+            var param = paramDefs_1[_i];
             this.parameters[param.name] = new expressions_1.ParameterDef(param);
         }
         // code systems
-        const csDefs = (json.library.codeSystems && json.library.codeSystems.def) || [];
+        var csDefs = (json.library.codeSystems && json.library.codeSystems.def) || [];
         this.codesystems = {};
-        for (const codesystem of csDefs) {
+        for (var _a = 0, csDefs_1 = csDefs; _a < csDefs_1.length; _a++) {
+            var codesystem = csDefs_1[_a];
             this.codesystems[codesystem.name] = new expressions_1.CodeSystemDef(codesystem);
         }
         // value sets
-        const vsDefs = (json.library.valueSets && json.library.valueSets.def) || [];
+        var vsDefs = (json.library.valueSets && json.library.valueSets.def) || [];
         this.valuesets = {};
-        for (const valueset of vsDefs) {
+        for (var _b = 0, vsDefs_1 = vsDefs; _b < vsDefs_1.length; _b++) {
+            var valueset = vsDefs_1[_b];
             this.valuesets[valueset.name] = new expressions_1.ValueSetDef(valueset);
         }
         // codes
-        const codeDefs = (json.library.codes && json.library.codes.def) || [];
+        var codeDefs = (json.library.codes && json.library.codes.def) || [];
         this.codes = {};
-        for (const code of codeDefs) {
+        for (var _c = 0, codeDefs_1 = codeDefs; _c < codeDefs_1.length; _c++) {
+            var code = codeDefs_1[_c];
             this.codes[code.name] = new expressions_1.CodeDef(code);
         }
         // concepts
-        const conceptDefs = (json.library.concepts && json.library.concepts.def) || [];
+        var conceptDefs = (json.library.concepts && json.library.concepts.def) || [];
         this.concepts = {};
-        for (const concept of conceptDefs) {
+        for (var _d = 0, conceptDefs_1 = conceptDefs; _d < conceptDefs_1.length; _d++) {
+            var concept = conceptDefs_1[_d];
             this.concepts[concept.name] = new expressions_1.ConceptDef(concept);
         }
         // expressions
-        const exprDefs = (json.library.statements && json.library.statements.def) || [];
+        var exprDefs = (json.library.statements && json.library.statements.def) || [];
         this.expressions = {};
         this.functions = {};
-        for (const expr of exprDefs) {
+        for (var _e = 0, exprDefs_1 = exprDefs; _e < exprDefs_1.length; _e++) {
+            var expr = exprDefs_1[_e];
             if (expr.type === 'FunctionDef') {
                 if (!this.functions[expr.name]) {
                     this.functions[expr.name] = [];
@@ -33371,127 +33823,159 @@ class Library {
             }
         }
         // includes
-        const inclDefs = (json.library.includes && json.library.includes.def) || [];
+        var inclDefs = (json.library.includes && json.library.includes.def) || [];
         this.includes = {};
-        for (const incl of inclDefs) {
+        for (var _f = 0, inclDefs_1 = inclDefs; _f < inclDefs_1.length; _f++) {
+            var incl = inclDefs_1[_f];
             if (libraryManager) {
                 this.includes[incl.localIdentifier] = libraryManager.resolve(incl.path, incl.version);
             }
         }
         // Include codesystems from includes
-        for (const iProperty in this.includes) {
+        for (var iProperty in this.includes) {
             if (this.includes[iProperty] && this.includes[iProperty].codesystems) {
-                for (const csProperty in this.includes[iProperty].codesystems) {
+                for (var csProperty in this.includes[iProperty].codesystems) {
                     this.codesystems[csProperty] = this.includes[iProperty].codesystems[csProperty];
                 }
             }
         }
     }
-    getFunction(identifier) {
+    Library.prototype.getFunction = function (identifier) {
         return this.functions[identifier];
-    }
-    get(identifier) {
+    };
+    Library.prototype.get = function (identifier) {
         return (this.expressions[identifier] || this.includes[identifier] || this.getFunction(identifier));
-    }
-    getValueSet(identifier, libraryName) {
+    };
+    Library.prototype.getValueSet = function (identifier, libraryName) {
         if (this.valuesets[identifier] != null) {
             return this.valuesets[identifier];
         }
         return this.includes[libraryName] != null
             ? this.includes[libraryName].valuesets[identifier]
             : undefined;
-    }
-    getCodeSystem(identifier) {
+    };
+    Library.prototype.getCodeSystem = function (identifier) {
         return this.codesystems[identifier];
-    }
-    getCode(identifier) {
+    };
+    Library.prototype.getCode = function (identifier) {
         return this.codes[identifier];
-    }
-    getConcept(identifier) {
+    };
+    Library.prototype.getConcept = function (identifier) {
         return this.concepts[identifier];
-    }
-    getParameter(name) {
+    };
+    Library.prototype.getParameter = function (name) {
         return this.parameters[name];
-    }
-}
+    };
+    return Library;
+}());
 exports.Library = Library;
 
 },{"./expressions":189}],194:[function(require,module,exports){
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Slice = exports.Last = exports.First = exports.Current = exports.toDistinctList = exports.Distinct = exports.Flatten = exports.ForEach = exports.doProperIncludes = exports.doIncludes = exports.doContains = exports.IndexOf = exports.ToList = exports.SingletonFrom = exports.Filter = exports.Times = exports.doIntersect = exports.doExcept = exports.doUnion = exports.Exists = exports.List = void 0;
-const immutable_1 = __importDefault(require("immutable"));
-const comparison_1 = require("../util/comparison");
-const immutableUtil_1 = require("../util/immutableUtil");
-const util_1 = require("../util/util");
-const builder_1 = require("./builder");
-const expression_1 = require("./expression");
-class List extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.elements = (0, builder_1.build)(json.element) || [];
+exports.Slice = exports.Last = exports.First = exports.Current = exports.Distinct = exports.Flatten = exports.ForEach = exports.doProperIncludes = exports.doIncludes = exports.doContains = exports.IndexOf = exports.ToList = exports.SingletonFrom = exports.Filter = exports.Times = exports.doIntersect = exports.doExcept = exports.doUnion = exports.Exists = exports.List = void 0;
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var util_1 = require("../util/util");
+var comparison_1 = require("../util/comparison");
+var List = /** @class */ (function (_super) {
+    __extends(List, _super);
+    function List(json) {
+        var _this = _super.call(this, json) || this;
+        _this.elements = (0, builder_1.build)(json.element) || [];
+        return _this;
     }
-    get isList() {
-        return true;
-    }
-    async exec(ctx) {
-        return await Promise.all(this.elements.map(item => item.execute(ctx)));
-    }
-}
+    Object.defineProperty(List.prototype, "isList", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    List.prototype.exec = function (ctx) {
+        return this.elements.map(function (item) { return item.execute(ctx); });
+    };
+    return List;
+}(expression_1.Expression));
 exports.List = List;
-class Exists extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Exists = /** @class */ (function (_super) {
+    __extends(Exists, _super);
+    function Exists(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const list = await this.execArgs(ctx);
+    Exists.prototype.exec = function (ctx) {
+        var list = this.execArgs(ctx);
         // if list exists and has non empty length we need to make sure it isnt just full of nulls
         if (list) {
-            return list.some((item) => item != null);
+            return list.some(function (item) { return item != null; });
         }
         return false;
-    }
-}
+    };
+    return Exists;
+}(expression_1.Expression));
 exports.Exists = Exists;
 // Equal is completely handled by overloaded#Equal
 // NotEqual is completely handled by overloaded#Equal
 // Delegated to by overloaded#Union
 function doUnion(a, b) {
-    const distinct = (0, exports.toDistinctList)(a.concat(b));
+    var distinct = doDistinct(a.concat(b));
     return removeDuplicateNulls(distinct);
 }
 exports.doUnion = doUnion;
 // Delegated to by overloaded#Except
 function doExcept(a, b) {
-    const distinct = (0, exports.toDistinctList)(a);
-    const setList = removeDuplicateNulls(distinct);
-    return setList.filter(item => !doContains(b, item, true));
+    var distinct = doDistinct(a);
+    var setList = removeDuplicateNulls(distinct);
+    return setList.filter(function (item) { return !doContains(b, item, true); });
 }
 exports.doExcept = doExcept;
 // Delegated to by overloaded#Intersect
 function doIntersect(a, b) {
-    const distinct = (0, exports.toDistinctList)(a);
-    const setList = removeDuplicateNulls(distinct);
-    return setList.filter(item => doContains(b, item, true));
+    var distinct = doDistinct(a);
+    var setList = removeDuplicateNulls(distinct);
+    return setList.filter(function (item) { return doContains(b, item, true); });
 }
 exports.doIntersect = doIntersect;
 // ELM-only, not a product of CQL
-class Times extends expression_1.UnimplementedExpression {
-}
+var Times = /** @class */ (function (_super) {
+    __extends(Times, _super);
+    function Times() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return Times;
+}(expression_1.UnimplementedExpression));
 exports.Times = Times;
 // ELM-only, not a product of CQL
-class Filter extends expression_1.UnimplementedExpression {
-}
-exports.Filter = Filter;
-class SingletonFrom extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Filter = /** @class */ (function (_super) {
+    __extends(Filter, _super);
+    function Filter() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    return Filter;
+}(expression_1.UnimplementedExpression));
+exports.Filter = Filter;
+var SingletonFrom = /** @class */ (function (_super) {
+    __extends(SingletonFrom, _super);
+    function SingletonFrom(json) {
+        return _super.call(this, json) || this;
+    }
+    SingletonFrom.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null && arg.length > 1) {
             throw new Error("IllegalArgument: 'SingletonFrom' requires a 0 or 1 arg array");
         }
@@ -33501,39 +33985,44 @@ class SingletonFrom extends expression_1.Expression {
         else {
             return null;
         }
-    }
-}
+    };
+    return SingletonFrom;
+}(expression_1.Expression));
 exports.SingletonFrom = SingletonFrom;
-class ToList extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToList = /** @class */ (function (_super) {
+    __extends(ToList, _super);
+    function ToList(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToList.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             return [arg];
         }
         else {
             return [];
         }
-    }
-}
+    };
+    return ToList;
+}(expression_1.Expression));
 exports.ToList = ToList;
-class IndexOf extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.source = (0, builder_1.build)(json.source);
-        this.element = (0, builder_1.build)(json.element);
+var IndexOf = /** @class */ (function (_super) {
+    __extends(IndexOf, _super);
+    function IndexOf(json) {
+        var _this = _super.call(this, json) || this;
+        _this.source = (0, builder_1.build)(json.source);
+        _this.element = (0, builder_1.build)(json.element);
+        return _this;
     }
-    async exec(ctx) {
-        let index;
-        const src = await this.source.execute(ctx);
-        const el = await this.element.execute(ctx);
+    IndexOf.prototype.exec = function (ctx) {
+        var index;
+        var src = this.source.execute(ctx);
+        var el = this.element.execute(ctx);
         if (src == null || el == null) {
             return null;
         }
-        for (let i = 0; i < src.length; i++) {
-            const itm = src[i];
+        for (var i = 0; i < src.length; i++) {
+            var itm = src[i];
             if ((0, comparison_1.equals)(itm, el)) {
                 index = i;
                 break;
@@ -33545,18 +34034,20 @@ class IndexOf extends expression_1.Expression {
         else {
             return -1;
         }
-    }
-}
+    };
+    return IndexOf;
+}(expression_1.Expression));
 exports.IndexOf = IndexOf;
 // Indexer is completely handled by overloaded#Indexer
 // Delegated to by overloaded#Contains and overloaded#In
-function doContains(container, item, nullEquivalence = false) {
-    return container.some((element) => (0, comparison_1.equals)(element, item) || (nullEquivalence && element == null && item == null));
+function doContains(container, item, nullEquivalence) {
+    if (nullEquivalence === void 0) { nullEquivalence = false; }
+    return container.some(function (element) { return (0, comparison_1.equals)(element, item) || (nullEquivalence && element == null && item == null); });
 }
 exports.doContains = doContains;
 // Delegated to by overloaded#Includes and overloaded@IncludedIn
 function doIncludes(list, sublist) {
-    return sublist.every((x) => doContains(list, x));
+    return sublist.every(function (x) { return doContains(list, x); });
 }
 exports.doIncludes = doIncludes;
 // Delegated to by overloaded#ProperIncludes and overloaded@ProperIncludedIn
@@ -33565,61 +34056,62 @@ function doProperIncludes(list, sublist) {
 }
 exports.doProperIncludes = doProperIncludes;
 // ELM-only, not a product of CQL
-class ForEach extends expression_1.UnimplementedExpression {
-}
-exports.ForEach = ForEach;
-class Flatten extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ForEach = /** @class */ (function (_super) {
+    __extends(ForEach, _super);
+    function ForEach() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
-        if ((0, util_1.typeIsArray)(arg) && arg.every(x => (0, util_1.typeIsArray)(x))) {
-            return arg.reduce((x, y) => x.concat(y), []);
+    return ForEach;
+}(expression_1.UnimplementedExpression));
+exports.ForEach = ForEach;
+var Flatten = /** @class */ (function (_super) {
+    __extends(Flatten, _super);
+    function Flatten(json) {
+        return _super.call(this, json) || this;
+    }
+    Flatten.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
+        if ((0, util_1.typeIsArray)(arg) && arg.every(function (x) { return (0, util_1.typeIsArray)(x); })) {
+            return arg.reduce(function (x, y) { return x.concat(y); }, []);
         }
         else {
             return arg;
         }
-    }
-}
+    };
+    return Flatten;
+}(expression_1.Expression));
 exports.Flatten = Flatten;
-class Distinct extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Distinct = /** @class */ (function (_super) {
+    __extends(Distinct, _super);
+    function Distinct(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const result = await this.execArgs(ctx);
+    Distinct.prototype.exec = function (ctx) {
+        var result = this.execArgs(ctx);
         if (result == null) {
             return null;
         }
-        return (0, exports.toDistinctList)(result);
-    }
-}
+        return doDistinct(result);
+    };
+    return Distinct;
+}(expression_1.Expression));
 exports.Distinct = Distinct;
-const toDistinctList = (list) => {
-    const list_keys = list.map(immutableUtil_1.toNormalizedKey);
-    const set = immutable_1.default.Set().asMutable();
-    const distinct = [];
-    set.withMutations(y => {
-        list_keys.forEach((key, i) => {
-            // Check set size
-            const setSize = y.count();
-            // Attempt to insert
-            y.add(key);
-            // If inserted, then size will increase; push to distinct
-            if (y.count() > setSize) {
-                distinct.push(list[i]);
-            }
-        });
+function doDistinct(list) {
+    var distinct = [];
+    list.forEach(function (item) {
+        var isNew = distinct.every(function (seenItem) { return !(0, comparison_1.equals)(item, seenItem); });
+        if (isNew) {
+            distinct.push(item);
+        }
     });
-    return distinct;
-};
-exports.toDistinctList = toDistinctList;
+    return removeDuplicateNulls(distinct);
+}
 function removeDuplicateNulls(list) {
     // Remove duplicate null elements
-    let firstNullFound = false;
-    const setList = [];
-    for (const item of list) {
+    var firstNullFound = false;
+    var setList = [];
+    for (var _i = 0, list_1 = list; _i < list_1.length; _i++) {
+        var item = list_1[_i];
         if (item !== null) {
             setList.push(item);
         }
@@ -33631,78 +34123,109 @@ function removeDuplicateNulls(list) {
     return setList;
 }
 // ELM-only, not a product of CQL
-class Current extends expression_1.UnimplementedExpression {
-}
-exports.Current = Current;
-class First extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.source = (0, builder_1.build)(json.source);
+var Current = /** @class */ (function (_super) {
+    __extends(Current, _super);
+    function Current() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    async exec(ctx) {
-        const src = await this.source.execute(ctx);
+    return Current;
+}(expression_1.UnimplementedExpression));
+exports.Current = Current;
+var First = /** @class */ (function (_super) {
+    __extends(First, _super);
+    function First(json) {
+        var _this = _super.call(this, json) || this;
+        _this.source = (0, builder_1.build)(json.source);
+        return _this;
+    }
+    First.prototype.exec = function (ctx) {
+        var src = this.source.exec(ctx);
         if (src != null && (0, util_1.typeIsArray)(src) && src.length > 0) {
             return src[0];
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return First;
+}(expression_1.Expression));
 exports.First = First;
-class Last extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.source = (0, builder_1.build)(json.source);
+var Last = /** @class */ (function (_super) {
+    __extends(Last, _super);
+    function Last(json) {
+        var _this = _super.call(this, json) || this;
+        _this.source = (0, builder_1.build)(json.source);
+        return _this;
     }
-    async exec(ctx) {
-        const src = await this.source.execute(ctx);
+    Last.prototype.exec = function (ctx) {
+        var src = this.source.exec(ctx);
         if (src != null && (0, util_1.typeIsArray)(src) && src.length > 0) {
             return src[src.length - 1];
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return Last;
+}(expression_1.Expression));
 exports.Last = Last;
-class Slice extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.source = (0, builder_1.build)(json.source);
-        this.startIndex = (0, builder_1.build)(json.startIndex);
-        this.endIndex = (0, builder_1.build)(json.endIndex);
+var Slice = /** @class */ (function (_super) {
+    __extends(Slice, _super);
+    function Slice(json) {
+        var _this = _super.call(this, json) || this;
+        _this.source = (0, builder_1.build)(json.source);
+        _this.startIndex = (0, builder_1.build)(json.startIndex);
+        _this.endIndex = (0, builder_1.build)(json.endIndex);
+        return _this;
     }
-    async exec(ctx) {
-        const src = await this.source.execute(ctx);
+    Slice.prototype.exec = function (ctx) {
+        var src = this.source.exec(ctx);
         if (src != null && (0, util_1.typeIsArray)(src)) {
-            const startIndex = await this.startIndex.execute(ctx);
-            const endIndex = await this.endIndex.execute(ctx);
-            const start = startIndex != null ? startIndex : 0;
-            const end = endIndex != null ? endIndex : src.length;
+            var startIndex = this.startIndex.exec(ctx);
+            var endIndex = this.endIndex.exec(ctx);
+            var start = startIndex != null ? startIndex : 0;
+            var end = endIndex != null ? endIndex : src.length;
             if (src.length === 0 || start < 0 || end < 0 || end < start) {
                 return [];
             }
             return src.slice(start, end);
         }
         return null;
-    }
-}
+    };
+    return Slice;
+}(expression_1.Expression));
 exports.Slice = Slice;
 // Length is completely handled by overloaded#Length
 
-},{"../util/comparison":218,"../util/immutableUtil":220,"../util/util":223,"./builder":182,"./expression":188,"immutable":294}],195:[function(require,module,exports){
+},{"../util/comparison":218,"../util/util":221,"./builder":182,"./expression":188}],195:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StringLiteral = exports.DecimalLiteral = exports.IntegerLiteral = exports.BooleanLiteral = exports.Literal = void 0;
-const expression_1 = require("./expression");
-class Literal extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.valueType = json.valueType;
-        this.value = json.value;
+var expression_1 = require("./expression");
+var Literal = /** @class */ (function (_super) {
+    __extends(Literal, _super);
+    function Literal(json) {
+        var _this = _super.call(this, json) || this;
+        _this.valueType = json.valueType;
+        _this.value = json.value;
+        return _this;
     }
-    static from(json) {
+    Literal.from = function (json) {
         switch (json.valueType) {
             case '{urn:hl7-org:elm-types:r1}Boolean':
                 return new BooleanLiteral(json);
@@ -33715,211 +34238,295 @@ class Literal extends expression_1.Expression {
             default:
                 return new Literal(json);
         }
-    }
-    async exec(_ctx) {
+    };
+    Literal.prototype.exec = function (_ctx) {
         return this.value;
-    }
-}
+    };
+    return Literal;
+}(expression_1.Expression));
 exports.Literal = Literal;
 // The following are not defined in ELM, but helpful for execution
-class BooleanLiteral extends Literal {
-    constructor(json) {
-        super(json);
-        this.value = this.value === 'true';
+var BooleanLiteral = /** @class */ (function (_super) {
+    __extends(BooleanLiteral, _super);
+    function BooleanLiteral(json) {
+        var _this = _super.call(this, json) || this;
+        _this.value = _this.value === 'true';
+        return _this;
     }
-    // Define a simple getter to allow type-checking of this class without instanceof
-    // and in a way that survives minification (as opposed to checking constructor.name)
-    get isBooleanLiteral() {
-        return true;
-    }
-    async exec(_ctx) {
+    Object.defineProperty(BooleanLiteral.prototype, "isBooleanLiteral", {
+        // Define a simple getter to allow type-checking of this class without instanceof
+        // and in a way that survives minification (as opposed to checking constructor.name)
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    BooleanLiteral.prototype.exec = function (_ctx) {
         return this.value;
-    }
-}
+    };
+    return BooleanLiteral;
+}(Literal));
 exports.BooleanLiteral = BooleanLiteral;
-class IntegerLiteral extends Literal {
-    constructor(json) {
-        super(json);
-        this.value = parseInt(this.value, 10);
+var IntegerLiteral = /** @class */ (function (_super) {
+    __extends(IntegerLiteral, _super);
+    function IntegerLiteral(json) {
+        var _this = _super.call(this, json) || this;
+        _this.value = parseInt(_this.value, 10);
+        return _this;
     }
-    // Define a simple getter to allow type-checking of this class without instanceof
-    // and in a way that survives minification (as opposed to checking constructor.name)
-    get isIntegerLiteral() {
-        return true;
-    }
-    async exec(_ctx) {
+    Object.defineProperty(IntegerLiteral.prototype, "isIntegerLiteral", {
+        // Define a simple getter to allow type-checking of this class without instanceof
+        // and in a way that survives minification (as opposed to checking constructor.name)
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    IntegerLiteral.prototype.exec = function (_ctx) {
         return this.value;
-    }
-}
+    };
+    return IntegerLiteral;
+}(Literal));
 exports.IntegerLiteral = IntegerLiteral;
-class DecimalLiteral extends Literal {
-    constructor(json) {
-        super(json);
-        this.value = parseFloat(this.value);
+var DecimalLiteral = /** @class */ (function (_super) {
+    __extends(DecimalLiteral, _super);
+    function DecimalLiteral(json) {
+        var _this = _super.call(this, json) || this;
+        _this.value = parseFloat(_this.value);
+        return _this;
     }
-    // Define a simple getter to allow type-checking of this class without instanceof
-    // and in a way that survives minification (as opposed to checking constructor.name)
-    get isDecimalLiteral() {
-        return true;
-    }
-    async exec(_ctx) {
+    Object.defineProperty(DecimalLiteral.prototype, "isDecimalLiteral", {
+        // Define a simple getter to allow type-checking of this class without instanceof
+        // and in a way that survives minification (as opposed to checking constructor.name)
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    DecimalLiteral.prototype.exec = function (_ctx) {
         return this.value;
-    }
-}
+    };
+    return DecimalLiteral;
+}(Literal));
 exports.DecimalLiteral = DecimalLiteral;
-class StringLiteral extends Literal {
-    constructor(json) {
-        super(json);
+var StringLiteral = /** @class */ (function (_super) {
+    __extends(StringLiteral, _super);
+    function StringLiteral(json) {
+        return _super.call(this, json) || this;
     }
-    // Define a simple getter to allow type-checking of this class without instanceof
-    // and in a way that survives minification (as opposed to checking constructor.name)
-    get isStringLiteral() {
-        return true;
-    }
-    async exec(_ctx) {
+    Object.defineProperty(StringLiteral.prototype, "isStringLiteral", {
+        // Define a simple getter to allow type-checking of this class without instanceof
+        // and in a way that survives minification (as opposed to checking constructor.name)
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    StringLiteral.prototype.exec = function (_ctx) {
         // TODO: Remove these replacements when CQL-to-ELM fixes bug: https://github.com/cqframework/clinical_quality_language/issues/82
         return this.value.replace(/\\'/g, "'").replace(/\\"/g, '"');
-    }
-}
+    };
+    return StringLiteral;
+}(Literal));
 exports.StringLiteral = StringLiteral;
 
 },{"./expression":188}],196:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.IsFalse = exports.IsTrue = exports.Xor = exports.Not = exports.Or = exports.Implies = exports.And = void 0;
-const expression_1 = require("./expression");
-const datatypes_1 = require("../datatypes/datatypes");
-class And extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+exports.IsFalse = exports.IsTrue = exports.Xor = exports.Not = exports.Or = exports.And = void 0;
+var expression_1 = require("./expression");
+var datatypes_1 = require("../datatypes/datatypes");
+var And = /** @class */ (function (_super) {
+    __extends(And, _super);
+    function And(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return datatypes_1.ThreeValuedLogic.and(...(await this.execArgs(ctx)));
-    }
-}
+    And.prototype.exec = function (ctx) {
+        return datatypes_1.ThreeValuedLogic.and.apply(datatypes_1.ThreeValuedLogic, this.execArgs(ctx));
+    };
+    return And;
+}(expression_1.Expression));
 exports.And = And;
-class Implies extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Or = /** @class */ (function (_super) {
+    __extends(Or, _super);
+    function Or(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [left, right] = await this.execArgs(ctx);
-        return datatypes_1.ThreeValuedLogic.implies(left, right);
-    }
-}
-exports.Implies = Implies;
-class Or extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-    }
-    async exec(ctx) {
-        return datatypes_1.ThreeValuedLogic.or(...(await this.execArgs(ctx)));
-    }
-}
+    Or.prototype.exec = function (ctx) {
+        return datatypes_1.ThreeValuedLogic.or.apply(datatypes_1.ThreeValuedLogic, this.execArgs(ctx));
+    };
+    return Or;
+}(expression_1.Expression));
 exports.Or = Or;
-class Not extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Not = /** @class */ (function (_super) {
+    __extends(Not, _super);
+    function Not(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return datatypes_1.ThreeValuedLogic.not(await this.execArgs(ctx));
-    }
-}
+    Not.prototype.exec = function (ctx) {
+        return datatypes_1.ThreeValuedLogic.not(this.execArgs(ctx));
+    };
+    return Not;
+}(expression_1.Expression));
 exports.Not = Not;
-class Xor extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Xor = /** @class */ (function (_super) {
+    __extends(Xor, _super);
+    function Xor(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return datatypes_1.ThreeValuedLogic.xor(...(await this.execArgs(ctx)));
-    }
-}
+    Xor.prototype.exec = function (ctx) {
+        return datatypes_1.ThreeValuedLogic.xor.apply(datatypes_1.ThreeValuedLogic, this.execArgs(ctx));
+    };
+    return Xor;
+}(expression_1.Expression));
 exports.Xor = Xor;
-class IsTrue extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var IsTrue = /** @class */ (function (_super) {
+    __extends(IsTrue, _super);
+    function IsTrue(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return true === (await this.execArgs(ctx));
-    }
-}
+    IsTrue.prototype.exec = function (ctx) {
+        return true === this.execArgs(ctx);
+    };
+    return IsTrue;
+}(expression_1.Expression));
 exports.IsTrue = IsTrue;
-class IsFalse extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var IsFalse = /** @class */ (function (_super) {
+    __extends(IsFalse, _super);
+    function IsFalse(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return false === (await this.execArgs(ctx));
-    }
-}
+    IsFalse.prototype.exec = function (ctx) {
+        return false === this.execArgs(ctx);
+    };
+    return IsFalse;
+}(expression_1.Expression));
 exports.IsFalse = IsFalse;
 
 },{"../datatypes/datatypes":172,"./expression":188}],197:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Message = void 0;
-const expression_1 = require("./expression");
-const builder_1 = require("./builder");
-class Message extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.source = (0, builder_1.build)(json.source);
-        this.condition = (0, builder_1.build)(json.condition);
-        this.code = (0, builder_1.build)(json.code);
-        this.severity = (0, builder_1.build)(json.severity);
-        this.message = (0, builder_1.build)(json.message);
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var Message = /** @class */ (function (_super) {
+    __extends(Message, _super);
+    function Message(json) {
+        var _this = _super.call(this, json) || this;
+        _this.source = (0, builder_1.build)(json.source);
+        _this.condition = (0, builder_1.build)(json.condition);
+        _this.code = (0, builder_1.build)(json.code);
+        _this.severity = (0, builder_1.build)(json.severity);
+        _this.message = (0, builder_1.build)(json.message);
+        return _this;
     }
-    async exec(ctx) {
-        const source = await this.source.execute(ctx);
-        const condition = await this.condition.execute(ctx);
+    Message.prototype.exec = function (ctx) {
+        var source = this.source.execute(ctx);
+        var condition = this.condition.execute(ctx);
         if (condition) {
-            const code = await this.code.execute(ctx);
-            const severity = await this.severity.execute(ctx);
-            const message = await this.message.execute(ctx);
-            const listener = ctx.getMessageListener();
+            var code = this.code.execute(ctx);
+            var severity = this.severity.execute(ctx);
+            var message = this.message.execute(ctx);
+            var listener = ctx.getMessageListener();
             if (listener && typeof listener.onMessage === 'function') {
                 listener.onMessage(source, code, severity, message);
             }
         }
         return source;
-    }
-}
+    };
+    return Message;
+}(expression_1.Expression));
 exports.Message = Message;
 
 },{"./builder":182,"./expression":188}],198:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Coalesce = exports.IsNull = exports.Null = void 0;
-const expression_1 = require("./expression");
-class Null extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var expression_1 = require("./expression");
+var Null = /** @class */ (function (_super) {
+    __extends(Null, _super);
+    function Null(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(_ctx) {
+    Null.prototype.exec = function (_ctx) {
         return null;
-    }
-}
+    };
+    return Null;
+}(expression_1.Expression));
 exports.Null = Null;
-class IsNull extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var IsNull = /** @class */ (function (_super) {
+    __extends(IsNull, _super);
+    function IsNull(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return (await this.execArgs(ctx)) == null;
-    }
-}
+    IsNull.prototype.exec = function (ctx) {
+        return this.execArgs(ctx) == null;
+    };
+    return IsNull;
+}(expression_1.Expression));
 exports.IsNull = IsNull;
-class Coalesce extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Coalesce = /** @class */ (function (_super) {
+    __extends(Coalesce, _super);
+    function Coalesce(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
+    Coalesce.prototype.exec = function (ctx) {
         if (this.args) {
-            for (const arg of this.args) {
-                const result = await arg.execute(ctx);
+            for (var _i = 0, _a = this.args; _i < _a.length; _i++) {
+                var arg = _a[_i];
+                var result = arg.execute(ctx);
                 // if a single arg that's a list, coalesce over the list
                 if (this.args.length === 1 && Array.isArray(result)) {
-                    const item = result.find(item => item != null);
+                    var item = result.find(function (item) { return item != null; });
                     if (item != null) {
                         return item;
                     }
@@ -33932,12 +34539,28 @@ class Coalesce extends expression_1.Expression {
             }
         }
         return null;
-    }
-}
+    };
+    return Coalesce;
+}(expression_1.Expression));
 exports.Coalesce = Coalesce;
 
 },{"./expression":188}],199:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -33960,34 +34583,37 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Precision = exports.SameOrBefore = exports.SameOrAfter = exports.SameAs = exports.Before = exports.After = exports.Length = exports.ProperIncludedIn = exports.ProperIncludes = exports.IncludedIn = exports.Includes = exports.Contains = exports.In = exports.Indexer = exports.Intersect = exports.Except = exports.Union = exports.NotEqual = exports.Equivalent = exports.Equal = void 0;
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-const expression_1 = require("./expression");
-const logic_1 = require("../datatypes/logic");
-const datetime_1 = require("../datatypes/datetime");
-const util_1 = require("../util/util");
-const comparison_1 = require("../util/comparison");
-const DT = __importStar(require("./datetime"));
-const LIST = __importStar(require("./list"));
-const IVL = __importStar(require("./interval"));
-class Equal extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var expression_1 = require("./expression");
+var logic_1 = require("../datatypes/logic");
+var datetime_1 = require("../datatypes/datetime");
+var util_1 = require("../util/util");
+var comparison_1 = require("../util/comparison");
+var DT = __importStar(require("./datetime"));
+var LIST = __importStar(require("./list"));
+var IVL = __importStar(require("./interval"));
+var Equal = /** @class */ (function (_super) {
+    __extends(Equal, _super);
+    function Equal(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
+    Equal.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
         if (args[0] == null || args[1] == null) {
             return null;
         }
         // @ts-ignore
-        return (0, comparison_1.equals)(...args);
-    }
-}
+        return comparison_1.equals.apply(void 0, args);
+    };
+    return Equal;
+}(expression_1.Expression));
 exports.Equal = Equal;
-class Equivalent extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Equivalent = /** @class */ (function (_super) {
+    __extends(Equivalent, _super);
+    function Equivalent(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Equivalent.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a == null && b == null) {
             return true;
         }
@@ -33997,34 +34623,38 @@ class Equivalent extends expression_1.Expression {
         else {
             return (0, comparison_1.equivalent)(a, b);
         }
-    }
-}
+    };
+    return Equivalent;
+}(expression_1.Expression));
 exports.Equivalent = Equivalent;
-class NotEqual extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var NotEqual = /** @class */ (function (_super) {
+    __extends(NotEqual, _super);
+    function NotEqual(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
+    NotEqual.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
         if (args[0] == null || args[1] == null) {
             return null;
         }
         // @ts-ignore
-        return logic_1.ThreeValuedLogic.not((0, comparison_1.equals)(...(await this.execArgs(ctx))));
-    }
-}
+        return logic_1.ThreeValuedLogic.not(comparison_1.equals.apply(void 0, this.execArgs(ctx)));
+    };
+    return NotEqual;
+}(expression_1.Expression));
 exports.NotEqual = NotEqual;
-class Union extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Union = /** @class */ (function (_super) {
+    __extends(Union, _super);
+    function Union(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Union.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a == null && b == null) {
             return this.listTypeArgs() ? [] : null;
         }
         if (a == null || b == null) {
-            const notNull = a || b;
+            var notNull = a || b;
             if ((0, util_1.typeIsArray)(notNull)) {
                 return notNull;
             }
@@ -34032,54 +34662,60 @@ class Union extends expression_1.Expression {
                 return null;
             }
         }
-        const lib = (0, util_1.typeIsArray)(a) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(a) ? LIST : IVL;
         return lib.doUnion(a, b);
-    }
-    listTypeArgs() {
+    };
+    Union.prototype.listTypeArgs = function () {
         var _a;
-        return (_a = this.args) === null || _a === void 0 ? void 0 : _a.some((arg) => {
+        return (_a = this.args) === null || _a === void 0 ? void 0 : _a.some(function (arg) {
             return arg.asTypeSpecifier != null && arg.asTypeSpecifier.type === 'ListTypeSpecifier';
         });
-    }
-}
+    };
+    return Union;
+}(expression_1.Expression));
 exports.Union = Union;
-class Except extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Except = /** @class */ (function (_super) {
+    __extends(Except, _super);
+    function Except(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Except.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a == null) {
             return null;
         }
         if (b == null) {
             return (0, util_1.typeIsArray)(a) ? a : null;
         }
-        const lib = (0, util_1.typeIsArray)(a) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(a) ? LIST : IVL;
         return lib.doExcept(a, b);
-    }
-}
+    };
+    return Except;
+}(expression_1.Expression));
 exports.Except = Except;
-class Intersect extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Intersect = /** @class */ (function (_super) {
+    __extends(Intersect, _super);
+    function Intersect(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Intersect.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a == null || b == null) {
             return null;
         }
-        const lib = (0, util_1.typeIsArray)(a) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(a) ? LIST : IVL;
         return lib.doIntersect(a, b);
-    }
-}
+    };
+    return Intersect;
+}(expression_1.Expression));
 exports.Intersect = Intersect;
-class Indexer extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Indexer = /** @class */ (function (_super) {
+    __extends(Indexer, _super);
+    function Indexer(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [operand, index] = await this.execArgs(ctx);
+    Indexer.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), operand = _a[0], index = _a[1];
         if (operand == null || index == null) {
             return null;
         }
@@ -34087,111 +34723,131 @@ class Indexer extends expression_1.Expression {
             return null;
         }
         return operand[index];
-    }
-}
+    };
+    return Indexer;
+}(expression_1.Expression));
 exports.Indexer = Indexer;
-class In extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var In = /** @class */ (function (_super) {
+    __extends(In, _super);
+    function In(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [item, container] = await this.execArgs(ctx);
+    In.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), item = _a[0], container = _a[1];
         if (item == null) {
             return null;
         }
         if (container == null) {
             return false;
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
         return lib.doContains(container, item, this.precision);
-    }
-}
+    };
+    return In;
+}(expression_1.Expression));
 exports.In = In;
-class Contains extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var Contains = /** @class */ (function (_super) {
+    __extends(Contains, _super);
+    function Contains(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [container, item] = await this.execArgs(ctx);
+    Contains.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), container = _a[0], item = _a[1];
         if (container == null) {
             return false;
         }
         if (item == null) {
             return null;
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
         return lib.doContains(container, item, this.precision);
-    }
-}
+    };
+    return Contains;
+}(expression_1.Expression));
 exports.Contains = Contains;
-class Includes extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var Includes = /** @class */ (function (_super) {
+    __extends(Includes, _super);
+    function Includes(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [container, contained] = await this.execArgs(ctx);
+    Includes.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), container = _a[0], contained = _a[1];
         if (container == null || contained == null) {
             return null;
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
         return lib.doIncludes(container, contained, this.precision);
-    }
-}
+    };
+    return Includes;
+}(expression_1.Expression));
 exports.Includes = Includes;
-class IncludedIn extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var IncludedIn = /** @class */ (function (_super) {
+    __extends(IncludedIn, _super);
+    function IncludedIn(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [contained, container] = await this.execArgs(ctx);
+    IncludedIn.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), contained = _a[0], container = _a[1];
         if (container == null || contained == null) {
             return null;
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
         return lib.doIncludes(container, contained, this.precision);
-    }
-}
+    };
+    return IncludedIn;
+}(expression_1.Expression));
 exports.IncludedIn = IncludedIn;
-class ProperIncludes extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var ProperIncludes = /** @class */ (function (_super) {
+    __extends(ProperIncludes, _super);
+    function ProperIncludes(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [container, contained] = await this.execArgs(ctx);
+    ProperIncludes.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), container = _a[0], contained = _a[1];
         if (container == null || contained == null) {
             return null;
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
         return lib.doProperIncludes(container, contained, this.precision);
-    }
-}
+    };
+    return ProperIncludes;
+}(expression_1.Expression));
 exports.ProperIncludes = ProperIncludes;
-class ProperIncludedIn extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var ProperIncludedIn = /** @class */ (function (_super) {
+    __extends(ProperIncludedIn, _super);
+    function ProperIncludedIn(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [contained, container] = await this.execArgs(ctx);
+    ProperIncludedIn.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), contained = _a[0], container = _a[1];
         if (container == null || contained == null) {
             return null;
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
+        var lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
         return lib.doProperIncludes(container, contained, this.precision);
-    }
-}
+    };
+    return ProperIncludedIn;
+}(expression_1.Expression));
 exports.ProperIncludedIn = ProperIncludedIn;
-class Length extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Length = /** @class */ (function (_super) {
+    __extends(Length, _super);
+    function Length(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Length.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             return arg.length;
         }
@@ -34201,153 +34857,207 @@ class Length extends expression_1.Expression {
         else {
             return null;
         }
-    }
-}
+    };
+    return Length;
+}(expression_1.Expression));
 exports.Length = Length;
-class After extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var After = /** @class */ (function (_super) {
+    __extends(After, _super);
+    function After(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    After.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a == null || b == null) {
             return null;
         }
-        const lib = a instanceof datetime_1.DateTime ? DT : IVL;
+        var lib = a instanceof datetime_1.DateTime ? DT : IVL;
         return lib.doAfter(a, b, this.precision);
-    }
-}
+    };
+    return After;
+}(expression_1.Expression));
 exports.After = After;
-class Before extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+var Before = /** @class */ (function (_super) {
+    __extends(Before, _super);
+    function Before(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision != null ? json.precision.toLowerCase() : undefined;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    Before.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a == null || b == null) {
             return null;
         }
-        const lib = a instanceof datetime_1.DateTime ? DT : IVL;
+        var lib = a instanceof datetime_1.DateTime ? DT : IVL;
         return lib.doBefore(a, b, this.precision);
-    }
-}
+    };
+    return Before;
+}(expression_1.Expression));
 exports.Before = Before;
-class SameAs extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
+var SameAs = /** @class */ (function (_super) {
+    __extends(SameAs, _super);
+    function SameAs(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+    SameAs.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), a = _a[0], b = _a[1];
         if (a != null && b != null) {
             return a.sameAs(b, this.precision != null ? this.precision.toLowerCase() : undefined);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return SameAs;
+}(expression_1.Expression));
 exports.SameAs = SameAs;
-class SameOrAfter extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
+var SameOrAfter = /** @class */ (function (_super) {
+    __extends(SameOrAfter, _super);
+    function SameOrAfter(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    async exec(ctx) {
-        const [d1, d2] = await this.execArgs(ctx);
+    SameOrAfter.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), d1 = _a[0], d2 = _a[1];
         if (d1 != null && d2 != null) {
             return d1.sameOrAfter(d2, this.precision != null ? this.precision.toLowerCase() : undefined);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return SameOrAfter;
+}(expression_1.Expression));
 exports.SameOrAfter = SameOrAfter;
-class SameOrBefore extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.precision = json.precision;
+var SameOrBefore = /** @class */ (function (_super) {
+    __extends(SameOrBefore, _super);
+    function SameOrBefore(json) {
+        var _this = _super.call(this, json) || this;
+        _this.precision = json.precision;
+        return _this;
     }
-    async exec(ctx) {
-        const [d1, d2] = await this.execArgs(ctx);
+    SameOrBefore.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), d1 = _a[0], d2 = _a[1];
         if (d1 != null && d2 != null) {
             return d1.sameOrBefore(d2, this.precision != null ? this.precision.toLowerCase() : undefined);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return SameOrBefore;
+}(expression_1.Expression));
 exports.SameOrBefore = SameOrBefore;
 // Implemented for DateTime, Date, and Time but not for Decimal yet
-class Precision extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Precision = /** @class */ (function (_super) {
+    __extends(Precision, _super);
+    function Precision(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Precision.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
         // Since we can't extend UnimplementedExpression directly for this overloaded function,
         // we have to copy the error to throw here if we are not using the correct type
         if (!arg.getPrecisionValue) {
-            throw new Error(`Unimplemented Expression: Precision`);
+            throw new Error("Unimplemented Expression: Precision");
         }
         return arg.getPrecisionValue();
-    }
-}
+    };
+    return Precision;
+}(expression_1.Expression));
 exports.Precision = Precision;
 
-},{"../datatypes/datetime":173,"../datatypes/logic":176,"../util/comparison":218,"../util/util":223,"./datetime":186,"./expression":188,"./interval":192,"./list":194}],200:[function(require,module,exports){
+},{"../datatypes/datetime":173,"../datatypes/logic":176,"../util/comparison":218,"../util/util":221,"./datetime":186,"./expression":188,"./interval":192,"./list":194}],200:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ParameterRef = exports.ParameterDef = void 0;
-const expression_1 = require("./expression");
-const builder_1 = require("./builder");
-class ParameterDef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.default = (0, builder_1.build)(json.default);
-        this.parameterTypeSpecifier = json.parameterTypeSpecifier;
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var ParameterDef = /** @class */ (function (_super) {
+    __extends(ParameterDef, _super);
+    function ParameterDef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.default = (0, builder_1.build)(json.default);
+        _this.parameterTypeSpecifier = json.parameterTypeSpecifier;
+        return _this;
     }
-    async exec(ctx) {
+    ParameterDef.prototype.exec = function (ctx) {
         // If context parameters contains the name, return value.
         if (ctx && ctx.parameters[this.name] !== undefined) {
             return ctx.parameters[this.name];
             // If the parent context contains the name, return that
         }
         else if (ctx.getParentParameter(this.name) !== undefined) {
-            const parentParam = ctx.getParentParameter(this.name);
+            var parentParam = ctx.getParentParameter(this.name);
             return parentParam.default != null ? parentParam.default.execute(ctx) : parentParam;
             // If default type exists, execute the default type
         }
         else if (this.default != null) {
-            await this.default.execute(ctx);
+            this.default.execute(ctx);
         }
-    }
-}
+    };
+    return ParameterDef;
+}(expression_1.Expression));
 exports.ParameterDef = ParameterDef;
-class ParameterRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.library = json.libraryName;
+var ParameterRef = /** @class */ (function (_super) {
+    __extends(ParameterRef, _super);
+    function ParameterRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.library = json.libraryName;
+        return _this;
     }
-    async exec(ctx) {
+    ParameterRef.prototype.exec = function (ctx) {
         ctx = this.library ? ctx.getLibraryContext(this.library) : ctx;
-        const param = ctx.getParameter(this.name);
+        var param = ctx.getParameter(this.name);
         return param != null ? param.execute(ctx) : undefined;
-    }
-}
+    };
+    return ParameterRef;
+}(expression_1.Expression));
 exports.ParameterRef = ParameterRef;
 
 },{"./builder":182,"./expression":188}],201:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -34369,89 +35079,122 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Quantity = void 0;
-const expression_1 = require("./expression");
-const DT = __importStar(require("../datatypes/datatypes"));
+var expression_1 = require("./expression");
+var DT = __importStar(require("../datatypes/datatypes"));
 // Unit conversation is currently implemented on for time duration comparison operations
 // TODO: Implement unit conversation for time duration mathematical operations
-class Quantity extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.value = parseFloat(json.value);
-        this.unit = json.unit;
+var Quantity = /** @class */ (function (_super) {
+    __extends(Quantity, _super);
+    function Quantity(json) {
+        var _this = _super.call(this, json) || this;
+        _this.value = parseFloat(json.value);
+        _this.unit = json.unit;
+        return _this;
     }
-    async exec(_ctx) {
+    Quantity.prototype.exec = function (_ctx) {
         return new DT.Quantity(this.value, this.unit);
-    }
-}
+    };
+    return Quantity;
+}(expression_1.Expression));
 exports.Quantity = Quantity;
 
 },{"../datatypes/datatypes":172,"./expression":188}],202:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.QueryLetRef = exports.AliasRef = exports.Query = exports.SortClause = exports.ReturnClause = exports.ByColumn = exports.ByExpression = exports.ByDirection = exports.Sort = exports.Without = exports.With = exports.LetClause = exports.AliasedQuerySource = void 0;
-const util_1 = require("../util/util");
-const builder_1 = require("./builder");
-const expression_1 = require("./expression");
-const list_1 = require("./list");
-class AliasedQuerySource {
-    constructor(json) {
+var expression_1 = require("./expression");
+var context_1 = require("../runtime/context");
+var util_1 = require("../util/util");
+var comparison_1 = require("../util/comparison");
+var builder_1 = require("./builder");
+var AliasedQuerySource = /** @class */ (function () {
+    function AliasedQuerySource(json) {
         this.alias = json.alias;
         this.expression = (0, builder_1.build)(json.expression);
     }
-}
+    return AliasedQuerySource;
+}());
 exports.AliasedQuerySource = AliasedQuerySource;
-class LetClause {
-    constructor(json) {
+var LetClause = /** @class */ (function () {
+    function LetClause(json) {
         this.identifier = json.identifier;
         this.expression = (0, builder_1.build)(json.expression);
     }
-}
+    return LetClause;
+}());
 exports.LetClause = LetClause;
-class With extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.alias = json.alias;
-        this.expression = (0, builder_1.build)(json.expression);
-        this.suchThat = (0, builder_1.build)(json.suchThat);
+var With = /** @class */ (function (_super) {
+    __extends(With, _super);
+    function With(json) {
+        var _this = _super.call(this, json) || this;
+        _this.alias = json.alias;
+        _this.expression = (0, builder_1.build)(json.expression);
+        _this.suchThat = (0, builder_1.build)(json.suchThat);
+        return _this;
     }
-    async exec(ctx) {
-        let records = await this.expression.execute(ctx);
+    With.prototype.exec = function (ctx) {
+        var _this = this;
+        var records = this.expression.execute(ctx);
         if (!(0, util_1.typeIsArray)(records)) {
             records = [records];
         }
-        const returns = [];
-        for (const rec of records) {
-            const childCtx = ctx.childContext();
-            childCtx.set(this.alias, rec);
-            returns.push(await this.suchThat.execute(childCtx));
-        }
-        return returns.some((x) => x);
-    }
-}
+        var returns = records.map(function (rec) {
+            var childCtx = ctx.childContext();
+            childCtx.set(_this.alias, rec);
+            return _this.suchThat.execute(childCtx);
+        });
+        return returns.some(function (x) { return x; });
+    };
+    return With;
+}(expression_1.Expression));
 exports.With = With;
-class Without extends With {
-    constructor(json) {
-        super(json);
+var Without = /** @class */ (function (_super) {
+    __extends(Without, _super);
+    function Without(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return !(await super.exec(ctx));
-    }
-}
+    Without.prototype.exec = function (ctx) {
+        return !_super.prototype.exec.call(this, ctx);
+    };
+    return Without;
+}(With));
 exports.Without = Without;
 // ELM-only, not a product of CQL
-class Sort extends expression_1.UnimplementedExpression {
-}
+var Sort = /** @class */ (function (_super) {
+    __extends(Sort, _super);
+    function Sort() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return Sort;
+}(expression_1.UnimplementedExpression));
 exports.Sort = Sort;
-class ByDirection extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.direction = json.direction;
-        this.low_order = this.direction === 'asc' || this.direction === 'ascending' ? -1 : 1;
-        this.high_order = this.low_order * -1;
+var ByDirection = /** @class */ (function (_super) {
+    __extends(ByDirection, _super);
+    function ByDirection(json) {
+        var _this = _super.call(this, json) || this;
+        _this.direction = json.direction;
+        _this.low_order = _this.direction === 'asc' || _this.direction === 'ascending' ? -1 : 1;
+        _this.high_order = _this.low_order * -1;
+        return _this;
     }
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    async exec(ctx, a, b) {
+    ByDirection.prototype.exec = function (ctx, a, b) {
         if (a === b) {
             return 0;
         }
@@ -34469,24 +35212,27 @@ class ByDirection extends expression_1.Expression {
         else {
             return this.high_order;
         }
-    }
-}
+    };
+    return ByDirection;
+}(expression_1.Expression));
 exports.ByDirection = ByDirection;
-class ByExpression extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.expression = (0, builder_1.build)(json.expression);
-        this.direction = json.direction;
-        this.low_order = this.direction === 'asc' || this.direction === 'ascending' ? -1 : 1;
-        this.high_order = this.low_order * -1;
+var ByExpression = /** @class */ (function (_super) {
+    __extends(ByExpression, _super);
+    function ByExpression(json) {
+        var _this = _super.call(this, json) || this;
+        _this.expression = (0, builder_1.build)(json.expression);
+        _this.direction = json.direction;
+        _this.low_order = _this.direction === 'asc' || _this.direction === 'ascending' ? -1 : 1;
+        _this.high_order = _this.low_order * -1;
+        return _this;
     }
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    async exec(ctx, a, b) {
-        let sctx = ctx.childContext(a);
-        const a_val = await this.expression.execute(sctx);
+    ByExpression.prototype.exec = function (ctx, a, b) {
+        var sctx = ctx.childContext(a);
+        var a_val = this.expression.execute(sctx);
         sctx = ctx.childContext(b);
-        const b_val = await this.expression.execute(sctx);
+        var b_val = this.expression.execute(sctx);
         if (a_val === b_val || (a_val == null && b_val == null)) {
             return 0;
         }
@@ -34499,37 +35245,44 @@ class ByExpression extends expression_1.Expression {
         else {
             return a_val < b_val ? this.low_order : this.high_order;
         }
-    }
-}
+    };
+    return ByExpression;
+}(expression_1.Expression));
 exports.ByExpression = ByExpression;
-class ByColumn extends ByExpression {
-    constructor(json) {
-        super(json);
-        this.expression = (0, builder_1.build)({
+var ByColumn = /** @class */ (function (_super) {
+    __extends(ByColumn, _super);
+    function ByColumn(json) {
+        var _this = _super.call(this, json) || this;
+        _this.expression = (0, builder_1.build)({
             name: json.path,
             type: 'IdentifierRef'
         });
+        return _this;
     }
-}
+    return ByColumn;
+}(ByExpression));
 exports.ByColumn = ByColumn;
-class ReturnClause {
-    constructor(json) {
+var ReturnClause = /** @class */ (function () {
+    function ReturnClause(json) {
         this.expression = (0, builder_1.build)(json.expression);
         this.distinct = json.distinct != null ? json.distinct : true;
     }
-}
+    return ReturnClause;
+}());
 exports.ReturnClause = ReturnClause;
-class SortClause {
-    constructor(json) {
+var SortClause = /** @class */ (function () {
+    function SortClause(json) {
         this.by = (0, builder_1.build)(json != null ? json.by : undefined);
     }
-    async sort(ctx, values) {
+    SortClause.prototype.sort = function (ctx, values) {
+        var _this = this;
         if (this.by) {
-            return (0, util_1.asyncMergeSort)(values, async (a, b) => {
-                let order = 0;
-                for (const item of this.by) {
+            return values.sort(function (a, b) {
+                var order = 0;
+                for (var _i = 0, _a = _this.by; _i < _a.length; _i++) {
+                    var item = _a[_i];
                     // Do not use execute here because the value of the sort order is not important.
-                    order = await item.exec(ctx, a, b);
+                    order = item.exec(ctx, a, b);
                     if (order !== 0) {
                         break;
                     }
@@ -34537,41 +35290,56 @@ class SortClause {
                 return order;
             });
         }
-        return values;
-    }
-}
+    };
+    return SortClause;
+}());
 exports.SortClause = SortClause;
-class AggregateClause extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.identifier = json.identifier;
-        this.expression = (0, builder_1.build)(json.expression);
-        this.starting = json.starting ? (0, builder_1.build)(json.starting) : null;
-        this.distinct = json.distinct != null ? json.distinct : true;
-    }
-    async aggregate(returnedValues, ctx) {
-        let aggregateValue = this.starting != null ? await this.starting.execute(ctx) : null;
-        for (const contextValues of returnedValues) {
-            const childContext = ctx.childContext(contextValues);
-            childContext.set(this.identifier, aggregateValue);
-            aggregateValue = await this.expression.execute(childContext);
+var toDistinctList = function (xList) {
+    var yList = [];
+    xList.forEach(function (x) {
+        if (!yList.some(function (y) { return (0, comparison_1.equals)(x, y); })) {
+            yList.push(x);
         }
+    });
+    return yList;
+};
+var AggregateClause = /** @class */ (function (_super) {
+    __extends(AggregateClause, _super);
+    function AggregateClause(json) {
+        var _this = _super.call(this, json) || this;
+        _this.identifier = json.identifier;
+        _this.expression = (0, builder_1.build)(json.expression);
+        _this.starting = json.starting ? (0, builder_1.build)(json.starting) : null;
+        _this.distinct = json.distinct != null ? json.distinct : true;
+        return _this;
+    }
+    AggregateClause.prototype.aggregate = function (returnedValues, ctx) {
+        var _this = this;
+        var aggregateValue = this.starting != null ? this.starting.exec(ctx) : null;
+        returnedValues.forEach(function (contextValues) {
+            var childContext = ctx.childContext(contextValues);
+            childContext.set(_this.identifier, aggregateValue);
+            aggregateValue = _this.expression.exec(childContext);
+        });
         return aggregateValue;
+    };
+    return AggregateClause;
+}(expression_1.Expression));
+var Query = /** @class */ (function (_super) {
+    __extends(Query, _super);
+    function Query(json) {
+        var _this = _super.call(this, json) || this;
+        _this.sources = new MultiSource(json.source.map(function (s) { return new AliasedQuerySource(s); }));
+        _this.letClauses = json.let != null ? json.let.map(function (d) { return new LetClause(d); }) : [];
+        _this.relationship = json.relationship != null ? (0, builder_1.build)(json.relationship) : [];
+        _this.where = (0, builder_1.build)(json.where);
+        _this.returnClause = json.return != null ? new ReturnClause(json.return) : null;
+        _this.aggregateClause = json.aggregate != null ? new AggregateClause(json.aggregate) : null;
+        _this.aliases = _this.sources.aliases();
+        _this.sortClause = json.sort != null ? new SortClause(json.sort) : null;
+        return _this;
     }
-}
-class Query extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.sources = json.source.map((s) => new AliasedQuerySource(s));
-        this.aliases = json.source.map((s) => s.alias);
-        this.letClauses = json.let != null ? json.let.map((d) => new LetClause(d)) : [];
-        this.relationship = json.relationship != null ? (0, builder_1.build)(json.relationship) : [];
-        this.where = (0, builder_1.build)(json.where);
-        this.returnClause = json.return != null ? new ReturnClause(json.return) : null;
-        this.aggregateClause = json.aggregate != null ? new AggregateClause(json.aggregate) : null;
-        this.sortClause = json.sort != null ? new SortClause(json.sort) : null;
-    }
-    isDistinct() {
+    Query.prototype.isDistinct = function () {
         if (this.aggregateClause != null && this.aggregateClause.distinct != null) {
             return this.aggregateClause.distinct;
         }
@@ -34579,109 +35347,132 @@ class Query extends expression_1.Expression {
             return this.returnClause.distinct;
         }
         return true;
-    }
-    async exec(ctx) {
-        let sourceResults = await Promise.all(this.sources.map(s => s.expression.execute(ctx)));
-        // If every source is null, the result is null
-        // See: https://jira.hl7.org/browse/FHIR-40225
-        if (sourceResults.every(r => r == null)) {
-            return null;
-        }
-        const isList = sourceResults.some(r => Array.isArray(r));
-        // For ease of processing, convert all the sources to lists and
-        // convert nulls to empty lists (we already handled the ALL null case)
-        sourceResults = sourceResults.map(r => {
-            if (r == null) {
-                return [];
+    };
+    Query.prototype.exec = function (ctx) {
+        var _this = this;
+        var returnedValues = [];
+        this.sources.forEach(ctx, function (rctx) {
+            for (var _i = 0, _a = _this.letClauses; _i < _a.length; _i++) {
+                var def = _a[_i];
+                rctx.set(def.identifier, def.expression.execute(rctx));
             }
-            else if (Array.isArray(r)) {
-                return r;
-            }
-            else {
-                return [r];
-            }
-        });
-        // Iterate over the cartesian product of the sources.
-        // See: https://cql.hl7.org/03-developersguide.html#multi-source-queries
-        const cartesian = cartesianProductOf(sourceResults);
-        let returnedValues = [];
-        for (const combo of cartesian) {
-            const rctx = ctx.childContext();
-            combo.forEach((r, i) => rctx.set(this.aliases[i], r));
-            for (const def of this.letClauses) {
-                rctx.set(def.identifier, await def.expression.execute(rctx));
-            }
-            const relations = [];
-            for (const rel of this.relationship) {
-                const child_ctx = rctx.childContext();
-                relations.push(await rel.execute(child_ctx));
-            }
-            const passed = (0, util_1.allTrue)(relations) && (this.where ? await this.where.execute(rctx) : true);
+            var relations = _this.relationship.map(function (rel) {
+                var child_ctx = rctx.childContext();
+                return rel.execute(child_ctx);
+            });
+            var passed = (0, util_1.allTrue)(relations) && (_this.where ? _this.where.execute(rctx) : true);
             if (passed) {
-                if (this.returnClause != null) {
-                    const val = await this.returnClause.expression.execute(rctx);
+                if (_this.returnClause != null) {
+                    var val = _this.returnClause.expression.execute(rctx);
                     returnedValues.push(val);
                 }
                 else {
-                    if (this.aliases.length === 1 && this.aggregateClause == null) {
-                        returnedValues.push(rctx.get(this.aliases[0]));
+                    if (_this.aliases.length === 1 && _this.aggregateClause == null) {
+                        returnedValues.push(rctx.get(_this.aliases[0]));
                     }
                     else {
                         returnedValues.push(rctx.context_values);
                     }
                 }
             }
-        }
+        });
         if (this.isDistinct()) {
-            returnedValues = (0, list_1.toDistinctList)(returnedValues);
+            returnedValues = toDistinctList(returnedValues);
         }
         if (this.aggregateClause != null) {
-            returnedValues = await this.aggregateClause.aggregate(returnedValues, ctx);
+            returnedValues = this.aggregateClause.aggregate(returnedValues, ctx);
         }
         if (this.sortClause != null) {
-            returnedValues = await this.sortClause.sort(ctx, returnedValues);
+            this.sortClause.sort(ctx, returnedValues);
         }
-        if (isList || this.aggregateClause != null) {
+        if (this.sources.returnsList() || this.aggregateClause != null) {
             return returnedValues;
         }
         else {
             return returnedValues[0];
         }
-    }
-}
+    };
+    return Query;
+}(expression_1.Expression));
 exports.Query = Query;
-class AliasRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
+var AliasRef = /** @class */ (function (_super) {
+    __extends(AliasRef, _super);
+    function AliasRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        return _this;
     }
-    async exec(ctx) {
+    AliasRef.prototype.exec = function (ctx) {
         return ctx != null ? ctx.get(this.name) : undefined;
-    }
-}
+    };
+    return AliasRef;
+}(expression_1.Expression));
 exports.AliasRef = AliasRef;
-class QueryLetRef extends AliasRef {
-    constructor(json) {
-        super(json);
+var QueryLetRef = /** @class */ (function (_super) {
+    __extends(QueryLetRef, _super);
+    function QueryLetRef(json) {
+        return _super.call(this, json) || this;
     }
-}
+    return QueryLetRef;
+}(AliasRef));
 exports.QueryLetRef = QueryLetRef;
-// cartesianProductOf function based on Chris West's function:
-// https://cwestblog.com/2011/05/02/cartesian-product-of-multiple-arrays/
-function cartesianProductOf(sources) {
-    return sources.reduce((a, b) => {
-        const ret = [];
-        a.forEach(a => {
-            b.forEach(b => {
-                ret.push(a.concat([b]));
-            });
+// The following is not defined by ELM but is helpful for execution
+var MultiSource = /** @class */ (function () {
+    function MultiSource(sources) {
+        this.sources = sources;
+        this.alias = this.sources[0].alias;
+        this.expression = this.sources[0].expression;
+        this.isList = true;
+        if (this.sources.length > 1) {
+            this.rest = new MultiSource(this.sources.slice(1));
+        }
+    }
+    MultiSource.prototype.aliases = function () {
+        var a = [this.alias];
+        if (this.rest) {
+            a = a.concat(this.rest.aliases());
+        }
+        return a;
+    };
+    MultiSource.prototype.returnsList = function () {
+        return this.isList || (this.rest && this.rest.returnsList());
+    };
+    MultiSource.prototype.forEach = function (ctx, func) {
+        var _this = this;
+        var records = this.expression.execute(ctx);
+        this.isList = (0, util_1.typeIsArray)(records);
+        records = this.isList ? records : [records];
+        return records.map(function (rec) {
+            var rctx = new context_1.Context(ctx);
+            rctx.set(_this.alias, rec);
+            if (_this.rest) {
+                return _this.rest.forEach(rctx, func);
+            }
+            else {
+                return func(rctx);
+            }
         });
-        return ret;
-    }, [[]]);
-}
+    };
+    return MultiSource;
+}());
 
-},{"../util/util":223,"./builder":182,"./expression":188,"./list":194}],203:[function(require,module,exports){
+},{"../runtime/context":208,"../util/comparison":218,"../util/util":221,"./builder":182,"./expression":188}],203:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -34703,107 +35494,136 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Ratio = void 0;
-const expression_1 = require("./expression");
-const quantity_1 = require("../datatypes/quantity");
-const DT = __importStar(require("../datatypes/datatypes"));
-class Ratio extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var expression_1 = require("./expression");
+var quantity_1 = require("../datatypes/quantity");
+var DT = __importStar(require("../datatypes/datatypes"));
+var Ratio = /** @class */ (function (_super) {
+    __extends(Ratio, _super);
+    function Ratio(json) {
+        var _this = _super.call(this, json) || this;
         if (json.numerator == null) {
             throw new Error('Cannot create a ratio with an undefined numerator value');
         }
         else {
-            this.numerator = new quantity_1.Quantity(json.numerator.value, json.numerator.unit);
+            _this.numerator = new quantity_1.Quantity(json.numerator.value, json.numerator.unit);
         }
         if (json.denominator == null) {
             throw new Error('Cannot create a ratio with an undefined denominator value');
         }
         else {
-            this.denominator = new quantity_1.Quantity(json.denominator.value, json.denominator.unit);
+            _this.denominator = new quantity_1.Quantity(json.denominator.value, json.denominator.unit);
         }
+        return _this;
     }
-    async exec(_ctx) {
+    Ratio.prototype.exec = function (_ctx) {
         return new DT.Ratio(this.numerator, this.denominator);
-    }
-}
+    };
+    return Ratio;
+}(expression_1.Expression));
 exports.Ratio = Ratio;
 
 },{"../datatypes/datatypes":172,"../datatypes/quantity":177,"./expression":188}],204:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IdentifierRef = exports.OperandRef = exports.FunctionRef = exports.FunctionDef = exports.ExpressionRef = exports.ExpressionDef = void 0;
-const expression_1 = require("./expression");
-const builder_1 = require("./builder");
-class ExpressionDef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.context = json.context;
-        this.expression = (0, builder_1.build)(json.expression);
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var ExpressionDef = /** @class */ (function (_super) {
+    __extends(ExpressionDef, _super);
+    function ExpressionDef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.context = json.context;
+        _this.expression = (0, builder_1.build)(json.expression);
+        return _this;
     }
-    async exec(ctx) {
-        const value = this.expression != null ? await this.expression.execute(ctx) : undefined;
+    ExpressionDef.prototype.exec = function (ctx) {
+        var value = this.expression != null ? this.expression.execute(ctx) : undefined;
         ctx.rootContext().set(this.name, value);
         return value;
-    }
-}
+    };
+    return ExpressionDef;
+}(expression_1.Expression));
 exports.ExpressionDef = ExpressionDef;
-class ExpressionRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.library = json.libraryName;
+var ExpressionRef = /** @class */ (function (_super) {
+    __extends(ExpressionRef, _super);
+    function ExpressionRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.library = json.libraryName;
+        return _this;
     }
-    async exec(ctx) {
+    ExpressionRef.prototype.exec = function (ctx) {
         ctx = this.library ? ctx.getLibraryContext(this.library) : ctx;
-        let value = ctx.get(this.name);
+        var value = ctx.get(this.name);
         if (value instanceof expression_1.Expression) {
-            value = await value.execute(ctx);
+            value = value.execute(ctx);
         }
         return value;
-    }
-}
+    };
+    return ExpressionRef;
+}(expression_1.Expression));
 exports.ExpressionRef = ExpressionRef;
-class FunctionDef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.expression = (0, builder_1.build)(json.expression);
-        this.parameters = json.operand;
+var FunctionDef = /** @class */ (function (_super) {
+    __extends(FunctionDef, _super);
+    function FunctionDef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.expression = (0, builder_1.build)(json.expression);
+        _this.parameters = json.operand;
+        return _this;
     }
-    async exec(_ctx) {
+    FunctionDef.prototype.exec = function (_ctx) {
         return this;
-    }
-}
+    };
+    return FunctionDef;
+}(expression_1.Expression));
 exports.FunctionDef = FunctionDef;
-class FunctionRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.library = json.libraryName;
+var FunctionRef = /** @class */ (function (_super) {
+    __extends(FunctionRef, _super);
+    function FunctionRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.library = json.libraryName;
+        return _this;
     }
-    async exec(ctx) {
-        let functionDefs, child_ctx;
+    FunctionRef.prototype.exec = function (ctx) {
+        var functionDefs, child_ctx;
         if (this.library) {
-            const lib = ctx.get(this.library);
+            var lib = ctx.get(this.library);
             functionDefs = lib ? lib.getFunction(this.name) : undefined;
-            const libCtx = ctx.getLibraryContext(this.library);
+            var libCtx = ctx.getLibraryContext(this.library);
             child_ctx = libCtx ? libCtx.childContext() : undefined;
         }
         else {
-            functionDefs = ctx.getFunction(this.name);
+            functionDefs = ctx.get(this.name);
             child_ctx = ctx.childContext();
         }
-        const args = await this.execArgs(ctx);
+        var args = this.execArgs(ctx);
         // Filter out functions w/ wrong number of arguments.
-        functionDefs = functionDefs.filter((f) => f.parameters.length === args.length);
+        functionDefs = functionDefs.filter(function (f) { return f.parameters.length === args.length; });
         // If there is still > 1 matching function, filter by argument types
         if (functionDefs.length > 1) {
-            functionDefs = functionDefs.filter((f) => {
-                let match = true;
-                for (let i = 0; i < args.length && match; i++) {
+            functionDefs = functionDefs.filter(function (f) {
+                var match = true;
+                for (var i = 0; i < args.length && match; i++) {
                     if (args[i] !== null) {
-                        let operandTypeSpecifier = f.parameters[i].operandTypeSpecifier;
+                        var operandTypeSpecifier = f.parameters[i].operandTypeSpecifier;
                         if (operandTypeSpecifier == null && f.parameters[i].operandType != null) {
                             // convert it to a NamedTypedSpecifier
                             operandTypeSpecifier = {
@@ -34826,45 +35646,52 @@ class FunctionRef extends expression_1.Expression {
         }
         // By this point, we should have only one function, but until implementation is completed,
         // use the last one (no matter how many still remain)
-        const functionDef = functionDefs[functionDefs.length - 1];
-        for (let i = 0; i < functionDef.parameters.length; i++) {
+        var functionDef = functionDefs[functionDefs.length - 1];
+        for (var i = 0; i < functionDef.parameters.length; i++) {
             child_ctx.set(functionDef.parameters[i].name, args[i]);
         }
         return functionDef.expression.execute(child_ctx);
-    }
-}
+    };
+    return FunctionRef;
+}(expression_1.Expression));
 exports.FunctionRef = FunctionRef;
-class OperandRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
+var OperandRef = /** @class */ (function (_super) {
+    __extends(OperandRef, _super);
+    function OperandRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        return _this;
     }
-    async exec(ctx) {
+    OperandRef.prototype.exec = function (ctx) {
         return ctx.get(this.name);
-    }
-}
+    };
+    return OperandRef;
+}(expression_1.Expression));
 exports.OperandRef = OperandRef;
-class IdentifierRef extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.name = json.name;
-        this.library = json.libraryName;
+var IdentifierRef = /** @class */ (function (_super) {
+    __extends(IdentifierRef, _super);
+    function IdentifierRef(json) {
+        var _this = _super.call(this, json) || this;
+        _this.name = json.name;
+        _this.library = json.libraryName;
+        return _this;
     }
-    async exec(ctx) {
+    IdentifierRef.prototype.exec = function (ctx) {
         // TODO: Technically, the ELM Translator should never output one of these
         // but this code is needed since it does, as a work-around to get queries
         // to work properly when sorting by a field in a tuple
-        const lib = this.library ? ctx.get(this.library) : undefined;
-        let val = lib ? lib.get(this.name) : ctx.get(this.name);
+        var lib = this.library ? ctx.get(this.library) : undefined;
+        var val = lib ? lib.get(this.name) : ctx.get(this.name);
         if (val == null) {
-            const parts = this.name.split('.');
+            var parts = this.name.split('.');
             val = ctx.get(parts[0]);
             if (val != null && parts.length > 1) {
-                let curr_obj = val;
-                for (const part of parts.slice(1)) {
+                var curr_obj = val;
+                for (var _i = 0, _a = parts.slice(1); _i < _a.length; _i++) {
+                    var part = _a[_i];
                     // _obj = curr_obj?[part] ? curr_obj?.get?(part)
                     // curr_obj = if _obj instanceof Function then _obj.call(curr_obj) else _obj
-                    let _obj;
+                    var _obj = void 0;
                     if (curr_obj != null) {
                         _obj = curr_obj[part];
                         if (_obj === undefined && typeof curr_obj.get === 'function') {
@@ -34882,45 +35709,65 @@ class IdentifierRef extends expression_1.Expression {
         else {
             return val;
         }
-    }
-}
+    };
+    return IdentifierRef;
+}(expression_1.Expression));
 exports.IdentifierRef = IdentifierRef;
 
 },{"./builder":182,"./expression":188}],205:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ReplaceMatches = exports.EndsWith = exports.StartsWith = exports.Substring = exports.Matches = exports.LastPositionOf = exports.PositionOf = exports.Lower = exports.Upper = exports.SplitOnMatches = exports.Split = exports.Combine = exports.Concatenate = void 0;
-const expression_1 = require("./expression");
-const builder_1 = require("./builder");
-class Concatenate extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var Concatenate = /** @class */ (function (_super) {
+    __extends(Concatenate, _super);
+    function Concatenate(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args.some((x) => x == null)) {
+    Concatenate.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args.some(function (x) { return x == null; })) {
             return null;
         }
         else {
-            return args.reduce((x, y) => x + y);
+            return args.reduce(function (x, y) { return x + y; });
         }
-    }
-}
+    };
+    return Concatenate;
+}(expression_1.Expression));
 exports.Concatenate = Concatenate;
-class Combine extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.source = (0, builder_1.build)(json.source);
-        this.separator = (0, builder_1.build)(json.separator);
+var Combine = /** @class */ (function (_super) {
+    __extends(Combine, _super);
+    function Combine(json) {
+        var _this = _super.call(this, json) || this;
+        _this.source = (0, builder_1.build)(json.source);
+        _this.separator = (0, builder_1.build)(json.separator);
+        return _this;
     }
-    async exec(ctx) {
-        const source = await this.source.execute(ctx);
-        const separator = this.separator != null ? await this.separator.execute(ctx) : '';
+    Combine.prototype.exec = function (ctx) {
+        var source = this.source.execute(ctx);
+        var separator = this.separator != null ? this.separator.execute(ctx) : '';
         if (source == null) {
             return null;
         }
         else {
-            const filteredArray = source.filter((x) => x != null);
+            var filteredArray = source.filter(function (x) { return x != null; });
             if (filteredArray.length === 0) {
                 return null;
             }
@@ -34928,133 +35775,154 @@ class Combine extends expression_1.Expression {
                 return filteredArray.join(separator);
             }
         }
-    }
-}
+    };
+    return Combine;
+}(expression_1.Expression));
 exports.Combine = Combine;
-class Split extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.stringToSplit = (0, builder_1.build)(json.stringToSplit);
-        this.separator = (0, builder_1.build)(json.separator);
+var Split = /** @class */ (function (_super) {
+    __extends(Split, _super);
+    function Split(json) {
+        var _this = _super.call(this, json) || this;
+        _this.stringToSplit = (0, builder_1.build)(json.stringToSplit);
+        _this.separator = (0, builder_1.build)(json.separator);
+        return _this;
     }
-    async exec(ctx) {
-        const stringToSplit = await this.stringToSplit.execute(ctx);
-        const separator = await this.separator.execute(ctx);
+    Split.prototype.exec = function (ctx) {
+        var stringToSplit = this.stringToSplit.execute(ctx);
+        var separator = this.separator.execute(ctx);
         if (stringToSplit && separator) {
             return stringToSplit.split(separator);
         }
         return stringToSplit ? [stringToSplit] : null;
-    }
-}
+    };
+    return Split;
+}(expression_1.Expression));
 exports.Split = Split;
-class SplitOnMatches extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.stringToSplit = (0, builder_1.build)(json.stringToSplit);
-        this.separatorPattern = (0, builder_1.build)(json.separatorPattern);
+var SplitOnMatches = /** @class */ (function (_super) {
+    __extends(SplitOnMatches, _super);
+    function SplitOnMatches(json) {
+        var _this = _super.call(this, json) || this;
+        _this.stringToSplit = (0, builder_1.build)(json.stringToSplit);
+        _this.separatorPattern = (0, builder_1.build)(json.separatorPattern);
+        return _this;
     }
-    async exec(ctx) {
-        const stringToSplit = await this.stringToSplit.execute(ctx);
-        const separatorPattern = await this.separatorPattern.execute(ctx);
+    SplitOnMatches.prototype.exec = function (ctx) {
+        var stringToSplit = this.stringToSplit.execute(ctx);
+        var separatorPattern = this.separatorPattern.execute(ctx);
         if (stringToSplit && separatorPattern) {
             return stringToSplit.split(new RegExp(separatorPattern));
         }
         return stringToSplit ? [stringToSplit] : null;
-    }
-}
+    };
+    return SplitOnMatches;
+}(expression_1.Expression));
 exports.SplitOnMatches = SplitOnMatches;
 // Length is completely handled by overloaded#Length
-class Upper extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Upper = /** @class */ (function (_super) {
+    __extends(Upper, _super);
+    function Upper(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Upper.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             return arg.toUpperCase();
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return Upper;
+}(expression_1.Expression));
 exports.Upper = Upper;
-class Lower extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Lower = /** @class */ (function (_super) {
+    __extends(Lower, _super);
+    function Lower(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Lower.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             return arg.toLowerCase();
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return Lower;
+}(expression_1.Expression));
 exports.Lower = Lower;
 // Indexer is completely handled by overloaded#Indexer
-class PositionOf extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.pattern = (0, builder_1.build)(json.pattern);
-        this.string = (0, builder_1.build)(json.string);
+var PositionOf = /** @class */ (function (_super) {
+    __extends(PositionOf, _super);
+    function PositionOf(json) {
+        var _this = _super.call(this, json) || this;
+        _this.pattern = (0, builder_1.build)(json.pattern);
+        _this.string = (0, builder_1.build)(json.string);
+        return _this;
     }
-    async exec(ctx) {
-        const pattern = await this.pattern.execute(ctx);
-        const string = await this.string.execute(ctx);
+    PositionOf.prototype.exec = function (ctx) {
+        var pattern = this.pattern.execute(ctx);
+        var string = this.string.execute(ctx);
         if (pattern == null || string == null) {
             return null;
         }
         else {
             return string.indexOf(pattern);
         }
-    }
-}
+    };
+    return PositionOf;
+}(expression_1.Expression));
 exports.PositionOf = PositionOf;
-class LastPositionOf extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.pattern = (0, builder_1.build)(json.pattern);
-        this.string = (0, builder_1.build)(json.string);
+var LastPositionOf = /** @class */ (function (_super) {
+    __extends(LastPositionOf, _super);
+    function LastPositionOf(json) {
+        var _this = _super.call(this, json) || this;
+        _this.pattern = (0, builder_1.build)(json.pattern);
+        _this.string = (0, builder_1.build)(json.string);
+        return _this;
     }
-    async exec(ctx) {
-        const pattern = await this.pattern.execute(ctx);
-        const string = await this.string.execute(ctx);
+    LastPositionOf.prototype.exec = function (ctx) {
+        var pattern = this.pattern.execute(ctx);
+        var string = this.string.execute(ctx);
         if (pattern == null || string == null) {
             return null;
         }
         else {
             return string.lastIndexOf(pattern);
         }
-    }
-}
+    };
+    return LastPositionOf;
+}(expression_1.Expression));
 exports.LastPositionOf = LastPositionOf;
-class Matches extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Matches = /** @class */ (function (_super) {
+    __extends(Matches, _super);
+    function Matches(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [string, pattern] = await this.execArgs(ctx);
+    Matches.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), string = _a[0], pattern = _a[1];
         if (string == null || pattern == null) {
             return null;
         }
         return new RegExp('^' + pattern + '$').test(string);
-    }
-}
+    };
+    return Matches;
+}(expression_1.Expression));
 exports.Matches = Matches;
-class Substring extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.stringToSub = (0, builder_1.build)(json.stringToSub);
-        this.startIndex = (0, builder_1.build)(json.startIndex);
-        this.length = (0, builder_1.build)(json['length']);
+var Substring = /** @class */ (function (_super) {
+    __extends(Substring, _super);
+    function Substring(json) {
+        var _this = _super.call(this, json) || this;
+        _this.stringToSub = (0, builder_1.build)(json.stringToSub);
+        _this.startIndex = (0, builder_1.build)(json.startIndex);
+        _this.length = (0, builder_1.build)(json['length']);
+        return _this;
     }
-    async exec(ctx) {
-        const stringToSub = await this.stringToSub.execute(ctx);
-        const startIndex = await this.startIndex.execute(ctx);
-        const length = this.length != null ? await this.length.execute(ctx) : null;
+    Substring.prototype.exec = function (ctx) {
+        var stringToSub = this.stringToSub.execute(ctx);
+        var startIndex = this.startIndex.execute(ctx);
+        var length = this.length != null ? this.length.execute(ctx) : null;
         // According to spec: If stringToSub or startIndex is null, or startIndex is out of range, the result is null.
         if (stringToSub == null ||
             startIndex == null ||
@@ -35068,79 +35936,104 @@ class Substring extends expression_1.Expression {
         else {
             return stringToSub.substr(startIndex);
         }
-    }
-}
+    };
+    return Substring;
+}(expression_1.Expression));
 exports.Substring = Substring;
-class StartsWith extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var StartsWith = /** @class */ (function (_super) {
+    __extends(StartsWith, _super);
+    function StartsWith(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args.some((x) => x == null)) {
+    StartsWith.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args.some(function (x) { return x == null; })) {
             return null;
         }
         else {
             return args[0].slice(0, args[1].length) === args[1];
         }
-    }
-}
+    };
+    return StartsWith;
+}(expression_1.Expression));
 exports.StartsWith = StartsWith;
-class EndsWith extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var EndsWith = /** @class */ (function (_super) {
+    __extends(EndsWith, _super);
+    function EndsWith(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args.some((x) => x == null)) {
+    EndsWith.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args.some(function (x) { return x == null; })) {
             return null;
         }
         else {
             return args[1] === '' || args[0].slice(-args[1].length) === args[1];
         }
-    }
-}
+    };
+    return EndsWith;
+}(expression_1.Expression));
 exports.EndsWith = EndsWith;
-class ReplaceMatches extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ReplaceMatches = /** @class */ (function (_super) {
+    __extends(ReplaceMatches, _super);
+    function ReplaceMatches(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const args = await this.execArgs(ctx);
-        if (args.some((x) => x == null)) {
+    ReplaceMatches.prototype.exec = function (ctx) {
+        var args = this.execArgs(ctx);
+        if (args.some(function (x) { return x == null; })) {
             return null;
         }
         else {
             return args[0].replace(new RegExp(args[1], 'g'), args[2]);
         }
-    }
-}
+    };
+    return ReplaceMatches;
+}(expression_1.Expression));
 exports.ReplaceMatches = ReplaceMatches;
 
 },{"./builder":182,"./expression":188}],206:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TupleElementDefinition = exports.TupleElement = exports.Tuple = exports.Property = void 0;
-const expression_1 = require("./expression");
-const builder_1 = require("./builder");
-class Property extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.scope = json.scope;
-        this.source = (0, builder_1.build)(json.source);
-        this.path = json.path;
+var expression_1 = require("./expression");
+var builder_1 = require("./builder");
+var Property = /** @class */ (function (_super) {
+    __extends(Property, _super);
+    function Property(json) {
+        var _this = _super.call(this, json) || this;
+        _this.scope = json.scope;
+        _this.source = (0, builder_1.build)(json.source);
+        _this.path = json.path;
+        return _this;
     }
-    async exec(ctx) {
-        let obj = this.scope != null ? ctx.get(this.scope) : this.source;
+    Property.prototype.exec = function (ctx) {
+        var obj = this.scope != null ? ctx.get(this.scope) : this.source;
         if (obj instanceof expression_1.Expression) {
-            obj = await obj.execute(ctx);
+            obj = obj.execute(ctx);
         }
-        let val = getPropertyFromObject(obj, this.path);
+        var val = getPropertyFromObject(obj, this.path);
         if (val == null) {
-            const parts = this.path.split('.');
-            let curr_obj = obj;
-            for (const part of parts) {
-                const _obj = getPropertyFromObject(curr_obj, part);
+            var parts = this.path.split('.');
+            var curr_obj = obj;
+            for (var _i = 0, parts_1 = parts; _i < parts_1.length; _i++) {
+                var part = parts_1[_i];
+                var _obj = getPropertyFromObject(curr_obj, part);
                 curr_obj = _obj instanceof Function ? _obj.call(curr_obj) : _obj;
             }
             val = curr_obj != null ? curr_obj : null; // convert undefined to null
@@ -35151,11 +36044,12 @@ class Property extends expression_1.Expression {
         else {
             return val;
         }
-    }
-}
+    };
+    return Property;
+}(expression_1.Expression));
 exports.Property = Property;
 function getPropertyFromObject(obj, path) {
-    let val;
+    var val;
     if (obj != null) {
         val = obj[path];
         if (val === undefined && typeof obj.get === 'function') {
@@ -35164,66 +36058,101 @@ function getPropertyFromObject(obj, path) {
     }
     return val;
 }
-class Tuple extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        const elements = json.element != null ? json.element : [];
-        this.elements = elements.map((el) => {
+var Tuple = /** @class */ (function (_super) {
+    __extends(Tuple, _super);
+    function Tuple(json) {
+        var _this = _super.call(this, json) || this;
+        var elements = json.element != null ? json.element : [];
+        _this.elements = elements.map(function (el) {
             return {
                 name: el.name,
                 value: (0, builder_1.build)(el.value)
             };
         });
+        return _this;
     }
-    get isTuple() {
-        return true;
-    }
-    async exec(ctx) {
-        const val = {};
-        for (const el of this.elements) {
-            val[el.name] = el.value != null ? await el.value.execute(ctx) : undefined;
+    Object.defineProperty(Tuple.prototype, "isTuple", {
+        get: function () {
+            return true;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Tuple.prototype.exec = function (ctx) {
+        var val = {};
+        for (var _i = 0, _a = this.elements; _i < _a.length; _i++) {
+            var el = _a[_i];
+            val[el.name] = el.value != null ? el.value.execute(ctx) : undefined;
         }
         return val;
-    }
-}
+    };
+    return Tuple;
+}(expression_1.Expression));
 exports.Tuple = Tuple;
-class TupleElement extends expression_1.UnimplementedExpression {
-}
+var TupleElement = /** @class */ (function (_super) {
+    __extends(TupleElement, _super);
+    function TupleElement() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return TupleElement;
+}(expression_1.UnimplementedExpression));
 exports.TupleElement = TupleElement;
-class TupleElementDefinition extends expression_1.UnimplementedExpression {
-}
+var TupleElementDefinition = /** @class */ (function (_super) {
+    __extends(TupleElementDefinition, _super);
+    function TupleElementDefinition() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return TupleElementDefinition;
+}(expression_1.UnimplementedExpression));
 exports.TupleElementDefinition = TupleElementDefinition;
 
 },{"./builder":182,"./expression":188}],207:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TupleTypeSpecifier = exports.NamedTypeSpecifier = exports.ListTypeSpecifier = exports.IntervalTypeSpecifier = exports.Is = exports.CanConvertQuantity = exports.ConvertQuantity = exports.ConvertsToTime = exports.ConvertsToString = exports.ConvertsToRatio = exports.ConvertsToQuantity = exports.ConvertsToInteger = exports.ConvertsToDecimal = exports.ConvertsToDateTime = exports.ConvertsToDate = exports.ConvertsToBoolean = exports.Convert = exports.ToTime = exports.ToString = exports.ToRatio = exports.ToQuantity = exports.ToInteger = exports.ToDecimal = exports.ToDateTime = exports.ToDate = exports.ToConcept = exports.ToBoolean = exports.As = void 0;
-const expression_1 = require("./expression");
-const datetime_1 = require("../datatypes/datetime");
-const clinical_1 = require("../datatypes/clinical");
-const quantity_1 = require("../datatypes/quantity");
-const math_1 = require("../util/math");
-const util_1 = require("../util/util");
-const ratio_1 = require("../datatypes/ratio");
-const uncertainty_1 = require("../datatypes/uncertainty");
+var expression_1 = require("./expression");
+var datetime_1 = require("../datatypes/datetime");
+var clinical_1 = require("../datatypes/clinical");
+var quantity_1 = require("../datatypes/quantity");
+var math_1 = require("../util/math");
+var util_1 = require("../util/util");
+var ratio_1 = require("../datatypes/ratio");
+var uncertainty_1 = require("../datatypes/uncertainty");
 // TODO: Casting and Conversion needs unit tests!
-class As extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var As = /** @class */ (function (_super) {
+    __extends(As, _super);
+    function As(json) {
+        var _this = _super.call(this, json) || this;
         if (json.asTypeSpecifier) {
-            this.asTypeSpecifier = json.asTypeSpecifier;
+            _this.asTypeSpecifier = json.asTypeSpecifier;
         }
         else if (json.asType) {
             // convert it to a NamedTypedSpecifier
-            this.asTypeSpecifier = {
+            _this.asTypeSpecifier = {
                 name: json.asType,
                 type: 'NamedTypeSpecifier'
             };
         }
-        this.strict = json.strict != null ? json.strict : false;
+        _this.strict = json.strict != null ? json.strict : false;
+        return _this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    As.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         // If it is null, return null
         if (arg == null) {
             return null;
@@ -35233,24 +36162,26 @@ class As extends expression_1.Expression {
             return arg;
         }
         else if (this.strict) {
-            const argTypeString = specifierToString(guessSpecifierType(arg));
-            const asTypeString = specifierToString(this.asTypeSpecifier);
-            throw new Error(`Cannot cast ${argTypeString} as ${asTypeString}`);
+            var argTypeString = specifierToString(guessSpecifierType(arg));
+            var asTypeString = specifierToString(this.asTypeSpecifier);
+            throw new Error("Cannot cast ".concat(argTypeString, " as ").concat(asTypeString));
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return As;
+}(expression_1.Expression));
 exports.As = As;
-class ToBoolean extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToBoolean = /** @class */ (function (_super) {
+    __extends(ToBoolean, _super);
+    function ToBoolean(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToBoolean.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
-            const strArg = arg.toString().toLowerCase();
+            var strArg = arg.toString().toLowerCase();
             if (['true', 't', 'yes', 'y', '1'].includes(strArg)) {
                 return true;
             }
@@ -35259,30 +36190,34 @@ class ToBoolean extends expression_1.Expression {
             }
         }
         return null;
-    }
-}
+    };
+    return ToBoolean;
+}(expression_1.Expression));
 exports.ToBoolean = ToBoolean;
-class ToConcept extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToConcept = /** @class */ (function (_super) {
+    __extends(ToConcept, _super);
+    function ToConcept(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToConcept.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             return new clinical_1.Concept([arg], arg.display);
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return ToConcept;
+}(expression_1.Expression));
 exports.ToConcept = ToConcept;
-class ToDate extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToDate = /** @class */ (function (_super) {
+    __extends(ToDate, _super);
+    function ToDate(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToDate.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
@@ -35292,59 +36227,64 @@ class ToDate extends expression_1.Expression {
         else {
             return datetime_1.Date.parse(arg.toString());
         }
-    }
-}
+    };
+    return ToDate;
+}(expression_1.Expression));
 exports.ToDate = ToDate;
-class ToDateTime extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToDateTime = /** @class */ (function (_super) {
+    __extends(ToDateTime, _super);
+    function ToDateTime(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToDateTime.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg == null) {
             return null;
         }
         else if (arg.isDate) {
-            const timezoneOffset = ctx.getExecutionDateTime().timezoneOffset;
-            return arg.getDateTime(timezoneOffset);
+            return arg.getDateTime();
         }
         else {
             return datetime_1.DateTime.parse(arg.toString());
         }
-    }
-}
+    };
+    return ToDateTime;
+}(expression_1.Expression));
 exports.ToDateTime = ToDateTime;
-class ToDecimal extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToDecimal = /** @class */ (function (_super) {
+    __extends(ToDecimal, _super);
+    function ToDecimal(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToDecimal.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             if (arg.isUncertainty) {
-                const low = (0, math_1.limitDecimalPrecision)(parseFloat(arg.low.toString()));
-                const high = (0, math_1.limitDecimalPrecision)(parseFloat(arg.high.toString()));
+                var low = (0, math_1.limitDecimalPrecision)(parseFloat(arg.low.toString()));
+                var high = (0, math_1.limitDecimalPrecision)(parseFloat(arg.high.toString()));
                 return new uncertainty_1.Uncertainty(low, high);
             }
             else {
-                const decimal = (0, math_1.limitDecimalPrecision)(parseFloat(arg.toString()));
+                var decimal = (0, math_1.limitDecimalPrecision)(parseFloat(arg.toString()));
                 if ((0, math_1.isValidDecimal)(decimal)) {
                     return decimal;
                 }
             }
         }
         return null;
-    }
-}
+    };
+    return ToDecimal;
+}(expression_1.Expression));
 exports.ToDecimal = ToDecimal;
-class ToInteger extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToInteger = /** @class */ (function (_super) {
+    __extends(ToInteger, _super);
+    function ToInteger(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToInteger.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (typeof arg === 'string') {
-            const integer = parseInt(arg);
+            var integer = parseInt(arg);
             if ((0, math_1.isValidInteger)(integer)) {
                 return integer;
             }
@@ -35353,17 +36293,19 @@ class ToInteger extends expression_1.Expression {
             return arg ? 1 : 0;
         }
         return null;
-    }
-}
+    };
+    return ToInteger;
+}(expression_1.Expression));
 exports.ToInteger = ToInteger;
-class ToQuantity extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToQuantity = /** @class */ (function (_super) {
+    __extends(ToQuantity, _super);
+    function ToQuantity(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        return this.convertValue(await this.execArgs(ctx));
-    }
-    convertValue(val) {
+    ToQuantity.prototype.exec = function (ctx) {
+        return this.convertValue(this.execArgs(ctx));
+    };
+    ToQuantity.prototype.convertValue = function (val) {
         if (val == null) {
             return null;
         }
@@ -35381,21 +36323,23 @@ class ToQuantity extends expression_1.Expression {
             // it's a string or something else we'll try to parse as a string
             return (0, quantity_1.parseQuantity)(val.toString());
         }
-    }
-}
+    };
+    return ToQuantity;
+}(expression_1.Expression));
 exports.ToQuantity = ToQuantity;
-class ToRatio extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToRatio = /** @class */ (function (_super) {
+    __extends(ToRatio, _super);
+    function ToRatio(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToRatio.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             // Argument will be of form '<quantity>:<quantity>'
-            let denominator, numerator;
+            var denominator = void 0, numerator = void 0;
             try {
                 // String will be split into an array. Numerator will be at index 1, Denominator will be at index 4
-                const splitRatioString = arg
+                var splitRatioString = arg
                     .toString()
                     .match(/^(\d+(\.\d+)?\s*('.+')?)\s*:\s*(\d+(\.\d+)?\s*('.+')?)$/);
                 if (splitRatioString == null) {
@@ -35418,41 +36362,45 @@ class ToRatio extends expression_1.Expression {
         else {
             return null;
         }
-    }
-}
+    };
+    return ToRatio;
+}(expression_1.Expression));
 exports.ToRatio = ToRatio;
-class ToString extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToString = /** @class */ (function (_super) {
+    __extends(ToString, _super);
+    function ToString(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToString.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
             return arg.toString();
         }
         else {
             return null;
         }
-    }
-}
+    };
+    return ToString;
+}(expression_1.Expression));
 exports.ToString = ToString;
-class ToTime extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ToTime = /** @class */ (function (_super) {
+    __extends(ToTime, _super);
+    function ToTime(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    ToTime.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg != null) {
-            const timeString = arg.toString();
+            var timeString = arg.toString();
             // Return null if string doesn't represent a valid ISO-8601 Time
             // hh:mm:ss.fff or hh:mm:ss.fff
-            const matches = /^T?((\d{2})(:(\d{2})(:(\d{2})(\.(\d+))?)?)?)?(Z|(([+-])(\d{2})(:?(\d{2}))?))?$/.exec(timeString);
+            var matches = /^T?((\d{2})(:(\d{2})(:(\d{2})(\.(\d+))?)?)?)?(Z|(([+-])(\d{2})(:?(\d{2}))?))?$/.exec(timeString);
             if (matches == null) {
                 return null;
             }
-            let hours = matches[2];
-            let minutes = matches[4];
-            let seconds = matches[6];
+            var hours = matches[2];
+            var minutes = matches[4];
+            var seconds = matches[6];
             // Validate h/m/s if they exist, but allow null
             if (hours != null) {
                 if (hours < 0 || hours > 23) {
@@ -35472,7 +36420,7 @@ class ToTime extends expression_1.Expression {
                 }
                 seconds = parseInt(seconds, 10);
             }
-            let milliseconds = matches[8];
+            var milliseconds = matches[8];
             if (milliseconds != null) {
                 milliseconds = parseInt((0, util_1.normalizeMillisecondsField)(milliseconds));
             }
@@ -35482,16 +36430,19 @@ class ToTime extends expression_1.Expression {
         else {
             return null;
         }
-    }
-}
+    };
+    return ToTime;
+}(expression_1.Expression));
 exports.ToTime = ToTime;
-class Convert extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
-        this.toType = json.toType;
+var Convert = /** @class */ (function (_super) {
+    __extends(Convert, _super);
+    function Convert(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        _this.toType = json.toType;
+        return _this;
     }
-    async exec(ctx) {
+    Convert.prototype.exec = function (ctx) {
         switch (this.toType) {
             case '{urn:hl7-org:elm-types:r1}Boolean':
                 return new ToBoolean({ type: 'ToBoolean', operand: this.operand }).execute(ctx);
@@ -35514,157 +36465,184 @@ class Convert extends expression_1.Expression {
             default:
                 return this.execArgs(ctx);
         }
-    }
-}
+    };
+    return Convert;
+}(expression_1.Expression));
 exports.Convert = Convert;
-class ConvertsToBoolean extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToBoolean = /** @class */ (function (_super) {
+    __extends(ConvertsToBoolean, _super);
+    function ConvertsToBoolean(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToBoolean.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToBoolean, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToBoolean;
+}(expression_1.Expression));
 exports.ConvertsToBoolean = ConvertsToBoolean;
-class ConvertsToDate extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToDate = /** @class */ (function (_super) {
+    __extends(ConvertsToDate, _super);
+    function ConvertsToDate(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToDate.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToDate, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToDate;
+}(expression_1.Expression));
 exports.ConvertsToDate = ConvertsToDate;
-class ConvertsToDateTime extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToDateTime = /** @class */ (function (_super) {
+    __extends(ConvertsToDateTime, _super);
+    function ConvertsToDateTime(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToDateTime.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToDateTime, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToDateTime;
+}(expression_1.Expression));
 exports.ConvertsToDateTime = ConvertsToDateTime;
-class ConvertsToDecimal extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToDecimal = /** @class */ (function (_super) {
+    __extends(ConvertsToDecimal, _super);
+    function ConvertsToDecimal(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToDecimal.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToDecimal, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToDecimal;
+}(expression_1.Expression));
 exports.ConvertsToDecimal = ConvertsToDecimal;
-class ConvertsToInteger extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToInteger = /** @class */ (function (_super) {
+    __extends(ConvertsToInteger, _super);
+    function ConvertsToInteger(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToInteger.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToInteger, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToInteger;
+}(expression_1.Expression));
 exports.ConvertsToInteger = ConvertsToInteger;
-class ConvertsToQuantity extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToQuantity = /** @class */ (function (_super) {
+    __extends(ConvertsToQuantity, _super);
+    function ConvertsToQuantity(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToQuantity.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToQuantity, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToQuantity;
+}(expression_1.Expression));
 exports.ConvertsToQuantity = ConvertsToQuantity;
-class ConvertsToRatio extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToRatio = /** @class */ (function (_super) {
+    __extends(ConvertsToRatio, _super);
+    function ConvertsToRatio(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToRatio.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToRatio, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToRatio;
+}(expression_1.Expression));
 exports.ConvertsToRatio = ConvertsToRatio;
-class ConvertsToString extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToString = /** @class */ (function (_super) {
+    __extends(ConvertsToString, _super);
+    function ConvertsToString(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToString.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToString, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToString;
+}(expression_1.Expression));
 exports.ConvertsToString = ConvertsToString;
-class ConvertsToTime extends expression_1.Expression {
-    constructor(json) {
-        super(json);
-        this.operand = json.operand;
+var ConvertsToTime = /** @class */ (function (_super) {
+    __extends(ConvertsToTime, _super);
+    function ConvertsToTime(json) {
+        var _this = _super.call(this, json) || this;
+        _this.operand = json.operand;
+        return _this;
     }
-    async exec(ctx) {
-        const operatorValue = await this.execArgs(ctx);
+    ConvertsToTime.prototype.exec = function (ctx) {
+        var operatorValue = this.execArgs(ctx);
         if (operatorValue === null) {
             return null;
         }
         else {
             return canConvertToType(ToTime, this.operand, ctx);
         }
-    }
-}
+    };
+    return ConvertsToTime;
+}(expression_1.Expression));
 exports.ConvertsToTime = ConvertsToTime;
-async function canConvertToType(ConversionClass, operand, ctx) {
+function canConvertToType(toFunction, operand, ctx) {
     try {
-        const expression = new ConversionClass({ type: ConversionClass.name, operand: operand });
-        const value = await expression.execute(ctx);
+        var value = new toFunction({ type: toFunction.name, operand: operand }).execute(ctx);
         if (value != null) {
             return true;
         }
@@ -35676,12 +36654,13 @@ async function canConvertToType(ConversionClass, operand, ctx) {
         return false;
     }
 }
-class ConvertQuantity extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var ConvertQuantity = /** @class */ (function (_super) {
+    __extends(ConvertQuantity, _super);
+    function ConvertQuantity(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [quantity, newUnit] = await this.execArgs(ctx);
+    ConvertQuantity.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), quantity = _a[0], newUnit = _a[1];
         if (quantity != null && newUnit != null) {
             try {
                 return quantity.convertUnit(newUnit);
@@ -35691,15 +36670,17 @@ class ConvertQuantity extends expression_1.Expression {
                 return null;
             }
         }
-    }
-}
+    };
+    return ConvertQuantity;
+}(expression_1.Expression));
 exports.ConvertQuantity = ConvertQuantity;
-class CanConvertQuantity extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var CanConvertQuantity = /** @class */ (function (_super) {
+    __extends(CanConvertQuantity, _super);
+    function CanConvertQuantity(json) {
+        return _super.call(this, json) || this;
     }
-    async exec(ctx) {
-        const [quantity, newUnit] = await this.execArgs(ctx);
+    CanConvertQuantity.prototype.exec = function (ctx) {
+        var _a = this.execArgs(ctx), quantity = _a[0], newUnit = _a[1];
         if (quantity != null && newUnit != null) {
             try {
                 quantity.convertUnit(newUnit);
@@ -35710,35 +36691,39 @@ class CanConvertQuantity extends expression_1.Expression {
             }
         }
         return null;
-    }
-}
+    };
+    return CanConvertQuantity;
+}(expression_1.Expression));
 exports.CanConvertQuantity = CanConvertQuantity;
-class Is extends expression_1.Expression {
-    constructor(json) {
-        super(json);
+var Is = /** @class */ (function (_super) {
+    __extends(Is, _super);
+    function Is(json) {
+        var _this = _super.call(this, json) || this;
         if (json.isTypeSpecifier) {
-            this.isTypeSpecifier = json.isTypeSpecifier;
+            _this.isTypeSpecifier = json.isTypeSpecifier;
         }
         else if (json.isType) {
             // Convert it to a NamedTypeSpecifier
-            this.isTypeSpecifier = {
+            _this.isTypeSpecifier = {
                 name: json.isType,
                 type: 'NamedTypeSpecifier'
             };
         }
+        return _this;
     }
-    async exec(ctx) {
-        const arg = await this.execArgs(ctx);
+    Is.prototype.exec = function (ctx) {
+        var arg = this.execArgs(ctx);
         if (arg === null) {
             return false;
         }
         if (typeof arg._is !== 'function' && !isSystemType(this.isTypeSpecifier)) {
             // We need an _is implementation in order to check non System types
-            throw new Error(`Patient Source does not support Is operation for localId: ${this.localId}`);
+            throw new Error("Patient Source does not support Is operation for localId: ".concat(this.localId));
         }
         return ctx.matchesTypeSpecifier(arg, this.isTypeSpecifier);
-    }
-}
+    };
+    return Is;
+}(expression_1.Expression));
 exports.Is = Is;
 function isSystemType(spec) {
     switch (spec.type) {
@@ -35747,11 +36732,11 @@ function isSystemType(spec) {
         case 'ListTypeSpecifier':
             return isSystemType(spec.elementType);
         case 'TupleTypeSpecifier':
-            return spec.element.every((e) => isSystemType(e.elementType));
+            return spec.element.every(function (e) { return isSystemType(e.elementType); });
         case 'IntervalTypeSpecifier':
             return isSystemType(spec.pointType);
         case 'ChoiceTypeSpecifier':
-            return spec.choice.every((c) => isSystemType(c));
+            return spec.choice.every(function (c) { return isSystemType(c); });
         default:
             return false;
     }
@@ -35767,15 +36752,15 @@ function specifierToString(spec) {
         case 'NamedTypeSpecifier':
             return spec.name;
         case 'ListTypeSpecifier':
-            return `List<${specifierToString(spec.elementType)}>`;
+            return "List<".concat(specifierToString(spec.elementType), ">");
         case 'TupleTypeSpecifier':
-            return `Tuple<${spec.element
-                .map((e) => `${e.name} ${specifierToString(e.elementType)}`)
-                .join(', ')}>`;
+            return "Tuple<".concat(spec.element
+                .map(function (e) { return "".concat(e.name, " ").concat(specifierToString(e.elementType)); })
+                .join(', '), ">");
         case 'IntervalTypeSpecifier':
-            return `Interval<${specifierToString(spec.pointType)}>`;
+            return "Interval<".concat(specifierToString(spec.pointType), ">");
         case 'ChoiceTypeSpecifier':
-            return `Choice<${spec.choice.map((c) => specifierToString(c)).join(', ')}>`;
+            return "Choice<".concat(spec.choice.map(function (c) { return specifierToString(c); }).join(', '), ">");
         default:
             return JSON.stringify(spec);
     }
@@ -35784,7 +36769,7 @@ function guessSpecifierType(val) {
     if (val == null) {
         return 'Null';
     }
-    const typeHierarchy = typeof val._typeHierarchy === 'function' && val._typeHierarchy();
+    var typeHierarchy = typeof val._typeHierarchy === 'function' && val._typeHierarchy();
     if (typeHierarchy && typeHierarchy.length > 0) {
         return typeHierarchy[0];
     }
@@ -35821,8 +36806,8 @@ function guessSpecifierType(val) {
     }
     else if (Array.isArray(val)) {
         // Get unique types from the array (by converting to string and putting in a Set)
-        const typesAsStrings = Array.from(new Set(val.map(v => JSON.stringify(guessSpecifierType(v)))));
-        const types = typesAsStrings.map(ts => (/^{/.test(ts) ? JSON.parse(ts) : ts));
+        var typesAsStrings = Array.from(new Set(val.map(function (v) { return JSON.stringify(guessSpecifierType(v)); })));
+        var types = typesAsStrings.map(function (ts) { return (/^{/.test(ts) ? JSON.parse(ts) : ts); });
         return {
             type: 'ListTypeSpecifier',
             elementType: types.length == 1 ? types[0] : { type: 'ChoiceTypeSpecifier', choice: types }
@@ -35837,26 +36822,61 @@ function guessSpecifierType(val) {
     else if (typeof val === 'object' && Object.keys(val).length > 0) {
         return {
             type: 'TupleTypeSpecifier',
-            element: Object.keys(val).map(k => ({ name: k, elementType: guessSpecifierType(val[k]) }))
+            element: Object.keys(val).map(function (k) { return ({ name: k, elementType: guessSpecifierType(val[k]) }); })
         };
     }
     return 'Unknown';
 }
-class IntervalTypeSpecifier extends expression_1.UnimplementedExpression {
-}
+var IntervalTypeSpecifier = /** @class */ (function (_super) {
+    __extends(IntervalTypeSpecifier, _super);
+    function IntervalTypeSpecifier() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return IntervalTypeSpecifier;
+}(expression_1.UnimplementedExpression));
 exports.IntervalTypeSpecifier = IntervalTypeSpecifier;
-class ListTypeSpecifier extends expression_1.UnimplementedExpression {
-}
+var ListTypeSpecifier = /** @class */ (function (_super) {
+    __extends(ListTypeSpecifier, _super);
+    function ListTypeSpecifier() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return ListTypeSpecifier;
+}(expression_1.UnimplementedExpression));
 exports.ListTypeSpecifier = ListTypeSpecifier;
-class NamedTypeSpecifier extends expression_1.UnimplementedExpression {
-}
+var NamedTypeSpecifier = /** @class */ (function (_super) {
+    __extends(NamedTypeSpecifier, _super);
+    function NamedTypeSpecifier() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return NamedTypeSpecifier;
+}(expression_1.UnimplementedExpression));
 exports.NamedTypeSpecifier = NamedTypeSpecifier;
-class TupleTypeSpecifier extends expression_1.UnimplementedExpression {
-}
+var TupleTypeSpecifier = /** @class */ (function (_super) {
+    __extends(TupleTypeSpecifier, _super);
+    function TupleTypeSpecifier() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return TupleTypeSpecifier;
+}(expression_1.UnimplementedExpression));
 exports.TupleTypeSpecifier = TupleTypeSpecifier;
 
-},{"../datatypes/clinical":171,"../datatypes/datetime":173,"../datatypes/quantity":177,"../datatypes/ratio":178,"../datatypes/uncertainty":179,"../util/math":221,"../util/util":223,"./expression":188}],208:[function(require,module,exports){
+},{"../datatypes/clinical":171,"../datatypes/datetime":173,"../datatypes/quantity":177,"../datatypes/ratio":178,"../datatypes/uncertainty":179,"../util/math":219,"../util/util":221,"./expression":188}],208:[function(require,module,exports){
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -35878,12 +36898,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UnfilteredContext = exports.PatientContext = exports.Context = void 0;
-const dt = __importStar(require("../datatypes/datatypes"));
-const exception_1 = require("../datatypes/exception");
-const util_1 = require("../util/util");
-const messageListeners_1 = require("./messageListeners");
-class Context {
-    constructor(parent, _codeService, _parameters, executionDateTime, messageListener) {
+var exception_1 = require("../datatypes/exception");
+var util_1 = require("../util/util");
+var dt = __importStar(require("../datatypes/datatypes"));
+var messageListeners_1 = require("./messageListeners");
+var Context = /** @class */ (function () {
+    function Context(parent, _codeService, _parameters, executionDateTime, messageListener) {
         this.parent = parent;
         this._codeService = _codeService;
         this.context_values = {};
@@ -35896,53 +36916,62 @@ class Context {
         this.executionDateTime = executionDateTime;
         this.messageListener = messageListener;
     }
-    get parameters() {
-        return this._parameters || (this.parent && this.parent.parameters);
-    }
-    set parameters(params) {
-        this.checkParameters(params);
-        this._parameters = params;
-    }
-    get codeService() {
-        return this._codeService || (this.parent && this.parent.codeService);
-    }
-    set codeService(cs) {
-        this._codeService = cs;
-    }
-    withParameters(params) {
+    Object.defineProperty(Context.prototype, "parameters", {
+        get: function () {
+            return this._parameters || (this.parent && this.parent.parameters);
+        },
+        set: function (params) {
+            this.checkParameters(params);
+            this._parameters = params;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Context.prototype, "codeService", {
+        get: function () {
+            return this._codeService || (this.parent && this.parent.codeService);
+        },
+        set: function (cs) {
+            this._codeService = cs;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Context.prototype.withParameters = function (params) {
         this.parameters = params || {};
         return this;
-    }
-    withCodeService(cs) {
+    };
+    Context.prototype.withCodeService = function (cs) {
         this.codeService = cs;
         return this;
-    }
-    rootContext() {
+    };
+    Context.prototype.rootContext = function () {
         if (this.parent) {
             return this.parent.rootContext();
         }
         else {
             return this;
         }
-    }
-    async findRecords(profile, retrieveDetails) {
+    };
+    Context.prototype.findRecords = function (profile, retrieveDetails) {
         return this.parent && this.parent.findRecords(profile, retrieveDetails);
-    }
-    childContext(context_values) {
-        const ctx = new Context(this);
-        ctx.context_values = context_values !== null && context_values !== void 0 ? context_values : {};
+    };
+    Context.prototype.childContext = function (context_values) {
+        if (context_values === void 0) { context_values = {}; }
+        var ctx = new Context(this);
+        ctx.context_values = context_values;
         return ctx;
-    }
-    getLibraryContext(library) {
+    };
+    Context.prototype.getLibraryContext = function (library) {
         return this.parent && this.parent.getLibraryContext(library);
-    }
-    getLocalIdContext(localId) {
+    };
+    Context.prototype.getLocalIdContext = function (localId) {
         return this.parent && this.parent.getLocalIdContext(localId);
-    }
-    getParameter(name) {
+    };
+    Context.prototype.getParameter = function (name) {
         return this.parent && this.parent.getParameter(name);
-    }
-    getParentParameter(name) {
+    };
+    Context.prototype.getParentParameter = function (name) {
         if (this.parent) {
             if (this.parent.parameters[name] != null) {
                 return this.parent.parameters[name];
@@ -35951,8 +36980,8 @@ class Context {
                 return this.parent.getParentParameter(name);
             }
         }
-    }
-    getTimezoneOffset() {
+    };
+    Context.prototype.getTimezoneOffset = function () {
         if (this.executionDateTime != null) {
             return this.executionDateTime.timezoneOffset;
         }
@@ -35962,8 +36991,8 @@ class Context {
         else {
             throw new exception_1.Exception('No Timezone Offset has been set');
         }
-    }
-    getExecutionDateTime() {
+    };
+    Context.prototype.getExecutionDateTime = function () {
         if (this.executionDateTime != null) {
             return this.executionDateTime;
         }
@@ -35973,8 +37002,8 @@ class Context {
         else {
             throw new exception_1.Exception('No Execution DateTime has been set');
         }
-    }
-    getMessageListener() {
+    };
+    Context.prototype.getMessageListener = function () {
         if (this.messageListener != null) {
             return this.messageListener;
         }
@@ -35984,23 +37013,20 @@ class Context {
         else {
             return new messageListeners_1.NullMessageListener();
         }
-    }
-    getValueSet(name, library) {
+    };
+    Context.prototype.getValueSet = function (name, library) {
         return this.parent && this.parent.getValueSet(name, library);
-    }
-    getCodeSystem(name) {
+    };
+    Context.prototype.getCodeSystem = function (name) {
         return this.parent && this.parent.getCodeSystem(name);
-    }
-    getCode(name) {
+    };
+    Context.prototype.getCode = function (name) {
         return this.parent && this.parent.getCode(name);
-    }
-    getConcept(name) {
+    };
+    Context.prototype.getConcept = function (name) {
         return this.parent && this.parent.getConcept(name);
-    }
-    getFunction(name) {
-        return this.parent && this.parent.getFunction(name);
-    }
-    get(identifier) {
+    };
+    Context.prototype.get = function (identifier) {
         // Check for undefined because if its null, we actually *do* want to return null (rather than
         // looking at parent), but if it's really undefined, *then* look at the parent
         if (typeof this.context_values[identifier] !== 'undefined') {
@@ -36012,36 +37038,37 @@ class Context {
         else {
             return this.parent != null && this.parent.get(identifier);
         }
-    }
-    set(identifier, value) {
+    };
+    Context.prototype.set = function (identifier, value) {
         this.context_values[identifier] = value;
-    }
-    setLocalIdWithResult(localId, value) {
+    };
+    Context.prototype.setLocalIdWithResult = function (localId, value) {
         // Temporary fix. Real fix will be to return a list of all result values for a given localId.
-        const ctx = this.localId_context[localId];
+        var ctx = this.localId_context[localId];
         if (ctx === false || ctx === null || ctx === undefined || ctx.length === 0) {
             this.localId_context[localId] = value;
         }
-    }
-    getLocalIdResult(localId) {
+    };
+    Context.prototype.getLocalIdResult = function (localId) {
         return this.localId_context[localId];
-    }
+    };
     // Returns an object of objects containing each library name
     // with the localIds and result values
-    getAllLocalIds() {
-        const localIdResults = {};
+    Context.prototype.getAllLocalIds = function () {
+        var localIdResults = {};
         // Add the localIds and result values from the main library
         localIdResults[this.parent.source.library.identifier.id] = {};
         localIdResults[this.parent.source.library.identifier.id] = this.localId_context;
         // Iterate over support libraries and store localIds
-        for (const libName in this.library_context) {
-            const lib = this.library_context[libName];
+        for (var libName in this.library_context) {
+            var lib = this.library_context[libName];
             this.supportLibraryLocalIds(lib, localIdResults);
         }
         return localIdResults;
-    }
+    };
     // Recursive function that will grab nested support library localId results
-    supportLibraryLocalIds(lib, localIdResults) {
+    Context.prototype.supportLibraryLocalIds = function (lib, localIdResults) {
+        var _this = this;
         // Set library identifier name as the key and the object of localIds with their results as the value
         // if it already exists then we need to merge the results instead of overwriting
         if (localIdResults[lib.library.source.library.identifier.id] != null) {
@@ -36051,17 +37078,17 @@ class Context {
             localIdResults[lib.library.source.library.identifier.id] = lib.localId_context;
         }
         // Iterate over any support libraries in the current support library
-        Object.values(lib.library_context).forEach(supportLib => {
-            this.supportLibraryLocalIds(supportLib, localIdResults);
+        Object.values(lib.library_context).forEach(function (supportLib) {
+            _this.supportLibraryLocalIds(supportLib, localIdResults);
         });
-    }
+    };
     // Merges the localId results for a library into the already collected results. The logic used for which result
     // to keep is the same as the logic used above in setLocalIdWithResult, "falsey" results are always replaced.
-    mergeLibraryLocalIdResults(localIdResults, libraryId, libraryResults) {
-        for (const localId in libraryResults) {
-            const localIdResult = libraryResults[localId];
-            const existingResult = localIdResults[libraryId][localId];
-            // overwrite this localid result if the existing result is "falsey". future work could track all results for each localid
+    Context.prototype.mergeLibraryLocalIdResults = function (localIdResults, libraryId, libraryResults) {
+        for (var localId in libraryResults) {
+            var localIdResult = libraryResults[localId];
+            var existingResult = localIdResults[libraryId][localId];
+            // overwite this localid result if the existing result is "falsey". future work could track all results for each localid
             if (existingResult === false ||
                 existingResult === null ||
                 existingResult === undefined ||
@@ -36069,11 +37096,11 @@ class Context {
                 localIdResults[libraryId][localId] = localIdResult;
             }
         }
-    }
-    checkParameters(params) {
-        for (const pName in params) {
-            const pVal = params[pName];
-            const pDef = this.getParameter(pName);
+    };
+    Context.prototype.checkParameters = function (params) {
+        for (var pName in params) {
+            var pVal = params[pName];
+            var pDef = this.getParameter(pName);
             if (pVal == null) {
                 return; // Null can theoretically be any type
             }
@@ -36082,15 +37109,15 @@ class Context {
             }
             else if (pDef.parameterTypeSpecifier != null &&
                 !this.matchesTypeSpecifier(pVal, pDef.parameterTypeSpecifier)) {
-                throw new Error(`Passed in parameter '${pName}' is wrong type`);
+                throw new Error("Passed in parameter '".concat(pName, "' is wrong type"));
             }
             else if (pDef['default'] != null && !this.matchesInstanceType(pVal, pDef['default'])) {
-                throw new Error(`Passed in parameter '${pName}' is wrong type`);
+                throw new Error("Passed in parameter '".concat(pName, "' is wrong type"));
             }
         }
         return true;
-    }
-    matchesTypeSpecifier(val, spec) {
+    };
+    Context.prototype.matchesTypeSpecifier = function (val, spec) {
         switch (spec.type) {
             case 'NamedTypeSpecifier':
                 return this.matchesNamedTypeSpecifier(val, spec);
@@ -36105,11 +37132,13 @@ class Context {
             default:
                 return true; // default to true when we don't know
         }
-    }
-    matchesListTypeSpecifier(val, spec) {
-        return ((0, util_1.typeIsArray)(val) && val.every(x => this.matchesTypeSpecifier(x, spec.elementType)));
-    }
-    matchesTupleTypeSpecifier(val, spec) {
+    };
+    Context.prototype.matchesListTypeSpecifier = function (val, spec) {
+        var _this = this;
+        return ((0, util_1.typeIsArray)(val) && val.every(function (x) { return _this.matchesTypeSpecifier(x, spec.elementType); }));
+    };
+    Context.prototype.matchesTupleTypeSpecifier = function (val, spec) {
+        var _this = this;
         // TODO: Spec is not clear about exactly how tuples should be matched
         return (val != null &&
             typeof val === 'object' &&
@@ -36120,18 +37149,21 @@ class Context {
             !val.isDateTime &&
             !val.isDate &&
             !val.isQuantity &&
-            spec.element.every((x) => typeof val[x.name] === 'undefined' ||
-                this.matchesTypeSpecifier(val[x.name], x.elementType)));
-    }
-    matchesIntervalTypeSpecifier(val, spec) {
+            spec.element.every(function (x) {
+                return typeof val[x.name] === 'undefined' ||
+                    _this.matchesTypeSpecifier(val[x.name], x.elementType);
+            }));
+    };
+    Context.prototype.matchesIntervalTypeSpecifier = function (val, spec) {
         return (val.isInterval &&
             (val.low == null || this.matchesTypeSpecifier(val.low, spec.pointType)) &&
             (val.high == null || this.matchesTypeSpecifier(val.high, spec.pointType)));
-    }
-    matchesChoiceTypeSpecifier(val, spec) {
-        return spec.choice.some((c) => this.matchesTypeSpecifier(val, c));
-    }
-    matchesNamedTypeSpecifier(val, spec) {
+    };
+    Context.prototype.matchesChoiceTypeSpecifier = function (val, spec) {
+        var _this = this;
+        return spec.choice.some(function (c) { return _this.matchesTypeSpecifier(val, c); });
+    };
+    Context.prototype.matchesNamedTypeSpecifier = function (val, spec) {
         if (val == null) {
             return true;
         }
@@ -36178,8 +37210,8 @@ class Context {
                 // So for now we allow false positives in order to avoid false negatives.
                 return true;
         }
-    }
-    matchesInstanceType(val, inst) {
+    };
+    Context.prototype.matchesInstanceType = function (val, inst) {
         if (inst.isBooleanLiteral) {
             return typeof val === 'boolean';
         }
@@ -36220,202 +37252,219 @@ class Context {
             return this.matchesIntervalInstanceType(val, inst);
         }
         return true; // default to true when we don't know for sure
-    }
-    matchesListInstanceType(val, list) {
-        return ((0, util_1.typeIsArray)(val) && val.every(x => this.matchesInstanceType(x, list.elements[0])));
-    }
-    matchesTupleInstanceType(val, tpl) {
+    };
+    Context.prototype.matchesListInstanceType = function (val, list) {
+        var _this = this;
+        return ((0, util_1.typeIsArray)(val) && val.every(function (x) { return _this.matchesInstanceType(x, list.elements[0]); }));
+    };
+    Context.prototype.matchesTupleInstanceType = function (val, tpl) {
+        var _this = this;
         return (typeof val === 'object' &&
             !(0, util_1.typeIsArray)(val) &&
-            tpl.elements.every((x) => typeof val[x.name] === 'undefined' || this.matchesInstanceType(val[x.name], x.value)));
-    }
-    matchesIntervalInstanceType(val, ivl) {
-        const pointType = ivl.low != null ? ivl.low : ivl.high;
+            tpl.elements.every(function (x) {
+                return typeof val[x.name] === 'undefined' || _this.matchesInstanceType(val[x.name], x.value);
+            }));
+    };
+    Context.prototype.matchesIntervalInstanceType = function (val, ivl) {
+        var pointType = ivl.low != null ? ivl.low : ivl.high;
         return (val.isInterval &&
             (val.low == null || this.matchesInstanceType(val.low, pointType)) &&
             (val.high == null || this.matchesInstanceType(val.high, pointType)));
-    }
-}
+    };
+    return Context;
+}());
 exports.Context = Context;
-class PatientContext extends Context {
-    constructor(library, patient, codeService, parameters, executionDateTime = dt.DateTime.fromJSDate(new Date()), messageListener = new messageListeners_1.NullMessageListener()) {
-        super(library, codeService, parameters, executionDateTime, messageListener);
-        this.library = library;
-        this.patient = patient;
+var PatientContext = /** @class */ (function (_super) {
+    __extends(PatientContext, _super);
+    function PatientContext(library, patient, codeService, parameters, executionDateTime, messageListener) {
+        if (executionDateTime === void 0) { executionDateTime = dt.DateTime.fromJSDate(new Date()); }
+        if (messageListener === void 0) { messageListener = new messageListeners_1.NullMessageListener(); }
+        var _this = _super.call(this, library, codeService, parameters, executionDateTime, messageListener) || this;
+        _this.library = library;
+        _this.patient = patient;
+        return _this;
     }
-    rootContext() {
+    PatientContext.prototype.rootContext = function () {
         return this;
-    }
-    getLibraryContext(library) {
+    };
+    PatientContext.prototype.getLibraryContext = function (library) {
         if (this.library_context[library] == null) {
-            this.library_context[library] = new PatientContext(this.get(library), this.patient, this.codeService, this.parameters, this.executionDateTime, this.messageListener);
+            this.library_context[library] = new PatientContext(this.get(library), this.patient, this.codeService, this.parameters, this.executionDateTime);
         }
         return this.library_context[library];
-    }
-    getLocalIdContext(localId) {
+    };
+    PatientContext.prototype.getLocalIdContext = function (localId) {
         if (this.localId_context[localId] == null) {
-            this.localId_context[localId] = new PatientContext(this.get(localId), this.patient, this.codeService, this.parameters, this.executionDateTime, this.messageListener);
+            this.localId_context[localId] = new PatientContext(this.get(localId), this.patient, this.codeService, this.parameters, this.executionDateTime);
         }
         return this.localId_context[localId];
-    }
-    async findRecords(profile, retrieveDetails) {
+    };
+    PatientContext.prototype.findRecords = function (profile, retrieveDetails) {
         return this.patient && this.patient.findRecords(profile, retrieveDetails);
-    }
-}
+    };
+    return PatientContext;
+}(Context));
 exports.PatientContext = PatientContext;
-class UnfilteredContext extends Context {
-    constructor(library, results, codeService, parameters, executionDateTime = dt.DateTime.fromJSDate(new Date()), messageListener = new messageListeners_1.NullMessageListener()) {
-        super(library, codeService, parameters, executionDateTime, messageListener);
-        this.library = library;
-        this.results = results;
+var UnfilteredContext = /** @class */ (function (_super) {
+    __extends(UnfilteredContext, _super);
+    function UnfilteredContext(library, results, codeService, parameters, executionDateTime, messageListener) {
+        if (executionDateTime === void 0) { executionDateTime = dt.DateTime.fromJSDate(new Date()); }
+        if (messageListener === void 0) { messageListener = new messageListeners_1.NullMessageListener(); }
+        var _this = _super.call(this, library, codeService, parameters, executionDateTime, messageListener) || this;
+        _this.library = library;
+        _this.results = results;
+        return _this;
     }
-    rootContext() {
+    UnfilteredContext.prototype.rootContext = function () {
         return this;
-    }
-    async findRecords(_template) {
-        throw new exception_1.Exception('Retrieves are not currently supported in Unfiltered Context');
-    }
-    getLibraryContext(_library) {
+    };
+    UnfilteredContext.prototype.findRecords = function (_template) {
+        throw new exception_1.Exception('Retreives are not currently supported in Unfiltered Context');
+    };
+    UnfilteredContext.prototype.getLibraryContext = function (_library) {
         throw new exception_1.Exception('Library expressions are not currently supported in Unfiltered Context');
-    }
-    get(identifier) {
+    };
+    UnfilteredContext.prototype.get = function (identifier) {
         //First check to see if the identifier is a unfiltered context expression that has already been cached
         if (this.context_values[identifier]) {
             return this.context_values[identifier];
         }
         //if not look to see if the library has a unfiltered expression of that identifier
-        if (this.library.expressions[identifier] &&
-            this.library.expressions[identifier].context === 'Unfiltered') {
+        if (this.library[identifier] && this.library[identifier].context === 'Unfiltered') {
             return this.library.expressions[identifier];
         }
-        //lastly attempt to gather all patient level results that have that identifier
+        //lastley attempt to gather all patient level results that have that identifier
         // should this compact null values before return ?
-        return Object.values(this.results.patientResults).map((pr) => pr[identifier]);
-    }
-}
+        return Object.values(this.results.patientResults).map(function (pr) { return pr[identifier]; });
+    };
+    return UnfilteredContext;
+}(Context));
 exports.UnfilteredContext = UnfilteredContext;
 
-},{"../datatypes/datatypes":172,"../datatypes/exception":174,"../util/util":223,"./messageListeners":210}],209:[function(require,module,exports){
+},{"../datatypes/datatypes":172,"../datatypes/exception":174,"../util/util":221,"./messageListeners":210}],209:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Executor = void 0;
-const messageListeners_1 = require("./messageListeners");
-const results_1 = require("./results");
-const context_1 = require("./context");
-class Executor {
-    constructor(library, codeService, parameters, messageListener = new messageListeners_1.NullMessageListener()) {
+var messageListeners_1 = require("./messageListeners");
+var results_1 = require("./results");
+var context_1 = require("./context");
+var Executor = /** @class */ (function () {
+    function Executor(library, codeService, parameters, messageListener) {
+        if (messageListener === void 0) { messageListener = new messageListeners_1.NullMessageListener(); }
         this.library = library;
         this.codeService = codeService;
         this.parameters = parameters;
         this.messageListener = messageListener;
     }
-    withLibrary(lib) {
+    Executor.prototype.withLibrary = function (lib) {
         this.library = lib;
         return this;
-    }
-    withParameters(params) {
+    };
+    Executor.prototype.withParameters = function (params) {
         this.parameters = params != null ? params : {};
         return this;
-    }
-    withCodeService(cs) {
+    };
+    Executor.prototype.withCodeService = function (cs) {
         this.codeService = cs;
         return this;
-    }
-    withMessageListener(ml) {
+    };
+    Executor.prototype.withMessageListener = function (ml) {
         this.messageListener = ml;
         return this;
-    }
-    async exec_expression(expression, patientSource, executionDateTime) {
-        const r = new results_1.Results();
-        const expr = this.library.expressions[expression];
+    };
+    Executor.prototype.exec_expression = function (expression, patientSource, executionDateTime) {
+        var _a;
+        var r = new results_1.Results();
+        var expr = this.library.expressions[expression];
         if (expr != null) {
-            // NOTE: Using await to support async data providers whose implementations return promise
-            // await has no effect on functions that don't return promises, so it is safe to use in all cases
-            let currentPatient = await patientSource.currentPatient();
-            while (currentPatient) {
-                const patient_ctx = new context_1.PatientContext(this.library, currentPatient, this.codeService, this.parameters, executionDateTime, this.messageListener);
-                r.recordPatientResults(patient_ctx, { [expression]: await expr.execute(patient_ctx) });
-                currentPatient = await patientSource.nextPatient();
+            while (patientSource.currentPatient()) {
+                var patient_ctx = new context_1.PatientContext(this.library, patientSource.currentPatient(), this.codeService, this.parameters, executionDateTime, this.messageListener);
+                r.recordPatientResults(patient_ctx, (_a = {}, _a[expression] = expr.execute(patient_ctx), _a));
+                patientSource.nextPatient();
             }
         }
         return r;
-    }
-    async exec(patientSource, executionDateTime) {
-        const r = await this.exec_patient_context(patientSource, executionDateTime);
-        const unfilteredContext = new context_1.UnfilteredContext(this.library, r, this.codeService, this.parameters, executionDateTime, this.messageListener);
-        const resultMap = {};
-        for (const key in this.library.expressions) {
-            const expr = this.library.expressions[key];
+    };
+    Executor.prototype.exec = function (patientSource, executionDateTime) {
+        var r = this.exec_patient_context(patientSource, executionDateTime);
+        var unfilteredContext = new context_1.UnfilteredContext(this.library, r, this.codeService, this.parameters, executionDateTime, this.messageListener);
+        var resultMap = {};
+        for (var key in this.library.expressions) {
+            var expr = this.library.expressions[key];
             if (expr.context === 'Unfiltered') {
-                resultMap[key] = await expr.exec(unfilteredContext);
+                resultMap[key] = expr.exec(unfilteredContext);
             }
         }
         r.recordUnfilteredResults(resultMap);
         return r;
-    }
-    async exec_patient_context(patientSource, executionDateTime) {
-        const r = new results_1.Results();
-        // NOTE: Using await to support async data providers whose implementations return promise
-        // await has no effect on functions that don't return promises, so it is safe to use in all cases
-        let currentPatient = await patientSource.currentPatient();
-        while (currentPatient) {
-            const patient_ctx = new context_1.PatientContext(this.library, currentPatient, this.codeService, this.parameters, executionDateTime, this.messageListener);
-            const resultMap = {};
-            for (const key in this.library.expressions) {
-                const expr = this.library.expressions[key];
+    };
+    Executor.prototype.exec_patient_context = function (patientSource, executionDateTime) {
+        var r = new results_1.Results();
+        while (patientSource.currentPatient()) {
+            var patient_ctx = new context_1.PatientContext(this.library, patientSource.currentPatient(), this.codeService, this.parameters, executionDateTime, this.messageListener);
+            var resultMap = {};
+            for (var key in this.library.expressions) {
+                var expr = this.library.expressions[key];
                 if (expr.context === 'Patient') {
-                    resultMap[key] = await expr.execute(patient_ctx);
+                    resultMap[key] = expr.execute(patient_ctx);
                 }
             }
             r.recordPatientResults(patient_ctx, resultMap);
-            currentPatient = await patientSource.nextPatient();
+            patientSource.nextPatient();
         }
         return r;
-    }
-}
+    };
+    return Executor;
+}());
 exports.Executor = Executor;
 
 },{"./context":208,"./messageListeners":210,"./results":212}],210:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ConsoleMessageListener = exports.NullMessageListener = void 0;
-class NullMessageListener {
-    onMessage(_source, _code, _severity, _message) {
-        // do nothing
+var NullMessageListener = /** @class */ (function () {
+    function NullMessageListener() {
     }
-}
+    NullMessageListener.prototype.onMessage = function (_source, _code, _severity, _message) {
+        // do nothing
+    };
+    return NullMessageListener;
+}());
 exports.NullMessageListener = NullMessageListener;
-class ConsoleMessageListener {
-    constructor(logSourceOnTrace = false) {
+var ConsoleMessageListener = /** @class */ (function () {
+    function ConsoleMessageListener(logSourceOnTrace) {
+        if (logSourceOnTrace === void 0) { logSourceOnTrace = false; }
         this.logSourceOnTrace = logSourceOnTrace;
     }
-    onMessage(source, code, severity, message) {
+    ConsoleMessageListener.prototype.onMessage = function (source, code, severity, message) {
         // eslint-disable-next-line no-console
-        const print = severity === 'Error' ? console.error : console.log;
-        let content = `${severity}: [${code}] ${message}`;
+        var print = severity === 'Error' ? console.error : console.log;
+        var content = "".concat(severity, ": [").concat(code, "] ").concat(message);
         if (severity === 'Trace' && this.logSourceOnTrace) {
-            content += `\n<<<<< SOURCE:\n${JSON.stringify(source)}\n>>>>>`;
+            content += "\n<<<<< SOURCE:\n".concat(JSON.stringify(source), "\n>>>>>");
         }
         print(content);
-    }
-}
+    };
+    return ConsoleMessageListener;
+}());
 exports.ConsoleMessageListener = ConsoleMessageListener;
 
 },{}],211:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Repository = void 0;
-const library_1 = require("../elm/library");
-class Repository {
-    constructor(data) {
+var library_1 = require("../elm/library");
+var Repository = /** @class */ (function () {
+    function Repository(data) {
         this.data = data;
         this.libraries = Array.from(Object.values(data));
     }
-    resolve(path, version) {
-        for (const lib of this.libraries) {
+    Repository.prototype.resolve = function (path, version) {
+        for (var _i = 0, _a = this.libraries; _i < _a.length; _i++) {
+            var lib = _a[_i];
             if (lib.library && lib.library.identifier) {
-                const { id, system, version: libraryVersion } = lib.library.identifier;
-                const libraryUri = `${system}/${id}`;
+                var _b = lib.library.identifier, id = _b.id, system = _b.system, libraryVersion = _b.version;
+                var libraryUri = "".concat(system, "/").concat(id);
                 if (path === libraryUri || path === id) {
                     if (version) {
                         if (libraryVersion === version) {
@@ -36428,45 +37477,62 @@ class Repository {
                 }
             }
         }
-    }
-}
+    };
+    return Repository;
+}());
 exports.Repository = Repository;
 
 },{"../elm/library":193}],212:[function(require,module,exports){
 "use strict";
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Results = void 0;
-class Results {
-    constructor() {
+var Results = /** @class */ (function () {
+    function Results() {
         this.patientResults = {};
         this.unfilteredResults = {};
         this.localIdPatientResultsMap = {};
         this.patientEvaluatedRecords = {};
     }
-    // Expose an evaluatedRecords array for backwards compatibility
-    get evaluatedRecords() {
-        return [].concat(...Object.values(this.patientEvaluatedRecords));
-    }
-    recordPatientResults(patient_ctx, resultMap) {
-        const p = patient_ctx.patient;
+    Object.defineProperty(Results.prototype, "evaluatedRecords", {
+        // Expose an evaluatedRecords array for backwards compatibility
+        get: function () {
+            return [].concat.apply([], Object.values(this.patientEvaluatedRecords));
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Results.prototype.recordPatientResults = function (patient_ctx, resultMap) {
+        var _this = this;
+        var p = patient_ctx.patient;
         // NOTE: From now on prefer getId() over id() because some data models may have an id property
         // that is not a string (e.g., FHIR) -- so reserve getId() for the API (and expect a string
         // representation) but leave id() for data-model specific formats.
-        const patientId = typeof p.getId === 'function' ? p.getId() : p.id();
+        var patientId = typeof p.getId === 'function' ? p.getId() : p.id();
         // Record the results
         this.patientResults[patientId] = resultMap;
         // Record the local IDs
         this.localIdPatientResultsMap[patientId] = patient_ctx.getAllLocalIds();
         // Record the evaluatedRecords, merging with an aggregated array across all libraries
-        this.patientEvaluatedRecords[patientId] = [...patient_ctx.evaluatedRecords];
-        Object.values(patient_ctx.library_context).forEach((ctx) => {
-            this.patientEvaluatedRecords[patientId].push(...ctx.evaluatedRecords);
+        this.patientEvaluatedRecords[patientId] = __spreadArray([], patient_ctx.evaluatedRecords, true);
+        Object.values(patient_ctx.library_context).forEach(function (ctx) {
+            var _a;
+            (_a = _this.patientEvaluatedRecords[patientId]).push.apply(_a, ctx.evaluatedRecords);
         });
-    }
-    recordUnfilteredResults(resultMap) {
+    };
+    Results.prototype.recordUnfilteredResults = function (resultMap) {
         this.unfilteredResults = resultMap;
-    }
-}
+    };
+    return Results;
+}());
 exports.Results = Results;
 
 },{}],213:[function(require,module,exports){
@@ -36508,7 +37574,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.equals = exports.equivalent = exports.greaterThanOrEquals = exports.greaterThan = exports.lessThanOrEquals = exports.lessThan = void 0;
-const datatypes_1 = require("../datatypes/datatypes");
+var datatypes_1 = require("../datatypes/datatypes");
 function areNumbers(a, b) {
     return typeof a === 'number' && typeof b === 'number';
 }
@@ -36613,7 +37679,7 @@ function equivalent(a, b) {
     if (typeof a.equivalent === 'function') {
         return a.equivalent(b);
     }
-    const [aClass, bClass] = getClassOfObjects(a, b);
+    var _a = getClassOfObjects(a, b), aClass = _a[0], bClass = _a[1];
     switch (aClass) {
         case '[object Array]':
             return compareEveryItemInArrays(a, b, equivalent);
@@ -36639,11 +37705,11 @@ function codesAreEquivalent(code1, code2) {
     return code1.hasMatch(code2);
 }
 function getClassOfObjects(object1, object2) {
-    return [object1, object2].map(obj => ({}.toString.call(obj)));
+    return [object1, object2].map(function (obj) { return ({}.toString.call(obj)); });
 }
 function compareEveryItemInArrays(array1, array2, comparisonFunction) {
     return (array1.length === array2.length &&
-        array1.every((item, i) => comparisonFunction(item, array2[i])));
+        array1.every(function (item, i) { return comparisonFunction(item, array2[i]); }));
 }
 function compareObjects(a, b, comparisonFunction) {
     if (!classesEqual(a, b)) {
@@ -36655,22 +37721,21 @@ function classesEqual(object1, object2) {
     return object2 instanceof object1.constructor && object1 instanceof object2.constructor;
 }
 function deepCompareKeysAndValues(a, b, comparisonFunction) {
-    let finalComparisonResult;
-    const aKeys = getKeysFromObject(a).sort();
-    const bKeys = getKeysFromObject(b).sort();
+    var finalComparisonResult;
+    var aKeys = getKeysFromObject(a).sort();
+    var bKeys = getKeysFromObject(b).sort();
     // Array.every() will only return true or false, so set a flag for if we should return null
-    let shouldReturnNull = false;
+    var shouldReturnNull = false;
     // Check if both arrays of keys are the same length and key names match
-    if (aKeys.length === bKeys.length && aKeys.every((value, index) => value === bKeys[index])) {
-        finalComparisonResult = aKeys.every(key => {
+    if (aKeys.length === bKeys.length && aKeys.every(function (value, index) { return value === bKeys[index]; })) {
+        finalComparisonResult = aKeys.every(function (key) {
             // if both are null we should return true to satisfy ignoring empty values in tuples
             if (a[key] == null && b[key] == null) {
                 return true;
             }
-            const comparisonResult = comparisonFunction(a[key], b[key]);
+            var comparisonResult = comparisonFunction(a[key], b[key]);
             if (comparisonResult === null) {
                 shouldReturnNull = true;
-                return true;
             }
             return comparisonResult;
         });
@@ -36678,13 +37743,13 @@ function deepCompareKeysAndValues(a, b, comparisonFunction) {
     else {
         finalComparisonResult = false;
     }
-    if (finalComparisonResult && shouldReturnNull) {
+    if (shouldReturnNull) {
         return null;
     }
     return finalComparisonResult;
 }
 function getKeysFromObject(object) {
-    return Object.keys(object).filter(k => !isFunction(object[k]));
+    return Object.keys(object).filter(function (k) { return !isFunction(object[k]); });
 }
 function isFunction(input) {
     return input instanceof Function || {}.toString.call(input) === '[object Function]';
@@ -36720,7 +37785,7 @@ function equals(a, b) {
         return a === b;
     }
     // Return false if they are instances of different classes
-    const [aClass, bClass] = getClassOfObjects(a, b);
+    var _a = getClassOfObjects(a, b), aClass = _a[0], bClass = _a[1];
     if (aClass !== bClass) {
         return false;
     }
@@ -36730,7 +37795,7 @@ function equals(a, b) {
             return a.getTime() === b.getTime();
         case '[object RegExp]':
             // Compare the components of the regular expression
-            return ['source', 'global', 'ignoreCase', 'multiline'].every(p => a[p] === b[p]);
+            return ['source', 'global', 'ignoreCase', 'multiline'].every(function (p) { return a[p] === b[p]; });
         case '[object Array]':
             if (a.indexOf(null) >= 0 ||
                 a.indexOf(undefined) >= 0 ||
@@ -36751,188 +37816,27 @@ exports.equals = equals;
 
 },{"../datatypes/datatypes":172}],219:[function(require,module,exports){
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.AnnotatedError = void 0;
-/**
- * A custom error that holds additional information and a more explicit message
- * to simplify tracking down errors that occur during execution
- */
-class AnnotatedError extends Error {
-    constructor(originalError, expressionName, libraryName, localId, locator) {
-        super(`Encountered unexpected error during execution.\n\n\tError Message:\t${originalError.message}\n\tCQL Library:\t${libraryName}\n\tExpression:\t${expressionName}${localId ? `\n\tELM Local ID:\t${localId}` : ''}${locator ? `\n\tCQL Locator:\t${locator}` : ''}\n`);
-        this.expressionName = expressionName;
-        this.libraryName = libraryName;
-        this.localId = localId;
-        this.locator = locator;
-        this.cause = originalError;
-    }
-}
-exports.AnnotatedError = AnnotatedError;
-
-},{}],220:[function(require,module,exports){
-"use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.toNormalizedKey = void 0;
-const ucum = __importStar(require("@lhncbc/ucum-lhc"));
-const immutable_1 = __importDefault(require("immutable"));
-const datatypes_1 = require("../datatypes/datatypes");
-const math_1 = require("./math");
-const units_1 = require("./units");
-const ucumUtilInstance = ucum.UcumLhcUtils.getInstance();
-/**
- * Provide a unique key for an object to be used for value equality
- * A key is normalized such that representations for quantities, dates, intervals, etc. are comparable.
- */
-const toNormalizedKey = (js) => {
-    var _a, _b, _c, _d, _e;
-    // This is necessary because of the oddities of CQL
-    // It allows ignoring non-set values in tuples to be compared correctly with set as null values in tuples
-    if (js === null || js === undefined) {
-        return null;
-    }
-    // Handle the edge case of functions
-    if (typeof js === 'function') {
-        return immutable_1.default.Map({
-            name: js.toString(),
-            __instance: 'JS.Function'
-        });
-    }
-    // Simple return non-objects
-    if (typeof js !== 'object') {
-        return js;
-    }
-    // Handle objects - normalize as necessary to generate unique keys
-    switch (js.constructor) {
-        case Array:
-            return immutable_1.default.Seq(js)
-                .map((x) => (0, exports.toNormalizedKey)(x))
-                .toList();
-        case datatypes_1.Code:
-            return immutable_1.default.Map({
-                code: (0, exports.toNormalizedKey)(js.code),
-                system: (0, exports.toNormalizedKey)(js.system),
-                version: (0, exports.toNormalizedKey)(js.version),
-                display: (0, exports.toNormalizedKey)(js.display),
-                __instance: js.constructor
-            });
-        case Date:
-            return immutable_1.default.Map({
-                epochMs: js.getTime(),
-                __instance: js.constructor
-            });
-        case datatypes_1.DateTime:
-            if (typeof js.timezoneOffset === 'number' && js.timezoneOffset !== 0) {
-                return immutable_1.default.Seq(js.convertToTimezoneOffset(0))
-                    .map((x) => (0, exports.toNormalizedKey)(x))
-                    .toMap()
-                    .set('__instance', js.constructor);
-            }
-            else {
-                return immutable_1.default.Seq(js)
-                    .map((x) => (0, exports.toNormalizedKey)(x))
-                    .toMap()
-                    .set('__instance', js.constructor);
-            }
-        case datatypes_1.Interval:
-            return immutable_1.default.Seq(js.toClosed())
-                .map((x) => (0, exports.toNormalizedKey)(x))
-                .toMap()
-                .set('__instance', js.constructor);
-        case datatypes_1.Quantity:
-            if (!js.unit) {
-                return immutable_1.default.Map({
-                    value: (_a = js.value) !== null && _a !== void 0 ? _a : null,
-                    unit: null,
-                    __instance: js.constructor
-                });
-            }
-            // Get the normalized base unit
-            const baseUnitKey = ucumUtilInstance.commensurablesList(js.unit)[0];
-            if (!baseUnitKey) {
-                // No units found - normalization not possible and use provided values
-                return immutable_1.default.Map({
-                    value: (_b = js.value) !== null && _b !== void 0 ? _b : null,
-                    unit: (_c = js.unit) !== null && _c !== void 0 ? _c : null,
-                    __instance: js.constructor
-                });
-            }
-            else {
-                // Unit was found - convert to baseUnit and normalize
-                const baseUnitKeyCode = baseUnitKey[0].csCode_;
-                const conversionValue = (0, units_1.convertUnit)(js.value, js.unit, baseUnitKeyCode);
-                const finalValue = conversionValue ? (0, math_1.decimalAdjust)('round', conversionValue, -8) : null;
-                return immutable_1.default.Map({
-                    value: finalValue !== null && finalValue !== void 0 ? finalValue : null,
-                    unit: baseUnitKeyCode !== null && baseUnitKeyCode !== void 0 ? baseUnitKeyCode : null,
-                    __instance: js.constructor
-                });
-            }
-        case datatypes_1.Ratio:
-            return immutable_1.default.Map({
-                numerator: (0, exports.toNormalizedKey)(js.numerator),
-                denominator: (0, exports.toNormalizedKey)(js.denominator),
-                __instance: js.constructor
-            });
-        case RegExp:
-            return immutable_1.default.Map({
-                source: (0, exports.toNormalizedKey)(js.source),
-                global: (0, exports.toNormalizedKey)(js.global),
-                ignoreCase: (0, exports.toNormalizedKey)(js.ignoreCase),
-                multiline: (0, exports.toNormalizedKey)(js.multiline),
-                __instance: js.constructor
-            });
-        case datatypes_1.Uncertainty:
-            if (js.isPoint()) {
-                return (0, exports.toNormalizedKey)(js.low);
-            }
-            else {
-                return immutable_1.default.Seq(js)
-                    .map((x) => (0, exports.toNormalizedKey)(x))
-                    .toMap()
-                    .set('__instance', js.constructor);
-            }
-        default:
-            // If the object is a model object (e.g. FHIRObject) with a _typeHierarchy function,
-            // then use the typeHierarchy information for the __instance value.
-            // Otherwise, use the constructor for the __instance value.
-            return immutable_1.default.Seq(js)
-                .map((x) => (0, exports.toNormalizedKey)(x))
-                .toMap()
-                .set('__instance', (_e = (0, exports.toNormalizedKey)((_d = js._typeHierarchy) === null || _d === void 0 ? void 0 : _d.call(js))) !== null && _e !== void 0 ? _e : js.constructor);
-    }
-};
-exports.toNormalizedKey = toNormalizedKey;
-
-},{"../datatypes/datatypes":172,"./math":221,"./units":222,"@lhncbc/ucum-lhc":98,"immutable":294}],221:[function(require,module,exports){
-"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.decimalOrNull = exports.decimalAdjust = exports.minValueForType = exports.minValueForInstance = exports.maxValueForType = exports.maxValueForInstance = exports.predecessor = exports.successor = exports.OverFlowException = exports.limitDecimalPrecision = exports.isValidDecimal = exports.isValidInteger = exports.overflowsOrUnderflows = exports.MAX_TIME_VALUE = exports.MIN_TIME_VALUE = exports.MAX_DATE_VALUE = exports.MIN_DATE_VALUE = exports.MAX_DATETIME_VALUE = exports.MIN_DATETIME_VALUE = exports.MIN_FLOAT_PRECISION_VALUE = exports.MIN_FLOAT_VALUE = exports.MAX_FLOAT_VALUE = exports.MIN_INT_VALUE = exports.MAX_INT_VALUE = void 0;
 /* eslint-disable @typescript-eslint/no-loss-of-precision */
-const exception_1 = require("../datatypes/exception");
-const datetime_1 = require("../datatypes/datetime");
-const uncertainty_1 = require("../datatypes/uncertainty");
+var exception_1 = require("../datatypes/exception");
+var datetime_1 = require("../datatypes/datetime");
+var uncertainty_1 = require("../datatypes/uncertainty");
 exports.MAX_INT_VALUE = Math.pow(2, 31) - 1;
 exports.MIN_INT_VALUE = Math.pow(-2, 31);
 exports.MAX_FLOAT_VALUE = 99999999999999999999.99999999;
@@ -37020,23 +37924,28 @@ function isValidDecimal(decimal) {
 }
 exports.isValidDecimal = isValidDecimal;
 function limitDecimalPrecision(decimal) {
-    let decimalString = decimal.toString();
+    var decimalString = decimal.toString();
     // For decimals so large that they are represented in scientific notation, javascript has already limited
     // the decimal to its own constraints, so we can't determine the original precision.  Leave as-is unless
     // this becomes problematic, in which case we would need our own parseFloat.
     if (decimalString.indexOf('e') !== -1) {
         return decimal;
     }
-    const splitDecimalString = decimalString.split('.');
-    const decimalPoints = splitDecimalString[1];
+    var splitDecimalString = decimalString.split('.');
+    var decimalPoints = splitDecimalString[1];
     if (decimalPoints != null && decimalPoints.length > 8) {
         decimalString = splitDecimalString[0] + '.' + splitDecimalString[1].substring(0, 8);
     }
     return parseFloat(decimalString);
 }
 exports.limitDecimalPrecision = limitDecimalPrecision;
-class OverFlowException extends exception_1.Exception {
-}
+var OverFlowException = /** @class */ (function (_super) {
+    __extends(OverFlowException, _super);
+    function OverFlowException() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return OverFlowException;
+}(exception_1.Exception));
 exports.OverFlowException = OverFlowException;
 function successor(val) {
     if (typeof val === 'number') {
@@ -37083,7 +37992,7 @@ function successor(val) {
     }
     else if (val && val.isUncertainty) {
         // For uncertainties, if the high is the max val, don't increment it
-        const high = (() => {
+        var high = (function () {
             try {
                 return successor(val.high);
             }
@@ -37094,7 +38003,7 @@ function successor(val) {
         return new uncertainty_1.Uncertainty(successor(val.low), high);
     }
     else if (val && val.isQuantity) {
-        const succ = val.clone();
+        var succ = val.clone();
         succ.value = successor(val.value);
         return succ;
     }
@@ -37148,7 +38057,7 @@ function predecessor(val) {
     }
     else if (val && val.isUncertainty) {
         // For uncertainties, if the low is the min val, don't decrement it
-        const low = (() => {
+        var low = (function () {
             try {
                 return predecessor(val.low);
             }
@@ -37159,7 +38068,7 @@ function predecessor(val) {
         return new uncertainty_1.Uncertainty(low, predecessor(val.high));
     }
     else if (val && val.isQuantity) {
-        const pred = val.clone();
+        var pred = val.clone();
         pred.value = predecessor(val.value);
         return pred;
     }
@@ -37187,7 +38096,7 @@ function maxValueForInstance(val) {
         return exports.MAX_DATE_VALUE === null || exports.MAX_DATE_VALUE === void 0 ? void 0 : exports.MAX_DATE_VALUE.copy();
     }
     else if (val && val.isQuantity) {
-        const val2 = val.clone();
+        var val2 = val.clone();
         val2.value = maxValueForInstance(val2.value);
         return val2;
     }
@@ -37213,7 +38122,7 @@ function maxValueForType(type, quantityInstance) {
                 // can't infer a quantity unit type from nothing]
                 return null;
             }
-            const maxQty = quantityInstance.clone();
+            var maxQty = quantityInstance.clone();
             maxQty.value = maxValueForInstance(maxQty.value);
             return maxQty;
         }
@@ -37240,7 +38149,7 @@ function minValueForInstance(val) {
         return exports.MIN_DATE_VALUE === null || exports.MIN_DATE_VALUE === void 0 ? void 0 : exports.MIN_DATE_VALUE.copy();
     }
     else if (val && val.isQuantity) {
-        const val2 = val.clone();
+        var val2 = val.clone();
         val2.value = minValueForInstance(val2.value);
         return val2;
     }
@@ -37266,7 +38175,7 @@ function minValueForType(type, quantityInstance) {
                 // can't infer a quantity unit type from nothing]
                 return null;
             }
-            const minQty = quantityInstance.clone();
+            var minQty = quantityInstance.clone();
             minQty.value = minValueForInstance(minQty.value);
             return minQty;
         }
@@ -37287,7 +38196,7 @@ function decimalAdjust(type, value, exp) {
     }
     //Shift
     value = value.toString().split('e');
-    let v = value[1] ? +value[1] - exp : -exp;
+    var v = value[1] ? +value[1] - exp : -exp;
     value = Math[type](+(value[0] + 'e' + v));
     //Shift back
     value = value.toString().split('e');
@@ -37300,7 +38209,7 @@ function decimalOrNull(value) {
 }
 exports.decimalOrNull = decimalOrNull;
 
-},{"../datatypes/datetime":173,"../datatypes/exception":174,"../datatypes/uncertainty":179}],222:[function(require,module,exports){
+},{"../datatypes/datetime":173,"../datatypes/exception":174,"../datatypes/uncertainty":179}],220:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -37321,14 +38230,23 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getQuotientOfUnits = exports.getProductOfUnits = exports.compareUnits = exports.convertToCQLDateUnit = exports.normalizeUnitsWhenPossible = exports.convertUnit = exports.checkUnit = void 0;
-const ucum = __importStar(require("@lhncbc/ucum-lhc"));
-const math_1 = require("./math");
-const utils = ucum.UcumLhcUtils.getInstance();
+var ucum = __importStar(require("@lhncbc/ucum-lhc"));
+var math_1 = require("./math");
+var utils = ucum.UcumLhcUtils.getInstance();
 // The CQL specification says that dates are based on the Gregorian calendar, so CQL-based year and month
 // identifiers will be matched to the UCUM gregorian units. See http://unitsofmeasure.org/ucum.html#para-31
-const CQL_TO_UCUM_DATE_UNITS = {
+var CQL_TO_UCUM_DATE_UNITS = {
     years: 'a_g',
     year: 'a_g',
     months: 'mo_g',
@@ -37346,7 +38264,7 @@ const CQL_TO_UCUM_DATE_UNITS = {
     milliseconds: 'ms',
     millisecond: 'ms'
 };
-const UCUM_TO_CQL_DATE_UNITS = {
+var UCUM_TO_CQL_DATE_UNITS = {
     a: 'year',
     a_j: 'year',
     a_g: 'year',
@@ -37361,8 +38279,10 @@ const UCUM_TO_CQL_DATE_UNITS = {
     ms: 'millisecond'
 };
 // Cache Map<string, boolean> for unit validity results so we dont have to go to ucum-lhc for every check.
-const unitValidityCache = new Map();
-function checkUnit(unit, allowEmptyUnits = true, allowCQLDateUnits = true) {
+var unitValidityCache = new Map();
+function checkUnit(unit, allowEmptyUnits, allowCQLDateUnits) {
+    if (allowEmptyUnits === void 0) { allowEmptyUnits = true; }
+    if (allowCQLDateUnits === void 0) { allowCQLDateUnits = true; }
     if (allowEmptyUnits) {
         unit = fixEmptyUnit(unit);
     }
@@ -37370,14 +38290,14 @@ function checkUnit(unit, allowEmptyUnits = true, allowCQLDateUnits = true) {
         unit = fixCQLDateUnit(unit);
     }
     if (!unitValidityCache.has(unit)) {
-        const result = utils.validateUnitString(unit, true);
+        var result = utils.validateUnitString(unit, true);
         if (result.status === 'valid') {
             unitValidityCache.set(unit, { valid: true });
         }
         else {
-            let msg = `Invalid UCUM unit: '${unit}'.`;
+            var msg = "Invalid UCUM unit: '".concat(unit, "'.");
             if (result.ucumCode != null) {
-                msg += ` Did you mean '${result.ucumCode}'?`;
+                msg += " Did you mean '".concat(result.ucumCode, "'?");
             }
             unitValidityCache.set(unit, { valid: false, message: msg });
         }
@@ -37385,9 +38305,11 @@ function checkUnit(unit, allowEmptyUnits = true, allowCQLDateUnits = true) {
     return unitValidityCache.get(unit);
 }
 exports.checkUnit = checkUnit;
-function convertUnit(fromVal, fromUnit, toUnit, adjustPrecision = true) {
-    [fromUnit, toUnit] = [fromUnit, toUnit].map(fixUnit);
-    const result = utils.convertUnitTo(fixUnit(fromUnit), fromVal, fixUnit(toUnit));
+function convertUnit(fromVal, fromUnit, toUnit, adjustPrecision) {
+    var _a;
+    if (adjustPrecision === void 0) { adjustPrecision = true; }
+    _a = [fromUnit, toUnit].map(fixUnit), fromUnit = _a[0], toUnit = _a[1];
+    var result = utils.convertUnitTo(fixUnit(fromUnit), fromVal, fixUnit(toUnit));
     if (result.status !== 'succeeded') {
         return;
     }
@@ -37395,18 +38317,19 @@ function convertUnit(fromVal, fromUnit, toUnit, adjustPrecision = true) {
 }
 exports.convertUnit = convertUnit;
 function normalizeUnitsWhenPossible(val1, unit1, val2, unit2) {
+    var _a;
     // If both units are CQL date units, return CQL date units
-    const useCQLDateUnits = unit1 in CQL_TO_UCUM_DATE_UNITS && unit2 in CQL_TO_UCUM_DATE_UNITS;
-    const resultConverter = (unit) => {
+    var useCQLDateUnits = unit1 in CQL_TO_UCUM_DATE_UNITS && unit2 in CQL_TO_UCUM_DATE_UNITS;
+    var resultConverter = function (unit) {
         return useCQLDateUnits ? convertToCQLDateUnit(unit) : unit;
     };
-    [unit1, unit2] = [unit1, unit2].map(u => fixUnit(u));
+    _a = [unit1, unit2].map(function (u) { return fixUnit(u); }), unit1 = _a[0], unit2 = _a[1];
     if (unit1 === unit2) {
         return [val1, unit1, val2, unit2];
     }
-    const baseUnit1 = getBaseUnitAndPower(unit1)[0];
-    const baseUnit2 = getBaseUnitAndPower(unit2)[0];
-    const [newVal2, newUnit2] = convertToBaseUnit(val2, unit2, baseUnit1);
+    var baseUnit1 = getBaseUnitAndPower(unit1)[0];
+    var baseUnit2 = getBaseUnitAndPower(unit2)[0];
+    var _b = convertToBaseUnit(val2, unit2, baseUnit1), newVal2 = _b[0], newUnit2 = _b[1];
     if (newVal2 == null) {
         // it was not convertible, so just return the quantities as-is
         return [val1, resultConverter(unit1), val2, resultConverter(unit2)];
@@ -37416,7 +38339,7 @@ function normalizeUnitsWhenPossible(val1, unit1, val2, unit2) {
         return [val1, resultConverter(unit1), newVal2, resultConverter(newUnit2)];
     }
     // else it was a conversion to a larger unit, so go the other way around
-    const [newVal1, newUnit1] = convertToBaseUnit(val1, unit1, baseUnit2);
+    var _c = convertToBaseUnit(val1, unit1, baseUnit2), newVal1 = _c[0], newUnit1 = _c[1];
     if (newVal1 == null) {
         // this should not happen since we established they are convertible, but just in case...
         return [val1, resultConverter(unit1), newVal2, resultConverter(newUnit2)];
@@ -37425,7 +38348,7 @@ function normalizeUnitsWhenPossible(val1, unit1, val2, unit2) {
 }
 exports.normalizeUnitsWhenPossible = normalizeUnitsWhenPossible;
 function convertToCQLDateUnit(unit) {
-    let dateUnit;
+    var dateUnit;
     if (unit in CQL_TO_UCUM_DATE_UNITS) {
         // it's already a CQL unit, so return it as-is, removing trailing 's' if necessary (e.g., years -> year)
         dateUnit = unit.replace(/s$/, '');
@@ -37438,7 +38361,7 @@ function convertToCQLDateUnit(unit) {
 exports.convertToCQLDateUnit = convertToCQLDateUnit;
 function compareUnits(unit1, unit2) {
     try {
-        const c = convertUnit(1, unit1, unit2);
+        var c = convertUnit(1, unit1, unit2);
         if (c && c > 1) {
             // unit1 is bigger (less precise)
             return 1;
@@ -37456,44 +38379,49 @@ function compareUnits(unit1, unit2) {
 }
 exports.compareUnits = compareUnits;
 function getProductOfUnits(unit1, unit2) {
-    [unit1, unit2] = [unit1, unit2].map(fixEmptyUnit);
+    var _a;
+    _a = [unit1, unit2].map(fixEmptyUnit), unit1 = _a[0], unit2 = _a[1];
     if (!checkUnit(unit1).valid || !checkUnit(unit2).valid) {
         return null;
     }
     // If either unit contains a divisor,combine the numerators and denominators, then divide
     if (unit1.indexOf('/') >= 0 || unit2.indexOf('/') >= 0) {
         // NOTE: We're not trying to get perfection on unit simplification, but doing what is reasonable
-        const match1 = unit1.match(/([^/]*)(\/(.*))?/);
-        const match2 = unit2.match(/([^/]*)(\/(.*))?/);
+        var match1 = unit1.match(/([^/]*)(\/(.*))?/);
+        var match2 = unit2.match(/([^/]*)(\/(.*))?/);
         // In the previous regexes, numerator is match[1], denominator is match[3]
-        const newNum = getProductOfUnits(match1[1], match2[1]);
-        const newDen = getProductOfUnits(match1[3], match2[3]);
+        var newNum = getProductOfUnits(match1[1], match2[1]);
+        var newDen = getProductOfUnits(match1[3], match2[3]);
         return getQuotientOfUnits(newNum, newDen);
     }
     // Get all the individual units being combined, accounting for multipliers (e.g., 'm.L'),
     // and then group like base units to combine powers (and remove '1's since they are no-ops)
     // e.g., 'm.L' * 'm' ==> { m: 2, L: 1}; 'm.L' * '1' ==> { m: 1, L: 1 }; '1' : '1' ==> { }
-    const factorPowerMap = new Map();
-    const factors = [...unit1.split('.'), ...unit2.split('.')];
-    factors.forEach(factor => {
-        const [baseUnit, power] = getBaseUnitAndPower(factor);
+    var factorPowerMap = new Map();
+    var factors = __spreadArray(__spreadArray([], unit1.split('.'), true), unit2.split('.'), true);
+    factors.forEach(function (factor) {
+        var _a = getBaseUnitAndPower(factor), baseUnit = _a[0], power = _a[1];
         if (baseUnit === '1' || power === 0) {
             // skip factors that are 1 since 1 * N is N.
             return;
         }
-        const accumulatedPower = (factorPowerMap.get(baseUnit) || 0) + power;
+        var accumulatedPower = (factorPowerMap.get(baseUnit) || 0) + power;
         factorPowerMap.set(baseUnit, accumulatedPower);
     });
     // Loop through the factor map, rebuilding each factor w/ combined power and join them all
     // back via the multiplier '.', treating a final '' (no non-1 units) as '1'
     // e.g.,  { m: 2, L: 1 } ==> 'm2.L'
     return fixUnit(Array.from(factorPowerMap.entries())
-        .map(([base, power]) => `${base}${power > 1 ? power : ''}`)
+        .map(function (_a) {
+        var base = _a[0], power = _a[1];
+        return "".concat(base).concat(power > 1 ? power : '');
+    })
         .join('.'));
 }
 exports.getProductOfUnits = getProductOfUnits;
 function getQuotientOfUnits(unit1, unit2) {
-    [unit1, unit2] = [unit1, unit2].map(fixEmptyUnit);
+    var _a;
+    _a = [unit1, unit2].map(fixEmptyUnit), unit1 = _a[0], unit2 = _a[1];
     if (!checkUnit(unit1).valid || !checkUnit(unit2).valid) {
         return null;
     }
@@ -37503,32 +38431,44 @@ function getQuotientOfUnits(unit1, unit2) {
         // (e.g., 'm.L'), and then group like base units to combine powers, inversing denominator
         // powers since they are being divided.
         // e.g., 'm3.L' / 'm' ==> { m: 2, L: -1}; 'm.L' / '1' ==> { m: 1, L: 1 }; '1' / '1' ==> { 1: 0 }
-        const factorPowerMap = new Map();
-        unit1.split('.').forEach((factor) => {
-            const [baseUnit, power] = getBaseUnitAndPower(factor);
-            const accumulatedPower = (factorPowerMap.get(baseUnit) || 0) + power;
-            factorPowerMap.set(baseUnit, accumulatedPower);
+        var factorPowerMap_1 = new Map();
+        unit1.split('.').forEach(function (factor) {
+            var _a = getBaseUnitAndPower(factor), baseUnit = _a[0], power = _a[1];
+            var accumulatedPower = (factorPowerMap_1.get(baseUnit) || 0) + power;
+            factorPowerMap_1.set(baseUnit, accumulatedPower);
         });
-        unit2.split('.').forEach((factor) => {
-            const [baseUnit, power] = getBaseUnitAndPower(factor);
-            const accumulatedPower = (factorPowerMap.get(baseUnit) || 0) - power;
-            factorPowerMap.set(baseUnit, accumulatedPower);
+        unit2.split('.').forEach(function (factor) {
+            var _a = getBaseUnitAndPower(factor), baseUnit = _a[0], power = _a[1];
+            var accumulatedPower = (factorPowerMap_1.get(baseUnit) || 0) - power;
+            factorPowerMap_1.set(baseUnit, accumulatedPower);
         });
         // Construct the numerator from factors with positive power, and denominator from factors
         // with negative power, filtering out base `1` and power 0 (which is also 1).
         // e.g. numerator:   { m: 2, L: -2 } ==> 'm2'; { 1: 1, L: -1 } => ''
         // e.g. denominator: { m: 2, L: -2 } ==> 'L2'; { 1: 1, L: -1 } => 'L'
-        const numerator = Array.from(factorPowerMap.entries())
-            .filter(([base, power]) => base !== '1' && power > 0)
-            .map(([base, power]) => `${base}${power > 1 ? power : ''}`)
+        var numerator = Array.from(factorPowerMap_1.entries())
+            .filter(function (_a) {
+            var base = _a[0], power = _a[1];
+            return base !== '1' && power > 0;
+        })
+            .map(function (_a) {
+            var base = _a[0], power = _a[1];
+            return "".concat(base).concat(power > 1 ? power : '');
+        })
             .join('.');
-        let denominator = Array.from(factorPowerMap.entries())
-            .filter(([base, power]) => base !== '1' && power < 0)
-            .map(([base, power]) => `${base}${power < -1 ? power * -1 : ''}`)
+        var denominator = Array.from(factorPowerMap_1.entries())
+            .filter(function (_a) {
+            var base = _a[0], power = _a[1];
+            return base !== '1' && power < 0;
+        })
+            .map(function (_a) {
+            var base = _a[0], power = _a[1];
+            return "".concat(base).concat(power < -1 ? power * -1 : '');
+        })
             .join('.');
         // wrap the denominator in parentheses if necessary
-        denominator = /[.]/.test(denominator) ? `(${denominator})` : denominator;
-        return fixUnit(`${numerator}${denominator !== '' ? '/' + denominator : ''}`);
+        denominator = /[.]/.test(denominator) ? "(".concat(denominator, ")") : denominator;
+        return fixUnit("".concat(numerator).concat(denominator !== '' ? '/' + denominator : ''));
     }
     // One of the units had a divisor, so don't try to be too smart; just construct it from the parts
     if (unit1 === unit2) {
@@ -37541,21 +38481,21 @@ function getQuotientOfUnits(unit1, unit2) {
     }
     else {
         // denominator is unit2, wrapped in parentheses if necessary
-        const denominator = /[./]/.test(unit2) ? `(${unit2})` : unit2;
+        var denominator = /[./]/.test(unit2) ? "(".concat(unit2, ")") : unit2;
         if (unit1 === '1') {
             // e.g., '1' / 'm' ==> '/m'; '1' / 'm.g' ==> '/(m.g)'
-            return `/${denominator}`;
+            return "/".concat(denominator);
         }
         // e.g., 'L' / 'm' ==> 'L/m'; 'L' / 'm.g' ==> 'L/(m.g)'
-        return `${unit1}/${denominator}`;
+        return "".concat(unit1, "/").concat(denominator);
     }
 }
 exports.getQuotientOfUnits = getQuotientOfUnits;
 // UNEXPORTED FUNCTIONS
 function convertToBaseUnit(fromVal, fromUnit, toBaseUnit) {
-    const fromPower = getBaseUnitAndPower(fromUnit)[1];
-    const toUnit = fromPower === 1 ? toBaseUnit : `${toBaseUnit}${fromPower}`;
-    const newVal = convertUnit(fromVal, fromUnit, toUnit);
+    var fromPower = getBaseUnitAndPower(fromUnit)[1];
+    var toUnit = fromPower === 1 ? toBaseUnit : "".concat(toBaseUnit).concat(fromPower);
+    var newVal = convertUnit(fromVal, fromUnit, toUnit);
     return newVal != null ? [newVal, toUnit] : [];
 }
 function getBaseUnitAndPower(unit) {
@@ -37564,7 +38504,7 @@ function getBaseUnitAndPower(unit) {
         return [unit, 1];
     }
     unit = fixUnit(unit);
-    let [term, power] = unit.match(/^(.*[^-\d])?([-]?\d*)$/).slice(1);
+    var _a = unit.match(/^(.*[^-\d])?([-]?\d*)$/).slice(1), term = _a[0], power = _a[1];
     if (term == null || term === '') {
         term = power;
         power = '1';
@@ -37587,16 +38527,16 @@ function fixUnit(unit) {
     return fixCQLDateUnit(fixEmptyUnit(unit));
 }
 
-},{"./math":221,"@lhncbc/ucum-lhc":98}],223:[function(require,module,exports){
+},{"./math":219,"@lhncbc/ucum-lhc":98}],221:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.asyncMergeSort = exports.getTimezoneSeparatorFromString = exports.normalizeMillisecondsField = exports.normalizeMillisecondsFieldInString = exports.jsDate = exports.anyTrue = exports.allTrue = exports.typeIsArray = exports.isNull = exports.numerical_sort = exports.removeNulls = void 0;
+exports.getTimezoneSeparatorFromString = exports.normalizeMillisecondsField = exports.normalizeMillisecondsFieldInString = exports.jsDate = exports.anyTrue = exports.allTrue = exports.typeIsArray = exports.isNull = exports.numerical_sort = exports.removeNulls = void 0;
 function removeNulls(things) {
-    return things.filter(x => x != null);
+    return things.filter(function (x) { return x != null; });
 }
 exports.removeNulls = removeNulls;
 function numerical_sort(things, direction) {
-    return things.sort((a, b) => {
+    return things.sort(function (a, b) {
         if (direction == null || direction === 'asc' || direction === 'ascending') {
             return a - b;
         }
@@ -37610,10 +38550,10 @@ function isNull(value) {
     return value === null;
 }
 exports.isNull = isNull;
-exports.typeIsArray = Array.isArray || (value => ({}.toString.call(value) === '[object Array]'));
+exports.typeIsArray = Array.isArray || (function (value) { return ({}.toString.call(value) === '[object Array]'); });
 function allTrue(things) {
     if ((0, exports.typeIsArray)(things)) {
-        return things.every(x => x);
+        return things.every(function (x) { return x; });
     }
     else {
         return things;
@@ -37622,7 +38562,7 @@ function allTrue(things) {
 exports.allTrue = allTrue;
 function anyTrue(things) {
     if ((0, exports.typeIsArray)(things)) {
-        return things.some(x => x);
+        return things.some(function (x) { return x; });
     }
     else {
         return things;
@@ -37633,10 +38573,10 @@ exports.anyTrue = anyTrue;
 exports.jsDate = Date;
 function normalizeMillisecondsFieldInString(string, msString) {
     // TODO: verify we are only removing numeral digits
-    let timezoneField;
+    var timezoneField;
     msString = normalizeMillisecondsField(msString);
-    const [beforeMs, msAndAfter] = string.split('.');
-    const timezoneSeparator = getTimezoneSeparatorFromString(msAndAfter);
+    var _a = string.split('.'), beforeMs = _a[0], msAndAfter = _a[1];
+    var timezoneSeparator = getTimezoneSeparatorFromString(msAndAfter);
     if (timezoneSeparator) {
         timezoneField = msAndAfter != null ? msAndAfter.split(timezoneSeparator)[1] : undefined;
     }
@@ -37653,7 +38593,7 @@ function normalizeMillisecondsField(msString) {
 exports.normalizeMillisecondsField = normalizeMillisecondsField;
 function getTimezoneSeparatorFromString(string) {
     if (string != null) {
-        let matches = string.match(/-/);
+        var matches = string.match(/-/);
         if (matches && matches.length === 1) {
             return '-';
         }
@@ -37665,36 +38605,8 @@ function getTimezoneSeparatorFromString(string) {
     return '';
 }
 exports.getTimezoneSeparatorFromString = getTimezoneSeparatorFromString;
-async function asyncMergeSort(arr, compareFn) {
-    if (arr.length <= 1) {
-        return arr;
-    }
-    const midpoint = Math.floor(arr.length / 2);
-    const left = await asyncMergeSort(arr.slice(0, midpoint), compareFn);
-    const right = await asyncMergeSort(arr.slice(midpoint), compareFn);
-    return merge(left, right, compareFn);
-}
-exports.asyncMergeSort = asyncMergeSort;
-async function merge(left, right, compareFn) {
-    const sorted = [];
-    while (left.length > 0 && right.length > 0) {
-        if ((await compareFn(left[0], right[0])) <= 0) {
-            const sortedElem = left.shift();
-            if (sortedElem !== undefined) {
-                sorted.push(sortedElem);
-            }
-        }
-        else {
-            const sortedElem = right.shift();
-            if (sortedElem !== undefined) {
-                sorted.push(sortedElem);
-            }
-        }
-    }
-    return [...sorted, ...left, ...right];
-}
 
-},{}],224:[function(require,module,exports){
+},{}],222:[function(require,module,exports){
 (function (Buffer){(function (){
 var elliptic = require('elliptic')
 var BN = require('bn.js')
@@ -37822,7 +38734,7 @@ function formatReturnValue (bn, enc, len) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"bn.js":122,"buffer":156,"elliptic":242}],225:[function(require,module,exports){
+},{"bn.js":122,"buffer":156,"elliptic":240}],223:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var MD5 = require('md5.js')
@@ -37854,14 +38766,14 @@ module.exports = function createHash (alg) {
   return new Hash(sha(alg))
 }
 
-},{"cipher-base":166,"inherits":295,"md5.js":311,"ripemd160":542,"sha.js":562}],226:[function(require,module,exports){
+},{"cipher-base":166,"inherits":292,"md5.js":308,"ripemd160":539,"sha.js":559}],224:[function(require,module,exports){
 var MD5 = require('md5.js')
 
 module.exports = function (buffer) {
   return new MD5().update(buffer).digest()
 }
 
-},{"md5.js":311}],227:[function(require,module,exports){
+},{"md5.js":308}],225:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Legacy = require('./legacy')
@@ -37925,7 +38837,7 @@ module.exports = function createHmac (alg, key) {
   return new Hmac(alg, key)
 }
 
-},{"./legacy":228,"cipher-base":166,"create-hash/md5":226,"inherits":295,"ripemd160":542,"safe-buffer":559,"sha.js":562}],228:[function(require,module,exports){
+},{"./legacy":226,"cipher-base":166,"create-hash/md5":224,"inherits":292,"ripemd160":539,"safe-buffer":556,"sha.js":559}],226:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Buffer = require('safe-buffer').Buffer
@@ -37973,7 +38885,7 @@ Hmac.prototype._final = function () {
 }
 module.exports = Hmac
 
-},{"cipher-base":166,"inherits":295,"safe-buffer":559}],229:[function(require,module,exports){
+},{"cipher-base":166,"inherits":292,"safe-buffer":556}],227:[function(require,module,exports){
 'use strict';
 
 // eslint-disable-next-line no-multi-assign
@@ -38078,7 +38990,7 @@ exports.constants = {
 	POINT_CONVERSION_HYBRID: 6
 };
 
-},{"browserify-cipher":142,"browserify-sign":150,"browserify-sign/algos":147,"create-ecdh":224,"create-hash":225,"create-hmac":227,"diffie-hellman":237,"pbkdf2":509,"public-encrypt":522,"randombytes":528,"randomfill":529}],230:[function(require,module,exports){
+},{"browserify-cipher":142,"browserify-sign":150,"browserify-sign/algos":147,"create-ecdh":222,"create-hash":223,"create-hmac":225,"diffie-hellman":235,"pbkdf2":506,"public-encrypt":519,"randombytes":525,"randomfill":526}],228:[function(require,module,exports){
 'use strict';
 
 var $defineProperty = require('es-define-property');
@@ -38136,7 +39048,7 @@ module.exports = function defineDataProperty(
 	}
 };
 
-},{"es-define-property":258,"es-errors/syntax":263,"es-errors/type":264,"gopd":274}],231:[function(require,module,exports){
+},{"es-define-property":256,"es-errors/syntax":261,"es-errors/type":262,"gopd":272}],229:[function(require,module,exports){
 'use strict';
 
 exports.utils = require('./des/utils');
@@ -38145,7 +39057,7 @@ exports.DES = require('./des/des');
 exports.CBC = require('./des/cbc');
 exports.EDE = require('./des/ede');
 
-},{"./des/cbc":232,"./des/cipher":233,"./des/des":234,"./des/ede":235,"./des/utils":236}],232:[function(require,module,exports){
+},{"./des/cbc":230,"./des/cipher":231,"./des/des":232,"./des/ede":233,"./des/utils":234}],230:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38212,7 +39124,7 @@ proto._update = function _update(inp, inOff, out, outOff) {
   }
 };
 
-},{"inherits":295,"minimalistic-assert":329}],233:[function(require,module,exports){
+},{"inherits":292,"minimalistic-assert":326}],231:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38356,7 +39268,7 @@ Cipher.prototype._finalDecrypt = function _finalDecrypt() {
   return this._unpad(out);
 };
 
-},{"minimalistic-assert":329}],234:[function(require,module,exports){
+},{"minimalistic-assert":326}],232:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38508,7 +39420,7 @@ DES.prototype._decrypt = function _decrypt(state, lStart, rStart, out, off) {
   utils.rip(l, r, out, off);
 };
 
-},{"./cipher":233,"./utils":236,"inherits":295,"minimalistic-assert":329}],235:[function(require,module,exports){
+},{"./cipher":231,"./utils":234,"inherits":292,"minimalistic-assert":326}],233:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38564,7 +39476,7 @@ EDE.prototype._update = function _update(inp, inOff, out, outOff) {
 EDE.prototype._pad = DES.prototype._pad;
 EDE.prototype._unpad = DES.prototype._unpad;
 
-},{"./cipher":233,"./des":234,"inherits":295,"minimalistic-assert":329}],236:[function(require,module,exports){
+},{"./cipher":231,"./des":232,"inherits":292,"minimalistic-assert":326}],234:[function(require,module,exports){
 'use strict';
 
 exports.readUInt32BE = function readUInt32BE(bytes, off) {
@@ -38822,7 +39734,7 @@ exports.padSplit = function padSplit(num, size, group) {
   return out.join(' ');
 };
 
-},{}],237:[function(require,module,exports){
+},{}],235:[function(require,module,exports){
 (function (Buffer){(function (){
 var generatePrime = require('./lib/generatePrime')
 var primes = require('./lib/primes.json')
@@ -38868,7 +39780,7 @@ exports.DiffieHellmanGroup = exports.createDiffieHellmanGroup = exports.getDiffi
 exports.createDiffieHellman = exports.DiffieHellman = createDiffieHellman
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"./lib/dh":238,"./lib/generatePrime":239,"./lib/primes.json":240,"buffer":156}],238:[function(require,module,exports){
+},{"./lib/dh":236,"./lib/generatePrime":237,"./lib/primes.json":238,"buffer":156}],236:[function(require,module,exports){
 (function (Buffer){(function (){
 var BN = require('bn.js');
 var MillerRabin = require('miller-rabin');
@@ -39036,7 +39948,7 @@ function formatReturnValue(bn, enc) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"./generatePrime":239,"bn.js":122,"buffer":156,"miller-rabin":328,"randombytes":528}],239:[function(require,module,exports){
+},{"./generatePrime":237,"bn.js":122,"buffer":156,"miller-rabin":325,"randombytes":525}],237:[function(require,module,exports){
 var randomBytes = require('randombytes');
 module.exports = findPrime;
 findPrime.simpleSieve = simpleSieve;
@@ -39143,7 +40055,7 @@ function findPrime(bits, gen) {
 
 }
 
-},{"bn.js":122,"miller-rabin":328,"randombytes":528}],240:[function(require,module,exports){
+},{"bn.js":122,"miller-rabin":325,"randombytes":525}],238:[function(require,module,exports){
 module.exports={
     "modp1": {
         "gen": "02",
@@ -39178,7 +40090,7 @@ module.exports={
         "prime": "ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dbe115974a3926f12fee5e438777cb6a932df8cd8bec4d073b931ba3bc832b68d9dd300741fa7bf8afc47ed2576f6936ba424663aab639c5ae4f5683423b4742bf1c978238f16cbe39d652de3fdb8befc848ad922222e04a4037c0713eb57a81a23f0c73473fc646cea306b4bcbc8862f8385ddfa9d4b7fa2c087e879683303ed5bdd3a062b3cf5b3a278a66d2a13f83f44f82ddf310ee074ab6a364597e899a0255dc164f31cc50846851df9ab48195ded7ea1b1d510bd7ee74d73faf36bc31ecfa268359046f4eb879f924009438b481c6cd7889a002ed5ee382bc9190da6fc026e479558e4475677e9aa9e3050e2765694dfc81f56e880b96e7160c980dd98edd3dfffffffffffffffff"
     }
 }
-},{}],241:[function(require,module,exports){
+},{}],239:[function(require,module,exports){
 'use strict';
 
 var callBind = require('call-bind-apply-helpers');
@@ -39210,7 +40122,7 @@ module.exports = desc && typeof desc.get === 'function'
 		}
 		: false;
 
-},{"call-bind-apply-helpers":161,"gopd":274}],242:[function(require,module,exports){
+},{"call-bind-apply-helpers":161,"gopd":272}],240:[function(require,module,exports){
 'use strict';
 
 var elliptic = exports;
@@ -39225,7 +40137,7 @@ elliptic.curves = require('./elliptic/curves');
 elliptic.ec = require('./elliptic/ec');
 elliptic.eddsa = require('./elliptic/eddsa');
 
-},{"../package.json":257,"./elliptic/curve":245,"./elliptic/curves":248,"./elliptic/ec":249,"./elliptic/eddsa":252,"./elliptic/utils":256,"brorand":123}],243:[function(require,module,exports){
+},{"../package.json":255,"./elliptic/curve":243,"./elliptic/curves":246,"./elliptic/ec":247,"./elliptic/eddsa":250,"./elliptic/utils":254,"brorand":123}],241:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -39608,7 +40520,7 @@ BasePoint.prototype.dblp = function dblp(k) {
   return r;
 };
 
-},{"../utils":256,"bn.js":122}],244:[function(require,module,exports){
+},{"../utils":254,"bn.js":122}],242:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -40045,7 +40957,7 @@ Point.prototype.eqXToP = function eqXToP(x) {
 Point.prototype.toP = Point.prototype.normalize;
 Point.prototype.mixedAdd = Point.prototype.add;
 
-},{"../utils":256,"./base":243,"bn.js":122,"inherits":295}],245:[function(require,module,exports){
+},{"../utils":254,"./base":241,"bn.js":122,"inherits":292}],243:[function(require,module,exports){
 'use strict';
 
 var curve = exports;
@@ -40055,7 +40967,7 @@ curve.short = require('./short');
 curve.mont = require('./mont');
 curve.edwards = require('./edwards');
 
-},{"./base":243,"./edwards":244,"./mont":246,"./short":247}],246:[function(require,module,exports){
+},{"./base":241,"./edwards":242,"./mont":244,"./short":245}],244:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -40235,7 +41147,7 @@ Point.prototype.getX = function getX() {
   return this.x.fromRed();
 };
 
-},{"../utils":256,"./base":243,"bn.js":122,"inherits":295}],247:[function(require,module,exports){
+},{"../utils":254,"./base":241,"bn.js":122,"inherits":292}],245:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -41175,7 +42087,7 @@ JPoint.prototype.isInfinity = function isInfinity() {
   return this.z.cmpn(0) === 0;
 };
 
-},{"../utils":256,"./base":243,"bn.js":122,"inherits":295}],248:[function(require,module,exports){
+},{"../utils":254,"./base":241,"bn.js":122,"inherits":292}],246:[function(require,module,exports){
 'use strict';
 
 var curves = exports;
@@ -41383,7 +42295,7 @@ defineCurve('secp256k1', {
   ],
 });
 
-},{"./curve":245,"./precomputed/secp256k1":255,"./utils":256,"hash.js":279}],249:[function(require,module,exports){
+},{"./curve":243,"./precomputed/secp256k1":253,"./utils":254,"hash.js":277}],247:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -41663,7 +42575,7 @@ EC.prototype.getKeyRecoveryParam = function(e, signature, Q, enc) {
   throw new Error('Unable to find valid recovery factor');
 };
 
-},{"../curves":248,"../utils":256,"./key":250,"./signature":251,"bn.js":122,"brorand":123,"hmac-drbg":292}],250:[function(require,module,exports){
+},{"../curves":246,"../utils":254,"./key":248,"./signature":249,"bn.js":122,"brorand":123,"hmac-drbg":290}],248:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -41786,7 +42698,7 @@ KeyPair.prototype.inspect = function inspect() {
          ' pub: ' + (this.pub && this.pub.inspect()) + ' >';
 };
 
-},{"../utils":256,"bn.js":122}],251:[function(require,module,exports){
+},{"../utils":254,"bn.js":122}],249:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -41964,7 +42876,7 @@ Signature.prototype.toDER = function toDER(enc) {
   return utils.encode(res, enc);
 };
 
-},{"../utils":256,"bn.js":122}],252:[function(require,module,exports){
+},{"../utils":254,"bn.js":122}],250:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -42087,7 +42999,7 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
-},{"../curves":248,"../utils":256,"./key":253,"./signature":254,"hash.js":279}],253:[function(require,module,exports){
+},{"../curves":246,"../utils":254,"./key":251,"./signature":252,"hash.js":277}],251:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -42184,7 +43096,7 @@ KeyPair.prototype.getPublic = function getPublic(enc) {
 
 module.exports = KeyPair;
 
-},{"../utils":256}],254:[function(require,module,exports){
+},{"../utils":254}],252:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -42252,7 +43164,7 @@ Signature.prototype.toHex = function toHex() {
 
 module.exports = Signature;
 
-},{"../utils":256,"bn.js":122}],255:[function(require,module,exports){
+},{"../utils":254,"bn.js":122}],253:[function(require,module,exports){
 module.exports = {
   doubles: {
     step: 4,
@@ -43034,7 +43946,7 @@ module.exports = {
   },
 };
 
-},{}],256:[function(require,module,exports){
+},{}],254:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -43158,7 +44070,7 @@ function intFromLE(bytes) {
 utils.intFromLE = intFromLE;
 
 
-},{"bn.js":122,"minimalistic-assert":329,"minimalistic-crypto-utils":330}],257:[function(require,module,exports){
+},{"bn.js":122,"minimalistic-assert":326,"minimalistic-crypto-utils":327}],255:[function(require,module,exports){
 module.exports={
   "name": "elliptic",
   "version": "6.6.1",
@@ -43216,7 +44128,7 @@ module.exports={
   }
 }
 
-},{}],258:[function(require,module,exports){
+},{}],256:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
@@ -43232,55 +44144,55 @@ if ($defineProperty) {
 
 module.exports = $defineProperty;
 
-},{}],259:[function(require,module,exports){
+},{}],257:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./eval')} */
 module.exports = EvalError;
 
-},{}],260:[function(require,module,exports){
+},{}],258:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
 module.exports = Error;
 
-},{}],261:[function(require,module,exports){
+},{}],259:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./range')} */
 module.exports = RangeError;
 
-},{}],262:[function(require,module,exports){
+},{}],260:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./ref')} */
 module.exports = ReferenceError;
 
-},{}],263:[function(require,module,exports){
+},{}],261:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./syntax')} */
 module.exports = SyntaxError;
 
-},{}],264:[function(require,module,exports){
+},{}],262:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./type')} */
 module.exports = TypeError;
 
-},{}],265:[function(require,module,exports){
+},{}],263:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./uri')} */
 module.exports = URIError;
 
-},{}],266:[function(require,module,exports){
+},{}],264:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
 module.exports = Object;
 
-},{}],267:[function(require,module,exports){
+},{}],265:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -43779,7 +44691,7 @@ function eventTargetAgnosticAddListener(emitter, name, listener, flags) {
   }
 }
 
-},{}],268:[function(require,module,exports){
+},{}],266:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var MD5 = require('md5.js')
 
@@ -43826,7 +44738,7 @@ function EVP_BytesToKey (password, salt, keyBits, ivLen) {
 
 module.exports = EVP_BytesToKey
 
-},{"md5.js":311,"safe-buffer":559}],269:[function(require,module,exports){
+},{"md5.js":308,"safe-buffer":556}],267:[function(require,module,exports){
 'use strict';
 
 var isCallable = require('is-callable');
@@ -43890,7 +44802,7 @@ var forEach = function forEach(list, iterator, thisArg) {
 
 module.exports = forEach;
 
-},{"is-callable":298}],270:[function(require,module,exports){
+},{"is-callable":295}],268:[function(require,module,exports){
 'use strict';
 
 /* eslint no-invalid-this: 1 */
@@ -43976,14 +44888,14 @@ module.exports = function bind(that) {
     return bound;
 };
 
-},{}],271:[function(require,module,exports){
+},{}],269:[function(require,module,exports){
 'use strict';
 
 var implementation = require('./implementation');
 
 module.exports = Function.prototype.bind || implementation;
 
-},{"./implementation":270}],272:[function(require,module,exports){
+},{"./implementation":268}],270:[function(require,module,exports){
 'use strict';
 
 var undefined;
@@ -44357,13 +45269,13 @@ module.exports = function GetIntrinsic(name, allowMissing) {
 	return value;
 };
 
-},{"call-bind-apply-helpers/functionApply":159,"call-bind-apply-helpers/functionCall":160,"dunder-proto/get":241,"es-define-property":258,"es-errors":260,"es-errors/eval":259,"es-errors/range":261,"es-errors/ref":262,"es-errors/syntax":263,"es-errors/type":264,"es-errors/uri":265,"es-object-atoms":266,"function-bind":271,"gopd":274,"has-symbols":276,"hasown":291,"math-intrinsics/abs":306,"math-intrinsics/floor":307,"math-intrinsics/max":308,"math-intrinsics/min":309,"math-intrinsics/pow":310}],273:[function(require,module,exports){
+},{"call-bind-apply-helpers/functionApply":159,"call-bind-apply-helpers/functionCall":160,"dunder-proto/get":239,"es-define-property":256,"es-errors":258,"es-errors/eval":257,"es-errors/range":259,"es-errors/ref":260,"es-errors/syntax":261,"es-errors/type":262,"es-errors/uri":263,"es-object-atoms":264,"function-bind":269,"gopd":272,"has-symbols":274,"hasown":289,"math-intrinsics/abs":303,"math-intrinsics/floor":304,"math-intrinsics/max":305,"math-intrinsics/min":306,"math-intrinsics/pow":307}],271:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./gOPD')} */
 module.exports = Object.getOwnPropertyDescriptor;
 
-},{}],274:[function(require,module,exports){
+},{}],272:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
@@ -44380,7 +45292,7 @@ if ($gOPD) {
 
 module.exports = $gOPD;
 
-},{"./gOPD":273}],275:[function(require,module,exports){
+},{"./gOPD":271}],273:[function(require,module,exports){
 'use strict';
 
 var $defineProperty = require('es-define-property');
@@ -44404,7 +45316,7 @@ hasPropertyDescriptors.hasArrayLengthDefineBug = function hasArrayLengthDefineBu
 
 module.exports = hasPropertyDescriptors;
 
-},{"es-define-property":258}],276:[function(require,module,exports){
+},{"es-define-property":256}],274:[function(require,module,exports){
 'use strict';
 
 var origSymbol = typeof Symbol !== 'undefined' && Symbol;
@@ -44420,7 +45332,7 @@ module.exports = function hasNativeSymbols() {
 	return hasSymbolSham();
 };
 
-},{"./shams":277}],277:[function(require,module,exports){
+},{"./shams":275}],275:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./shams')} */
@@ -44467,7 +45379,7 @@ module.exports = function hasSymbols() {
 	return true;
 };
 
-},{}],278:[function(require,module,exports){
+},{}],276:[function(require,module,exports){
 'use strict';
 
 var hasSymbols = require('has-symbols/shams');
@@ -44477,7 +45389,7 @@ module.exports = function hasToStringTagShams() {
 	return hasSymbols() && !!Symbol.toStringTag;
 };
 
-},{"has-symbols/shams":277}],279:[function(require,module,exports){
+},{"has-symbols/shams":275}],277:[function(require,module,exports){
 var hash = exports;
 
 hash.utils = require('./hash/utils');
@@ -44494,7 +45406,7 @@ hash.sha384 = hash.sha.sha384;
 hash.sha512 = hash.sha.sha512;
 hash.ripemd160 = hash.ripemd.ripemd160;
 
-},{"./hash/common":280,"./hash/hmac":281,"./hash/ripemd":282,"./hash/sha":283,"./hash/utils":290}],280:[function(require,module,exports){
+},{"./hash/common":278,"./hash/hmac":279,"./hash/ripemd":280,"./hash/sha":281,"./hash/utils":288}],278:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -44588,7 +45500,7 @@ BlockHash.prototype._pad = function pad() {
   return res;
 };
 
-},{"./utils":290,"minimalistic-assert":329}],281:[function(require,module,exports){
+},{"./utils":288,"minimalistic-assert":326}],279:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -44637,7 +45549,7 @@ Hmac.prototype.digest = function digest(enc) {
   return this.outer.digest(enc);
 };
 
-},{"./utils":290,"minimalistic-assert":329}],282:[function(require,module,exports){
+},{"./utils":288,"minimalistic-assert":326}],280:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -44785,7 +45697,7 @@ var sh = [
   8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11
 ];
 
-},{"./common":280,"./utils":290}],283:[function(require,module,exports){
+},{"./common":278,"./utils":288}],281:[function(require,module,exports){
 'use strict';
 
 exports.sha1 = require('./sha/1');
@@ -44794,7 +45706,7 @@ exports.sha256 = require('./sha/256');
 exports.sha384 = require('./sha/384');
 exports.sha512 = require('./sha/512');
 
-},{"./sha/1":284,"./sha/224":285,"./sha/256":286,"./sha/384":287,"./sha/512":288}],284:[function(require,module,exports){
+},{"./sha/1":282,"./sha/224":283,"./sha/256":284,"./sha/384":285,"./sha/512":286}],282:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -44870,7 +45782,7 @@ SHA1.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":280,"../utils":290,"./common":289}],285:[function(require,module,exports){
+},{"../common":278,"../utils":288,"./common":287}],283:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -44902,7 +45814,7 @@ SHA224.prototype._digest = function digest(enc) {
 };
 
 
-},{"../utils":290,"./256":286}],286:[function(require,module,exports){
+},{"../utils":288,"./256":284}],284:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45009,7 +45921,7 @@ SHA256.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":280,"../utils":290,"./common":289,"minimalistic-assert":329}],287:[function(require,module,exports){
+},{"../common":278,"../utils":288,"./common":287,"minimalistic-assert":326}],285:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45046,7 +45958,7 @@ SHA384.prototype._digest = function digest(enc) {
     return utils.split32(this.h.slice(0, 12), 'big');
 };
 
-},{"../utils":290,"./512":288}],288:[function(require,module,exports){
+},{"../utils":288,"./512":286}],286:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45378,7 +46290,7 @@ function g1_512_lo(xh, xl) {
   return r;
 }
 
-},{"../common":280,"../utils":290,"minimalistic-assert":329}],289:[function(require,module,exports){
+},{"../common":278,"../utils":288,"minimalistic-assert":326}],287:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45429,7 +46341,7 @@ function g1_256(x) {
 }
 exports.g1_256 = g1_256;
 
-},{"../utils":290}],290:[function(require,module,exports){
+},{"../utils":288}],288:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -45709,7 +46621,7 @@ function shr64_lo(ah, al, num) {
 }
 exports.shr64_lo = shr64_lo;
 
-},{"inherits":295,"minimalistic-assert":329}],291:[function(require,module,exports){
+},{"inherits":292,"minimalistic-assert":326}],289:[function(require,module,exports){
 'use strict';
 
 var call = Function.prototype.call;
@@ -45719,7 +46631,7 @@ var bind = require('function-bind');
 /** @type {import('.')} */
 module.exports = bind.call(call, $hasOwn);
 
-},{"function-bind":271}],292:[function(require,module,exports){
+},{"function-bind":269}],290:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -45834,7 +46746,7 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
   return utils.encode(res, enc);
 };
 
-},{"hash.js":279,"minimalistic-assert":329,"minimalistic-crypto-utils":330}],293:[function(require,module,exports){
+},{"hash.js":277,"minimalistic-assert":326,"minimalistic-crypto-utils":327}],291:[function(require,module,exports){
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -45921,6053 +46833,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],294:[function(require,module,exports){
-/**
- * MIT License
- * 
- * Copyright (c) 2014-present, Lee Byron and other contributors.
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Immutable = {}));
-}(this, (function (exports) { 'use strict';
-
-  var DELETE = 'delete';
-
-  // Constants describing the size of trie nodes.
-  var SHIFT = 5; // Resulted in best performance after ______?
-  var SIZE = 1 << SHIFT;
-  var MASK = SIZE - 1;
-
-  // A consistent shared value representing "not set" which equals nothing other
-  // than itself, and nothing that could be provided externally.
-  var NOT_SET = {};
-
-  // Boolean references, Rough equivalent of `bool &`.
-  function MakeRef() {
-    return { value: false };
-  }
-
-  function SetRef(ref) {
-    if (ref) {
-      ref.value = true;
-    }
-  }
-
-  // A function which returns a value representing an "owner" for transient writes
-  // to tries. The return value will only ever equal itself, and will not equal
-  // the return of any subsequent call of this function.
-  function OwnerID() {}
-
-  function ensureSize(iter) {
-    if (iter.size === undefined) {
-      iter.size = iter.__iterate(returnTrue);
-    }
-    return iter.size;
-  }
-
-  function wrapIndex(iter, index) {
-    // This implements "is array index" which the ECMAString spec defines as:
-    //
-    //     A String property name P is an array index if and only if
-    //     ToString(ToUint32(P)) is equal to P and ToUint32(P) is not equal
-    //     to 2^32−1.
-    //
-    // http://www.ecma-international.org/ecma-262/6.0/#sec-array-exotic-objects
-    if (typeof index !== 'number') {
-      var uint32Index = index >>> 0; // N >>> 0 is shorthand for ToUint32
-      if ('' + uint32Index !== index || uint32Index === 4294967295) {
-        return NaN;
-      }
-      index = uint32Index;
-    }
-    return index < 0 ? ensureSize(iter) + index : index;
-  }
-
-  function returnTrue() {
-    return true;
-  }
-
-  function wholeSlice(begin, end, size) {
-    return (
-      ((begin === 0 && !isNeg(begin)) ||
-        (size !== undefined && begin <= -size)) &&
-      (end === undefined || (size !== undefined && end >= size))
-    );
-  }
-
-  function resolveBegin(begin, size) {
-    return resolveIndex(begin, size, 0);
-  }
-
-  function resolveEnd(end, size) {
-    return resolveIndex(end, size, size);
-  }
-
-  function resolveIndex(index, size, defaultIndex) {
-    // Sanitize indices using this shorthand for ToInt32(argument)
-    // http://www.ecma-international.org/ecma-262/6.0/#sec-toint32
-    return index === undefined
-      ? defaultIndex
-      : isNeg(index)
-      ? size === Infinity
-        ? size
-        : Math.max(0, size + index) | 0
-      : size === undefined || size === index
-      ? index
-      : Math.min(size, index) | 0;
-  }
-
-  function isNeg(value) {
-    // Account for -0 which is negative, but not less than 0.
-    return value < 0 || (value === 0 && 1 / value === -Infinity);
-  }
-
-  var IS_COLLECTION_SYMBOL = '@@__IMMUTABLE_ITERABLE__@@';
-
-  function isCollection(maybeCollection) {
-    return Boolean(maybeCollection && maybeCollection[IS_COLLECTION_SYMBOL]);
-  }
-
-  var IS_KEYED_SYMBOL = '@@__IMMUTABLE_KEYED__@@';
-
-  function isKeyed(maybeKeyed) {
-    return Boolean(maybeKeyed && maybeKeyed[IS_KEYED_SYMBOL]);
-  }
-
-  var IS_INDEXED_SYMBOL = '@@__IMMUTABLE_INDEXED__@@';
-
-  function isIndexed(maybeIndexed) {
-    return Boolean(maybeIndexed && maybeIndexed[IS_INDEXED_SYMBOL]);
-  }
-
-  function isAssociative(maybeAssociative) {
-    return isKeyed(maybeAssociative) || isIndexed(maybeAssociative);
-  }
-
-  var Collection = function Collection(value) {
-    // eslint-disable-next-line no-constructor-return
-    return isCollection(value) ? value : Seq(value);
-  };
-
-  var KeyedCollection = /*@__PURE__*/(function (Collection) {
-    function KeyedCollection(value) {
-      // eslint-disable-next-line no-constructor-return
-      return isKeyed(value) ? value : KeyedSeq(value);
-    }
-
-    if ( Collection ) KeyedCollection.__proto__ = Collection;
-    KeyedCollection.prototype = Object.create( Collection && Collection.prototype );
-    KeyedCollection.prototype.constructor = KeyedCollection;
-
-    return KeyedCollection;
-  }(Collection));
-
-  var IndexedCollection = /*@__PURE__*/(function (Collection) {
-    function IndexedCollection(value) {
-      // eslint-disable-next-line no-constructor-return
-      return isIndexed(value) ? value : IndexedSeq(value);
-    }
-
-    if ( Collection ) IndexedCollection.__proto__ = Collection;
-    IndexedCollection.prototype = Object.create( Collection && Collection.prototype );
-    IndexedCollection.prototype.constructor = IndexedCollection;
-
-    return IndexedCollection;
-  }(Collection));
-
-  var SetCollection = /*@__PURE__*/(function (Collection) {
-    function SetCollection(value) {
-      // eslint-disable-next-line no-constructor-return
-      return isCollection(value) && !isAssociative(value) ? value : SetSeq(value);
-    }
-
-    if ( Collection ) SetCollection.__proto__ = Collection;
-    SetCollection.prototype = Object.create( Collection && Collection.prototype );
-    SetCollection.prototype.constructor = SetCollection;
-
-    return SetCollection;
-  }(Collection));
-
-  Collection.Keyed = KeyedCollection;
-  Collection.Indexed = IndexedCollection;
-  Collection.Set = SetCollection;
-
-  var IS_SEQ_SYMBOL = '@@__IMMUTABLE_SEQ__@@';
-
-  function isSeq(maybeSeq) {
-    return Boolean(maybeSeq && maybeSeq[IS_SEQ_SYMBOL]);
-  }
-
-  var IS_RECORD_SYMBOL = '@@__IMMUTABLE_RECORD__@@';
-
-  function isRecord(maybeRecord) {
-    return Boolean(maybeRecord && maybeRecord[IS_RECORD_SYMBOL]);
-  }
-
-  function isImmutable(maybeImmutable) {
-    return isCollection(maybeImmutable) || isRecord(maybeImmutable);
-  }
-
-  var IS_ORDERED_SYMBOL = '@@__IMMUTABLE_ORDERED__@@';
-
-  function isOrdered(maybeOrdered) {
-    return Boolean(maybeOrdered && maybeOrdered[IS_ORDERED_SYMBOL]);
-  }
-
-  var ITERATE_KEYS = 0;
-  var ITERATE_VALUES = 1;
-  var ITERATE_ENTRIES = 2;
-
-  var REAL_ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator';
-
-  var ITERATOR_SYMBOL = REAL_ITERATOR_SYMBOL || FAUX_ITERATOR_SYMBOL;
-
-  var Iterator = function Iterator(next) {
-    this.next = next;
-  };
-
-  Iterator.prototype.toString = function toString () {
-    return '[Iterator]';
-  };
-
-  Iterator.KEYS = ITERATE_KEYS;
-  Iterator.VALUES = ITERATE_VALUES;
-  Iterator.ENTRIES = ITERATE_ENTRIES;
-
-  Iterator.prototype.inspect = Iterator.prototype.toSource = function () {
-    return this.toString();
-  };
-  Iterator.prototype[ITERATOR_SYMBOL] = function () {
-    return this;
-  };
-
-  function iteratorValue(type, k, v, iteratorResult) {
-    var value = type === 0 ? k : type === 1 ? v : [k, v];
-    iteratorResult
-      ? (iteratorResult.value = value)
-      : (iteratorResult = {
-          value: value,
-          done: false,
-        });
-    return iteratorResult;
-  }
-
-  function iteratorDone() {
-    return { value: undefined, done: true };
-  }
-
-  function hasIterator(maybeIterable) {
-    if (Array.isArray(maybeIterable)) {
-      // IE11 trick as it does not support `Symbol.iterator`
-      return true;
-    }
-
-    return !!getIteratorFn(maybeIterable);
-  }
-
-  function isIterator(maybeIterator) {
-    return maybeIterator && typeof maybeIterator.next === 'function';
-  }
-
-  function getIterator(iterable) {
-    var iteratorFn = getIteratorFn(iterable);
-    return iteratorFn && iteratorFn.call(iterable);
-  }
-
-  function getIteratorFn(iterable) {
-    var iteratorFn =
-      iterable &&
-      ((REAL_ITERATOR_SYMBOL && iterable[REAL_ITERATOR_SYMBOL]) ||
-        iterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  function isEntriesIterable(maybeIterable) {
-    var iteratorFn = getIteratorFn(maybeIterable);
-    return iteratorFn && iteratorFn === maybeIterable.entries;
-  }
-
-  function isKeysIterable(maybeIterable) {
-    var iteratorFn = getIteratorFn(maybeIterable);
-    return iteratorFn && iteratorFn === maybeIterable.keys;
-  }
-
-  var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-  function isArrayLike(value) {
-    if (Array.isArray(value) || typeof value === 'string') {
-      return true;
-    }
-
-    return (
-      value &&
-      typeof value === 'object' &&
-      Number.isInteger(value.length) &&
-      value.length >= 0 &&
-      (value.length === 0
-        ? // Only {length: 0} is considered Array-like.
-          Object.keys(value).length === 1
-        : // An object is only Array-like if it has a property where the last value
-          // in the array-like may be found (which could be undefined).
-          value.hasOwnProperty(value.length - 1))
-    );
-  }
-
-  var Seq = /*@__PURE__*/(function (Collection) {
-    function Seq(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptySequence()
-        : isImmutable(value)
-        ? value.toSeq()
-        : seqFromValue(value);
-    }
-
-    if ( Collection ) Seq.__proto__ = Collection;
-    Seq.prototype = Object.create( Collection && Collection.prototype );
-    Seq.prototype.constructor = Seq;
-
-    Seq.prototype.toSeq = function toSeq () {
-      return this;
-    };
-
-    Seq.prototype.toString = function toString () {
-      return this.__toString('Seq {', '}');
-    };
-
-    Seq.prototype.cacheResult = function cacheResult () {
-      if (!this._cache && this.__iterateUncached) {
-        this._cache = this.entrySeq().toArray();
-        this.size = this._cache.length;
-      }
-      return this;
-    };
-
-    // abstract __iterateUncached(fn, reverse)
-
-    Seq.prototype.__iterate = function __iterate (fn, reverse) {
-      var cache = this._cache;
-      if (cache) {
-        var size = cache.length;
-        var i = 0;
-        while (i !== size) {
-          var entry = cache[reverse ? size - ++i : i++];
-          if (fn(entry[1], entry[0], this) === false) {
-            break;
-          }
-        }
-        return i;
-      }
-      return this.__iterateUncached(fn, reverse);
-    };
-
-    // abstract __iteratorUncached(type, reverse)
-
-    Seq.prototype.__iterator = function __iterator (type, reverse) {
-      var cache = this._cache;
-      if (cache) {
-        var size = cache.length;
-        var i = 0;
-        return new Iterator(function () {
-          if (i === size) {
-            return iteratorDone();
-          }
-          var entry = cache[reverse ? size - ++i : i++];
-          return iteratorValue(type, entry[0], entry[1]);
-        });
-      }
-      return this.__iteratorUncached(type, reverse);
-    };
-
-    return Seq;
-  }(Collection));
-
-  var KeyedSeq = /*@__PURE__*/(function (Seq) {
-    function KeyedSeq(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptySequence().toKeyedSeq()
-        : isCollection(value)
-        ? isKeyed(value)
-          ? value.toSeq()
-          : value.fromEntrySeq()
-        : isRecord(value)
-        ? value.toSeq()
-        : keyedSeqFromValue(value);
-    }
-
-    if ( Seq ) KeyedSeq.__proto__ = Seq;
-    KeyedSeq.prototype = Object.create( Seq && Seq.prototype );
-    KeyedSeq.prototype.constructor = KeyedSeq;
-
-    KeyedSeq.prototype.toKeyedSeq = function toKeyedSeq () {
-      return this;
-    };
-
-    return KeyedSeq;
-  }(Seq));
-
-  var IndexedSeq = /*@__PURE__*/(function (Seq) {
-    function IndexedSeq(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptySequence()
-        : isCollection(value)
-        ? isKeyed(value)
-          ? value.entrySeq()
-          : value.toIndexedSeq()
-        : isRecord(value)
-        ? value.toSeq().entrySeq()
-        : indexedSeqFromValue(value);
-    }
-
-    if ( Seq ) IndexedSeq.__proto__ = Seq;
-    IndexedSeq.prototype = Object.create( Seq && Seq.prototype );
-    IndexedSeq.prototype.constructor = IndexedSeq;
-
-    IndexedSeq.of = function of (/*...values*/) {
-      return IndexedSeq(arguments);
-    };
-
-    IndexedSeq.prototype.toIndexedSeq = function toIndexedSeq () {
-      return this;
-    };
-
-    IndexedSeq.prototype.toString = function toString () {
-      return this.__toString('Seq [', ']');
-    };
-
-    return IndexedSeq;
-  }(Seq));
-
-  var SetSeq = /*@__PURE__*/(function (Seq) {
-    function SetSeq(value) {
-      // eslint-disable-next-line no-constructor-return
-      return (
-        isCollection(value) && !isAssociative(value) ? value : IndexedSeq(value)
-      ).toSetSeq();
-    }
-
-    if ( Seq ) SetSeq.__proto__ = Seq;
-    SetSeq.prototype = Object.create( Seq && Seq.prototype );
-    SetSeq.prototype.constructor = SetSeq;
-
-    SetSeq.of = function of (/*...values*/) {
-      return SetSeq(arguments);
-    };
-
-    SetSeq.prototype.toSetSeq = function toSetSeq () {
-      return this;
-    };
-
-    return SetSeq;
-  }(Seq));
-
-  Seq.isSeq = isSeq;
-  Seq.Keyed = KeyedSeq;
-  Seq.Set = SetSeq;
-  Seq.Indexed = IndexedSeq;
-
-  Seq.prototype[IS_SEQ_SYMBOL] = true;
-
-  // #pragma Root Sequences
-
-  var ArraySeq = /*@__PURE__*/(function (IndexedSeq) {
-    function ArraySeq(array) {
-      this._array = array;
-      this.size = array.length;
-    }
-
-    if ( IndexedSeq ) ArraySeq.__proto__ = IndexedSeq;
-    ArraySeq.prototype = Object.create( IndexedSeq && IndexedSeq.prototype );
-    ArraySeq.prototype.constructor = ArraySeq;
-
-    ArraySeq.prototype.get = function get (index, notSetValue) {
-      return this.has(index) ? this._array[wrapIndex(this, index)] : notSetValue;
-    };
-
-    ArraySeq.prototype.__iterate = function __iterate (fn, reverse) {
-      var array = this._array;
-      var size = array.length;
-      var i = 0;
-      while (i !== size) {
-        var ii = reverse ? size - ++i : i++;
-        if (fn(array[ii], ii, this) === false) {
-          break;
-        }
-      }
-      return i;
-    };
-
-    ArraySeq.prototype.__iterator = function __iterator (type, reverse) {
-      var array = this._array;
-      var size = array.length;
-      var i = 0;
-      return new Iterator(function () {
-        if (i === size) {
-          return iteratorDone();
-        }
-        var ii = reverse ? size - ++i : i++;
-        return iteratorValue(type, ii, array[ii]);
-      });
-    };
-
-    return ArraySeq;
-  }(IndexedSeq));
-
-  var ObjectSeq = /*@__PURE__*/(function (KeyedSeq) {
-    function ObjectSeq(object) {
-      var keys = Object.keys(object).concat(
-        Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(object) : []
-      );
-      this._object = object;
-      this._keys = keys;
-      this.size = keys.length;
-    }
-
-    if ( KeyedSeq ) ObjectSeq.__proto__ = KeyedSeq;
-    ObjectSeq.prototype = Object.create( KeyedSeq && KeyedSeq.prototype );
-    ObjectSeq.prototype.constructor = ObjectSeq;
-
-    ObjectSeq.prototype.get = function get (key, notSetValue) {
-      if (notSetValue !== undefined && !this.has(key)) {
-        return notSetValue;
-      }
-      return this._object[key];
-    };
-
-    ObjectSeq.prototype.has = function has (key) {
-      return hasOwnProperty.call(this._object, key);
-    };
-
-    ObjectSeq.prototype.__iterate = function __iterate (fn, reverse) {
-      var object = this._object;
-      var keys = this._keys;
-      var size = keys.length;
-      var i = 0;
-      while (i !== size) {
-        var key = keys[reverse ? size - ++i : i++];
-        if (fn(object[key], key, this) === false) {
-          break;
-        }
-      }
-      return i;
-    };
-
-    ObjectSeq.prototype.__iterator = function __iterator (type, reverse) {
-      var object = this._object;
-      var keys = this._keys;
-      var size = keys.length;
-      var i = 0;
-      return new Iterator(function () {
-        if (i === size) {
-          return iteratorDone();
-        }
-        var key = keys[reverse ? size - ++i : i++];
-        return iteratorValue(type, key, object[key]);
-      });
-    };
-
-    return ObjectSeq;
-  }(KeyedSeq));
-  ObjectSeq.prototype[IS_ORDERED_SYMBOL] = true;
-
-  var CollectionSeq = /*@__PURE__*/(function (IndexedSeq) {
-    function CollectionSeq(collection) {
-      this._collection = collection;
-      this.size = collection.length || collection.size;
-    }
-
-    if ( IndexedSeq ) CollectionSeq.__proto__ = IndexedSeq;
-    CollectionSeq.prototype = Object.create( IndexedSeq && IndexedSeq.prototype );
-    CollectionSeq.prototype.constructor = CollectionSeq;
-
-    CollectionSeq.prototype.__iterateUncached = function __iterateUncached (fn, reverse) {
-      if (reverse) {
-        return this.cacheResult().__iterate(fn, reverse);
-      }
-      var collection = this._collection;
-      var iterator = getIterator(collection);
-      var iterations = 0;
-      if (isIterator(iterator)) {
-        var step;
-        while (!(step = iterator.next()).done) {
-          if (fn(step.value, iterations++, this) === false) {
-            break;
-          }
-        }
-      }
-      return iterations;
-    };
-
-    CollectionSeq.prototype.__iteratorUncached = function __iteratorUncached (type, reverse) {
-      if (reverse) {
-        return this.cacheResult().__iterator(type, reverse);
-      }
-      var collection = this._collection;
-      var iterator = getIterator(collection);
-      if (!isIterator(iterator)) {
-        return new Iterator(iteratorDone);
-      }
-      var iterations = 0;
-      return new Iterator(function () {
-        var step = iterator.next();
-        return step.done ? step : iteratorValue(type, iterations++, step.value);
-      });
-    };
-
-    return CollectionSeq;
-  }(IndexedSeq));
-
-  // # pragma Helper functions
-
-  var EMPTY_SEQ;
-
-  function emptySequence() {
-    return EMPTY_SEQ || (EMPTY_SEQ = new ArraySeq([]));
-  }
-
-  function keyedSeqFromValue(value) {
-    var seq = maybeIndexedSeqFromValue(value);
-    if (seq) {
-      return seq.fromEntrySeq();
-    }
-    if (typeof value === 'object') {
-      return new ObjectSeq(value);
-    }
-    throw new TypeError(
-      'Expected Array or collection object of [k, v] entries, or keyed object: ' +
-        value
-    );
-  }
-
-  function indexedSeqFromValue(value) {
-    var seq = maybeIndexedSeqFromValue(value);
-    if (seq) {
-      return seq;
-    }
-    throw new TypeError(
-      'Expected Array or collection object of values: ' + value
-    );
-  }
-
-  function seqFromValue(value) {
-    var seq = maybeIndexedSeqFromValue(value);
-    if (seq) {
-      return isEntriesIterable(value)
-        ? seq.fromEntrySeq()
-        : isKeysIterable(value)
-        ? seq.toSetSeq()
-        : seq;
-    }
-    if (typeof value === 'object') {
-      return new ObjectSeq(value);
-    }
-    throw new TypeError(
-      'Expected Array or collection object of values, or keyed object: ' + value
-    );
-  }
-
-  function maybeIndexedSeqFromValue(value) {
-    return isArrayLike(value)
-      ? new ArraySeq(value)
-      : hasIterator(value)
-      ? new CollectionSeq(value)
-      : undefined;
-  }
-
-  var IS_MAP_SYMBOL = '@@__IMMUTABLE_MAP__@@';
-
-  function isMap(maybeMap) {
-    return Boolean(maybeMap && maybeMap[IS_MAP_SYMBOL]);
-  }
-
-  function isOrderedMap(maybeOrderedMap) {
-    return isMap(maybeOrderedMap) && isOrdered(maybeOrderedMap);
-  }
-
-  function isValueObject(maybeValue) {
-    return Boolean(
-      maybeValue &&
-        typeof maybeValue.equals === 'function' &&
-        typeof maybeValue.hashCode === 'function'
-    );
-  }
-
-  /**
-   * An extension of the "same-value" algorithm as [described for use by ES6 Map
-   * and Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#Key_equality)
-   *
-   * NaN is considered the same as NaN, however -0 and 0 are considered the same
-   * value, which is different from the algorithm described by
-   * [`Object.is`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is).
-   *
-   * This is extended further to allow Objects to describe the values they
-   * represent, by way of `valueOf` or `equals` (and `hashCode`).
-   *
-   * Note: because of this extension, the key equality of Immutable.Map and the
-   * value equality of Immutable.Set will differ from ES6 Map and Set.
-   *
-   * ### Defining custom values
-   *
-   * The easiest way to describe the value an object represents is by implementing
-   * `valueOf`. For example, `Date` represents a value by returning a unix
-   * timestamp for `valueOf`:
-   *
-   *     var date1 = new Date(1234567890000); // Fri Feb 13 2009 ...
-   *     var date2 = new Date(1234567890000);
-   *     date1.valueOf(); // 1234567890000
-   *     assert( date1 !== date2 );
-   *     assert( Immutable.is( date1, date2 ) );
-   *
-   * Note: overriding `valueOf` may have other implications if you use this object
-   * where JavaScript expects a primitive, such as implicit string coercion.
-   *
-   * For more complex types, especially collections, implementing `valueOf` may
-   * not be performant. An alternative is to implement `equals` and `hashCode`.
-   *
-   * `equals` takes another object, presumably of similar type, and returns true
-   * if it is equal. Equality is symmetrical, so the same result should be
-   * returned if this and the argument are flipped.
-   *
-   *     assert( a.equals(b) === b.equals(a) );
-   *
-   * `hashCode` returns a 32bit integer number representing the object which will
-   * be used to determine how to store the value object in a Map or Set. You must
-   * provide both or neither methods, one must not exist without the other.
-   *
-   * Also, an important relationship between these methods must be upheld: if two
-   * values are equal, they *must* return the same hashCode. If the values are not
-   * equal, they might have the same hashCode; this is called a hash collision,
-   * and while undesirable for performance reasons, it is acceptable.
-   *
-   *     if (a.equals(b)) {
-   *       assert( a.hashCode() === b.hashCode() );
-   *     }
-   *
-   * All Immutable collections are Value Objects: they implement `equals()`
-   * and `hashCode()`.
-   */
-  function is(valueA, valueB) {
-    if (valueA === valueB || (valueA !== valueA && valueB !== valueB)) {
-      return true;
-    }
-    if (!valueA || !valueB) {
-      return false;
-    }
-    if (
-      typeof valueA.valueOf === 'function' &&
-      typeof valueB.valueOf === 'function'
-    ) {
-      valueA = valueA.valueOf();
-      valueB = valueB.valueOf();
-      if (valueA === valueB || (valueA !== valueA && valueB !== valueB)) {
-        return true;
-      }
-      if (!valueA || !valueB) {
-        return false;
-      }
-    }
-    return !!(
-      isValueObject(valueA) &&
-      isValueObject(valueB) &&
-      valueA.equals(valueB)
-    );
-  }
-
-  var imul =
-    typeof Math.imul === 'function' && Math.imul(0xffffffff, 2) === -2
-      ? Math.imul
-      : function imul(a, b) {
-          a |= 0; // int
-          b |= 0; // int
-          var c = a & 0xffff;
-          var d = b & 0xffff;
-          // Shift by 0 fixes the sign on the high part.
-          return (c * d + ((((a >>> 16) * d + c * (b >>> 16)) << 16) >>> 0)) | 0; // int
-        };
-
-  // v8 has an optimization for storing 31-bit signed numbers.
-  // Values which have either 00 or 11 as the high order bits qualify.
-  // This function drops the highest order bit in a signed number, maintaining
-  // the sign bit.
-  function smi(i32) {
-    return ((i32 >>> 1) & 0x40000000) | (i32 & 0xbfffffff);
-  }
-
-  var defaultValueOf = Object.prototype.valueOf;
-
-  function hash(o) {
-    if (o == null) {
-      return hashNullish(o);
-    }
-
-    if (typeof o.hashCode === 'function') {
-      // Drop any high bits from accidentally long hash codes.
-      return smi(o.hashCode(o));
-    }
-
-    var v = valueOf(o);
-
-    if (v == null) {
-      return hashNullish(v);
-    }
-
-    switch (typeof v) {
-      case 'boolean':
-        // The hash values for built-in constants are a 1 value for each 5-byte
-        // shift region expect for the first, which encodes the value. This
-        // reduces the odds of a hash collision for these common values.
-        return v ? 0x42108421 : 0x42108420;
-      case 'number':
-        return hashNumber(v);
-      case 'string':
-        return v.length > STRING_HASH_CACHE_MIN_STRLEN
-          ? cachedHashString(v)
-          : hashString(v);
-      case 'object':
-      case 'function':
-        return hashJSObj(v);
-      case 'symbol':
-        return hashSymbol(v);
-      default:
-        if (typeof v.toString === 'function') {
-          return hashString(v.toString());
-        }
-        throw new Error('Value type ' + typeof v + ' cannot be hashed.');
-    }
-  }
-
-  function hashNullish(nullish) {
-    return nullish === null ? 0x42108422 : /* undefined */ 0x42108423;
-  }
-
-  // Compress arbitrarily large numbers into smi hashes.
-  function hashNumber(n) {
-    if (n !== n || n === Infinity) {
-      return 0;
-    }
-    var hash = n | 0;
-    if (hash !== n) {
-      hash ^= n * 0xffffffff;
-    }
-    while (n > 0xffffffff) {
-      n /= 0xffffffff;
-      hash ^= n;
-    }
-    return smi(hash);
-  }
-
-  function cachedHashString(string) {
-    var hashed = stringHashCache[string];
-    if (hashed === undefined) {
-      hashed = hashString(string);
-      if (STRING_HASH_CACHE_SIZE === STRING_HASH_CACHE_MAX_SIZE) {
-        STRING_HASH_CACHE_SIZE = 0;
-        stringHashCache = {};
-      }
-      STRING_HASH_CACHE_SIZE++;
-      stringHashCache[string] = hashed;
-    }
-    return hashed;
-  }
-
-  // http://jsperf.com/hashing-strings
-  function hashString(string) {
-    // This is the hash from JVM
-    // The hash code for a string is computed as
-    // s[0] * 31 ^ (n - 1) + s[1] * 31 ^ (n - 2) + ... + s[n - 1],
-    // where s[i] is the ith character of the string and n is the length of
-    // the string. We "mod" the result to make it between 0 (inclusive) and 2^31
-    // (exclusive) by dropping high bits.
-    var hashed = 0;
-    for (var ii = 0; ii < string.length; ii++) {
-      hashed = (31 * hashed + string.charCodeAt(ii)) | 0;
-    }
-    return smi(hashed);
-  }
-
-  function hashSymbol(sym) {
-    var hashed = symbolMap[sym];
-    if (hashed !== undefined) {
-      return hashed;
-    }
-
-    hashed = nextHash();
-
-    symbolMap[sym] = hashed;
-
-    return hashed;
-  }
-
-  function hashJSObj(obj) {
-    var hashed;
-    if (usingWeakMap) {
-      hashed = weakMap.get(obj);
-      if (hashed !== undefined) {
-        return hashed;
-      }
-    }
-
-    hashed = obj[UID_HASH_KEY];
-    if (hashed !== undefined) {
-      return hashed;
-    }
-
-    if (!canDefineProperty) {
-      hashed = obj.propertyIsEnumerable && obj.propertyIsEnumerable[UID_HASH_KEY];
-      if (hashed !== undefined) {
-        return hashed;
-      }
-
-      hashed = getIENodeHash(obj);
-      if (hashed !== undefined) {
-        return hashed;
-      }
-    }
-
-    hashed = nextHash();
-
-    if (usingWeakMap) {
-      weakMap.set(obj, hashed);
-    } else if (isExtensible !== undefined && isExtensible(obj) === false) {
-      throw new Error('Non-extensible objects are not allowed as keys.');
-    } else if (canDefineProperty) {
-      Object.defineProperty(obj, UID_HASH_KEY, {
-        enumerable: false,
-        configurable: false,
-        writable: false,
-        value: hashed,
-      });
-    } else if (
-      obj.propertyIsEnumerable !== undefined &&
-      obj.propertyIsEnumerable === obj.constructor.prototype.propertyIsEnumerable
-    ) {
-      // Since we can't define a non-enumerable property on the object
-      // we'll hijack one of the less-used non-enumerable properties to
-      // save our hash on it. Since this is a function it will not show up in
-      // `JSON.stringify` which is what we want.
-      obj.propertyIsEnumerable = function () {
-        return this.constructor.prototype.propertyIsEnumerable.apply(
-          this,
-          arguments
-        );
-      };
-      obj.propertyIsEnumerable[UID_HASH_KEY] = hashed;
-    } else if (obj.nodeType !== undefined) {
-      // At this point we couldn't get the IE `uniqueID` to use as a hash
-      // and we couldn't use a non-enumerable property to exploit the
-      // dontEnum bug so we simply add the `UID_HASH_KEY` on the node
-      // itself.
-      obj[UID_HASH_KEY] = hashed;
-    } else {
-      throw new Error('Unable to set a non-enumerable property on object.');
-    }
-
-    return hashed;
-  }
-
-  // Get references to ES5 object methods.
-  var isExtensible = Object.isExtensible;
-
-  // True if Object.defineProperty works as expected. IE8 fails this test.
-  var canDefineProperty = (function () {
-    try {
-      Object.defineProperty({}, '@', {});
-      return true;
-    } catch (e) {
-      return false;
-    }
-  })();
-
-  // IE has a `uniqueID` property on DOM nodes. We can construct the hash from it
-  // and avoid memory leaks from the IE cloneNode bug.
-  function getIENodeHash(node) {
-    if (node && node.nodeType > 0) {
-      switch (node.nodeType) {
-        case 1: // Element
-          return node.uniqueID;
-        case 9: // Document
-          return node.documentElement && node.documentElement.uniqueID;
-      }
-    }
-  }
-
-  function valueOf(obj) {
-    return obj.valueOf !== defaultValueOf && typeof obj.valueOf === 'function'
-      ? obj.valueOf(obj)
-      : obj;
-  }
-
-  function nextHash() {
-    var nextHash = ++_objHashUID;
-    if (_objHashUID & 0x40000000) {
-      _objHashUID = 0;
-    }
-    return nextHash;
-  }
-
-  // If possible, use a WeakMap.
-  var usingWeakMap = typeof WeakMap === 'function';
-  var weakMap;
-  if (usingWeakMap) {
-    weakMap = new WeakMap();
-  }
-
-  var symbolMap = Object.create(null);
-
-  var _objHashUID = 0;
-
-  var UID_HASH_KEY = '__immutablehash__';
-  if (typeof Symbol === 'function') {
-    UID_HASH_KEY = Symbol(UID_HASH_KEY);
-  }
-
-  var STRING_HASH_CACHE_MIN_STRLEN = 16;
-  var STRING_HASH_CACHE_MAX_SIZE = 255;
-  var STRING_HASH_CACHE_SIZE = 0;
-  var stringHashCache = {};
-
-  var ToKeyedSequence = /*@__PURE__*/(function (KeyedSeq) {
-    function ToKeyedSequence(indexed, useKeys) {
-      this._iter = indexed;
-      this._useKeys = useKeys;
-      this.size = indexed.size;
-    }
-
-    if ( KeyedSeq ) ToKeyedSequence.__proto__ = KeyedSeq;
-    ToKeyedSequence.prototype = Object.create( KeyedSeq && KeyedSeq.prototype );
-    ToKeyedSequence.prototype.constructor = ToKeyedSequence;
-
-    ToKeyedSequence.prototype.get = function get (key, notSetValue) {
-      return this._iter.get(key, notSetValue);
-    };
-
-    ToKeyedSequence.prototype.has = function has (key) {
-      return this._iter.has(key);
-    };
-
-    ToKeyedSequence.prototype.valueSeq = function valueSeq () {
-      return this._iter.valueSeq();
-    };
-
-    ToKeyedSequence.prototype.reverse = function reverse () {
-      var this$1$1 = this;
-
-      var reversedSequence = reverseFactory(this, true);
-      if (!this._useKeys) {
-        reversedSequence.valueSeq = function () { return this$1$1._iter.toSeq().reverse(); };
-      }
-      return reversedSequence;
-    };
-
-    ToKeyedSequence.prototype.map = function map (mapper, context) {
-      var this$1$1 = this;
-
-      var mappedSequence = mapFactory(this, mapper, context);
-      if (!this._useKeys) {
-        mappedSequence.valueSeq = function () { return this$1$1._iter.toSeq().map(mapper, context); };
-      }
-      return mappedSequence;
-    };
-
-    ToKeyedSequence.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      return this._iter.__iterate(function (v, k) { return fn(v, k, this$1$1); }, reverse);
-    };
-
-    ToKeyedSequence.prototype.__iterator = function __iterator (type, reverse) {
-      return this._iter.__iterator(type, reverse);
-    };
-
-    return ToKeyedSequence;
-  }(KeyedSeq));
-  ToKeyedSequence.prototype[IS_ORDERED_SYMBOL] = true;
-
-  var ToIndexedSequence = /*@__PURE__*/(function (IndexedSeq) {
-    function ToIndexedSequence(iter) {
-      this._iter = iter;
-      this.size = iter.size;
-    }
-
-    if ( IndexedSeq ) ToIndexedSequence.__proto__ = IndexedSeq;
-    ToIndexedSequence.prototype = Object.create( IndexedSeq && IndexedSeq.prototype );
-    ToIndexedSequence.prototype.constructor = ToIndexedSequence;
-
-    ToIndexedSequence.prototype.includes = function includes (value) {
-      return this._iter.includes(value);
-    };
-
-    ToIndexedSequence.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      var i = 0;
-      reverse && ensureSize(this);
-      return this._iter.__iterate(
-        function (v) { return fn(v, reverse ? this$1$1.size - ++i : i++, this$1$1); },
-        reverse
-      );
-    };
-
-    ToIndexedSequence.prototype.__iterator = function __iterator (type, reverse) {
-      var this$1$1 = this;
-
-      var iterator = this._iter.__iterator(ITERATE_VALUES, reverse);
-      var i = 0;
-      reverse && ensureSize(this);
-      return new Iterator(function () {
-        var step = iterator.next();
-        return step.done
-          ? step
-          : iteratorValue(
-              type,
-              reverse ? this$1$1.size - ++i : i++,
-              step.value,
-              step
-            );
-      });
-    };
-
-    return ToIndexedSequence;
-  }(IndexedSeq));
-
-  var ToSetSequence = /*@__PURE__*/(function (SetSeq) {
-    function ToSetSequence(iter) {
-      this._iter = iter;
-      this.size = iter.size;
-    }
-
-    if ( SetSeq ) ToSetSequence.__proto__ = SetSeq;
-    ToSetSequence.prototype = Object.create( SetSeq && SetSeq.prototype );
-    ToSetSequence.prototype.constructor = ToSetSequence;
-
-    ToSetSequence.prototype.has = function has (key) {
-      return this._iter.includes(key);
-    };
-
-    ToSetSequence.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      return this._iter.__iterate(function (v) { return fn(v, v, this$1$1); }, reverse);
-    };
-
-    ToSetSequence.prototype.__iterator = function __iterator (type, reverse) {
-      var iterator = this._iter.__iterator(ITERATE_VALUES, reverse);
-      return new Iterator(function () {
-        var step = iterator.next();
-        return step.done
-          ? step
-          : iteratorValue(type, step.value, step.value, step);
-      });
-    };
-
-    return ToSetSequence;
-  }(SetSeq));
-
-  var FromEntriesSequence = /*@__PURE__*/(function (KeyedSeq) {
-    function FromEntriesSequence(entries) {
-      this._iter = entries;
-      this.size = entries.size;
-    }
-
-    if ( KeyedSeq ) FromEntriesSequence.__proto__ = KeyedSeq;
-    FromEntriesSequence.prototype = Object.create( KeyedSeq && KeyedSeq.prototype );
-    FromEntriesSequence.prototype.constructor = FromEntriesSequence;
-
-    FromEntriesSequence.prototype.entrySeq = function entrySeq () {
-      return this._iter.toSeq();
-    };
-
-    FromEntriesSequence.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      return this._iter.__iterate(function (entry) {
-        // Check if entry exists first so array access doesn't throw for holes
-        // in the parent iteration.
-        if (entry) {
-          validateEntry(entry);
-          var indexedCollection = isCollection(entry);
-          return fn(
-            indexedCollection ? entry.get(1) : entry[1],
-            indexedCollection ? entry.get(0) : entry[0],
-            this$1$1
-          );
-        }
-      }, reverse);
-    };
-
-    FromEntriesSequence.prototype.__iterator = function __iterator (type, reverse) {
-      var iterator = this._iter.__iterator(ITERATE_VALUES, reverse);
-      return new Iterator(function () {
-        while (true) {
-          var step = iterator.next();
-          if (step.done) {
-            return step;
-          }
-          var entry = step.value;
-          // Check if entry exists first so array access doesn't throw for holes
-          // in the parent iteration.
-          if (entry) {
-            validateEntry(entry);
-            var indexedCollection = isCollection(entry);
-            return iteratorValue(
-              type,
-              indexedCollection ? entry.get(0) : entry[0],
-              indexedCollection ? entry.get(1) : entry[1],
-              step
-            );
-          }
-        }
-      });
-    };
-
-    return FromEntriesSequence;
-  }(KeyedSeq));
-
-  ToIndexedSequence.prototype.cacheResult =
-    ToKeyedSequence.prototype.cacheResult =
-    ToSetSequence.prototype.cacheResult =
-    FromEntriesSequence.prototype.cacheResult =
-      cacheResultThrough;
-
-  function flipFactory(collection) {
-    var flipSequence = makeSequence(collection);
-    flipSequence._iter = collection;
-    flipSequence.size = collection.size;
-    flipSequence.flip = function () { return collection; };
-    flipSequence.reverse = function () {
-      var reversedSequence = collection.reverse.apply(this); // super.reverse()
-      reversedSequence.flip = function () { return collection.reverse(); };
-      return reversedSequence;
-    };
-    flipSequence.has = function (key) { return collection.includes(key); };
-    flipSequence.includes = function (key) { return collection.has(key); };
-    flipSequence.cacheResult = cacheResultThrough;
-    flipSequence.__iterateUncached = function (fn, reverse) {
-      var this$1$1 = this;
-
-      return collection.__iterate(function (v, k) { return fn(k, v, this$1$1) !== false; }, reverse);
-    };
-    flipSequence.__iteratorUncached = function (type, reverse) {
-      if (type === ITERATE_ENTRIES) {
-        var iterator = collection.__iterator(type, reverse);
-        return new Iterator(function () {
-          var step = iterator.next();
-          if (!step.done) {
-            var k = step.value[0];
-            step.value[0] = step.value[1];
-            step.value[1] = k;
-          }
-          return step;
-        });
-      }
-      return collection.__iterator(
-        type === ITERATE_VALUES ? ITERATE_KEYS : ITERATE_VALUES,
-        reverse
-      );
-    };
-    return flipSequence;
-  }
-
-  function mapFactory(collection, mapper, context) {
-    var mappedSequence = makeSequence(collection);
-    mappedSequence.size = collection.size;
-    mappedSequence.has = function (key) { return collection.has(key); };
-    mappedSequence.get = function (key, notSetValue) {
-      var v = collection.get(key, NOT_SET);
-      return v === NOT_SET
-        ? notSetValue
-        : mapper.call(context, v, key, collection);
-    };
-    mappedSequence.__iterateUncached = function (fn, reverse) {
-      var this$1$1 = this;
-
-      return collection.__iterate(
-        function (v, k, c) { return fn(mapper.call(context, v, k, c), k, this$1$1) !== false; },
-        reverse
-      );
-    };
-    mappedSequence.__iteratorUncached = function (type, reverse) {
-      var iterator = collection.__iterator(ITERATE_ENTRIES, reverse);
-      return new Iterator(function () {
-        var step = iterator.next();
-        if (step.done) {
-          return step;
-        }
-        var entry = step.value;
-        var key = entry[0];
-        return iteratorValue(
-          type,
-          key,
-          mapper.call(context, entry[1], key, collection),
-          step
-        );
-      });
-    };
-    return mappedSequence;
-  }
-
-  function reverseFactory(collection, useKeys) {
-    var this$1$1 = this;
-
-    var reversedSequence = makeSequence(collection);
-    reversedSequence._iter = collection;
-    reversedSequence.size = collection.size;
-    reversedSequence.reverse = function () { return collection; };
-    if (collection.flip) {
-      reversedSequence.flip = function () {
-        var flipSequence = flipFactory(collection);
-        flipSequence.reverse = function () { return collection.flip(); };
-        return flipSequence;
-      };
-    }
-    reversedSequence.get = function (key, notSetValue) { return collection.get(useKeys ? key : -1 - key, notSetValue); };
-    reversedSequence.has = function (key) { return collection.has(useKeys ? key : -1 - key); };
-    reversedSequence.includes = function (value) { return collection.includes(value); };
-    reversedSequence.cacheResult = cacheResultThrough;
-    reversedSequence.__iterate = function (fn, reverse) {
-      var this$1$1 = this;
-
-      var i = 0;
-      reverse && ensureSize(collection);
-      return collection.__iterate(
-        function (v, k) { return fn(v, useKeys ? k : reverse ? this$1$1.size - ++i : i++, this$1$1); },
-        !reverse
-      );
-    };
-    reversedSequence.__iterator = function (type, reverse) {
-      var i = 0;
-      reverse && ensureSize(collection);
-      var iterator = collection.__iterator(ITERATE_ENTRIES, !reverse);
-      return new Iterator(function () {
-        var step = iterator.next();
-        if (step.done) {
-          return step;
-        }
-        var entry = step.value;
-        return iteratorValue(
-          type,
-          useKeys ? entry[0] : reverse ? this$1$1.size - ++i : i++,
-          entry[1],
-          step
-        );
-      });
-    };
-    return reversedSequence;
-  }
-
-  function filterFactory(collection, predicate, context, useKeys) {
-    var filterSequence = makeSequence(collection);
-    if (useKeys) {
-      filterSequence.has = function (key) {
-        var v = collection.get(key, NOT_SET);
-        return v !== NOT_SET && !!predicate.call(context, v, key, collection);
-      };
-      filterSequence.get = function (key, notSetValue) {
-        var v = collection.get(key, NOT_SET);
-        return v !== NOT_SET && predicate.call(context, v, key, collection)
-          ? v
-          : notSetValue;
-      };
-    }
-    filterSequence.__iterateUncached = function (fn, reverse) {
-      var this$1$1 = this;
-
-      var iterations = 0;
-      collection.__iterate(function (v, k, c) {
-        if (predicate.call(context, v, k, c)) {
-          iterations++;
-          return fn(v, useKeys ? k : iterations - 1, this$1$1);
-        }
-      }, reverse);
-      return iterations;
-    };
-    filterSequence.__iteratorUncached = function (type, reverse) {
-      var iterator = collection.__iterator(ITERATE_ENTRIES, reverse);
-      var iterations = 0;
-      return new Iterator(function () {
-        while (true) {
-          var step = iterator.next();
-          if (step.done) {
-            return step;
-          }
-          var entry = step.value;
-          var key = entry[0];
-          var value = entry[1];
-          if (predicate.call(context, value, key, collection)) {
-            return iteratorValue(type, useKeys ? key : iterations++, value, step);
-          }
-        }
-      });
-    };
-    return filterSequence;
-  }
-
-  function countByFactory(collection, grouper, context) {
-    var groups = Map().asMutable();
-    collection.__iterate(function (v, k) {
-      groups.update(grouper.call(context, v, k, collection), 0, function (a) { return a + 1; });
-    });
-    return groups.asImmutable();
-  }
-
-  function groupByFactory(collection, grouper, context) {
-    var isKeyedIter = isKeyed(collection);
-    var groups = (isOrdered(collection) ? OrderedMap() : Map()).asMutable();
-    collection.__iterate(function (v, k) {
-      groups.update(
-        grouper.call(context, v, k, collection),
-        function (a) { return ((a = a || []), a.push(isKeyedIter ? [k, v] : v), a); }
-      );
-    });
-    var coerce = collectionClass(collection);
-    return groups.map(function (arr) { return reify(collection, coerce(arr)); }).asImmutable();
-  }
-
-  function partitionFactory(collection, predicate, context) {
-    var isKeyedIter = isKeyed(collection);
-    var groups = [[], []];
-    collection.__iterate(function (v, k) {
-      groups[predicate.call(context, v, k, collection) ? 1 : 0].push(
-        isKeyedIter ? [k, v] : v
-      );
-    });
-    var coerce = collectionClass(collection);
-    return groups.map(function (arr) { return reify(collection, coerce(arr)); });
-  }
-
-  function sliceFactory(collection, begin, end, useKeys) {
-    var originalSize = collection.size;
-
-    if (wholeSlice(begin, end, originalSize)) {
-      return collection;
-    }
-
-    // begin or end can not be resolved if they were provided as negative numbers and
-    // this collection's size is unknown. In that case, cache first so there is
-    // a known size and these do not resolve to NaN.
-    if (typeof originalSize === 'undefined' && (begin < 0 || end < 0)) {
-      return sliceFactory(collection.toSeq().cacheResult(), begin, end, useKeys);
-    }
-
-    var resolvedBegin = resolveBegin(begin, originalSize);
-    var resolvedEnd = resolveEnd(end, originalSize);
-
-    // Note: resolvedEnd is undefined when the original sequence's length is
-    // unknown and this slice did not supply an end and should contain all
-    // elements after resolvedBegin.
-    // In that case, resolvedSize will be NaN and sliceSize will remain undefined.
-    var resolvedSize = resolvedEnd - resolvedBegin;
-    var sliceSize;
-    if (resolvedSize === resolvedSize) {
-      sliceSize = resolvedSize < 0 ? 0 : resolvedSize;
-    }
-
-    var sliceSeq = makeSequence(collection);
-
-    // If collection.size is undefined, the size of the realized sliceSeq is
-    // unknown at this point unless the number of items to slice is 0
-    sliceSeq.size =
-      sliceSize === 0 ? sliceSize : (collection.size && sliceSize) || undefined;
-
-    if (!useKeys && isSeq(collection) && sliceSize >= 0) {
-      sliceSeq.get = function (index, notSetValue) {
-        index = wrapIndex(this, index);
-        return index >= 0 && index < sliceSize
-          ? collection.get(index + resolvedBegin, notSetValue)
-          : notSetValue;
-      };
-    }
-
-    sliceSeq.__iterateUncached = function (fn, reverse) {
-      var this$1$1 = this;
-
-      if (sliceSize === 0) {
-        return 0;
-      }
-      if (reverse) {
-        return this.cacheResult().__iterate(fn, reverse);
-      }
-      var skipped = 0;
-      var isSkipping = true;
-      var iterations = 0;
-      collection.__iterate(function (v, k) {
-        if (!(isSkipping && (isSkipping = skipped++ < resolvedBegin))) {
-          iterations++;
-          return (
-            fn(v, useKeys ? k : iterations - 1, this$1$1) !== false &&
-            iterations !== sliceSize
-          );
-        }
-      });
-      return iterations;
-    };
-
-    sliceSeq.__iteratorUncached = function (type, reverse) {
-      if (sliceSize !== 0 && reverse) {
-        return this.cacheResult().__iterator(type, reverse);
-      }
-      // Don't bother instantiating parent iterator if taking 0.
-      if (sliceSize === 0) {
-        return new Iterator(iteratorDone);
-      }
-      var iterator = collection.__iterator(type, reverse);
-      var skipped = 0;
-      var iterations = 0;
-      return new Iterator(function () {
-        while (skipped++ < resolvedBegin) {
-          iterator.next();
-        }
-        if (++iterations > sliceSize) {
-          return iteratorDone();
-        }
-        var step = iterator.next();
-        if (useKeys || type === ITERATE_VALUES || step.done) {
-          return step;
-        }
-        if (type === ITERATE_KEYS) {
-          return iteratorValue(type, iterations - 1, undefined, step);
-        }
-        return iteratorValue(type, iterations - 1, step.value[1], step);
-      });
-    };
-
-    return sliceSeq;
-  }
-
-  function takeWhileFactory(collection, predicate, context) {
-    var takeSequence = makeSequence(collection);
-    takeSequence.__iterateUncached = function (fn, reverse) {
-      var this$1$1 = this;
-
-      if (reverse) {
-        return this.cacheResult().__iterate(fn, reverse);
-      }
-      var iterations = 0;
-      collection.__iterate(
-        function (v, k, c) { return predicate.call(context, v, k, c) && ++iterations && fn(v, k, this$1$1); }
-      );
-      return iterations;
-    };
-    takeSequence.__iteratorUncached = function (type, reverse) {
-      var this$1$1 = this;
-
-      if (reverse) {
-        return this.cacheResult().__iterator(type, reverse);
-      }
-      var iterator = collection.__iterator(ITERATE_ENTRIES, reverse);
-      var iterating = true;
-      return new Iterator(function () {
-        if (!iterating) {
-          return iteratorDone();
-        }
-        var step = iterator.next();
-        if (step.done) {
-          return step;
-        }
-        var entry = step.value;
-        var k = entry[0];
-        var v = entry[1];
-        if (!predicate.call(context, v, k, this$1$1)) {
-          iterating = false;
-          return iteratorDone();
-        }
-        return type === ITERATE_ENTRIES ? step : iteratorValue(type, k, v, step);
-      });
-    };
-    return takeSequence;
-  }
-
-  function skipWhileFactory(collection, predicate, context, useKeys) {
-    var skipSequence = makeSequence(collection);
-    skipSequence.__iterateUncached = function (fn, reverse) {
-      var this$1$1 = this;
-
-      if (reverse) {
-        return this.cacheResult().__iterate(fn, reverse);
-      }
-      var isSkipping = true;
-      var iterations = 0;
-      collection.__iterate(function (v, k, c) {
-        if (!(isSkipping && (isSkipping = predicate.call(context, v, k, c)))) {
-          iterations++;
-          return fn(v, useKeys ? k : iterations - 1, this$1$1);
-        }
-      });
-      return iterations;
-    };
-    skipSequence.__iteratorUncached = function (type, reverse) {
-      var this$1$1 = this;
-
-      if (reverse) {
-        return this.cacheResult().__iterator(type, reverse);
-      }
-      var iterator = collection.__iterator(ITERATE_ENTRIES, reverse);
-      var skipping = true;
-      var iterations = 0;
-      return new Iterator(function () {
-        var step;
-        var k;
-        var v;
-        do {
-          step = iterator.next();
-          if (step.done) {
-            if (useKeys || type === ITERATE_VALUES) {
-              return step;
-            }
-            if (type === ITERATE_KEYS) {
-              return iteratorValue(type, iterations++, undefined, step);
-            }
-            return iteratorValue(type, iterations++, step.value[1], step);
-          }
-          var entry = step.value;
-          k = entry[0];
-          v = entry[1];
-          skipping && (skipping = predicate.call(context, v, k, this$1$1));
-        } while (skipping);
-        return type === ITERATE_ENTRIES ? step : iteratorValue(type, k, v, step);
-      });
-    };
-    return skipSequence;
-  }
-
-  function concatFactory(collection, values) {
-    var isKeyedCollection = isKeyed(collection);
-    var iters = [collection]
-      .concat(values)
-      .map(function (v) {
-        if (!isCollection(v)) {
-          v = isKeyedCollection
-            ? keyedSeqFromValue(v)
-            : indexedSeqFromValue(Array.isArray(v) ? v : [v]);
-        } else if (isKeyedCollection) {
-          v = KeyedCollection(v);
-        }
-        return v;
-      })
-      .filter(function (v) { return v.size !== 0; });
-
-    if (iters.length === 0) {
-      return collection;
-    }
-
-    if (iters.length === 1) {
-      var singleton = iters[0];
-      if (
-        singleton === collection ||
-        (isKeyedCollection && isKeyed(singleton)) ||
-        (isIndexed(collection) && isIndexed(singleton))
-      ) {
-        return singleton;
-      }
-    }
-
-    var concatSeq = new ArraySeq(iters);
-    if (isKeyedCollection) {
-      concatSeq = concatSeq.toKeyedSeq();
-    } else if (!isIndexed(collection)) {
-      concatSeq = concatSeq.toSetSeq();
-    }
-    concatSeq = concatSeq.flatten(true);
-    concatSeq.size = iters.reduce(function (sum, seq) {
-      if (sum !== undefined) {
-        var size = seq.size;
-        if (size !== undefined) {
-          return sum + size;
-        }
-      }
-    }, 0);
-    return concatSeq;
-  }
-
-  function flattenFactory(collection, depth, useKeys) {
-    var flatSequence = makeSequence(collection);
-    flatSequence.__iterateUncached = function (fn, reverse) {
-      if (reverse) {
-        return this.cacheResult().__iterate(fn, reverse);
-      }
-      var iterations = 0;
-      var stopped = false;
-      function flatDeep(iter, currentDepth) {
-        iter.__iterate(function (v, k) {
-          if ((!depth || currentDepth < depth) && isCollection(v)) {
-            flatDeep(v, currentDepth + 1);
-          } else {
-            iterations++;
-            if (fn(v, useKeys ? k : iterations - 1, flatSequence) === false) {
-              stopped = true;
-            }
-          }
-          return !stopped;
-        }, reverse);
-      }
-      flatDeep(collection, 0);
-      return iterations;
-    };
-    flatSequence.__iteratorUncached = function (type, reverse) {
-      if (reverse) {
-        return this.cacheResult().__iterator(type, reverse);
-      }
-      var iterator = collection.__iterator(type, reverse);
-      var stack = [];
-      var iterations = 0;
-      return new Iterator(function () {
-        while (iterator) {
-          var step = iterator.next();
-          if (step.done !== false) {
-            iterator = stack.pop();
-            continue;
-          }
-          var v = step.value;
-          if (type === ITERATE_ENTRIES) {
-            v = v[1];
-          }
-          if ((!depth || stack.length < depth) && isCollection(v)) {
-            stack.push(iterator);
-            iterator = v.__iterator(type, reverse);
-          } else {
-            return useKeys ? step : iteratorValue(type, iterations++, v, step);
-          }
-        }
-        return iteratorDone();
-      });
-    };
-    return flatSequence;
-  }
-
-  function flatMapFactory(collection, mapper, context) {
-    var coerce = collectionClass(collection);
-    return collection
-      .toSeq()
-      .map(function (v, k) { return coerce(mapper.call(context, v, k, collection)); })
-      .flatten(true);
-  }
-
-  function interposeFactory(collection, separator) {
-    var interposedSequence = makeSequence(collection);
-    interposedSequence.size = collection.size && collection.size * 2 - 1;
-    interposedSequence.__iterateUncached = function (fn, reverse) {
-      var this$1$1 = this;
-
-      var iterations = 0;
-      collection.__iterate(
-        function (v) { return (!iterations || fn(separator, iterations++, this$1$1) !== false) &&
-          fn(v, iterations++, this$1$1) !== false; },
-        reverse
-      );
-      return iterations;
-    };
-    interposedSequence.__iteratorUncached = function (type, reverse) {
-      var iterator = collection.__iterator(ITERATE_VALUES, reverse);
-      var iterations = 0;
-      var step;
-      return new Iterator(function () {
-        if (!step || iterations % 2) {
-          step = iterator.next();
-          if (step.done) {
-            return step;
-          }
-        }
-        return iterations % 2
-          ? iteratorValue(type, iterations++, separator)
-          : iteratorValue(type, iterations++, step.value, step);
-      });
-    };
-    return interposedSequence;
-  }
-
-  function sortFactory(collection, comparator, mapper) {
-    if (!comparator) {
-      comparator = defaultComparator;
-    }
-    var isKeyedCollection = isKeyed(collection);
-    var index = 0;
-    var entries = collection
-      .toSeq()
-      .map(function (v, k) { return [k, v, index++, mapper ? mapper(v, k, collection) : v]; })
-      .valueSeq()
-      .toArray();
-    entries
-      .sort(function (a, b) { return comparator(a[3], b[3]) || a[2] - b[2]; })
-      .forEach(
-        isKeyedCollection
-          ? function (v, i) {
-              entries[i].length = 2;
-            }
-          : function (v, i) {
-              entries[i] = v[1];
-            }
-      );
-    return isKeyedCollection
-      ? KeyedSeq(entries)
-      : isIndexed(collection)
-      ? IndexedSeq(entries)
-      : SetSeq(entries);
-  }
-
-  function maxFactory(collection, comparator, mapper) {
-    if (!comparator) {
-      comparator = defaultComparator;
-    }
-    if (mapper) {
-      var entry = collection
-        .toSeq()
-        .map(function (v, k) { return [v, mapper(v, k, collection)]; })
-        .reduce(function (a, b) { return (maxCompare(comparator, a[1], b[1]) ? b : a); });
-      return entry && entry[0];
-    }
-    return collection.reduce(function (a, b) { return (maxCompare(comparator, a, b) ? b : a); });
-  }
-
-  function maxCompare(comparator, a, b) {
-    var comp = comparator(b, a);
-    // b is considered the new max if the comparator declares them equal, but
-    // they are not equal and b is in fact a nullish value.
-    return (
-      (comp === 0 && b !== a && (b === undefined || b === null || b !== b)) ||
-      comp > 0
-    );
-  }
-
-  function zipWithFactory(keyIter, zipper, iters, zipAll) {
-    var zipSequence = makeSequence(keyIter);
-    var sizes = new ArraySeq(iters).map(function (i) { return i.size; });
-    zipSequence.size = zipAll ? sizes.max() : sizes.min();
-    // Note: this a generic base implementation of __iterate in terms of
-    // __iterator which may be more generically useful in the future.
-    zipSequence.__iterate = function (fn, reverse) {
-      /* generic:
-      var iterator = this.__iterator(ITERATE_ENTRIES, reverse);
-      var step;
-      var iterations = 0;
-      while (!(step = iterator.next()).done) {
-        iterations++;
-        if (fn(step.value[1], step.value[0], this) === false) {
-          break;
-        }
-      }
-      return iterations;
-      */
-      // indexed:
-      var iterator = this.__iterator(ITERATE_VALUES, reverse);
-      var step;
-      var iterations = 0;
-      while (!(step = iterator.next()).done) {
-        if (fn(step.value, iterations++, this) === false) {
-          break;
-        }
-      }
-      return iterations;
-    };
-    zipSequence.__iteratorUncached = function (type, reverse) {
-      var iterators = iters.map(
-        function (i) { return ((i = Collection(i)), getIterator(reverse ? i.reverse() : i)); }
-      );
-      var iterations = 0;
-      var isDone = false;
-      return new Iterator(function () {
-        var steps;
-        if (!isDone) {
-          steps = iterators.map(function (i) { return i.next(); });
-          isDone = zipAll ? steps.every(function (s) { return s.done; }) : steps.some(function (s) { return s.done; });
-        }
-        if (isDone) {
-          return iteratorDone();
-        }
-        return iteratorValue(
-          type,
-          iterations++,
-          zipper.apply(
-            null,
-            steps.map(function (s) { return s.value; })
-          )
-        );
-      });
-    };
-    return zipSequence;
-  }
-
-  // #pragma Helper Functions
-
-  function reify(iter, seq) {
-    return iter === seq ? iter : isSeq(iter) ? seq : iter.constructor(seq);
-  }
-
-  function validateEntry(entry) {
-    if (entry !== Object(entry)) {
-      throw new TypeError('Expected [K, V] tuple: ' + entry);
-    }
-  }
-
-  function collectionClass(collection) {
-    return isKeyed(collection)
-      ? KeyedCollection
-      : isIndexed(collection)
-      ? IndexedCollection
-      : SetCollection;
-  }
-
-  function makeSequence(collection) {
-    return Object.create(
-      (isKeyed(collection)
-        ? KeyedSeq
-        : isIndexed(collection)
-        ? IndexedSeq
-        : SetSeq
-      ).prototype
-    );
-  }
-
-  function cacheResultThrough() {
-    if (this._iter.cacheResult) {
-      this._iter.cacheResult();
-      this.size = this._iter.size;
-      return this;
-    }
-    return Seq.prototype.cacheResult.call(this);
-  }
-
-  function defaultComparator(a, b) {
-    if (a === undefined && b === undefined) {
-      return 0;
-    }
-
-    if (a === undefined) {
-      return 1;
-    }
-
-    if (b === undefined) {
-      return -1;
-    }
-
-    return a > b ? 1 : a < b ? -1 : 0;
-  }
-
-  function arrCopy(arr, offset) {
-    offset = offset || 0;
-    var len = Math.max(0, arr.length - offset);
-    var newArr = new Array(len);
-    for (var ii = 0; ii < len; ii++) {
-      newArr[ii] = arr[ii + offset];
-    }
-    return newArr;
-  }
-
-  function invariant(condition, error) {
-    if (!condition) { throw new Error(error); }
-  }
-
-  function assertNotInfinite(size) {
-    invariant(
-      size !== Infinity,
-      'Cannot perform this action with an infinite size.'
-    );
-  }
-
-  function coerceKeyPath(keyPath) {
-    if (isArrayLike(keyPath) && typeof keyPath !== 'string') {
-      return keyPath;
-    }
-    if (isOrdered(keyPath)) {
-      return keyPath.toArray();
-    }
-    throw new TypeError(
-      'Invalid keyPath: expected Ordered Collection or Array: ' + keyPath
-    );
-  }
-
-  var toString = Object.prototype.toString;
-
-  function isPlainObject(value) {
-    // The base prototype's toString deals with Argument objects and native namespaces like Math
-    if (
-      !value ||
-      typeof value !== 'object' ||
-      toString.call(value) !== '[object Object]'
-    ) {
-      return false;
-    }
-
-    var proto = Object.getPrototypeOf(value);
-    if (proto === null) {
-      return true;
-    }
-
-    // Iteratively going up the prototype chain is needed for cross-realm environments (differing contexts, iframes, etc)
-    var parentProto = proto;
-    var nextProto = Object.getPrototypeOf(proto);
-    while (nextProto !== null) {
-      parentProto = nextProto;
-      nextProto = Object.getPrototypeOf(parentProto);
-    }
-    return parentProto === proto;
-  }
-
-  /**
-   * Returns true if the value is a potentially-persistent data structure, either
-   * provided by Immutable.js or a plain Array or Object.
-   */
-  function isDataStructure(value) {
-    return (
-      typeof value === 'object' &&
-      (isImmutable(value) || Array.isArray(value) || isPlainObject(value))
-    );
-  }
-
-  function quoteString(value) {
-    try {
-      return typeof value === 'string' ? JSON.stringify(value) : String(value);
-    } catch (_ignoreError) {
-      return JSON.stringify(value);
-    }
-  }
-
-  function has(collection, key) {
-    return isImmutable(collection)
-      ? collection.has(key)
-      : isDataStructure(collection) && hasOwnProperty.call(collection, key);
-  }
-
-  function get(collection, key, notSetValue) {
-    return isImmutable(collection)
-      ? collection.get(key, notSetValue)
-      : !has(collection, key)
-      ? notSetValue
-      : typeof collection.get === 'function'
-      ? collection.get(key)
-      : collection[key];
-  }
-
-  function shallowCopy(from) {
-    if (Array.isArray(from)) {
-      return arrCopy(from);
-    }
-    var to = {};
-    for (var key in from) {
-      if (hasOwnProperty.call(from, key)) {
-        to[key] = from[key];
-      }
-    }
-    return to;
-  }
-
-  function remove(collection, key) {
-    if (!isDataStructure(collection)) {
-      throw new TypeError(
-        'Cannot update non-data-structure value: ' + collection
-      );
-    }
-    if (isImmutable(collection)) {
-      if (!collection.remove) {
-        throw new TypeError(
-          'Cannot update immutable value without .remove() method: ' + collection
-        );
-      }
-      return collection.remove(key);
-    }
-    if (!hasOwnProperty.call(collection, key)) {
-      return collection;
-    }
-    var collectionCopy = shallowCopy(collection);
-    if (Array.isArray(collectionCopy)) {
-      collectionCopy.splice(key, 1);
-    } else {
-      delete collectionCopy[key];
-    }
-    return collectionCopy;
-  }
-
-  function set(collection, key, value) {
-    if (!isDataStructure(collection)) {
-      throw new TypeError(
-        'Cannot update non-data-structure value: ' + collection
-      );
-    }
-    if (isImmutable(collection)) {
-      if (!collection.set) {
-        throw new TypeError(
-          'Cannot update immutable value without .set() method: ' + collection
-        );
-      }
-      return collection.set(key, value);
-    }
-    if (hasOwnProperty.call(collection, key) && value === collection[key]) {
-      return collection;
-    }
-    var collectionCopy = shallowCopy(collection);
-    collectionCopy[key] = value;
-    return collectionCopy;
-  }
-
-  function updateIn$1(collection, keyPath, notSetValue, updater) {
-    if (!updater) {
-      updater = notSetValue;
-      notSetValue = undefined;
-    }
-    var updatedValue = updateInDeeply(
-      isImmutable(collection),
-      collection,
-      coerceKeyPath(keyPath),
-      0,
-      notSetValue,
-      updater
-    );
-    return updatedValue === NOT_SET ? notSetValue : updatedValue;
-  }
-
-  function updateInDeeply(
-    inImmutable,
-    existing,
-    keyPath,
-    i,
-    notSetValue,
-    updater
-  ) {
-    var wasNotSet = existing === NOT_SET;
-    if (i === keyPath.length) {
-      var existingValue = wasNotSet ? notSetValue : existing;
-      var newValue = updater(existingValue);
-      return newValue === existingValue ? existing : newValue;
-    }
-    if (!wasNotSet && !isDataStructure(existing)) {
-      throw new TypeError(
-        'Cannot update within non-data-structure value in path [' +
-          keyPath.slice(0, i).map(quoteString) +
-          ']: ' +
-          existing
-      );
-    }
-    var key = keyPath[i];
-    var nextExisting = wasNotSet ? NOT_SET : get(existing, key, NOT_SET);
-    var nextUpdated = updateInDeeply(
-      nextExisting === NOT_SET ? inImmutable : isImmutable(nextExisting),
-      nextExisting,
-      keyPath,
-      i + 1,
-      notSetValue,
-      updater
-    );
-    return nextUpdated === nextExisting
-      ? existing
-      : nextUpdated === NOT_SET
-      ? remove(existing, key)
-      : set(
-          wasNotSet ? (inImmutable ? emptyMap() : {}) : existing,
-          key,
-          nextUpdated
-        );
-  }
-
-  function setIn$1(collection, keyPath, value) {
-    return updateIn$1(collection, keyPath, NOT_SET, function () { return value; });
-  }
-
-  function setIn(keyPath, v) {
-    return setIn$1(this, keyPath, v);
-  }
-
-  function removeIn(collection, keyPath) {
-    return updateIn$1(collection, keyPath, function () { return NOT_SET; });
-  }
-
-  function deleteIn(keyPath) {
-    return removeIn(this, keyPath);
-  }
-
-  function update$1(collection, key, notSetValue, updater) {
-    return updateIn$1(collection, [key], notSetValue, updater);
-  }
-
-  function update(key, notSetValue, updater) {
-    return arguments.length === 1
-      ? key(this)
-      : update$1(this, key, notSetValue, updater);
-  }
-
-  function updateIn(keyPath, notSetValue, updater) {
-    return updateIn$1(this, keyPath, notSetValue, updater);
-  }
-
-  function merge$1() {
-    var iters = [], len = arguments.length;
-    while ( len-- ) iters[ len ] = arguments[ len ];
-
-    return mergeIntoKeyedWith(this, iters);
-  }
-
-  function mergeWith$1(merger) {
-    var iters = [], len = arguments.length - 1;
-    while ( len-- > 0 ) iters[ len ] = arguments[ len + 1 ];
-
-    if (typeof merger !== 'function') {
-      throw new TypeError('Invalid merger function: ' + merger);
-    }
-    return mergeIntoKeyedWith(this, iters, merger);
-  }
-
-  function mergeIntoKeyedWith(collection, collections, merger) {
-    var iters = [];
-    for (var ii = 0; ii < collections.length; ii++) {
-      var collection$1 = KeyedCollection(collections[ii]);
-      if (collection$1.size !== 0) {
-        iters.push(collection$1);
-      }
-    }
-    if (iters.length === 0) {
-      return collection;
-    }
-    if (
-      collection.toSeq().size === 0 &&
-      !collection.__ownerID &&
-      iters.length === 1
-    ) {
-      return collection.constructor(iters[0]);
-    }
-    return collection.withMutations(function (collection) {
-      var mergeIntoCollection = merger
-        ? function (value, key) {
-            update$1(collection, key, NOT_SET, function (oldVal) { return oldVal === NOT_SET ? value : merger(oldVal, value, key); }
-            );
-          }
-        : function (value, key) {
-            collection.set(key, value);
-          };
-      for (var ii = 0; ii < iters.length; ii++) {
-        iters[ii].forEach(mergeIntoCollection);
-      }
-    });
-  }
-
-  function merge(collection) {
-    var sources = [], len = arguments.length - 1;
-    while ( len-- > 0 ) sources[ len ] = arguments[ len + 1 ];
-
-    return mergeWithSources(collection, sources);
-  }
-
-  function mergeWith(merger, collection) {
-    var sources = [], len = arguments.length - 2;
-    while ( len-- > 0 ) sources[ len ] = arguments[ len + 2 ];
-
-    return mergeWithSources(collection, sources, merger);
-  }
-
-  function mergeDeep$1(collection) {
-    var sources = [], len = arguments.length - 1;
-    while ( len-- > 0 ) sources[ len ] = arguments[ len + 1 ];
-
-    return mergeDeepWithSources(collection, sources);
-  }
-
-  function mergeDeepWith$1(merger, collection) {
-    var sources = [], len = arguments.length - 2;
-    while ( len-- > 0 ) sources[ len ] = arguments[ len + 2 ];
-
-    return mergeDeepWithSources(collection, sources, merger);
-  }
-
-  function mergeDeepWithSources(collection, sources, merger) {
-    return mergeWithSources(collection, sources, deepMergerWith(merger));
-  }
-
-  function mergeWithSources(collection, sources, merger) {
-    if (!isDataStructure(collection)) {
-      throw new TypeError(
-        'Cannot merge into non-data-structure value: ' + collection
-      );
-    }
-    if (isImmutable(collection)) {
-      return typeof merger === 'function' && collection.mergeWith
-        ? collection.mergeWith.apply(collection, [ merger ].concat( sources ))
-        : collection.merge
-        ? collection.merge.apply(collection, sources)
-        : collection.concat.apply(collection, sources);
-    }
-    var isArray = Array.isArray(collection);
-    var merged = collection;
-    var Collection = isArray ? IndexedCollection : KeyedCollection;
-    var mergeItem = isArray
-      ? function (value) {
-          // Copy on write
-          if (merged === collection) {
-            merged = shallowCopy(merged);
-          }
-          merged.push(value);
-        }
-      : function (value, key) {
-          var hasVal = hasOwnProperty.call(merged, key);
-          var nextVal =
-            hasVal && merger ? merger(merged[key], value, key) : value;
-          if (!hasVal || nextVal !== merged[key]) {
-            // Copy on write
-            if (merged === collection) {
-              merged = shallowCopy(merged);
-            }
-            merged[key] = nextVal;
-          }
-        };
-    for (var i = 0; i < sources.length; i++) {
-      Collection(sources[i]).forEach(mergeItem);
-    }
-    return merged;
-  }
-
-  function deepMergerWith(merger) {
-    function deepMerger(oldValue, newValue, key) {
-      return isDataStructure(oldValue) &&
-        isDataStructure(newValue) &&
-        areMergeable(oldValue, newValue)
-        ? mergeWithSources(oldValue, [newValue], deepMerger)
-        : merger
-        ? merger(oldValue, newValue, key)
-        : newValue;
-    }
-    return deepMerger;
-  }
-
-  /**
-   * It's unclear what the desired behavior is for merging two collections that
-   * fall into separate categories between keyed, indexed, or set-like, so we only
-   * consider them mergeable if they fall into the same category.
-   */
-  function areMergeable(oldDataStructure, newDataStructure) {
-    var oldSeq = Seq(oldDataStructure);
-    var newSeq = Seq(newDataStructure);
-    // This logic assumes that a sequence can only fall into one of the three
-    // categories mentioned above (since there's no `isSetLike()` method).
-    return (
-      isIndexed(oldSeq) === isIndexed(newSeq) &&
-      isKeyed(oldSeq) === isKeyed(newSeq)
-    );
-  }
-
-  function mergeDeep() {
-    var iters = [], len = arguments.length;
-    while ( len-- ) iters[ len ] = arguments[ len ];
-
-    return mergeDeepWithSources(this, iters);
-  }
-
-  function mergeDeepWith(merger) {
-    var iters = [], len = arguments.length - 1;
-    while ( len-- > 0 ) iters[ len ] = arguments[ len + 1 ];
-
-    return mergeDeepWithSources(this, iters, merger);
-  }
-
-  function mergeIn(keyPath) {
-    var iters = [], len = arguments.length - 1;
-    while ( len-- > 0 ) iters[ len ] = arguments[ len + 1 ];
-
-    return updateIn$1(this, keyPath, emptyMap(), function (m) { return mergeWithSources(m, iters); });
-  }
-
-  function mergeDeepIn(keyPath) {
-    var iters = [], len = arguments.length - 1;
-    while ( len-- > 0 ) iters[ len ] = arguments[ len + 1 ];
-
-    return updateIn$1(this, keyPath, emptyMap(), function (m) { return mergeDeepWithSources(m, iters); }
-    );
-  }
-
-  function withMutations(fn) {
-    var mutable = this.asMutable();
-    fn(mutable);
-    return mutable.wasAltered() ? mutable.__ensureOwner(this.__ownerID) : this;
-  }
-
-  function asMutable() {
-    return this.__ownerID ? this : this.__ensureOwner(new OwnerID());
-  }
-
-  function asImmutable() {
-    return this.__ensureOwner();
-  }
-
-  function wasAltered() {
-    return this.__altered;
-  }
-
-  var Map = /*@__PURE__*/(function (KeyedCollection) {
-    function Map(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptyMap()
-        : isMap(value) && !isOrdered(value)
-        ? value
-        : emptyMap().withMutations(function (map) {
-            var iter = KeyedCollection(value);
-            assertNotInfinite(iter.size);
-            iter.forEach(function (v, k) { return map.set(k, v); });
-          });
-    }
-
-    if ( KeyedCollection ) Map.__proto__ = KeyedCollection;
-    Map.prototype = Object.create( KeyedCollection && KeyedCollection.prototype );
-    Map.prototype.constructor = Map;
-
-    Map.of = function of () {
-      var keyValues = [], len = arguments.length;
-      while ( len-- ) keyValues[ len ] = arguments[ len ];
-
-      return emptyMap().withMutations(function (map) {
-        for (var i = 0; i < keyValues.length; i += 2) {
-          if (i + 1 >= keyValues.length) {
-            throw new Error('Missing value for key: ' + keyValues[i]);
-          }
-          map.set(keyValues[i], keyValues[i + 1]);
-        }
-      });
-    };
-
-    Map.prototype.toString = function toString () {
-      return this.__toString('Map {', '}');
-    };
-
-    // @pragma Access
-
-    Map.prototype.get = function get (k, notSetValue) {
-      return this._root
-        ? this._root.get(0, undefined, k, notSetValue)
-        : notSetValue;
-    };
-
-    // @pragma Modification
-
-    Map.prototype.set = function set (k, v) {
-      return updateMap(this, k, v);
-    };
-
-    Map.prototype.remove = function remove (k) {
-      return updateMap(this, k, NOT_SET);
-    };
-
-    Map.prototype.deleteAll = function deleteAll (keys) {
-      var collection = Collection(keys);
-
-      if (collection.size === 0) {
-        return this;
-      }
-
-      return this.withMutations(function (map) {
-        collection.forEach(function (key) { return map.remove(key); });
-      });
-    };
-
-    Map.prototype.clear = function clear () {
-      if (this.size === 0) {
-        return this;
-      }
-      if (this.__ownerID) {
-        this.size = 0;
-        this._root = null;
-        this.__hash = undefined;
-        this.__altered = true;
-        return this;
-      }
-      return emptyMap();
-    };
-
-    // @pragma Composition
-
-    Map.prototype.sort = function sort (comparator) {
-      // Late binding
-      return OrderedMap(sortFactory(this, comparator));
-    };
-
-    Map.prototype.sortBy = function sortBy (mapper, comparator) {
-      // Late binding
-      return OrderedMap(sortFactory(this, comparator, mapper));
-    };
-
-    Map.prototype.map = function map (mapper, context) {
-      var this$1$1 = this;
-
-      return this.withMutations(function (map) {
-        map.forEach(function (value, key) {
-          map.set(key, mapper.call(context, value, key, this$1$1));
-        });
-      });
-    };
-
-    // @pragma Mutability
-
-    Map.prototype.__iterator = function __iterator (type, reverse) {
-      return new MapIterator(this, type, reverse);
-    };
-
-    Map.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      var iterations = 0;
-      this._root &&
-        this._root.iterate(function (entry) {
-          iterations++;
-          return fn(entry[1], entry[0], this$1$1);
-        }, reverse);
-      return iterations;
-    };
-
-    Map.prototype.__ensureOwner = function __ensureOwner (ownerID) {
-      if (ownerID === this.__ownerID) {
-        return this;
-      }
-      if (!ownerID) {
-        if (this.size === 0) {
-          return emptyMap();
-        }
-        this.__ownerID = ownerID;
-        this.__altered = false;
-        return this;
-      }
-      return makeMap(this.size, this._root, ownerID, this.__hash);
-    };
-
-    return Map;
-  }(KeyedCollection));
-
-  Map.isMap = isMap;
-
-  var MapPrototype = Map.prototype;
-  MapPrototype[IS_MAP_SYMBOL] = true;
-  MapPrototype[DELETE] = MapPrototype.remove;
-  MapPrototype.removeAll = MapPrototype.deleteAll;
-  MapPrototype.setIn = setIn;
-  MapPrototype.removeIn = MapPrototype.deleteIn = deleteIn;
-  MapPrototype.update = update;
-  MapPrototype.updateIn = updateIn;
-  MapPrototype.merge = MapPrototype.concat = merge$1;
-  MapPrototype.mergeWith = mergeWith$1;
-  MapPrototype.mergeDeep = mergeDeep;
-  MapPrototype.mergeDeepWith = mergeDeepWith;
-  MapPrototype.mergeIn = mergeIn;
-  MapPrototype.mergeDeepIn = mergeDeepIn;
-  MapPrototype.withMutations = withMutations;
-  MapPrototype.wasAltered = wasAltered;
-  MapPrototype.asImmutable = asImmutable;
-  MapPrototype['@@transducer/init'] = MapPrototype.asMutable = asMutable;
-  MapPrototype['@@transducer/step'] = function (result, arr) {
-    return result.set(arr[0], arr[1]);
-  };
-  MapPrototype['@@transducer/result'] = function (obj) {
-    return obj.asImmutable();
-  };
-
-  // #pragma Trie Nodes
-
-  var ArrayMapNode = function ArrayMapNode(ownerID, entries) {
-    this.ownerID = ownerID;
-    this.entries = entries;
-  };
-
-  ArrayMapNode.prototype.get = function get (shift, keyHash, key, notSetValue) {
-    var entries = this.entries;
-    for (var ii = 0, len = entries.length; ii < len; ii++) {
-      if (is(key, entries[ii][0])) {
-        return entries[ii][1];
-      }
-    }
-    return notSetValue;
-  };
-
-  ArrayMapNode.prototype.update = function update (ownerID, shift, keyHash, key, value, didChangeSize, didAlter) {
-    var removed = value === NOT_SET;
-
-    var entries = this.entries;
-    var idx = 0;
-    var len = entries.length;
-    for (; idx < len; idx++) {
-      if (is(key, entries[idx][0])) {
-        break;
-      }
-    }
-    var exists = idx < len;
-
-    if (exists ? entries[idx][1] === value : removed) {
-      return this;
-    }
-
-    SetRef(didAlter);
-    (removed || !exists) && SetRef(didChangeSize);
-
-    if (removed && entries.length === 1) {
-      return; // undefined
-    }
-
-    if (!exists && !removed && entries.length >= MAX_ARRAY_MAP_SIZE) {
-      return createNodes(ownerID, entries, key, value);
-    }
-
-    var isEditable = ownerID && ownerID === this.ownerID;
-    var newEntries = isEditable ? entries : arrCopy(entries);
-
-    if (exists) {
-      if (removed) {
-        idx === len - 1
-          ? newEntries.pop()
-          : (newEntries[idx] = newEntries.pop());
-      } else {
-        newEntries[idx] = [key, value];
-      }
-    } else {
-      newEntries.push([key, value]);
-    }
-
-    if (isEditable) {
-      this.entries = newEntries;
-      return this;
-    }
-
-    return new ArrayMapNode(ownerID, newEntries);
-  };
-
-  var BitmapIndexedNode = function BitmapIndexedNode(ownerID, bitmap, nodes) {
-    this.ownerID = ownerID;
-    this.bitmap = bitmap;
-    this.nodes = nodes;
-  };
-
-  BitmapIndexedNode.prototype.get = function get (shift, keyHash, key, notSetValue) {
-    if (keyHash === undefined) {
-      keyHash = hash(key);
-    }
-    var bit = 1 << ((shift === 0 ? keyHash : keyHash >>> shift) & MASK);
-    var bitmap = this.bitmap;
-    return (bitmap & bit) === 0
-      ? notSetValue
-      : this.nodes[popCount(bitmap & (bit - 1))].get(
-          shift + SHIFT,
-          keyHash,
-          key,
-          notSetValue
-        );
-  };
-
-  BitmapIndexedNode.prototype.update = function update (ownerID, shift, keyHash, key, value, didChangeSize, didAlter) {
-    if (keyHash === undefined) {
-      keyHash = hash(key);
-    }
-    var keyHashFrag = (shift === 0 ? keyHash : keyHash >>> shift) & MASK;
-    var bit = 1 << keyHashFrag;
-    var bitmap = this.bitmap;
-    var exists = (bitmap & bit) !== 0;
-
-    if (!exists && value === NOT_SET) {
-      return this;
-    }
-
-    var idx = popCount(bitmap & (bit - 1));
-    var nodes = this.nodes;
-    var node = exists ? nodes[idx] : undefined;
-    var newNode = updateNode(
-      node,
-      ownerID,
-      shift + SHIFT,
-      keyHash,
-      key,
-      value,
-      didChangeSize,
-      didAlter
-    );
-
-    if (newNode === node) {
-      return this;
-    }
-
-    if (!exists && newNode && nodes.length >= MAX_BITMAP_INDEXED_SIZE) {
-      return expandNodes(ownerID, nodes, bitmap, keyHashFrag, newNode);
-    }
-
-    if (
-      exists &&
-      !newNode &&
-      nodes.length === 2 &&
-      isLeafNode(nodes[idx ^ 1])
-    ) {
-      return nodes[idx ^ 1];
-    }
-
-    if (exists && newNode && nodes.length === 1 && isLeafNode(newNode)) {
-      return newNode;
-    }
-
-    var isEditable = ownerID && ownerID === this.ownerID;
-    var newBitmap = exists ? (newNode ? bitmap : bitmap ^ bit) : bitmap | bit;
-    var newNodes = exists
-      ? newNode
-        ? setAt(nodes, idx, newNode, isEditable)
-        : spliceOut(nodes, idx, isEditable)
-      : spliceIn(nodes, idx, newNode, isEditable);
-
-    if (isEditable) {
-      this.bitmap = newBitmap;
-      this.nodes = newNodes;
-      return this;
-    }
-
-    return new BitmapIndexedNode(ownerID, newBitmap, newNodes);
-  };
-
-  var HashArrayMapNode = function HashArrayMapNode(ownerID, count, nodes) {
-    this.ownerID = ownerID;
-    this.count = count;
-    this.nodes = nodes;
-  };
-
-  HashArrayMapNode.prototype.get = function get (shift, keyHash, key, notSetValue) {
-    if (keyHash === undefined) {
-      keyHash = hash(key);
-    }
-    var idx = (shift === 0 ? keyHash : keyHash >>> shift) & MASK;
-    var node = this.nodes[idx];
-    return node
-      ? node.get(shift + SHIFT, keyHash, key, notSetValue)
-      : notSetValue;
-  };
-
-  HashArrayMapNode.prototype.update = function update (ownerID, shift, keyHash, key, value, didChangeSize, didAlter) {
-    if (keyHash === undefined) {
-      keyHash = hash(key);
-    }
-    var idx = (shift === 0 ? keyHash : keyHash >>> shift) & MASK;
-    var removed = value === NOT_SET;
-    var nodes = this.nodes;
-    var node = nodes[idx];
-
-    if (removed && !node) {
-      return this;
-    }
-
-    var newNode = updateNode(
-      node,
-      ownerID,
-      shift + SHIFT,
-      keyHash,
-      key,
-      value,
-      didChangeSize,
-      didAlter
-    );
-    if (newNode === node) {
-      return this;
-    }
-
-    var newCount = this.count;
-    if (!node) {
-      newCount++;
-    } else if (!newNode) {
-      newCount--;
-      if (newCount < MIN_HASH_ARRAY_MAP_SIZE) {
-        return packNodes(ownerID, nodes, newCount, idx);
-      }
-    }
-
-    var isEditable = ownerID && ownerID === this.ownerID;
-    var newNodes = setAt(nodes, idx, newNode, isEditable);
-
-    if (isEditable) {
-      this.count = newCount;
-      this.nodes = newNodes;
-      return this;
-    }
-
-    return new HashArrayMapNode(ownerID, newCount, newNodes);
-  };
-
-  var HashCollisionNode = function HashCollisionNode(ownerID, keyHash, entries) {
-    this.ownerID = ownerID;
-    this.keyHash = keyHash;
-    this.entries = entries;
-  };
-
-  HashCollisionNode.prototype.get = function get (shift, keyHash, key, notSetValue) {
-    var entries = this.entries;
-    for (var ii = 0, len = entries.length; ii < len; ii++) {
-      if (is(key, entries[ii][0])) {
-        return entries[ii][1];
-      }
-    }
-    return notSetValue;
-  };
-
-  HashCollisionNode.prototype.update = function update (ownerID, shift, keyHash, key, value, didChangeSize, didAlter) {
-    if (keyHash === undefined) {
-      keyHash = hash(key);
-    }
-
-    var removed = value === NOT_SET;
-
-    if (keyHash !== this.keyHash) {
-      if (removed) {
-        return this;
-      }
-      SetRef(didAlter);
-      SetRef(didChangeSize);
-      return mergeIntoNode(this, ownerID, shift, keyHash, [key, value]);
-    }
-
-    var entries = this.entries;
-    var idx = 0;
-    var len = entries.length;
-    for (; idx < len; idx++) {
-      if (is(key, entries[idx][0])) {
-        break;
-      }
-    }
-    var exists = idx < len;
-
-    if (exists ? entries[idx][1] === value : removed) {
-      return this;
-    }
-
-    SetRef(didAlter);
-    (removed || !exists) && SetRef(didChangeSize);
-
-    if (removed && len === 2) {
-      return new ValueNode(ownerID, this.keyHash, entries[idx ^ 1]);
-    }
-
-    var isEditable = ownerID && ownerID === this.ownerID;
-    var newEntries = isEditable ? entries : arrCopy(entries);
-
-    if (exists) {
-      if (removed) {
-        idx === len - 1
-          ? newEntries.pop()
-          : (newEntries[idx] = newEntries.pop());
-      } else {
-        newEntries[idx] = [key, value];
-      }
-    } else {
-      newEntries.push([key, value]);
-    }
-
-    if (isEditable) {
-      this.entries = newEntries;
-      return this;
-    }
-
-    return new HashCollisionNode(ownerID, this.keyHash, newEntries);
-  };
-
-  var ValueNode = function ValueNode(ownerID, keyHash, entry) {
-    this.ownerID = ownerID;
-    this.keyHash = keyHash;
-    this.entry = entry;
-  };
-
-  ValueNode.prototype.get = function get (shift, keyHash, key, notSetValue) {
-    return is(key, this.entry[0]) ? this.entry[1] : notSetValue;
-  };
-
-  ValueNode.prototype.update = function update (ownerID, shift, keyHash, key, value, didChangeSize, didAlter) {
-    var removed = value === NOT_SET;
-    var keyMatch = is(key, this.entry[0]);
-    if (keyMatch ? value === this.entry[1] : removed) {
-      return this;
-    }
-
-    SetRef(didAlter);
-
-    if (removed) {
-      SetRef(didChangeSize);
-      return; // undefined
-    }
-
-    if (keyMatch) {
-      if (ownerID && ownerID === this.ownerID) {
-        this.entry[1] = value;
-        return this;
-      }
-      return new ValueNode(ownerID, this.keyHash, [key, value]);
-    }
-
-    SetRef(didChangeSize);
-    return mergeIntoNode(this, ownerID, shift, hash(key), [key, value]);
-  };
-
-  // #pragma Iterators
-
-  ArrayMapNode.prototype.iterate = HashCollisionNode.prototype.iterate =
-    function (fn, reverse) {
-      var entries = this.entries;
-      for (var ii = 0, maxIndex = entries.length - 1; ii <= maxIndex; ii++) {
-        if (fn(entries[reverse ? maxIndex - ii : ii]) === false) {
-          return false;
-        }
-      }
-    };
-
-  BitmapIndexedNode.prototype.iterate = HashArrayMapNode.prototype.iterate =
-    function (fn, reverse) {
-      var nodes = this.nodes;
-      for (var ii = 0, maxIndex = nodes.length - 1; ii <= maxIndex; ii++) {
-        var node = nodes[reverse ? maxIndex - ii : ii];
-        if (node && node.iterate(fn, reverse) === false) {
-          return false;
-        }
-      }
-    };
-
-  // eslint-disable-next-line no-unused-vars
-  ValueNode.prototype.iterate = function (fn, reverse) {
-    return fn(this.entry);
-  };
-
-  var MapIterator = /*@__PURE__*/(function (Iterator) {
-    function MapIterator(map, type, reverse) {
-      this._type = type;
-      this._reverse = reverse;
-      this._stack = map._root && mapIteratorFrame(map._root);
-    }
-
-    if ( Iterator ) MapIterator.__proto__ = Iterator;
-    MapIterator.prototype = Object.create( Iterator && Iterator.prototype );
-    MapIterator.prototype.constructor = MapIterator;
-
-    MapIterator.prototype.next = function next () {
-      var type = this._type;
-      var stack = this._stack;
-      while (stack) {
-        var node = stack.node;
-        var index = stack.index++;
-        var maxIndex = (void 0);
-        if (node.entry) {
-          if (index === 0) {
-            return mapIteratorValue(type, node.entry);
-          }
-        } else if (node.entries) {
-          maxIndex = node.entries.length - 1;
-          if (index <= maxIndex) {
-            return mapIteratorValue(
-              type,
-              node.entries[this._reverse ? maxIndex - index : index]
-            );
-          }
-        } else {
-          maxIndex = node.nodes.length - 1;
-          if (index <= maxIndex) {
-            var subNode = node.nodes[this._reverse ? maxIndex - index : index];
-            if (subNode) {
-              if (subNode.entry) {
-                return mapIteratorValue(type, subNode.entry);
-              }
-              stack = this._stack = mapIteratorFrame(subNode, stack);
-            }
-            continue;
-          }
-        }
-        stack = this._stack = this._stack.__prev;
-      }
-      return iteratorDone();
-    };
-
-    return MapIterator;
-  }(Iterator));
-
-  function mapIteratorValue(type, entry) {
-    return iteratorValue(type, entry[0], entry[1]);
-  }
-
-  function mapIteratorFrame(node, prev) {
-    return {
-      node: node,
-      index: 0,
-      __prev: prev,
-    };
-  }
-
-  function makeMap(size, root, ownerID, hash) {
-    var map = Object.create(MapPrototype);
-    map.size = size;
-    map._root = root;
-    map.__ownerID = ownerID;
-    map.__hash = hash;
-    map.__altered = false;
-    return map;
-  }
-
-  var EMPTY_MAP;
-  function emptyMap() {
-    return EMPTY_MAP || (EMPTY_MAP = makeMap(0));
-  }
-
-  function updateMap(map, k, v) {
-    var newRoot;
-    var newSize;
-    if (!map._root) {
-      if (v === NOT_SET) {
-        return map;
-      }
-      newSize = 1;
-      newRoot = new ArrayMapNode(map.__ownerID, [[k, v]]);
-    } else {
-      var didChangeSize = MakeRef();
-      var didAlter = MakeRef();
-      newRoot = updateNode(
-        map._root,
-        map.__ownerID,
-        0,
-        undefined,
-        k,
-        v,
-        didChangeSize,
-        didAlter
-      );
-      if (!didAlter.value) {
-        return map;
-      }
-      newSize = map.size + (didChangeSize.value ? (v === NOT_SET ? -1 : 1) : 0);
-    }
-    if (map.__ownerID) {
-      map.size = newSize;
-      map._root = newRoot;
-      map.__hash = undefined;
-      map.__altered = true;
-      return map;
-    }
-    return newRoot ? makeMap(newSize, newRoot) : emptyMap();
-  }
-
-  function updateNode(
-    node,
-    ownerID,
-    shift,
-    keyHash,
-    key,
-    value,
-    didChangeSize,
-    didAlter
-  ) {
-    if (!node) {
-      if (value === NOT_SET) {
-        return node;
-      }
-      SetRef(didAlter);
-      SetRef(didChangeSize);
-      return new ValueNode(ownerID, keyHash, [key, value]);
-    }
-    return node.update(
-      ownerID,
-      shift,
-      keyHash,
-      key,
-      value,
-      didChangeSize,
-      didAlter
-    );
-  }
-
-  function isLeafNode(node) {
-    return (
-      node.constructor === ValueNode || node.constructor === HashCollisionNode
-    );
-  }
-
-  function mergeIntoNode(node, ownerID, shift, keyHash, entry) {
-    if (node.keyHash === keyHash) {
-      return new HashCollisionNode(ownerID, keyHash, [node.entry, entry]);
-    }
-
-    var idx1 = (shift === 0 ? node.keyHash : node.keyHash >>> shift) & MASK;
-    var idx2 = (shift === 0 ? keyHash : keyHash >>> shift) & MASK;
-
-    var newNode;
-    var nodes =
-      idx1 === idx2
-        ? [mergeIntoNode(node, ownerID, shift + SHIFT, keyHash, entry)]
-        : ((newNode = new ValueNode(ownerID, keyHash, entry)),
-          idx1 < idx2 ? [node, newNode] : [newNode, node]);
-
-    return new BitmapIndexedNode(ownerID, (1 << idx1) | (1 << idx2), nodes);
-  }
-
-  function createNodes(ownerID, entries, key, value) {
-    if (!ownerID) {
-      ownerID = new OwnerID();
-    }
-    var node = new ValueNode(ownerID, hash(key), [key, value]);
-    for (var ii = 0; ii < entries.length; ii++) {
-      var entry = entries[ii];
-      node = node.update(ownerID, 0, undefined, entry[0], entry[1]);
-    }
-    return node;
-  }
-
-  function packNodes(ownerID, nodes, count, excluding) {
-    var bitmap = 0;
-    var packedII = 0;
-    var packedNodes = new Array(count);
-    for (var ii = 0, bit = 1, len = nodes.length; ii < len; ii++, bit <<= 1) {
-      var node = nodes[ii];
-      if (node !== undefined && ii !== excluding) {
-        bitmap |= bit;
-        packedNodes[packedII++] = node;
-      }
-    }
-    return new BitmapIndexedNode(ownerID, bitmap, packedNodes);
-  }
-
-  function expandNodes(ownerID, nodes, bitmap, including, node) {
-    var count = 0;
-    var expandedNodes = new Array(SIZE);
-    for (var ii = 0; bitmap !== 0; ii++, bitmap >>>= 1) {
-      expandedNodes[ii] = bitmap & 1 ? nodes[count++] : undefined;
-    }
-    expandedNodes[including] = node;
-    return new HashArrayMapNode(ownerID, count + 1, expandedNodes);
-  }
-
-  function popCount(x) {
-    x -= (x >> 1) & 0x55555555;
-    x = (x & 0x33333333) + ((x >> 2) & 0x33333333);
-    x = (x + (x >> 4)) & 0x0f0f0f0f;
-    x += x >> 8;
-    x += x >> 16;
-    return x & 0x7f;
-  }
-
-  function setAt(array, idx, val, canEdit) {
-    var newArray = canEdit ? array : arrCopy(array);
-    newArray[idx] = val;
-    return newArray;
-  }
-
-  function spliceIn(array, idx, val, canEdit) {
-    var newLen = array.length + 1;
-    if (canEdit && idx + 1 === newLen) {
-      array[idx] = val;
-      return array;
-    }
-    var newArray = new Array(newLen);
-    var after = 0;
-    for (var ii = 0; ii < newLen; ii++) {
-      if (ii === idx) {
-        newArray[ii] = val;
-        after = -1;
-      } else {
-        newArray[ii] = array[ii + after];
-      }
-    }
-    return newArray;
-  }
-
-  function spliceOut(array, idx, canEdit) {
-    var newLen = array.length - 1;
-    if (canEdit && idx === newLen) {
-      array.pop();
-      return array;
-    }
-    var newArray = new Array(newLen);
-    var after = 0;
-    for (var ii = 0; ii < newLen; ii++) {
-      if (ii === idx) {
-        after = 1;
-      }
-      newArray[ii] = array[ii + after];
-    }
-    return newArray;
-  }
-
-  var MAX_ARRAY_MAP_SIZE = SIZE / 4;
-  var MAX_BITMAP_INDEXED_SIZE = SIZE / 2;
-  var MIN_HASH_ARRAY_MAP_SIZE = SIZE / 4;
-
-  var IS_LIST_SYMBOL = '@@__IMMUTABLE_LIST__@@';
-
-  function isList(maybeList) {
-    return Boolean(maybeList && maybeList[IS_LIST_SYMBOL]);
-  }
-
-  var List = /*@__PURE__*/(function (IndexedCollection) {
-    function List(value) {
-      var empty = emptyList();
-      if (value === undefined || value === null) {
-        // eslint-disable-next-line no-constructor-return
-        return empty;
-      }
-      if (isList(value)) {
-        // eslint-disable-next-line no-constructor-return
-        return value;
-      }
-      var iter = IndexedCollection(value);
-      var size = iter.size;
-      if (size === 0) {
-        // eslint-disable-next-line no-constructor-return
-        return empty;
-      }
-      assertNotInfinite(size);
-      if (size > 0 && size < SIZE) {
-        // eslint-disable-next-line no-constructor-return
-        return makeList(0, size, SHIFT, null, new VNode(iter.toArray()));
-      }
-      // eslint-disable-next-line no-constructor-return
-      return empty.withMutations(function (list) {
-        list.setSize(size);
-        iter.forEach(function (v, i) { return list.set(i, v); });
-      });
-    }
-
-    if ( IndexedCollection ) List.__proto__ = IndexedCollection;
-    List.prototype = Object.create( IndexedCollection && IndexedCollection.prototype );
-    List.prototype.constructor = List;
-
-    List.of = function of (/*...values*/) {
-      return this(arguments);
-    };
-
-    List.prototype.toString = function toString () {
-      return this.__toString('List [', ']');
-    };
-
-    // @pragma Access
-
-    List.prototype.get = function get (index, notSetValue) {
-      index = wrapIndex(this, index);
-      if (index >= 0 && index < this.size) {
-        index += this._origin;
-        var node = listNodeFor(this, index);
-        return node && node.array[index & MASK];
-      }
-      return notSetValue;
-    };
-
-    // @pragma Modification
-
-    List.prototype.set = function set (index, value) {
-      return updateList(this, index, value);
-    };
-
-    List.prototype.remove = function remove (index) {
-      return !this.has(index)
-        ? this
-        : index === 0
-        ? this.shift()
-        : index === this.size - 1
-        ? this.pop()
-        : this.splice(index, 1);
-    };
-
-    List.prototype.insert = function insert (index, value) {
-      return this.splice(index, 0, value);
-    };
-
-    List.prototype.clear = function clear () {
-      if (this.size === 0) {
-        return this;
-      }
-      if (this.__ownerID) {
-        this.size = this._origin = this._capacity = 0;
-        this._level = SHIFT;
-        this._root = this._tail = this.__hash = undefined;
-        this.__altered = true;
-        return this;
-      }
-      return emptyList();
-    };
-
-    List.prototype.push = function push (/*...values*/) {
-      var values = arguments;
-      var oldSize = this.size;
-      return this.withMutations(function (list) {
-        setListBounds(list, 0, oldSize + values.length);
-        for (var ii = 0; ii < values.length; ii++) {
-          list.set(oldSize + ii, values[ii]);
-        }
-      });
-    };
-
-    List.prototype.pop = function pop () {
-      return setListBounds(this, 0, -1);
-    };
-
-    List.prototype.unshift = function unshift (/*...values*/) {
-      var values = arguments;
-      return this.withMutations(function (list) {
-        setListBounds(list, -values.length);
-        for (var ii = 0; ii < values.length; ii++) {
-          list.set(ii, values[ii]);
-        }
-      });
-    };
-
-    List.prototype.shift = function shift () {
-      return setListBounds(this, 1);
-    };
-
-    // @pragma Composition
-
-    List.prototype.concat = function concat (/*...collections*/) {
-      var arguments$1 = arguments;
-
-      var seqs = [];
-      for (var i = 0; i < arguments.length; i++) {
-        var argument = arguments$1[i];
-        var seq = IndexedCollection(
-          typeof argument !== 'string' && hasIterator(argument)
-            ? argument
-            : [argument]
-        );
-        if (seq.size !== 0) {
-          seqs.push(seq);
-        }
-      }
-      if (seqs.length === 0) {
-        return this;
-      }
-      if (this.size === 0 && !this.__ownerID && seqs.length === 1) {
-        return this.constructor(seqs[0]);
-      }
-      return this.withMutations(function (list) {
-        seqs.forEach(function (seq) { return seq.forEach(function (value) { return list.push(value); }); });
-      });
-    };
-
-    List.prototype.setSize = function setSize (size) {
-      return setListBounds(this, 0, size);
-    };
-
-    List.prototype.map = function map (mapper, context) {
-      var this$1$1 = this;
-
-      return this.withMutations(function (list) {
-        for (var i = 0; i < this$1$1.size; i++) {
-          list.set(i, mapper.call(context, list.get(i), i, this$1$1));
-        }
-      });
-    };
-
-    // @pragma Iteration
-
-    List.prototype.slice = function slice (begin, end) {
-      var size = this.size;
-      if (wholeSlice(begin, end, size)) {
-        return this;
-      }
-      return setListBounds(
-        this,
-        resolveBegin(begin, size),
-        resolveEnd(end, size)
-      );
-    };
-
-    List.prototype.__iterator = function __iterator (type, reverse) {
-      var index = reverse ? this.size : 0;
-      var values = iterateList(this, reverse);
-      return new Iterator(function () {
-        var value = values();
-        return value === DONE
-          ? iteratorDone()
-          : iteratorValue(type, reverse ? --index : index++, value);
-      });
-    };
-
-    List.prototype.__iterate = function __iterate (fn, reverse) {
-      var index = reverse ? this.size : 0;
-      var values = iterateList(this, reverse);
-      var value;
-      while ((value = values()) !== DONE) {
-        if (fn(value, reverse ? --index : index++, this) === false) {
-          break;
-        }
-      }
-      return index;
-    };
-
-    List.prototype.__ensureOwner = function __ensureOwner (ownerID) {
-      if (ownerID === this.__ownerID) {
-        return this;
-      }
-      if (!ownerID) {
-        if (this.size === 0) {
-          return emptyList();
-        }
-        this.__ownerID = ownerID;
-        this.__altered = false;
-        return this;
-      }
-      return makeList(
-        this._origin,
-        this._capacity,
-        this._level,
-        this._root,
-        this._tail,
-        ownerID,
-        this.__hash
-      );
-    };
-
-    return List;
-  }(IndexedCollection));
-
-  List.isList = isList;
-
-  var ListPrototype = List.prototype;
-  ListPrototype[IS_LIST_SYMBOL] = true;
-  ListPrototype[DELETE] = ListPrototype.remove;
-  ListPrototype.merge = ListPrototype.concat;
-  ListPrototype.setIn = setIn;
-  ListPrototype.deleteIn = ListPrototype.removeIn = deleteIn;
-  ListPrototype.update = update;
-  ListPrototype.updateIn = updateIn;
-  ListPrototype.mergeIn = mergeIn;
-  ListPrototype.mergeDeepIn = mergeDeepIn;
-  ListPrototype.withMutations = withMutations;
-  ListPrototype.wasAltered = wasAltered;
-  ListPrototype.asImmutable = asImmutable;
-  ListPrototype['@@transducer/init'] = ListPrototype.asMutable = asMutable;
-  ListPrototype['@@transducer/step'] = function (result, arr) {
-    return result.push(arr);
-  };
-  ListPrototype['@@transducer/result'] = function (obj) {
-    return obj.asImmutable();
-  };
-
-  var VNode = function VNode(array, ownerID) {
-    this.array = array;
-    this.ownerID = ownerID;
-  };
-
-  // TODO: seems like these methods are very similar
-
-  VNode.prototype.removeBefore = function removeBefore (ownerID, level, index) {
-    if (index === level ? 1 << level : this.array.length === 0) {
-      return this;
-    }
-    var originIndex = (index >>> level) & MASK;
-    if (originIndex >= this.array.length) {
-      return new VNode([], ownerID);
-    }
-    var removingFirst = originIndex === 0;
-    var newChild;
-    if (level > 0) {
-      var oldChild = this.array[originIndex];
-      newChild =
-        oldChild && oldChild.removeBefore(ownerID, level - SHIFT, index);
-      if (newChild === oldChild && removingFirst) {
-        return this;
-      }
-    }
-    if (removingFirst && !newChild) {
-      return this;
-    }
-    var editable = editableVNode(this, ownerID);
-    if (!removingFirst) {
-      for (var ii = 0; ii < originIndex; ii++) {
-        editable.array[ii] = undefined;
-      }
-    }
-    if (newChild) {
-      editable.array[originIndex] = newChild;
-    }
-    return editable;
-  };
-
-  VNode.prototype.removeAfter = function removeAfter (ownerID, level, index) {
-    if (index === (level ? 1 << level : 0) || this.array.length === 0) {
-      return this;
-    }
-    var sizeIndex = ((index - 1) >>> level) & MASK;
-    if (sizeIndex >= this.array.length) {
-      return this;
-    }
-
-    var newChild;
-    if (level > 0) {
-      var oldChild = this.array[sizeIndex];
-      newChild =
-        oldChild && oldChild.removeAfter(ownerID, level - SHIFT, index);
-      if (newChild === oldChild && sizeIndex === this.array.length - 1) {
-        return this;
-      }
-    }
-
-    var editable = editableVNode(this, ownerID);
-    editable.array.splice(sizeIndex + 1);
-    if (newChild) {
-      editable.array[sizeIndex] = newChild;
-    }
-    return editable;
-  };
-
-  var DONE = {};
-
-  function iterateList(list, reverse) {
-    var left = list._origin;
-    var right = list._capacity;
-    var tailPos = getTailOffset(right);
-    var tail = list._tail;
-
-    return iterateNodeOrLeaf(list._root, list._level, 0);
-
-    function iterateNodeOrLeaf(node, level, offset) {
-      return level === 0
-        ? iterateLeaf(node, offset)
-        : iterateNode(node, level, offset);
-    }
-
-    function iterateLeaf(node, offset) {
-      var array = offset === tailPos ? tail && tail.array : node && node.array;
-      var from = offset > left ? 0 : left - offset;
-      var to = right - offset;
-      if (to > SIZE) {
-        to = SIZE;
-      }
-      return function () {
-        if (from === to) {
-          return DONE;
-        }
-        var idx = reverse ? --to : from++;
-        return array && array[idx];
-      };
-    }
-
-    function iterateNode(node, level, offset) {
-      var values;
-      var array = node && node.array;
-      var from = offset > left ? 0 : (left - offset) >> level;
-      var to = ((right - offset) >> level) + 1;
-      if (to > SIZE) {
-        to = SIZE;
-      }
-      return function () {
-        while (true) {
-          if (values) {
-            var value = values();
-            if (value !== DONE) {
-              return value;
-            }
-            values = null;
-          }
-          if (from === to) {
-            return DONE;
-          }
-          var idx = reverse ? --to : from++;
-          values = iterateNodeOrLeaf(
-            array && array[idx],
-            level - SHIFT,
-            offset + (idx << level)
-          );
-        }
-      };
-    }
-  }
-
-  function makeList(origin, capacity, level, root, tail, ownerID, hash) {
-    var list = Object.create(ListPrototype);
-    list.size = capacity - origin;
-    list._origin = origin;
-    list._capacity = capacity;
-    list._level = level;
-    list._root = root;
-    list._tail = tail;
-    list.__ownerID = ownerID;
-    list.__hash = hash;
-    list.__altered = false;
-    return list;
-  }
-
-  var EMPTY_LIST;
-  function emptyList() {
-    return EMPTY_LIST || (EMPTY_LIST = makeList(0, 0, SHIFT));
-  }
-
-  function updateList(list, index, value) {
-    index = wrapIndex(list, index);
-
-    if (index !== index) {
-      return list;
-    }
-
-    if (index >= list.size || index < 0) {
-      return list.withMutations(function (list) {
-        index < 0
-          ? setListBounds(list, index).set(0, value)
-          : setListBounds(list, 0, index + 1).set(index, value);
-      });
-    }
-
-    index += list._origin;
-
-    var newTail = list._tail;
-    var newRoot = list._root;
-    var didAlter = MakeRef();
-    if (index >= getTailOffset(list._capacity)) {
-      newTail = updateVNode(newTail, list.__ownerID, 0, index, value, didAlter);
-    } else {
-      newRoot = updateVNode(
-        newRoot,
-        list.__ownerID,
-        list._level,
-        index,
-        value,
-        didAlter
-      );
-    }
-
-    if (!didAlter.value) {
-      return list;
-    }
-
-    if (list.__ownerID) {
-      list._root = newRoot;
-      list._tail = newTail;
-      list.__hash = undefined;
-      list.__altered = true;
-      return list;
-    }
-    return makeList(list._origin, list._capacity, list._level, newRoot, newTail);
-  }
-
-  function updateVNode(node, ownerID, level, index, value, didAlter) {
-    var idx = (index >>> level) & MASK;
-    var nodeHas = node && idx < node.array.length;
-    if (!nodeHas && value === undefined) {
-      return node;
-    }
-
-    var newNode;
-
-    if (level > 0) {
-      var lowerNode = node && node.array[idx];
-      var newLowerNode = updateVNode(
-        lowerNode,
-        ownerID,
-        level - SHIFT,
-        index,
-        value,
-        didAlter
-      );
-      if (newLowerNode === lowerNode) {
-        return node;
-      }
-      newNode = editableVNode(node, ownerID);
-      newNode.array[idx] = newLowerNode;
-      return newNode;
-    }
-
-    if (nodeHas && node.array[idx] === value) {
-      return node;
-    }
-
-    if (didAlter) {
-      SetRef(didAlter);
-    }
-
-    newNode = editableVNode(node, ownerID);
-    if (value === undefined && idx === newNode.array.length - 1) {
-      newNode.array.pop();
-    } else {
-      newNode.array[idx] = value;
-    }
-    return newNode;
-  }
-
-  function editableVNode(node, ownerID) {
-    if (ownerID && node && ownerID === node.ownerID) {
-      return node;
-    }
-    return new VNode(node ? node.array.slice() : [], ownerID);
-  }
-
-  function listNodeFor(list, rawIndex) {
-    if (rawIndex >= getTailOffset(list._capacity)) {
-      return list._tail;
-    }
-    if (rawIndex < 1 << (list._level + SHIFT)) {
-      var node = list._root;
-      var level = list._level;
-      while (node && level > 0) {
-        node = node.array[(rawIndex >>> level) & MASK];
-        level -= SHIFT;
-      }
-      return node;
-    }
-  }
-
-  function setListBounds(list, begin, end) {
-    // Sanitize begin & end using this shorthand for ToInt32(argument)
-    // http://www.ecma-international.org/ecma-262/6.0/#sec-toint32
-    if (begin !== undefined) {
-      begin |= 0;
-    }
-    if (end !== undefined) {
-      end |= 0;
-    }
-    var owner = list.__ownerID || new OwnerID();
-    var oldOrigin = list._origin;
-    var oldCapacity = list._capacity;
-    var newOrigin = oldOrigin + begin;
-    var newCapacity =
-      end === undefined
-        ? oldCapacity
-        : end < 0
-        ? oldCapacity + end
-        : oldOrigin + end;
-    if (newOrigin === oldOrigin && newCapacity === oldCapacity) {
-      return list;
-    }
-
-    // If it's going to end after it starts, it's empty.
-    if (newOrigin >= newCapacity) {
-      return list.clear();
-    }
-
-    var newLevel = list._level;
-    var newRoot = list._root;
-
-    // New origin might need creating a higher root.
-    var offsetShift = 0;
-    while (newOrigin + offsetShift < 0) {
-      newRoot = new VNode(
-        newRoot && newRoot.array.length ? [undefined, newRoot] : [],
-        owner
-      );
-      newLevel += SHIFT;
-      offsetShift += 1 << newLevel;
-    }
-    if (offsetShift) {
-      newOrigin += offsetShift;
-      oldOrigin += offsetShift;
-      newCapacity += offsetShift;
-      oldCapacity += offsetShift;
-    }
-
-    var oldTailOffset = getTailOffset(oldCapacity);
-    var newTailOffset = getTailOffset(newCapacity);
-
-    // New size might need creating a higher root.
-    while (newTailOffset >= 1 << (newLevel + SHIFT)) {
-      newRoot = new VNode(
-        newRoot && newRoot.array.length ? [newRoot] : [],
-        owner
-      );
-      newLevel += SHIFT;
-    }
-
-    // Locate or create the new tail.
-    var oldTail = list._tail;
-    var newTail =
-      newTailOffset < oldTailOffset
-        ? listNodeFor(list, newCapacity - 1)
-        : newTailOffset > oldTailOffset
-        ? new VNode([], owner)
-        : oldTail;
-
-    // Merge Tail into tree.
-    if (
-      oldTail &&
-      newTailOffset > oldTailOffset &&
-      newOrigin < oldCapacity &&
-      oldTail.array.length
-    ) {
-      newRoot = editableVNode(newRoot, owner);
-      var node = newRoot;
-      for (var level = newLevel; level > SHIFT; level -= SHIFT) {
-        var idx = (oldTailOffset >>> level) & MASK;
-        node = node.array[idx] = editableVNode(node.array[idx], owner);
-      }
-      node.array[(oldTailOffset >>> SHIFT) & MASK] = oldTail;
-    }
-
-    // If the size has been reduced, there's a chance the tail needs to be trimmed.
-    if (newCapacity < oldCapacity) {
-      newTail = newTail && newTail.removeAfter(owner, 0, newCapacity);
-    }
-
-    // If the new origin is within the tail, then we do not need a root.
-    if (newOrigin >= newTailOffset) {
-      newOrigin -= newTailOffset;
-      newCapacity -= newTailOffset;
-      newLevel = SHIFT;
-      newRoot = null;
-      newTail = newTail && newTail.removeBefore(owner, 0, newOrigin);
-
-      // Otherwise, if the root has been trimmed, garbage collect.
-    } else if (newOrigin > oldOrigin || newTailOffset < oldTailOffset) {
-      offsetShift = 0;
-
-      // Identify the new top root node of the subtree of the old root.
-      while (newRoot) {
-        var beginIndex = (newOrigin >>> newLevel) & MASK;
-        if ((beginIndex !== newTailOffset >>> newLevel) & MASK) {
-          break;
-        }
-        if (beginIndex) {
-          offsetShift += (1 << newLevel) * beginIndex;
-        }
-        newLevel -= SHIFT;
-        newRoot = newRoot.array[beginIndex];
-      }
-
-      // Trim the new sides of the new root.
-      if (newRoot && newOrigin > oldOrigin) {
-        newRoot = newRoot.removeBefore(owner, newLevel, newOrigin - offsetShift);
-      }
-      if (newRoot && newTailOffset < oldTailOffset) {
-        newRoot = newRoot.removeAfter(
-          owner,
-          newLevel,
-          newTailOffset - offsetShift
-        );
-      }
-      if (offsetShift) {
-        newOrigin -= offsetShift;
-        newCapacity -= offsetShift;
-      }
-    }
-
-    if (list.__ownerID) {
-      list.size = newCapacity - newOrigin;
-      list._origin = newOrigin;
-      list._capacity = newCapacity;
-      list._level = newLevel;
-      list._root = newRoot;
-      list._tail = newTail;
-      list.__hash = undefined;
-      list.__altered = true;
-      return list;
-    }
-    return makeList(newOrigin, newCapacity, newLevel, newRoot, newTail);
-  }
-
-  function getTailOffset(size) {
-    return size < SIZE ? 0 : ((size - 1) >>> SHIFT) << SHIFT;
-  }
-
-  var OrderedMap = /*@__PURE__*/(function (Map) {
-    function OrderedMap(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptyOrderedMap()
-        : isOrderedMap(value)
-        ? value
-        : emptyOrderedMap().withMutations(function (map) {
-            var iter = KeyedCollection(value);
-            assertNotInfinite(iter.size);
-            iter.forEach(function (v, k) { return map.set(k, v); });
-          });
-    }
-
-    if ( Map ) OrderedMap.__proto__ = Map;
-    OrderedMap.prototype = Object.create( Map && Map.prototype );
-    OrderedMap.prototype.constructor = OrderedMap;
-
-    OrderedMap.of = function of (/*...values*/) {
-      return this(arguments);
-    };
-
-    OrderedMap.prototype.toString = function toString () {
-      return this.__toString('OrderedMap {', '}');
-    };
-
-    // @pragma Access
-
-    OrderedMap.prototype.get = function get (k, notSetValue) {
-      var index = this._map.get(k);
-      return index !== undefined ? this._list.get(index)[1] : notSetValue;
-    };
-
-    // @pragma Modification
-
-    OrderedMap.prototype.clear = function clear () {
-      if (this.size === 0) {
-        return this;
-      }
-      if (this.__ownerID) {
-        this.size = 0;
-        this._map.clear();
-        this._list.clear();
-        this.__altered = true;
-        return this;
-      }
-      return emptyOrderedMap();
-    };
-
-    OrderedMap.prototype.set = function set (k, v) {
-      return updateOrderedMap(this, k, v);
-    };
-
-    OrderedMap.prototype.remove = function remove (k) {
-      return updateOrderedMap(this, k, NOT_SET);
-    };
-
-    OrderedMap.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      return this._list.__iterate(
-        function (entry) { return entry && fn(entry[1], entry[0], this$1$1); },
-        reverse
-      );
-    };
-
-    OrderedMap.prototype.__iterator = function __iterator (type, reverse) {
-      return this._list.fromEntrySeq().__iterator(type, reverse);
-    };
-
-    OrderedMap.prototype.__ensureOwner = function __ensureOwner (ownerID) {
-      if (ownerID === this.__ownerID) {
-        return this;
-      }
-      var newMap = this._map.__ensureOwner(ownerID);
-      var newList = this._list.__ensureOwner(ownerID);
-      if (!ownerID) {
-        if (this.size === 0) {
-          return emptyOrderedMap();
-        }
-        this.__ownerID = ownerID;
-        this.__altered = false;
-        this._map = newMap;
-        this._list = newList;
-        return this;
-      }
-      return makeOrderedMap(newMap, newList, ownerID, this.__hash);
-    };
-
-    return OrderedMap;
-  }(Map));
-
-  OrderedMap.isOrderedMap = isOrderedMap;
-
-  OrderedMap.prototype[IS_ORDERED_SYMBOL] = true;
-  OrderedMap.prototype[DELETE] = OrderedMap.prototype.remove;
-
-  function makeOrderedMap(map, list, ownerID, hash) {
-    var omap = Object.create(OrderedMap.prototype);
-    omap.size = map ? map.size : 0;
-    omap._map = map;
-    omap._list = list;
-    omap.__ownerID = ownerID;
-    omap.__hash = hash;
-    omap.__altered = false;
-    return omap;
-  }
-
-  var EMPTY_ORDERED_MAP;
-  function emptyOrderedMap() {
-    return (
-      EMPTY_ORDERED_MAP ||
-      (EMPTY_ORDERED_MAP = makeOrderedMap(emptyMap(), emptyList()))
-    );
-  }
-
-  function updateOrderedMap(omap, k, v) {
-    var map = omap._map;
-    var list = omap._list;
-    var i = map.get(k);
-    var has = i !== undefined;
-    var newMap;
-    var newList;
-    if (v === NOT_SET) {
-      // removed
-      if (!has) {
-        return omap;
-      }
-      if (list.size >= SIZE && list.size >= map.size * 2) {
-        newList = list.filter(function (entry, idx) { return entry !== undefined && i !== idx; });
-        newMap = newList
-          .toKeyedSeq()
-          .map(function (entry) { return entry[0]; })
-          .flip()
-          .toMap();
-        if (omap.__ownerID) {
-          newMap.__ownerID = newList.__ownerID = omap.__ownerID;
-        }
-      } else {
-        newMap = map.remove(k);
-        newList = i === list.size - 1 ? list.pop() : list.set(i, undefined);
-      }
-    } else if (has) {
-      if (v === list.get(i)[1]) {
-        return omap;
-      }
-      newMap = map;
-      newList = list.set(i, [k, v]);
-    } else {
-      newMap = map.set(k, list.size);
-      newList = list.set(list.size, [k, v]);
-    }
-    if (omap.__ownerID) {
-      omap.size = newMap.size;
-      omap._map = newMap;
-      omap._list = newList;
-      omap.__hash = undefined;
-      omap.__altered = true;
-      return omap;
-    }
-    return makeOrderedMap(newMap, newList);
-  }
-
-  var IS_STACK_SYMBOL = '@@__IMMUTABLE_STACK__@@';
-
-  function isStack(maybeStack) {
-    return Boolean(maybeStack && maybeStack[IS_STACK_SYMBOL]);
-  }
-
-  var Stack = /*@__PURE__*/(function (IndexedCollection) {
-    function Stack(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptyStack()
-        : isStack(value)
-        ? value
-        : emptyStack().pushAll(value);
-    }
-
-    if ( IndexedCollection ) Stack.__proto__ = IndexedCollection;
-    Stack.prototype = Object.create( IndexedCollection && IndexedCollection.prototype );
-    Stack.prototype.constructor = Stack;
-
-    Stack.of = function of (/*...values*/) {
-      return this(arguments);
-    };
-
-    Stack.prototype.toString = function toString () {
-      return this.__toString('Stack [', ']');
-    };
-
-    // @pragma Access
-
-    Stack.prototype.get = function get (index, notSetValue) {
-      var head = this._head;
-      index = wrapIndex(this, index);
-      while (head && index--) {
-        head = head.next;
-      }
-      return head ? head.value : notSetValue;
-    };
-
-    Stack.prototype.peek = function peek () {
-      return this._head && this._head.value;
-    };
-
-    // @pragma Modification
-
-    Stack.prototype.push = function push (/*...values*/) {
-      var arguments$1 = arguments;
-
-      if (arguments.length === 0) {
-        return this;
-      }
-      var newSize = this.size + arguments.length;
-      var head = this._head;
-      for (var ii = arguments.length - 1; ii >= 0; ii--) {
-        head = {
-          value: arguments$1[ii],
-          next: head,
-        };
-      }
-      if (this.__ownerID) {
-        this.size = newSize;
-        this._head = head;
-        this.__hash = undefined;
-        this.__altered = true;
-        return this;
-      }
-      return makeStack(newSize, head);
-    };
-
-    Stack.prototype.pushAll = function pushAll (iter) {
-      iter = IndexedCollection(iter);
-      if (iter.size === 0) {
-        return this;
-      }
-      if (this.size === 0 && isStack(iter)) {
-        return iter;
-      }
-      assertNotInfinite(iter.size);
-      var newSize = this.size;
-      var head = this._head;
-      iter.__iterate(function (value) {
-        newSize++;
-        head = {
-          value: value,
-          next: head,
-        };
-      }, /* reverse */ true);
-      if (this.__ownerID) {
-        this.size = newSize;
-        this._head = head;
-        this.__hash = undefined;
-        this.__altered = true;
-        return this;
-      }
-      return makeStack(newSize, head);
-    };
-
-    Stack.prototype.pop = function pop () {
-      return this.slice(1);
-    };
-
-    Stack.prototype.clear = function clear () {
-      if (this.size === 0) {
-        return this;
-      }
-      if (this.__ownerID) {
-        this.size = 0;
-        this._head = undefined;
-        this.__hash = undefined;
-        this.__altered = true;
-        return this;
-      }
-      return emptyStack();
-    };
-
-    Stack.prototype.slice = function slice (begin, end) {
-      if (wholeSlice(begin, end, this.size)) {
-        return this;
-      }
-      var resolvedBegin = resolveBegin(begin, this.size);
-      var resolvedEnd = resolveEnd(end, this.size);
-      if (resolvedEnd !== this.size) {
-        // super.slice(begin, end);
-        return IndexedCollection.prototype.slice.call(this, begin, end);
-      }
-      var newSize = this.size - resolvedBegin;
-      var head = this._head;
-      while (resolvedBegin--) {
-        head = head.next;
-      }
-      if (this.__ownerID) {
-        this.size = newSize;
-        this._head = head;
-        this.__hash = undefined;
-        this.__altered = true;
-        return this;
-      }
-      return makeStack(newSize, head);
-    };
-
-    // @pragma Mutability
-
-    Stack.prototype.__ensureOwner = function __ensureOwner (ownerID) {
-      if (ownerID === this.__ownerID) {
-        return this;
-      }
-      if (!ownerID) {
-        if (this.size === 0) {
-          return emptyStack();
-        }
-        this.__ownerID = ownerID;
-        this.__altered = false;
-        return this;
-      }
-      return makeStack(this.size, this._head, ownerID, this.__hash);
-    };
-
-    // @pragma Iteration
-
-    Stack.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      if (reverse) {
-        return new ArraySeq(this.toArray()).__iterate(
-          function (v, k) { return fn(v, k, this$1$1); },
-          reverse
-        );
-      }
-      var iterations = 0;
-      var node = this._head;
-      while (node) {
-        if (fn(node.value, iterations++, this) === false) {
-          break;
-        }
-        node = node.next;
-      }
-      return iterations;
-    };
-
-    Stack.prototype.__iterator = function __iterator (type, reverse) {
-      if (reverse) {
-        return new ArraySeq(this.toArray()).__iterator(type, reverse);
-      }
-      var iterations = 0;
-      var node = this._head;
-      return new Iterator(function () {
-        if (node) {
-          var value = node.value;
-          node = node.next;
-          return iteratorValue(type, iterations++, value);
-        }
-        return iteratorDone();
-      });
-    };
-
-    return Stack;
-  }(IndexedCollection));
-
-  Stack.isStack = isStack;
-
-  var StackPrototype = Stack.prototype;
-  StackPrototype[IS_STACK_SYMBOL] = true;
-  StackPrototype.shift = StackPrototype.pop;
-  StackPrototype.unshift = StackPrototype.push;
-  StackPrototype.unshiftAll = StackPrototype.pushAll;
-  StackPrototype.withMutations = withMutations;
-  StackPrototype.wasAltered = wasAltered;
-  StackPrototype.asImmutable = asImmutable;
-  StackPrototype['@@transducer/init'] = StackPrototype.asMutable = asMutable;
-  StackPrototype['@@transducer/step'] = function (result, arr) {
-    return result.unshift(arr);
-  };
-  StackPrototype['@@transducer/result'] = function (obj) {
-    return obj.asImmutable();
-  };
-
-  function makeStack(size, head, ownerID, hash) {
-    var map = Object.create(StackPrototype);
-    map.size = size;
-    map._head = head;
-    map.__ownerID = ownerID;
-    map.__hash = hash;
-    map.__altered = false;
-    return map;
-  }
-
-  var EMPTY_STACK;
-  function emptyStack() {
-    return EMPTY_STACK || (EMPTY_STACK = makeStack(0));
-  }
-
-  var IS_SET_SYMBOL = '@@__IMMUTABLE_SET__@@';
-
-  function isSet(maybeSet) {
-    return Boolean(maybeSet && maybeSet[IS_SET_SYMBOL]);
-  }
-
-  function isOrderedSet(maybeOrderedSet) {
-    return isSet(maybeOrderedSet) && isOrdered(maybeOrderedSet);
-  }
-
-  function deepEqual(a, b) {
-    if (a === b) {
-      return true;
-    }
-
-    if (
-      !isCollection(b) ||
-      (a.size !== undefined && b.size !== undefined && a.size !== b.size) ||
-      (a.__hash !== undefined &&
-        b.__hash !== undefined &&
-        a.__hash !== b.__hash) ||
-      isKeyed(a) !== isKeyed(b) ||
-      isIndexed(a) !== isIndexed(b) ||
-      isOrdered(a) !== isOrdered(b)
-    ) {
-      return false;
-    }
-
-    if (a.size === 0 && b.size === 0) {
-      return true;
-    }
-
-    var notAssociative = !isAssociative(a);
-
-    if (isOrdered(a)) {
-      var entries = a.entries();
-      return (
-        b.every(function (v, k) {
-          var entry = entries.next().value;
-          return entry && is(entry[1], v) && (notAssociative || is(entry[0], k));
-        }) && entries.next().done
-      );
-    }
-
-    var flipped = false;
-
-    if (a.size === undefined) {
-      if (b.size === undefined) {
-        if (typeof a.cacheResult === 'function') {
-          a.cacheResult();
-        }
-      } else {
-        flipped = true;
-        var _ = a;
-        a = b;
-        b = _;
-      }
-    }
-
-    var allEqual = true;
-    var bSize = b.__iterate(function (v, k) {
-      if (
-        notAssociative
-          ? !a.has(v)
-          : flipped
-          ? !is(v, a.get(k, NOT_SET))
-          : !is(a.get(k, NOT_SET), v)
-      ) {
-        allEqual = false;
-        return false;
-      }
-    });
-
-    return allEqual && a.size === bSize;
-  }
-
-  function mixin(ctor, methods) {
-    var keyCopier = function (key) {
-      ctor.prototype[key] = methods[key];
-    };
-    Object.keys(methods).forEach(keyCopier);
-    Object.getOwnPropertySymbols &&
-      Object.getOwnPropertySymbols(methods).forEach(keyCopier);
-    return ctor;
-  }
-
-  function toJS(value) {
-    if (!value || typeof value !== 'object') {
-      return value;
-    }
-    if (!isCollection(value)) {
-      if (!isDataStructure(value)) {
-        return value;
-      }
-      value = Seq(value);
-    }
-    if (isKeyed(value)) {
-      var result$1 = {};
-      value.__iterate(function (v, k) {
-        result$1[k] = toJS(v);
-      });
-      return result$1;
-    }
-    var result = [];
-    value.__iterate(function (v) {
-      result.push(toJS(v));
-    });
-    return result;
-  }
-
-  var Set = /*@__PURE__*/(function (SetCollection) {
-    function Set(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptySet()
-        : isSet(value) && !isOrdered(value)
-        ? value
-        : emptySet().withMutations(function (set) {
-            var iter = SetCollection(value);
-            assertNotInfinite(iter.size);
-            iter.forEach(function (v) { return set.add(v); });
-          });
-    }
-
-    if ( SetCollection ) Set.__proto__ = SetCollection;
-    Set.prototype = Object.create( SetCollection && SetCollection.prototype );
-    Set.prototype.constructor = Set;
-
-    Set.of = function of (/*...values*/) {
-      return this(arguments);
-    };
-
-    Set.fromKeys = function fromKeys (value) {
-      return this(KeyedCollection(value).keySeq());
-    };
-
-    Set.intersect = function intersect (sets) {
-      sets = Collection(sets).toArray();
-      return sets.length
-        ? SetPrototype.intersect.apply(Set(sets.pop()), sets)
-        : emptySet();
-    };
-
-    Set.union = function union (sets) {
-      sets = Collection(sets).toArray();
-      return sets.length
-        ? SetPrototype.union.apply(Set(sets.pop()), sets)
-        : emptySet();
-    };
-
-    Set.prototype.toString = function toString () {
-      return this.__toString('Set {', '}');
-    };
-
-    // @pragma Access
-
-    Set.prototype.has = function has (value) {
-      return this._map.has(value);
-    };
-
-    // @pragma Modification
-
-    Set.prototype.add = function add (value) {
-      return updateSet(this, this._map.set(value, value));
-    };
-
-    Set.prototype.remove = function remove (value) {
-      return updateSet(this, this._map.remove(value));
-    };
-
-    Set.prototype.clear = function clear () {
-      return updateSet(this, this._map.clear());
-    };
-
-    // @pragma Composition
-
-    Set.prototype.map = function map (mapper, context) {
-      var this$1$1 = this;
-
-      // keep track if the set is altered by the map function
-      var didChanges = false;
-
-      var newMap = updateSet(
-        this,
-        this._map.mapEntries(function (ref) {
-          var v = ref[1];
-
-          var mapped = mapper.call(context, v, v, this$1$1);
-
-          if (mapped !== v) {
-            didChanges = true;
-          }
-
-          return [mapped, mapped];
-        }, context)
-      );
-
-      return didChanges ? newMap : this;
-    };
-
-    Set.prototype.union = function union () {
-      var iters = [], len = arguments.length;
-      while ( len-- ) iters[ len ] = arguments[ len ];
-
-      iters = iters.filter(function (x) { return x.size !== 0; });
-      if (iters.length === 0) {
-        return this;
-      }
-      if (this.size === 0 && !this.__ownerID && iters.length === 1) {
-        return this.constructor(iters[0]);
-      }
-      return this.withMutations(function (set) {
-        for (var ii = 0; ii < iters.length; ii++) {
-          if (typeof iters[ii] === 'string') {
-            set.add(iters[ii]);
-          } else {
-            SetCollection(iters[ii]).forEach(function (value) { return set.add(value); });
-          }
-        }
-      });
-    };
-
-    Set.prototype.intersect = function intersect () {
-      var iters = [], len = arguments.length;
-      while ( len-- ) iters[ len ] = arguments[ len ];
-
-      if (iters.length === 0) {
-        return this;
-      }
-      iters = iters.map(function (iter) { return SetCollection(iter); });
-      var toRemove = [];
-      this.forEach(function (value) {
-        if (!iters.every(function (iter) { return iter.includes(value); })) {
-          toRemove.push(value);
-        }
-      });
-      return this.withMutations(function (set) {
-        toRemove.forEach(function (value) {
-          set.remove(value);
-        });
-      });
-    };
-
-    Set.prototype.subtract = function subtract () {
-      var iters = [], len = arguments.length;
-      while ( len-- ) iters[ len ] = arguments[ len ];
-
-      if (iters.length === 0) {
-        return this;
-      }
-      iters = iters.map(function (iter) { return SetCollection(iter); });
-      var toRemove = [];
-      this.forEach(function (value) {
-        if (iters.some(function (iter) { return iter.includes(value); })) {
-          toRemove.push(value);
-        }
-      });
-      return this.withMutations(function (set) {
-        toRemove.forEach(function (value) {
-          set.remove(value);
-        });
-      });
-    };
-
-    Set.prototype.sort = function sort (comparator) {
-      // Late binding
-      return OrderedSet(sortFactory(this, comparator));
-    };
-
-    Set.prototype.sortBy = function sortBy (mapper, comparator) {
-      // Late binding
-      return OrderedSet(sortFactory(this, comparator, mapper));
-    };
-
-    Set.prototype.wasAltered = function wasAltered () {
-      return this._map.wasAltered();
-    };
-
-    Set.prototype.__iterate = function __iterate (fn, reverse) {
-      var this$1$1 = this;
-
-      return this._map.__iterate(function (k) { return fn(k, k, this$1$1); }, reverse);
-    };
-
-    Set.prototype.__iterator = function __iterator (type, reverse) {
-      return this._map.__iterator(type, reverse);
-    };
-
-    Set.prototype.__ensureOwner = function __ensureOwner (ownerID) {
-      if (ownerID === this.__ownerID) {
-        return this;
-      }
-      var newMap = this._map.__ensureOwner(ownerID);
-      if (!ownerID) {
-        if (this.size === 0) {
-          return this.__empty();
-        }
-        this.__ownerID = ownerID;
-        this._map = newMap;
-        return this;
-      }
-      return this.__make(newMap, ownerID);
-    };
-
-    return Set;
-  }(SetCollection));
-
-  Set.isSet = isSet;
-
-  var SetPrototype = Set.prototype;
-  SetPrototype[IS_SET_SYMBOL] = true;
-  SetPrototype[DELETE] = SetPrototype.remove;
-  SetPrototype.merge = SetPrototype.concat = SetPrototype.union;
-  SetPrototype.withMutations = withMutations;
-  SetPrototype.asImmutable = asImmutable;
-  SetPrototype['@@transducer/init'] = SetPrototype.asMutable = asMutable;
-  SetPrototype['@@transducer/step'] = function (result, arr) {
-    return result.add(arr);
-  };
-  SetPrototype['@@transducer/result'] = function (obj) {
-    return obj.asImmutable();
-  };
-
-  SetPrototype.__empty = emptySet;
-  SetPrototype.__make = makeSet;
-
-  function updateSet(set, newMap) {
-    if (set.__ownerID) {
-      set.size = newMap.size;
-      set._map = newMap;
-      return set;
-    }
-    return newMap === set._map
-      ? set
-      : newMap.size === 0
-      ? set.__empty()
-      : set.__make(newMap);
-  }
-
-  function makeSet(map, ownerID) {
-    var set = Object.create(SetPrototype);
-    set.size = map ? map.size : 0;
-    set._map = map;
-    set.__ownerID = ownerID;
-    return set;
-  }
-
-  var EMPTY_SET;
-  function emptySet() {
-    return EMPTY_SET || (EMPTY_SET = makeSet(emptyMap()));
-  }
-
-  /**
-   * Returns a lazy seq of nums from start (inclusive) to end
-   * (exclusive), by step, where start defaults to 0, step to 1, and end to
-   * infinity. When start is equal to end, returns empty list.
-   */
-  var Range = /*@__PURE__*/(function (IndexedSeq) {
-    function Range(start, end, step) {
-      if (!(this instanceof Range)) {
-        // eslint-disable-next-line no-constructor-return
-        return new Range(start, end, step);
-      }
-      invariant(step !== 0, 'Cannot step a Range by 0');
-      start = start || 0;
-      if (end === undefined) {
-        end = Infinity;
-      }
-      step = step === undefined ? 1 : Math.abs(step);
-      if (end < start) {
-        step = -step;
-      }
-      this._start = start;
-      this._end = end;
-      this._step = step;
-      this.size = Math.max(0, Math.ceil((end - start) / step - 1) + 1);
-      if (this.size === 0) {
-        if (EMPTY_RANGE) {
-          // eslint-disable-next-line no-constructor-return
-          return EMPTY_RANGE;
-        }
-        EMPTY_RANGE = this;
-      }
-    }
-
-    if ( IndexedSeq ) Range.__proto__ = IndexedSeq;
-    Range.prototype = Object.create( IndexedSeq && IndexedSeq.prototype );
-    Range.prototype.constructor = Range;
-
-    Range.prototype.toString = function toString () {
-      if (this.size === 0) {
-        return 'Range []';
-      }
-      return (
-        'Range [ ' +
-        this._start +
-        '...' +
-        this._end +
-        (this._step !== 1 ? ' by ' + this._step : '') +
-        ' ]'
-      );
-    };
-
-    Range.prototype.get = function get (index, notSetValue) {
-      return this.has(index)
-        ? this._start + wrapIndex(this, index) * this._step
-        : notSetValue;
-    };
-
-    Range.prototype.includes = function includes (searchValue) {
-      var possibleIndex = (searchValue - this._start) / this._step;
-      return (
-        possibleIndex >= 0 &&
-        possibleIndex < this.size &&
-        possibleIndex === Math.floor(possibleIndex)
-      );
-    };
-
-    Range.prototype.slice = function slice (begin, end) {
-      if (wholeSlice(begin, end, this.size)) {
-        return this;
-      }
-      begin = resolveBegin(begin, this.size);
-      end = resolveEnd(end, this.size);
-      if (end <= begin) {
-        return new Range(0, 0);
-      }
-      return new Range(
-        this.get(begin, this._end),
-        this.get(end, this._end),
-        this._step
-      );
-    };
-
-    Range.prototype.indexOf = function indexOf (searchValue) {
-      var offsetValue = searchValue - this._start;
-      if (offsetValue % this._step === 0) {
-        var index = offsetValue / this._step;
-        if (index >= 0 && index < this.size) {
-          return index;
-        }
-      }
-      return -1;
-    };
-
-    Range.prototype.lastIndexOf = function lastIndexOf (searchValue) {
-      return this.indexOf(searchValue);
-    };
-
-    Range.prototype.__iterate = function __iterate (fn, reverse) {
-      var size = this.size;
-      var step = this._step;
-      var value = reverse ? this._start + (size - 1) * step : this._start;
-      var i = 0;
-      while (i !== size) {
-        if (fn(value, reverse ? size - ++i : i++, this) === false) {
-          break;
-        }
-        value += reverse ? -step : step;
-      }
-      return i;
-    };
-
-    Range.prototype.__iterator = function __iterator (type, reverse) {
-      var size = this.size;
-      var step = this._step;
-      var value = reverse ? this._start + (size - 1) * step : this._start;
-      var i = 0;
-      return new Iterator(function () {
-        if (i === size) {
-          return iteratorDone();
-        }
-        var v = value;
-        value += reverse ? -step : step;
-        return iteratorValue(type, reverse ? size - ++i : i++, v);
-      });
-    };
-
-    Range.prototype.equals = function equals (other) {
-      return other instanceof Range
-        ? this._start === other._start &&
-            this._end === other._end &&
-            this._step === other._step
-        : deepEqual(this, other);
-    };
-
-    return Range;
-  }(IndexedSeq));
-
-  var EMPTY_RANGE;
-
-  function getIn$1(collection, searchKeyPath, notSetValue) {
-    var keyPath = coerceKeyPath(searchKeyPath);
-    var i = 0;
-    while (i !== keyPath.length) {
-      collection = get(collection, keyPath[i++], NOT_SET);
-      if (collection === NOT_SET) {
-        return notSetValue;
-      }
-    }
-    return collection;
-  }
-
-  function getIn(searchKeyPath, notSetValue) {
-    return getIn$1(this, searchKeyPath, notSetValue);
-  }
-
-  function hasIn$1(collection, keyPath) {
-    return getIn$1(collection, keyPath, NOT_SET) !== NOT_SET;
-  }
-
-  function hasIn(searchKeyPath) {
-    return hasIn$1(this, searchKeyPath);
-  }
-
-  function toObject() {
-    assertNotInfinite(this.size);
-    var object = {};
-    this.__iterate(function (v, k) {
-      object[k] = v;
-    });
-    return object;
-  }
-
-  // Note: all of these methods are deprecated.
-  Collection.isIterable = isCollection;
-  Collection.isKeyed = isKeyed;
-  Collection.isIndexed = isIndexed;
-  Collection.isAssociative = isAssociative;
-  Collection.isOrdered = isOrdered;
-
-  Collection.Iterator = Iterator;
-
-  mixin(Collection, {
-    // ### Conversion to other types
-
-    toArray: function toArray() {
-      assertNotInfinite(this.size);
-      var array = new Array(this.size || 0);
-      var useTuples = isKeyed(this);
-      var i = 0;
-      this.__iterate(function (v, k) {
-        // Keyed collections produce an array of tuples.
-        array[i++] = useTuples ? [k, v] : v;
-      });
-      return array;
-    },
-
-    toIndexedSeq: function toIndexedSeq() {
-      return new ToIndexedSequence(this);
-    },
-
-    toJS: function toJS$1() {
-      return toJS(this);
-    },
-
-    toKeyedSeq: function toKeyedSeq() {
-      return new ToKeyedSequence(this, true);
-    },
-
-    toMap: function toMap() {
-      // Use Late Binding here to solve the circular dependency.
-      return Map(this.toKeyedSeq());
-    },
-
-    toObject: toObject,
-
-    toOrderedMap: function toOrderedMap() {
-      // Use Late Binding here to solve the circular dependency.
-      return OrderedMap(this.toKeyedSeq());
-    },
-
-    toOrderedSet: function toOrderedSet() {
-      // Use Late Binding here to solve the circular dependency.
-      return OrderedSet(isKeyed(this) ? this.valueSeq() : this);
-    },
-
-    toSet: function toSet() {
-      // Use Late Binding here to solve the circular dependency.
-      return Set(isKeyed(this) ? this.valueSeq() : this);
-    },
-
-    toSetSeq: function toSetSeq() {
-      return new ToSetSequence(this);
-    },
-
-    toSeq: function toSeq() {
-      return isIndexed(this)
-        ? this.toIndexedSeq()
-        : isKeyed(this)
-        ? this.toKeyedSeq()
-        : this.toSetSeq();
-    },
-
-    toStack: function toStack() {
-      // Use Late Binding here to solve the circular dependency.
-      return Stack(isKeyed(this) ? this.valueSeq() : this);
-    },
-
-    toList: function toList() {
-      // Use Late Binding here to solve the circular dependency.
-      return List(isKeyed(this) ? this.valueSeq() : this);
-    },
-
-    // ### Common JavaScript methods and properties
-
-    toString: function toString() {
-      return '[Collection]';
-    },
-
-    __toString: function __toString(head, tail) {
-      if (this.size === 0) {
-        return head + tail;
-      }
-      return (
-        head +
-        ' ' +
-        this.toSeq().map(this.__toStringMapper).join(', ') +
-        ' ' +
-        tail
-      );
-    },
-
-    // ### ES6 Collection methods (ES6 Array and Map)
-
-    concat: function concat() {
-      var values = [], len = arguments.length;
-      while ( len-- ) values[ len ] = arguments[ len ];
-
-      return reify(this, concatFactory(this, values));
-    },
-
-    includes: function includes(searchValue) {
-      return this.some(function (value) { return is(value, searchValue); });
-    },
-
-    entries: function entries() {
-      return this.__iterator(ITERATE_ENTRIES);
-    },
-
-    every: function every(predicate, context) {
-      assertNotInfinite(this.size);
-      var returnValue = true;
-      this.__iterate(function (v, k, c) {
-        if (!predicate.call(context, v, k, c)) {
-          returnValue = false;
-          return false;
-        }
-      });
-      return returnValue;
-    },
-
-    filter: function filter(predicate, context) {
-      return reify(this, filterFactory(this, predicate, context, true));
-    },
-
-    partition: function partition(predicate, context) {
-      return partitionFactory(this, predicate, context);
-    },
-
-    find: function find(predicate, context, notSetValue) {
-      var entry = this.findEntry(predicate, context);
-      return entry ? entry[1] : notSetValue;
-    },
-
-    forEach: function forEach(sideEffect, context) {
-      assertNotInfinite(this.size);
-      return this.__iterate(context ? sideEffect.bind(context) : sideEffect);
-    },
-
-    join: function join(separator) {
-      assertNotInfinite(this.size);
-      separator = separator !== undefined ? '' + separator : ',';
-      var joined = '';
-      var isFirst = true;
-      this.__iterate(function (v) {
-        isFirst ? (isFirst = false) : (joined += separator);
-        joined += v !== null && v !== undefined ? v.toString() : '';
-      });
-      return joined;
-    },
-
-    keys: function keys() {
-      return this.__iterator(ITERATE_KEYS);
-    },
-
-    map: function map(mapper, context) {
-      return reify(this, mapFactory(this, mapper, context));
-    },
-
-    reduce: function reduce$1(reducer, initialReduction, context) {
-      return reduce(
-        this,
-        reducer,
-        initialReduction,
-        context,
-        arguments.length < 2,
-        false
-      );
-    },
-
-    reduceRight: function reduceRight(reducer, initialReduction, context) {
-      return reduce(
-        this,
-        reducer,
-        initialReduction,
-        context,
-        arguments.length < 2,
-        true
-      );
-    },
-
-    reverse: function reverse() {
-      return reify(this, reverseFactory(this, true));
-    },
-
-    slice: function slice(begin, end) {
-      return reify(this, sliceFactory(this, begin, end, true));
-    },
-
-    some: function some(predicate, context) {
-      assertNotInfinite(this.size);
-      var returnValue = false;
-      this.__iterate(function (v, k, c) {
-        if (predicate.call(context, v, k, c)) {
-          returnValue = true;
-          return false;
-        }
-      });
-      return returnValue;
-    },
-
-    sort: function sort(comparator) {
-      return reify(this, sortFactory(this, comparator));
-    },
-
-    values: function values() {
-      return this.__iterator(ITERATE_VALUES);
-    },
-
-    // ### More sequential methods
-
-    butLast: function butLast() {
-      return this.slice(0, -1);
-    },
-
-    isEmpty: function isEmpty() {
-      return this.size !== undefined ? this.size === 0 : !this.some(function () { return true; });
-    },
-
-    count: function count(predicate, context) {
-      return ensureSize(
-        predicate ? this.toSeq().filter(predicate, context) : this
-      );
-    },
-
-    countBy: function countBy(grouper, context) {
-      return countByFactory(this, grouper, context);
-    },
-
-    equals: function equals(other) {
-      return deepEqual(this, other);
-    },
-
-    entrySeq: function entrySeq() {
-      var collection = this;
-      if (collection._cache) {
-        // We cache as an entries array, so we can just return the cache!
-        return new ArraySeq(collection._cache);
-      }
-      var entriesSequence = collection.toSeq().map(entryMapper).toIndexedSeq();
-      entriesSequence.fromEntrySeq = function () { return collection.toSeq(); };
-      return entriesSequence;
-    },
-
-    filterNot: function filterNot(predicate, context) {
-      return this.filter(not(predicate), context);
-    },
-
-    findEntry: function findEntry(predicate, context, notSetValue) {
-      var found = notSetValue;
-      this.__iterate(function (v, k, c) {
-        if (predicate.call(context, v, k, c)) {
-          found = [k, v];
-          return false;
-        }
-      });
-      return found;
-    },
-
-    findKey: function findKey(predicate, context) {
-      var entry = this.findEntry(predicate, context);
-      return entry && entry[0];
-    },
-
-    findLast: function findLast(predicate, context, notSetValue) {
-      return this.toKeyedSeq().reverse().find(predicate, context, notSetValue);
-    },
-
-    findLastEntry: function findLastEntry(predicate, context, notSetValue) {
-      return this.toKeyedSeq()
-        .reverse()
-        .findEntry(predicate, context, notSetValue);
-    },
-
-    findLastKey: function findLastKey(predicate, context) {
-      return this.toKeyedSeq().reverse().findKey(predicate, context);
-    },
-
-    first: function first(notSetValue) {
-      return this.find(returnTrue, null, notSetValue);
-    },
-
-    flatMap: function flatMap(mapper, context) {
-      return reify(this, flatMapFactory(this, mapper, context));
-    },
-
-    flatten: function flatten(depth) {
-      return reify(this, flattenFactory(this, depth, true));
-    },
-
-    fromEntrySeq: function fromEntrySeq() {
-      return new FromEntriesSequence(this);
-    },
-
-    get: function get(searchKey, notSetValue) {
-      return this.find(function (_, key) { return is(key, searchKey); }, undefined, notSetValue);
-    },
-
-    getIn: getIn,
-
-    groupBy: function groupBy(grouper, context) {
-      return groupByFactory(this, grouper, context);
-    },
-
-    has: function has(searchKey) {
-      return this.get(searchKey, NOT_SET) !== NOT_SET;
-    },
-
-    hasIn: hasIn,
-
-    isSubset: function isSubset(iter) {
-      iter = typeof iter.includes === 'function' ? iter : Collection(iter);
-      return this.every(function (value) { return iter.includes(value); });
-    },
-
-    isSuperset: function isSuperset(iter) {
-      iter = typeof iter.isSubset === 'function' ? iter : Collection(iter);
-      return iter.isSubset(this);
-    },
-
-    keyOf: function keyOf(searchValue) {
-      return this.findKey(function (value) { return is(value, searchValue); });
-    },
-
-    keySeq: function keySeq() {
-      return this.toSeq().map(keyMapper).toIndexedSeq();
-    },
-
-    last: function last(notSetValue) {
-      return this.toSeq().reverse().first(notSetValue);
-    },
-
-    lastKeyOf: function lastKeyOf(searchValue) {
-      return this.toKeyedSeq().reverse().keyOf(searchValue);
-    },
-
-    max: function max(comparator) {
-      return maxFactory(this, comparator);
-    },
-
-    maxBy: function maxBy(mapper, comparator) {
-      return maxFactory(this, comparator, mapper);
-    },
-
-    min: function min(comparator) {
-      return maxFactory(
-        this,
-        comparator ? neg(comparator) : defaultNegComparator
-      );
-    },
-
-    minBy: function minBy(mapper, comparator) {
-      return maxFactory(
-        this,
-        comparator ? neg(comparator) : defaultNegComparator,
-        mapper
-      );
-    },
-
-    rest: function rest() {
-      return this.slice(1);
-    },
-
-    skip: function skip(amount) {
-      return amount === 0 ? this : this.slice(Math.max(0, amount));
-    },
-
-    skipLast: function skipLast(amount) {
-      return amount === 0 ? this : this.slice(0, -Math.max(0, amount));
-    },
-
-    skipWhile: function skipWhile(predicate, context) {
-      return reify(this, skipWhileFactory(this, predicate, context, true));
-    },
-
-    skipUntil: function skipUntil(predicate, context) {
-      return this.skipWhile(not(predicate), context);
-    },
-
-    sortBy: function sortBy(mapper, comparator) {
-      return reify(this, sortFactory(this, comparator, mapper));
-    },
-
-    take: function take(amount) {
-      return this.slice(0, Math.max(0, amount));
-    },
-
-    takeLast: function takeLast(amount) {
-      return this.slice(-Math.max(0, amount));
-    },
-
-    takeWhile: function takeWhile(predicate, context) {
-      return reify(this, takeWhileFactory(this, predicate, context));
-    },
-
-    takeUntil: function takeUntil(predicate, context) {
-      return this.takeWhile(not(predicate), context);
-    },
-
-    update: function update(fn) {
-      return fn(this);
-    },
-
-    valueSeq: function valueSeq() {
-      return this.toIndexedSeq();
-    },
-
-    // ### Hashable Object
-
-    hashCode: function hashCode() {
-      return this.__hash || (this.__hash = hashCollection(this));
-    },
-
-    // ### Internal
-
-    // abstract __iterate(fn, reverse)
-
-    // abstract __iterator(type, reverse)
-  });
-
-  var CollectionPrototype = Collection.prototype;
-  CollectionPrototype[IS_COLLECTION_SYMBOL] = true;
-  CollectionPrototype[ITERATOR_SYMBOL] = CollectionPrototype.values;
-  CollectionPrototype.toJSON = CollectionPrototype.toArray;
-  CollectionPrototype.__toStringMapper = quoteString;
-  CollectionPrototype.inspect = CollectionPrototype.toSource = function () {
-    return this.toString();
-  };
-  CollectionPrototype.chain = CollectionPrototype.flatMap;
-  CollectionPrototype.contains = CollectionPrototype.includes;
-
-  mixin(KeyedCollection, {
-    // ### More sequential methods
-
-    flip: function flip() {
-      return reify(this, flipFactory(this));
-    },
-
-    mapEntries: function mapEntries(mapper, context) {
-      var this$1$1 = this;
-
-      var iterations = 0;
-      return reify(
-        this,
-        this.toSeq()
-          .map(function (v, k) { return mapper.call(context, [k, v], iterations++, this$1$1); })
-          .fromEntrySeq()
-      );
-    },
-
-    mapKeys: function mapKeys(mapper, context) {
-      var this$1$1 = this;
-
-      return reify(
-        this,
-        this.toSeq()
-          .flip()
-          .map(function (k, v) { return mapper.call(context, k, v, this$1$1); })
-          .flip()
-      );
-    },
-  });
-
-  var KeyedCollectionPrototype = KeyedCollection.prototype;
-  KeyedCollectionPrototype[IS_KEYED_SYMBOL] = true;
-  KeyedCollectionPrototype[ITERATOR_SYMBOL] = CollectionPrototype.entries;
-  KeyedCollectionPrototype.toJSON = toObject;
-  KeyedCollectionPrototype.__toStringMapper = function (v, k) { return quoteString(k) + ': ' + quoteString(v); };
-
-  mixin(IndexedCollection, {
-    // ### Conversion to other types
-
-    toKeyedSeq: function toKeyedSeq() {
-      return new ToKeyedSequence(this, false);
-    },
-
-    // ### ES6 Collection methods (ES6 Array and Map)
-
-    filter: function filter(predicate, context) {
-      return reify(this, filterFactory(this, predicate, context, false));
-    },
-
-    findIndex: function findIndex(predicate, context) {
-      var entry = this.findEntry(predicate, context);
-      return entry ? entry[0] : -1;
-    },
-
-    indexOf: function indexOf(searchValue) {
-      var key = this.keyOf(searchValue);
-      return key === undefined ? -1 : key;
-    },
-
-    lastIndexOf: function lastIndexOf(searchValue) {
-      var key = this.lastKeyOf(searchValue);
-      return key === undefined ? -1 : key;
-    },
-
-    reverse: function reverse() {
-      return reify(this, reverseFactory(this, false));
-    },
-
-    slice: function slice(begin, end) {
-      return reify(this, sliceFactory(this, begin, end, false));
-    },
-
-    splice: function splice(index, removeNum /*, ...values*/) {
-      var numArgs = arguments.length;
-      removeNum = Math.max(removeNum || 0, 0);
-      if (numArgs === 0 || (numArgs === 2 && !removeNum)) {
-        return this;
-      }
-      // If index is negative, it should resolve relative to the size of the
-      // collection. However size may be expensive to compute if not cached, so
-      // only call count() if the number is in fact negative.
-      index = resolveBegin(index, index < 0 ? this.count() : this.size);
-      var spliced = this.slice(0, index);
-      return reify(
-        this,
-        numArgs === 1
-          ? spliced
-          : spliced.concat(arrCopy(arguments, 2), this.slice(index + removeNum))
-      );
-    },
-
-    // ### More collection methods
-
-    findLastIndex: function findLastIndex(predicate, context) {
-      var entry = this.findLastEntry(predicate, context);
-      return entry ? entry[0] : -1;
-    },
-
-    first: function first(notSetValue) {
-      return this.get(0, notSetValue);
-    },
-
-    flatten: function flatten(depth) {
-      return reify(this, flattenFactory(this, depth, false));
-    },
-
-    get: function get(index, notSetValue) {
-      index = wrapIndex(this, index);
-      return index < 0 ||
-        this.size === Infinity ||
-        (this.size !== undefined && index > this.size)
-        ? notSetValue
-        : this.find(function (_, key) { return key === index; }, undefined, notSetValue);
-    },
-
-    has: function has(index) {
-      index = wrapIndex(this, index);
-      return (
-        index >= 0 &&
-        (this.size !== undefined
-          ? this.size === Infinity || index < this.size
-          : this.indexOf(index) !== -1)
-      );
-    },
-
-    interpose: function interpose(separator) {
-      return reify(this, interposeFactory(this, separator));
-    },
-
-    interleave: function interleave(/*...collections*/) {
-      var collections = [this].concat(arrCopy(arguments));
-      var zipped = zipWithFactory(this.toSeq(), IndexedSeq.of, collections);
-      var interleaved = zipped.flatten(true);
-      if (zipped.size) {
-        interleaved.size = zipped.size * collections.length;
-      }
-      return reify(this, interleaved);
-    },
-
-    keySeq: function keySeq() {
-      return Range(0, this.size);
-    },
-
-    last: function last(notSetValue) {
-      return this.get(-1, notSetValue);
-    },
-
-    skipWhile: function skipWhile(predicate, context) {
-      return reify(this, skipWhileFactory(this, predicate, context, false));
-    },
-
-    zip: function zip(/*, ...collections */) {
-      var collections = [this].concat(arrCopy(arguments));
-      return reify(this, zipWithFactory(this, defaultZipper, collections));
-    },
-
-    zipAll: function zipAll(/*, ...collections */) {
-      var collections = [this].concat(arrCopy(arguments));
-      return reify(this, zipWithFactory(this, defaultZipper, collections, true));
-    },
-
-    zipWith: function zipWith(zipper /*, ...collections */) {
-      var collections = arrCopy(arguments);
-      collections[0] = this;
-      return reify(this, zipWithFactory(this, zipper, collections));
-    },
-  });
-
-  var IndexedCollectionPrototype = IndexedCollection.prototype;
-  IndexedCollectionPrototype[IS_INDEXED_SYMBOL] = true;
-  IndexedCollectionPrototype[IS_ORDERED_SYMBOL] = true;
-
-  mixin(SetCollection, {
-    // ### ES6 Collection methods (ES6 Array and Map)
-
-    get: function get(value, notSetValue) {
-      return this.has(value) ? value : notSetValue;
-    },
-
-    includes: function includes(value) {
-      return this.has(value);
-    },
-
-    // ### More sequential methods
-
-    keySeq: function keySeq() {
-      return this.valueSeq();
-    },
-  });
-
-  var SetCollectionPrototype = SetCollection.prototype;
-  SetCollectionPrototype.has = CollectionPrototype.includes;
-  SetCollectionPrototype.contains = SetCollectionPrototype.includes;
-  SetCollectionPrototype.keys = SetCollectionPrototype.values;
-
-  // Mixin subclasses
-
-  mixin(KeyedSeq, KeyedCollectionPrototype);
-  mixin(IndexedSeq, IndexedCollectionPrototype);
-  mixin(SetSeq, SetCollectionPrototype);
-
-  // #pragma Helper functions
-
-  function reduce(collection, reducer, reduction, context, useFirst, reverse) {
-    assertNotInfinite(collection.size);
-    collection.__iterate(function (v, k, c) {
-      if (useFirst) {
-        useFirst = false;
-        reduction = v;
-      } else {
-        reduction = reducer.call(context, reduction, v, k, c);
-      }
-    }, reverse);
-    return reduction;
-  }
-
-  function keyMapper(v, k) {
-    return k;
-  }
-
-  function entryMapper(v, k) {
-    return [k, v];
-  }
-
-  function not(predicate) {
-    return function () {
-      return !predicate.apply(this, arguments);
-    };
-  }
-
-  function neg(predicate) {
-    return function () {
-      return -predicate.apply(this, arguments);
-    };
-  }
-
-  function defaultZipper() {
-    return arrCopy(arguments);
-  }
-
-  function defaultNegComparator(a, b) {
-    return a < b ? 1 : a > b ? -1 : 0;
-  }
-
-  function hashCollection(collection) {
-    if (collection.size === Infinity) {
-      return 0;
-    }
-    var ordered = isOrdered(collection);
-    var keyed = isKeyed(collection);
-    var h = ordered ? 1 : 0;
-    var size = collection.__iterate(
-      keyed
-        ? ordered
-          ? function (v, k) {
-              h = (31 * h + hashMerge(hash(v), hash(k))) | 0;
-            }
-          : function (v, k) {
-              h = (h + hashMerge(hash(v), hash(k))) | 0;
-            }
-        : ordered
-        ? function (v) {
-            h = (31 * h + hash(v)) | 0;
-          }
-        : function (v) {
-            h = (h + hash(v)) | 0;
-          }
-    );
-    return murmurHashOfSize(size, h);
-  }
-
-  function murmurHashOfSize(size, h) {
-    h = imul(h, 0xcc9e2d51);
-    h = imul((h << 15) | (h >>> -15), 0x1b873593);
-    h = imul((h << 13) | (h >>> -13), 5);
-    h = ((h + 0xe6546b64) | 0) ^ size;
-    h = imul(h ^ (h >>> 16), 0x85ebca6b);
-    h = imul(h ^ (h >>> 13), 0xc2b2ae35);
-    h = smi(h ^ (h >>> 16));
-    return h;
-  }
-
-  function hashMerge(a, b) {
-    return (a ^ (b + 0x9e3779b9 + (a << 6) + (a >> 2))) | 0; // int
-  }
-
-  var OrderedSet = /*@__PURE__*/(function (Set) {
-    function OrderedSet(value) {
-      // eslint-disable-next-line no-constructor-return
-      return value === undefined || value === null
-        ? emptyOrderedSet()
-        : isOrderedSet(value)
-        ? value
-        : emptyOrderedSet().withMutations(function (set) {
-            var iter = SetCollection(value);
-            assertNotInfinite(iter.size);
-            iter.forEach(function (v) { return set.add(v); });
-          });
-    }
-
-    if ( Set ) OrderedSet.__proto__ = Set;
-    OrderedSet.prototype = Object.create( Set && Set.prototype );
-    OrderedSet.prototype.constructor = OrderedSet;
-
-    OrderedSet.of = function of (/*...values*/) {
-      return this(arguments);
-    };
-
-    OrderedSet.fromKeys = function fromKeys (value) {
-      return this(KeyedCollection(value).keySeq());
-    };
-
-    OrderedSet.prototype.toString = function toString () {
-      return this.__toString('OrderedSet {', '}');
-    };
-
-    return OrderedSet;
-  }(Set));
-
-  OrderedSet.isOrderedSet = isOrderedSet;
-
-  var OrderedSetPrototype = OrderedSet.prototype;
-  OrderedSetPrototype[IS_ORDERED_SYMBOL] = true;
-  OrderedSetPrototype.zip = IndexedCollectionPrototype.zip;
-  OrderedSetPrototype.zipWith = IndexedCollectionPrototype.zipWith;
-  OrderedSetPrototype.zipAll = IndexedCollectionPrototype.zipAll;
-
-  OrderedSetPrototype.__empty = emptyOrderedSet;
-  OrderedSetPrototype.__make = makeOrderedSet;
-
-  function makeOrderedSet(map, ownerID) {
-    var set = Object.create(OrderedSetPrototype);
-    set.size = map ? map.size : 0;
-    set._map = map;
-    set.__ownerID = ownerID;
-    return set;
-  }
-
-  var EMPTY_ORDERED_SET;
-  function emptyOrderedSet() {
-    return (
-      EMPTY_ORDERED_SET || (EMPTY_ORDERED_SET = makeOrderedSet(emptyOrderedMap()))
-    );
-  }
-
-  var PairSorting = {
-    LeftThenRight: -1,
-    RightThenLeft: +1,
-  };
-
-  function throwOnInvalidDefaultValues(defaultValues) {
-    if (isRecord(defaultValues)) {
-      throw new Error(
-        'Can not call `Record` with an immutable Record as default values. Use a plain javascript object instead.'
-      );
-    }
-
-    if (isImmutable(defaultValues)) {
-      throw new Error(
-        'Can not call `Record` with an immutable Collection as default values. Use a plain javascript object instead.'
-      );
-    }
-
-    if (defaultValues === null || typeof defaultValues !== 'object') {
-      throw new Error(
-        'Can not call `Record` with a non-object as default values. Use a plain javascript object instead.'
-      );
-    }
-  }
-
-  var Record = function Record(defaultValues, name) {
-    var hasInitialized;
-
-    throwOnInvalidDefaultValues(defaultValues);
-
-    var RecordType = function Record(values) {
-      var this$1$1 = this;
-
-      if (values instanceof RecordType) {
-        return values;
-      }
-      if (!(this instanceof RecordType)) {
-        return new RecordType(values);
-      }
-      if (!hasInitialized) {
-        hasInitialized = true;
-        var keys = Object.keys(defaultValues);
-        var indices = (RecordTypePrototype._indices = {});
-        // Deprecated: left to attempt not to break any external code which
-        // relies on a ._name property existing on record instances.
-        // Use Record.getDescriptiveName() instead
-        RecordTypePrototype._name = name;
-        RecordTypePrototype._keys = keys;
-        RecordTypePrototype._defaultValues = defaultValues;
-        for (var i = 0; i < keys.length; i++) {
-          var propName = keys[i];
-          indices[propName] = i;
-          if (RecordTypePrototype[propName]) {
-            /* eslint-disable no-console */
-            typeof console === 'object' &&
-              console.warn &&
-              console.warn(
-                'Cannot define ' +
-                  recordName(this) +
-                  ' with property "' +
-                  propName +
-                  '" since that property name is part of the Record API.'
-              );
-            /* eslint-enable no-console */
-          } else {
-            setProp(RecordTypePrototype, propName);
-          }
-        }
-      }
-      this.__ownerID = undefined;
-      this._values = List().withMutations(function (l) {
-        l.setSize(this$1$1._keys.length);
-        KeyedCollection(values).forEach(function (v, k) {
-          l.set(this$1$1._indices[k], v === this$1$1._defaultValues[k] ? undefined : v);
-        });
-      });
-      return this;
-    };
-
-    var RecordTypePrototype = (RecordType.prototype =
-      Object.create(RecordPrototype));
-    RecordTypePrototype.constructor = RecordType;
-
-    if (name) {
-      RecordType.displayName = name;
-    }
-
-    // eslint-disable-next-line no-constructor-return
-    return RecordType;
-  };
-
-  Record.prototype.toString = function toString () {
-    var str = recordName(this) + ' { ';
-    var keys = this._keys;
-    var k;
-    for (var i = 0, l = keys.length; i !== l; i++) {
-      k = keys[i];
-      str += (i ? ', ' : '') + k + ': ' + quoteString(this.get(k));
-    }
-    return str + ' }';
-  };
-
-  Record.prototype.equals = function equals (other) {
-    return (
-      this === other ||
-      (isRecord(other) && recordSeq(this).equals(recordSeq(other)))
-    );
-  };
-
-  Record.prototype.hashCode = function hashCode () {
-    return recordSeq(this).hashCode();
-  };
-
-  // @pragma Access
-
-  Record.prototype.has = function has (k) {
-    return this._indices.hasOwnProperty(k);
-  };
-
-  Record.prototype.get = function get (k, notSetValue) {
-    if (!this.has(k)) {
-      return notSetValue;
-    }
-    var index = this._indices[k];
-    var value = this._values.get(index);
-    return value === undefined ? this._defaultValues[k] : value;
-  };
-
-  // @pragma Modification
-
-  Record.prototype.set = function set (k, v) {
-    if (this.has(k)) {
-      var newValues = this._values.set(
-        this._indices[k],
-        v === this._defaultValues[k] ? undefined : v
-      );
-      if (newValues !== this._values && !this.__ownerID) {
-        return makeRecord(this, newValues);
-      }
-    }
-    return this;
-  };
-
-  Record.prototype.remove = function remove (k) {
-    return this.set(k);
-  };
-
-  Record.prototype.clear = function clear () {
-    var newValues = this._values.clear().setSize(this._keys.length);
-
-    return this.__ownerID ? this : makeRecord(this, newValues);
-  };
-
-  Record.prototype.wasAltered = function wasAltered () {
-    return this._values.wasAltered();
-  };
-
-  Record.prototype.toSeq = function toSeq () {
-    return recordSeq(this);
-  };
-
-  Record.prototype.toJS = function toJS$1 () {
-    return toJS(this);
-  };
-
-  Record.prototype.entries = function entries () {
-    return this.__iterator(ITERATE_ENTRIES);
-  };
-
-  Record.prototype.__iterator = function __iterator (type, reverse) {
-    return recordSeq(this).__iterator(type, reverse);
-  };
-
-  Record.prototype.__iterate = function __iterate (fn, reverse) {
-    return recordSeq(this).__iterate(fn, reverse);
-  };
-
-  Record.prototype.__ensureOwner = function __ensureOwner (ownerID) {
-    if (ownerID === this.__ownerID) {
-      return this;
-    }
-    var newValues = this._values.__ensureOwner(ownerID);
-    if (!ownerID) {
-      this.__ownerID = ownerID;
-      this._values = newValues;
-      return this;
-    }
-    return makeRecord(this, newValues, ownerID);
-  };
-
-  Record.isRecord = isRecord;
-  Record.getDescriptiveName = recordName;
-  var RecordPrototype = Record.prototype;
-  RecordPrototype[IS_RECORD_SYMBOL] = true;
-  RecordPrototype[DELETE] = RecordPrototype.remove;
-  RecordPrototype.deleteIn = RecordPrototype.removeIn = deleteIn;
-  RecordPrototype.getIn = getIn;
-  RecordPrototype.hasIn = CollectionPrototype.hasIn;
-  RecordPrototype.merge = merge$1;
-  RecordPrototype.mergeWith = mergeWith$1;
-  RecordPrototype.mergeIn = mergeIn;
-  RecordPrototype.mergeDeep = mergeDeep;
-  RecordPrototype.mergeDeepWith = mergeDeepWith;
-  RecordPrototype.mergeDeepIn = mergeDeepIn;
-  RecordPrototype.setIn = setIn;
-  RecordPrototype.update = update;
-  RecordPrototype.updateIn = updateIn;
-  RecordPrototype.withMutations = withMutations;
-  RecordPrototype.asMutable = asMutable;
-  RecordPrototype.asImmutable = asImmutable;
-  RecordPrototype[ITERATOR_SYMBOL] = RecordPrototype.entries;
-  RecordPrototype.toJSON = RecordPrototype.toObject =
-    CollectionPrototype.toObject;
-  RecordPrototype.inspect = RecordPrototype.toSource = function () {
-    return this.toString();
-  };
-
-  function makeRecord(likeRecord, values, ownerID) {
-    var record = Object.create(Object.getPrototypeOf(likeRecord));
-    record._values = values;
-    record.__ownerID = ownerID;
-    return record;
-  }
-
-  function recordName(record) {
-    return record.constructor.displayName || record.constructor.name || 'Record';
-  }
-
-  function recordSeq(record) {
-    return keyedSeqFromValue(record._keys.map(function (k) { return [k, record.get(k)]; }));
-  }
-
-  function setProp(prototype, name) {
-    try {
-      Object.defineProperty(prototype, name, {
-        get: function () {
-          return this.get(name);
-        },
-        set: function (value) {
-          invariant(this.__ownerID, 'Cannot set on an immutable record.');
-          this.set(name, value);
-        },
-      });
-    } catch (error) {
-      // Object.defineProperty failed. Probably IE8.
-    }
-  }
-
-  /**
-   * Returns a lazy Seq of `value` repeated `times` times. When `times` is
-   * undefined, returns an infinite sequence of `value`.
-   */
-  var Repeat = /*@__PURE__*/(function (IndexedSeq) {
-    function Repeat(value, times) {
-      if (!(this instanceof Repeat)) {
-        // eslint-disable-next-line no-constructor-return
-        return new Repeat(value, times);
-      }
-      this._value = value;
-      this.size = times === undefined ? Infinity : Math.max(0, times);
-      if (this.size === 0) {
-        if (EMPTY_REPEAT) {
-          // eslint-disable-next-line no-constructor-return
-          return EMPTY_REPEAT;
-        }
-        EMPTY_REPEAT = this;
-      }
-    }
-
-    if ( IndexedSeq ) Repeat.__proto__ = IndexedSeq;
-    Repeat.prototype = Object.create( IndexedSeq && IndexedSeq.prototype );
-    Repeat.prototype.constructor = Repeat;
-
-    Repeat.prototype.toString = function toString () {
-      if (this.size === 0) {
-        return 'Repeat []';
-      }
-      return 'Repeat [ ' + this._value + ' ' + this.size + ' times ]';
-    };
-
-    Repeat.prototype.get = function get (index, notSetValue) {
-      return this.has(index) ? this._value : notSetValue;
-    };
-
-    Repeat.prototype.includes = function includes (searchValue) {
-      return is(this._value, searchValue);
-    };
-
-    Repeat.prototype.slice = function slice (begin, end) {
-      var size = this.size;
-      return wholeSlice(begin, end, size)
-        ? this
-        : new Repeat(
-            this._value,
-            resolveEnd(end, size) - resolveBegin(begin, size)
-          );
-    };
-
-    Repeat.prototype.reverse = function reverse () {
-      return this;
-    };
-
-    Repeat.prototype.indexOf = function indexOf (searchValue) {
-      if (is(this._value, searchValue)) {
-        return 0;
-      }
-      return -1;
-    };
-
-    Repeat.prototype.lastIndexOf = function lastIndexOf (searchValue) {
-      if (is(this._value, searchValue)) {
-        return this.size;
-      }
-      return -1;
-    };
-
-    Repeat.prototype.__iterate = function __iterate (fn, reverse) {
-      var size = this.size;
-      var i = 0;
-      while (i !== size) {
-        if (fn(this._value, reverse ? size - ++i : i++, this) === false) {
-          break;
-        }
-      }
-      return i;
-    };
-
-    Repeat.prototype.__iterator = function __iterator (type, reverse) {
-      var this$1$1 = this;
-
-      var size = this.size;
-      var i = 0;
-      return new Iterator(function () { return i === size
-          ? iteratorDone()
-          : iteratorValue(type, reverse ? size - ++i : i++, this$1$1._value); }
-      );
-    };
-
-    Repeat.prototype.equals = function equals (other) {
-      return other instanceof Repeat
-        ? is(this._value, other._value)
-        : deepEqual(this, other);
-    };
-
-    return Repeat;
-  }(IndexedSeq));
-
-  var EMPTY_REPEAT;
-
-  function fromJS(value, converter) {
-    return fromJSWith(
-      [],
-      converter || defaultConverter,
-      value,
-      '',
-      converter && converter.length > 2 ? [] : undefined,
-      { '': value }
-    );
-  }
-
-  function fromJSWith(stack, converter, value, key, keyPath, parentValue) {
-    if (
-      typeof value !== 'string' &&
-      !isImmutable(value) &&
-      (isArrayLike(value) || hasIterator(value) || isPlainObject(value))
-    ) {
-      if (~stack.indexOf(value)) {
-        throw new TypeError('Cannot convert circular structure to Immutable');
-      }
-      stack.push(value);
-      keyPath && key !== '' && keyPath.push(key);
-      var converted = converter.call(
-        parentValue,
-        key,
-        Seq(value).map(function (v, k) { return fromJSWith(stack, converter, v, k, keyPath, value); }
-        ),
-        keyPath && keyPath.slice()
-      );
-      stack.pop();
-      keyPath && keyPath.pop();
-      return converted;
-    }
-    return value;
-  }
-
-  function defaultConverter(k, v) {
-    // Effectively the opposite of "Collection.toSeq()"
-    return isIndexed(v) ? v.toList() : isKeyed(v) ? v.toMap() : v.toSet();
-  }
-
-  var version = "4.3.7";
-
-  var Immutable = {
-    version: version,
-
-    Collection: Collection,
-    // Note: Iterable is deprecated
-    Iterable: Collection,
-
-    Seq: Seq,
-    Map: Map,
-    OrderedMap: OrderedMap,
-    List: List,
-    Stack: Stack,
-    Set: Set,
-    OrderedSet: OrderedSet,
-    PairSorting: PairSorting,
-
-    Record: Record,
-    Range: Range,
-    Repeat: Repeat,
-
-    is: is,
-    fromJS: fromJS,
-    hash: hash,
-
-    isImmutable: isImmutable,
-    isCollection: isCollection,
-    isKeyed: isKeyed,
-    isIndexed: isIndexed,
-    isAssociative: isAssociative,
-    isOrdered: isOrdered,
-    isValueObject: isValueObject,
-    isPlainObject: isPlainObject,
-    isSeq: isSeq,
-    isList: isList,
-    isMap: isMap,
-    isOrderedMap: isOrderedMap,
-    isStack: isStack,
-    isSet: isSet,
-    isOrderedSet: isOrderedSet,
-    isRecord: isRecord,
-
-    get: get,
-    getIn: getIn$1,
-    has: has,
-    hasIn: hasIn$1,
-    merge: merge,
-    mergeDeep: mergeDeep$1,
-    mergeWith: mergeWith,
-    mergeDeepWith: mergeDeepWith$1,
-    remove: remove,
-    removeIn: removeIn,
-    set: set,
-    setIn: setIn$1,
-    update: update$1,
-    updateIn: updateIn$1,
-  };
-
-  // Note: Iterable is deprecated
-  var Iterable = Collection;
-
-  exports.Collection = Collection;
-  exports.Iterable = Iterable;
-  exports.List = List;
-  exports.Map = Map;
-  exports.OrderedMap = OrderedMap;
-  exports.OrderedSet = OrderedSet;
-  exports.PairSorting = PairSorting;
-  exports.Range = Range;
-  exports.Record = Record;
-  exports.Repeat = Repeat;
-  exports.Seq = Seq;
-  exports.Set = Set;
-  exports.Stack = Stack;
-  exports.default = Immutable;
-  exports.fromJS = fromJS;
-  exports.get = get;
-  exports.getIn = getIn$1;
-  exports.has = has;
-  exports.hasIn = hasIn$1;
-  exports.hash = hash;
-  exports.is = is;
-  exports.isAssociative = isAssociative;
-  exports.isCollection = isCollection;
-  exports.isImmutable = isImmutable;
-  exports.isIndexed = isIndexed;
-  exports.isKeyed = isKeyed;
-  exports.isList = isList;
-  exports.isMap = isMap;
-  exports.isOrdered = isOrdered;
-  exports.isOrderedMap = isOrderedMap;
-  exports.isOrderedSet = isOrderedSet;
-  exports.isPlainObject = isPlainObject;
-  exports.isRecord = isRecord;
-  exports.isSeq = isSeq;
-  exports.isSet = isSet;
-  exports.isStack = isStack;
-  exports.isValueObject = isValueObject;
-  exports.merge = merge;
-  exports.mergeDeep = mergeDeep$1;
-  exports.mergeDeepWith = mergeDeepWith$1;
-  exports.mergeWith = mergeWith;
-  exports.remove = remove;
-  exports.removeIn = removeIn;
-  exports.set = set;
-  exports.setIn = setIn$1;
-  exports.update = update$1;
-  exports.updateIn = updateIn$1;
-  exports.version = version;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-
-},{}],295:[function(require,module,exports){
+},{}],292:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -51996,7 +46862,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],296:[function(require,module,exports){
+},{}],293:[function(require,module,exports){
 'use strict';
 
 var hasToStringTag = require('has-tostringtag/shams')();
@@ -52042,7 +46908,7 @@ isStandardArguments.isLegacyArguments = isLegacyArguments; // for tests
 /** @type {import('.')} */
 module.exports = supportsStandardArguments ? isStandardArguments : isLegacyArguments;
 
-},{"call-bound":165,"has-tostringtag/shams":278}],297:[function(require,module,exports){
+},{"call-bound":165,"has-tostringtag/shams":276}],294:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -52065,7 +46931,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],298:[function(require,module,exports){
+},{}],295:[function(require,module,exports){
 'use strict';
 
 var fnToStr = Function.prototype.toString;
@@ -52168,14 +47034,14 @@ module.exports = reflectApply
 		return tryFunctionObject(value);
 	};
 
-},{}],299:[function(require,module,exports){
+},{}],296:[function(require,module,exports){
 'use strict';
 
 module.exports = Number.isFinite || function (value) {
 	return !(typeof value !== 'number' || value !== value || value === Infinity || value === -Infinity);
 };
 
-},{}],300:[function(require,module,exports){
+},{}],297:[function(require,module,exports){
 'use strict';
 
 var toStr = Object.prototype.toString;
@@ -52215,7 +47081,7 @@ module.exports = function isGeneratorFunction(fn) {
 	return getProto(fn) === GeneratorFunction;
 };
 
-},{"has-tostringtag/shams":278}],301:[function(require,module,exports){
+},{"has-tostringtag/shams":276}],298:[function(require,module,exports){
 // https://github.com/paulmillr/es6-shim
 // http://people.mozilla.org/~jorendorff/es6-draft.html#sec-number.isinteger
 var isFinite = require("is-finite");
@@ -52225,7 +47091,7 @@ module.exports = Number.isInteger || function(val) {
     Math.floor(val) === val;
 };
 
-},{"is-finite":299}],302:[function(require,module,exports){
+},{"is-finite":296}],299:[function(require,module,exports){
 'use strict';
 
 var whichTypedArray = require('which-typed-array');
@@ -52235,14 +47101,14 @@ module.exports = function isTypedArray(value) {
 	return !!whichTypedArray(value);
 };
 
-},{"which-typed-array":593}],303:[function(require,module,exports){
+},{"which-typed-array":590}],300:[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],304:[function(require,module,exports){
+},{}],301:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -52914,7 +47780,7 @@ function isErrorHandlingMiddleware(post, numArgs) {
 module.exports = Kareem;
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":521}],305:[function(require,module,exports){
+},{"_process":518}],302:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -61403,37 +56269,37 @@ exports.VERSION = VERSION;
 exports.Zone = Zone;
 
 
-},{}],306:[function(require,module,exports){
+},{}],303:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./abs')} */
 module.exports = Math.abs;
 
-},{}],307:[function(require,module,exports){
+},{}],304:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./abs')} */
 module.exports = Math.floor;
 
-},{}],308:[function(require,module,exports){
+},{}],305:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./max')} */
 module.exports = Math.max;
 
-},{}],309:[function(require,module,exports){
+},{}],306:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./min')} */
 module.exports = Math.min;
 
-},{}],310:[function(require,module,exports){
+},{}],307:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./pow')} */
 module.exports = Math.pow;
 
-},{}],311:[function(require,module,exports){
+},{}],308:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var HashBase = require('hash-base')
@@ -61581,7 +56447,7 @@ function fnI (a, b, c, d, m, k, s) {
 
 module.exports = MD5
 
-},{"hash-base":312,"inherits":295,"safe-buffer":559}],312:[function(require,module,exports){
+},{"hash-base":309,"inherits":292,"safe-buffer":556}],309:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('readable-stream').Transform
@@ -61678,7 +56544,7 @@ HashBase.prototype._digest = function () {
 
 module.exports = HashBase
 
-},{"inherits":295,"readable-stream":327,"safe-buffer":559}],313:[function(require,module,exports){
+},{"inherits":292,"readable-stream":324,"safe-buffer":556}],310:[function(require,module,exports){
 'use strict';
 
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
@@ -61807,7 +56673,7 @@ createErrorType('ERR_UNKNOWN_ENCODING', function (arg) {
 createErrorType('ERR_STREAM_UNSHIFT_AFTER_END_EVENT', 'stream.unshift() after end event');
 module.exports.codes = codes;
 
-},{}],314:[function(require,module,exports){
+},{}],311:[function(require,module,exports){
 (function (process){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -61936,7 +56802,7 @@ Object.defineProperty(Duplex.prototype, 'destroyed', {
   }
 });
 }).call(this)}).call(this,require('_process'))
-},{"./_stream_readable":316,"./_stream_writable":318,"_process":521,"inherits":295}],315:[function(require,module,exports){
+},{"./_stream_readable":313,"./_stream_writable":315,"_process":518,"inherits":292}],312:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -61974,7 +56840,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":317,"inherits":295}],316:[function(require,module,exports){
+},{"./_stream_transform":314,"inherits":292}],313:[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -63004,7 +57870,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../errors":313,"./_stream_duplex":314,"./internal/streams/async_iterator":319,"./internal/streams/buffer_list":320,"./internal/streams/destroy":321,"./internal/streams/from":323,"./internal/streams/state":325,"./internal/streams/stream":326,"_process":521,"buffer":156,"events":267,"inherits":295,"string_decoder/":584,"util":124}],317:[function(require,module,exports){
+},{"../errors":310,"./_stream_duplex":311,"./internal/streams/async_iterator":316,"./internal/streams/buffer_list":317,"./internal/streams/destroy":318,"./internal/streams/from":320,"./internal/streams/state":322,"./internal/streams/stream":323,"_process":518,"buffer":156,"events":265,"inherits":292,"string_decoder/":581,"util":124}],314:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -63195,7 +58061,7 @@ function done(stream, er, data) {
   if (stream._transformState.transforming) throw new ERR_TRANSFORM_ALREADY_TRANSFORMING();
   return stream.push(null);
 }
-},{"../errors":313,"./_stream_duplex":314,"inherits":295}],318:[function(require,module,exports){
+},{"../errors":310,"./_stream_duplex":311,"inherits":292}],315:[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -63839,7 +58705,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../errors":313,"./_stream_duplex":314,"./internal/streams/destroy":321,"./internal/streams/state":325,"./internal/streams/stream":326,"_process":521,"buffer":156,"inherits":295,"util-deprecate":588}],319:[function(require,module,exports){
+},{"../errors":310,"./_stream_duplex":311,"./internal/streams/destroy":318,"./internal/streams/state":322,"./internal/streams/stream":323,"_process":518,"buffer":156,"inherits":292,"util-deprecate":585}],316:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -64022,7 +58888,7 @@ var createReadableStreamAsyncIterator = function createReadableStreamAsyncIterat
 };
 module.exports = createReadableStreamAsyncIterator;
 }).call(this)}).call(this,require('_process'))
-},{"./end-of-stream":322,"_process":521}],320:[function(require,module,exports){
+},{"./end-of-stream":319,"_process":518}],317:[function(require,module,exports){
 'use strict';
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -64206,7 +59072,7 @@ module.exports = /*#__PURE__*/function () {
   }]);
   return BufferList;
 }();
-},{"buffer":156,"util":124}],321:[function(require,module,exports){
+},{"buffer":156,"util":124}],318:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -64305,7 +59171,7 @@ module.exports = {
   errorOrDestroy: errorOrDestroy
 };
 }).call(this)}).call(this,require('_process'))
-},{"_process":521}],322:[function(require,module,exports){
+},{"_process":518}],319:[function(require,module,exports){
 // Ported from https://github.com/mafintosh/end-of-stream with
 // permission from the author, Mathias Buus (@mafintosh).
 
@@ -64392,12 +59258,12 @@ function eos(stream, opts, callback) {
   };
 }
 module.exports = eos;
-},{"../../../errors":313}],323:[function(require,module,exports){
+},{"../../../errors":310}],320:[function(require,module,exports){
 module.exports = function () {
   throw new Error('Readable.from is not available in the browser')
 };
 
-},{}],324:[function(require,module,exports){
+},{}],321:[function(require,module,exports){
 // Ported from https://github.com/mafintosh/pump with
 // permission from the author, Mathias Buus (@mafintosh).
 
@@ -64484,7 +59350,7 @@ function pipeline() {
   return streams.reduce(pipe);
 }
 module.exports = pipeline;
-},{"../../../errors":313,"./end-of-stream":322}],325:[function(require,module,exports){
+},{"../../../errors":310,"./end-of-stream":319}],322:[function(require,module,exports){
 'use strict';
 
 var ERR_INVALID_OPT_VALUE = require('../../../errors').codes.ERR_INVALID_OPT_VALUE;
@@ -64507,10 +59373,10 @@ function getHighWaterMark(state, options, duplexKey, isDuplex) {
 module.exports = {
   getHighWaterMark: getHighWaterMark
 };
-},{"../../../errors":313}],326:[function(require,module,exports){
+},{"../../../errors":310}],323:[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":267}],327:[function(require,module,exports){
+},{"events":265}],324:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -64521,7 +59387,7 @@ exports.PassThrough = require('./lib/_stream_passthrough.js');
 exports.finished = require('./lib/internal/streams/end-of-stream.js');
 exports.pipeline = require('./lib/internal/streams/pipeline.js');
 
-},{"./lib/_stream_duplex.js":314,"./lib/_stream_passthrough.js":315,"./lib/_stream_readable.js":316,"./lib/_stream_transform.js":317,"./lib/_stream_writable.js":318,"./lib/internal/streams/end-of-stream.js":322,"./lib/internal/streams/pipeline.js":324}],328:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":311,"./lib/_stream_passthrough.js":312,"./lib/_stream_readable.js":313,"./lib/_stream_transform.js":314,"./lib/_stream_writable.js":315,"./lib/internal/streams/end-of-stream.js":319,"./lib/internal/streams/pipeline.js":321}],325:[function(require,module,exports){
 var bn = require('bn.js');
 var brorand = require('brorand');
 
@@ -64638,7 +59504,7 @@ MillerRabin.prototype.getDivisor = function getDivisor(n, k) {
   return false;
 };
 
-},{"bn.js":122,"brorand":123}],329:[function(require,module,exports){
+},{"bn.js":122,"brorand":123}],326:[function(require,module,exports){
 module.exports = assert;
 
 function assert(val, msg) {
@@ -64651,7 +59517,7 @@ assert.equal = function assertEqual(l, r, msg) {
     throw new Error(msg || ('Assertion failed: ' + l + ' != ' + r));
 };
 
-},{}],330:[function(require,module,exports){
+},{}],327:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -64711,7 +59577,7 @@ utils.encode = function encode(arr, enc) {
     return arr;
 };
 
-},{}],331:[function(require,module,exports){
+},{}],328:[function(require,module,exports){
 /**
  * Export lib/mongoose
  *
@@ -64721,7 +59587,7 @@ utils.encode = function encode(arr, enc) {
 
 module.exports = require('./lib/browser');
 
-},{"./lib/browser":332}],332:[function(require,module,exports){
+},{"./lib/browser":329}],329:[function(require,module,exports){
 (function (Buffer){(function (){
 /* eslint-env browser */
 
@@ -64857,7 +59723,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"./document_provider.js":343,"./driver":344,"./drivers/browser":345,"./error/index":348,"./schema":453,"./schematype.js":477,"./types":488,"./utils.js":493,"./virtualtype":494,"buffer":156}],333:[function(require,module,exports){
+},{"./document_provider.js":340,"./driver":341,"./drivers/browser":342,"./error/index":345,"./schema":450,"./schematype.js":474,"./types":485,"./utils.js":490,"./virtualtype":491,"buffer":156}],330:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -64960,7 +59826,7 @@ Document.$emitter = new EventEmitter();
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":342,"./error/index":348,"./helpers/isObject":390,"./helpers/model/applyHooks":394,"./schema":453,"./types/objectid":490,"events":267}],334:[function(require,module,exports){
+},{"./document":339,"./error/index":345,"./helpers/isObject":387,"./helpers/model/applyHooks":391,"./schema":450,"./types/objectid":487,"events":265}],331:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -65405,7 +60271,7 @@ function getStrictQuery(queryOptions, schemaUserProvidedOptions, schemaOptions, 
   return schemaOptions.strictQuery;
 }
 
-},{"./cast/string":341,"./error/cast":346,"./error/strict":360,"./helpers/discriminator/getSchemaDiscriminatorByValue":372,"./helpers/get":382,"./helpers/isMongooseObject":389,"./helpers/isObject":390,"./helpers/query/cast$expr":406,"./helpers/query/isOperator":408,"./schema/index":463,"./schema/operators/text":472,"./utils":493,"util":591}],335:[function(require,module,exports){
+},{"./cast/string":338,"./error/cast":343,"./error/strict":357,"./helpers/discriminator/getSchemaDiscriminatorByValue":369,"./helpers/get":379,"./helpers/isMongooseObject":386,"./helpers/isObject":387,"./helpers/query/cast$expr":403,"./helpers/query/isOperator":405,"./schema/index":460,"./schema/operators/text":469,"./utils":490,"util":588}],332:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -65443,7 +60309,7 @@ module.exports = function castBigInt(val) {
   assert.ok(false);
 };
 
-},{"assert":116,"bson":154}],336:[function(require,module,exports){
+},{"assert":116,"bson":154}],333:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -65477,7 +60343,7 @@ module.exports = function castBoolean(value, path) {
 module.exports.convertToTrue = new Set([true, 'true', 1, '1', 'yes']);
 module.exports.convertToFalse = new Set([false, 'false', 0, '0', 'no']);
 
-},{"../error/cast":346}],337:[function(require,module,exports){
+},{"../error/cast":343}],334:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -65520,7 +60386,7 @@ module.exports = function castDate(value) {
   assert.ok(false);
 };
 
-},{"assert":116}],338:[function(require,module,exports){
+},{"assert":116}],335:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -65563,7 +60429,7 @@ module.exports = function castDecimal128(value) {
 };
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../types/decimal128":487,"assert":116,"buffer":156}],339:[function(require,module,exports){
+},{"../types/decimal128":484,"assert":116,"buffer":156}],336:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -65607,7 +60473,7 @@ module.exports = function castNumber(val) {
   assert.ok(false);
 };
 
-},{"assert":116}],340:[function(require,module,exports){
+},{"assert":116}],337:[function(require,module,exports){
 'use strict';
 
 const isBsonType = require('../helpers/isBsonType');
@@ -65638,7 +60504,7 @@ module.exports = function castObjectId(value) {
   return new ObjectId(value);
 };
 
-},{"../helpers/isBsonType":388,"../types/objectid":490}],341:[function(require,module,exports){
+},{"../helpers/isBsonType":385,"../types/objectid":487}],338:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -65677,7 +60543,7 @@ module.exports = function castString(value, path) {
   throw new CastError('string', value, path);
 };
 
-},{"../error/cast":346}],342:[function(require,module,exports){
+},{"../error/cast":343}],339:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70491,7 +65357,7 @@ Document.prototype.$clone = function() {
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./error/index":348,"./error/objectExpected":354,"./error/objectParameter":355,"./error/parallelValidate":358,"./error/strict":360,"./error/validation":362,"./error/validator":363,"./helpers/clone":366,"./helpers/common":367,"./helpers/document/applyDefaults":374,"./helpers/document/cleanModifiedSubpaths":375,"./helpers/document/compile":376,"./helpers/document/getDeepestSubdocumentForPath":377,"./helpers/document/getEmbeddedDiscriminatorPath":378,"./helpers/document/handleSpreadDoc":379,"./helpers/get":382,"./helpers/immediate":385,"./helpers/isPromise":392,"./helpers/path/parentPaths":396,"./helpers/populate/markArraySubdocsPopulated":397,"./helpers/projection/hasIncludedChildren":399,"./helpers/projection/isDefiningProjection":400,"./helpers/projection/isExclusive":401,"./helpers/schema/getKeysInSchemaOrder":415,"./helpers/schema/getSubdocumentStrictValue":416,"./helpers/symbols":423,"./internal":431,"./options":432,"./queryhelpers":452,"./schema":453,"./schema/mixed":465,"./schema/symbols":475,"./types/ArraySubdocument":479,"./types/DocumentArray":480,"./types/array":483,"./utils":493,"events":267,"mpath":495,"util":591}],343:[function(require,module,exports){
+},{"./error/index":345,"./error/objectExpected":351,"./error/objectParameter":352,"./error/parallelValidate":355,"./error/strict":357,"./error/validation":359,"./error/validator":360,"./helpers/clone":363,"./helpers/common":364,"./helpers/document/applyDefaults":371,"./helpers/document/cleanModifiedSubpaths":372,"./helpers/document/compile":373,"./helpers/document/getDeepestSubdocumentForPath":374,"./helpers/document/getEmbeddedDiscriminatorPath":375,"./helpers/document/handleSpreadDoc":376,"./helpers/get":379,"./helpers/immediate":382,"./helpers/isPromise":389,"./helpers/path/parentPaths":393,"./helpers/populate/markArraySubdocsPopulated":394,"./helpers/projection/hasIncludedChildren":396,"./helpers/projection/isDefiningProjection":397,"./helpers/projection/isExclusive":398,"./helpers/schema/getKeysInSchemaOrder":412,"./helpers/schema/getSubdocumentStrictValue":413,"./helpers/symbols":420,"./internal":428,"./options":429,"./queryhelpers":449,"./schema":450,"./schema/mixed":462,"./schema/symbols":472,"./types/ArraySubdocument":476,"./types/DocumentArray":477,"./types/array":480,"./utils":490,"events":265,"mpath":492,"util":588}],340:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -70523,7 +65389,7 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":333,"./document.js":342}],344:[function(require,module,exports){
+},{"./browserDocument.js":330,"./document.js":339}],341:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70540,7 +65406,7 @@ module.exports.set = function(v) {
   driver = v;
 };
 
-},{}],345:[function(require,module,exports){
+},{}],342:[function(require,module,exports){
 /*!
  * Module exports.
  */
@@ -70554,7 +65420,7 @@ exports.Connection = function() {
   throw new Error('Cannot create a connection from browser library');
 };
 
-},{}],346:[function(require,module,exports){
+},{}],343:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70715,7 +65581,7 @@ function formatMessage(model, kind, value, path, messageFormat, valueType, reaso
 
 module.exports = CastError;
 
-},{"./mongooseError":352,"util":591}],347:[function(require,module,exports){
+},{"./mongooseError":349,"util":588}],344:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -70755,7 +65621,7 @@ Object.defineProperty(DivergentArrayError.prototype, 'name', {
 
 module.exports = DivergentArrayError;
 
-},{"./":348}],348:[function(require,module,exports){
+},{"./":345}],345:[function(require,module,exports){
 'use strict';
 
 /**
@@ -70984,7 +65850,7 @@ MongooseError.StrictModeError = require('./strict');
 
 MongooseError.StrictPopulateError = require('./strictPopulate');
 
-},{"./cast":346,"./divergentArray":347,"./messages":350,"./missingSchema":351,"./mongooseError":352,"./notFound":353,"./overwriteModel":356,"./parallelSave":357,"./serverSelection":359,"./strict":360,"./strictPopulate":361,"./validation":362,"./validator":363,"./version":364}],349:[function(require,module,exports){
+},{"./cast":343,"./divergentArray":344,"./messages":347,"./missingSchema":348,"./mongooseError":349,"./notFound":350,"./overwriteModel":353,"./parallelSave":354,"./serverSelection":356,"./strict":357,"./strictPopulate":358,"./validation":359,"./validator":360,"./version":361}],346:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -71016,7 +65882,7 @@ Object.defineProperty(InvalidSchemaOptionError.prototype, 'name', {
 
 module.exports = InvalidSchemaOptionError;
 
-},{"./":348}],350:[function(require,module,exports){
+},{"./":345}],347:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -71065,7 +65931,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],351:[function(require,module,exports){
+},{}],348:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -71098,7 +65964,7 @@ Object.defineProperty(MissingSchemaError.prototype, 'name', {
 
 module.exports = MissingSchemaError;
 
-},{"./":348}],352:[function(require,module,exports){
+},{"./":345}],349:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71113,7 +65979,7 @@ Object.defineProperty(MongooseError.prototype, 'name', {
 
 module.exports = MongooseError;
 
-},{}],353:[function(require,module,exports){
+},{}],350:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71160,7 +66026,7 @@ Object.defineProperty(DocumentNotFoundError.prototype, 'name', {
 
 module.exports = DocumentNotFoundError;
 
-},{"./":348,"util":591}],354:[function(require,module,exports){
+},{"./":345,"util":588}],351:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71192,7 +66058,7 @@ Object.defineProperty(ObjectExpectedError.prototype, 'name', {
 
 module.exports = ObjectExpectedError;
 
-},{"./":348}],355:[function(require,module,exports){
+},{"./":345}],352:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71224,7 +66090,7 @@ Object.defineProperty(ObjectParameterError.prototype, 'name', {
 
 module.exports = ObjectParameterError;
 
-},{"./":348}],356:[function(require,module,exports){
+},{"./":345}],353:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -71256,7 +66122,7 @@ Object.defineProperty(OverwriteModelError.prototype, 'name', {
 
 module.exports = OverwriteModelError;
 
-},{"./":348}],357:[function(require,module,exports){
+},{"./":345}],354:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71288,7 +66154,7 @@ Object.defineProperty(ParallelSaveError.prototype, 'name', {
 
 module.exports = ParallelSaveError;
 
-},{"./":348}],358:[function(require,module,exports){
+},{"./":345}],355:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71321,7 +66187,7 @@ Object.defineProperty(ParallelValidateError.prototype, 'name', {
 
 module.exports = ParallelValidateError;
 
-},{"./mongooseError":352}],359:[function(require,module,exports){
+},{"./mongooseError":349}],356:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71384,7 +66250,7 @@ Object.defineProperty(MongooseServerSelectionError.prototype, 'name', {
 
 module.exports = MongooseServerSelectionError;
 
-},{"../helpers/topology/allServersUnknown":426,"../helpers/topology/isAtlas":427,"../helpers/topology/isSSLError":428,"./mongooseError":352}],360:[function(require,module,exports){
+},{"../helpers/topology/allServersUnknown":423,"../helpers/topology/isAtlas":424,"../helpers/topology/isSSLError":425,"./mongooseError":349}],357:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71419,7 +66285,7 @@ Object.defineProperty(StrictModeError.prototype, 'name', {
 
 module.exports = StrictModeError;
 
-},{"./":348}],361:[function(require,module,exports){
+},{"./":345}],358:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71450,7 +66316,7 @@ Object.defineProperty(StrictPopulateError.prototype, 'name', {
 
 module.exports = StrictPopulateError;
 
-},{"./":348}],362:[function(require,module,exports){
+},{"./":345}],359:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -71555,7 +66421,7 @@ Object.defineProperty(ValidationError.prototype, 'name', {
 
 module.exports = ValidationError;
 
-},{"../helpers/error/combinePathErrors":381,"../helpers/getConstructorName":383,"./mongooseError":352,"util":591}],363:[function(require,module,exports){
+},{"../helpers/error/combinePathErrors":378,"../helpers/getConstructorName":380,"./mongooseError":349,"util":588}],360:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71656,7 +66522,7 @@ function formatMessage(msg, properties, doc) {
 
 module.exports = ValidatorError;
 
-},{"./":348}],364:[function(require,module,exports){
+},{"./":345}],361:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71694,7 +66560,7 @@ Object.defineProperty(VersionError.prototype, 'name', {
 
 module.exports = VersionError;
 
-},{"./":348}],365:[function(require,module,exports){
+},{"./":345}],362:[function(require,module,exports){
 'use strict';
 
 module.exports = arrayDepth;
@@ -71729,7 +66595,7 @@ function arrayDepth(arr) {
   return res;
 }
 
-},{}],366:[function(require,module,exports){
+},{}],363:[function(require,module,exports){
 'use strict';
 
 const Decimal = require('../types/decimal128');
@@ -71911,7 +66777,7 @@ function cloneRegExp(regexp) {
   return ret;
 }
 
-},{"../types/array/isMongooseArray":484,"../types/decimal128":487,"../types/objectid":490,"./getFunctionName":384,"./isBsonType":388,"./isMongooseObject":389,"./isObject":390,"./isPOJO":391,"./query/trusted":409,"./specialProperties":422,"./symbols":423}],367:[function(require,module,exports){
+},{"../types/array/isMongooseArray":481,"../types/decimal128":484,"../types/objectid":487,"./getFunctionName":381,"./isBsonType":385,"./isMongooseObject":386,"./isObject":387,"./isPOJO":388,"./query/trusted":406,"./specialProperties":419,"./symbols":420}],364:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -72042,7 +66908,7 @@ function shouldFlatten(val) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../error":348,"./isBsonType":388,"./isMongooseObject":389,"bson":154,"buffer":156,"util":591}],368:[function(require,module,exports){
+},{"../error":345,"./isBsonType":385,"./isMongooseObject":386,"bson":154,"buffer":156,"util":588}],365:[function(require,module,exports){
 'use strict';
 
 const isBsonType = require('../isBsonType');
@@ -72060,7 +66926,7 @@ module.exports = function areDiscriminatorValuesEqual(a, b) {
   return false;
 };
 
-},{"../isBsonType":388}],369:[function(require,module,exports){
+},{"../isBsonType":385}],366:[function(require,module,exports){
 'use strict';
 
 module.exports = function checkEmbeddedDiscriminatorKeyProjection(userProjection, path, schema, selected, addedPaths) {
@@ -72074,7 +66940,7 @@ module.exports = function checkEmbeddedDiscriminatorKeyProjection(userProjection
   }
 };
 
-},{}],370:[function(require,module,exports){
+},{}],367:[function(require,module,exports){
 'use strict';
 
 const getDiscriminatorByValue = require('./getDiscriminatorByValue');
@@ -72105,7 +66971,7 @@ module.exports = function getConstructor(Constructor, value, defaultDiscriminato
   return Constructor;
 };
 
-},{"./getDiscriminatorByValue":371}],371:[function(require,module,exports){
+},{"./getDiscriminatorByValue":368}],368:[function(require,module,exports){
 'use strict';
 
 const areDiscriminatorValuesEqual = require('./areDiscriminatorValuesEqual');
@@ -72135,7 +67001,7 @@ module.exports = function getDiscriminatorByValue(discriminators, value) {
   return null;
 };
 
-},{"./areDiscriminatorValuesEqual":368}],372:[function(require,module,exports){
+},{"./areDiscriminatorValuesEqual":365}],369:[function(require,module,exports){
 'use strict';
 
 const areDiscriminatorValuesEqual = require('./areDiscriminatorValuesEqual');
@@ -72164,7 +67030,7 @@ module.exports = function getSchemaDiscriminatorByValue(schema, value) {
   return null;
 };
 
-},{"./areDiscriminatorValuesEqual":368}],373:[function(require,module,exports){
+},{"./areDiscriminatorValuesEqual":365}],370:[function(require,module,exports){
 'use strict';
 const schemaMerge = require('../schema/merge');
 const specialProperties = require('../../helpers/specialProperties');
@@ -72242,7 +67108,7 @@ module.exports = function mergeDiscriminatorSchema(to, from, path, seen) {
   }
 };
 
-},{"../../helpers/isBsonType":388,"../../helpers/isObject":390,"../../helpers/specialProperties":422,"../../types/objectid":490,"../schema/merge":420}],374:[function(require,module,exports){
+},{"../../helpers/isBsonType":385,"../../helpers/isObject":387,"../../helpers/specialProperties":419,"../../types/objectid":487,"../schema/merge":417}],371:[function(require,module,exports){
 'use strict';
 
 const isNestedProjection = require('../projection/isNestedProjection');
@@ -72372,7 +67238,7 @@ function applyChangeTracking(doc, fullPath) {
   }
 }
 
-},{"../projection/isNestedProjection":402}],375:[function(require,module,exports){
+},{"../projection/isNestedProjection":399}],372:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -72409,7 +67275,7 @@ module.exports = function cleanModifiedSubpaths(doc, path, options) {
   return deleted;
 };
 
-},{}],376:[function(require,module,exports){
+},{}],373:[function(require,module,exports){
 'use strict';
 
 const clone = require('../../helpers/clone');
@@ -72649,7 +67515,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":342,"../../helpers/clone":366,"../../helpers/symbols":423,"../../options":432,"../../utils":493}],377:[function(require,module,exports){
+},{"../../document":339,"../../helpers/clone":363,"../../helpers/symbols":420,"../../options":429,"../../utils":490}],374:[function(require,module,exports){
 'use strict';
 
 /**
@@ -72689,7 +67555,7 @@ module.exports = function getDeepestSubdocumentForPath(doc, parts, schema) {
   return subdoc;
 };
 
-},{}],378:[function(require,module,exports){
+},{}],375:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -72744,7 +67610,7 @@ module.exports = function getEmbeddedDiscriminatorPath(doc, path, options) {
   return typeOnly ? type : schemaType;
 };
 
-},{"../discriminator/getSchemaDiscriminatorByValue":372,"../get":382}],379:[function(require,module,exports){
+},{"../discriminator/getSchemaDiscriminatorByValue":369,"../get":379}],376:[function(require,module,exports){
 'use strict';
 
 const utils = require('../../utils');
@@ -72781,7 +67647,7 @@ module.exports = function handleSpreadDoc(v, includeExtraKeys) {
   return v;
 };
 
-},{"../../utils":493}],380:[function(require,module,exports){
+},{"../../utils":490}],377:[function(require,module,exports){
 'use strict';
 
 module.exports = function each(arr, cb, done) {
@@ -72808,7 +67674,7 @@ module.exports = function each(arr, cb, done) {
   }
 };
 
-},{}],381:[function(require,module,exports){
+},{}],378:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -72832,7 +67698,7 @@ module.exports = function combinePathErrors(err) {
   return msgs.join(', ');
 };
 
-},{}],382:[function(require,module,exports){
+},{}],379:[function(require,module,exports){
 'use strict';
 
 /**
@@ -72899,7 +67765,7 @@ function getProperty(obj, prop) {
   return obj[prop];
 }
 
-},{}],383:[function(require,module,exports){
+},{}],380:[function(require,module,exports){
 'use strict';
 
 /**
@@ -72917,7 +67783,7 @@ module.exports = function getConstructorName(val) {
   return val.constructor.name;
 };
 
-},{}],384:[function(require,module,exports){
+},{}],381:[function(require,module,exports){
 'use strict';
 
 const functionNameRE = /^function\s*([^\s(]+)/;
@@ -72929,7 +67795,7 @@ module.exports = function(fn) {
   );
 };
 
-},{}],385:[function(require,module,exports){
+},{}],382:[function(require,module,exports){
 (function (process){(function (){
 /*!
  * Centralize this so we can more easily work around issues with people
@@ -72949,7 +67815,7 @@ module.exports = function immediate(cb) {
 };
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":521}],386:[function(require,module,exports){
+},{"_process":518}],383:[function(require,module,exports){
 'use strict';
 
 module.exports = function decorateDiscriminatorIndexOptions(schema, indexOptions) {
@@ -72965,7 +67831,7 @@ module.exports = function decorateDiscriminatorIndexOptions(schema, indexOptions
   return indexOptions;
 };
 
-},{}],387:[function(require,module,exports){
+},{}],384:[function(require,module,exports){
 'use strict';
 
 module.exports = function isAsyncFunction(v) {
@@ -72976,7 +67842,7 @@ module.exports = function isAsyncFunction(v) {
   );
 };
 
-},{}],388:[function(require,module,exports){
+},{}],385:[function(require,module,exports){
 'use strict';
 
 /**
@@ -72994,7 +67860,7 @@ function isBsonType(obj, typename) {
 
 module.exports = isBsonType;
 
-},{}],389:[function(require,module,exports){
+},{}],386:[function(require,module,exports){
 'use strict';
 
 const isMongooseArray = require('../types/array/isMongooseArray').isMongooseArray;
@@ -73018,7 +67884,7 @@ module.exports = function(v) {
   );
 };
 
-},{"../types/array/isMongooseArray":484}],390:[function(require,module,exports){
+},{"../types/array/isMongooseArray":481}],387:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -73038,7 +67904,7 @@ module.exports = function(arg) {
 };
 
 }).call(this)}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":297}],391:[function(require,module,exports){
+},{"../../../is-buffer/index.js":294}],388:[function(require,module,exports){
 'use strict';
 
 module.exports = function isPOJO(arg) {
@@ -73052,7 +67918,7 @@ module.exports = function isPOJO(arg) {
   return !proto || proto.constructor.name === 'Object';
 };
 
-},{}],392:[function(require,module,exports){
+},{}],389:[function(require,module,exports){
 'use strict';
 function isPromise(val) {
   return !!val && (typeof val === 'object' || typeof val === 'function') && typeof val.then === 'function';
@@ -73060,7 +67926,7 @@ function isPromise(val) {
 
 module.exports = isPromise;
 
-},{}],393:[function(require,module,exports){
+},{}],390:[function(require,module,exports){
 'use strict';
 
 /**
@@ -73084,7 +67950,7 @@ module.exports = function isSimpleValidator(obj) {
   return result;
 };
 
-},{}],394:[function(require,module,exports){
+},{}],391:[function(require,module,exports){
 'use strict';
 
 const symbols = require('../../schema/symbols');
@@ -73235,7 +68101,7 @@ function applyHooks(model, schema, options) {
   }
 }
 
-},{"../../schema/symbols":475,"../promiseOrCallback":404}],395:[function(require,module,exports){
+},{"../../schema/symbols":472,"../promiseOrCallback":401}],392:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../../schema/mixed');
@@ -73450,7 +68316,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   return schema;
 };
 
-},{"../../helpers/discriminator/mergeDiscriminatorSchema":373,"../../schema/mixed":465,"../../utils":493,"../clone":366,"../document/compile":376,"../get":382,"../schema/applyBuiltinPlugins":412}],396:[function(require,module,exports){
+},{"../../helpers/discriminator/mergeDiscriminatorSchema":370,"../../schema/mixed":462,"../../utils":490,"../clone":363,"../document/compile":373,"../get":379,"../schema/applyBuiltinPlugins":409}],393:[function(require,module,exports){
 'use strict';
 
 const dotRE = /\./g;
@@ -73470,7 +68336,7 @@ module.exports = function parentPaths(path) {
   return ret;
 };
 
-},{}],397:[function(require,module,exports){
+},{}],394:[function(require,module,exports){
 'use strict';
 
 const utils = require('../../utils');
@@ -73521,7 +68387,7 @@ module.exports = function markArraySubdocsPopulated(doc, populated) {
   }
 };
 
-},{"../../utils":493}],398:[function(require,module,exports){
+},{"../../utils":490}],395:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('../../error/mongooseError');
@@ -73542,7 +68408,7 @@ function validateRef(ref, path) {
     util.inspect(ref, { depth: 0 }));
 }
 
-},{"../../error/mongooseError":352,"util":591}],399:[function(require,module,exports){
+},{"../../error/mongooseError":349,"util":588}],396:[function(require,module,exports){
 'use strict';
 
 /**
@@ -73585,7 +68451,7 @@ module.exports = function hasIncludedChildren(fields) {
   return hasIncludedChildren;
 };
 
-},{}],400:[function(require,module,exports){
+},{}],397:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -73605,7 +68471,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],401:[function(require,module,exports){
+},{}],398:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -73644,7 +68510,7 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"../isPOJO":391,"./isDefiningProjection":400}],402:[function(require,module,exports){
+},{"../isPOJO":388,"./isDefiningProjection":397}],399:[function(require,module,exports){
 'use strict';
 
 module.exports = function isNestedProjection(val) {
@@ -73654,7 +68520,7 @@ module.exports = function isNestedProjection(val) {
   return val.$slice == null && val.$elemMatch == null && val.$meta == null && val.$ == null;
 };
 
-},{}],403:[function(require,module,exports){
+},{}],400:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -73684,7 +68550,7 @@ module.exports = function isPathSelectedInclusive(fields, path) {
   return false;
 };
 
-},{}],404:[function(require,module,exports){
+},{}],401:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -73742,7 +68608,7 @@ module.exports = function promiseOrCallback(callback, fn, ee, Promise) {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./immediate":385}],405:[function(require,module,exports){
+},{"./immediate":382}],402:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -73798,7 +68664,7 @@ function _getContexts(hook) {
   return ret;
 }
 
-},{"./validOps":410}],406:[function(require,module,exports){
+},{"./validOps":407}],403:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -74092,7 +68958,7 @@ function isLiteral(val) {
   return true;
 }
 
-},{"../../cast/number":339,"../../error/cast":346,"../../error/strict":360}],407:[function(require,module,exports){
+},{"../../cast/number":336,"../../error/cast":343,"../../error/strict":357}],404:[function(require,module,exports){
 'use strict';
 
 module.exports = function handleReadPreferenceAliases(pref) {
@@ -74117,7 +68983,7 @@ module.exports = function handleReadPreferenceAliases(pref) {
   return pref;
 };
 
-},{}],408:[function(require,module,exports){
+},{}],405:[function(require,module,exports){
 'use strict';
 
 const specialKeys = new Set([
@@ -74133,7 +68999,7 @@ module.exports = function isOperator(path) {
   );
 };
 
-},{}],409:[function(require,module,exports){
+},{}],406:[function(require,module,exports){
 'use strict';
 
 const trustedSymbol = Symbol('mongoose#trustedSymbol');
@@ -74148,7 +69014,7 @@ exports.trusted = function trusted(obj) {
   return obj;
 };
 
-},{}],410:[function(require,module,exports){
+},{}],407:[function(require,module,exports){
 'use strict';
 
 module.exports = Object.freeze([
@@ -74172,7 +69038,7 @@ module.exports = Object.freeze([
   'findOneAndRemove'
 ]);
 
-},{}],411:[function(require,module,exports){
+},{}],408:[function(require,module,exports){
 'use strict';
 
 module.exports = function addAutoId(schema) {
@@ -74181,7 +69047,7 @@ module.exports = function addAutoId(schema) {
   schema.add(_obj);
 };
 
-},{}],412:[function(require,module,exports){
+},{}],409:[function(require,module,exports){
 'use strict';
 
 const builtinPlugins = require('../../plugins');
@@ -74195,7 +69061,7 @@ module.exports = function applyBuiltinPlugins(schema) {
     concat(schema.plugins);
 };
 
-},{"../../plugins":446}],413:[function(require,module,exports){
+},{"../../plugins":443}],410:[function(require,module,exports){
 'use strict';
 
 /**
@@ -74209,7 +69075,7 @@ module.exports = function cleanPositionalOperators(path) {
     replace(/\.\$(\[[^\]]*\])?$/g, '.0');
 };
 
-},{}],414:[function(require,module,exports){
+},{}],411:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -74383,7 +69249,7 @@ module.exports = function getIndexes(schema) {
   }
 };
 
-},{"../get":382,"../indexes/decorateDiscriminatorIndexOptions":386,"../isObject":390}],415:[function(require,module,exports){
+},{"../get":379,"../indexes/decorateDiscriminatorIndexOptions":383,"../isObject":387}],412:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -74413,7 +69279,7 @@ module.exports = function getKeysInSchemaOrder(schema, val, path) {
   return keys;
 };
 
-},{"../get":382}],416:[function(require,module,exports){
+},{"../get":379}],413:[function(require,module,exports){
 'use strict';
 
 /**
@@ -74447,7 +69313,7 @@ module.exports = function getSubdocumentStrictValue(schema, parts) {
   return strict;
 };
 
-},{}],417:[function(require,module,exports){
+},{}],414:[function(require,module,exports){
 'use strict';
 
 const addAutoId = require('./addAutoId');
@@ -74469,7 +69335,7 @@ module.exports = function handleIdOption(schema, options) {
   return schema;
 };
 
-},{"./addAutoId":411}],418:[function(require,module,exports){
+},{"./addAutoId":408}],415:[function(require,module,exports){
 'use strict';
 
 module.exports = handleTimestampOption;
@@ -74495,7 +69361,7 @@ function handleTimestampOption(arg, prop) {
   return arg[prop];
 }
 
-},{}],419:[function(require,module,exports){
+},{}],416:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -74543,7 +69409,7 @@ function idSetter(v) {
   return v;
 }
 
-},{}],420:[function(require,module,exports){
+},{}],417:[function(require,module,exports){
 'use strict';
 
 module.exports = function merge(s1, s2, skipConflictingPaths) {
@@ -74581,7 +69447,7 @@ module.exports = function merge(s1, s2, skipConflictingPaths) {
   s1.s.hooks.merge(s2.s.hooks, false);
 };
 
-},{}],421:[function(require,module,exports){
+},{}],418:[function(require,module,exports){
 'use strict';
 
 const StrictModeError = require('../../error/strict');
@@ -74633,12 +69499,12 @@ function createImmutableSetter(path, immutable) {
   };
 }
 
-},{"../../error/strict":360}],422:[function(require,module,exports){
+},{"../../error/strict":357}],419:[function(require,module,exports){
 'use strict';
 
 module.exports = new Set(['__proto__', 'constructor', 'prototype']);
 
-},{}],423:[function(require,module,exports){
+},{}],420:[function(require,module,exports){
 'use strict';
 
 exports.arrayAtomicsBackupSymbol = Symbol('mongoose#Array#atomicsBackup');
@@ -74660,7 +69526,7 @@ exports.sessionNewDocuments = Symbol('mongoose:ClientSession#newDocuments');
 exports.scopeSymbol = Symbol('mongoose#Document#scope');
 exports.validatorErrorSymbol = Symbol('mongoose:validatorError');
 
-},{}],424:[function(require,module,exports){
+},{}],421:[function(require,module,exports){
 'use strict';
 
 module.exports = function setDocumentTimestamps(doc, timestampOption, currentTime, createdAt, updatedAt) {
@@ -74688,7 +69554,7 @@ module.exports = function setDocumentTimestamps(doc, timestampOption, currentTim
   }
 };
 
-},{}],425:[function(require,module,exports){
+},{}],422:[function(require,module,exports){
 'use strict';
 
 const applyTimestampsToChildren = require('../update/applyTimestampsToChildren');
@@ -74800,7 +69666,7 @@ module.exports = function setupTimestamps(schema, timestamps) {
   }
 };
 
-},{"../../schema/symbols":475,"../get":382,"../schema/handleTimestampOption":418,"../update/applyTimestampsToChildren":429,"../update/applyTimestampsToUpdate":430,"./setDocumentTimestamps":424}],426:[function(require,module,exports){
+},{"../../schema/symbols":472,"../get":379,"../schema/handleTimestampOption":415,"../update/applyTimestampsToChildren":426,"../update/applyTimestampsToUpdate":427,"./setDocumentTimestamps":421}],423:[function(require,module,exports){
 'use strict';
 
 const getConstructorName = require('../getConstructorName');
@@ -74814,7 +69680,7 @@ module.exports = function allServersUnknown(topologyDescription) {
   return servers.length > 0 && servers.every(server => server.type === 'Unknown');
 };
 
-},{"../getConstructorName":383}],427:[function(require,module,exports){
+},{"../getConstructorName":380}],424:[function(require,module,exports){
 'use strict';
 
 const getConstructorName = require('../getConstructorName');
@@ -74847,7 +69713,7 @@ module.exports = function isAtlas(topologyDescription) {
   return true;
 };
 
-},{"../getConstructorName":383}],428:[function(require,module,exports){
+},{"../getConstructorName":380}],425:[function(require,module,exports){
 'use strict';
 
 const getConstructorName = require('../getConstructorName');
@@ -74865,7 +69731,7 @@ module.exports = function isSSLError(topologyDescription) {
     descriptions.every(descr => descr.error && descr.error.message.indexOf(nonSSLMessage) !== -1);
 };
 
-},{"../getConstructorName":383}],429:[function(require,module,exports){
+},{"../getConstructorName":380}],426:[function(require,module,exports){
 'use strict';
 
 const cleanPositionalOperators = require('../schema/cleanPositionalOperators');
@@ -75060,7 +69926,7 @@ function applyTimestampsToUpdateKey(schema, key, update, now) {
   }
 }
 
-},{"../schema/cleanPositionalOperators":413,"../schema/handleTimestampOption":418}],430:[function(require,module,exports){
+},{"../schema/cleanPositionalOperators":410,"../schema/handleTimestampOption":415}],427:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75180,7 +70046,7 @@ function applyTimestampsToUpdate(now, createdAt, updatedAt, currentUpdate, optio
   return updates;
 }
 
-},{"../get":382}],431:[function(require,module,exports){
+},{"../get":379}],428:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -75228,7 +70094,7 @@ InternalCache.prototype.session = null;
 InternalCache.prototype.pathsToScopes = null;
 InternalCache.prototype.cachedRequired = null;
 
-},{"./statemachine":478}],432:[function(require,module,exports){
+},{"./statemachine":475}],429:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75245,7 +70111,7 @@ exports.internalToObjectOptions = {
   useProjection: false
 };
 
-},{}],433:[function(require,module,exports){
+},{}],430:[function(require,module,exports){
 'use strict';
 
 const clone = require('../helpers/clone');
@@ -75283,7 +70149,7 @@ class PopulateOptions {
 
 module.exports = PopulateOptions;
 
-},{"../helpers/clone":366}],434:[function(require,module,exports){
+},{"../helpers/clone":363}],431:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75363,7 +70229,7 @@ Object.defineProperty(SchemaArrayOptions.prototype, 'castNonArrays', opts);
 
 module.exports = SchemaArrayOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],435:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],432:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75403,7 +70269,7 @@ Object.defineProperty(SchemaBufferOptions.prototype, 'subtype', opts);
 
 module.exports = SchemaBufferOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],436:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],433:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75476,7 +70342,7 @@ Object.defineProperty(SchemaDateOptions.prototype, 'expires', opts);
 
 module.exports = SchemaDateOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],437:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],434:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75546,7 +70412,7 @@ Object.defineProperty(SchemaDocumentArrayOptions.prototype, '_id', opts);
 
 module.exports = SchemaDocumentArrayOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],438:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],435:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75591,7 +70457,7 @@ Object.defineProperty(SchemaMapOptions.prototype, 'of', opts);
 
 module.exports = SchemaMapOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],439:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],436:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75694,7 +70560,7 @@ Object.defineProperty(SchemaNumberOptions.prototype, 'populate', opts);
 
 module.exports = SchemaNumberOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],440:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],437:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75760,7 +70626,7 @@ Object.defineProperty(SchemaObjectIdOptions.prototype, 'populate', opts);
 
 module.exports = SchemaObjectIdOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],441:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],438:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75900,7 +70766,7 @@ Object.defineProperty(SchemaStringOptions.prototype, 'populate', opts);
 
 module.exports = SchemaStringOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],442:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],439:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75944,7 +70810,7 @@ Object.defineProperty(SchemaSubdocumentOptions.prototype, '_id', opts);
 
 module.exports = SchemaSubdocumentOptions;
 
-},{"./SchemaTypeOptions":443,"./propertyOptions":445}],443:[function(require,module,exports){
+},{"./SchemaTypeOptions":440,"./propertyOptions":442}],440:[function(require,module,exports){
 'use strict';
 
 const clone = require('../helpers/clone');
@@ -76190,7 +71056,7 @@ Object.defineProperty(SchemaTypeOptions.prototype, 'transform', opts);
 
 module.exports = SchemaTypeOptions;
 
-},{"../helpers/clone":366,"./propertyOptions":445}],444:[function(require,module,exports){
+},{"../helpers/clone":363,"./propertyOptions":442}],441:[function(require,module,exports){
 'use strict';
 
 const opts = require('./propertyOptions');
@@ -76356,7 +71222,7 @@ Object.defineProperty(VirtualOptions.prototype, 'perDocumentLimit', opts);
 
 module.exports = VirtualOptions;
 
-},{"./propertyOptions":445}],445:[function(require,module,exports){
+},{"./propertyOptions":442}],442:[function(require,module,exports){
 'use strict';
 
 module.exports = Object.freeze({
@@ -76366,7 +71232,7 @@ module.exports = Object.freeze({
   value: void 0
 });
 
-},{}],446:[function(require,module,exports){
+},{}],443:[function(require,module,exports){
 'use strict';
 
 exports.removeSubdocs = require('./removeSubdocs');
@@ -76375,7 +71241,7 @@ exports.sharding = require('./sharding');
 exports.trackTransaction = require('./trackTransaction');
 exports.validateBeforeSave = require('./validateBeforeSave');
 
-},{"./removeSubdocs":447,"./saveSubdocs":448,"./sharding":449,"./trackTransaction":450,"./validateBeforeSave":451}],447:[function(require,module,exports){
+},{"./removeSubdocs":444,"./saveSubdocs":445,"./sharding":446,"./trackTransaction":447,"./validateBeforeSave":448}],444:[function(require,module,exports){
 'use strict';
 
 const each = require('../helpers/each');
@@ -76412,7 +71278,7 @@ module.exports = function removeSubdocs(schema) {
   }, null, unshift);
 };
 
-},{"../helpers/each":380}],448:[function(require,module,exports){
+},{"../helpers/each":377}],445:[function(require,module,exports){
 'use strict';
 
 const each = require('../helpers/each');
@@ -76480,7 +71346,7 @@ module.exports = function saveSubdocs(schema) {
   }, null, unshift);
 };
 
-},{"../helpers/each":380}],449:[function(require,module,exports){
+},{"../helpers/each":377}],446:[function(require,module,exports){
 'use strict';
 
 const objectIdSymbol = require('../helpers/symbols').objectIdSymbol;
@@ -76565,7 +71431,7 @@ function storeShard() {
   }
 }
 
-},{"../helpers/symbols":423,"../utils":493}],450:[function(require,module,exports){
+},{"../helpers/symbols":420,"../utils":490}],447:[function(require,module,exports){
 'use strict';
 
 const arrayAtomicsSymbol = require('../helpers/symbols').arrayAtomicsSymbol;
@@ -76659,7 +71525,7 @@ function mergeAtomics(destination, source) {
   return destination;
 }
 
-},{"../helpers/symbols":423,"../utils":493}],451:[function(require,module,exports){
+},{"../helpers/symbols":420,"../utils":490}],448:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -76712,7 +71578,7 @@ module.exports = function validateBeforeSave(schema) {
   }, null, unshift);
 };
 
-},{}],452:[function(require,module,exports){
+},{}],449:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77117,7 +71983,7 @@ function makeLean(val) {
   };
 }
 
-},{"./helpers/clone":366,"./helpers/discriminator/checkEmbeddedDiscriminatorKeyProjection":369,"./helpers/discriminator/getDiscriminatorByValue":371,"./helpers/get":382,"./helpers/projection/isDefiningProjection":400,"./helpers/projection/isPathSelectedInclusive":403}],453:[function(require,module,exports){
+},{"./helpers/clone":363,"./helpers/discriminator/checkEmbeddedDiscriminatorKeyProjection":366,"./helpers/discriminator/getDiscriminatorByValue":368,"./helpers/get":379,"./helpers/projection/isDefiningProjection":397,"./helpers/projection/isPathSelectedInclusive":400}],450:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -79901,7 +74767,7 @@ Schema.Types = MongooseTypes = require('./schema/index');
 exports.ObjectId = MongooseTypes.ObjectId;
 
 }).call(this)}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":297,"./error/mongooseError":352,"./helpers/clone":366,"./helpers/get":382,"./helpers/getConstructorName":383,"./helpers/model/applyHooks":394,"./helpers/populate/validateRef":398,"./helpers/query/applyQueryMiddleware":405,"./helpers/query/handleReadPreferenceAliases":407,"./helpers/schema/addAutoId":411,"./helpers/schema/getIndexes":414,"./helpers/schema/idGetter":419,"./helpers/schema/merge":420,"./helpers/timestamps/setupTimestamps":425,"./options/SchemaTypeOptions":443,"./options/VirtualOptions":444,"./schema/index":463,"./schematype":477,"./types":488,"./utils":493,"./virtualtype":494,"events":267,"kareem":304,"mpath":495,"util":591}],454:[function(require,module,exports){
+},{"../../is-buffer/index.js":294,"./error/mongooseError":349,"./helpers/clone":363,"./helpers/get":379,"./helpers/getConstructorName":380,"./helpers/model/applyHooks":391,"./helpers/populate/validateRef":395,"./helpers/query/applyQueryMiddleware":402,"./helpers/query/handleReadPreferenceAliases":404,"./helpers/schema/addAutoId":408,"./helpers/schema/getIndexes":411,"./helpers/schema/idGetter":416,"./helpers/schema/merge":417,"./helpers/timestamps/setupTimestamps":422,"./options/SchemaTypeOptions":440,"./options/VirtualOptions":441,"./schema/index":460,"./schematype":474,"./types":485,"./utils":490,"./virtualtype":491,"events":265,"kareem":301,"mpath":492,"util":588}],451:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -80003,7 +74869,7 @@ DocumentArrayElement.prototype.clone = function() {
 
 module.exports = DocumentArrayElement;
 
-},{"../error/mongooseError":352,"../helpers/discriminator/getConstructor":370,"../schematype":477,"./SubdocumentPath":455}],455:[function(require,module,exports){
+},{"../error/mongooseError":349,"../helpers/discriminator/getConstructor":367,"../schematype":474,"./SubdocumentPath":452}],452:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -80402,7 +75268,7 @@ SubdocumentPath.prototype.clone = function() {
   return schematype;
 };
 
-},{"../error/cast":346,"../error/invalidSchemaOption":349,"../error/objectExpected":354,"../helpers/discriminator/getConstructor":370,"../helpers/document/applyDefaults":374,"../helpers/model/discriminator":395,"../helpers/projection/isExclusive":401,"../helpers/schema/handleIdOption":417,"../options":432,"../options/SchemaSubdocumentOptions":442,"../schematype":477,"../types/subdocument":491,"../utils":493,"./operators/exists":469,"./operators/geospatial":470,"./operators/helpers":471,"events":267}],456:[function(require,module,exports){
+},{"../error/cast":343,"../error/invalidSchemaOption":346,"../error/objectExpected":351,"../helpers/discriminator/getConstructor":367,"../helpers/document/applyDefaults":371,"../helpers/model/discriminator":392,"../helpers/projection/isExclusive":398,"../helpers/schema/handleIdOption":414,"../options":429,"../options/SchemaSubdocumentOptions":439,"../schematype":474,"../types/subdocument":488,"../utils":490,"./operators/exists":466,"./operators/geospatial":467,"./operators/helpers":468,"events":265}],453:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -81090,7 +75956,7 @@ handle.$in = SchemaType.prototype.$conditionalHandlers.$in;
 
 module.exports = SchemaArray;
 
-},{"../cast":334,"../error/mongooseError":352,"../helpers/arrayDepth":365,"../helpers/clone":366,"../helpers/discriminator/getDiscriminatorByValue":371,"../helpers/query/isOperator":408,"../options/SchemaArrayOptions":434,"../schematype":477,"../types":488,"../utils":493,"./index.js":463,"./mixed":465,"./operators/exists":469,"./operators/geospatial":470,"./operators/helpers":471,"./operators/type":473,"util":591}],457:[function(require,module,exports){
+},{"../cast":331,"../error/mongooseError":349,"../helpers/arrayDepth":362,"../helpers/clone":363,"../helpers/discriminator/getDiscriminatorByValue":368,"../helpers/query/isOperator":405,"../options/SchemaArrayOptions":431,"../schematype":474,"../types":485,"../utils":490,"./index.js":460,"./mixed":462,"./operators/exists":466,"./operators/geospatial":467,"./operators/helpers":468,"./operators/type":470,"util":588}],454:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -81332,7 +76198,7 @@ SchemaBigInt.prototype._castNullish = function _castNullish(v) {
 
 module.exports = SchemaBigInt;
 
-},{"../cast/bigint":335,"../error/cast":346,"../schematype":477}],458:[function(require,module,exports){
+},{"../cast/bigint":332,"../error/cast":343,"../schematype":474}],455:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -81624,7 +76490,7 @@ SchemaBoolean.prototype._castNullish = function _castNullish(v) {
 
 module.exports = SchemaBoolean;
 
-},{"../cast/boolean":336,"../error/cast":346,"../schematype":477}],459:[function(require,module,exports){
+},{"../cast/boolean":333,"../error/cast":343,"../schematype":474}],456:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module dependencies.
@@ -81918,7 +76784,7 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val, context) {
 module.exports = SchemaBuffer;
 
 }).call(this)}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":297,"../options/SchemaBufferOptions":435,"../schematype":477,"../types/buffer":486,"../utils":493,"./operators/bitwise":468}],460:[function(require,module,exports){
+},{"../../../is-buffer/index.js":294,"../options/SchemaBufferOptions":432,"../schematype":474,"../types/buffer":483,"../utils":490,"./operators/bitwise":465}],457:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -82346,7 +77212,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val, context) {
 
 module.exports = SchemaDate;
 
-},{"../cast/date":337,"../error/index":348,"../helpers/getConstructorName":383,"../options/SchemaDateOptions":436,"../schematype":477,"../utils":493}],461:[function(require,module,exports){
+},{"../cast/date":334,"../error/index":345,"../helpers/getConstructorName":380,"../options/SchemaDateOptions":433,"../schematype":474,"../utils":490}],458:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -82576,7 +77442,7 @@ Decimal128.prototype.$conditionalHandlers = {
 
 module.exports = Decimal128;
 
-},{"../cast/decimal128":338,"../helpers/isBsonType":388,"../schematype":477}],462:[function(require,module,exports){
+},{"../cast/decimal128":335,"../helpers/isBsonType":385,"../schematype":474}],459:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -83194,7 +78060,7 @@ DocumentArrayPath.get = SchemaType.get;
 
 module.exports = DocumentArrayPath;
 
-},{"../error/cast":346,"../error/invalidSchemaOption":349,"../helpers/discriminator/getConstructor":370,"../helpers/document/handleSpreadDoc":379,"../helpers/model/discriminator":395,"../helpers/schema/handleIdOption":417,"../helpers/symbols":423,"../options/SchemaDocumentArrayOptions":437,"../schematype":477,"../types/ArraySubdocument":479,"../types/DocumentArray":480,"../utils":493,"./DocumentArrayElement":454,"./array":456,"events":267}],463:[function(require,module,exports){
+},{"../error/cast":343,"../error/invalidSchemaOption":346,"../helpers/discriminator/getConstructor":367,"../helpers/document/handleSpreadDoc":376,"../helpers/model/discriminator":392,"../helpers/schema/handleIdOption":414,"../helpers/symbols":420,"../options/SchemaDocumentArrayOptions":434,"../schematype":474,"../types/ArraySubdocument":476,"../types/DocumentArray":477,"../utils":490,"./DocumentArrayElement":451,"./array":453,"events":265}],460:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -83224,7 +78090,7 @@ exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 exports.ObjectID = exports.ObjectId;
 
-},{"./SubdocumentPath":455,"./array":456,"./bigint":457,"./boolean":458,"./buffer":459,"./date":460,"./decimal128":461,"./documentarray":462,"./map":464,"./mixed":465,"./number":466,"./objectid":467,"./string":474,"./uuid":476}],464:[function(require,module,exports){
+},{"./SubdocumentPath":452,"./array":453,"./bigint":454,"./boolean":455,"./buffer":456,"./date":457,"./decimal128":458,"./documentarray":459,"./map":461,"./mixed":462,"./number":463,"./objectid":464,"./string":471,"./uuid":473}],461:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -83312,7 +78178,7 @@ Map.defaultOptions = {};
 module.exports = Map;
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../options/SchemaMapOptions":438,"../schematype":477,"../types/map":489}],465:[function(require,module,exports){
+},{"../options/SchemaMapOptions":435,"../schematype":474,"../types/map":486}],462:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -83445,7 +78311,7 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../helpers/isObject":390,"../schematype":477,"../utils":493,"./symbols":475}],466:[function(require,module,exports){
+},{"../helpers/isObject":387,"../schematype":474,"../utils":490,"./symbols":472}],463:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -83887,7 +78753,7 @@ SchemaNumber.prototype.castForQuery = function($conditional, val, context) {
 
 module.exports = SchemaNumber;
 
-},{"../cast/number":339,"../error/index":348,"../options/SchemaNumberOptions":439,"../schematype":477,"../utils":493,"./operators/bitwise":468}],467:[function(require,module,exports){
+},{"../cast/number":336,"../error/index":345,"../options/SchemaNumberOptions":436,"../schematype":474,"../utils":490,"./operators/bitwise":465}],464:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -84186,7 +79052,7 @@ function resetId(v) {
 
 module.exports = ObjectId;
 
-},{"../cast/objectid":340,"../helpers/getConstructorName":383,"../helpers/isBsonType":388,"../options/SchemaObjectIdOptions":440,"../schematype":477,"../types/objectid":490,"../utils":493,"./../document":342}],468:[function(require,module,exports){
+},{"../cast/objectid":337,"../helpers/getConstructorName":380,"../helpers/isBsonType":385,"../options/SchemaObjectIdOptions":437,"../schematype":474,"../types/objectid":487,"../utils":490,"./../document":339}],465:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module requirements.
@@ -84228,7 +79094,7 @@ function _castNumber(path, num) {
 module.exports = handleBitwiseOperator;
 
 }).call(this)}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":297,"../../error/cast":346}],469:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":294,"../../error/cast":343}],466:[function(require,module,exports){
 'use strict';
 
 const castBoolean = require('../../cast/boolean');
@@ -84242,7 +79108,7 @@ module.exports = function(val) {
   return castBoolean(val, path);
 };
 
-},{"../../cast/boolean":336}],470:[function(require,module,exports){
+},{"../../cast/boolean":333}],467:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -84351,7 +79217,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":456,"./helpers":471}],471:[function(require,module,exports){
+},{"../array":453,"./helpers":468}],468:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84385,7 +79251,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":466}],472:[function(require,module,exports){
+},{"../number":463}],469:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -84426,7 +79292,7 @@ module.exports = function castTextSearch(val, path) {
   return val;
 };
 
-},{"../../cast/boolean":336,"../../cast/string":341,"../../error/cast":346}],473:[function(require,module,exports){
+},{"../../cast/boolean":333,"../../cast/string":338,"../../error/cast":343}],470:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84448,7 +79314,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],474:[function(require,module,exports){
+},{}],471:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85148,14 +80014,14 @@ SchemaString.prototype.castForQuery = function($conditional, val, context) {
 
 module.exports = SchemaString;
 
-},{"../cast/string":341,"../error/index":348,"../helpers/isBsonType":388,"../options/SchemaStringOptions":441,"../schematype":477,"../utils":493}],475:[function(require,module,exports){
+},{"../cast/string":338,"../error/index":345,"../helpers/isBsonType":385,"../options/SchemaStringOptions":438,"../schematype":474,"../utils":490}],472:[function(require,module,exports){
 'use strict';
 
 exports.schemaMixedSymbol = Symbol.for('mongoose:schema_mixed');
 
 exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
 
-},{}],476:[function(require,module,exports){
+},{}],473:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module dependencies.
@@ -85515,7 +80381,7 @@ SchemaUUID.prototype.castForQuery = function($conditional, val, context) {
 module.exports = SchemaUUID;
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../schematype":477,"../types/buffer":486,"../utils":493,"./operators/bitwise":468,"buffer":156}],477:[function(require,module,exports){
+},{"../schematype":474,"../types/buffer":483,"../utils":490,"./operators/bitwise":465,"buffer":156}],474:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -87228,7 +82094,7 @@ exports.CastError = CastError;
 exports.ValidatorError = ValidatorError;
 
 }).call(this)}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":297,"./error/index":348,"./helpers/clone":366,"./helpers/immediate":385,"./helpers/isAsyncFunction":387,"./helpers/isSimpleValidator":393,"./helpers/schematype/handleImmutable":421,"./helpers/symbols":423,"./options/SchemaTypeOptions":443,"./schema/operators/exists":469,"./schema/operators/type":473,"./utils":493}],478:[function(require,module,exports){
+},{"../../is-buffer/index.js":294,"./error/index":345,"./helpers/clone":363,"./helpers/immediate":382,"./helpers/isAsyncFunction":384,"./helpers/isSimpleValidator":390,"./helpers/schematype/handleImmutable":418,"./helpers/symbols":420,"./options/SchemaTypeOptions":440,"./schema/operators/exists":466,"./schema/operators/type":470,"./utils":490}],475:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -87441,7 +82307,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":493}],479:[function(require,module,exports){
+},{"./utils":490}],476:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -87640,7 +82506,7 @@ ArraySubdocument.prototype.parentArray = function() {
 
 module.exports = ArraySubdocument;
 
-},{"../helpers/symbols":423,"../utils":493,"./subdocument":491,"events":267}],480:[function(require,module,exports){
+},{"../helpers/symbols":420,"../utils":490,"./subdocument":488,"events":265}],477:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -87755,14 +82621,14 @@ function MongooseDocumentArray(values, path, doc) {
 
 module.exports = MongooseDocumentArray;
 
-},{"../../document":342,"../../helpers/symbols":423,"../array/methods":485,"./methods":482}],481:[function(require,module,exports){
+},{"../../document":339,"../../helpers/symbols":420,"../array/methods":482,"./methods":479}],478:[function(require,module,exports){
 'use strict';
 
 exports.isMongooseDocumentArray = function(mongooseDocumentArray) {
   return Array.isArray(mongooseDocumentArray) && mongooseDocumentArray.isMongooseDocumentArray;
 };
 
-},{}],482:[function(require,module,exports){
+},{}],479:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -88149,7 +83015,7 @@ function _updateParentPopulated(arr) {
 }
 
 }).call(this)}).call(this,{"isBuffer":require("../../../../../is-buffer/index.js")})
-},{"../../../../../is-buffer/index.js":297,"../../../cast/objectid":340,"../../../document":342,"../../../helpers/discriminator/getDiscriminatorByValue":371,"../../../helpers/isBsonType":388,"../../../helpers/symbols":423,"../../../options":432,"../../../utils":493,"../../array/methods":485}],483:[function(require,module,exports){
+},{"../../../../../is-buffer/index.js":294,"../../../cast/objectid":337,"../../../document":339,"../../../helpers/discriminator/getDiscriminatorByValue":368,"../../../helpers/isBsonType":385,"../../../helpers/symbols":420,"../../../options":429,"../../../utils":490,"../../array/methods":482}],480:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -88270,14 +83136,14 @@ function MongooseArray(values, path, doc, schematype) {
 
 module.exports = exports = MongooseArray;
 
-},{"../../document":342,"../../helpers/symbols":423,"./methods":485}],484:[function(require,module,exports){
+},{"../../document":339,"../../helpers/symbols":420,"./methods":482}],481:[function(require,module,exports){
 'use strict';
 
 exports.isMongooseArray = function(mongooseArray) {
   return Array.isArray(mongooseArray) && mongooseArray.isMongooseArray;
 };
 
-},{}],485:[function(require,module,exports){
+},{}],482:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -89312,7 +84178,7 @@ for (const method of returnVanillaArrayMethods) {
 module.exports = methods;
 
 }).call(this)}).call(this,{"isBuffer":require("../../../../../is-buffer/index.js")})
-},{"../../../../../is-buffer/index.js":297,"../../../document":342,"../../../error/mongooseError":352,"../../../helpers/clone":366,"../../../helpers/document/cleanModifiedSubpaths":375,"../../../helpers/isBsonType":388,"../../../helpers/symbols":423,"../../../options":432,"../../../utils":493,"../../ArraySubdocument":479,"mpath":495}],486:[function(require,module,exports){
+},{"../../../../../is-buffer/index.js":294,"../../../document":339,"../../../error/mongooseError":349,"../../../helpers/clone":363,"../../../helpers/document/cleanModifiedSubpaths":372,"../../../helpers/isBsonType":385,"../../../helpers/symbols":420,"../../../options":429,"../../../utils":490,"../../ArraySubdocument":476,"mpath":492}],483:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module dependencies.
@@ -89593,7 +84459,7 @@ MongooseBuffer.Binary = Binary;
 module.exports = MongooseBuffer;
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../utils":493,"bson":154,"buffer":156}],487:[function(require,module,exports){
+},{"../utils":490,"bson":154,"buffer":156}],484:[function(require,module,exports){
 /**
  * Decimal128 type constructor
  *
@@ -89608,7 +84474,7 @@ module.exports = MongooseBuffer;
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":154}],488:[function(require,module,exports){
+},{"bson":154}],485:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -89632,7 +84498,7 @@ exports.Subdocument = require('./subdocument');
 
 exports.UUID = require('./uuid');
 
-},{"./ArraySubdocument":479,"./DocumentArray":480,"./array":483,"./buffer":486,"./decimal128":487,"./map":489,"./objectid":490,"./subdocument":491,"./uuid":492}],489:[function(require,module,exports){
+},{"./ArraySubdocument":476,"./DocumentArray":477,"./array":480,"./buffer":483,"./decimal128":484,"./map":486,"./objectid":487,"./subdocument":488,"./uuid":489}],486:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../schema/mixed');
@@ -89988,7 +84854,7 @@ function checkValidKey(key) {
 
 module.exports = MongooseMap;
 
-},{"../error/mongooseError":352,"../helpers/clone":366,"../helpers/document/handleSpreadDoc":379,"../helpers/getConstructorName":383,"../helpers/isBsonType":388,"../helpers/specialProperties":422,"../helpers/symbols":423,"../schema/mixed":465,"../utils":493,"util":591}],490:[function(require,module,exports){
+},{"../error/mongooseError":349,"../helpers/clone":363,"../helpers/document/handleSpreadDoc":376,"../helpers/getConstructorName":380,"../helpers/isBsonType":385,"../helpers/specialProperties":419,"../helpers/symbols":420,"../schema/mixed":462,"../utils":490,"util":588}],487:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -90031,7 +84897,7 @@ ObjectId.prototype[objectIdSymbol] = true;
 
 module.exports = ObjectId;
 
-},{"../helpers/symbols":423,"bson":154}],491:[function(require,module,exports){
+},{"../helpers/symbols":420,"bson":154}],488:[function(require,module,exports){
 'use strict';
 
 const Document = require('../document');
@@ -90469,7 +85335,7 @@ function registerRemoveListener(sub) {
   owner.$on('deleteOne', emitRemove);
 }
 
-},{"../document":342,"../helpers/immediate":385,"../options":432,"../utils":493,"util":591}],492:[function(require,module,exports){
+},{"../document":339,"../helpers/immediate":382,"../options":429,"../utils":490,"util":588}],489:[function(require,module,exports){
 /**
  * UUID type constructor
  *
@@ -90484,7 +85350,7 @@ function registerRemoveListener(sub) {
 
 module.exports = require('bson').UUID;
 
-},{"bson":154}],493:[function(require,module,exports){
+},{"bson":154}],490:[function(require,module,exports){
 (function (process,Buffer){(function (){
 'use strict';
 
@@ -91476,7 +86342,7 @@ exports.injectTimestampsOption = function injectTimestampsOption(writeOperation,
 };
 
 }).call(this)}).call(this,require('_process'),require("buffer").Buffer)
-},{"./document":342,"./helpers/clone":366,"./helpers/getFunctionName":384,"./helpers/immediate":385,"./helpers/isBsonType":388,"./helpers/isMongooseObject":389,"./helpers/isObject":390,"./helpers/isPOJO":391,"./helpers/promiseOrCallback":404,"./helpers/query/trusted":409,"./helpers/schema/merge":420,"./helpers/specialProperties":422,"./options/PopulateOptions":433,"./types/DocumentArray/isMongooseDocumentArray":481,"./types/array/isMongooseArray":484,"./types/objectid":490,"_process":521,"bson":154,"buffer":156,"mpath":495,"ms":498}],494:[function(require,module,exports){
+},{"./document":339,"./helpers/clone":363,"./helpers/getFunctionName":381,"./helpers/immediate":382,"./helpers/isBsonType":385,"./helpers/isMongooseObject":386,"./helpers/isObject":387,"./helpers/isPOJO":388,"./helpers/promiseOrCallback":401,"./helpers/query/trusted":406,"./helpers/schema/merge":417,"./helpers/specialProperties":419,"./options/PopulateOptions":430,"./types/DocumentArray/isMongooseDocumentArray":478,"./types/array/isMongooseArray":481,"./types/objectid":487,"_process":518,"bson":154,"buffer":156,"mpath":492,"ms":495}],491:[function(require,module,exports){
 'use strict';
 
 const utils = require('./utils');
@@ -91653,12 +86519,12 @@ VirtualType.prototype.applySetters = function(value, doc) {
 
 module.exports = VirtualType;
 
-},{"./utils":493}],495:[function(require,module,exports){
+},{"./utils":490}],492:[function(require,module,exports){
 'use strict';
 
 module.exports = exports = require('./lib');
 
-},{"./lib":496}],496:[function(require,module,exports){
+},{"./lib":493}],493:[function(require,module,exports){
 /* eslint strict:off */
 /* eslint no-var: off */
 /* eslint no-redeclare: off */
@@ -91996,7 +86862,7 @@ function K(v) {
   return v;
 }
 
-},{"./stringToParts":497}],497:[function(require,module,exports){
+},{"./stringToParts":494}],494:[function(require,module,exports){
 'use strict';
 
 module.exports = function stringToParts(str) {
@@ -92045,7 +86911,7 @@ module.exports = function stringToParts(str) {
 
   return result;
 };
-},{}],498:[function(require,module,exports){
+},{}],495:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -92209,7 +87075,7 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],499:[function(require,module,exports){
+},{}],496:[function(require,module,exports){
 'use strict';
 
 var keysShim;
@@ -92333,7 +87199,7 @@ if (!Object.keys) {
 }
 module.exports = keysShim;
 
-},{"./isArguments":501}],500:[function(require,module,exports){
+},{"./isArguments":498}],497:[function(require,module,exports){
 'use strict';
 
 var slice = Array.prototype.slice;
@@ -92367,7 +87233,7 @@ keysShim.shim = function shimObjectKeys() {
 
 module.exports = keysShim;
 
-},{"./implementation":499,"./isArguments":501}],501:[function(require,module,exports){
+},{"./implementation":496,"./isArguments":498}],498:[function(require,module,exports){
 'use strict';
 
 var toStr = Object.prototype.toString;
@@ -92386,7 +87252,7 @@ module.exports = function isArguments(value) {
 	return isArgs;
 };
 
-},{}],502:[function(require,module,exports){
+},{}],499:[function(require,module,exports){
 'use strict';
 
 // modified from https://github.com/es-shims/es6-shim
@@ -92434,7 +87300,7 @@ module.exports = function assign(target, source1) {
 	return to; // step 4
 };
 
-},{"call-bind/callBound":163,"has-symbols/shams":277,"object-keys":500}],503:[function(require,module,exports){
+},{"call-bind/callBound":163,"has-symbols/shams":275,"object-keys":497}],500:[function(require,module,exports){
 'use strict';
 
 var implementation = require('./implementation');
@@ -92491,7 +87357,7 @@ module.exports = function getPolyfill() {
 	return Object.assign;
 };
 
-},{"./implementation":502}],504:[function(require,module,exports){
+},{"./implementation":499}],501:[function(require,module,exports){
 module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.2": "aes-128-cbc",
 "2.16.840.1.101.3.4.1.3": "aes-128-ofb",
@@ -92505,7 +87371,7 @@ module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.43": "aes-256-ofb",
 "2.16.840.1.101.3.4.1.44": "aes-256-cfb"
 }
-},{}],505:[function(require,module,exports){
+},{}],502:[function(require,module,exports){
 // from https://github.com/indutny/self-signed/blob/gh-pages/lib/asn1.js
 // Fedor, you are amazing.
 
@@ -92630,7 +87496,7 @@ exports.signature = asn1.define('signature', function () {
 	);
 });
 
-},{"./certificate":506,"asn1.js":102}],506:[function(require,module,exports){
+},{"./certificate":503,"asn1.js":102}],503:[function(require,module,exports){
 // from https://github.com/Rantanen/node-dtls/blob/25a7dc861bda38cfeac93a723500eea4f0ac2e86/Certificate.js
 // thanks to @Rantanen
 
@@ -92721,7 +87587,7 @@ var X509Certificate = asn.define('X509Certificate', function () {
 
 module.exports = X509Certificate;
 
-},{"asn1.js":102}],507:[function(require,module,exports){
+},{"asn1.js":102}],504:[function(require,module,exports){
 'use strict';
 
 // adapted from https://github.com/apatil/pemstrip
@@ -92756,7 +87622,7 @@ module.exports = function (okey, password) {
 	};
 };
 
-},{"browserify-aes":127,"evp_bytestokey":268,"safe-buffer":559}],508:[function(require,module,exports){
+},{"browserify-aes":127,"evp_bytestokey":266,"safe-buffer":556}],505:[function(require,module,exports){
 'use strict';
 
 var asn1 = require('./asn1');
@@ -92869,13 +87735,13 @@ parseKeys.signature = asn1.signature;
 
 module.exports = parseKeys;
 
-},{"./aesid.json":504,"./asn1":505,"./fixProc":507,"browserify-aes":127,"pbkdf2":509,"safe-buffer":559}],509:[function(require,module,exports){
+},{"./aesid.json":501,"./asn1":502,"./fixProc":504,"browserify-aes":127,"pbkdf2":506,"safe-buffer":556}],506:[function(require,module,exports){
 'use strict';
 
 exports.pbkdf2 = require('./lib/async');
 exports.pbkdf2Sync = require('./lib/sync');
 
-},{"./lib/async":510,"./lib/sync":513}],510:[function(require,module,exports){
+},{"./lib/async":507,"./lib/sync":510}],507:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -93001,7 +87867,7 @@ module.exports = function (password, salt, iterations, keylen, digest, callback)
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./default-encoding":511,"./precondition":512,"./sync":513,"./to-buffer":514,"safe-buffer":559}],511:[function(require,module,exports){
+},{"./default-encoding":508,"./precondition":509,"./sync":510,"./to-buffer":511,"safe-buffer":556}],508:[function(require,module,exports){
 (function (process,global){(function (){
 'use strict';
 
@@ -93019,7 +87885,7 @@ if (global.process && global.process.browser) {
 module.exports = defaultEncoding;
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":521}],512:[function(require,module,exports){
+},{"_process":518}],509:[function(require,module,exports){
 'use strict';
 
 var MAX_ALLOC = Math.pow(2, 30) - 1; // default in iojs
@@ -93042,7 +87908,7 @@ module.exports = function (iterations, keylen) {
 	}
 };
 
-},{}],513:[function(require,module,exports){
+},{}],510:[function(require,module,exports){
 'use strict';
 
 var md5 = require('create-hash/md5');
@@ -93175,7 +88041,7 @@ function pbkdf2(password, salt, iterations, keylen, digest) {
 
 module.exports = pbkdf2;
 
-},{"./default-encoding":511,"./precondition":512,"./to-buffer":514,"create-hash/md5":516,"ripemd160":518,"safe-buffer":559,"sha.js":562}],514:[function(require,module,exports){
+},{"./default-encoding":508,"./precondition":509,"./to-buffer":511,"create-hash/md5":513,"ripemd160":515,"safe-buffer":556,"sha.js":559}],511:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -93197,7 +88063,7 @@ module.exports = function (thing, encoding, name) {
 	throw new TypeError(name + ' must be a string, a Buffer, a Uint8Array, or a DataView');
 };
 
-},{"safe-buffer":559,"to-buffer":586}],515:[function(require,module,exports){
+},{"safe-buffer":556,"to-buffer":583}],512:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict'
 var intSize = 4
@@ -93231,7 +88097,7 @@ module.exports = function hash (buf, fn) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":156}],516:[function(require,module,exports){
+},{"buffer":156}],513:[function(require,module,exports){
 'use strict'
 /*
  * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
@@ -93384,7 +88250,7 @@ module.exports = function md5 (buf) {
   return makeHash(buf, core_md5)
 }
 
-},{"./make-hash":515}],517:[function(require,module,exports){
+},{"./make-hash":512}],514:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict'
 var Transform = require('stream').Transform
@@ -93471,7 +88337,7 @@ HashBase.prototype._digest = function () {
 module.exports = HashBase
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":156,"inherits":295,"stream":569}],518:[function(require,module,exports){
+},{"buffer":156,"inherits":292,"stream":566}],515:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict'
 var inherits = require('inherits')
@@ -93766,7 +88632,7 @@ function fn5 (a, b, c, d, e, m, k, s) {
 module.exports = RIPEMD160
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":156,"hash-base":517,"inherits":295}],519:[function(require,module,exports){
+},{"buffer":156,"hash-base":514,"inherits":292}],516:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
@@ -93784,7 +88650,7 @@ module.exports = [
 	'BigUint64Array'
 ];
 
-},{}],520:[function(require,module,exports){
+},{}],517:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -93833,7 +88699,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":521}],521:[function(require,module,exports){
+},{"_process":518}],518:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -94019,7 +88885,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],522:[function(require,module,exports){
+},{}],519:[function(require,module,exports){
 exports.publicEncrypt = require('./publicEncrypt')
 exports.privateDecrypt = require('./privateDecrypt')
 
@@ -94031,7 +88897,7 @@ exports.publicDecrypt = function publicDecrypt (key, buf) {
   return exports.privateDecrypt(key, buf, true)
 }
 
-},{"./privateDecrypt":524,"./publicEncrypt":525}],523:[function(require,module,exports){
+},{"./privateDecrypt":521,"./publicEncrypt":522}],520:[function(require,module,exports){
 var createHash = require('create-hash')
 var Buffer = require('safe-buffer').Buffer
 
@@ -94052,7 +88918,7 @@ function i2ops (c) {
   return out
 }
 
-},{"create-hash":225,"safe-buffer":559}],524:[function(require,module,exports){
+},{"create-hash":223,"safe-buffer":556}],521:[function(require,module,exports){
 var parseKeys = require('parse-asn1')
 var mgf = require('./mgf')
 var xor = require('./xor')
@@ -94159,7 +89025,7 @@ function compare (a, b) {
   return dif
 }
 
-},{"./mgf":523,"./withPublic":526,"./xor":527,"bn.js":122,"browserify-rsa":145,"create-hash":225,"parse-asn1":508,"safe-buffer":559}],525:[function(require,module,exports){
+},{"./mgf":520,"./withPublic":523,"./xor":524,"bn.js":122,"browserify-rsa":145,"create-hash":223,"parse-asn1":505,"safe-buffer":556}],522:[function(require,module,exports){
 var parseKeys = require('parse-asn1')
 var randomBytes = require('randombytes')
 var createHash = require('create-hash')
@@ -94249,7 +89115,7 @@ function nonZero (len) {
   return out
 }
 
-},{"./mgf":523,"./withPublic":526,"./xor":527,"bn.js":122,"browserify-rsa":145,"create-hash":225,"parse-asn1":508,"randombytes":528,"safe-buffer":559}],526:[function(require,module,exports){
+},{"./mgf":520,"./withPublic":523,"./xor":524,"bn.js":122,"browserify-rsa":145,"create-hash":223,"parse-asn1":505,"randombytes":525,"safe-buffer":556}],523:[function(require,module,exports){
 var BN = require('bn.js')
 var Buffer = require('safe-buffer').Buffer
 
@@ -94263,7 +89129,7 @@ function withPublic (paddedMsg, key) {
 
 module.exports = withPublic
 
-},{"bn.js":122,"safe-buffer":559}],527:[function(require,module,exports){
+},{"bn.js":122,"safe-buffer":556}],524:[function(require,module,exports){
 module.exports = function xor (a, b) {
   var len = a.length
   var i = -1
@@ -94273,7 +89139,7 @@ module.exports = function xor (a, b) {
   return a
 }
 
-},{}],528:[function(require,module,exports){
+},{}],525:[function(require,module,exports){
 (function (process,global){(function (){
 'use strict'
 
@@ -94327,7 +89193,7 @@ function randomBytes (size, cb) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":521,"safe-buffer":559}],529:[function(require,module,exports){
+},{"_process":518,"safe-buffer":556}],526:[function(require,module,exports){
 (function (process,global){(function (){
 'use strict'
 
@@ -94439,7 +89305,7 @@ function randomFillSync (buf, offset, size) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":521,"randombytes":528,"safe-buffer":559}],530:[function(require,module,exports){
+},{"_process":518,"randombytes":525,"safe-buffer":556}],527:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -94571,7 +89437,7 @@ Duplex.prototype._destroy = function (err, cb) {
 
   pna.nextTick(cb, err);
 };
-},{"./_stream_readable":532,"./_stream_writable":534,"core-util-is":167,"inherits":295,"process-nextick-args":520}],531:[function(require,module,exports){
+},{"./_stream_readable":529,"./_stream_writable":531,"core-util-is":167,"inherits":292,"process-nextick-args":517}],528:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -94619,7 +89485,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":533,"core-util-is":167,"inherits":295}],532:[function(require,module,exports){
+},{"./_stream_transform":530,"core-util-is":167,"inherits":292}],529:[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -95641,7 +90507,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":530,"./internal/streams/BufferList":535,"./internal/streams/destroy":536,"./internal/streams/stream":537,"_process":521,"core-util-is":167,"events":267,"inherits":295,"isarray":538,"process-nextick-args":520,"safe-buffer":539,"string_decoder/":540,"util":124}],533:[function(require,module,exports){
+},{"./_stream_duplex":527,"./internal/streams/BufferList":532,"./internal/streams/destroy":533,"./internal/streams/stream":534,"_process":518,"core-util-is":167,"events":265,"inherits":292,"isarray":535,"process-nextick-args":517,"safe-buffer":536,"string_decoder/":537,"util":124}],530:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -95856,7 +90722,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":530,"core-util-is":167,"inherits":295}],534:[function(require,module,exports){
+},{"./_stream_duplex":527,"core-util-is":167,"inherits":292}],531:[function(require,module,exports){
 (function (process,global,setImmediate){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -96544,7 +91410,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"./_stream_duplex":530,"./internal/streams/destroy":536,"./internal/streams/stream":537,"_process":521,"core-util-is":167,"inherits":295,"process-nextick-args":520,"safe-buffer":539,"timers":585,"util-deprecate":588}],535:[function(require,module,exports){
+},{"./_stream_duplex":527,"./internal/streams/destroy":533,"./internal/streams/stream":534,"_process":518,"core-util-is":167,"inherits":292,"process-nextick-args":517,"safe-buffer":536,"timers":582,"util-deprecate":585}],532:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -96623,7 +91489,7 @@ if (util && util.inspect && util.inspect.custom) {
     return this.constructor.name + ' ' + obj;
   };
 }
-},{"safe-buffer":539,"util":124}],536:[function(require,module,exports){
+},{"safe-buffer":536,"util":124}],533:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -96708,11 +91574,11 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":520}],537:[function(require,module,exports){
-arguments[4][326][0].apply(exports,arguments)
-},{"dup":326,"events":267}],538:[function(require,module,exports){
-arguments[4][303][0].apply(exports,arguments)
-},{"dup":303}],539:[function(require,module,exports){
+},{"process-nextick-args":517}],534:[function(require,module,exports){
+arguments[4][323][0].apply(exports,arguments)
+},{"dup":323,"events":265}],535:[function(require,module,exports){
+arguments[4][300][0].apply(exports,arguments)
+},{"dup":300}],536:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -96776,7 +91642,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":156}],540:[function(require,module,exports){
+},{"buffer":156}],537:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -97073,7 +91939,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":539}],541:[function(require,module,exports){
+},{"safe-buffer":536}],538:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -97082,7 +91948,7 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":530,"./lib/_stream_passthrough.js":531,"./lib/_stream_readable.js":532,"./lib/_stream_transform.js":533,"./lib/_stream_writable.js":534}],542:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":527,"./lib/_stream_passthrough.js":528,"./lib/_stream_readable.js":529,"./lib/_stream_transform.js":530,"./lib/_stream_writable.js":531}],539:[function(require,module,exports){
 'use strict'
 var Buffer = require('buffer').Buffer
 var inherits = require('inherits')
@@ -97247,39 +92113,39 @@ function fn5 (a, b, c, d, e, m, k, s) {
 
 module.exports = RIPEMD160
 
-},{"buffer":156,"hash-base":543,"inherits":295}],543:[function(require,module,exports){
+},{"buffer":156,"hash-base":540,"inherits":292}],540:[function(require,module,exports){
+arguments[4][309][0].apply(exports,arguments)
+},{"dup":309,"inherits":292,"readable-stream":555,"safe-buffer":556}],541:[function(require,module,exports){
+arguments[4][310][0].apply(exports,arguments)
+},{"dup":310}],542:[function(require,module,exports){
+arguments[4][311][0].apply(exports,arguments)
+},{"./_stream_readable":544,"./_stream_writable":546,"_process":518,"dup":311,"inherits":292}],543:[function(require,module,exports){
 arguments[4][312][0].apply(exports,arguments)
-},{"dup":312,"inherits":295,"readable-stream":558,"safe-buffer":559}],544:[function(require,module,exports){
+},{"./_stream_transform":545,"dup":312,"inherits":292}],544:[function(require,module,exports){
 arguments[4][313][0].apply(exports,arguments)
-},{"dup":313}],545:[function(require,module,exports){
+},{"../errors":541,"./_stream_duplex":542,"./internal/streams/async_iterator":547,"./internal/streams/buffer_list":548,"./internal/streams/destroy":549,"./internal/streams/from":551,"./internal/streams/state":553,"./internal/streams/stream":554,"_process":518,"buffer":156,"dup":313,"events":265,"inherits":292,"string_decoder/":581,"util":124}],545:[function(require,module,exports){
 arguments[4][314][0].apply(exports,arguments)
-},{"./_stream_readable":547,"./_stream_writable":549,"_process":521,"dup":314,"inherits":295}],546:[function(require,module,exports){
+},{"../errors":541,"./_stream_duplex":542,"dup":314,"inherits":292}],546:[function(require,module,exports){
 arguments[4][315][0].apply(exports,arguments)
-},{"./_stream_transform":548,"dup":315,"inherits":295}],547:[function(require,module,exports){
+},{"../errors":541,"./_stream_duplex":542,"./internal/streams/destroy":549,"./internal/streams/state":553,"./internal/streams/stream":554,"_process":518,"buffer":156,"dup":315,"inherits":292,"util-deprecate":585}],547:[function(require,module,exports){
 arguments[4][316][0].apply(exports,arguments)
-},{"../errors":544,"./_stream_duplex":545,"./internal/streams/async_iterator":550,"./internal/streams/buffer_list":551,"./internal/streams/destroy":552,"./internal/streams/from":554,"./internal/streams/state":556,"./internal/streams/stream":557,"_process":521,"buffer":156,"dup":316,"events":267,"inherits":295,"string_decoder/":584,"util":124}],548:[function(require,module,exports){
+},{"./end-of-stream":550,"_process":518,"dup":316}],548:[function(require,module,exports){
 arguments[4][317][0].apply(exports,arguments)
-},{"../errors":544,"./_stream_duplex":545,"dup":317,"inherits":295}],549:[function(require,module,exports){
+},{"buffer":156,"dup":317,"util":124}],549:[function(require,module,exports){
 arguments[4][318][0].apply(exports,arguments)
-},{"../errors":544,"./_stream_duplex":545,"./internal/streams/destroy":552,"./internal/streams/state":556,"./internal/streams/stream":557,"_process":521,"buffer":156,"dup":318,"inherits":295,"util-deprecate":588}],550:[function(require,module,exports){
+},{"_process":518,"dup":318}],550:[function(require,module,exports){
 arguments[4][319][0].apply(exports,arguments)
-},{"./end-of-stream":553,"_process":521,"dup":319}],551:[function(require,module,exports){
+},{"../../../errors":541,"dup":319}],551:[function(require,module,exports){
 arguments[4][320][0].apply(exports,arguments)
-},{"buffer":156,"dup":320,"util":124}],552:[function(require,module,exports){
+},{"dup":320}],552:[function(require,module,exports){
 arguments[4][321][0].apply(exports,arguments)
-},{"_process":521,"dup":321}],553:[function(require,module,exports){
+},{"../../../errors":541,"./end-of-stream":550,"dup":321}],553:[function(require,module,exports){
 arguments[4][322][0].apply(exports,arguments)
-},{"../../../errors":544,"dup":322}],554:[function(require,module,exports){
+},{"../../../errors":541,"dup":322}],554:[function(require,module,exports){
 arguments[4][323][0].apply(exports,arguments)
-},{"dup":323}],555:[function(require,module,exports){
+},{"dup":323,"events":265}],555:[function(require,module,exports){
 arguments[4][324][0].apply(exports,arguments)
-},{"../../../errors":544,"./end-of-stream":553,"dup":324}],556:[function(require,module,exports){
-arguments[4][325][0].apply(exports,arguments)
-},{"../../../errors":544,"dup":325}],557:[function(require,module,exports){
-arguments[4][326][0].apply(exports,arguments)
-},{"dup":326,"events":267}],558:[function(require,module,exports){
-arguments[4][327][0].apply(exports,arguments)
-},{"./lib/_stream_duplex.js":545,"./lib/_stream_passthrough.js":546,"./lib/_stream_readable.js":547,"./lib/_stream_transform.js":548,"./lib/_stream_writable.js":549,"./lib/internal/streams/end-of-stream.js":553,"./lib/internal/streams/pipeline.js":555,"dup":327}],559:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":542,"./lib/_stream_passthrough.js":543,"./lib/_stream_readable.js":544,"./lib/_stream_transform.js":545,"./lib/_stream_writable.js":546,"./lib/internal/streams/end-of-stream.js":550,"./lib/internal/streams/pipeline.js":552,"dup":324}],556:[function(require,module,exports){
 /*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
@@ -97346,7 +92212,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":156}],560:[function(require,module,exports){
+},{"buffer":156}],557:[function(require,module,exports){
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
@@ -97390,7 +92256,7 @@ module.exports = function setFunctionLength(fn, length) {
 	return fn;
 };
 
-},{"define-data-property":230,"es-errors/type":264,"get-intrinsic":272,"gopd":274,"has-property-descriptors":275}],561:[function(require,module,exports){
+},{"define-data-property":228,"es-errors/type":262,"get-intrinsic":270,"gopd":272,"has-property-descriptors":273}],558:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 // prototype class for hash functions
@@ -97473,7 +92339,7 @@ Hash.prototype._update = function () {
 
 module.exports = Hash
 
-},{"safe-buffer":559}],562:[function(require,module,exports){
+},{"safe-buffer":556}],559:[function(require,module,exports){
 var exports = module.exports = function SHA (algorithm) {
   algorithm = algorithm.toLowerCase()
 
@@ -97490,7 +92356,7 @@ exports.sha256 = require('./sha256')
 exports.sha384 = require('./sha384')
 exports.sha512 = require('./sha512')
 
-},{"./sha":563,"./sha1":564,"./sha224":565,"./sha256":566,"./sha384":567,"./sha512":568}],563:[function(require,module,exports){
+},{"./sha":560,"./sha1":561,"./sha224":562,"./sha256":563,"./sha384":564,"./sha512":565}],560:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
  * in FIPS PUB 180-1
@@ -97586,7 +92452,7 @@ Sha.prototype._hash = function () {
 
 module.exports = Sha
 
-},{"./hash":561,"inherits":295,"safe-buffer":559}],564:[function(require,module,exports){
+},{"./hash":558,"inherits":292,"safe-buffer":556}],561:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
  * in FIPS PUB 180-1
@@ -97687,7 +92553,7 @@ Sha1.prototype._hash = function () {
 
 module.exports = Sha1
 
-},{"./hash":561,"inherits":295,"safe-buffer":559}],565:[function(require,module,exports){
+},{"./hash":558,"inherits":292,"safe-buffer":556}],562:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97742,7 +92608,7 @@ Sha224.prototype._hash = function () {
 
 module.exports = Sha224
 
-},{"./hash":561,"./sha256":566,"inherits":295,"safe-buffer":559}],566:[function(require,module,exports){
+},{"./hash":558,"./sha256":563,"inherits":292,"safe-buffer":556}],563:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97879,7 +92745,7 @@ Sha256.prototype._hash = function () {
 
 module.exports = Sha256
 
-},{"./hash":561,"inherits":295,"safe-buffer":559}],567:[function(require,module,exports){
+},{"./hash":558,"inherits":292,"safe-buffer":556}],564:[function(require,module,exports){
 var inherits = require('inherits')
 var SHA512 = require('./sha512')
 var Hash = require('./hash')
@@ -97938,7 +92804,7 @@ Sha384.prototype._hash = function () {
 
 module.exports = Sha384
 
-},{"./hash":561,"./sha512":568,"inherits":295,"safe-buffer":559}],568:[function(require,module,exports){
+},{"./hash":558,"./sha512":565,"inherits":292,"safe-buffer":556}],565:[function(require,module,exports){
 var inherits = require('inherits')
 var Hash = require('./hash')
 var Buffer = require('safe-buffer').Buffer
@@ -98200,7 +93066,7 @@ Sha512.prototype._hash = function () {
 
 module.exports = Sha512
 
-},{"./hash":561,"inherits":295,"safe-buffer":559}],569:[function(require,module,exports){
+},{"./hash":558,"inherits":292,"safe-buffer":556}],566:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -98331,37 +93197,37 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":267,"inherits":295,"readable-stream/lib/_stream_duplex.js":571,"readable-stream/lib/_stream_passthrough.js":572,"readable-stream/lib/_stream_readable.js":573,"readable-stream/lib/_stream_transform.js":574,"readable-stream/lib/_stream_writable.js":575,"readable-stream/lib/internal/streams/end-of-stream.js":579,"readable-stream/lib/internal/streams/pipeline.js":581}],570:[function(require,module,exports){
+},{"events":265,"inherits":292,"readable-stream/lib/_stream_duplex.js":568,"readable-stream/lib/_stream_passthrough.js":569,"readable-stream/lib/_stream_readable.js":570,"readable-stream/lib/_stream_transform.js":571,"readable-stream/lib/_stream_writable.js":572,"readable-stream/lib/internal/streams/end-of-stream.js":576,"readable-stream/lib/internal/streams/pipeline.js":578}],567:[function(require,module,exports){
+arguments[4][310][0].apply(exports,arguments)
+},{"dup":310}],568:[function(require,module,exports){
+arguments[4][311][0].apply(exports,arguments)
+},{"./_stream_readable":570,"./_stream_writable":572,"_process":518,"dup":311,"inherits":292}],569:[function(require,module,exports){
+arguments[4][312][0].apply(exports,arguments)
+},{"./_stream_transform":571,"dup":312,"inherits":292}],570:[function(require,module,exports){
 arguments[4][313][0].apply(exports,arguments)
-},{"dup":313}],571:[function(require,module,exports){
+},{"../errors":567,"./_stream_duplex":568,"./internal/streams/async_iterator":573,"./internal/streams/buffer_list":574,"./internal/streams/destroy":575,"./internal/streams/from":577,"./internal/streams/state":579,"./internal/streams/stream":580,"_process":518,"buffer":156,"dup":313,"events":265,"inherits":292,"string_decoder/":581,"util":124}],571:[function(require,module,exports){
 arguments[4][314][0].apply(exports,arguments)
-},{"./_stream_readable":573,"./_stream_writable":575,"_process":521,"dup":314,"inherits":295}],572:[function(require,module,exports){
+},{"../errors":567,"./_stream_duplex":568,"dup":314,"inherits":292}],572:[function(require,module,exports){
 arguments[4][315][0].apply(exports,arguments)
-},{"./_stream_transform":574,"dup":315,"inherits":295}],573:[function(require,module,exports){
+},{"../errors":567,"./_stream_duplex":568,"./internal/streams/destroy":575,"./internal/streams/state":579,"./internal/streams/stream":580,"_process":518,"buffer":156,"dup":315,"inherits":292,"util-deprecate":585}],573:[function(require,module,exports){
 arguments[4][316][0].apply(exports,arguments)
-},{"../errors":570,"./_stream_duplex":571,"./internal/streams/async_iterator":576,"./internal/streams/buffer_list":577,"./internal/streams/destroy":578,"./internal/streams/from":580,"./internal/streams/state":582,"./internal/streams/stream":583,"_process":521,"buffer":156,"dup":316,"events":267,"inherits":295,"string_decoder/":584,"util":124}],574:[function(require,module,exports){
+},{"./end-of-stream":576,"_process":518,"dup":316}],574:[function(require,module,exports){
 arguments[4][317][0].apply(exports,arguments)
-},{"../errors":570,"./_stream_duplex":571,"dup":317,"inherits":295}],575:[function(require,module,exports){
+},{"buffer":156,"dup":317,"util":124}],575:[function(require,module,exports){
 arguments[4][318][0].apply(exports,arguments)
-},{"../errors":570,"./_stream_duplex":571,"./internal/streams/destroy":578,"./internal/streams/state":582,"./internal/streams/stream":583,"_process":521,"buffer":156,"dup":318,"inherits":295,"util-deprecate":588}],576:[function(require,module,exports){
+},{"_process":518,"dup":318}],576:[function(require,module,exports){
 arguments[4][319][0].apply(exports,arguments)
-},{"./end-of-stream":579,"_process":521,"dup":319}],577:[function(require,module,exports){
+},{"../../../errors":567,"dup":319}],577:[function(require,module,exports){
 arguments[4][320][0].apply(exports,arguments)
-},{"buffer":156,"dup":320,"util":124}],578:[function(require,module,exports){
+},{"dup":320}],578:[function(require,module,exports){
 arguments[4][321][0].apply(exports,arguments)
-},{"_process":521,"dup":321}],579:[function(require,module,exports){
+},{"../../../errors":567,"./end-of-stream":576,"dup":321}],579:[function(require,module,exports){
 arguments[4][322][0].apply(exports,arguments)
-},{"../../../errors":570,"dup":322}],580:[function(require,module,exports){
+},{"../../../errors":567,"dup":322}],580:[function(require,module,exports){
 arguments[4][323][0].apply(exports,arguments)
-},{"dup":323}],581:[function(require,module,exports){
-arguments[4][324][0].apply(exports,arguments)
-},{"../../../errors":570,"./end-of-stream":579,"dup":324}],582:[function(require,module,exports){
-arguments[4][325][0].apply(exports,arguments)
-},{"../../../errors":570,"dup":325}],583:[function(require,module,exports){
-arguments[4][326][0].apply(exports,arguments)
-},{"dup":326,"events":267}],584:[function(require,module,exports){
-arguments[4][540][0].apply(exports,arguments)
-},{"dup":540,"safe-buffer":559}],585:[function(require,module,exports){
+},{"dup":323,"events":265}],581:[function(require,module,exports){
+arguments[4][537][0].apply(exports,arguments)
+},{"dup":537,"safe-buffer":556}],582:[function(require,module,exports){
 (function (setImmediate,clearImmediate){(function (){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -98440,7 +93306,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this)}).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-},{"process/browser.js":521,"timers":585}],586:[function(require,module,exports){
+},{"process/browser.js":518,"timers":582}],583:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -98551,7 +93417,7 @@ module.exports = function toBuffer(data, encoding) {
 	throw new TypeError('The "data" argument must be a string, an Array, a Buffer, a Uint8Array, or a DataView.');
 };
 
-},{"isarray":303,"safe-buffer":559,"typed-array-buffer":587}],587:[function(require,module,exports){
+},{"isarray":300,"safe-buffer":556,"typed-array-buffer":584}],584:[function(require,module,exports){
 'use strict';
 
 var $TypeError = require('es-errors/type');
@@ -98572,7 +93438,7 @@ module.exports = $typedArrayBuffer || function typedArrayBuffer(x) {
 	return x.buffer;
 };
 
-},{"call-bound":165,"es-errors/type":264,"is-typed-array":302}],588:[function(require,module,exports){
+},{"call-bound":165,"es-errors/type":262,"is-typed-array":299}],585:[function(require,module,exports){
 (function (global){(function (){
 
 /**
@@ -98643,9 +93509,9 @@ function config (name) {
 }
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],589:[function(require,module,exports){
+},{}],586:[function(require,module,exports){
 arguments[4][118][0].apply(exports,arguments)
-},{"dup":118}],590:[function(require,module,exports){
+},{"dup":118}],587:[function(require,module,exports){
 // Currently in sync with Node.js lib/internal/util/types.js
 // https://github.com/nodejs/node/commit/112cc7c27551254aa2b17098fb774867f05ed0d9
 
@@ -98981,7 +93847,7 @@ exports.isAnyArrayBuffer = isAnyArrayBuffer;
   });
 });
 
-},{"is-arguments":296,"is-generator-function":300,"is-typed-array":302,"which-typed-array":593}],591:[function(require,module,exports){
+},{"is-arguments":293,"is-generator-function":297,"is-typed-array":299,"which-typed-array":590}],588:[function(require,module,exports){
 (function (process){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -99700,7 +94566,7 @@ function callbackify(original) {
 exports.callbackify = callbackify;
 
 }).call(this)}).call(this,require('_process'))
-},{"./support/isBuffer":589,"./support/types":590,"_process":521,"inherits":295}],592:[function(require,module,exports){
+},{"./support/isBuffer":586,"./support/types":587,"_process":518,"inherits":292}],589:[function(require,module,exports){
 var indexOf = function (xs, item) {
     if (xs.indexOf) return xs.indexOf(item);
     else for (var i = 0; i < xs.length; i++) {
@@ -99851,7 +94717,7 @@ exports.createContext = Script.createContext = function (context) {
     return copy;
 };
 
-},{}],593:[function(require,module,exports){
+},{}],590:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -99971,4 +94837,4 @@ module.exports = function whichTypedArray(value) {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"available-typed-arrays":120,"call-bind":164,"call-bound":165,"for-each":269,"gopd":274,"has-tostringtag/shams":278}]},{},[87]);
+},{"available-typed-arrays":120,"call-bind":164,"call-bound":165,"for-each":267,"gopd":272,"has-tostringtag/shams":276}]},{},[87]);
