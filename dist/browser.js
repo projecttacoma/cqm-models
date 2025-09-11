@@ -28142,7 +28142,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ValueSet = exports.Ratio = exports.Quantity = exports.Interval = exports.DateTime = exports.Date = exports.Concept = exports.CodeSystem = exports.Code = exports.CodeService = exports.PatientSource = exports.Patient = exports.NullMessageListener = exports.ConsoleMessageListener = exports.Results = exports.Executor = exports.UnfilteredContext = exports.PatientContext = exports.Context = exports.Expression = exports.Repository = exports.Library = exports.AnnotatedError = void 0;
+exports.ValueSet = exports.CQLValueSet = exports.Ratio = exports.Quantity = exports.Interval = exports.DateTime = exports.Date = exports.Concept = exports.CodeSystem = exports.Code = exports.CodeService = exports.PatientSource = exports.Patient = exports.NullMessageListener = exports.ConsoleMessageListener = exports.Results = exports.Executor = exports.UnfilteredContext = exports.PatientContext = exports.Context = exports.Expression = exports.Repository = exports.Library = exports.AnnotatedError = void 0;
 // Library-related classes
 const library_1 = require("./elm/library");
 Object.defineProperty(exports, "Library", { enumerable: true, get: function () { return library_1.Library; } });
@@ -28179,6 +28179,7 @@ Object.defineProperty(exports, "DateTime", { enumerable: true, get: function () 
 Object.defineProperty(exports, "Interval", { enumerable: true, get: function () { return datatypes_1.Interval; } });
 Object.defineProperty(exports, "Quantity", { enumerable: true, get: function () { return datatypes_1.Quantity; } });
 Object.defineProperty(exports, "Ratio", { enumerable: true, get: function () { return datatypes_1.Ratio; } });
+Object.defineProperty(exports, "CQLValueSet", { enumerable: true, get: function () { return datatypes_1.CQLValueSet; } });
 Object.defineProperty(exports, "ValueSet", { enumerable: true, get: function () { return datatypes_1.ValueSet; } });
 const customErrors_1 = require("./util/customErrors");
 Object.defineProperty(exports, "AnnotatedError", { enumerable: true, get: function () { return customErrors_1.AnnotatedError; } });
@@ -28207,13 +28208,14 @@ exports.default = {
     Interval: datatypes_1.Interval,
     Quantity: datatypes_1.Quantity,
     Ratio: datatypes_1.Ratio,
+    CQLValueSet: datatypes_1.CQLValueSet,
     ValueSet: datatypes_1.ValueSet
 };
 
 },{"./cql-code-service":169,"./cql-patient":170,"./datatypes/datatypes":173,"./elm/expression":189,"./elm/library":194,"./runtime/context":209,"./runtime/executor":210,"./runtime/messageListeners":211,"./runtime/repository":212,"./runtime/results":213,"./types":216,"./util/customErrors":220}],172:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CodeSystem = exports.ValueSet = exports.Concept = exports.Code = void 0;
+exports.ValueSet = exports.CQLValueSet = exports.CodeSystem = exports.Vocabulary = exports.Concept = exports.Code = void 0;
 const util_1 = require("../util/util");
 class Code {
     constructor(code, system, version, display) {
@@ -28250,15 +28252,41 @@ class Concept {
     }
 }
 exports.Concept = Concept;
+class Vocabulary {
+    constructor(id, version, name) {
+        this.id = id;
+        this.version = version;
+        this.name = name;
+    }
+}
+exports.Vocabulary = Vocabulary;
+class CodeSystem extends Vocabulary {
+    constructor(id, version, name) {
+        super(id, version, name);
+        this.id = id;
+        this.version = version;
+        this.name = name;
+    }
+}
+exports.CodeSystem = CodeSystem;
+class CQLValueSet extends Vocabulary {
+    constructor(id, version, name, codesystems) {
+        super(id, version, name);
+        this.id = id;
+        this.version = version;
+        this.name = name;
+        this.codesystems = codesystems;
+    }
+    get isValueSet() {
+        return true;
+    }
+}
+exports.CQLValueSet = CQLValueSet;
 class ValueSet {
     constructor(oid, version, codes = []) {
         this.oid = oid;
         this.version = version;
         this.codes = codes;
-        this.codes || (this.codes = []);
-    }
-    get isValueSet() {
-        return true;
     }
     /**
      * Determines if the provided code matches any code in the current set.
@@ -28359,13 +28387,6 @@ function codesInList(cl1, cl2) {
 function codesMatch(code1, code2) {
     return code1.code === code2.code && code1.system === code2.system;
 }
-class CodeSystem {
-    constructor(id, version) {
-        this.id = id;
-        this.version = version;
-    }
-}
-exports.CodeSystem = CodeSystem;
 
 },{"../util/util":224}],173:[function(require,module,exports){
 "use strict";
@@ -31056,6 +31077,9 @@ class AllTrue extends AggregateExpression {
     }
     async exec(ctx) {
         const items = await this.source.execute(ctx);
+        if (items == null) {
+            return true;
+        }
         return (0, util_1.allTrue)((0, util_1.removeNulls)(items));
     }
 }
@@ -31066,6 +31090,9 @@ class AnyTrue extends AggregateExpression {
     }
     async exec(ctx) {
         const items = await this.source.execute(ctx);
+        if (items == null) {
+            return false;
+        }
         return (0, util_1.anyTrue)(items);
     }
 }
@@ -31667,22 +31694,27 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CalculateAgeAt = exports.CalculateAge = exports.Concept = exports.ConceptRef = exports.ConceptDef = exports.Code = exports.CodeRef = exports.CodeDef = exports.CodeSystemDef = exports.ExpandValueSet = exports.InValueSet = exports.AnyInValueSet = exports.ValueSetRef = exports.ValueSetDef = void 0;
+exports.CalculateAgeAt = exports.CalculateAge = exports.Concept = exports.ConceptRef = exports.ConceptDef = exports.Code = exports.CodeRef = exports.CodeDef = exports.CodeSystemRef = exports.CodeSystemDef = exports.ExpandValueSet = exports.InValueSet = exports.AnyInValueSet = exports.ValueSetRef = exports.ValueSetDef = void 0;
 const expression_1 = require("./expression");
 const dt = __importStar(require("../datatypes/datatypes"));
 const builder_1 = require("./builder");
+const util_1 = require("../util/util");
 class ValueSetDef extends expression_1.Expression {
     constructor(json) {
+        var _a;
         super(json);
         this.name = json.name;
         this.id = json.id;
         this.version = json.version;
+        this.codesystems = (_a = json.codeSystem) === null || _a === void 0 ? void 0 : _a.map((cs) => new CodeSystemRef(cs));
     }
-    //todo: code systems and versions
     async exec(ctx) {
-        const valueset = (await ctx.codeService.findValueSet(this.id, this.version)) ||
-            new dt.ValueSet(this.id, this.version);
-        ctx.rootContext().set(this.name, valueset);
+        let codeSystems;
+        if (this.codesystems) {
+            codeSystems = (await Promise.all(this.codesystems.map(async (csRef) => csRef.exec(ctx))));
+        }
+        const valueset = new dt.CQLValueSet(this.id, this.version, this.name, codeSystems);
+        // ctx.rootContext().set(this.name, valueset); Note (2025): this seems to be unneccesary, remove completely in future if not needed
         return valueset;
     }
 }
@@ -31694,7 +31726,6 @@ class ValueSetRef extends expression_1.Expression {
         this.libraryName = json.libraryName;
     }
     async exec(ctx) {
-        // TODO: This calls the code service every time-- should be optimized
         let valueset = ctx.getValueSet(this.name, this.libraryName);
         if (valueset instanceof expression_1.Expression) {
             valueset = await valueset.execute(ctx);
@@ -31721,7 +31752,8 @@ class AnyInValueSet extends expression_1.Expression {
         if (valueset == null || !valueset.isValueSet) {
             throw new Error('ValueSet must be provided to AnyInValueSet expression');
         }
-        return codes.some((code) => valueset.hasMatch(code));
+        const vsExpansion = await (0, util_1.resolveValueSet)(valueset, ctx);
+        return codes.some((code) => vsExpansion.hasMatch(code));
     }
 }
 exports.AnyInValueSet = AnyInValueSet;
@@ -31744,7 +31776,8 @@ class InValueSet extends expression_1.Expression {
             throw new Error('ValueSet must be provided to InValueSet expression');
         }
         // If there is a code and valueset return whether or not the valueset has the code
-        return valueset.hasMatch(code);
+        const vsExpansion = await (0, util_1.resolveValueSet)(valueset, ctx);
+        return vsExpansion.hasMatch(code);
     }
 }
 exports.InValueSet = InValueSet;
@@ -31761,7 +31794,8 @@ class ExpandValueSet extends expression_1.Expression {
         else if (!valueset.isValueSet) {
             throw new Error('ExpandValueSet function invoked on object that is not a ValueSet');
         }
-        return valueset.expand();
+        const vsExpansion = await (0, util_1.resolveValueSet)(valueset, ctx);
+        return vsExpansion.expand();
     }
 }
 exports.ExpandValueSet = ExpandValueSet;
@@ -31773,10 +31807,22 @@ class CodeSystemDef extends expression_1.Expression {
         this.version = json.version;
     }
     async exec(_ctx) {
-        return new dt.CodeSystem(this.id, this.version);
+        return new dt.CodeSystem(this.id, this.version, this.name);
     }
 }
 exports.CodeSystemDef = CodeSystemDef;
+class CodeSystemRef extends expression_1.Expression {
+    constructor(json) {
+        super(json);
+        this.name = json.name;
+        this.libraryName = json.libraryName;
+    }
+    async exec(ctx) {
+        const codeSystemDef = ctx.getCodeSystem(this.name, this.libraryName);
+        return codeSystemDef.execute(ctx);
+    }
+}
+exports.CodeSystemRef = CodeSystemRef;
 class CodeDef extends expression_1.Expression {
     constructor(json) {
         super(json);
@@ -31939,7 +31985,7 @@ function calculateAge(precision, birthDate, asOf, timeZoneOffset) {
     return null;
 }
 
-},{"../datatypes/datatypes":173,"./builder":183,"./expression":189}],185:[function(require,module,exports){
+},{"../datatypes/datatypes":173,"../util/util":224,"./builder":183,"./expression":189}],185:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GreaterOrEqual = exports.Greater = exports.LessOrEqual = exports.Less = void 0;
@@ -32503,11 +32549,17 @@ class Retrieve extends expression_1.Expression {
         // Always assign datatype. Assign codeProperty and dateProperty if present
         const retrieveDetails = Object.assign(Object.assign({ datatype: this.datatype }, (this.codeProperty ? { codeProperty: this.codeProperty } : {})), (this.dateProperty ? { dateProperty: this.dateProperty } : {}));
         if (this.codes) {
-            const resolvedCodes = await this.codes.execute(ctx);
-            if (resolvedCodes == null) {
+            const executedCodes = await this.codes.execute(ctx);
+            if (executedCodes == null) {
                 return [];
             }
-            retrieveDetails.codes = resolvedCodes;
+            if ((0, util_1.typeIsArray)(executedCodes)) {
+                retrieveDetails.codes = executedCodes;
+            }
+            else {
+                // retrieveDetails codes are expected to be expanded for external usage
+                retrieveDetails.codes = await (0, util_1.resolveValueSet)(executedCodes, ctx);
+            }
         }
         if (this.dateRange) {
             retrieveDetails.dateRange = await this.dateRange.execute(ctx);
@@ -33322,7 +33374,11 @@ exports.Library = void 0;
 const expressions_1 = require("./expressions");
 class Library {
     constructor(json, libraryManager) {
+        var _a, _b;
         this.source = json;
+        // identifier
+        this.name = (_a = json.library.identifier) === null || _a === void 0 ? void 0 : _a.id;
+        this.version = (_b = json.library.identifier) === null || _b === void 0 ? void 0 : _b.version;
         // usings
         const usingDefs = (json.library.usings && json.library.usings.def) || [];
         this.usings = usingDefs
@@ -33383,14 +33439,6 @@ class Library {
                 this.includes[incl.localIdentifier] = libraryManager.resolve(incl.path, incl.version);
             }
         }
-        // Include codesystems from includes
-        for (const iProperty in this.includes) {
-            if (this.includes[iProperty] && this.includes[iProperty].codesystems) {
-                for (const csProperty in this.includes[iProperty].codesystems) {
-                    this.codesystems[csProperty] = this.includes[iProperty].codesystems[csProperty];
-                }
-            }
-        }
     }
     getFunction(identifier) {
         return this.functions[identifier];
@@ -33399,15 +33447,20 @@ class Library {
         return (this.expressions[identifier] || this.includes[identifier] || this.getFunction(identifier));
     }
     getValueSet(identifier, libraryName) {
-        if (this.valuesets[identifier] != null) {
+        if (libraryName && this.includes[libraryName]) {
+            return this.includes[libraryName].valuesets[identifier];
+        }
+        else if (libraryName == null || libraryName === this.name) {
             return this.valuesets[identifier];
         }
-        return this.includes[libraryName] != null
-            ? this.includes[libraryName].valuesets[identifier]
-            : undefined;
     }
-    getCodeSystem(identifier) {
-        return this.codesystems[identifier];
+    getCodeSystem(identifier, libraryName) {
+        if (libraryName && this.includes[libraryName]) {
+            return this.includes[libraryName].codesystems[identifier];
+        }
+        else if (libraryName == null || libraryName === this.name) {
+            return this.codesystems[identifier];
+        }
     }
     getCode(identifier) {
         return this.codes[identifier];
@@ -33473,14 +33526,14 @@ exports.doUnion = doUnion;
 function doExcept(a, b) {
     const distinct = (0, exports.toDistinctList)(a);
     const setList = removeDuplicateNulls(distinct);
-    return setList.filter(item => !doContains(b, item, true));
+    return setList.filter(item => !doContains(b, item));
 }
 exports.doExcept = doExcept;
 // Delegated to by overloaded#Intersect
 function doIntersect(a, b) {
     const distinct = (0, exports.toDistinctList)(a);
     const setList = removeDuplicateNulls(distinct);
-    return setList.filter(item => doContains(b, item, true));
+    return setList.filter(item => doContains(b, item));
 }
 exports.doIntersect = doIntersect;
 // ELM-only, not a product of CQL
@@ -33555,12 +33608,15 @@ class IndexOf extends expression_1.Expression {
 exports.IndexOf = IndexOf;
 // Indexer is completely handled by overloaded#Indexer
 // Delegated to by overloaded#Contains and overloaded#In
-function doContains(container, item, nullEquivalence = false) {
-    return container.some((element) => (0, comparison_1.equals)(element, item) || (nullEquivalence && element == null && item == null));
+function doContains(container, item) {
+    return container.some((element) => (0, comparison_1.equals)(element, item) || (element == null && item == null));
 }
 exports.doContains = doContains;
 // Delegated to by overloaded#Includes and overloaded@IncludedIn
 function doIncludes(list, sublist) {
+    if (list == null || sublist == null) {
+        return null;
+    }
     return sublist.every((x) => doContains(list, x));
 }
 exports.doIncludes = doIncludes;
@@ -33992,7 +34048,7 @@ class Equivalent extends expression_1.Expression {
         super(json);
     }
     async exec(ctx) {
-        const [a, b] = await this.execArgs(ctx);
+        let [a, b] = await this.execArgs(ctx);
         if (a == null && b == null) {
             return true;
         }
@@ -34000,6 +34056,18 @@ class Equivalent extends expression_1.Expression {
             return false;
         }
         else {
+            // comparison of valueset id/version -> only check expanded equivalence if these don't match
+            if (a.isValueSet && b.isValueSet) {
+                if (a.id === b.id && a.version === b.version) {
+                    return true;
+                }
+            }
+            if (a.isValueSet) {
+                a = await (0, util_1.resolveValueSet)(a, ctx);
+            }
+            if (b.isValueSet) {
+                b = await (0, util_1.resolveValueSet)(b, ctx);
+            }
             return (0, comparison_1.equivalent)(a, b);
         }
     }
@@ -34102,14 +34170,18 @@ class In extends expression_1.Expression {
     }
     async exec(ctx) {
         const [item, container] = await this.execArgs(ctx);
-        if (item == null) {
-            return null;
-        }
         if (container == null) {
             return false;
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
-        return lib.doContains(container, item, this.precision);
+        if ((0, util_1.typeIsArray)(container)) {
+            return LIST.doContains(container, item);
+        }
+        else {
+            if (item == null) {
+                return null;
+            }
+            return IVL.doContains(container, item, this.precision);
+        }
     }
 }
 exports.In = In;
@@ -34123,11 +34195,15 @@ class Contains extends expression_1.Expression {
         if (container == null) {
             return false;
         }
-        if (item == null) {
-            return null;
+        if ((0, util_1.typeIsArray)(container)) {
+            return LIST.doContains(container, item);
         }
-        const lib = (0, util_1.typeIsArray)(container) ? LIST : IVL;
-        return lib.doContains(container, item, this.precision);
+        else {
+            if (item == null) {
+                return null;
+            }
+            return IVL.doContains(container, item, this.precision);
+        }
     }
 }
 exports.Contains = Contains;
@@ -34552,7 +34628,7 @@ class AggregateClause extends expression_1.Expression {
         this.identifier = json.identifier;
         this.expression = (0, builder_1.build)(json.expression);
         this.starting = json.starting ? (0, builder_1.build)(json.starting) : null;
-        this.distinct = json.distinct != null ? json.distinct : true;
+        this.distinct = json.distinct != null ? json.distinct : false;
     }
     async aggregate(returnedValues, ctx) {
         let aggregateValue = this.starting != null ? await this.starting.execute(ctx) : null;
@@ -35116,7 +35192,7 @@ class ReplaceMatches extends expression_1.Expression {
             return null;
         }
         else {
-            return args[0].replace(new RegExp(args[1], 'g'), args[2]);
+            return args[0].replace(new RegExp(args[1], 'g'), args[2].replace(/\\\$/g, '$$'));
         }
     }
 }
@@ -35993,8 +36069,8 @@ class Context {
     getValueSet(name, library) {
         return this.parent && this.parent.getValueSet(name, library);
     }
-    getCodeSystem(name) {
-        return this.parent && this.parent.getCodeSystem(name);
+    getCodeSystem(name, libraryName) {
+        return this.parent && this.parent.getCodeSystem(name, libraryName);
     }
     getCode(name) {
         return this.parent && this.parent.getCode(name);
@@ -37595,7 +37671,7 @@ function fixUnit(unit) {
 },{"./math":222,"@lhncbc/ucum-lhc":99}],224:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.asyncMergeSort = exports.getTimezoneSeparatorFromString = exports.normalizeMillisecondsField = exports.normalizeMillisecondsFieldInString = exports.jsDate = exports.anyTrue = exports.allTrue = exports.typeIsArray = exports.isNull = exports.numerical_sort = exports.removeNulls = void 0;
+exports.resolveValueSet = exports.asyncMergeSort = exports.getTimezoneSeparatorFromString = exports.normalizeMillisecondsField = exports.normalizeMillisecondsFieldInString = exports.jsDate = exports.anyTrue = exports.allTrue = exports.typeIsArray = exports.isNull = exports.numerical_sort = exports.removeNulls = void 0;
 function removeNulls(things) {
     return things.filter(x => x != null);
 }
@@ -37698,6 +37774,15 @@ async function merge(left, right, compareFn) {
     }
     return [...sorted, ...left, ...right];
 }
+async function resolveValueSet(vs, ctx) {
+    // code service owns implementation of any valueset expansion caching
+    const vsExpansion = await ctx.codeService.findValueSet(vs.id, vs.version);
+    if (!vsExpansion) {
+        throw new Error(`Unable to resolve expected valueset with id ${vs.id} and version ${vs.version}`);
+    }
+    return vsExpansion;
+}
+exports.resolveValueSet = resolveValueSet;
 
 },{}],225:[function(require,module,exports){
 (function (Buffer){(function (){
