@@ -3,6 +3,7 @@ const mongoose = require('mongoose/browser');
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
@@ -22,7 +23,7 @@ const [Number, String] = [
 const LaboratoryTestPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   status: Code,
   method: Code,
   result: Any,

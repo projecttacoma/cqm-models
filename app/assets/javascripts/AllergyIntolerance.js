@@ -3,7 +3,7 @@ const mongoose = require('mongoose/browser');
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -21,7 +21,7 @@ const [Number, String] = [
 
 const AllergyIntoleranceSchema = DataElementSchema({
   authorDatetime: DateTime,
-  prevalencePeriod: Interval,
+  prevalencePeriod: DateTimeInterval,
   type: Code,
   severity: Code,
   recorder: [AnyEntity],
