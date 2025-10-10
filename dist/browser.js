@@ -46,7 +46,7 @@ class AdverseEvent extends mongoose.Document {
 module.exports.AdverseEvent = AdverseEvent;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],2:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],2:[function(require,module,exports){
 module.exports.Identifier = require('./attributes/Identifier.js').Identifier;
 module.exports.IdentifierSchema = require('./attributes/Identifier.js').IdentifierSchema;
 module.exports.Entity = require('./attributes/Entity.js').Entity;
@@ -182,7 +182,7 @@ const mongoose = require('mongoose/browser');
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -200,7 +200,7 @@ const [Number, String] = [
 
 const AllergyIntoleranceSchema = DataElementSchema({
   authorDatetime: DateTime,
-  prevalencePeriod: Interval,
+  prevalencePeriod: DateTimeInterval,
   type: Code,
   severity: Code,
   recorder: [AnyEntity],
@@ -224,7 +224,7 @@ class AllergyIntolerance extends mongoose.Document {
 module.exports.AllergyIntolerance = AllergyIntolerance;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],4:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],4:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -271,13 +271,13 @@ class AssessmentOrder extends mongoose.Document {
 module.exports.AssessmentOrder = AssessmentOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],5:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],5:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -296,7 +296,7 @@ const [Number, String] = [
 const AssessmentPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   negationRationale: Code,
   reason: Code,
   method: Code,
@@ -325,7 +325,7 @@ class AssessmentPerformed extends mongoose.Document {
 module.exports.AssessmentPerformed = AssessmentPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],6:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],6:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -372,13 +372,13 @@ class AssessmentRecommended extends mongoose.Document {
 module.exports.AssessmentRecommended = AssessmentRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],7:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],7:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -396,7 +396,7 @@ const [Number, String] = [
 
 const CareGoalSchema = DataElementSchema({
   statusDate: QDMDate,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   relatedTo: [String],
   targetOutcome: Any,
   performer: [AnyEntity],
@@ -419,7 +419,7 @@ class CareGoal extends mongoose.Document {
 module.exports.CareGoal = CareGoal;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],8:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],8:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -471,7 +471,7 @@ class CommunicationPerformed extends mongoose.Document {
 module.exports.CommunicationPerformed = CommunicationPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],9:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],9:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -518,7 +518,7 @@ class DeviceOrder extends mongoose.Document {
 module.exports.DeviceOrder = DeviceOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],10:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],10:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -565,13 +565,13 @@ class DeviceRecommended extends mongoose.Document {
 module.exports.DeviceRecommended = DeviceRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],11:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],11:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -589,7 +589,7 @@ const [Number, String] = [
 
 const DiagnosisSchema = DataElementSchema({
   authorDatetime: DateTime,
-  prevalencePeriod: Interval,
+  prevalencePeriod: DateTimeInterval,
   anatomicalLocationSite: Code,
   severity: Code,
   recorder: [AnyEntity],
@@ -613,7 +613,7 @@ class Diagnosis extends mongoose.Document {
 module.exports.Diagnosis = Diagnosis;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],12:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],12:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -660,13 +660,13 @@ class DiagnosticStudyOrder extends mongoose.Document {
 module.exports.DiagnosticStudyOrder = DiagnosticStudyOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],13:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],13:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -685,7 +685,7 @@ const [Number, String] = [
 const DiagnosticStudyPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   reason: Code,
   result: Any,
   resultDatetime: DateTime,
@@ -717,7 +717,7 @@ class DiagnosticStudyPerformed extends mongoose.Document {
 module.exports.DiagnosticStudyPerformed = DiagnosticStudyPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],14:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],14:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -764,7 +764,7 @@ class DiagnosticStudyRecommended extends mongoose.Document {
 module.exports.DiagnosticStudyRecommended = DiagnosticStudyRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],15:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],15:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -813,13 +813,13 @@ class EncounterOrder extends mongoose.Document {
 module.exports.EncounterOrder = EncounterOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],16:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],16:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -839,7 +839,7 @@ const EncounterPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   admissionSource: Code,
   class: Code,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   dischargeDisposition: Code,
   facilityLocations: [FacilityLocationSchema],
   diagnoses: [DiagnosisComponentSchema],
@@ -870,7 +870,7 @@ class EncounterPerformed extends mongoose.Document {
 module.exports.EncounterPerformed = EncounterPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/DiagnosisComponent":58,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],17:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/DiagnosisComponent":58,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],17:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -918,7 +918,7 @@ class EncounterRecommended extends mongoose.Document {
 module.exports.EncounterRecommended = EncounterRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],18:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],18:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -964,7 +964,7 @@ class FamilyHistory extends mongoose.Document {
 module.exports.FamilyHistory = FamilyHistory;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],19:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],19:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1015,7 +1015,7 @@ class ImmunizationAdministered extends mongoose.Document {
 module.exports.ImmunizationAdministered = ImmunizationAdministered;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],20:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],20:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1066,7 +1066,7 @@ class ImmunizationOrder extends mongoose.Document {
 module.exports.ImmunizationOrder = ImmunizationOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],21:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],21:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1113,13 +1113,13 @@ class InterventionOrder extends mongoose.Document {
 module.exports.InterventionOrder = InterventionOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],22:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],22:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1138,7 +1138,7 @@ const [Number, String] = [
 const InterventionPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   reason: Code,
   result: Any,
   status: Code,
@@ -1165,7 +1165,7 @@ class InterventionPerformed extends mongoose.Document {
 module.exports.InterventionPerformed = InterventionPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],23:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],23:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1212,7 +1212,7 @@ class InterventionRecommended extends mongoose.Document {
 module.exports.InterventionRecommended = InterventionRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],24:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],24:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1259,12 +1259,13 @@ class LaboratoryTestOrder extends mongoose.Document {
 module.exports.LaboratoryTestOrder = LaboratoryTestOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],25:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],25:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Interval = require('./basetypes/Interval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
@@ -1284,7 +1285,7 @@ const [Number, String] = [
 const LaboratoryTestPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   status: Code,
   method: Code,
   result: Any,
@@ -1316,7 +1317,7 @@ class LaboratoryTestPerformed extends mongoose.Document {
 module.exports.LaboratoryTestPerformed = LaboratoryTestPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],26:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],26:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1363,13 +1364,13 @@ class LaboratoryTestRecommended extends mongoose.Document {
 module.exports.LaboratoryTestRecommended = LaboratoryTestRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],27:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],27:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1387,7 +1388,7 @@ const [Number, String] = [
 
 const MedicationActiveSchema = DataElementSchema({
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   dosage: Quantity,
   frequency: Code,
   route: Code,
@@ -1412,13 +1413,13 @@ class MedicationActive extends mongoose.Document {
 module.exports.MedicationActive = MedicationActive;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],28:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],28:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1437,7 +1438,7 @@ const [Number, String] = [
 const MedicationAdministeredSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   dosage: Quantity,
   frequency: Code,
   route: Code,
@@ -1464,7 +1465,7 @@ class MedicationAdministered extends mongoose.Document {
 module.exports.MedicationAdministered = MedicationAdministered;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],29:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],29:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1517,13 +1518,13 @@ class MedicationDischarge extends mongoose.Document {
 module.exports.MedicationDischarge = MedicationDischarge;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],30:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],30:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1542,7 +1543,7 @@ const [Number, String] = [
 const MedicationDispensedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   refills: Number,
   dosage: Quantity,
   supply: Quantity,
@@ -1573,13 +1574,13 @@ class MedicationDispensed extends mongoose.Document {
 module.exports.MedicationDispensed = MedicationDispensed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],31:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],31:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1597,7 +1598,7 @@ const [Number, String] = [
 
 const MedicationOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   refills: Number,
   dosage: Quantity,
   supply: Quantity,
@@ -1629,13 +1630,13 @@ class MedicationOrder extends mongoose.Document {
 module.exports.MedicationOrder = MedicationOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],32:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],32:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1652,7 +1653,7 @@ const [Number, String] = [
 ];
 
 const ParticipationSchema = DataElementSchema({
-  participationPeriod: Interval,
+  participationPeriod: DateTimeInterval,
   qdmTitle: { type: String, default: 'Participation' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.130' },
   qdmCategory: { type: String, default: 'participation' },
@@ -1672,7 +1673,7 @@ class Participation extends mongoose.Document {
 module.exports.Participation = Participation;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],33:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],33:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1716,7 +1717,7 @@ class PatientCareExperience extends mongoose.Document {
 module.exports.PatientCareExperience = PatientCareExperience;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],34:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],34:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1759,7 +1760,7 @@ class PatientCharacteristic extends mongoose.Document {
 module.exports.PatientCharacteristic = PatientCharacteristic;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],35:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],35:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1803,13 +1804,13 @@ class PatientCharacteristicBirthdate extends mongoose.Document {
 module.exports.PatientCharacteristicBirthdate = PatientCharacteristicBirthdate;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],36:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],36:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1827,7 +1828,7 @@ const [Number, String] = [
 
 const PatientCharacteristicClinicalTrialParticipantSchema = DataElementSchema({
   reason: Code,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   qdmTitle: { type: String, default: 'Patient Characteristic Clinical Trial Participant' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.6' },
   qrdaOid: { type: String, default: '2.16.840.1.113883.10.20.24.3.51' },
@@ -1849,7 +1850,7 @@ class PatientCharacteristicClinicalTrialParticipant extends mongoose.Document {
 module.exports.PatientCharacteristicClinicalTrialParticipant = PatientCharacteristicClinicalTrialParticipant;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],37:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],37:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1892,7 +1893,7 @@ class PatientCharacteristicEthnicity extends mongoose.Document {
 module.exports.PatientCharacteristicEthnicity = PatientCharacteristicEthnicity;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],38:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],38:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -1937,13 +1938,13 @@ class PatientCharacteristicExpired extends mongoose.Document {
 module.exports.PatientCharacteristicExpired = PatientCharacteristicExpired;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],39:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],39:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -1960,7 +1961,7 @@ const [Number, String] = [
 ];
 
 const PatientCharacteristicPayerSchema = DataElementSchema({
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   qdmTitle: { type: String, default: 'Patient Characteristic Payer' },
   hqmfOid: { type: String, default: '2.16.840.1.113883.10.20.28.4.58' },
   qdmCategory: { type: String, default: 'patient_characteristic' },
@@ -1981,7 +1982,7 @@ class PatientCharacteristicPayer extends mongoose.Document {
 module.exports.PatientCharacteristicPayer = PatientCharacteristicPayer;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],40:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],40:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2024,7 +2025,7 @@ class PatientCharacteristicRace extends mongoose.Document {
 module.exports.PatientCharacteristicRace = PatientCharacteristicRace;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],41:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],41:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2067,7 +2068,7 @@ class PatientCharacteristicSex extends mongoose.Document {
 module.exports.PatientCharacteristicSex = PatientCharacteristicSex;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],42:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],42:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2115,13 +2116,13 @@ class PhysicalExamOrder extends mongoose.Document {
 module.exports.PhysicalExamOrder = PhysicalExamOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],43:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],43:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -2140,7 +2141,7 @@ const [Number, String] = [
 const PhysicalExamPerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   reason: Code,
   method: Code,
   result: Any,
@@ -2169,7 +2170,7 @@ class PhysicalExamPerformed extends mongoose.Document {
 module.exports.PhysicalExamPerformed = PhysicalExamPerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],44:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],44:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2217,7 +2218,7 @@ class PhysicalExamRecommended extends mongoose.Document {
 module.exports.PhysicalExamRecommended = PhysicalExamRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],45:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],45:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2267,13 +2268,13 @@ class ProcedureOrder extends mongoose.Document {
 module.exports.ProcedureOrder = ProcedureOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],46:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],46:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -2292,7 +2293,7 @@ const [Number, String] = [
 const ProcedurePerformedSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   reason: Code,
   method: Code,
   result: Any,
@@ -2324,7 +2325,7 @@ class ProcedurePerformed extends mongoose.Document {
 module.exports.ProcedurePerformed = ProcedurePerformed;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],47:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],47:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2373,7 +2374,7 @@ class ProcedureRecommended extends mongoose.Document {
 module.exports.ProcedureRecommended = ProcedureRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],48:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],48:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2417,7 +2418,7 @@ class ProviderCareExperience extends mongoose.Document {
 module.exports.ProviderCareExperience = ProviderCareExperience;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],49:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],49:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('./basetypes/Code');
 const Interval = require('./basetypes/Interval');
@@ -2745,7 +2746,7 @@ class QDMPatient extends mongoose.Document {
 }
 module.exports.QDMPatient = QDMPatient;
 
-},{"./AllDataElements":2,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/Quantity":74,"mongoose/browser":332}],50:[function(require,module,exports){
+},{"./AllDataElements":2,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/Quantity":75,"mongoose/browser":333}],50:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2789,7 +2790,7 @@ class RelatedPerson extends mongoose.Document {
 module.exports.RelatedPerson = RelatedPerson;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],51:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],51:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const PlaceholderResultSchema = mongoose.Schema({
@@ -2824,13 +2825,13 @@ class PlaceholderResult extends mongoose.Document {
 }
 module.exports.PlaceholderResult = PlaceholderResult;
 
-},{"mongoose/browser":332}],52:[function(require,module,exports){
+},{"mongoose/browser":333}],52:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -2849,7 +2850,7 @@ const [Number, String] = [
 const SubstanceAdministeredSchema = DataElementSchema({
   authorDatetime: DateTime,
   relevantDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   dosage: Quantity,
   frequency: Code,
   route: Code,
@@ -2875,13 +2876,13 @@ class SubstanceAdministered extends mongoose.Document {
 module.exports.SubstanceAdministered = SubstanceAdministered;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],53:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],53:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -2899,7 +2900,7 @@ const [Number, String] = [
 
 const SubstanceOrderSchema = DataElementSchema({
   authorDatetime: DateTime,
-  relevantPeriod: Interval,
+  relevantPeriod: DateTimeInterval,
   reason: Code,
   dosage: Quantity,
   supply: Quantity,
@@ -2928,7 +2929,7 @@ class SubstanceOrder extends mongoose.Document {
 module.exports.SubstanceOrder = SubstanceOrder;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],54:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],54:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
@@ -2979,13 +2980,13 @@ class SubstanceRecommended extends mongoose.Document {
 module.exports.SubstanceRecommended = SubstanceRecommended;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],55:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":73,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],55:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./attributes/Identifier');
 const { DataElementSchema } = require('./basetypes/DataElement');
 const Code = require('./basetypes/Code');
-const Interval = require('./basetypes/Interval');
+const DateTimeInterval = require('./basetypes/DateTimeInterval');
 const Quantity = require('./basetypes/Quantity');
 const DateTime = require('./basetypes/DateTime');
 const QDMDate = require('./basetypes/QDMDate');
@@ -3002,7 +3003,7 @@ const [Number, String] = [
 ];
 
 const SymptomSchema = DataElementSchema({
-  prevalencePeriod: Interval,
+  prevalencePeriod: DateTimeInterval,
   severity: Code,
   recorder: [AnyEntity],
   qdmTitle: { type: String, default: 'Symptom' },
@@ -3025,7 +3026,7 @@ class Symptom extends mongoose.Document {
 module.exports.Symptom = Symptom;
 
 
-},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/Interval":72,"./basetypes/QDMDate":73,"./basetypes/Quantity":74,"mongoose/browser":332}],56:[function(require,module,exports){
+},{"./attributes/Component":57,"./attributes/Entity":59,"./attributes/FacilityLocation":60,"./attributes/Identifier":61,"./basetypes/Any":67,"./basetypes/AnyEntity":68,"./basetypes/Code":69,"./basetypes/DataElement":70,"./basetypes/DateTime":71,"./basetypes/DateTimeInterval":72,"./basetypes/QDMDate":74,"./basetypes/Quantity":75,"mongoose/browser":333}],56:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3060,7 +3061,7 @@ class CarePartner extends mongoose.Document {
 module.exports.CarePartner = CarePartner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":332}],57:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"./Entity":59,"mongoose/browser":333}],57:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3130,7 +3131,7 @@ function ComponentSchemaFunction(add, options) {
 module.exports.Component = Component;
 module.exports.ComponentSchemaFunction = ComponentSchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":332}],58:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"mongoose/browser":333}],58:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
@@ -3166,7 +3167,7 @@ class DiagnosisComponent extends mongoose.Document {
 module.exports.DiagnosisComponent = DiagnosisComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":332}],59:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"mongoose/browser":333}],59:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { IdentifierSchema } = require('./Identifier');
@@ -3243,11 +3244,11 @@ function EntitySchemaFunction(add, options) {
 module.exports.Entity = Entity;
 module.exports.EntitySchemaFunction = EntitySchemaFunction;
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Identifier":61,"mongoose/browser":332}],60:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"./Identifier":61,"mongoose/browser":333}],60:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const Code = require('../basetypes/Code');
-const Interval = require('../basetypes/Interval');
+const DateTimeInterval = require('../basetypes/DateTimeInterval');
 const Quantity = require('../basetypes/Quantity');
 const DateTime = require('../basetypes/DateTime');
 const QDMDate = require('../basetypes/QDMDate');
@@ -3261,7 +3262,7 @@ const [Number, String] = [
 
 const FacilityLocationSchema = new mongoose.Schema({
   code: Code,
-  locationPeriod: Interval,
+  locationPeriod: DateTimeInterval,
   qdmVersion: { type: String, default: '5.6' },
   _type: { type: String, default: 'QDM::FacilityLocation' },
 
@@ -3278,7 +3279,7 @@ class FacilityLocation extends mongoose.Document {
 module.exports.FacilityLocation = FacilityLocation;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"mongoose/browser":332}],61:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/DateTimeInterval":72,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"mongoose/browser":333}],61:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Number, String] = [
@@ -3303,7 +3304,7 @@ class Identifier extends mongoose.Document {
 }
 module.exports.Identifier = Identifier;
 
-},{"mongoose/browser":332}],62:[function(require,module,exports){
+},{"mongoose/browser":333}],62:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3337,7 +3338,7 @@ class Location extends mongoose.Document {
 module.exports.Location = Location;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":332}],63:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"./Entity":59,"mongoose/browser":333}],63:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3372,7 +3373,7 @@ class Organization extends mongoose.Document {
 module.exports.Organization = Organization;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":332}],64:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"./Entity":59,"mongoose/browser":333}],64:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3406,7 +3407,7 @@ class PatientEntity extends mongoose.Document {
 module.exports.PatientEntity = PatientEntity;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":332}],65:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"./Entity":59,"mongoose/browser":333}],65:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { EntitySchemaFunction } = require('./Entity');
@@ -3443,7 +3444,7 @@ class Practitioner extends mongoose.Document {
 module.exports.Practitioner = Practitioner;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Entity":59,"mongoose/browser":332}],66:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"./Entity":59,"mongoose/browser":333}],66:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const { ComponentSchemaFunction } = require('./Component');
@@ -3476,7 +3477,7 @@ class ResultComponent extends mongoose.Document {
 module.exports.ResultComponent = ResultComponent;
 
 
-},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/QDMDate":73,"../basetypes/Quantity":74,"./Component":57,"mongoose/browser":332}],67:[function(require,module,exports){
+},{"../basetypes/Any":67,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/QDMDate":74,"../basetypes/Quantity":75,"./Component":57,"mongoose/browser":333}],67:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const QDMDate = require('./QDMDate');
@@ -3562,7 +3563,7 @@ Any.prototype.cast = any => RecursiveCast(any);
 mongoose.Schema.Types.Any = Any;
 module.exports = Any;
 
-},{"./QDMDate":73,"cql-execution":171,"mongoose/browser":332}],68:[function(require,module,exports){
+},{"./QDMDate":74,"cql-execution":172,"mongoose/browser":333}],68:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { PatientEntity } = require('../attributes/PatientEntity');
 const { Practitioner } = require('../attributes/Practitioner');
@@ -3611,7 +3612,7 @@ AnyEntity.prototype.cast = (entity) => {
 mongoose.Schema.Types.AnyEntity = AnyEntity;
 module.exports = AnyEntity;
 
-},{"../attributes/CarePartner":56,"../attributes/Location":62,"../attributes/Organization":63,"../attributes/PatientEntity":64,"../attributes/Practitioner":65,"mongoose/browser":332}],69:[function(require,module,exports){
+},{"../attributes/CarePartner":56,"../attributes/Location":62,"../attributes/Organization":63,"../attributes/PatientEntity":64,"../attributes/Practitioner":65,"mongoose/browser":333}],69:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3644,7 +3645,7 @@ Code.prototype.cast = (code) => {
 mongoose.Schema.Types.Code = Code;
 module.exports = Code;
 
-},{"cql-execution":171,"mongoose/browser":332}],70:[function(require,module,exports){
+},{"cql-execution":172,"mongoose/browser":333}],70:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const Code = require('./Code.js');
@@ -3726,7 +3727,7 @@ function DataElementSchema(add, options) {
 
 module.exports.DataElementSchema = DataElementSchema;
 
-},{"../attributes/Identifier":61,"./Code.js":69,"cql-execution":171,"mongoose/browser":332}],71:[function(require,module,exports){
+},{"../attributes/Identifier":61,"./Code.js":69,"cql-execution":172,"mongoose/browser":333}],71:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3750,7 +3751,37 @@ DateTime.prototype.cast = (dateTime) => {
 mongoose.Schema.Types.DateTime = DateTime;
 module.exports = DateTime;
 
-},{"cql-execution":171,"mongoose/browser":332}],72:[function(require,module,exports){
+},{"cql-execution":172,"mongoose/browser":333}],72:[function(require,module,exports){
+const mongoose = require('mongoose/browser');
+const cql = require('cql-execution');
+const DateTime = require('./DateTime');
+
+function DateTimeInterval(key, options) {
+  mongoose.SchemaType.call(this, key, options, 'DateTimeInterval');
+}
+DateTimeInterval.prototype = Object.create(mongoose.SchemaType.prototype);
+
+DateTimeInterval.prototype.cast = (interval) => {
+  if (interval.isInterval) {
+    return interval;
+  }
+  const casted = new cql.Interval(interval.low, interval.high, interval.lowClosed, interval.highClosed, '{urn:hl7-org:elm-types:r1}DateTime');
+
+  // Cast to DateTime if it is a string representing a DateTime
+  if (casted.low) {
+    casted.low = DateTime.prototype.cast(casted.low);
+  }
+
+  if (casted.high) {
+    casted.high = DateTime.prototype.cast(casted.high);
+  }
+  return casted;
+};
+
+mongoose.Schema.Types.DateTimeInterval = DateTimeInterval;
+module.exports = DateTimeInterval;
+
+},{"./DateTime":71,"cql-execution":172,"mongoose/browser":333}],73:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 const DateTime = require('./DateTime');
@@ -3789,7 +3820,7 @@ Interval.prototype.cast = (interval) => {
 mongoose.Schema.Types.Interval = Interval;
 module.exports = Interval;
 
-},{"./DateTime":71,"cql-execution":171,"mongoose/browser":332}],73:[function(require,module,exports){
+},{"./DateTime":71,"cql-execution":172,"mongoose/browser":333}],74:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3830,7 +3861,7 @@ QDMDate.prototype.cast = (date) => {
 mongoose.Schema.Types.QDMDate = QDMDate;
 module.exports = QDMDate;
 
-},{"cql-execution":171,"mongoose/browser":332}],74:[function(require,module,exports){
+},{"cql-execution":172,"mongoose/browser":333}],75:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const cql = require('cql-execution');
 
@@ -3852,12 +3883,12 @@ Quantity.prototype.cast = (quantity) => {
 mongoose.Schema.Types.Quantity = Quantity;
 module.exports = Quantity;
 
-},{"cql-execution":171,"mongoose/browser":332}],75:[function(require,module,exports){
+},{"cql-execution":172,"mongoose/browser":333}],76:[function(require,module,exports){
 window.cqm = window.cqm || {};
 window.cqm.models = require('./index');
 
 
-},{"./index":88}],76:[function(require,module,exports){
+},{"./index":89}],77:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { StatementDependencySchema } = require('./CQLStatementDependency');
 
@@ -3891,7 +3922,7 @@ class CQLLibrary extends mongoose.Document {
 }
 module.exports.CQLLibrary = CQLLibrary;
 
-},{"./CQLStatementDependency":77,"mongoose/browser":332}],77:[function(require,module,exports){
+},{"./CQLStatementDependency":78,"mongoose/browser":333}],78:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const StatementReferenceSchema = new mongoose.Schema({
@@ -3921,7 +3952,7 @@ class StatementDependency extends mongoose.Document {
 }
 module.exports.StatementDependency = StatementDependency;
 
-},{"mongoose/browser":332}],78:[function(require,module,exports){
+},{"mongoose/browser":333}],79:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -3951,7 +3982,7 @@ class ClauseResult extends mongoose.Document {
 }
 module.exports.ClauseResult = ClauseResult;
 
-},{"mongoose/browser":332}],79:[function(require,module,exports){
+},{"mongoose/browser":333}],80:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const ConceptSchema = new mongoose.Schema({
@@ -3970,7 +4001,7 @@ class Concept extends mongoose.Document {
 }
 module.exports.Concept = Concept;
 
-},{"mongoose/browser":332}],80:[function(require,module,exports){
+},{"mongoose/browser":333}],81:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const { ClauseResultSchema } = require('./ClauseResult');
 const { StatementResultSchema } = require('./StatementResult');
@@ -4060,7 +4091,7 @@ class IndividualResult extends mongoose.Document {
 }
 module.exports.IndividualResult = IndividualResult;
 
-},{"./ClauseResult":78,"./StatementResult":86,"mongoose/browser":332}],81:[function(require,module,exports){
+},{"./ClauseResult":79,"./StatementResult":87,"mongoose/browser":333}],82:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -4171,7 +4202,7 @@ class Measure extends mongoose.Document {
 }
 module.exports.Measure = Measure;
 
-},{"../AllDataElements":2,"../basetypes/Code":69,"../basetypes/DataElement":70,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./CQLLibrary":76,"./PopulationSet":84,"mongoose/browser":332}],82:[function(require,module,exports){
+},{"../AllDataElements":2,"../basetypes/Code":69,"../basetypes/DataElement":70,"../basetypes/Interval":73,"../basetypes/Quantity":75,"./CQLLibrary":77,"./PopulationSet":85,"mongoose/browser":333}],83:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 // using mBuffer to not conflict with system Buffer
@@ -4199,7 +4230,7 @@ class MeasurePackage extends mongoose.Document {
 }
 module.exports.MeasurePackage = MeasurePackage;
 
-},{"mongoose/browser":332}],83:[function(require,module,exports){
+},{"mongoose/browser":333}],84:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Code = require('../basetypes/Code');
 const Interval = require('../basetypes/Interval');
@@ -4239,7 +4270,7 @@ class Patient extends mongoose.Document {
 }
 module.exports.Patient = Patient;
 
-},{"../QDMPatient":49,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":72,"../basetypes/Quantity":74,"./Provider":85,"mongoose/browser":332}],84:[function(require,module,exports){
+},{"../QDMPatient":49,"../basetypes/Code":69,"../basetypes/DateTime":71,"../basetypes/Interval":73,"../basetypes/Quantity":75,"./Provider":86,"mongoose/browser":333}],85:[function(require,module,exports){
 /* eslint-disable no-unused-vars, no-param-reassign */
 const mongoose = require('mongoose/browser');
 const { StatementReferenceSchema } = require('./CQLStatementDependency');
@@ -4330,7 +4361,7 @@ class PopulationSet extends mongoose.Document {
 }
 module.exports.PopulationSet = PopulationSet;
 
-},{"./CQLStatementDependency":77,"mongoose/browser":332}],85:[function(require,module,exports){
+},{"./CQLStatementDependency":78,"mongoose/browser":333}],86:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [Schema, String, Boolean] = [
@@ -4374,7 +4405,7 @@ class Provider extends mongoose.Document {
 }
 module.exports.Provider = Provider;
 
-},{"mongoose/browser":332}],86:[function(require,module,exports){
+},{"mongoose/browser":333}],87:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 
 const [String, Mixed] = [
@@ -4417,7 +4448,7 @@ class StatementResult extends mongoose.Document {
 }
 module.exports.StatementResult = StatementResult;
 
-},{"mongoose/browser":332}],87:[function(require,module,exports){
+},{"mongoose/browser":333}],88:[function(require,module,exports){
 const mongoose = require('mongoose/browser');
 const Concept = require('./Concept.js');
 
@@ -4445,7 +4476,7 @@ class ValueSet extends mongoose.Document {
 }
 module.exports.ValueSet = ValueSet;
 
-},{"./Concept.js":79,"mongoose/browser":332}],88:[function(require,module,exports){
+},{"./Concept.js":80,"mongoose/browser":333}],89:[function(require,module,exports){
 module.exports = require('./AllDataElements.js');
 module.exports.CQL = require('cql-execution');
 module.exports.QDMDate = require('./basetypes/QDMDate');
@@ -4476,10 +4507,10 @@ module.exports.ClauseResultSchema = require('./cqm/ClauseResult.js').ClauseResul
 module.exports.StatementResult = require('./cqm/StatementResult.js').StatementResult;
 module.exports.StatementResultSchema = require('./cqm/StatementResult.js').StatementResultchema;
 
-},{"./AllDataElements.js":2,"./Result.js":51,"./basetypes/QDMDate":73,"./cqm/CQLLibrary.js":76,"./cqm/CQLStatementDependency.js":77,"./cqm/ClauseResult.js":78,"./cqm/Concept.js":79,"./cqm/IndividualResult.js":80,"./cqm/Measure.js":81,"./cqm/MeasurePackage.js":82,"./cqm/Patient.js":83,"./cqm/PopulationSet.js":84,"./cqm/Provider.js":85,"./cqm/StatementResult.js":86,"./cqm/ValueSet.js":87,"cql-execution":171}],89:[function(require,module,exports){
+},{"./AllDataElements.js":2,"./Result.js":51,"./basetypes/QDMDate":74,"./cqm/CQLLibrary.js":77,"./cqm/CQLStatementDependency.js":78,"./cqm/ClauseResult.js":79,"./cqm/Concept.js":80,"./cqm/IndividualResult.js":81,"./cqm/Measure.js":82,"./cqm/MeasurePackage.js":83,"./cqm/Patient.js":84,"./cqm/PopulationSet.js":85,"./cqm/Provider.js":86,"./cqm/StatementResult.js":87,"./cqm/ValueSet.js":88,"cql-execution":172}],90:[function(require,module,exports){
 module.exports={"license":"The following data (prefixes and units) was generated by the UCUM LHC code from the UCUM data and selected LOINC combinations of UCUM units.  The license for the UCUM LHC code (demo and library code as well as the combined units) is located at https://github.com/lhncbc/ucum-lhc/blob/LICENSE.md.","prefixes":{"config":["code_","ciCode_","name_","printSymbol_","value_","exp_"],"data":[["E","EX","exa","E",1000000000000000000,"18"],["G","GA","giga","G",1000000000,"9"],["Gi","GIB","gibi","Gi",1073741824,null],["Ki","KIB","kibi","Ki",1024,null],["M","MA","mega","M",1000000,"6"],["Mi","MIB","mebi","Mi",1048576,null],["P","PT","peta","P",1000000000000000,"15"],["T","TR","tera","T",1000000000000,"12"],["Ti","TIB","tebi","Ti",1099511627776,null],["Y","YA","yotta","Y",1e+24,"24"],["Z","ZA","zetta","Z",1e+21,"21"],["a","A","atto","a",1e-18,"-18"],["c","C","centi","c",0.01,"-2"],["d","D","deci","d",0.1,"-1"],["da","DA","deka","da",10,"1"],["f","F","femto","f",1e-15,"-15"],["h","H","hecto","h",100,"2"],["k","K","kilo","k",1000,"3"],["m","M","milli","m",0.001,"-3"],["n","N","nano","n",1e-9,"-9"],["p","P","pico","p",1e-12,"-12"],["u","U","micro","μ",0.000001,"-6"],["y","YO","yocto","y",1.0000000000000001e-24,"-24"],["z","ZO","zepto","z",1e-21,"-21"]]},"units":{"config":["isBase_","name_","csCode_","ciCode_","property_","magnitude_",["dim_","dimVec_"],"printSymbol_","class_","isMetric_","variable_","cnv_","cnvPfx_","isSpecial_","isArbitrary_","moleExp_","synonyms_","source_","loincProperty_","category_","guidance_","csUnitString_","ciUnitString_","baseFactorStr_","baseFactor_","defError_"],"data":[[true,"meter","m","M","length",1,[1,0,0,0,0,0,0],"m",null,false,"L",null,1,false,false,0,"meters; metres; distance","UCUM","Len","Clinical","unit of length = 1.09361 yards",null,null,null,null,false],[true,"second - time","s","S","time",1,[0,1,0,0,0,0,0],"s",null,false,"T",null,1,false,false,0,"seconds","UCUM","Time","Clinical","",null,null,null,null,false],[true,"gram","g","G","mass",1,[0,0,1,0,0,0,0],"g",null,false,"M",null,1,false,false,0,"grams; gm","UCUM","Mass","Clinical","",null,null,null,null,false],[true,"radian","rad","RAD","plane angle",1,[0,0,0,1,0,0,0],"rad",null,false,"A",null,1,false,false,0,"radians","UCUM","Angle","Clinical","unit of angular measure where 1 radian = 1/2π turn =  57.296 degrees. ",null,null,null,null,false],[true,"degree Kelvin","K","K","temperature",1,[0,0,0,0,1,0,0],"K",null,false,"C",null,1,false,false,0,"Kelvin; degrees","UCUM","Temp","Clinical","absolute, thermodynamic temperature scale ",null,null,null,null,false],[true,"coulomb","C","C","electric charge",1,[0,0,0,0,0,1,0],"C",null,false,"Q",null,1,false,false,0,"coulombs","UCUM","","Clinical","defined as amount of 1 electron charge = 6.2415093×10^18 e, and equivalent to 1 Ampere-second",null,null,null,null,false],[true,"candela","cd","CD","luminous intensity",1,[0,0,0,0,0,0,1],"cd",null,false,"F",null,1,false,false,0,"candelas","UCUM","","Clinical","SI base unit of luminous intensity",null,null,null,null,false],[false,"the number ten for arbitrary powers","10*","10*","number",10,[0,0,0,0,0,0,0],"10","dimless",false,null,null,1,false,false,0,"10^; 10 to the arbitrary powers","UCUM","Num","Clinical","10* by itself is the same as 10, but users can add digits after the *. For example, 10*3 = 1000.","1","1","10",10,false],[false,"the number ten for arbitrary powers","10^","10^","number",10,[0,0,0,0,0,0,0],"10","dimless",false,null,null,1,false,false,0,"10*; 10 to the arbitrary power","UCUM","Num","Clinical","10* by itself is the same as 10, but users can add digits after the *. For example, 10*3 = 1000.","1","1","10",10,false],[false,"the number pi","[pi]","[PI]","number",3.141592653589793,[0,0,0,0,0,0,0],"π","dimless",false,null,null,1,false,false,0,"π","UCUM","","Constant","a mathematical constant; the ratio of a circle's circumference to its diameter ≈ 3.14159","1","1","3.1415926535897932384626433832795028841971693993751058209749445923",3.141592653589793,false],[false,"","%","%","fraction",0.01,[0,0,0,0,0,0,0],"%","dimless",false,null,null,1,false,false,0,"percents","UCUM","FR; NFR; MFR; CFR; SFR Rto; etc. ","Clinical","","10*-2","10*-2","1",1,false],[false,"parts per thousand","[ppth]","[PPTH]","fraction",0.001,[0,0,0,0,0,0,0],"ppth","dimless",false,null,null,1,false,false,0,"ppth; 10^-3","UCUM","MCnc; MCnt","Clinical","[ppth] is often used in solution concentrations as 1 g/L or 1 g/kg.\n\nCan be ambigous and would be better if the metric units was used directly. ","10*-3","10*-3","1",1,false],[false,"parts per million","[ppm]","[PPM]","fraction",0.000001,[0,0,0,0,0,0,0],"ppm","dimless",false,null,null,1,false,false,0,"ppm; 10^-6","UCUM","MCnt; MCnc; SFr","Clinical","[ppm] is often used in solution concentrations as 1 mg/L  or 1 mg/kg. Also used to express mole fractions as 1 mmol/mol.\n\n[ppm] is also used in nuclear magnetic resonance (NMR) to represent chemical shift - the difference of a measured frequency in parts per million from the reference frequency.\n\nCan be ambigous and would be better if the metric units was used directly. ","10*-6","10*-6","1",1,false],[false,"parts per billion","[ppb]","[PPB]","fraction",1e-9,[0,0,0,0,0,0,0],"ppb","dimless",false,null,null,1,false,false,0,"ppb; 10^-9","UCUM","MCnt; MCnc; SFr","Clinical","[ppb] is often used in solution concentrations as 1 ug/L  or 1 ug/kg. Also used to express mole fractions as 1 umol/mol.\n\nCan be ambigous and would be better if the metric units was used directly. ","10*-9","10*-9","1",1,false],[false,"parts per trillion","[pptr]","[PPTR]","fraction",1e-12,[0,0,0,0,0,0,0],"pptr","dimless",false,null,null,1,false,false,0,"pptr; 10^-12","UCUM","MCnt; MCnc; SFr","Clinical","[pptr] is often used in solution concentrations as 1 ng/L or 1 ng/kg. Also used to express mole fractions as 1 nmol/mol.\n\nCan be ambigous and would be better if the metric units was used directly. ","10*-12","10*-12","1",1,false],[false,"mole","mol","MOL","amount of substance",6.0221367e+23,[0,0,0,0,0,0,0],"mol","si",true,null,null,1,false,false,1,"moles","UCUM","Sub","Clinical","Measure the number of molecules ","10*23","10*23","6.0221367",6.0221367,false],[false,"steradian - solid angle","sr","SR","solid angle",1,[0,0,0,2,0,0,0],"sr","si",true,null,null,1,false,false,0,"square radian; rad2; rad^2","UCUM","Angle","Clinical","unit of solid angle in three-dimensional geometry analagous to radian; used in photometry which measures the perceived brightness of object by human eye (e.g. radiant intensity = watt/steradian)","rad2","RAD2","1",1,false],[false,"hertz","Hz","HZ","frequency",1,[0,-1,0,0,0,0,0],"Hz","si",true,null,null,1,false,false,0,"Herz; frequency; frequencies","UCUM","Freq; Num","Clinical","equal to one cycle per second","s-1","S-1","1",1,false],[false,"newton","N","N","force",1000,[1,-2,1,0,0,0,0],"N","si",true,null,null,1,false,false,0,"Newtons","UCUM","Force","Clinical","unit of force with base units kg.m/s2","kg.m/s2","KG.M/S2","1",1,false],[false,"pascal","Pa","PAL","pressure",1000,[-1,-2,1,0,0,0,0],"Pa","si",true,null,null,1,false,false,0,"pascals","UCUM","Pres","Clinical","standard unit of pressure equal to 1 newton per square meter (N/m2)","N/m2","N/M2","1",1,false],[false,"joule","J","J","energy",1000,[2,-2,1,0,0,0,0],"J","si",true,null,null,1,false,false,0,"joules","UCUM","Enrg","Clinical","unit of energy defined as the work required to move an object 1 m with a force of 1 N (N.m) or an electric charge of 1 C through 1 V (C.V), or to produce 1 W for 1 s (W.s) ","N.m","N.M","1",1,false],[false,"watt","W","W","power",1000,[2,-3,1,0,0,0,0],"W","si",true,null,null,1,false,false,0,"watts","UCUM","EngRat","Clinical","unit of power equal to 1 Joule per second (J/s) =  kg⋅m2⋅s−3","J/s","J/S","1",1,false],[false,"Ampere","A","A","electric current",1,[0,-1,0,0,0,1,0],"A","si",true,null,null,1,false,false,0,"Amperes","UCUM","ElpotRat","Clinical","unit of electric current equal to flow rate of electrons equal to 16.2415×10^18 elementary charges moving past a boundary in one second or 1 Coulomb/second","C/s","C/S","1",1,false],[false,"volt","V","V","electric potential",1000,[2,-2,1,0,0,-1,0],"V","si",true,null,null,1,false,false,0,"volts","UCUM","Elpot","Clinical","unit of electric potential (voltage) = 1 Joule per Coulomb (J/C)","J/C","J/C","1",1,false],[false,"farad","F","F","electric capacitance",0.001,[-2,2,-1,0,0,2,0],"F","si",true,null,null,1,false,false,0,"farads; electric capacitance","UCUM","","Clinical","CGS unit of electric capacitance with base units C/V (Coulomb per Volt)","C/V","C/V","1",1,false],[false,"ohm","Ohm","OHM","electric resistance",1000,[2,-1,1,0,0,-2,0],"Ω","si",true,null,null,1,false,false,0,"Ω; resistance; ohms","UCUM","","Clinical","unit of electrical resistance with units of Volt per Ampere","V/A","V/A","1",1,false],[false,"siemens","S","SIE","electric conductance",0.001,[-2,1,-1,0,0,2,0],"S","si",true,null,null,1,false,false,0,"Reciprocal ohm; mho; Ω−1; conductance","UCUM","","Clinical","unit of electric conductance (the inverse of electrical resistance) equal to ohm^-1","Ohm-1","OHM-1","1",1,false],[false,"weber","Wb","WB","magnetic flux",1000,[2,-1,1,0,0,-1,0],"Wb","si",true,null,null,1,false,false,0,"magnetic flux; webers","UCUM","","Clinical","unit of magnetic flux equal to Volt second","V.s","V.S","1",1,false],[false,"degree Celsius","Cel","CEL","temperature",1,[0,0,0,0,1,0,0],"°C","si",true,null,"Cel",1,true,false,0,"°C; degrees","UCUM","Temp","Clinical","","K",null,null,1,false],[false,"tesla","T","T","magnetic flux density",1000,[0,-1,1,0,0,-1,0],"T","si",true,null,null,1,false,false,0,"Teslas; magnetic field","UCUM","","Clinical","SI unit of magnetic field strength for magnetic field B equal to 1 Weber/square meter =  1 kg/(s2*A)","Wb/m2","WB/M2","1",1,false],[false,"henry","H","H","inductance",1000,[2,0,1,0,0,-2,0],"H","si",true,null,null,1,false,false,0,"henries; inductance","UCUM","","Clinical","unit of electrical inductance; usually expressed in millihenrys (mH) or microhenrys (uH).","Wb/A","WB/A","1",1,false],[false,"lumen","lm","LM","luminous flux",1,[0,0,0,2,0,0,1],"lm","si",true,null,null,1,false,false,0,"luminous flux; lumens","UCUM","","Clinical","unit of luminous flux defined as 1 lm = 1 cd⋅sr (candela times sphere)","cd.sr","CD.SR","1",1,false],[false,"lux","lx","LX","illuminance",1,[-2,0,0,2,0,0,1],"lx","si",true,null,null,1,false,false,0,"illuminance; luxes","UCUM","","Clinical","unit of illuminance equal to one lumen per square meter. ","lm/m2","LM/M2","1",1,false],[false,"becquerel","Bq","BQ","radioactivity",1,[0,-1,0,0,0,0,0],"Bq","si",true,null,null,1,false,false,0,"activity; radiation; becquerels","UCUM","","Clinical","measure of the atomic radiation rate with units s^-1","s-1","S-1","1",1,false],[false,"gray","Gy","GY","energy dose",1,[2,-2,0,0,0,0,0],"Gy","si",true,null,null,1,false,false,0,"absorbed doses; ionizing radiation doses; kerma; grays","UCUM","EngCnt","Clinical","unit of ionizing radiation dose with base units of 1 joule of radiation energy per kilogram of matter","J/kg","J/KG","1",1,false],[false,"sievert","Sv","SV","dose equivalent",1,[2,-2,0,0,0,0,0],"Sv","si",true,null,null,1,false,false,0,"sieverts; radiation dose quantities; equivalent doses; effective dose; operational dose; committed dose","UCUM","","Clinical","SI unit for radiation dose equivalent equal to 1 Joule/kilogram.","J/kg","J/KG","1",1,false],[false,"degree - plane angle","deg","DEG","plane angle",0.017453292519943295,[0,0,0,1,0,0,0],"°","iso1000",false,null,null,1,false,false,0,"°; degree of arc; arc degree; arcdegree; angle","UCUM","Angle","Clinical","one degree is equivalent to π/180 radians.","[pi].rad/360","[PI].RAD/360","2",2,false],[false,"gon","gon","GON","plane angle",0.015707963267948967,[0,0,0,1,0,0,0],"□<sup>g</sup>","iso1000",false,null,null,1,false,false,0,"gon (grade); gons","UCUM","Angle","Nonclinical","unit of plane angle measurement equal to 1/400 circle","deg","DEG","0.9",0.9,false],[false,"arc minute","'","'","plane angle",0.0002908882086657216,[0,0,0,1,0,0,0],"'","iso1000",false,null,null,1,false,false,0,"arcminutes; arcmin; arc minutes; arc mins","UCUM","Angle","Clinical","equal to 1/60 degree; used in optometry and opthamology (e.g. visual acuity tests)","deg/60","DEG/60","1",1,false],[false,"arc second","''","''","plane angle",0.00000484813681109536,[0,0,0,1,0,0,0],"''","iso1000",false,null,null,1,false,false,0,"arcseconds; arcsecs","UCUM","Angle","Clinical","equal to 1/60 arcminute = 1/3600 degree; used in optometry and opthamology (e.g. visual acuity tests)","'/60","'/60","1",1,false],[false,"Liters","l","L","volume",0.001,[3,0,0,0,0,0,0],"l","iso1000",true,null,null,1,false,false,0,"cubic decimeters; decimeters cubed; decimetres; dm3; dm^3; litres; liters, LT ","UCUM","Vol","Clinical","Because lower case \"l\" can be read as the number \"1\", though this is a valid UCUM units. UCUM strongly reccomends using  \"L\"","dm3","DM3","1",1,false],[false,"Liters","L","L","volume",0.001,[3,0,0,0,0,0,0],"L","iso1000",true,null,null,1,false,false,0,"cubic decimeters; decimeters cubed; decimetres; dm3; dm^3; litres; liters, LT ","UCUM","Vol","Clinical","Because lower case \"l\" can be read as the number \"1\", though this is a valid UCUM units. UCUM strongly reccomends using  \"L\"","l",null,"1",1,false],[false,"are","ar","AR","area",100,[2,0,0,0,0,0,0],"a","iso1000",true,null,null,1,false,false,0,"100 m2; 100 m^2; 100 square meter; meters squared; metres","UCUM","Area","Clinical","metric base unit for area defined as 100 m^2","m2","M2","100",100,false],[false,"minute","min","MIN","time",60,[0,1,0,0,0,0,0],"min","iso1000",false,null,null,1,false,false,0,"minutes","UCUM","Time","Clinical","","s","S","60",60,false],[false,"hour","h","HR","time",3600,[0,1,0,0,0,0,0],"h","iso1000",false,null,null,1,false,false,0,"hours; hrs; age","UCUM","Time","Clinical","","min","MIN","60",60,false],[false,"day","d","D","time",86400,[0,1,0,0,0,0,0],"d","iso1000",false,null,null,1,false,false,0,"days; age; dy; 24 hours; 24 hrs","UCUM","Time","Clinical","","h","HR","24",24,false],[false,"tropical year","a_t","ANN_T","time",31556925.216,[0,1,0,0,0,0,0],"a<sub>t</sub>","iso1000",false,null,null,1,false,false,0,"solar years; a tropical; years","UCUM","Time","Clinical","has an average of 365.242181 days but is constantly changing.","d","D","365.24219",365.24219,false],[false,"mean Julian year","a_j","ANN_J","time",31557600,[0,1,0,0,0,0,0],"a<sub>j</sub>","iso1000",false,null,null,1,false,false,0,"mean Julian yr; a julian; years","UCUM","Time","Clinical","has an average of 365.25 days, and in everyday use, has been replaced by the Gregorian year. However, this unit is used in astronomy to calculate light year. ","d","D","365.25",365.25,false],[false,"mean Gregorian year","a_g","ANN_G","time",31556952,[0,1,0,0,0,0,0],"a<sub>g</sub>","iso1000",false,null,null,1,false,false,0,"mean Gregorian yr; a gregorian; years","UCUM","Time","Clinical","has an average of 365.2425 days and is the most internationally used civil calendar.","d","D","365.2425",365.2425,false],[false,"year","a","ANN","time",31557600,[0,1,0,0,0,0,0],"a","iso1000",false,null,null,1,false,false,0,"years; a; yr, yrs; annum","UCUM","Time","Clinical","","a_j","ANN_J","1",1,false],[false,"week","wk","WK","time",604800,[0,1,0,0,0,0,0],"wk","iso1000",false,null,null,1,false,false,0,"weeks; wks","UCUM","Time","Clinical","","d","D","7",7,false],[false,"synodal month","mo_s","MO_S","time",2551442.976,[0,1,0,0,0,0,0],"mo<sub>s</sub>","iso1000",false,null,null,1,false,false,0,"Moon; synodic month; lunar month; mo-s; mo s; months; moons","UCUM","Time","Nonclinical","has an average of 29.53 days per month, unit used in astronomy","d","D","29.53059",29.53059,false],[false,"mean Julian month","mo_j","MO_J","time",2629800,[0,1,0,0,0,0,0],"mo<sub>j</sub>","iso1000",false,null,null,1,false,false,0,"mo-julian; mo Julian; months","UCUM","Time","Clinical","has an average of 30.435 days per month","a_j/12","ANN_J/12","1",1,false],[false,"mean Gregorian month","mo_g","MO_G","time",2629746,[0,1,0,0,0,0,0],"mo<sub>g</sub>","iso1000",false,null,null,1,false,false,0,"months; month-gregorian; mo-gregorian","UCUM","Time","Clinical","has an average 30.436875 days per month and is from the most internationally used civil calendar.","a_g/12","ANN_G/12","1",1,false],[false,"month","mo","MO","time",2629800,[0,1,0,0,0,0,0],"mo","iso1000",false,null,null,1,false,false,0,"months; duration","UCUM","Time","Clinical","based on Julian calendar which has an average of 30.435 days per month (this unit is used in astronomy but not in everyday life - see mo_g)","mo_j","MO_J","1",1,false],[false,"metric ton","t","TNE","mass",1000000,[0,0,1,0,0,0,0],"t","iso1000",true,null,null,1,false,false,0,"tonnes; megagrams; tons","UCUM","Mass","Nonclinical","equal to 1000 kg used in the US (recognized by NIST as metric ton), and internationally (recognized as tonne)","kg","KG","1e3",1000,false],[false,"bar","bar","BAR","pressure",100000000,[-1,-2,1,0,0,0,0],"bar","iso1000",true,null,null,1,false,false,0,"bars","UCUM","Pres","Nonclinical","unit of pressure equal to 10^5 Pascals, primarily used by meteorologists and in weather forecasting","Pa","PAL","1e5",100000,false],[false,"unified atomic mass unit","u","AMU","mass",1.6605402e-24,[0,0,1,0,0,0,0],"u","iso1000",true,null,null,1,false,false,0,"unified atomic mass units; amu; Dalton; Da","UCUM","Mass","Clinical","the mass of 1/12 of an unbound Carbon-12 atom nuclide equal to 1.6606x10^-27 kg ","g","G","1.6605402e-24",1.6605402e-24,false],[false,"astronomic unit","AU","ASU","length",149597870691,[1,0,0,0,0,0,0],"AU","iso1000",false,null,null,1,false,false,0,"AU; units","UCUM","Len","Clinical","unit of length used in astronomy for measuring distance in Solar system","Mm","MAM","149597.870691",149597.870691,false],[false,"parsec","pc","PRS","length",30856780000000000,[1,0,0,0,0,0,0],"pc","iso1000",true,null,null,1,false,false,0,"parsecs","UCUM","Len","Clinical","unit of length equal to 3.26 light years, nad used to measure large distances to objects outside our Solar System","m","M","3.085678e16",30856780000000000,false],[false,"velocity of light in a vacuum","[c]","[C]","velocity",299792458,[1,-1,0,0,0,0,0],"<i>c</i>","const",true,null,null,1,false,false,0,"speed of light","UCUM","Vel","Constant","equal to 299792458 m/s (approximately 3 x 10^8 m/s)","m/s","M/S","299792458",299792458,false],[false,"Planck constant","[h]","[H]","action",6.6260755e-31,[2,-1,1,0,0,0,0],"<i>h</i>","const",true,null,null,1,false,false,0,"Planck's constant","UCUM","","Constant","constant = 6.62607004 × 10-34 m2.kg/s; defined as quantum of action","J.s","J.S","6.6260755e-34",6.6260755e-34,false],[false,"Boltzmann constant","[k]","[K]","(unclassified)",1.380658e-20,[2,-2,1,0,-1,0,0],"<i>k</i>","const",true,null,null,1,false,false,0,"k; kB","UCUM","","Constant","physical constant relating energy at the individual particle level with temperature = 1.38064852 ×10^−23 J/K","J/K","J/K","1.380658e-23",1.380658e-23,false],[false,"permittivity of vacuum - electric","[eps_0]","[EPS_0]","electric permittivity",8.854187817000001e-15,[-3,2,-1,0,0,2,0],"<i>ε<sub><r>0</r></sub></i>","const",true,null,null,1,false,false,0,"ε0; Electric Constant; vacuum permittivity; permittivity of free space ","UCUM","","Constant","approximately equal to 8.854 × 10^−12 F/m (farads per meter)","F/m","F/M","8.854187817e-12",8.854187817e-12,false],[false,"permeability of vacuum - magnetic","[mu_0]","[MU_0]","magnetic permeability",0.0012566370614359172,[1,0,1,0,0,-2,0],"<i>μ<sub><r>0</r></sub></i>","const",true,null,null,1,false,false,0,"μ0; vacuum permeability; permeability of free space; magnetic constant","UCUM","","Constant","equal to 4π×10^−7 N/A2 (Newtons per square ampere) ≈ 1.2566×10^−6 H/m (Henry per meter)","N/A2","4.[PI].10*-7.N/A2","1",0.0000012566370614359173,false],[false,"elementary charge","[e]","[E]","electric charge",1.60217733e-19,[0,0,0,0,0,1,0],"<i>e</i>","const",true,null,null,1,false,false,0,"e; q; electric charges","UCUM","","Constant","the magnitude of the electric charge carried by a single electron or proton ≈ 1.60217×10^-19 Coulombs","C","C","1.60217733e-19",1.60217733e-19,false],[false,"electronvolt","eV","EV","energy",1.60217733e-16,[2,-2,1,0,0,0,0],"eV","iso1000",true,null,null,1,false,false,0,"Electron Volts; electronvolts","UCUM","Eng","Clinical","unit of kinetic energy = 1 V * 1.602×10^−19 C = 1.6×10−19 Joules","[e].V","[E].V","1",1,false],[false,"electron mass","[m_e]","[M_E]","mass",9.1093897e-28,[0,0,1,0,0,0,0],"<i>m<sub><r>e</r></sub></i>","const",true,null,null,1,false,false,0,"electron rest mass; me","UCUM","Mass","Constant","approximately equal to 9.10938356 × 10-31 kg; defined as the mass of a stationary electron","g","g","9.1093897e-28",9.1093897e-28,false],[false,"proton mass","[m_p]","[M_P]","mass",1.6726231e-24,[0,0,1,0,0,0,0],"<i>m<sub><r>p</r></sub></i>","const",true,null,null,1,false,false,0,"mp; masses","UCUM","Mass","Constant","approximately equal to 1.672622×10−27 kg","g","g","1.6726231e-24",1.6726231e-24,false],[false,"Newtonian constant of gravitation","[G]","[GC]","(unclassified)",6.67259e-14,[3,-2,-1,0,0,0,0],"<i>G</i>","const",true,null,null,1,false,false,0,"G; gravitational constant; Newton's constant","UCUM","","Constant","gravitational constant = 6.674×10−11 N⋅m2/kg2","m3.kg-1.s-2","M3.KG-1.S-2","6.67259e-11",6.67259e-11,false],[false,"standard acceleration of free fall","[g]","[G]","acceleration",9.80665,[1,-2,0,0,0,0,0],"<i>g<sub>n</sub></i>","const",true,null,null,1,false,false,0,"standard gravity; g; ɡ0; ɡn","UCUM","Accel","Constant","defined by standard = 9.80665 m/s2","m/s2","M/S2","980665e-5",9.80665,false],[false,"Torr","Torr","Torr","pressure",133322,[-1,-2,1,0,0,0,0],"Torr","const",false,null,null,1,false,false,0,"torrs","UCUM","Pres","Clinical","1 torr = 1 mmHg; unit used to measure blood pressure","Pa","PAL","133.322",133.322,false],[false,"standard atmosphere","atm","ATM","pressure",101325000,[-1,-2,1,0,0,0,0],"atm","const",false,null,null,1,false,false,0,"reference pressure; atmos; std atmosphere","UCUM","Pres","Clinical","defined as being precisely equal to 101,325 Pa","Pa","PAL","101325",101325,false],[false,"light-year","[ly]","[LY]","length",9460730472580800,[1,0,0,0,0,0,0],"l.y.","const",true,null,null,1,false,false,0,"light years; ly","UCUM","Len","Constant","unit of astronomal distance = 5.88×10^12 mi","[c].a_j","[C].ANN_J","1",1,false],[false,"gram-force","gf","GF","force",9.80665,[1,-2,1,0,0,0,0],"gf","const",true,null,null,1,false,false,0,"Newtons; gram forces","UCUM","Force","Clinical","May be specific to unit related to cardiac output","g.[g]","G.[G]","1",1,false],[false,"Kayser","Ky","KY","lineic number",100,[-1,0,0,0,0,0,0],"K","cgs",true,null,null,1,false,false,0,"wavenumbers; kaysers","UCUM","InvLen","Clinical","unit of wavelength equal to cm^-1","cm-1","CM-1","1",1,false],[false,"Gal","Gal","GL","acceleration",0.01,[1,-2,0,0,0,0,0],"Gal","cgs",true,null,null,1,false,false,0,"galileos; Gals","UCUM","Accel","Clinical","unit of acceleration used in gravimetry; equivalent to cm/s2 ","cm/s2","CM/S2","1",1,false],[false,"dyne","dyn","DYN","force",0.01,[1,-2,1,0,0,0,0],"dyn","cgs",true,null,null,1,false,false,0,"dynes","UCUM","Force","Clinical","unit of force equal to 10^-5 Newtons","g.cm/s2","G.CM/S2","1",1,false],[false,"erg","erg","ERG","energy",0.0001,[2,-2,1,0,0,0,0],"erg","cgs",true,null,null,1,false,false,0,"10^-7 Joules, 10-7 Joules; 100 nJ; 100 nanoJoules; 1 dyne cm; 1 g.cm2/s2","UCUM","Eng","Clinical","unit of energy = 1 dyne centimeter = 10^-7 Joules","dyn.cm","DYN.CM","1",1,false],[false,"Poise","P","P","dynamic viscosity",100,[-1,-1,1,0,0,0,0],"P","cgs",true,null,null,1,false,false,0,"dynamic viscosity; poises","UCUM","Visc","Clinical","unit of dynamic viscosity where 1 Poise = 1/10 Pascal second","dyn.s/cm2","DYN.S/CM2","1",1,false],[false,"Biot","Bi","BI","electric current",10,[0,-1,0,0,0,1,0],"Bi","cgs",true,null,null,1,false,false,0,"Bi; abamperes; abA","UCUM","ElpotRat","Clinical","equal to 10 amperes","A","A","10",10,false],[false,"Stokes","St","ST","kinematic viscosity",0.0001,[2,-1,0,0,0,0,0],"St","cgs",true,null,null,1,false,false,0,"kinematic viscosity","UCUM","Visc","Clinical","unit of kimematic viscosity with units cm2/s","cm2/s","CM2/S","1",1,false],[false,"Maxwell","Mx","MX","flux of magnetic induction",0.00001,[2,-1,1,0,0,-1,0],"Mx","cgs",true,null,null,1,false,false,0,"magnetix flux; Maxwells","UCUM","","Clinical","unit of magnetic flux","Wb","WB","1e-8",1e-8,false],[false,"Gauss","G","GS","magnetic flux density",0.1,[0,-1,1,0,0,-1,0],"Gs","cgs",true,null,null,1,false,false,0,"magnetic fields; magnetic flux density; induction; B","UCUM","magnetic","Clinical","CGS unit of magnetic flux density, known as magnetic field B; defined as one maxwell unit per square centimeter (see Oersted for CGS unit for H field)","T","T","1e-4",0.0001,false],[false,"Oersted","Oe","OE","magnetic field intensity",79.57747154594767,[-1,-1,0,0,0,1,0],"Oe","cgs",true,null,null,1,false,false,0,"H magnetic B field; Oersteds","UCUM","","Clinical","CGS unit of the auxiliary magnetic field H defined as 1 dyne per unit pole = 1000/4π amperes per meter (see Gauss for CGS unit for B field)","A/m","/[PI].A/M","250",79.57747154594767,false],[false,"Gilbert","Gb","GB","magnetic tension",0.7957747154594768,[0,-1,0,0,0,1,0],"Gb","cgs",true,null,null,1,false,false,0,"Gi; magnetomotive force; Gilberts","UCUM","","Clinical","unit of magnetomotive force (magnetic potential)","Oe.cm","OE.CM","1",1,false],[false,"stilb","sb","SB","lum. intensity density",10000,[-2,0,0,0,0,0,1],"sb","cgs",true,null,null,1,false,false,0,"stilbs","UCUM","","Obsolete","unit of luminance; equal to and replaced by unit candela per square centimeter (cd/cm2)","cd/cm2","CD/CM2","1",1,false],[false,"Lambert","Lmb","LMB","brightness",3183.098861837907,[-2,0,0,0,0,0,1],"L","cgs",true,null,null,1,false,false,0,"luminance; lamberts","UCUM","","Clinical","unit of luminance defined as 1 lambert = 1/ π candela per square meter","cd/cm2/[pi]","CD/CM2/[PI]","1",1,false],[false,"phot","ph","PHT","illuminance",0.0001,[-2,0,0,2,0,0,1],"ph","cgs",true,null,null,1,false,false,0,"phots","UCUM","","Clinical","CGS photometric unit of illuminance, or luminous flux through an area equal to 10000 lumens per square meter = 10000 lux","lx","LX","1e-4",0.0001,false],[false,"Curie","Ci","CI","radioactivity",37000000000,[0,-1,0,0,0,0,0],"Ci","cgs",true,null,null,1,false,false,0,"curies","UCUM","","Obsolete","unit for measuring atomic disintegration rate; replaced by the Bequerel (Bq) unit","Bq","BQ","37e9",37000000000,false],[false,"Roentgen","R","ROE","ion dose",2.58e-7,[0,0,-1,0,0,1,0],"R","cgs",true,null,null,1,false,false,0,"röntgen; Roentgens","UCUM","","Clinical","unit of exposure of X-rays and gamma rays in air; unit used primarily in the US but strongly discouraged by NIST","C/kg","C/KG","2.58e-4",0.000258,false],[false,"radiation absorbed dose","RAD","[RAD]","energy dose",0.01,[2,-2,0,0,0,0,0],"RAD","cgs",true,null,null,1,false,false,0,"doses","UCUM","","Clinical","unit of radiation absorbed dose used primarily in the US with base units 100 ergs per gram of material. Also see the SI unit Gray (Gy).","erg/g","ERG/G","100",100,false],[false,"radiation equivalent man","REM","[REM]","dose equivalent",0.01,[2,-2,0,0,0,0,0],"REM","cgs",true,null,null,1,false,false,0,"Roentgen Equivalent in Man; rems; dose equivalents","UCUM","","Clinical","unit of equivalent dose which measures the effect of radiation on humans equal to 0.01 sievert. Used primarily in the US. Also see SI unit Sievert (Sv)","RAD","[RAD]","1",1,false],[false,"inch","[in_i]","[IN_I]","length",0.025400000000000002,[1,0,0,0,0,0,0],"in","intcust",false,null,null,1,false,false,0,"inches; in; international inch; body height","UCUM","Len","Clinical","standard unit for inch in the US and internationally","cm","CM","254e-2",2.54,false],[false,"foot","[ft_i]","[FT_I]","length",0.3048,[1,0,0,0,0,0,0],"ft","intcust",false,null,null,1,false,false,0,"ft; fts; foot; international foot; feet; international feet; height","UCUM","Len","Clinical","unit used in the US and internationally","[in_i]","[IN_I]","12",12,false],[false,"yard","[yd_i]","[YD_I]","length",0.9144000000000001,[1,0,0,0,0,0,0],"yd","intcust",false,null,null,1,false,false,0,"international yards; yds; distance","UCUM","Len","Clinical","standard unit used in the US and internationally","[ft_i]","[FT_I]","3",3,false],[false,"mile","[mi_i]","[MI_I]","length",1609.344,[1,0,0,0,0,0,0],"mi","intcust",false,null,null,1,false,false,0,"international miles; mi I; statute mile","UCUM","Len","Clinical","standard unit used in the US and internationally","[ft_i]","[FT_I]","5280",5280,false],[false,"fathom","[fth_i]","[FTH_I]","depth of water",1.8288000000000002,[1,0,0,0,0,0,0],"fth","intcust",false,null,null,1,false,false,0,"international fathoms","UCUM","Len","Nonclinical","unit used in the US and internationally to measure depth of water; same length as the US fathom","[ft_i]","[FT_I]","6",6,false],[false,"nautical mile","[nmi_i]","[NMI_I]","length",1852,[1,0,0,0,0,0,0],"n.mi","intcust",false,null,null,1,false,false,0,"nautical mile; nautical miles; international nautical mile; international nautical miles; nm; n.m.; nmi","UCUM","Len","Nonclinical","standard unit used in the US and internationally","m","M","1852",1852,false],[false,"knot","[kn_i]","[KN_I]","velocity",0.5144444444444445,[1,-1,0,0,0,0,0],"knot","intcust",false,null,null,1,false,false,0,"kn; kt; international knots","UCUM","Vel","Nonclinical","defined as equal to one nautical mile (1.852 km) per hour","[nmi_i]/h","[NMI_I]/H","1",1,false],[false,"square inch","[sin_i]","[SIN_I]","area",0.0006451600000000001,[2,0,0,0,0,0,0],null,"intcust",false,null,null,1,false,false,0,"in2; in^2; inches squared; sq inch; inches squared; international","UCUM","Area","Clinical","standard unit used in the US and internationally","[in_i]2","[IN_I]2","1",1,false],[false,"square foot","[sft_i]","[SFT_I]","area",0.09290304,[2,0,0,0,0,0,0],null,"intcust",false,null,null,1,false,false,0,"ft2; ft^2; ft squared; sq ft; feet; international","UCUM","Area","Clinical","standard unit used in the US and internationally","[ft_i]2","[FT_I]2","1",1,false],[false,"square yard","[syd_i]","[SYD_I]","area",0.8361273600000002,[2,0,0,0,0,0,0],null,"intcust",false,null,null,1,false,false,0,"yd2; yd^2; sq. yds; yards squared; international","UCUM","Area","Clinical","standard unit used in the US and internationally","[yd_i]2","[YD_I]2","1",1,false],[false,"cubic inch","[cin_i]","[CIN_I]","volume",0.000016387064000000003,[3,0,0,0,0,0,0],null,"intcust",false,null,null,1,false,false,0,"in3; in^3; in*3; inches^3; inches*3; cu. in; cu in; cubic inches; inches cubed; cin","UCUM","Vol","Clinical","standard unit used in the US and internationally","[in_i]3","[IN_I]3","1",1,false],[false,"cubic foot","[cft_i]","[CFT_I]","volume",0.028316846592000004,[3,0,0,0,0,0,0],null,"intcust",false,null,null,1,false,false,0,"ft3; ft^3; ft*3; cu. ft; cubic feet; cubed; [ft_i]3; international","UCUM","Vol","Clinical","","[ft_i]3","[FT_I]3","1",1,false],[false,"cubic yard","[cyd_i]","[CYD_I]","volume",0.7645548579840002,[3,0,0,0,0,0,0],"cu.yd","intcust",false,null,null,1,false,false,0,"cubic yards; cubic yds; cu yards; CYs; yards^3; yd^3; yds^3; yd3; yds3","UCUM","Vol","Nonclinical","standard unit used in the US and internationally","[yd_i]3","[YD_I]3","1",1,false],[false,"board foot","[bf_i]","[BF_I]","volume",0.002359737216,[3,0,0,0,0,0,0],null,"intcust",false,null,null,1,false,false,0,"BDFT; FBM; BF; board feet; international","UCUM","Vol","Nonclinical","unit of volume used to measure lumber","[in_i]3","[IN_I]3","144",144,false],[false,"cord","[cr_i]","[CR_I]","volume",3.6245563637760005,[3,0,0,0,0,0,0],null,"intcust",false,null,null,1,false,false,0,"crd I; international cords","UCUM","Vol","Nonclinical","unit of measure of dry volume used to measure firewood equal 128 ft3","[ft_i]3","[FT_I]3","128",128,false],[false,"mil","[mil_i]","[MIL_I]","length",0.000025400000000000004,[1,0,0,0,0,0,0],"mil","intcust",false,null,null,1,false,false,0,"thou, thousandth; mils; international","UCUM","Len","Clinical","equal to 0.001 international inch","[in_i]","[IN_I]","1e-3",0.001,false],[false,"circular mil","[cml_i]","[CML_I]","area",5.067074790974979e-10,[2,0,0,0,0,0,0],"circ.mil","intcust",false,null,null,1,false,false,0,"circular mils; cml I; international","UCUM","Area","Clinical","","[pi]/4.[mil_i]2","[PI]/4.[MIL_I]2","1",1,false],[false,"hand","[hd_i]","[HD_I]","height of horses",0.10160000000000001,[1,0,0,0,0,0,0],"hd","intcust",false,null,null,1,false,false,0,"hands; international","UCUM","Len","Nonclinical","used to measure horse height","[in_i]","[IN_I]","4",4,false],[false,"foot - US","[ft_us]","[FT_US]","length",0.3048006096012192,[1,0,0,0,0,0,0],"ft<sub>us</sub>","us-lengths",false,null,null,1,false,false,0,"US foot; foot US; us ft; ft us; height; visual distance; feet","UCUM","Len","Obsolete","Better to use [ft_i] which refers to the length used worldwide, including in the US;  [ft_us] may be confused with land survey units. ","m/3937","M/3937","1200",1200,false],[false,"yard - US","[yd_us]","[YD_US]","length",0.9144018288036575,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"US yards; us yds; distance","UCUM","Len; Nrat","Obsolete","Better to use [yd_i] which refers to the length used worldwide, including in the US; [yd_us] refers to unit used in land surveys in the US","[ft_us]","[FT_US]","3",3,false],[false,"inch - US","[in_us]","[IN_US]","length",0.0254000508001016,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"US inches; in us; us in; inch US","UCUM","Len","Obsolete","Better to use [in_i] which refers to the length used worldwide, including in the US","[ft_us]/12","[FT_US]/12","1",1,false],[false,"rod - US","[rd_us]","[RD_US]","length",5.029210058420117,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"US rod; US rods; rd US; US rd","UCUM","Len","Obsolete","","[ft_us]","[FT_US]","16.5",16.5,false],[false,"Gunter's chain - US","[ch_us]","[CH_US]","length",20.116840233680467,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"surveyor's chain; Surveyor's chain USA; Gunter’s measurement; surveyor’s measurement; Gunter's Chain USA","UCUM","Len","Obsolete","historical unit used for land survey used only in the US","[rd_us]","[RD_US]","4",4,false],[false,"link for Gunter's chain - US","[lk_us]","[LK_US]","length",0.20116840233680466,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"Links for Gunter's Chain USA","UCUM","Len","Obsolete","","[ch_us]/100","[CH_US]/100","1",1,false],[false,"Ramden's chain - US","[rch_us]","[RCH_US]","length",30.480060960121918,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"Ramsden's chain; engineer's chains","UCUM","Len","Obsolete","distance measuring device used for land survey","[ft_us]","[FT_US]","100",100,false],[false,"link for Ramden's chain - US","[rlk_us]","[RLK_US]","length",0.3048006096012192,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"links for Ramsden's chain","UCUM","Len","Obsolete","","[rch_us]/100","[RCH_US]/100","1",1,false],[false,"fathom - US","[fth_us]","[FTH_US]","length",1.828803657607315,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"US fathoms; fathom USA; fth us","UCUM","Len","Obsolete","same length as the international fathom - better to use international fathom ([fth_i])","[ft_us]","[FT_US]","6",6,false],[false,"furlong - US","[fur_us]","[FUR_US]","length",201.16840233680466,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"US furlongs; fur us","UCUM","Len","Nonclinical","distance unit in horse racing","[rd_us]","[RD_US]","40",40,false],[false,"mile - US","[mi_us]","[MI_US]","length",1609.3472186944373,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"U.S. Survey Miles; US statute miles; survey mi; US mi; distance","UCUM","Len","Nonclinical","Better to use [mi_i] which refers to the length used worldwide, including in the US","[fur_us]","[FUR_US]","8",8,false],[false,"acre - US","[acr_us]","[ACR_US]","area",4046.872609874252,[2,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"Acre USA Survey; Acre USA; survey acres","UCUM","Area","Nonclinical","an older unit based on pre 1959 US statute lengths that is still sometimes used in the US only for land survey purposes. ","[rd_us]2","[RD_US]2","160",160,false],[false,"square rod - US","[srd_us]","[SRD_US]","area",25.292953811714074,[2,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"rod2; rod^2; sq. rod; rods squared","UCUM","Area","Nonclinical","Used only in the US to measure land area, based on US statute land survey length units","[rd_us]2","[RD_US]2","1",1,false],[false,"square mile - US","[smi_us]","[SMI_US]","area",2589998.470319521,[2,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"mi2; mi^2; sq mi; miles squared","UCUM","Area","Nonclinical","historical unit used only in the US for land survey purposes (based on the US survey mile), not the internationally recognized [mi_i]","[mi_us]2","[MI_US]2","1",1,false],[false,"section","[sct]","[SCT]","area",2589998.470319521,[2,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"sct; sections","UCUM","Area","Nonclinical","tract of land approximately equal to 1 mile square containing 640 acres","[mi_us]2","[MI_US]2","1",1,false],[false,"township","[twp]","[TWP]","area",93239944.93150276,[2,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"twp; townships","UCUM","Area","Nonclinical","land measurement equal to 6 mile square","[sct]","[SCT]","36",36,false],[false,"mil - US","[mil_us]","[MIL_US]","length",0.0000254000508001016,[1,0,0,0,0,0,0],null,"us-lengths",false,null,null,1,false,false,0,"thou, thousandth; mils","UCUM","Len","Obsolete","better to use [mil_i] which is based on the internationally recognized inch","[in_us]","[IN_US]","1e-3",0.001,false],[false,"inch - British","[in_br]","[IN_BR]","length",0.025399980000000003,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"imperial inches; imp in; br in; british inches","UCUM","Len","Obsolete","","cm","CM","2.539998",2.539998,false],[false,"foot - British","[ft_br]","[FT_BR]","length",0.30479976000000003,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"British Foot; Imperial Foot; feet; imp fts; br fts","UCUM","Len","Obsolete","","[in_br]","[IN_BR]","12",12,false],[false,"rod - British","[rd_br]","[RD_BR]","length",5.02919604,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"British rods; br rd","UCUM","Len","Obsolete","","[ft_br]","[FT_BR]","16.5",16.5,false],[false,"Gunter's chain - British","[ch_br]","[CH_BR]","length",20.11678416,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"Gunter's Chain British; Gunters Chain British; Surveyor's Chain British","UCUM","Len","Obsolete","historical unit used for land survey used only in Great Britain","[rd_br]","[RD_BR]","4",4,false],[false,"link for Gunter's chain - British","[lk_br]","[LK_BR]","length",0.2011678416,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"Links for Gunter's Chain British","UCUM","Len","Obsolete","","[ch_br]/100","[CH_BR]/100","1",1,false],[false,"fathom - British","[fth_br]","[FTH_BR]","length",1.82879856,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"British fathoms; imperial fathoms; br fth; imp fth","UCUM","Len","Obsolete","","[ft_br]","[FT_BR]","6",6,false],[false,"pace - British","[pc_br]","[PC_BR]","length",0.7619994000000001,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"British paces; br pc","UCUM","Len","Nonclinical","traditional unit of length equal to 152.4 centimeters, or 1.52 meter. ","[ft_br]","[FT_BR]","2.5",2.5,false],[false,"yard - British","[yd_br]","[YD_BR]","length",0.91439928,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"British yards; Br yds; distance","UCUM","Len","Obsolete","","[ft_br]","[FT_BR]","3",3,false],[false,"mile - British","[mi_br]","[MI_BR]","length",1609.3427328000002,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"imperial miles; British miles; English statute miles; imp mi, br mi","UCUM","Len","Obsolete","","[ft_br]","[FT_BR]","5280",5280,false],[false,"nautical mile - British","[nmi_br]","[NMI_BR]","length",1853.1825408000002,[1,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"British nautical miles; Imperial nautical miles; Admiralty miles; n.m. br; imp nm","UCUM","Len","Obsolete","","[ft_br]","[FT_BR]","6080",6080,false],[false,"knot - British","[kn_br]","[KN_BR]","velocity",0.5147729280000001,[1,-1,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"British knots; kn br; kt","UCUM","Vel","Obsolete","based on obsolete British nautical mile ","[nmi_br]/h","[NMI_BR]/H","1",1,false],[false,"acre","[acr_br]","[ACR_BR]","area",4046.850049400269,[2,0,0,0,0,0,0],null,"brit-length",false,null,null,1,false,false,0,"Imperial acres; British; a; ac; ar; acr","UCUM","Area","Nonclinical","the standard unit for acre used in the US and internationally","[yd_br]2","[YD_BR]2","4840",4840,false],[false,"gallon - US","[gal_us]","[GAL_US]","fluid volume",0.0037854117840000006,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US gallons; US liquid gallon; gal us; Queen Anne's wine gallon","UCUM","Vol","Nonclinical","only gallon unit used in the US; [gal_us] is only used in some other countries in South American and Africa to measure gasoline volume","[in_i]3","[IN_I]3","231",231,false],[false,"barrel - US","[bbl_us]","[BBL_US]","fluid volume",0.158987294928,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"bbl","UCUM","Vol","Nonclinical","[bbl_us] is the standard unit for oil barrel, which is a unit only used in the US to measure the volume oil. ","[gal_us]","[GAL_US]","42",42,false],[false,"quart - US","[qt_us]","[QT_US]","fluid volume",0.0009463529460000001,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US quarts; us qts","UCUM","Vol","Clinical","Used only in the US","[gal_us]/4","[GAL_US]/4","1",1,false],[false,"pint - US","[pt_us]","[PT_US]","fluid volume",0.00047317647300000007,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US pints; pint US; liquid pint; pt us; us pt","UCUM","Vol","Clinical","Used only in the US","[qt_us]/2","[QT_US]/2","1",1,false],[false,"gill - US","[gil_us]","[GIL_US]","fluid volume",0.00011829411825000002,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US gills; gil us","UCUM","Vol","Nonclinical","only used in the context of alcohol volume in the US","[pt_us]/4","[PT_US]/4","1",1,false],[false,"fluid ounce - US","[foz_us]","[FOZ_US]","fluid volume",0.000029573529562500005,[3,0,0,0,0,0,0],"oz fl","us-volumes",false,null,null,1,false,false,0,"US fluid ounces; fl ozs; FO; fl. oz.; foz us","UCUM","Vol","Clinical","unit used only in the US","[gil_us]/4","[GIL_US]/4","1",1,false],[false,"fluid dram - US","[fdr_us]","[FDR_US]","fluid volume",0.0000036966911953125006,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US fluid drams; fdr us","UCUM","Vol","Nonclinical","equal to 1/8 US fluid ounce = 3.69 mL; used informally to mean small amount of liquor, especially Scotch whiskey","[foz_us]/8","[FOZ_US]/8","1",1,false],[false,"minim - US","[min_us]","[MIN_US]","fluid volume",6.1611519921875e-8,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"min US; US min; ♏ US","UCUM","Vol","Obsolete","","[fdr_us]/60","[FDR_US]/60","1",1,false],[false,"cord - US","[crd_us]","[CRD_US]","fluid volume",3.6245563637760005,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US cord; US cords; crd us; us crd","UCUM","Vol","Nonclinical","unit of measure of dry volume used to measure firewood equal 128 ft3 (the same as international cord [cr_i])","[ft_i]3","[FT_I]3","128",128,false],[false,"bushel - US","[bu_us]","[BU_US]","dry volume",0.03523907016688001,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US bushels; US bsh; US bu","UCUM","Vol","Obsolete","Historical unit of dry volume that is rarely used today","[in_i]3","[IN_I]3","2150.42",2150.42,false],[false,"gallon - historical","[gal_wi]","[GAL_WI]","dry volume",0.004404883770860001,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"Corn Gallon British; Dry Gallon US; Gallons Historical; Grain Gallon British; Winchester Corn Gallon; historical winchester gallons; wi gal","UCUM","Vol","Obsolete","historical unit of dry volume no longer used","[bu_us]/8","[BU_US]/8","1",1,false],[false,"peck - US","[pk_us]","[PK_US]","dry volume",0.008809767541720002,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"US pecks; US pk","UCUM","Vol","Nonclinical","unit of dry volume rarely used today (can be used to measure volume of apples)","[bu_us]/4","[BU_US]/4","1",1,false],[false,"dry quart - US","[dqt_us]","[DQT_US]","dry volume",0.0011012209427150002,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"dry quarts; dry quart US; US dry quart; dry qt; us dry qt; dqt; dqt us","UCUM","Vol","Nonclinical","historical unit of dry volume only in the US, but is rarely used today","[pk_us]/8","[PK_US]/8","1",1,false],[false,"dry pint - US","[dpt_us]","[DPT_US]","dry volume",0.0005506104713575001,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"dry pints; dry pint US; US dry pint; dry pt; dpt; dpt us","UCUM","Vol","Nonclinical","historical unit of dry volume only in the US, but is rarely used today","[dqt_us]/2","[DQT_US]/2","1",1,false],[false,"tablespoon - US","[tbs_us]","[TBS_US]","volume",0.000014786764781250002,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"Tbs; tbsp; tbs us; US tablespoons","UCUM","Vol","Clinical","unit defined as 0.5 US fluid ounces or 3 teaspoons - used only in the US. See [tbs_m] for the unit used internationally and in the US for nutrional labelling. ","[foz_us]/2","[FOZ_US]/2","1",1,false],[false,"teaspoon - US","[tsp_us]","[TSP_US]","volume",0.0000049289215937500005,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"tsp; t; US teaspoons","UCUM","Vol","Nonclinical","unit defined as 1/6 US fluid ounces - used only in the US. See [tsp_m] for the unit used internationally and in the US for nutrional labelling. ","[tbs_us]/3","[TBS_US]/3","1",1,false],[false,"cup - US customary","[cup_us]","[CUP_US]","volume",0.00023658823650000004,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"cup us; us cups","UCUM","Vol","Nonclinical","Unit defined as 1/2 US pint or 16 US tablespoons ≈ 236.59 mL, which is not the standard unit defined by the FDA of 240 mL - see [cup_m] (metric cup)","[tbs_us]","[TBS_US]","16",16,false],[false,"fluid ounce - metric","[foz_m]","[FOZ_M]","fluid volume",0.000029999999999999997,[3,0,0,0,0,0,0],"oz fl","us-volumes",false,null,null,1,false,false,0,"metric fluid ounces; fozs m; fl ozs m","UCUM","Vol","Clinical","unit used only in the US for nutritional labelling, as set by the FDA","mL","ML","30",30,false],[false,"cup - US legal","[cup_m]","[CUP_M]","volume",0.00023999999999999998,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"cup m; metric cups","UCUM","Vol","Clinical","standard unit equal to 240 mL used in the US for nutritional labelling, as defined by the FDA. Note that this is different from the US customary cup (236.59 mL) and the metric cup used in Commonwealth nations (250 mL).","mL","ML","240",240,false],[false,"teaspoon - metric","[tsp_m]","[TSP_M]","volume",0.0000049999999999999996,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"tsp; t; metric teaspoons","UCUM","Vol","Clinical","standard unit used in the US and internationally","mL","mL","5",5,false],[false,"tablespoon - metric","[tbs_m]","[TBS_M]","volume",0.000014999999999999999,[3,0,0,0,0,0,0],null,"us-volumes",false,null,null,1,false,false,0,"metric tablespoons; Tbs; tbsp; T; tbs m","UCUM","Vol","Clinical","standard unit used in the US and internationally","mL","mL","15",15,false],[false,"gallon- British","[gal_br]","[GAL_BR]","volume",0.004546090000000001,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"imperial gallons, UK gallons; British gallons; br gal; imp gal","UCUM","Vol","Nonclinical","Used only in Great Britain and other Commonwealth countries","l","L","4.54609",4.54609,false],[false,"peck - British","[pk_br]","[PK_BR]","volume",0.009092180000000002,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"imperial pecks; British pecks; br pk; imp pk","UCUM","Vol","Nonclinical","unit of dry volume rarely used today (can be used to measure volume of apples)","[gal_br]","[GAL_BR]","2",2,false],[false,"bushel - British","[bu_br]","[BU_BR]","volume",0.03636872000000001,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"British bushels; imperial; br bsh; br bu; imp","UCUM","Vol","Obsolete","Historical unit of dry volume that is rarely used today","[pk_br]","[PK_BR]","4",4,false],[false,"quart - British","[qt_br]","[QT_BR]","volume",0.0011365225000000002,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"British quarts; imperial quarts; br qts","UCUM","Vol","Clinical","Used only in Great Britain and other Commonwealth countries","[gal_br]/4","[GAL_BR]/4","1",1,false],[false,"pint - British","[pt_br]","[PT_BR]","volume",0.0005682612500000001,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"British pints; imperial pints; pt br; br pt; imp pt; pt imp","UCUM","Vol","Clinical","Used only in Great Britain and other Commonwealth countries","[qt_br]/2","[QT_BR]/2","1",1,false],[false,"gill - British","[gil_br]","[GIL_BR]","volume",0.00014206531250000003,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"imperial gills; British gills; imp gill, br gill","UCUM","Vol","Nonclinical","only used in the context of alcohol volume in Great Britain","[pt_br]/4","[PT_BR]/4","1",1,false],[false,"fluid ounce - British","[foz_br]","[FOZ_BR]","volume",0.000028413062500000005,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"British fluid ounces; Imperial fluid ounces; br fozs; imp fozs; br fl ozs","UCUM","Vol","Clinical","Used only in Great Britain and other Commonwealth countries","[gil_br]/5","[GIL_BR]/5","1",1,false],[false,"fluid dram - British","[fdr_br]","[FDR_BR]","volume",0.0000035516328125000006,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"British fluid drams; fdr br","UCUM","Vol","Nonclinical","equal to 1/8 Imperial fluid ounce = 3.55 mL; used informally to mean small amount of liquor, especially Scotch whiskey","[foz_br]/8","[FOZ_BR]/8","1",1,false],[false,"minim - British","[min_br]","[MIN_BR]","volume",5.919388020833334e-8,[3,0,0,0,0,0,0],null,"brit-volumes",false,null,null,1,false,false,0,"min br; br min; ♏ br","UCUM","Vol","Obsolete","","[fdr_br]/60","[FDR_BR]/60","1",1,false],[false,"grain","[gr]","[GR]","mass",0.06479891,[0,0,1,0,0,0,0],null,"avoirdupois",false,null,null,1,false,false,0,"gr; grains","UCUM","Mass","Nonclinical","an apothecary measure of mass rarely used today","mg","MG","64.79891",64.79891,false],[false,"pound","[lb_av]","[LB_AV]","mass",453.59237,[0,0,1,0,0,0,0],"lb","avoirdupois",false,null,null,1,false,false,0,"avoirdupois pounds, international pounds; av lbs; pounds","UCUM","Mass","Clinical","standard unit used in the US and internationally","[gr]","[GR]","7000",7000,false],[false,"pound force - US","[lbf_av]","[LBF_AV]","force",4448.2216152605,[1,-2,1,0,0,0,0],"lbf","const",false,null,null,1,false,false,0,"lbfs; US lbf; US pound forces","UCUM","Force","Clinical","only rarely needed in health care - see [lb_av] which is the more common unit to express weight","[lb_av].[g]","[LB_AV].[G]","1",1,false],[false,"ounce","[oz_av]","[OZ_AV]","mass",28.349523125,[0,0,1,0,0,0,0],"oz","avoirdupois",false,null,null,1,false,false,0,"ounces; international ounces; avoirdupois ounces; av ozs","UCUM","Mass","Clinical","standard unit used in the US and internationally","[lb_av]/16","[LB_AV]/16","1",1,false],[false,"Dram mass unit","[dr_av]","[DR_AV]","mass",1.7718451953125,[0,0,1,0,0,0,0],null,"avoirdupois",false,null,null,1,false,false,0,"Dram; drams avoirdupois; avoidupois dram; international dram","UCUM","Mass","Clinical","unit from the avoirdupois system, which is used in the US and internationally","[oz_av]/16","[OZ_AV]/16","1",1,false],[false,"short hundredweight","[scwt_av]","[SCWT_AV]","mass",45359.237,[0,0,1,0,0,0,0],null,"avoirdupois",false,null,null,1,false,false,0,"hundredweights; s cwt; scwt; avoirdupois","UCUM","Mass","Nonclinical","Used only in the US to equal 100 pounds","[lb_av]","[LB_AV]","100",100,false],[false,"long hundredweight","[lcwt_av]","[LCWT_AV]","mass",50802.345440000005,[0,0,1,0,0,0,0],null,"avoirdupois",false,null,null,1,false,false,0,"imperial hundredweights; imp cwt; lcwt; avoirdupois","UCUM","Mass","Obsolete","","[lb_av]","[LB_AV]","112",112,false],[false,"short ton - US","[ston_av]","[STON_AV]","mass",907184.74,[0,0,1,0,0,0,0],null,"avoirdupois",false,null,null,1,false,false,0,"ton; US tons; avoirdupois tons","UCUM","Mass","Clinical","Used only in the US","[scwt_av]","[SCWT_AV]","20",20,false],[false,"long ton - British","[lton_av]","[LTON_AV]","mass",1016046.9088000001,[0,0,1,0,0,0,0],null,"avoirdupois",false,null,null,1,false,false,0,"imperial tons; weight tons; British long tons; long ton avoirdupois","UCUM","Mass","Nonclinical","Used only in Great Britain and other Commonwealth countries","[lcwt_av]","[LCWT_AV]","20",20,false],[false,"stone - British","[stone_av]","[STONE_AV]","mass",6350.293180000001,[0,0,1,0,0,0,0],null,"avoirdupois",false,null,null,1,false,false,0,"British stones; avoirdupois","UCUM","Mass","Nonclinical","Used primarily in the UK and Ireland to measure body weight","[lb_av]","[LB_AV]","14",14,false],[false,"pennyweight - troy","[pwt_tr]","[PWT_TR]","mass",1.5551738400000001,[0,0,1,0,0,0,0],null,"troy",false,null,null,1,false,false,0,"dwt; denarius weights","UCUM","Mass","Obsolete","historical unit used to measure mass and cost of precious metals","[gr]","[GR]","24",24,false],[false,"ounce - troy","[oz_tr]","[OZ_TR]","mass",31.103476800000003,[0,0,1,0,0,0,0],null,"troy",false,null,null,1,false,false,0,"troy ounces; tr ozs","UCUM","Mass","Nonclinical","unit of mass for precious metals and gemstones only","[pwt_tr]","[PWT_TR]","20",20,false],[false,"pound - troy","[lb_tr]","[LB_TR]","mass",373.2417216,[0,0,1,0,0,0,0],null,"troy",false,null,null,1,false,false,0,"troy pounds; tr lbs","UCUM","Mass","Nonclinical","only used for weighing precious metals","[oz_tr]","[OZ_TR]","12",12,false],[false,"scruple","[sc_ap]","[SC_AP]","mass",1.2959782,[0,0,1,0,0,0,0],null,"apoth",false,null,null,1,false,false,0,"scruples; sc ap","UCUM","Mass","Obsolete","","[gr]","[GR]","20",20,false],[false,"dram - apothecary","[dr_ap]","[DR_AP]","mass",3.8879346,[0,0,1,0,0,0,0],null,"apoth",false,null,null,1,false,false,0,"ʒ; drachm; apothecaries drams; dr ap; dram ap","UCUM","Mass","Nonclinical","unit still used in the US occasionally to measure amount of drugs in pharmacies","[sc_ap]","[SC_AP]","3",3,false],[false,"ounce - apothecary","[oz_ap]","[OZ_AP]","mass",31.1034768,[0,0,1,0,0,0,0],null,"apoth",false,null,null,1,false,false,0,"apothecary ounces; oz ap; ap ozs; ozs ap","UCUM","Mass","Obsolete","","[dr_ap]","[DR_AP]","8",8,false],[false,"pound - apothecary","[lb_ap]","[LB_AP]","mass",373.2417216,[0,0,1,0,0,0,0],null,"apoth",false,null,null,1,false,false,0,"apothecary pounds; apothecaries pounds; ap lb; lb ap; ap lbs; lbs ap","UCUM","Mass","Obsolete","","[oz_ap]","[OZ_AP]","12",12,false],[false,"ounce - metric","[oz_m]","[OZ_M]","mass",28,[0,0,1,0,0,0,0],null,"apoth",false,null,null,1,false,false,0,"metric ounces; m ozs","UCUM","Mass","Clinical","see [oz_av] (the avoirdupois ounce) for the standard ounce used internationally; [oz_m] is equal to 28 grams and is based on the apothecaries' system of mass units which is used in some US pharmacies. ","g","g","28",28,false],[false,"line","[lne]","[LNE]","length",0.002116666666666667,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"British lines; br L; L; l","UCUM","Len","Obsolete","","[in_i]/12","[IN_I]/12","1",1,false],[false,"point (typography)","[pnt]","[PNT]","length",0.0003527777777777778,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"DTP points; desktop publishing point; pt; pnt","UCUM","Len","Nonclinical","typography unit for typesetter's length","[lne]/6","[LNE]/6","1",1,false],[false,"pica (typography)","[pca]","[PCA]","length",0.004233333333333334,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"picas","UCUM","Len","Nonclinical","typography unit for typesetter's length","[pnt]","[PNT]","12",12,false],[false,"Printer's point (typography)","[pnt_pr]","[PNT_PR]","length",0.00035145980000000004,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"pnt pr","UCUM","Len","Nonclinical","typography unit for typesetter's length","[in_i]","[IN_I]","0.013837",0.013837,false],[false,"Printer's pica  (typography)","[pca_pr]","[PCA_PR]","length",0.004217517600000001,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"pca pr; Printer's picas","UCUM","Len","Nonclinical","typography unit for typesetter's length","[pnt_pr]","[PNT_PR]","12",12,false],[false,"pied","[pied]","[PIED]","length",0.3248,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"pieds du roi; Paris foot; royal; French; feet","UCUM","Len","Obsolete","","cm","CM","32.48",32.48,false],[false,"pouce","[pouce]","[POUCE]","length",0.027066666666666666,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"historical French inches; French royal inches","UCUM","Len","Obsolete","","[pied]/12","[PIED]/12","1",1,false],[false,"ligne","[ligne]","[LIGNE]","length",0.0022555555555555554,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"Paris lines; lignes","UCUM","Len","Obsolete","","[pouce]/12","[POUCE]/12","1",1,false],[false,"didot","[didot]","[DIDOT]","length",0.0003759259259259259,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"Didot point; dd; Didots Point; didots; points","UCUM","Len","Obsolete","typography unit for typesetter's length","[ligne]/6","[LIGNE]/6","1",1,false],[false,"cicero","[cicero]","[CICERO]","length",0.004511111111111111,[1,0,0,0,0,0,0],null,"typeset",false,null,null,1,false,false,0,"Didot's pica; ciceros; picas","UCUM","Len","Obsolete","typography unit for typesetter's length","[didot]","[DIDOT]","12",12,false],[false,"degrees Fahrenheit","[degF]","[DEGF]","temperature",0.5555555555555556,[0,0,0,0,1,0,0],"°F","heat",false,null,"degF",1,true,false,0,"°F; deg F","UCUM","Temp","Clinical","","K",null,null,0.5555555555555556,false],[false,"degrees Rankine","[degR]","[degR]","temperature",0.5555555555555556,[0,0,0,0,1,0,0],"°R","heat",false,null,null,1,false,false,0,"°R; °Ra; Rankine","UCUM","Temp","Obsolete","Replaced by Kelvin","K/9","K/9","5",5,false],[false,"degrees Réaumur","[degRe]","[degRe]","temperature",1.25,[0,0,0,0,1,0,0],"°Ré","heat",false,null,"degRe",1,true,false,0,"°Ré, °Re, °r; Réaumur; degree Reaumur; Reaumur","UCUM","Temp","Obsolete","replaced by Celsius","K",null,null,1.25,false],[false,"calorie at 15°C","cal_[15]","CAL_[15]","energy",4185.8,[2,-2,1,0,0,0,0],"cal<sub>15°C</sub>","heat",true,null,null,1,false,false,0,"calorie 15 C; cals 15 C; calories at 15 C","UCUM","Enrg","Nonclinical","equal to 4.1855 joules; calorie most often used in engineering","J","J","4.18580",4.1858,false],[false,"calorie at 20°C","cal_[20]","CAL_[20]","energy",4181.9,[2,-2,1,0,0,0,0],"cal<sub>20°C</sub>","heat",true,null,null,1,false,false,0,"calorie 20 C; cal 20 C; calories at 20 C","UCUM","Enrg","Clinical","equal to 4.18190  joules. ","J","J","4.18190",4.1819,false],[false,"mean calorie","cal_m","CAL_M","energy",4190.0199999999995,[2,-2,1,0,0,0,0],"cal<sub>m</sub>","heat",true,null,null,1,false,false,0,"mean cals; mean calories","UCUM","Enrg","Clinical","equal to 4.19002 joules. ","J","J","4.19002",4.19002,false],[false,"international table calorie","cal_IT","CAL_IT","energy",4186.8,[2,-2,1,0,0,0,0],"cal<sub>IT</sub>","heat",true,null,null,1,false,false,0,"calories IT; IT cals; international steam table calories","UCUM","Enrg","Nonclinical","used in engineering steam tables and defined as 1/860 international watt-hour; equal to 4.1868 joules","J","J","4.1868",4.1868,false],[false,"thermochemical calorie","cal_th","CAL_TH","energy",4184,[2,-2,1,0,0,0,0],"cal<sub>th</sub>","heat",true,null,null,1,false,false,0,"thermochemical calories; th cals","UCUM","Enrg","Clinical","equal to 4.184 joules; used as the unit in medicine and biochemistry (equal to cal)","J","J","4.184",4.184,false],[false,"calorie","cal","CAL","energy",4184,[2,-2,1,0,0,0,0],"cal","heat",true,null,null,1,false,false,0,"gram calories; small calories","UCUM","Enrg","Clinical","equal to 4.184 joules (the same value as the thermochemical calorie, which is the most common calorie used in medicine and biochemistry)","cal_th","CAL_TH","1",1,false],[false,"nutrition label Calories","[Cal]","[CAL]","energy",4184000,[2,-2,1,0,0,0,0],"Cal","heat",false,null,null,1,false,false,0,"food calories; Cal; kcal","UCUM","Eng","Clinical","","kcal_th","KCAL_TH","1",1,false],[false,"British thermal unit at 39°F","[Btu_39]","[BTU_39]","energy",1059670,[2,-2,1,0,0,0,0],"Btu<sub>39°F</sub>","heat",false,null,null,1,false,false,0,"BTU 39F; BTU 39 F; B.T.U. 39 F; B.Th.U. 39 F; BThU 39 F; British thermal units","UCUM","Eng","Nonclinical","equal to 1.05967 kJ; used as a measure of power in the electric power, steam generation, heating, and air conditioning industries","kJ","kJ","1.05967",1.05967,false],[false,"British thermal unit at 59°F","[Btu_59]","[BTU_59]","energy",1054800,[2,-2,1,0,0,0,0],"Btu<sub>59°F</sub>","heat",false,null,null,1,false,false,0,"BTU 59 F; BTU 59F; B.T.U. 59 F; B.Th.U. 59 F; BThU 59F; British thermal units","UCUM","Eng","Nonclinical","equal to  1.05480 kJ; used as a measure of power in the electric power, steam generation, heating, and air conditioning industries","kJ","kJ","1.05480",1.0548,false],[false,"British thermal unit at 60°F","[Btu_60]","[BTU_60]","energy",1054680,[2,-2,1,0,0,0,0],"Btu<sub>60°F</sub>","heat",false,null,null,1,false,false,0,"BTU 60 F; BTU 60F; B.T.U. 60 F; B.Th.U. 60 F; BThU 60 F; British thermal units 60 F","UCUM","Eng","Nonclinical","equal to 1.05468 kJ; used as a measure of power in the electric power, steam generation, heating, and air conditioning industries","kJ","kJ","1.05468",1.05468,false],[false,"mean British thermal unit","[Btu_m]","[BTU_M]","energy",1055870,[2,-2,1,0,0,0,0],"Btu<sub>m</sub>","heat",false,null,null,1,false,false,0,"BTU mean; B.T.U. mean; B.Th.U. mean; BThU mean; British thermal units mean; ","UCUM","Eng","Nonclinical","equal to 1.05587 kJ; used as a measure of power in the electric power, steam generation, heating, and air conditioning industries","kJ","kJ","1.05587",1.05587,false],[false,"international table British thermal unit","[Btu_IT]","[BTU_IT]","energy",1055055.85262,[2,-2,1,0,0,0,0],"Btu<sub>IT</sub>","heat",false,null,null,1,false,false,0,"BTU IT; B.T.U. IT; B.Th.U. IT; BThU IT; British thermal units IT","UCUM","Eng","Nonclinical","equal to 1.055 kJ; used as a measure of power in the electric power, steam generation, heating, and air conditioning industries","kJ","kJ","1.05505585262",1.05505585262,false],[false,"thermochemical British thermal unit","[Btu_th]","[BTU_TH]","energy",1054350,[2,-2,1,0,0,0,0],"Btu<sub>th</sub>","heat",false,null,null,1,false,false,0,"BTU Th; B.T.U. Th; B.Th.U. Th; BThU Th; thermochemical British thermal units","UCUM","Eng","Nonclinical","equal to 1.054350 kJ; used as a measure of power in the electric power, steam generation, heating, and air conditioning industries","kJ","kJ","1.054350",1.05435,false],[false,"British thermal unit","[Btu]","[BTU]","energy",1054350,[2,-2,1,0,0,0,0],"btu","heat",false,null,null,1,false,false,0,"BTU; B.T.U. ; B.Th.U.; BThU; British thermal units","UCUM","Eng","Nonclinical","equal to the thermochemical British thermal unit equal to 1.054350 kJ; used as a measure of power in the electric power, steam generation, heating, and air conditioning industries","[Btu_th]","[BTU_TH]","1",1,false],[false,"horsepower - mechanical","[HP]","[HP]","power",745699.8715822703,[2,-3,1,0,0,0,0],null,"heat",false,null,null,1,false,false,0,"imperial horsepowers","UCUM","EngRat","Nonclinical","refers to mechanical horsepower, which is unit used to measure engine power primarily in the US. ","[ft_i].[lbf_av]/s","[FT_I].[LBF_AV]/S","550",550,false],[false,"tex","tex","TEX","linear mass density (of textile thread)",0.001,[-1,0,1,0,0,0,0],"tex","heat",true,null,null,1,false,false,0,"linear mass density; texes","UCUM","","Clinical","unit of linear mass density for fibers equal to gram per 1000 meters","g/km","G/KM","1",1,false],[false,"Denier (linear mass density)","[den]","[DEN]","linear mass density (of textile thread)",0.0001111111111111111,[-1,0,1,0,0,0,0],"den","heat",false,null,null,1,false,false,0,"den; deniers","UCUM","","Nonclinical","equal to the mass in grams per 9000 meters of the fiber (1 denier = 1 strand of silk)","g/9/km","G/9/KM","1",1,false],[false,"meter of water column","m[H2O]","M[H2O]","pressure",9806650,[-1,-2,1,0,0,0,0],"m HO<sub><r>2</r></sub>","clinical",true,null,null,1,false,false,0,"mH2O; m H2O; meters of water column; metres; pressure","UCUM","Pres","Clinical","","kPa","KPAL","980665e-5",9.80665,false],[false,"meter of mercury column","m[Hg]","M[HG]","pressure",133322000,[-1,-2,1,0,0,0,0],"m Hg","clinical",true,null,null,1,false,false,0,"mHg; m Hg; meters of mercury column; metres; pressure","UCUM","Pres","Clinical","","kPa","KPAL","133.3220",133.322,false],[false,"inch of water column","[in_i'H2O]","[IN_I'H2O]","pressure",249088.91000000003,[-1,-2,1,0,0,0,0],"in HO<sub><r>2</r></sub>","clinical",false,null,null,1,false,false,0,"inches WC; inAq; in H2O; inch of water gauge; iwg; pressure","UCUM","Pres","Clinical","unit of pressure, especially in respiratory and ventilation care","m[H2O].[in_i]/m","M[H2O].[IN_I]/M","1",1,false],[false,"inch of mercury column","[in_i'Hg]","[IN_I'HG]","pressure",3386378.8000000003,[-1,-2,1,0,0,0,0],"in Hg","clinical",false,null,null,1,false,false,0,"inHg; in Hg; pressure; inches","UCUM","Pres","Clinical","unit of pressure used in US to measure barometric pressure and occasionally blood pressure (see mm[Hg] for unit used internationally)","m[Hg].[in_i]/m","M[HG].[IN_I]/M","1",1,false],[false,"peripheral vascular resistance unit","[PRU]","[PRU]","fluid resistance",133322000000,[-4,-1,1,0,0,0,0],"P.R.U.","clinical",false,null,null,1,false,false,0,"peripheral vascular resistance units; peripheral resistance unit; peripheral resistance units; PRU","UCUM","FldResist","Clinical","used to assess blood flow in the capillaries; equal to 1 mmH.min/mL = 133.3 Pa·min/mL","mm[Hg].s/ml","MM[HG].S/ML","1",1,false],[false,"Wood unit","[wood'U]","[WOOD'U]","fluid resistance",7999320000,[-4,-1,1,0,0,0,0],"Wood U.","clinical",false,null,null,1,false,false,0,"hybrid reference units; HRU; mmHg.min/L; vascular resistance","UCUM","Pres","Clinical","simplified unit of measurement for for measuring pulmonary vascular resistance that uses pressure; equal to mmHg.min/L","mm[Hg].min/L","MM[HG].MIN/L","1",1,false],[false,"diopter (lens)","[diop]","[DIOP]","refraction of a lens",1,[1,0,0,0,0,0,0],"dpt","clinical",false,null,"inv",1,false,false,0,"diopters; diop; dioptre; dpt; refractive power","UCUM","InvLen","Clinical","unit of optical power of lens represented by inverse meters (m^-1)","m","/M","1",1,false],[false,"prism diopter (magnifying power)","[p'diop]","[P'DIOP]","refraction of a prism",1,[0,0,0,1,0,0,0],"PD","clinical",false,null,"tanTimes100",1,true,false,0,"diopters; dioptres; p diops; pdiop; dpt; pdptr; Δ; cm/m; centimeter per meter; centimetre; metre","UCUM","Angle","Clinical","unit for prism correction in eyeglass prescriptions","rad",null,null,1,false],[false,"percent of slope","%[slope]","%[SLOPE]","slope",0.017453292519943295,[0,0,0,1,0,0,0],"%","clinical",false,null,"100tan",1,true,false,0,"% slope; %slope; percents slopes","UCUM","VelFr; ElpotRatFr; VelRtoFr; AccelFr","Clinical","","deg",null,null,1,false],[false,"mesh","[mesh_i]","[MESH_I]","lineic number",0.025400000000000002,[1,0,0,0,0,0,0],null,"clinical",false,null,"inv",1,false,false,0,"meshes","UCUM","NLen (lineic number)","Clinical","traditional unit of length defined as the number of strands or particles per inch","[in_i]","/[IN_I]","1",1,false],[false,"French (catheter gauge) ","[Ch]","[CH]","gauge of catheters",0.0003333333333333333,[1,0,0,0,0,0,0],"Ch","clinical",false,null,null,1,false,false,0,"Charrières, French scales; French gauges; Fr, Fg, Ga, FR, Ch","UCUM","Len; Circ; Diam","Clinical","","mm/3","MM/3","1",1,false],[false,"drop - metric (1/20 mL)","[drp]","[DRP]","volume",5e-8,[3,0,0,0,0,0,0],"drp","clinical",false,null,null,1,false,false,0,"drop dosing units; metric drops; gtt","UCUM","Vol","Clinical","standard unit used in the US and internationally for clinical medicine but note that although [drp] is defined as 1/20 milliliter, in practice, drop sizes will vary due to external factors","ml/20","ML/20","1",1,false],[false,"Hounsfield unit","[hnsf'U]","[HNSF'U]","x-ray attenuation",1,[0,0,0,0,0,0,0],"HF","clinical",false,null,null,1,false,false,0,"HU; units","UCUM","","Clinical","used to measure X-ray attenuation, especially in CT scans.","1","1","1",1,false],[false,"Metabolic Equivalent of Task ","[MET]","[MET]","metabolic cost of physical activity",5.833333333333334e-11,[3,-1,-1,0,0,0,0],"MET","clinical",false,null,null,1,false,false,0,"metabolic equivalents","UCUM","RelEngRat","Clinical","unit used to measure rate of energy expenditure per power in treadmill and other functional tests","mL/min/kg","ML/MIN/KG","3.5",3.5,false],[false,"homeopathic potency of decimal series (retired)","[hp'_X]","[HP'_X]","homeopathic potency (retired)",1,[0,0,0,0,0,0,0],"X","clinical",false,null,"hpX",1,true,false,0,null,"UCUM",null,null,null,"1",null,null,1,false],[false,"homeopathic potency of centesimal series (retired)","[hp'_C]","[HP'_C]","homeopathic potency (retired)",1,[0,0,0,0,0,0,0],"C","clinical",false,null,"hpC",1,true,false,0,null,"UCUM",null,null,null,"1",null,null,1,false],[false,"homeopathic potency of millesimal series (retired)","[hp'_M]","[HP'_M]","homeopathic potency (retired)",1,[0,0,0,0,0,0,0],"M","clinical",false,null,"hpM",1,true,false,0,null,"UCUM",null,null,null,"1",null,null,1,false],[false,"homeopathic potency of quintamillesimal series (retired)","[hp'_Q]","[HP'_Q]","homeopathic potency (retired)",1,[0,0,0,0,0,0,0],"Q","clinical",false,null,"hpQ",1,true,false,0,null,"UCUM",null,null,null,"1",null,null,1,false],[false,"homeopathic potency of decimal hahnemannian series","[hp_X]","[HP_X]","homeopathic potency (Hahnemann)",1,[0,0,0,0,0,0,0],"X","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"homeopathic potency of centesimal hahnemannian series","[hp_C]","[HP_C]","homeopathic potency (Hahnemann)",1,[0,0,0,0,0,0,0],"C","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"homeopathic potency of millesimal hahnemannian series","[hp_M]","[HP_M]","homeopathic potency (Hahnemann)",1,[0,0,0,0,0,0,0],"M","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"homeopathic potency of quintamillesimal hahnemannian series","[hp_Q]","[HP_Q]","homeopathic potency (Hahnemann)",1,[0,0,0,0,0,0,0],"Q","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"homeopathic potency of decimal korsakovian series","[kp_X]","[KP_X]","homeopathic potency (Korsakov)",1,[0,0,0,0,0,0,0],"X","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"homeopathic potency of centesimal korsakovian series","[kp_C]","[KP_C]","homeopathic potency (Korsakov)",1,[0,0,0,0,0,0,0],"C","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"homeopathic potency of millesimal korsakovian series","[kp_M]","[KP_M]","homeopathic potency (Korsakov)",1,[0,0,0,0,0,0,0],"M","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"homeopathic potency of quintamillesimal korsakovian series","[kp_Q]","[KP_Q]","homeopathic potency (Korsakov)",1,[0,0,0,0,0,0,0],"Q","clinical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"equivalent","eq","EQ","amount of substance",6.0221367e+23,[0,0,0,0,0,0,0],"eq","chemical",true,null,null,1,false,false,1,"equivalents","UCUM","Sub","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"osmole","osm","OSM","amount of substance (dissolved particles)",6.0221367e+23,[0,0,0,0,0,0,0],"osm","chemical",true,null,null,1,false,false,1,"osmoles; osmols","UCUM","Osmol","Clinical","the number of moles of solute that contribute to the osmotic pressure of a solution","mol","MOL","1",1,false],[false,"pH","[pH]","[PH]","acidity",6.0221366999999994e+26,[-3,0,0,0,0,0,0],"pH","chemical",false,null,"pH",1,true,false,0,"pH scale","UCUM","LogCnc","Clinical","Log concentration of H+","mol/l",null,null,1,false],[false,"gram percent","g%","G%","mass concentration",10000,[-3,0,1,0,0,0,0],"g%","chemical",true,null,null,1,false,false,0,"gram %; gram%; grams per deciliter; g/dL; gm per dL; gram percents","UCUM","MCnc","Clinical","equivalent to unit gram per deciliter (g/dL), a unit often used in medical tests to represent solution concentrations","g/dl","G/DL","1",1,false],[false,"Svedberg unit","[S]","[S]","sedimentation coefficient",1e-13,[0,1,0,0,0,0,0],"S","chemical",false,null,null,1,false,false,0,"Sv; 10^-13 seconds; 100 fs; 100 femtoseconds","UCUM","Time","Clinical","unit of time used in measuring particle's sedimentation rate, usually after centrifugation. ","s","10*-13.S","1",1e-13,false],[false,"high power field (microscope)","[HPF]","[HPF]","view area in microscope",1,[0,0,0,0,0,0,0],"HPF","chemical",false,null,null,1,false,false,0,"HPF","UCUM","Area","Clinical","area visible under the maximum magnification power of the objective in microscopy (usually 400x)\n","1","1","1",1,false],[false,"low power field (microscope)","[LPF]","[LPF]","view area in microscope",1,[0,0,0,0,0,0,0],"LPF","chemical",false,null,null,1,false,false,0,"LPF; fields","UCUM","Area","Clinical","area visible under the low magnification of the objective in microscopy (usually 100 x)\n","1","1","100",100,false],[false,"katal","kat","KAT","catalytic activity",6.0221367e+23,[0,-1,0,0,0,0,0],"kat","chemical",true,null,null,1,false,false,1,"mol/secs; moles per second; mol*sec-1; mol*s-1; mol.s-1; katals; catalytic activity; enzymatic; enzyme units; activities","UCUM","CAct","Clinical","kat is a unit of catalytic activity with base units = mol/s. Rarely used because its units are too large to practically express catalytic activity. See enzyme unit [U] which is the standard unit for catalytic activity.","mol/s","MOL/S","1",1,false],[false,"enzyme unit","U","U","catalytic activity",10036894500000000,[0,-1,0,0,0,0,0],"U","chemical",true,null,null,1,false,false,1,"micromoles per minute; umol/min; umol per minute; umol min-1; enzymatic activity; enzyme activity","UCUM","CAct","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"international unit - arbitrary","[iU]","[IU]","arbitrary",1,[0,0,0,0,0,0,0],"IU","chemical",true,null,null,1,false,true,0,"international units; IE; F2","UCUM","Arb","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","1","1","1",1,false],[false,"international unit - arbitrary","[IU]","[IU]","arbitrary",1,[0,0,0,0,0,0,0],"i.U.","chemical",true,null,null,1,false,true,0,"international units; IE; F2","UCUM","Arb","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"arbitary unit","[arb'U]","[ARB'U]","arbitrary",1,[0,0,0,0,0,0,0],"arb. U","chemical",false,null,null,1,false,true,0,"arbitary units; arb units; arbU","UCUM","Arb","Clinical","relative unit of measurement to show the ratio of test measurement to reference measurement","1","1","1",1,false],[false,"United States Pharmacopeia unit","[USP'U]","[USP'U]","arbitrary",1,[0,0,0,0,0,0,0],"U.S.P.","chemical",false,null,null,1,false,true,0,"USP U; USP'U","UCUM","Arb","Clinical","a dose unit to express potency of drugs and vitamins defined by the United States Pharmacopoeia; usually 1 USP = 1 IU","1","1","1",1,false],[false,"GPL unit","[GPL'U]","[GPL'U]","biologic activity of anticardiolipin IgG",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"GPL Units; GPL U; IgG anticardiolipin units; IgG Phospholipid","UCUM","ACnc; AMass","Clinical","Units for an antiphospholipid test","1","1","1",1,false],[false,"MPL unit","[MPL'U]","[MPL'U]","biologic activity of anticardiolipin IgM",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"MPL units; MPL U; MPL'U; IgM anticardiolipin units; IgM Phospholipid Units ","UCUM","ACnc","Clinical","units for antiphospholipid test","1","1","1",1,false],[false,"APL unit","[APL'U]","[APL'U]","biologic activity of anticardiolipin IgA",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"APL units; APL U; IgA anticardiolipin; IgA Phospholipid; biologic activity of","UCUM","AMass; ACnc","Clinical","Units for an anti phospholipid syndrome test","1","1","1",1,false],[false,"Bethesda unit","[beth'U]","[BETH'U]","biologic activity of factor VIII inhibitor",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"BU","UCUM","ACnc","Clinical","measures of blood coagulation inhibitior for many blood factors","1","1","1",1,false],[false,"anti factor Xa unit","[anti'Xa'U]","[ANTI'XA'U]","biologic activity of factor Xa inhibitor (heparin)",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"units","UCUM","ACnc","Clinical","[anti'Xa'U] unit is equivalent to and can be converted to IU/mL. ","1","1","1",1,false],[false,"Todd unit","[todd'U]","[TODD'U]","biologic activity antistreptolysin O",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"units","UCUM","InvThres; RtoThres","Clinical","the unit for the results of the testing for antistreptolysin O (ASO)","1","1","1",1,false],[false,"Dye unit","[dye'U]","[DYE'U]","biologic activity of amylase",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"units","UCUM","CCnc","Obsolete","equivalent to the Somogyi unit, which is an enzyme unit for amylase but better to use U, the standard enzyme unit for measuring catalytic activity","1","1","1",1,false],[false,"Somogyi unit","[smgy'U]","[SMGY'U]","biologic activity of amylase",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"Somogyi units; smgy U","UCUM","CAct","Clinical","measures the enzymatic activity of amylase in blood serum - better to use base units mg/mL ","1","1","1",1,false],[false,"Bodansky unit","[bdsk'U]","[BDSK'U]","biologic activity of phosphatase",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"","UCUM","ACnc","Obsolete","Enzyme unit specific to alkaline phosphatase - better to use standard enzyme unit of U","1","1","1",1,false],[false,"King-Armstrong unit","[ka'U]","[KA'U]","biologic activity of phosphatase",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"King-Armstrong Units; King units","UCUM","AMass","Obsolete","enzyme units for acid phosphatase - better to use enzyme unit [U]","1","1","1",1,false],[false,"Kunkel unit","[knk'U]","[KNK'U]","arbitrary biologic activity",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,null,"UCUM",null,null,null,"1","1","1",1,false],[false,"Mac Lagan unit","[mclg'U]","[MCLG'U]","arbitrary biologic activity",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"galactose index; galactose tolerance test; thymol turbidity test unit; mclg U; units; indexes","UCUM","ACnc","Obsolete","unit for liver tests - previously used in thymol turbidity tests for liver disease diagnoses, and now is sometimes referred to in the oral galactose tolerance test","1","1","1",1,false],[false,"tuberculin unit","[tb'U]","[TB'U]","biologic activity of tuberculin",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"TU; units","UCUM","Arb","Clinical","amount of tuberculin antigen -usually in reference to a TB skin test ","1","1","1",1,false],[false,"50% cell culture infectious dose","[CCID_50]","[CCID_50]","biologic activity (infectivity) of an infectious agent preparation",1,[0,0,0,0,0,0,0],"CCID<sub>50</sub>","chemical",false,null,null,1,false,true,0,"CCID50; 50% cell culture infective doses","UCUM","NumThres","Clinical","","1","1","1",1,false],[false,"50% tissue culture infectious dose","[TCID_50]","[TCID_50]","biologic activity (infectivity) of an infectious agent preparation",1,[0,0,0,0,0,0,0],"TCID<sub>50</sub>","chemical",false,null,null,1,false,true,0,"TCID50; 50% tissue culture infective dose","UCUM","NumThres","Clinical","","1","1","1",1,false],[false,"50% embryo infectious dose","[EID_50]","[EID_50]","biologic activity (infectivity) of an infectious agent preparation",1,[0,0,0,0,0,0,0],"EID<sub>50</sub>","chemical",false,null,null,1,false,true,0,"EID50; 50% embryo infective doses; EID50 Egg Infective Dosage","UCUM","thresNum","Clinical","","1","1","1",1,false],[false,"plaque forming units","[PFU]","[PFU]","amount of an infectious agent",1,[0,0,0,0,0,0,0],"PFU","chemical",false,null,null,1,false,true,0,"PFU","UCUM","ACnc","Clinical","tests usually report unit as number of PFU per unit volume","1","1","1",1,false],[false,"focus forming units (cells)","[FFU]","[FFU]","amount of an infectious agent",1,[0,0,0,0,0,0,0],"FFU","chemical",false,null,null,1,false,true,0,"FFU","UCUM","EntNum","Clinical","","1","1","1",1,false],[false,"colony forming units","[CFU]","[CFU]","amount of a proliferating organism",1,[0,0,0,0,0,0,0],"CFU","chemical",false,null,null,1,false,true,0,"CFU","UCUM","Num","Clinical","","1","1","1",1,false],[false,"index of reactivity (allergen)","[IR]","[IR]","amount of an allergen callibrated through in-vivo testing using the Stallergenes® method.",1,[0,0,0,0,0,0,0],"IR","chemical",false,null,null,1,false,true,0,"IR; indexes","UCUM","Acnc","Clinical","amount of an allergen callibrated through in-vivo testing using the Stallergenes method. Usually reported in tests as IR/mL","1","1","1",1,false],[false,"bioequivalent allergen unit","[BAU]","[BAU]","amount of an allergen callibrated through in-vivo testing based on the ID50EAL method of (intradermal dilution for 50mm sum of erythema diameters",1,[0,0,0,0,0,0,0],"BAU","chemical",false,null,null,1,false,true,0,"BAU; Bioequivalent Allergy Units; bioequivalent allergen units","UCUM","Arb","Clinical","","1","1","1",1,false],[false,"allergy unit","[AU]","[AU]","procedure defined amount of an allergen using some reference standard",1,[0,0,0,0,0,0,0],"AU","chemical",false,null,null,1,false,true,0,"allergy units; allergen units; AU","UCUM","Arb","Clinical","Most standard test allergy units are reported as [IU] or as %. ","1","1","1",1,false],[false,"allergen unit for Ambrosia artemisiifolia","[Amb'a'1'U]","[AMB'A'1'U]","procedure defined amount of the major allergen of ragweed.",1,[0,0,0,0,0,0,0],"Amb a 1 U","chemical",false,null,null,1,false,true,0,"Amb a 1 unit; Antigen E; AgE U; allergen units","UCUM","Arb","Clinical","Amb a 1 is the major allergen in short ragweed, and can be converted Bioequivalent allergen units (BAU) where 350 Amb a 1 U/mL = 100,000 BAU/mL","1","1","1",1,false],[false,"protein nitrogen unit (allergen testing)","[PNU]","[PNU]","procedure defined amount of a protein substance",1,[0,0,0,0,0,0,0],"PNU","chemical",false,null,null,1,false,true,0,"protein nitrogen units; PNU","UCUM","Mass","Clinical","defined as 0.01 ug of phosphotungstic acid-precipitable protein nitrogen. Being replaced by bioequivalent allergy units (BAU).","1","1","1",1,false],[false,"Limit of flocculation","[Lf]","[LF]","procedure defined amount of an antigen substance",1,[0,0,0,0,0,0,0],"Lf","chemical",false,null,null,1,false,true,0,"Lf doses","UCUM","Arb","Clinical","the antigen content  forming 1:1 ratio against 1 unit of antitoxin","1","1","1",1,false],[false,"D-antigen unit (polio)","[D'ag'U]","[D'AG'U]","procedure defined amount of a poliomyelitis d-antigen substance",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"DAgU; units","UCUM","Acnc","Clinical","unit of potency of poliovirus vaccine used for poliomyelitis prevention reported as D antigen units/mL. The unit is poliovirus type-specific.","1","1","1",1,false],[false,"fibrinogen equivalent units","[FEU]","[FEU]","amount of fibrinogen broken down into the measured d-dimers",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"FEU","UCUM","MCnc","Clinical","Note both the FEU and DDU units are used to report D-dimer measurements. 1 DDU = 1/2 FFU","1","1","1",1,false],[false,"ELISA unit","[ELU]","[ELU]","arbitrary ELISA unit",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"Enzyme-Linked Immunosorbent Assay Units; ELU; EL. U","UCUM","ACnc","Clinical","","1","1","1",1,false],[false,"Ehrlich units (urobilinogen)","[EU]","[EU]","Ehrlich unit",1,[0,0,0,0,0,0,0],null,"chemical",false,null,null,1,false,true,0,"EU/dL; mg{urobilinogen}/dL","UCUM","ACnc","Clinical","","1","1","1",1,false],[false,"neper","Np","NEP","level",1,[0,0,0,0,0,0,0],"Np","levels",true,null,"ln",1,true,false,0,"nepers","UCUM","LogRto","Clinical","logarithmic unit for ratios of measurements of physical field and power quantities, such as gain and loss of electronic signals","1",null,null,1,false],[false,"bel","B","B","level",1,[0,0,0,0,0,0,0],"B","levels",true,null,"lg",1,true,false,0,"bels","UCUM","LogRto","Clinical","Logarithm of the ratio of power- or field-type quantities; usually expressed in decibels ","1",null,null,1,false],[false,"bel sound pressure","B[SPL]","B[SPL]","pressure level",0.02,[-1,-2,1,0,0,0,0],"B(SPL)","levels",true,null,"lgTimes2",1,true,false,0,"bel SPL; B SPL; sound pressure bels","UCUM","LogRto","Clinical","used to measure sound level in acoustics","Pa",null,null,0.00002,false],[false,"bel volt","B[V]","B[V]","electric potential level",1000,[2,-2,1,0,0,-1,0],"B(V)","levels",true,null,"lgTimes2",1,true,false,0,"bel V; B V; volts bels","UCUM","LogRtoElp","Clinical","used to express power gain in electrical circuits","V",null,null,1,false],[false,"bel millivolt","B[mV]","B[MV]","electric potential level",1,[2,-2,1,0,0,-1,0],"B(mV)","levels",true,null,"lgTimes2",1,true,false,0,"bel mV; B mV; millivolt bels; 10^-3V bels; 10*-3V ","UCUM","LogRtoElp","Clinical","used to express power gain in electrical circuits","mV",null,null,1,false],[false,"bel microvolt","B[uV]","B[UV]","electric potential level",0.001,[2,-2,1,0,0,-1,0],"B(μV)","levels",true,null,"lgTimes2",1,true,false,0,"bel uV; B uV; microvolts bels; 10^-6V bel; 10*-6V bel","UCUM","LogRto","Clinical","used to express power gain in electrical circuits","uV",null,null,1,false],[false,"bel 10 nanovolt","B[10.nV]","B[10.NV]","electric potential level",0.000010000000000000003,[2,-2,1,0,0,-1,0],"B(10 nV)","levels",true,null,"lgTimes2",1,true,false,0,"bel 10 nV; B 10 nV; 10 nanovolts bels","UCUM","LogRtoElp","Clinical","used to express power gain in electrical circuits","nV",null,null,10,false],[false,"bel watt","B[W]","B[W]","power level",1000,[2,-3,1,0,0,0,0],"B(W)","levels",true,null,"lg",1,true,false,0,"bel W; b W; b Watt; Watts bels","UCUM","LogRto","Clinical","used to express power","W",null,null,1,false],[false,"bel kilowatt","B[kW]","B[KW]","power level",1000000,[2,-3,1,0,0,0,0],"B(kW)","levels",true,null,"lg",1,true,false,0,"bel kW; B kW; kilowatt bel; kW bel; kW B","UCUM","LogRto","Clinical","used to express power","kW",null,null,1,false],[false,"stere","st","STR","volume",1,[3,0,0,0,0,0,0],"st","misc",true,null,null,1,false,false,0,"stère; m3; cubic meter; m^3; meters cubed; metre","UCUM","Vol","Nonclinical","equal to one cubic meter, usually used for measuring firewoord","m3","M3","1",1,false],[false,"Ångström","Ao","AO","length",1.0000000000000002e-10,[1,0,0,0,0,0,0],"Å","misc",false,null,null,1,false,false,0,"Å; Angstroms; Ao; Ångströms","UCUM","Len","Clinical","equal to 10^-10 meters; used to express wave lengths and atom scaled differences ","nm","NM","0.1",0.1,false],[false,"barn","b","BRN","action area",9.999999999999999e-29,[2,0,0,0,0,0,0],"b","misc",false,null,null,1,false,false,0,"barns","UCUM","Area","Clinical","used in high-energy physics to express cross-sectional areas","fm2","FM2","100",100,false],[false,"technical atmosphere","att","ATT","pressure",98066499.99999999,[-1,-2,1,0,0,0,0],"at","misc",false,null,null,1,false,false,0,"at; tech atm; tech atmosphere; kgf/cm2; atms; atmospheres","UCUM","Pres","Obsolete","non-SI unit of pressure equal to one kilogram-force per square centimeter","kgf/cm2","KGF/CM2","1",1,false],[false,"mho","mho","MHO","electric conductance",0.001,[-2,1,-1,0,0,2,0],"mho","misc",true,null,null,1,false,false,0,"siemens; ohm reciprocals; Ω^−1; Ω-1 ","UCUM","","Obsolete","unit of electric conductance (the inverse of electrical resistance) equal to ohm^-1","S","S","1",1,false],[false,"pound per square inch","[psi]","[PSI]","pressure",6894757.293168359,[-1,-2,1,0,0,0,0],"psi","misc",false,null,null,1,false,false,0,"psi; lb/in2; lb per in2","UCUM","Pres","Clinical","","[lbf_av]/[in_i]2","[LBF_AV]/[IN_I]2","1",1,false],[false,"circle - plane angle","circ","CIRC","plane angle",6.283185307179586,[0,0,0,1,0,0,0],"circ","misc",false,null,null,1,false,false,0,"angles; circles","UCUM","Angle","Clinical","","[pi].rad","[PI].RAD","2",2,false],[false,"spere - solid angle","sph","SPH","solid angle",12.566370614359172,[0,0,0,2,0,0,0],"sph","misc",false,null,null,1,false,false,0,"speres","UCUM","Angle","Clinical","equal to the solid angle of an entire sphere = 4πsr (sr = steradian) ","[pi].sr","[PI].SR","4",4,false],[false,"metric carat","[car_m]","[CAR_M]","mass",0.2,[0,0,1,0,0,0,0],"ct<sub>m</sub>","misc",false,null,null,1,false,false,0,"carats; ct; car m","UCUM","Mass","Nonclinical","unit of mass for gemstones","g","G","2e-1",0.2,false],[false,"carat of gold alloys","[car_Au]","[CAR_AU]","mass fraction",0.041666666666666664,[0,0,0,0,0,0,0],"ct<sub><r>Au</r></sub>","misc",false,null,null,1,false,false,0,"karats; k; kt; car au; carats","UCUM","MFr","Nonclinical","unit of purity for gold alloys","/24","/24","1",1,false],[false,"Smoot","[smoot]","[SMOOT]","length",1.7018000000000002,[1,0,0,0,0,0,0],null,"misc",false,null,null,1,false,false,0,"","UCUM","Len","Nonclinical","prank unit of length from MIT","[in_i]","[IN_I]","67",67,false],[false,"meter per square seconds per square root of hertz","[m/s2/Hz^(1/2)]","[M/S2/HZ^(1/2)]","amplitude spectral density",1,[2,-3,0,0,0,0,0],null,"misc",false,null,"sqrt",1,true,false,0,"m/s2/(Hz^.5); m/s2/(Hz^(1/2)); m per s2 per Hz^1/2","UCUM","","Constant","measures amplitude spectral density, and is equal to the square root of power spectral density\n ","m2/s4/Hz",null,null,1,false],[false,"bit - logarithmic","bit_s","BIT_S","amount of information",1,[0,0,0,0,0,0,0],"bit<sub>s</sub>","infotech",false,null,"ld",1,true,false,0,"bit-s; bit s; bit logarithmic","UCUM","LogA","Nonclinical","defined as the log base 2 of the number of distinct signals; cannot practically be used to express more than 1000 bits\n\nIn information theory, the definition of the amount of self-information and information entropy is often expressed with the binary logarithm (log base 2)","1",null,null,1,false],[false,"bit","bit","BIT","amount of information",1,[0,0,0,0,0,0,0],"bit","infotech",true,null,null,1,false,false,0,"bits","UCUM","","Nonclinical","dimensionless information unit of 1 used in computing and digital communications","1","1","1",1,false],[false,"byte","By","BY","amount of information",8,[0,0,0,0,0,0,0],"B","infotech",true,null,null,1,false,false,0,"bytes","UCUM","","Nonclinical","equal to 8 bits","bit","bit","8",8,false],[false,"baud","Bd","BD","signal transmission rate",1,[0,1,0,0,0,0,0],"Bd","infotech",true,null,"inv",1,false,false,0,"Bd; bauds","UCUM","Freq","Nonclinical","unit to express rate in symbols per second or pulses per second. ","s","/s","1",1,false],[false,"per twelve hour","/(12.h)","/HR","",0.000023148148148148147,[0,-1,0,0,0,0,0],"/h",null,false,null,null,1,false,false,0,"per 12 hours; 12hrs; 12 hrs; /12hrs","LOINC","Rat","Clinical","",null,null,null,null,false],[false,"per arbitrary unit","/[arb'U]","/[ARB'U]","",1,[0,0,0,0,0,0,0],"/arb/ U",null,false,null,null,1,false,true,0,"/arbU","LOINC","InvA ","Clinical","",null,null,null,null,false],[false,"per high power field","/[HPF]","/[HPF]","",1,[0,0,0,0,0,0,0],"/HPF",null,false,null,null,1,false,false,0,"/HPF; per HPF","LOINC","Naric","Clinical","",null,null,null,null,false],[false,"per international unit","/[IU]","/[IU]","",1,[0,0,0,0,0,0,0],"/i/U.",null,false,null,null,1,false,true,0,"international units; /IU; per IU","LOINC","InvA","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)",null,null,null,null,false],[false,"per low power field","/[LPF]","/[LPF]","",1,[0,0,0,0,0,0,0],"/LPF",null,false,null,null,1,false,false,0,"/LPF; per LPF","LOINC","Naric","Clinical","",null,null,null,null,false],[false,"per 10 billion  ","/10*10","/10*10","",1e-10,[0,0,0,0,0,0,0],"/10<sup>10<.sup>",null,false,null,null,1,false,false,0,"/10^10; per 10*10","LOINC","NFr","Clinical","used for counting entities, e.g. blood cells; usually these kinds of terms have numerators such as moles or milligrams, and counting that amount per the number in the denominator",null,null,null,null,false],[false,"per trillion ","/10*12","/10*12","",1e-12,[0,0,0,0,0,0,0],"/10<sup>12<.sup>",null,false,null,null,1,false,false,0,"/10^12; per 10*12","LOINC","NFr","Clinical","used for counting entities, e.g. blood cells; usually these kinds of terms have numerators such as moles or milligrams, and counting that amount per the number in the denominator",null,null,null,null,false],[false,"per thousand","/10*3","/10*3","",0.001,[0,0,0,0,0,0,0],"/10<sup>3<.sup>",null,false,null,null,1,false,false,0,"/10^3; per 10*3","LOINC","NFr","Clinical","used for counting entities, e.g. blood cells; usually these kinds of terms have numerators such as moles or milligrams, and counting that amount per the number in the denominator",null,null,null,null,false],[false,"per million","/10*6","/10*6","",0.000001,[0,0,0,0,0,0,0],"/10<sup>6<.sup>",null,false,null,null,1,false,false,0,"/10^6; per 10*6;","LOINC","NFr","Clinical","used for counting entities, e.g. blood cells; usually these kinds of terms have numerators such as moles or milligrams, and counting that amount per the number in the denominator",null,null,null,null,false],[false,"per billion","/10*9","/10*9","",1e-9,[0,0,0,0,0,0,0],"/10<sup>9<.sup>",null,false,null,null,1,false,false,0,"/10^9; per 10*9","LOINC","NFr","Clinical","used for counting entities, e.g. blood cells; usually these kinds of terms have numerators such as moles or milligrams, and counting that amount per the number in the denominator",null,null,null,null,false],[false,"per 100","/100","","",0.01,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"per hundred; 10^2; 10*2","LOINC","NFr","Clinical","used for counting entities, e.g. blood cells; usually these kinds of terms have numerators such as moles or milligrams, and counting that amount per the number in the denominator",null,null,null,null,false],[false,"per 100 cells","/100{cells}","","",0.01,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"/100 cells; /100cells; per hundred","LOINC","EntMass; EntNum; NFr","Clinical","",null,null,null,null,false],[false,"per 100 neutrophils","/100{neutrophils}","","",0.01,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"/100 neutrophils; /100neutrophils; per hundred","LOINC","EntMass; EntNum; NFr","Clinical","",null,null,null,null,false],[false,"per 100 spermatozoa","/100{spermatozoa}","","",0.01,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"/100 spermatozoa; /100spermatozoa; per hundred","LOINC","NFr","Clinical","",null,null,null,null,false],[false,"per 100 white blood cells","/100{WBCs}","","",0.01,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"/100 WBCs; /100WBCs; per hundred","LOINC","Ratio; NFr","Clinical","",null,null,null,null,false],[false,"per year","/a","/ANN","",3.168808781402895e-8,[0,-1,0,0,0,0,0],"/a",null,false,null,null,1,false,false,0,"/Years; /yrs; yearly","LOINC","NRat","Clinical","",null,null,null,null,false],[false,"per centimeter of water","/cm[H2O]","/CM[H2O]","",0.000010197162129779282,[1,2,-1,0,0,0,0],"/cm HO<sub><r>2<.r></sub>",null,false,null,null,1,false,false,0,"/cmH2O; /cm H2O; centimeters; centimetres","LOINC","InvPress","Clinical","",null,null,null,null,false],[false,"per day","/d","/D","",0.000011574074074074073,[0,-1,0,0,0,0,0],"/d",null,false,null,null,1,false,false,0,"/dy; per day","LOINC","NRat","Clinical","",null,null,null,null,false],[false,"per deciliter","/dL","/DL","",10000,[-3,0,0,0,0,0,0],"/dL",null,false,null,null,1,false,false,0,"per dL; /deciliter; decilitre","LOINC","NCnc","Clinical","",null,null,null,null,false],[false,"per gram","/g","/G","",1,[0,0,-1,0,0,0,0],"/g",null,false,null,null,1,false,false,0,"/gm; /gram; per g","LOINC","NCnt","Clinical","",null,null,null,null,false],[false,"per hour","/h","/HR","",0.0002777777777777778,[0,-1,0,0,0,0,0],"/h",null,false,null,null,1,false,false,0,"/hr; /hour; per hr","LOINC","NRat","Clinical","",null,null,null,null,false],[false,"per kilogram","/kg","/KG","",0.001,[0,0,-1,0,0,0,0],"/kg",null,false,null,null,1,false,false,0,"per kg; per kilogram","LOINC","NCnt","Clinical","",null,null,null,null,false],[false,"per liter","/L","/L","",1000,[-3,0,0,0,0,0,0],"/L",null,false,null,null,1,false,false,0,"/liter; litre","LOINC","NCnc","Clinical","",null,null,null,null,false],[false,"per square meter","/m2","/M2","",1,[-2,0,0,0,0,0,0],"/m<sup>2<.sup>",null,false,null,null,1,false,false,0,"/m^2; /m*2; /sq. m; per square meter; meter squared; metre","LOINC","Naric","Clinical","",null,null,null,null,false],[false,"per cubic meter","/m3","/M3","",1,[-3,0,0,0,0,0,0],"/m<sup>3<.sup>",null,false,null,null,1,false,false,0,"/m^3; /m*3; /cu. m; per cubic meter; meter cubed; per m3; metre","LOINC","NCncn","Clinical","",null,null,null,null,false],[false,"per milligram","/mg","/MG","",1000,[0,0,-1,0,0,0,0],"/mg",null,false,null,null,1,false,false,0,"/milligram; per mg","LOINC","NCnt","Clinical","",null,null,null,null,false],[false,"per minute","/min","/MIN","",0.016666666666666666,[0,-1,0,0,0,0,0],"/min",null,false,null,null,1,false,false,0,"/minute; per mins; breaths beats per minute","LOINC","NRat","Clinical","",null,null,null,null,false],[false,"per milliliter","/mL","/ML","",1000000,[-3,0,0,0,0,0,0],"/mL",null,false,null,null,1,false,false,0,"/milliliter; per mL; millilitre","LOINC","NCncn","Clinical","",null,null,null,null,false],[false,"per millimeter","/mm","/MM","",1000,[-1,0,0,0,0,0,0],"/mm",null,false,null,null,1,false,false,0,"/millimeter; per mm; millimetre","LOINC","InvLen","Clinical","",null,null,null,null,false],[false,"per month","/mo","/MO","",3.802570537683474e-7,[0,-1,0,0,0,0,0],"/mo",null,false,null,null,1,false,false,0,"/month; per mo; monthly; month","LOINC","NRat","Clinical","",null,null,null,null,false],[false,"per second","/s","/S","",1,[0,-1,0,0,0,0,0],"/s",null,false,null,null,1,false,false,0,"/second; /sec; per sec; frequency; Hertz; Herz; Hz; becquerels; Bq; s-1; s^-1","LOINC","NRat","Clinical","",null,null,null,null,false],[false,"per enzyme unit","/U","/U","",9.963241120049633e-17,[0,1,0,0,0,0,0],"/U",null,false,null,null,1,false,false,-1,"/enzyme units; per U","LOINC","InvC; NCat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)",null,null,null,null,false],[false,"per microliter","/uL","/UL","",999999999.9999999,[-3,0,0,0,0,0,0],"/μL",null,false,null,null,1,false,false,0,"/microliter; microlitre; /mcl; per uL","LOINC","ACnc","Clinical","",null,null,null,null,false],[false,"per week","/wk","/WK","",0.0000016534391534391535,[0,-1,0,0,0,0,0],"/wk",null,false,null,null,1,false,false,0,"/week; per wk; weekly, weeks","LOINC","NRat","Clinical","",null,null,null,null,false],[false,"APL unit per milliliter","[APL'U]/mL","[APL'U]/ML","biologic activity of anticardiolipin IgA",1000000,[-3,0,0,0,0,0,0],"/mL","chemical",false,null,null,1,false,true,0,"APL/mL; APL'U/mL; APL U/mL; APL/milliliter; IgA anticardiolipin units per milliliter; IgA Phospholipid Units; millilitre; biologic activity of","LOINC","ACnc","Clinical","Units for an anti phospholipid syndrome test","1","1","1",1,false],[false,"arbitrary unit per milliliter","[arb'U]/mL","[ARB'U]/ML","arbitrary",1000000,[-3,0,0,0,0,0,0],"(arb. U)/mL","chemical",false,null,null,1,false,true,0,"arb'U/mL; arbU/mL; arb U/mL; arbitrary units per milliliter; millilitre","LOINC","ACnc","Clinical","relative unit of measurement to show the ratio of test measurement to reference measurement","1","1","1",1,false],[false,"colony forming units per liter","[CFU]/L","[CFU]/L","amount of a proliferating organism",1000,[-3,0,0,0,0,0,0],"CFU/L","chemical",false,null,null,1,false,true,0,"CFU per Liter; CFU/L","LOINC","NCnc","Clinical","","1","1","1",1,false],[false,"colony forming units per milliliter","[CFU]/mL","[CFU]/ML","amount of a proliferating organism",1000000,[-3,0,0,0,0,0,0],"CFU/mL","chemical",false,null,null,1,false,true,0,"CFU per mL; CFU/mL","LOINC","NCnc","Clinical","","1","1","1",1,false],[false,"foot per foot - US","[ft_us]/[ft_us]","[FT_US]/[FT_US]","length",1,[0,0,0,0,0,0,0],"(ft<sub>us</sub>)/(ft<sub>us</sub>)","us-lengths",false,null,null,1,false,false,0,"ft/ft; ft per ft; feet per feet; visual acuity","","LenRto","Clinical","distance ratio to measure 20:20 vision","m/3937","M/3937","1200",1200,false],[false,"GPL unit per milliliter","[GPL'U]/mL","[GPL'U]/ML","biologic activity of anticardiolipin IgG",1000000,[-3,0,0,0,0,0,0],"/mL","chemical",false,null,null,1,false,true,0,"GPL U/mL; GPL'U/mL; GPL/mL; GPL U per mL; IgG Phospholipid Units per milliliters; IgG anticardiolipin units; millilitres ","LOINC","ACnc; AMass","Clinical","Units for an antiphospholipid test","1","1","1",1,false],[false,"international unit per 2 hour","[IU]/(2.h)","[IU]/HR","arbitrary",0.0001388888888888889,[0,-1,0,0,0,0,0],"(i.U.)/h","chemical",true,null,null,1,false,true,0,"IU/2hrs; IU/2 hours; IU per 2 hrs; international units per 2 hours","LOINC","ARat","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per 24 hour","[IU]/(24.h)","[IU]/HR","arbitrary",0.000011574074074074073,[0,-1,0,0,0,0,0],"(i.U.)/h","chemical",true,null,null,1,false,true,0,"IU/24hr; IU/24 hours; IU per 24 hrs; international units per 24 hours","LOINC","ARat","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per day","[IU]/d","[IU]/D","arbitrary",0.000011574074074074073,[0,-1,0,0,0,0,0],"(i.U.)/d","chemical",true,null,null,1,false,true,0,"IU/dy; IU/days; IU per dys; international units per day","LOINC","ARat","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per deciliter","[IU]/dL","[IU]/DL","arbitrary",10000,[-3,0,0,0,0,0,0],"(i.U.)/dL","chemical",true,null,null,1,false,true,0,"IU/dL; IU per dL; international units per deciliters; decilitres","LOINC","ACnc","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per gram","[IU]/g","[IU]/G","arbitrary",1,[0,0,-1,0,0,0,0],"(i.U.)/g","chemical",true,null,null,1,false,true,0,"IU/gm; IU/gram; IU per gm; IU per g; international units per gram","LOINC","ACnt","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per hour","[IU]/h","[IU]/HR","arbitrary",0.0002777777777777778,[0,-1,0,0,0,0,0],"(i.U.)/h","chemical",true,null,null,1,false,true,0,"IU/hrs; IU per hours; international units per hour","LOINC","ARat","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per kilogram","[IU]/kg","[IU]/KG","arbitrary",0.001,[0,0,-1,0,0,0,0],"(i.U.)/kg","chemical",true,null,null,1,false,true,0,"IU/kg; IU/kilogram; IU per kg; units","LOINC","ACnt","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per kilogram per day","[IU]/kg/d","([IU]/KG)/D","arbitrary",1.1574074074074074e-8,[0,-1,-1,0,0,0,0],"((i.U.)/kg)/d","chemical",true,null,null,1,false,true,0,"IU/kg/dy; IU/kg/day; IU/kilogram/day; IU per kg per day; units","LOINC","ACntRat","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per liter","[IU]/L","[IU]/L","arbitrary",1000,[-3,0,0,0,0,0,0],"(i.U.)/L","chemical",true,null,null,1,false,true,0,"IU/L; IU/liter; IU per liter; units; litre","LOINC","ACnc","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per minute","[IU]/min","[IU]/MIN","arbitrary",0.016666666666666666,[0,-1,0,0,0,0,0],"(i.U.)/min","chemical",true,null,null,1,false,true,0,"IU/min; IU/minute; IU per minute; international units","LOINC","ARat","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"international unit per milliliter","[IU]/mL","[IU]/ML","arbitrary",1000000,[-3,0,0,0,0,0,0],"(i.U.)/mL","chemical",true,null,null,1,false,true,0,"IU/mL; IU per mL; international units per milliliter; millilitre","LOINC","ACnc","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"MPL unit per milliliter","[MPL'U]/mL","[MPL'U]/ML","biologic activity of anticardiolipin IgM",1000000,[-3,0,0,0,0,0,0],"/mL","chemical",false,null,null,1,false,true,0,"MPL/mL; MPL U/mL; MPL'U/mL; IgM anticardiolipin units; IgM Phospholipid Units; millilitre ","LOINC","ACnc","Clinical","units for antiphospholipid test\n","1","1","1",1,false],[false,"number per high power field","{#}/[HPF]","/[HPF]","",1,[0,0,0,0,0,0,0],"/HPF",null,false,null,null,1,false,false,0,"#/HPF; # per HPF; number/HPF; numbers per high power field","LOINC","Naric","Clinical","",null,null,null,null,false],[false,"number per low power field","{#}/[LPF]","/[LPF]","",1,[0,0,0,0,0,0,0],"/LPF",null,false,null,null,1,false,false,0,"#/LPF; # per LPF; number/LPF; numbers per low power field","LOINC","Naric","Clinical","",null,null,null,null,false],[false,"IgA antiphosphatidylserine unit ","{APS'U}","","",1,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"APS Unit; Phosphatidylserine Antibody IgA Units","LOINC","ACnc","Clinical","unit for antiphospholipid test",null,null,null,null,false],[false,"EIA index","{EIA_index}","","",1,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"enzyme immunoassay index","LOINC","ACnc","Clinical","",null,null,null,null,false],[false,"kaolin clotting time","{KCT'U}","","",1,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"KCT","LOINC","Time","Clinical","sensitive test to detect lupus anticoagulants; measured in seconds",null,null,null,null,false],[false,"IgM antiphosphatidylserine unit","{MPS'U}","","",1,[0,0,0,0,0,0,0],null,null,false,null,null,1,false,false,0,"Phosphatidylserine Antibody IgM Measurement ","LOINC","ACnc","Clinical","",null,null,null,null,false],[false,"trillion per liter","10*12/L","(10*12)/L","number",1000000000000000,[-3,0,0,0,0,0,0],"(10<sup>12</sup>)/L","dimless",false,null,null,1,false,false,0,"10^12/L; 10*12 per Liter; trillion per liter; litre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"10^3 (used for cell count)","10*3","10*3","number",1000,[0,0,0,0,0,0,0],"10<sup>3</sup>","dimless",false,null,null,1,false,false,0,"10^3; thousand","LOINC","Num","Clinical","usually used for counting entities (e.g. blood cells) per volume","1","1","10",10,false],[false,"thousand per liter","10*3/L","(10*3)/L","number",1000000,[-3,0,0,0,0,0,0],"(10<sup>3</sup>)/L","dimless",false,null,null,1,false,false,0,"10^3/L; 10*3 per liter; litre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"thousand per milliliter","10*3/mL","(10*3)/ML","number",1000000000,[-3,0,0,0,0,0,0],"(10<sup>3</sup>)/mL","dimless",false,null,null,1,false,false,0,"10^3/mL; 10*3 per mL; thousand per milliliter; millilitre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"thousand per microliter","10*3/uL","(10*3)/UL","number",999999999999.9999,[-3,0,0,0,0,0,0],"(10<sup>3</sup>)/μL","dimless",false,null,null,1,false,false,0,"10^3/uL; 10*3 per uL; thousand per microliter; microlitre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"10 thousand per microliter","10*4/uL","(10*4)/UL","number",10000000000000,[-3,0,0,0,0,0,0],"(10<sup>4</sup>)/μL","dimless",false,null,null,1,false,false,0,"10^4/uL; 10*4 per uL; microlitre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"10^5 ","10*5","10*5","number",100000,[0,0,0,0,0,0,0],"10<sup>5</sup>","dimless",false,null,null,1,false,false,0,"one hundred thousand","LOINC","Num","Clinical","","1","1","10",10,false],[false,"10^6","10*6","10*6","number",1000000,[0,0,0,0,0,0,0],"10<sup>6</sup>","dimless",false,null,null,1,false,false,0,"","LOINC","Num","Clinical","","1","1","10",10,false],[false,"million colony forming unit per liter","10*6.[CFU]/L","((10*6).[CFU])/L","number",1000000000,[-3,0,0,0,0,0,0],"((10<sup>6</sup>).CFU)/L","dimless",false,null,null,1,false,true,0,"10*6 CFU/L; 10^6 CFU/L; 10^6CFU; 10^6 CFU per liter; million colony forming units; litre","LOINC","ACnc","Clinical","","1","1","10",10,false],[false,"million international unit","10*6.[IU]","(10*6).[IU]","number",1000000,[0,0,0,0,0,0,0],"(10<sup>6</sup>).(i.U.)","dimless",false,null,null,1,false,true,0,"10*6 IU; 10^6 IU; international units","LOINC","arb","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","1","1","10",10,false],[false,"million per 24 hour","10*6/(24.h)","(10*6)/HR","number",11.574074074074074,[0,-1,0,0,0,0,0],"(10<sup>6</sup>)/h","dimless",false,null,null,1,false,false,0,"10*6/24hrs; 10^6/24 hrs; 10*6 per 24 hrs; 10^6 per 24 hours","LOINC","NRat","Clinical","","1","1","10",10,false],[false,"million per kilogram","10*6/kg","(10*6)/KG","number",1000,[0,0,-1,0,0,0,0],"(10<sup>6</sup>)/kg","dimless",false,null,null,1,false,false,0,"10^6/kg; 10*6 per kg; 10*6 per kilogram; millions","LOINC","NCnt","Clinical","","1","1","10",10,false],[false,"million per liter","10*6/L","(10*6)/L","number",1000000000,[-3,0,0,0,0,0,0],"(10<sup>6</sup>)/L","dimless",false,null,null,1,false,false,0,"10^6/L; 10*6 per Liter; 10^6 per Liter; litre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"million per milliliter","10*6/mL","(10*6)/ML","number",1000000000000,[-3,0,0,0,0,0,0],"(10<sup>6</sup>)/mL","dimless",false,null,null,1,false,false,0,"10^6/mL; 10*6 per mL; 10*6 per milliliter; millilitre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"million per microliter","10*6/uL","(10*6)/UL","number",1000000000000000,[-3,0,0,0,0,0,0],"(10<sup>6</sup>)/μL","dimless",false,null,null,1,false,false,0,"10^6/uL; 10^6 per uL; 10^6/mcl; 10^6 per mcl; 10^6 per microliter; microlitre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"10^8","10*8","10*8","number",100000000,[0,0,0,0,0,0,0],"10<sup>8</sup>","dimless",false,null,null,1,false,false,0,"100 million; one hundred million; 10^8","LOINC","Num","Clinical","","1","1","10",10,false],[false,"billion per liter","10*9/L","(10*9)/L","number",1000000000000,[-3,0,0,0,0,0,0],"(10<sup>9</sup>)/L","dimless",false,null,null,1,false,false,0,"10^9/L; 10*9 per Liter; litre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"billion per milliliter","10*9/mL","(10*9)/ML","number",1000000000000000,[-3,0,0,0,0,0,0],"(10<sup>9</sup>)/mL","dimless",false,null,null,1,false,false,0,"10^9/mL; 10*9 per mL; 10^9 per mL; 10*9 per milliliter; millilitre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"billion per microliter","10*9/uL","(10*9)/UL","number",1000000000000000000,[-3,0,0,0,0,0,0],"(10<sup>9</sup>)/μL","dimless",false,null,null,1,false,false,0,"10^9/uL; 10^9 per uL; 10^9/mcl; 10^9 per mcl; 10*9 per uL; 10*9 per mcl; 10*9/mcl; 10^9 per microliter; microlitre","LOINC","NCncn","Clinical","","1","1","10",10,false],[false,"10 liter per minute per square meter","10.L/(min.m2)","L/(MIN.M2)","",0.00016666666666666666,[1,-1,0,0,0,0,0],"L/(min.(m<sup>2</sup>))",null,false,null,null,1,false,false,0,"10 liters per minutes per square meter; 10 L per min per m2; m^2; 10 L/(min*m2); 10L/(min*m^2); litres; sq. meter; metre; meters squared","LOINC","ArVRat","Clinical","",null,null,null,null,false],[false,"10 liter per minute","10.L/min","L/MIN","",0.00016666666666666666,[3,-1,0,0,0,0,0],"L/min",null,false,null,null,1,false,false,0,"10 liters per minute; 10 L per min; 10L; 10 L/min; litre","LOINC","VRat","Clinical","",null,null,null,null,false],[false,"10 micronewton second per centimeter to the fifth power per square meter","10.uN.s/(cm5.m2)","(UN.S)/(CM5.M2)","",100000000,[-6,-1,1,0,0,0,0],"(μN.s)/(cm<sup>5</sup>).(m<sup>2</sup>)",null,false,null,null,1,false,false,0,"dyne seconds per centimeter5 and square meter; dyn.s/(cm5.m2); dyn.s/cm5/m2; cm^5; m^2","LOINC","","Clinical","unit to measure systemic vascular resistance per body surface area",null,null,null,null,false],[false,"24 hour","24.h","HR","",86400,[0,1,0,0,0,0,0],"h",null,false,null,null,1,false,false,0,"24hrs; 24 hrs; 24 hours; days; dy","LOINC","Time","Clinical","",null,null,null,null,false],[false,"ampere per meter","A/m","A/M","electric current",1,[-1,-1,0,0,0,1,0],"A/m","si",true,null,null,1,false,false,0,"A/m; amp/meter; magnetic field strength; H; B; amperes per meter; metre","LOINC","","Clinical","unit of magnetic field strength","C/s","C/S","1",1,false],[false,"centigram","cg","CG","mass",0.01,[0,0,1,0,0,0,0],"cg",null,false,"M",null,1,false,false,0,"centigrams; cg; cgm","LOINC","Mass","Clinical","",null,null,null,null,false],[false,"centiliter","cL","CL","volume",0.00001,[3,0,0,0,0,0,0],"cL","iso1000",true,null,null,1,false,false,0,"centiliters; centilitres","LOINC","Vol","Clinical","","l",null,"1",1,false],[false,"centimeter","cm","CM","length",0.01,[1,0,0,0,0,0,0],"cm",null,false,"L",null,1,false,false,0,"centimeters; centimetres","LOINC","Len","Clinical","",null,null,null,null,false],[false,"centimeter of water","cm[H2O]","CM[H2O]","pressure",98066.5,[-1,-2,1,0,0,0,0],"cm HO<sub><r>2</r></sub>","clinical",true,null,null,1,false,false,0,"cm H2O; cmH2O; centimetres; pressure","LOINC","Pres","Clinical","unit of pressure mostly applies to blood pressure","kPa","KPAL","980665e-5",9.80665,false],[false,"centimeter of water per liter per second","cm[H2O]/L/s","(CM[H2O]/L)/S","pressure",98066500,[-4,-3,1,0,0,0,0],"((cm HO<sub><r>2</r></sub>)/L)/s","clinical",true,null,null,1,false,false,0,"cm[H2O]/(L/s); cm[H2O].s/L; cm H2O/L/sec; cmH2O/L/sec; cmH2O/Liter; cmH2O per L per secs; centimeters of water per liters per second; centimetres; litres; cm[H2O]/(L/s)","LOINC","PresRat","Clinical","unit used to measure mean pulmonary resistance","kPa","KPAL","980665e-5",9.80665,false],[false,"centimeter of water per second per meter","cm[H2O]/s/m","(CM[H2O]/S)/M","pressure",98066.5,[-2,-3,1,0,0,0,0],"((cm HO<sub><r>2</r></sub>)/s)/m","clinical",true,null,null,1,false,false,0,"cm[H2O]/(s.m); cm H2O/s/m; cmH2O; cmH2O/sec/m; cmH2O per secs per meters; centimeters of water per seconds per meter; centimetres; metre","LOINC","PresRat","Clinical","unit used to measure pulmonary pressure time product","kPa","KPAL","980665e-5",9.80665,false],[false,"centimeter of mercury","cm[Hg]","CM[HG]","pressure",1333220,[-1,-2,1,0,0,0,0],"cm Hg","clinical",true,null,null,1,false,false,0,"centimeters of mercury; centimetres; cmHg; cm Hg","LOINC","Pres","Clinical","unit of pressure where 1 cmHg = 10 torr","kPa","KPAL","133.3220",133.322,false],[false,"square centimeter","cm2","CM2","length",0.0001,[2,0,0,0,0,0,0],"cm<sup>2</sup>",null,false,"L",null,1,false,false,0,"cm^2; sq cm; centimeters squared; square centimeters; centimetre; area","LOINC","Area","Clinical","",null,null,null,null,false],[false,"square centimeter per second","cm2/s","CM2/S","length",0.0001,[2,-1,0,0,0,0,0],"(cm<sup>2</sup>)/s",null,false,"L",null,1,false,false,0,"cm^2/sec; square centimeters per second; sq cm per sec; cm2; centimeters squared; centimetres","LOINC","AreaRat","Clinical","",null,null,null,null,false],[false,"centipoise","cP","CP","dynamic viscosity",1,[-1,-1,1,0,0,0,0],"cP","cgs",true,null,null,1,false,false,0,"cps; centiposes","LOINC","Visc","Clinical","unit of dynamic viscosity in the CGS system with base units: 10^−3 Pa.s = 1 mPa·.s (1 millipascal second)","dyn.s/cm2","DYN.S/CM2","1",1,false],[false,"centistoke","cSt","CST","kinematic viscosity",0.0000010000000000000002,[2,-1,0,0,0,0,0],"cSt","cgs",true,null,null,1,false,false,0,"centistokes","LOINC","Visc","Clinical","unit for kinematic viscosity with base units of mm^2/s (square millimeter per second)","cm2/s","CM2/S","1",1,false],[false,"dekaliter per minute","daL/min","DAL/MIN","volume",0.00016666666666666666,[3,-1,0,0,0,0,0],"daL/min","iso1000",true,null,null,1,false,false,0,"dekalitres; dekaliters per minute; per min","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"dekaliter per minute per square meter","daL/min/m2","(DAL/MIN)/M2","volume",0.00016666666666666666,[1,-1,0,0,0,0,0],"(daL/min)/(m<sup>2</sup>)","iso1000",true,null,null,1,false,false,0,"daL/min/m^2; daL/minute/m2; sq. meter; dekaliters per minutes per square meter; meter squared; dekalitres; metre","LOINC","ArVRat","Clinical","The area usually is the body surface area used to normalize cardiovascular measures for patient's size","l",null,"1",1,false],[false,"decibel","dB","DB","level",1,[0,0,0,0,0,0,0],"dB","levels",true,null,"lg",0.1,true,false,0,"decibels","LOINC","LogRto","Clinical","unit most commonly used in acoustics as unit of sound pressure level. (also see B[SPL] or bel sound pressure level). ","1",null,null,1,false],[false,"degree per second","deg/s","DEG/S","plane angle",0.017453292519943295,[0,-1,0,1,0,0,0],"°/s","iso1000",false,null,null,1,false,false,0,"deg/sec; deg per sec; °/sec; twist rate; angular speed; rotational speed","LOINC","ARat","Clinical","unit of angular (rotational) speed used to express turning rate","[pi].rad/360","[PI].RAD/360","2",2,false],[false,"decigram","dg","DG","mass",0.1,[0,0,1,0,0,0,0],"dg",null,false,"M",null,1,false,false,0,"decigrams; dgm; 0.1 grams; 1/10 gm","LOINC","Mass","Clinical","equal to 1/10 gram",null,null,null,null,false],[false,"deciliter","dL","DL","volume",0.0001,[3,0,0,0,0,0,0],"dL","iso1000",true,null,null,1,false,false,0,"deciliters; decilitres; 0.1 liters; 1/10 L","LOINC","Vol","Clinical","equal to 1/10 liter","l",null,"1",1,false],[false,"decimeter","dm","DM","length",0.1,[1,0,0,0,0,0,0],"dm",null,false,"L",null,1,false,false,0,"decimeters; decimetres; 0.1 meters; 1/10 m; 10 cm; centimeters","LOINC","Len","Clinical","equal to 1/10 meter or 10 centimeters",null,null,null,null,false],[false,"square decimeter per square second","dm2/s2","DM2/S2","length",0.010000000000000002,[2,-2,0,0,0,0,0],"(dm<sup>2</sup>)/(s<sup>2</sup>)",null,false,"L",null,1,false,false,0,"dm2 per s2; dm^2/s^2; decimeters squared per second squared; sq dm; sq sec","LOINC","EngMass (massic energy)","Clinical","units for energy per unit mass or Joules per kilogram (J/kg = kg.m2/s2/kg = m2/s2) ",null,null,null,null,false],[false,"dyne second per centimeter per square meter","dyn.s/(cm.m2)","(DYN.S)/(CM.M2)","force",1,[-2,-1,1,0,0,0,0],"(dyn.s)/(cm.(m<sup>2</sup>))","cgs",true,null,null,1,false,false,0,"(dyn*s)/(cm*m2); (dyn*s)/(cm*m^2); dyn s per cm per m2; m^2; dyne seconds per centimeters per square meter; centimetres; sq. meter; squared","LOINC","","Clinical","","g.cm/s2","G.CM/S2","1",1,false],[false,"dyne second per centimeter","dyn.s/cm","(DYN.S)/CM","force",1,[0,-1,1,0,0,0,0],"(dyn.s)/cm","cgs",true,null,null,1,false,false,0,"(dyn*s)/cm; dyn sec per cm; seconds; centimetre; dyne seconds","LOINC","","Clinical","","g.cm/s2","G.CM/S2","1",1,false],[false,"equivalent per liter","eq/L","EQ/L","amount of substance",6.0221366999999994e+26,[-3,0,0,0,0,0,0],"eq/L","chemical",true,null,null,1,false,false,1,"eq/liter; eq/litre; eqs; equivalents per liter; litre","LOINC","SCnc","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"equivalent per milliliter","eq/mL","EQ/ML","amount of substance",6.0221367e+29,[-3,0,0,0,0,0,0],"eq/mL","chemical",true,null,null,1,false,false,1,"equivalent/milliliter; equivalents per milliliter; eq per mL; millilitre","LOINC","SCnc","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"equivalent per millimole","eq/mmol","EQ/MMOL","amount of substance",1000,[0,0,0,0,0,0,0],"eq/mmol","chemical",true,null,null,1,false,false,0,"equivalent/millimole; equivalents per millimole; eq per mmol","LOINC","SRto","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"equivalent per micromole","eq/umol","EQ/UMOL","amount of substance",1000000,[0,0,0,0,0,0,0],"eq/μmol","chemical",true,null,null,1,false,false,0,"equivalent/micromole; equivalents per micromole; eq per umol","LOINC","SRto","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"femtogram","fg","FG","mass",1e-15,[0,0,1,0,0,0,0],"fg",null,false,"M",null,1,false,false,0,"fg; fgm; femtograms; weight","LOINC","Mass","Clinical","equal to 10^-15 grams",null,null,null,null,false],[false,"femtoliter","fL","FL","volume",1e-18,[3,0,0,0,0,0,0],"fL","iso1000",true,null,null,1,false,false,0,"femtolitres; femtoliters","LOINC","Vol; EntVol","Clinical","equal to 10^-15 liters","l",null,"1",1,false],[false,"femtometer","fm","FM","length",1e-15,[1,0,0,0,0,0,0],"fm",null,false,"L",null,1,false,false,0,"femtometres; femtometers","LOINC","Len","Clinical","equal to 10^-15 meters",null,null,null,null,false],[false,"femtomole","fmol","FMOL","amount of substance",602213670,[0,0,0,0,0,0,0],"fmol","si",true,null,null,1,false,false,1,"femtomoles","LOINC","EntSub","Clinical","equal to 10^-15 moles","10*23","10*23","6.0221367",6.0221367,false],[false,"femtomole per gram","fmol/g","FMOL/G","amount of substance",602213670,[0,0,-1,0,0,0,0],"fmol/g","si",true,null,null,1,false,false,1,"femtomoles; fmol/gm; fmol per gm","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"femtomole per liter","fmol/L","FMOL/L","amount of substance",602213670000,[-3,0,0,0,0,0,0],"fmol/L","si",true,null,null,1,false,false,1,"femtomoles; fmol per liter; litre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"femtomole per milligram","fmol/mg","FMOL/MG","amount of substance",602213670000,[0,0,-1,0,0,0,0],"fmol/mg","si",true,null,null,1,false,false,1,"fmol per mg; femtomoles","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"femtomole per milliliter","fmol/mL","FMOL/ML","amount of substance",602213670000000,[-3,0,0,0,0,0,0],"fmol/mL","si",true,null,null,1,false,false,1,"femtomoles; millilitre; fmol per mL; fmol per milliliter","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"gram meter","g.m","G.M","mass",1,[1,0,1,0,0,0,0],"g.m",null,false,"M",null,1,false,false,0,"g*m; gxm; meters; metres","LOINC","Enrg","Clinical","Unit for measuring stroke work (heart work)",null,null,null,null,false],[false,"gram per 100 gram","g/(100.g)","G/G","mass",0.01,[0,0,0,0,0,0,0],"g/g",null,false,"M",null,1,false,false,0,"g/100 gm; 100gm; grams per 100 grams; gm per 100 gm","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"gram per 12 hour","g/(12.h)","G/HR","mass",0.000023148148148148147,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/12hrs; 12 hrs; gm per 12 hrs; 12hrs; grams per 12 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per 24 hour","g/(24.h)","G/HR","mass",0.000011574074074074073,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/24hrs; gm/24 hrs; gm per 24 hrs; 24hrs; grams per 24 hours; gm/dy; gm per dy; grams per day","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per 3 days","g/(3.d)","G/D","mass",0.000003858024691358025,[0,-1,1,0,0,0,0],"g/d",null,false,"M",null,1,false,false,0,"gm/3dy; gm/3 dy; gm per 3 days; grams","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per 4 hour","g/(4.h)","G/HR","mass",0.00006944444444444444,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/4hrs; gm/4 hrs; gm per 4 hrs; 4hrs; grams per 4 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per 48 hour","g/(48.h)","G/HR","mass",0.000005787037037037037,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/48hrs; gm/48 hrs; gm per 48 hrs; 48hrs; grams per 48 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per 5 hour","g/(5.h)","G/HR","mass",0.00005555555555555556,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/5hrs; gm/5 hrs; gm per 5 hrs; 5hrs; grams per 5 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per 6 hour","g/(6.h)","G/HR","mass",0.000046296296296296294,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/6hrs; gm/6 hrs; gm per 6 hrs; 6hrs; grams per 6 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per 72 hour","g/(72.h)","G/HR","mass",0.000003858024691358025,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/72hrs; gm/72 hrs; gm per 72 hrs; 72hrs; grams per 72 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per cubic centimeter","g/cm3","G/CM3","mass",999999.9999999999,[-3,0,1,0,0,0,0],"g/(cm<sup>3</sup>)",null,false,"M",null,1,false,false,0,"g/cm^3; gm per cm3; g per cm^3; grams per centimeter cubed; cu. cm; centimetre; g/mL; gram per milliliter; millilitre","LOINC","MCnc","Clinical","g/cm3 = g/mL",null,null,null,null,false],[false,"gram per day","g/d","G/D","mass",0.000011574074074074073,[0,-1,1,0,0,0,0],"g/d",null,false,"M",null,1,false,false,0,"gm/dy; gm per dy; grams per day; gm/24hrs; gm/24 hrs; gm per 24 hrs; 24hrs; grams per 24 hours; serving","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per deciliter","g/dL","G/DL","mass",10000,[-3,0,1,0,0,0,0],"g/dL",null,false,"M",null,1,false,false,0,"gm/dL; gm per dL; grams per deciliter; decilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"gram per gram","g/g","G/G","mass",1,[0,0,0,0,0,0,0],"g/g",null,false,"M",null,1,false,false,0,"gm; grams","LOINC","MRto ","Clinical","",null,null,null,null,false],[false,"gram per hour","g/h","G/HR","mass",0.0002777777777777778,[0,-1,1,0,0,0,0],"g/h",null,false,"M",null,1,false,false,0,"gm/hr; gm per hr; grams; intake; output","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per hour per square meter","g/h/m2","(G/HR)/M2","mass",0.0002777777777777778,[-2,-1,1,0,0,0,0],"(g/h)/(m<sup>2</sup>)",null,false,"M",null,1,false,false,0,"gm/hr/m2; gm/h/m2; /m^2; sq. m; g per hr per m2; grams per hours per square meter; meter squared; metre","LOINC","ArMRat","Clinical","",null,null,null,null,false],[false,"gram per kilogram","g/kg ","G/KG","mass",0.001,[0,0,0,0,0,0,0],"g/kg",null,false,"M",null,1,false,false,0,"g per kg; gram per kilograms","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"gram per kilogram per 8 hour ","g/kg/(8.h)","(G/KG)/HR","mass",3.472222222222222e-8,[0,-1,0,0,0,0,0],"(g/kg)/h",null,false,"M",null,1,false,false,0,"g/(8.kg.h); gm/kg/8hrs; 8 hrs; g per kg per 8 hrs; 8hrs; grams per kilograms per 8 hours; shift","LOINC","MCntRat; RelMRat","Clinical","unit often used to describe mass in grams of protein consumed in a 8 hours, divided by the subject's body weight in kilograms. Also used to measure mass dose rate per body mass",null,null,null,null,false],[false,"gram per kilogram per day","g/kg/d","(G/KG)/D","mass",1.1574074074074074e-8,[0,-1,0,0,0,0,0],"(g/kg)/d",null,false,"M",null,1,false,false,0,"g/(kg.d); gm/kg/dy; gm per kg per dy; grams per kilograms per day","LOINC","RelMRat","Clinical","unit often used to describe mass in grams of protein consumed in a day, divided by the subject's body weight in kilograms. Also used to measure mass dose rate per body mass",null,null,null,null,false],[false,"gram per kilogram per hour","g/kg/h","(G/KG)/HR","mass",2.7777777777777776e-7,[0,-1,0,0,0,0,0],"(g/kg)/h",null,false,"M",null,1,false,false,0,"g/(kg.h); g/kg/hr; g per kg per hrs; grams per kilograms per hour","LOINC","MCntRat; RelMRat","Clinical","unit used to measure mass dose rate per body mass",null,null,null,null,false],[false,"gram per kilogram per minute","g/kg/min","(G/KG)/MIN","mass",0.000016666666666666667,[0,-1,0,0,0,0,0],"(g/kg)/min",null,false,"M",null,1,false,false,0,"g/(kg.min); g/kg/min; g per kg per min; grams per kilograms per minute","LOINC","MCntRat; RelMRat","Clinical","unit used to measure mass dose rate per body mass",null,null,null,null,false],[false,"gram per liter","g/L","G/L","mass",1000,[-3,0,1,0,0,0,0],"g/L",null,false,"M",null,1,false,false,0,"gm per liter; g/liter; grams per liter; litre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"gram per square meter","g/m2","G/M2","mass",1,[-2,0,1,0,0,0,0],"g/(m<sup>2</sup>)",null,false,"M",null,1,false,false,0,"g/m^2; gram/square meter; g/sq m; g per m2; g per m^2; grams per square meter; meters squared; metre","LOINC","ArMass","Clinical","Tests measure myocardial mass (heart ventricle system) per body surface area; unit used to measure mass dose per body surface area",null,null,null,null,false],[false,"gram per milligram","g/mg","G/MG","mass",1000,[0,0,0,0,0,0,0],"g/mg",null,false,"M",null,1,false,false,0,"g per mg; grams per milligram","LOINC","MCnt; MRto","Clinical","",null,null,null,null,false],[false,"gram per minute","g/min","G/MIN","mass",0.016666666666666666,[0,-1,1,0,0,0,0],"g/min",null,false,"M",null,1,false,false,0,"g per min; grams per minute; gram/minute","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"gram per milliliter","g/mL","G/ML","mass",1000000,[-3,0,1,0,0,0,0],"g/mL",null,false,"M",null,1,false,false,0,"g per mL; grams per milliliter; millilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"gram per millimole","g/mmol","G/MMOL","mass",1.6605401866749388e-21,[0,0,1,0,0,0,0],"g/mmol",null,false,"M",null,1,false,false,-1,"grams per millimole; g per mmol","LOINC","Ratio","Clinical","",null,null,null,null,false],[false,"joule per liter","J/L","J/L","energy",1000000,[-1,-2,1,0,0,0,0],"J/L","si",true,null,null,1,false,false,0,"joules per liter; litre; J per L","LOINC","EngCnc","Clinical","","N.m","N.M","1",1,false],[false,"degree Kelvin per Watt","K/W","K/W","temperature",0.001,[-2,3,-1,0,1,0,0],"K/W",null,false,"C",null,1,false,false,0,"degree Kelvin/Watt; K per W; thermal ohm; thermal resistance; degrees","LOINC","TempEngRat","Clinical","unit for absolute thermal resistance equal to the reciprocal of thermal conductance. Unit used for tests to measure work of breathing",null,null,null,null,false],[false,"kilo international unit per liter","k[IU]/L","K[IU]/L","arbitrary",1000000,[-3,0,0,0,0,0,0],"(ki.U.)/L","chemical",true,null,null,1,false,true,0,"kIU/L; kIU per L; kIU per liter; kilo international units; litre; allergens; allergy units","LOINC","ACnc","Clinical","IgE has an WHO reference standard so IgE allergen testing can be reported as k[IU]/L","[iU]","[IU]","1",1,false],[false,"kilo international unit per milliliter","k[IU]/mL","K[IU]/ML","arbitrary",1000000000,[-3,0,0,0,0,0,0],"(ki.U.)/mL","chemical",true,null,null,1,false,true,0,"kIU/mL; kIU per mL; kIU per milliliter; kilo international units; millilitre; allergens; allergy units","LOINC","ACnc","Clinical","IgE has an WHO reference standard so IgE allergen testing can be reported as k[IU]/mL","[iU]","[IU]","1",1,false],[false,"katal per kilogram","kat/kg","KAT/KG","catalytic activity",602213670000000000000,[0,-1,-1,0,0,0,0],"kat/kg","chemical",true,null,null,1,false,false,1,"kat per kg; katals per kilogram; mol/s/kg; moles per seconds per kilogram","LOINC","CCnt","Clinical","kat is a unit of catalytic activity with base units = mol/s. Rarely used because its units are too large to practically express catalytic activity. See enzyme unit [U] which is the standard unit for catalytic activity.","mol/s","MOL/S","1",1,false],[false,"katal per liter","kat/L","KAT/L","catalytic activity",6.0221366999999994e+26,[-3,-1,0,0,0,0,0],"kat/L","chemical",true,null,null,1,false,false,1,"kat per L; katals per liter; litre; mol/s/L; moles per seconds per liter","LOINC","CCnc","Clinical","kat is a unit of catalytic activity with base units = mol/s. Rarely used because its units are too large to practically express catalytic activity. See enzyme unit [U] which is the standard unit for catalytic activity.","mol/s","MOL/S","1",1,false],[false,"kilocalorie","kcal","KCAL","energy",4184000,[2,-2,1,0,0,0,0],"kcal","heat",true,null,null,1,false,false,0,"kilogram calories; large calories; food calories; kcals","LOINC","EngRat","Clinical","It is equal to 1000 calories (equal to 4.184 kJ). But in practical usage, kcal refers to food calories which excludes caloric content in fiber and other constitutes that is not digestible by humans. Also see nutrition label Calories ([Cal])","cal_th","CAL_TH","1",1,false],[false,"kilocalorie per 24 hour","kcal/(24.h)","KCAL/HR","energy",48.425925925925924,[2,-3,1,0,0,0,0],"kcal/h","heat",true,null,null,1,false,false,0,"kcal/24hrs; kcal/24 hrs; kcal per 24hrs; kilocalories per 24 hours; kilojoules; kJ/24hr; kJ/(24.h); kJ/dy; kilojoules per days; intake; calories burned; metabolic rate; food calories","","EngRat","Clinical","","cal_th","CAL_TH","1",1,false],[false,"kilocalorie per ounce","kcal/[oz_av]","KCAL/[OZ_AV]","energy",147586.25679704445,[2,-2,0,0,0,0,0],"kcal/oz","heat",true,null,null,1,false,false,0,"kcal/oz; kcal per ozs; large calories per ounces; food calories; servings; international","LOINC","EngCnt","Clinical","used in nutrition to represent calorie of food","cal_th","CAL_TH","1",1,false],[false,"kilocalorie per day","kcal/d","KCAL/D","energy",48.425925925925924,[2,-3,1,0,0,0,0],"kcal/d","heat",true,null,null,1,false,false,0,"kcal/dy; kcal per day; kilocalories per days; kilojoules; kJ/dy; kilojoules per days; intake; calories burned; metabolic rate; food calories","LOINC","EngRat","Clinical","unit in nutrition for food intake (measured in calories) in a day","cal_th","CAL_TH","1",1,false],[false,"kilocalorie per hour","kcal/h","KCAL/HR","energy",1162.2222222222222,[2,-3,1,0,0,0,0],"kcal/h","heat",true,null,null,1,false,false,0,"kcal/hrs; kcals per hr; intake; kilocalories per hours; kilojoules","LOINC","EngRat","Clinical","used in nutrition to represent caloric requirement or consumption","cal_th","CAL_TH","1",1,false],[false,"kilocalorie per kilogram per 24 hour","kcal/kg/(24.h)","(KCAL/KG)/HR","energy",0.04842592592592593,[2,-3,0,0,0,0,0],"(kcal/kg)/h","heat",true,null,null,1,false,false,0,"kcal/kg/24hrs; 24 hrs; kcal per kg per 24hrs; kilocalories per kilograms per 24 hours; kilojoules","LOINC","EngCntRat","Clinical","used in nutrition to represent caloric requirement per day based on subject's body weight in kilograms","cal_th","CAL_TH","1",1,false],[false,"kilogram","kg","KG","mass",1000,[0,0,1,0,0,0,0],"kg",null,false,"M",null,1,false,false,0,"kilograms; kgs","LOINC","Mass","Clinical","",null,null,null,null,false],[false,"kilogram meter per second","kg.m/s","(KG.M)/S","mass",1000,[1,-1,1,0,0,0,0],"(kg.m)/s",null,false,"M",null,1,false,false,0,"kg*m/s; kg.m per sec; kg*m per sec; p; momentum","LOINC","","Clinical","unit for momentum =  mass times velocity",null,null,null,null,false],[false,"kilogram per second per square meter","kg/(s.m2)","KG/(S.M2)","mass",1000,[-2,-1,1,0,0,0,0],"kg/(s.(m<sup>2</sup>))",null,false,"M",null,1,false,false,0,"kg/(s*m2); kg/(s*m^2); kg per s per m2; per sec; per m^2; kilograms per seconds per square meter; meter squared; metre","LOINC","ArMRat","Clinical","",null,null,null,null,false],[false,"kilogram per hour","kg/h","KG/HR","mass",0.2777777777777778,[0,-1,1,0,0,0,0],"kg/h",null,false,"M",null,1,false,false,0,"kg/hr; kg per hr; kilograms per hour","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"kilogram per liter","kg/L","KG/L","mass",1000000,[-3,0,1,0,0,0,0],"kg/L",null,false,"M",null,1,false,false,0,"kg per liter; litre; kilograms","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"kilogram per square meter","kg/m2","KG/M2","mass",1000,[-2,0,1,0,0,0,0],"kg/(m<sup>2</sup>)",null,false,"M",null,1,false,false,0,"kg/m^2; kg/sq. m; kg per m2; per m^2; per sq. m; kilograms; meter squared; metre; BMI","LOINC","Ratio","Clinical","units for body mass index (BMI)",null,null,null,null,false],[false,"kilogram per cubic meter","kg/m3","KG/M3","mass",1000,[-3,0,1,0,0,0,0],"kg/(m<sup>3</sup>)",null,false,"M",null,1,false,false,0,"kg/m^3; kg/cu. m; kg per m3; per m^3; per cu. m; kilograms; meters cubed; metre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"kilogram per minute","kg/min","KG/MIN","mass",16.666666666666668,[0,-1,1,0,0,0,0],"kg/min",null,false,"M",null,1,false,false,0,"kilogram/minute; kg per min; kilograms per minute","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"kilogram per mole","kg/mol","KG/MOL","mass",1.6605401866749388e-21,[0,0,1,0,0,0,0],"kg/mol",null,false,"M",null,1,false,false,-1,"kilogram/mole; kg per mol; kilograms per mole","LOINC","SCnt","Clinical","",null,null,null,null,false],[false,"kilogram per second","kg/s","KG/S","mass",1000,[0,-1,1,0,0,0,0],"kg/s",null,false,"M",null,1,false,false,0,"kg/sec; kilogram/second; kg per sec; kilograms; second","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"kiloliter","kL","KL","volume",1,[3,0,0,0,0,0,0],"kL","iso1000",true,null,null,1,false,false,0,"kiloliters; kilolitres; m3; m^3; meters cubed; metre","LOINC","Vol","Clinical","","l",null,"1",1,false],[false,"kilometer","km","KM","length",1000,[1,0,0,0,0,0,0],"km",null,false,"L",null,1,false,false,0,"kilometers; kilometres; distance","LOINC","Len","Clinical","",null,null,null,null,false],[false,"kilopascal","kPa","KPAL","pressure",1000000,[-1,-2,1,0,0,0,0],"kPa","si",true,null,null,1,false,false,0,"kilopascals; pressure","LOINC","Pres; PPresDiff","Clinical","","N/m2","N/M2","1",1,false],[false,"kilosecond","ks","KS","time",1000,[0,1,0,0,0,0,0],"ks",null,false,"T",null,1,false,false,0,"kiloseconds; ksec","LOINC","Time","Clinical","",null,null,null,null,false],[false,"kilo enzyme unit","kU","KU","catalytic activity",10036894500000000000,[0,-1,0,0,0,0,0],"kU","chemical",true,null,null,1,false,false,1,"units; mmol/min; millimoles per minute","LOINC","CAct","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 kU = 1 mmol/min","umol/min","UMOL/MIN","1",1,false],[false,"kilo enzyme unit per gram","kU/g","KU/G","catalytic activity",10036894500000000000,[0,-1,-1,0,0,0,0],"kU/g","chemical",true,null,null,1,false,false,1,"units per grams; kU per gm","LOINC","CCnt","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 kU = 1 mmol/min","umol/min","UMOL/MIN","1",1,false],[false,"kilo enzyme unit per liter","kU/L","KU/L","catalytic activity",1.00368945e+22,[-3,-1,0,0,0,0,0],"kU/L","chemical",true,null,null,1,false,false,1,"units per liter; litre; enzymatic activity; enzyme activity per volume; activities","LOINC","ACnc; CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 kU = 1 mmol/min","umol/min","UMOL/MIN","1",1,false],[false,"kilo enzyme unit per milliliter","kU/mL","KU/ML","catalytic activity",1.00368945e+25,[-3,-1,0,0,0,0,0],"kU/mL","chemical",true,null,null,1,false,false,1,"kU per mL; units per milliliter; millilitre; enzymatic activity per volume; enzyme activities","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 kU = 1 mmol/min","umol/min","UMOL/MIN","1",1,false],[false,"Liters per 24 hour","L/(24.h)","L/HR","volume",1.1574074074074074e-8,[3,-1,0,0,0,0,0],"L/h","iso1000",true,null,null,1,false,false,0,"L/24hrs; L/24 hrs; L per 24hrs; liters per 24 hours; day; dy; litres; volume flow rate","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"Liters per 8 hour","L/(8.h)","L/HR","volume",3.472222222222222e-8,[3,-1,0,0,0,0,0],"L/h","iso1000",true,null,null,1,false,false,0,"L/8hrs; L/8 hrs; L per 8hrs; liters per 8 hours; litres; volume flow rate; shift","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"Liters per minute per square meter","L/(min.m2) ","L/(MIN.M2)","volume",0.000016666666666666667,[1,-1,0,0,0,0,0],"L/(min.(m<sup>2</sup>))","iso1000",true,null,null,1,false,false,0,"L/(min.m2); L/min/m^2; L/min/sq. meter; L per min per m2; m^2; liters per minutes per square meter; meter squared; litres; metre ","LOINC","ArVRat","Clinical","unit for tests that measure cardiac output per body surface area (cardiac index)","l",null,"1",1,false],[false,"Liters per day","L/d","L/D","volume",1.1574074074074074e-8,[3,-1,0,0,0,0,0],"L/d","iso1000",true,null,null,1,false,false,0,"L/dy; L per day; 24hrs; 24 hrs; 24 hours; liters; litres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"Liters per hour","L/h","L/HR","volume",2.7777777777777776e-7,[3,-1,0,0,0,0,0],"L/h","iso1000",true,null,null,1,false,false,0,"L/hr; L per hr; litres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"Liters per kilogram","L/kg","L/KG","volume",0.000001,[3,0,-1,0,0,0,0],"L/kg","iso1000",true,null,null,1,false,false,0,"L per kg; litre","LOINC","VCnt","Clinical","","l",null,"1",1,false],[false,"Liters per liter","L/L","L/L","volume",1,[0,0,0,0,0,0,0],"L/L","iso1000",true,null,null,1,false,false,0,"L per L; liter/liter; litre","LOINC","VFr","Clinical","","l",null,"1",1,false],[false,"Liters per minute","L/min","L/MIN","volume",0.000016666666666666667,[3,-1,0,0,0,0,0],"L/min","iso1000",true,null,null,1,false,false,0,"liters per minute; litre","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"Liters per minute per square meter","L/min/m2","(L/MIN)/M2","volume",0.000016666666666666667,[1,-1,0,0,0,0,0],"(L/min)/(m<sup>2</sup>)","iso1000",true,null,null,1,false,false,0,"L/(min.m2); L/min/m^2; L/min/sq. meter; L per min per m2; m^2; liters per minutes per square meter; meter squared; litres; metre ","","ArVRat","Clinical","unit for tests that measure cardiac output per body surface area (cardiac index)","l",null,"1",1,false],[false,"Liters per second","L/s","L/S","volume",0.001,[3,-1,0,0,0,0,0],"L/s","iso1000",true,null,null,1,false,false,0,"L per sec; litres","LOINC","VRat","Clinical","unit used often to measure gas flow and peak expiratory flow","l",null,"1",1,false],[false,"Liters per second per square second","L/s/s2","(L/S)/S2","volume",0.001,[3,-3,0,0,0,0,0],"(L/s)/(s<sup>2</sup>)","iso1000",true,null,null,1,false,false,0,"L/s/s^2; L/sec/sec2; L/sec/sec^2; L/sec/sq. sec; L per s per s2; L per sec per sec2; s^2; sec^2; liters per seconds per square second; second squared; litres ","LOINC","ArVRat","Clinical","unit for tests that measure cardiac output/body surface area","l",null,"1",1,false],[false,"lumen square meter","lm.m2","LM.M2","luminous flux",1,[2,0,0,2,0,0,1],"lm.(m<sup>2</sup>)","si",true,null,null,1,false,false,0,"lm*m2; lm*m^2; lumen meters squared; lumen sq. meters; metres","LOINC","","Clinical","","cd.sr","CD.SR","1",1,false],[false,"meter per second","m/s","M/S","length",1,[1,-1,0,0,0,0,0],"m/s",null,false,"L",null,1,false,false,0,"meter/second; m per sec; meters per second; metres; velocity; speed","LOINC","Vel","Clinical","unit of velocity",null,null,null,null,false],[false,"meter per square second","m/s2","M/S2","length",1,[1,-2,0,0,0,0,0],"m/(s<sup>2</sup>)",null,false,"L",null,1,false,false,0,"m/s^2; m/sq. sec; m per s2; per s^2; meters per square second; second squared; sq second; metres; acceleration","LOINC","Accel","Clinical","unit of acceleration",null,null,null,null,false],[false,"milli international unit per liter","m[IU]/L","M[IU]/L","arbitrary",1,[-3,0,0,0,0,0,0],"(mi.U.)/L","chemical",true,null,null,1,false,true,0,"mIU/L; m IU/L; mIU per liter; units; litre","LOINC","ACnc","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"milli  international unit per milliliter","m[IU]/mL","M[IU]/ML","arbitrary",1000.0000000000001,[-3,0,0,0,0,0,0],"(mi.U.)/mL","chemical",true,null,null,1,false,true,0,"mIU/mL; m IU/mL; mIU per mL; milli international units per milliliter; millilitre","LOINC","ACnc","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"square meter","m2","M2","length",1,[2,0,0,0,0,0,0],"m<sup>2</sup>",null,false,"L",null,1,false,false,0,"m^2; sq m; square meters; meters squared; metres","LOINC","Area","Clinical","unit often used to represent body surface area",null,null,null,null,false],[false,"square meter per second","m2/s","M2/S","length",1,[2,-1,0,0,0,0,0],"(m<sup>2</sup>)/s",null,false,"L",null,1,false,false,0,"m^2/sec; m2 per sec; m^2 per sec; sq m/sec; meters squared/seconds; sq m per sec; meters squared; metres","LOINC","ArRat","Clinical","",null,null,null,null,false],[false,"cubic meter per second","m3/s","M3/S","length",1,[3,-1,0,0,0,0,0],"(m<sup>3</sup>)/s",null,false,"L",null,1,false,false,0,"m^3/sec; m3 per sec; m^3 per sec; cu m/sec; cubic meters per seconds; meters cubed; metres","LOINC","VRat","Clinical","",null,null,null,null,false],[false,"milliampere","mA","MA","electric current",0.001,[0,-1,0,0,0,1,0],"mA","si",true,null,null,1,false,false,0,"mamp; milliamperes","LOINC","ElpotRat","Clinical","unit of electric current","C/s","C/S","1",1,false],[false,"millibar","mbar","MBAR","pressure",100000,[-1,-2,1,0,0,0,0],"mbar","iso1000",true,null,null,1,false,false,0,"millibars","LOINC","Pres","Clinical","unit of pressure","Pa","PAL","1e5",100000,false],[false,"millibar second per liter","mbar.s/L","(MBAR.S)/L","pressure",100000000,[-4,-1,1,0,0,0,0],"(mbar.s)/L","iso1000",true,null,null,1,false,false,0,"mbar*s/L; mbar.s per L; mbar*s per L; millibar seconds per liter; millibar second per litre","LOINC","","Clinical","unit to measure expiratory resistance","Pa","PAL","1e5",100000,false],[false,"millibar per liter per second","mbar/L/s","(MBAR/L)/S","pressure",100000000,[-4,-3,1,0,0,0,0],"(mbar/L)/s","iso1000",true,null,null,1,false,false,0,"mbar/(L.s); mbar/L/sec; mbar/liter/second; mbar per L per sec; mbar per liter per second; millibars per liters per seconds; litres","LOINC","PresCncRat","Clinical","unit to measure expiratory resistance","Pa","PAL","1e5",100000,false],[false,"milliequivalent","meq","MEQ","amount of substance",602213670000000000000,[0,0,0,0,0,0,0],"meq","chemical",true,null,null,1,false,false,1,"milliequivalents; meqs","LOINC","Sub","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per 2 hour","meq/(2.h)","MEQ/HR","amount of substance",83640787500000000,[0,-1,0,0,0,0,0],"meq/h","chemical",true,null,null,1,false,false,1,"meq/2hrs; meq/2 hrs; meq per 2 hrs; milliequivalents per 2 hours","LOINC","SRat","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per 24 hour","meq/(24.h)","MEQ/HR","amount of substance",6970065625000000,[0,-1,0,0,0,0,0],"meq/h","chemical",true,null,null,1,false,false,1,"meq/24hrs; meq/24 hrs; meq per 24 hrs; milliequivalents per 24 hours","LOINC","SRat","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per 8 hour","meq/(8.h)","MEQ/HR","amount of substance",20910196875000000,[0,-1,0,0,0,0,0],"meq/h","chemical",true,null,null,1,false,false,1,"meq/8hrs; meq/8 hrs; meq per 8 hrs; milliequivalents per 8 hours; shift","LOINC","SRat","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per day","meq/d","MEQ/D","amount of substance",6970065625000000,[0,-1,0,0,0,0,0],"meq/d","chemical",true,null,null,1,false,false,1,"meq/dy; meq per day; milliquivalents per days; meq/24hrs; meq/24 hrs; meq per 24 hrs; milliequivalents per 24 hours","LOINC","SRat","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per deciliter","meq/dL","MEQ/DL","amount of substance",6.022136699999999e+24,[-3,0,0,0,0,0,0],"meq/dL","chemical",true,null,null,1,false,false,1,"meq per dL; milliequivalents per deciliter; decilitre","LOINC","SCnc","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per gram","meq/g","MEQ/G","amount of substance",602213670000000000000,[0,0,-1,0,0,0,0],"meq/g","chemical",true,null,null,1,false,false,1,"mgq/gm; meq per gm; milliequivalents per gram","LOINC","MCnt","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per hour","meq/h","MEQ/HR","amount of substance",167281575000000000,[0,-1,0,0,0,0,0],"meq/h","chemical",true,null,null,1,false,false,1,"meq/hrs; meq per hrs; milliequivalents per hour","LOINC","SRat","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per kilogram","meq/kg","MEQ/KG","amount of substance",602213670000000000,[0,0,-1,0,0,0,0],"meq/kg","chemical",true,null,null,1,false,false,1,"meq per kg; milliequivalents per kilogram","LOINC","SCnt","Clinical","equivalence equals moles per valence; used to measure dose per patient body mass","mol","MOL","1",1,false],[false,"milliequivalent per kilogram per hour","meq/kg/h","(MEQ/KG)/HR","amount of substance",167281575000000,[0,-1,-1,0,0,0,0],"(meq/kg)/h","chemical",true,null,null,1,false,false,1,"meq/(kg.h); meq/kg/hr; meq per kg per hr; milliequivalents per kilograms per hour","LOINC","SCntRat","Clinical","equivalence equals moles per valence; unit used to measure dose rate per patient body mass","mol","MOL","1",1,false],[false,"milliequivalent per liter","meq/L","MEQ/L","amount of substance",6.0221367e+23,[-3,0,0,0,0,0,0],"meq/L","chemical",true,null,null,1,false,false,1,"milliequivalents per liter; litre; meq per l; acidity","LOINC","SCnc","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per square meter","meq/m2","MEQ/M2","amount of substance",602213670000000000000,[-2,0,0,0,0,0,0],"meq/(m<sup>2</sup>)","chemical",true,null,null,1,false,false,1,"meq/m^2; meq/sq. m; milliequivalents per square meter; meter squared; metre","LOINC","ArSub","Clinical","equivalence equals moles per valence; note that the use of m2 in clinical units ofter refers to body surface area","mol","MOL","1",1,false],[false,"milliequivalent per minute","meq/min","MEQ/MIN","amount of substance",10036894500000000000,[0,-1,0,0,0,0,0],"meq/min","chemical",true,null,null,1,false,false,1,"meq per min; milliequivalents per minute","LOINC","SRat","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milliequivalent per milliliter","meq/mL","MEQ/ML","amount of substance",6.0221367e+26,[-3,0,0,0,0,0,0],"meq/mL","chemical",true,null,null,1,false,false,1,"meq per mL; milliequivalents per milliliter; millilitre","LOINC","SCnc","Clinical","equivalence equals moles per valence","mol","MOL","1",1,false],[false,"milligram","mg","MG","mass",0.001,[0,0,1,0,0,0,0],"mg",null,false,"M",null,1,false,false,0,"milligrams","LOINC","Mass","Clinical","",null,null,null,null,false],[false,"milligram per 10 hour","mg/(10.h)","MG/HR","mass",2.7777777777777777e-8,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/10hrs; mg/10 hrs; mg per 10 hrs; milligrams per 10 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per 12 hour","mg/(12.h)","MG/HR","mass",2.3148148148148148e-8,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/12hrs; mg/12 hrs; per 12 hrs; 12hrs; milligrams per 12 hours","LOINC","MRat","Clinical","units used for tests in urine",null,null,null,null,false],[false,"milligram per 2 hour","mg/(2.h)","MG/HR","mass",1.3888888888888888e-7,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/2hrs; mg/2 hrs; mg per 2 hrs; 2hrs; milligrams per 2 hours","LOINC","MRat","Clinical","units used for tests in urine",null,null,null,null,false],[false,"milligram per 24 hour","mg/(24.h)","MG/HR","mass",1.1574074074074074e-8,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/24hrs; mg/24 hrs; milligrams per 24 hours; mg/kg/dy; mg per kg per day; milligrams per kilograms per days","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per 6 hour","mg/(6.h)","MG/HR","mass",4.6296296296296295e-8,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/6hrs; mg/6 hrs; mg per 6 hrs; 6hrs; milligrams per 6 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per 72 hour","mg/(72.h)","MG/HR","mass",3.858024691358025e-9,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/72hrs; mg/72 hrs; 72 hrs; 72hrs; milligrams per 72 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per 8 hour","mg/(8.h)","MG/HR","mass",3.472222222222222e-8,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/8hrs; mg/8 hrs; milligrams per 8 hours; shift","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per day","mg/d","MG/D","mass",1.1574074074074074e-8,[0,-1,1,0,0,0,0],"mg/d",null,false,"M",null,1,false,false,0,"mg/24hrs; mg/24 hrs; milligrams per 24 hours; mg/dy; mg per day; milligrams","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per deciliter","mg/dL","MG/DL","mass",10,[-3,0,1,0,0,0,0],"mg/dL",null,false,"M",null,1,false,false,0,"mg per dL; milligrams per deciliter; decilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"milligram per gram","mg/g","MG/G","mass",0.001,[0,0,0,0,0,0,0],"mg/g",null,false,"M",null,1,false,false,0,"mg per gm; milligrams per gram","LOINC","MCnt; MRto","Clinical","",null,null,null,null,false],[false,"milligram per hour","mg/h","MG/HR","mass",2.7777777777777776e-7,[0,-1,1,0,0,0,0],"mg/h",null,false,"M",null,1,false,false,0,"mg/hr; mg per hr; milligrams","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per kilogram","mg/kg","MG/KG","mass",0.000001,[0,0,0,0,0,0,0],"mg/kg",null,false,"M",null,1,false,false,0,"mg per kg; milligrams per kilograms","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"milligram per kilogram per 8 hour","mg/kg/(8.h)","(MG/KG)/HR","mass",3.472222222222222e-11,[0,-1,0,0,0,0,0],"(mg/kg)/h",null,false,"M",null,1,false,false,0,"mg/(8.h.kg); mg/kg/8hrs; mg/kg/8 hrs; mg per kg per 8hrs; 8 hrs; milligrams per kilograms per 8 hours; shift","LOINC","RelMRat; MCntRat","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"milligram per kilogram per day","mg/kg/d","(MG/KG)/D","mass",1.1574074074074074e-11,[0,-1,0,0,0,0,0],"(mg/kg)/d",null,false,"M",null,1,false,false,0,"mg/(kg.d); mg/(kg.24.h)mg/kg/dy; mg per kg per day; milligrams per kilograms per days; mg/kg/(24.h); mg/kg/24hrs; 24 hrs; 24 hours","LOINC","RelMRat ","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"milligram per kilogram per hour","mg/kg/h","(MG/KG)/HR","mass",2.7777777777777777e-10,[0,-1,0,0,0,0,0],"(mg/kg)/h",null,false,"M",null,1,false,false,0,"mg/(kg.h); mg/kg/hr; mg per kg per hr; milligrams per kilograms per hour","LOINC","RelMRat; MCntRat","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"milligram per kilogram per minute","mg/kg/min","(MG/KG)/MIN","mass",1.6666666666666667e-8,[0,-1,0,0,0,0,0],"(mg/kg)/min",null,false,"M",null,1,false,false,0,"mg/(kg.min); mg per kg per min; milligrams per kilograms per minute","LOINC","RelMRat; MCntRat","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"milligram per liter","mg/L","MG/L","mass",1,[-3,0,1,0,0,0,0],"mg/L",null,false,"M",null,1,false,false,0,"mg per l; milligrams per liter; litre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"milligram per square meter","mg/m2","MG/M2","mass",0.001,[-2,0,1,0,0,0,0],"mg/(m<sup>2</sup>)",null,false,"M",null,1,false,false,0,"mg/m^2; mg/sq. m; mg per m2; mg per m^2; mg per sq. milligrams; meter squared; metre","LOINC","ArMass","Clinical","",null,null,null,null,false],[false,"milligram per cubic meter","mg/m3","MG/M3","mass",0.001,[-3,0,1,0,0,0,0],"mg/(m<sup>3</sup>)",null,false,"M",null,1,false,false,0,"mg/m^3; mg/cu. m; mg per m3; milligrams per cubic meter; meter cubed; metre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"milligram per milligram","mg/mg","MG/MG","mass",1,[0,0,0,0,0,0,0],"mg/mg",null,false,"M",null,1,false,false,0,"mg per mg; milligrams; milligram/milligram","LOINC","MRto","Clinical","",null,null,null,null,false],[false,"milligram per minute","mg/min","MG/MIN","mass",0.000016666666666666667,[0,-1,1,0,0,0,0],"mg/min",null,false,"M",null,1,false,false,0,"mg per min; milligrams per minutes; milligram/minute","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"milligram per milliliter","mg/mL","MG/ML","mass",1000.0000000000001,[-3,0,1,0,0,0,0],"mg/mL",null,false,"M",null,1,false,false,0,"mg per mL; milligrams per milliliters; millilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"milligram per millimole","mg/mmol","MG/MMOL","mass",1.660540186674939e-24,[0,0,1,0,0,0,0],"mg/mmol",null,false,"M",null,1,false,false,-1,"mg per mmol; milligrams per millimole; ","LOINC","Ratio","Clinical","",null,null,null,null,false],[false,"milligram per week","mg/wk","MG/WK","mass",1.6534391534391535e-9,[0,-1,1,0,0,0,0],"mg/wk",null,false,"M",null,1,false,false,0,"mg/week; mg per wk; milligrams per weeks; milligram/week","LOINC","Mrat","Clinical","",null,null,null,null,false],[false,"milliliter","mL","ML","volume",0.000001,[3,0,0,0,0,0,0],"mL","iso1000",true,null,null,1,false,false,0,"milliliters; millilitres","LOINC","Vol","Clinical","","l",null,"1",1,false],[false,"milliliter per 10 hour","mL/(10.h)","ML/HR","volume",2.7777777777777777e-11,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/10hrs; ml/10 hrs; mL per 10hrs; 10 hrs; milliliters per 10 hours; millilitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 12 hour","mL/(12.h)","ML/HR","volume",2.3148148148148147e-11,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/12hrs; ml/12 hrs; mL per 12hrs; 12 hrs; milliliters per 12 hours; millilitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 2 hour","mL/(2.h)","ML/HR","volume",1.3888888888888888e-10,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/2hrs; ml/2 hrs; mL per 2hrs; 2 hrs; milliliters per 2 hours; millilitres ","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 24 hour","mL/(24.h)","ML/HR","volume",1.1574074074074074e-11,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/24hrs; ml/24 hrs; mL per 24hrs; 24 hrs; milliliters per 24 hours; millilitres; ml/dy; /day; ml per dy; days; fluid outputs; fluid inputs; flow rate","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 4 hour","mL/(4.h)","ML/HR","volume",6.944444444444444e-11,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/4hrs; ml/4 hrs; mL per 4hrs; 4 hrs; milliliters per 4 hours; millilitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 5 hour","mL/(5.h)","ML/HR","volume",5.5555555555555553e-11,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/5hrs; ml/5 hrs; mL per 5hrs; 5 hrs; milliliters per 5 hours; millilitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 6 hour","mL/(6.h)","ML/HR","volume",4.6296296296296294e-11,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/6hrs; ml/6 hrs; mL per 6hrs; 6 hrs; milliliters per 6 hours; millilitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 72 hour","mL/(72.h)","ML/HR","volume",3.8580246913580245e-12,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/72hrs; ml/72 hrs; mL per 72hrs; 72 hrs; milliliters per 72 hours; millilitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 8 hour","mL/(8.h)","ML/HR","volume",3.472222222222222e-11,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"ml/8hrs; ml/8 hrs; mL per 8hrs; 8 hrs; milliliters per 8 hours; millilitres; shift","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per 8 hour per kilogram","mL/(8.h)/kg","(ML/HR)/KG","volume",3.472222222222222e-14,[3,-1,-1,0,0,0,0],"(mL/h)/kg","iso1000",true,null,null,1,false,false,0,"mL/kg/(8.h); ml/8h/kg; ml/8 h/kg; ml/8hr/kg; ml/8 hr/kgr; mL per 8h per kg; 8 h; 8hr; 8 hr; milliliters per 8 hours per kilogram; millilitres; shift","LOINC","VRatCnt","Clinical","unit used to measure renal excretion volume rate per body mass","l",null,"1",1,false],[false,"milliliter per square inch (international)","mL/[sin_i]","ML/[SIN_I]","volume",0.0015500031000061998,[1,0,0,0,0,0,0],"mL","iso1000",true,null,null,1,false,false,0,"mL/sin; mL/in2; mL/in^2; mL per sin; in2; in^2; sq. in; milliliters per square inch; inch squared","LOINC","ArVol","Clinical","","l",null,"1",1,false],[false,"milliliter per centimeter of water","mL/cm[H2O]","ML/CM[H2O]","volume",1.0197162129779282e-11,[4,2,-1,0,0,0,0],"mL/(cm HO<sub><r>2</r></sub>)","iso1000",true,null,null,1,false,false,0,"milliliters per centimeter of water; millilitre per centimetre of water; millilitres per centimetre of water; mL/cmH2O; mL/cm H2O; mL per cmH2O; mL per cm H2O","LOINC","Compli","Clinical","unit used to measure dynamic lung compliance","l",null,"1",1,false],[false,"milliliter per day","mL/d","ML/D","volume",1.1574074074074074e-11,[3,-1,0,0,0,0,0],"mL/d","iso1000",true,null,null,1,false,false,0,"ml/day; ml per day; milliliters per day; 24 hours; 24hrs; millilitre;","LOINC","VRat","Clinical","usually used to measure fluid output or input; flow rate","l",null,"1",1,false],[false,"milliliter per deciliter","mL/dL","ML/DL","volume",0.009999999999999998,[0,0,0,0,0,0,0],"mL/dL","iso1000",true,null,null,1,false,false,0,"mL per dL; millilitres; decilitre; milliliters","LOINC","VFr; VFrDiff","Clinical","","l",null,"1",1,false],[false,"milliliter per hour","mL/h","ML/HR","volume",2.7777777777777777e-10,[3,-1,0,0,0,0,0],"mL/h","iso1000",true,null,null,1,false,false,0,"mL/hr; mL per hr; milliliters per hour; millilitres; fluid intake; fluid output","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per kilogram","mL/kg","ML/KG","volume",9.999999999999999e-10,[3,0,-1,0,0,0,0],"mL/kg","iso1000",true,null,null,1,false,false,0,"mL per kg; milliliters per kilogram; millilitres","LOINC","VCnt","Clinical","","l",null,"1",1,false],[false,"milliliter per kilogram per 8 hour","mL/kg/(8.h)","(ML/KG)/HR","volume",3.472222222222222e-14,[3,-1,-1,0,0,0,0],"(mL/kg)/h","iso1000",true,null,null,1,false,false,0,"mL/(8.h.kg); mL/kg/8hrs; mL/kg/8 hrs; mL per kg per 8hrs; 8 hrs; milliliters per kilograms per 8 hours; millilitres; shift","LOINC","VCntRat; RelEngRat","Clinical","unit used to measure renal excretion volume rate per body mass","l",null,"1",1,false],[false,"milliliter per kilogram per day","mL/kg/d","(ML/KG)/D","volume",1.1574074074074072e-14,[3,-1,-1,0,0,0,0],"(mL/kg)/d","iso1000",true,null,null,1,false,false,0,"mL/(kg.d); mL/kg/dy; mL per kg per day; milliliters per kilograms per day; mg/kg/24hrs; 24 hrs; per 24 hours millilitres","LOINC","VCntRat; RelEngRat","Clinical","unit used to measure renal excretion volume rate per body mass","l",null,"1",1,false],[false,"milliliter per kilogram per hour","mL/kg/h","(ML/KG)/HR","volume",2.7777777777777774e-13,[3,-1,-1,0,0,0,0],"(mL/kg)/h","iso1000",true,null,null,1,false,false,0,"mL/(kg.h); mL/kg/hr; mL per kg per hr; milliliters per kilograms per hour; millilitres","LOINC","VCntRat; RelEngRat","Clinical","unit used to measure renal excretion volume rate per body mass","l",null,"1",1,false],[false,"milliliter per kilogram per minute","mL/kg/min","(ML/KG)/MIN","volume",1.6666666666666664e-11,[3,-1,-1,0,0,0,0],"(mL/kg)/min","iso1000",true,null,null,1,false,false,0,"mL/(kg.min); mL/kg/dy; mL per kg per day; milliliters per kilograms per day; millilitres","LOINC","RelEngRat","Clinical","used for tests that measure activity metabolic rate compared to standard resting metabolic rate ","l",null,"1",1,false],[false,"milliliter per square meter","mL/m2","ML/M2","volume",0.000001,[1,0,0,0,0,0,0],"mL/(m<sup>2</sup>)","iso1000",true,null,null,1,false,false,0,"mL/m^2; mL/sq. meter; mL per m2; m^2; sq. meter; milliliters per square meter; millilitres; meter squared","LOINC","ArVol","Clinical","used for tests that relate to heart work - e.g. ventricular stroke volume; atrial volume per body surface area","l",null,"1",1,false],[false,"milliliter per millibar","mL/mbar","ML/MBAR","volume",1e-11,[4,2,-1,0,0,0,0],"mL/mbar","iso1000",true,null,null,1,false,false,0,"mL per mbar; milliliters per millibar; millilitres","LOINC","","Clinical","unit used to measure dynamic lung compliance","l",null,"1",1,false],[false,"milliliter per minute","mL/min","ML/MIN","volume",1.6666666666666667e-8,[3,-1,0,0,0,0,0],"mL/min","iso1000",true,null,null,1,false,false,0,"mL per min; milliliters; millilitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"milliliter per minute per square meter","mL/min/m2","(ML/MIN)/M2","volume",1.6666666666666667e-8,[1,-1,0,0,0,0,0],"(mL/min)/(m<sup>2</sup>)","iso1000",true,null,null,1,false,false,0,"ml/min/m^2; ml/min/sq. meter; mL per min per m2; m^2; sq. meter; milliliters per minutes per square meter; millilitres; metre; meter squared","LOINC","ArVRat","Clinical","unit used to measure volume per body surface area; oxygen consumption index","l",null,"1",1,false],[false,"milliliter per millimeter","mL/mm","ML/MM","volume",0.001,[2,0,0,0,0,0,0],"mL/mm","iso1000",true,null,null,1,false,false,0,"mL per mm; milliliters per millimeter; millilitres; millimetre","LOINC","Lineic Volume","Clinical","","l",null,"1",1,false],[false,"milliliter per second","mL/s","ML/S","volume",0.000001,[3,-1,0,0,0,0,0],"mL/s","iso1000",true,null,null,1,false,false,0,"ml/sec; mL per sec; milliliters per second; millilitres","LOINC","Vel; VelRat; VRat","Clinical","","l",null,"1",1,false],[false,"millimeter","mm","MM","length",0.001,[1,0,0,0,0,0,0],"mm",null,false,"L",null,1,false,false,0,"millimeters; millimetres; height; length; diameter; thickness; axis; curvature; size","LOINC","Len","Clinical","",null,null,null,null,false],[false,"millimeter per hour","mm/h","MM/HR","length",2.7777777777777776e-7,[1,-1,0,0,0,0,0],"mm/h",null,false,"L",null,1,false,false,0,"mm/hr; mm per hr; millimeters per hour; millimetres","LOINC","Vel","Clinical","unit to measure sedimentation rate",null,null,null,null,false],[false,"millimeter per minute","mm/min","MM/MIN","length",0.000016666666666666667,[1,-1,0,0,0,0,0],"mm/min",null,false,"L",null,1,false,false,0,"mm per min; millimeters per minute; millimetres","LOINC","Vel","Clinical","",null,null,null,null,false],[false,"millimeter of water","mm[H2O]","MM[H2O]","pressure",9806.65,[-1,-2,1,0,0,0,0],"mm HO<sub><r>2</r></sub>","clinical",true,null,null,1,false,false,0,"mmH2O; mm H2O; millimeters of water; millimetres","LOINC","Pres","Clinical","","kPa","KPAL","980665e-5",9.80665,false],[false,"millimeter of mercury","mm[Hg]","MM[HG]","pressure",133322,[-1,-2,1,0,0,0,0],"mm Hg","clinical",true,null,null,1,false,false,0,"mmHg; mm Hg; millimeters of mercury; millimetres","LOINC","Pres; PPres; Ratio","Clinical","1 mm[Hg] = 1 torr; unit to measure blood pressure","kPa","KPAL","133.3220",133.322,false],[false,"square millimeter","mm2","MM2","length",0.000001,[2,0,0,0,0,0,0],"mm<sup>2</sup>",null,false,"L",null,1,false,false,0,"mm^2; sq. mm.; sq. millimeters; millimeters squared; millimetres","LOINC","Area","Clinical","",null,null,null,null,false],[false,"millimole","mmol","MMOL","amount of substance",602213670000000000000,[0,0,0,0,0,0,0],"mmol","si",true,null,null,1,false,false,1,"millimoles","LOINC","Sub","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per 12 hour","mmol/(12.h)","MMOL/HR","amount of substance",13940131250000000,[0,-1,0,0,0,0,0],"mmol/h","si",true,null,null,1,false,false,1,"mmol/12hrs; mmol/12 hrs; mmol per 12 hrs; 12hrs; millimoles per 12 hours","LOINC","SRat","Clinical","unit for tests related to urine","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per 2 hour","mmol/(2.h)","MMOL/HR","amount of substance",83640787500000000,[0,-1,0,0,0,0,0],"mmol/h","si",true,null,null,1,false,false,1,"mmol/2hrs; mmol/2 hrs; mmol per 2 hrs; 2hrs; millimoles per 2 hours","LOINC","SRat","Clinical","unit for tests related to urine","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per 24 hour","mmol/(24.h)","MMOL/HR","amount of substance",6970065625000000,[0,-1,0,0,0,0,0],"mmol/h","si",true,null,null,1,false,false,1,"mmol/24hrs; mmol/24 hrs; mmol per 24 hrs; 24hrs; millimoles per 24 hours","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per 5 hour","mmol/(5.h)","MMOL/HR","amount of substance",33456315000000000,[0,-1,0,0,0,0,0],"mmol/h","si",true,null,null,1,false,false,1,"mmol/5hrs; mmol/5 hrs; mmol per 5 hrs; 5hrs; millimoles per 5 hours","LOINC","SRat","Clinical","unit for tests related to doses","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per 6 hour","mmol/(6.h)","MMOL/HR","amount of substance",27880262500000000,[0,-1,0,0,0,0,0],"mmol/h","si",true,null,null,1,false,false,1,"mmol/6hrs; mmol/6 hrs; mmol per 6 hrs; 6hrs; millimoles per 6 hours","LOINC","SRat","Clinical","unit for tests related to urine","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per 8 hour","mmol/(8.h)","MMOL/HR","amount of substance",20910196875000000,[0,-1,0,0,0,0,0],"mmol/h","si",true,null,null,1,false,false,1,"mmol/8hrs; mmol/8 hrs; mmol per 8 hrs; 8hrs; millimoles per 8 hours; shift","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per day","mmol/d","MMOL/D","amount of substance",6970065625000000,[0,-1,0,0,0,0,0],"mmol/d","si",true,null,null,1,false,false,1,"mmol/24hrs; mmol/24 hrs; mmol per 24 hrs; 24hrs; millimoles per 24 hours","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per deciliter","mmol/dL","MMOL/DL","amount of substance",6.022136699999999e+24,[-3,0,0,0,0,0,0],"mmol/dL","si",true,null,null,1,false,false,1,"mmol per dL; millimoles; decilitre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per gram","mmol/g","MMOL/G","amount of substance",602213670000000000000,[0,0,-1,0,0,0,0],"mmol/g","si",true,null,null,1,false,false,1,"mmol per gram; millimoles","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per hour","mmol/h","MMOL/HR","amount of substance",167281575000000000,[0,-1,0,0,0,0,0],"mmol/h","si",true,null,null,1,false,false,1,"mmol/hr; mmol per hr; millimoles per hour","LOINC","SRat","Clinical","unit for tests related to urine","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per kilogram","mmol/kg","MMOL/KG","amount of substance",602213670000000000,[0,0,-1,0,0,0,0],"mmol/kg","si",true,null,null,1,false,false,1,"mmol per kg; millimoles per kilogram","LOINC","SCnt","Clinical","unit for tests related to stool","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per kilogram per 8 hour","mmol/kg/(8.h)","(MMOL/KG)/HR","amount of substance",20910196875000,[0,-1,-1,0,0,0,0],"(mmol/kg)/h","si",true,null,null,1,false,false,1,"mmol/(8.h.kg); mmol/kg/8hrs; mmol/kg/8 hrs; mmol per kg per 8hrs; 8 hrs; millimoles per kilograms per 8 hours; shift","LOINC","CCnt","Clinical","unit used to measure molar dose rate per patient body mass","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per kilogram per day","mmol/kg/d","(MMOL/KG)/D","amount of substance",6970065625000,[0,-1,-1,0,0,0,0],"(mmol/kg)/d","si",true,null,null,1,false,false,1,"mmol/kg/dy; mmol/kg/day; mmol per kg per dy; millimoles per kilograms per day","LOINC","RelSRat","Clinical","unit used to measure molar dose rate per patient body mass","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per kilogram per hour","mmol/kg/h","(MMOL/KG)/HR","amount of substance",167281575000000,[0,-1,-1,0,0,0,0],"(mmol/kg)/h","si",true,null,null,1,false,false,1,"mmol/kg/hr; mmol per kg per hr; millimoles per kilograms per hour","LOINC","CCnt","Clinical","unit used to measure molar dose rate per patient body mass","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per kilogram per minute","mmol/kg/min","(MMOL/KG)/MIN","amount of substance",10036894500000000,[0,-1,-1,0,0,0,0],"(mmol/kg)/min","si",true,null,null,1,false,false,1,"mmol/(kg.min); mmol/kg/min; mmol per kg per min; millimoles per kilograms per minute","LOINC","CCnt","Clinical","unit used to measure molar dose rate per patient body mass; note that the unit for the enzyme unit U = umol/min. mmol/kg/min = kU/kg; ","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per liter","mmol/L","MMOL/L","amount of substance",6.0221367e+23,[-3,0,0,0,0,0,0],"mmol/L","si",true,null,null,1,false,false,1,"mmol per L; millimoles per liter; litre","LOINC","SCnc","Clinical","unit for tests related to doses","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per square meter","mmol/m2","MMOL/M2","amount of substance",602213670000000000000,[-2,0,0,0,0,0,0],"mmol/(m<sup>2</sup>)","si",true,null,null,1,false,false,1,"mmol/m^2; mmol/sq. meter; mmol per m2; m^2; sq. meter; millimoles; meter squared; metre","LOINC","ArSub","Clinical","unit used to measure molar dose per patient body surface area","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per minute","mmol/min","MMOL/MIN","amount of substance",10036894500000000000,[0,-1,0,0,0,0,0],"mmol/min","si",true,null,null,1,false,false,1,"mmol per min; millimoles per minute","LOINC","Srat; CAct","Clinical","unit for the enzyme unit U = umol/min. mmol/min = kU","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per millimole","mmol/mmol","MMOL/MMOL","amount of substance",1,[0,0,0,0,0,0,0],"mmol/mmol","si",true,null,null,1,false,false,0,"mmol per mmol; millimoles per millimole","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per mole","mmol/mol","MMOL/MOL","amount of substance",0.001,[0,0,0,0,0,0,0],"mmol/mol","si",true,null,null,1,false,false,0,"mmol per mol; millimoles per mole","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"millimole per second per liter","mmol/s/L","(MMOL/S)/L","amount of substance",6.0221367e+23,[-3,-1,0,0,0,0,0],"(mmol/s)/L","si",true,null,null,1,false,false,1,"mmol/sec/L; mmol per s per L; per sec; millimoles per seconds per liter; litre","LOINC","CCnc ","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"mole per kilogram","mol/kg","MOL/KG","amount of substance",602213670000000000000,[0,0,-1,0,0,0,0],"mol/kg","si",true,null,null,1,false,false,1,"mol per kg; moles; mols","LOINC","SCnt","Clinical","unit for tests related to stool","10*23","10*23","6.0221367",6.0221367,false],[false,"mole per kilogram per second","mol/kg/s","(MOL/KG)/S","amount of substance",602213670000000000000,[0,-1,-1,0,0,0,0],"(mol/kg)/s","si",true,null,null,1,false,false,1,"mol/kg/sec; mol per kg per sec; moles per kilograms per second; mols","LOINC","CCnt","Clinical","unit of catalytic activity (mol/s) per mass (kg)","10*23","10*23","6.0221367",6.0221367,false],[false,"mole per liter","mol/L","MOL/L","amount of substance",6.0221366999999994e+26,[-3,0,0,0,0,0,0],"mol/L","si",true,null,null,1,false,false,1,"mol per L; moles per liter; litre; moles; mols","LOINC","SCnc","Clinical","unit often used in tests measuring oxygen content","10*23","10*23","6.0221367",6.0221367,false],[false,"mole per cubic meter","mol/m3","MOL/M3","amount of substance",6.0221367e+23,[-3,0,0,0,0,0,0],"mol/(m<sup>3</sup>)","si",true,null,null,1,false,false,1,"mol/m^3; mol/cu. m; mol per m3; m^3; cu. meter; mols; moles; meters cubed; metre; mole per kiloliter; kilolitre; mol/kL","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"mole per milliliter","mol/mL","MOL/ML","amount of substance",6.0221367e+29,[-3,0,0,0,0,0,0],"mol/mL","si",true,null,null,1,false,false,1,"mol per mL; moles; millilitre; mols","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"mole per mole","mol/mol","MOL/MOL","amount of substance",1,[0,0,0,0,0,0,0],"mol/mol","si",true,null,null,1,false,false,0,"mol per mol; moles per mol; mols","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"mole per second","mol/s","MOL/S","amount of substance",6.0221367e+23,[0,-1,0,0,0,0,0],"mol/s","si",true,null,null,1,false,false,1,"mol per sec; moles per second; mols","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"milliosmole","mosm","MOSM","amount of substance (dissolved particles)",602213670000000000000,[0,0,0,0,0,0,0],"mosm","chemical",true,null,null,1,false,false,1,"milliosmoles","LOINC","Osmol","Clinical","equal to 1/1000 of an osmole","mol","MOL","1",1,false],[false,"milliosmole per kilogram","mosm/kg","MOSM/KG","amount of substance (dissolved particles)",602213670000000000,[0,0,-1,0,0,0,0],"mosm/kg","chemical",true,null,null,1,false,false,1,"mosm per kg; milliosmoles per kilogram","LOINC","Osmol","Clinical","","mol","MOL","1",1,false],[false,"milliosmole per liter","mosm/L","MOSM/L","amount of substance (dissolved particles)",6.0221367e+23,[-3,0,0,0,0,0,0],"mosm/L","chemical",true,null,null,1,false,false,1,"mosm per liter; litre; milliosmoles","LOINC","Osmol","Clinical","","mol","MOL","1",1,false],[false,"millipascal","mPa","MPAL","pressure",1,[-1,-2,1,0,0,0,0],"mPa","si",true,null,null,1,false,false,0,"millipascals","LOINC","Pres","Clinical","unit of pressure","N/m2","N/M2","1",1,false],[false,"millipascal second","mPa.s","MPAL.S","pressure",1,[-1,-1,1,0,0,0,0],"mPa.s","si",true,null,null,1,false,false,0,"mPa*s; millipoise; mP; dynamic viscosity","LOINC","Visc","Clinical","base units for millipoise, a measurement of dynamic viscosity","N/m2","N/M2","1",1,false],[false,"megasecond","Ms","MAS","time",1000000,[0,1,0,0,0,0,0],"Ms",null,false,"T",null,1,false,false,0,"megaseconds","LOINC","Time","Clinical","",null,null,null,null,false],[false,"millisecond","ms","MS","time",0.001,[0,1,0,0,0,0,0],"ms",null,false,"T",null,1,false,false,0,"milliseconds; duration","LOINC","Time","Clinical","",null,null,null,null,false],[false,"milli enzyme unit per gram","mU/g","MU/G","catalytic activity",10036894500000,[0,-1,-1,0,0,0,0],"mU/g","chemical",true,null,null,1,false,false,1,"mU per gm; milli enzyme units per gram; enzyme activity; enzymatic activity per mass","LOINC","CCnt","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 mU = 1 nmol/min","umol/min","UMOL/MIN","1",1,false],[false,"milli enzyme unit per liter","mU/L","MU/L","catalytic activity",10036894500000000,[-3,-1,0,0,0,0,0],"mU/L","chemical",true,null,null,1,false,false,1,"mU per liter; litre; milli enzyme units enzymatic activity per volume; enzyme activity","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 mU = 1 nmol/min","umol/min","UMOL/MIN","1",1,false],[false,"milli enzyme unit per milligram","mU/mg","MU/MG","catalytic activity",10036894500000000,[0,-1,-1,0,0,0,0],"mU/mg","chemical",true,null,null,1,false,false,1,"mU per mg; milli enzyme units per milligram","LOINC","CCnt","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 mU = 1 nmol/min","umol/min","UMOL/MIN","1",1,false],[false,"milli enzyme unit per milliliter","mU/mL","MU/ML","catalytic activity",10036894500000000000,[-3,-1,0,0,0,0,0],"mU/mL","chemical",true,null,null,1,false,false,1,"mU per mL; milli enzyme units per milliliter; millilitre; enzymatic activity per volume; enzyme activity","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 mU = 1 nmol/min","umol/min","UMOL/MIN","1",1,false],[false,"milli enzyme unit per milliliter per minute","mU/mL/min","(MU/ML)/MIN","catalytic activity",167281575000000000,[-3,-2,0,0,0,0,0],"(mU/mL)/min","chemical",true,null,null,1,false,false,1,"mU per mL per min; mU per milliliters per minute; millilitres; milli enzyme units; enzymatic activity; enzyme activity","LOINC","CCncRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 mU = 1 nmol/min","umol/min","UMOL/MIN","1",1,false],[false,"millivolt","mV","MV","electric potential",1,[2,-2,1,0,0,-1,0],"mV","si",true,null,null,1,false,false,0,"millivolts","LOINC","Elpot","Clinical","unit of electric potential (voltage)","J/C","J/C","1",1,false],[false,"Newton centimeter","N.cm","N.CM","force",10,[2,-2,1,0,0,0,0],"N.cm","si",true,null,null,1,false,false,0,"N*cm; Ncm; N cm; Newton*centimeters; Newton* centimetres; torque; work","LOINC","","Clinical","as a measurement of work, N.cm = 1/100 Joules;\nnote that N.m is the standard unit of measurement for torque (although dimensionally equivalent to Joule), and N.cm can also be thought of as a torqe unit","kg.m/s2","KG.M/S2","1",1,false],[false,"Newton second","N.s","N.S","force",1000,[1,-1,1,0,0,0,0],"N.s","si",true,null,null,1,false,false,0,"Newton*seconds; N*s; N s; Ns; impulse; imp","LOINC","","Clinical","standard unit of impulse","kg.m/s2","KG.M/S2","1",1,false],[false,"nanogram","ng","NG","mass",1e-9,[0,0,1,0,0,0,0],"ng",null,false,"M",null,1,false,false,0,"nanograms","LOINC","Mass","Clinical","",null,null,null,null,false],[false,"nanogram per 24 hour","ng/(24.h)","NG/HR","mass",1.1574074074074075e-14,[0,-1,1,0,0,0,0],"ng/h",null,false,"M",null,1,false,false,0,"ng/24hrs; ng/24 hrs; nanograms per 24 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"nanogram per 8 hour","ng/(8.h)","NG/HR","mass",3.4722222222222224e-14,[0,-1,1,0,0,0,0],"ng/h",null,false,"M",null,1,false,false,0,"ng/8hrs; ng/8 hrs; nanograms per 8 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"nanogram per million","ng/10*6","NG/(10*6)","mass",1e-15,[0,0,1,0,0,0,0],"ng/(10<sup>6</sup>)",null,false,"M",null,1,false,false,0,"ng/10^6; ng per 10*6; 10^6; nanograms","LOINC","MNum","Clinical","",null,null,null,null,false],[false,"nanogram per day","ng/d","NG/D","mass",1.1574074074074075e-14,[0,-1,1,0,0,0,0],"ng/d",null,false,"M",null,1,false,false,0,"ng/dy; ng per day; nanograms ","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"nanogram per deciliter","ng/dL","NG/DL","mass",0.00001,[-3,0,1,0,0,0,0],"ng/dL",null,false,"M",null,1,false,false,0,"ng per dL; nanograms per deciliter; decilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"nanogram per gram","ng/g","NG/G","mass",1e-9,[0,0,0,0,0,0,0],"ng/g",null,false,"M",null,1,false,false,0,"ng/gm; ng per gm; nanograms per gram","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"nanogram per hour","ng/h","NG/HR","mass",2.777777777777778e-13,[0,-1,1,0,0,0,0],"ng/h",null,false,"M",null,1,false,false,0,"ng/hr; ng per hr; nanograms per hour","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"nanogram per kilogram","ng/kg","NG/KG","mass",1e-12,[0,0,0,0,0,0,0],"ng/kg",null,false,"M",null,1,false,false,0,"ng per kg; nanograms per kilogram","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"nanogram per kilogram per 8 hour","ng/kg/(8.h)","(NG/KG)/HR","mass",3.472222222222222e-17,[0,-1,0,0,0,0,0],"(ng/kg)/h",null,false,"M",null,1,false,false,0,"ng/(8.h.kg); ng/kg/8hrs; ng/kg/8 hrs; ng per kg per 8hrs; 8 hrs; nanograms per kilograms per 8 hours; shift","LOINC","MRtoRat ","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"nanogram per kilogram per hour","ng/kg/h","(NG/KG)/HR","mass",2.7777777777777775e-16,[0,-1,0,0,0,0,0],"(ng/kg)/h",null,false,"M",null,1,false,false,0,"ng/(kg.h); ng/kg/hr; ng per kg per hr; nanograms per kilograms per hour","LOINC","MRtoRat ","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"nanogram per kilogram per minute","ng/kg/min","(NG/KG)/MIN","mass",1.6666666666666667e-14,[0,-1,0,0,0,0,0],"(ng/kg)/min",null,false,"M",null,1,false,false,0,"ng/(kg.min); ng per kg per min; nanograms per kilograms per minute","LOINC","MRtoRat ","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"nanogram per liter","ng/L","NG/L","mass",0.000001,[-3,0,1,0,0,0,0],"ng/L",null,false,"M",null,1,false,false,0,"ng per L; nanograms per liter; litre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"nanogram per square meter","ng/m2","NG/M2","mass",1e-9,[-2,0,1,0,0,0,0],"ng/(m<sup>2</sup>)",null,false,"M",null,1,false,false,0,"ng/m^2; ng/sq. m; ng per m2; m^2; sq. meter; nanograms; meter squared; metre","LOINC","ArMass","Clinical","unit used to measure mass dose per patient body surface area",null,null,null,null,false],[false,"nanogram per milligram","ng/mg","NG/MG","mass",0.000001,[0,0,0,0,0,0,0],"ng/mg",null,false,"M",null,1,false,false,0,"ng per mg; nanograms","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"nanogram per milligram per hour","ng/mg/h","(NG/MG)/HR","mass",2.7777777777777777e-10,[0,-1,0,0,0,0,0],"(ng/mg)/h",null,false,"M",null,1,false,false,0,"ng/mg/hr; ng per mg per hr; nanograms per milligrams per hour","LOINC","MRtoRat ","Clinical","",null,null,null,null,false],[false,"nanogram per minute","ng/min","NG/MIN","mass",1.6666666666666667e-11,[0,-1,1,0,0,0,0],"ng/min",null,false,"M",null,1,false,false,0,"ng per min; nanograms","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"nanogram per millliiter","ng/mL","NG/ML","mass",0.001,[-3,0,1,0,0,0,0],"ng/mL",null,false,"M",null,1,false,false,0,"ng per mL; nanograms; millilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"nanogram per milliliter per hour","ng/mL/h","(NG/ML)/HR","mass",2.7777777777777776e-7,[-3,-1,1,0,0,0,0],"(ng/mL)/h",null,false,"M",null,1,false,false,0,"ng/mL/hr; ng per mL per mL; nanograms per milliliter per hour; nanogram per millilitre per hour; nanograms per millilitre per hour; enzymatic activity per volume; enzyme activity per milliliters","LOINC","CCnc","Clinical","tests that measure enzymatic activity",null,null,null,null,false],[false,"nanogram per second","ng/s","NG/S","mass",1e-9,[0,-1,1,0,0,0,0],"ng/s",null,false,"M",null,1,false,false,0,"ng/sec; ng per sec; nanograms per second","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"nanogram per enzyme unit","ng/U","NG/U","mass",9.963241120049634e-26,[0,1,1,0,0,0,0],"ng/U",null,false,"M",null,1,false,false,-1,"ng per U; nanograms per enzyme unit","LOINC","CMass","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)",null,null,null,null,false],[false,"nanokatal","nkat","NKAT","catalytic activity",602213670000000,[0,-1,0,0,0,0,0],"nkat","chemical",true,null,null,1,false,false,1,"nanokatals","LOINC","CAct","Clinical","kat is a unit of catalytic activity with base units = mol/s. Rarely used because its units are too large to practically express catalytic activity. See enzyme unit [U] which is the standard unit for catalytic activity.","mol/s","MOL/S","1",1,false],[false,"nanoliter","nL","NL","volume",1.0000000000000002e-12,[3,0,0,0,0,0,0],"nL","iso1000",true,null,null,1,false,false,0,"nanoliters; nanolitres","LOINC","Vol","Clinical","","l",null,"1",1,false],[false,"nanometer","nm","NM","length",1e-9,[1,0,0,0,0,0,0],"nm",null,false,"L",null,1,false,false,0,"nanometers; nanometres","LOINC","Len","Clinical","",null,null,null,null,false],[false,"nanometer per second per liter","nm/s/L","(NM/S)/L","length",0.000001,[-2,-1,0,0,0,0,0],"(nm/s)/L",null,false,"L",null,1,false,false,0,"nm/sec/liter; nm/sec/litre; nm per s per l; nm per sec per l; nanometers per second per liter; nanometre per second per litre; nanometres per second per litre","LOINC","VelCnc","Clinical","",null,null,null,null,false],[false,"nanomole","nmol","NMOL","amount of substance",602213670000000,[0,0,0,0,0,0,0],"nmol","si",true,null,null,1,false,false,1,"nanomoles","LOINC","Sub","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per 24 hour","nmol/(24.h)","NMOL/HR","amount of substance",6970065625,[0,-1,0,0,0,0,0],"nmol/h","si",true,null,null,1,false,false,1,"nmol/24hr; nmol/24 hr; nanomoles per 24 hours; nmol/day; nanomoles per day; nmol per day; nanomole/day; nanomol/day","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per day","nmol/d","NMOL/D","amount of substance",6970065625,[0,-1,0,0,0,0,0],"nmol/d","si",true,null,null,1,false,false,1,"nmol/day; nanomoles per day; nmol per day; nanomole/day; nanomol/day; nmol/24hr; nmol/24 hr; nanomoles per 24 hours; ","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per deciliter","nmol/dL","NMOL/DL","amount of substance",6022136700000000000,[-3,0,0,0,0,0,0],"nmol/dL","si",true,null,null,1,false,false,1,"nmol per dL; nanomoles per deciliter; nanomole per decilitre; nanomoles per decilitre; nanomole/deciliter; nanomole/decilitre; nanomol/deciliter; nanomol/decilitre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per gram","nmol/g","NMOL/G","amount of substance",602213670000000,[0,0,-1,0,0,0,0],"nmol/g","si",true,null,null,1,false,false,1,"nmol per gram; nanomoles per gram; nanomole/gram","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per hour per liter","nmol/h/L","(NMOL/HR)/L","amount of substance",167281575000000,[-3,-1,0,0,0,0,0],"(nmol/h)/L","si",true,null,null,1,false,false,1,"nmol/hrs/L; nmol per hrs per L; nanomoles per hours per liter; litre; enzymatic activity per volume; enzyme activities","LOINC","CCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per liter","nmol/L","NMOL/L","amount of substance",602213670000000000,[-3,0,0,0,0,0,0],"nmol/L","si",true,null,null,1,false,false,1,"nmol per L; nanomoles per liter; litre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per milligram","nmol/mg","NMOL/MG","amount of substance",602213670000000000,[0,0,-1,0,0,0,0],"nmol/mg","si",true,null,null,1,false,false,1,"nmol per mg; nanomoles per milligram","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per milligram per hour","nmol/mg/h","(NMOL/MG)/HR","amount of substance",167281575000000,[0,-1,-1,0,0,0,0],"(nmol/mg)/h","si",true,null,null,1,false,false,1,"nmol/mg/hr; nmol per mg per hr; nanomoles per milligrams per hour","LOINC","SCntRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per milligram of protein","nmol/mg{prot}","NMOL/MG","amount of substance",602213670000000000,[0,0,-1,0,0,0,0],"nmol/mg","si",true,null,null,1,false,false,1,"nanomoles; nmol/mg prot; nmol per mg prot","LOINC","Ratio; CCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per minute","nmol/min","NMOL/MIN","amount of substance",10036894500000,[0,-1,0,0,0,0,0],"nmol/min","si",true,null,null,1,false,false,1,"nmol per min; nanomoles per minute; milli enzyme units; enzyme activity per volume; enzymatic activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min. nmol/min = mU (milli enzyme unit)","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per minute per milliliter","nmol/min/mL","(NMOL/MIN)/ML","amount of substance",10036894500000000000,[-3,-1,0,0,0,0,0],"(nmol/min)/mL","si",true,null,null,1,false,false,1,"nmol per min per mL; nanomoles per minutes per milliliter; millilitre; milli enzyme units per volume; enzyme activity; enzymatic activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min. nmol/mL/min = mU/mL","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per milliliter","nmol/mL","NMOL/ML","amount of substance",602213670000000000000,[-3,0,0,0,0,0,0],"nmol/mL","si",true,null,null,1,false,false,1,"nmol per mL; nanomoles per milliliter; millilitre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per milliliter per hour","nmol/mL/h","(NMOL/ML)/HR","amount of substance",167281575000000000,[-3,-1,0,0,0,0,0],"(nmol/mL)/h","si",true,null,null,1,false,false,1,"nmol/mL/hr; nmol per mL per hr; nanomoles per milliliters per hour; millilitres; milli enzyme units per volume; enzyme activity; enzymatic activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min.","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per milliliter per minute","nmol/mL/min","(NMOL/ML)/MIN","amount of substance",10036894500000000000,[-3,-1,0,0,0,0,0],"(nmol/mL)/min","si",true,null,null,1,false,false,1,"nmol per mL per min; nanomoles per milliliters per min; millilitres; milli enzyme units per volume; enzyme activity; enzymatic activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min. nmol/mL/min = mU/mL","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per millimole","nmol/mmol","NMOL/MMOL","amount of substance",0.000001,[0,0,0,0,0,0,0],"nmol/mmol","si",true,null,null,1,false,false,0,"nmol per mmol; nanomoles per millimole","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per millimole of creatinine","nmol/mmol{creat}","NMOL/MMOL","amount of substance",0.000001,[0,0,0,0,0,0,0],"nmol/mmol","si",true,null,null,1,false,false,0,"nanomoles","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per mole","nmol/mol","NMOL/MOL","amount of substance",1e-9,[0,0,0,0,0,0,0],"nmol/mol","si",true,null,null,1,false,false,0,"nmol per mole; nanomoles","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per nanomole","nmol/nmol","NMOL/NMOL","amount of substance",1,[0,0,0,0,0,0,0],"nmol/nmol","si",true,null,null,1,false,false,0,"nmol per nmol; nanomoles","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per second","nmol/s","NMOL/S","amount of substance",602213670000000,[0,-1,0,0,0,0,0],"nmol/s","si",true,null,null,1,false,false,1,"nmol/sec; nmol per sec; nanomoles per sercond; milli enzyme units; enzyme activity; enzymatic activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min.","10*23","10*23","6.0221367",6.0221367,false],[false,"nanomole per second per liter","nmol/s/L","(NMOL/S)/L","amount of substance",602213670000000000,[-3,-1,0,0,0,0,0],"(nmol/s)/L","si",true,null,null,1,false,false,1,"nmol/sec/L; nmol per s per L; nmol per sec per L; nanomoles per seconds per liter; litre; milli enzyme units per volume; enzyme activity; enzymatic activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min.","10*23","10*23","6.0221367",6.0221367,false],[false,"nanosecond","ns","NS","time",1e-9,[0,1,0,0,0,0,0],"ns",null,false,"T",null,1,false,false,0,"nanoseconds","LOINC","Time","Clinical","",null,null,null,null,false],[false,"nanoenzyme unit per milliliter","nU/mL","NU/ML","catalytic activity",10036894500000,[-3,-1,0,0,0,0,0],"nU/mL","chemical",true,null,null,1,false,false,1,"nU per mL; nanoenzyme units per milliliter; millilitre; enzymatic activity per volume; enzyme activity","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 fU = pmol/min","umol/min","UMOL/MIN","1",1,false],[false,"Ohm meter","Ohm.m","OHM.M","electric resistance",1000,[3,-1,1,0,0,-2,0],"Ω.m","si",true,null,null,1,false,false,0,"electric resistivity; meters; metres","LOINC","","Clinical","unit of electric resistivity","V/A","V/A","1",1,false],[false,"osmole per kilogram","osm/kg","OSM/KG","amount of substance (dissolved particles)",602213670000000000000,[0,0,-1,0,0,0,0],"osm/kg","chemical",true,null,null,1,false,false,1,"osm per kg; osmoles per kilogram; osmols","LOINC","Osmol","Clinical","","mol","MOL","1",1,false],[false,"osmole per liter","osm/L","OSM/L","amount of substance (dissolved particles)",6.0221366999999994e+26,[-3,0,0,0,0,0,0],"osm/L","chemical",true,null,null,1,false,false,1,"osm per L; osmoles per liter; litre; osmols","LOINC","Osmol","Clinical","","mol","MOL","1",1,false],[false,"picoampere","pA","PA","electric current",1e-12,[0,-1,0,0,0,1,0],"pA","si",true,null,null,1,false,false,0,"picoamperes","LOINC","","Clinical","equal to 10^-12 amperes","C/s","C/S","1",1,false],[false,"picogram","pg","PG","mass",1e-12,[0,0,1,0,0,0,0],"pg",null,false,"M",null,1,false,false,0,"picograms","LOINC","Mass; EntMass","Clinical","",null,null,null,null,false],[false,"picogram per deciliter","pg/dL","PG/DL","mass",9.999999999999999e-9,[-3,0,1,0,0,0,0],"pg/dL",null,false,"M",null,1,false,false,0,"pg per dL; picograms; decilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"picogram per liter","pg/L","PG/L","mass",1e-9,[-3,0,1,0,0,0,0],"pg/L",null,false,"M",null,1,false,false,0,"pg per L; picograms; litre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"picogram per milligram","pg/mg","PG/MG","mass",1e-9,[0,0,0,0,0,0,0],"pg/mg",null,false,"M",null,1,false,false,0,"pg per mg; picograms","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"picogram per milliliter","pg/mL","PG/ML","mass",0.000001,[-3,0,1,0,0,0,0],"pg/mL",null,false,"M",null,1,false,false,0,"pg per mL; picograms per milliliter; millilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"picogram per millimeter","pg/mm","PG/MM","mass",1e-9,[-1,0,1,0,0,0,0],"pg/mm",null,false,"M",null,1,false,false,0,"pg per mm; picogram/millimeter; picogram/millimetre; picograms per millimeter; millimetre","LOINC","Lineic Mass","Clinical","",null,null,null,null,false],[false,"picokatal","pkat","PKAT","catalytic activity",602213670000,[0,-1,0,0,0,0,0],"pkat","chemical",true,null,null,1,false,false,1,"pkats; picokatals","LOINC","CAct","Clinical","kat is a unit of catalytic activity with base units = mol/s. Rarely used because its units are too large to practically express catalytic activity. See enzyme unit [U] which is the standard unit for catalytic activity.","mol/s","MOL/S","1",1,false],[false,"picoliter","pL","PL","volume",1e-15,[3,0,0,0,0,0,0],"pL","iso1000",true,null,null,1,false,false,0,"picoliters; picolitres","LOINC","Vol","Clinical","","l",null,"1",1,false],[false,"picometer","pm","PM","length",1e-12,[1,0,0,0,0,0,0],"pm",null,false,"L",null,1,false,false,0,"picometers; picometres","LOINC","Len","Clinical","",null,null,null,null,false],[false,"picomole","pmol","PMOL","amount of substance",602213670000,[0,0,0,0,0,0,0],"pmol","si",true,null,null,1,false,false,1,"picomoles; pmols","LOINC","Sub","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per 24 hour","pmol/(24.h)","PMOL/HR","amount of substance",6970065.625,[0,-1,0,0,0,0,0],"pmol/h","si",true,null,null,1,false,false,1,"pmol/24hrs; pmol/24 hrs; pmol per 24 hrs; 24hrs; days; dy; picomoles per 24 hours","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per day","pmol/d","PMOL/D","amount of substance",6970065.625,[0,-1,0,0,0,0,0],"pmol/d","si",true,null,null,1,false,false,1,"pmol/dy; pmol per day; 24 hours; 24hrs; 24 hrs; picomoles","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per deciliter","pmol/dL","PMOL/DL","amount of substance",6022136700000000,[-3,0,0,0,0,0,0],"pmol/dL","si",true,null,null,1,false,false,1,"pmol per dL; picomoles per deciliter; decilitre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per gram","pmol/g","PMOL/G","amount of substance",602213670000,[0,0,-1,0,0,0,0],"pmol/g","si",true,null,null,1,false,false,1,"pmol per gm; picomoles per gram; picomole/gram","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per hour per milliliter ","pmol/h/mL","(PMOL/HR)/ML","amount of substance",167281575000000,[-3,-1,0,0,0,0,0],"(pmol/h)/mL","si",true,null,null,1,false,false,1,"pmol/hrs/mL; pmol per hrs per mL; picomoles per hour per milliliter; millilitre; micro enzyme units per volume; enzymatic activity; enzyme activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min. ","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per liter","pmol/L","PMOL/L","amount of substance",602213670000000,[-3,0,0,0,0,0,0],"pmol/L","si",true,null,null,1,false,false,1,"picomole/liter; pmol per L; picomoles; litre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per minute","pmol/min","PMOL/MIN","amount of substance",10036894500,[0,-1,0,0,0,0,0],"pmol/min","si",true,null,null,1,false,false,1,"picomole/minute; pmol per min; picomoles per minute; micro enzyme units; enzymatic activity; enzyme activity","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min. pmol/min = uU (micro enzyme unit)","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per milliliter","pmol/mL","PMOL/ML","amount of substance",602213670000000000,[-3,0,0,0,0,0,0],"pmol/mL","si",true,null,null,1,false,false,1,"picomole/milliliter; picomole/millilitre; pmol per mL; picomoles; millilitre; picomols; pmols","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picomole per micromole","pmol/umol","PMOL/UMOL","amount of substance",0.000001,[0,0,0,0,0,0,0],"pmol/μmol","si",true,null,null,1,false,false,0,"pmol/mcgmol; picomole/micromole; pmol per umol; pmol per mcgmol; picomoles ","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"picosecond","ps","PS","time",1e-12,[0,1,0,0,0,0,0],"ps",null,false,"T",null,1,false,false,0,"picoseconds; psec","LOINC","Time","Clinical","",null,null,null,null,false],[false,"picotesla","pT","PT","magnetic flux density",1e-9,[0,-1,1,0,0,-1,0],"pT","si",true,null,null,1,false,false,0,"picoteslas","LOINC","","Clinical","SI unit of magnetic field strength for magnetic field B","Wb/m2","WB/M2","1",1,false],[false,"enzyme unit per 12 hour","U/(12.h)","U/HR","catalytic activity",232335520833.33334,[0,-2,0,0,0,0,0],"U/h","chemical",true,null,null,1,false,false,1,"U/12hrs; U/ 12hrs; U per 12 hrs; 12hrs; enzyme units per 12 hours; enzyme activity; enzymatic activity per time; umol per min per 12 hours; micromoles per minute per 12 hours; umol/min/12hr","LOINC","CRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per 2 hour","U/(2.h)","U/HR","catalytic activity",1394013125000,[0,-2,0,0,0,0,0],"U/h","chemical",true,null,null,1,false,false,1,"U/2hrs; U/ 2hrs; U per 2 hrs; 2hrs; enzyme units per 2 hours; enzyme activity; enzymatic activity per time; umol per minute per 2 hours; micromoles per minute; umol/min/2hr; umol per min per 2hr","LOINC","CRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per 24 hour","U/(24.h)","U/HR","catalytic activity",116167760416.66667,[0,-2,0,0,0,0,0],"U/h","chemical",true,null,null,1,false,false,1,"U/24hrs; U/ 24hrs; U per 24 hrs; 24hrs; enzyme units per 24 hours; enzyme activity; enzymatic activity per time; micromoles per minute per 24 hours; umol/min/24hr; umol per min per 24hr","LOINC","CRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per 10","U/10","U","catalytic activity",1003689450000000,[0,-1,0,0,0,0,0],"U","chemical",true,null,null,1,false,false,1,"enzyme unit/10; U per 10; enzyme units per 10; enzymatic activity; enzyme activity; micromoles per minute; umol/min/10","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per 10 billion","U/10*10","U/(10*10)","catalytic activity",1003689.45,[0,-1,0,0,0,0,0],"U/(10<sup>10</sup>)","chemical",true,null,null,1,false,false,1,"U per 10*10; enzyme units per 10*10; U per 10 billion; enzyme units; enzymatic activity; micromoles per minute per 10 billion; umol/min/10*10","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per trillion","U/10*12","U/(10*12)","catalytic activity",10036.8945,[0,-1,0,0,0,0,0],"U/(10<sup>12</sup>)","chemical",true,null,null,1,false,false,1,"enzyme unit/10*12; U per 10*12; enzyme units per 10*12; enzyme units per trillion; enzymatic activity; micromoles per minute per trillion; umol/min/10*12; umol per min per 10*12","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per million","U/10*6","U/(10*6)","catalytic activity",10036894500,[0,-1,0,0,0,0,0],"U/(10<sup>6</sup>)","chemical",true,null,null,1,false,false,1,"enzyme unit/10*6; U per 10*6; enzyme units per 10*6; enzyme units; enzymatic activity per volume; micromoles per minute per million; umol/min/10*6; umol per min per 10*6","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per billion","U/10*9","U/(10*9)","catalytic activity",10036894.5,[0,-1,0,0,0,0,0],"U/(10<sup>9</sup>)","chemical",true,null,null,1,false,false,1,"enzyme unit/10*9; U per 10*9; enzyme units per 10*9; enzymatic activity per volume; micromoles per minute per billion; umol/min/10*9; umol per min per 10*9","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per day","U/d","U/D","catalytic activity",116167760416.66667,[0,-2,0,0,0,0,0],"U/d","chemical",true,null,null,1,false,false,1,"U/dy; enzyme units per day; enzyme units; enzyme activity; enzymatic activity per time; micromoles per minute per day; umol/min/day; umol per min per day","LOINC","CRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per deciliter","U/dL","U/DL","catalytic activity",100368945000000000000,[-3,-1,0,0,0,0,0],"U/dL","chemical",true,null,null,1,false,false,1,"U per dL; enzyme units per deciliter; decilitre; micromoles per minute per deciliter; umol/min/dL; umol per min per dL","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per gram","U/g","U/G","catalytic activity",10036894500000000,[0,-1,-1,0,0,0,0],"U/g","chemical",true,null,null,1,false,false,1,"U/gm; U per gm; enzyme units per gram; micromoles per minute per gram; umol/min/g; umol per min per g","LOINC","CCnt","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per hour","U/h","U/HR","catalytic activity",2788026250000,[0,-2,0,0,0,0,0],"U/h","chemical",true,null,null,1,false,false,1,"U/hr; U per hr; enzyme units per hour; micromoles per minute per hour; umol/min/hr; umol per min per hr","LOINC","CRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per liter","U/L","U/L","catalytic activity",10036894500000000000,[-3,-1,0,0,0,0,0],"U/L","chemical",true,null,null,1,false,false,1,"enzyme unit/liter; enzyme unit/litre; U per L; enzyme units per liter; enzyme unit per litre; micromoles per minute per liter; umol/min/L; umol per min per L","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per minute","U/min","U/MIN","catalytic activity",167281575000000,[0,-2,0,0,0,0,0],"U/min","chemical",true,null,null,1,false,false,1,"enzyme unit/minute; U per min; enzyme units; umol/min/min; micromoles per minute per minute; micromoles per min per min; umol","LOINC","CRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per milliliter","U/mL","U/ML","catalytic activity",1.00368945e+22,[-3,-1,0,0,0,0,0],"U/mL","chemical",true,null,null,1,false,false,1,"U per mL; enzyme units per milliliter; millilitre; micromoles per minute per milliliter; umol/min/mL; umol per min per mL","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"enzyme unit per second","U/s","U/S","catalytic activity",10036894500000000,[0,-2,0,0,0,0,0],"U/s","chemical",true,null,null,1,false,false,1,"U/sec; U per second; enzyme units per second; micromoles per minute per second; umol/min/sec; umol per min per sec","LOINC","CRat","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min)","umol/min","UMOL/MIN","1",1,false],[false,"micro international unit","u[IU]","U[IU]","arbitrary",0.000001,[0,0,0,0,0,0,0],"μi.U.","chemical",true,null,null,1,false,true,0,"uIU; u IU; microinternational units","LOINC","Arb","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"micro international unit per liter","u[IU]/L","U[IU]/L","arbitrary",0.001,[-3,0,0,0,0,0,0],"(μi.U.)/L","chemical",true,null,null,1,false,true,0,"uIU/L; u IU/L; uIU per L; microinternational units per liter; litre; ","LOINC","ACnc","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"micro international unit per milliliter","u[IU]/mL","U[IU]/ML","arbitrary",1,[-3,0,0,0,0,0,0],"(μi.U.)/mL","chemical",true,null,null,1,false,true,0,"uIU/mL; u IU/mL; uIU per mL; microinternational units per milliliter; millilitre","LOINC","ACnc","Clinical","International units (IU) are analyte and reference specimen  specific arbitrary units (held at WHO)","[iU]","[IU]","1",1,false],[false,"microequivalent","ueq","UEQ","amount of substance",602213670000000000,[0,0,0,0,0,0,0],"μeq","chemical",true,null,null,1,false,false,1,"microequivalents; 10^-6 equivalents; 10-6 equivalents","LOINC","Sub","Clinical","","mol","MOL","1",1,false],[false,"microequivalent per liter","ueq/L","UEQ/L","amount of substance",602213670000000000000,[-3,0,0,0,0,0,0],"μeq/L","chemical",true,null,null,1,false,false,1,"ueq per liter; litre; microequivalents","LOINC","MCnc","Clinical","","mol","MOL","1",1,false],[false,"microequivalent per milliliter","ueq/mL","UEQ/ML","amount of substance",6.0221367000000003e+23,[-3,0,0,0,0,0,0],"μeq/mL","chemical",true,null,null,1,false,false,1,"ueq per milliliter; millilitre; microequivalents","LOINC","MCnc","Clinical","","mol","MOL","1",1,false],[false,"microgram","ug","UG","mass",0.000001,[0,0,1,0,0,0,0],"μg",null,false,"M",null,1,false,false,0,"mcg; micrograms; 10^-6 grams; 10-6 grams","LOINC","Mass","Clinical","",null,null,null,null,false],[false,"microgram per 100 gram","ug/(100.g)","UG/G","mass",1e-8,[0,0,0,0,0,0,0],"μg/g",null,false,"M",null,1,false,false,0,"ug/100gm; ug/100 gm; mcg; ug per 100g; 100 gm; mcg per 100g; micrograms per 100 grams","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"microgram per 24 hour","ug/(24.h)","UG/HR","mass",1.1574074074074074e-11,[0,-1,1,0,0,0,0],"μg/h",null,false,"M",null,1,false,false,0,"ug/24hrs; ug/24 hrs; mcg/24hrs; ug per 24hrs; mcg per 24hrs; 24 hrs; micrograms per 24 hours","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"microgram per 8 hour","ug/(8.h)","UG/HR","mass",3.472222222222222e-11,[0,-1,1,0,0,0,0],"μg/h",null,false,"M",null,1,false,false,0,"ug/8hrs; ug/8 hrs; mcg/8hrs; ug per 8hrs; mcg per 8hrs; 8 hrs; micrograms per 8 hours; shift","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"microgram per square foot (international)","ug/[sft_i]","UG/[SFT_I]","mass",0.000010763910416709721,[-2,0,1,0,0,0,0],"μg",null,false,"M",null,1,false,false,0,"ug/sft; ug/ft2; ug/ft^2; ug/sq. ft; micrograms; sq. foot; foot squared","LOINC","ArMass","Clinical","",null,null,null,null,false],[false,"microgram per day","ug/d","UG/D","mass",1.1574074074074074e-11,[0,-1,1,0,0,0,0],"μg/d",null,false,"M",null,1,false,false,0,"ug/dy; mcg/dy; ug per day; mcg; micrograms per day","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"microgram per deciliter","ug/dL","UG/DL","mass",0.009999999999999998,[-3,0,1,0,0,0,0],"μg/dL",null,false,"M",null,1,false,false,0,"ug per dL; mcg/dl; mcg per dl; micrograms per deciliter; decilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"microgram per gram","ug/g","UG/G","mass",0.000001,[0,0,0,0,0,0,0],"μg/g",null,false,"M",null,1,false,false,0,"ug per gm; mcg/gm; mcg per g; micrograms per gram","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"microgram per hour","ug/h","UG/HR","mass",2.7777777777777777e-10,[0,-1,1,0,0,0,0],"μg/h",null,false,"M",null,1,false,false,0,"ug/hr; mcg/hr; mcg per hr; ug per hr; ug per hour; micrograms","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"microgram per kilogram","ug/kg","UG/KG","mass",9.999999999999999e-10,[0,0,0,0,0,0,0],"μg/kg",null,false,"M",null,1,false,false,0,"ug per kg; mcg/kg; mcg per kg; micrograms per kilogram","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"microgram per kilogram per 8 hour","ug/kg/(8.h)","(UG/KG)/HR","mass",3.472222222222222e-14,[0,-1,0,0,0,0,0],"(μg/kg)/h",null,false,"M",null,1,false,false,0,"ug/kg/8hrs; mcg/kg/8hrs; ug/kg/8 hrs; mcg/kg/8 hrs; ug per kg per 8hrs; 8 hrs; mcg per kg per 8hrs; micrograms per kilograms per 8 hours; shift","LOINC","","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"microgram per kilogram per day","ug/kg/d","(UG/KG)/D","mass",1.1574074074074072e-14,[0,-1,0,0,0,0,0],"(μg/kg)/d",null,false,"M",null,1,false,false,0,"ug/(kg.d); ug/kg/dy; mcg/kg/day; ug per kg per dy; 24 hours; 24hrs; mcg; kilograms; microgram per kilogram and day","LOINC","","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"microgram per kilogram per hour","ug/kg/h","(UG/KG)/HR","mass",2.7777777777777774e-13,[0,-1,0,0,0,0,0],"(μg/kg)/h",null,false,"M",null,1,false,false,0,"ug/(kg.h); ug/kg/hr; mcg/kg/hr; ug per kg per hr; mcg per kg per hr; kilograms","LOINC","","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"microgram per kilogram per minute","ug/kg/min","(UG/KG)/MIN","mass",1.6666666666666664e-11,[0,-1,0,0,0,0,0],"(μg/kg)/min",null,false,"M",null,1,false,false,0,"ug/kg/min; ug/kg/min; mcg/kg/min; ug per kg per min; mcg; micrograms per kilograms per minute ","LOINC","","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"microgram per liter","ug/L","UG/L","mass",0.001,[-3,0,1,0,0,0,0],"μg/L",null,false,"M",null,1,false,false,0,"mcg/L; ug per L; mcg; micrograms per liter; litre ","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"microgram per liter per 24 hour","ug/L/(24.h)","(UG/L)/HR","mass",1.1574074074074074e-8,[-3,-1,1,0,0,0,0],"(μg/L)/h",null,false,"M",null,1,false,false,0,"ug/L/24hrs; ug/L/24 hrs; mcg/L/24hrs; ug per L per 24hrs; 24 hrs; day; dy mcg; micrograms per liters per 24 hours; litres","LOINC","","Clinical","unit used to measure mass dose rate per patient body mass",null,null,null,null,false],[false,"microgram per square meter","ug/m2","UG/M2","mass",0.000001,[-2,0,1,0,0,0,0],"μg/(m<sup>2</sup>)",null,false,"M",null,1,false,false,0,"ug/m^2; ug/sq. m; mcg/m2; mcg/m^2; mcg/sq. m; ug per m2; m^2; sq. meter; mcg; micrograms per square meter; meter squared; metre","LOINC","ArMass","Clinical","unit used to measure mass dose per patient body surface area",null,null,null,null,false],[false,"microgram per cubic meter","ug/m3","UG/M3","mass",0.000001,[-3,0,1,0,0,0,0],"μg/(m<sup>3</sup>)",null,false,"M",null,1,false,false,0,"ug/m^3; ug/cu. m; mcg/m3; mcg/m^3; mcg/cu. m; ug per m3; ug per m^3; ug per cu. m; mcg; micrograms per cubic meter; meter cubed; metre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"microgram per milligram","ug/mg","UG/MG","mass",0.001,[0,0,0,0,0,0,0],"μg/mg",null,false,"M",null,1,false,false,0,"ug per mg; mcg/mg; mcg per mg; micromilligrams per milligram","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"microgram per minute","ug/min","UG/MIN","mass",1.6666666666666667e-8,[0,-1,1,0,0,0,0],"μg/min",null,false,"M",null,1,false,false,0,"ug per min; mcg/min; mcg per min; microminutes per minute","LOINC","MRat","Clinical","",null,null,null,null,false],[false,"microgram per milliliter","ug/mL","UG/ML","mass",1,[-3,0,1,0,0,0,0],"μg/mL",null,false,"M",null,1,false,false,0,"ug per mL; mcg/mL; mcg per mL; micrograms per milliliter; millilitre","LOINC","MCnc","Clinical","",null,null,null,null,false],[false,"microgram per millimole","ug/mmol","UG/MMOL","mass",1.660540186674939e-27,[0,0,1,0,0,0,0],"μg/mmol",null,false,"M",null,1,false,false,-1,"ug per mmol; mcg/mmol; mcg per mmol; micrograms per millimole","LOINC","Ratio","Clinical","",null,null,null,null,false],[false,"microgram per nanogram","ug/ng","UG/NG","mass",999.9999999999999,[0,0,0,0,0,0,0],"μg/ng",null,false,"M",null,1,false,false,0,"ug per ng; mcg/ng; mcg per ng; micrograms per nanogram","LOINC","MCnt","Clinical","",null,null,null,null,false],[false,"microkatal","ukat","UKAT","catalytic activity",602213670000000000,[0,-1,0,0,0,0,0],"μkat","chemical",true,null,null,1,false,false,1,"microkatals; ukats","LOINC","CAct","Clinical","kat is a unit of catalytic activity with base units = mol/s. Rarely used because its units are too large to practically express catalytic activity. See enzyme unit [U] which is the standard unit for catalytic activity.","mol/s","MOL/S","1",1,false],[false,"microliter","uL","UL","volume",1e-9,[3,0,0,0,0,0,0],"μL","iso1000",true,null,null,1,false,false,0,"microliters; microlitres; mcl","LOINC","Vol","Clinical","","l",null,"1",1,false],[false,"microliter per 2 hour","uL/(2.h)","UL/HR","volume",1.388888888888889e-13,[3,-1,0,0,0,0,0],"μL/h","iso1000",true,null,null,1,false,false,0,"uL/2hrs; uL/2 hrs; mcg/2hr; mcg per 2hr; uL per 2hr; uL per 2 hrs; microliters per 2 hours; microlitres ","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"microliter per hour","uL/h","UL/HR","volume",2.777777777777778e-13,[3,-1,0,0,0,0,0],"μL/h","iso1000",true,null,null,1,false,false,0,"uL/hr; mcg/hr; mcg per hr; uL per hr; microliters per hour; microlitres","LOINC","VRat","Clinical","","l",null,"1",1,false],[false,"micrometer","um","UM","length",0.000001,[1,0,0,0,0,0,0],"μm",null,false,"L",null,1,false,false,0,"micrometers; micrometres; μm; microns","LOINC","Len","Clinical","Unit of length that is usually used in tests related to the eye",null,null,null,null,false],[false,"microns per second","um/s","UM/S","length",0.000001,[1,-1,0,0,0,0,0],"μm/s",null,false,"L",null,1,false,false,0,"um/sec; micron/second; microns/second; um per sec; micrometers per second; micrometres","LOINC","Vel","Clinical","",null,null,null,null,false],[false,"micromole","umol","UMOL","amount of substance",602213670000000000,[0,0,0,0,0,0,0],"μmol","si",true,null,null,1,false,false,1,"micromoles; umols","LOINC","Sub","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per 2 hour","umol/(2.h)","UMOL/HR","amount of substance",83640787500000,[0,-1,0,0,0,0,0],"μmol/h","si",true,null,null,1,false,false,1,"umol/2hrs; umol/2 hrs; umol per 2 hrs; 2hrs; micromoles per 2 hours","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per 24 hour","umol/(24.h)","UMOL/HR","amount of substance",6970065625000,[0,-1,0,0,0,0,0],"μmol/h","si",true,null,null,1,false,false,1,"umol/24hrs; umol/24 hrs; umol per 24 hrs; per 24hrs; micromoles per 24 hours","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per 8 hour","umol/(8.h)","UMOL/HR","amount of substance",20910196875000,[0,-1,0,0,0,0,0],"μmol/h","si",true,null,null,1,false,false,1,"umol/8hr; umol/8 hr; umol per 8 hr; umol per 8hr; umols per 8hr; umol per 8 hours; micromoles per 8 hours; shift","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per day","umol/d","UMOL/D","amount of substance",6970065625000,[0,-1,0,0,0,0,0],"μmol/d","si",true,null,null,1,false,false,1,"umol/day; umol per day; umols per day; umol per days; micromoles per days; umol/24hr; umol/24 hr; umol per 24 hr; umol per 24hr; umols per 24hr; umol per 24 hours; micromoles per 24 hours","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per deciliter","umol/dL","UMOL/DL","amount of substance",6.0221367e+21,[-3,0,0,0,0,0,0],"μmol/dL","si",true,null,null,1,false,false,1,"micromole/deciliter; micromole/decilitre; umol per dL; micromoles per deciliters; micromole per decilitres","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per gram","umol/g","UMOL/G","amount of substance",602213670000000000,[0,0,-1,0,0,0,0],"μmol/g","si",true,null,null,1,false,false,1,"micromole/gram; umol per g; micromoles per gram","LOINC","SCnt; Ratio","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per hour","umol/h","UMOL/HR","amount of substance",167281575000000,[0,-1,0,0,0,0,0],"μmol/h","si",true,null,null,1,false,false,1,"umol/hr; umol per hr; umol per hour; micromoles per hours","LOINC","SRat","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per kilogram","umol/kg","UMOL/KG","amount of substance",602213670000000,[0,0,-1,0,0,0,0],"μmol/kg","si",true,null,null,1,false,false,1,"umol per kg; micromoles per kilogram","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per liter","umol/L","UMOL/L","amount of substance",602213670000000000000,[-3,0,0,0,0,0,0],"μmol/L","si",true,null,null,1,false,false,1,"micromole/liter; micromole/litre; umol per liter; micromoles per liter; litre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per liter per hour","umol/L/h","(UMOL/L)/HR","amount of substance",167281575000000000,[-3,-1,0,0,0,0,0],"(μmol/L)/h","si",true,null,null,1,false,false,1,"umol/liter/hr; umol/litre/hr; umol per L per hr; umol per liter per hour; micromoles per liters per hour; litre","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min; umol/L/h is a derived unit of enzyme units","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per milligram","umol/mg","UMOL/MG","amount of substance",602213670000000000000,[0,0,-1,0,0,0,0],"μmol/mg","si",true,null,null,1,false,false,1,"micromole/milligram; umol per mg; micromoles per milligram","LOINC","SCnt","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per minute","umol/min","UMOL/MIN","amount of substance",10036894500000000,[0,-1,0,0,0,0,0],"μmol/min","si",true,null,null,1,false,false,1,"micromole/minute; umol per min; micromoles per minute; enzyme units","LOINC","CAct","Clinical","unit for the enzyme unit U = umol/min","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per minute per gram","umol/min/g","(UMOL/MIN)/G","amount of substance",10036894500000000,[0,-1,-1,0,0,0,0],"(μmol/min)/g","si",true,null,null,1,false,false,1,"umol/min/gm; umol per min per gm; micromoles per minutes per gram; U/g; enzyme units","LOINC","CCnt","Clinical","unit for the enzyme unit U = umol/min. umol/min/g = U/g","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per minute per liter","umol/min/L","(UMOL/MIN)/L","amount of substance",10036894500000000000,[-3,-1,0,0,0,0,0],"(μmol/min)/L","si",true,null,null,1,false,false,1,"umol/min/liter; umol/minute/liter; micromoles per minutes per liter; litre; enzyme units; U/L","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min. umol/min/L = U/L","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per milliliter","umol/mL","UMOL/ML","amount of substance",6.0221367000000003e+23,[-3,0,0,0,0,0,0],"μmol/mL","si",true,null,null,1,false,false,1,"umol per mL; micromoles per milliliter; millilitre","LOINC","SCnc","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per milliliter per minute","umol/mL/min","(UMOL/ML)/MIN","amount of substance",1.00368945e+22,[-3,-1,0,0,0,0,0],"(μmol/mL)/min","si",true,null,null,1,false,false,1,"umol per mL per min; micromoles per milliliters per minute; millilitres","LOINC","CCnc","Clinical","unit for the enzyme unit U = umol/min. umol/mL/min = U/mL","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per millimole","umol/mmol","UMOL/MMOL","amount of substance",0.001,[0,0,0,0,0,0,0],"μmol/mmol","si",true,null,null,1,false,false,0,"umol per mmol; micromoles per millimole","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per mole","umol/mol","UMOL/MOL","amount of substance",0.000001,[0,0,0,0,0,0,0],"μmol/mol","si",true,null,null,1,false,false,0,"umol per mol; micromoles per mole","LOINC","SRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"micromole per micromole","umol/umol","UMOL/UMOL","amount of substance",1,[0,0,0,0,0,0,0],"μmol/μmol","si",true,null,null,1,false,false,0,"umol per umol; micromoles per micromole","LOINC","Srto; SFr; EntSRto","Clinical","","10*23","10*23","6.0221367",6.0221367,false],[false,"microOhm","uOhm","UOHM","electric resistance",0.001,[2,-1,1,0,0,-2,0],"μΩ","si",true,null,null,1,false,false,0,"microOhms; µΩ","LOINC","","Clinical","unit of electric resistance","V/A","V/A","1",1,false],[false,"microsecond","us","US","time",0.000001,[0,1,0,0,0,0,0],"μs",null,false,"T",null,1,false,false,0,"microseconds","LOINC","Time","Clinical","",null,null,null,null,false],[false,"micro enzyme unit per gram","uU/g","UU/G","catalytic activity",10036894500,[0,-1,-1,0,0,0,0],"μU/g","chemical",true,null,null,1,false,false,1,"uU per gm; micro enzyme units per gram; micro enzymatic activity per mass; enzyme activity","LOINC","CCnt","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 uU = 1pmol/min","umol/min","UMOL/MIN","1",1,false],[false,"micro enzyme unit per liter","uU/L","UU/L","catalytic activity",10036894500000,[-3,-1,0,0,0,0,0],"μU/L","chemical",true,null,null,1,false,false,1,"uU per L; micro enzyme units per liter; litre; enzymatic activity per volume; enzyme activity ","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 uU = 1pmol/min","umol/min","UMOL/MIN","1",1,false],[false,"micro enzyme unit per milliliter","uU/mL","UU/ML","catalytic activity",10036894500000000,[-3,-1,0,0,0,0,0],"μU/mL","chemical",true,null,null,1,false,false,1,"uU per mL; micro enzyme units per milliliter; millilitre; enzymatic activity per volume; enzyme activity","LOINC","CCnc","Clinical","1 U is the standard enzyme unit which equals 1 micromole substrate catalyzed per minute (1 umol/min); 1 uU = 1pmol/min","umol/min","UMOL/MIN","1",1,false],[false,"microvolt","uV","UV","electric potential",0.001,[2,-2,1,0,0,-1,0],"μV","si",true,null,null,1,false,false,0,"microvolts","LOINC","Elpot","Clinical","unit of electric potential (voltage)","J/C","J/C","1",1,false]]}}
 
-},{}],90:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4603,7 +4634,7 @@ var Ucum = {
 exports.Ucum = Ucum;
 
 
-},{}],91:[function(require,module,exports){
+},{}],92:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4959,7 +4990,7 @@ class Dimension {
 exports.Dimension = Dimension;
 
 
-},{"./config.js":90,"is-integer":302}],92:[function(require,module,exports){
+},{"./config.js":91,"is-integer":303}],93:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5099,7 +5130,7 @@ function unpackArray(obj) {
 }
 
 
-},{}],93:[function(require,module,exports){
+},{}],94:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5257,7 +5288,7 @@ class Prefix {
 exports.Prefix = Prefix;
 
 
-},{"./config.js":90}],94:[function(require,module,exports){
+},{"./config.js":91}],95:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5402,7 +5433,7 @@ const PrefixTables = {
 exports.PrefixTables = PrefixTables;
 
 
-},{}],95:[function(require,module,exports){
+},{}],96:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5635,7 +5666,7 @@ var _default = new UcumFunctions(); // one singleton instance
 exports.default = _default;
 
 
-},{}],96:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5742,7 +5773,7 @@ function getSynonyms(theSyn) {
 } // end getSynonyms
 
 
-},{"./unitTables.js":102}],97:[function(require,module,exports){
+},{"./unitTables.js":103}],98:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5812,7 +5843,7 @@ var ucumJsonDefs = new UcumJsonDefs();
 exports.ucumJsonDefs = ucumJsonDefs;
 
 
-},{"../data/ucumDefs.min.json":89,"./jsonArrayPack.js":92,"./prefix.js":93,"./prefixTables.js":94,"./unit.js":100,"./unitTables.js":102}],98:[function(require,module,exports){
+},{"../data/ucumDefs.min.json":90,"./jsonArrayPack.js":93,"./prefix.js":94,"./prefixTables.js":95,"./unit.js":101,"./unitTables.js":103}],99:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6392,7 +6423,7 @@ UcumLhcUtils.getInstance = function () {
 };
 
 
-},{"./config.js":90,"./ucumInternalUtils.js":96,"./ucumJsonDefs.js":97,"./unitString.js":101,"./unitTables.js":102}],99:[function(require,module,exports){
+},{"./config.js":91,"./ucumInternalUtils.js":97,"./ucumJsonDefs.js":98,"./unitString.js":102,"./unitTables.js":103}],100:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6419,7 +6450,7 @@ var UnitTables = require("./unitTables.js").UnitTables;
 exports.UnitTables = UnitTables;
 
 
-},{"./config.js":90,"./ucumLhcUtils.js":98,"./unitTables.js":102}],100:[function(require,module,exports){
+},{"./config.js":91,"./ucumLhcUtils.js":99,"./unitTables.js":103}],101:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7382,7 +7413,7 @@ class Unit {
 exports.Unit = Unit;
 
 
-},{"./config.js":90,"./dimension.js":91,"./ucumFunctions.js":95,"./ucumInternalUtils.js":96,"./unitTables.js":102,"is-integer":302}],101:[function(require,module,exports){
+},{"./config.js":91,"./dimension.js":92,"./ucumFunctions.js":96,"./ucumInternalUtils.js":97,"./unitTables.js":103,"is-integer":303}],102:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8924,7 +8955,7 @@ UnitString.getInstance();
 */
 
 
-},{"./config.js":90,"./prefixTables.js":94,"./ucumInternalUtils.js":96,"./unit.js":100,"./unitTables.js":102}],102:[function(require,module,exports){
+},{"./config.js":91,"./prefixTables.js":95,"./ucumInternalUtils.js":97,"./unit.js":101,"./unitTables.js":103}],103:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9652,7 +9683,7 @@ const UnitTables = {
 exports.UnitTables = UnitTables;
 
 
-},{"./config.js":90}],103:[function(require,module,exports){
+},{"./config.js":91}],104:[function(require,module,exports){
 var asn1 = exports;
 
 asn1.bignum = require('bn.js');
@@ -9663,7 +9694,7 @@ asn1.constants = require('./asn1/constants');
 asn1.decoders = require('./asn1/decoders');
 asn1.encoders = require('./asn1/encoders');
 
-},{"./asn1/api":104,"./asn1/base":106,"./asn1/constants":110,"./asn1/decoders":112,"./asn1/encoders":115,"bn.js":123}],104:[function(require,module,exports){
+},{"./asn1/api":105,"./asn1/base":107,"./asn1/constants":111,"./asn1/decoders":113,"./asn1/encoders":116,"bn.js":124}],105:[function(require,module,exports){
 var asn1 = require('../asn1');
 var inherits = require('inherits');
 
@@ -9726,7 +9757,7 @@ Entity.prototype.encode = function encode(data, enc, /* internal */ reporter) {
   return this._getEncoder(enc).encode(data, reporter);
 };
 
-},{"../asn1":103,"inherits":296,"vm":593}],105:[function(require,module,exports){
+},{"../asn1":104,"inherits":297,"vm":594}],106:[function(require,module,exports){
 var inherits = require('inherits');
 var Reporter = require('../base').Reporter;
 var Buffer = require('buffer').Buffer;
@@ -9844,7 +9875,7 @@ EncoderBuffer.prototype.join = function join(out, offset) {
   return out;
 };
 
-},{"../base":106,"buffer":157,"inherits":296}],106:[function(require,module,exports){
+},{"../base":107,"buffer":158,"inherits":297}],107:[function(require,module,exports){
 var base = exports;
 
 base.Reporter = require('./reporter').Reporter;
@@ -9852,7 +9883,7 @@ base.DecoderBuffer = require('./buffer').DecoderBuffer;
 base.EncoderBuffer = require('./buffer').EncoderBuffer;
 base.Node = require('./node');
 
-},{"./buffer":105,"./node":107,"./reporter":108}],107:[function(require,module,exports){
+},{"./buffer":106,"./node":108,"./reporter":109}],108:[function(require,module,exports){
 var Reporter = require('../base').Reporter;
 var EncoderBuffer = require('../base').EncoderBuffer;
 var DecoderBuffer = require('../base').DecoderBuffer;
@@ -10488,7 +10519,7 @@ Node.prototype._isPrintstr = function isPrintstr(str) {
   return /^[A-Za-z0-9 '\(\)\+,\-\.\/:=\?]*$/.test(str);
 };
 
-},{"../base":106,"minimalistic-assert":330}],108:[function(require,module,exports){
+},{"../base":107,"minimalistic-assert":331}],109:[function(require,module,exports){
 var inherits = require('inherits');
 
 function Reporter(options) {
@@ -10611,7 +10642,7 @@ ReporterError.prototype.rethrow = function rethrow(msg) {
   return this;
 };
 
-},{"inherits":296}],109:[function(require,module,exports){
+},{"inherits":297}],110:[function(require,module,exports){
 var constants = require('../constants');
 
 exports.tagClass = {
@@ -10655,7 +10686,7 @@ exports.tag = {
 };
 exports.tagByName = constants._reverse(exports.tag);
 
-},{"../constants":110}],110:[function(require,module,exports){
+},{"../constants":111}],111:[function(require,module,exports){
 var constants = exports;
 
 // Helper
@@ -10676,7 +10707,7 @@ constants._reverse = function reverse(map) {
 
 constants.der = require('./der');
 
-},{"./der":109}],111:[function(require,module,exports){
+},{"./der":110}],112:[function(require,module,exports){
 var inherits = require('inherits');
 
 var asn1 = require('../../asn1');
@@ -11002,13 +11033,13 @@ function derDecodeLen(buf, primitive, fail) {
   return len;
 }
 
-},{"../../asn1":103,"inherits":296}],112:[function(require,module,exports){
+},{"../../asn1":104,"inherits":297}],113:[function(require,module,exports){
 var decoders = exports;
 
 decoders.der = require('./der');
 decoders.pem = require('./pem');
 
-},{"./der":111,"./pem":113}],113:[function(require,module,exports){
+},{"./der":112,"./pem":114}],114:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -11059,7 +11090,7 @@ PEMDecoder.prototype.decode = function decode(data, options) {
   return DERDecoder.prototype.decode.call(this, input, options);
 };
 
-},{"./der":111,"buffer":157,"inherits":296}],114:[function(require,module,exports){
+},{"./der":112,"buffer":158,"inherits":297}],115:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -11356,13 +11387,13 @@ function encodeTag(tag, primitive, cls, reporter) {
   return res;
 }
 
-},{"../../asn1":103,"buffer":157,"inherits":296}],115:[function(require,module,exports){
+},{"../../asn1":104,"buffer":158,"inherits":297}],116:[function(require,module,exports){
 var encoders = exports;
 
 encoders.der = require('./der');
 encoders.pem = require('./pem');
 
-},{"./der":114,"./pem":116}],116:[function(require,module,exports){
+},{"./der":115,"./pem":117}],117:[function(require,module,exports){
 var inherits = require('inherits');
 
 var DEREncoder = require('./der');
@@ -11385,7 +11416,7 @@ PEMEncoder.prototype.encode = function encode(data, options) {
   return out.join('\n');
 };
 
-},{"./der":114,"inherits":296}],117:[function(require,module,exports){
+},{"./der":115,"inherits":297}],118:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -11895,7 +11926,7 @@ var objectKeys = Object.keys || function (obj) {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"object.assign/polyfill":504,"util/":120}],118:[function(require,module,exports){
+},{"object.assign/polyfill":505,"util/":121}],119:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -11920,14 +11951,14 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],119:[function(require,module,exports){
+},{}],120:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],120:[function(require,module,exports){
+},{}],121:[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -12517,7 +12548,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":119,"_process":522,"inherits":118}],121:[function(require,module,exports){
+},{"./support/isBuffer":120,"_process":523,"inherits":119}],122:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -12538,7 +12569,7 @@ module.exports = function availableTypedArrays() {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"possible-typed-array-names":520}],122:[function(require,module,exports){
+},{"possible-typed-array-names":521}],123:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -12690,7 +12721,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],123:[function(require,module,exports){
+},{}],124:[function(require,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -16138,7 +16169,7 @@ function fromByteArray (uint8) {
   };
 })(typeof module === 'undefined' || module, this);
 
-},{"buffer":125}],124:[function(require,module,exports){
+},{"buffer":126}],125:[function(require,module,exports){
 var r;
 
 module.exports = function rand(len) {
@@ -16205,9 +16236,9 @@ if (typeof self === 'object') {
   }
 }
 
-},{"crypto":125}],125:[function(require,module,exports){
+},{"crypto":126}],126:[function(require,module,exports){
 
-},{}],126:[function(require,module,exports){
+},{}],127:[function(require,module,exports){
 // based on the aes implimentation in triple sec
 // https://github.com/keybase/triplesec
 // which is in turn based on the one from crypto-js
@@ -16437,7 +16468,7 @@ AES.prototype.scrub = function () {
 
 module.exports.AES = AES
 
-},{"safe-buffer":560}],127:[function(require,module,exports){
+},{"safe-buffer":561}],128:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -16556,7 +16587,7 @@ StreamCipher.prototype.setAAD = function setAAD (buf) {
 
 module.exports = StreamCipher
 
-},{"./aes":126,"./ghash":131,"./incr32":132,"buffer-xor":156,"cipher-base":167,"inherits":296,"safe-buffer":560}],128:[function(require,module,exports){
+},{"./aes":127,"./ghash":132,"./incr32":133,"buffer-xor":157,"cipher-base":168,"inherits":297,"safe-buffer":561}],129:[function(require,module,exports){
 var ciphers = require('./encrypter')
 var deciphers = require('./decrypter')
 var modes = require('./modes/list.json')
@@ -16571,7 +16602,7 @@ exports.createDecipher = exports.Decipher = deciphers.createDecipher
 exports.createDecipheriv = exports.Decipheriv = deciphers.createDecipheriv
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"./decrypter":129,"./encrypter":130,"./modes/list.json":140}],129:[function(require,module,exports){
+},{"./decrypter":130,"./encrypter":131,"./modes/list.json":141}],130:[function(require,module,exports){
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
 var MODES = require('./modes')
@@ -16697,7 +16728,7 @@ function createDecipher (suite, password) {
 exports.createDecipher = createDecipher
 exports.createDecipheriv = createDecipheriv
 
-},{"./aes":126,"./authCipher":127,"./modes":139,"./streamCipher":142,"cipher-base":167,"evp_bytestokey":269,"inherits":296,"safe-buffer":560}],130:[function(require,module,exports){
+},{"./aes":127,"./authCipher":128,"./modes":140,"./streamCipher":143,"cipher-base":168,"evp_bytestokey":270,"inherits":297,"safe-buffer":561}],131:[function(require,module,exports){
 var MODES = require('./modes')
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
@@ -16813,7 +16844,7 @@ function createCipher (suite, password) {
 exports.createCipheriv = createCipheriv
 exports.createCipher = createCipher
 
-},{"./aes":126,"./authCipher":127,"./modes":139,"./streamCipher":142,"cipher-base":167,"evp_bytestokey":269,"inherits":296,"safe-buffer":560}],131:[function(require,module,exports){
+},{"./aes":127,"./authCipher":128,"./modes":140,"./streamCipher":143,"cipher-base":168,"evp_bytestokey":270,"inherits":297,"safe-buffer":561}],132:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var ZEROES = Buffer.alloc(16, 0)
 
@@ -16904,7 +16935,7 @@ GHASH.prototype.final = function (abl, bl) {
 
 module.exports = GHASH
 
-},{"safe-buffer":560}],132:[function(require,module,exports){
+},{"safe-buffer":561}],133:[function(require,module,exports){
 function incr32 (iv) {
   var len = iv.length
   var item
@@ -16921,7 +16952,7 @@ function incr32 (iv) {
 }
 module.exports = incr32
 
-},{}],133:[function(require,module,exports){
+},{}],134:[function(require,module,exports){
 var xor = require('buffer-xor')
 
 exports.encrypt = function (self, block) {
@@ -16940,7 +16971,7 @@ exports.decrypt = function (self, block) {
   return xor(out, pad)
 }
 
-},{"buffer-xor":156}],134:[function(require,module,exports){
+},{"buffer-xor":157}],135:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var xor = require('buffer-xor')
 
@@ -16975,7 +17006,7 @@ exports.encrypt = function (self, data, decrypt) {
   return out
 }
 
-},{"buffer-xor":156,"safe-buffer":560}],135:[function(require,module,exports){
+},{"buffer-xor":157,"safe-buffer":561}],136:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -17019,7 +17050,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":560}],136:[function(require,module,exports){
+},{"safe-buffer":561}],137:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -17046,7 +17077,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":560}],137:[function(require,module,exports){
+},{"safe-buffer":561}],138:[function(require,module,exports){
 var xor = require('buffer-xor')
 var Buffer = require('safe-buffer').Buffer
 var incr32 = require('../incr32')
@@ -17078,7 +17109,7 @@ exports.encrypt = function (self, chunk) {
   return xor(chunk, pad)
 }
 
-},{"../incr32":132,"buffer-xor":156,"safe-buffer":560}],138:[function(require,module,exports){
+},{"../incr32":133,"buffer-xor":157,"safe-buffer":561}],139:[function(require,module,exports){
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 }
@@ -17087,7 +17118,7 @@ exports.decrypt = function (self, block) {
   return self._cipher.decryptBlock(block)
 }
 
-},{}],139:[function(require,module,exports){
+},{}],140:[function(require,module,exports){
 var modeModules = {
   ECB: require('./ecb'),
   CBC: require('./cbc'),
@@ -17107,7 +17138,7 @@ for (var key in modes) {
 
 module.exports = modes
 
-},{"./cbc":133,"./cfb":134,"./cfb1":135,"./cfb8":136,"./ctr":137,"./ecb":138,"./list.json":140,"./ofb":141}],140:[function(require,module,exports){
+},{"./cbc":134,"./cfb":135,"./cfb1":136,"./cfb8":137,"./ctr":138,"./ecb":139,"./list.json":141,"./ofb":142}],141:[function(require,module,exports){
 module.exports={
   "aes-128-ecb": {
     "cipher": "AES",
@@ -17300,7 +17331,7 @@ module.exports={
   }
 }
 
-},{}],141:[function(require,module,exports){
+},{}],142:[function(require,module,exports){
 (function (Buffer){(function (){
 var xor = require('buffer-xor')
 
@@ -17320,7 +17351,7 @@ exports.encrypt = function (self, chunk) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":157,"buffer-xor":156}],142:[function(require,module,exports){
+},{"buffer":158,"buffer-xor":157}],143:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -17349,7 +17380,7 @@ StreamCipher.prototype._final = function () {
 
 module.exports = StreamCipher
 
-},{"./aes":126,"cipher-base":167,"inherits":296,"safe-buffer":560}],143:[function(require,module,exports){
+},{"./aes":127,"cipher-base":168,"inherits":297,"safe-buffer":561}],144:[function(require,module,exports){
 var DES = require('browserify-des')
 var aes = require('browserify-aes/browser')
 var aesModes = require('browserify-aes/modes')
@@ -17418,7 +17449,7 @@ exports.createDecipher = exports.Decipher = createDecipher
 exports.createDecipheriv = exports.Decipheriv = createDecipheriv
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"browserify-aes/browser":128,"browserify-aes/modes":139,"browserify-des":144,"browserify-des/modes":145,"evp_bytestokey":269}],144:[function(require,module,exports){
+},{"browserify-aes/browser":129,"browserify-aes/modes":140,"browserify-des":145,"browserify-des/modes":146,"evp_bytestokey":270}],145:[function(require,module,exports){
 var CipherBase = require('cipher-base')
 var des = require('des.js')
 var inherits = require('inherits')
@@ -17470,7 +17501,7 @@ DES.prototype._final = function () {
   return Buffer.from(this._des.final())
 }
 
-},{"cipher-base":167,"des.js":232,"inherits":296,"safe-buffer":560}],145:[function(require,module,exports){
+},{"cipher-base":168,"des.js":233,"inherits":297,"safe-buffer":561}],146:[function(require,module,exports){
 exports['des-ecb'] = {
   key: 8,
   iv: 0
@@ -17496,7 +17527,7 @@ exports['des-ede'] = {
   iv: 0
 }
 
-},{}],146:[function(require,module,exports){
+},{}],147:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -17536,7 +17567,7 @@ crt.getr = getr;
 
 module.exports = crt;
 
-},{"bn.js":147,"randombytes":529,"safe-buffer":560}],147:[function(require,module,exports){
+},{"bn.js":148,"randombytes":530,"safe-buffer":561}],148:[function(require,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -21085,12 +21116,12 @@ module.exports = crt;
   };
 })(typeof module === 'undefined' || module, this);
 
-},{"buffer":125}],148:[function(require,module,exports){
+},{"buffer":126}],149:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./browser/algorithms.json');
 
-},{"./browser/algorithms.json":149}],149:[function(require,module,exports){
+},{"./browser/algorithms.json":150}],150:[function(require,module,exports){
 module.exports={
   "sha224WithRSAEncryption": {
     "sign": "rsa",
@@ -21244,7 +21275,7 @@ module.exports={
   }
 }
 
-},{}],150:[function(require,module,exports){
+},{}],151:[function(require,module,exports){
 module.exports={
   "1.3.132.0.10": "secp256k1",
   "1.3.132.0.33": "p224",
@@ -21254,7 +21285,7 @@ module.exports={
   "1.3.132.0.35": "p521"
 }
 
-},{}],151:[function(require,module,exports){
+},{}],152:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -21348,7 +21379,7 @@ module.exports = {
   createVerify: createVerify
 };
 
-},{"./algorithms.json":149,"./sign":152,"./verify":153,"create-hash":226,"inherits":296,"readable-stream":542,"safe-buffer":560}],152:[function(require,module,exports){
+},{"./algorithms.json":150,"./sign":153,"./verify":154,"create-hash":227,"inherits":297,"readable-stream":543,"safe-buffer":561}],153:[function(require,module,exports){
 'use strict';
 
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
@@ -21500,7 +21531,7 @@ module.exports = sign;
 module.exports.getKey = getKey;
 module.exports.makeKey = makeKey;
 
-},{"./curves.json":150,"bn.js":154,"browserify-rsa":146,"create-hmac":228,"elliptic":243,"parse-asn1":509,"safe-buffer":560}],153:[function(require,module,exports){
+},{"./curves.json":151,"bn.js":155,"browserify-rsa":147,"create-hmac":229,"elliptic":244,"parse-asn1":510,"safe-buffer":561}],154:[function(require,module,exports){
 'use strict';
 
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
@@ -21588,9 +21619,9 @@ function checkValue(b, q) {
 
 module.exports = verify;
 
-},{"./curves.json":150,"bn.js":154,"elliptic":243,"parse-asn1":509,"safe-buffer":560}],154:[function(require,module,exports){
-arguments[4][147][0].apply(exports,arguments)
-},{"buffer":125,"dup":147}],155:[function(require,module,exports){
+},{"./curves.json":151,"bn.js":155,"elliptic":244,"parse-asn1":510,"safe-buffer":561}],155:[function(require,module,exports){
+arguments[4][148][0].apply(exports,arguments)
+},{"buffer":126,"dup":148}],156:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -25738,7 +25769,7 @@ exports.setInternalBufferSize = setInternalBufferSize;
 
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":157,"crypto":230}],156:[function(require,module,exports){
+},{"buffer":158,"crypto":231}],157:[function(require,module,exports){
 (function (Buffer){(function (){
 module.exports = function xor (a, b) {
   var length = Math.min(a.length, b.length)
@@ -25752,7 +25783,7 @@ module.exports = function xor (a, b) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":157}],157:[function(require,module,exports){
+},{"buffer":158}],158:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * The buffer module from node.js, for the browser.
@@ -27533,7 +27564,7 @@ function numberIsNaN (obj) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"base64-js":122,"buffer":157,"ieee754":294}],158:[function(require,module,exports){
+},{"base64-js":123,"buffer":158,"ieee754":295}],159:[function(require,module,exports){
 'use strict';
 
 var bind = require('function-bind');
@@ -27545,7 +27576,7 @@ var $reflectApply = require('./reflectApply');
 /** @type {import('./actualApply')} */
 module.exports = $reflectApply || bind.call($call, $apply);
 
-},{"./functionApply":160,"./functionCall":161,"./reflectApply":163,"function-bind":272}],159:[function(require,module,exports){
+},{"./functionApply":161,"./functionCall":162,"./reflectApply":164,"function-bind":273}],160:[function(require,module,exports){
 'use strict';
 
 var bind = require('function-bind');
@@ -27557,19 +27588,19 @@ module.exports = function applyBind() {
 	return actualApply(bind, $apply, arguments);
 };
 
-},{"./actualApply":158,"./functionApply":160,"function-bind":272}],160:[function(require,module,exports){
+},{"./actualApply":159,"./functionApply":161,"function-bind":273}],161:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./functionApply')} */
 module.exports = Function.prototype.apply;
 
-},{}],161:[function(require,module,exports){
+},{}],162:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./functionCall')} */
 module.exports = Function.prototype.call;
 
-},{}],162:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 'use strict';
 
 var bind = require('function-bind');
@@ -27586,13 +27617,13 @@ module.exports = function callBindBasic(args) {
 	return $actualApply(bind, $call, args);
 };
 
-},{"./actualApply":158,"./functionCall":161,"es-errors/type":265,"function-bind":272}],163:[function(require,module,exports){
+},{"./actualApply":159,"./functionCall":162,"es-errors/type":266,"function-bind":273}],164:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./reflectApply')} */
 module.exports = typeof Reflect !== 'undefined' && Reflect && Reflect.apply;
 
-},{}],164:[function(require,module,exports){
+},{}],165:[function(require,module,exports){
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
@@ -27609,7 +27640,7 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	return intrinsic;
 };
 
-},{"./":165,"get-intrinsic":273}],165:[function(require,module,exports){
+},{"./":166,"get-intrinsic":274}],166:[function(require,module,exports){
 'use strict';
 
 var setFunctionLength = require('set-function-length');
@@ -27635,7 +27666,7 @@ if ($defineProperty) {
 	module.exports.apply = applyBind;
 }
 
-},{"call-bind-apply-helpers":162,"call-bind-apply-helpers/applyBind":159,"es-define-property":259,"set-function-length":561}],166:[function(require,module,exports){
+},{"call-bind-apply-helpers":163,"call-bind-apply-helpers/applyBind":160,"es-define-property":260,"set-function-length":562}],167:[function(require,module,exports){
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
@@ -27655,7 +27686,7 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	return intrinsic;
 };
 
-},{"call-bind-apply-helpers":162,"get-intrinsic":273}],167:[function(require,module,exports){
+},{"call-bind-apply-helpers":163,"get-intrinsic":274}],168:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -27824,7 +27855,7 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 
 module.exports = CipherBase;
 
-},{"inherits":296,"safe-buffer":560,"stream":570,"string_decoder":585}],168:[function(require,module,exports){
+},{"inherits":297,"safe-buffer":561,"stream":571,"string_decoder":586}],169:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -27933,7 +27964,7 @@ function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
 
-},{"buffer":157}],169:[function(require,module,exports){
+},{"buffer":158}],170:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CodeService = void 0;
@@ -27976,7 +28007,7 @@ class CodeService {
 }
 exports.CodeService = CodeService;
 
-},{"./datatypes/datatypes":173}],170:[function(require,module,exports){
+},{"./datatypes/datatypes":174}],171:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -28129,7 +28160,7 @@ class PatientSource {
 }
 exports.PatientSource = PatientSource;
 
-},{"./datatypes/datatypes":173}],171:[function(require,module,exports){
+},{"./datatypes/datatypes":174}],172:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -28212,7 +28243,7 @@ exports.default = {
     ValueSet: datatypes_1.ValueSet
 };
 
-},{"./cql-code-service":169,"./cql-patient":170,"./datatypes/datatypes":173,"./elm/expression":189,"./elm/library":194,"./runtime/context":209,"./runtime/executor":210,"./runtime/messageListeners":211,"./runtime/repository":212,"./runtime/results":213,"./types":216,"./util/customErrors":220}],172:[function(require,module,exports){
+},{"./cql-code-service":170,"./cql-patient":171,"./datatypes/datatypes":174,"./elm/expression":190,"./elm/library":195,"./runtime/context":210,"./runtime/executor":211,"./runtime/messageListeners":212,"./runtime/repository":213,"./runtime/results":214,"./types":217,"./util/customErrors":221}],173:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ValueSet = exports.CQLValueSet = exports.CodeSystem = exports.Vocabulary = exports.Concept = exports.Code = void 0;
@@ -28388,7 +28419,7 @@ function codesMatch(code1, code2) {
     return code1.code === code2.code && code1.system === code2.system;
 }
 
-},{"../util/util":224}],173:[function(require,module,exports){
+},{"../util/util":225}],174:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -28409,7 +28440,7 @@ __exportStar(require("./interval"), exports);
 __exportStar(require("./quantity"), exports);
 __exportStar(require("./ratio"), exports);
 
-},{"./clinical":172,"./datetime":174,"./interval":176,"./logic":177,"./quantity":178,"./ratio":179,"./uncertainty":180}],174:[function(require,module,exports){
+},{"./clinical":173,"./datetime":175,"./interval":177,"./logic":178,"./quantity":179,"./ratio":180,"./uncertainty":181}],175:[function(require,module,exports){
 "use strict";
 var _a, _b;
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -29609,7 +29640,7 @@ function isPrecisionUnspecifiedOrGreaterThanDay(precision) {
     return precision == null || /^h|mi|s/.test(precision);
 }
 
-},{"../util/util":224,"./uncertainty":180,"luxon":306}],175:[function(require,module,exports){
+},{"../util/util":225,"./uncertainty":181,"luxon":307}],176:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Exception = void 0;
@@ -29621,7 +29652,7 @@ class Exception {
 }
 exports.Exception = Exception;
 
-},{}],176:[function(require,module,exports){
+},{}],177:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -30263,7 +30294,7 @@ function highestNumericUncertainty(x, y) {
     }
 }
 
-},{"../util/comparison":219,"../util/math":222,"./logic":177,"./quantity":178,"./uncertainty":180}],177:[function(require,module,exports){
+},{"../util/comparison":220,"../util/math":223,"./logic":178,"./quantity":179,"./uncertainty":181}],178:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ThreeValuedLogic = void 0;
@@ -30322,7 +30353,7 @@ class ThreeValuedLogic {
 }
 exports.ThreeValuedLogic = ThreeValuedLogic;
 
-},{}],178:[function(require,module,exports){
+},{}],179:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.doMultiplication = exports.doDivision = exports.doSubtraction = exports.doAddition = exports.parseQuantity = exports.Quantity = void 0;
@@ -30526,7 +30557,7 @@ function doMultiplication(a, b) {
 }
 exports.doMultiplication = doMultiplication;
 
-},{"../util/math":222,"../util/units":223}],179:[function(require,module,exports){
+},{"../util/math":223,"../util/units":224}],180:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Ratio = void 0;
@@ -30567,7 +30598,7 @@ class Ratio {
 }
 exports.Ratio = Ratio;
 
-},{}],180:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Uncertainty = void 0;
@@ -30701,7 +30732,7 @@ class Uncertainty {
 }
 exports.Uncertainty = Uncertainty;
 
-},{"../util/comparison":219,"./logic":177}],181:[function(require,module,exports){
+},{"../util/comparison":220,"./logic":178}],182:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AnyTrue = exports.AllTrue = exports.PopulationVariance = exports.Variance = exports.PopulationStdDev = exports.GeometricMean = exports.Product = exports.StdDev = exports.Mode = exports.Median = exports.Avg = exports.Max = exports.Min = exports.Sum = exports.Count = void 0;
@@ -31134,7 +31165,7 @@ function medianOfNumbers(numbers) {
     }
 }
 
-},{"../datatypes/datatypes":173,"../datatypes/exception":175,"../util/comparison":219,"../util/util":224,"./builder":183,"./expression":189}],182:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"../datatypes/exception":176,"../util/comparison":220,"../util/util":225,"./builder":184,"./expression":190}],183:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -31616,7 +31647,7 @@ class Predecessor extends expression_1.Expression {
 }
 exports.Predecessor = Predecessor;
 
-},{"../datatypes/quantity":178,"../datatypes/uncertainty":180,"../util/math":222,"./builder":183,"./expression":189}],183:[function(require,module,exports){
+},{"../datatypes/quantity":179,"../datatypes/uncertainty":181,"../util/math":223,"./builder":184,"./expression":190}],184:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -31672,7 +31703,7 @@ function constructByName(name, json) {
     return new E[name](json);
 }
 
-},{"../util/util":224,"./expressions":190}],184:[function(require,module,exports){
+},{"../util/util":225,"./expressions":191}],185:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -31985,7 +32016,7 @@ function calculateAge(precision, birthDate, asOf, timeZoneOffset) {
     return null;
 }
 
-},{"../datatypes/datatypes":173,"../util/util":224,"./builder":183,"./expression":189}],185:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"../util/util":225,"./builder":184,"./expression":190}],186:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GreaterOrEqual = exports.Greater = exports.LessOrEqual = exports.Less = void 0;
@@ -32046,7 +32077,7 @@ class GreaterOrEqual extends expression_1.Expression {
 }
 exports.GreaterOrEqual = GreaterOrEqual;
 
-},{"../datatypes/datatypes":173,"./expression":189}],186:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"./expression":190}],187:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Case = exports.CaseItem = exports.If = void 0;
@@ -32113,7 +32144,7 @@ class Case extends expression_1.Expression {
 }
 exports.Case = Case;
 
-},{"../util/comparison":219,"./builder":183,"./expression":189}],187:[function(require,module,exports){
+},{"../util/comparison":220,"./builder":184,"./expression":190}],188:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -32365,7 +32396,7 @@ class DurationBetween extends expression_1.Expression {
 }
 exports.DurationBetween = DurationBetween;
 
-},{"../datatypes/datatypes":173,"./builder":183,"./expression":189,"./literal":196}],188:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"./builder":184,"./expression":190,"./literal":197}],189:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VersionedIdentifier = exports.IncludeDef = exports.UsingDef = void 0;
@@ -32380,7 +32411,7 @@ class VersionedIdentifier extends expression_1.UnimplementedExpression {
 }
 exports.VersionedIdentifier = VersionedIdentifier;
 
-},{"./expression":189}],189:[function(require,module,exports){
+},{"./expression":190}],190:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UnimplementedExpression = exports.Expression = void 0;
@@ -32474,7 +32505,7 @@ class UnimplementedExpression extends Expression {
 }
 exports.UnimplementedExpression = UnimplementedExpression;
 
-},{"../util/customErrors":220,"../util/util":224,"./builder":183}],190:[function(require,module,exports){
+},{"../util/customErrors":221,"../util/util":225,"./builder":184}],191:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -32527,7 +32558,7 @@ Object.defineProperty(exports, "doIncludes", { enumerable: true, get: function (
 Object.defineProperty(exports, "doExcept", { enumerable: true, get: function () { return interval_1.doExcept; } });
 Object.defineProperty(exports, "doContains", { enumerable: true, get: function () { return interval_1.doContains; } });
 
-},{"./aggregate":181,"./arithmetic":182,"./clinical":184,"./comparison":185,"./conditional":186,"./datetime":187,"./declaration":188,"./expression":189,"./external":191,"./instance":192,"./interval":193,"./list":195,"./literal":196,"./logical":197,"./message":198,"./nullological":199,"./overloaded":200,"./parameters":201,"./quantity":202,"./query":203,"./ratio":204,"./reusable":205,"./string":206,"./structured":207,"./type":208}],191:[function(require,module,exports){
+},{"./aggregate":182,"./arithmetic":183,"./clinical":185,"./comparison":186,"./conditional":187,"./datetime":188,"./declaration":189,"./expression":190,"./external":192,"./instance":193,"./interval":194,"./list":196,"./literal":197,"./logical":198,"./message":199,"./nullological":200,"./overloaded":201,"./parameters":202,"./quantity":203,"./query":204,"./ratio":205,"./reusable":206,"./string":207,"./structured":208,"./type":209}],192:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Retrieve = void 0;
@@ -32593,7 +32624,7 @@ class Retrieve extends expression_1.Expression {
 }
 exports.Retrieve = Retrieve;
 
-},{"../util/util":224,"./builder":183,"./expression":189}],192:[function(require,module,exports){
+},{"../util/util":225,"./builder":184,"./expression":190}],193:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Instance = void 0;
@@ -32635,7 +32666,7 @@ class Instance extends expression_1.Expression {
 }
 exports.Instance = Instance;
 
-},{"../datatypes/datatypes":173,"../datatypes/quantity":178,"./builder":183,"./expression":189}],193:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"../datatypes/quantity":179,"./builder":184,"./expression":190}],194:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -33367,7 +33398,7 @@ function truncateDecimal(decimal, decimalPlaces) {
     return parseFloat(decimal.toString().match(re)[0]);
 }
 
-},{"../datatypes/interval":176,"../datatypes/quantity":178,"../util/math":222,"../util/units":223,"./builder":183,"./expression":189}],194:[function(require,module,exports){
+},{"../datatypes/interval":177,"../datatypes/quantity":179,"../util/math":223,"../util/units":224,"./builder":184,"./expression":190}],195:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Library = void 0;
@@ -33474,7 +33505,7 @@ class Library {
 }
 exports.Library = Library;
 
-},{"./expressions":190}],195:[function(require,module,exports){
+},{"./expressions":191}],196:[function(require,module,exports){
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -33752,7 +33783,7 @@ class Slice extends expression_1.Expression {
 exports.Slice = Slice;
 // Length is completely handled by overloaded#Length
 
-},{"../util/comparison":219,"../util/immutableUtil":221,"../util/util":224,"./builder":183,"./expression":189,"immutable":295}],196:[function(require,module,exports){
+},{"../util/comparison":220,"../util/immutableUtil":222,"../util/util":225,"./builder":184,"./expression":190,"immutable":296}],197:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StringLiteral = exports.DecimalLiteral = exports.IntegerLiteral = exports.BooleanLiteral = exports.Literal = void 0;
@@ -33844,7 +33875,7 @@ class StringLiteral extends Literal {
 }
 exports.StringLiteral = StringLiteral;
 
-},{"./expression":189}],197:[function(require,module,exports){
+},{"./expression":190}],198:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IsFalse = exports.IsTrue = exports.Xor = exports.Not = exports.Or = exports.Implies = exports.And = void 0;
@@ -33915,7 +33946,7 @@ class IsFalse extends expression_1.Expression {
 }
 exports.IsFalse = IsFalse;
 
-},{"../datatypes/datatypes":173,"./expression":189}],198:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"./expression":190}],199:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Message = void 0;
@@ -33947,7 +33978,7 @@ class Message extends expression_1.Expression {
 }
 exports.Message = Message;
 
-},{"./builder":183,"./expression":189}],199:[function(require,module,exports){
+},{"./builder":184,"./expression":190}],200:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Coalesce = exports.IsNull = exports.Null = void 0;
@@ -33997,7 +34028,7 @@ class Coalesce extends expression_1.Expression {
 }
 exports.Coalesce = Coalesce;
 
-},{"./expression":189}],200:[function(require,module,exports){
+},{"./expression":190}],201:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -34383,7 +34414,7 @@ class Precision extends expression_1.Expression {
 }
 exports.Precision = Precision;
 
-},{"../datatypes/datetime":174,"../datatypes/logic":177,"../util/comparison":219,"../util/util":224,"./datetime":187,"./expression":189,"./interval":193,"./list":195}],201:[function(require,module,exports){
+},{"../datatypes/datetime":175,"../datatypes/logic":178,"../util/comparison":220,"../util/util":225,"./datetime":188,"./expression":190,"./interval":194,"./list":196}],202:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ParameterRef = exports.ParameterDef = void 0;
@@ -34427,7 +34458,7 @@ class ParameterRef extends expression_1.Expression {
 }
 exports.ParameterRef = ParameterRef;
 
-},{"./builder":183,"./expression":189}],202:[function(require,module,exports){
+},{"./builder":184,"./expression":190}],203:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -34466,7 +34497,7 @@ class Quantity extends expression_1.Expression {
 }
 exports.Quantity = Quantity;
 
-},{"../datatypes/datatypes":173,"./expression":189}],203:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"./expression":190}],204:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.QueryLetRef = exports.AliasRef = exports.Query = exports.SortClause = exports.ReturnClause = exports.ByColumn = exports.ByExpression = exports.ByDirection = exports.Sort = exports.Without = exports.With = exports.LetClause = exports.AliasedQuerySource = void 0;
@@ -34761,7 +34792,7 @@ function cartesianProductOf(sources) {
     }, [[]]);
 }
 
-},{"../util/util":224,"./builder":183,"./expression":189,"./list":195}],204:[function(require,module,exports){
+},{"../util/util":225,"./builder":184,"./expression":190,"./list":196}],205:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -34809,7 +34840,7 @@ class Ratio extends expression_1.Expression {
 }
 exports.Ratio = Ratio;
 
-},{"../datatypes/datatypes":173,"../datatypes/quantity":178,"./expression":189}],205:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"../datatypes/quantity":179,"./expression":190}],206:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.IdentifierRef = exports.OperandRef = exports.FunctionRef = exports.FunctionDef = exports.ExpressionRef = exports.ExpressionDef = void 0;
@@ -34967,7 +34998,7 @@ class IdentifierRef extends expression_1.Expression {
 }
 exports.IdentifierRef = IdentifierRef;
 
-},{"./builder":183,"./expression":189}],206:[function(require,module,exports){
+},{"./builder":184,"./expression":190}],207:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ReplaceMatches = exports.EndsWith = exports.StartsWith = exports.Substring = exports.Matches = exports.LastPositionOf = exports.PositionOf = exports.Lower = exports.Upper = exports.SplitOnMatches = exports.Split = exports.Combine = exports.Concatenate = void 0;
@@ -35198,7 +35229,7 @@ class ReplaceMatches extends expression_1.Expression {
 }
 exports.ReplaceMatches = ReplaceMatches;
 
-},{"./builder":183,"./expression":189}],207:[function(require,module,exports){
+},{"./builder":184,"./expression":190}],208:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TupleElementDefinition = exports.TupleElement = exports.Tuple = exports.Property = void 0;
@@ -35275,7 +35306,7 @@ class TupleElementDefinition extends expression_1.UnimplementedExpression {
 }
 exports.TupleElementDefinition = TupleElementDefinition;
 
-},{"./builder":183,"./expression":189}],208:[function(require,module,exports){
+},{"./builder":184,"./expression":190}],209:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TupleTypeSpecifier = exports.NamedTypeSpecifier = exports.ListTypeSpecifier = exports.IntervalTypeSpecifier = exports.Is = exports.CanConvertQuantity = exports.ConvertQuantity = exports.ConvertsToTime = exports.ConvertsToString = exports.ConvertsToRatio = exports.ConvertsToQuantity = exports.ConvertsToInteger = exports.ConvertsToDecimal = exports.ConvertsToDateTime = exports.ConvertsToDate = exports.ConvertsToBoolean = exports.Convert = exports.ToTime = exports.ToString = exports.ToRatio = exports.ToQuantity = exports.ToInteger = exports.ToDecimal = exports.ToDateTime = exports.ToDate = exports.ToConcept = exports.ToBoolean = exports.As = void 0;
@@ -35936,7 +35967,7 @@ class TupleTypeSpecifier extends expression_1.UnimplementedExpression {
 }
 exports.TupleTypeSpecifier = TupleTypeSpecifier;
 
-},{"../datatypes/clinical":172,"../datatypes/datetime":174,"../datatypes/quantity":178,"../datatypes/ratio":179,"../datatypes/uncertainty":180,"../util/math":222,"../util/util":224,"./expression":189}],209:[function(require,module,exports){
+},{"../datatypes/clinical":173,"../datatypes/datetime":175,"../datatypes/quantity":179,"../datatypes/ratio":180,"../datatypes/uncertainty":181,"../util/math":223,"../util/util":225,"./expression":190}],210:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -36376,7 +36407,7 @@ class UnfilteredContext extends Context {
 }
 exports.UnfilteredContext = UnfilteredContext;
 
-},{"../datatypes/datatypes":173,"../datatypes/exception":175,"../util/util":224,"./messageListeners":211}],210:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"../datatypes/exception":176,"../util/util":225,"./messageListeners":212}],211:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Executor = void 0;
@@ -36456,7 +36487,7 @@ class Executor {
 }
 exports.Executor = Executor;
 
-},{"./context":209,"./messageListeners":211,"./results":213}],211:[function(require,module,exports){
+},{"./context":210,"./messageListeners":212,"./results":214}],212:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ConsoleMessageListener = exports.NullMessageListener = void 0;
@@ -36482,7 +36513,7 @@ class ConsoleMessageListener {
 }
 exports.ConsoleMessageListener = ConsoleMessageListener;
 
-},{}],212:[function(require,module,exports){
+},{}],213:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Repository = void 0;
@@ -36513,7 +36544,7 @@ class Repository {
 }
 exports.Repository = Repository;
 
-},{"../elm/library":194}],213:[function(require,module,exports){
+},{"../elm/library":195}],214:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Results = void 0;
@@ -36550,15 +36581,15 @@ class Results {
 }
 exports.Results = Results;
 
-},{}],214:[function(require,module,exports){
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-
 },{}],215:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 
 },{}],216:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+
+},{}],217:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -36576,16 +36607,16 @@ __exportStar(require("./cql-patient.interfaces"), exports);
 __exportStar(require("./runtime.types"), exports);
 __exportStar(require("./type-specifiers.interfaces"), exports);
 
-},{"./cql-code-service.interfaces":214,"./cql-patient.interfaces":215,"./runtime.types":217,"./type-specifiers.interfaces":218}],217:[function(require,module,exports){
+},{"./cql-code-service.interfaces":215,"./cql-patient.interfaces":216,"./runtime.types":218,"./type-specifiers.interfaces":219}],218:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 
-},{}],218:[function(require,module,exports){
+},{}],219:[function(require,module,exports){
 "use strict";
 // Types derived from http://cql.hl7.org/04-logicalspecification.html#typespecifier
 Object.defineProperty(exports, "__esModule", { value: true });
 
-},{}],219:[function(require,module,exports){
+},{}],220:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.equals = exports.equivalent = exports.greaterThanOrEquals = exports.greaterThan = exports.lessThanOrEquals = exports.lessThan = void 0;
@@ -36830,7 +36861,7 @@ function equals(a, b) {
 }
 exports.equals = equals;
 
-},{"../datatypes/datatypes":173}],220:[function(require,module,exports){
+},{"../datatypes/datatypes":174}],221:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AnnotatedError = void 0;
@@ -36850,7 +36881,7 @@ class AnnotatedError extends Error {
 }
 exports.AnnotatedError = AnnotatedError;
 
-},{}],221:[function(require,module,exports){
+},{}],222:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -37006,7 +37037,7 @@ const toNormalizedKey = (js) => {
 };
 exports.toNormalizedKey = toNormalizedKey;
 
-},{"../datatypes/datatypes":173,"./math":222,"./units":223,"@lhncbc/ucum-lhc":99,"immutable":295}],222:[function(require,module,exports){
+},{"../datatypes/datatypes":174,"./math":223,"./units":224,"@lhncbc/ucum-lhc":100,"immutable":296}],223:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.decimalOrNull = exports.decimalAdjust = exports.minValueForType = exports.minValueForInstance = exports.maxValueForType = exports.maxValueForInstance = exports.predecessor = exports.successor = exports.OverFlowException = exports.limitDecimalPrecision = exports.isValidDecimal = exports.isValidInteger = exports.overflowsOrUnderflows = exports.MAX_TIME_VALUE = exports.MIN_TIME_VALUE = exports.MAX_DATE_VALUE = exports.MIN_DATE_VALUE = exports.MAX_DATETIME_VALUE = exports.MIN_DATETIME_VALUE = exports.MIN_FLOAT_PRECISION_VALUE = exports.MIN_FLOAT_VALUE = exports.MAX_FLOAT_VALUE = exports.MIN_INT_VALUE = exports.MAX_INT_VALUE = void 0;
@@ -37381,7 +37412,7 @@ function decimalOrNull(value) {
 }
 exports.decimalOrNull = decimalOrNull;
 
-},{"../datatypes/datetime":174,"../datatypes/exception":175,"../datatypes/uncertainty":180}],223:[function(require,module,exports){
+},{"../datatypes/datetime":175,"../datatypes/exception":176,"../datatypes/uncertainty":181}],224:[function(require,module,exports){
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -37668,7 +37699,7 @@ function fixUnit(unit) {
     return fixCQLDateUnit(fixEmptyUnit(unit));
 }
 
-},{"./math":222,"@lhncbc/ucum-lhc":99}],224:[function(require,module,exports){
+},{"./math":223,"@lhncbc/ucum-lhc":100}],225:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.resolveValueSet = exports.asyncMergeSort = exports.getTimezoneSeparatorFromString = exports.normalizeMillisecondsField = exports.normalizeMillisecondsFieldInString = exports.jsDate = exports.anyTrue = exports.allTrue = exports.typeIsArray = exports.isNull = exports.numerical_sort = exports.removeNulls = void 0;
@@ -37784,7 +37815,7 @@ async function resolveValueSet(vs, ctx) {
 }
 exports.resolveValueSet = resolveValueSet;
 
-},{}],225:[function(require,module,exports){
+},{}],226:[function(require,module,exports){
 (function (Buffer){(function (){
 var elliptic = require('elliptic')
 var BN = require('bn.js')
@@ -37912,7 +37943,7 @@ function formatReturnValue (bn, enc, len) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"bn.js":123,"buffer":157,"elliptic":243}],226:[function(require,module,exports){
+},{"bn.js":124,"buffer":158,"elliptic":244}],227:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var MD5 = require('md5.js')
@@ -37944,14 +37975,14 @@ module.exports = function createHash (alg) {
   return new Hash(sha(alg))
 }
 
-},{"cipher-base":167,"inherits":296,"md5.js":312,"ripemd160":543,"sha.js":563}],227:[function(require,module,exports){
+},{"cipher-base":168,"inherits":297,"md5.js":313,"ripemd160":544,"sha.js":564}],228:[function(require,module,exports){
 var MD5 = require('md5.js')
 
 module.exports = function (buffer) {
   return new MD5().update(buffer).digest()
 }
 
-},{"md5.js":312}],228:[function(require,module,exports){
+},{"md5.js":313}],229:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Legacy = require('./legacy')
@@ -38015,7 +38046,7 @@ module.exports = function createHmac (alg, key) {
   return new Hmac(alg, key)
 }
 
-},{"./legacy":229,"cipher-base":167,"create-hash/md5":227,"inherits":296,"ripemd160":543,"safe-buffer":560,"sha.js":563}],229:[function(require,module,exports){
+},{"./legacy":230,"cipher-base":168,"create-hash/md5":228,"inherits":297,"ripemd160":544,"safe-buffer":561,"sha.js":564}],230:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Buffer = require('safe-buffer').Buffer
@@ -38063,7 +38094,7 @@ Hmac.prototype._final = function () {
 }
 module.exports = Hmac
 
-},{"cipher-base":167,"inherits":296,"safe-buffer":560}],230:[function(require,module,exports){
+},{"cipher-base":168,"inherits":297,"safe-buffer":561}],231:[function(require,module,exports){
 'use strict';
 
 // eslint-disable-next-line no-multi-assign
@@ -38168,7 +38199,7 @@ exports.constants = {
 	POINT_CONVERSION_HYBRID: 6
 };
 
-},{"browserify-cipher":143,"browserify-sign":151,"browserify-sign/algos":148,"create-ecdh":225,"create-hash":226,"create-hmac":228,"diffie-hellman":238,"pbkdf2":510,"public-encrypt":523,"randombytes":529,"randomfill":530}],231:[function(require,module,exports){
+},{"browserify-cipher":144,"browserify-sign":152,"browserify-sign/algos":149,"create-ecdh":226,"create-hash":227,"create-hmac":229,"diffie-hellman":239,"pbkdf2":511,"public-encrypt":524,"randombytes":530,"randomfill":531}],232:[function(require,module,exports){
 'use strict';
 
 var $defineProperty = require('es-define-property');
@@ -38226,7 +38257,7 @@ module.exports = function defineDataProperty(
 	}
 };
 
-},{"es-define-property":259,"es-errors/syntax":264,"es-errors/type":265,"gopd":275}],232:[function(require,module,exports){
+},{"es-define-property":260,"es-errors/syntax":265,"es-errors/type":266,"gopd":276}],233:[function(require,module,exports){
 'use strict';
 
 exports.utils = require('./des/utils');
@@ -38235,7 +38266,7 @@ exports.DES = require('./des/des');
 exports.CBC = require('./des/cbc');
 exports.EDE = require('./des/ede');
 
-},{"./des/cbc":233,"./des/cipher":234,"./des/des":235,"./des/ede":236,"./des/utils":237}],233:[function(require,module,exports){
+},{"./des/cbc":234,"./des/cipher":235,"./des/des":236,"./des/ede":237,"./des/utils":238}],234:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38302,7 +38333,7 @@ proto._update = function _update(inp, inOff, out, outOff) {
   }
 };
 
-},{"inherits":296,"minimalistic-assert":330}],234:[function(require,module,exports){
+},{"inherits":297,"minimalistic-assert":331}],235:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38446,7 +38477,7 @@ Cipher.prototype._finalDecrypt = function _finalDecrypt() {
   return this._unpad(out);
 };
 
-},{"minimalistic-assert":330}],235:[function(require,module,exports){
+},{"minimalistic-assert":331}],236:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38598,7 +38629,7 @@ DES.prototype._decrypt = function _decrypt(state, lStart, rStart, out, off) {
   utils.rip(l, r, out, off);
 };
 
-},{"./cipher":234,"./utils":237,"inherits":296,"minimalistic-assert":330}],236:[function(require,module,exports){
+},{"./cipher":235,"./utils":238,"inherits":297,"minimalistic-assert":331}],237:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -38654,7 +38685,7 @@ EDE.prototype._update = function _update(inp, inOff, out, outOff) {
 EDE.prototype._pad = DES.prototype._pad;
 EDE.prototype._unpad = DES.prototype._unpad;
 
-},{"./cipher":234,"./des":235,"inherits":296,"minimalistic-assert":330}],237:[function(require,module,exports){
+},{"./cipher":235,"./des":236,"inherits":297,"minimalistic-assert":331}],238:[function(require,module,exports){
 'use strict';
 
 exports.readUInt32BE = function readUInt32BE(bytes, off) {
@@ -38912,7 +38943,7 @@ exports.padSplit = function padSplit(num, size, group) {
   return out.join(' ');
 };
 
-},{}],238:[function(require,module,exports){
+},{}],239:[function(require,module,exports){
 (function (Buffer){(function (){
 var generatePrime = require('./lib/generatePrime')
 var primes = require('./lib/primes.json')
@@ -38958,7 +38989,7 @@ exports.DiffieHellmanGroup = exports.createDiffieHellmanGroup = exports.getDiffi
 exports.createDiffieHellman = exports.DiffieHellman = createDiffieHellman
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"./lib/dh":239,"./lib/generatePrime":240,"./lib/primes.json":241,"buffer":157}],239:[function(require,module,exports){
+},{"./lib/dh":240,"./lib/generatePrime":241,"./lib/primes.json":242,"buffer":158}],240:[function(require,module,exports){
 (function (Buffer){(function (){
 var BN = require('bn.js');
 var MillerRabin = require('miller-rabin');
@@ -39126,7 +39157,7 @@ function formatReturnValue(bn, enc) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"./generatePrime":240,"bn.js":123,"buffer":157,"miller-rabin":329,"randombytes":529}],240:[function(require,module,exports){
+},{"./generatePrime":241,"bn.js":124,"buffer":158,"miller-rabin":330,"randombytes":530}],241:[function(require,module,exports){
 var randomBytes = require('randombytes');
 module.exports = findPrime;
 findPrime.simpleSieve = simpleSieve;
@@ -39233,7 +39264,7 @@ function findPrime(bits, gen) {
 
 }
 
-},{"bn.js":123,"miller-rabin":329,"randombytes":529}],241:[function(require,module,exports){
+},{"bn.js":124,"miller-rabin":330,"randombytes":530}],242:[function(require,module,exports){
 module.exports={
     "modp1": {
         "gen": "02",
@@ -39268,7 +39299,7 @@ module.exports={
         "prime": "ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dbe115974a3926f12fee5e438777cb6a932df8cd8bec4d073b931ba3bc832b68d9dd300741fa7bf8afc47ed2576f6936ba424663aab639c5ae4f5683423b4742bf1c978238f16cbe39d652de3fdb8befc848ad922222e04a4037c0713eb57a81a23f0c73473fc646cea306b4bcbc8862f8385ddfa9d4b7fa2c087e879683303ed5bdd3a062b3cf5b3a278a66d2a13f83f44f82ddf310ee074ab6a364597e899a0255dc164f31cc50846851df9ab48195ded7ea1b1d510bd7ee74d73faf36bc31ecfa268359046f4eb879f924009438b481c6cd7889a002ed5ee382bc9190da6fc026e479558e4475677e9aa9e3050e2765694dfc81f56e880b96e7160c980dd98edd3dfffffffffffffffff"
     }
 }
-},{}],242:[function(require,module,exports){
+},{}],243:[function(require,module,exports){
 'use strict';
 
 var callBind = require('call-bind-apply-helpers');
@@ -39300,7 +39331,7 @@ module.exports = desc && typeof desc.get === 'function'
 		}
 		: false;
 
-},{"call-bind-apply-helpers":162,"gopd":275}],243:[function(require,module,exports){
+},{"call-bind-apply-helpers":163,"gopd":276}],244:[function(require,module,exports){
 'use strict';
 
 var elliptic = exports;
@@ -39315,7 +39346,7 @@ elliptic.curves = require('./elliptic/curves');
 elliptic.ec = require('./elliptic/ec');
 elliptic.eddsa = require('./elliptic/eddsa');
 
-},{"../package.json":258,"./elliptic/curve":246,"./elliptic/curves":249,"./elliptic/ec":250,"./elliptic/eddsa":253,"./elliptic/utils":257,"brorand":124}],244:[function(require,module,exports){
+},{"../package.json":259,"./elliptic/curve":247,"./elliptic/curves":250,"./elliptic/ec":251,"./elliptic/eddsa":254,"./elliptic/utils":258,"brorand":125}],245:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -39698,7 +39729,7 @@ BasePoint.prototype.dblp = function dblp(k) {
   return r;
 };
 
-},{"../utils":257,"bn.js":123}],245:[function(require,module,exports){
+},{"../utils":258,"bn.js":124}],246:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -40135,7 +40166,7 @@ Point.prototype.eqXToP = function eqXToP(x) {
 Point.prototype.toP = Point.prototype.normalize;
 Point.prototype.mixedAdd = Point.prototype.add;
 
-},{"../utils":257,"./base":244,"bn.js":123,"inherits":296}],246:[function(require,module,exports){
+},{"../utils":258,"./base":245,"bn.js":124,"inherits":297}],247:[function(require,module,exports){
 'use strict';
 
 var curve = exports;
@@ -40145,7 +40176,7 @@ curve.short = require('./short');
 curve.mont = require('./mont');
 curve.edwards = require('./edwards');
 
-},{"./base":244,"./edwards":245,"./mont":247,"./short":248}],247:[function(require,module,exports){
+},{"./base":245,"./edwards":246,"./mont":248,"./short":249}],248:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -40325,7 +40356,7 @@ Point.prototype.getX = function getX() {
   return this.x.fromRed();
 };
 
-},{"../utils":257,"./base":244,"bn.js":123,"inherits":296}],248:[function(require,module,exports){
+},{"../utils":258,"./base":245,"bn.js":124,"inherits":297}],249:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -41265,7 +41296,7 @@ JPoint.prototype.isInfinity = function isInfinity() {
   return this.z.cmpn(0) === 0;
 };
 
-},{"../utils":257,"./base":244,"bn.js":123,"inherits":296}],249:[function(require,module,exports){
+},{"../utils":258,"./base":245,"bn.js":124,"inherits":297}],250:[function(require,module,exports){
 'use strict';
 
 var curves = exports;
@@ -41473,7 +41504,7 @@ defineCurve('secp256k1', {
   ],
 });
 
-},{"./curve":246,"./precomputed/secp256k1":256,"./utils":257,"hash.js":280}],250:[function(require,module,exports){
+},{"./curve":247,"./precomputed/secp256k1":257,"./utils":258,"hash.js":281}],251:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -41753,7 +41784,7 @@ EC.prototype.getKeyRecoveryParam = function(e, signature, Q, enc) {
   throw new Error('Unable to find valid recovery factor');
 };
 
-},{"../curves":249,"../utils":257,"./key":251,"./signature":252,"bn.js":123,"brorand":124,"hmac-drbg":293}],251:[function(require,module,exports){
+},{"../curves":250,"../utils":258,"./key":252,"./signature":253,"bn.js":124,"brorand":125,"hmac-drbg":294}],252:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -41876,7 +41907,7 @@ KeyPair.prototype.inspect = function inspect() {
          ' pub: ' + (this.pub && this.pub.inspect()) + ' >';
 };
 
-},{"../utils":257,"bn.js":123}],252:[function(require,module,exports){
+},{"../utils":258,"bn.js":124}],253:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -42054,7 +42085,7 @@ Signature.prototype.toDER = function toDER(enc) {
   return utils.encode(res, enc);
 };
 
-},{"../utils":257,"bn.js":123}],253:[function(require,module,exports){
+},{"../utils":258,"bn.js":124}],254:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -42177,7 +42208,7 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
-},{"../curves":249,"../utils":257,"./key":254,"./signature":255,"hash.js":280}],254:[function(require,module,exports){
+},{"../curves":250,"../utils":258,"./key":255,"./signature":256,"hash.js":281}],255:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -42274,7 +42305,7 @@ KeyPair.prototype.getPublic = function getPublic(enc) {
 
 module.exports = KeyPair;
 
-},{"../utils":257}],255:[function(require,module,exports){
+},{"../utils":258}],256:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -42342,7 +42373,7 @@ Signature.prototype.toHex = function toHex() {
 
 module.exports = Signature;
 
-},{"../utils":257,"bn.js":123}],256:[function(require,module,exports){
+},{"../utils":258,"bn.js":124}],257:[function(require,module,exports){
 module.exports = {
   doubles: {
     step: 4,
@@ -43124,7 +43155,7 @@ module.exports = {
   },
 };
 
-},{}],257:[function(require,module,exports){
+},{}],258:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -43248,7 +43279,7 @@ function intFromLE(bytes) {
 utils.intFromLE = intFromLE;
 
 
-},{"bn.js":123,"minimalistic-assert":330,"minimalistic-crypto-utils":331}],258:[function(require,module,exports){
+},{"bn.js":124,"minimalistic-assert":331,"minimalistic-crypto-utils":332}],259:[function(require,module,exports){
 module.exports={
   "name": "elliptic",
   "version": "6.6.1",
@@ -43306,7 +43337,7 @@ module.exports={
   }
 }
 
-},{}],259:[function(require,module,exports){
+},{}],260:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
@@ -43322,55 +43353,55 @@ if ($defineProperty) {
 
 module.exports = $defineProperty;
 
-},{}],260:[function(require,module,exports){
+},{}],261:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./eval')} */
 module.exports = EvalError;
 
-},{}],261:[function(require,module,exports){
+},{}],262:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
 module.exports = Error;
 
-},{}],262:[function(require,module,exports){
+},{}],263:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./range')} */
 module.exports = RangeError;
 
-},{}],263:[function(require,module,exports){
+},{}],264:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./ref')} */
 module.exports = ReferenceError;
 
-},{}],264:[function(require,module,exports){
+},{}],265:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./syntax')} */
 module.exports = SyntaxError;
 
-},{}],265:[function(require,module,exports){
+},{}],266:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./type')} */
 module.exports = TypeError;
 
-},{}],266:[function(require,module,exports){
+},{}],267:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./uri')} */
 module.exports = URIError;
 
-},{}],267:[function(require,module,exports){
+},{}],268:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
 module.exports = Object;
 
-},{}],268:[function(require,module,exports){
+},{}],269:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -43869,7 +43900,7 @@ function eventTargetAgnosticAddListener(emitter, name, listener, flags) {
   }
 }
 
-},{}],269:[function(require,module,exports){
+},{}],270:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var MD5 = require('md5.js')
 
@@ -43916,7 +43947,7 @@ function EVP_BytesToKey (password, salt, keyBits, ivLen) {
 
 module.exports = EVP_BytesToKey
 
-},{"md5.js":312,"safe-buffer":560}],270:[function(require,module,exports){
+},{"md5.js":313,"safe-buffer":561}],271:[function(require,module,exports){
 'use strict';
 
 var isCallable = require('is-callable');
@@ -43980,7 +44011,7 @@ var forEach = function forEach(list, iterator, thisArg) {
 
 module.exports = forEach;
 
-},{"is-callable":299}],271:[function(require,module,exports){
+},{"is-callable":300}],272:[function(require,module,exports){
 'use strict';
 
 /* eslint no-invalid-this: 1 */
@@ -44066,14 +44097,14 @@ module.exports = function bind(that) {
     return bound;
 };
 
-},{}],272:[function(require,module,exports){
+},{}],273:[function(require,module,exports){
 'use strict';
 
 var implementation = require('./implementation');
 
 module.exports = Function.prototype.bind || implementation;
 
-},{"./implementation":271}],273:[function(require,module,exports){
+},{"./implementation":272}],274:[function(require,module,exports){
 'use strict';
 
 var undefined;
@@ -44447,13 +44478,13 @@ module.exports = function GetIntrinsic(name, allowMissing) {
 	return value;
 };
 
-},{"call-bind-apply-helpers/functionApply":160,"call-bind-apply-helpers/functionCall":161,"dunder-proto/get":242,"es-define-property":259,"es-errors":261,"es-errors/eval":260,"es-errors/range":262,"es-errors/ref":263,"es-errors/syntax":264,"es-errors/type":265,"es-errors/uri":266,"es-object-atoms":267,"function-bind":272,"gopd":275,"has-symbols":277,"hasown":292,"math-intrinsics/abs":307,"math-intrinsics/floor":308,"math-intrinsics/max":309,"math-intrinsics/min":310,"math-intrinsics/pow":311}],274:[function(require,module,exports){
+},{"call-bind-apply-helpers/functionApply":161,"call-bind-apply-helpers/functionCall":162,"dunder-proto/get":243,"es-define-property":260,"es-errors":262,"es-errors/eval":261,"es-errors/range":263,"es-errors/ref":264,"es-errors/syntax":265,"es-errors/type":266,"es-errors/uri":267,"es-object-atoms":268,"function-bind":273,"gopd":276,"has-symbols":278,"hasown":293,"math-intrinsics/abs":308,"math-intrinsics/floor":309,"math-intrinsics/max":310,"math-intrinsics/min":311,"math-intrinsics/pow":312}],275:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./gOPD')} */
 module.exports = Object.getOwnPropertyDescriptor;
 
-},{}],275:[function(require,module,exports){
+},{}],276:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
@@ -44470,7 +44501,7 @@ if ($gOPD) {
 
 module.exports = $gOPD;
 
-},{"./gOPD":274}],276:[function(require,module,exports){
+},{"./gOPD":275}],277:[function(require,module,exports){
 'use strict';
 
 var $defineProperty = require('es-define-property');
@@ -44494,7 +44525,7 @@ hasPropertyDescriptors.hasArrayLengthDefineBug = function hasArrayLengthDefineBu
 
 module.exports = hasPropertyDescriptors;
 
-},{"es-define-property":259}],277:[function(require,module,exports){
+},{"es-define-property":260}],278:[function(require,module,exports){
 'use strict';
 
 var origSymbol = typeof Symbol !== 'undefined' && Symbol;
@@ -44510,7 +44541,7 @@ module.exports = function hasNativeSymbols() {
 	return hasSymbolSham();
 };
 
-},{"./shams":278}],278:[function(require,module,exports){
+},{"./shams":279}],279:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./shams')} */
@@ -44557,7 +44588,7 @@ module.exports = function hasSymbols() {
 	return true;
 };
 
-},{}],279:[function(require,module,exports){
+},{}],280:[function(require,module,exports){
 'use strict';
 
 var hasSymbols = require('has-symbols/shams');
@@ -44567,7 +44598,7 @@ module.exports = function hasToStringTagShams() {
 	return hasSymbols() && !!Symbol.toStringTag;
 };
 
-},{"has-symbols/shams":278}],280:[function(require,module,exports){
+},{"has-symbols/shams":279}],281:[function(require,module,exports){
 var hash = exports;
 
 hash.utils = require('./hash/utils');
@@ -44584,7 +44615,7 @@ hash.sha384 = hash.sha.sha384;
 hash.sha512 = hash.sha.sha512;
 hash.ripemd160 = hash.ripemd.ripemd160;
 
-},{"./hash/common":281,"./hash/hmac":282,"./hash/ripemd":283,"./hash/sha":284,"./hash/utils":291}],281:[function(require,module,exports){
+},{"./hash/common":282,"./hash/hmac":283,"./hash/ripemd":284,"./hash/sha":285,"./hash/utils":292}],282:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -44678,7 +44709,7 @@ BlockHash.prototype._pad = function pad() {
   return res;
 };
 
-},{"./utils":291,"minimalistic-assert":330}],282:[function(require,module,exports){
+},{"./utils":292,"minimalistic-assert":331}],283:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -44727,7 +44758,7 @@ Hmac.prototype.digest = function digest(enc) {
   return this.outer.digest(enc);
 };
 
-},{"./utils":291,"minimalistic-assert":330}],283:[function(require,module,exports){
+},{"./utils":292,"minimalistic-assert":331}],284:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -44875,7 +44906,7 @@ var sh = [
   8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11
 ];
 
-},{"./common":281,"./utils":291}],284:[function(require,module,exports){
+},{"./common":282,"./utils":292}],285:[function(require,module,exports){
 'use strict';
 
 exports.sha1 = require('./sha/1');
@@ -44884,7 +44915,7 @@ exports.sha256 = require('./sha/256');
 exports.sha384 = require('./sha/384');
 exports.sha512 = require('./sha/512');
 
-},{"./sha/1":285,"./sha/224":286,"./sha/256":287,"./sha/384":288,"./sha/512":289}],285:[function(require,module,exports){
+},{"./sha/1":286,"./sha/224":287,"./sha/256":288,"./sha/384":289,"./sha/512":290}],286:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -44960,7 +44991,7 @@ SHA1.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":281,"../utils":291,"./common":290}],286:[function(require,module,exports){
+},{"../common":282,"../utils":292,"./common":291}],287:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -44992,7 +45023,7 @@ SHA224.prototype._digest = function digest(enc) {
 };
 
 
-},{"../utils":291,"./256":287}],287:[function(require,module,exports){
+},{"../utils":292,"./256":288}],288:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45099,7 +45130,7 @@ SHA256.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":281,"../utils":291,"./common":290,"minimalistic-assert":330}],288:[function(require,module,exports){
+},{"../common":282,"../utils":292,"./common":291,"minimalistic-assert":331}],289:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45136,7 +45167,7 @@ SHA384.prototype._digest = function digest(enc) {
     return utils.split32(this.h.slice(0, 12), 'big');
 };
 
-},{"../utils":291,"./512":289}],289:[function(require,module,exports){
+},{"../utils":292,"./512":290}],290:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45468,7 +45499,7 @@ function g1_512_lo(xh, xl) {
   return r;
 }
 
-},{"../common":281,"../utils":291,"minimalistic-assert":330}],290:[function(require,module,exports){
+},{"../common":282,"../utils":292,"minimalistic-assert":331}],291:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -45519,7 +45550,7 @@ function g1_256(x) {
 }
 exports.g1_256 = g1_256;
 
-},{"../utils":291}],291:[function(require,module,exports){
+},{"../utils":292}],292:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -45799,7 +45830,7 @@ function shr64_lo(ah, al, num) {
 }
 exports.shr64_lo = shr64_lo;
 
-},{"inherits":296,"minimalistic-assert":330}],292:[function(require,module,exports){
+},{"inherits":297,"minimalistic-assert":331}],293:[function(require,module,exports){
 'use strict';
 
 var call = Function.prototype.call;
@@ -45809,7 +45840,7 @@ var bind = require('function-bind');
 /** @type {import('.')} */
 module.exports = bind.call(call, $hasOwn);
 
-},{"function-bind":272}],293:[function(require,module,exports){
+},{"function-bind":273}],294:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -45924,7 +45955,7 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
   return utils.encode(res, enc);
 };
 
-},{"hash.js":280,"minimalistic-assert":330,"minimalistic-crypto-utils":331}],294:[function(require,module,exports){
+},{"hash.js":281,"minimalistic-assert":331,"minimalistic-crypto-utils":332}],295:[function(require,module,exports){
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -46011,7 +46042,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],295:[function(require,module,exports){
+},{}],296:[function(require,module,exports){
 /**
  * MIT License
  * 
@@ -52057,7 +52088,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 })));
 
-},{}],296:[function(require,module,exports){
+},{}],297:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -52086,7 +52117,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],297:[function(require,module,exports){
+},{}],298:[function(require,module,exports){
 'use strict';
 
 var hasToStringTag = require('has-tostringtag/shams')();
@@ -52132,7 +52163,7 @@ isStandardArguments.isLegacyArguments = isLegacyArguments; // for tests
 /** @type {import('.')} */
 module.exports = supportsStandardArguments ? isStandardArguments : isLegacyArguments;
 
-},{"call-bound":166,"has-tostringtag/shams":279}],298:[function(require,module,exports){
+},{"call-bound":167,"has-tostringtag/shams":280}],299:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -52155,7 +52186,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],299:[function(require,module,exports){
+},{}],300:[function(require,module,exports){
 'use strict';
 
 var fnToStr = Function.prototype.toString;
@@ -52258,14 +52289,14 @@ module.exports = reflectApply
 		return tryFunctionObject(value);
 	};
 
-},{}],300:[function(require,module,exports){
+},{}],301:[function(require,module,exports){
 'use strict';
 
 module.exports = Number.isFinite || function (value) {
 	return !(typeof value !== 'number' || value !== value || value === Infinity || value === -Infinity);
 };
 
-},{}],301:[function(require,module,exports){
+},{}],302:[function(require,module,exports){
 'use strict';
 
 var toStr = Object.prototype.toString;
@@ -52305,7 +52336,7 @@ module.exports = function isGeneratorFunction(fn) {
 	return getProto(fn) === GeneratorFunction;
 };
 
-},{"has-tostringtag/shams":279}],302:[function(require,module,exports){
+},{"has-tostringtag/shams":280}],303:[function(require,module,exports){
 // https://github.com/paulmillr/es6-shim
 // http://people.mozilla.org/~jorendorff/es6-draft.html#sec-number.isinteger
 var isFinite = require("is-finite");
@@ -52315,7 +52346,7 @@ module.exports = Number.isInteger || function(val) {
     Math.floor(val) === val;
 };
 
-},{"is-finite":300}],303:[function(require,module,exports){
+},{"is-finite":301}],304:[function(require,module,exports){
 'use strict';
 
 var whichTypedArray = require('which-typed-array');
@@ -52325,14 +52356,14 @@ module.exports = function isTypedArray(value) {
 	return !!whichTypedArray(value);
 };
 
-},{"which-typed-array":594}],304:[function(require,module,exports){
+},{"which-typed-array":595}],305:[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],305:[function(require,module,exports){
+},{}],306:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -53004,7 +53035,7 @@ function isErrorHandlingMiddleware(post, numArgs) {
 module.exports = Kareem;
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":522}],306:[function(require,module,exports){
+},{"_process":523}],307:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -61493,37 +61524,37 @@ exports.VERSION = VERSION;
 exports.Zone = Zone;
 
 
-},{}],307:[function(require,module,exports){
+},{}],308:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./abs')} */
 module.exports = Math.abs;
 
-},{}],308:[function(require,module,exports){
+},{}],309:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./abs')} */
 module.exports = Math.floor;
 
-},{}],309:[function(require,module,exports){
+},{}],310:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./max')} */
 module.exports = Math.max;
 
-},{}],310:[function(require,module,exports){
+},{}],311:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./min')} */
 module.exports = Math.min;
 
-},{}],311:[function(require,module,exports){
+},{}],312:[function(require,module,exports){
 'use strict';
 
 /** @type {import('./pow')} */
 module.exports = Math.pow;
 
-},{}],312:[function(require,module,exports){
+},{}],313:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var HashBase = require('hash-base')
@@ -61671,7 +61702,7 @@ function fnI (a, b, c, d, m, k, s) {
 
 module.exports = MD5
 
-},{"hash-base":313,"inherits":296,"safe-buffer":560}],313:[function(require,module,exports){
+},{"hash-base":314,"inherits":297,"safe-buffer":561}],314:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('readable-stream').Transform
@@ -61768,7 +61799,7 @@ HashBase.prototype._digest = function () {
 
 module.exports = HashBase
 
-},{"inherits":296,"readable-stream":328,"safe-buffer":560}],314:[function(require,module,exports){
+},{"inherits":297,"readable-stream":329,"safe-buffer":561}],315:[function(require,module,exports){
 'use strict';
 
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
@@ -61897,7 +61928,7 @@ createErrorType('ERR_UNKNOWN_ENCODING', function (arg) {
 createErrorType('ERR_STREAM_UNSHIFT_AFTER_END_EVENT', 'stream.unshift() after end event');
 module.exports.codes = codes;
 
-},{}],315:[function(require,module,exports){
+},{}],316:[function(require,module,exports){
 (function (process){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -62026,7 +62057,7 @@ Object.defineProperty(Duplex.prototype, 'destroyed', {
   }
 });
 }).call(this)}).call(this,require('_process'))
-},{"./_stream_readable":317,"./_stream_writable":319,"_process":522,"inherits":296}],316:[function(require,module,exports){
+},{"./_stream_readable":318,"./_stream_writable":320,"_process":523,"inherits":297}],317:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -62064,7 +62095,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":318,"inherits":296}],317:[function(require,module,exports){
+},{"./_stream_transform":319,"inherits":297}],318:[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -63094,7 +63125,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../errors":314,"./_stream_duplex":315,"./internal/streams/async_iterator":320,"./internal/streams/buffer_list":321,"./internal/streams/destroy":322,"./internal/streams/from":324,"./internal/streams/state":326,"./internal/streams/stream":327,"_process":522,"buffer":157,"events":268,"inherits":296,"string_decoder/":585,"util":125}],318:[function(require,module,exports){
+},{"../errors":315,"./_stream_duplex":316,"./internal/streams/async_iterator":321,"./internal/streams/buffer_list":322,"./internal/streams/destroy":323,"./internal/streams/from":325,"./internal/streams/state":327,"./internal/streams/stream":328,"_process":523,"buffer":158,"events":269,"inherits":297,"string_decoder/":586,"util":126}],319:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -63285,7 +63316,7 @@ function done(stream, er, data) {
   if (stream._transformState.transforming) throw new ERR_TRANSFORM_ALREADY_TRANSFORMING();
   return stream.push(null);
 }
-},{"../errors":314,"./_stream_duplex":315,"inherits":296}],319:[function(require,module,exports){
+},{"../errors":315,"./_stream_duplex":316,"inherits":297}],320:[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -63929,7 +63960,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../errors":314,"./_stream_duplex":315,"./internal/streams/destroy":322,"./internal/streams/state":326,"./internal/streams/stream":327,"_process":522,"buffer":157,"inherits":296,"util-deprecate":589}],320:[function(require,module,exports){
+},{"../errors":315,"./_stream_duplex":316,"./internal/streams/destroy":323,"./internal/streams/state":327,"./internal/streams/stream":328,"_process":523,"buffer":158,"inherits":297,"util-deprecate":590}],321:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -64112,7 +64143,7 @@ var createReadableStreamAsyncIterator = function createReadableStreamAsyncIterat
 };
 module.exports = createReadableStreamAsyncIterator;
 }).call(this)}).call(this,require('_process'))
-},{"./end-of-stream":323,"_process":522}],321:[function(require,module,exports){
+},{"./end-of-stream":324,"_process":523}],322:[function(require,module,exports){
 'use strict';
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -64296,7 +64327,7 @@ module.exports = /*#__PURE__*/function () {
   }]);
   return BufferList;
 }();
-},{"buffer":157,"util":125}],322:[function(require,module,exports){
+},{"buffer":158,"util":126}],323:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -64395,7 +64426,7 @@ module.exports = {
   errorOrDestroy: errorOrDestroy
 };
 }).call(this)}).call(this,require('_process'))
-},{"_process":522}],323:[function(require,module,exports){
+},{"_process":523}],324:[function(require,module,exports){
 // Ported from https://github.com/mafintosh/end-of-stream with
 // permission from the author, Mathias Buus (@mafintosh).
 
@@ -64482,12 +64513,12 @@ function eos(stream, opts, callback) {
   };
 }
 module.exports = eos;
-},{"../../../errors":314}],324:[function(require,module,exports){
+},{"../../../errors":315}],325:[function(require,module,exports){
 module.exports = function () {
   throw new Error('Readable.from is not available in the browser')
 };
 
-},{}],325:[function(require,module,exports){
+},{}],326:[function(require,module,exports){
 // Ported from https://github.com/mafintosh/pump with
 // permission from the author, Mathias Buus (@mafintosh).
 
@@ -64574,7 +64605,7 @@ function pipeline() {
   return streams.reduce(pipe);
 }
 module.exports = pipeline;
-},{"../../../errors":314,"./end-of-stream":323}],326:[function(require,module,exports){
+},{"../../../errors":315,"./end-of-stream":324}],327:[function(require,module,exports){
 'use strict';
 
 var ERR_INVALID_OPT_VALUE = require('../../../errors').codes.ERR_INVALID_OPT_VALUE;
@@ -64597,10 +64628,10 @@ function getHighWaterMark(state, options, duplexKey, isDuplex) {
 module.exports = {
   getHighWaterMark: getHighWaterMark
 };
-},{"../../../errors":314}],327:[function(require,module,exports){
+},{"../../../errors":315}],328:[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":268}],328:[function(require,module,exports){
+},{"events":269}],329:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -64611,7 +64642,7 @@ exports.PassThrough = require('./lib/_stream_passthrough.js');
 exports.finished = require('./lib/internal/streams/end-of-stream.js');
 exports.pipeline = require('./lib/internal/streams/pipeline.js');
 
-},{"./lib/_stream_duplex.js":315,"./lib/_stream_passthrough.js":316,"./lib/_stream_readable.js":317,"./lib/_stream_transform.js":318,"./lib/_stream_writable.js":319,"./lib/internal/streams/end-of-stream.js":323,"./lib/internal/streams/pipeline.js":325}],329:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":316,"./lib/_stream_passthrough.js":317,"./lib/_stream_readable.js":318,"./lib/_stream_transform.js":319,"./lib/_stream_writable.js":320,"./lib/internal/streams/end-of-stream.js":324,"./lib/internal/streams/pipeline.js":326}],330:[function(require,module,exports){
 var bn = require('bn.js');
 var brorand = require('brorand');
 
@@ -64728,7 +64759,7 @@ MillerRabin.prototype.getDivisor = function getDivisor(n, k) {
   return false;
 };
 
-},{"bn.js":123,"brorand":124}],330:[function(require,module,exports){
+},{"bn.js":124,"brorand":125}],331:[function(require,module,exports){
 module.exports = assert;
 
 function assert(val, msg) {
@@ -64741,7 +64772,7 @@ assert.equal = function assertEqual(l, r, msg) {
     throw new Error(msg || ('Assertion failed: ' + l + ' != ' + r));
 };
 
-},{}],331:[function(require,module,exports){
+},{}],332:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -64801,7 +64832,7 @@ utils.encode = function encode(arr, enc) {
     return arr;
 };
 
-},{}],332:[function(require,module,exports){
+},{}],333:[function(require,module,exports){
 /**
  * Export lib/mongoose
  *
@@ -64811,7 +64842,7 @@ utils.encode = function encode(arr, enc) {
 
 module.exports = require('./lib/browser');
 
-},{"./lib/browser":333}],333:[function(require,module,exports){
+},{"./lib/browser":334}],334:[function(require,module,exports){
 (function (Buffer){(function (){
 /* eslint-env browser */
 
@@ -64947,7 +64978,7 @@ if (typeof window !== 'undefined') {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"./document_provider.js":344,"./driver":345,"./drivers/browser":346,"./error/index":349,"./schema":454,"./schematype.js":478,"./types":489,"./utils.js":494,"./virtualtype":495,"buffer":157}],334:[function(require,module,exports){
+},{"./document_provider.js":345,"./driver":346,"./drivers/browser":347,"./error/index":350,"./schema":455,"./schematype.js":479,"./types":490,"./utils.js":495,"./virtualtype":496,"buffer":158}],335:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -65050,7 +65081,7 @@ Document.$emitter = new EventEmitter();
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./document":343,"./error/index":349,"./helpers/isObject":391,"./helpers/model/applyHooks":395,"./schema":454,"./types/objectid":491,"events":268}],335:[function(require,module,exports){
+},{"./document":344,"./error/index":350,"./helpers/isObject":392,"./helpers/model/applyHooks":396,"./schema":455,"./types/objectid":492,"events":269}],336:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -65495,7 +65526,7 @@ function getStrictQuery(queryOptions, schemaUserProvidedOptions, schemaOptions, 
   return schemaOptions.strictQuery;
 }
 
-},{"./cast/string":342,"./error/cast":347,"./error/strict":361,"./helpers/discriminator/getSchemaDiscriminatorByValue":373,"./helpers/get":383,"./helpers/isMongooseObject":390,"./helpers/isObject":391,"./helpers/query/cast$expr":407,"./helpers/query/isOperator":409,"./schema/index":464,"./schema/operators/text":473,"./utils":494,"util":592}],336:[function(require,module,exports){
+},{"./cast/string":343,"./error/cast":348,"./error/strict":362,"./helpers/discriminator/getSchemaDiscriminatorByValue":374,"./helpers/get":384,"./helpers/isMongooseObject":391,"./helpers/isObject":392,"./helpers/query/cast$expr":408,"./helpers/query/isOperator":410,"./schema/index":465,"./schema/operators/text":474,"./utils":495,"util":593}],337:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -65533,7 +65564,7 @@ module.exports = function castBigInt(val) {
   assert.ok(false);
 };
 
-},{"assert":117,"bson":155}],337:[function(require,module,exports){
+},{"assert":118,"bson":156}],338:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -65567,7 +65598,7 @@ module.exports = function castBoolean(value, path) {
 module.exports.convertToTrue = new Set([true, 'true', 1, '1', 'yes']);
 module.exports.convertToFalse = new Set([false, 'false', 0, '0', 'no']);
 
-},{"../error/cast":347}],338:[function(require,module,exports){
+},{"../error/cast":348}],339:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -65610,7 +65641,7 @@ module.exports = function castDate(value) {
   assert.ok(false);
 };
 
-},{"assert":117}],339:[function(require,module,exports){
+},{"assert":118}],340:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -65653,7 +65684,7 @@ module.exports = function castDecimal128(value) {
 };
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../types/decimal128":488,"assert":117,"buffer":157}],340:[function(require,module,exports){
+},{"../types/decimal128":489,"assert":118,"buffer":158}],341:[function(require,module,exports){
 'use strict';
 
 const assert = require('assert');
@@ -65697,7 +65728,7 @@ module.exports = function castNumber(val) {
   assert.ok(false);
 };
 
-},{"assert":117}],341:[function(require,module,exports){
+},{"assert":118}],342:[function(require,module,exports){
 'use strict';
 
 const isBsonType = require('../helpers/isBsonType');
@@ -65728,7 +65759,7 @@ module.exports = function castObjectId(value) {
   return new ObjectId(value);
 };
 
-},{"../helpers/isBsonType":389,"../types/objectid":491}],342:[function(require,module,exports){
+},{"../helpers/isBsonType":390,"../types/objectid":492}],343:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../error/cast');
@@ -65767,7 +65798,7 @@ module.exports = function castString(value, path) {
   throw new CastError('string', value, path);
 };
 
-},{"../error/cast":347}],343:[function(require,module,exports){
+},{"../error/cast":348}],344:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70581,7 +70612,7 @@ Document.prototype.$clone = function() {
 Document.ValidationError = ValidationError;
 module.exports = exports = Document;
 
-},{"./error/index":349,"./error/objectExpected":355,"./error/objectParameter":356,"./error/parallelValidate":359,"./error/strict":361,"./error/validation":363,"./error/validator":364,"./helpers/clone":367,"./helpers/common":368,"./helpers/document/applyDefaults":375,"./helpers/document/cleanModifiedSubpaths":376,"./helpers/document/compile":377,"./helpers/document/getDeepestSubdocumentForPath":378,"./helpers/document/getEmbeddedDiscriminatorPath":379,"./helpers/document/handleSpreadDoc":380,"./helpers/get":383,"./helpers/immediate":386,"./helpers/isPromise":393,"./helpers/path/parentPaths":397,"./helpers/populate/markArraySubdocsPopulated":398,"./helpers/projection/hasIncludedChildren":400,"./helpers/projection/isDefiningProjection":401,"./helpers/projection/isExclusive":402,"./helpers/schema/getKeysInSchemaOrder":416,"./helpers/schema/getSubdocumentStrictValue":417,"./helpers/symbols":424,"./internal":432,"./options":433,"./queryhelpers":453,"./schema":454,"./schema/mixed":466,"./schema/symbols":476,"./types/ArraySubdocument":480,"./types/DocumentArray":481,"./types/array":484,"./utils":494,"events":268,"mpath":496,"util":592}],344:[function(require,module,exports){
+},{"./error/index":350,"./error/objectExpected":356,"./error/objectParameter":357,"./error/parallelValidate":360,"./error/strict":362,"./error/validation":364,"./error/validator":365,"./helpers/clone":368,"./helpers/common":369,"./helpers/document/applyDefaults":376,"./helpers/document/cleanModifiedSubpaths":377,"./helpers/document/compile":378,"./helpers/document/getDeepestSubdocumentForPath":379,"./helpers/document/getEmbeddedDiscriminatorPath":380,"./helpers/document/handleSpreadDoc":381,"./helpers/get":384,"./helpers/immediate":387,"./helpers/isPromise":394,"./helpers/path/parentPaths":398,"./helpers/populate/markArraySubdocsPopulated":399,"./helpers/projection/hasIncludedChildren":401,"./helpers/projection/isDefiningProjection":402,"./helpers/projection/isExclusive":403,"./helpers/schema/getKeysInSchemaOrder":417,"./helpers/schema/getSubdocumentStrictValue":418,"./helpers/symbols":425,"./internal":433,"./options":434,"./queryhelpers":454,"./schema":455,"./schema/mixed":467,"./schema/symbols":477,"./types/ArraySubdocument":481,"./types/DocumentArray":482,"./types/array":485,"./utils":495,"events":269,"mpath":497,"util":593}],345:[function(require,module,exports){
 'use strict';
 
 /* eslint-env browser */
@@ -70613,7 +70644,7 @@ module.exports.setBrowser = function(flag) {
   isBrowser = flag;
 };
 
-},{"./browserDocument.js":334,"./document.js":343}],345:[function(require,module,exports){
+},{"./browserDocument.js":335,"./document.js":344}],346:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70630,7 +70661,7 @@ module.exports.set = function(v) {
   driver = v;
 };
 
-},{}],346:[function(require,module,exports){
+},{}],347:[function(require,module,exports){
 /*!
  * Module exports.
  */
@@ -70644,7 +70675,7 @@ exports.Connection = function() {
   throw new Error('Cannot create a connection from browser library');
 };
 
-},{}],347:[function(require,module,exports){
+},{}],348:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -70805,7 +70836,7 @@ function formatMessage(model, kind, value, path, messageFormat, valueType, reaso
 
 module.exports = CastError;
 
-},{"./mongooseError":353,"util":592}],348:[function(require,module,exports){
+},{"./mongooseError":354,"util":593}],349:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -70845,7 +70876,7 @@ Object.defineProperty(DivergentArrayError.prototype, 'name', {
 
 module.exports = DivergentArrayError;
 
-},{"./":349}],349:[function(require,module,exports){
+},{"./":350}],350:[function(require,module,exports){
 'use strict';
 
 /**
@@ -71074,7 +71105,7 @@ MongooseError.StrictModeError = require('./strict');
 
 MongooseError.StrictPopulateError = require('./strictPopulate');
 
-},{"./cast":347,"./divergentArray":348,"./messages":351,"./missingSchema":352,"./mongooseError":353,"./notFound":354,"./overwriteModel":357,"./parallelSave":358,"./serverSelection":360,"./strict":361,"./strictPopulate":362,"./validation":363,"./validator":364,"./version":365}],350:[function(require,module,exports){
+},{"./cast":348,"./divergentArray":349,"./messages":352,"./missingSchema":353,"./mongooseError":354,"./notFound":355,"./overwriteModel":358,"./parallelSave":359,"./serverSelection":361,"./strict":362,"./strictPopulate":363,"./validation":364,"./validator":365,"./version":366}],351:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -71106,7 +71137,7 @@ Object.defineProperty(InvalidSchemaOptionError.prototype, 'name', {
 
 module.exports = InvalidSchemaOptionError;
 
-},{"./":349}],351:[function(require,module,exports){
+},{"./":350}],352:[function(require,module,exports){
 
 /**
  * The default built-in validator error messages. These may be customized.
@@ -71155,7 +71186,7 @@ msg.String.match = 'Path `{PATH}` is invalid ({VALUE}).';
 msg.String.minlength = 'Path `{PATH}` (`{VALUE}`) is shorter than the minimum allowed length ({MINLENGTH}).';
 msg.String.maxlength = 'Path `{PATH}` (`{VALUE}`) is longer than the maximum allowed length ({MAXLENGTH}).';
 
-},{}],352:[function(require,module,exports){
+},{}],353:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -71188,7 +71219,7 @@ Object.defineProperty(MissingSchemaError.prototype, 'name', {
 
 module.exports = MissingSchemaError;
 
-},{"./":349}],353:[function(require,module,exports){
+},{"./":350}],354:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71203,7 +71234,7 @@ Object.defineProperty(MongooseError.prototype, 'name', {
 
 module.exports = MongooseError;
 
-},{}],354:[function(require,module,exports){
+},{}],355:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71250,7 +71281,7 @@ Object.defineProperty(DocumentNotFoundError.prototype, 'name', {
 
 module.exports = DocumentNotFoundError;
 
-},{"./":349,"util":592}],355:[function(require,module,exports){
+},{"./":350,"util":593}],356:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71282,7 +71313,7 @@ Object.defineProperty(ObjectExpectedError.prototype, 'name', {
 
 module.exports = ObjectExpectedError;
 
-},{"./":349}],356:[function(require,module,exports){
+},{"./":350}],357:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71314,7 +71345,7 @@ Object.defineProperty(ObjectParameterError.prototype, 'name', {
 
 module.exports = ObjectParameterError;
 
-},{"./":349}],357:[function(require,module,exports){
+},{"./":350}],358:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -71346,7 +71377,7 @@ Object.defineProperty(OverwriteModelError.prototype, 'name', {
 
 module.exports = OverwriteModelError;
 
-},{"./":349}],358:[function(require,module,exports){
+},{"./":350}],359:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71378,7 +71409,7 @@ Object.defineProperty(ParallelSaveError.prototype, 'name', {
 
 module.exports = ParallelSaveError;
 
-},{"./":349}],359:[function(require,module,exports){
+},{"./":350}],360:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71411,7 +71442,7 @@ Object.defineProperty(ParallelValidateError.prototype, 'name', {
 
 module.exports = ParallelValidateError;
 
-},{"./mongooseError":353}],360:[function(require,module,exports){
+},{"./mongooseError":354}],361:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71474,7 +71505,7 @@ Object.defineProperty(MongooseServerSelectionError.prototype, 'name', {
 
 module.exports = MongooseServerSelectionError;
 
-},{"../helpers/topology/allServersUnknown":427,"../helpers/topology/isAtlas":428,"../helpers/topology/isSSLError":429,"./mongooseError":353}],361:[function(require,module,exports){
+},{"../helpers/topology/allServersUnknown":428,"../helpers/topology/isAtlas":429,"../helpers/topology/isSSLError":430,"./mongooseError":354}],362:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71509,7 +71540,7 @@ Object.defineProperty(StrictModeError.prototype, 'name', {
 
 module.exports = StrictModeError;
 
-},{"./":349}],362:[function(require,module,exports){
+},{"./":350}],363:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71540,7 +71571,7 @@ Object.defineProperty(StrictPopulateError.prototype, 'name', {
 
 module.exports = StrictPopulateError;
 
-},{"./":349}],363:[function(require,module,exports){
+},{"./":350}],364:[function(require,module,exports){
 /*!
  * Module requirements
  */
@@ -71645,7 +71676,7 @@ Object.defineProperty(ValidationError.prototype, 'name', {
 
 module.exports = ValidationError;
 
-},{"../helpers/error/combinePathErrors":382,"../helpers/getConstructorName":384,"./mongooseError":353,"util":592}],364:[function(require,module,exports){
+},{"../helpers/error/combinePathErrors":383,"../helpers/getConstructorName":385,"./mongooseError":354,"util":593}],365:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -71746,7 +71777,7 @@ function formatMessage(msg, properties, doc) {
 
 module.exports = ValidatorError;
 
-},{"./":349}],365:[function(require,module,exports){
+},{"./":350}],366:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -71784,7 +71815,7 @@ Object.defineProperty(VersionError.prototype, 'name', {
 
 module.exports = VersionError;
 
-},{"./":349}],366:[function(require,module,exports){
+},{"./":350}],367:[function(require,module,exports){
 'use strict';
 
 module.exports = arrayDepth;
@@ -71819,7 +71850,7 @@ function arrayDepth(arr) {
   return res;
 }
 
-},{}],367:[function(require,module,exports){
+},{}],368:[function(require,module,exports){
 'use strict';
 
 const Decimal = require('../types/decimal128');
@@ -72001,7 +72032,7 @@ function cloneRegExp(regexp) {
   return ret;
 }
 
-},{"../types/array/isMongooseArray":485,"../types/decimal128":488,"../types/objectid":491,"./getFunctionName":385,"./isBsonType":389,"./isMongooseObject":390,"./isObject":391,"./isPOJO":392,"./query/trusted":410,"./specialProperties":423,"./symbols":424}],368:[function(require,module,exports){
+},{"../types/array/isMongooseArray":486,"../types/decimal128":489,"../types/objectid":492,"./getFunctionName":386,"./isBsonType":390,"./isMongooseObject":391,"./isObject":392,"./isPOJO":393,"./query/trusted":411,"./specialProperties":424,"./symbols":425}],369:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -72132,7 +72163,7 @@ function shouldFlatten(val) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../error":349,"./isBsonType":389,"./isMongooseObject":390,"bson":155,"buffer":157,"util":592}],369:[function(require,module,exports){
+},{"../error":350,"./isBsonType":390,"./isMongooseObject":391,"bson":156,"buffer":158,"util":593}],370:[function(require,module,exports){
 'use strict';
 
 const isBsonType = require('../isBsonType');
@@ -72150,7 +72181,7 @@ module.exports = function areDiscriminatorValuesEqual(a, b) {
   return false;
 };
 
-},{"../isBsonType":389}],370:[function(require,module,exports){
+},{"../isBsonType":390}],371:[function(require,module,exports){
 'use strict';
 
 module.exports = function checkEmbeddedDiscriminatorKeyProjection(userProjection, path, schema, selected, addedPaths) {
@@ -72164,7 +72195,7 @@ module.exports = function checkEmbeddedDiscriminatorKeyProjection(userProjection
   }
 };
 
-},{}],371:[function(require,module,exports){
+},{}],372:[function(require,module,exports){
 'use strict';
 
 const getDiscriminatorByValue = require('./getDiscriminatorByValue');
@@ -72195,7 +72226,7 @@ module.exports = function getConstructor(Constructor, value, defaultDiscriminato
   return Constructor;
 };
 
-},{"./getDiscriminatorByValue":372}],372:[function(require,module,exports){
+},{"./getDiscriminatorByValue":373}],373:[function(require,module,exports){
 'use strict';
 
 const areDiscriminatorValuesEqual = require('./areDiscriminatorValuesEqual');
@@ -72225,7 +72256,7 @@ module.exports = function getDiscriminatorByValue(discriminators, value) {
   return null;
 };
 
-},{"./areDiscriminatorValuesEqual":369}],373:[function(require,module,exports){
+},{"./areDiscriminatorValuesEqual":370}],374:[function(require,module,exports){
 'use strict';
 
 const areDiscriminatorValuesEqual = require('./areDiscriminatorValuesEqual');
@@ -72254,7 +72285,7 @@ module.exports = function getSchemaDiscriminatorByValue(schema, value) {
   return null;
 };
 
-},{"./areDiscriminatorValuesEqual":369}],374:[function(require,module,exports){
+},{"./areDiscriminatorValuesEqual":370}],375:[function(require,module,exports){
 'use strict';
 const schemaMerge = require('../schema/merge');
 const specialProperties = require('../../helpers/specialProperties');
@@ -72332,7 +72363,7 @@ module.exports = function mergeDiscriminatorSchema(to, from, path, seen) {
   }
 };
 
-},{"../../helpers/isBsonType":389,"../../helpers/isObject":391,"../../helpers/specialProperties":423,"../../types/objectid":491,"../schema/merge":421}],375:[function(require,module,exports){
+},{"../../helpers/isBsonType":390,"../../helpers/isObject":392,"../../helpers/specialProperties":424,"../../types/objectid":492,"../schema/merge":422}],376:[function(require,module,exports){
 'use strict';
 
 const isNestedProjection = require('../projection/isNestedProjection');
@@ -72462,7 +72493,7 @@ function applyChangeTracking(doc, fullPath) {
   }
 }
 
-},{"../projection/isNestedProjection":403}],376:[function(require,module,exports){
+},{"../projection/isNestedProjection":404}],377:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -72499,7 +72530,7 @@ module.exports = function cleanModifiedSubpaths(doc, path, options) {
   return deleted;
 };
 
-},{}],377:[function(require,module,exports){
+},{}],378:[function(require,module,exports){
 'use strict';
 
 const clone = require('../../helpers/clone');
@@ -72739,7 +72770,7 @@ function getOwnPropertyDescriptors(object) {
   return result;
 }
 
-},{"../../document":343,"../../helpers/clone":367,"../../helpers/symbols":424,"../../options":433,"../../utils":494}],378:[function(require,module,exports){
+},{"../../document":344,"../../helpers/clone":368,"../../helpers/symbols":425,"../../options":434,"../../utils":495}],379:[function(require,module,exports){
 'use strict';
 
 /**
@@ -72779,7 +72810,7 @@ module.exports = function getDeepestSubdocumentForPath(doc, parts, schema) {
   return subdoc;
 };
 
-},{}],379:[function(require,module,exports){
+},{}],380:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -72834,7 +72865,7 @@ module.exports = function getEmbeddedDiscriminatorPath(doc, path, options) {
   return typeOnly ? type : schemaType;
 };
 
-},{"../discriminator/getSchemaDiscriminatorByValue":373,"../get":383}],380:[function(require,module,exports){
+},{"../discriminator/getSchemaDiscriminatorByValue":374,"../get":384}],381:[function(require,module,exports){
 'use strict';
 
 const utils = require('../../utils');
@@ -72871,7 +72902,7 @@ module.exports = function handleSpreadDoc(v, includeExtraKeys) {
   return v;
 };
 
-},{"../../utils":494}],381:[function(require,module,exports){
+},{"../../utils":495}],382:[function(require,module,exports){
 'use strict';
 
 module.exports = function each(arr, cb, done) {
@@ -72898,7 +72929,7 @@ module.exports = function each(arr, cb, done) {
   }
 };
 
-},{}],382:[function(require,module,exports){
+},{}],383:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -72922,7 +72953,7 @@ module.exports = function combinePathErrors(err) {
   return msgs.join(', ');
 };
 
-},{}],383:[function(require,module,exports){
+},{}],384:[function(require,module,exports){
 'use strict';
 
 /**
@@ -72989,7 +73020,7 @@ function getProperty(obj, prop) {
   return obj[prop];
 }
 
-},{}],384:[function(require,module,exports){
+},{}],385:[function(require,module,exports){
 'use strict';
 
 /**
@@ -73007,7 +73038,7 @@ module.exports = function getConstructorName(val) {
   return val.constructor.name;
 };
 
-},{}],385:[function(require,module,exports){
+},{}],386:[function(require,module,exports){
 'use strict';
 
 const functionNameRE = /^function\s*([^\s(]+)/;
@@ -73019,7 +73050,7 @@ module.exports = function(fn) {
   );
 };
 
-},{}],386:[function(require,module,exports){
+},{}],387:[function(require,module,exports){
 (function (process){(function (){
 /*!
  * Centralize this so we can more easily work around issues with people
@@ -73039,7 +73070,7 @@ module.exports = function immediate(cb) {
 };
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":522}],387:[function(require,module,exports){
+},{"_process":523}],388:[function(require,module,exports){
 'use strict';
 
 module.exports = function decorateDiscriminatorIndexOptions(schema, indexOptions) {
@@ -73055,7 +73086,7 @@ module.exports = function decorateDiscriminatorIndexOptions(schema, indexOptions
   return indexOptions;
 };
 
-},{}],388:[function(require,module,exports){
+},{}],389:[function(require,module,exports){
 'use strict';
 
 module.exports = function isAsyncFunction(v) {
@@ -73066,7 +73097,7 @@ module.exports = function isAsyncFunction(v) {
   );
 };
 
-},{}],389:[function(require,module,exports){
+},{}],390:[function(require,module,exports){
 'use strict';
 
 /**
@@ -73084,7 +73115,7 @@ function isBsonType(obj, typename) {
 
 module.exports = isBsonType;
 
-},{}],390:[function(require,module,exports){
+},{}],391:[function(require,module,exports){
 'use strict';
 
 const isMongooseArray = require('../types/array/isMongooseArray').isMongooseArray;
@@ -73108,7 +73139,7 @@ module.exports = function(v) {
   );
 };
 
-},{"../types/array/isMongooseArray":485}],391:[function(require,module,exports){
+},{"../types/array/isMongooseArray":486}],392:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -73128,7 +73159,7 @@ module.exports = function(arg) {
 };
 
 }).call(this)}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":298}],392:[function(require,module,exports){
+},{"../../../is-buffer/index.js":299}],393:[function(require,module,exports){
 'use strict';
 
 module.exports = function isPOJO(arg) {
@@ -73142,7 +73173,7 @@ module.exports = function isPOJO(arg) {
   return !proto || proto.constructor.name === 'Object';
 };
 
-},{}],393:[function(require,module,exports){
+},{}],394:[function(require,module,exports){
 'use strict';
 function isPromise(val) {
   return !!val && (typeof val === 'object' || typeof val === 'function') && typeof val.then === 'function';
@@ -73150,7 +73181,7 @@ function isPromise(val) {
 
 module.exports = isPromise;
 
-},{}],394:[function(require,module,exports){
+},{}],395:[function(require,module,exports){
 'use strict';
 
 /**
@@ -73174,7 +73205,7 @@ module.exports = function isSimpleValidator(obj) {
   return result;
 };
 
-},{}],395:[function(require,module,exports){
+},{}],396:[function(require,module,exports){
 'use strict';
 
 const symbols = require('../../schema/symbols');
@@ -73325,7 +73356,7 @@ function applyHooks(model, schema, options) {
   }
 }
 
-},{"../../schema/symbols":476,"../promiseOrCallback":405}],396:[function(require,module,exports){
+},{"../../schema/symbols":477,"../promiseOrCallback":406}],397:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../../schema/mixed');
@@ -73540,7 +73571,7 @@ module.exports = function discriminator(model, name, schema, tiedValue, applyPlu
   return schema;
 };
 
-},{"../../helpers/discriminator/mergeDiscriminatorSchema":374,"../../schema/mixed":466,"../../utils":494,"../clone":367,"../document/compile":377,"../get":383,"../schema/applyBuiltinPlugins":413}],397:[function(require,module,exports){
+},{"../../helpers/discriminator/mergeDiscriminatorSchema":375,"../../schema/mixed":467,"../../utils":495,"../clone":368,"../document/compile":378,"../get":384,"../schema/applyBuiltinPlugins":414}],398:[function(require,module,exports){
 'use strict';
 
 const dotRE = /\./g;
@@ -73560,7 +73591,7 @@ module.exports = function parentPaths(path) {
   return ret;
 };
 
-},{}],398:[function(require,module,exports){
+},{}],399:[function(require,module,exports){
 'use strict';
 
 const utils = require('../../utils');
@@ -73611,7 +73642,7 @@ module.exports = function markArraySubdocsPopulated(doc, populated) {
   }
 };
 
-},{"../../utils":494}],399:[function(require,module,exports){
+},{"../../utils":495}],400:[function(require,module,exports){
 'use strict';
 
 const MongooseError = require('../../error/mongooseError');
@@ -73632,7 +73663,7 @@ function validateRef(ref, path) {
     util.inspect(ref, { depth: 0 }));
 }
 
-},{"../../error/mongooseError":353,"util":592}],400:[function(require,module,exports){
+},{"../../error/mongooseError":354,"util":593}],401:[function(require,module,exports){
 'use strict';
 
 /**
@@ -73675,7 +73706,7 @@ module.exports = function hasIncludedChildren(fields) {
   return hasIncludedChildren;
 };
 
-},{}],401:[function(require,module,exports){
+},{}],402:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -73695,7 +73726,7 @@ module.exports = function isDefiningProjection(val) {
   return true;
 };
 
-},{}],402:[function(require,module,exports){
+},{}],403:[function(require,module,exports){
 'use strict';
 
 const isDefiningProjection = require('./isDefiningProjection');
@@ -73734,7 +73765,7 @@ module.exports = function isExclusive(projection) {
   return exclude;
 };
 
-},{"../isPOJO":392,"./isDefiningProjection":401}],403:[function(require,module,exports){
+},{"../isPOJO":393,"./isDefiningProjection":402}],404:[function(require,module,exports){
 'use strict';
 
 module.exports = function isNestedProjection(val) {
@@ -73744,7 +73775,7 @@ module.exports = function isNestedProjection(val) {
   return val.$slice == null && val.$elemMatch == null && val.$meta == null && val.$ == null;
 };
 
-},{}],404:[function(require,module,exports){
+},{}],405:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -73774,7 +73805,7 @@ module.exports = function isPathSelectedInclusive(fields, path) {
   return false;
 };
 
-},{}],405:[function(require,module,exports){
+},{}],406:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -73832,7 +73863,7 @@ module.exports = function promiseOrCallback(callback, fn, ee, Promise) {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./immediate":386}],406:[function(require,module,exports){
+},{"./immediate":387}],407:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -73888,7 +73919,7 @@ function _getContexts(hook) {
   return ret;
 }
 
-},{"./validOps":411}],407:[function(require,module,exports){
+},{"./validOps":412}],408:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -74182,7 +74213,7 @@ function isLiteral(val) {
   return true;
 }
 
-},{"../../cast/number":340,"../../error/cast":347,"../../error/strict":361}],408:[function(require,module,exports){
+},{"../../cast/number":341,"../../error/cast":348,"../../error/strict":362}],409:[function(require,module,exports){
 'use strict';
 
 module.exports = function handleReadPreferenceAliases(pref) {
@@ -74207,7 +74238,7 @@ module.exports = function handleReadPreferenceAliases(pref) {
   return pref;
 };
 
-},{}],409:[function(require,module,exports){
+},{}],410:[function(require,module,exports){
 'use strict';
 
 const specialKeys = new Set([
@@ -74223,7 +74254,7 @@ module.exports = function isOperator(path) {
   );
 };
 
-},{}],410:[function(require,module,exports){
+},{}],411:[function(require,module,exports){
 'use strict';
 
 const trustedSymbol = Symbol('mongoose#trustedSymbol');
@@ -74238,7 +74269,7 @@ exports.trusted = function trusted(obj) {
   return obj;
 };
 
-},{}],411:[function(require,module,exports){
+},{}],412:[function(require,module,exports){
 'use strict';
 
 module.exports = Object.freeze([
@@ -74262,7 +74293,7 @@ module.exports = Object.freeze([
   'findOneAndRemove'
 ]);
 
-},{}],412:[function(require,module,exports){
+},{}],413:[function(require,module,exports){
 'use strict';
 
 module.exports = function addAutoId(schema) {
@@ -74271,7 +74302,7 @@ module.exports = function addAutoId(schema) {
   schema.add(_obj);
 };
 
-},{}],413:[function(require,module,exports){
+},{}],414:[function(require,module,exports){
 'use strict';
 
 const builtinPlugins = require('../../plugins');
@@ -74285,7 +74316,7 @@ module.exports = function applyBuiltinPlugins(schema) {
     concat(schema.plugins);
 };
 
-},{"../../plugins":447}],414:[function(require,module,exports){
+},{"../../plugins":448}],415:[function(require,module,exports){
 'use strict';
 
 /**
@@ -74299,7 +74330,7 @@ module.exports = function cleanPositionalOperators(path) {
     replace(/\.\$(\[[^\]]*\])?$/g, '.0');
 };
 
-},{}],415:[function(require,module,exports){
+},{}],416:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -74473,7 +74504,7 @@ module.exports = function getIndexes(schema) {
   }
 };
 
-},{"../get":383,"../indexes/decorateDiscriminatorIndexOptions":387,"../isObject":391}],416:[function(require,module,exports){
+},{"../get":384,"../indexes/decorateDiscriminatorIndexOptions":388,"../isObject":392}],417:[function(require,module,exports){
 'use strict';
 
 const get = require('../get');
@@ -74503,7 +74534,7 @@ module.exports = function getKeysInSchemaOrder(schema, val, path) {
   return keys;
 };
 
-},{"../get":383}],417:[function(require,module,exports){
+},{"../get":384}],418:[function(require,module,exports){
 'use strict';
 
 /**
@@ -74537,7 +74568,7 @@ module.exports = function getSubdocumentStrictValue(schema, parts) {
   return strict;
 };
 
-},{}],418:[function(require,module,exports){
+},{}],419:[function(require,module,exports){
 'use strict';
 
 const addAutoId = require('./addAutoId');
@@ -74559,7 +74590,7 @@ module.exports = function handleIdOption(schema, options) {
   return schema;
 };
 
-},{"./addAutoId":412}],419:[function(require,module,exports){
+},{"./addAutoId":413}],420:[function(require,module,exports){
 'use strict';
 
 module.exports = handleTimestampOption;
@@ -74585,7 +74616,7 @@ function handleTimestampOption(arg, prop) {
   return arg[prop];
 }
 
-},{}],420:[function(require,module,exports){
+},{}],421:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -74633,7 +74664,7 @@ function idSetter(v) {
   return v;
 }
 
-},{}],421:[function(require,module,exports){
+},{}],422:[function(require,module,exports){
 'use strict';
 
 module.exports = function merge(s1, s2, skipConflictingPaths) {
@@ -74671,7 +74702,7 @@ module.exports = function merge(s1, s2, skipConflictingPaths) {
   s1.s.hooks.merge(s2.s.hooks, false);
 };
 
-},{}],422:[function(require,module,exports){
+},{}],423:[function(require,module,exports){
 'use strict';
 
 const StrictModeError = require('../../error/strict');
@@ -74723,12 +74754,12 @@ function createImmutableSetter(path, immutable) {
   };
 }
 
-},{"../../error/strict":361}],423:[function(require,module,exports){
+},{"../../error/strict":362}],424:[function(require,module,exports){
 'use strict';
 
 module.exports = new Set(['__proto__', 'constructor', 'prototype']);
 
-},{}],424:[function(require,module,exports){
+},{}],425:[function(require,module,exports){
 'use strict';
 
 exports.arrayAtomicsBackupSymbol = Symbol('mongoose#Array#atomicsBackup');
@@ -74750,7 +74781,7 @@ exports.sessionNewDocuments = Symbol('mongoose:ClientSession#newDocuments');
 exports.scopeSymbol = Symbol('mongoose#Document#scope');
 exports.validatorErrorSymbol = Symbol('mongoose:validatorError');
 
-},{}],425:[function(require,module,exports){
+},{}],426:[function(require,module,exports){
 'use strict';
 
 module.exports = function setDocumentTimestamps(doc, timestampOption, currentTime, createdAt, updatedAt) {
@@ -74778,7 +74809,7 @@ module.exports = function setDocumentTimestamps(doc, timestampOption, currentTim
   }
 };
 
-},{}],426:[function(require,module,exports){
+},{}],427:[function(require,module,exports){
 'use strict';
 
 const applyTimestampsToChildren = require('../update/applyTimestampsToChildren');
@@ -74890,7 +74921,7 @@ module.exports = function setupTimestamps(schema, timestamps) {
   }
 };
 
-},{"../../schema/symbols":476,"../get":383,"../schema/handleTimestampOption":419,"../update/applyTimestampsToChildren":430,"../update/applyTimestampsToUpdate":431,"./setDocumentTimestamps":425}],427:[function(require,module,exports){
+},{"../../schema/symbols":477,"../get":384,"../schema/handleTimestampOption":420,"../update/applyTimestampsToChildren":431,"../update/applyTimestampsToUpdate":432,"./setDocumentTimestamps":426}],428:[function(require,module,exports){
 'use strict';
 
 const getConstructorName = require('../getConstructorName');
@@ -74904,7 +74935,7 @@ module.exports = function allServersUnknown(topologyDescription) {
   return servers.length > 0 && servers.every(server => server.type === 'Unknown');
 };
 
-},{"../getConstructorName":384}],428:[function(require,module,exports){
+},{"../getConstructorName":385}],429:[function(require,module,exports){
 'use strict';
 
 const getConstructorName = require('../getConstructorName');
@@ -74937,7 +74968,7 @@ module.exports = function isAtlas(topologyDescription) {
   return true;
 };
 
-},{"../getConstructorName":384}],429:[function(require,module,exports){
+},{"../getConstructorName":385}],430:[function(require,module,exports){
 'use strict';
 
 const getConstructorName = require('../getConstructorName');
@@ -74955,7 +74986,7 @@ module.exports = function isSSLError(topologyDescription) {
     descriptions.every(descr => descr.error && descr.error.message.indexOf(nonSSLMessage) !== -1);
 };
 
-},{"../getConstructorName":384}],430:[function(require,module,exports){
+},{"../getConstructorName":385}],431:[function(require,module,exports){
 'use strict';
 
 const cleanPositionalOperators = require('../schema/cleanPositionalOperators');
@@ -75150,7 +75181,7 @@ function applyTimestampsToUpdateKey(schema, key, update, now) {
   }
 }
 
-},{"../schema/cleanPositionalOperators":414,"../schema/handleTimestampOption":419}],431:[function(require,module,exports){
+},{"../schema/cleanPositionalOperators":415,"../schema/handleTimestampOption":420}],432:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75270,7 +75301,7 @@ function applyTimestampsToUpdate(now, createdAt, updatedAt, currentUpdate, optio
   return updates;
 }
 
-},{"../get":383}],432:[function(require,module,exports){
+},{"../get":384}],433:[function(require,module,exports){
 /*!
  * Dependencies
  */
@@ -75318,7 +75349,7 @@ InternalCache.prototype.session = null;
 InternalCache.prototype.pathsToScopes = null;
 InternalCache.prototype.cachedRequired = null;
 
-},{"./statemachine":479}],433:[function(require,module,exports){
+},{"./statemachine":480}],434:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -75335,7 +75366,7 @@ exports.internalToObjectOptions = {
   useProjection: false
 };
 
-},{}],434:[function(require,module,exports){
+},{}],435:[function(require,module,exports){
 'use strict';
 
 const clone = require('../helpers/clone');
@@ -75373,7 +75404,7 @@ class PopulateOptions {
 
 module.exports = PopulateOptions;
 
-},{"../helpers/clone":367}],435:[function(require,module,exports){
+},{"../helpers/clone":368}],436:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75453,7 +75484,7 @@ Object.defineProperty(SchemaArrayOptions.prototype, 'castNonArrays', opts);
 
 module.exports = SchemaArrayOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],436:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],437:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75493,7 +75524,7 @@ Object.defineProperty(SchemaBufferOptions.prototype, 'subtype', opts);
 
 module.exports = SchemaBufferOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],437:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],438:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75566,7 +75597,7 @@ Object.defineProperty(SchemaDateOptions.prototype, 'expires', opts);
 
 module.exports = SchemaDateOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],438:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],439:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75636,7 +75667,7 @@ Object.defineProperty(SchemaDocumentArrayOptions.prototype, '_id', opts);
 
 module.exports = SchemaDocumentArrayOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],439:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],440:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75681,7 +75712,7 @@ Object.defineProperty(SchemaMapOptions.prototype, 'of', opts);
 
 module.exports = SchemaMapOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],440:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],441:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75784,7 +75815,7 @@ Object.defineProperty(SchemaNumberOptions.prototype, 'populate', opts);
 
 module.exports = SchemaNumberOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],441:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],442:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75850,7 +75881,7 @@ Object.defineProperty(SchemaObjectIdOptions.prototype, 'populate', opts);
 
 module.exports = SchemaObjectIdOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],442:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],443:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -75990,7 +76021,7 @@ Object.defineProperty(SchemaStringOptions.prototype, 'populate', opts);
 
 module.exports = SchemaStringOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],443:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],444:[function(require,module,exports){
 'use strict';
 
 const SchemaTypeOptions = require('./SchemaTypeOptions');
@@ -76034,7 +76065,7 @@ Object.defineProperty(SchemaSubdocumentOptions.prototype, '_id', opts);
 
 module.exports = SchemaSubdocumentOptions;
 
-},{"./SchemaTypeOptions":444,"./propertyOptions":446}],444:[function(require,module,exports){
+},{"./SchemaTypeOptions":445,"./propertyOptions":447}],445:[function(require,module,exports){
 'use strict';
 
 const clone = require('../helpers/clone');
@@ -76280,7 +76311,7 @@ Object.defineProperty(SchemaTypeOptions.prototype, 'transform', opts);
 
 module.exports = SchemaTypeOptions;
 
-},{"../helpers/clone":367,"./propertyOptions":446}],445:[function(require,module,exports){
+},{"../helpers/clone":368,"./propertyOptions":447}],446:[function(require,module,exports){
 'use strict';
 
 const opts = require('./propertyOptions');
@@ -76446,7 +76477,7 @@ Object.defineProperty(VirtualOptions.prototype, 'perDocumentLimit', opts);
 
 module.exports = VirtualOptions;
 
-},{"./propertyOptions":446}],446:[function(require,module,exports){
+},{"./propertyOptions":447}],447:[function(require,module,exports){
 'use strict';
 
 module.exports = Object.freeze({
@@ -76456,7 +76487,7 @@ module.exports = Object.freeze({
   value: void 0
 });
 
-},{}],447:[function(require,module,exports){
+},{}],448:[function(require,module,exports){
 'use strict';
 
 exports.removeSubdocs = require('./removeSubdocs');
@@ -76465,7 +76496,7 @@ exports.sharding = require('./sharding');
 exports.trackTransaction = require('./trackTransaction');
 exports.validateBeforeSave = require('./validateBeforeSave');
 
-},{"./removeSubdocs":448,"./saveSubdocs":449,"./sharding":450,"./trackTransaction":451,"./validateBeforeSave":452}],448:[function(require,module,exports){
+},{"./removeSubdocs":449,"./saveSubdocs":450,"./sharding":451,"./trackTransaction":452,"./validateBeforeSave":453}],449:[function(require,module,exports){
 'use strict';
 
 const each = require('../helpers/each');
@@ -76502,7 +76533,7 @@ module.exports = function removeSubdocs(schema) {
   }, null, unshift);
 };
 
-},{"../helpers/each":381}],449:[function(require,module,exports){
+},{"../helpers/each":382}],450:[function(require,module,exports){
 'use strict';
 
 const each = require('../helpers/each');
@@ -76570,7 +76601,7 @@ module.exports = function saveSubdocs(schema) {
   }, null, unshift);
 };
 
-},{"../helpers/each":381}],450:[function(require,module,exports){
+},{"../helpers/each":382}],451:[function(require,module,exports){
 'use strict';
 
 const objectIdSymbol = require('../helpers/symbols').objectIdSymbol;
@@ -76655,7 +76686,7 @@ function storeShard() {
   }
 }
 
-},{"../helpers/symbols":424,"../utils":494}],451:[function(require,module,exports){
+},{"../helpers/symbols":425,"../utils":495}],452:[function(require,module,exports){
 'use strict';
 
 const arrayAtomicsSymbol = require('../helpers/symbols').arrayAtomicsSymbol;
@@ -76749,7 +76780,7 @@ function mergeAtomics(destination, source) {
   return destination;
 }
 
-},{"../helpers/symbols":424,"../utils":494}],452:[function(require,module,exports){
+},{"../helpers/symbols":425,"../utils":495}],453:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -76802,7 +76833,7 @@ module.exports = function validateBeforeSave(schema) {
   }, null, unshift);
 };
 
-},{}],453:[function(require,module,exports){
+},{}],454:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -77207,7 +77238,7 @@ function makeLean(val) {
   };
 }
 
-},{"./helpers/clone":367,"./helpers/discriminator/checkEmbeddedDiscriminatorKeyProjection":370,"./helpers/discriminator/getDiscriminatorByValue":372,"./helpers/get":383,"./helpers/projection/isDefiningProjection":401,"./helpers/projection/isPathSelectedInclusive":404}],454:[function(require,module,exports){
+},{"./helpers/clone":368,"./helpers/discriminator/checkEmbeddedDiscriminatorKeyProjection":371,"./helpers/discriminator/getDiscriminatorByValue":373,"./helpers/get":384,"./helpers/projection/isDefiningProjection":402,"./helpers/projection/isPathSelectedInclusive":405}],455:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -79991,7 +80022,7 @@ Schema.Types = MongooseTypes = require('./schema/index');
 exports.ObjectId = MongooseTypes.ObjectId;
 
 }).call(this)}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":298,"./error/mongooseError":353,"./helpers/clone":367,"./helpers/get":383,"./helpers/getConstructorName":384,"./helpers/model/applyHooks":395,"./helpers/populate/validateRef":399,"./helpers/query/applyQueryMiddleware":406,"./helpers/query/handleReadPreferenceAliases":408,"./helpers/schema/addAutoId":412,"./helpers/schema/getIndexes":415,"./helpers/schema/idGetter":420,"./helpers/schema/merge":421,"./helpers/timestamps/setupTimestamps":426,"./options/SchemaTypeOptions":444,"./options/VirtualOptions":445,"./schema/index":464,"./schematype":478,"./types":489,"./utils":494,"./virtualtype":495,"events":268,"kareem":305,"mpath":496,"util":592}],455:[function(require,module,exports){
+},{"../../is-buffer/index.js":299,"./error/mongooseError":354,"./helpers/clone":368,"./helpers/get":384,"./helpers/getConstructorName":385,"./helpers/model/applyHooks":396,"./helpers/populate/validateRef":400,"./helpers/query/applyQueryMiddleware":407,"./helpers/query/handleReadPreferenceAliases":409,"./helpers/schema/addAutoId":413,"./helpers/schema/getIndexes":416,"./helpers/schema/idGetter":421,"./helpers/schema/merge":422,"./helpers/timestamps/setupTimestamps":427,"./options/SchemaTypeOptions":445,"./options/VirtualOptions":446,"./schema/index":465,"./schematype":479,"./types":490,"./utils":495,"./virtualtype":496,"events":269,"kareem":306,"mpath":497,"util":593}],456:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -80093,7 +80124,7 @@ DocumentArrayElement.prototype.clone = function() {
 
 module.exports = DocumentArrayElement;
 
-},{"../error/mongooseError":353,"../helpers/discriminator/getConstructor":371,"../schematype":478,"./SubdocumentPath":456}],456:[function(require,module,exports){
+},{"../error/mongooseError":354,"../helpers/discriminator/getConstructor":372,"../schematype":479,"./SubdocumentPath":457}],457:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -80492,7 +80523,7 @@ SubdocumentPath.prototype.clone = function() {
   return schematype;
 };
 
-},{"../error/cast":347,"../error/invalidSchemaOption":350,"../error/objectExpected":355,"../helpers/discriminator/getConstructor":371,"../helpers/document/applyDefaults":375,"../helpers/model/discriminator":396,"../helpers/projection/isExclusive":402,"../helpers/schema/handleIdOption":418,"../options":433,"../options/SchemaSubdocumentOptions":443,"../schematype":478,"../types/subdocument":492,"../utils":494,"./operators/exists":470,"./operators/geospatial":471,"./operators/helpers":472,"events":268}],457:[function(require,module,exports){
+},{"../error/cast":348,"../error/invalidSchemaOption":351,"../error/objectExpected":356,"../helpers/discriminator/getConstructor":372,"../helpers/document/applyDefaults":376,"../helpers/model/discriminator":397,"../helpers/projection/isExclusive":403,"../helpers/schema/handleIdOption":419,"../options":434,"../options/SchemaSubdocumentOptions":444,"../schematype":479,"../types/subdocument":493,"../utils":495,"./operators/exists":471,"./operators/geospatial":472,"./operators/helpers":473,"events":269}],458:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -81180,7 +81211,7 @@ handle.$in = SchemaType.prototype.$conditionalHandlers.$in;
 
 module.exports = SchemaArray;
 
-},{"../cast":335,"../error/mongooseError":353,"../helpers/arrayDepth":366,"../helpers/clone":367,"../helpers/discriminator/getDiscriminatorByValue":372,"../helpers/query/isOperator":409,"../options/SchemaArrayOptions":435,"../schematype":478,"../types":489,"../utils":494,"./index.js":464,"./mixed":466,"./operators/exists":470,"./operators/geospatial":471,"./operators/helpers":472,"./operators/type":474,"util":592}],458:[function(require,module,exports){
+},{"../cast":336,"../error/mongooseError":354,"../helpers/arrayDepth":367,"../helpers/clone":368,"../helpers/discriminator/getDiscriminatorByValue":373,"../helpers/query/isOperator":410,"../options/SchemaArrayOptions":436,"../schematype":479,"../types":490,"../utils":495,"./index.js":465,"./mixed":467,"./operators/exists":471,"./operators/geospatial":472,"./operators/helpers":473,"./operators/type":475,"util":593}],459:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -81422,7 +81453,7 @@ SchemaBigInt.prototype._castNullish = function _castNullish(v) {
 
 module.exports = SchemaBigInt;
 
-},{"../cast/bigint":336,"../error/cast":347,"../schematype":478}],459:[function(require,module,exports){
+},{"../cast/bigint":337,"../error/cast":348,"../schematype":479}],460:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -81714,7 +81745,7 @@ SchemaBoolean.prototype._castNullish = function _castNullish(v) {
 
 module.exports = SchemaBoolean;
 
-},{"../cast/boolean":337,"../error/cast":347,"../schematype":478}],460:[function(require,module,exports){
+},{"../cast/boolean":338,"../error/cast":348,"../schematype":479}],461:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module dependencies.
@@ -82008,7 +82039,7 @@ SchemaBuffer.prototype.castForQuery = function($conditional, val, context) {
 module.exports = SchemaBuffer;
 
 }).call(this)}).call(this,{"isBuffer":require("../../../is-buffer/index.js")})
-},{"../../../is-buffer/index.js":298,"../options/SchemaBufferOptions":436,"../schematype":478,"../types/buffer":487,"../utils":494,"./operators/bitwise":469}],461:[function(require,module,exports){
+},{"../../../is-buffer/index.js":299,"../options/SchemaBufferOptions":437,"../schematype":479,"../types/buffer":488,"../utils":495,"./operators/bitwise":470}],462:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -82436,7 +82467,7 @@ SchemaDate.prototype.castForQuery = function($conditional, val, context) {
 
 module.exports = SchemaDate;
 
-},{"../cast/date":338,"../error/index":349,"../helpers/getConstructorName":384,"../options/SchemaDateOptions":437,"../schematype":478,"../utils":494}],462:[function(require,module,exports){
+},{"../cast/date":339,"../error/index":350,"../helpers/getConstructorName":385,"../options/SchemaDateOptions":438,"../schematype":479,"../utils":495}],463:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -82666,7 +82697,7 @@ Decimal128.prototype.$conditionalHandlers = {
 
 module.exports = Decimal128;
 
-},{"../cast/decimal128":339,"../helpers/isBsonType":389,"../schematype":478}],463:[function(require,module,exports){
+},{"../cast/decimal128":340,"../helpers/isBsonType":390,"../schematype":479}],464:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -83284,7 +83315,7 @@ DocumentArrayPath.get = SchemaType.get;
 
 module.exports = DocumentArrayPath;
 
-},{"../error/cast":347,"../error/invalidSchemaOption":350,"../helpers/discriminator/getConstructor":371,"../helpers/document/handleSpreadDoc":380,"../helpers/model/discriminator":396,"../helpers/schema/handleIdOption":418,"../helpers/symbols":424,"../options/SchemaDocumentArrayOptions":438,"../schematype":478,"../types/ArraySubdocument":480,"../types/DocumentArray":481,"../utils":494,"./DocumentArrayElement":455,"./array":457,"events":268}],464:[function(require,module,exports){
+},{"../error/cast":348,"../error/invalidSchemaOption":351,"../helpers/discriminator/getConstructor":372,"../helpers/document/handleSpreadDoc":381,"../helpers/model/discriminator":397,"../helpers/schema/handleIdOption":419,"../helpers/symbols":425,"../options/SchemaDocumentArrayOptions":439,"../schematype":479,"../types/ArraySubdocument":481,"../types/DocumentArray":482,"../utils":495,"./DocumentArrayElement":456,"./array":458,"events":269}],465:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -83314,7 +83345,7 @@ exports.Object = exports.Mixed;
 exports.Bool = exports.Boolean;
 exports.ObjectID = exports.ObjectId;
 
-},{"./SubdocumentPath":456,"./array":457,"./bigint":458,"./boolean":459,"./buffer":460,"./date":461,"./decimal128":462,"./documentarray":463,"./map":465,"./mixed":466,"./number":467,"./objectid":468,"./string":475,"./uuid":477}],465:[function(require,module,exports){
+},{"./SubdocumentPath":457,"./array":458,"./bigint":459,"./boolean":460,"./buffer":461,"./date":462,"./decimal128":463,"./documentarray":464,"./map":466,"./mixed":467,"./number":468,"./objectid":469,"./string":476,"./uuid":478}],466:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -83402,7 +83433,7 @@ Map.defaultOptions = {};
 module.exports = Map;
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../options/SchemaMapOptions":439,"../schematype":478,"../types/map":490}],466:[function(require,module,exports){
+},{"../options/SchemaMapOptions":440,"../schematype":479,"../types/map":491}],467:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -83535,7 +83566,7 @@ Mixed.prototype.castForQuery = function($cond, val) {
 
 module.exports = Mixed;
 
-},{"../helpers/isObject":391,"../schematype":478,"../utils":494,"./symbols":476}],467:[function(require,module,exports){
+},{"../helpers/isObject":392,"../schematype":479,"../utils":495,"./symbols":477}],468:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -83977,7 +84008,7 @@ SchemaNumber.prototype.castForQuery = function($conditional, val, context) {
 
 module.exports = SchemaNumber;
 
-},{"../cast/number":340,"../error/index":349,"../options/SchemaNumberOptions":440,"../schematype":478,"../utils":494,"./operators/bitwise":469}],468:[function(require,module,exports){
+},{"../cast/number":341,"../error/index":350,"../options/SchemaNumberOptions":441,"../schematype":479,"../utils":495,"./operators/bitwise":470}],469:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -84276,7 +84307,7 @@ function resetId(v) {
 
 module.exports = ObjectId;
 
-},{"../cast/objectid":341,"../helpers/getConstructorName":384,"../helpers/isBsonType":389,"../options/SchemaObjectIdOptions":441,"../schematype":478,"../types/objectid":491,"../utils":494,"./../document":343}],469:[function(require,module,exports){
+},{"../cast/objectid":342,"../helpers/getConstructorName":385,"../helpers/isBsonType":390,"../options/SchemaObjectIdOptions":442,"../schematype":479,"../types/objectid":492,"../utils":495,"./../document":344}],470:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module requirements.
@@ -84318,7 +84349,7 @@ function _castNumber(path, num) {
 module.exports = handleBitwiseOperator;
 
 }).call(this)}).call(this,{"isBuffer":require("../../../../is-buffer/index.js")})
-},{"../../../../is-buffer/index.js":298,"../../error/cast":347}],470:[function(require,module,exports){
+},{"../../../../is-buffer/index.js":299,"../../error/cast":348}],471:[function(require,module,exports){
 'use strict';
 
 const castBoolean = require('../../cast/boolean');
@@ -84332,7 +84363,7 @@ module.exports = function(val) {
   return castBoolean(val, path);
 };
 
-},{"../../cast/boolean":337}],471:[function(require,module,exports){
+},{"../../cast/boolean":338}],472:[function(require,module,exports){
 /*!
  * Module requirements.
  */
@@ -84441,7 +84472,7 @@ function _castMinMaxDistance(self, val) {
   }
 }
 
-},{"../array":457,"./helpers":472}],472:[function(require,module,exports){
+},{"../array":458,"./helpers":473}],473:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84475,7 +84506,7 @@ function castArraysOfNumbers(arr, self) {
   });
 }
 
-},{"../number":467}],473:[function(require,module,exports){
+},{"../number":468}],474:[function(require,module,exports){
 'use strict';
 
 const CastError = require('../../error/cast');
@@ -84516,7 +84547,7 @@ module.exports = function castTextSearch(val, path) {
   return val;
 };
 
-},{"../../cast/boolean":337,"../../cast/string":342,"../../error/cast":347}],474:[function(require,module,exports){
+},{"../../cast/boolean":338,"../../cast/string":343,"../../error/cast":348}],475:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -84538,7 +84569,7 @@ module.exports = function(val) {
   return val;
 };
 
-},{}],475:[function(require,module,exports){
+},{}],476:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -85238,14 +85269,14 @@ SchemaString.prototype.castForQuery = function($conditional, val, context) {
 
 module.exports = SchemaString;
 
-},{"../cast/string":342,"../error/index":349,"../helpers/isBsonType":389,"../options/SchemaStringOptions":442,"../schematype":478,"../utils":494}],476:[function(require,module,exports){
+},{"../cast/string":343,"../error/index":350,"../helpers/isBsonType":390,"../options/SchemaStringOptions":443,"../schematype":479,"../utils":495}],477:[function(require,module,exports){
 'use strict';
 
 exports.schemaMixedSymbol = Symbol.for('mongoose:schema_mixed');
 
 exports.builtInMiddleware = Symbol.for('mongoose:built-in-middleware');
 
-},{}],477:[function(require,module,exports){
+},{}],478:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module dependencies.
@@ -85605,7 +85636,7 @@ SchemaUUID.prototype.castForQuery = function($conditional, val, context) {
 module.exports = SchemaUUID;
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../schematype":478,"../types/buffer":487,"../utils":494,"./operators/bitwise":469,"buffer":157}],478:[function(require,module,exports){
+},{"../schematype":479,"../types/buffer":488,"../utils":495,"./operators/bitwise":470,"buffer":158}],479:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -87318,7 +87349,7 @@ exports.CastError = CastError;
 exports.ValidatorError = ValidatorError;
 
 }).call(this)}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":298,"./error/index":349,"./helpers/clone":367,"./helpers/immediate":386,"./helpers/isAsyncFunction":388,"./helpers/isSimpleValidator":394,"./helpers/schematype/handleImmutable":422,"./helpers/symbols":424,"./options/SchemaTypeOptions":444,"./schema/operators/exists":470,"./schema/operators/type":474,"./utils":494}],479:[function(require,module,exports){
+},{"../../is-buffer/index.js":299,"./error/index":350,"./helpers/clone":368,"./helpers/immediate":387,"./helpers/isAsyncFunction":389,"./helpers/isSimpleValidator":395,"./helpers/schematype/handleImmutable":423,"./helpers/symbols":425,"./options/SchemaTypeOptions":445,"./schema/operators/exists":471,"./schema/operators/type":475,"./utils":495}],480:[function(require,module,exports){
 
 /*!
  * Module dependencies.
@@ -87531,7 +87562,7 @@ StateMachine.prototype.map = function map() {
   return this.map.apply(this, arguments);
 };
 
-},{"./utils":494}],480:[function(require,module,exports){
+},{"./utils":495}],481:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -87730,7 +87761,7 @@ ArraySubdocument.prototype.parentArray = function() {
 
 module.exports = ArraySubdocument;
 
-},{"../helpers/symbols":424,"../utils":494,"./subdocument":492,"events":268}],481:[function(require,module,exports){
+},{"../helpers/symbols":425,"../utils":495,"./subdocument":493,"events":269}],482:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -87845,14 +87876,14 @@ function MongooseDocumentArray(values, path, doc) {
 
 module.exports = MongooseDocumentArray;
 
-},{"../../document":343,"../../helpers/symbols":424,"../array/methods":486,"./methods":483}],482:[function(require,module,exports){
+},{"../../document":344,"../../helpers/symbols":425,"../array/methods":487,"./methods":484}],483:[function(require,module,exports){
 'use strict';
 
 exports.isMongooseDocumentArray = function(mongooseDocumentArray) {
   return Array.isArray(mongooseDocumentArray) && mongooseDocumentArray.isMongooseDocumentArray;
 };
 
-},{}],483:[function(require,module,exports){
+},{}],484:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -88239,7 +88270,7 @@ function _updateParentPopulated(arr) {
 }
 
 }).call(this)}).call(this,{"isBuffer":require("../../../../../is-buffer/index.js")})
-},{"../../../../../is-buffer/index.js":298,"../../../cast/objectid":341,"../../../document":343,"../../../helpers/discriminator/getDiscriminatorByValue":372,"../../../helpers/isBsonType":389,"../../../helpers/symbols":424,"../../../options":433,"../../../utils":494,"../../array/methods":486}],484:[function(require,module,exports){
+},{"../../../../../is-buffer/index.js":299,"../../../cast/objectid":342,"../../../document":344,"../../../helpers/discriminator/getDiscriminatorByValue":373,"../../../helpers/isBsonType":390,"../../../helpers/symbols":425,"../../../options":434,"../../../utils":495,"../../array/methods":487}],485:[function(require,module,exports){
 /*!
  * Module dependencies.
  */
@@ -88360,14 +88391,14 @@ function MongooseArray(values, path, doc, schematype) {
 
 module.exports = exports = MongooseArray;
 
-},{"../../document":343,"../../helpers/symbols":424,"./methods":486}],485:[function(require,module,exports){
+},{"../../document":344,"../../helpers/symbols":425,"./methods":487}],486:[function(require,module,exports){
 'use strict';
 
 exports.isMongooseArray = function(mongooseArray) {
   return Array.isArray(mongooseArray) && mongooseArray.isMongooseArray;
 };
 
-},{}],486:[function(require,module,exports){
+},{}],487:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -89402,7 +89433,7 @@ for (const method of returnVanillaArrayMethods) {
 module.exports = methods;
 
 }).call(this)}).call(this,{"isBuffer":require("../../../../../is-buffer/index.js")})
-},{"../../../../../is-buffer/index.js":298,"../../../document":343,"../../../error/mongooseError":353,"../../../helpers/clone":367,"../../../helpers/document/cleanModifiedSubpaths":376,"../../../helpers/isBsonType":389,"../../../helpers/symbols":424,"../../../options":433,"../../../utils":494,"../../ArraySubdocument":480,"mpath":496}],487:[function(require,module,exports){
+},{"../../../../../is-buffer/index.js":299,"../../../document":344,"../../../error/mongooseError":354,"../../../helpers/clone":368,"../../../helpers/document/cleanModifiedSubpaths":377,"../../../helpers/isBsonType":390,"../../../helpers/symbols":425,"../../../options":434,"../../../utils":495,"../../ArraySubdocument":481,"mpath":497}],488:[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * Module dependencies.
@@ -89683,7 +89714,7 @@ MongooseBuffer.Binary = Binary;
 module.exports = MongooseBuffer;
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"../utils":494,"bson":155,"buffer":157}],488:[function(require,module,exports){
+},{"../utils":495,"bson":156,"buffer":158}],489:[function(require,module,exports){
 /**
  * Decimal128 type constructor
  *
@@ -89698,7 +89729,7 @@ module.exports = MongooseBuffer;
 
 module.exports = require('bson').Decimal128;
 
-},{"bson":155}],489:[function(require,module,exports){
+},{"bson":156}],490:[function(require,module,exports){
 
 /*!
  * Module exports.
@@ -89722,7 +89753,7 @@ exports.Subdocument = require('./subdocument');
 
 exports.UUID = require('./uuid');
 
-},{"./ArraySubdocument":480,"./DocumentArray":481,"./array":484,"./buffer":487,"./decimal128":488,"./map":490,"./objectid":491,"./subdocument":492,"./uuid":493}],490:[function(require,module,exports){
+},{"./ArraySubdocument":481,"./DocumentArray":482,"./array":485,"./buffer":488,"./decimal128":489,"./map":491,"./objectid":492,"./subdocument":493,"./uuid":494}],491:[function(require,module,exports){
 'use strict';
 
 const Mixed = require('../schema/mixed');
@@ -90078,7 +90109,7 @@ function checkValidKey(key) {
 
 module.exports = MongooseMap;
 
-},{"../error/mongooseError":353,"../helpers/clone":367,"../helpers/document/handleSpreadDoc":380,"../helpers/getConstructorName":384,"../helpers/isBsonType":389,"../helpers/specialProperties":423,"../helpers/symbols":424,"../schema/mixed":466,"../utils":494,"util":592}],491:[function(require,module,exports){
+},{"../error/mongooseError":354,"../helpers/clone":368,"../helpers/document/handleSpreadDoc":381,"../helpers/getConstructorName":385,"../helpers/isBsonType":390,"../helpers/specialProperties":424,"../helpers/symbols":425,"../schema/mixed":467,"../utils":495,"util":593}],492:[function(require,module,exports){
 /**
  * ObjectId type constructor
  *
@@ -90121,7 +90152,7 @@ ObjectId.prototype[objectIdSymbol] = true;
 
 module.exports = ObjectId;
 
-},{"../helpers/symbols":424,"bson":155}],492:[function(require,module,exports){
+},{"../helpers/symbols":425,"bson":156}],493:[function(require,module,exports){
 'use strict';
 
 const Document = require('../document');
@@ -90559,7 +90590,7 @@ function registerRemoveListener(sub) {
   owner.$on('deleteOne', emitRemove);
 }
 
-},{"../document":343,"../helpers/immediate":386,"../options":433,"../utils":494,"util":592}],493:[function(require,module,exports){
+},{"../document":344,"../helpers/immediate":387,"../options":434,"../utils":495,"util":593}],494:[function(require,module,exports){
 /**
  * UUID type constructor
  *
@@ -90574,7 +90605,7 @@ function registerRemoveListener(sub) {
 
 module.exports = require('bson').UUID;
 
-},{"bson":155}],494:[function(require,module,exports){
+},{"bson":156}],495:[function(require,module,exports){
 (function (process,Buffer){(function (){
 'use strict';
 
@@ -91566,7 +91597,7 @@ exports.injectTimestampsOption = function injectTimestampsOption(writeOperation,
 };
 
 }).call(this)}).call(this,require('_process'),require("buffer").Buffer)
-},{"./document":343,"./helpers/clone":367,"./helpers/getFunctionName":385,"./helpers/immediate":386,"./helpers/isBsonType":389,"./helpers/isMongooseObject":390,"./helpers/isObject":391,"./helpers/isPOJO":392,"./helpers/promiseOrCallback":405,"./helpers/query/trusted":410,"./helpers/schema/merge":421,"./helpers/specialProperties":423,"./options/PopulateOptions":434,"./types/DocumentArray/isMongooseDocumentArray":482,"./types/array/isMongooseArray":485,"./types/objectid":491,"_process":522,"bson":155,"buffer":157,"mpath":496,"ms":499}],495:[function(require,module,exports){
+},{"./document":344,"./helpers/clone":368,"./helpers/getFunctionName":386,"./helpers/immediate":387,"./helpers/isBsonType":390,"./helpers/isMongooseObject":391,"./helpers/isObject":392,"./helpers/isPOJO":393,"./helpers/promiseOrCallback":406,"./helpers/query/trusted":411,"./helpers/schema/merge":422,"./helpers/specialProperties":424,"./options/PopulateOptions":435,"./types/DocumentArray/isMongooseDocumentArray":483,"./types/array/isMongooseArray":486,"./types/objectid":492,"_process":523,"bson":156,"buffer":158,"mpath":497,"ms":500}],496:[function(require,module,exports){
 'use strict';
 
 const utils = require('./utils');
@@ -91743,12 +91774,12 @@ VirtualType.prototype.applySetters = function(value, doc) {
 
 module.exports = VirtualType;
 
-},{"./utils":494}],496:[function(require,module,exports){
+},{"./utils":495}],497:[function(require,module,exports){
 'use strict';
 
 module.exports = exports = require('./lib');
 
-},{"./lib":497}],497:[function(require,module,exports){
+},{"./lib":498}],498:[function(require,module,exports){
 /* eslint strict:off */
 /* eslint no-var: off */
 /* eslint no-redeclare: off */
@@ -92086,7 +92117,7 @@ function K(v) {
   return v;
 }
 
-},{"./stringToParts":498}],498:[function(require,module,exports){
+},{"./stringToParts":499}],499:[function(require,module,exports){
 'use strict';
 
 module.exports = function stringToParts(str) {
@@ -92135,7 +92166,7 @@ module.exports = function stringToParts(str) {
 
   return result;
 };
-},{}],499:[function(require,module,exports){
+},{}],500:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -92299,7 +92330,7 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],500:[function(require,module,exports){
+},{}],501:[function(require,module,exports){
 'use strict';
 
 var keysShim;
@@ -92423,7 +92454,7 @@ if (!Object.keys) {
 }
 module.exports = keysShim;
 
-},{"./isArguments":502}],501:[function(require,module,exports){
+},{"./isArguments":503}],502:[function(require,module,exports){
 'use strict';
 
 var slice = Array.prototype.slice;
@@ -92457,7 +92488,7 @@ keysShim.shim = function shimObjectKeys() {
 
 module.exports = keysShim;
 
-},{"./implementation":500,"./isArguments":502}],502:[function(require,module,exports){
+},{"./implementation":501,"./isArguments":503}],503:[function(require,module,exports){
 'use strict';
 
 var toStr = Object.prototype.toString;
@@ -92476,7 +92507,7 @@ module.exports = function isArguments(value) {
 	return isArgs;
 };
 
-},{}],503:[function(require,module,exports){
+},{}],504:[function(require,module,exports){
 'use strict';
 
 // modified from https://github.com/es-shims/es6-shim
@@ -92524,7 +92555,7 @@ module.exports = function assign(target, source1) {
 	return to; // step 4
 };
 
-},{"call-bind/callBound":164,"has-symbols/shams":278,"object-keys":501}],504:[function(require,module,exports){
+},{"call-bind/callBound":165,"has-symbols/shams":279,"object-keys":502}],505:[function(require,module,exports){
 'use strict';
 
 var implementation = require('./implementation');
@@ -92581,7 +92612,7 @@ module.exports = function getPolyfill() {
 	return Object.assign;
 };
 
-},{"./implementation":503}],505:[function(require,module,exports){
+},{"./implementation":504}],506:[function(require,module,exports){
 module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.2": "aes-128-cbc",
 "2.16.840.1.101.3.4.1.3": "aes-128-ofb",
@@ -92595,7 +92626,7 @@ module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.43": "aes-256-ofb",
 "2.16.840.1.101.3.4.1.44": "aes-256-cfb"
 }
-},{}],506:[function(require,module,exports){
+},{}],507:[function(require,module,exports){
 // from https://github.com/indutny/self-signed/blob/gh-pages/lib/asn1.js
 // Fedor, you are amazing.
 
@@ -92720,7 +92751,7 @@ exports.signature = asn1.define('signature', function () {
 	);
 });
 
-},{"./certificate":507,"asn1.js":103}],507:[function(require,module,exports){
+},{"./certificate":508,"asn1.js":104}],508:[function(require,module,exports){
 // from https://github.com/Rantanen/node-dtls/blob/25a7dc861bda38cfeac93a723500eea4f0ac2e86/Certificate.js
 // thanks to @Rantanen
 
@@ -92811,7 +92842,7 @@ var X509Certificate = asn.define('X509Certificate', function () {
 
 module.exports = X509Certificate;
 
-},{"asn1.js":103}],508:[function(require,module,exports){
+},{"asn1.js":104}],509:[function(require,module,exports){
 'use strict';
 
 // adapted from https://github.com/apatil/pemstrip
@@ -92846,7 +92877,7 @@ module.exports = function (okey, password) {
 	};
 };
 
-},{"browserify-aes":128,"evp_bytestokey":269,"safe-buffer":560}],509:[function(require,module,exports){
+},{"browserify-aes":129,"evp_bytestokey":270,"safe-buffer":561}],510:[function(require,module,exports){
 'use strict';
 
 var asn1 = require('./asn1');
@@ -92959,13 +92990,13 @@ parseKeys.signature = asn1.signature;
 
 module.exports = parseKeys;
 
-},{"./aesid.json":505,"./asn1":506,"./fixProc":508,"browserify-aes":128,"pbkdf2":510,"safe-buffer":560}],510:[function(require,module,exports){
+},{"./aesid.json":506,"./asn1":507,"./fixProc":509,"browserify-aes":129,"pbkdf2":511,"safe-buffer":561}],511:[function(require,module,exports){
 'use strict';
 
 exports.pbkdf2 = require('./lib/async');
 exports.pbkdf2Sync = require('./lib/sync');
 
-},{"./lib/async":511,"./lib/sync":514}],511:[function(require,module,exports){
+},{"./lib/async":512,"./lib/sync":515}],512:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -93091,7 +93122,7 @@ module.exports = function (password, salt, iterations, keylen, digest, callback)
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./default-encoding":512,"./precondition":513,"./sync":514,"./to-buffer":515,"safe-buffer":560}],512:[function(require,module,exports){
+},{"./default-encoding":513,"./precondition":514,"./sync":515,"./to-buffer":516,"safe-buffer":561}],513:[function(require,module,exports){
 (function (process,global){(function (){
 'use strict';
 
@@ -93109,7 +93140,7 @@ if (global.process && global.process.browser) {
 module.exports = defaultEncoding;
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":522}],513:[function(require,module,exports){
+},{"_process":523}],514:[function(require,module,exports){
 'use strict';
 
 var MAX_ALLOC = Math.pow(2, 30) - 1; // default in iojs
@@ -93132,7 +93163,7 @@ module.exports = function (iterations, keylen) {
 	}
 };
 
-},{}],514:[function(require,module,exports){
+},{}],515:[function(require,module,exports){
 'use strict';
 
 var md5 = require('create-hash/md5');
@@ -93265,7 +93296,7 @@ function pbkdf2(password, salt, iterations, keylen, digest) {
 
 module.exports = pbkdf2;
 
-},{"./default-encoding":512,"./precondition":513,"./to-buffer":515,"create-hash/md5":517,"ripemd160":519,"safe-buffer":560,"sha.js":563}],515:[function(require,module,exports){
+},{"./default-encoding":513,"./precondition":514,"./to-buffer":516,"create-hash/md5":518,"ripemd160":520,"safe-buffer":561,"sha.js":564}],516:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -93287,7 +93318,7 @@ module.exports = function (thing, encoding, name) {
 	throw new TypeError(name + ' must be a string, a Buffer, a Uint8Array, or a DataView');
 };
 
-},{"safe-buffer":560,"to-buffer":587}],516:[function(require,module,exports){
+},{"safe-buffer":561,"to-buffer":588}],517:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict'
 var intSize = 4
@@ -93321,7 +93352,7 @@ module.exports = function hash (buf, fn) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":157}],517:[function(require,module,exports){
+},{"buffer":158}],518:[function(require,module,exports){
 'use strict'
 /*
  * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
@@ -93474,7 +93505,7 @@ module.exports = function md5 (buf) {
   return makeHash(buf, core_md5)
 }
 
-},{"./make-hash":516}],518:[function(require,module,exports){
+},{"./make-hash":517}],519:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict'
 var Transform = require('stream').Transform
@@ -93561,7 +93592,7 @@ HashBase.prototype._digest = function () {
 module.exports = HashBase
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":157,"inherits":296,"stream":570}],519:[function(require,module,exports){
+},{"buffer":158,"inherits":297,"stream":571}],520:[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict'
 var inherits = require('inherits')
@@ -93856,7 +93887,7 @@ function fn5 (a, b, c, d, e, m, k, s) {
 module.exports = RIPEMD160
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":157,"hash-base":518,"inherits":296}],520:[function(require,module,exports){
+},{"buffer":158,"hash-base":519,"inherits":297}],521:[function(require,module,exports){
 'use strict';
 
 /** @type {import('.')} */
@@ -93874,7 +93905,7 @@ module.exports = [
 	'BigUint64Array'
 ];
 
-},{}],521:[function(require,module,exports){
+},{}],522:[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -93923,7 +93954,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":522}],522:[function(require,module,exports){
+},{"_process":523}],523:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -94109,7 +94140,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],523:[function(require,module,exports){
+},{}],524:[function(require,module,exports){
 exports.publicEncrypt = require('./publicEncrypt')
 exports.privateDecrypt = require('./privateDecrypt')
 
@@ -94121,7 +94152,7 @@ exports.publicDecrypt = function publicDecrypt (key, buf) {
   return exports.privateDecrypt(key, buf, true)
 }
 
-},{"./privateDecrypt":525,"./publicEncrypt":526}],524:[function(require,module,exports){
+},{"./privateDecrypt":526,"./publicEncrypt":527}],525:[function(require,module,exports){
 var createHash = require('create-hash')
 var Buffer = require('safe-buffer').Buffer
 
@@ -94142,7 +94173,7 @@ function i2ops (c) {
   return out
 }
 
-},{"create-hash":226,"safe-buffer":560}],525:[function(require,module,exports){
+},{"create-hash":227,"safe-buffer":561}],526:[function(require,module,exports){
 var parseKeys = require('parse-asn1')
 var mgf = require('./mgf')
 var xor = require('./xor')
@@ -94249,7 +94280,7 @@ function compare (a, b) {
   return dif
 }
 
-},{"./mgf":524,"./withPublic":527,"./xor":528,"bn.js":123,"browserify-rsa":146,"create-hash":226,"parse-asn1":509,"safe-buffer":560}],526:[function(require,module,exports){
+},{"./mgf":525,"./withPublic":528,"./xor":529,"bn.js":124,"browserify-rsa":147,"create-hash":227,"parse-asn1":510,"safe-buffer":561}],527:[function(require,module,exports){
 var parseKeys = require('parse-asn1')
 var randomBytes = require('randombytes')
 var createHash = require('create-hash')
@@ -94339,7 +94370,7 @@ function nonZero (len) {
   return out
 }
 
-},{"./mgf":524,"./withPublic":527,"./xor":528,"bn.js":123,"browserify-rsa":146,"create-hash":226,"parse-asn1":509,"randombytes":529,"safe-buffer":560}],527:[function(require,module,exports){
+},{"./mgf":525,"./withPublic":528,"./xor":529,"bn.js":124,"browserify-rsa":147,"create-hash":227,"parse-asn1":510,"randombytes":530,"safe-buffer":561}],528:[function(require,module,exports){
 var BN = require('bn.js')
 var Buffer = require('safe-buffer').Buffer
 
@@ -94353,7 +94384,7 @@ function withPublic (paddedMsg, key) {
 
 module.exports = withPublic
 
-},{"bn.js":123,"safe-buffer":560}],528:[function(require,module,exports){
+},{"bn.js":124,"safe-buffer":561}],529:[function(require,module,exports){
 module.exports = function xor (a, b) {
   var len = a.length
   var i = -1
@@ -94363,7 +94394,7 @@ module.exports = function xor (a, b) {
   return a
 }
 
-},{}],529:[function(require,module,exports){
+},{}],530:[function(require,module,exports){
 (function (process,global){(function (){
 'use strict'
 
@@ -94417,7 +94448,7 @@ function randomBytes (size, cb) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":522,"safe-buffer":560}],530:[function(require,module,exports){
+},{"_process":523,"safe-buffer":561}],531:[function(require,module,exports){
 (function (process,global){(function (){
 'use strict'
 
@@ -94529,7 +94560,7 @@ function randomFillSync (buf, offset, size) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":522,"randombytes":529,"safe-buffer":560}],531:[function(require,module,exports){
+},{"_process":523,"randombytes":530,"safe-buffer":561}],532:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -94661,7 +94692,7 @@ Duplex.prototype._destroy = function (err, cb) {
 
   pna.nextTick(cb, err);
 };
-},{"./_stream_readable":533,"./_stream_writable":535,"core-util-is":168,"inherits":296,"process-nextick-args":521}],532:[function(require,module,exports){
+},{"./_stream_readable":534,"./_stream_writable":536,"core-util-is":169,"inherits":297,"process-nextick-args":522}],533:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -94709,7 +94740,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":534,"core-util-is":168,"inherits":296}],533:[function(require,module,exports){
+},{"./_stream_transform":535,"core-util-is":169,"inherits":297}],534:[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -95731,7 +95762,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":531,"./internal/streams/BufferList":536,"./internal/streams/destroy":537,"./internal/streams/stream":538,"_process":522,"core-util-is":168,"events":268,"inherits":296,"isarray":539,"process-nextick-args":521,"safe-buffer":540,"string_decoder/":541,"util":125}],534:[function(require,module,exports){
+},{"./_stream_duplex":532,"./internal/streams/BufferList":537,"./internal/streams/destroy":538,"./internal/streams/stream":539,"_process":523,"core-util-is":169,"events":269,"inherits":297,"isarray":540,"process-nextick-args":522,"safe-buffer":541,"string_decoder/":542,"util":126}],535:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -95946,7 +95977,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":531,"core-util-is":168,"inherits":296}],535:[function(require,module,exports){
+},{"./_stream_duplex":532,"core-util-is":169,"inherits":297}],536:[function(require,module,exports){
 (function (process,global,setImmediate){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -96634,7 +96665,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"./_stream_duplex":531,"./internal/streams/destroy":537,"./internal/streams/stream":538,"_process":522,"core-util-is":168,"inherits":296,"process-nextick-args":521,"safe-buffer":540,"timers":586,"util-deprecate":589}],536:[function(require,module,exports){
+},{"./_stream_duplex":532,"./internal/streams/destroy":538,"./internal/streams/stream":539,"_process":523,"core-util-is":169,"inherits":297,"process-nextick-args":522,"safe-buffer":541,"timers":587,"util-deprecate":590}],537:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -96713,7 +96744,7 @@ if (util && util.inspect && util.inspect.custom) {
     return this.constructor.name + ' ' + obj;
   };
 }
-},{"safe-buffer":540,"util":125}],537:[function(require,module,exports){
+},{"safe-buffer":541,"util":126}],538:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -96798,11 +96829,11 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":521}],538:[function(require,module,exports){
-arguments[4][327][0].apply(exports,arguments)
-},{"dup":327,"events":268}],539:[function(require,module,exports){
-arguments[4][304][0].apply(exports,arguments)
-},{"dup":304}],540:[function(require,module,exports){
+},{"process-nextick-args":522}],539:[function(require,module,exports){
+arguments[4][328][0].apply(exports,arguments)
+},{"dup":328,"events":269}],540:[function(require,module,exports){
+arguments[4][305][0].apply(exports,arguments)
+},{"dup":305}],541:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -96866,7 +96897,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":157}],541:[function(require,module,exports){
+},{"buffer":158}],542:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -97163,7 +97194,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":540}],542:[function(require,module,exports){
+},{"safe-buffer":541}],543:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -97172,7 +97203,7 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":531,"./lib/_stream_passthrough.js":532,"./lib/_stream_readable.js":533,"./lib/_stream_transform.js":534,"./lib/_stream_writable.js":535}],543:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":532,"./lib/_stream_passthrough.js":533,"./lib/_stream_readable.js":534,"./lib/_stream_transform.js":535,"./lib/_stream_writable.js":536}],544:[function(require,module,exports){
 'use strict'
 var Buffer = require('buffer').Buffer
 var inherits = require('inherits')
@@ -97337,39 +97368,39 @@ function fn5 (a, b, c, d, e, m, k, s) {
 
 module.exports = RIPEMD160
 
-},{"buffer":157,"hash-base":544,"inherits":296}],544:[function(require,module,exports){
-arguments[4][313][0].apply(exports,arguments)
-},{"dup":313,"inherits":296,"readable-stream":559,"safe-buffer":560}],545:[function(require,module,exports){
+},{"buffer":158,"hash-base":545,"inherits":297}],545:[function(require,module,exports){
 arguments[4][314][0].apply(exports,arguments)
-},{"dup":314}],546:[function(require,module,exports){
+},{"dup":314,"inherits":297,"readable-stream":560,"safe-buffer":561}],546:[function(require,module,exports){
 arguments[4][315][0].apply(exports,arguments)
-},{"./_stream_readable":548,"./_stream_writable":550,"_process":522,"dup":315,"inherits":296}],547:[function(require,module,exports){
+},{"dup":315}],547:[function(require,module,exports){
 arguments[4][316][0].apply(exports,arguments)
-},{"./_stream_transform":549,"dup":316,"inherits":296}],548:[function(require,module,exports){
+},{"./_stream_readable":549,"./_stream_writable":551,"_process":523,"dup":316,"inherits":297}],548:[function(require,module,exports){
 arguments[4][317][0].apply(exports,arguments)
-},{"../errors":545,"./_stream_duplex":546,"./internal/streams/async_iterator":551,"./internal/streams/buffer_list":552,"./internal/streams/destroy":553,"./internal/streams/from":555,"./internal/streams/state":557,"./internal/streams/stream":558,"_process":522,"buffer":157,"dup":317,"events":268,"inherits":296,"string_decoder/":585,"util":125}],549:[function(require,module,exports){
+},{"./_stream_transform":550,"dup":317,"inherits":297}],549:[function(require,module,exports){
 arguments[4][318][0].apply(exports,arguments)
-},{"../errors":545,"./_stream_duplex":546,"dup":318,"inherits":296}],550:[function(require,module,exports){
+},{"../errors":546,"./_stream_duplex":547,"./internal/streams/async_iterator":552,"./internal/streams/buffer_list":553,"./internal/streams/destroy":554,"./internal/streams/from":556,"./internal/streams/state":558,"./internal/streams/stream":559,"_process":523,"buffer":158,"dup":318,"events":269,"inherits":297,"string_decoder/":586,"util":126}],550:[function(require,module,exports){
 arguments[4][319][0].apply(exports,arguments)
-},{"../errors":545,"./_stream_duplex":546,"./internal/streams/destroy":553,"./internal/streams/state":557,"./internal/streams/stream":558,"_process":522,"buffer":157,"dup":319,"inherits":296,"util-deprecate":589}],551:[function(require,module,exports){
+},{"../errors":546,"./_stream_duplex":547,"dup":319,"inherits":297}],551:[function(require,module,exports){
 arguments[4][320][0].apply(exports,arguments)
-},{"./end-of-stream":554,"_process":522,"dup":320}],552:[function(require,module,exports){
+},{"../errors":546,"./_stream_duplex":547,"./internal/streams/destroy":554,"./internal/streams/state":558,"./internal/streams/stream":559,"_process":523,"buffer":158,"dup":320,"inherits":297,"util-deprecate":590}],552:[function(require,module,exports){
 arguments[4][321][0].apply(exports,arguments)
-},{"buffer":157,"dup":321,"util":125}],553:[function(require,module,exports){
+},{"./end-of-stream":555,"_process":523,"dup":321}],553:[function(require,module,exports){
 arguments[4][322][0].apply(exports,arguments)
-},{"_process":522,"dup":322}],554:[function(require,module,exports){
+},{"buffer":158,"dup":322,"util":126}],554:[function(require,module,exports){
 arguments[4][323][0].apply(exports,arguments)
-},{"../../../errors":545,"dup":323}],555:[function(require,module,exports){
+},{"_process":523,"dup":323}],555:[function(require,module,exports){
 arguments[4][324][0].apply(exports,arguments)
-},{"dup":324}],556:[function(require,module,exports){
+},{"../../../errors":546,"dup":324}],556:[function(require,module,exports){
 arguments[4][325][0].apply(exports,arguments)
-},{"../../../errors":545,"./end-of-stream":554,"dup":325}],557:[function(require,module,exports){
+},{"dup":325}],557:[function(require,module,exports){
 arguments[4][326][0].apply(exports,arguments)
-},{"../../../errors":545,"dup":326}],558:[function(require,module,exports){
+},{"../../../errors":546,"./end-of-stream":555,"dup":326}],558:[function(require,module,exports){
 arguments[4][327][0].apply(exports,arguments)
-},{"dup":327,"events":268}],559:[function(require,module,exports){
+},{"../../../errors":546,"dup":327}],559:[function(require,module,exports){
 arguments[4][328][0].apply(exports,arguments)
-},{"./lib/_stream_duplex.js":546,"./lib/_stream_passthrough.js":547,"./lib/_stream_readable.js":548,"./lib/_stream_transform.js":549,"./lib/_stream_writable.js":550,"./lib/internal/streams/end-of-stream.js":554,"./lib/internal/streams/pipeline.js":556,"dup":328}],560:[function(require,module,exports){
+},{"dup":328,"events":269}],560:[function(require,module,exports){
+arguments[4][329][0].apply(exports,arguments)
+},{"./lib/_stream_duplex.js":547,"./lib/_stream_passthrough.js":548,"./lib/_stream_readable.js":549,"./lib/_stream_transform.js":550,"./lib/_stream_writable.js":551,"./lib/internal/streams/end-of-stream.js":555,"./lib/internal/streams/pipeline.js":557,"dup":329}],561:[function(require,module,exports){
 /*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
@@ -97436,7 +97467,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":157}],561:[function(require,module,exports){
+},{"buffer":158}],562:[function(require,module,exports){
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
@@ -97480,7 +97511,7 @@ module.exports = function setFunctionLength(fn, length) {
 	return fn;
 };
 
-},{"define-data-property":231,"es-errors/type":265,"get-intrinsic":273,"gopd":275,"has-property-descriptors":276}],562:[function(require,module,exports){
+},{"define-data-property":232,"es-errors/type":266,"get-intrinsic":274,"gopd":276,"has-property-descriptors":277}],563:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 // prototype class for hash functions
@@ -97563,7 +97594,7 @@ Hash.prototype._update = function () {
 
 module.exports = Hash
 
-},{"safe-buffer":560}],563:[function(require,module,exports){
+},{"safe-buffer":561}],564:[function(require,module,exports){
 var exports = module.exports = function SHA (algorithm) {
   algorithm = algorithm.toLowerCase()
 
@@ -97580,7 +97611,7 @@ exports.sha256 = require('./sha256')
 exports.sha384 = require('./sha384')
 exports.sha512 = require('./sha512')
 
-},{"./sha":564,"./sha1":565,"./sha224":566,"./sha256":567,"./sha384":568,"./sha512":569}],564:[function(require,module,exports){
+},{"./sha":565,"./sha1":566,"./sha224":567,"./sha256":568,"./sha384":569,"./sha512":570}],565:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
  * in FIPS PUB 180-1
@@ -97676,7 +97707,7 @@ Sha.prototype._hash = function () {
 
 module.exports = Sha
 
-},{"./hash":562,"inherits":296,"safe-buffer":560}],565:[function(require,module,exports){
+},{"./hash":563,"inherits":297,"safe-buffer":561}],566:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
  * in FIPS PUB 180-1
@@ -97777,7 +97808,7 @@ Sha1.prototype._hash = function () {
 
 module.exports = Sha1
 
-},{"./hash":562,"inherits":296,"safe-buffer":560}],566:[function(require,module,exports){
+},{"./hash":563,"inherits":297,"safe-buffer":561}],567:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97832,7 +97863,7 @@ Sha224.prototype._hash = function () {
 
 module.exports = Sha224
 
-},{"./hash":562,"./sha256":567,"inherits":296,"safe-buffer":560}],567:[function(require,module,exports){
+},{"./hash":563,"./sha256":568,"inherits":297,"safe-buffer":561}],568:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -97969,7 +98000,7 @@ Sha256.prototype._hash = function () {
 
 module.exports = Sha256
 
-},{"./hash":562,"inherits":296,"safe-buffer":560}],568:[function(require,module,exports){
+},{"./hash":563,"inherits":297,"safe-buffer":561}],569:[function(require,module,exports){
 var inherits = require('inherits')
 var SHA512 = require('./sha512')
 var Hash = require('./hash')
@@ -98028,7 +98059,7 @@ Sha384.prototype._hash = function () {
 
 module.exports = Sha384
 
-},{"./hash":562,"./sha512":569,"inherits":296,"safe-buffer":560}],569:[function(require,module,exports){
+},{"./hash":563,"./sha512":570,"inherits":297,"safe-buffer":561}],570:[function(require,module,exports){
 var inherits = require('inherits')
 var Hash = require('./hash')
 var Buffer = require('safe-buffer').Buffer
@@ -98290,7 +98321,7 @@ Sha512.prototype._hash = function () {
 
 module.exports = Sha512
 
-},{"./hash":562,"inherits":296,"safe-buffer":560}],570:[function(require,module,exports){
+},{"./hash":563,"inherits":297,"safe-buffer":561}],571:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -98421,37 +98452,37 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":268,"inherits":296,"readable-stream/lib/_stream_duplex.js":572,"readable-stream/lib/_stream_passthrough.js":573,"readable-stream/lib/_stream_readable.js":574,"readable-stream/lib/_stream_transform.js":575,"readable-stream/lib/_stream_writable.js":576,"readable-stream/lib/internal/streams/end-of-stream.js":580,"readable-stream/lib/internal/streams/pipeline.js":582}],571:[function(require,module,exports){
-arguments[4][314][0].apply(exports,arguments)
-},{"dup":314}],572:[function(require,module,exports){
+},{"events":269,"inherits":297,"readable-stream/lib/_stream_duplex.js":573,"readable-stream/lib/_stream_passthrough.js":574,"readable-stream/lib/_stream_readable.js":575,"readable-stream/lib/_stream_transform.js":576,"readable-stream/lib/_stream_writable.js":577,"readable-stream/lib/internal/streams/end-of-stream.js":581,"readable-stream/lib/internal/streams/pipeline.js":583}],572:[function(require,module,exports){
 arguments[4][315][0].apply(exports,arguments)
-},{"./_stream_readable":574,"./_stream_writable":576,"_process":522,"dup":315,"inherits":296}],573:[function(require,module,exports){
+},{"dup":315}],573:[function(require,module,exports){
 arguments[4][316][0].apply(exports,arguments)
-},{"./_stream_transform":575,"dup":316,"inherits":296}],574:[function(require,module,exports){
+},{"./_stream_readable":575,"./_stream_writable":577,"_process":523,"dup":316,"inherits":297}],574:[function(require,module,exports){
 arguments[4][317][0].apply(exports,arguments)
-},{"../errors":571,"./_stream_duplex":572,"./internal/streams/async_iterator":577,"./internal/streams/buffer_list":578,"./internal/streams/destroy":579,"./internal/streams/from":581,"./internal/streams/state":583,"./internal/streams/stream":584,"_process":522,"buffer":157,"dup":317,"events":268,"inherits":296,"string_decoder/":585,"util":125}],575:[function(require,module,exports){
+},{"./_stream_transform":576,"dup":317,"inherits":297}],575:[function(require,module,exports){
 arguments[4][318][0].apply(exports,arguments)
-},{"../errors":571,"./_stream_duplex":572,"dup":318,"inherits":296}],576:[function(require,module,exports){
+},{"../errors":572,"./_stream_duplex":573,"./internal/streams/async_iterator":578,"./internal/streams/buffer_list":579,"./internal/streams/destroy":580,"./internal/streams/from":582,"./internal/streams/state":584,"./internal/streams/stream":585,"_process":523,"buffer":158,"dup":318,"events":269,"inherits":297,"string_decoder/":586,"util":126}],576:[function(require,module,exports){
 arguments[4][319][0].apply(exports,arguments)
-},{"../errors":571,"./_stream_duplex":572,"./internal/streams/destroy":579,"./internal/streams/state":583,"./internal/streams/stream":584,"_process":522,"buffer":157,"dup":319,"inherits":296,"util-deprecate":589}],577:[function(require,module,exports){
+},{"../errors":572,"./_stream_duplex":573,"dup":319,"inherits":297}],577:[function(require,module,exports){
 arguments[4][320][0].apply(exports,arguments)
-},{"./end-of-stream":580,"_process":522,"dup":320}],578:[function(require,module,exports){
+},{"../errors":572,"./_stream_duplex":573,"./internal/streams/destroy":580,"./internal/streams/state":584,"./internal/streams/stream":585,"_process":523,"buffer":158,"dup":320,"inherits":297,"util-deprecate":590}],578:[function(require,module,exports){
 arguments[4][321][0].apply(exports,arguments)
-},{"buffer":157,"dup":321,"util":125}],579:[function(require,module,exports){
+},{"./end-of-stream":581,"_process":523,"dup":321}],579:[function(require,module,exports){
 arguments[4][322][0].apply(exports,arguments)
-},{"_process":522,"dup":322}],580:[function(require,module,exports){
+},{"buffer":158,"dup":322,"util":126}],580:[function(require,module,exports){
 arguments[4][323][0].apply(exports,arguments)
-},{"../../../errors":571,"dup":323}],581:[function(require,module,exports){
+},{"_process":523,"dup":323}],581:[function(require,module,exports){
 arguments[4][324][0].apply(exports,arguments)
-},{"dup":324}],582:[function(require,module,exports){
+},{"../../../errors":572,"dup":324}],582:[function(require,module,exports){
 arguments[4][325][0].apply(exports,arguments)
-},{"../../../errors":571,"./end-of-stream":580,"dup":325}],583:[function(require,module,exports){
+},{"dup":325}],583:[function(require,module,exports){
 arguments[4][326][0].apply(exports,arguments)
-},{"../../../errors":571,"dup":326}],584:[function(require,module,exports){
+},{"../../../errors":572,"./end-of-stream":581,"dup":326}],584:[function(require,module,exports){
 arguments[4][327][0].apply(exports,arguments)
-},{"dup":327,"events":268}],585:[function(require,module,exports){
-arguments[4][541][0].apply(exports,arguments)
-},{"dup":541,"safe-buffer":560}],586:[function(require,module,exports){
+},{"../../../errors":572,"dup":327}],585:[function(require,module,exports){
+arguments[4][328][0].apply(exports,arguments)
+},{"dup":328,"events":269}],586:[function(require,module,exports){
+arguments[4][542][0].apply(exports,arguments)
+},{"dup":542,"safe-buffer":561}],587:[function(require,module,exports){
 (function (setImmediate,clearImmediate){(function (){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -98530,7 +98561,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this)}).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-},{"process/browser.js":522,"timers":586}],587:[function(require,module,exports){
+},{"process/browser.js":523,"timers":587}],588:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -98641,7 +98672,7 @@ module.exports = function toBuffer(data, encoding) {
 	throw new TypeError('The "data" argument must be a string, an Array, a Buffer, a Uint8Array, or a DataView.');
 };
 
-},{"isarray":304,"safe-buffer":560,"typed-array-buffer":588}],588:[function(require,module,exports){
+},{"isarray":305,"safe-buffer":561,"typed-array-buffer":589}],589:[function(require,module,exports){
 'use strict';
 
 var $TypeError = require('es-errors/type');
@@ -98662,7 +98693,7 @@ module.exports = $typedArrayBuffer || function typedArrayBuffer(x) {
 	return x.buffer;
 };
 
-},{"call-bound":166,"es-errors/type":265,"is-typed-array":303}],589:[function(require,module,exports){
+},{"call-bound":167,"es-errors/type":266,"is-typed-array":304}],590:[function(require,module,exports){
 (function (global){(function (){
 
 /**
@@ -98733,9 +98764,9 @@ function config (name) {
 }
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],590:[function(require,module,exports){
-arguments[4][119][0].apply(exports,arguments)
-},{"dup":119}],591:[function(require,module,exports){
+},{}],591:[function(require,module,exports){
+arguments[4][120][0].apply(exports,arguments)
+},{"dup":120}],592:[function(require,module,exports){
 // Currently in sync with Node.js lib/internal/util/types.js
 // https://github.com/nodejs/node/commit/112cc7c27551254aa2b17098fb774867f05ed0d9
 
@@ -99071,7 +99102,7 @@ exports.isAnyArrayBuffer = isAnyArrayBuffer;
   });
 });
 
-},{"is-arguments":297,"is-generator-function":301,"is-typed-array":303,"which-typed-array":594}],592:[function(require,module,exports){
+},{"is-arguments":298,"is-generator-function":302,"is-typed-array":304,"which-typed-array":595}],593:[function(require,module,exports){
 (function (process){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -99790,7 +99821,7 @@ function callbackify(original) {
 exports.callbackify = callbackify;
 
 }).call(this)}).call(this,require('_process'))
-},{"./support/isBuffer":590,"./support/types":591,"_process":522,"inherits":296}],593:[function(require,module,exports){
+},{"./support/isBuffer":591,"./support/types":592,"_process":523,"inherits":297}],594:[function(require,module,exports){
 var indexOf = function (xs, item) {
     if (xs.indexOf) return xs.indexOf(item);
     else for (var i = 0; i < xs.length; i++) {
@@ -99941,7 +99972,7 @@ exports.createContext = Script.createContext = function (context) {
     return copy;
 };
 
-},{}],594:[function(require,module,exports){
+},{}],595:[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -100061,4 +100092,4 @@ module.exports = function whichTypedArray(value) {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"available-typed-arrays":121,"call-bind":165,"call-bound":166,"for-each":270,"gopd":275,"has-tostringtag/shams":279}]},{},[75]);
+},{"available-typed-arrays":122,"call-bind":166,"call-bound":167,"for-each":271,"gopd":276,"has-tostringtag/shams":280}]},{},[76]);
