@@ -35,6 +35,10 @@
     "jasmine": true,
     "browser": true,
     "node": true
+  },
+  "plugins": ["import"],
+  "rules": {
+    "import/no-unresolved": "error"
   }
 }
 
