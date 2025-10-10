@@ -1,6 +1,7 @@
 const Code = require('./../../../app/assets/javascripts/basetypes/Code.js');
 const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
 const Interval = require('./../../../app/assets/javascripts/basetypes/Interval.js');
+const DateTimeInterval = require('./../../../app/assets/javascripts/basetypes/DateTimeInterval.js');
 const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
 const Quantity = require('./../../../app/assets/javascripts/basetypes/Quantity.js');
 const Ratio = require('./../../../app/assets/javascripts/basetypes/Ratio.js');
@@ -38,6 +39,44 @@ describe('basetype Date', () => {
   });
   it('throws if invalid DateTime passed to cast', () => {
     expect(() => { (new QDMDate()).cast('some invalid Date arg'); }).toThrow();
+  });
+});
+
+describe('basetype Date Time Interval', () => {
+  it('can create an interval from cql.Interval of DateTime', () => {
+    const interval = (new DateTimeInterval()).cast(new cql.Interval(new cql.DateTime(2012, 9, 9, 10, 45, 0, 0, 0), new cql.DateTime(2012, 10, 9, 10, 45, 0, 0, 0)));
+    expect(interval.highClosed).toBe(true);
+  });
+
+  it('can create an interval from cql.Interval[null,null]', () => {
+    const interval = (new DateTimeInterval()).cast(new cql.Interval(null, null));
+    expect(interval.highClosed).toBe(true);
+  });
+
+  it('can create an interval from object with low: null, high: null]', () => {
+    const interval = (new DateTimeInterval()).cast({ low: null, high: null });
+    expect(interval.lowClosed).toBe(true);
+    expect(interval.highClosed).toBe(true);
+    expect(interval.low).toBe(null);
+    expect(interval.high).toBe(null);
+  });
+
+  it('can create an interval of object with string high and low values', () => {
+    const interval = (new DateTimeInterval()).cast({ low: '2019-06-11T20:14:55.000Z', high: '2019-06-11T20:15:00.000Z' });
+    expect(interval.low).toEqual(new cql.DateTime(2019, 6, 11, 20, 14, 55, 0, 0));
+    expect(interval.high).toEqual(new cql.DateTime(2019, 6, 11, 20, 15, 0, 0, 0));
+  });
+
+  it('throws error if invalid low date string is passed to cast', () => {
+    expect(() => { (new DateTimeInterval()).cast({ low: 'not a date', high: '2019-06-11T20:15:00.000Z' }); }).toThrow();
+  });
+
+  it('throws error if invalid high date string is passed to cast', () => {
+    expect(() => { (new DateTimeInterval()).cast({ low: '2019-06-11T20:14:55.000Z', high: 'not a date' }); }).toThrow();
+  });
+
+  it('throws error if low or high are not Date Times', () => {
+    expect(() => { (new DateTimeInterval()).cast({ low: { value: '30', unit: 'mg' }, high: { value: '60', unit: 'mg' } }); }).toThrow();
   });
 });
 
