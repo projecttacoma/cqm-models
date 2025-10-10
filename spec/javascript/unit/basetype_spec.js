@@ -1,10 +1,10 @@
-const Code = require('./../../../app/assets/javascripts/basetypes/Code.js');
-const DateTime = require('./../../../app/assets/javascripts/basetypes/DateTime.js');
-const Interval = require('./../../../app/assets/javascripts/basetypes/Interval.js');
-const DateTimeInterval = require('./../../../app/assets/javascripts/basetypes/DateTimeInterval.js');
+const Code = require('../../../app/assets/javascripts/basetypes/Code.js');
+const DateTime = require('../../../app/assets/javascripts/basetypes/DateTime.js');
+const Interval = require('../../../app/assets/javascripts/basetypes/Interval.js');
+const DateTimeInterval = require('../../../app/assets/javascripts/basetypes/DateTimeInterval.js');
 const QDMDate = require('../../../app/assets/javascripts/basetypes/QDMDate.js');
-const Quantity = require('./../../../app/assets/javascripts/basetypes/Quantity.js');
-const Ratio = require('./../../../app/assets/javascripts/basetypes/Ratio.js');
+const Quantity = require('../../../app/assets/javascripts/basetypes/Quantity.js');
+const Ratio = require('../../../app/assets/javascripts/basetypes/Ratio.js');
 const cql = require('cql-execution');
 
 describe('basetype DateTime', () => {
