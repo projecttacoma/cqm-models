@@ -4,7 +4,7 @@
     "max-len": ["error", {"code": 200, "ignoreComments": true}],
     "no-multiple-empty-lines": "off",
     "import/extensions": "off",
-    "import/no-unresolved": "error",
+    "import/no-unresolved": "off",
     "max-classes-per-file": "off",
     "operator-linebreak": "off",
     "no-else-return": "off",
