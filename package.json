@@ -1,6 +1,6 @@
 {
   "name": "cqm-models",
-  "version": "4.3.1",
+  "version": "4.3.2",
   "description": "This library contains auto generated Mongo (Mongoose.js) models that correspond to the QDM (Quality Data Model) specification.",
   "license": "ISC",
   "main": "app/assets/javascripts/index.js",
@@ -19,7 +19,7 @@
     "Chris Hossenlopp <hossenlopp@mitre.org>"
   ],
   "dependencies": {
-    "cql-execution": "3.3.0",
+    "cql-execution": "3.3.2",
     "mongoose": "^7.8.4"
   },
   "devDependencies": {
@@ -32,7 +32,9 @@
   "resolutions": {
     "browserify-sign": "^4.2.2",
     "semver": "^7.5.4",
-    "@babel/traverse": "^7.23.3"
+    "@babel/traverse": "^7.23.3",
+    "elliptic": "^6.6.1",
+    "js-yaml": "^4.2.0"
   },
   "scripts": {
     "prepublish": "./bin/build_cql_execution.sh",
@@ -44,5 +46,9 @@
     "browser_test": "browserify app/assets/javascripts/browser.js > tmp/dist/browser.js",
     "dist_test": "browserify app/assets/javascripts/index.js > tmp/dist/index.js",
     "build-cql": "cd ./node_modules/cql-execution && yarn install && cd ../../"
+  },
+   "overrides": {
+    "elliptic": "^6.6.1",
+    "js-yaml": "^4.2.0"
   }
 }
