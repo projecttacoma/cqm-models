@@ -182,7 +182,7 @@ end
 # Create require file (if not in test mode)
 unless IS_TEST
   model_template = File.read('templates/models_template.rb.erb')
-  renderer = ERB.new(model_template, nil, '-')
+  renderer = ERB.new(model_template, trim_mode: '-')
   file_path = 'app/models/models.rb'
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 end
@@ -197,7 +197,7 @@ puts 'Generating JavaScript models...'
 
 # Create JavaScript models
 template = File.read('templates/mongoose_template.js.erb')
-default_renderer = ERB.new(template, nil, '-')
+default_renderer = ERB.new(template, trim_mode: '-')
 file_path = 'app/assets/javascripts/'
 file_path = 'tmp/' if IS_TEST
 datatype_custom_templates = {
@@ -209,7 +209,7 @@ datatypes.each do |datatype, info|
   renderer = default_renderer
   if datatype_custom_templates.key?(datatype.to_sym)
     puts "using custom template for #{datatype}"
-    renderer = ERB.new(File.read(datatype_custom_templates[datatype.to_sym]), nil, '-')
+    renderer = ERB.new(File.read(datatype_custom_templates[datatype.to_sym]), trim_mode: '-')
   end
   attrs_with_extras = info[:attributes] # this field gets used in the template
   # QDMPatients don't need _type
@@ -223,13 +223,13 @@ end
 # Create require file (if not in test mode)
 unless IS_TEST
   indtemplate = File.read('templates/index_template.js.erb')
-  renderer = ERB.new(indtemplate, nil, '-')
+  renderer = ERB.new(indtemplate, trim_mode: '-')
   file_path = 'app/assets/javascripts/index.js'
   puts '  ' + file_path
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
 
   alltemplate = File.read('templates/all_data_elements_template.js.erb')
-  renderer = ERB.new(alltemplate, nil, '-')
+  renderer = ERB.new(alltemplate, trim_mode: '-')
   file_path = 'app/assets/javascripts/AllDataElements.js'
   puts '  ' + file_path
   File.open(file_path, 'w') { |file| file.puts renderer.result(binding) }
